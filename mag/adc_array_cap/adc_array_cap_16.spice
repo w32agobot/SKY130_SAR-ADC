@@ -1,0 +1,37 @@
+* SPICE3 file created from adc_array_cap_16.ext - technology: sky130A
+
+.subckt adc_array_circuit SAMPLE_N SAMPLE COLON_N COL_N ROW_N VCOM CBOT VINT VINT2
++ VDRV VDD VSS
+X0 VINT2 COLON_N VDRV VSS sky130_fd_pr__nfet_01v8 ad=2.478e+11p pd=2.86e+06u as=2.52e+11p ps=2.88e+06u w=420000u l=180000u
+X1 VINT2 ROW_N VSS VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=1.26e+11p ps=1.44e+06u w=420000u l=180000u
+X2 VSS COL_N VINT2 VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=420000u l=180000u
+X3 CBOT SAMPLE_N VCOM VDD sky130_fd_pr__pfet_01v8 ad=4.5e+11p pd=2.8e+06u as=4.5e+11p ps=2.8e+06u w=900000u l=180000u
+X4 VDRV SAMPLE CBOT VDD sky130_fd_pr__pfet_01v8 ad=1.305e+12p pd=8.3e+06u as=0p ps=0u w=900000u l=180000u
+X5 VINT COL_N VDRV VDD sky130_fd_pr__pfet_01v8 ad=4.5e+11p pd=2.8e+06u as=0p ps=0u w=900000u l=180000u
+X6 CBOT SAMPLE_N VDRV VSS sky130_fd_pr__nfet_01v8 ad=1.26e+11p pd=1.44e+06u as=0p ps=0u w=420000u l=180000u
+X7 VCOM SAMPLE CBOT VSS sky130_fd_pr__nfet_01v8 ad=1.26e+11p pd=1.44e+06u as=0p ps=0u w=420000u l=180000u
+X8 VDD ROW_N VINT VDD sky130_fd_pr__pfet_01v8 ad=4.5e+11p pd=2.8e+06u as=0p ps=0u w=900000u l=180000u
+X9 VDRV COLON_N VDD VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=900000u l=180000u
+C0 COLON_N SAMPLE 0.69fF
+C1 VDD SAMPLE_N 1.16fF
+C2 COLON_N COL_N 1.23fF
+C3 VDRV COL_N 0.98fF
+C4 VCOM VSS 1.65fF
+C5 ROW_N VSS 1.02fF
+C6 VDD VSS 2.65fF
+.ends
+
+.subckt adc_array_cap_16 CTOP
+Xadc_array_circuit_0 adc_array_circuit_0/SAMPLE_N adc_array_circuit_0/SAMPLE adc_array_circuit_0/COLON_N
++ adc_array_circuit_0/COL_N adc_array_circuit_0/ROW_N adc_array_circuit_0/VCOM adc_array_circuit_0/CBOT
++ adc_array_circuit_0/VINT adc_array_circuit_0/VINT2 adc_array_circuit_0/VDRV adc_array_circuit_0/VDD
++ VSUBS adc_array_circuit
+C0 adc_array_circuit_0/CBOT adc_array_circuit_0/VDD 0.91fF
+C1 adc_array_circuit_0/CBOT CTOP 7.87fF
+C2 CTOP VSUBS 0.91fF
+C3 adc_array_circuit_0/CBOT VSUBS 2.82fF
+C4 adc_array_circuit_0/VCOM VSUBS 1.65fF
+C5 adc_array_circuit_0/ROW_N VSUBS 1.02fF
+C6 adc_array_circuit_0/VDD VSUBS 2.65fF
+.ends
+
