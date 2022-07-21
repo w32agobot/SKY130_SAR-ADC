@@ -1,0 +1,37 @@
+timestamp 1658401033
+version 8.3
+tech sky130A
+style ngspice()
+scale 1000 1 500000
+resistclasses 4400000 2200000 950000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12800 125 125 47 47 29 5
+use adc_array_circuit adc_array_circuit_0 1 0 2 0 1 0
+port "CTOP" 1 50 1152 50 1152 m4
+node "CTOP" 9 779.103 50 1152 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 160000 6400 614776 17348 0 0 0 0
+node "m2_14_12#" 6 3080.21 14 12 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1784896 5344 832320 20960 0 0 0 0 0 0
+substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+cap "CTOP" "m2_14_12#" 7844.66
+cap "adc_array_circuit_0/SAMPLE" "adc_array_circuit_0/CBOT" 364.972
+cap "CTOP" "adc_array_circuit_0/SAMPLE_N" 49.8064
+cap "CTOP" "adc_array_circuit_0/CBOT" 24.0441
+cap "adc_array_circuit_0/VINT2" "CTOP" 12.7682
+cap "CTOP" "adc_array_circuit_0/ROW_N" 78.5921
+cap "adc_array_circuit_0/VSS" "adc_array_circuit_0/CBOT" 756.698
+cap "CTOP" "adc_array_circuit_0/VCOM" 84.6378
+cap "adc_array_circuit_0/COL_N" "adc_array_circuit_0/CBOT" 337.253
+cap "CTOP" "adc_array_circuit_0/SAMPLE" 47.7452
+cap "adc_array_circuit_0/VDRV" "adc_array_circuit_0/CBOT" 423.536
+cap "adc_array_circuit_0/VDD" "adc_array_circuit_0/CBOT" 914.477
+cap "adc_array_circuit_0/COLON_N" "adc_array_circuit_0/CBOT" 350.027
+cap "adc_array_circuit_0/VSS" "CTOP" 135.677
+cap "CTOP" "adc_array_circuit_0/COL_N" 38.5538
+cap "adc_array_circuit_0/VINT" "adc_array_circuit_0/CBOT" 21.0268
+cap "CTOP" "adc_array_circuit_0/VDRV" 78.5188
+cap "adc_array_circuit_0/SAMPLE_N" "adc_array_circuit_0/CBOT" 391.54
+cap "adc_array_circuit_0/VDD" "CTOP" 277.324
+cap "CTOP" "adc_array_circuit_0/COLON_N" 46.254
+cap "adc_array_circuit_0/VINT2" "adc_array_circuit_0/CBOT" 45.3405
+cap "adc_array_circuit_0/ROW_N" "adc_array_circuit_0/CBOT" 265.63
+cap "CTOP" "adc_array_circuit_0/VINT" 9.03292
+cap "adc_array_circuit_0/VCOM" "adc_array_circuit_0/CBOT" 474.842
+merge "adc_array_circuit_0/VSS" "VSUBS" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "adc_array_circuit_0/CBOT" "m2_14_12#" -1091.39 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -12288 -512 0 0 0 0 0 0 0 0

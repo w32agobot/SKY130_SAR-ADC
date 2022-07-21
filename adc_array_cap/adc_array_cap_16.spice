@@ -1,0 +1,61 @@
+* SPICE3 file created from adc_array_cap_16.ext - technology: sky130A
+
+.subckt adc_array_circuit SAMPLE_N SAMPLE COLON_N COL_N ROW_N VCOM CBOT VINT VINT2
++ VDRV VDD VSS
+X0 VINT2 COLON_N VDRV VSS sky130_fd_pr__nfet_01v8 ad=2.478e+11p pd=2.86e+06u as=2.52e+11p ps=2.88e+06u w=420000u l=180000u
+X1 VINT2 ROW_N VSS VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=1.26e+11p ps=1.44e+06u w=420000u l=180000u
+X2 VSS COL_N VINT2 VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=420000u l=180000u
+X3 CBOT SAMPLE_N VCOM VDD sky130_fd_pr__pfet_01v8 ad=4.5e+11p pd=2.8e+06u as=4.5e+11p ps=2.8e+06u w=900000u l=180000u
+X4 VDRV SAMPLE CBOT VDD sky130_fd_pr__pfet_01v8 ad=1.305e+12p pd=8.3e+06u as=0p ps=0u w=900000u l=180000u
+X5 VINT COL_N VDRV VDD sky130_fd_pr__pfet_01v8 ad=4.5e+11p pd=2.8e+06u as=0p ps=0u w=900000u l=180000u
+X6 CBOT SAMPLE_N VDRV VSS sky130_fd_pr__nfet_01v8 ad=1.26e+11p pd=1.44e+06u as=0p ps=0u w=420000u l=180000u
+X7 VCOM SAMPLE CBOT VSS sky130_fd_pr__nfet_01v8 ad=1.26e+11p pd=1.44e+06u as=0p ps=0u w=420000u l=180000u
+X8 VDD ROW_N VINT VDD sky130_fd_pr__pfet_01v8 ad=4.5e+11p pd=2.8e+06u as=0p ps=0u w=900000u l=180000u
+X9 VDRV COLON_N VDD VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=900000u l=180000u
+C0 VDRV SAMPLE 0.24fF
+C1 COLON_N COL_N 1.23fF
+C2 ROW_N VDD 0.27fF
+C3 VDRV VCOM 0.26fF
+C4 VDRV CBOT 0.23fF
+C5 COLON_N SAMPLE 0.69fF
+C6 VDRV SAMPLE_N 0.25fF
+C7 VDRV COL_N 0.98fF
+C8 SAMPLE SAMPLE_N 0.21fF
+C9 SAMPLE_N VDD 1.16fF
+C10 VDRV VSS 0.23fF
+C11 VCOM VSS 1.65fF
+C12 COLON_N VSS 0.36fF
+C13 COL_N VSS 0.34fF
+C14 SAMPLE VSS 0.30fF
+C15 ROW_N VSS 1.02fF
+C16 SAMPLE_N VSS 0.36fF
+C17 VDD VSS 2.65fF
+.ends
+
+.subckt adc_array_cap_16 CTOP
+Xadc_array_circuit_0 adc_array_circuit_0/SAMPLE_N adc_array_circuit_0/SAMPLE adc_array_circuit_0/COLON_N
++ adc_array_circuit_0/COL_N adc_array_circuit_0/ROW_N adc_array_circuit_0/VCOM adc_array_circuit_0/CBOT
++ adc_array_circuit_0/VINT adc_array_circuit_0/VINT2 adc_array_circuit_0/VDRV adc_array_circuit_0/VDD
++ VSUBS adc_array_circuit
+C0 adc_array_circuit_0/SAMPLE adc_array_circuit_0/CBOT 0.36fF
+C1 adc_array_circuit_0/VDD CTOP 0.28fF
+C2 adc_array_circuit_0/CBOT adc_array_circuit_0/VDRV 0.42fF
+C3 adc_array_circuit_0/CBOT CTOP 7.87fF
+C4 adc_array_circuit_0/VDD adc_array_circuit_0/CBOT 0.91fF
+C5 adc_array_circuit_0/SAMPLE_N adc_array_circuit_0/CBOT 0.39fF
+C6 adc_array_circuit_0/CBOT adc_array_circuit_0/ROW_N 0.27fF
+C7 adc_array_circuit_0/VCOM adc_array_circuit_0/CBOT 0.47fF
+C8 adc_array_circuit_0/CBOT adc_array_circuit_0/COLON_N 0.35fF
+C9 adc_array_circuit_0/CBOT adc_array_circuit_0/COL_N 0.34fF
+C10 CTOP VSUBS 0.91fF
+C11 adc_array_circuit_0/VDRV VSUBS 0.23fF
+C12 adc_array_circuit_0/CBOT VSUBS 2.82fF
+C13 adc_array_circuit_0/VCOM VSUBS 1.65fF
+C14 adc_array_circuit_0/COLON_N VSUBS 0.36fF
+C15 adc_array_circuit_0/COL_N VSUBS 0.34fF
+C16 adc_array_circuit_0/SAMPLE VSUBS 0.30fF
+C17 adc_array_circuit_0/ROW_N VSUBS 1.02fF
+C18 adc_array_circuit_0/SAMPLE_N VSUBS 0.36fF
+C19 adc_array_circuit_0/VDD VSUBS 2.65fF
+.ends
+
