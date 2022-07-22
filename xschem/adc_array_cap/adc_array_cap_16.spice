@@ -1,0 +1,73 @@
+** sch_path: /foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap_16.sch
+**.subckt adc_array_cap_16 SAMPLE_N SAMPLE VCOM ROW_N COL_N COLON_N VDD CTOP VSS
+*.ipin SAMPLE_N
+*.ipin SAMPLE
+*.iopin VCOM
+*.ipin ROW_N
+*.ipin COL_N
+*.ipin COLON_N
+*.iopin VDD
+*.iopin CTOP
+*.iopin VSS
+C3 CTOP CBOT 7.87f m=1
+C1 VCOM CBOT 0.47f m=1
+C2 VDD CBOT 0.91f m=1
+C4 CTOP VSS 0.91f m=1
+C5 CBOT VSS 2.82f m=1
+x1 VDD ROW_N CBOT COL_N COLON_N SAMPLE_N VCOM SAMPLE VSS adc_array_circuit
+C0 CBOT adc_array_circuit_0/VDRV 0.42f m=1
+**.ends
+
+* expanding   symbol:  adc_array_circuit.sym # of pins=9
+** sym_path: /foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_circuit.sym
+** sch_path: /foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_circuit.sch
+.subckt adc_array_circuit  VDD ROW_N CBOT COL_N COLON_N SAMPLE_N VCOM SAMPLE VSS
+*.ipin SAMPLE_N
+*.ipin SAMPLE
+*.iopin VCOM
+*.ipin ROW_N
+*.ipin COL_N
+*.ipin COLON_N
+*.iopin VDD
+*.iopin VSS
+*.iopin CBOT
+XM1 VCOM SAMPLE CBOT VSS sky130_fd_pr__nfet_01v8 L=0.18 W=0.42 nf=1 ad='int((nf+1)/2) * W/nf * 0.29'
++ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM3 VCOM SAMPLE_N CBOT VDD sky130_fd_pr__pfet_01v8 L=0.18 W=0.9 nf=1 ad='int((nf+1)/2) * W/nf * 0.29'
++ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM2 VDRV SAMPLE_N CBOT VSS sky130_fd_pr__nfet_01v8 L=0.18 W=0.42 nf=1 ad='int((nf+1)/2) * W/nf * 0.29'
++ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM4 VDRV SAMPLE CBOT VDD sky130_fd_pr__pfet_01v8 L=0.18 W=0.9 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM5 VINT1 COL_N VDRV VDD sky130_fd_pr__pfet_01v8 L=0.18 W=0.9 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM6 VDD ROW_N VINT1 VDD sky130_fd_pr__pfet_01v8 L=0.18 W=0.9 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM7 VDD COLON_N VDRV VDD sky130_fd_pr__pfet_01v8 L=0.18 W=0.9 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM8 VINT2 COLON_N VDRV VSS sky130_fd_pr__nfet_01v8 L=0.18 W=0.42 nf=1 ad='int((nf+1)/2) * W/nf * 0.29'
++ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM9 VSS ROW_N VINT2 VSS sky130_fd_pr__nfet_01v8 L=0.18 W=0.42 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM10 VSS COL_N VINT2 VSS sky130_fd_pr__nfet_01v8 L=0.18 W=0.42 nf=1 ad='int((nf+1)/2) * W/nf * 0.29'
++ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+C0 COLON_N COL_N 1.23f m=1
+C1 VDRV COL_N 0.98f m=1
+C2 SAMPLE_N VDD 1.16f m=1
+C VCOM VSS 1.65f m=1
+C5 ROW_N VSS 1.02f m=1
+C6 VDD VSS 2.65f m=1
+C3 COLON_N SAMPLE 0.69f m=1
+.ends
+
+.end
