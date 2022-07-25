@@ -1,14 +1,14 @@
-** sch_path: /foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap_16.sch
-.subckt adc_array_cap_16 SAMPLE_N SAMPLE VCOM ROW_N COL_N COLON_N VDD CTOP VSS CBOT
-*.PININFO SAMPLE_N:I SAMPLE:I VCOM:B ROW_N:I COL_N:I COLON_N:I VDD:B CTOP:B VSS:B CBOT:B
-x1 VDD ROW_N CBOT COL_N COLON_N SAMPLE_N VCOM SAMPLE VSS adc_array_circuit
-.ends
-
-* expanding   symbol:  adc_array_circuit.sym # of pins=9
-** sym_path: /foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_circuit.sym
 ** sch_path: /foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_circuit.sch
-.subckt adc_array_circuit  VDD ROW_N CBOT COL_N COLON_N SAMPLE_N VCOM SAMPLE VSS
-*.PININFO SAMPLE_N:I SAMPLE:I VCOM:B ROW_N:I COL_N:I COLON_N:I VDD:B VSS:B CBOT:B
+**.subckt adc_array_circuit SAMPLE_N SAMPLE VCOM ROW_N COL_N COLON_N VDD VSS CBOT
+*.ipin SAMPLE_N
+*.ipin SAMPLE
+*.iopin VCOM
+*.ipin ROW_N
+*.ipin COL_N
+*.ipin COLON_N
+*.iopin VDD
+*.iopin VSS
+*.iopin CBOT
 XM1 VCOM SAMPLE CBOT VSS sky130_fd_pr__nfet_01v8 L=0.18 W=0.42 nf=1 ad='int((nf+1)/2) * W/nf * 0.29'
 + as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
 + nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
@@ -39,6 +39,5 @@ XM9 VSS ROW_N VINT2 VSS sky130_fd_pr__nfet_01v8 L=0.18 W=0.42 nf=1 ad='int((nf+1
 XM10 VSS COL_N VINT2 VSS sky130_fd_pr__nfet_01v8 L=0.18 W=0.42 nf=1 ad='int((nf+1)/2) * W/nf * 0.29'
 + as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
 + nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
-.ends
-
+**.ends
 .end

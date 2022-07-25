@@ -438,32 +438,38 @@ C {devices/capa.sym} 40 470 0 0 {name=C0
 m=1
 value=1.23f
 footprint=1206
-device="ceramic capacitor"}
+device="ceramic capacitor"
+spice_ignore=true }
 C {devices/capa.sym} 130 470 0 0 {name=C1
 m=1
 value=0.98f
 footprint=1206
-device="ceramic capacitor"}
+device="ceramic capacitor"
+spice_ignore=true }
 C {devices/capa.sym} 200 470 0 0 {name=C2
 m=1
 value=1.16f
 footprint=1206
-device="ceramic capacitor"}
-C {devices/capa.sym} 380 470 0 0 {name=C
+device="ceramic capacitor"
+spice_ignore=true }
+C {devices/capa.sym} 380 470 0 0 {name=C4
 m=1
 value=1.65f
 footprint=1206
-device="ceramic capacitor"}
+device="ceramic capacitor"
+spice_ignore=true}
 C {devices/capa.sym} 450 470 0 0 {name=C5
 m=1
 value=1.02f
 footprint=1206
-device="ceramic capacitor"}
+device="ceramic capacitor"
+spice_ignore=true}
 C {devices/capa.sym} 520 470 0 0 {name=C6
 m=1
 value=2.65f
 footprint=1206
-device="ceramic capacitor"}
+device="ceramic capacitor"
+spice_ignore=true}
 C {devices/lab_wire.sym} 20 420 0 1 {name=l5 sig_type=std_logic lab=COLON_N}
 C {devices/lab_wire.sym} 110 420 0 1 {name=l6 sig_type=std_logic lab=VDRV}
 C {devices/lab_wire.sym} 180 420 0 1 {name=l7 sig_type=std_logic lab=SAMPLE_N}
@@ -483,6 +489,7 @@ C {devices/capa.sym} 300 470 0 0 {name=C3
 m=1
 value=0.69f
 footprint=1206
-device="ceramic capacitor"}
+device="ceramic capacitor"
+spice_ignore=true}
 C {devices/lab_wire.sym} 280 420 0 1 {name=l8 sig_type=std_logic lab=COLON_N}
 C {devices/lab_wire.sym} 320 520 2 1 {name=l12 sig_type=std_logic lab=SAMPLE}
