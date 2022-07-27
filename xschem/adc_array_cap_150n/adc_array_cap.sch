@@ -33,9 +33,9 @@ lab=sample}
 N 500 -320 500 -270 {
 lab=cbot}
 N 500 -430 500 -380 {
-lab=#net1}
+lab=ctop}
 N 500 -430 550 -430 {
-lab=#net1}
+lab=ctop}
 N 500 -270 550 -270 {
 lab=cbot}
 C {devices/ipin.sym} 150 -250 0 0 {name=p1 lab=sample_n}
@@ -53,6 +53,6 @@ device="ceramic capacitor"
 spice_ignore=true}
 C {devices/iopin.sym} 550 -430 2 1 {name=p9 lab=ctop}
 C {devices/iopin.sym} 150 -150 0 1 {name=p10 lab=VSS}
-C {adc_array_circuit.sym} 320 -270 0 0 {name=x1}
 C {devices/iopin.sym} 550 -270 2 1 {name=p8 lab=cbot}
 C {devices/title.sym} 170 -40 0 0 {name=l1 author="Manuel Moser"}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_circuit_150n/adc_array_circuit_150n.sym} 320 -270 0 0 {name=x1}

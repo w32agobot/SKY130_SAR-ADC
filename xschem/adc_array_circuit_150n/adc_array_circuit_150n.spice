@@ -1,43 +1,35 @@
-** sch_path: /foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_circuit.sch
-**.subckt adc_array_circuit SAMPLE_N SAMPLE VCOM ROW_N COL_N COLON_N VDD VSS CBOT
-*.ipin SAMPLE_N
-*.ipin SAMPLE
-*.iopin VCOM
-*.ipin ROW_N
-*.ipin COL_N
-*.ipin COLON_N
-*.iopin VDD
-*.iopin VSS
-*.iopin CBOT
-XM1 VCOM SAMPLE CBOT VSS sky130_fd_pr__nfet_01v8 L=0.18 W=0.42 nf=1 ad='int((nf+1)/2) * W/nf * 0.29'
+** sch_path: /foss/designs/SKY130_SAR-ADC/xschem/adc_array_circuit_150n/adc_array_circuit_150n.sch
+.subckt adc_array_circuit_150n sample_n sample vcom row_n col_n colon_n VDD VSS Cbot
+*.PININFO sample_n:I sample:I vcom:B row_n:I col_n:I colon_n:I VDD:B VSS:B Cbot:B
+XM1 vcom sample Cbot VSS sky130_fd_pr__nfet_01v8 L=0.15 W=0.42 nf=1 ad='int((nf+1)/2) * W/nf * 0.29'
 + as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
 + nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
-XM3 VCOM SAMPLE_N CBOT VDD sky130_fd_pr__pfet_01v8 L=0.18 W=0.9 nf=1 ad='int((nf+1)/2) * W/nf * 0.29'
+XM3 vcom sample_n Cbot VDD sky130_fd_pr__pfet_01v8 L=0.15 W=0.8 nf=1 ad='int((nf+1)/2) * W/nf * 0.29'
 + as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
 + nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
-XM2 VDRV SAMPLE_N CBOT VSS sky130_fd_pr__nfet_01v8 L=0.18 W=0.42 nf=1 ad='int((nf+1)/2) * W/nf * 0.29'
+XM2 vdrv sample_n Cbot VSS sky130_fd_pr__nfet_01v8 L=0.15 W=0.42 nf=1 ad='int((nf+1)/2) * W/nf * 0.29'
 + as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
 + nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
-XM4 VDRV SAMPLE CBOT VDD sky130_fd_pr__pfet_01v8 L=0.18 W=0.9 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
+XM4 vdrv sample Cbot VDD sky130_fd_pr__pfet_01v8 L=0.15 W=0.8 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
 + pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
 + sa=0 sb=0 sd=0 mult=1 m=1
-XM5 VINT1 COL_N VDRV VDD sky130_fd_pr__pfet_01v8 L=0.18 W=0.9 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
+XM5 vint1 col_n vdrv VDD sky130_fd_pr__pfet_01v8 L=0.15 W=0.8 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
 + pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
 + sa=0 sb=0 sd=0 mult=1 m=1
-XM6 VDD ROW_N VINT1 VDD sky130_fd_pr__pfet_01v8 L=0.18 W=0.9 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
+XM6 VDD row_n vint1 VDD sky130_fd_pr__pfet_01v8 L=0.15 W=0.8 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
 + pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
 + sa=0 sb=0 sd=0 mult=1 m=1
-XM7 VDD COLON_N VDRV VDD sky130_fd_pr__pfet_01v8 L=0.18 W=0.9 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
+XM7 VDD colon_n vdrv VDD sky130_fd_pr__pfet_01v8 L=0.15 W=0.8 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
 + pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
 + sa=0 sb=0 sd=0 mult=1 m=1
-XM8 VINT2 COLON_N VDRV VSS sky130_fd_pr__nfet_01v8 L=0.18 W=0.42 nf=1 ad='int((nf+1)/2) * W/nf * 0.29'
+XM8 vint2 colon_n vdrv VSS sky130_fd_pr__nfet_01v8 L=0.15 W=0.42 nf=1 ad='int((nf+1)/2) * W/nf * 0.29'
 + as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
 + nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
-XM9 VSS ROW_N VINT2 VSS sky130_fd_pr__nfet_01v8 L=0.18 W=0.42 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
+XM9 VSS row_n vint2 VSS sky130_fd_pr__nfet_01v8 L=0.15 W=0.42 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
 + pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
 + sa=0 sb=0 sd=0 mult=1 m=1
-XM10 VSS COL_N VINT2 VSS sky130_fd_pr__nfet_01v8 L=0.18 W=0.42 nf=1 ad='int((nf+1)/2) * W/nf * 0.29'
+XM10 VSS col_n vint2 VSS sky130_fd_pr__nfet_01v8 L=0.15 W=0.42 nf=1 ad='int((nf+1)/2) * W/nf * 0.29'
 + as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
 + nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
-**.ends
+.ends
 .end
