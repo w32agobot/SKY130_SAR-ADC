@@ -1,2 +1,2 @@
-# SKY130_SAR-ADC
-14-Bit SAR-ADC in SKY130-PDK
+# Design of a Non-Binary Charge-Redistribution SAR-ADC utilizing the SKY130 Open-Source Technology
+Working Title
