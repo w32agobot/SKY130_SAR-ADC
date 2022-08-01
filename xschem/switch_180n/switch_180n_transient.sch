@@ -4,63 +4,90 @@ K {}
 V {}
 S {}
 E {}
-N -300 -80 -300 -30 {
+T {Switch NMOS} 600 -740 0 0 0.4 0.4 {}
+T {Switch PMOS} 820 -740 0 0 0.4 0.4 {}
+N 200 -320 200 -270 {
 lab=VDD}
-N -300 30 -300 70 {
+N 200 -210 200 -170 {
 lab=GND}
-N 200 -80 200 -50 {
+N 700 -320 700 -290 {
 lab=VDD}
-N 180 -50 200 -50 {
+N 680 -290 700 -290 {
 lab=VDD}
-N 200 50 200 70 {
+N 700 -190 700 -170 {
 lab=GND}
-N 180 50 200 50 {
+N 680 -190 700 -190 {
 lab=GND}
-N -400 30 -400 70 {
+N 100 -210 100 -170 {
 lab=GND}
-N -400 -80 -400 -30 {
+N 100 -320 100 -270 {
 lab=sig_in}
-N 130 -100 130 -70 {
+N 630 -340 630 -310 {
 lab=sig_in}
-N 90 -100 130 -100 {
+N 590 -340 630 -340 {
 lab=sig_in}
-N 130 70 130 110 {
+N 630 -170 630 -130 {
 lab=sig_out}
-N 130 110 160 110 {
+N 630 -130 660 -130 {
 lab=sig_out}
-N 160 110 190 110 {
+N 660 -130 690 -130 {
 lab=sig_out}
-N -170 0 -170 10 {
+N 330 -240 330 -230 {
 lab=SW}
-N -170 0 80 0 {
+N 330 -240 580 -240 {
 lab=SW}
-N 280 0 280 10 {
+N 780 -240 780 -230 {
 lab=SW_N}
-N 180 0 280 0 {
+N 680 -240 780 -240 {
 lab=SW_N}
-N -170 70 -170 90 {
+N 330 -170 330 -150 {
 lab=GND}
-N 280 70 280 100 {
+N 780 -170 780 -140 {
 lab=GND}
-N 200 50 200 70 {
+N 700 -190 700 -170 {
 lab=GND}
-C {devices/gnd.sym} -300 70 0 0 {name=l1 lab=GND}
-C {devices/gnd.sym} 200 70 0 0 {name=l2 lab=GND}
-C {devices/vdd.sym} 200 -80 0 0 {name=l3 lab=VDD}
-C {devices/vdd.sym} -300 -80 0 0 {name=l4 lab=VDD}
-C {devices/vsource.sym} -300 0 0 0 {name=V1 value=1}
-C {devices/vsource.sym} -400 0 0 0 {name=V2 value="0 SINE(0.5 0.5 2000)"}
-C {devices/gnd.sym} -400 70 0 0 {name=l5 lab=GND}
-C {devices/lab_wire.sym} -400 -80 0 0 {name=l6 sig_type=std_logic lab=sig_in}
-C {devices/lab_wire.sym} 90 -100 0 0 {name=l7 sig_type=std_logic lab=sig_in}
-C {devices/lab_wire.sym} 190 110 0 0 {name=l8 sig_type=std_logic lab=sig_out}
-C {devices/vsource.sym} -170 40 0 0 {name=V3 value="0 pulse(0 1 1u 1u 1u 1m 2m)"}
-C {devices/vsource.sym} 280 40 0 0 {name=V4 value="0 pulse(1 0 1u 1u 1u 1m 2m)"}
-C {devices/gnd.sym} 280 100 0 0 {name=l9 lab=GND}
-C {devices/gnd.sym} -170 90 0 0 {name=l10 lab=GND}
-C {devices/code_shown.sym} 270 -50 0 0 {name=SPICE only_toplevel=false value=".tran 10u 10m
-.save all"}
-C {devices/lab_wire.sym} 0 0 0 0 {name=l11 sig_type=std_logic lab=SW}
-C {devices/lab_wire.sym} 230 0 0 0 {name=l12 sig_type=std_logic lab=SW_N}
-C {sky130_fd_pr/corner.sym} 270 -230 0 0 {name=CORNER only_toplevel=false corner=tt}
-C {switch_180n.sym} 130 0 0 0 {name=X1}
+C {devices/gnd.sym} 200 -170 0 0 {name=l1 lab=GND}
+C {devices/gnd.sym} 700 -170 0 0 {name=l2 lab=GND}
+C {devices/vdd.sym} 700 -320 0 0 {name=l3 lab=VDD}
+C {devices/vdd.sym} 200 -320 0 0 {name=l4 lab=VDD}
+C {devices/vsource.sym} 200 -240 0 0 {name=V1 value=1}
+C {devices/vsource.sym} 100 -240 0 0 {name=V2 value="0 SINE(0.5 0.5 2000)"}
+C {devices/gnd.sym} 100 -170 0 0 {name=l5 lab=GND}
+C {devices/lab_wire.sym} 100 -320 0 0 {name=l6 sig_type=std_logic lab=sig_in}
+C {devices/lab_wire.sym} 590 -340 0 0 {name=l7 sig_type=std_logic lab=sig_in}
+C {devices/lab_wire.sym} 690 -130 0 0 {name=l8 sig_type=std_logic lab=sig_out}
+C {devices/vsource.sym} 330 -200 0 0 {name=V3 value="0 pulse(0 1 1u 1u 1u 1m 2m)"}
+C {devices/vsource.sym} 780 -200 0 0 {name=V4 value="0 pulse(1 0 1u 1u 1u 1m 2m)"}
+C {devices/gnd.sym} 780 -140 0 0 {name=l9 lab=GND}
+C {devices/gnd.sym} 330 -150 0 0 {name=l10 lab=GND}
+C {devices/lab_wire.sym} 500 -240 0 0 {name=l11 sig_type=std_logic lab=SW}
+C {devices/lab_wire.sym} 730 -240 0 0 {name=l12 sig_type=std_logic lab=SW_N}
+C {switch_180n.sym} 630 -240 0 0 {name=X1}
+C {devices/code_shown.sym} 60 -740 0 0 {name=SPICE1 only_toplevel=false value="*.op
+*.tran 10u 10m
+.op
+.save all 
+.save @m.x1.xm1.msky130_fd_pr__pfet_01v8[gm] 
+.save @m.x1.xm1.msky130_fd_pr__pfet_01v8[CGS] 
+.save @m.x1.xm1.msky130_fd_pr__pfet_01v8[Vth] 
+.save @m.x1.xm2.msky130_fd_pr__nfet_01v8[gm]
+.save @m.x1.xm2.msky130_fd_pr__nfet_01v8[CGS]
+.save @m.x1.xm2.msky130_fd_pr__nfet_01v8[Vth]
+"}
+C {sky130_fd_pr/corner.sym} 940 -660 0 0 {name=CORNER1 only_toplevel=false corner=tt}
+C {devices/launcher.sym} 650 -570 0 0 {name=h1
+descr=Backannotate
+tclcommand="ngspice::annotate"}
+C {devices/ngspice_get_value.sym} 600 -690 0 0 {name=r3 node=@m.x1.xm2.msky130_fd_pr__nfet_01v8[gm]
+descr="nmos_gm="}
+C {devices/ngspice_get_value.sym} 600 -660 0 0 {name=r4 node=@m.x1.xm2.msky130_fd_pr__nfet_01v8[CGS]
+descr="nmos_cgs="}
+C {devices/ngspice_get_value.sym} 600 -620 0 0 {name=r5 node=v(@m.x1.xm2.msky130_fd_pr__nfet_01v8[Vth])
+descr="nmos_vth="}
+C {devices/ngspice_get_value.sym} 820 -690 0 0 {name=r6 node=@m.x1.xm1.msky130_fd_pr__pfet_01v8[gm]
+descr="pmos_gm="}
+C {devices/ngspice_get_value.sym} 820 -660 0 0 {name=r7 node=@m.x1.xm1.msky130_fd_pr__pfet_01v8[CGS]
+descr="pmos_cgs="}
+C {devices/ngspice_get_value.sym} 820 -620 0 0 {name=r8 node=v(@m.x1.xm1.msky130_fd_pr__pfet_01v8[Vth])
+descr="pmos_vth="}
+C {devices/title.sym} 180 -50 0 0 {name=l13 author="Manuel Moser"}
