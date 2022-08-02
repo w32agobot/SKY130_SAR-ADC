@@ -4,6 +4,12 @@ K {}
 V {}
 S {}
 E {}
+T {Inverter designed for minimum current at Vdd = 1V (tt 27°C).
+V_in = V_out at 0.53V.
+Current peak is I_VDD = 14.5 nA at 0.53V
+
+Rise time is slower than fall time. 
+For better matching of rise/fall-time, change p_width to 0.8 } 490 -470 0 0 0.4 0.4 {}
 N 290 -360 290 -320 {
 lab=out}
 N 290 -390 300 -390 {
@@ -59,7 +65,7 @@ spiceprefix=X
 }
 C {sky130_fd_pr/pfet_01v8.sym} 270 -390 0 0 {name=M2
 L=0.15
-W=0.8
+W=0.42
 nf=1
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
