@@ -4,8 +4,21 @@ K {}
 V {}
 S {}
 E {}
-T {Switch NMOS} 600 -740 0 0 0.4 0.4 {}
-T {Switch PMOS} 820 -740 0 0 0.4 0.4 {}
+T {Switch NMOS} 60 -580 0 0 0.4 0.4 {}
+T {Switch PMOS} 280 -580 0 0 0.4 0.4 {}
+T {   Copyright 2022 Manuel Moser
+
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.} 50 -790 0 0 0.2 0.2 {}
 N 200 -320 200 -270 {
 lab=VDD}
 N 200 -210 200 -170 {
@@ -63,7 +76,7 @@ C {devices/gnd.sym} 330 -150 0 0 {name=l10 lab=GND}
 C {devices/lab_wire.sym} 500 -240 0 0 {name=l11 sig_type=std_logic lab=SW}
 C {devices/lab_wire.sym} 730 -240 0 0 {name=l12 sig_type=std_logic lab=SW_N}
 C {switch_180n.sym} 630 -240 0 0 {name=X1}
-C {devices/code_shown.sym} 60 -740 0 0 {name=SPICE1 only_toplevel=false value="*.op
+C {devices/code_shown.sym} 670 -780 0 0 {name=SPICE1 only_toplevel=false value="*.op
 *.tran 10u 10m
 .op
 .save all 
@@ -74,20 +87,20 @@ C {devices/code_shown.sym} 60 -740 0 0 {name=SPICE1 only_toplevel=false value="*
 .save @m.x1.xm2.msky130_fd_pr__nfet_01v8[CGS]
 .save @m.x1.xm2.msky130_fd_pr__nfet_01v8[Vth]
 "}
-C {sky130_fd_pr/corner.sym} 940 -660 0 0 {name=CORNER1 only_toplevel=false corner=tt}
-C {devices/launcher.sym} 650 -570 0 0 {name=h1
+C {sky130_fd_pr/corner.sym} 520 -770 0 0 {name=CORNER1 only_toplevel=false corner=tt}
+C {devices/launcher.sym} 750 -570 0 0 {name=h1
 descr=Backannotate
 tclcommand="ngspice::annotate"}
-C {devices/ngspice_get_value.sym} 600 -690 0 0 {name=r3 node=@m.x1.xm2.msky130_fd_pr__nfet_01v8[gm]
+C {devices/ngspice_get_value.sym} 60 -530 0 0 {name=r3 node=@m.x1.xm2.msky130_fd_pr__nfet_01v8[gm]
 descr="nmos_gm="}
-C {devices/ngspice_get_value.sym} 600 -660 0 0 {name=r4 node=@m.x1.xm2.msky130_fd_pr__nfet_01v8[CGS]
+C {devices/ngspice_get_value.sym} 60 -500 0 0 {name=r4 node=@m.x1.xm2.msky130_fd_pr__nfet_01v8[CGS]
 descr="nmos_cgs="}
-C {devices/ngspice_get_value.sym} 600 -620 0 0 {name=r5 node=v(@m.x1.xm2.msky130_fd_pr__nfet_01v8[Vth])
+C {devices/ngspice_get_value.sym} 60 -460 0 0 {name=r5 node=v(@m.x1.xm2.msky130_fd_pr__nfet_01v8[Vth])
 descr="nmos_vth="}
-C {devices/ngspice_get_value.sym} 820 -690 0 0 {name=r6 node=@m.x1.xm1.msky130_fd_pr__pfet_01v8[gm]
+C {devices/ngspice_get_value.sym} 280 -530 0 0 {name=r6 node=@m.x1.xm1.msky130_fd_pr__pfet_01v8[gm]
 descr="pmos_gm="}
-C {devices/ngspice_get_value.sym} 820 -660 0 0 {name=r7 node=@m.x1.xm1.msky130_fd_pr__pfet_01v8[CGS]
+C {devices/ngspice_get_value.sym} 280 -500 0 0 {name=r7 node=@m.x1.xm1.msky130_fd_pr__pfet_01v8[CGS]
 descr="pmos_cgs="}
-C {devices/ngspice_get_value.sym} 820 -620 0 0 {name=r8 node=v(@m.x1.xm1.msky130_fd_pr__pfet_01v8[Vth])
+C {devices/ngspice_get_value.sym} 280 -460 0 0 {name=r8 node=v(@m.x1.xm1.msky130_fd_pr__pfet_01v8[Vth])
 descr="pmos_vth="}
 C {devices/title.sym} 180 -50 0 0 {name=l13 author="Manuel Moser"}

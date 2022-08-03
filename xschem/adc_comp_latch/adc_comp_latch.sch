@@ -8,6 +8,19 @@ T {Decoupling Cap
 sky130_fd_pr__cap_vpp_11p5x11p7_l1m1m2m3m4_shieldm5
 137.45fF per cell
 15x137.45=2.06pF} 260 -650 0 0 0.2 0.2 {}
+T {   Copyright 2022 Manuel Moser
+
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.} 740 -220 0 0 0.2 0.2 {}
 N 340 -500 390 -500 {
 lab=#net1}
 N 370 -450 500 -450 {

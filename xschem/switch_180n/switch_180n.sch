@@ -4,65 +4,78 @@ K {}
 V {}
 S {}
 E {}
-N 1570 -1130 1570 -1100 {
+T {   Copyright 2022 Manuel Moser
+
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.} 780 -250 0 0 0.2 0.2 {}
+N 410 -410 410 -380 {
 lab=VP}
-N 1570 -1100 1640 -1100 {
+N 410 -380 480 -380 {
 lab=VP}
-N 1570 -1020 1570 -980 {
+N 410 -300 410 -260 {
 lab=VN}
-N 1570 -1020 1640 -1020 {
+N 410 -300 480 -300 {
 lab=VN}
-N 1330 -1220 1420 -1220 {
+N 170 -500 260 -500 {
 lab=SW_N}
-N 1570 -1200 1570 -1170 {
+N 410 -480 410 -450 {
 lab=SW_N}
-N 1570 -940 1570 -905 {
+N 410 -220 410 -185 {
 lab=SW}
-N 1485 -980 1540 -980 {
+N 325 -260 380 -260 {
 lab=IN}
-N 1485 -1130 1485 -980 {
+N 325 -410 325 -260 {
 lab=IN}
-N 1485 -1130 1540 -1130 {
+N 325 -410 380 -410 {
 lab=IN}
-N 1600 -1130 1660 -1130 {
+N 440 -410 500 -410 {
 lab=OUT}
-N 1660 -1130 1660 -980 {
+N 500 -410 500 -260 {
 lab=OUT}
-N 1600 -980 1660 -980 {
+N 440 -260 500 -260 {
 lab=OUT}
-N 1660 -1060 1705 -1060 {
+N 500 -340 545 -340 {
 lab=OUT}
-N 1570 -905 1570 -890 {
+N 410 -185 410 -170 {
 lab=SW}
-N 1430 -1060 1485 -1060 {
+N 270 -340 325 -340 {
 lab=IN}
-N 1320 -1060 1430 -1060 {
+N 160 -340 270 -340 {
 lab=IN}
-N 1420 -1220 1570 -1220 {
+N 260 -500 410 -500 {
 lab=SW_N}
-N 1570 -1220 1570 -1200 {
+N 410 -500 410 -480 {
 lab=SW_N}
-N 1330 -890 1340 -890 {
+N 170 -170 180 -170 {
 lab=SW}
-N 1490 -890 1570 -890 {
+N 330 -170 410 -170 {
 lab=SW}
-N 1340 -890 1490 -890 {
+N 180 -170 330 -170 {
 lab=SW}
-N 1320 -890 1330 -890 {
+N 160 -170 170 -170 {
 lab=SW}
-N 1320 -1220 1330 -1220 {
+N 160 -500 170 -500 {
 lab=SW_N}
-C {devices/iopin.sym} 1310 -1170 0 0 {name=p1 lab=VN}
-C {devices/iopin.sym} 1310 -1190 0 0 {name=p2 lab=VP}
-C {devices/ipin.sym} 1320 -1060 0 0 {name=p3 lab=IN
+C {devices/iopin.sym} 150 -450 0 0 {name=p1 lab=VN}
+C {devices/iopin.sym} 150 -470 0 0 {name=p2 lab=VP}
+C {devices/ipin.sym} 160 -340 0 0 {name=p3 lab=IN
 }
-C {devices/opin.sym} 1705 -1060 0 0 {name=p4 lab=OUT}
-C {devices/lab_wire.sym} 1640 -1100 0 0 {name=l1 sig_type=std_logic lab=VP}
-C {devices/lab_wire.sym} 1640 -1020 0 0 {name=l2 sig_type=std_logic lab=VN}
-C {devices/ipin.sym} 1320 -1220 0 0 {name=p5 lab=SW_N
+C {devices/opin.sym} 545 -340 0 0 {name=p4 lab=OUT}
+C {devices/lab_wire.sym} 480 -380 0 0 {name=l1 sig_type=std_logic lab=VP}
+C {devices/lab_wire.sym} 480 -300 0 0 {name=l2 sig_type=std_logic lab=VN}
+C {devices/ipin.sym} 160 -500 0 0 {name=p5 lab=SW_N
 }
-C {devices/ipin.sym} 1320 -890 0 0 {name=p6 lab=SW}
-C {sky130_fd_pr/pfet_01v8.sym} 1570 -1150 1 0 {name=M1
+C {devices/ipin.sym} 160 -170 0 0 {name=p6 lab=SW}
+C {sky130_fd_pr/pfet_01v8.sym} 410 -430 1 0 {name=M1
 L=0.18
 W=4
 nf=1
@@ -76,7 +89,7 @@ sa=0 sb=0 sd=0
 model=pfet_01v8
 spiceprefix=X
 }
-C {sky130_fd_pr/nfet_01v8.sym} 1570 -960 3 0 {name=M2
+C {sky130_fd_pr/nfet_01v8.sym} 410 -240 3 0 {name=M2
 L=0.18
 W=2
 nf=1 
@@ -90,3 +103,4 @@ sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
 }
+C {devices/title.sym} 180 -50 0 0 {name=l3 author="Manuel Moser"}

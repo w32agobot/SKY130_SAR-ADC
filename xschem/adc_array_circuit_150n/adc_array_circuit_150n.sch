@@ -25,6 +25,19 @@ else vdrv = VSS} 485 -565 0 0 0.2 0.2 {}
 T {top} 270 -865 0 0 0.2 0.2 {}
 T {bot} 270 -815 0 0 0.2 0.2 {}
 T {ctop} 70 -910 0 0 0.4 0.4 {}
+T {   Copyright 2022 Manuel Moser
+
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.} 60 -360 0 0 0.2 0.2 {}
 N 440 -470 470 -470 {
 lab=vdrv}
 N 440 -680 470 -680 {

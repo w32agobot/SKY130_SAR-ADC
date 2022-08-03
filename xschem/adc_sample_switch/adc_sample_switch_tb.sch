@@ -4,6 +4,19 @@ K {}
 V {}
 S {}
 E {}
+T {   Copyright 2022 Manuel Moser
+
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.} 530 -690 0 0 0.2 0.2 {}
 N 240 -310 240 -260 {
 lab=VDD}
 N 240 -200 240 -160 {
@@ -80,7 +93,7 @@ C {devices/code_shown.sym} 10 -730 0 0 {name=SPICE only_toplevel=false value="
 "}
 C {devices/lab_wire.sym} 570 -360 0 0 {name=l11 sig_type=std_logic lab=SW}
 C {devices/lab_wire.sym} 570 -340 0 0 {name=l12 sig_type=std_logic lab=SW_N}
-C {sky130_fd_pr/corner.sym} 510 -680 0 0 {name=CORNER only_toplevel=false corner=tt}
+C {sky130_fd_pr/corner.sym} 350 -660 0 0 {name=CORNER only_toplevel=false corner=tt}
 C {devices/title.sym} 160 -40 0 0 {name=l13 author="Manuel Moser"}
 C {devices/ngspice_probe.sym} 640 -470 0 0 {name=r2}
 C {devices/gnd.sym} 860 -160 0 0 {name=l5 lab=GND}
