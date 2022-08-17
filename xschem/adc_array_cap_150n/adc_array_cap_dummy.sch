@@ -18,7 +18,7 @@ T {   Copyright 2022 Manuel Moser
    See the License for the specific language governing permissions and
    limitations under the License.} 760 -230 0 0 0.2 0.2 {}
 N 490 -270 540 -270 {
-lab=#net1}
+lab=cbot}
 N 360 -200 360 -150 {
 lab=VSS}
 N 380 -390 380 -340 {
@@ -44,13 +44,11 @@ lab=sample_n}
 N 190 -230 250 -230 {
 lab=sample}
 N 540 -320 540 -270 {
-lab=#net1}
+lab=cbot}
 N 540 -430 540 -380 {
-lab=ctop}
-N 540 -430 590 -430 {
-lab=ctop}
+lab=cbot}
 N 540 -270 590 -270 {
-lab=#net1}
+lab=cbot}
 C {devices/ipin.sym} 190 -250 0 0 {name=p1 lab=sample_n}
 C {devices/ipin.sym} 190 -230 0 0 {name=p2 lab=sample}
 C {devices/iopin.sym} 190 -390 0 1 {name=p3 lab=vcom}
@@ -69,3 +67,4 @@ C {devices/iopin.sym} 190 -150 0 1 {name=p10 lab=VSS}
 C {devices/title.sym} 170 -40 0 0 {name=l1 author="Manuel Moser"}
 C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_circuit_150n/adc_array_circuit_150n.sym} 360 -270 0 0 {name=x1}
 C {devices/lab_wire.sym} 590 -270 0 0 {name=l2 sig_type=std_logic lab=cbot}
+C {devices/lab_wire.sym} 540 -430 0 0 {name=l3 sig_type=std_logic lab=ctop_nc}
