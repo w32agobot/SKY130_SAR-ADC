@@ -1,1 +1,1 @@
-netgen -batch lvs "../mag/adc_array_circuit_150n/adc_array_circuit_150n.spice adc_array_circuit_150n" "../xschem/adc_array_circuit_150n/adc_array_circuit_150n.spice adc_array_circuit_150n" /foss/pdk/sky130A/libs.tech/netgen/sky130A_setup.tcl adc_array_circuit_150n_lvs.out
+netgen -batch lvs "../mag/adc_array_circuit/adc_array_circuit_150n.spice adc_array_circuit_150n" "../xschem/adc_array_circuit/adc_array_circuit_150n.spice adc_array_circuit_150n" /foss/pdk/sky130A/libs.tech/netgen/sky130A_setup.tcl adc_array_circuit_150n_lvs.out

@@ -74,7 +74,7 @@ spice_ignore=true}
 C {devices/iopin.sym} 590 -540 2 1 {name=p9 lab=ctop}
 C {devices/iopin.sym} 190 -150 0 1 {name=p10 lab=VSS}
 C {devices/title.sym} 170 -40 0 0 {name=l1 author="Manuel Moser"}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_circuit_150n/adc_array_circuit_150n.sym} 360 -380 0 0 {name=x1}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_circuit/adc_array_circuit_150n.sym} 360 -380 0 0 {name=x1}
 C {devices/lab_wire.sym} 590 -380 0 0 {name=l2 sig_type=std_logic lab=cbot}
 C {devices/ipin.sym} 180 -420 0 0 {name=p1 lab=row_n_i}
 C {devices/ipin.sym} 180 -400 0 0 {name=p2 lab=col_n_i}

@@ -17,9 +17,16 @@ T {   Copyright 2022 Manuel Moser
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.} 760 -230 0 0 0.2 0.2 {}
-T {CBOT} 550 -310 0 0 0.4 0.4 {}
+N 490 -270 540 -270 {
+lab=cbot}
 N 360 -200 360 -150 {
 lab=VSS}
+N 380 -390 380 -340 {
+lab=VDD}
+N 340 -390 340 -340 {
+lab=vcom}
+N 380 -440 380 -390 {
+lab=VDD}
 N 190 -150 360 -150 {
 lab=VSS}
 N 190 -440 380 -440 {
@@ -36,28 +43,16 @@ N 190 -250 250 -250 {
 lab=sample_n_i}
 N 190 -230 250 -230 {
 lab=sample_i}
+N 540 -320 540 -270 {
+lab=cbot}
 N 540 -430 540 -380 {
 lab=ctop}
 N 540 -430 590 -430 {
 lab=ctop}
-N 490 -250 590 -250 {
-lab=sample_n_o}
-N 490 -230 590 -230 {
-lab=sample_o}
-N 340 -360 350 -360 {
-lab=#net2}
-N 340 -390 500 -390 {
-lab=vcom}
-N 500 -390 500 -300 {
-lab=vcom}
-N 500 -300 540 -300 {
-lab=vcom}
-N 380 -440 380 -360 {
-lab=VDD}
-N 540 -320 540 -300 {
-lab=vcom}
-C {devices/ipin.sym} 190 -250 0 0 {name=p1 lab=sample_n_i}
-C {devices/ipin.sym} 190 -230 0 0 {name=p2 lab=sample_i}
+N 540 -270 590 -270 {
+lab=cbot}
+N 190 -330 250 -330 {
+lab=en_n}
 C {devices/iopin.sym} 190 -390 0 1 {name=p3 lab=vcom}
 C {devices/iopin.sym} 190 -440 0 1 {name=p7 lab=VDD}
 C {devices/capa.sym} 540 -350 0 0 {name=C3
@@ -69,10 +64,11 @@ spice_ignore=true}
 C {devices/iopin.sym} 590 -430 2 1 {name=p9 lab=ctop}
 C {devices/iopin.sym} 190 -150 0 1 {name=p10 lab=VSS}
 C {devices/title.sym} 170 -40 0 0 {name=l1 author="Manuel Moser"}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_circuit_150n/adc_array_circuit_150n_drv.sym} 360 -270 0 0 {name=x1}
-C {devices/opin.sym} 590 -250 0 0 {name=p11 lab=sample_n_o}
-C {devices/opin.sym} 590 -230 0 0 {name=p12 lab=sample_o}
-C {devices/ipin.sym} 190 -310 0 0 {name=p4 lab=row_n_i}
-C {devices/ipin.sym} 190 -290 0 0 {name=p5 lab=col_n_i}
-C {devices/ipin.sym} 190 -270 0 0 {name=p6 lab=colon_n_i}
-C {devices/noconn.sym} 350 -360 2 0 {name=l5}
+C {devices/lab_wire.sym} 590 -270 0 0 {name=l2 sig_type=std_logic lab=cbot}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_circuit/adc_array_circuit_150n_bin.sym} 360 -270 0 0 {name=x1}
+C {devices/ipin.sym} 190 -330 0 0 {name=p8 lab=en_n}
+C {devices/ipin.sym} 190 -310 0 0 {name=p1 lab=row_n_i}
+C {devices/ipin.sym} 190 -290 0 0 {name=p2 lab=col_n_i}
+C {devices/ipin.sym} 190 -270 0 0 {name=p4 lab=colon_n_i}
+C {devices/ipin.sym} 190 -250 0 0 {name=p5 lab=sample_n_i}
+C {devices/ipin.sym} 190 -230 0 0 {name=p6 lab=sample_i}
