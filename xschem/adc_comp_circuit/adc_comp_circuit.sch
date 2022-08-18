@@ -154,11 +154,11 @@ lab=op}
 N 380 -510 830 -510 {
 lab=op}
 N 730 -300 740 -300 {
-lab=#net4}
+lab=VSS}
 N 740 -300 880 -300 {
-lab=#net4}
+lab=VSS}
 N 1020 -300 1170 -300 {
-lab=#net5}
+lab=VSS}
 N 880 -390 880 -340 {
 lab=bn}
 N 1020 -390 1020 -340 {
@@ -274,12 +274,17 @@ lab=VDD}
 N 1330 -460 1400 -460 {
 lab=outp}
 N 1330 -370 1400 -370 {
-lab=xxx}
-N 810 -300 810 -200 {}
-N 1100 -300 1100 -200 {}
-N 730 -270 730 -200 {}
-N 880 -270 880 -200 {}
-N 730 -340 730 -330 {}
+lab=outn}
+N 810 -300 810 -200 {
+lab=VSS}
+N 1100 -300 1100 -200 {
+lab=VSS}
+N 730 -270 730 -200 {
+lab=VSS}
+N 880 -270 880 -200 {
+lab=VSS}
+N 730 -340 730 -330 {
+lab=bn}
 C {devices/title.sym} 210 -60 0 0 {name=l1 author="Manuel Moser"}
 C {devices/iopin.sym} 140 -640 0 1 {name=p1 lab=VDD}
 C {devices/iopin.sym} 140 -200 0 1 {name=p2 lab=VSS}
@@ -473,8 +478,8 @@ C {devices/lab_wire.sym} 610 -520 0 0 {name=l2 sig_type=std_logic lab=on}
 C {devices/lab_wire.sym} 610 -510 2 1 {name=l3 sig_type=std_logic lab=op}
 C {devices/lab_wire.sym} 1100 -390 0 0 {name=l4 sig_type=std_logic lab=bp}
 C {devices/lab_wire.sym} 810 -390 0 0 {name=l5 sig_type=std_logic lab=bn}
-C {sky130_fd_pr/cap_mim_m3_2.sym} 530 -430 0 0 {name=C1 model=cap_mim_m3_2 W=10 L=6 MF=1 spiceprefix=X}
-C {sky130_fd_pr/cap_mim_m3_2.sym} 660 -430 0 0 {name=C2 model=cap_mim_m3_2 W=10 L=6 MF=1 spiceprefix=X}
+C {sky130_fd_pr/cap_mim_m3_2.sym} 530 -430 0 0 {name=C1 model=cap_mim_m3_2 W=10 L=6 MF=4 spiceprefix=X}
+C {sky130_fd_pr/cap_mim_m3_2.sym} 660 -430 0 0 {name=C2 model=cap_mim_m3_2 W=10 L=6 MF=4 spiceprefix=X}
 C {/foss/designs/SKY130_SAR-ADC/xschem/buffer/buffer.sym} 1280 -370 0 0 {name=x1}
 C {/foss/designs/SKY130_SAR-ADC/xschem/buffer/buffer.sym} 1280 -460 0 0 {name=x2}
 C {devices/opin.sym} 1400 -460 0 0 {name=p7 lab=outp}

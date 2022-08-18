@@ -67,7 +67,8 @@ N 160 -320 190 -320 {
 lab=nclk_int}
 N 250 -200 250 -190 {
 lab=GND}
-N 250 -350 250 -340 {}
+N 250 -350 250 -340 {
+lab=VDD}
 C {devices/title.sym} 170 -50 0 0 {name=l1 author="Manuel Moser"}
 C {devices/lab_wire.sym} 560 -280 0 0 {name=l2 sig_type=std_logic lab=clk}
 C {devices/lab_wire.sym} 160 -320 0 0 {name=l3 sig_type=std_logic lab=nclk_int}
