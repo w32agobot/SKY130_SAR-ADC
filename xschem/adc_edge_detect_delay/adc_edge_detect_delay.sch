@@ -17,13 +17,16 @@ T {   Copyright 2022 Manuel Moser
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.} 0 -240 0 0 0.2 0.2 {}
-T {sky130_fd_pr__cap_vpp_11p5x11p7_l1m1m2m3m4_shieldm5
-NOM 137.45 fF/cell
-LSL 117.66 fF/cell
-USL 157.24 fF/cell
-3 x 137.45 = 412.35 fF} 420 -660 0 0 0.2 0.2 {}
+T {C1 is pre-defined and has fixed capacity and size.
+sky130_fd_pr__cap_vpp_11p5x11p7_l1m1m2m3m4_shieldm5
+LSL NOM USL 117.66 137.45 157.24 fF/cell
+
+
+Simulated delay is 180nF @ 3 x 137.45 = 412.35 fF} 200 -940 0 0 0.3 0.3 {}
 T {ctot} 450 -330 0 0 0.2 0.2 {}
-T {schmitt-trigger inverter} 830 -830 0 0 0.2 0.2 {}
+T {schmitt-trigger inverter} 760 -830 0 0 0.4 0.4 {}
+T {for reference: const uint16_t adc_delay = 15;
+-> goal is 320 fF total} 470 -460 0 0 0.2 0.2 {}
 N 320 -600 320 -540 {
 lab=#net1}
 N 320 -630 330 -630 {
