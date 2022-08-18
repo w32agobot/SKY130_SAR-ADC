@@ -184,14 +184,26 @@ N 340 -570 360 -570 {
 lab=Cbot}
 N 340 -780 340 -570 {
 lab=Cbot}
-N 960 -780 960 -320 {}
-N 690 -730 960 -730 {}
-N 830 -670 960 -670 {}
-N 690 -630 960 -630 {}
-N 830 -510 960 -510 {}
-N 690 -380 960 -380 {}
-N 830 -310 960 -310 {}
-N 960 -320 960 -310 {}
+N 960 -780 960 -320 {
+lab=en_n}
+N 690 -730 960 -730 {
+lab=en_n}
+N 830 -670 960 -670 {
+lab=en_n}
+N 690 -630 960 -630 {
+lab=en_n}
+N 830 -510 960 -510 {
+lab=en_n}
+N 690 -380 960 -380 {
+lab=en_n}
+N 830 -320 960 -320 {
+lab=en_n}
+N 940 -780 940 -770 {
+lab=colon_n}
+N 920 -780 920 -770 {
+lab=col_n}
+N 900 -780 900 -770 {
+lab=row_n}
 C {sky130_fd_pr/nfet_01v8.sym} 270 -450 3 0 {name=M1
 L=0.15
 W=0.42
@@ -350,3 +362,6 @@ C {devices/lab_wire.sym} 790 -430 0 1 {name=l16 sig_type=std_logic lab=vint2}
 C {devices/lab_wire.sym} 550 -570 0 1 {name=l17 sig_type=std_logic lab=vdrv}
 C {devices/title.sym} 160 -40 0 0 {name=l13 author="Manuel Moser"}
 C {devices/ipin.sym} 960 -780 1 0 {name=p10 lab=en_n}
+C {devices/noconn.sym} 900 -770 3 0 {name=l5}
+C {devices/noconn.sym} 920 -770 3 0 {name=l6}
+C {devices/noconn.sym} 940 -770 3 0 {name=l7}

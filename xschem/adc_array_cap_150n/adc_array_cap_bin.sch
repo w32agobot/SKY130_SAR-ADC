@@ -34,15 +34,15 @@ lab=VDD}
 N 190 -390 340 -390 {
 lab=vcom}
 N 190 -310 250 -310 {
-lab=row_n}
+lab=row_n_i}
 N 190 -290 250 -290 {
-lab=col_n}
+lab=col_n_i}
 N 190 -270 250 -270 {
-lab=colon_n}
+lab=colon_n_i}
 N 190 -250 250 -250 {
-lab=sample_n}
+lab=sample_n_i}
 N 190 -230 250 -230 {
-lab=sample}
+lab=sample_i}
 N 540 -320 540 -270 {
 lab=cbot}
 N 540 -430 540 -380 {
@@ -51,13 +51,9 @@ N 540 -430 590 -430 {
 lab=ctop}
 N 540 -270 590 -270 {
 lab=cbot}
-N 190 -330 250 -330 {}
-C {devices/ipin.sym} 190 -250 0 0 {name=p1 lab=sample_n}
-C {devices/ipin.sym} 190 -230 0 0 {name=p2 lab=sample}
+N 190 -330 250 -330 {
+lab=en_n}
 C {devices/iopin.sym} 190 -390 0 1 {name=p3 lab=vcom}
-C {devices/ipin.sym} 190 -310 0 0 {name=p4 lab=row_n}
-C {devices/ipin.sym} 190 -290 0 0 {name=p5 lab=col_n}
-C {devices/ipin.sym} 190 -270 0 0 {name=p6 lab=colon_n}
 C {devices/iopin.sym} 190 -440 0 1 {name=p7 lab=VDD}
 C {devices/capa.sym} 540 -350 0 0 {name=C3
 m=1
@@ -71,3 +67,8 @@ C {devices/title.sym} 170 -40 0 0 {name=l1 author="Manuel Moser"}
 C {devices/lab_wire.sym} 590 -270 0 0 {name=l2 sig_type=std_logic lab=cbot}
 C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_circuit_150n/adc_array_circuit_150n_bin.sym} 360 -270 0 0 {name=x1}
 C {devices/ipin.sym} 190 -330 0 0 {name=p8 lab=en_n}
+C {devices/ipin.sym} 190 -310 0 0 {name=p1 lab=row_n_i}
+C {devices/ipin.sym} 190 -290 0 0 {name=p2 lab=col_n_i}
+C {devices/ipin.sym} 190 -270 0 0 {name=p4 lab=colon_n_i}
+C {devices/ipin.sym} 190 -250 0 0 {name=p5 lab=sample_n_i}
+C {devices/ipin.sym} 190 -230 0 0 {name=p6 lab=sample_i}
