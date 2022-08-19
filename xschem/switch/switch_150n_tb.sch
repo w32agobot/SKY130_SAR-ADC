@@ -198,7 +198,7 @@ C {devices/code_shown.sym} 30 -970 0 0 {name=SPICE only_toplevel=false value="
 
 *uncomment for TRANSIENT
 .control
-tran 10u 40m
+tran 10u 44m
 plot v(sig_in) v(sig_out)
 plot -(v(sig2_in)-v(sig2_out))/I(v8)
 plot -(v(sig3_in)-v(sig3_out))/I(v7)
@@ -206,7 +206,7 @@ plot -(v(sig3_in)-v(sig3_out))/I(v7)
 "}
 C {devices/lab_wire.sym} 1240 -830 0 0 {name=l11 sig_type=std_logic lab=SW}
 C {devices/lab_wire.sym} 1470 -830 0 0 {name=l12 sig_type=std_logic lab=SW_N}
-C {sky130_fd_pr/corner.sym} 40 -480 0 0 {name=CORNER only_toplevel=false corner=tt}
+C {sky130_fd_pr/corner.sym} 40 -480 0 0 {name=CORNER only_toplevel=false corner=ff}
 C {switch_150n.sym} 1370 -830 0 0 {name=X1}
 C {devices/title.sym} 160 -40 0 0 {name=l13 author="Manuel Moser"}
 C {devices/ngspice_probe.sym} 1440 -880 0 0 {name=r1}
