@@ -189,9 +189,9 @@ C {devices/code_shown.sym} 30 -970 0 0 {name=SPICE only_toplevel=false value="
 .save @m.x1.xm1.msky130_fd_pr__pfet_01v8[gm] 
 .save @m.x1.xm1.msky130_fd_pr__pfet_01v8[CGS] 
 .save @m.x1.xm1.msky130_fd_pr__pfet_01v8[Vth] 
-.save @m.x1.xm2.msky130_fd_pr__nfet_01v8[gm]
-.save @m.x1.xm2.msky130_fd_pr__nfet_01v8[CGS]
-.save @m.x1.xm2.msky130_fd_pr__nfet_01v8[Vth]
+.save @m.x1.xm2.msky130_fd_pr__nfet_01v8_lvt[gm]
+.save @m.x1.xm2.msky130_fd_pr__nfet_01v8_lvt[CGS]
+.save @m.x1.xm2.msky130_fd_pr__nfet_01v8_lvt[Vth]
 
 *uncomment for OP
 .op
@@ -214,11 +214,11 @@ C {devices/ngspice_probe.sym} 1370 -930 0 0 {name=r2}
 C {devices/launcher.sym} 240 -370 0 0 {name=h1
 descr=Backannotate
 tclcommand="ngspice::annotate"}
-C {devices/ngspice_get_value.sym} 1600 -700 0 0 {name=r3 node=@m.x1.xm2.msky130_fd_pr__nfet_01v8[gm]
+C {devices/ngspice_get_value.sym} 1600 -700 0 0 {name=r3 node=@m.x1.xm2.msky130_fd_pr__nfet_01v8_lvt[gm]
 descr="nmos_gm="}
-C {devices/ngspice_get_value.sym} 1600 -670 0 0 {name=r4 node=@m.x1.xm2.msky130_fd_pr__nfet_01v8[CGS]
+C {devices/ngspice_get_value.sym} 1600 -670 0 0 {name=r4 node=@m.x1.xm2.msky130_fd_pr__nfet_01v8_lvt[CGS]
 descr="nmos_cgs="}
-C {devices/ngspice_get_value.sym} 1600 -630 0 0 {name=r5 node=v(@m.x1.xm2.msky130_fd_pr__nfet_01v8[Vth])
+C {devices/ngspice_get_value.sym} 1600 -630 0 0 {name=r5 node=v(@m.x1.xm2.msky130_fd_pr__nfet_01v8_lvt[Vth])
 descr="nmos_vth="}
 C {devices/ngspice_get_value.sym} 1600 -900 0 0 {name=r6 node=@m.x1.xm1.msky130_fd_pr__pfet_01v8[gm]
 descr="pmos_gm="}
@@ -261,3 +261,4 @@ C {devices/vsource.sym} 1380 -290 0 0 {name=V7 value="1 pulse(999m 1m 0 40m 40m 
 C {devices/vsource.sym} 950 -250 0 0 {name=V8 value="1 pulse(999m 1m 0 40m 40m 1p 40m)"}
 C {devices/ngspice_probe.sym} 1500 -830 0 0 {name=r13}
 C {devices/ngspice_probe.sym} 1260 -830 0 0 {name=r14}
+C {devices/ngspice_probe.sym} 1370 -730 0 0 {name=r15}

@@ -76,10 +76,10 @@ C {devices/ipin.sym} 140 -490 0 0 {name=p5 lab=SW_N
 }
 C {devices/ipin.sym} 140 -160 0 0 {name=p6 lab=SW}
 C {devices/title.sym} 190 -80 0 0 {name=l3 author="Manuel Moser"}
-C {sky130_fd_pr/nfet_01v8.sym} 390 -230 3 0 {name=M2
-L=0.15
+C {sky130_fd_pr/nfet_01v8_lvt.sym} 390 -230 3 0 {name=M2
+L=0.35
 W=2
-nf=1 
+nf=1
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
@@ -87,12 +87,12 @@ as="'int((nf+2)/2) * W/nf * 0.29'"
 ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
 nrd="'0.29 / W'" nrs="'0.29 / W'"
 sa=0 sb=0 sd=0
-model=nfet_01v8
+model=nfet_01v8_lvt
 spiceprefix=X
 }
 C {sky130_fd_pr/pfet_01v8.sym} 390 -420 1 0 {name=M1
 L=0.15
-W=4
+W=1.7
 nf=1
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
