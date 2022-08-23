@@ -269,14 +269,22 @@ N 1350 -520 1370 -520 {
 lab=outp}
 N 1170 -520 1170 -460 {
 lab=bp}
-N 1350 -370 1370 -370 {}
-N 1230 -570 1300 -570 {}
-N 1230 -420 1300 -420 {}
-N 1230 -490 1230 -420 {}
-N 1300 -470 1360 -470 {}
-N 1360 -470 1360 -200 {}
-N 1280 -200 1360 -200 {}
-N 1300 -320 1360 -320 {}
+N 1350 -370 1370 -370 {
+lab=outn}
+N 1230 -570 1300 -570 {
+lab=VDD}
+N 1230 -420 1300 -420 {
+lab=VDD}
+N 1230 -490 1230 -420 {
+lab=VDD}
+N 1300 -470 1360 -470 {
+lab=VSS}
+N 1360 -470 1360 -200 {
+lab=VSS}
+N 1280 -200 1360 -200 {
+lab=VSS}
+N 1300 -320 1360 -320 {
+lab=VSS}
 C {devices/title.sym} 210 -60 0 0 {name=l1 author="Manuel Moser"}
 C {devices/iopin.sym} 140 -640 0 1 {name=p1 lab=VDD}
 C {devices/iopin.sym} 140 -200 0 1 {name=p2 lab=VSS}
@@ -474,5 +482,5 @@ C {sky130_fd_pr/cap_mim_m3_2.sym} 530 -430 0 0 {name=C1 model=cap_mim_m3_2 W=10 
 C {sky130_fd_pr/cap_mim_m3_2.sym} 660 -430 0 0 {name=C2 model=cap_mim_m3_2 W=10 L=6 MF=4 spiceprefix=X}
 C {devices/opin.sym} 1370 -520 0 0 {name=p7 lab=outp}
 C {devices/opin.sym} 1370 -370 0 0 {name=p8 lab=outn}
-C {adc_comp_buffer.sym} 1290 -520 0 0 {name=x1}
-C {adc_comp_buffer.sym} 1290 -370 0 0 {name=x2}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_comp_buffer/adc_comp_buffer.sym} 1290 -520 0 0 {name=x1}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_comp_buffer/adc_comp_buffer.sym} 1290 -370 0 0 {name=x2}
