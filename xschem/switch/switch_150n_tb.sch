@@ -198,7 +198,7 @@ C {devices/code_shown.sym} 30 -970 0 0 {name=SPICE only_toplevel=false value="
 
 *uncomment for TRANSIENT
 .control
-tran 10u 44m
+tran 10u 40m
 plot v(sig_in) v(sig_out)
 plot -(v(sig2_in)-v(sig2_out))/I(v8)
 plot -(v(sig3_in)-v(sig3_out))/I(v7)

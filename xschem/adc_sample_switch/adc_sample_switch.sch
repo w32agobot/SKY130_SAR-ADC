@@ -52,8 +52,6 @@ lab=sample}
 N 710 -280 710 -250 {
 lab=sample}
 C {devices/title.sym} 170 -70 0 0 {name=l1 author="Manuel Moser"}
-C {/foss/designs/SKY130_SAR-ADC/xschem/switch_150n/switch_150n.sym} 710 -330 3 0 {name=X1}
-C {/foss/designs/SKY130_SAR-ADC/xschem/switch_150n/switch_150n.sym} 350 -330 3 0 {name=X2}
 C {devices/ipin.sym} 220 -330 0 0 {name=p1 lab=inp}
 C {devices/ipin.sym} 590 -330 0 0 {name=p2 lab=inn}
 C {devices/opin.sym} 450 -330 0 0 {name=p3 lab=outp}
@@ -66,3 +64,5 @@ C {devices/vdd.sym} 300 -390 0 0 {name=l2 lab=VDD}
 C {devices/vdd.sym} 660 -390 0 0 {name=l3 lab=VDD}
 C {devices/gnd.sym} 410 -380 0 0 {name=l4 lab=GND}
 C {devices/gnd.sym} 770 -380 0 0 {name=l5 lab=GND}
+C {/foss/designs/SKY130_SAR-ADC/xschem/switch/switch_150n.sym} 350 -330 3 0 {name=X1}
+C {/foss/designs/SKY130_SAR-ADC/xschem/switch/switch_150n.sym} 710 -330 3 0 {name=X2}
