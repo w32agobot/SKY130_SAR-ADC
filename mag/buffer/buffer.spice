@@ -1,0 +1,12 @@
+* NGSPICE file created from buffer.ext - technology: sky130A
+
+.subckt inverter out VDD VSS in
+X0 VDD in out VDD sky130_fd_pr__pfet_01v8 ad=1.218e+11p pd=1.42e+06u as=1.218e+11p ps=1.42e+06u w=420000u l=150000u
+X1 out in VSS VSS sky130_fd_pr__nfet_01v8 ad=1.218e+11p pd=1.42e+06u as=1.218e+11p ps=1.42e+06u w=420000u l=150000u
+.ends
+
+.subckt buffer VDD VSS in out
+Xinverter_0[0] inverter_0[1]/in VDD VSS in inverter
+Xinverter_0[1] out VDD VSS inverter_0[1]/in inverter
+.ends
+
