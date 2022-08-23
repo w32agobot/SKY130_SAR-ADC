@@ -110,4 +110,4 @@ C {devices/code_shown.sym} 310 -770 0 0 {name=SPICE only_toplevel=false value=".
 .endc"}
 C {devices/noconn.sym} 360 -270 0 0 {name=l25}
 C {devices/noconn.sym} 360 -250 0 0 {name=l26}
-C {adc_comp_circuit.sym} 250 -260 0 0 {name=x1}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_comp_circuit/adc_comp_circuit.sym} 250 -260 0 0 {name=x1}
