@@ -66726,5127 +66726,5127 @@ C {devices/ipin.sym} 200 -380 0 0 {name=p7 lab=row_n[31:0]}
 C {devices/iopin.sym} 200 -500 0 1 {name=p8 lab=ctop}
 C {devices/iopin.sym} 200 -520 0 1 {name=p9 lab=vcom}
 C {devices/ipin.sym} 200 -360 0 0 {name=p10 lab=en_n_bit[3:0]}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 1190 -1060 0 0 {name=x1}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 1190 -1060 0 0 {name=x1}
 C {devices/lab_wire.sym} 1120 -1180 2 1 {name=l2 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 1140 -1190 1 1 {name=l3 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 1180 -1190 3 0 {name=l4 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 1120 -940 0 0 {name=l5 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 1450 -1060 0 0 {name=x2}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 1450 -1060 0 0 {name=x2}
 C {devices/lab_wire.sym} 1380 -1180 2 1 {name=l6 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 1400 -1190 1 1 {name=l7 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 1440 -1190 3 0 {name=l8 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 1380 -940 0 0 {name=l9 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 1710 -1060 0 0 {name=x3}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 1710 -1060 0 0 {name=x3}
 C {devices/lab_wire.sym} 1640 -1180 2 1 {name=l10 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 1660 -1190 1 1 {name=l11 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 1700 -1190 3 0 {name=l12 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 1640 -940 0 0 {name=l13 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 1970 -1060 0 0 {name=x4}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 1970 -1060 0 0 {name=x4}
 C {devices/lab_wire.sym} 1900 -1180 2 1 {name=l14 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 1920 -1190 1 1 {name=l15 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 1960 -1190 3 0 {name=l16 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 1900 -940 0 0 {name=l17 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 2230 -1060 0 0 {name=x5}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 2230 -1060 0 0 {name=x5}
 C {devices/lab_wire.sym} 2160 -1180 2 1 {name=l18 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 2180 -1190 1 1 {name=l19 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 2220 -1190 3 0 {name=l20 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 2160 -940 0 0 {name=l21 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 2490 -1060 0 0 {name=x6}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 2490 -1060 0 0 {name=x6}
 C {devices/lab_wire.sym} 2420 -1180 2 1 {name=l22 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 2440 -1190 1 1 {name=l23 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 2480 -1190 3 0 {name=l24 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 2420 -940 0 0 {name=l25 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 2750 -1060 0 0 {name=x7}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 2750 -1060 0 0 {name=x7}
 C {devices/lab_wire.sym} 2680 -1180 2 1 {name=l26 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 2700 -1190 1 1 {name=l27 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 2740 -1190 3 0 {name=l28 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 2680 -940 0 0 {name=l29 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 3010 -1060 0 0 {name=x8}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 3010 -1060 0 0 {name=x8}
 C {devices/lab_wire.sym} 2940 -1180 2 1 {name=l30 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 2960 -1190 1 1 {name=l31 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 3000 -1190 3 0 {name=l32 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 2940 -940 0 0 {name=l33 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 3270 -1060 0 0 {name=x9}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 3270 -1060 0 0 {name=x9}
 C {devices/lab_wire.sym} 3200 -1180 2 1 {name=l34 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 3220 -1190 1 1 {name=l35 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 3260 -1190 3 0 {name=l36 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 3200 -940 0 0 {name=l37 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 3530 -1060 0 0 {name=x10}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 3530 -1060 0 0 {name=x10}
 C {devices/lab_wire.sym} 3460 -1180 2 1 {name=l38 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 3480 -1190 1 1 {name=l39 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 3520 -1190 3 0 {name=l40 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 3460 -940 0 0 {name=l41 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 3790 -1060 0 0 {name=x11}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 3790 -1060 0 0 {name=x11}
 C {devices/lab_wire.sym} 3720 -1180 2 1 {name=l42 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 3740 -1190 1 1 {name=l43 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 3780 -1190 3 0 {name=l44 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 3720 -940 0 0 {name=l45 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 4050 -1060 0 0 {name=x12}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 4050 -1060 0 0 {name=x12}
 C {devices/lab_wire.sym} 3980 -1180 2 1 {name=l46 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 4000 -1190 1 1 {name=l47 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 4040 -1190 3 0 {name=l48 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 3980 -940 0 0 {name=l49 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 4310 -1060 0 0 {name=x13}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 4310 -1060 0 0 {name=x13}
 C {devices/lab_wire.sym} 4240 -1180 2 1 {name=l50 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 4260 -1190 1 1 {name=l51 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 4300 -1190 3 0 {name=l52 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 4240 -940 0 0 {name=l53 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 4570 -1060 0 0 {name=x14}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 4570 -1060 0 0 {name=x14}
 C {devices/lab_wire.sym} 4500 -1180 2 1 {name=l54 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 4520 -1190 1 1 {name=l55 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 4560 -1190 3 0 {name=l56 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 4500 -940 0 0 {name=l57 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 4830 -1060 0 0 {name=x15}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 4830 -1060 0 0 {name=x15}
 C {devices/lab_wire.sym} 4760 -1180 2 1 {name=l58 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 4780 -1190 1 1 {name=l59 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 4820 -1190 3 0 {name=l60 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 4760 -940 0 0 {name=l61 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 5090 -1060 0 0 {name=x16}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 5090 -1060 0 0 {name=x16}
 C {devices/lab_wire.sym} 5020 -1180 2 1 {name=l62 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 5040 -1190 1 1 {name=l63 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 5080 -1190 3 0 {name=l64 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 5020 -940 0 0 {name=l65 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 5350 -1060 0 0 {name=x17}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 5350 -1060 0 0 {name=x17}
 C {devices/lab_wire.sym} 5280 -1180 2 1 {name=l66 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 5300 -1190 1 1 {name=l67 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 5340 -1190 3 0 {name=l68 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 5280 -940 0 0 {name=l69 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 5610 -1060 0 0 {name=x18}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 5610 -1060 0 0 {name=x18}
 C {devices/lab_wire.sym} 5540 -1180 2 1 {name=l70 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 5560 -1190 1 1 {name=l71 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 5600 -1190 3 0 {name=l72 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 5540 -940 0 0 {name=l73 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 5870 -1060 0 0 {name=x19}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 5870 -1060 0 0 {name=x19}
 C {devices/lab_wire.sym} 5800 -1180 2 1 {name=l74 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 5820 -1190 1 1 {name=l75 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 5860 -1190 3 0 {name=l76 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 5800 -940 0 0 {name=l77 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 6130 -1060 0 0 {name=x20}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 6130 -1060 0 0 {name=x20}
 C {devices/lab_wire.sym} 6060 -1180 2 1 {name=l78 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 6080 -1190 1 1 {name=l79 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 6120 -1190 3 0 {name=l80 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 6060 -940 0 0 {name=l81 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 6390 -1060 0 0 {name=x21}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 6390 -1060 0 0 {name=x21}
 C {devices/lab_wire.sym} 6320 -1180 2 1 {name=l82 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 6340 -1190 1 1 {name=l83 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 6380 -1190 3 0 {name=l84 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 6320 -940 0 0 {name=l85 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 6650 -1060 0 0 {name=x22}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 6650 -1060 0 0 {name=x22}
 C {devices/lab_wire.sym} 6580 -1180 2 1 {name=l86 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 6600 -1190 1 1 {name=l87 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 6640 -1190 3 0 {name=l88 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 6580 -940 0 0 {name=l89 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 6910 -1060 0 0 {name=x23}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 6910 -1060 0 0 {name=x23}
 C {devices/lab_wire.sym} 6840 -1180 2 1 {name=l90 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 6860 -1190 1 1 {name=l91 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 6900 -1190 3 0 {name=l92 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 6840 -940 0 0 {name=l93 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 7170 -1060 0 0 {name=x24}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 7170 -1060 0 0 {name=x24}
 C {devices/lab_wire.sym} 7100 -1180 2 1 {name=l94 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 7120 -1190 1 1 {name=l95 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 7160 -1190 3 0 {name=l96 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 7100 -940 0 0 {name=l97 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 7430 -1060 0 0 {name=x25}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 7430 -1060 0 0 {name=x25}
 C {devices/lab_wire.sym} 7360 -1180 2 1 {name=l98 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 7380 -1190 1 1 {name=l99 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 7420 -1190 3 0 {name=l100 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 7360 -940 0 0 {name=l101 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 7690 -1060 0 0 {name=x26}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 7690 -1060 0 0 {name=x26}
 C {devices/lab_wire.sym} 7620 -1180 2 1 {name=l102 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 7640 -1190 1 1 {name=l103 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 7680 -1190 3 0 {name=l104 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 7620 -940 0 0 {name=l105 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 7950 -1060 0 0 {name=x27}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 7950 -1060 0 0 {name=x27}
 C {devices/lab_wire.sym} 7880 -1180 2 1 {name=l106 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 7900 -1190 1 1 {name=l107 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 7940 -1190 3 0 {name=l108 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 7880 -940 0 0 {name=l109 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 8210 -1060 0 0 {name=x28}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 8210 -1060 0 0 {name=x28}
 C {devices/lab_wire.sym} 8140 -1180 2 1 {name=l110 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 8160 -1190 1 1 {name=l111 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 8200 -1190 3 0 {name=l112 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 8140 -940 0 0 {name=l113 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 8470 -1060 0 0 {name=x29}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 8470 -1060 0 0 {name=x29}
 C {devices/lab_wire.sym} 8400 -1180 2 1 {name=l114 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 8420 -1190 1 1 {name=l115 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 8460 -1190 3 0 {name=l116 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 8400 -940 0 0 {name=l117 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 8730 -1060 0 0 {name=x30}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 8730 -1060 0 0 {name=x30}
 C {devices/lab_wire.sym} 8660 -1180 2 1 {name=l118 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 8680 -1190 1 1 {name=l119 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 8720 -1190 3 0 {name=l120 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 8660 -940 0 0 {name=l121 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 8990 -1060 0 0 {name=x31}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 8990 -1060 0 0 {name=x31}
 C {devices/lab_wire.sym} 8920 -1180 2 1 {name=l122 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 8940 -1190 1 1 {name=l123 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 8980 -1190 3 0 {name=l124 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 8920 -940 0 0 {name=l125 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 9250 -1060 0 0 {name=x32}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 9250 -1060 0 0 {name=x32}
 C {devices/lab_wire.sym} 9180 -1180 2 1 {name=l126 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 9200 -1190 1 1 {name=l127 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 9240 -1190 3 0 {name=l128 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 9180 -940 0 0 {name=l129 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 1190 -1320 0 0 {name=x33}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 1190 -1320 0 0 {name=x33}
 C {devices/lab_wire.sym} 1120 -1440 2 1 {name=l130 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 1140 -1450 1 1 {name=l131 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 1180 -1450 3 0 {name=l132 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 1120 -1200 0 0 {name=l133 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 1450 -1320 0 0 {name=x34}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 1450 -1320 0 0 {name=x34}
 C {devices/lab_wire.sym} 1380 -1440 2 1 {name=l134 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 1400 -1450 1 1 {name=l135 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 1440 -1450 3 0 {name=l136 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 1380 -1200 0 0 {name=l137 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 1710 -1320 0 0 {name=x35}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 1710 -1320 0 0 {name=x35}
 C {devices/lab_wire.sym} 1640 -1440 2 1 {name=l138 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 1660 -1450 1 1 {name=l139 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 1700 -1450 3 0 {name=l140 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 1640 -1200 0 0 {name=l141 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 1970 -1320 0 0 {name=x36}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 1970 -1320 0 0 {name=x36}
 C {devices/lab_wire.sym} 1900 -1440 2 1 {name=l142 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 1920 -1450 1 1 {name=l143 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 1960 -1450 3 0 {name=l144 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 1900 -1200 0 0 {name=l145 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 2230 -1320 0 0 {name=x37}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 2230 -1320 0 0 {name=x37}
 C {devices/lab_wire.sym} 2160 -1440 2 1 {name=l146 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 2180 -1450 1 1 {name=l147 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 2220 -1450 3 0 {name=l148 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 2160 -1200 0 0 {name=l149 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 2490 -1320 0 0 {name=x38}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 2490 -1320 0 0 {name=x38}
 C {devices/lab_wire.sym} 2420 -1440 2 1 {name=l150 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 2440 -1450 1 1 {name=l151 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 2480 -1450 3 0 {name=l152 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 2420 -1200 0 0 {name=l153 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 2750 -1320 0 0 {name=x39}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 2750 -1320 0 0 {name=x39}
 C {devices/lab_wire.sym} 2680 -1440 2 1 {name=l154 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 2700 -1450 1 1 {name=l155 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 2740 -1450 3 0 {name=l156 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 2680 -1200 0 0 {name=l157 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 3010 -1320 0 0 {name=x40}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 3010 -1320 0 0 {name=x40}
 C {devices/lab_wire.sym} 2940 -1440 2 1 {name=l158 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 2960 -1450 1 1 {name=l159 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 3000 -1450 3 0 {name=l160 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 2940 -1200 0 0 {name=l161 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 3270 -1320 0 0 {name=x41}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 3270 -1320 0 0 {name=x41}
 C {devices/lab_wire.sym} 3200 -1440 2 1 {name=l162 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 3220 -1450 1 1 {name=l163 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 3260 -1450 3 0 {name=l164 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 3200 -1200 0 0 {name=l165 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 3530 -1320 0 0 {name=x42}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 3530 -1320 0 0 {name=x42}
 C {devices/lab_wire.sym} 3460 -1440 2 1 {name=l166 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 3480 -1450 1 1 {name=l167 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 3520 -1450 3 0 {name=l168 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 3460 -1200 0 0 {name=l169 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 3790 -1320 0 0 {name=x43}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 3790 -1320 0 0 {name=x43}
 C {devices/lab_wire.sym} 3720 -1440 2 1 {name=l170 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 3740 -1450 1 1 {name=l171 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 3780 -1450 3 0 {name=l172 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 3720 -1200 0 0 {name=l173 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 4050 -1320 0 0 {name=x44}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 4050 -1320 0 0 {name=x44}
 C {devices/lab_wire.sym} 3980 -1440 2 1 {name=l174 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 4000 -1450 1 1 {name=l175 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 4040 -1450 3 0 {name=l176 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 3980 -1200 0 0 {name=l177 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 4310 -1320 0 0 {name=x45}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 4310 -1320 0 0 {name=x45}
 C {devices/lab_wire.sym} 4240 -1440 2 1 {name=l178 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 4260 -1450 1 1 {name=l179 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 4300 -1450 3 0 {name=l180 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 4240 -1200 0 0 {name=l181 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 4570 -1320 0 0 {name=x46}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 4570 -1320 0 0 {name=x46}
 C {devices/lab_wire.sym} 4500 -1440 2 1 {name=l182 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 4520 -1450 1 1 {name=l183 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 4560 -1450 3 0 {name=l184 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 4500 -1200 0 0 {name=l185 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 4830 -1320 0 0 {name=x47}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 4830 -1320 0 0 {name=x47}
 C {devices/lab_wire.sym} 4760 -1440 2 1 {name=l186 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 4780 -1450 1 1 {name=l187 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 4820 -1450 3 0 {name=l188 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 4760 -1200 0 0 {name=l189 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 5090 -1320 0 0 {name=x48}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 5090 -1320 0 0 {name=x48}
 C {devices/lab_wire.sym} 5020 -1440 2 1 {name=l190 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 5040 -1450 1 1 {name=l191 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 5080 -1450 3 0 {name=l192 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 5020 -1200 0 0 {name=l193 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 5350 -1320 0 0 {name=x49}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 5350 -1320 0 0 {name=x49}
 C {devices/lab_wire.sym} 5280 -1440 2 1 {name=l194 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 5300 -1450 1 1 {name=l195 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 5340 -1450 3 0 {name=l196 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 5280 -1200 0 0 {name=l197 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 5610 -1320 0 0 {name=x50}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 5610 -1320 0 0 {name=x50}
 C {devices/lab_wire.sym} 5540 -1440 2 1 {name=l198 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 5560 -1450 1 1 {name=l199 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 5600 -1450 3 0 {name=l200 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 5540 -1200 0 0 {name=l201 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 5870 -1320 0 0 {name=x51}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 5870 -1320 0 0 {name=x51}
 C {devices/lab_wire.sym} 5800 -1440 2 1 {name=l202 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 5820 -1450 1 1 {name=l203 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 5860 -1450 3 0 {name=l204 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 5800 -1200 0 0 {name=l205 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 6130 -1320 0 0 {name=x52}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 6130 -1320 0 0 {name=x52}
 C {devices/lab_wire.sym} 6060 -1440 2 1 {name=l206 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 6080 -1450 1 1 {name=l207 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 6120 -1450 3 0 {name=l208 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 6060 -1200 0 0 {name=l209 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 6390 -1320 0 0 {name=x53}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 6390 -1320 0 0 {name=x53}
 C {devices/lab_wire.sym} 6320 -1440 2 1 {name=l210 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 6340 -1450 1 1 {name=l211 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 6380 -1450 3 0 {name=l212 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 6320 -1200 0 0 {name=l213 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 6650 -1320 0 0 {name=x54}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 6650 -1320 0 0 {name=x54}
 C {devices/lab_wire.sym} 6580 -1440 2 1 {name=l214 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 6600 -1450 1 1 {name=l215 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 6640 -1450 3 0 {name=l216 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 6580 -1200 0 0 {name=l217 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 6910 -1320 0 0 {name=x55}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 6910 -1320 0 0 {name=x55}
 C {devices/lab_wire.sym} 6840 -1440 2 1 {name=l218 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 6860 -1450 1 1 {name=l219 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 6900 -1450 3 0 {name=l220 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 6840 -1200 0 0 {name=l221 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 7170 -1320 0 0 {name=x56}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 7170 -1320 0 0 {name=x56}
 C {devices/lab_wire.sym} 7100 -1440 2 1 {name=l222 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 7120 -1450 1 1 {name=l223 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 7160 -1450 3 0 {name=l224 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 7100 -1200 0 0 {name=l225 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 7430 -1320 0 0 {name=x57}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 7430 -1320 0 0 {name=x57}
 C {devices/lab_wire.sym} 7360 -1440 2 1 {name=l226 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 7380 -1450 1 1 {name=l227 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 7420 -1450 3 0 {name=l228 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 7360 -1200 0 0 {name=l229 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 7690 -1320 0 0 {name=x58}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 7690 -1320 0 0 {name=x58}
 C {devices/lab_wire.sym} 7620 -1440 2 1 {name=l230 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 7640 -1450 1 1 {name=l231 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 7680 -1450 3 0 {name=l232 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 7620 -1200 0 0 {name=l233 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 7950 -1320 0 0 {name=x59}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 7950 -1320 0 0 {name=x59}
 C {devices/lab_wire.sym} 7880 -1440 2 1 {name=l234 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 7900 -1450 1 1 {name=l235 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 7940 -1450 3 0 {name=l236 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 7880 -1200 0 0 {name=l237 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 8210 -1320 0 0 {name=x60}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 8210 -1320 0 0 {name=x60}
 C {devices/lab_wire.sym} 8140 -1440 2 1 {name=l238 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 8160 -1450 1 1 {name=l239 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 8200 -1450 3 0 {name=l240 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 8140 -1200 0 0 {name=l241 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 8470 -1320 0 0 {name=x61}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 8470 -1320 0 0 {name=x61}
 C {devices/lab_wire.sym} 8400 -1440 2 1 {name=l242 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 8420 -1450 1 1 {name=l243 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 8460 -1450 3 0 {name=l244 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 8400 -1200 0 0 {name=l245 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 8730 -1320 0 0 {name=x62}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 8730 -1320 0 0 {name=x62}
 C {devices/lab_wire.sym} 8660 -1440 2 1 {name=l246 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 8680 -1450 1 1 {name=l247 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 8720 -1450 3 0 {name=l248 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 8660 -1200 0 0 {name=l249 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 8990 -1320 0 0 {name=x63}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 8990 -1320 0 0 {name=x63}
 C {devices/lab_wire.sym} 8920 -1440 2 1 {name=l250 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 8940 -1450 1 1 {name=l251 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 8980 -1450 3 0 {name=l252 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 8920 -1200 0 0 {name=l253 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 9250 -1320 0 0 {name=x64}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 9250 -1320 0 0 {name=x64}
 C {devices/lab_wire.sym} 9180 -1440 2 1 {name=l254 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 9200 -1450 1 1 {name=l255 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 9240 -1450 3 0 {name=l256 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 9180 -1200 0 0 {name=l257 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 1190 -1580 0 0 {name=x65}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 1190 -1580 0 0 {name=x65}
 C {devices/lab_wire.sym} 1120 -1700 2 1 {name=l258 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 1140 -1710 1 1 {name=l259 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 1180 -1710 3 0 {name=l260 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 1120 -1460 0 0 {name=l261 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 1450 -1580 0 0 {name=x66}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 1450 -1580 0 0 {name=x66}
 C {devices/lab_wire.sym} 1380 -1700 2 1 {name=l262 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 1400 -1710 1 1 {name=l263 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 1440 -1710 3 0 {name=l264 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 1380 -1460 0 0 {name=l265 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 1710 -1580 0 0 {name=x67}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 1710 -1580 0 0 {name=x67}
 C {devices/lab_wire.sym} 1640 -1700 2 1 {name=l266 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 1660 -1710 1 1 {name=l267 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 1700 -1710 3 0 {name=l268 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 1640 -1460 0 0 {name=l269 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 1970 -1580 0 0 {name=x68}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 1970 -1580 0 0 {name=x68}
 C {devices/lab_wire.sym} 1900 -1700 2 1 {name=l270 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 1920 -1710 1 1 {name=l271 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 1960 -1710 3 0 {name=l272 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 1900 -1460 0 0 {name=l273 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 2230 -1580 0 0 {name=x69}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 2230 -1580 0 0 {name=x69}
 C {devices/lab_wire.sym} 2160 -1700 2 1 {name=l274 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 2180 -1710 1 1 {name=l275 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 2220 -1710 3 0 {name=l276 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 2160 -1460 0 0 {name=l277 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 2490 -1580 0 0 {name=x70}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 2490 -1580 0 0 {name=x70}
 C {devices/lab_wire.sym} 2420 -1700 2 1 {name=l278 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 2440 -1710 1 1 {name=l279 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 2480 -1710 3 0 {name=l280 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 2420 -1460 0 0 {name=l281 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 2750 -1580 0 0 {name=x71}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 2750 -1580 0 0 {name=x71}
 C {devices/lab_wire.sym} 2680 -1700 2 1 {name=l282 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 2700 -1710 1 1 {name=l283 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 2740 -1710 3 0 {name=l284 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 2680 -1460 0 0 {name=l285 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 3010 -1580 0 0 {name=x72}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 3010 -1580 0 0 {name=x72}
 C {devices/lab_wire.sym} 2940 -1700 2 1 {name=l286 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 2960 -1710 1 1 {name=l287 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 3000 -1710 3 0 {name=l288 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 2940 -1460 0 0 {name=l289 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 3270 -1580 0 0 {name=x73}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 3270 -1580 0 0 {name=x73}
 C {devices/lab_wire.sym} 3200 -1700 2 1 {name=l290 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 3220 -1710 1 1 {name=l291 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 3260 -1710 3 0 {name=l292 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 3200 -1460 0 0 {name=l293 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 3530 -1580 0 0 {name=x74}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 3530 -1580 0 0 {name=x74}
 C {devices/lab_wire.sym} 3460 -1700 2 1 {name=l294 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 3480 -1710 1 1 {name=l295 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 3520 -1710 3 0 {name=l296 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 3460 -1460 0 0 {name=l297 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 3790 -1580 0 0 {name=x75}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 3790 -1580 0 0 {name=x75}
 C {devices/lab_wire.sym} 3720 -1700 2 1 {name=l298 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 3740 -1710 1 1 {name=l299 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 3780 -1710 3 0 {name=l300 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 3720 -1460 0 0 {name=l301 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 4050 -1580 0 0 {name=x76}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 4050 -1580 0 0 {name=x76}
 C {devices/lab_wire.sym} 3980 -1700 2 1 {name=l302 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 4000 -1710 1 1 {name=l303 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 4040 -1710 3 0 {name=l304 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 3980 -1460 0 0 {name=l305 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 4310 -1580 0 0 {name=x77}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 4310 -1580 0 0 {name=x77}
 C {devices/lab_wire.sym} 4240 -1700 2 1 {name=l306 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 4260 -1710 1 1 {name=l307 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 4300 -1710 3 0 {name=l308 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 4240 -1460 0 0 {name=l309 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 4570 -1580 0 0 {name=x78}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 4570 -1580 0 0 {name=x78}
 C {devices/lab_wire.sym} 4500 -1700 2 1 {name=l310 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 4520 -1710 1 1 {name=l311 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 4560 -1710 3 0 {name=l312 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 4500 -1460 0 0 {name=l313 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 4830 -1580 0 0 {name=x79}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 4830 -1580 0 0 {name=x79}
 C {devices/lab_wire.sym} 4760 -1700 2 1 {name=l314 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 4780 -1710 1 1 {name=l315 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 4820 -1710 3 0 {name=l316 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 4760 -1460 0 0 {name=l317 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 5090 -1580 0 0 {name=x80}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 5090 -1580 0 0 {name=x80}
 C {devices/lab_wire.sym} 5020 -1700 2 1 {name=l318 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 5040 -1710 1 1 {name=l319 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 5080 -1710 3 0 {name=l320 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 5020 -1460 0 0 {name=l321 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 5350 -1580 0 0 {name=x81}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 5350 -1580 0 0 {name=x81}
 C {devices/lab_wire.sym} 5280 -1700 2 1 {name=l322 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 5300 -1710 1 1 {name=l323 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 5340 -1710 3 0 {name=l324 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 5280 -1460 0 0 {name=l325 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 5610 -1580 0 0 {name=x82}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 5610 -1580 0 0 {name=x82}
 C {devices/lab_wire.sym} 5540 -1700 2 1 {name=l326 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 5560 -1710 1 1 {name=l327 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 5600 -1710 3 0 {name=l328 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 5540 -1460 0 0 {name=l329 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 5870 -1580 0 0 {name=x83}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 5870 -1580 0 0 {name=x83}
 C {devices/lab_wire.sym} 5800 -1700 2 1 {name=l330 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 5820 -1710 1 1 {name=l331 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 5860 -1710 3 0 {name=l332 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 5800 -1460 0 0 {name=l333 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 6130 -1580 0 0 {name=x84}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 6130 -1580 0 0 {name=x84}
 C {devices/lab_wire.sym} 6060 -1700 2 1 {name=l334 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 6080 -1710 1 1 {name=l335 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 6120 -1710 3 0 {name=l336 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 6060 -1460 0 0 {name=l337 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 6390 -1580 0 0 {name=x85}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 6390 -1580 0 0 {name=x85}
 C {devices/lab_wire.sym} 6320 -1700 2 1 {name=l338 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 6340 -1710 1 1 {name=l339 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 6380 -1710 3 0 {name=l340 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 6320 -1460 0 0 {name=l341 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 6650 -1580 0 0 {name=x86}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 6650 -1580 0 0 {name=x86}
 C {devices/lab_wire.sym} 6580 -1700 2 1 {name=l342 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 6600 -1710 1 1 {name=l343 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 6640 -1710 3 0 {name=l344 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 6580 -1460 0 0 {name=l345 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 6910 -1580 0 0 {name=x87}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 6910 -1580 0 0 {name=x87}
 C {devices/lab_wire.sym} 6840 -1700 2 1 {name=l346 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 6860 -1710 1 1 {name=l347 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 6900 -1710 3 0 {name=l348 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 6840 -1460 0 0 {name=l349 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 7170 -1580 0 0 {name=x88}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 7170 -1580 0 0 {name=x88}
 C {devices/lab_wire.sym} 7100 -1700 2 1 {name=l350 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 7120 -1710 1 1 {name=l351 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 7160 -1710 3 0 {name=l352 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 7100 -1460 0 0 {name=l353 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 7430 -1580 0 0 {name=x89}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 7430 -1580 0 0 {name=x89}
 C {devices/lab_wire.sym} 7360 -1700 2 1 {name=l354 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 7380 -1710 1 1 {name=l355 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 7420 -1710 3 0 {name=l356 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 7360 -1460 0 0 {name=l357 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 7690 -1580 0 0 {name=x90}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 7690 -1580 0 0 {name=x90}
 C {devices/lab_wire.sym} 7620 -1700 2 1 {name=l358 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 7640 -1710 1 1 {name=l359 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 7680 -1710 3 0 {name=l360 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 7620 -1460 0 0 {name=l361 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 7950 -1580 0 0 {name=x91}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 7950 -1580 0 0 {name=x91}
 C {devices/lab_wire.sym} 7880 -1700 2 1 {name=l362 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 7900 -1710 1 1 {name=l363 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 7940 -1710 3 0 {name=l364 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 7880 -1460 0 0 {name=l365 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 8210 -1580 0 0 {name=x92}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 8210 -1580 0 0 {name=x92}
 C {devices/lab_wire.sym} 8140 -1700 2 1 {name=l366 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 8160 -1710 1 1 {name=l367 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 8200 -1710 3 0 {name=l368 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 8140 -1460 0 0 {name=l369 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 8470 -1580 0 0 {name=x93}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 8470 -1580 0 0 {name=x93}
 C {devices/lab_wire.sym} 8400 -1700 2 1 {name=l370 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 8420 -1710 1 1 {name=l371 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 8460 -1710 3 0 {name=l372 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 8400 -1460 0 0 {name=l373 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 8730 -1580 0 0 {name=x94}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 8730 -1580 0 0 {name=x94}
 C {devices/lab_wire.sym} 8660 -1700 2 1 {name=l374 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 8680 -1710 1 1 {name=l375 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 8720 -1710 3 0 {name=l376 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 8660 -1460 0 0 {name=l377 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 8990 -1580 0 0 {name=x95}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 8990 -1580 0 0 {name=x95}
 C {devices/lab_wire.sym} 8920 -1700 2 1 {name=l378 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 8940 -1710 1 1 {name=l379 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 8980 -1710 3 0 {name=l380 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 8920 -1460 0 0 {name=l381 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 9250 -1580 0 0 {name=x96}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 9250 -1580 0 0 {name=x96}
 C {devices/lab_wire.sym} 9180 -1700 2 1 {name=l382 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 9200 -1710 1 1 {name=l383 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 9240 -1710 3 0 {name=l384 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 9180 -1460 0 0 {name=l385 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 1190 -1840 0 0 {name=x97}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 1190 -1840 0 0 {name=x97}
 C {devices/lab_wire.sym} 1120 -1960 2 1 {name=l386 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 1140 -1970 1 1 {name=l387 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 1180 -1970 3 0 {name=l388 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 1120 -1720 0 0 {name=l389 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 1450 -1840 0 0 {name=x98}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 1450 -1840 0 0 {name=x98}
 C {devices/lab_wire.sym} 1380 -1960 2 1 {name=l390 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 1400 -1970 1 1 {name=l391 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 1440 -1970 3 0 {name=l392 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 1380 -1720 0 0 {name=l393 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 1710 -1840 0 0 {name=x99}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 1710 -1840 0 0 {name=x99}
 C {devices/lab_wire.sym} 1640 -1960 2 1 {name=l394 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 1660 -1970 1 1 {name=l395 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 1700 -1970 3 0 {name=l396 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 1640 -1720 0 0 {name=l397 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 1970 -1840 0 0 {name=x100}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 1970 -1840 0 0 {name=x100}
 C {devices/lab_wire.sym} 1900 -1960 2 1 {name=l398 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 1920 -1970 1 1 {name=l399 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 1960 -1970 3 0 {name=l400 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 1900 -1720 0 0 {name=l401 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 2230 -1840 0 0 {name=x101}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 2230 -1840 0 0 {name=x101}
 C {devices/lab_wire.sym} 2160 -1960 2 1 {name=l402 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 2180 -1970 1 1 {name=l403 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 2220 -1970 3 0 {name=l404 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 2160 -1720 0 0 {name=l405 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 2490 -1840 0 0 {name=x102}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 2490 -1840 0 0 {name=x102}
 C {devices/lab_wire.sym} 2420 -1960 2 1 {name=l406 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 2440 -1970 1 1 {name=l407 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 2480 -1970 3 0 {name=l408 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 2420 -1720 0 0 {name=l409 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 2750 -1840 0 0 {name=x103}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 2750 -1840 0 0 {name=x103}
 C {devices/lab_wire.sym} 2680 -1960 2 1 {name=l410 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 2700 -1970 1 1 {name=l411 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 2740 -1970 3 0 {name=l412 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 2680 -1720 0 0 {name=l413 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 3010 -1840 0 0 {name=x104}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 3010 -1840 0 0 {name=x104}
 C {devices/lab_wire.sym} 2940 -1960 2 1 {name=l414 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 2960 -1970 1 1 {name=l415 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 3000 -1970 3 0 {name=l416 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 2940 -1720 0 0 {name=l417 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 3270 -1840 0 0 {name=x105}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 3270 -1840 0 0 {name=x105}
 C {devices/lab_wire.sym} 3200 -1960 2 1 {name=l418 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 3220 -1970 1 1 {name=l419 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 3260 -1970 3 0 {name=l420 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 3200 -1720 0 0 {name=l421 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 3530 -1840 0 0 {name=x106}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 3530 -1840 0 0 {name=x106}
 C {devices/lab_wire.sym} 3460 -1960 2 1 {name=l422 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 3480 -1970 1 1 {name=l423 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 3520 -1970 3 0 {name=l424 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 3460 -1720 0 0 {name=l425 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 3790 -1840 0 0 {name=x107}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 3790 -1840 0 0 {name=x107}
 C {devices/lab_wire.sym} 3720 -1960 2 1 {name=l426 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 3740 -1970 1 1 {name=l427 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 3780 -1970 3 0 {name=l428 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 3720 -1720 0 0 {name=l429 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 4050 -1840 0 0 {name=x108}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 4050 -1840 0 0 {name=x108}
 C {devices/lab_wire.sym} 3980 -1960 2 1 {name=l430 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 4000 -1970 1 1 {name=l431 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 4040 -1970 3 0 {name=l432 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 3980 -1720 0 0 {name=l433 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 4310 -1840 0 0 {name=x109}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 4310 -1840 0 0 {name=x109}
 C {devices/lab_wire.sym} 4240 -1960 2 1 {name=l434 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 4260 -1970 1 1 {name=l435 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 4300 -1970 3 0 {name=l436 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 4240 -1720 0 0 {name=l437 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 4570 -1840 0 0 {name=x110}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 4570 -1840 0 0 {name=x110}
 C {devices/lab_wire.sym} 4500 -1960 2 1 {name=l438 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 4520 -1970 1 1 {name=l439 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 4560 -1970 3 0 {name=l440 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 4500 -1720 0 0 {name=l441 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 4830 -1840 0 0 {name=x111}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 4830 -1840 0 0 {name=x111}
 C {devices/lab_wire.sym} 4760 -1960 2 1 {name=l442 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 4780 -1970 1 1 {name=l443 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 4820 -1970 3 0 {name=l444 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 4760 -1720 0 0 {name=l445 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 5090 -1840 0 0 {name=x112}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 5090 -1840 0 0 {name=x112}
 C {devices/lab_wire.sym} 5020 -1960 2 1 {name=l446 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 5040 -1970 1 1 {name=l447 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 5080 -1970 3 0 {name=l448 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 5020 -1720 0 0 {name=l449 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 5350 -1840 0 0 {name=x113}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 5350 -1840 0 0 {name=x113}
 C {devices/lab_wire.sym} 5280 -1960 2 1 {name=l450 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 5300 -1970 1 1 {name=l451 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 5340 -1970 3 0 {name=l452 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 5280 -1720 0 0 {name=l453 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 5610 -1840 0 0 {name=x114}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 5610 -1840 0 0 {name=x114}
 C {devices/lab_wire.sym} 5540 -1960 2 1 {name=l454 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 5560 -1970 1 1 {name=l455 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 5600 -1970 3 0 {name=l456 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 5540 -1720 0 0 {name=l457 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 5870 -1840 0 0 {name=x115}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 5870 -1840 0 0 {name=x115}
 C {devices/lab_wire.sym} 5800 -1960 2 1 {name=l458 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 5820 -1970 1 1 {name=l459 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 5860 -1970 3 0 {name=l460 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 5800 -1720 0 0 {name=l461 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 6130 -1840 0 0 {name=x116}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 6130 -1840 0 0 {name=x116}
 C {devices/lab_wire.sym} 6060 -1960 2 1 {name=l462 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 6080 -1970 1 1 {name=l463 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 6120 -1970 3 0 {name=l464 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 6060 -1720 0 0 {name=l465 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 6390 -1840 0 0 {name=x117}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 6390 -1840 0 0 {name=x117}
 C {devices/lab_wire.sym} 6320 -1960 2 1 {name=l466 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 6340 -1970 1 1 {name=l467 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 6380 -1970 3 0 {name=l468 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 6320 -1720 0 0 {name=l469 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 6650 -1840 0 0 {name=x118}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 6650 -1840 0 0 {name=x118}
 C {devices/lab_wire.sym} 6580 -1960 2 1 {name=l470 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 6600 -1970 1 1 {name=l471 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 6640 -1970 3 0 {name=l472 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 6580 -1720 0 0 {name=l473 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 6910 -1840 0 0 {name=x119}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 6910 -1840 0 0 {name=x119}
 C {devices/lab_wire.sym} 6840 -1960 2 1 {name=l474 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 6860 -1970 1 1 {name=l475 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 6900 -1970 3 0 {name=l476 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 6840 -1720 0 0 {name=l477 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 7170 -1840 0 0 {name=x120}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 7170 -1840 0 0 {name=x120}
 C {devices/lab_wire.sym} 7100 -1960 2 1 {name=l478 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 7120 -1970 1 1 {name=l479 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 7160 -1970 3 0 {name=l480 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 7100 -1720 0 0 {name=l481 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 7430 -1840 0 0 {name=x121}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 7430 -1840 0 0 {name=x121}
 C {devices/lab_wire.sym} 7360 -1960 2 1 {name=l482 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 7380 -1970 1 1 {name=l483 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 7420 -1970 3 0 {name=l484 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 7360 -1720 0 0 {name=l485 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 7690 -1840 0 0 {name=x122}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 7690 -1840 0 0 {name=x122}
 C {devices/lab_wire.sym} 7620 -1960 2 1 {name=l486 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 7640 -1970 1 1 {name=l487 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 7680 -1970 3 0 {name=l488 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 7620 -1720 0 0 {name=l489 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 7950 -1840 0 0 {name=x123}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 7950 -1840 0 0 {name=x123}
 C {devices/lab_wire.sym} 7880 -1960 2 1 {name=l490 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 7900 -1970 1 1 {name=l491 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 7940 -1970 3 0 {name=l492 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 7880 -1720 0 0 {name=l493 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 8210 -1840 0 0 {name=x124}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 8210 -1840 0 0 {name=x124}
 C {devices/lab_wire.sym} 8140 -1960 2 1 {name=l494 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 8160 -1970 1 1 {name=l495 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 8200 -1970 3 0 {name=l496 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 8140 -1720 0 0 {name=l497 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 8470 -1840 0 0 {name=x125}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 8470 -1840 0 0 {name=x125}
 C {devices/lab_wire.sym} 8400 -1960 2 1 {name=l498 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 8420 -1970 1 1 {name=l499 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 8460 -1970 3 0 {name=l500 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 8400 -1720 0 0 {name=l501 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 8730 -1840 0 0 {name=x126}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 8730 -1840 0 0 {name=x126}
 C {devices/lab_wire.sym} 8660 -1960 2 1 {name=l502 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 8680 -1970 1 1 {name=l503 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 8720 -1970 3 0 {name=l504 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 8660 -1720 0 0 {name=l505 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 8990 -1840 0 0 {name=x127}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 8990 -1840 0 0 {name=x127}
 C {devices/lab_wire.sym} 8920 -1960 2 1 {name=l506 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 8940 -1970 1 1 {name=l507 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 8980 -1970 3 0 {name=l508 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 8920 -1720 0 0 {name=l509 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 9250 -1840 0 0 {name=x128}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 9250 -1840 0 0 {name=x128}
 C {devices/lab_wire.sym} 9180 -1960 2 1 {name=l510 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 9200 -1970 1 1 {name=l511 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 9240 -1970 3 0 {name=l512 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 9180 -1720 0 0 {name=l513 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 1190 -2100 0 0 {name=x129}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 1190 -2100 0 0 {name=x129}
 C {devices/lab_wire.sym} 1120 -2220 2 1 {name=l514 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 1140 -2230 1 1 {name=l515 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 1180 -2230 3 0 {name=l516 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 1120 -1980 0 0 {name=l517 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 1450 -2100 0 0 {name=x130}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 1450 -2100 0 0 {name=x130}
 C {devices/lab_wire.sym} 1380 -2220 2 1 {name=l518 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 1400 -2230 1 1 {name=l519 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 1440 -2230 3 0 {name=l520 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 1380 -1980 0 0 {name=l521 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 1710 -2100 0 0 {name=x131}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 1710 -2100 0 0 {name=x131}
 C {devices/lab_wire.sym} 1640 -2220 2 1 {name=l522 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 1660 -2230 1 1 {name=l523 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 1700 -2230 3 0 {name=l524 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 1640 -1980 0 0 {name=l525 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 1970 -2100 0 0 {name=x132}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 1970 -2100 0 0 {name=x132}
 C {devices/lab_wire.sym} 1900 -2220 2 1 {name=l526 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 1920 -2230 1 1 {name=l527 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 1960 -2230 3 0 {name=l528 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 1900 -1980 0 0 {name=l529 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 2230 -2100 0 0 {name=x133}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 2230 -2100 0 0 {name=x133}
 C {devices/lab_wire.sym} 2160 -2220 2 1 {name=l530 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 2180 -2230 1 1 {name=l531 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 2220 -2230 3 0 {name=l532 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 2160 -1980 0 0 {name=l533 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 2490 -2100 0 0 {name=x134}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 2490 -2100 0 0 {name=x134}
 C {devices/lab_wire.sym} 2420 -2220 2 1 {name=l534 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 2440 -2230 1 1 {name=l535 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 2480 -2230 3 0 {name=l536 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 2420 -1980 0 0 {name=l537 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 2750 -2100 0 0 {name=x135}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 2750 -2100 0 0 {name=x135}
 C {devices/lab_wire.sym} 2680 -2220 2 1 {name=l538 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 2700 -2230 1 1 {name=l539 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 2740 -2230 3 0 {name=l540 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 2680 -1980 0 0 {name=l541 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 3010 -2100 0 0 {name=x136}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 3010 -2100 0 0 {name=x136}
 C {devices/lab_wire.sym} 2940 -2220 2 1 {name=l542 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 2960 -2230 1 1 {name=l543 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 3000 -2230 3 0 {name=l544 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 2940 -1980 0 0 {name=l545 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 3270 -2100 0 0 {name=x137}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 3270 -2100 0 0 {name=x137}
 C {devices/lab_wire.sym} 3200 -2220 2 1 {name=l546 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 3220 -2230 1 1 {name=l547 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 3260 -2230 3 0 {name=l548 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 3200 -1980 0 0 {name=l549 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 3530 -2100 0 0 {name=x138}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 3530 -2100 0 0 {name=x138}
 C {devices/lab_wire.sym} 3460 -2220 2 1 {name=l550 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 3480 -2230 1 1 {name=l551 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 3520 -2230 3 0 {name=l552 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 3460 -1980 0 0 {name=l553 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 3790 -2100 0 0 {name=x139}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 3790 -2100 0 0 {name=x139}
 C {devices/lab_wire.sym} 3720 -2220 2 1 {name=l554 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 3740 -2230 1 1 {name=l555 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 3780 -2230 3 0 {name=l556 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 3720 -1980 0 0 {name=l557 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 4050 -2100 0 0 {name=x140}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 4050 -2100 0 0 {name=x140}
 C {devices/lab_wire.sym} 3980 -2220 2 1 {name=l558 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 4000 -2230 1 1 {name=l559 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 4040 -2230 3 0 {name=l560 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 3980 -1980 0 0 {name=l561 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 4310 -2100 0 0 {name=x141}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 4310 -2100 0 0 {name=x141}
 C {devices/lab_wire.sym} 4240 -2220 2 1 {name=l562 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 4260 -2230 1 1 {name=l563 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 4300 -2230 3 0 {name=l564 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 4240 -1980 0 0 {name=l565 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 4570 -2100 0 0 {name=x142}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 4570 -2100 0 0 {name=x142}
 C {devices/lab_wire.sym} 4500 -2220 2 1 {name=l566 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 4520 -2230 1 1 {name=l567 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 4560 -2230 3 0 {name=l568 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 4500 -1980 0 0 {name=l569 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 4830 -2100 0 0 {name=x143}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 4830 -2100 0 0 {name=x143}
 C {devices/lab_wire.sym} 4760 -2220 2 1 {name=l570 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 4780 -2230 1 1 {name=l571 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 4820 -2230 3 0 {name=l572 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 4760 -1980 0 0 {name=l573 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 5090 -2100 0 0 {name=x144}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 5090 -2100 0 0 {name=x144}
 C {devices/lab_wire.sym} 5020 -2220 2 1 {name=l574 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 5040 -2230 1 1 {name=l575 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 5080 -2230 3 0 {name=l576 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 5020 -1980 0 0 {name=l577 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 5350 -2100 0 0 {name=x145}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 5350 -2100 0 0 {name=x145}
 C {devices/lab_wire.sym} 5280 -2220 2 1 {name=l578 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 5300 -2230 1 1 {name=l579 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 5340 -2230 3 0 {name=l580 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 5280 -1980 0 0 {name=l581 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 5610 -2100 0 0 {name=x146}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 5610 -2100 0 0 {name=x146}
 C {devices/lab_wire.sym} 5540 -2220 2 1 {name=l582 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 5560 -2230 1 1 {name=l583 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 5600 -2230 3 0 {name=l584 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 5540 -1980 0 0 {name=l585 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 5870 -2100 0 0 {name=x147}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 5870 -2100 0 0 {name=x147}
 C {devices/lab_wire.sym} 5800 -2220 2 1 {name=l586 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 5820 -2230 1 1 {name=l587 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 5860 -2230 3 0 {name=l588 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 5800 -1980 0 0 {name=l589 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 6130 -2100 0 0 {name=x148}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 6130 -2100 0 0 {name=x148}
 C {devices/lab_wire.sym} 6060 -2220 2 1 {name=l590 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 6080 -2230 1 1 {name=l591 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 6120 -2230 3 0 {name=l592 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 6060 -1980 0 0 {name=l593 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 6390 -2100 0 0 {name=x149}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 6390 -2100 0 0 {name=x149}
 C {devices/lab_wire.sym} 6320 -2220 2 1 {name=l594 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 6340 -2230 1 1 {name=l595 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 6380 -2230 3 0 {name=l596 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 6320 -1980 0 0 {name=l597 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 6650 -2100 0 0 {name=x150}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 6650 -2100 0 0 {name=x150}
 C {devices/lab_wire.sym} 6580 -2220 2 1 {name=l598 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 6600 -2230 1 1 {name=l599 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 6640 -2230 3 0 {name=l600 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 6580 -1980 0 0 {name=l601 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 6910 -2100 0 0 {name=x151}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 6910 -2100 0 0 {name=x151}
 C {devices/lab_wire.sym} 6840 -2220 2 1 {name=l602 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 6860 -2230 1 1 {name=l603 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 6900 -2230 3 0 {name=l604 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 6840 -1980 0 0 {name=l605 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 7170 -2100 0 0 {name=x152}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 7170 -2100 0 0 {name=x152}
 C {devices/lab_wire.sym} 7100 -2220 2 1 {name=l606 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 7120 -2230 1 1 {name=l607 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 7160 -2230 3 0 {name=l608 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 7100 -1980 0 0 {name=l609 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 7430 -2100 0 0 {name=x153}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 7430 -2100 0 0 {name=x153}
 C {devices/lab_wire.sym} 7360 -2220 2 1 {name=l610 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 7380 -2230 1 1 {name=l611 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 7420 -2230 3 0 {name=l612 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 7360 -1980 0 0 {name=l613 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 7690 -2100 0 0 {name=x154}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 7690 -2100 0 0 {name=x154}
 C {devices/lab_wire.sym} 7620 -2220 2 1 {name=l614 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 7640 -2230 1 1 {name=l615 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 7680 -2230 3 0 {name=l616 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 7620 -1980 0 0 {name=l617 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 7950 -2100 0 0 {name=x155}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 7950 -2100 0 0 {name=x155}
 C {devices/lab_wire.sym} 7880 -2220 2 1 {name=l618 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 7900 -2230 1 1 {name=l619 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 7940 -2230 3 0 {name=l620 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 7880 -1980 0 0 {name=l621 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 8210 -2100 0 0 {name=x156}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 8210 -2100 0 0 {name=x156}
 C {devices/lab_wire.sym} 8140 -2220 2 1 {name=l622 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 8160 -2230 1 1 {name=l623 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 8200 -2230 3 0 {name=l624 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 8140 -1980 0 0 {name=l625 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 8470 -2100 0 0 {name=x157}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 8470 -2100 0 0 {name=x157}
 C {devices/lab_wire.sym} 8400 -2220 2 1 {name=l626 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 8420 -2230 1 1 {name=l627 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 8460 -2230 3 0 {name=l628 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 8400 -1980 0 0 {name=l629 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 8730 -2100 0 0 {name=x158}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 8730 -2100 0 0 {name=x158}
 C {devices/lab_wire.sym} 8660 -2220 2 1 {name=l630 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 8680 -2230 1 1 {name=l631 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 8720 -2230 3 0 {name=l632 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 8660 -1980 0 0 {name=l633 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 8990 -2100 0 0 {name=x159}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 8990 -2100 0 0 {name=x159}
 C {devices/lab_wire.sym} 8920 -2220 2 1 {name=l634 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 8940 -2230 1 1 {name=l635 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 8980 -2230 3 0 {name=l636 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 8920 -1980 0 0 {name=l637 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 9250 -2100 0 0 {name=x160}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 9250 -2100 0 0 {name=x160}
 C {devices/lab_wire.sym} 9180 -2220 2 1 {name=l638 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 9200 -2230 1 1 {name=l639 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 9240 -2230 3 0 {name=l640 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 9180 -1980 0 0 {name=l641 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 1190 -2360 0 0 {name=x161}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 1190 -2360 0 0 {name=x161}
 C {devices/lab_wire.sym} 1120 -2480 2 1 {name=l642 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 1140 -2490 1 1 {name=l643 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 1180 -2490 3 0 {name=l644 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 1120 -2240 0 0 {name=l645 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 1450 -2360 0 0 {name=x162}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 1450 -2360 0 0 {name=x162}
 C {devices/lab_wire.sym} 1380 -2480 2 1 {name=l646 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 1400 -2490 1 1 {name=l647 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 1440 -2490 3 0 {name=l648 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 1380 -2240 0 0 {name=l649 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 1710 -2360 0 0 {name=x163}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 1710 -2360 0 0 {name=x163}
 C {devices/lab_wire.sym} 1640 -2480 2 1 {name=l650 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 1660 -2490 1 1 {name=l651 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 1700 -2490 3 0 {name=l652 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 1640 -2240 0 0 {name=l653 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 1970 -2360 0 0 {name=x164}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 1970 -2360 0 0 {name=x164}
 C {devices/lab_wire.sym} 1900 -2480 2 1 {name=l654 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 1920 -2490 1 1 {name=l655 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 1960 -2490 3 0 {name=l656 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 1900 -2240 0 0 {name=l657 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 2230 -2360 0 0 {name=x165}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 2230 -2360 0 0 {name=x165}
 C {devices/lab_wire.sym} 2160 -2480 2 1 {name=l658 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 2180 -2490 1 1 {name=l659 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 2220 -2490 3 0 {name=l660 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 2160 -2240 0 0 {name=l661 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 2490 -2360 0 0 {name=x166}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 2490 -2360 0 0 {name=x166}
 C {devices/lab_wire.sym} 2420 -2480 2 1 {name=l662 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 2440 -2490 1 1 {name=l663 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 2480 -2490 3 0 {name=l664 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 2420 -2240 0 0 {name=l665 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 2750 -2360 0 0 {name=x167}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 2750 -2360 0 0 {name=x167}
 C {devices/lab_wire.sym} 2680 -2480 2 1 {name=l666 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 2700 -2490 1 1 {name=l667 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 2740 -2490 3 0 {name=l668 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 2680 -2240 0 0 {name=l669 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 3010 -2360 0 0 {name=x168}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 3010 -2360 0 0 {name=x168}
 C {devices/lab_wire.sym} 2940 -2480 2 1 {name=l670 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 2960 -2490 1 1 {name=l671 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 3000 -2490 3 0 {name=l672 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 2940 -2240 0 0 {name=l673 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 3270 -2360 0 0 {name=x169}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 3270 -2360 0 0 {name=x169}
 C {devices/lab_wire.sym} 3200 -2480 2 1 {name=l674 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 3220 -2490 1 1 {name=l675 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 3260 -2490 3 0 {name=l676 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 3200 -2240 0 0 {name=l677 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 3530 -2360 0 0 {name=x170}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 3530 -2360 0 0 {name=x170}
 C {devices/lab_wire.sym} 3460 -2480 2 1 {name=l678 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 3480 -2490 1 1 {name=l679 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 3520 -2490 3 0 {name=l680 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 3460 -2240 0 0 {name=l681 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 3790 -2360 0 0 {name=x171}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 3790 -2360 0 0 {name=x171}
 C {devices/lab_wire.sym} 3720 -2480 2 1 {name=l682 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 3740 -2490 1 1 {name=l683 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 3780 -2490 3 0 {name=l684 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 3720 -2240 0 0 {name=l685 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 4050 -2360 0 0 {name=x172}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 4050 -2360 0 0 {name=x172}
 C {devices/lab_wire.sym} 3980 -2480 2 1 {name=l686 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 4000 -2490 1 1 {name=l687 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 4040 -2490 3 0 {name=l688 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 3980 -2240 0 0 {name=l689 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 4310 -2360 0 0 {name=x173}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 4310 -2360 0 0 {name=x173}
 C {devices/lab_wire.sym} 4240 -2480 2 1 {name=l690 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 4260 -2490 1 1 {name=l691 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 4300 -2490 3 0 {name=l692 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 4240 -2240 0 0 {name=l693 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 4570 -2360 0 0 {name=x174}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 4570 -2360 0 0 {name=x174}
 C {devices/lab_wire.sym} 4500 -2480 2 1 {name=l694 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 4520 -2490 1 1 {name=l695 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 4560 -2490 3 0 {name=l696 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 4500 -2240 0 0 {name=l697 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 4830 -2360 0 0 {name=x175}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 4830 -2360 0 0 {name=x175}
 C {devices/lab_wire.sym} 4760 -2480 2 1 {name=l698 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 4780 -2490 1 1 {name=l699 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 4820 -2490 3 0 {name=l700 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 4760 -2240 0 0 {name=l701 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 5090 -2360 0 0 {name=x176}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 5090 -2360 0 0 {name=x176}
 C {devices/lab_wire.sym} 5020 -2480 2 1 {name=l702 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 5040 -2490 1 1 {name=l703 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 5080 -2490 3 0 {name=l704 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 5020 -2240 0 0 {name=l705 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 5350 -2360 0 0 {name=x177}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 5350 -2360 0 0 {name=x177}
 C {devices/lab_wire.sym} 5280 -2480 2 1 {name=l706 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 5300 -2490 1 1 {name=l707 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 5340 -2490 3 0 {name=l708 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 5280 -2240 0 0 {name=l709 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 5610 -2360 0 0 {name=x178}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 5610 -2360 0 0 {name=x178}
 C {devices/lab_wire.sym} 5540 -2480 2 1 {name=l710 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 5560 -2490 1 1 {name=l711 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 5600 -2490 3 0 {name=l712 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 5540 -2240 0 0 {name=l713 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 5870 -2360 0 0 {name=x179}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 5870 -2360 0 0 {name=x179}
 C {devices/lab_wire.sym} 5800 -2480 2 1 {name=l714 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 5820 -2490 1 1 {name=l715 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 5860 -2490 3 0 {name=l716 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 5800 -2240 0 0 {name=l717 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 6130 -2360 0 0 {name=x180}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 6130 -2360 0 0 {name=x180}
 C {devices/lab_wire.sym} 6060 -2480 2 1 {name=l718 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 6080 -2490 1 1 {name=l719 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 6120 -2490 3 0 {name=l720 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 6060 -2240 0 0 {name=l721 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 6390 -2360 0 0 {name=x181}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 6390 -2360 0 0 {name=x181}
 C {devices/lab_wire.sym} 6320 -2480 2 1 {name=l722 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 6340 -2490 1 1 {name=l723 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 6380 -2490 3 0 {name=l724 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 6320 -2240 0 0 {name=l725 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 6650 -2360 0 0 {name=x182}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 6650 -2360 0 0 {name=x182}
 C {devices/lab_wire.sym} 6580 -2480 2 1 {name=l726 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 6600 -2490 1 1 {name=l727 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 6640 -2490 3 0 {name=l728 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 6580 -2240 0 0 {name=l729 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 6910 -2360 0 0 {name=x183}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 6910 -2360 0 0 {name=x183}
 C {devices/lab_wire.sym} 6840 -2480 2 1 {name=l730 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 6860 -2490 1 1 {name=l731 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 6900 -2490 3 0 {name=l732 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 6840 -2240 0 0 {name=l733 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 7170 -2360 0 0 {name=x184}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 7170 -2360 0 0 {name=x184}
 C {devices/lab_wire.sym} 7100 -2480 2 1 {name=l734 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 7120 -2490 1 1 {name=l735 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 7160 -2490 3 0 {name=l736 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 7100 -2240 0 0 {name=l737 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 7430 -2360 0 0 {name=x185}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 7430 -2360 0 0 {name=x185}
 C {devices/lab_wire.sym} 7360 -2480 2 1 {name=l738 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 7380 -2490 1 1 {name=l739 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 7420 -2490 3 0 {name=l740 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 7360 -2240 0 0 {name=l741 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 7690 -2360 0 0 {name=x186}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 7690 -2360 0 0 {name=x186}
 C {devices/lab_wire.sym} 7620 -2480 2 1 {name=l742 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 7640 -2490 1 1 {name=l743 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 7680 -2490 3 0 {name=l744 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 7620 -2240 0 0 {name=l745 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 7950 -2360 0 0 {name=x187}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 7950 -2360 0 0 {name=x187}
 C {devices/lab_wire.sym} 7880 -2480 2 1 {name=l746 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 7900 -2490 1 1 {name=l747 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 7940 -2490 3 0 {name=l748 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 7880 -2240 0 0 {name=l749 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 8210 -2360 0 0 {name=x188}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 8210 -2360 0 0 {name=x188}
 C {devices/lab_wire.sym} 8140 -2480 2 1 {name=l750 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 8160 -2490 1 1 {name=l751 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 8200 -2490 3 0 {name=l752 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 8140 -2240 0 0 {name=l753 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 8470 -2360 0 0 {name=x189}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 8470 -2360 0 0 {name=x189}
 C {devices/lab_wire.sym} 8400 -2480 2 1 {name=l754 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 8420 -2490 1 1 {name=l755 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 8460 -2490 3 0 {name=l756 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 8400 -2240 0 0 {name=l757 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 8730 -2360 0 0 {name=x190}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 8730 -2360 0 0 {name=x190}
 C {devices/lab_wire.sym} 8660 -2480 2 1 {name=l758 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 8680 -2490 1 1 {name=l759 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 8720 -2490 3 0 {name=l760 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 8660 -2240 0 0 {name=l761 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 8990 -2360 0 0 {name=x191}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 8990 -2360 0 0 {name=x191}
 C {devices/lab_wire.sym} 8920 -2480 2 1 {name=l762 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 8940 -2490 1 1 {name=l763 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 8980 -2490 3 0 {name=l764 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 8920 -2240 0 0 {name=l765 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 9250 -2360 0 0 {name=x192}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 9250 -2360 0 0 {name=x192}
 C {devices/lab_wire.sym} 9180 -2480 2 1 {name=l766 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 9200 -2490 1 1 {name=l767 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 9240 -2490 3 0 {name=l768 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 9180 -2240 0 0 {name=l769 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 1190 -2620 0 0 {name=x193}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 1190 -2620 0 0 {name=x193}
 C {devices/lab_wire.sym} 1120 -2740 2 1 {name=l770 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 1140 -2750 1 1 {name=l771 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 1180 -2750 3 0 {name=l772 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 1120 -2500 0 0 {name=l773 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 1450 -2620 0 0 {name=x194}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 1450 -2620 0 0 {name=x194}
 C {devices/lab_wire.sym} 1380 -2740 2 1 {name=l774 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 1400 -2750 1 1 {name=l775 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 1440 -2750 3 0 {name=l776 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 1380 -2500 0 0 {name=l777 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 1710 -2620 0 0 {name=x195}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 1710 -2620 0 0 {name=x195}
 C {devices/lab_wire.sym} 1640 -2740 2 1 {name=l778 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 1660 -2750 1 1 {name=l779 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 1700 -2750 3 0 {name=l780 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 1640 -2500 0 0 {name=l781 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 1970 -2620 0 0 {name=x196}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 1970 -2620 0 0 {name=x196}
 C {devices/lab_wire.sym} 1900 -2740 2 1 {name=l782 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 1920 -2750 1 1 {name=l783 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 1960 -2750 3 0 {name=l784 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 1900 -2500 0 0 {name=l785 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 2230 -2620 0 0 {name=x197}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 2230 -2620 0 0 {name=x197}
 C {devices/lab_wire.sym} 2160 -2740 2 1 {name=l786 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 2180 -2750 1 1 {name=l787 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 2220 -2750 3 0 {name=l788 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 2160 -2500 0 0 {name=l789 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 2490 -2620 0 0 {name=x198}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 2490 -2620 0 0 {name=x198}
 C {devices/lab_wire.sym} 2420 -2740 2 1 {name=l790 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 2440 -2750 1 1 {name=l791 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 2480 -2750 3 0 {name=l792 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 2420 -2500 0 0 {name=l793 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 2750 -2620 0 0 {name=x199}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 2750 -2620 0 0 {name=x199}
 C {devices/lab_wire.sym} 2680 -2740 2 1 {name=l794 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 2700 -2750 1 1 {name=l795 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 2740 -2750 3 0 {name=l796 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 2680 -2500 0 0 {name=l797 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 3010 -2620 0 0 {name=x200}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 3010 -2620 0 0 {name=x200}
 C {devices/lab_wire.sym} 2940 -2740 2 1 {name=l798 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 2960 -2750 1 1 {name=l799 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 3000 -2750 3 0 {name=l800 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 2940 -2500 0 0 {name=l801 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 3270 -2620 0 0 {name=x201}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 3270 -2620 0 0 {name=x201}
 C {devices/lab_wire.sym} 3200 -2740 2 1 {name=l802 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 3220 -2750 1 1 {name=l803 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 3260 -2750 3 0 {name=l804 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 3200 -2500 0 0 {name=l805 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 3530 -2620 0 0 {name=x202}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 3530 -2620 0 0 {name=x202}
 C {devices/lab_wire.sym} 3460 -2740 2 1 {name=l806 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 3480 -2750 1 1 {name=l807 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 3520 -2750 3 0 {name=l808 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 3460 -2500 0 0 {name=l809 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 3790 -2620 0 0 {name=x203}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 3790 -2620 0 0 {name=x203}
 C {devices/lab_wire.sym} 3720 -2740 2 1 {name=l810 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 3740 -2750 1 1 {name=l811 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 3780 -2750 3 0 {name=l812 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 3720 -2500 0 0 {name=l813 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 4050 -2620 0 0 {name=x204}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 4050 -2620 0 0 {name=x204}
 C {devices/lab_wire.sym} 3980 -2740 2 1 {name=l814 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 4000 -2750 1 1 {name=l815 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 4040 -2750 3 0 {name=l816 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 3980 -2500 0 0 {name=l817 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 4310 -2620 0 0 {name=x205}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 4310 -2620 0 0 {name=x205}
 C {devices/lab_wire.sym} 4240 -2740 2 1 {name=l818 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 4260 -2750 1 1 {name=l819 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 4300 -2750 3 0 {name=l820 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 4240 -2500 0 0 {name=l821 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 4570 -2620 0 0 {name=x206}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 4570 -2620 0 0 {name=x206}
 C {devices/lab_wire.sym} 4500 -2740 2 1 {name=l822 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 4520 -2750 1 1 {name=l823 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 4560 -2750 3 0 {name=l824 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 4500 -2500 0 0 {name=l825 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 4830 -2620 0 0 {name=x207}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 4830 -2620 0 0 {name=x207}
 C {devices/lab_wire.sym} 4760 -2740 2 1 {name=l826 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 4780 -2750 1 1 {name=l827 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 4820 -2750 3 0 {name=l828 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 4760 -2500 0 0 {name=l829 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 5090 -2620 0 0 {name=x208}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 5090 -2620 0 0 {name=x208}
 C {devices/lab_wire.sym} 5020 -2740 2 1 {name=l830 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 5040 -2750 1 1 {name=l831 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 5080 -2750 3 0 {name=l832 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 5020 -2500 0 0 {name=l833 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 5350 -2620 0 0 {name=x209}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 5350 -2620 0 0 {name=x209}
 C {devices/lab_wire.sym} 5280 -2740 2 1 {name=l834 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 5300 -2750 1 1 {name=l835 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 5340 -2750 3 0 {name=l836 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 5280 -2500 0 0 {name=l837 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 5610 -2620 0 0 {name=x210}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 5610 -2620 0 0 {name=x210}
 C {devices/lab_wire.sym} 5540 -2740 2 1 {name=l838 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 5560 -2750 1 1 {name=l839 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 5600 -2750 3 0 {name=l840 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 5540 -2500 0 0 {name=l841 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 5870 -2620 0 0 {name=x211}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 5870 -2620 0 0 {name=x211}
 C {devices/lab_wire.sym} 5800 -2740 2 1 {name=l842 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 5820 -2750 1 1 {name=l843 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 5860 -2750 3 0 {name=l844 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 5800 -2500 0 0 {name=l845 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 6130 -2620 0 0 {name=x212}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 6130 -2620 0 0 {name=x212}
 C {devices/lab_wire.sym} 6060 -2740 2 1 {name=l846 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 6080 -2750 1 1 {name=l847 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 6120 -2750 3 0 {name=l848 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 6060 -2500 0 0 {name=l849 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 6390 -2620 0 0 {name=x213}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 6390 -2620 0 0 {name=x213}
 C {devices/lab_wire.sym} 6320 -2740 2 1 {name=l850 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 6340 -2750 1 1 {name=l851 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 6380 -2750 3 0 {name=l852 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 6320 -2500 0 0 {name=l853 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 6650 -2620 0 0 {name=x214}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 6650 -2620 0 0 {name=x214}
 C {devices/lab_wire.sym} 6580 -2740 2 1 {name=l854 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 6600 -2750 1 1 {name=l855 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 6640 -2750 3 0 {name=l856 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 6580 -2500 0 0 {name=l857 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 6910 -2620 0 0 {name=x215}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 6910 -2620 0 0 {name=x215}
 C {devices/lab_wire.sym} 6840 -2740 2 1 {name=l858 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 6860 -2750 1 1 {name=l859 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 6900 -2750 3 0 {name=l860 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 6840 -2500 0 0 {name=l861 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 7170 -2620 0 0 {name=x216}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 7170 -2620 0 0 {name=x216}
 C {devices/lab_wire.sym} 7100 -2740 2 1 {name=l862 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 7120 -2750 1 1 {name=l863 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 7160 -2750 3 0 {name=l864 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 7100 -2500 0 0 {name=l865 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 7430 -2620 0 0 {name=x217}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 7430 -2620 0 0 {name=x217}
 C {devices/lab_wire.sym} 7360 -2740 2 1 {name=l866 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 7380 -2750 1 1 {name=l867 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 7420 -2750 3 0 {name=l868 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 7360 -2500 0 0 {name=l869 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 7690 -2620 0 0 {name=x218}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 7690 -2620 0 0 {name=x218}
 C {devices/lab_wire.sym} 7620 -2740 2 1 {name=l870 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 7640 -2750 1 1 {name=l871 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 7680 -2750 3 0 {name=l872 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 7620 -2500 0 0 {name=l873 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 7950 -2620 0 0 {name=x219}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 7950 -2620 0 0 {name=x219}
 C {devices/lab_wire.sym} 7880 -2740 2 1 {name=l874 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 7900 -2750 1 1 {name=l875 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 7940 -2750 3 0 {name=l876 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 7880 -2500 0 0 {name=l877 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 8210 -2620 0 0 {name=x220}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 8210 -2620 0 0 {name=x220}
 C {devices/lab_wire.sym} 8140 -2740 2 1 {name=l878 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 8160 -2750 1 1 {name=l879 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 8200 -2750 3 0 {name=l880 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 8140 -2500 0 0 {name=l881 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 8470 -2620 0 0 {name=x221}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 8470 -2620 0 0 {name=x221}
 C {devices/lab_wire.sym} 8400 -2740 2 1 {name=l882 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 8420 -2750 1 1 {name=l883 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 8460 -2750 3 0 {name=l884 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 8400 -2500 0 0 {name=l885 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 8730 -2620 0 0 {name=x222}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 8730 -2620 0 0 {name=x222}
 C {devices/lab_wire.sym} 8660 -2740 2 1 {name=l886 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 8680 -2750 1 1 {name=l887 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 8720 -2750 3 0 {name=l888 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 8660 -2500 0 0 {name=l889 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 8990 -2620 0 0 {name=x223}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 8990 -2620 0 0 {name=x223}
 C {devices/lab_wire.sym} 8920 -2740 2 1 {name=l890 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 8940 -2750 1 1 {name=l891 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 8980 -2750 3 0 {name=l892 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 8920 -2500 0 0 {name=l893 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 9250 -2620 0 0 {name=x224}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 9250 -2620 0 0 {name=x224}
 C {devices/lab_wire.sym} 9180 -2740 2 1 {name=l894 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 9200 -2750 1 1 {name=l895 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 9240 -2750 3 0 {name=l896 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 9180 -2500 0 0 {name=l897 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 1190 -2880 0 0 {name=x225}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 1190 -2880 0 0 {name=x225}
 C {devices/lab_wire.sym} 1120 -3000 2 1 {name=l898 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 1140 -3010 1 1 {name=l899 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 1180 -3010 3 0 {name=l900 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 1120 -2760 0 0 {name=l901 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 1450 -2880 0 0 {name=x226}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 1450 -2880 0 0 {name=x226}
 C {devices/lab_wire.sym} 1380 -3000 2 1 {name=l902 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 1400 -3010 1 1 {name=l903 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 1440 -3010 3 0 {name=l904 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 1380 -2760 0 0 {name=l905 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 1710 -2880 0 0 {name=x227}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 1710 -2880 0 0 {name=x227}
 C {devices/lab_wire.sym} 1640 -3000 2 1 {name=l906 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 1660 -3010 1 1 {name=l907 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 1700 -3010 3 0 {name=l908 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 1640 -2760 0 0 {name=l909 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 1970 -2880 0 0 {name=x228}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 1970 -2880 0 0 {name=x228}
 C {devices/lab_wire.sym} 1900 -3000 2 1 {name=l910 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 1920 -3010 1 1 {name=l911 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 1960 -3010 3 0 {name=l912 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 1900 -2760 0 0 {name=l913 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 2230 -2880 0 0 {name=x229}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 2230 -2880 0 0 {name=x229}
 C {devices/lab_wire.sym} 2160 -3000 2 1 {name=l914 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 2180 -3010 1 1 {name=l915 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 2220 -3010 3 0 {name=l916 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 2160 -2760 0 0 {name=l917 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 2490 -2880 0 0 {name=x230}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 2490 -2880 0 0 {name=x230}
 C {devices/lab_wire.sym} 2420 -3000 2 1 {name=l918 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 2440 -3010 1 1 {name=l919 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 2480 -3010 3 0 {name=l920 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 2420 -2760 0 0 {name=l921 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 2750 -2880 0 0 {name=x231}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 2750 -2880 0 0 {name=x231}
 C {devices/lab_wire.sym} 2680 -3000 2 1 {name=l922 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 2700 -3010 1 1 {name=l923 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 2740 -3010 3 0 {name=l924 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 2680 -2760 0 0 {name=l925 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 3010 -2880 0 0 {name=x232}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 3010 -2880 0 0 {name=x232}
 C {devices/lab_wire.sym} 2940 -3000 2 1 {name=l926 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 2960 -3010 1 1 {name=l927 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 3000 -3010 3 0 {name=l928 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 2940 -2760 0 0 {name=l929 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 3270 -2880 0 0 {name=x233}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 3270 -2880 0 0 {name=x233}
 C {devices/lab_wire.sym} 3200 -3000 2 1 {name=l930 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 3220 -3010 1 1 {name=l931 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 3260 -3010 3 0 {name=l932 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 3200 -2760 0 0 {name=l933 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 3530 -2880 0 0 {name=x234}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 3530 -2880 0 0 {name=x234}
 C {devices/lab_wire.sym} 3460 -3000 2 1 {name=l934 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 3480 -3010 1 1 {name=l935 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 3520 -3010 3 0 {name=l936 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 3460 -2760 0 0 {name=l937 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 3790 -2880 0 0 {name=x235}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 3790 -2880 0 0 {name=x235}
 C {devices/lab_wire.sym} 3720 -3000 2 1 {name=l938 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 3740 -3010 1 1 {name=l939 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 3780 -3010 3 0 {name=l940 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 3720 -2760 0 0 {name=l941 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 4050 -2880 0 0 {name=x236}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 4050 -2880 0 0 {name=x236}
 C {devices/lab_wire.sym} 3980 -3000 2 1 {name=l942 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 4000 -3010 1 1 {name=l943 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 4040 -3010 3 0 {name=l944 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 3980 -2760 0 0 {name=l945 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 4310 -2880 0 0 {name=x237}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 4310 -2880 0 0 {name=x237}
 C {devices/lab_wire.sym} 4240 -3000 2 1 {name=l946 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 4260 -3010 1 1 {name=l947 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 4300 -3010 3 0 {name=l948 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 4240 -2760 0 0 {name=l949 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 4570 -2880 0 0 {name=x238}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 4570 -2880 0 0 {name=x238}
 C {devices/lab_wire.sym} 4500 -3000 2 1 {name=l950 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 4520 -3010 1 1 {name=l951 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 4560 -3010 3 0 {name=l952 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 4500 -2760 0 0 {name=l953 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 4830 -2880 0 0 {name=x239}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 4830 -2880 0 0 {name=x239}
 C {devices/lab_wire.sym} 4760 -3000 2 1 {name=l954 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 4780 -3010 1 1 {name=l955 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 4820 -3010 3 0 {name=l956 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 4760 -2760 0 0 {name=l957 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 5090 -2880 0 0 {name=x240}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 5090 -2880 0 0 {name=x240}
 C {devices/lab_wire.sym} 5020 -3000 2 1 {name=l958 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 5040 -3010 1 1 {name=l959 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 5080 -3010 3 0 {name=l960 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 5020 -2760 0 0 {name=l961 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 5350 -2880 0 0 {name=x241}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 5350 -2880 0 0 {name=x241}
 C {devices/lab_wire.sym} 5280 -3000 2 1 {name=l962 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 5300 -3010 1 1 {name=l963 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 5340 -3010 3 0 {name=l964 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 5280 -2760 0 0 {name=l965 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 5610 -2880 0 0 {name=x242}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 5610 -2880 0 0 {name=x242}
 C {devices/lab_wire.sym} 5540 -3000 2 1 {name=l966 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 5560 -3010 1 1 {name=l967 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 5600 -3010 3 0 {name=l968 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 5540 -2760 0 0 {name=l969 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 5870 -2880 0 0 {name=x243}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 5870 -2880 0 0 {name=x243}
 C {devices/lab_wire.sym} 5800 -3000 2 1 {name=l970 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 5820 -3010 1 1 {name=l971 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 5860 -3010 3 0 {name=l972 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 5800 -2760 0 0 {name=l973 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 6130 -2880 0 0 {name=x244}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 6130 -2880 0 0 {name=x244}
 C {devices/lab_wire.sym} 6060 -3000 2 1 {name=l974 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 6080 -3010 1 1 {name=l975 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 6120 -3010 3 0 {name=l976 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 6060 -2760 0 0 {name=l977 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 6390 -2880 0 0 {name=x245}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 6390 -2880 0 0 {name=x245}
 C {devices/lab_wire.sym} 6320 -3000 2 1 {name=l978 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 6340 -3010 1 1 {name=l979 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 6380 -3010 3 0 {name=l980 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 6320 -2760 0 0 {name=l981 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 6650 -2880 0 0 {name=x246}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 6650 -2880 0 0 {name=x246}
 C {devices/lab_wire.sym} 6580 -3000 2 1 {name=l982 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 6600 -3010 1 1 {name=l983 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 6640 -3010 3 0 {name=l984 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 6580 -2760 0 0 {name=l985 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 6910 -2880 0 0 {name=x247}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 6910 -2880 0 0 {name=x247}
 C {devices/lab_wire.sym} 6840 -3000 2 1 {name=l986 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 6860 -3010 1 1 {name=l987 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 6900 -3010 3 0 {name=l988 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 6840 -2760 0 0 {name=l989 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 7170 -2880 0 0 {name=x248}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 7170 -2880 0 0 {name=x248}
 C {devices/lab_wire.sym} 7100 -3000 2 1 {name=l990 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 7120 -3010 1 1 {name=l991 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 7160 -3010 3 0 {name=l992 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 7100 -2760 0 0 {name=l993 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 7430 -2880 0 0 {name=x249}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 7430 -2880 0 0 {name=x249}
 C {devices/lab_wire.sym} 7360 -3000 2 1 {name=l994 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 7380 -3010 1 1 {name=l995 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 7420 -3010 3 0 {name=l996 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 7360 -2760 0 0 {name=l997 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 7690 -2880 0 0 {name=x250}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 7690 -2880 0 0 {name=x250}
 C {devices/lab_wire.sym} 7620 -3000 2 1 {name=l998 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 7640 -3010 1 1 {name=l999 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 7680 -3010 3 0 {name=l1000 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 7620 -2760 0 0 {name=l1001 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 7950 -2880 0 0 {name=x251}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 7950 -2880 0 0 {name=x251}
 C {devices/lab_wire.sym} 7880 -3000 2 1 {name=l1002 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 7900 -3010 1 1 {name=l1003 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 7940 -3010 3 0 {name=l1004 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 7880 -2760 0 0 {name=l1005 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 8210 -2880 0 0 {name=x252}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 8210 -2880 0 0 {name=x252}
 C {devices/lab_wire.sym} 8140 -3000 2 1 {name=l1006 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 8160 -3010 1 1 {name=l1007 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 8200 -3010 3 0 {name=l1008 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 8140 -2760 0 0 {name=l1009 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 8470 -2880 0 0 {name=x253}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 8470 -2880 0 0 {name=x253}
 C {devices/lab_wire.sym} 8400 -3000 2 1 {name=l1010 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 8420 -3010 1 1 {name=l1011 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 8460 -3010 3 0 {name=l1012 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 8400 -2760 0 0 {name=l1013 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 8730 -2880 0 0 {name=x254}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 8730 -2880 0 0 {name=x254}
 C {devices/lab_wire.sym} 8660 -3000 2 1 {name=l1014 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 8680 -3010 1 1 {name=l1015 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 8720 -3010 3 0 {name=l1016 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 8660 -2760 0 0 {name=l1017 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 8990 -2880 0 0 {name=x255}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 8990 -2880 0 0 {name=x255}
 C {devices/lab_wire.sym} 8920 -3000 2 1 {name=l1018 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 8940 -3010 1 1 {name=l1019 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 8980 -3010 3 0 {name=l1020 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 8920 -2760 0 0 {name=l1021 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 9250 -2880 0 0 {name=x256}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 9250 -2880 0 0 {name=x256}
 C {devices/lab_wire.sym} 9180 -3000 2 1 {name=l1022 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 9200 -3010 1 1 {name=l1023 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 9240 -3010 3 0 {name=l1024 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 9180 -2760 0 0 {name=l1025 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 1190 -3140 0 0 {name=x257}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 1190 -3140 0 0 {name=x257}
 C {devices/lab_wire.sym} 1120 -3260 2 1 {name=l1026 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 1140 -3270 1 1 {name=l1027 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 1180 -3270 3 0 {name=l1028 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 1120 -3020 0 0 {name=l1029 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 1450 -3140 0 0 {name=x258}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 1450 -3140 0 0 {name=x258}
 C {devices/lab_wire.sym} 1380 -3260 2 1 {name=l1030 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 1400 -3270 1 1 {name=l1031 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 1440 -3270 3 0 {name=l1032 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 1380 -3020 0 0 {name=l1033 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 1710 -3140 0 0 {name=x259}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 1710 -3140 0 0 {name=x259}
 C {devices/lab_wire.sym} 1640 -3260 2 1 {name=l1034 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 1660 -3270 1 1 {name=l1035 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 1700 -3270 3 0 {name=l1036 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 1640 -3020 0 0 {name=l1037 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 1970 -3140 0 0 {name=x260}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 1970 -3140 0 0 {name=x260}
 C {devices/lab_wire.sym} 1900 -3260 2 1 {name=l1038 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 1920 -3270 1 1 {name=l1039 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 1960 -3270 3 0 {name=l1040 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 1900 -3020 0 0 {name=l1041 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 2230 -3140 0 0 {name=x261}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 2230 -3140 0 0 {name=x261}
 C {devices/lab_wire.sym} 2160 -3260 2 1 {name=l1042 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 2180 -3270 1 1 {name=l1043 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 2220 -3270 3 0 {name=l1044 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 2160 -3020 0 0 {name=l1045 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 2490 -3140 0 0 {name=x262}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 2490 -3140 0 0 {name=x262}
 C {devices/lab_wire.sym} 2420 -3260 2 1 {name=l1046 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 2440 -3270 1 1 {name=l1047 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 2480 -3270 3 0 {name=l1048 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 2420 -3020 0 0 {name=l1049 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 2750 -3140 0 0 {name=x263}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 2750 -3140 0 0 {name=x263}
 C {devices/lab_wire.sym} 2680 -3260 2 1 {name=l1050 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 2700 -3270 1 1 {name=l1051 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 2740 -3270 3 0 {name=l1052 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 2680 -3020 0 0 {name=l1053 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 3010 -3140 0 0 {name=x264}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 3010 -3140 0 0 {name=x264}
 C {devices/lab_wire.sym} 2940 -3260 2 1 {name=l1054 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 2960 -3270 1 1 {name=l1055 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 3000 -3270 3 0 {name=l1056 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 2940 -3020 0 0 {name=l1057 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 3270 -3140 0 0 {name=x265}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 3270 -3140 0 0 {name=x265}
 C {devices/lab_wire.sym} 3200 -3260 2 1 {name=l1058 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 3220 -3270 1 1 {name=l1059 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 3260 -3270 3 0 {name=l1060 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 3200 -3020 0 0 {name=l1061 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 3530 -3140 0 0 {name=x266}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 3530 -3140 0 0 {name=x266}
 C {devices/lab_wire.sym} 3460 -3260 2 1 {name=l1062 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 3480 -3270 1 1 {name=l1063 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 3520 -3270 3 0 {name=l1064 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 3460 -3020 0 0 {name=l1065 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 3790 -3140 0 0 {name=x267}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 3790 -3140 0 0 {name=x267}
 C {devices/lab_wire.sym} 3720 -3260 2 1 {name=l1066 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 3740 -3270 1 1 {name=l1067 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 3780 -3270 3 0 {name=l1068 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 3720 -3020 0 0 {name=l1069 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 4050 -3140 0 0 {name=x268}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 4050 -3140 0 0 {name=x268}
 C {devices/lab_wire.sym} 3980 -3260 2 1 {name=l1070 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 4000 -3270 1 1 {name=l1071 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 4040 -3270 3 0 {name=l1072 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 3980 -3020 0 0 {name=l1073 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 4310 -3140 0 0 {name=x269}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 4310 -3140 0 0 {name=x269}
 C {devices/lab_wire.sym} 4240 -3260 2 1 {name=l1074 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 4260 -3270 1 1 {name=l1075 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 4300 -3270 3 0 {name=l1076 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 4240 -3020 0 0 {name=l1077 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 4570 -3140 0 0 {name=x270}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 4570 -3140 0 0 {name=x270}
 C {devices/lab_wire.sym} 4500 -3260 2 1 {name=l1078 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 4520 -3270 1 1 {name=l1079 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 4560 -3270 3 0 {name=l1080 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 4500 -3020 0 0 {name=l1081 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 4830 -3140 0 0 {name=x271}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 4830 -3140 0 0 {name=x271}
 C {devices/lab_wire.sym} 4760 -3260 2 1 {name=l1082 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 4780 -3270 1 1 {name=l1083 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 4820 -3270 3 0 {name=l1084 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 4760 -3020 0 0 {name=l1085 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 5090 -3140 0 0 {name=x272}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 5090 -3140 0 0 {name=x272}
 C {devices/lab_wire.sym} 5020 -3260 2 1 {name=l1086 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 5040 -3270 1 1 {name=l1087 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 5080 -3270 3 0 {name=l1088 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 5020 -3020 0 0 {name=l1089 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 5350 -3140 0 0 {name=x273}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 5350 -3140 0 0 {name=x273}
 C {devices/lab_wire.sym} 5280 -3260 2 1 {name=l1090 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 5300 -3270 1 1 {name=l1091 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 5340 -3270 3 0 {name=l1092 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 5280 -3020 0 0 {name=l1093 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 5610 -3140 0 0 {name=x274}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 5610 -3140 0 0 {name=x274}
 C {devices/lab_wire.sym} 5540 -3260 2 1 {name=l1094 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 5560 -3270 1 1 {name=l1095 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 5600 -3270 3 0 {name=l1096 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 5540 -3020 0 0 {name=l1097 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 5870 -3140 0 0 {name=x275}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 5870 -3140 0 0 {name=x275}
 C {devices/lab_wire.sym} 5800 -3260 2 1 {name=l1098 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 5820 -3270 1 1 {name=l1099 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 5860 -3270 3 0 {name=l1100 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 5800 -3020 0 0 {name=l1101 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 6130 -3140 0 0 {name=x276}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 6130 -3140 0 0 {name=x276}
 C {devices/lab_wire.sym} 6060 -3260 2 1 {name=l1102 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 6080 -3270 1 1 {name=l1103 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 6120 -3270 3 0 {name=l1104 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 6060 -3020 0 0 {name=l1105 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 6390 -3140 0 0 {name=x277}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 6390 -3140 0 0 {name=x277}
 C {devices/lab_wire.sym} 6320 -3260 2 1 {name=l1106 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 6340 -3270 1 1 {name=l1107 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 6380 -3270 3 0 {name=l1108 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 6320 -3020 0 0 {name=l1109 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 6650 -3140 0 0 {name=x278}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 6650 -3140 0 0 {name=x278}
 C {devices/lab_wire.sym} 6580 -3260 2 1 {name=l1110 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 6600 -3270 1 1 {name=l1111 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 6640 -3270 3 0 {name=l1112 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 6580 -3020 0 0 {name=l1113 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 6910 -3140 0 0 {name=x279}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 6910 -3140 0 0 {name=x279}
 C {devices/lab_wire.sym} 6840 -3260 2 1 {name=l1114 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 6860 -3270 1 1 {name=l1115 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 6900 -3270 3 0 {name=l1116 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 6840 -3020 0 0 {name=l1117 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 7170 -3140 0 0 {name=x280}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 7170 -3140 0 0 {name=x280}
 C {devices/lab_wire.sym} 7100 -3260 2 1 {name=l1118 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 7120 -3270 1 1 {name=l1119 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 7160 -3270 3 0 {name=l1120 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 7100 -3020 0 0 {name=l1121 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 7430 -3140 0 0 {name=x281}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 7430 -3140 0 0 {name=x281}
 C {devices/lab_wire.sym} 7360 -3260 2 1 {name=l1122 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 7380 -3270 1 1 {name=l1123 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 7420 -3270 3 0 {name=l1124 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 7360 -3020 0 0 {name=l1125 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 7690 -3140 0 0 {name=x282}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 7690 -3140 0 0 {name=x282}
 C {devices/lab_wire.sym} 7620 -3260 2 1 {name=l1126 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 7640 -3270 1 1 {name=l1127 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 7680 -3270 3 0 {name=l1128 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 7620 -3020 0 0 {name=l1129 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 7950 -3140 0 0 {name=x283}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 7950 -3140 0 0 {name=x283}
 C {devices/lab_wire.sym} 7880 -3260 2 1 {name=l1130 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 7900 -3270 1 1 {name=l1131 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 7940 -3270 3 0 {name=l1132 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 7880 -3020 0 0 {name=l1133 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 8210 -3140 0 0 {name=x284}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 8210 -3140 0 0 {name=x284}
 C {devices/lab_wire.sym} 8140 -3260 2 1 {name=l1134 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 8160 -3270 1 1 {name=l1135 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 8200 -3270 3 0 {name=l1136 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 8140 -3020 0 0 {name=l1137 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 8470 -3140 0 0 {name=x285}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 8470 -3140 0 0 {name=x285}
 C {devices/lab_wire.sym} 8400 -3260 2 1 {name=l1138 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 8420 -3270 1 1 {name=l1139 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 8460 -3270 3 0 {name=l1140 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 8400 -3020 0 0 {name=l1141 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 8730 -3140 0 0 {name=x286}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 8730 -3140 0 0 {name=x286}
 C {devices/lab_wire.sym} 8660 -3260 2 1 {name=l1142 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 8680 -3270 1 1 {name=l1143 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 8720 -3270 3 0 {name=l1144 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 8660 -3020 0 0 {name=l1145 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 8990 -3140 0 0 {name=x287}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 8990 -3140 0 0 {name=x287}
 C {devices/lab_wire.sym} 8920 -3260 2 1 {name=l1146 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 8940 -3270 1 1 {name=l1147 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 8980 -3270 3 0 {name=l1148 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 8920 -3020 0 0 {name=l1149 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 9250 -3140 0 0 {name=x288}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 9250 -3140 0 0 {name=x288}
 C {devices/lab_wire.sym} 9180 -3260 2 1 {name=l1150 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 9200 -3270 1 1 {name=l1151 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 9240 -3270 3 0 {name=l1152 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 9180 -3020 0 0 {name=l1153 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 1190 -3400 0 0 {name=x289}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 1190 -3400 0 0 {name=x289}
 C {devices/lab_wire.sym} 1120 -3520 2 1 {name=l1154 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 1140 -3530 1 1 {name=l1155 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 1180 -3530 3 0 {name=l1156 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 1120 -3280 0 0 {name=l1157 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 1450 -3400 0 0 {name=x290}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 1450 -3400 0 0 {name=x290}
 C {devices/lab_wire.sym} 1380 -3520 2 1 {name=l1158 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 1400 -3530 1 1 {name=l1159 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 1440 -3530 3 0 {name=l1160 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 1380 -3280 0 0 {name=l1161 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 1710 -3400 0 0 {name=x291}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 1710 -3400 0 0 {name=x291}
 C {devices/lab_wire.sym} 1640 -3520 2 1 {name=l1162 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 1660 -3530 1 1 {name=l1163 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 1700 -3530 3 0 {name=l1164 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 1640 -3280 0 0 {name=l1165 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 1970 -3400 0 0 {name=x292}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 1970 -3400 0 0 {name=x292}
 C {devices/lab_wire.sym} 1900 -3520 2 1 {name=l1166 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 1920 -3530 1 1 {name=l1167 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 1960 -3530 3 0 {name=l1168 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 1900 -3280 0 0 {name=l1169 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 2230 -3400 0 0 {name=x293}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 2230 -3400 0 0 {name=x293}
 C {devices/lab_wire.sym} 2160 -3520 2 1 {name=l1170 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 2180 -3530 1 1 {name=l1171 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 2220 -3530 3 0 {name=l1172 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 2160 -3280 0 0 {name=l1173 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 2490 -3400 0 0 {name=x294}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 2490 -3400 0 0 {name=x294}
 C {devices/lab_wire.sym} 2420 -3520 2 1 {name=l1174 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 2440 -3530 1 1 {name=l1175 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 2480 -3530 3 0 {name=l1176 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 2420 -3280 0 0 {name=l1177 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 2750 -3400 0 0 {name=x295}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 2750 -3400 0 0 {name=x295}
 C {devices/lab_wire.sym} 2680 -3520 2 1 {name=l1178 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 2700 -3530 1 1 {name=l1179 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 2740 -3530 3 0 {name=l1180 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 2680 -3280 0 0 {name=l1181 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 3010 -3400 0 0 {name=x296}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 3010 -3400 0 0 {name=x296}
 C {devices/lab_wire.sym} 2940 -3520 2 1 {name=l1182 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 2960 -3530 1 1 {name=l1183 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 3000 -3530 3 0 {name=l1184 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 2940 -3280 0 0 {name=l1185 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 3270 -3400 0 0 {name=x297}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 3270 -3400 0 0 {name=x297}
 C {devices/lab_wire.sym} 3200 -3520 2 1 {name=l1186 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 3220 -3530 1 1 {name=l1187 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 3260 -3530 3 0 {name=l1188 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 3200 -3280 0 0 {name=l1189 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 3530 -3400 0 0 {name=x298}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 3530 -3400 0 0 {name=x298}
 C {devices/lab_wire.sym} 3460 -3520 2 1 {name=l1190 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 3480 -3530 1 1 {name=l1191 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 3520 -3530 3 0 {name=l1192 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 3460 -3280 0 0 {name=l1193 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 3790 -3400 0 0 {name=x299}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 3790 -3400 0 0 {name=x299}
 C {devices/lab_wire.sym} 3720 -3520 2 1 {name=l1194 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 3740 -3530 1 1 {name=l1195 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 3780 -3530 3 0 {name=l1196 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 3720 -3280 0 0 {name=l1197 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 4050 -3400 0 0 {name=x300}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 4050 -3400 0 0 {name=x300}
 C {devices/lab_wire.sym} 3980 -3520 2 1 {name=l1198 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 4000 -3530 1 1 {name=l1199 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 4040 -3530 3 0 {name=l1200 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 3980 -3280 0 0 {name=l1201 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 4310 -3400 0 0 {name=x301}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 4310 -3400 0 0 {name=x301}
 C {devices/lab_wire.sym} 4240 -3520 2 1 {name=l1202 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 4260 -3530 1 1 {name=l1203 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 4300 -3530 3 0 {name=l1204 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 4240 -3280 0 0 {name=l1205 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 4570 -3400 0 0 {name=x302}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 4570 -3400 0 0 {name=x302}
 C {devices/lab_wire.sym} 4500 -3520 2 1 {name=l1206 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 4520 -3530 1 1 {name=l1207 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 4560 -3530 3 0 {name=l1208 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 4500 -3280 0 0 {name=l1209 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 4830 -3400 0 0 {name=x303}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 4830 -3400 0 0 {name=x303}
 C {devices/lab_wire.sym} 4760 -3520 2 1 {name=l1210 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 4780 -3530 1 1 {name=l1211 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 4820 -3530 3 0 {name=l1212 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 4760 -3280 0 0 {name=l1213 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 5090 -3400 0 0 {name=x304}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 5090 -3400 0 0 {name=x304}
 C {devices/lab_wire.sym} 5020 -3520 2 1 {name=l1214 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 5040 -3530 1 1 {name=l1215 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 5080 -3530 3 0 {name=l1216 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 5020 -3280 0 0 {name=l1217 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 5350 -3400 0 0 {name=x305}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 5350 -3400 0 0 {name=x305}
 C {devices/lab_wire.sym} 5280 -3520 2 1 {name=l1218 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 5300 -3530 1 1 {name=l1219 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 5340 -3530 3 0 {name=l1220 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 5280 -3280 0 0 {name=l1221 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 5610 -3400 0 0 {name=x306}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 5610 -3400 0 0 {name=x306}
 C {devices/lab_wire.sym} 5540 -3520 2 1 {name=l1222 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 5560 -3530 1 1 {name=l1223 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 5600 -3530 3 0 {name=l1224 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 5540 -3280 0 0 {name=l1225 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 5870 -3400 0 0 {name=x307}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 5870 -3400 0 0 {name=x307}
 C {devices/lab_wire.sym} 5800 -3520 2 1 {name=l1226 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 5820 -3530 1 1 {name=l1227 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 5860 -3530 3 0 {name=l1228 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 5800 -3280 0 0 {name=l1229 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 6130 -3400 0 0 {name=x308}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 6130 -3400 0 0 {name=x308}
 C {devices/lab_wire.sym} 6060 -3520 2 1 {name=l1230 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 6080 -3530 1 1 {name=l1231 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 6120 -3530 3 0 {name=l1232 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 6060 -3280 0 0 {name=l1233 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 6390 -3400 0 0 {name=x309}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 6390 -3400 0 0 {name=x309}
 C {devices/lab_wire.sym} 6320 -3520 2 1 {name=l1234 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 6340 -3530 1 1 {name=l1235 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 6380 -3530 3 0 {name=l1236 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 6320 -3280 0 0 {name=l1237 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 6650 -3400 0 0 {name=x310}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 6650 -3400 0 0 {name=x310}
 C {devices/lab_wire.sym} 6580 -3520 2 1 {name=l1238 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 6600 -3530 1 1 {name=l1239 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 6640 -3530 3 0 {name=l1240 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 6580 -3280 0 0 {name=l1241 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 6910 -3400 0 0 {name=x311}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 6910 -3400 0 0 {name=x311}
 C {devices/lab_wire.sym} 6840 -3520 2 1 {name=l1242 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 6860 -3530 1 1 {name=l1243 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 6900 -3530 3 0 {name=l1244 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 6840 -3280 0 0 {name=l1245 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 7170 -3400 0 0 {name=x312}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 7170 -3400 0 0 {name=x312}
 C {devices/lab_wire.sym} 7100 -3520 2 1 {name=l1246 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 7120 -3530 1 1 {name=l1247 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 7160 -3530 3 0 {name=l1248 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 7100 -3280 0 0 {name=l1249 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 7430 -3400 0 0 {name=x313}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 7430 -3400 0 0 {name=x313}
 C {devices/lab_wire.sym} 7360 -3520 2 1 {name=l1250 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 7380 -3530 1 1 {name=l1251 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 7420 -3530 3 0 {name=l1252 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 7360 -3280 0 0 {name=l1253 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 7690 -3400 0 0 {name=x314}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 7690 -3400 0 0 {name=x314}
 C {devices/lab_wire.sym} 7620 -3520 2 1 {name=l1254 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 7640 -3530 1 1 {name=l1255 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 7680 -3530 3 0 {name=l1256 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 7620 -3280 0 0 {name=l1257 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 7950 -3400 0 0 {name=x315}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 7950 -3400 0 0 {name=x315}
 C {devices/lab_wire.sym} 7880 -3520 2 1 {name=l1258 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 7900 -3530 1 1 {name=l1259 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 7940 -3530 3 0 {name=l1260 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 7880 -3280 0 0 {name=l1261 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 8210 -3400 0 0 {name=x316}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 8210 -3400 0 0 {name=x316}
 C {devices/lab_wire.sym} 8140 -3520 2 1 {name=l1262 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 8160 -3530 1 1 {name=l1263 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 8200 -3530 3 0 {name=l1264 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 8140 -3280 0 0 {name=l1265 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 8470 -3400 0 0 {name=x317}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 8470 -3400 0 0 {name=x317}
 C {devices/lab_wire.sym} 8400 -3520 2 1 {name=l1266 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 8420 -3530 1 1 {name=l1267 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 8460 -3530 3 0 {name=l1268 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 8400 -3280 0 0 {name=l1269 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 8730 -3400 0 0 {name=x318}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 8730 -3400 0 0 {name=x318}
 C {devices/lab_wire.sym} 8660 -3520 2 1 {name=l1270 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 8680 -3530 1 1 {name=l1271 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 8720 -3530 3 0 {name=l1272 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 8660 -3280 0 0 {name=l1273 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 8990 -3400 0 0 {name=x319}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 8990 -3400 0 0 {name=x319}
 C {devices/lab_wire.sym} 8920 -3520 2 1 {name=l1274 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 8940 -3530 1 1 {name=l1275 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 8980 -3530 3 0 {name=l1276 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 8920 -3280 0 0 {name=l1277 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 9250 -3400 0 0 {name=x320}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 9250 -3400 0 0 {name=x320}
 C {devices/lab_wire.sym} 9180 -3520 2 1 {name=l1278 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 9200 -3530 1 1 {name=l1279 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 9240 -3530 3 0 {name=l1280 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 9180 -3280 0 0 {name=l1281 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 1190 -3660 0 0 {name=x321}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 1190 -3660 0 0 {name=x321}
 C {devices/lab_wire.sym} 1120 -3780 2 1 {name=l1282 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 1140 -3790 1 1 {name=l1283 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 1180 -3790 3 0 {name=l1284 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 1120 -3540 0 0 {name=l1285 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 1450 -3660 0 0 {name=x322}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 1450 -3660 0 0 {name=x322}
 C {devices/lab_wire.sym} 1380 -3780 2 1 {name=l1286 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 1400 -3790 1 1 {name=l1287 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 1440 -3790 3 0 {name=l1288 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 1380 -3540 0 0 {name=l1289 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 1710 -3660 0 0 {name=x323}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 1710 -3660 0 0 {name=x323}
 C {devices/lab_wire.sym} 1640 -3780 2 1 {name=l1290 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 1660 -3790 1 1 {name=l1291 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 1700 -3790 3 0 {name=l1292 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 1640 -3540 0 0 {name=l1293 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 1970 -3660 0 0 {name=x324}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 1970 -3660 0 0 {name=x324}
 C {devices/lab_wire.sym} 1900 -3780 2 1 {name=l1294 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 1920 -3790 1 1 {name=l1295 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 1960 -3790 3 0 {name=l1296 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 1900 -3540 0 0 {name=l1297 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 2230 -3660 0 0 {name=x325}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 2230 -3660 0 0 {name=x325}
 C {devices/lab_wire.sym} 2160 -3780 2 1 {name=l1298 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 2180 -3790 1 1 {name=l1299 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 2220 -3790 3 0 {name=l1300 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 2160 -3540 0 0 {name=l1301 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 2490 -3660 0 0 {name=x326}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 2490 -3660 0 0 {name=x326}
 C {devices/lab_wire.sym} 2420 -3780 2 1 {name=l1302 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 2440 -3790 1 1 {name=l1303 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 2480 -3790 3 0 {name=l1304 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 2420 -3540 0 0 {name=l1305 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 2750 -3660 0 0 {name=x327}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 2750 -3660 0 0 {name=x327}
 C {devices/lab_wire.sym} 2680 -3780 2 1 {name=l1306 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 2700 -3790 1 1 {name=l1307 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 2740 -3790 3 0 {name=l1308 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 2680 -3540 0 0 {name=l1309 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 3010 -3660 0 0 {name=x328}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 3010 -3660 0 0 {name=x328}
 C {devices/lab_wire.sym} 2940 -3780 2 1 {name=l1310 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 2960 -3790 1 1 {name=l1311 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 3000 -3790 3 0 {name=l1312 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 2940 -3540 0 0 {name=l1313 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 3270 -3660 0 0 {name=x329}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 3270 -3660 0 0 {name=x329}
 C {devices/lab_wire.sym} 3200 -3780 2 1 {name=l1314 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 3220 -3790 1 1 {name=l1315 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 3260 -3790 3 0 {name=l1316 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 3200 -3540 0 0 {name=l1317 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 3530 -3660 0 0 {name=x330}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 3530 -3660 0 0 {name=x330}
 C {devices/lab_wire.sym} 3460 -3780 2 1 {name=l1318 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 3480 -3790 1 1 {name=l1319 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 3520 -3790 3 0 {name=l1320 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 3460 -3540 0 0 {name=l1321 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 3790 -3660 0 0 {name=x331}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 3790 -3660 0 0 {name=x331}
 C {devices/lab_wire.sym} 3720 -3780 2 1 {name=l1322 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 3740 -3790 1 1 {name=l1323 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 3780 -3790 3 0 {name=l1324 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 3720 -3540 0 0 {name=l1325 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 4050 -3660 0 0 {name=x332}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 4050 -3660 0 0 {name=x332}
 C {devices/lab_wire.sym} 3980 -3780 2 1 {name=l1326 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 4000 -3790 1 1 {name=l1327 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 4040 -3790 3 0 {name=l1328 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 3980 -3540 0 0 {name=l1329 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 4310 -3660 0 0 {name=x333}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 4310 -3660 0 0 {name=x333}
 C {devices/lab_wire.sym} 4240 -3780 2 1 {name=l1330 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 4260 -3790 1 1 {name=l1331 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 4300 -3790 3 0 {name=l1332 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 4240 -3540 0 0 {name=l1333 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 4570 -3660 0 0 {name=x334}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 4570 -3660 0 0 {name=x334}
 C {devices/lab_wire.sym} 4500 -3780 2 1 {name=l1334 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 4520 -3790 1 1 {name=l1335 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 4560 -3790 3 0 {name=l1336 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 4500 -3540 0 0 {name=l1337 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 4830 -3660 0 0 {name=x335}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 4830 -3660 0 0 {name=x335}
 C {devices/lab_wire.sym} 4760 -3780 2 1 {name=l1338 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 4780 -3790 1 1 {name=l1339 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 4820 -3790 3 0 {name=l1340 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 4760 -3540 0 0 {name=l1341 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 5090 -3660 0 0 {name=x336}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 5090 -3660 0 0 {name=x336}
 C {devices/lab_wire.sym} 5020 -3780 2 1 {name=l1342 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 5040 -3790 1 1 {name=l1343 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 5080 -3790 3 0 {name=l1344 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 5020 -3540 0 0 {name=l1345 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 5350 -3660 0 0 {name=x337}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 5350 -3660 0 0 {name=x337}
 C {devices/lab_wire.sym} 5280 -3780 2 1 {name=l1346 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 5300 -3790 1 1 {name=l1347 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 5340 -3790 3 0 {name=l1348 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 5280 -3540 0 0 {name=l1349 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 5610 -3660 0 0 {name=x338}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 5610 -3660 0 0 {name=x338}
 C {devices/lab_wire.sym} 5540 -3780 2 1 {name=l1350 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 5560 -3790 1 1 {name=l1351 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 5600 -3790 3 0 {name=l1352 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 5540 -3540 0 0 {name=l1353 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 5870 -3660 0 0 {name=x339}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 5870 -3660 0 0 {name=x339}
 C {devices/lab_wire.sym} 5800 -3780 2 1 {name=l1354 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 5820 -3790 1 1 {name=l1355 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 5860 -3790 3 0 {name=l1356 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 5800 -3540 0 0 {name=l1357 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 6130 -3660 0 0 {name=x340}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 6130 -3660 0 0 {name=x340}
 C {devices/lab_wire.sym} 6060 -3780 2 1 {name=l1358 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 6080 -3790 1 1 {name=l1359 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 6120 -3790 3 0 {name=l1360 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 6060 -3540 0 0 {name=l1361 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 6390 -3660 0 0 {name=x341}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 6390 -3660 0 0 {name=x341}
 C {devices/lab_wire.sym} 6320 -3780 2 1 {name=l1362 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 6340 -3790 1 1 {name=l1363 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 6380 -3790 3 0 {name=l1364 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 6320 -3540 0 0 {name=l1365 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 6650 -3660 0 0 {name=x342}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 6650 -3660 0 0 {name=x342}
 C {devices/lab_wire.sym} 6580 -3780 2 1 {name=l1366 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 6600 -3790 1 1 {name=l1367 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 6640 -3790 3 0 {name=l1368 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 6580 -3540 0 0 {name=l1369 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 6910 -3660 0 0 {name=x343}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 6910 -3660 0 0 {name=x343}
 C {devices/lab_wire.sym} 6840 -3780 2 1 {name=l1370 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 6860 -3790 1 1 {name=l1371 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 6900 -3790 3 0 {name=l1372 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 6840 -3540 0 0 {name=l1373 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 7170 -3660 0 0 {name=x344}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 7170 -3660 0 0 {name=x344}
 C {devices/lab_wire.sym} 7100 -3780 2 1 {name=l1374 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 7120 -3790 1 1 {name=l1375 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 7160 -3790 3 0 {name=l1376 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 7100 -3540 0 0 {name=l1377 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 7430 -3660 0 0 {name=x345}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 7430 -3660 0 0 {name=x345}
 C {devices/lab_wire.sym} 7360 -3780 2 1 {name=l1378 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 7380 -3790 1 1 {name=l1379 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 7420 -3790 3 0 {name=l1380 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 7360 -3540 0 0 {name=l1381 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 7690 -3660 0 0 {name=x346}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 7690 -3660 0 0 {name=x346}
 C {devices/lab_wire.sym} 7620 -3780 2 1 {name=l1382 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 7640 -3790 1 1 {name=l1383 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 7680 -3790 3 0 {name=l1384 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 7620 -3540 0 0 {name=l1385 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 7950 -3660 0 0 {name=x347}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 7950 -3660 0 0 {name=x347}
 C {devices/lab_wire.sym} 7880 -3780 2 1 {name=l1386 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 7900 -3790 1 1 {name=l1387 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 7940 -3790 3 0 {name=l1388 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 7880 -3540 0 0 {name=l1389 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 8210 -3660 0 0 {name=x348}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 8210 -3660 0 0 {name=x348}
 C {devices/lab_wire.sym} 8140 -3780 2 1 {name=l1390 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 8160 -3790 1 1 {name=l1391 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 8200 -3790 3 0 {name=l1392 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 8140 -3540 0 0 {name=l1393 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 8470 -3660 0 0 {name=x349}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 8470 -3660 0 0 {name=x349}
 C {devices/lab_wire.sym} 8400 -3780 2 1 {name=l1394 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 8420 -3790 1 1 {name=l1395 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 8460 -3790 3 0 {name=l1396 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 8400 -3540 0 0 {name=l1397 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 8730 -3660 0 0 {name=x350}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 8730 -3660 0 0 {name=x350}
 C {devices/lab_wire.sym} 8660 -3780 2 1 {name=l1398 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 8680 -3790 1 1 {name=l1399 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 8720 -3790 3 0 {name=l1400 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 8660 -3540 0 0 {name=l1401 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 8990 -3660 0 0 {name=x351}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 8990 -3660 0 0 {name=x351}
 C {devices/lab_wire.sym} 8920 -3780 2 1 {name=l1402 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 8940 -3790 1 1 {name=l1403 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 8980 -3790 3 0 {name=l1404 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 8920 -3540 0 0 {name=l1405 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 9250 -3660 0 0 {name=x352}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 9250 -3660 0 0 {name=x352}
 C {devices/lab_wire.sym} 9180 -3780 2 1 {name=l1406 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 9200 -3790 1 1 {name=l1407 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 9240 -3790 3 0 {name=l1408 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 9180 -3540 0 0 {name=l1409 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 1190 -3920 0 0 {name=x353}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 1190 -3920 0 0 {name=x353}
 C {devices/lab_wire.sym} 1120 -4040 2 1 {name=l1410 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 1140 -4050 1 1 {name=l1411 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 1180 -4050 3 0 {name=l1412 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 1120 -3800 0 0 {name=l1413 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 1450 -3920 0 0 {name=x354}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 1450 -3920 0 0 {name=x354}
 C {devices/lab_wire.sym} 1380 -4040 2 1 {name=l1414 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 1400 -4050 1 1 {name=l1415 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 1440 -4050 3 0 {name=l1416 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 1380 -3800 0 0 {name=l1417 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 1710 -3920 0 0 {name=x355}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 1710 -3920 0 0 {name=x355}
 C {devices/lab_wire.sym} 1640 -4040 2 1 {name=l1418 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 1660 -4050 1 1 {name=l1419 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 1700 -4050 3 0 {name=l1420 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 1640 -3800 0 0 {name=l1421 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 1970 -3920 0 0 {name=x356}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 1970 -3920 0 0 {name=x356}
 C {devices/lab_wire.sym} 1900 -4040 2 1 {name=l1422 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 1920 -4050 1 1 {name=l1423 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 1960 -4050 3 0 {name=l1424 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 1900 -3800 0 0 {name=l1425 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 2230 -3920 0 0 {name=x357}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 2230 -3920 0 0 {name=x357}
 C {devices/lab_wire.sym} 2160 -4040 2 1 {name=l1426 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 2180 -4050 1 1 {name=l1427 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 2220 -4050 3 0 {name=l1428 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 2160 -3800 0 0 {name=l1429 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 2490 -3920 0 0 {name=x358}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 2490 -3920 0 0 {name=x358}
 C {devices/lab_wire.sym} 2420 -4040 2 1 {name=l1430 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 2440 -4050 1 1 {name=l1431 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 2480 -4050 3 0 {name=l1432 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 2420 -3800 0 0 {name=l1433 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 2750 -3920 0 0 {name=x359}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 2750 -3920 0 0 {name=x359}
 C {devices/lab_wire.sym} 2680 -4040 2 1 {name=l1434 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 2700 -4050 1 1 {name=l1435 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 2740 -4050 3 0 {name=l1436 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 2680 -3800 0 0 {name=l1437 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 3010 -3920 0 0 {name=x360}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 3010 -3920 0 0 {name=x360}
 C {devices/lab_wire.sym} 2940 -4040 2 1 {name=l1438 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 2960 -4050 1 1 {name=l1439 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 3000 -4050 3 0 {name=l1440 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 2940 -3800 0 0 {name=l1441 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 3270 -3920 0 0 {name=x361}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 3270 -3920 0 0 {name=x361}
 C {devices/lab_wire.sym} 3200 -4040 2 1 {name=l1442 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 3220 -4050 1 1 {name=l1443 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 3260 -4050 3 0 {name=l1444 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 3200 -3800 0 0 {name=l1445 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 3530 -3920 0 0 {name=x362}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 3530 -3920 0 0 {name=x362}
 C {devices/lab_wire.sym} 3460 -4040 2 1 {name=l1446 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 3480 -4050 1 1 {name=l1447 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 3520 -4050 3 0 {name=l1448 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 3460 -3800 0 0 {name=l1449 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 3790 -3920 0 0 {name=x363}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 3790 -3920 0 0 {name=x363}
 C {devices/lab_wire.sym} 3720 -4040 2 1 {name=l1450 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 3740 -4050 1 1 {name=l1451 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 3780 -4050 3 0 {name=l1452 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 3720 -3800 0 0 {name=l1453 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 4050 -3920 0 0 {name=x364}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 4050 -3920 0 0 {name=x364}
 C {devices/lab_wire.sym} 3980 -4040 2 1 {name=l1454 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 4000 -4050 1 1 {name=l1455 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 4040 -4050 3 0 {name=l1456 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 3980 -3800 0 0 {name=l1457 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 4310 -3920 0 0 {name=x365}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 4310 -3920 0 0 {name=x365}
 C {devices/lab_wire.sym} 4240 -4040 2 1 {name=l1458 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 4260 -4050 1 1 {name=l1459 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 4300 -4050 3 0 {name=l1460 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 4240 -3800 0 0 {name=l1461 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 4570 -3920 0 0 {name=x366}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 4570 -3920 0 0 {name=x366}
 C {devices/lab_wire.sym} 4500 -4040 2 1 {name=l1462 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 4520 -4050 1 1 {name=l1463 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 4560 -4050 3 0 {name=l1464 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 4500 -3800 0 0 {name=l1465 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 4830 -3920 0 0 {name=x367}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 4830 -3920 0 0 {name=x367}
 C {devices/lab_wire.sym} 4760 -4040 2 1 {name=l1466 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 4780 -4050 1 1 {name=l1467 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 4820 -4050 3 0 {name=l1468 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 4760 -3800 0 0 {name=l1469 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 5090 -3920 0 0 {name=x368}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 5090 -3920 0 0 {name=x368}
 C {devices/lab_wire.sym} 5020 -4040 2 1 {name=l1470 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 5040 -4050 1 1 {name=l1471 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 5080 -4050 3 0 {name=l1472 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 5020 -3800 0 0 {name=l1473 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 5350 -3920 0 0 {name=x369}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 5350 -3920 0 0 {name=x369}
 C {devices/lab_wire.sym} 5280 -4040 2 1 {name=l1474 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 5300 -4050 1 1 {name=l1475 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 5340 -4050 3 0 {name=l1476 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 5280 -3800 0 0 {name=l1477 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 5610 -3920 0 0 {name=x370}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 5610 -3920 0 0 {name=x370}
 C {devices/lab_wire.sym} 5540 -4040 2 1 {name=l1478 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 5560 -4050 1 1 {name=l1479 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 5600 -4050 3 0 {name=l1480 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 5540 -3800 0 0 {name=l1481 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 5870 -3920 0 0 {name=x371}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 5870 -3920 0 0 {name=x371}
 C {devices/lab_wire.sym} 5800 -4040 2 1 {name=l1482 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 5820 -4050 1 1 {name=l1483 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 5860 -4050 3 0 {name=l1484 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 5800 -3800 0 0 {name=l1485 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 6130 -3920 0 0 {name=x372}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 6130 -3920 0 0 {name=x372}
 C {devices/lab_wire.sym} 6060 -4040 2 1 {name=l1486 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 6080 -4050 1 1 {name=l1487 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 6120 -4050 3 0 {name=l1488 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 6060 -3800 0 0 {name=l1489 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 6390 -3920 0 0 {name=x373}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 6390 -3920 0 0 {name=x373}
 C {devices/lab_wire.sym} 6320 -4040 2 1 {name=l1490 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 6340 -4050 1 1 {name=l1491 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 6380 -4050 3 0 {name=l1492 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 6320 -3800 0 0 {name=l1493 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 6650 -3920 0 0 {name=x374}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 6650 -3920 0 0 {name=x374}
 C {devices/lab_wire.sym} 6580 -4040 2 1 {name=l1494 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 6600 -4050 1 1 {name=l1495 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 6640 -4050 3 0 {name=l1496 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 6580 -3800 0 0 {name=l1497 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 6910 -3920 0 0 {name=x375}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 6910 -3920 0 0 {name=x375}
 C {devices/lab_wire.sym} 6840 -4040 2 1 {name=l1498 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 6860 -4050 1 1 {name=l1499 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 6900 -4050 3 0 {name=l1500 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 6840 -3800 0 0 {name=l1501 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 7170 -3920 0 0 {name=x376}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 7170 -3920 0 0 {name=x376}
 C {devices/lab_wire.sym} 7100 -4040 2 1 {name=l1502 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 7120 -4050 1 1 {name=l1503 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 7160 -4050 3 0 {name=l1504 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 7100 -3800 0 0 {name=l1505 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 7430 -3920 0 0 {name=x377}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 7430 -3920 0 0 {name=x377}
 C {devices/lab_wire.sym} 7360 -4040 2 1 {name=l1506 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 7380 -4050 1 1 {name=l1507 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 7420 -4050 3 0 {name=l1508 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 7360 -3800 0 0 {name=l1509 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 7690 -3920 0 0 {name=x378}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 7690 -3920 0 0 {name=x378}
 C {devices/lab_wire.sym} 7620 -4040 2 1 {name=l1510 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 7640 -4050 1 1 {name=l1511 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 7680 -4050 3 0 {name=l1512 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 7620 -3800 0 0 {name=l1513 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 7950 -3920 0 0 {name=x379}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 7950 -3920 0 0 {name=x379}
 C {devices/lab_wire.sym} 7880 -4040 2 1 {name=l1514 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 7900 -4050 1 1 {name=l1515 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 7940 -4050 3 0 {name=l1516 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 7880 -3800 0 0 {name=l1517 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 8210 -3920 0 0 {name=x380}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 8210 -3920 0 0 {name=x380}
 C {devices/lab_wire.sym} 8140 -4040 2 1 {name=l1518 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 8160 -4050 1 1 {name=l1519 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 8200 -4050 3 0 {name=l1520 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 8140 -3800 0 0 {name=l1521 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 8470 -3920 0 0 {name=x381}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 8470 -3920 0 0 {name=x381}
 C {devices/lab_wire.sym} 8400 -4040 2 1 {name=l1522 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 8420 -4050 1 1 {name=l1523 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 8460 -4050 3 0 {name=l1524 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 8400 -3800 0 0 {name=l1525 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 8730 -3920 0 0 {name=x382}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 8730 -3920 0 0 {name=x382}
 C {devices/lab_wire.sym} 8660 -4040 2 1 {name=l1526 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 8680 -4050 1 1 {name=l1527 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 8720 -4050 3 0 {name=l1528 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 8660 -3800 0 0 {name=l1529 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 8990 -3920 0 0 {name=x383}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 8990 -3920 0 0 {name=x383}
 C {devices/lab_wire.sym} 8920 -4040 2 1 {name=l1530 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 8940 -4050 1 1 {name=l1531 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 8980 -4050 3 0 {name=l1532 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 8920 -3800 0 0 {name=l1533 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 9250 -3920 0 0 {name=x384}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 9250 -3920 0 0 {name=x384}
 C {devices/lab_wire.sym} 9180 -4040 2 1 {name=l1534 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 9200 -4050 1 1 {name=l1535 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 9240 -4050 3 0 {name=l1536 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 9180 -3800 0 0 {name=l1537 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 1190 -4180 0 0 {name=x385}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 1190 -4180 0 0 {name=x385}
 C {devices/lab_wire.sym} 1120 -4300 2 1 {name=l1538 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 1140 -4310 1 1 {name=l1539 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 1180 -4310 3 0 {name=l1540 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 1120 -4060 0 0 {name=l1541 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 1450 -4180 0 0 {name=x386}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 1450 -4180 0 0 {name=x386}
 C {devices/lab_wire.sym} 1380 -4300 2 1 {name=l1542 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 1400 -4310 1 1 {name=l1543 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 1440 -4310 3 0 {name=l1544 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 1380 -4060 0 0 {name=l1545 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 1710 -4180 0 0 {name=x387}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 1710 -4180 0 0 {name=x387}
 C {devices/lab_wire.sym} 1640 -4300 2 1 {name=l1546 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 1660 -4310 1 1 {name=l1547 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 1700 -4310 3 0 {name=l1548 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 1640 -4060 0 0 {name=l1549 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 1970 -4180 0 0 {name=x388}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 1970 -4180 0 0 {name=x388}
 C {devices/lab_wire.sym} 1900 -4300 2 1 {name=l1550 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 1920 -4310 1 1 {name=l1551 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 1960 -4310 3 0 {name=l1552 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 1900 -4060 0 0 {name=l1553 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 2230 -4180 0 0 {name=x389}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 2230 -4180 0 0 {name=x389}
 C {devices/lab_wire.sym} 2160 -4300 2 1 {name=l1554 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 2180 -4310 1 1 {name=l1555 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 2220 -4310 3 0 {name=l1556 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 2160 -4060 0 0 {name=l1557 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 2490 -4180 0 0 {name=x390}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 2490 -4180 0 0 {name=x390}
 C {devices/lab_wire.sym} 2420 -4300 2 1 {name=l1558 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 2440 -4310 1 1 {name=l1559 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 2480 -4310 3 0 {name=l1560 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 2420 -4060 0 0 {name=l1561 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 2750 -4180 0 0 {name=x391}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 2750 -4180 0 0 {name=x391}
 C {devices/lab_wire.sym} 2680 -4300 2 1 {name=l1562 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 2700 -4310 1 1 {name=l1563 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 2740 -4310 3 0 {name=l1564 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 2680 -4060 0 0 {name=l1565 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 3010 -4180 0 0 {name=x392}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 3010 -4180 0 0 {name=x392}
 C {devices/lab_wire.sym} 2940 -4300 2 1 {name=l1566 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 2960 -4310 1 1 {name=l1567 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 3000 -4310 3 0 {name=l1568 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 2940 -4060 0 0 {name=l1569 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 3270 -4180 0 0 {name=x393}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 3270 -4180 0 0 {name=x393}
 C {devices/lab_wire.sym} 3200 -4300 2 1 {name=l1570 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 3220 -4310 1 1 {name=l1571 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 3260 -4310 3 0 {name=l1572 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 3200 -4060 0 0 {name=l1573 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 3530 -4180 0 0 {name=x394}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 3530 -4180 0 0 {name=x394}
 C {devices/lab_wire.sym} 3460 -4300 2 1 {name=l1574 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 3480 -4310 1 1 {name=l1575 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 3520 -4310 3 0 {name=l1576 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 3460 -4060 0 0 {name=l1577 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 3790 -4180 0 0 {name=x395}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 3790 -4180 0 0 {name=x395}
 C {devices/lab_wire.sym} 3720 -4300 2 1 {name=l1578 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 3740 -4310 1 1 {name=l1579 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 3780 -4310 3 0 {name=l1580 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 3720 -4060 0 0 {name=l1581 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 4050 -4180 0 0 {name=x396}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 4050 -4180 0 0 {name=x396}
 C {devices/lab_wire.sym} 3980 -4300 2 1 {name=l1582 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 4000 -4310 1 1 {name=l1583 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 4040 -4310 3 0 {name=l1584 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 3980 -4060 0 0 {name=l1585 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 4310 -4180 0 0 {name=x397}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 4310 -4180 0 0 {name=x397}
 C {devices/lab_wire.sym} 4240 -4300 2 1 {name=l1586 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 4260 -4310 1 1 {name=l1587 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 4300 -4310 3 0 {name=l1588 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 4240 -4060 0 0 {name=l1589 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 4570 -4180 0 0 {name=x398}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 4570 -4180 0 0 {name=x398}
 C {devices/lab_wire.sym} 4500 -4300 2 1 {name=l1590 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 4520 -4310 1 1 {name=l1591 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 4560 -4310 3 0 {name=l1592 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 4500 -4060 0 0 {name=l1593 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 4830 -4180 0 0 {name=x399}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 4830 -4180 0 0 {name=x399}
 C {devices/lab_wire.sym} 4760 -4300 2 1 {name=l1594 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 4780 -4310 1 1 {name=l1595 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 4820 -4310 3 0 {name=l1596 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 4760 -4060 0 0 {name=l1597 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 5090 -4180 0 0 {name=x400}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 5090 -4180 0 0 {name=x400}
 C {devices/lab_wire.sym} 5020 -4300 2 1 {name=l1598 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 5040 -4310 1 1 {name=l1599 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 5080 -4310 3 0 {name=l1600 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 5020 -4060 0 0 {name=l1601 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 5350 -4180 0 0 {name=x401}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 5350 -4180 0 0 {name=x401}
 C {devices/lab_wire.sym} 5280 -4300 2 1 {name=l1602 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 5300 -4310 1 1 {name=l1603 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 5340 -4310 3 0 {name=l1604 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 5280 -4060 0 0 {name=l1605 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 5610 -4180 0 0 {name=x402}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 5610 -4180 0 0 {name=x402}
 C {devices/lab_wire.sym} 5540 -4300 2 1 {name=l1606 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 5560 -4310 1 1 {name=l1607 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 5600 -4310 3 0 {name=l1608 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 5540 -4060 0 0 {name=l1609 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 5870 -4180 0 0 {name=x403}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 5870 -4180 0 0 {name=x403}
 C {devices/lab_wire.sym} 5800 -4300 2 1 {name=l1610 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 5820 -4310 1 1 {name=l1611 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 5860 -4310 3 0 {name=l1612 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 5800 -4060 0 0 {name=l1613 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 6130 -4180 0 0 {name=x404}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 6130 -4180 0 0 {name=x404}
 C {devices/lab_wire.sym} 6060 -4300 2 1 {name=l1614 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 6080 -4310 1 1 {name=l1615 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 6120 -4310 3 0 {name=l1616 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 6060 -4060 0 0 {name=l1617 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 6390 -4180 0 0 {name=x405}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 6390 -4180 0 0 {name=x405}
 C {devices/lab_wire.sym} 6320 -4300 2 1 {name=l1618 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 6340 -4310 1 1 {name=l1619 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 6380 -4310 3 0 {name=l1620 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 6320 -4060 0 0 {name=l1621 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 6650 -4180 0 0 {name=x406}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 6650 -4180 0 0 {name=x406}
 C {devices/lab_wire.sym} 6580 -4300 2 1 {name=l1622 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 6600 -4310 1 1 {name=l1623 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 6640 -4310 3 0 {name=l1624 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 6580 -4060 0 0 {name=l1625 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 6910 -4180 0 0 {name=x407}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 6910 -4180 0 0 {name=x407}
 C {devices/lab_wire.sym} 6840 -4300 2 1 {name=l1626 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 6860 -4310 1 1 {name=l1627 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 6900 -4310 3 0 {name=l1628 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 6840 -4060 0 0 {name=l1629 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 7170 -4180 0 0 {name=x408}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 7170 -4180 0 0 {name=x408}
 C {devices/lab_wire.sym} 7100 -4300 2 1 {name=l1630 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 7120 -4310 1 1 {name=l1631 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 7160 -4310 3 0 {name=l1632 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 7100 -4060 0 0 {name=l1633 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 7430 -4180 0 0 {name=x409}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 7430 -4180 0 0 {name=x409}
 C {devices/lab_wire.sym} 7360 -4300 2 1 {name=l1634 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 7380 -4310 1 1 {name=l1635 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 7420 -4310 3 0 {name=l1636 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 7360 -4060 0 0 {name=l1637 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 7690 -4180 0 0 {name=x410}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 7690 -4180 0 0 {name=x410}
 C {devices/lab_wire.sym} 7620 -4300 2 1 {name=l1638 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 7640 -4310 1 1 {name=l1639 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 7680 -4310 3 0 {name=l1640 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 7620 -4060 0 0 {name=l1641 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 7950 -4180 0 0 {name=x411}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 7950 -4180 0 0 {name=x411}
 C {devices/lab_wire.sym} 7880 -4300 2 1 {name=l1642 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 7900 -4310 1 1 {name=l1643 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 7940 -4310 3 0 {name=l1644 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 7880 -4060 0 0 {name=l1645 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 8210 -4180 0 0 {name=x412}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 8210 -4180 0 0 {name=x412}
 C {devices/lab_wire.sym} 8140 -4300 2 1 {name=l1646 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 8160 -4310 1 1 {name=l1647 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 8200 -4310 3 0 {name=l1648 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 8140 -4060 0 0 {name=l1649 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 8470 -4180 0 0 {name=x413}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 8470 -4180 0 0 {name=x413}
 C {devices/lab_wire.sym} 8400 -4300 2 1 {name=l1650 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 8420 -4310 1 1 {name=l1651 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 8460 -4310 3 0 {name=l1652 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 8400 -4060 0 0 {name=l1653 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 8730 -4180 0 0 {name=x414}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 8730 -4180 0 0 {name=x414}
 C {devices/lab_wire.sym} 8660 -4300 2 1 {name=l1654 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 8680 -4310 1 1 {name=l1655 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 8720 -4310 3 0 {name=l1656 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 8660 -4060 0 0 {name=l1657 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 8990 -4180 0 0 {name=x415}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 8990 -4180 0 0 {name=x415}
 C {devices/lab_wire.sym} 8920 -4300 2 1 {name=l1658 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 8940 -4310 1 1 {name=l1659 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 8980 -4310 3 0 {name=l1660 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 8920 -4060 0 0 {name=l1661 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 9250 -4180 0 0 {name=x416}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 9250 -4180 0 0 {name=x416}
 C {devices/lab_wire.sym} 9180 -4300 2 1 {name=l1662 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 9200 -4310 1 1 {name=l1663 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 9240 -4310 3 0 {name=l1664 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 9180 -4060 0 0 {name=l1665 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 1190 -4440 0 0 {name=x417}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 1190 -4440 0 0 {name=x417}
 C {devices/lab_wire.sym} 1120 -4560 2 1 {name=l1666 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 1140 -4570 1 1 {name=l1667 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 1180 -4570 3 0 {name=l1668 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 1120 -4320 0 0 {name=l1669 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 1450 -4440 0 0 {name=x418}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 1450 -4440 0 0 {name=x418}
 C {devices/lab_wire.sym} 1380 -4560 2 1 {name=l1670 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 1400 -4570 1 1 {name=l1671 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 1440 -4570 3 0 {name=l1672 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 1380 -4320 0 0 {name=l1673 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 1710 -4440 0 0 {name=x419}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 1710 -4440 0 0 {name=x419}
 C {devices/lab_wire.sym} 1640 -4560 2 1 {name=l1674 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 1660 -4570 1 1 {name=l1675 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 1700 -4570 3 0 {name=l1676 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 1640 -4320 0 0 {name=l1677 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 1970 -4440 0 0 {name=x420}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 1970 -4440 0 0 {name=x420}
 C {devices/lab_wire.sym} 1900 -4560 2 1 {name=l1678 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 1920 -4570 1 1 {name=l1679 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 1960 -4570 3 0 {name=l1680 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 1900 -4320 0 0 {name=l1681 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 2230 -4440 0 0 {name=x421}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 2230 -4440 0 0 {name=x421}
 C {devices/lab_wire.sym} 2160 -4560 2 1 {name=l1682 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 2180 -4570 1 1 {name=l1683 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 2220 -4570 3 0 {name=l1684 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 2160 -4320 0 0 {name=l1685 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 2490 -4440 0 0 {name=x422}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 2490 -4440 0 0 {name=x422}
 C {devices/lab_wire.sym} 2420 -4560 2 1 {name=l1686 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 2440 -4570 1 1 {name=l1687 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 2480 -4570 3 0 {name=l1688 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 2420 -4320 0 0 {name=l1689 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 2750 -4440 0 0 {name=x423}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 2750 -4440 0 0 {name=x423}
 C {devices/lab_wire.sym} 2680 -4560 2 1 {name=l1690 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 2700 -4570 1 1 {name=l1691 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 2740 -4570 3 0 {name=l1692 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 2680 -4320 0 0 {name=l1693 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 3010 -4440 0 0 {name=x424}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 3010 -4440 0 0 {name=x424}
 C {devices/lab_wire.sym} 2940 -4560 2 1 {name=l1694 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 2960 -4570 1 1 {name=l1695 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 3000 -4570 3 0 {name=l1696 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 2940 -4320 0 0 {name=l1697 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 3270 -4440 0 0 {name=x425}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 3270 -4440 0 0 {name=x425}
 C {devices/lab_wire.sym} 3200 -4560 2 1 {name=l1698 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 3220 -4570 1 1 {name=l1699 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 3260 -4570 3 0 {name=l1700 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 3200 -4320 0 0 {name=l1701 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 3530 -4440 0 0 {name=x426}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 3530 -4440 0 0 {name=x426}
 C {devices/lab_wire.sym} 3460 -4560 2 1 {name=l1702 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 3480 -4570 1 1 {name=l1703 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 3520 -4570 3 0 {name=l1704 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 3460 -4320 0 0 {name=l1705 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 3790 -4440 0 0 {name=x427}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 3790 -4440 0 0 {name=x427}
 C {devices/lab_wire.sym} 3720 -4560 2 1 {name=l1706 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 3740 -4570 1 1 {name=l1707 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 3780 -4570 3 0 {name=l1708 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 3720 -4320 0 0 {name=l1709 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 4050 -4440 0 0 {name=x428}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 4050 -4440 0 0 {name=x428}
 C {devices/lab_wire.sym} 3980 -4560 2 1 {name=l1710 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 4000 -4570 1 1 {name=l1711 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 4040 -4570 3 0 {name=l1712 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 3980 -4320 0 0 {name=l1713 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 4310 -4440 0 0 {name=x429}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 4310 -4440 0 0 {name=x429}
 C {devices/lab_wire.sym} 4240 -4560 2 1 {name=l1714 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 4260 -4570 1 1 {name=l1715 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 4300 -4570 3 0 {name=l1716 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 4240 -4320 0 0 {name=l1717 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 4570 -4440 0 0 {name=x430}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 4570 -4440 0 0 {name=x430}
 C {devices/lab_wire.sym} 4500 -4560 2 1 {name=l1718 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 4520 -4570 1 1 {name=l1719 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 4560 -4570 3 0 {name=l1720 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 4500 -4320 0 0 {name=l1721 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 4830 -4440 0 0 {name=x431}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 4830 -4440 0 0 {name=x431}
 C {devices/lab_wire.sym} 4760 -4560 2 1 {name=l1722 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 4780 -4570 1 1 {name=l1723 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 4820 -4570 3 0 {name=l1724 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 4760 -4320 0 0 {name=l1725 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 5090 -4440 0 0 {name=x432}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 5090 -4440 0 0 {name=x432}
 C {devices/lab_wire.sym} 5020 -4560 2 1 {name=l1726 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 5040 -4570 1 1 {name=l1727 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 5080 -4570 3 0 {name=l1728 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 5020 -4320 0 0 {name=l1729 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 5350 -4440 0 0 {name=x433}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 5350 -4440 0 0 {name=x433}
 C {devices/lab_wire.sym} 5280 -4560 2 1 {name=l1730 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 5300 -4570 1 1 {name=l1731 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 5340 -4570 3 0 {name=l1732 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 5280 -4320 0 0 {name=l1733 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 5610 -4440 0 0 {name=x434}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 5610 -4440 0 0 {name=x434}
 C {devices/lab_wire.sym} 5540 -4560 2 1 {name=l1734 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 5560 -4570 1 1 {name=l1735 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 5600 -4570 3 0 {name=l1736 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 5540 -4320 0 0 {name=l1737 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 5870 -4440 0 0 {name=x435}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 5870 -4440 0 0 {name=x435}
 C {devices/lab_wire.sym} 5800 -4560 2 1 {name=l1738 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 5820 -4570 1 1 {name=l1739 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 5860 -4570 3 0 {name=l1740 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 5800 -4320 0 0 {name=l1741 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 6130 -4440 0 0 {name=x436}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 6130 -4440 0 0 {name=x436}
 C {devices/lab_wire.sym} 6060 -4560 2 1 {name=l1742 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 6080 -4570 1 1 {name=l1743 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 6120 -4570 3 0 {name=l1744 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 6060 -4320 0 0 {name=l1745 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 6390 -4440 0 0 {name=x437}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 6390 -4440 0 0 {name=x437}
 C {devices/lab_wire.sym} 6320 -4560 2 1 {name=l1746 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 6340 -4570 1 1 {name=l1747 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 6380 -4570 3 0 {name=l1748 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 6320 -4320 0 0 {name=l1749 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 6650 -4440 0 0 {name=x438}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 6650 -4440 0 0 {name=x438}
 C {devices/lab_wire.sym} 6580 -4560 2 1 {name=l1750 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 6600 -4570 1 1 {name=l1751 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 6640 -4570 3 0 {name=l1752 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 6580 -4320 0 0 {name=l1753 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 6910 -4440 0 0 {name=x439}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 6910 -4440 0 0 {name=x439}
 C {devices/lab_wire.sym} 6840 -4560 2 1 {name=l1754 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 6860 -4570 1 1 {name=l1755 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 6900 -4570 3 0 {name=l1756 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 6840 -4320 0 0 {name=l1757 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 7170 -4440 0 0 {name=x440}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 7170 -4440 0 0 {name=x440}
 C {devices/lab_wire.sym} 7100 -4560 2 1 {name=l1758 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 7120 -4570 1 1 {name=l1759 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 7160 -4570 3 0 {name=l1760 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 7100 -4320 0 0 {name=l1761 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 7430 -4440 0 0 {name=x441}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 7430 -4440 0 0 {name=x441}
 C {devices/lab_wire.sym} 7360 -4560 2 1 {name=l1762 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 7380 -4570 1 1 {name=l1763 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 7420 -4570 3 0 {name=l1764 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 7360 -4320 0 0 {name=l1765 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 7690 -4440 0 0 {name=x442}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 7690 -4440 0 0 {name=x442}
 C {devices/lab_wire.sym} 7620 -4560 2 1 {name=l1766 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 7640 -4570 1 1 {name=l1767 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 7680 -4570 3 0 {name=l1768 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 7620 -4320 0 0 {name=l1769 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 7950 -4440 0 0 {name=x443}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 7950 -4440 0 0 {name=x443}
 C {devices/lab_wire.sym} 7880 -4560 2 1 {name=l1770 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 7900 -4570 1 1 {name=l1771 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 7940 -4570 3 0 {name=l1772 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 7880 -4320 0 0 {name=l1773 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 8210 -4440 0 0 {name=x444}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 8210 -4440 0 0 {name=x444}
 C {devices/lab_wire.sym} 8140 -4560 2 1 {name=l1774 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 8160 -4570 1 1 {name=l1775 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 8200 -4570 3 0 {name=l1776 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 8140 -4320 0 0 {name=l1777 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 8470 -4440 0 0 {name=x445}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 8470 -4440 0 0 {name=x445}
 C {devices/lab_wire.sym} 8400 -4560 2 1 {name=l1778 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 8420 -4570 1 1 {name=l1779 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 8460 -4570 3 0 {name=l1780 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 8400 -4320 0 0 {name=l1781 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 8730 -4440 0 0 {name=x446}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 8730 -4440 0 0 {name=x446}
 C {devices/lab_wire.sym} 8660 -4560 2 1 {name=l1782 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 8680 -4570 1 1 {name=l1783 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 8720 -4570 3 0 {name=l1784 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 8660 -4320 0 0 {name=l1785 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 8990 -4440 0 0 {name=x447}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 8990 -4440 0 0 {name=x447}
 C {devices/lab_wire.sym} 8920 -4560 2 1 {name=l1786 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 8940 -4570 1 1 {name=l1787 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 8980 -4570 3 0 {name=l1788 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 8920 -4320 0 0 {name=l1789 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 9250 -4440 0 0 {name=x448}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 9250 -4440 0 0 {name=x448}
 C {devices/lab_wire.sym} 9180 -4560 2 1 {name=l1790 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 9200 -4570 1 1 {name=l1791 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 9240 -4570 3 0 {name=l1792 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 9180 -4320 0 0 {name=l1793 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 1190 -4700 0 0 {name=x449}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 1190 -4700 0 0 {name=x449}
 C {devices/lab_wire.sym} 1120 -4820 2 1 {name=l1794 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 1140 -4830 1 1 {name=l1795 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 1180 -4830 3 0 {name=l1796 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 1120 -4580 0 0 {name=l1797 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 1450 -4700 0 0 {name=x450}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 1450 -4700 0 0 {name=x450}
 C {devices/lab_wire.sym} 1380 -4820 2 1 {name=l1798 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 1400 -4830 1 1 {name=l1799 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 1440 -4830 3 0 {name=l1800 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 1380 -4580 0 0 {name=l1801 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 1710 -4700 0 0 {name=x451}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 1710 -4700 0 0 {name=x451}
 C {devices/lab_wire.sym} 1640 -4820 2 1 {name=l1802 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 1660 -4830 1 1 {name=l1803 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 1700 -4830 3 0 {name=l1804 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 1640 -4580 0 0 {name=l1805 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 1970 -4700 0 0 {name=x452}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 1970 -4700 0 0 {name=x452}
 C {devices/lab_wire.sym} 1900 -4820 2 1 {name=l1806 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 1920 -4830 1 1 {name=l1807 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 1960 -4830 3 0 {name=l1808 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 1900 -4580 0 0 {name=l1809 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 2230 -4700 0 0 {name=x453}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 2230 -4700 0 0 {name=x453}
 C {devices/lab_wire.sym} 2160 -4820 2 1 {name=l1810 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 2180 -4830 1 1 {name=l1811 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 2220 -4830 3 0 {name=l1812 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 2160 -4580 0 0 {name=l1813 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 2490 -4700 0 0 {name=x454}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 2490 -4700 0 0 {name=x454}
 C {devices/lab_wire.sym} 2420 -4820 2 1 {name=l1814 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 2440 -4830 1 1 {name=l1815 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 2480 -4830 3 0 {name=l1816 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 2420 -4580 0 0 {name=l1817 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 2750 -4700 0 0 {name=x455}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 2750 -4700 0 0 {name=x455}
 C {devices/lab_wire.sym} 2680 -4820 2 1 {name=l1818 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 2700 -4830 1 1 {name=l1819 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 2740 -4830 3 0 {name=l1820 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 2680 -4580 0 0 {name=l1821 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 3010 -4700 0 0 {name=x456}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 3010 -4700 0 0 {name=x456}
 C {devices/lab_wire.sym} 2940 -4820 2 1 {name=l1822 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 2960 -4830 1 1 {name=l1823 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 3000 -4830 3 0 {name=l1824 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 2940 -4580 0 0 {name=l1825 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 3270 -4700 0 0 {name=x457}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 3270 -4700 0 0 {name=x457}
 C {devices/lab_wire.sym} 3200 -4820 2 1 {name=l1826 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 3220 -4830 1 1 {name=l1827 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 3260 -4830 3 0 {name=l1828 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 3200 -4580 0 0 {name=l1829 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 3530 -4700 0 0 {name=x458}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 3530 -4700 0 0 {name=x458}
 C {devices/lab_wire.sym} 3460 -4820 2 1 {name=l1830 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 3480 -4830 1 1 {name=l1831 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 3520 -4830 3 0 {name=l1832 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 3460 -4580 0 0 {name=l1833 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 3790 -4700 0 0 {name=x459}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 3790 -4700 0 0 {name=x459}
 C {devices/lab_wire.sym} 3720 -4820 2 1 {name=l1834 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 3740 -4830 1 1 {name=l1835 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 3780 -4830 3 0 {name=l1836 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 3720 -4580 0 0 {name=l1837 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 4050 -4700 0 0 {name=x460}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 4050 -4700 0 0 {name=x460}
 C {devices/lab_wire.sym} 3980 -4820 2 1 {name=l1838 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 4000 -4830 1 1 {name=l1839 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 4040 -4830 3 0 {name=l1840 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 3980 -4580 0 0 {name=l1841 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 4310 -4700 0 0 {name=x461}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 4310 -4700 0 0 {name=x461}
 C {devices/lab_wire.sym} 4240 -4820 2 1 {name=l1842 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 4260 -4830 1 1 {name=l1843 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 4300 -4830 3 0 {name=l1844 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 4240 -4580 0 0 {name=l1845 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 4570 -4700 0 0 {name=x462}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 4570 -4700 0 0 {name=x462}
 C {devices/lab_wire.sym} 4500 -4820 2 1 {name=l1846 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 4520 -4830 1 1 {name=l1847 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 4560 -4830 3 0 {name=l1848 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 4500 -4580 0 0 {name=l1849 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 4830 -4700 0 0 {name=x463}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 4830 -4700 0 0 {name=x463}
 C {devices/lab_wire.sym} 4760 -4820 2 1 {name=l1850 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 4780 -4830 1 1 {name=l1851 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 4820 -4830 3 0 {name=l1852 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 4760 -4580 0 0 {name=l1853 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 5090 -4700 0 0 {name=x464}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 5090 -4700 0 0 {name=x464}
 C {devices/lab_wire.sym} 5020 -4820 2 1 {name=l1854 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 5040 -4830 1 1 {name=l1855 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 5080 -4830 3 0 {name=l1856 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 5020 -4580 0 0 {name=l1857 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 5350 -4700 0 0 {name=x465}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 5350 -4700 0 0 {name=x465}
 C {devices/lab_wire.sym} 5280 -4820 2 1 {name=l1858 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 5300 -4830 1 1 {name=l1859 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 5340 -4830 3 0 {name=l1860 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 5280 -4580 0 0 {name=l1861 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 5610 -4700 0 0 {name=x466}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 5610 -4700 0 0 {name=x466}
 C {devices/lab_wire.sym} 5540 -4820 2 1 {name=l1862 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 5560 -4830 1 1 {name=l1863 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 5600 -4830 3 0 {name=l1864 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 5540 -4580 0 0 {name=l1865 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 5870 -4700 0 0 {name=x467}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 5870 -4700 0 0 {name=x467}
 C {devices/lab_wire.sym} 5800 -4820 2 1 {name=l1866 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 5820 -4830 1 1 {name=l1867 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 5860 -4830 3 0 {name=l1868 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 5800 -4580 0 0 {name=l1869 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 6130 -4700 0 0 {name=x468}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 6130 -4700 0 0 {name=x468}
 C {devices/lab_wire.sym} 6060 -4820 2 1 {name=l1870 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 6080 -4830 1 1 {name=l1871 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 6120 -4830 3 0 {name=l1872 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 6060 -4580 0 0 {name=l1873 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 6390 -4700 0 0 {name=x469}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 6390 -4700 0 0 {name=x469}
 C {devices/lab_wire.sym} 6320 -4820 2 1 {name=l1874 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 6340 -4830 1 1 {name=l1875 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 6380 -4830 3 0 {name=l1876 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 6320 -4580 0 0 {name=l1877 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 6650 -4700 0 0 {name=x470}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 6650 -4700 0 0 {name=x470}
 C {devices/lab_wire.sym} 6580 -4820 2 1 {name=l1878 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 6600 -4830 1 1 {name=l1879 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 6640 -4830 3 0 {name=l1880 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 6580 -4580 0 0 {name=l1881 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 6910 -4700 0 0 {name=x471}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 6910 -4700 0 0 {name=x471}
 C {devices/lab_wire.sym} 6840 -4820 2 1 {name=l1882 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 6860 -4830 1 1 {name=l1883 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 6900 -4830 3 0 {name=l1884 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 6840 -4580 0 0 {name=l1885 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 7170 -4700 0 0 {name=x472}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 7170 -4700 0 0 {name=x472}
 C {devices/lab_wire.sym} 7100 -4820 2 1 {name=l1886 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 7120 -4830 1 1 {name=l1887 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 7160 -4830 3 0 {name=l1888 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 7100 -4580 0 0 {name=l1889 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 7430 -4700 0 0 {name=x473}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 7430 -4700 0 0 {name=x473}
 C {devices/lab_wire.sym} 7360 -4820 2 1 {name=l1890 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 7380 -4830 1 1 {name=l1891 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 7420 -4830 3 0 {name=l1892 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 7360 -4580 0 0 {name=l1893 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 7690 -4700 0 0 {name=x474}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 7690 -4700 0 0 {name=x474}
 C {devices/lab_wire.sym} 7620 -4820 2 1 {name=l1894 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 7640 -4830 1 1 {name=l1895 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 7680 -4830 3 0 {name=l1896 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 7620 -4580 0 0 {name=l1897 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 7950 -4700 0 0 {name=x475}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 7950 -4700 0 0 {name=x475}
 C {devices/lab_wire.sym} 7880 -4820 2 1 {name=l1898 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 7900 -4830 1 1 {name=l1899 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 7940 -4830 3 0 {name=l1900 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 7880 -4580 0 0 {name=l1901 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 8210 -4700 0 0 {name=x476}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 8210 -4700 0 0 {name=x476}
 C {devices/lab_wire.sym} 8140 -4820 2 1 {name=l1902 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 8160 -4830 1 1 {name=l1903 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 8200 -4830 3 0 {name=l1904 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 8140 -4580 0 0 {name=l1905 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 8470 -4700 0 0 {name=x477}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 8470 -4700 0 0 {name=x477}
 C {devices/lab_wire.sym} 8400 -4820 2 1 {name=l1906 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 8420 -4830 1 1 {name=l1907 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 8460 -4830 3 0 {name=l1908 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 8400 -4580 0 0 {name=l1909 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 8730 -4700 0 0 {name=x478}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 8730 -4700 0 0 {name=x478}
 C {devices/lab_wire.sym} 8660 -4820 2 1 {name=l1910 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 8680 -4830 1 1 {name=l1911 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 8720 -4830 3 0 {name=l1912 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 8660 -4580 0 0 {name=l1913 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 8990 -4700 0 0 {name=x479}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 8990 -4700 0 0 {name=x479}
 C {devices/lab_wire.sym} 8920 -4820 2 1 {name=l1914 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 8940 -4830 1 1 {name=l1915 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 8980 -4830 3 0 {name=l1916 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 8920 -4580 0 0 {name=l1917 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 9250 -4700 0 0 {name=x480}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 9250 -4700 0 0 {name=x480}
 C {devices/lab_wire.sym} 9180 -4820 2 1 {name=l1918 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 9200 -4830 1 1 {name=l1919 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 9240 -4830 3 0 {name=l1920 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 9180 -4580 0 0 {name=l1921 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 1190 -4960 0 0 {name=x481}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 1190 -4960 0 0 {name=x481}
 C {devices/lab_wire.sym} 1120 -5080 2 1 {name=l1922 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 1140 -5090 1 1 {name=l1923 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 1180 -5090 3 0 {name=l1924 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 1120 -4840 0 0 {name=l1925 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 1450 -4960 0 0 {name=x482}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 1450 -4960 0 0 {name=x482}
 C {devices/lab_wire.sym} 1380 -5080 2 1 {name=l1926 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 1400 -5090 1 1 {name=l1927 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 1440 -5090 3 0 {name=l1928 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 1380 -4840 0 0 {name=l1929 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 1710 -4960 0 0 {name=x483}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 1710 -4960 0 0 {name=x483}
 C {devices/lab_wire.sym} 1640 -5080 2 1 {name=l1930 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 1660 -5090 1 1 {name=l1931 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 1700 -5090 3 0 {name=l1932 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 1640 -4840 0 0 {name=l1933 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 1970 -4960 0 0 {name=x484}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 1970 -4960 0 0 {name=x484}
 C {devices/lab_wire.sym} 1900 -5080 2 1 {name=l1934 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 1920 -5090 1 1 {name=l1935 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 1960 -5090 3 0 {name=l1936 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 1900 -4840 0 0 {name=l1937 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 2230 -4960 0 0 {name=x485}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 2230 -4960 0 0 {name=x485}
 C {devices/lab_wire.sym} 2160 -5080 2 1 {name=l1938 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 2180 -5090 1 1 {name=l1939 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 2220 -5090 3 0 {name=l1940 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 2160 -4840 0 0 {name=l1941 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 2490 -4960 0 0 {name=x486}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 2490 -4960 0 0 {name=x486}
 C {devices/lab_wire.sym} 2420 -5080 2 1 {name=l1942 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 2440 -5090 1 1 {name=l1943 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 2480 -5090 3 0 {name=l1944 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 2420 -4840 0 0 {name=l1945 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 2750 -4960 0 0 {name=x487}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 2750 -4960 0 0 {name=x487}
 C {devices/lab_wire.sym} 2680 -5080 2 1 {name=l1946 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 2700 -5090 1 1 {name=l1947 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 2740 -5090 3 0 {name=l1948 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 2680 -4840 0 0 {name=l1949 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 3010 -4960 0 0 {name=x488}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 3010 -4960 0 0 {name=x488}
 C {devices/lab_wire.sym} 2940 -5080 2 1 {name=l1950 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 2960 -5090 1 1 {name=l1951 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 3000 -5090 3 0 {name=l1952 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 2940 -4840 0 0 {name=l1953 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 3270 -4960 0 0 {name=x489}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 3270 -4960 0 0 {name=x489}
 C {devices/lab_wire.sym} 3200 -5080 2 1 {name=l1954 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 3220 -5090 1 1 {name=l1955 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 3260 -5090 3 0 {name=l1956 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 3200 -4840 0 0 {name=l1957 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 3530 -4960 0 0 {name=x490}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 3530 -4960 0 0 {name=x490}
 C {devices/lab_wire.sym} 3460 -5080 2 1 {name=l1958 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 3480 -5090 1 1 {name=l1959 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 3520 -5090 3 0 {name=l1960 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 3460 -4840 0 0 {name=l1961 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 3790 -4960 0 0 {name=x491}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 3790 -4960 0 0 {name=x491}
 C {devices/lab_wire.sym} 3720 -5080 2 1 {name=l1962 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 3740 -5090 1 1 {name=l1963 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 3780 -5090 3 0 {name=l1964 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 3720 -4840 0 0 {name=l1965 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 4050 -4960 0 0 {name=x492}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 4050 -4960 0 0 {name=x492}
 C {devices/lab_wire.sym} 3980 -5080 2 1 {name=l1966 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 4000 -5090 1 1 {name=l1967 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 4040 -5090 3 0 {name=l1968 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 3980 -4840 0 0 {name=l1969 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 4310 -4960 0 0 {name=x493}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 4310 -4960 0 0 {name=x493}
 C {devices/lab_wire.sym} 4240 -5080 2 1 {name=l1970 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 4260 -5090 1 1 {name=l1971 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 4300 -5090 3 0 {name=l1972 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 4240 -4840 0 0 {name=l1973 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 4570 -4960 0 0 {name=x494}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 4570 -4960 0 0 {name=x494}
 C {devices/lab_wire.sym} 4500 -5080 2 1 {name=l1974 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 4520 -5090 1 1 {name=l1975 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 4560 -5090 3 0 {name=l1976 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 4500 -4840 0 0 {name=l1977 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 4830 -4960 0 0 {name=x495}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 4830 -4960 0 0 {name=x495}
 C {devices/lab_wire.sym} 4760 -5080 2 1 {name=l1978 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 4780 -5090 1 1 {name=l1979 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 4820 -5090 3 0 {name=l1980 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 4760 -4840 0 0 {name=l1981 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 5090 -4960 0 0 {name=x496}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 5090 -4960 0 0 {name=x496}
 C {devices/lab_wire.sym} 5020 -5080 2 1 {name=l1982 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 5040 -5090 1 1 {name=l1983 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 5080 -5090 3 0 {name=l1984 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 5020 -4840 0 0 {name=l1985 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 5350 -4960 0 0 {name=x497}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 5350 -4960 0 0 {name=x497}
 C {devices/lab_wire.sym} 5280 -5080 2 1 {name=l1986 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 5300 -5090 1 1 {name=l1987 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 5340 -5090 3 0 {name=l1988 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 5280 -4840 0 0 {name=l1989 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 5610 -4960 0 0 {name=x498}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 5610 -4960 0 0 {name=x498}
 C {devices/lab_wire.sym} 5540 -5080 2 1 {name=l1990 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 5560 -5090 1 1 {name=l1991 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 5600 -5090 3 0 {name=l1992 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 5540 -4840 0 0 {name=l1993 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 5870 -4960 0 0 {name=x499}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 5870 -4960 0 0 {name=x499}
 C {devices/lab_wire.sym} 5800 -5080 2 1 {name=l1994 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 5820 -5090 1 1 {name=l1995 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 5860 -5090 3 0 {name=l1996 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 5800 -4840 0 0 {name=l1997 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 6130 -4960 0 0 {name=x500}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 6130 -4960 0 0 {name=x500}
 C {devices/lab_wire.sym} 6060 -5080 2 1 {name=l1998 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 6080 -5090 1 1 {name=l1999 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 6120 -5090 3 0 {name=l2000 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 6060 -4840 0 0 {name=l2001 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 6390 -4960 0 0 {name=x501}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 6390 -4960 0 0 {name=x501}
 C {devices/lab_wire.sym} 6320 -5080 2 1 {name=l2002 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 6340 -5090 1 1 {name=l2003 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 6380 -5090 3 0 {name=l2004 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 6320 -4840 0 0 {name=l2005 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 6650 -4960 0 0 {name=x502}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 6650 -4960 0 0 {name=x502}
 C {devices/lab_wire.sym} 6580 -5080 2 1 {name=l2006 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 6600 -5090 1 1 {name=l2007 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 6640 -5090 3 0 {name=l2008 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 6580 -4840 0 0 {name=l2009 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 6910 -4960 0 0 {name=x503}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 6910 -4960 0 0 {name=x503}
 C {devices/lab_wire.sym} 6840 -5080 2 1 {name=l2010 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 6860 -5090 1 1 {name=l2011 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 6900 -5090 3 0 {name=l2012 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 6840 -4840 0 0 {name=l2013 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 7170 -4960 0 0 {name=x504}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 7170 -4960 0 0 {name=x504}
 C {devices/lab_wire.sym} 7100 -5080 2 1 {name=l2014 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 7120 -5090 1 1 {name=l2015 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 7160 -5090 3 0 {name=l2016 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 7100 -4840 0 0 {name=l2017 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 7430 -4960 0 0 {name=x505}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 7430 -4960 0 0 {name=x505}
 C {devices/lab_wire.sym} 7360 -5080 2 1 {name=l2018 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 7380 -5090 1 1 {name=l2019 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 7420 -5090 3 0 {name=l2020 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 7360 -4840 0 0 {name=l2021 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 7690 -4960 0 0 {name=x506}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 7690 -4960 0 0 {name=x506}
 C {devices/lab_wire.sym} 7620 -5080 2 1 {name=l2022 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 7640 -5090 1 1 {name=l2023 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 7680 -5090 3 0 {name=l2024 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 7620 -4840 0 0 {name=l2025 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 7950 -4960 0 0 {name=x507}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 7950 -4960 0 0 {name=x507}
 C {devices/lab_wire.sym} 7880 -5080 2 1 {name=l2026 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 7900 -5090 1 1 {name=l2027 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 7940 -5090 3 0 {name=l2028 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 7880 -4840 0 0 {name=l2029 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 8210 -4960 0 0 {name=x508}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 8210 -4960 0 0 {name=x508}
 C {devices/lab_wire.sym} 8140 -5080 2 1 {name=l2030 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 8160 -5090 1 1 {name=l2031 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 8200 -5090 3 0 {name=l2032 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 8140 -4840 0 0 {name=l2033 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 8470 -4960 0 0 {name=x509}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 8470 -4960 0 0 {name=x509}
 C {devices/lab_wire.sym} 8400 -5080 2 1 {name=l2034 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 8420 -5090 1 1 {name=l2035 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 8460 -5090 3 0 {name=l2036 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 8400 -4840 0 0 {name=l2037 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 8730 -4960 0 0 {name=x510}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 8730 -4960 0 0 {name=x510}
 C {devices/lab_wire.sym} 8660 -5080 2 1 {name=l2038 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 8680 -5090 1 1 {name=l2039 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 8720 -5090 3 0 {name=l2040 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 8660 -4840 0 0 {name=l2041 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 8990 -4960 0 0 {name=x511}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 8990 -4960 0 0 {name=x511}
 C {devices/lab_wire.sym} 8920 -5080 2 1 {name=l2042 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 8940 -5090 1 1 {name=l2043 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 8980 -5090 3 0 {name=l2044 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 8920 -4840 0 0 {name=l2045 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 9250 -4960 0 0 {name=x512}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 9250 -4960 0 0 {name=x512}
 C {devices/lab_wire.sym} 9180 -5080 2 1 {name=l2046 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 9200 -5090 1 1 {name=l2047 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 9240 -5090 3 0 {name=l2048 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 9180 -4840 0 0 {name=l2049 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 1190 -5220 0 0 {name=x513}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 1190 -5220 0 0 {name=x513}
 C {devices/lab_wire.sym} 1120 -5340 2 1 {name=l2050 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 1140 -5350 1 1 {name=l2051 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 1180 -5350 3 0 {name=l2052 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 1120 -5100 0 0 {name=l2053 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 1450 -5220 0 0 {name=x514}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 1450 -5220 0 0 {name=x514}
 C {devices/lab_wire.sym} 1380 -5340 2 1 {name=l2054 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 1400 -5350 1 1 {name=l2055 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 1440 -5350 3 0 {name=l2056 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 1380 -5100 0 0 {name=l2057 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 1710 -5220 0 0 {name=x515}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 1710 -5220 0 0 {name=x515}
 C {devices/lab_wire.sym} 1640 -5340 2 1 {name=l2058 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 1660 -5350 1 1 {name=l2059 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 1700 -5350 3 0 {name=l2060 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 1640 -5100 0 0 {name=l2061 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 1970 -5220 0 0 {name=x516}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 1970 -5220 0 0 {name=x516}
 C {devices/lab_wire.sym} 1900 -5340 2 1 {name=l2062 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 1920 -5350 1 1 {name=l2063 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 1960 -5350 3 0 {name=l2064 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 1900 -5100 0 0 {name=l2065 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 2230 -5220 0 0 {name=x517}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 2230 -5220 0 0 {name=x517}
 C {devices/lab_wire.sym} 2160 -5340 2 1 {name=l2066 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 2180 -5350 1 1 {name=l2067 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 2220 -5350 3 0 {name=l2068 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 2160 -5100 0 0 {name=l2069 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 2490 -5220 0 0 {name=x518}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 2490 -5220 0 0 {name=x518}
 C {devices/lab_wire.sym} 2420 -5340 2 1 {name=l2070 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 2440 -5350 1 1 {name=l2071 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 2480 -5350 3 0 {name=l2072 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 2420 -5100 0 0 {name=l2073 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 2750 -5220 0 0 {name=x519}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 2750 -5220 0 0 {name=x519}
 C {devices/lab_wire.sym} 2680 -5340 2 1 {name=l2074 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 2700 -5350 1 1 {name=l2075 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 2740 -5350 3 0 {name=l2076 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 2680 -5100 0 0 {name=l2077 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 3010 -5220 0 0 {name=x520}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 3010 -5220 0 0 {name=x520}
 C {devices/lab_wire.sym} 2940 -5340 2 1 {name=l2078 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 2960 -5350 1 1 {name=l2079 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 3000 -5350 3 0 {name=l2080 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 2940 -5100 0 0 {name=l2081 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 3270 -5220 0 0 {name=x521}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 3270 -5220 0 0 {name=x521}
 C {devices/lab_wire.sym} 3200 -5340 2 1 {name=l2082 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 3220 -5350 1 1 {name=l2083 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 3260 -5350 3 0 {name=l2084 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 3200 -5100 0 0 {name=l2085 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 3530 -5220 0 0 {name=x522}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 3530 -5220 0 0 {name=x522}
 C {devices/lab_wire.sym} 3460 -5340 2 1 {name=l2086 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 3480 -5350 1 1 {name=l2087 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 3520 -5350 3 0 {name=l2088 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 3460 -5100 0 0 {name=l2089 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 3790 -5220 0 0 {name=x523}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 3790 -5220 0 0 {name=x523}
 C {devices/lab_wire.sym} 3720 -5340 2 1 {name=l2090 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 3740 -5350 1 1 {name=l2091 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 3780 -5350 3 0 {name=l2092 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 3720 -5100 0 0 {name=l2093 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 4050 -5220 0 0 {name=x524}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 4050 -5220 0 0 {name=x524}
 C {devices/lab_wire.sym} 3980 -5340 2 1 {name=l2094 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 4000 -5350 1 1 {name=l2095 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 4040 -5350 3 0 {name=l2096 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 3980 -5100 0 0 {name=l2097 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 4310 -5220 0 0 {name=x525}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 4310 -5220 0 0 {name=x525}
 C {devices/lab_wire.sym} 4240 -5340 2 1 {name=l2098 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 4260 -5350 1 1 {name=l2099 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 4300 -5350 3 0 {name=l2100 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 4240 -5100 0 0 {name=l2101 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 4570 -5220 0 0 {name=x526}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 4570 -5220 0 0 {name=x526}
 C {devices/lab_wire.sym} 4500 -5340 2 1 {name=l2102 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 4520 -5350 1 1 {name=l2103 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 4560 -5350 3 0 {name=l2104 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 4500 -5100 0 0 {name=l2105 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 4830 -5220 0 0 {name=x527}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 4830 -5220 0 0 {name=x527}
 C {devices/lab_wire.sym} 4760 -5340 2 1 {name=l2106 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 4780 -5350 1 1 {name=l2107 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 4820 -5350 3 0 {name=l2108 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 4760 -5100 0 0 {name=l2109 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 5090 -5220 0 0 {name=x528}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 5090 -5220 0 0 {name=x528}
 C {devices/lab_wire.sym} 5020 -5340 2 1 {name=l2110 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 5040 -5350 1 1 {name=l2111 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 5080 -5350 3 0 {name=l2112 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 5020 -5100 0 0 {name=l2113 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 5350 -5220 0 0 {name=x529}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 5350 -5220 0 0 {name=x529}
 C {devices/lab_wire.sym} 5280 -5340 2 1 {name=l2114 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 5300 -5350 1 1 {name=l2115 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 5340 -5350 3 0 {name=l2116 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 5280 -5100 0 0 {name=l2117 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 5610 -5220 0 0 {name=x530}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 5610 -5220 0 0 {name=x530}
 C {devices/lab_wire.sym} 5540 -5340 2 1 {name=l2118 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 5560 -5350 1 1 {name=l2119 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 5600 -5350 3 0 {name=l2120 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 5540 -5100 0 0 {name=l2121 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 5870 -5220 0 0 {name=x531}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 5870 -5220 0 0 {name=x531}
 C {devices/lab_wire.sym} 5800 -5340 2 1 {name=l2122 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 5820 -5350 1 1 {name=l2123 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 5860 -5350 3 0 {name=l2124 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 5800 -5100 0 0 {name=l2125 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 6130 -5220 0 0 {name=x532}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 6130 -5220 0 0 {name=x532}
 C {devices/lab_wire.sym} 6060 -5340 2 1 {name=l2126 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 6080 -5350 1 1 {name=l2127 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 6120 -5350 3 0 {name=l2128 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 6060 -5100 0 0 {name=l2129 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 6390 -5220 0 0 {name=x533}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 6390 -5220 0 0 {name=x533}
 C {devices/lab_wire.sym} 6320 -5340 2 1 {name=l2130 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 6340 -5350 1 1 {name=l2131 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 6380 -5350 3 0 {name=l2132 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 6320 -5100 0 0 {name=l2133 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 6650 -5220 0 0 {name=x534}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 6650 -5220 0 0 {name=x534}
 C {devices/lab_wire.sym} 6580 -5340 2 1 {name=l2134 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 6600 -5350 1 1 {name=l2135 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 6640 -5350 3 0 {name=l2136 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 6580 -5100 0 0 {name=l2137 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 6910 -5220 0 0 {name=x535}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 6910 -5220 0 0 {name=x535}
 C {devices/lab_wire.sym} 6840 -5340 2 1 {name=l2138 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 6860 -5350 1 1 {name=l2139 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 6900 -5350 3 0 {name=l2140 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 6840 -5100 0 0 {name=l2141 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 7170 -5220 0 0 {name=x536}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 7170 -5220 0 0 {name=x536}
 C {devices/lab_wire.sym} 7100 -5340 2 1 {name=l2142 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 7120 -5350 1 1 {name=l2143 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 7160 -5350 3 0 {name=l2144 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 7100 -5100 0 0 {name=l2145 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 7430 -5220 0 0 {name=x537}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 7430 -5220 0 0 {name=x537}
 C {devices/lab_wire.sym} 7360 -5340 2 1 {name=l2146 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 7380 -5350 1 1 {name=l2147 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 7420 -5350 3 0 {name=l2148 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 7360 -5100 0 0 {name=l2149 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 7690 -5220 0 0 {name=x538}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 7690 -5220 0 0 {name=x538}
 C {devices/lab_wire.sym} 7620 -5340 2 1 {name=l2150 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 7640 -5350 1 1 {name=l2151 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 7680 -5350 3 0 {name=l2152 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 7620 -5100 0 0 {name=l2153 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 7950 -5220 0 0 {name=x539}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 7950 -5220 0 0 {name=x539}
 C {devices/lab_wire.sym} 7880 -5340 2 1 {name=l2154 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 7900 -5350 1 1 {name=l2155 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 7940 -5350 3 0 {name=l2156 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 7880 -5100 0 0 {name=l2157 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 8210 -5220 0 0 {name=x540}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 8210 -5220 0 0 {name=x540}
 C {devices/lab_wire.sym} 8140 -5340 2 1 {name=l2158 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 8160 -5350 1 1 {name=l2159 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 8200 -5350 3 0 {name=l2160 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 8140 -5100 0 0 {name=l2161 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 8470 -5220 0 0 {name=x541}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 8470 -5220 0 0 {name=x541}
 C {devices/lab_wire.sym} 8400 -5340 2 1 {name=l2162 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 8420 -5350 1 1 {name=l2163 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 8460 -5350 3 0 {name=l2164 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 8400 -5100 0 0 {name=l2165 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 8730 -5220 0 0 {name=x542}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 8730 -5220 0 0 {name=x542}
 C {devices/lab_wire.sym} 8660 -5340 2 1 {name=l2166 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 8680 -5350 1 1 {name=l2167 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 8720 -5350 3 0 {name=l2168 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 8660 -5100 0 0 {name=l2169 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 8990 -5220 0 0 {name=x543}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 8990 -5220 0 0 {name=x543}
 C {devices/lab_wire.sym} 8920 -5340 2 1 {name=l2170 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 8940 -5350 1 1 {name=l2171 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 8980 -5350 3 0 {name=l2172 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 8920 -5100 0 0 {name=l2173 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 9250 -5220 0 0 {name=x544}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 9250 -5220 0 0 {name=x544}
 C {devices/lab_wire.sym} 9180 -5340 2 1 {name=l2174 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 9200 -5350 1 1 {name=l2175 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 9240 -5350 3 0 {name=l2176 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 9180 -5100 0 0 {name=l2177 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 1190 -5480 0 0 {name=x545}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 1190 -5480 0 0 {name=x545}
 C {devices/lab_wire.sym} 1120 -5600 2 1 {name=l2178 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 1140 -5610 1 1 {name=l2179 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 1180 -5610 3 0 {name=l2180 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 1120 -5360 0 0 {name=l2181 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 1450 -5480 0 0 {name=x546}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 1450 -5480 0 0 {name=x546}
 C {devices/lab_wire.sym} 1380 -5600 2 1 {name=l2182 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 1400 -5610 1 1 {name=l2183 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 1440 -5610 3 0 {name=l2184 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 1380 -5360 0 0 {name=l2185 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 1710 -5480 0 0 {name=x547}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 1710 -5480 0 0 {name=x547}
 C {devices/lab_wire.sym} 1640 -5600 2 1 {name=l2186 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 1660 -5610 1 1 {name=l2187 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 1700 -5610 3 0 {name=l2188 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 1640 -5360 0 0 {name=l2189 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 1970 -5480 0 0 {name=x548}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 1970 -5480 0 0 {name=x548}
 C {devices/lab_wire.sym} 1900 -5600 2 1 {name=l2190 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 1920 -5610 1 1 {name=l2191 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 1960 -5610 3 0 {name=l2192 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 1900 -5360 0 0 {name=l2193 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 2230 -5480 0 0 {name=x549}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 2230 -5480 0 0 {name=x549}
 C {devices/lab_wire.sym} 2160 -5600 2 1 {name=l2194 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 2180 -5610 1 1 {name=l2195 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 2220 -5610 3 0 {name=l2196 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 2160 -5360 0 0 {name=l2197 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 2490 -5480 0 0 {name=x550}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 2490 -5480 0 0 {name=x550}
 C {devices/lab_wire.sym} 2420 -5600 2 1 {name=l2198 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 2440 -5610 1 1 {name=l2199 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 2480 -5610 3 0 {name=l2200 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 2420 -5360 0 0 {name=l2201 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 2750 -5480 0 0 {name=x551}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 2750 -5480 0 0 {name=x551}
 C {devices/lab_wire.sym} 2680 -5600 2 1 {name=l2202 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 2700 -5610 1 1 {name=l2203 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 2740 -5610 3 0 {name=l2204 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 2680 -5360 0 0 {name=l2205 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 3010 -5480 0 0 {name=x552}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 3010 -5480 0 0 {name=x552}
 C {devices/lab_wire.sym} 2940 -5600 2 1 {name=l2206 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 2960 -5610 1 1 {name=l2207 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 3000 -5610 3 0 {name=l2208 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 2940 -5360 0 0 {name=l2209 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 3270 -5480 0 0 {name=x553}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 3270 -5480 0 0 {name=x553}
 C {devices/lab_wire.sym} 3200 -5600 2 1 {name=l2210 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 3220 -5610 1 1 {name=l2211 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 3260 -5610 3 0 {name=l2212 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 3200 -5360 0 0 {name=l2213 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 3530 -5480 0 0 {name=x554}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 3530 -5480 0 0 {name=x554}
 C {devices/lab_wire.sym} 3460 -5600 2 1 {name=l2214 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 3480 -5610 1 1 {name=l2215 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 3520 -5610 3 0 {name=l2216 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 3460 -5360 0 0 {name=l2217 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 3790 -5480 0 0 {name=x555}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 3790 -5480 0 0 {name=x555}
 C {devices/lab_wire.sym} 3720 -5600 2 1 {name=l2218 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 3740 -5610 1 1 {name=l2219 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 3780 -5610 3 0 {name=l2220 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 3720 -5360 0 0 {name=l2221 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 4050 -5480 0 0 {name=x556}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 4050 -5480 0 0 {name=x556}
 C {devices/lab_wire.sym} 3980 -5600 2 1 {name=l2222 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 4000 -5610 1 1 {name=l2223 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 4040 -5610 3 0 {name=l2224 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 3980 -5360 0 0 {name=l2225 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 4310 -5480 0 0 {name=x557}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 4310 -5480 0 0 {name=x557}
 C {devices/lab_wire.sym} 4240 -5600 2 1 {name=l2226 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 4260 -5610 1 1 {name=l2227 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 4300 -5610 3 0 {name=l2228 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 4240 -5360 0 0 {name=l2229 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 4570 -5480 0 0 {name=x558}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 4570 -5480 0 0 {name=x558}
 C {devices/lab_wire.sym} 4500 -5600 2 1 {name=l2230 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 4520 -5610 1 1 {name=l2231 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 4560 -5610 3 0 {name=l2232 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 4500 -5360 0 0 {name=l2233 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 4830 -5480 0 0 {name=x559}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 4830 -5480 0 0 {name=x559}
 C {devices/lab_wire.sym} 4760 -5600 2 1 {name=l2234 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 4780 -5610 1 1 {name=l2235 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 4820 -5610 3 0 {name=l2236 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 4760 -5360 0 0 {name=l2237 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 5090 -5480 0 0 {name=x560}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 5090 -5480 0 0 {name=x560}
 C {devices/lab_wire.sym} 5020 -5600 2 1 {name=l2238 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 5040 -5610 1 1 {name=l2239 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 5080 -5610 3 0 {name=l2240 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 5020 -5360 0 0 {name=l2241 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 5350 -5480 0 0 {name=x561}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 5350 -5480 0 0 {name=x561}
 C {devices/lab_wire.sym} 5280 -5600 2 1 {name=l2242 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 5300 -5610 1 1 {name=l2243 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 5340 -5610 3 0 {name=l2244 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 5280 -5360 0 0 {name=l2245 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 5610 -5480 0 0 {name=x562}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 5610 -5480 0 0 {name=x562}
 C {devices/lab_wire.sym} 5540 -5600 2 1 {name=l2246 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 5560 -5610 1 1 {name=l2247 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 5600 -5610 3 0 {name=l2248 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 5540 -5360 0 0 {name=l2249 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 5870 -5480 0 0 {name=x563}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 5870 -5480 0 0 {name=x563}
 C {devices/lab_wire.sym} 5800 -5600 2 1 {name=l2250 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 5820 -5610 1 1 {name=l2251 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 5860 -5610 3 0 {name=l2252 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 5800 -5360 0 0 {name=l2253 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 6130 -5480 0 0 {name=x564}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 6130 -5480 0 0 {name=x564}
 C {devices/lab_wire.sym} 6060 -5600 2 1 {name=l2254 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 6080 -5610 1 1 {name=l2255 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 6120 -5610 3 0 {name=l2256 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 6060 -5360 0 0 {name=l2257 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 6390 -5480 0 0 {name=x565}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 6390 -5480 0 0 {name=x565}
 C {devices/lab_wire.sym} 6320 -5600 2 1 {name=l2258 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 6340 -5610 1 1 {name=l2259 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 6380 -5610 3 0 {name=l2260 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 6320 -5360 0 0 {name=l2261 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 6650 -5480 0 0 {name=x566}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 6650 -5480 0 0 {name=x566}
 C {devices/lab_wire.sym} 6580 -5600 2 1 {name=l2262 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 6600 -5610 1 1 {name=l2263 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 6640 -5610 3 0 {name=l2264 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 6580 -5360 0 0 {name=l2265 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 6910 -5480 0 0 {name=x567}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 6910 -5480 0 0 {name=x567}
 C {devices/lab_wire.sym} 6840 -5600 2 1 {name=l2266 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 6860 -5610 1 1 {name=l2267 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 6900 -5610 3 0 {name=l2268 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 6840 -5360 0 0 {name=l2269 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 7170 -5480 0 0 {name=x568}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 7170 -5480 0 0 {name=x568}
 C {devices/lab_wire.sym} 7100 -5600 2 1 {name=l2270 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 7120 -5610 1 1 {name=l2271 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 7160 -5610 3 0 {name=l2272 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 7100 -5360 0 0 {name=l2273 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 7430 -5480 0 0 {name=x569}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 7430 -5480 0 0 {name=x569}
 C {devices/lab_wire.sym} 7360 -5600 2 1 {name=l2274 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 7380 -5610 1 1 {name=l2275 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 7420 -5610 3 0 {name=l2276 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 7360 -5360 0 0 {name=l2277 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 7690 -5480 0 0 {name=x570}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 7690 -5480 0 0 {name=x570}
 C {devices/lab_wire.sym} 7620 -5600 2 1 {name=l2278 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 7640 -5610 1 1 {name=l2279 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 7680 -5610 3 0 {name=l2280 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 7620 -5360 0 0 {name=l2281 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 7950 -5480 0 0 {name=x571}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 7950 -5480 0 0 {name=x571}
 C {devices/lab_wire.sym} 7880 -5600 2 1 {name=l2282 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 7900 -5610 1 1 {name=l2283 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 7940 -5610 3 0 {name=l2284 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 7880 -5360 0 0 {name=l2285 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 8210 -5480 0 0 {name=x572}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 8210 -5480 0 0 {name=x572}
 C {devices/lab_wire.sym} 8140 -5600 2 1 {name=l2286 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 8160 -5610 1 1 {name=l2287 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 8200 -5610 3 0 {name=l2288 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 8140 -5360 0 0 {name=l2289 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 8470 -5480 0 0 {name=x573}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 8470 -5480 0 0 {name=x573}
 C {devices/lab_wire.sym} 8400 -5600 2 1 {name=l2290 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 8420 -5610 1 1 {name=l2291 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 8460 -5610 3 0 {name=l2292 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 8400 -5360 0 0 {name=l2293 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 8730 -5480 0 0 {name=x574}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 8730 -5480 0 0 {name=x574}
 C {devices/lab_wire.sym} 8660 -5600 2 1 {name=l2294 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 8680 -5610 1 1 {name=l2295 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 8720 -5610 3 0 {name=l2296 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 8660 -5360 0 0 {name=l2297 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 8990 -5480 0 0 {name=x575}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 8990 -5480 0 0 {name=x575}
 C {devices/lab_wire.sym} 8920 -5600 2 1 {name=l2298 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 8940 -5610 1 1 {name=l2299 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 8980 -5610 3 0 {name=l2300 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 8920 -5360 0 0 {name=l2301 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 9250 -5480 0 0 {name=x576}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 9250 -5480 0 0 {name=x576}
 C {devices/lab_wire.sym} 9180 -5600 2 1 {name=l2302 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 9200 -5610 1 1 {name=l2303 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 9240 -5610 3 0 {name=l2304 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 9180 -5360 0 0 {name=l2305 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 1190 -5740 0 0 {name=x577}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 1190 -5740 0 0 {name=x577}
 C {devices/lab_wire.sym} 1120 -5860 2 1 {name=l2306 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 1140 -5870 1 1 {name=l2307 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 1180 -5870 3 0 {name=l2308 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 1120 -5620 0 0 {name=l2309 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 1450 -5740 0 0 {name=x578}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 1450 -5740 0 0 {name=x578}
 C {devices/lab_wire.sym} 1380 -5860 2 1 {name=l2310 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 1400 -5870 1 1 {name=l2311 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 1440 -5870 3 0 {name=l2312 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 1380 -5620 0 0 {name=l2313 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 1710 -5740 0 0 {name=x579}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 1710 -5740 0 0 {name=x579}
 C {devices/lab_wire.sym} 1640 -5860 2 1 {name=l2314 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 1660 -5870 1 1 {name=l2315 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 1700 -5870 3 0 {name=l2316 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 1640 -5620 0 0 {name=l2317 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 1970 -5740 0 0 {name=x580}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 1970 -5740 0 0 {name=x580}
 C {devices/lab_wire.sym} 1900 -5860 2 1 {name=l2318 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 1920 -5870 1 1 {name=l2319 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 1960 -5870 3 0 {name=l2320 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 1900 -5620 0 0 {name=l2321 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 2230 -5740 0 0 {name=x581}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 2230 -5740 0 0 {name=x581}
 C {devices/lab_wire.sym} 2160 -5860 2 1 {name=l2322 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 2180 -5870 1 1 {name=l2323 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 2220 -5870 3 0 {name=l2324 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 2160 -5620 0 0 {name=l2325 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 2490 -5740 0 0 {name=x582}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 2490 -5740 0 0 {name=x582}
 C {devices/lab_wire.sym} 2420 -5860 2 1 {name=l2326 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 2440 -5870 1 1 {name=l2327 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 2480 -5870 3 0 {name=l2328 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 2420 -5620 0 0 {name=l2329 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 2750 -5740 0 0 {name=x583}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 2750 -5740 0 0 {name=x583}
 C {devices/lab_wire.sym} 2680 -5860 2 1 {name=l2330 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 2700 -5870 1 1 {name=l2331 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 2740 -5870 3 0 {name=l2332 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 2680 -5620 0 0 {name=l2333 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 3010 -5740 0 0 {name=x584}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 3010 -5740 0 0 {name=x584}
 C {devices/lab_wire.sym} 2940 -5860 2 1 {name=l2334 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 2960 -5870 1 1 {name=l2335 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 3000 -5870 3 0 {name=l2336 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 2940 -5620 0 0 {name=l2337 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 3270 -5740 0 0 {name=x585}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 3270 -5740 0 0 {name=x585}
 C {devices/lab_wire.sym} 3200 -5860 2 1 {name=l2338 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 3220 -5870 1 1 {name=l2339 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 3260 -5870 3 0 {name=l2340 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 3200 -5620 0 0 {name=l2341 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 3530 -5740 0 0 {name=x586}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 3530 -5740 0 0 {name=x586}
 C {devices/lab_wire.sym} 3460 -5860 2 1 {name=l2342 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 3480 -5870 1 1 {name=l2343 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 3520 -5870 3 0 {name=l2344 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 3460 -5620 0 0 {name=l2345 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 3790 -5740 0 0 {name=x587}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 3790 -5740 0 0 {name=x587}
 C {devices/lab_wire.sym} 3720 -5860 2 1 {name=l2346 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 3740 -5870 1 1 {name=l2347 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 3780 -5870 3 0 {name=l2348 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 3720 -5620 0 0 {name=l2349 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 4050 -5740 0 0 {name=x588}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 4050 -5740 0 0 {name=x588}
 C {devices/lab_wire.sym} 3980 -5860 2 1 {name=l2350 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 4000 -5870 1 1 {name=l2351 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 4040 -5870 3 0 {name=l2352 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 3980 -5620 0 0 {name=l2353 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 4310 -5740 0 0 {name=x589}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 4310 -5740 0 0 {name=x589}
 C {devices/lab_wire.sym} 4240 -5860 2 1 {name=l2354 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 4260 -5870 1 1 {name=l2355 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 4300 -5870 3 0 {name=l2356 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 4240 -5620 0 0 {name=l2357 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 4570 -5740 0 0 {name=x590}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 4570 -5740 0 0 {name=x590}
 C {devices/lab_wire.sym} 4500 -5860 2 1 {name=l2358 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 4520 -5870 1 1 {name=l2359 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 4560 -5870 3 0 {name=l2360 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 4500 -5620 0 0 {name=l2361 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 4830 -5740 0 0 {name=x591}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 4830 -5740 0 0 {name=x591}
 C {devices/lab_wire.sym} 4760 -5860 2 1 {name=l2362 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 4780 -5870 1 1 {name=l2363 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 4820 -5870 3 0 {name=l2364 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 4760 -5620 0 0 {name=l2365 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 5090 -5740 0 0 {name=x592}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 5090 -5740 0 0 {name=x592}
 C {devices/lab_wire.sym} 5020 -5860 2 1 {name=l2366 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 5040 -5870 1 1 {name=l2367 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 5080 -5870 3 0 {name=l2368 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 5020 -5620 0 0 {name=l2369 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 5350 -5740 0 0 {name=x593}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 5350 -5740 0 0 {name=x593}
 C {devices/lab_wire.sym} 5280 -5860 2 1 {name=l2370 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 5300 -5870 1 1 {name=l2371 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 5340 -5870 3 0 {name=l2372 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 5280 -5620 0 0 {name=l2373 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 5610 -5740 0 0 {name=x594}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 5610 -5740 0 0 {name=x594}
 C {devices/lab_wire.sym} 5540 -5860 2 1 {name=l2374 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 5560 -5870 1 1 {name=l2375 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 5600 -5870 3 0 {name=l2376 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 5540 -5620 0 0 {name=l2377 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 5870 -5740 0 0 {name=x595}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 5870 -5740 0 0 {name=x595}
 C {devices/lab_wire.sym} 5800 -5860 2 1 {name=l2378 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 5820 -5870 1 1 {name=l2379 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 5860 -5870 3 0 {name=l2380 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 5800 -5620 0 0 {name=l2381 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 6130 -5740 0 0 {name=x596}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 6130 -5740 0 0 {name=x596}
 C {devices/lab_wire.sym} 6060 -5860 2 1 {name=l2382 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 6080 -5870 1 1 {name=l2383 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 6120 -5870 3 0 {name=l2384 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 6060 -5620 0 0 {name=l2385 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 6390 -5740 0 0 {name=x597}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 6390 -5740 0 0 {name=x597}
 C {devices/lab_wire.sym} 6320 -5860 2 1 {name=l2386 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 6340 -5870 1 1 {name=l2387 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 6380 -5870 3 0 {name=l2388 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 6320 -5620 0 0 {name=l2389 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 6650 -5740 0 0 {name=x598}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 6650 -5740 0 0 {name=x598}
 C {devices/lab_wire.sym} 6580 -5860 2 1 {name=l2390 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 6600 -5870 1 1 {name=l2391 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 6640 -5870 3 0 {name=l2392 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 6580 -5620 0 0 {name=l2393 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 6910 -5740 0 0 {name=x599}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 6910 -5740 0 0 {name=x599}
 C {devices/lab_wire.sym} 6840 -5860 2 1 {name=l2394 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 6860 -5870 1 1 {name=l2395 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 6900 -5870 3 0 {name=l2396 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 6840 -5620 0 0 {name=l2397 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 7170 -5740 0 0 {name=x600}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 7170 -5740 0 0 {name=x600}
 C {devices/lab_wire.sym} 7100 -5860 2 1 {name=l2398 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 7120 -5870 1 1 {name=l2399 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 7160 -5870 3 0 {name=l2400 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 7100 -5620 0 0 {name=l2401 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 7430 -5740 0 0 {name=x601}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 7430 -5740 0 0 {name=x601}
 C {devices/lab_wire.sym} 7360 -5860 2 1 {name=l2402 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 7380 -5870 1 1 {name=l2403 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 7420 -5870 3 0 {name=l2404 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 7360 -5620 0 0 {name=l2405 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 7690 -5740 0 0 {name=x602}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 7690 -5740 0 0 {name=x602}
 C {devices/lab_wire.sym} 7620 -5860 2 1 {name=l2406 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 7640 -5870 1 1 {name=l2407 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 7680 -5870 3 0 {name=l2408 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 7620 -5620 0 0 {name=l2409 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 7950 -5740 0 0 {name=x603}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 7950 -5740 0 0 {name=x603}
 C {devices/lab_wire.sym} 7880 -5860 2 1 {name=l2410 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 7900 -5870 1 1 {name=l2411 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 7940 -5870 3 0 {name=l2412 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 7880 -5620 0 0 {name=l2413 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 8210 -5740 0 0 {name=x604}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 8210 -5740 0 0 {name=x604}
 C {devices/lab_wire.sym} 8140 -5860 2 1 {name=l2414 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 8160 -5870 1 1 {name=l2415 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 8200 -5870 3 0 {name=l2416 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 8140 -5620 0 0 {name=l2417 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 8470 -5740 0 0 {name=x605}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 8470 -5740 0 0 {name=x605}
 C {devices/lab_wire.sym} 8400 -5860 2 1 {name=l2418 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 8420 -5870 1 1 {name=l2419 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 8460 -5870 3 0 {name=l2420 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 8400 -5620 0 0 {name=l2421 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 8730 -5740 0 0 {name=x606}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 8730 -5740 0 0 {name=x606}
 C {devices/lab_wire.sym} 8660 -5860 2 1 {name=l2422 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 8680 -5870 1 1 {name=l2423 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 8720 -5870 3 0 {name=l2424 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 8660 -5620 0 0 {name=l2425 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 8990 -5740 0 0 {name=x607}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 8990 -5740 0 0 {name=x607}
 C {devices/lab_wire.sym} 8920 -5860 2 1 {name=l2426 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 8940 -5870 1 1 {name=l2427 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 8980 -5870 3 0 {name=l2428 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 8920 -5620 0 0 {name=l2429 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 9250 -5740 0 0 {name=x608}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 9250 -5740 0 0 {name=x608}
 C {devices/lab_wire.sym} 9180 -5860 2 1 {name=l2430 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 9200 -5870 1 1 {name=l2431 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 9240 -5870 3 0 {name=l2432 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 9180 -5620 0 0 {name=l2433 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 1190 -6000 0 0 {name=x609}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 1190 -6000 0 0 {name=x609}
 C {devices/lab_wire.sym} 1120 -6120 2 1 {name=l2434 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 1140 -6130 1 1 {name=l2435 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 1180 -6130 3 0 {name=l2436 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 1120 -5880 0 0 {name=l2437 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 1450 -6000 0 0 {name=x610}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 1450 -6000 0 0 {name=x610}
 C {devices/lab_wire.sym} 1380 -6120 2 1 {name=l2438 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 1400 -6130 1 1 {name=l2439 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 1440 -6130 3 0 {name=l2440 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 1380 -5880 0 0 {name=l2441 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 1710 -6000 0 0 {name=x611}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 1710 -6000 0 0 {name=x611}
 C {devices/lab_wire.sym} 1640 -6120 2 1 {name=l2442 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 1660 -6130 1 1 {name=l2443 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 1700 -6130 3 0 {name=l2444 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 1640 -5880 0 0 {name=l2445 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 1970 -6000 0 0 {name=x612}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 1970 -6000 0 0 {name=x612}
 C {devices/lab_wire.sym} 1900 -6120 2 1 {name=l2446 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 1920 -6130 1 1 {name=l2447 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 1960 -6130 3 0 {name=l2448 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 1900 -5880 0 0 {name=l2449 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 2230 -6000 0 0 {name=x613}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 2230 -6000 0 0 {name=x613}
 C {devices/lab_wire.sym} 2160 -6120 2 1 {name=l2450 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 2180 -6130 1 1 {name=l2451 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 2220 -6130 3 0 {name=l2452 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 2160 -5880 0 0 {name=l2453 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 2490 -6000 0 0 {name=x614}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 2490 -6000 0 0 {name=x614}
 C {devices/lab_wire.sym} 2420 -6120 2 1 {name=l2454 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 2440 -6130 1 1 {name=l2455 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 2480 -6130 3 0 {name=l2456 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 2420 -5880 0 0 {name=l2457 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 2750 -6000 0 0 {name=x615}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 2750 -6000 0 0 {name=x615}
 C {devices/lab_wire.sym} 2680 -6120 2 1 {name=l2458 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 2700 -6130 1 1 {name=l2459 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 2740 -6130 3 0 {name=l2460 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 2680 -5880 0 0 {name=l2461 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 3010 -6000 0 0 {name=x616}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 3010 -6000 0 0 {name=x616}
 C {devices/lab_wire.sym} 2940 -6120 2 1 {name=l2462 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 2960 -6130 1 1 {name=l2463 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 3000 -6130 3 0 {name=l2464 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 2940 -5880 0 0 {name=l2465 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 3270 -6000 0 0 {name=x617}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 3270 -6000 0 0 {name=x617}
 C {devices/lab_wire.sym} 3200 -6120 2 1 {name=l2466 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 3220 -6130 1 1 {name=l2467 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 3260 -6130 3 0 {name=l2468 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 3200 -5880 0 0 {name=l2469 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 3530 -6000 0 0 {name=x618}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 3530 -6000 0 0 {name=x618}
 C {devices/lab_wire.sym} 3460 -6120 2 1 {name=l2470 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 3480 -6130 1 1 {name=l2471 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 3520 -6130 3 0 {name=l2472 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 3460 -5880 0 0 {name=l2473 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 3790 -6000 0 0 {name=x619}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 3790 -6000 0 0 {name=x619}
 C {devices/lab_wire.sym} 3720 -6120 2 1 {name=l2474 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 3740 -6130 1 1 {name=l2475 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 3780 -6130 3 0 {name=l2476 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 3720 -5880 0 0 {name=l2477 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 4050 -6000 0 0 {name=x620}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 4050 -6000 0 0 {name=x620}
 C {devices/lab_wire.sym} 3980 -6120 2 1 {name=l2478 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 4000 -6130 1 1 {name=l2479 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 4040 -6130 3 0 {name=l2480 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 3980 -5880 0 0 {name=l2481 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 4310 -6000 0 0 {name=x621}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 4310 -6000 0 0 {name=x621}
 C {devices/lab_wire.sym} 4240 -6120 2 1 {name=l2482 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 4260 -6130 1 1 {name=l2483 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 4300 -6130 3 0 {name=l2484 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 4240 -5880 0 0 {name=l2485 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 4570 -6000 0 0 {name=x622}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 4570 -6000 0 0 {name=x622}
 C {devices/lab_wire.sym} 4500 -6120 2 1 {name=l2486 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 4520 -6130 1 1 {name=l2487 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 4560 -6130 3 0 {name=l2488 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 4500 -5880 0 0 {name=l2489 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 4830 -6000 0 0 {name=x623}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 4830 -6000 0 0 {name=x623}
 C {devices/lab_wire.sym} 4760 -6120 2 1 {name=l2490 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 4780 -6130 1 1 {name=l2491 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 4820 -6130 3 0 {name=l2492 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 4760 -5880 0 0 {name=l2493 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 5090 -6000 0 0 {name=x624}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 5090 -6000 0 0 {name=x624}
 C {devices/lab_wire.sym} 5020 -6120 2 1 {name=l2494 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 5040 -6130 1 1 {name=l2495 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 5080 -6130 3 0 {name=l2496 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 5020 -5880 0 0 {name=l2497 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 5350 -6000 0 0 {name=x625}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 5350 -6000 0 0 {name=x625}
 C {devices/lab_wire.sym} 5280 -6120 2 1 {name=l2498 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 5300 -6130 1 1 {name=l2499 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 5340 -6130 3 0 {name=l2500 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 5280 -5880 0 0 {name=l2501 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 5610 -6000 0 0 {name=x626}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 5610 -6000 0 0 {name=x626}
 C {devices/lab_wire.sym} 5540 -6120 2 1 {name=l2502 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 5560 -6130 1 1 {name=l2503 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 5600 -6130 3 0 {name=l2504 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 5540 -5880 0 0 {name=l2505 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 5870 -6000 0 0 {name=x627}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 5870 -6000 0 0 {name=x627}
 C {devices/lab_wire.sym} 5800 -6120 2 1 {name=l2506 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 5820 -6130 1 1 {name=l2507 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 5860 -6130 3 0 {name=l2508 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 5800 -5880 0 0 {name=l2509 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 6130 -6000 0 0 {name=x628}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 6130 -6000 0 0 {name=x628}
 C {devices/lab_wire.sym} 6060 -6120 2 1 {name=l2510 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 6080 -6130 1 1 {name=l2511 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 6120 -6130 3 0 {name=l2512 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 6060 -5880 0 0 {name=l2513 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 6390 -6000 0 0 {name=x629}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 6390 -6000 0 0 {name=x629}
 C {devices/lab_wire.sym} 6320 -6120 2 1 {name=l2514 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 6340 -6130 1 1 {name=l2515 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 6380 -6130 3 0 {name=l2516 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 6320 -5880 0 0 {name=l2517 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 6650 -6000 0 0 {name=x630}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 6650 -6000 0 0 {name=x630}
 C {devices/lab_wire.sym} 6580 -6120 2 1 {name=l2518 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 6600 -6130 1 1 {name=l2519 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 6640 -6130 3 0 {name=l2520 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 6580 -5880 0 0 {name=l2521 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 6910 -6000 0 0 {name=x631}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 6910 -6000 0 0 {name=x631}
 C {devices/lab_wire.sym} 6840 -6120 2 1 {name=l2522 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 6860 -6130 1 1 {name=l2523 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 6900 -6130 3 0 {name=l2524 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 6840 -5880 0 0 {name=l2525 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 7170 -6000 0 0 {name=x632}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 7170 -6000 0 0 {name=x632}
 C {devices/lab_wire.sym} 7100 -6120 2 1 {name=l2526 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 7120 -6130 1 1 {name=l2527 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 7160 -6130 3 0 {name=l2528 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 7100 -5880 0 0 {name=l2529 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 7430 -6000 0 0 {name=x633}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 7430 -6000 0 0 {name=x633}
 C {devices/lab_wire.sym} 7360 -6120 2 1 {name=l2530 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 7380 -6130 1 1 {name=l2531 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 7420 -6130 3 0 {name=l2532 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 7360 -5880 0 0 {name=l2533 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 7690 -6000 0 0 {name=x634}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 7690 -6000 0 0 {name=x634}
 C {devices/lab_wire.sym} 7620 -6120 2 1 {name=l2534 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 7640 -6130 1 1 {name=l2535 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 7680 -6130 3 0 {name=l2536 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 7620 -5880 0 0 {name=l2537 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 7950 -6000 0 0 {name=x635}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 7950 -6000 0 0 {name=x635}
 C {devices/lab_wire.sym} 7880 -6120 2 1 {name=l2538 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 7900 -6130 1 1 {name=l2539 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 7940 -6130 3 0 {name=l2540 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 7880 -5880 0 0 {name=l2541 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 8210 -6000 0 0 {name=x636}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 8210 -6000 0 0 {name=x636}
 C {devices/lab_wire.sym} 8140 -6120 2 1 {name=l2542 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 8160 -6130 1 1 {name=l2543 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 8200 -6130 3 0 {name=l2544 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 8140 -5880 0 0 {name=l2545 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 8470 -6000 0 0 {name=x637}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 8470 -6000 0 0 {name=x637}
 C {devices/lab_wire.sym} 8400 -6120 2 1 {name=l2546 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 8420 -6130 1 1 {name=l2547 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 8460 -6130 3 0 {name=l2548 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 8400 -5880 0 0 {name=l2549 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 8730 -6000 0 0 {name=x638}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 8730 -6000 0 0 {name=x638}
 C {devices/lab_wire.sym} 8660 -6120 2 1 {name=l2550 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 8680 -6130 1 1 {name=l2551 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 8720 -6130 3 0 {name=l2552 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 8660 -5880 0 0 {name=l2553 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 8990 -6000 0 0 {name=x639}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 8990 -6000 0 0 {name=x639}
 C {devices/lab_wire.sym} 8920 -6120 2 1 {name=l2554 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 8940 -6130 1 1 {name=l2555 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 8980 -6130 3 0 {name=l2556 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 8920 -5880 0 0 {name=l2557 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 9250 -6000 0 0 {name=x640}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 9250 -6000 0 0 {name=x640}
 C {devices/lab_wire.sym} 9180 -6120 2 1 {name=l2558 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 9200 -6130 1 1 {name=l2559 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 9240 -6130 3 0 {name=l2560 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 9180 -5880 0 0 {name=l2561 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 1190 -6260 0 0 {name=x641}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 1190 -6260 0 0 {name=x641}
 C {devices/lab_wire.sym} 1120 -6380 2 1 {name=l2562 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 1140 -6390 1 1 {name=l2563 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 1180 -6390 3 0 {name=l2564 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 1120 -6140 0 0 {name=l2565 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 1450 -6260 0 0 {name=x642}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 1450 -6260 0 0 {name=x642}
 C {devices/lab_wire.sym} 1380 -6380 2 1 {name=l2566 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 1400 -6390 1 1 {name=l2567 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 1440 -6390 3 0 {name=l2568 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 1380 -6140 0 0 {name=l2569 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 1710 -6260 0 0 {name=x643}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 1710 -6260 0 0 {name=x643}
 C {devices/lab_wire.sym} 1640 -6380 2 1 {name=l2570 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 1660 -6390 1 1 {name=l2571 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 1700 -6390 3 0 {name=l2572 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 1640 -6140 0 0 {name=l2573 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 1970 -6260 0 0 {name=x644}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 1970 -6260 0 0 {name=x644}
 C {devices/lab_wire.sym} 1900 -6380 2 1 {name=l2574 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 1920 -6390 1 1 {name=l2575 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 1960 -6390 3 0 {name=l2576 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 1900 -6140 0 0 {name=l2577 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 2230 -6260 0 0 {name=x645}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 2230 -6260 0 0 {name=x645}
 C {devices/lab_wire.sym} 2160 -6380 2 1 {name=l2578 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 2180 -6390 1 1 {name=l2579 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 2220 -6390 3 0 {name=l2580 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 2160 -6140 0 0 {name=l2581 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 2490 -6260 0 0 {name=x646}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 2490 -6260 0 0 {name=x646}
 C {devices/lab_wire.sym} 2420 -6380 2 1 {name=l2582 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 2440 -6390 1 1 {name=l2583 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 2480 -6390 3 0 {name=l2584 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 2420 -6140 0 0 {name=l2585 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 2750 -6260 0 0 {name=x647}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 2750 -6260 0 0 {name=x647}
 C {devices/lab_wire.sym} 2680 -6380 2 1 {name=l2586 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 2700 -6390 1 1 {name=l2587 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 2740 -6390 3 0 {name=l2588 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 2680 -6140 0 0 {name=l2589 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 3010 -6260 0 0 {name=x648}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 3010 -6260 0 0 {name=x648}
 C {devices/lab_wire.sym} 2940 -6380 2 1 {name=l2590 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 2960 -6390 1 1 {name=l2591 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 3000 -6390 3 0 {name=l2592 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 2940 -6140 0 0 {name=l2593 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 3270 -6260 0 0 {name=x649}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 3270 -6260 0 0 {name=x649}
 C {devices/lab_wire.sym} 3200 -6380 2 1 {name=l2594 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 3220 -6390 1 1 {name=l2595 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 3260 -6390 3 0 {name=l2596 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 3200 -6140 0 0 {name=l2597 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 3530 -6260 0 0 {name=x650}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 3530 -6260 0 0 {name=x650}
 C {devices/lab_wire.sym} 3460 -6380 2 1 {name=l2598 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 3480 -6390 1 1 {name=l2599 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 3520 -6390 3 0 {name=l2600 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 3460 -6140 0 0 {name=l2601 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 3790 -6260 0 0 {name=x651}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 3790 -6260 0 0 {name=x651}
 C {devices/lab_wire.sym} 3720 -6380 2 1 {name=l2602 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 3740 -6390 1 1 {name=l2603 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 3780 -6390 3 0 {name=l2604 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 3720 -6140 0 0 {name=l2605 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 4050 -6260 0 0 {name=x652}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 4050 -6260 0 0 {name=x652}
 C {devices/lab_wire.sym} 3980 -6380 2 1 {name=l2606 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 4000 -6390 1 1 {name=l2607 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 4040 -6390 3 0 {name=l2608 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 3980 -6140 0 0 {name=l2609 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 4310 -6260 0 0 {name=x653}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 4310 -6260 0 0 {name=x653}
 C {devices/lab_wire.sym} 4240 -6380 2 1 {name=l2610 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 4260 -6390 1 1 {name=l2611 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 4300 -6390 3 0 {name=l2612 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 4240 -6140 0 0 {name=l2613 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 4570 -6260 0 0 {name=x654}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 4570 -6260 0 0 {name=x654}
 C {devices/lab_wire.sym} 4500 -6380 2 1 {name=l2614 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 4520 -6390 1 1 {name=l2615 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 4560 -6390 3 0 {name=l2616 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 4500 -6140 0 0 {name=l2617 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 4830 -6260 0 0 {name=x655}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 4830 -6260 0 0 {name=x655}
 C {devices/lab_wire.sym} 4760 -6380 2 1 {name=l2618 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 4780 -6390 1 1 {name=l2619 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 4820 -6390 3 0 {name=l2620 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 4760 -6140 0 0 {name=l2621 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 5090 -6260 0 0 {name=x656}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 5090 -6260 0 0 {name=x656}
 C {devices/lab_wire.sym} 5020 -6380 2 1 {name=l2622 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 5040 -6390 1 1 {name=l2623 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 5080 -6390 3 0 {name=l2624 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 5020 -6140 0 0 {name=l2625 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 5350 -6260 0 0 {name=x657}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 5350 -6260 0 0 {name=x657}
 C {devices/lab_wire.sym} 5280 -6380 2 1 {name=l2626 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 5300 -6390 1 1 {name=l2627 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 5340 -6390 3 0 {name=l2628 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 5280 -6140 0 0 {name=l2629 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 5610 -6260 0 0 {name=x658}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 5610 -6260 0 0 {name=x658}
 C {devices/lab_wire.sym} 5540 -6380 2 1 {name=l2630 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 5560 -6390 1 1 {name=l2631 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 5600 -6390 3 0 {name=l2632 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 5540 -6140 0 0 {name=l2633 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 5870 -6260 0 0 {name=x659}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 5870 -6260 0 0 {name=x659}
 C {devices/lab_wire.sym} 5800 -6380 2 1 {name=l2634 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 5820 -6390 1 1 {name=l2635 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 5860 -6390 3 0 {name=l2636 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 5800 -6140 0 0 {name=l2637 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 6130 -6260 0 0 {name=x660}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 6130 -6260 0 0 {name=x660}
 C {devices/lab_wire.sym} 6060 -6380 2 1 {name=l2638 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 6080 -6390 1 1 {name=l2639 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 6120 -6390 3 0 {name=l2640 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 6060 -6140 0 0 {name=l2641 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 6390 -6260 0 0 {name=x661}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 6390 -6260 0 0 {name=x661}
 C {devices/lab_wire.sym} 6320 -6380 2 1 {name=l2642 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 6340 -6390 1 1 {name=l2643 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 6380 -6390 3 0 {name=l2644 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 6320 -6140 0 0 {name=l2645 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 6650 -6260 0 0 {name=x662}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 6650 -6260 0 0 {name=x662}
 C {devices/lab_wire.sym} 6580 -6380 2 1 {name=l2646 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 6600 -6390 1 1 {name=l2647 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 6640 -6390 3 0 {name=l2648 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 6580 -6140 0 0 {name=l2649 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 6910 -6260 0 0 {name=x663}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 6910 -6260 0 0 {name=x663}
 C {devices/lab_wire.sym} 6840 -6380 2 1 {name=l2650 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 6860 -6390 1 1 {name=l2651 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 6900 -6390 3 0 {name=l2652 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 6840 -6140 0 0 {name=l2653 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 7170 -6260 0 0 {name=x664}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 7170 -6260 0 0 {name=x664}
 C {devices/lab_wire.sym} 7100 -6380 2 1 {name=l2654 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 7120 -6390 1 1 {name=l2655 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 7160 -6390 3 0 {name=l2656 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 7100 -6140 0 0 {name=l2657 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 7430 -6260 0 0 {name=x665}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 7430 -6260 0 0 {name=x665}
 C {devices/lab_wire.sym} 7360 -6380 2 1 {name=l2658 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 7380 -6390 1 1 {name=l2659 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 7420 -6390 3 0 {name=l2660 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 7360 -6140 0 0 {name=l2661 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 7690 -6260 0 0 {name=x666}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 7690 -6260 0 0 {name=x666}
 C {devices/lab_wire.sym} 7620 -6380 2 1 {name=l2662 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 7640 -6390 1 1 {name=l2663 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 7680 -6390 3 0 {name=l2664 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 7620 -6140 0 0 {name=l2665 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 7950 -6260 0 0 {name=x667}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 7950 -6260 0 0 {name=x667}
 C {devices/lab_wire.sym} 7880 -6380 2 1 {name=l2666 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 7900 -6390 1 1 {name=l2667 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 7940 -6390 3 0 {name=l2668 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 7880 -6140 0 0 {name=l2669 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 8210 -6260 0 0 {name=x668}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 8210 -6260 0 0 {name=x668}
 C {devices/lab_wire.sym} 8140 -6380 2 1 {name=l2670 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 8160 -6390 1 1 {name=l2671 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 8200 -6390 3 0 {name=l2672 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 8140 -6140 0 0 {name=l2673 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 8470 -6260 0 0 {name=x669}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 8470 -6260 0 0 {name=x669}
 C {devices/lab_wire.sym} 8400 -6380 2 1 {name=l2674 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 8420 -6390 1 1 {name=l2675 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 8460 -6390 3 0 {name=l2676 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 8400 -6140 0 0 {name=l2677 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 8730 -6260 0 0 {name=x670}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 8730 -6260 0 0 {name=x670}
 C {devices/lab_wire.sym} 8660 -6380 2 1 {name=l2678 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 8680 -6390 1 1 {name=l2679 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 8720 -6390 3 0 {name=l2680 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 8660 -6140 0 0 {name=l2681 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 8990 -6260 0 0 {name=x671}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 8990 -6260 0 0 {name=x671}
 C {devices/lab_wire.sym} 8920 -6380 2 1 {name=l2682 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 8940 -6390 1 1 {name=l2683 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 8980 -6390 3 0 {name=l2684 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 8920 -6140 0 0 {name=l2685 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 9250 -6260 0 0 {name=x672}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 9250 -6260 0 0 {name=x672}
 C {devices/lab_wire.sym} 9180 -6380 2 1 {name=l2686 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 9200 -6390 1 1 {name=l2687 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 9240 -6390 3 0 {name=l2688 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 9180 -6140 0 0 {name=l2689 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 1190 -6520 0 0 {name=x673}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 1190 -6520 0 0 {name=x673}
 C {devices/lab_wire.sym} 1120 -6640 2 1 {name=l2690 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 1140 -6650 1 1 {name=l2691 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 1180 -6650 3 0 {name=l2692 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 1120 -6400 0 0 {name=l2693 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 1450 -6520 0 0 {name=x674}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 1450 -6520 0 0 {name=x674}
 C {devices/lab_wire.sym} 1380 -6640 2 1 {name=l2694 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 1400 -6650 1 1 {name=l2695 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 1440 -6650 3 0 {name=l2696 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 1380 -6400 0 0 {name=l2697 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 1710 -6520 0 0 {name=x675}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 1710 -6520 0 0 {name=x675}
 C {devices/lab_wire.sym} 1640 -6640 2 1 {name=l2698 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 1660 -6650 1 1 {name=l2699 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 1700 -6650 3 0 {name=l2700 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 1640 -6400 0 0 {name=l2701 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 1970 -6520 0 0 {name=x676}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 1970 -6520 0 0 {name=x676}
 C {devices/lab_wire.sym} 1900 -6640 2 1 {name=l2702 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 1920 -6650 1 1 {name=l2703 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 1960 -6650 3 0 {name=l2704 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 1900 -6400 0 0 {name=l2705 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 2230 -6520 0 0 {name=x677}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 2230 -6520 0 0 {name=x677}
 C {devices/lab_wire.sym} 2160 -6640 2 1 {name=l2706 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 2180 -6650 1 1 {name=l2707 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 2220 -6650 3 0 {name=l2708 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 2160 -6400 0 0 {name=l2709 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 2490 -6520 0 0 {name=x678}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 2490 -6520 0 0 {name=x678}
 C {devices/lab_wire.sym} 2420 -6640 2 1 {name=l2710 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 2440 -6650 1 1 {name=l2711 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 2480 -6650 3 0 {name=l2712 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 2420 -6400 0 0 {name=l2713 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 2750 -6520 0 0 {name=x679}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 2750 -6520 0 0 {name=x679}
 C {devices/lab_wire.sym} 2680 -6640 2 1 {name=l2714 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 2700 -6650 1 1 {name=l2715 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 2740 -6650 3 0 {name=l2716 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 2680 -6400 0 0 {name=l2717 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 3010 -6520 0 0 {name=x680}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 3010 -6520 0 0 {name=x680}
 C {devices/lab_wire.sym} 2940 -6640 2 1 {name=l2718 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 2960 -6650 1 1 {name=l2719 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 3000 -6650 3 0 {name=l2720 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 2940 -6400 0 0 {name=l2721 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 3270 -6520 0 0 {name=x681}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 3270 -6520 0 0 {name=x681}
 C {devices/lab_wire.sym} 3200 -6640 2 1 {name=l2722 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 3220 -6650 1 1 {name=l2723 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 3260 -6650 3 0 {name=l2724 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 3200 -6400 0 0 {name=l2725 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 3530 -6520 0 0 {name=x682}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 3530 -6520 0 0 {name=x682}
 C {devices/lab_wire.sym} 3460 -6640 2 1 {name=l2726 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 3480 -6650 1 1 {name=l2727 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 3520 -6650 3 0 {name=l2728 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 3460 -6400 0 0 {name=l2729 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 3790 -6520 0 0 {name=x683}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 3790 -6520 0 0 {name=x683}
 C {devices/lab_wire.sym} 3720 -6640 2 1 {name=l2730 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 3740 -6650 1 1 {name=l2731 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 3780 -6650 3 0 {name=l2732 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 3720 -6400 0 0 {name=l2733 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 4050 -6520 0 0 {name=x684}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 4050 -6520 0 0 {name=x684}
 C {devices/lab_wire.sym} 3980 -6640 2 1 {name=l2734 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 4000 -6650 1 1 {name=l2735 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 4040 -6650 3 0 {name=l2736 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 3980 -6400 0 0 {name=l2737 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 4310 -6520 0 0 {name=x685}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 4310 -6520 0 0 {name=x685}
 C {devices/lab_wire.sym} 4240 -6640 2 1 {name=l2738 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 4260 -6650 1 1 {name=l2739 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 4300 -6650 3 0 {name=l2740 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 4240 -6400 0 0 {name=l2741 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 4570 -6520 0 0 {name=x686}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 4570 -6520 0 0 {name=x686}
 C {devices/lab_wire.sym} 4500 -6640 2 1 {name=l2742 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 4520 -6650 1 1 {name=l2743 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 4560 -6650 3 0 {name=l2744 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 4500 -6400 0 0 {name=l2745 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 4830 -6520 0 0 {name=x687}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 4830 -6520 0 0 {name=x687}
 C {devices/lab_wire.sym} 4760 -6640 2 1 {name=l2746 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 4780 -6650 1 1 {name=l2747 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 4820 -6650 3 0 {name=l2748 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 4760 -6400 0 0 {name=l2749 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 5090 -6520 0 0 {name=x688}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 5090 -6520 0 0 {name=x688}
 C {devices/lab_wire.sym} 5020 -6640 2 1 {name=l2750 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 5040 -6650 1 1 {name=l2751 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 5080 -6650 3 0 {name=l2752 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 5020 -6400 0 0 {name=l2753 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 5350 -6520 0 0 {name=x689}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 5350 -6520 0 0 {name=x689}
 C {devices/lab_wire.sym} 5280 -6640 2 1 {name=l2754 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 5300 -6650 1 1 {name=l2755 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 5340 -6650 3 0 {name=l2756 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 5280 -6400 0 0 {name=l2757 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 5610 -6520 0 0 {name=x690}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 5610 -6520 0 0 {name=x690}
 C {devices/lab_wire.sym} 5540 -6640 2 1 {name=l2758 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 5560 -6650 1 1 {name=l2759 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 5600 -6650 3 0 {name=l2760 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 5540 -6400 0 0 {name=l2761 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 5870 -6520 0 0 {name=x691}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 5870 -6520 0 0 {name=x691}
 C {devices/lab_wire.sym} 5800 -6640 2 1 {name=l2762 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 5820 -6650 1 1 {name=l2763 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 5860 -6650 3 0 {name=l2764 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 5800 -6400 0 0 {name=l2765 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 6130 -6520 0 0 {name=x692}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 6130 -6520 0 0 {name=x692}
 C {devices/lab_wire.sym} 6060 -6640 2 1 {name=l2766 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 6080 -6650 1 1 {name=l2767 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 6120 -6650 3 0 {name=l2768 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 6060 -6400 0 0 {name=l2769 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 6390 -6520 0 0 {name=x693}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 6390 -6520 0 0 {name=x693}
 C {devices/lab_wire.sym} 6320 -6640 2 1 {name=l2770 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 6340 -6650 1 1 {name=l2771 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 6380 -6650 3 0 {name=l2772 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 6320 -6400 0 0 {name=l2773 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 6650 -6520 0 0 {name=x694}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 6650 -6520 0 0 {name=x694}
 C {devices/lab_wire.sym} 6580 -6640 2 1 {name=l2774 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 6600 -6650 1 1 {name=l2775 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 6640 -6650 3 0 {name=l2776 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 6580 -6400 0 0 {name=l2777 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 6910 -6520 0 0 {name=x695}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 6910 -6520 0 0 {name=x695}
 C {devices/lab_wire.sym} 6840 -6640 2 1 {name=l2778 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 6860 -6650 1 1 {name=l2779 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 6900 -6650 3 0 {name=l2780 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 6840 -6400 0 0 {name=l2781 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 7170 -6520 0 0 {name=x696}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 7170 -6520 0 0 {name=x696}
 C {devices/lab_wire.sym} 7100 -6640 2 1 {name=l2782 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 7120 -6650 1 1 {name=l2783 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 7160 -6650 3 0 {name=l2784 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 7100 -6400 0 0 {name=l2785 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 7430 -6520 0 0 {name=x697}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 7430 -6520 0 0 {name=x697}
 C {devices/lab_wire.sym} 7360 -6640 2 1 {name=l2786 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 7380 -6650 1 1 {name=l2787 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 7420 -6650 3 0 {name=l2788 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 7360 -6400 0 0 {name=l2789 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 7690 -6520 0 0 {name=x698}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 7690 -6520 0 0 {name=x698}
 C {devices/lab_wire.sym} 7620 -6640 2 1 {name=l2790 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 7640 -6650 1 1 {name=l2791 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 7680 -6650 3 0 {name=l2792 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 7620 -6400 0 0 {name=l2793 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 7950 -6520 0 0 {name=x699}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 7950 -6520 0 0 {name=x699}
 C {devices/lab_wire.sym} 7880 -6640 2 1 {name=l2794 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 7900 -6650 1 1 {name=l2795 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 7940 -6650 3 0 {name=l2796 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 7880 -6400 0 0 {name=l2797 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 8210 -6520 0 0 {name=x700}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 8210 -6520 0 0 {name=x700}
 C {devices/lab_wire.sym} 8140 -6640 2 1 {name=l2798 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 8160 -6650 1 1 {name=l2799 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 8200 -6650 3 0 {name=l2800 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 8140 -6400 0 0 {name=l2801 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 8470 -6520 0 0 {name=x701}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 8470 -6520 0 0 {name=x701}
 C {devices/lab_wire.sym} 8400 -6640 2 1 {name=l2802 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 8420 -6650 1 1 {name=l2803 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 8460 -6650 3 0 {name=l2804 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 8400 -6400 0 0 {name=l2805 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 8730 -6520 0 0 {name=x702}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 8730 -6520 0 0 {name=x702}
 C {devices/lab_wire.sym} 8660 -6640 2 1 {name=l2806 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 8680 -6650 1 1 {name=l2807 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 8720 -6650 3 0 {name=l2808 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 8660 -6400 0 0 {name=l2809 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 8990 -6520 0 0 {name=x703}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 8990 -6520 0 0 {name=x703}
 C {devices/lab_wire.sym} 8920 -6640 2 1 {name=l2810 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 8940 -6650 1 1 {name=l2811 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 8980 -6650 3 0 {name=l2812 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 8920 -6400 0 0 {name=l2813 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 9250 -6520 0 0 {name=x704}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 9250 -6520 0 0 {name=x704}
 C {devices/lab_wire.sym} 9180 -6640 2 1 {name=l2814 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 9200 -6650 1 1 {name=l2815 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 9240 -6650 3 0 {name=l2816 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 9180 -6400 0 0 {name=l2817 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 1190 -6780 0 0 {name=x705}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 1190 -6780 0 0 {name=x705}
 C {devices/lab_wire.sym} 1120 -6900 2 1 {name=l2818 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 1140 -6910 1 1 {name=l2819 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 1180 -6910 3 0 {name=l2820 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 1120 -6660 0 0 {name=l2821 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 1450 -6780 0 0 {name=x706}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 1450 -6780 0 0 {name=x706}
 C {devices/lab_wire.sym} 1380 -6900 2 1 {name=l2822 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 1400 -6910 1 1 {name=l2823 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 1440 -6910 3 0 {name=l2824 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 1380 -6660 0 0 {name=l2825 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 1710 -6780 0 0 {name=x707}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 1710 -6780 0 0 {name=x707}
 C {devices/lab_wire.sym} 1640 -6900 2 1 {name=l2826 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 1660 -6910 1 1 {name=l2827 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 1700 -6910 3 0 {name=l2828 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 1640 -6660 0 0 {name=l2829 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 1970 -6780 0 0 {name=x708}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 1970 -6780 0 0 {name=x708}
 C {devices/lab_wire.sym} 1900 -6900 2 1 {name=l2830 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 1920 -6910 1 1 {name=l2831 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 1960 -6910 3 0 {name=l2832 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 1900 -6660 0 0 {name=l2833 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 2230 -6780 0 0 {name=x709}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 2230 -6780 0 0 {name=x709}
 C {devices/lab_wire.sym} 2160 -6900 2 1 {name=l2834 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 2180 -6910 1 1 {name=l2835 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 2220 -6910 3 0 {name=l2836 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 2160 -6660 0 0 {name=l2837 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 2490 -6780 0 0 {name=x710}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 2490 -6780 0 0 {name=x710}
 C {devices/lab_wire.sym} 2420 -6900 2 1 {name=l2838 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 2440 -6910 1 1 {name=l2839 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 2480 -6910 3 0 {name=l2840 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 2420 -6660 0 0 {name=l2841 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 2750 -6780 0 0 {name=x711}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 2750 -6780 0 0 {name=x711}
 C {devices/lab_wire.sym} 2680 -6900 2 1 {name=l2842 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 2700 -6910 1 1 {name=l2843 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 2740 -6910 3 0 {name=l2844 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 2680 -6660 0 0 {name=l2845 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 3010 -6780 0 0 {name=x712}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 3010 -6780 0 0 {name=x712}
 C {devices/lab_wire.sym} 2940 -6900 2 1 {name=l2846 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 2960 -6910 1 1 {name=l2847 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 3000 -6910 3 0 {name=l2848 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 2940 -6660 0 0 {name=l2849 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 3270 -6780 0 0 {name=x713}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 3270 -6780 0 0 {name=x713}
 C {devices/lab_wire.sym} 3200 -6900 2 1 {name=l2850 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 3220 -6910 1 1 {name=l2851 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 3260 -6910 3 0 {name=l2852 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 3200 -6660 0 0 {name=l2853 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 3530 -6780 0 0 {name=x714}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 3530 -6780 0 0 {name=x714}
 C {devices/lab_wire.sym} 3460 -6900 2 1 {name=l2854 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 3480 -6910 1 1 {name=l2855 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 3520 -6910 3 0 {name=l2856 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 3460 -6660 0 0 {name=l2857 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 3790 -6780 0 0 {name=x715}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 3790 -6780 0 0 {name=x715}
 C {devices/lab_wire.sym} 3720 -6900 2 1 {name=l2858 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 3740 -6910 1 1 {name=l2859 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 3780 -6910 3 0 {name=l2860 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 3720 -6660 0 0 {name=l2861 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 4050 -6780 0 0 {name=x716}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 4050 -6780 0 0 {name=x716}
 C {devices/lab_wire.sym} 3980 -6900 2 1 {name=l2862 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 4000 -6910 1 1 {name=l2863 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 4040 -6910 3 0 {name=l2864 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 3980 -6660 0 0 {name=l2865 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 4310 -6780 0 0 {name=x717}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 4310 -6780 0 0 {name=x717}
 C {devices/lab_wire.sym} 4240 -6900 2 1 {name=l2866 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 4260 -6910 1 1 {name=l2867 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 4300 -6910 3 0 {name=l2868 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 4240 -6660 0 0 {name=l2869 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 4570 -6780 0 0 {name=x718}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 4570 -6780 0 0 {name=x718}
 C {devices/lab_wire.sym} 4500 -6900 2 1 {name=l2870 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 4520 -6910 1 1 {name=l2871 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 4560 -6910 3 0 {name=l2872 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 4500 -6660 0 0 {name=l2873 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 4830 -6780 0 0 {name=x719}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 4830 -6780 0 0 {name=x719}
 C {devices/lab_wire.sym} 4760 -6900 2 1 {name=l2874 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 4780 -6910 1 1 {name=l2875 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 4820 -6910 3 0 {name=l2876 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 4760 -6660 0 0 {name=l2877 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 5090 -6780 0 0 {name=x720}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 5090 -6780 0 0 {name=x720}
 C {devices/lab_wire.sym} 5020 -6900 2 1 {name=l2878 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 5040 -6910 1 1 {name=l2879 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 5080 -6910 3 0 {name=l2880 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 5020 -6660 0 0 {name=l2881 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 5350 -6780 0 0 {name=x721}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 5350 -6780 0 0 {name=x721}
 C {devices/lab_wire.sym} 5280 -6900 2 1 {name=l2882 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 5300 -6910 1 1 {name=l2883 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 5340 -6910 3 0 {name=l2884 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 5280 -6660 0 0 {name=l2885 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 5610 -6780 0 0 {name=x722}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 5610 -6780 0 0 {name=x722}
 C {devices/lab_wire.sym} 5540 -6900 2 1 {name=l2886 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 5560 -6910 1 1 {name=l2887 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 5600 -6910 3 0 {name=l2888 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 5540 -6660 0 0 {name=l2889 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 5870 -6780 0 0 {name=x723}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 5870 -6780 0 0 {name=x723}
 C {devices/lab_wire.sym} 5800 -6900 2 1 {name=l2890 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 5820 -6910 1 1 {name=l2891 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 5860 -6910 3 0 {name=l2892 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 5800 -6660 0 0 {name=l2893 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 6130 -6780 0 0 {name=x724}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 6130 -6780 0 0 {name=x724}
 C {devices/lab_wire.sym} 6060 -6900 2 1 {name=l2894 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 6080 -6910 1 1 {name=l2895 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 6120 -6910 3 0 {name=l2896 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 6060 -6660 0 0 {name=l2897 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 6390 -6780 0 0 {name=x725}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 6390 -6780 0 0 {name=x725}
 C {devices/lab_wire.sym} 6320 -6900 2 1 {name=l2898 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 6340 -6910 1 1 {name=l2899 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 6380 -6910 3 0 {name=l2900 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 6320 -6660 0 0 {name=l2901 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 6650 -6780 0 0 {name=x726}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 6650 -6780 0 0 {name=x726}
 C {devices/lab_wire.sym} 6580 -6900 2 1 {name=l2902 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 6600 -6910 1 1 {name=l2903 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 6640 -6910 3 0 {name=l2904 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 6580 -6660 0 0 {name=l2905 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 6910 -6780 0 0 {name=x727}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 6910 -6780 0 0 {name=x727}
 C {devices/lab_wire.sym} 6840 -6900 2 1 {name=l2906 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 6860 -6910 1 1 {name=l2907 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 6900 -6910 3 0 {name=l2908 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 6840 -6660 0 0 {name=l2909 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 7170 -6780 0 0 {name=x728}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 7170 -6780 0 0 {name=x728}
 C {devices/lab_wire.sym} 7100 -6900 2 1 {name=l2910 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 7120 -6910 1 1 {name=l2911 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 7160 -6910 3 0 {name=l2912 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 7100 -6660 0 0 {name=l2913 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 7430 -6780 0 0 {name=x729}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 7430 -6780 0 0 {name=x729}
 C {devices/lab_wire.sym} 7360 -6900 2 1 {name=l2914 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 7380 -6910 1 1 {name=l2915 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 7420 -6910 3 0 {name=l2916 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 7360 -6660 0 0 {name=l2917 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 7690 -6780 0 0 {name=x730}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 7690 -6780 0 0 {name=x730}
 C {devices/lab_wire.sym} 7620 -6900 2 1 {name=l2918 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 7640 -6910 1 1 {name=l2919 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 7680 -6910 3 0 {name=l2920 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 7620 -6660 0 0 {name=l2921 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 7950 -6780 0 0 {name=x731}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 7950 -6780 0 0 {name=x731}
 C {devices/lab_wire.sym} 7880 -6900 2 1 {name=l2922 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 7900 -6910 1 1 {name=l2923 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 7940 -6910 3 0 {name=l2924 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 7880 -6660 0 0 {name=l2925 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 8210 -6780 0 0 {name=x732}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 8210 -6780 0 0 {name=x732}
 C {devices/lab_wire.sym} 8140 -6900 2 1 {name=l2926 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 8160 -6910 1 1 {name=l2927 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 8200 -6910 3 0 {name=l2928 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 8140 -6660 0 0 {name=l2929 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 8470 -6780 0 0 {name=x733}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 8470 -6780 0 0 {name=x733}
 C {devices/lab_wire.sym} 8400 -6900 2 1 {name=l2930 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 8420 -6910 1 1 {name=l2931 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 8460 -6910 3 0 {name=l2932 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 8400 -6660 0 0 {name=l2933 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 8730 -6780 0 0 {name=x734}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 8730 -6780 0 0 {name=x734}
 C {devices/lab_wire.sym} 8660 -6900 2 1 {name=l2934 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 8680 -6910 1 1 {name=l2935 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 8720 -6910 3 0 {name=l2936 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 8660 -6660 0 0 {name=l2937 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 8990 -6780 0 0 {name=x735}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 8990 -6780 0 0 {name=x735}
 C {devices/lab_wire.sym} 8920 -6900 2 1 {name=l2938 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 8940 -6910 1 1 {name=l2939 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 8980 -6910 3 0 {name=l2940 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 8920 -6660 0 0 {name=l2941 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 9250 -6780 0 0 {name=x736}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 9250 -6780 0 0 {name=x736}
 C {devices/lab_wire.sym} 9180 -6900 2 1 {name=l2942 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 9200 -6910 1 1 {name=l2943 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 9240 -6910 3 0 {name=l2944 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 9180 -6660 0 0 {name=l2945 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 1190 -7040 0 0 {name=x737}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 1190 -7040 0 0 {name=x737}
 C {devices/lab_wire.sym} 1120 -7160 2 1 {name=l2946 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 1140 -7170 1 1 {name=l2947 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 1180 -7170 3 0 {name=l2948 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 1120 -6920 0 0 {name=l2949 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 1450 -7040 0 0 {name=x738}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 1450 -7040 0 0 {name=x738}
 C {devices/lab_wire.sym} 1380 -7160 2 1 {name=l2950 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 1400 -7170 1 1 {name=l2951 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 1440 -7170 3 0 {name=l2952 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 1380 -6920 0 0 {name=l2953 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 1710 -7040 0 0 {name=x739}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 1710 -7040 0 0 {name=x739}
 C {devices/lab_wire.sym} 1640 -7160 2 1 {name=l2954 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 1660 -7170 1 1 {name=l2955 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 1700 -7170 3 0 {name=l2956 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 1640 -6920 0 0 {name=l2957 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 1970 -7040 0 0 {name=x740}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 1970 -7040 0 0 {name=x740}
 C {devices/lab_wire.sym} 1900 -7160 2 1 {name=l2958 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 1920 -7170 1 1 {name=l2959 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 1960 -7170 3 0 {name=l2960 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 1900 -6920 0 0 {name=l2961 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 2230 -7040 0 0 {name=x741}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 2230 -7040 0 0 {name=x741}
 C {devices/lab_wire.sym} 2160 -7160 2 1 {name=l2962 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 2180 -7170 1 1 {name=l2963 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 2220 -7170 3 0 {name=l2964 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 2160 -6920 0 0 {name=l2965 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 2490 -7040 0 0 {name=x742}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 2490 -7040 0 0 {name=x742}
 C {devices/lab_wire.sym} 2420 -7160 2 1 {name=l2966 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 2440 -7170 1 1 {name=l2967 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 2480 -7170 3 0 {name=l2968 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 2420 -6920 0 0 {name=l2969 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 2750 -7040 0 0 {name=x743}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 2750 -7040 0 0 {name=x743}
 C {devices/lab_wire.sym} 2680 -7160 2 1 {name=l2970 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 2700 -7170 1 1 {name=l2971 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 2740 -7170 3 0 {name=l2972 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 2680 -6920 0 0 {name=l2973 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 3010 -7040 0 0 {name=x744}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 3010 -7040 0 0 {name=x744}
 C {devices/lab_wire.sym} 2940 -7160 2 1 {name=l2974 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 2960 -7170 1 1 {name=l2975 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 3000 -7170 3 0 {name=l2976 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 2940 -6920 0 0 {name=l2977 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 3270 -7040 0 0 {name=x745}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 3270 -7040 0 0 {name=x745}
 C {devices/lab_wire.sym} 3200 -7160 2 1 {name=l2978 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 3220 -7170 1 1 {name=l2979 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 3260 -7170 3 0 {name=l2980 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 3200 -6920 0 0 {name=l2981 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 3530 -7040 0 0 {name=x746}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 3530 -7040 0 0 {name=x746}
 C {devices/lab_wire.sym} 3460 -7160 2 1 {name=l2982 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 3480 -7170 1 1 {name=l2983 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 3520 -7170 3 0 {name=l2984 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 3460 -6920 0 0 {name=l2985 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 3790 -7040 0 0 {name=x747}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 3790 -7040 0 0 {name=x747}
 C {devices/lab_wire.sym} 3720 -7160 2 1 {name=l2986 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 3740 -7170 1 1 {name=l2987 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 3780 -7170 3 0 {name=l2988 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 3720 -6920 0 0 {name=l2989 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 4050 -7040 0 0 {name=x748}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 4050 -7040 0 0 {name=x748}
 C {devices/lab_wire.sym} 3980 -7160 2 1 {name=l2990 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 4000 -7170 1 1 {name=l2991 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 4040 -7170 3 0 {name=l2992 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 3980 -6920 0 0 {name=l2993 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 4310 -7040 0 0 {name=x749}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 4310 -7040 0 0 {name=x749}
 C {devices/lab_wire.sym} 4240 -7160 2 1 {name=l2994 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 4260 -7170 1 1 {name=l2995 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 4300 -7170 3 0 {name=l2996 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 4240 -6920 0 0 {name=l2997 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 4570 -7040 0 0 {name=x750}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 4570 -7040 0 0 {name=x750}
 C {devices/lab_wire.sym} 4500 -7160 2 1 {name=l2998 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 4520 -7170 1 1 {name=l2999 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 4560 -7170 3 0 {name=l3000 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 4500 -6920 0 0 {name=l3001 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 4830 -7040 0 0 {name=x751}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 4830 -7040 0 0 {name=x751}
 C {devices/lab_wire.sym} 4760 -7160 2 1 {name=l3002 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 4780 -7170 1 1 {name=l3003 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 4820 -7170 3 0 {name=l3004 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 4760 -6920 0 0 {name=l3005 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 5090 -7040 0 0 {name=x752}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 5090 -7040 0 0 {name=x752}
 C {devices/lab_wire.sym} 5020 -7160 2 1 {name=l3006 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 5040 -7170 1 1 {name=l3007 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 5080 -7170 3 0 {name=l3008 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 5020 -6920 0 0 {name=l3009 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 5350 -7040 0 0 {name=x753}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 5350 -7040 0 0 {name=x753}
 C {devices/lab_wire.sym} 5280 -7160 2 1 {name=l3010 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 5300 -7170 1 1 {name=l3011 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 5340 -7170 3 0 {name=l3012 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 5280 -6920 0 0 {name=l3013 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 5610 -7040 0 0 {name=x754}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 5610 -7040 0 0 {name=x754}
 C {devices/lab_wire.sym} 5540 -7160 2 1 {name=l3014 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 5560 -7170 1 1 {name=l3015 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 5600 -7170 3 0 {name=l3016 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 5540 -6920 0 0 {name=l3017 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 5870 -7040 0 0 {name=x755}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 5870 -7040 0 0 {name=x755}
 C {devices/lab_wire.sym} 5800 -7160 2 1 {name=l3018 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 5820 -7170 1 1 {name=l3019 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 5860 -7170 3 0 {name=l3020 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 5800 -6920 0 0 {name=l3021 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 6130 -7040 0 0 {name=x756}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 6130 -7040 0 0 {name=x756}
 C {devices/lab_wire.sym} 6060 -7160 2 1 {name=l3022 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 6080 -7170 1 1 {name=l3023 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 6120 -7170 3 0 {name=l3024 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 6060 -6920 0 0 {name=l3025 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 6390 -7040 0 0 {name=x757}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 6390 -7040 0 0 {name=x757}
 C {devices/lab_wire.sym} 6320 -7160 2 1 {name=l3026 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 6340 -7170 1 1 {name=l3027 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 6380 -7170 3 0 {name=l3028 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 6320 -6920 0 0 {name=l3029 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 6650 -7040 0 0 {name=x758}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 6650 -7040 0 0 {name=x758}
 C {devices/lab_wire.sym} 6580 -7160 2 1 {name=l3030 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 6600 -7170 1 1 {name=l3031 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 6640 -7170 3 0 {name=l3032 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 6580 -6920 0 0 {name=l3033 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 6910 -7040 0 0 {name=x759}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 6910 -7040 0 0 {name=x759}
 C {devices/lab_wire.sym} 6840 -7160 2 1 {name=l3034 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 6860 -7170 1 1 {name=l3035 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 6900 -7170 3 0 {name=l3036 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 6840 -6920 0 0 {name=l3037 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 7170 -7040 0 0 {name=x760}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 7170 -7040 0 0 {name=x760}
 C {devices/lab_wire.sym} 7100 -7160 2 1 {name=l3038 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 7120 -7170 1 1 {name=l3039 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 7160 -7170 3 0 {name=l3040 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 7100 -6920 0 0 {name=l3041 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 7430 -7040 0 0 {name=x761}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 7430 -7040 0 0 {name=x761}
 C {devices/lab_wire.sym} 7360 -7160 2 1 {name=l3042 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 7380 -7170 1 1 {name=l3043 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 7420 -7170 3 0 {name=l3044 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 7360 -6920 0 0 {name=l3045 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 7690 -7040 0 0 {name=x762}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 7690 -7040 0 0 {name=x762}
 C {devices/lab_wire.sym} 7620 -7160 2 1 {name=l3046 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 7640 -7170 1 1 {name=l3047 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 7680 -7170 3 0 {name=l3048 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 7620 -6920 0 0 {name=l3049 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 7950 -7040 0 0 {name=x763}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 7950 -7040 0 0 {name=x763}
 C {devices/lab_wire.sym} 7880 -7160 2 1 {name=l3050 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 7900 -7170 1 1 {name=l3051 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 7940 -7170 3 0 {name=l3052 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 7880 -6920 0 0 {name=l3053 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 8210 -7040 0 0 {name=x764}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 8210 -7040 0 0 {name=x764}
 C {devices/lab_wire.sym} 8140 -7160 2 1 {name=l3054 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 8160 -7170 1 1 {name=l3055 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 8200 -7170 3 0 {name=l3056 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 8140 -6920 0 0 {name=l3057 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 8470 -7040 0 0 {name=x765}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 8470 -7040 0 0 {name=x765}
 C {devices/lab_wire.sym} 8400 -7160 2 1 {name=l3058 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 8420 -7170 1 1 {name=l3059 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 8460 -7170 3 0 {name=l3060 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 8400 -6920 0 0 {name=l3061 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 8730 -7040 0 0 {name=x766}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 8730 -7040 0 0 {name=x766}
 C {devices/lab_wire.sym} 8660 -7160 2 1 {name=l3062 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 8680 -7170 1 1 {name=l3063 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 8720 -7170 3 0 {name=l3064 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 8660 -6920 0 0 {name=l3065 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 8990 -7040 0 0 {name=x767}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 8990 -7040 0 0 {name=x767}
 C {devices/lab_wire.sym} 8920 -7160 2 1 {name=l3066 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 8940 -7170 1 1 {name=l3067 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 8980 -7170 3 0 {name=l3068 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 8920 -6920 0 0 {name=l3069 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 9250 -7040 0 0 {name=x768}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 9250 -7040 0 0 {name=x768}
 C {devices/lab_wire.sym} 9180 -7160 2 1 {name=l3070 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 9200 -7170 1 1 {name=l3071 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 9240 -7170 3 0 {name=l3072 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 9180 -6920 0 0 {name=l3073 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 1190 -7300 0 0 {name=x769}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 1190 -7300 0 0 {name=x769}
 C {devices/lab_wire.sym} 1120 -7420 2 1 {name=l3074 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 1140 -7430 1 1 {name=l3075 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 1180 -7430 3 0 {name=l3076 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 1120 -7180 0 0 {name=l3077 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 1450 -7300 0 0 {name=x770}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 1450 -7300 0 0 {name=x770}
 C {devices/lab_wire.sym} 1380 -7420 2 1 {name=l3078 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 1400 -7430 1 1 {name=l3079 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 1440 -7430 3 0 {name=l3080 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 1380 -7180 0 0 {name=l3081 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 1710 -7300 0 0 {name=x771}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 1710 -7300 0 0 {name=x771}
 C {devices/lab_wire.sym} 1640 -7420 2 1 {name=l3082 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 1660 -7430 1 1 {name=l3083 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 1700 -7430 3 0 {name=l3084 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 1640 -7180 0 0 {name=l3085 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 1970 -7300 0 0 {name=x772}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 1970 -7300 0 0 {name=x772}
 C {devices/lab_wire.sym} 1900 -7420 2 1 {name=l3086 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 1920 -7430 1 1 {name=l3087 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 1960 -7430 3 0 {name=l3088 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 1900 -7180 0 0 {name=l3089 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 2230 -7300 0 0 {name=x773}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 2230 -7300 0 0 {name=x773}
 C {devices/lab_wire.sym} 2160 -7420 2 1 {name=l3090 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 2180 -7430 1 1 {name=l3091 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 2220 -7430 3 0 {name=l3092 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 2160 -7180 0 0 {name=l3093 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 2490 -7300 0 0 {name=x774}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 2490 -7300 0 0 {name=x774}
 C {devices/lab_wire.sym} 2420 -7420 2 1 {name=l3094 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 2440 -7430 1 1 {name=l3095 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 2480 -7430 3 0 {name=l3096 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 2420 -7180 0 0 {name=l3097 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 2750 -7300 0 0 {name=x775}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 2750 -7300 0 0 {name=x775}
 C {devices/lab_wire.sym} 2680 -7420 2 1 {name=l3098 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 2700 -7430 1 1 {name=l3099 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 2740 -7430 3 0 {name=l3100 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 2680 -7180 0 0 {name=l3101 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 3010 -7300 0 0 {name=x776}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 3010 -7300 0 0 {name=x776}
 C {devices/lab_wire.sym} 2940 -7420 2 1 {name=l3102 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 2960 -7430 1 1 {name=l3103 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 3000 -7430 3 0 {name=l3104 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 2940 -7180 0 0 {name=l3105 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 3270 -7300 0 0 {name=x777}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 3270 -7300 0 0 {name=x777}
 C {devices/lab_wire.sym} 3200 -7420 2 1 {name=l3106 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 3220 -7430 1 1 {name=l3107 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 3260 -7430 3 0 {name=l3108 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 3200 -7180 0 0 {name=l3109 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 3530 -7300 0 0 {name=x778}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 3530 -7300 0 0 {name=x778}
 C {devices/lab_wire.sym} 3460 -7420 2 1 {name=l3110 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 3480 -7430 1 1 {name=l3111 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 3520 -7430 3 0 {name=l3112 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 3460 -7180 0 0 {name=l3113 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 3790 -7300 0 0 {name=x779}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 3790 -7300 0 0 {name=x779}
 C {devices/lab_wire.sym} 3720 -7420 2 1 {name=l3114 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 3740 -7430 1 1 {name=l3115 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 3780 -7430 3 0 {name=l3116 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 3720 -7180 0 0 {name=l3117 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 4050 -7300 0 0 {name=x780}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 4050 -7300 0 0 {name=x780}
 C {devices/lab_wire.sym} 3980 -7420 2 1 {name=l3118 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 4000 -7430 1 1 {name=l3119 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 4040 -7430 3 0 {name=l3120 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 3980 -7180 0 0 {name=l3121 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 4310 -7300 0 0 {name=x781}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 4310 -7300 0 0 {name=x781}
 C {devices/lab_wire.sym} 4240 -7420 2 1 {name=l3122 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 4260 -7430 1 1 {name=l3123 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 4300 -7430 3 0 {name=l3124 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 4240 -7180 0 0 {name=l3125 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 4570 -7300 0 0 {name=x782}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 4570 -7300 0 0 {name=x782}
 C {devices/lab_wire.sym} 4500 -7420 2 1 {name=l3126 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 4520 -7430 1 1 {name=l3127 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 4560 -7430 3 0 {name=l3128 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 4500 -7180 0 0 {name=l3129 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 4830 -7300 0 0 {name=x783}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 4830 -7300 0 0 {name=x783}
 C {devices/lab_wire.sym} 4760 -7420 2 1 {name=l3130 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 4780 -7430 1 1 {name=l3131 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 4820 -7430 3 0 {name=l3132 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 4760 -7180 0 0 {name=l3133 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 5090 -7300 0 0 {name=x784}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 5090 -7300 0 0 {name=x784}
 C {devices/lab_wire.sym} 5020 -7420 2 1 {name=l3134 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 5040 -7430 1 1 {name=l3135 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 5080 -7430 3 0 {name=l3136 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 5020 -7180 0 0 {name=l3137 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 5350 -7300 0 0 {name=x785}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 5350 -7300 0 0 {name=x785}
 C {devices/lab_wire.sym} 5280 -7420 2 1 {name=l3138 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 5300 -7430 1 1 {name=l3139 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 5340 -7430 3 0 {name=l3140 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 5280 -7180 0 0 {name=l3141 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 5610 -7300 0 0 {name=x786}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 5610 -7300 0 0 {name=x786}
 C {devices/lab_wire.sym} 5540 -7420 2 1 {name=l3142 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 5560 -7430 1 1 {name=l3143 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 5600 -7430 3 0 {name=l3144 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 5540 -7180 0 0 {name=l3145 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 5870 -7300 0 0 {name=x787}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 5870 -7300 0 0 {name=x787}
 C {devices/lab_wire.sym} 5800 -7420 2 1 {name=l3146 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 5820 -7430 1 1 {name=l3147 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 5860 -7430 3 0 {name=l3148 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 5800 -7180 0 0 {name=l3149 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 6130 -7300 0 0 {name=x788}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 6130 -7300 0 0 {name=x788}
 C {devices/lab_wire.sym} 6060 -7420 2 1 {name=l3150 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 6080 -7430 1 1 {name=l3151 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 6120 -7430 3 0 {name=l3152 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 6060 -7180 0 0 {name=l3153 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 6390 -7300 0 0 {name=x789}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 6390 -7300 0 0 {name=x789}
 C {devices/lab_wire.sym} 6320 -7420 2 1 {name=l3154 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 6340 -7430 1 1 {name=l3155 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 6380 -7430 3 0 {name=l3156 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 6320 -7180 0 0 {name=l3157 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 6650 -7300 0 0 {name=x790}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 6650 -7300 0 0 {name=x790}
 C {devices/lab_wire.sym} 6580 -7420 2 1 {name=l3158 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 6600 -7430 1 1 {name=l3159 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 6640 -7430 3 0 {name=l3160 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 6580 -7180 0 0 {name=l3161 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 6910 -7300 0 0 {name=x791}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 6910 -7300 0 0 {name=x791}
 C {devices/lab_wire.sym} 6840 -7420 2 1 {name=l3162 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 6860 -7430 1 1 {name=l3163 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 6900 -7430 3 0 {name=l3164 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 6840 -7180 0 0 {name=l3165 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 7170 -7300 0 0 {name=x792}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 7170 -7300 0 0 {name=x792}
 C {devices/lab_wire.sym} 7100 -7420 2 1 {name=l3166 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 7120 -7430 1 1 {name=l3167 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 7160 -7430 3 0 {name=l3168 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 7100 -7180 0 0 {name=l3169 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 7430 -7300 0 0 {name=x793}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 7430 -7300 0 0 {name=x793}
 C {devices/lab_wire.sym} 7360 -7420 2 1 {name=l3170 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 7380 -7430 1 1 {name=l3171 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 7420 -7430 3 0 {name=l3172 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 7360 -7180 0 0 {name=l3173 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 7690 -7300 0 0 {name=x794}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 7690 -7300 0 0 {name=x794}
 C {devices/lab_wire.sym} 7620 -7420 2 1 {name=l3174 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 7640 -7430 1 1 {name=l3175 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 7680 -7430 3 0 {name=l3176 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 7620 -7180 0 0 {name=l3177 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 7950 -7300 0 0 {name=x795}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 7950 -7300 0 0 {name=x795}
 C {devices/lab_wire.sym} 7880 -7420 2 1 {name=l3178 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 7900 -7430 1 1 {name=l3179 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 7940 -7430 3 0 {name=l3180 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 7880 -7180 0 0 {name=l3181 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 8210 -7300 0 0 {name=x796}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 8210 -7300 0 0 {name=x796}
 C {devices/lab_wire.sym} 8140 -7420 2 1 {name=l3182 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 8160 -7430 1 1 {name=l3183 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 8200 -7430 3 0 {name=l3184 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 8140 -7180 0 0 {name=l3185 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 8470 -7300 0 0 {name=x797}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 8470 -7300 0 0 {name=x797}
 C {devices/lab_wire.sym} 8400 -7420 2 1 {name=l3186 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 8420 -7430 1 1 {name=l3187 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 8460 -7430 3 0 {name=l3188 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 8400 -7180 0 0 {name=l3189 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 8730 -7300 0 0 {name=x798}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 8730 -7300 0 0 {name=x798}
 C {devices/lab_wire.sym} 8660 -7420 2 1 {name=l3190 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 8680 -7430 1 1 {name=l3191 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 8720 -7430 3 0 {name=l3192 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 8660 -7180 0 0 {name=l3193 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 8990 -7300 0 0 {name=x799}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 8990 -7300 0 0 {name=x799}
 C {devices/lab_wire.sym} 8920 -7420 2 1 {name=l3194 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 8940 -7430 1 1 {name=l3195 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 8980 -7430 3 0 {name=l3196 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 8920 -7180 0 0 {name=l3197 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 9250 -7300 0 0 {name=x800}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 9250 -7300 0 0 {name=x800}
 C {devices/lab_wire.sym} 9180 -7420 2 1 {name=l3198 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 9200 -7430 1 1 {name=l3199 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 9240 -7430 3 0 {name=l3200 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 9180 -7180 0 0 {name=l3201 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 1190 -7560 0 0 {name=x801}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 1190 -7560 0 0 {name=x801}
 C {devices/lab_wire.sym} 1120 -7680 2 1 {name=l3202 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 1140 -7690 1 1 {name=l3203 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 1180 -7690 3 0 {name=l3204 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 1120 -7440 0 0 {name=l3205 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 1450 -7560 0 0 {name=x802}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 1450 -7560 0 0 {name=x802}
 C {devices/lab_wire.sym} 1380 -7680 2 1 {name=l3206 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 1400 -7690 1 1 {name=l3207 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 1440 -7690 3 0 {name=l3208 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 1380 -7440 0 0 {name=l3209 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 1710 -7560 0 0 {name=x803}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 1710 -7560 0 0 {name=x803}
 C {devices/lab_wire.sym} 1640 -7680 2 1 {name=l3210 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 1660 -7690 1 1 {name=l3211 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 1700 -7690 3 0 {name=l3212 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 1640 -7440 0 0 {name=l3213 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 1970 -7560 0 0 {name=x804}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 1970 -7560 0 0 {name=x804}
 C {devices/lab_wire.sym} 1900 -7680 2 1 {name=l3214 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 1920 -7690 1 1 {name=l3215 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 1960 -7690 3 0 {name=l3216 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 1900 -7440 0 0 {name=l3217 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 2230 -7560 0 0 {name=x805}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 2230 -7560 0 0 {name=x805}
 C {devices/lab_wire.sym} 2160 -7680 2 1 {name=l3218 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 2180 -7690 1 1 {name=l3219 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 2220 -7690 3 0 {name=l3220 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 2160 -7440 0 0 {name=l3221 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 2490 -7560 0 0 {name=x806}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 2490 -7560 0 0 {name=x806}
 C {devices/lab_wire.sym} 2420 -7680 2 1 {name=l3222 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 2440 -7690 1 1 {name=l3223 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 2480 -7690 3 0 {name=l3224 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 2420 -7440 0 0 {name=l3225 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 2750 -7560 0 0 {name=x807}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 2750 -7560 0 0 {name=x807}
 C {devices/lab_wire.sym} 2680 -7680 2 1 {name=l3226 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 2700 -7690 1 1 {name=l3227 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 2740 -7690 3 0 {name=l3228 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 2680 -7440 0 0 {name=l3229 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 3010 -7560 0 0 {name=x808}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 3010 -7560 0 0 {name=x808}
 C {devices/lab_wire.sym} 2940 -7680 2 1 {name=l3230 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 2960 -7690 1 1 {name=l3231 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 3000 -7690 3 0 {name=l3232 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 2940 -7440 0 0 {name=l3233 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 3270 -7560 0 0 {name=x809}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 3270 -7560 0 0 {name=x809}
 C {devices/lab_wire.sym} 3200 -7680 2 1 {name=l3234 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 3220 -7690 1 1 {name=l3235 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 3260 -7690 3 0 {name=l3236 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 3200 -7440 0 0 {name=l3237 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 3530 -7560 0 0 {name=x810}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 3530 -7560 0 0 {name=x810}
 C {devices/lab_wire.sym} 3460 -7680 2 1 {name=l3238 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 3480 -7690 1 1 {name=l3239 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 3520 -7690 3 0 {name=l3240 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 3460 -7440 0 0 {name=l3241 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 3790 -7560 0 0 {name=x811}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 3790 -7560 0 0 {name=x811}
 C {devices/lab_wire.sym} 3720 -7680 2 1 {name=l3242 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 3740 -7690 1 1 {name=l3243 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 3780 -7690 3 0 {name=l3244 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 3720 -7440 0 0 {name=l3245 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 4050 -7560 0 0 {name=x812}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 4050 -7560 0 0 {name=x812}
 C {devices/lab_wire.sym} 3980 -7680 2 1 {name=l3246 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 4000 -7690 1 1 {name=l3247 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 4040 -7690 3 0 {name=l3248 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 3980 -7440 0 0 {name=l3249 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 4310 -7560 0 0 {name=x813}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 4310 -7560 0 0 {name=x813}
 C {devices/lab_wire.sym} 4240 -7680 2 1 {name=l3250 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 4260 -7690 1 1 {name=l3251 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 4300 -7690 3 0 {name=l3252 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 4240 -7440 0 0 {name=l3253 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 4570 -7560 0 0 {name=x814}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 4570 -7560 0 0 {name=x814}
 C {devices/lab_wire.sym} 4500 -7680 2 1 {name=l3254 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 4520 -7690 1 1 {name=l3255 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 4560 -7690 3 0 {name=l3256 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 4500 -7440 0 0 {name=l3257 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 4830 -7560 0 0 {name=x815}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 4830 -7560 0 0 {name=x815}
 C {devices/lab_wire.sym} 4760 -7680 2 1 {name=l3258 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 4780 -7690 1 1 {name=l3259 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 4820 -7690 3 0 {name=l3260 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 4760 -7440 0 0 {name=l3261 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 5090 -7560 0 0 {name=x816}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 5090 -7560 0 0 {name=x816}
 C {devices/lab_wire.sym} 5020 -7680 2 1 {name=l3262 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 5040 -7690 1 1 {name=l3263 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 5080 -7690 3 0 {name=l3264 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 5020 -7440 0 0 {name=l3265 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 5350 -7560 0 0 {name=x817}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 5350 -7560 0 0 {name=x817}
 C {devices/lab_wire.sym} 5280 -7680 2 1 {name=l3266 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 5300 -7690 1 1 {name=l3267 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 5340 -7690 3 0 {name=l3268 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 5280 -7440 0 0 {name=l3269 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 5610 -7560 0 0 {name=x818}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 5610 -7560 0 0 {name=x818}
 C {devices/lab_wire.sym} 5540 -7680 2 1 {name=l3270 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 5560 -7690 1 1 {name=l3271 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 5600 -7690 3 0 {name=l3272 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 5540 -7440 0 0 {name=l3273 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 5870 -7560 0 0 {name=x819}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 5870 -7560 0 0 {name=x819}
 C {devices/lab_wire.sym} 5800 -7680 2 1 {name=l3274 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 5820 -7690 1 1 {name=l3275 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 5860 -7690 3 0 {name=l3276 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 5800 -7440 0 0 {name=l3277 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 6130 -7560 0 0 {name=x820}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 6130 -7560 0 0 {name=x820}
 C {devices/lab_wire.sym} 6060 -7680 2 1 {name=l3278 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 6080 -7690 1 1 {name=l3279 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 6120 -7690 3 0 {name=l3280 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 6060 -7440 0 0 {name=l3281 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 6390 -7560 0 0 {name=x821}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 6390 -7560 0 0 {name=x821}
 C {devices/lab_wire.sym} 6320 -7680 2 1 {name=l3282 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 6340 -7690 1 1 {name=l3283 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 6380 -7690 3 0 {name=l3284 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 6320 -7440 0 0 {name=l3285 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 6650 -7560 0 0 {name=x822}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 6650 -7560 0 0 {name=x822}
 C {devices/lab_wire.sym} 6580 -7680 2 1 {name=l3286 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 6600 -7690 1 1 {name=l3287 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 6640 -7690 3 0 {name=l3288 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 6580 -7440 0 0 {name=l3289 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 6910 -7560 0 0 {name=x823}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 6910 -7560 0 0 {name=x823}
 C {devices/lab_wire.sym} 6840 -7680 2 1 {name=l3290 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 6860 -7690 1 1 {name=l3291 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 6900 -7690 3 0 {name=l3292 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 6840 -7440 0 0 {name=l3293 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 7170 -7560 0 0 {name=x824}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 7170 -7560 0 0 {name=x824}
 C {devices/lab_wire.sym} 7100 -7680 2 1 {name=l3294 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 7120 -7690 1 1 {name=l3295 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 7160 -7690 3 0 {name=l3296 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 7100 -7440 0 0 {name=l3297 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 7430 -7560 0 0 {name=x825}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 7430 -7560 0 0 {name=x825}
 C {devices/lab_wire.sym} 7360 -7680 2 1 {name=l3298 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 7380 -7690 1 1 {name=l3299 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 7420 -7690 3 0 {name=l3300 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 7360 -7440 0 0 {name=l3301 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 7690 -7560 0 0 {name=x826}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 7690 -7560 0 0 {name=x826}
 C {devices/lab_wire.sym} 7620 -7680 2 1 {name=l3302 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 7640 -7690 1 1 {name=l3303 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 7680 -7690 3 0 {name=l3304 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 7620 -7440 0 0 {name=l3305 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 7950 -7560 0 0 {name=x827}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 7950 -7560 0 0 {name=x827}
 C {devices/lab_wire.sym} 7880 -7680 2 1 {name=l3306 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 7900 -7690 1 1 {name=l3307 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 7940 -7690 3 0 {name=l3308 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 7880 -7440 0 0 {name=l3309 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 8210 -7560 0 0 {name=x828}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 8210 -7560 0 0 {name=x828}
 C {devices/lab_wire.sym} 8140 -7680 2 1 {name=l3310 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 8160 -7690 1 1 {name=l3311 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 8200 -7690 3 0 {name=l3312 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 8140 -7440 0 0 {name=l3313 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 8470 -7560 0 0 {name=x829}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 8470 -7560 0 0 {name=x829}
 C {devices/lab_wire.sym} 8400 -7680 2 1 {name=l3314 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 8420 -7690 1 1 {name=l3315 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 8460 -7690 3 0 {name=l3316 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 8400 -7440 0 0 {name=l3317 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 8730 -7560 0 0 {name=x830}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 8730 -7560 0 0 {name=x830}
 C {devices/lab_wire.sym} 8660 -7680 2 1 {name=l3318 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 8680 -7690 1 1 {name=l3319 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 8720 -7690 3 0 {name=l3320 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 8660 -7440 0 0 {name=l3321 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 8990 -7560 0 0 {name=x831}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 8990 -7560 0 0 {name=x831}
 C {devices/lab_wire.sym} 8920 -7680 2 1 {name=l3322 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 8940 -7690 1 1 {name=l3323 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 8980 -7690 3 0 {name=l3324 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 8920 -7440 0 0 {name=l3325 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 9250 -7560 0 0 {name=x832}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 9250 -7560 0 0 {name=x832}
 C {devices/lab_wire.sym} 9180 -7680 2 1 {name=l3326 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 9200 -7690 1 1 {name=l3327 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 9240 -7690 3 0 {name=l3328 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 9180 -7440 0 0 {name=l3329 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 1190 -7820 0 0 {name=x833}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 1190 -7820 0 0 {name=x833}
 C {devices/lab_wire.sym} 1120 -7940 2 1 {name=l3330 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 1140 -7950 1 1 {name=l3331 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 1180 -7950 3 0 {name=l3332 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 1120 -7700 0 0 {name=l3333 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 1450 -7820 0 0 {name=x834}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 1450 -7820 0 0 {name=x834}
 C {devices/lab_wire.sym} 1380 -7940 2 1 {name=l3334 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 1400 -7950 1 1 {name=l3335 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 1440 -7950 3 0 {name=l3336 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 1380 -7700 0 0 {name=l3337 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 1710 -7820 0 0 {name=x835}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 1710 -7820 0 0 {name=x835}
 C {devices/lab_wire.sym} 1640 -7940 2 1 {name=l3338 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 1660 -7950 1 1 {name=l3339 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 1700 -7950 3 0 {name=l3340 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 1640 -7700 0 0 {name=l3341 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 1970 -7820 0 0 {name=x836}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 1970 -7820 0 0 {name=x836}
 C {devices/lab_wire.sym} 1900 -7940 2 1 {name=l3342 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 1920 -7950 1 1 {name=l3343 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 1960 -7950 3 0 {name=l3344 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 1900 -7700 0 0 {name=l3345 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 2230 -7820 0 0 {name=x837}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 2230 -7820 0 0 {name=x837}
 C {devices/lab_wire.sym} 2160 -7940 2 1 {name=l3346 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 2180 -7950 1 1 {name=l3347 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 2220 -7950 3 0 {name=l3348 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 2160 -7700 0 0 {name=l3349 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 2490 -7820 0 0 {name=x838}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 2490 -7820 0 0 {name=x838}
 C {devices/lab_wire.sym} 2420 -7940 2 1 {name=l3350 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 2440 -7950 1 1 {name=l3351 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 2480 -7950 3 0 {name=l3352 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 2420 -7700 0 0 {name=l3353 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 2750 -7820 0 0 {name=x839}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 2750 -7820 0 0 {name=x839}
 C {devices/lab_wire.sym} 2680 -7940 2 1 {name=l3354 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 2700 -7950 1 1 {name=l3355 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 2740 -7950 3 0 {name=l3356 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 2680 -7700 0 0 {name=l3357 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 3010 -7820 0 0 {name=x840}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 3010 -7820 0 0 {name=x840}
 C {devices/lab_wire.sym} 2940 -7940 2 1 {name=l3358 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 2960 -7950 1 1 {name=l3359 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 3000 -7950 3 0 {name=l3360 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 2940 -7700 0 0 {name=l3361 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 3270 -7820 0 0 {name=x841}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 3270 -7820 0 0 {name=x841}
 C {devices/lab_wire.sym} 3200 -7940 2 1 {name=l3362 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 3220 -7950 1 1 {name=l3363 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 3260 -7950 3 0 {name=l3364 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 3200 -7700 0 0 {name=l3365 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 3530 -7820 0 0 {name=x842}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 3530 -7820 0 0 {name=x842}
 C {devices/lab_wire.sym} 3460 -7940 2 1 {name=l3366 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 3480 -7950 1 1 {name=l3367 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 3520 -7950 3 0 {name=l3368 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 3460 -7700 0 0 {name=l3369 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 3790 -7820 0 0 {name=x843}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 3790 -7820 0 0 {name=x843}
 C {devices/lab_wire.sym} 3720 -7940 2 1 {name=l3370 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 3740 -7950 1 1 {name=l3371 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 3780 -7950 3 0 {name=l3372 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 3720 -7700 0 0 {name=l3373 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 4050 -7820 0 0 {name=x844}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 4050 -7820 0 0 {name=x844}
 C {devices/lab_wire.sym} 3980 -7940 2 1 {name=l3374 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 4000 -7950 1 1 {name=l3375 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 4040 -7950 3 0 {name=l3376 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 3980 -7700 0 0 {name=l3377 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 4310 -7820 0 0 {name=x845}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 4310 -7820 0 0 {name=x845}
 C {devices/lab_wire.sym} 4240 -7940 2 1 {name=l3378 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 4260 -7950 1 1 {name=l3379 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 4300 -7950 3 0 {name=l3380 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 4240 -7700 0 0 {name=l3381 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 4570 -7820 0 0 {name=x846}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 4570 -7820 0 0 {name=x846}
 C {devices/lab_wire.sym} 4500 -7940 2 1 {name=l3382 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 4520 -7950 1 1 {name=l3383 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 4560 -7950 3 0 {name=l3384 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 4500 -7700 0 0 {name=l3385 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 4830 -7820 0 0 {name=x847}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 4830 -7820 0 0 {name=x847}
 C {devices/lab_wire.sym} 4760 -7940 2 1 {name=l3386 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 4780 -7950 1 1 {name=l3387 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 4820 -7950 3 0 {name=l3388 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 4760 -7700 0 0 {name=l3389 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 5090 -7820 0 0 {name=x848}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 5090 -7820 0 0 {name=x848}
 C {devices/lab_wire.sym} 5020 -7940 2 1 {name=l3390 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 5040 -7950 1 1 {name=l3391 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 5080 -7950 3 0 {name=l3392 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 5020 -7700 0 0 {name=l3393 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 5350 -7820 0 0 {name=x849}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 5350 -7820 0 0 {name=x849}
 C {devices/lab_wire.sym} 5280 -7940 2 1 {name=l3394 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 5300 -7950 1 1 {name=l3395 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 5340 -7950 3 0 {name=l3396 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 5280 -7700 0 0 {name=l3397 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 5610 -7820 0 0 {name=x850}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 5610 -7820 0 0 {name=x850}
 C {devices/lab_wire.sym} 5540 -7940 2 1 {name=l3398 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 5560 -7950 1 1 {name=l3399 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 5600 -7950 3 0 {name=l3400 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 5540 -7700 0 0 {name=l3401 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 5870 -7820 0 0 {name=x851}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 5870 -7820 0 0 {name=x851}
 C {devices/lab_wire.sym} 5800 -7940 2 1 {name=l3402 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 5820 -7950 1 1 {name=l3403 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 5860 -7950 3 0 {name=l3404 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 5800 -7700 0 0 {name=l3405 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 6130 -7820 0 0 {name=x852}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 6130 -7820 0 0 {name=x852}
 C {devices/lab_wire.sym} 6060 -7940 2 1 {name=l3406 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 6080 -7950 1 1 {name=l3407 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 6120 -7950 3 0 {name=l3408 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 6060 -7700 0 0 {name=l3409 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 6390 -7820 0 0 {name=x853}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 6390 -7820 0 0 {name=x853}
 C {devices/lab_wire.sym} 6320 -7940 2 1 {name=l3410 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 6340 -7950 1 1 {name=l3411 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 6380 -7950 3 0 {name=l3412 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 6320 -7700 0 0 {name=l3413 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 6650 -7820 0 0 {name=x854}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 6650 -7820 0 0 {name=x854}
 C {devices/lab_wire.sym} 6580 -7940 2 1 {name=l3414 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 6600 -7950 1 1 {name=l3415 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 6640 -7950 3 0 {name=l3416 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 6580 -7700 0 0 {name=l3417 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 6910 -7820 0 0 {name=x855}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 6910 -7820 0 0 {name=x855}
 C {devices/lab_wire.sym} 6840 -7940 2 1 {name=l3418 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 6860 -7950 1 1 {name=l3419 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 6900 -7950 3 0 {name=l3420 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 6840 -7700 0 0 {name=l3421 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 7170 -7820 0 0 {name=x856}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 7170 -7820 0 0 {name=x856}
 C {devices/lab_wire.sym} 7100 -7940 2 1 {name=l3422 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 7120 -7950 1 1 {name=l3423 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 7160 -7950 3 0 {name=l3424 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 7100 -7700 0 0 {name=l3425 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 7430 -7820 0 0 {name=x857}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 7430 -7820 0 0 {name=x857}
 C {devices/lab_wire.sym} 7360 -7940 2 1 {name=l3426 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 7380 -7950 1 1 {name=l3427 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 7420 -7950 3 0 {name=l3428 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 7360 -7700 0 0 {name=l3429 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 7690 -7820 0 0 {name=x858}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 7690 -7820 0 0 {name=x858}
 C {devices/lab_wire.sym} 7620 -7940 2 1 {name=l3430 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 7640 -7950 1 1 {name=l3431 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 7680 -7950 3 0 {name=l3432 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 7620 -7700 0 0 {name=l3433 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 7950 -7820 0 0 {name=x859}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 7950 -7820 0 0 {name=x859}
 C {devices/lab_wire.sym} 7880 -7940 2 1 {name=l3434 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 7900 -7950 1 1 {name=l3435 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 7940 -7950 3 0 {name=l3436 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 7880 -7700 0 0 {name=l3437 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 8210 -7820 0 0 {name=x860}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 8210 -7820 0 0 {name=x860}
 C {devices/lab_wire.sym} 8140 -7940 2 1 {name=l3438 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 8160 -7950 1 1 {name=l3439 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 8200 -7950 3 0 {name=l3440 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 8140 -7700 0 0 {name=l3441 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 8470 -7820 0 0 {name=x861}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 8470 -7820 0 0 {name=x861}
 C {devices/lab_wire.sym} 8400 -7940 2 1 {name=l3442 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 8420 -7950 1 1 {name=l3443 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 8460 -7950 3 0 {name=l3444 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 8400 -7700 0 0 {name=l3445 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 8730 -7820 0 0 {name=x862}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 8730 -7820 0 0 {name=x862}
 C {devices/lab_wire.sym} 8660 -7940 2 1 {name=l3446 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 8680 -7950 1 1 {name=l3447 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 8720 -7950 3 0 {name=l3448 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 8660 -7700 0 0 {name=l3449 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 8990 -7820 0 0 {name=x863}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 8990 -7820 0 0 {name=x863}
 C {devices/lab_wire.sym} 8920 -7940 2 1 {name=l3450 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 8940 -7950 1 1 {name=l3451 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 8980 -7950 3 0 {name=l3452 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 8920 -7700 0 0 {name=l3453 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 9250 -7820 0 0 {name=x864}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 9250 -7820 0 0 {name=x864}
 C {devices/lab_wire.sym} 9180 -7940 2 1 {name=l3454 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 9200 -7950 1 1 {name=l3455 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 9240 -7950 3 0 {name=l3456 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 9180 -7700 0 0 {name=l3457 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 1190 -8080 0 0 {name=x865}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 1190 -8080 0 0 {name=x865}
 C {devices/lab_wire.sym} 1120 -8200 2 1 {name=l3458 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 1140 -8210 1 1 {name=l3459 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 1180 -8210 3 0 {name=l3460 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 1120 -7960 0 0 {name=l3461 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 1450 -8080 0 0 {name=x866}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 1450 -8080 0 0 {name=x866}
 C {devices/lab_wire.sym} 1380 -8200 2 1 {name=l3462 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 1400 -8210 1 1 {name=l3463 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 1440 -8210 3 0 {name=l3464 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 1380 -7960 0 0 {name=l3465 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 1710 -8080 0 0 {name=x867}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 1710 -8080 0 0 {name=x867}
 C {devices/lab_wire.sym} 1640 -8200 2 1 {name=l3466 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 1660 -8210 1 1 {name=l3467 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 1700 -8210 3 0 {name=l3468 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 1640 -7960 0 0 {name=l3469 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 1970 -8080 0 0 {name=x868}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 1970 -8080 0 0 {name=x868}
 C {devices/lab_wire.sym} 1900 -8200 2 1 {name=l3470 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 1920 -8210 1 1 {name=l3471 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 1960 -8210 3 0 {name=l3472 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 1900 -7960 0 0 {name=l3473 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 2230 -8080 0 0 {name=x869}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 2230 -8080 0 0 {name=x869}
 C {devices/lab_wire.sym} 2160 -8200 2 1 {name=l3474 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 2180 -8210 1 1 {name=l3475 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 2220 -8210 3 0 {name=l3476 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 2160 -7960 0 0 {name=l3477 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 2490 -8080 0 0 {name=x870}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 2490 -8080 0 0 {name=x870}
 C {devices/lab_wire.sym} 2420 -8200 2 1 {name=l3478 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 2440 -8210 1 1 {name=l3479 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 2480 -8210 3 0 {name=l3480 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 2420 -7960 0 0 {name=l3481 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 2750 -8080 0 0 {name=x871}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 2750 -8080 0 0 {name=x871}
 C {devices/lab_wire.sym} 2680 -8200 2 1 {name=l3482 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 2700 -8210 1 1 {name=l3483 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 2740 -8210 3 0 {name=l3484 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 2680 -7960 0 0 {name=l3485 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 3010 -8080 0 0 {name=x872}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 3010 -8080 0 0 {name=x872}
 C {devices/lab_wire.sym} 2940 -8200 2 1 {name=l3486 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 2960 -8210 1 1 {name=l3487 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 3000 -8210 3 0 {name=l3488 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 2940 -7960 0 0 {name=l3489 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 3270 -8080 0 0 {name=x873}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 3270 -8080 0 0 {name=x873}
 C {devices/lab_wire.sym} 3200 -8200 2 1 {name=l3490 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 3220 -8210 1 1 {name=l3491 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 3260 -8210 3 0 {name=l3492 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 3200 -7960 0 0 {name=l3493 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 3530 -8080 0 0 {name=x874}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 3530 -8080 0 0 {name=x874}
 C {devices/lab_wire.sym} 3460 -8200 2 1 {name=l3494 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 3480 -8210 1 1 {name=l3495 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 3520 -8210 3 0 {name=l3496 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 3460 -7960 0 0 {name=l3497 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 3790 -8080 0 0 {name=x875}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 3790 -8080 0 0 {name=x875}
 C {devices/lab_wire.sym} 3720 -8200 2 1 {name=l3498 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 3740 -8210 1 1 {name=l3499 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 3780 -8210 3 0 {name=l3500 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 3720 -7960 0 0 {name=l3501 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 4050 -8080 0 0 {name=x876}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 4050 -8080 0 0 {name=x876}
 C {devices/lab_wire.sym} 3980 -8200 2 1 {name=l3502 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 4000 -8210 1 1 {name=l3503 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 4040 -8210 3 0 {name=l3504 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 3980 -7960 0 0 {name=l3505 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 4310 -8080 0 0 {name=x877}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 4310 -8080 0 0 {name=x877}
 C {devices/lab_wire.sym} 4240 -8200 2 1 {name=l3506 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 4260 -8210 1 1 {name=l3507 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 4300 -8210 3 0 {name=l3508 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 4240 -7960 0 0 {name=l3509 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 4570 -8080 0 0 {name=x878}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 4570 -8080 0 0 {name=x878}
 C {devices/lab_wire.sym} 4500 -8200 2 1 {name=l3510 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 4520 -8210 1 1 {name=l3511 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 4560 -8210 3 0 {name=l3512 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 4500 -7960 0 0 {name=l3513 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 4830 -8080 0 0 {name=x879}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 4830 -8080 0 0 {name=x879}
 C {devices/lab_wire.sym} 4760 -8200 2 1 {name=l3514 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 4780 -8210 1 1 {name=l3515 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 4820 -8210 3 0 {name=l3516 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 4760 -7960 0 0 {name=l3517 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 5090 -8080 0 0 {name=x880}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 5090 -8080 0 0 {name=x880}
 C {devices/lab_wire.sym} 5020 -8200 2 1 {name=l3518 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 5040 -8210 1 1 {name=l3519 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 5080 -8210 3 0 {name=l3520 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 5020 -7960 0 0 {name=l3521 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 5350 -8080 0 0 {name=x881}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 5350 -8080 0 0 {name=x881}
 C {devices/lab_wire.sym} 5280 -8200 2 1 {name=l3522 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 5300 -8210 1 1 {name=l3523 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 5340 -8210 3 0 {name=l3524 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 5280 -7960 0 0 {name=l3525 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 5610 -8080 0 0 {name=x882}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 5610 -8080 0 0 {name=x882}
 C {devices/lab_wire.sym} 5540 -8200 2 1 {name=l3526 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 5560 -8210 1 1 {name=l3527 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 5600 -8210 3 0 {name=l3528 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 5540 -7960 0 0 {name=l3529 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 5870 -8080 0 0 {name=x883}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 5870 -8080 0 0 {name=x883}
 C {devices/lab_wire.sym} 5800 -8200 2 1 {name=l3530 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 5820 -8210 1 1 {name=l3531 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 5860 -8210 3 0 {name=l3532 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 5800 -7960 0 0 {name=l3533 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 6130 -8080 0 0 {name=x884}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 6130 -8080 0 0 {name=x884}
 C {devices/lab_wire.sym} 6060 -8200 2 1 {name=l3534 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 6080 -8210 1 1 {name=l3535 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 6120 -8210 3 0 {name=l3536 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 6060 -7960 0 0 {name=l3537 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 6390 -8080 0 0 {name=x885}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 6390 -8080 0 0 {name=x885}
 C {devices/lab_wire.sym} 6320 -8200 2 1 {name=l3538 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 6340 -8210 1 1 {name=l3539 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 6380 -8210 3 0 {name=l3540 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 6320 -7960 0 0 {name=l3541 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 6650 -8080 0 0 {name=x886}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 6650 -8080 0 0 {name=x886}
 C {devices/lab_wire.sym} 6580 -8200 2 1 {name=l3542 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 6600 -8210 1 1 {name=l3543 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 6640 -8210 3 0 {name=l3544 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 6580 -7960 0 0 {name=l3545 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 6910 -8080 0 0 {name=x887}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 6910 -8080 0 0 {name=x887}
 C {devices/lab_wire.sym} 6840 -8200 2 1 {name=l3546 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 6860 -8210 1 1 {name=l3547 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 6900 -8210 3 0 {name=l3548 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 6840 -7960 0 0 {name=l3549 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 7170 -8080 0 0 {name=x888}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 7170 -8080 0 0 {name=x888}
 C {devices/lab_wire.sym} 7100 -8200 2 1 {name=l3550 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 7120 -8210 1 1 {name=l3551 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 7160 -8210 3 0 {name=l3552 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 7100 -7960 0 0 {name=l3553 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 7430 -8080 0 0 {name=x889}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 7430 -8080 0 0 {name=x889}
 C {devices/lab_wire.sym} 7360 -8200 2 1 {name=l3554 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 7380 -8210 1 1 {name=l3555 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 7420 -8210 3 0 {name=l3556 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 7360 -7960 0 0 {name=l3557 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 7690 -8080 0 0 {name=x890}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 7690 -8080 0 0 {name=x890}
 C {devices/lab_wire.sym} 7620 -8200 2 1 {name=l3558 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 7640 -8210 1 1 {name=l3559 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 7680 -8210 3 0 {name=l3560 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 7620 -7960 0 0 {name=l3561 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 7950 -8080 0 0 {name=x891}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 7950 -8080 0 0 {name=x891}
 C {devices/lab_wire.sym} 7880 -8200 2 1 {name=l3562 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 7900 -8210 1 1 {name=l3563 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 7940 -8210 3 0 {name=l3564 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 7880 -7960 0 0 {name=l3565 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 8210 -8080 0 0 {name=x892}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 8210 -8080 0 0 {name=x892}
 C {devices/lab_wire.sym} 8140 -8200 2 1 {name=l3566 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 8160 -8210 1 1 {name=l3567 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 8200 -8210 3 0 {name=l3568 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 8140 -7960 0 0 {name=l3569 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 8470 -8080 0 0 {name=x893}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 8470 -8080 0 0 {name=x893}
 C {devices/lab_wire.sym} 8400 -8200 2 1 {name=l3570 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 8420 -8210 1 1 {name=l3571 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 8460 -8210 3 0 {name=l3572 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 8400 -7960 0 0 {name=l3573 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 8730 -8080 0 0 {name=x894}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 8730 -8080 0 0 {name=x894}
 C {devices/lab_wire.sym} 8660 -8200 2 1 {name=l3574 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 8680 -8210 1 1 {name=l3575 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 8720 -8210 3 0 {name=l3576 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 8660 -7960 0 0 {name=l3577 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 8990 -8080 0 0 {name=x895}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 8990 -8080 0 0 {name=x895}
 C {devices/lab_wire.sym} 8920 -8200 2 1 {name=l3578 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 8940 -8210 1 1 {name=l3579 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 8980 -8210 3 0 {name=l3580 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 8920 -7960 0 0 {name=l3581 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 9250 -8080 0 0 {name=x896}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 9250 -8080 0 0 {name=x896}
 C {devices/lab_wire.sym} 9180 -8200 2 1 {name=l3582 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 9200 -8210 1 1 {name=l3583 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 9240 -8210 3 0 {name=l3584 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 9180 -7960 0 0 {name=l3585 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 1190 -8340 0 0 {name=x897}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 1190 -8340 0 0 {name=x897}
 C {devices/lab_wire.sym} 1120 -8460 2 1 {name=l3586 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 1140 -8470 1 1 {name=l3587 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 1180 -8470 3 0 {name=l3588 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 1120 -8220 0 0 {name=l3589 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 1450 -8340 0 0 {name=x898}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 1450 -8340 0 0 {name=x898}
 C {devices/lab_wire.sym} 1380 -8460 2 1 {name=l3590 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 1400 -8470 1 1 {name=l3591 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 1440 -8470 3 0 {name=l3592 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 1380 -8220 0 0 {name=l3593 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 1710 -8340 0 0 {name=x899}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 1710 -8340 0 0 {name=x899}
 C {devices/lab_wire.sym} 1640 -8460 2 1 {name=l3594 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 1660 -8470 1 1 {name=l3595 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 1700 -8470 3 0 {name=l3596 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 1640 -8220 0 0 {name=l3597 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 1970 -8340 0 0 {name=x900}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 1970 -8340 0 0 {name=x900}
 C {devices/lab_wire.sym} 1900 -8460 2 1 {name=l3598 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 1920 -8470 1 1 {name=l3599 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 1960 -8470 3 0 {name=l3600 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 1900 -8220 0 0 {name=l3601 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 2230 -8340 0 0 {name=x901}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 2230 -8340 0 0 {name=x901}
 C {devices/lab_wire.sym} 2160 -8460 2 1 {name=l3602 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 2180 -8470 1 1 {name=l3603 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 2220 -8470 3 0 {name=l3604 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 2160 -8220 0 0 {name=l3605 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 2490 -8340 0 0 {name=x902}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 2490 -8340 0 0 {name=x902}
 C {devices/lab_wire.sym} 2420 -8460 2 1 {name=l3606 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 2440 -8470 1 1 {name=l3607 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 2480 -8470 3 0 {name=l3608 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 2420 -8220 0 0 {name=l3609 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 2750 -8340 0 0 {name=x903}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 2750 -8340 0 0 {name=x903}
 C {devices/lab_wire.sym} 2680 -8460 2 1 {name=l3610 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 2700 -8470 1 1 {name=l3611 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 2740 -8470 3 0 {name=l3612 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 2680 -8220 0 0 {name=l3613 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 3010 -8340 0 0 {name=x904}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 3010 -8340 0 0 {name=x904}
 C {devices/lab_wire.sym} 2940 -8460 2 1 {name=l3614 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 2960 -8470 1 1 {name=l3615 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 3000 -8470 3 0 {name=l3616 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 2940 -8220 0 0 {name=l3617 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 3270 -8340 0 0 {name=x905}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 3270 -8340 0 0 {name=x905}
 C {devices/lab_wire.sym} 3200 -8460 2 1 {name=l3618 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 3220 -8470 1 1 {name=l3619 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 3260 -8470 3 0 {name=l3620 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 3200 -8220 0 0 {name=l3621 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 3530 -8340 0 0 {name=x906}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 3530 -8340 0 0 {name=x906}
 C {devices/lab_wire.sym} 3460 -8460 2 1 {name=l3622 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 3480 -8470 1 1 {name=l3623 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 3520 -8470 3 0 {name=l3624 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 3460 -8220 0 0 {name=l3625 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 3790 -8340 0 0 {name=x907}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 3790 -8340 0 0 {name=x907}
 C {devices/lab_wire.sym} 3720 -8460 2 1 {name=l3626 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 3740 -8470 1 1 {name=l3627 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 3780 -8470 3 0 {name=l3628 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 3720 -8220 0 0 {name=l3629 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 4050 -8340 0 0 {name=x908}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 4050 -8340 0 0 {name=x908}
 C {devices/lab_wire.sym} 3980 -8460 2 1 {name=l3630 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 4000 -8470 1 1 {name=l3631 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 4040 -8470 3 0 {name=l3632 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 3980 -8220 0 0 {name=l3633 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 4310 -8340 0 0 {name=x909}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 4310 -8340 0 0 {name=x909}
 C {devices/lab_wire.sym} 4240 -8460 2 1 {name=l3634 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 4260 -8470 1 1 {name=l3635 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 4300 -8470 3 0 {name=l3636 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 4240 -8220 0 0 {name=l3637 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 4570 -8340 0 0 {name=x910}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 4570 -8340 0 0 {name=x910}
 C {devices/lab_wire.sym} 4500 -8460 2 1 {name=l3638 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 4520 -8470 1 1 {name=l3639 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 4560 -8470 3 0 {name=l3640 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 4500 -8220 0 0 {name=l3641 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 4830 -8340 0 0 {name=x911}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 4830 -8340 0 0 {name=x911}
 C {devices/lab_wire.sym} 4760 -8460 2 1 {name=l3642 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 4780 -8470 1 1 {name=l3643 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 4820 -8470 3 0 {name=l3644 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 4760 -8220 0 0 {name=l3645 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 5090 -8340 0 0 {name=x912}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 5090 -8340 0 0 {name=x912}
 C {devices/lab_wire.sym} 5020 -8460 2 1 {name=l3646 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 5040 -8470 1 1 {name=l3647 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 5080 -8470 3 0 {name=l3648 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 5020 -8220 0 0 {name=l3649 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 5350 -8340 0 0 {name=x913}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 5350 -8340 0 0 {name=x913}
 C {devices/lab_wire.sym} 5280 -8460 2 1 {name=l3650 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 5300 -8470 1 1 {name=l3651 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 5340 -8470 3 0 {name=l3652 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 5280 -8220 0 0 {name=l3653 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 5610 -8340 0 0 {name=x914}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 5610 -8340 0 0 {name=x914}
 C {devices/lab_wire.sym} 5540 -8460 2 1 {name=l3654 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 5560 -8470 1 1 {name=l3655 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 5600 -8470 3 0 {name=l3656 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 5540 -8220 0 0 {name=l3657 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 5870 -8340 0 0 {name=x915}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 5870 -8340 0 0 {name=x915}
 C {devices/lab_wire.sym} 5800 -8460 2 1 {name=l3658 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 5820 -8470 1 1 {name=l3659 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 5860 -8470 3 0 {name=l3660 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 5800 -8220 0 0 {name=l3661 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 6130 -8340 0 0 {name=x916}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 6130 -8340 0 0 {name=x916}
 C {devices/lab_wire.sym} 6060 -8460 2 1 {name=l3662 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 6080 -8470 1 1 {name=l3663 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 6120 -8470 3 0 {name=l3664 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 6060 -8220 0 0 {name=l3665 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 6390 -8340 0 0 {name=x917}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 6390 -8340 0 0 {name=x917}
 C {devices/lab_wire.sym} 6320 -8460 2 1 {name=l3666 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 6340 -8470 1 1 {name=l3667 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 6380 -8470 3 0 {name=l3668 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 6320 -8220 0 0 {name=l3669 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 6650 -8340 0 0 {name=x918}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 6650 -8340 0 0 {name=x918}
 C {devices/lab_wire.sym} 6580 -8460 2 1 {name=l3670 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 6600 -8470 1 1 {name=l3671 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 6640 -8470 3 0 {name=l3672 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 6580 -8220 0 0 {name=l3673 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 6910 -8340 0 0 {name=x919}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 6910 -8340 0 0 {name=x919}
 C {devices/lab_wire.sym} 6840 -8460 2 1 {name=l3674 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 6860 -8470 1 1 {name=l3675 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 6900 -8470 3 0 {name=l3676 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 6840 -8220 0 0 {name=l3677 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 7170 -8340 0 0 {name=x920}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 7170 -8340 0 0 {name=x920}
 C {devices/lab_wire.sym} 7100 -8460 2 1 {name=l3678 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 7120 -8470 1 1 {name=l3679 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 7160 -8470 3 0 {name=l3680 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 7100 -8220 0 0 {name=l3681 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 7430 -8340 0 0 {name=x921}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 7430 -8340 0 0 {name=x921}
 C {devices/lab_wire.sym} 7360 -8460 2 1 {name=l3682 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 7380 -8470 1 1 {name=l3683 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 7420 -8470 3 0 {name=l3684 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 7360 -8220 0 0 {name=l3685 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 7690 -8340 0 0 {name=x922}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 7690 -8340 0 0 {name=x922}
 C {devices/lab_wire.sym} 7620 -8460 2 1 {name=l3686 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 7640 -8470 1 1 {name=l3687 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 7680 -8470 3 0 {name=l3688 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 7620 -8220 0 0 {name=l3689 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 7950 -8340 0 0 {name=x923}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 7950 -8340 0 0 {name=x923}
 C {devices/lab_wire.sym} 7880 -8460 2 1 {name=l3690 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 7900 -8470 1 1 {name=l3691 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 7940 -8470 3 0 {name=l3692 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 7880 -8220 0 0 {name=l3693 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 8210 -8340 0 0 {name=x924}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 8210 -8340 0 0 {name=x924}
 C {devices/lab_wire.sym} 8140 -8460 2 1 {name=l3694 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 8160 -8470 1 1 {name=l3695 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 8200 -8470 3 0 {name=l3696 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 8140 -8220 0 0 {name=l3697 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 8470 -8340 0 0 {name=x925}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 8470 -8340 0 0 {name=x925}
 C {devices/lab_wire.sym} 8400 -8460 2 1 {name=l3698 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 8420 -8470 1 1 {name=l3699 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 8460 -8470 3 0 {name=l3700 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 8400 -8220 0 0 {name=l3701 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 8730 -8340 0 0 {name=x926}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 8730 -8340 0 0 {name=x926}
 C {devices/lab_wire.sym} 8660 -8460 2 1 {name=l3702 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 8680 -8470 1 1 {name=l3703 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 8720 -8470 3 0 {name=l3704 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 8660 -8220 0 0 {name=l3705 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 8990 -8340 0 0 {name=x927}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 8990 -8340 0 0 {name=x927}
 C {devices/lab_wire.sym} 8920 -8460 2 1 {name=l3706 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 8940 -8470 1 1 {name=l3707 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 8980 -8470 3 0 {name=l3708 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 8920 -8220 0 0 {name=l3709 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 9250 -8340 0 0 {name=x928}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 9250 -8340 0 0 {name=x928}
 C {devices/lab_wire.sym} 9180 -8460 2 1 {name=l3710 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 9200 -8470 1 1 {name=l3711 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 9240 -8470 3 0 {name=l3712 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 9180 -8220 0 0 {name=l3713 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 1190 -8600 0 0 {name=x929}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 1190 -8600 0 0 {name=x929}
 C {devices/lab_wire.sym} 1120 -8720 2 1 {name=l3714 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 1140 -8730 1 1 {name=l3715 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 1180 -8730 3 0 {name=l3716 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 1120 -8480 0 0 {name=l3717 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 1450 -8600 0 0 {name=x930}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 1450 -8600 0 0 {name=x930}
 C {devices/lab_wire.sym} 1380 -8720 2 1 {name=l3718 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 1400 -8730 1 1 {name=l3719 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 1440 -8730 3 0 {name=l3720 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 1380 -8480 0 0 {name=l3721 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 1710 -8600 0 0 {name=x931}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 1710 -8600 0 0 {name=x931}
 C {devices/lab_wire.sym} 1640 -8720 2 1 {name=l3722 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 1660 -8730 1 1 {name=l3723 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 1700 -8730 3 0 {name=l3724 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 1640 -8480 0 0 {name=l3725 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 1970 -8600 0 0 {name=x932}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 1970 -8600 0 0 {name=x932}
 C {devices/lab_wire.sym} 1900 -8720 2 1 {name=l3726 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 1920 -8730 1 1 {name=l3727 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 1960 -8730 3 0 {name=l3728 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 1900 -8480 0 0 {name=l3729 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 2230 -8600 0 0 {name=x933}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 2230 -8600 0 0 {name=x933}
 C {devices/lab_wire.sym} 2160 -8720 2 1 {name=l3730 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 2180 -8730 1 1 {name=l3731 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 2220 -8730 3 0 {name=l3732 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 2160 -8480 0 0 {name=l3733 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 2490 -8600 0 0 {name=x934}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 2490 -8600 0 0 {name=x934}
 C {devices/lab_wire.sym} 2420 -8720 2 1 {name=l3734 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 2440 -8730 1 1 {name=l3735 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 2480 -8730 3 0 {name=l3736 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 2420 -8480 0 0 {name=l3737 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 2750 -8600 0 0 {name=x935}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 2750 -8600 0 0 {name=x935}
 C {devices/lab_wire.sym} 2680 -8720 2 1 {name=l3738 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 2700 -8730 1 1 {name=l3739 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 2740 -8730 3 0 {name=l3740 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 2680 -8480 0 0 {name=l3741 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 3010 -8600 0 0 {name=x936}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 3010 -8600 0 0 {name=x936}
 C {devices/lab_wire.sym} 2940 -8720 2 1 {name=l3742 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 2960 -8730 1 1 {name=l3743 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 3000 -8730 3 0 {name=l3744 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 2940 -8480 0 0 {name=l3745 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 3270 -8600 0 0 {name=x937}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 3270 -8600 0 0 {name=x937}
 C {devices/lab_wire.sym} 3200 -8720 2 1 {name=l3746 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 3220 -8730 1 1 {name=l3747 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 3260 -8730 3 0 {name=l3748 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 3200 -8480 0 0 {name=l3749 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 3530 -8600 0 0 {name=x938}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 3530 -8600 0 0 {name=x938}
 C {devices/lab_wire.sym} 3460 -8720 2 1 {name=l3750 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 3480 -8730 1 1 {name=l3751 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 3520 -8730 3 0 {name=l3752 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 3460 -8480 0 0 {name=l3753 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 3790 -8600 0 0 {name=x939}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 3790 -8600 0 0 {name=x939}
 C {devices/lab_wire.sym} 3720 -8720 2 1 {name=l3754 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 3740 -8730 1 1 {name=l3755 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 3780 -8730 3 0 {name=l3756 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 3720 -8480 0 0 {name=l3757 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 4050 -8600 0 0 {name=x940}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 4050 -8600 0 0 {name=x940}
 C {devices/lab_wire.sym} 3980 -8720 2 1 {name=l3758 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 4000 -8730 1 1 {name=l3759 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 4040 -8730 3 0 {name=l3760 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 3980 -8480 0 0 {name=l3761 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 4310 -8600 0 0 {name=x941}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 4310 -8600 0 0 {name=x941}
 C {devices/lab_wire.sym} 4240 -8720 2 1 {name=l3762 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 4260 -8730 1 1 {name=l3763 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 4300 -8730 3 0 {name=l3764 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 4240 -8480 0 0 {name=l3765 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 4570 -8600 0 0 {name=x942}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 4570 -8600 0 0 {name=x942}
 C {devices/lab_wire.sym} 4500 -8720 2 1 {name=l3766 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 4520 -8730 1 1 {name=l3767 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 4560 -8730 3 0 {name=l3768 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 4500 -8480 0 0 {name=l3769 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 4830 -8600 0 0 {name=x943}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 4830 -8600 0 0 {name=x943}
 C {devices/lab_wire.sym} 4760 -8720 2 1 {name=l3770 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 4780 -8730 1 1 {name=l3771 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 4820 -8730 3 0 {name=l3772 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 4760 -8480 0 0 {name=l3773 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 5090 -8600 0 0 {name=x944}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 5090 -8600 0 0 {name=x944}
 C {devices/lab_wire.sym} 5020 -8720 2 1 {name=l3774 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 5040 -8730 1 1 {name=l3775 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 5080 -8730 3 0 {name=l3776 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 5020 -8480 0 0 {name=l3777 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 5350 -8600 0 0 {name=x945}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 5350 -8600 0 0 {name=x945}
 C {devices/lab_wire.sym} 5280 -8720 2 1 {name=l3778 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 5300 -8730 1 1 {name=l3779 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 5340 -8730 3 0 {name=l3780 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 5280 -8480 0 0 {name=l3781 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 5610 -8600 0 0 {name=x946}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 5610 -8600 0 0 {name=x946}
 C {devices/lab_wire.sym} 5540 -8720 2 1 {name=l3782 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 5560 -8730 1 1 {name=l3783 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 5600 -8730 3 0 {name=l3784 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 5540 -8480 0 0 {name=l3785 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 5870 -8600 0 0 {name=x947}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 5870 -8600 0 0 {name=x947}
 C {devices/lab_wire.sym} 5800 -8720 2 1 {name=l3786 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 5820 -8730 1 1 {name=l3787 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 5860 -8730 3 0 {name=l3788 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 5800 -8480 0 0 {name=l3789 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 6130 -8600 0 0 {name=x948}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 6130 -8600 0 0 {name=x948}
 C {devices/lab_wire.sym} 6060 -8720 2 1 {name=l3790 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 6080 -8730 1 1 {name=l3791 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 6120 -8730 3 0 {name=l3792 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 6060 -8480 0 0 {name=l3793 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 6390 -8600 0 0 {name=x949}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 6390 -8600 0 0 {name=x949}
 C {devices/lab_wire.sym} 6320 -8720 2 1 {name=l3794 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 6340 -8730 1 1 {name=l3795 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 6380 -8730 3 0 {name=l3796 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 6320 -8480 0 0 {name=l3797 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 6650 -8600 0 0 {name=x950}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 6650 -8600 0 0 {name=x950}
 C {devices/lab_wire.sym} 6580 -8720 2 1 {name=l3798 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 6600 -8730 1 1 {name=l3799 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 6640 -8730 3 0 {name=l3800 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 6580 -8480 0 0 {name=l3801 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 6910 -8600 0 0 {name=x951}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 6910 -8600 0 0 {name=x951}
 C {devices/lab_wire.sym} 6840 -8720 2 1 {name=l3802 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 6860 -8730 1 1 {name=l3803 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 6900 -8730 3 0 {name=l3804 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 6840 -8480 0 0 {name=l3805 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 7170 -8600 0 0 {name=x952}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 7170 -8600 0 0 {name=x952}
 C {devices/lab_wire.sym} 7100 -8720 2 1 {name=l3806 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 7120 -8730 1 1 {name=l3807 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 7160 -8730 3 0 {name=l3808 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 7100 -8480 0 0 {name=l3809 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 7430 -8600 0 0 {name=x953}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 7430 -8600 0 0 {name=x953}
 C {devices/lab_wire.sym} 7360 -8720 2 1 {name=l3810 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 7380 -8730 1 1 {name=l3811 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 7420 -8730 3 0 {name=l3812 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 7360 -8480 0 0 {name=l3813 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 7690 -8600 0 0 {name=x954}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 7690 -8600 0 0 {name=x954}
 C {devices/lab_wire.sym} 7620 -8720 2 1 {name=l3814 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 7640 -8730 1 1 {name=l3815 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 7680 -8730 3 0 {name=l3816 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 7620 -8480 0 0 {name=l3817 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 7950 -8600 0 0 {name=x955}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 7950 -8600 0 0 {name=x955}
 C {devices/lab_wire.sym} 7880 -8720 2 1 {name=l3818 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 7900 -8730 1 1 {name=l3819 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 7940 -8730 3 0 {name=l3820 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 7880 -8480 0 0 {name=l3821 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 8210 -8600 0 0 {name=x956}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 8210 -8600 0 0 {name=x956}
 C {devices/lab_wire.sym} 8140 -8720 2 1 {name=l3822 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 8160 -8730 1 1 {name=l3823 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 8200 -8730 3 0 {name=l3824 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 8140 -8480 0 0 {name=l3825 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 8470 -8600 0 0 {name=x957}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 8470 -8600 0 0 {name=x957}
 C {devices/lab_wire.sym} 8400 -8720 2 1 {name=l3826 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 8420 -8730 1 1 {name=l3827 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 8460 -8730 3 0 {name=l3828 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 8400 -8480 0 0 {name=l3829 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 8730 -8600 0 0 {name=x958}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 8730 -8600 0 0 {name=x958}
 C {devices/lab_wire.sym} 8660 -8720 2 1 {name=l3830 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 8680 -8730 1 1 {name=l3831 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 8720 -8730 3 0 {name=l3832 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 8660 -8480 0 0 {name=l3833 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 8990 -8600 0 0 {name=x959}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 8990 -8600 0 0 {name=x959}
 C {devices/lab_wire.sym} 8920 -8720 2 1 {name=l3834 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 8940 -8730 1 1 {name=l3835 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 8980 -8730 3 0 {name=l3836 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 8920 -8480 0 0 {name=l3837 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 9250 -8600 0 0 {name=x960}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 9250 -8600 0 0 {name=x960}
 C {devices/lab_wire.sym} 9180 -8720 2 1 {name=l3838 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 9200 -8730 1 1 {name=l3839 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 9240 -8730 3 0 {name=l3840 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 9180 -8480 0 0 {name=l3841 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 1190 -8860 0 0 {name=x961}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 1190 -8860 0 0 {name=x961}
 C {devices/lab_wire.sym} 1120 -8980 2 1 {name=l3842 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 1140 -8990 1 1 {name=l3843 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 1180 -8990 3 0 {name=l3844 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 1120 -8740 0 0 {name=l3845 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 1450 -8860 0 0 {name=x962}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 1450 -8860 0 0 {name=x962}
 C {devices/lab_wire.sym} 1380 -8980 2 1 {name=l3846 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 1400 -8990 1 1 {name=l3847 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 1440 -8990 3 0 {name=l3848 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 1380 -8740 0 0 {name=l3849 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 1710 -8860 0 0 {name=x963}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 1710 -8860 0 0 {name=x963}
 C {devices/lab_wire.sym} 1640 -8980 2 1 {name=l3850 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 1660 -8990 1 1 {name=l3851 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 1700 -8990 3 0 {name=l3852 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 1640 -8740 0 0 {name=l3853 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 1970 -8860 0 0 {name=x964}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 1970 -8860 0 0 {name=x964}
 C {devices/lab_wire.sym} 1900 -8980 2 1 {name=l3854 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 1920 -8990 1 1 {name=l3855 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 1960 -8990 3 0 {name=l3856 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 1900 -8740 0 0 {name=l3857 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 2230 -8860 0 0 {name=x965}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 2230 -8860 0 0 {name=x965}
 C {devices/lab_wire.sym} 2160 -8980 2 1 {name=l3858 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 2180 -8990 1 1 {name=l3859 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 2220 -8990 3 0 {name=l3860 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 2160 -8740 0 0 {name=l3861 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 2490 -8860 0 0 {name=x966}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 2490 -8860 0 0 {name=x966}
 C {devices/lab_wire.sym} 2420 -8980 2 1 {name=l3862 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 2440 -8990 1 1 {name=l3863 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 2480 -8990 3 0 {name=l3864 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 2420 -8740 0 0 {name=l3865 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 2750 -8860 0 0 {name=x967}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 2750 -8860 0 0 {name=x967}
 C {devices/lab_wire.sym} 2680 -8980 2 1 {name=l3866 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 2700 -8990 1 1 {name=l3867 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 2740 -8990 3 0 {name=l3868 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 2680 -8740 0 0 {name=l3869 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 3010 -8860 0 0 {name=x968}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 3010 -8860 0 0 {name=x968}
 C {devices/lab_wire.sym} 2940 -8980 2 1 {name=l3870 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 2960 -8990 1 1 {name=l3871 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 3000 -8990 3 0 {name=l3872 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 2940 -8740 0 0 {name=l3873 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 3270 -8860 0 0 {name=x969}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 3270 -8860 0 0 {name=x969}
 C {devices/lab_wire.sym} 3200 -8980 2 1 {name=l3874 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 3220 -8990 1 1 {name=l3875 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 3260 -8990 3 0 {name=l3876 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 3200 -8740 0 0 {name=l3877 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 3530 -8860 0 0 {name=x970}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 3530 -8860 0 0 {name=x970}
 C {devices/lab_wire.sym} 3460 -8980 2 1 {name=l3878 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 3480 -8990 1 1 {name=l3879 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 3520 -8990 3 0 {name=l3880 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 3460 -8740 0 0 {name=l3881 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 3790 -8860 0 0 {name=x971}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 3790 -8860 0 0 {name=x971}
 C {devices/lab_wire.sym} 3720 -8980 2 1 {name=l3882 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 3740 -8990 1 1 {name=l3883 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 3780 -8990 3 0 {name=l3884 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 3720 -8740 0 0 {name=l3885 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 4050 -8860 0 0 {name=x972}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 4050 -8860 0 0 {name=x972}
 C {devices/lab_wire.sym} 3980 -8980 2 1 {name=l3886 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 4000 -8990 1 1 {name=l3887 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 4040 -8990 3 0 {name=l3888 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 3980 -8740 0 0 {name=l3889 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 4310 -8860 0 0 {name=x973}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 4310 -8860 0 0 {name=x973}
 C {devices/lab_wire.sym} 4240 -8980 2 1 {name=l3890 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 4260 -8990 1 1 {name=l3891 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 4300 -8990 3 0 {name=l3892 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 4240 -8740 0 0 {name=l3893 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 4570 -8860 0 0 {name=x974}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 4570 -8860 0 0 {name=x974}
 C {devices/lab_wire.sym} 4500 -8980 2 1 {name=l3894 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 4520 -8990 1 1 {name=l3895 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 4560 -8990 3 0 {name=l3896 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 4500 -8740 0 0 {name=l3897 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 4830 -8860 0 0 {name=x975}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 4830 -8860 0 0 {name=x975}
 C {devices/lab_wire.sym} 4760 -8980 2 1 {name=l3898 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 4780 -8990 1 1 {name=l3899 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 4820 -8990 3 0 {name=l3900 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 4760 -8740 0 0 {name=l3901 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 5090 -8860 0 0 {name=x976}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 5090 -8860 0 0 {name=x976}
 C {devices/lab_wire.sym} 5020 -8980 2 1 {name=l3902 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 5040 -8990 1 1 {name=l3903 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 5080 -8990 3 0 {name=l3904 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 5020 -8740 0 0 {name=l3905 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 5350 -8860 0 0 {name=x977}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 5350 -8860 0 0 {name=x977}
 C {devices/lab_wire.sym} 5280 -8980 2 1 {name=l3906 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 5300 -8990 1 1 {name=l3907 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 5340 -8990 3 0 {name=l3908 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 5280 -8740 0 0 {name=l3909 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 5610 -8860 0 0 {name=x978}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 5610 -8860 0 0 {name=x978}
 C {devices/lab_wire.sym} 5540 -8980 2 1 {name=l3910 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 5560 -8990 1 1 {name=l3911 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 5600 -8990 3 0 {name=l3912 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 5540 -8740 0 0 {name=l3913 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 5870 -8860 0 0 {name=x979}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 5870 -8860 0 0 {name=x979}
 C {devices/lab_wire.sym} 5800 -8980 2 1 {name=l3914 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 5820 -8990 1 1 {name=l3915 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 5860 -8990 3 0 {name=l3916 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 5800 -8740 0 0 {name=l3917 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 6130 -8860 0 0 {name=x980}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 6130 -8860 0 0 {name=x980}
 C {devices/lab_wire.sym} 6060 -8980 2 1 {name=l3918 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 6080 -8990 1 1 {name=l3919 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 6120 -8990 3 0 {name=l3920 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 6060 -8740 0 0 {name=l3921 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 6390 -8860 0 0 {name=x981}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 6390 -8860 0 0 {name=x981}
 C {devices/lab_wire.sym} 6320 -8980 2 1 {name=l3922 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 6340 -8990 1 1 {name=l3923 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 6380 -8990 3 0 {name=l3924 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 6320 -8740 0 0 {name=l3925 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 6650 -8860 0 0 {name=x982}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 6650 -8860 0 0 {name=x982}
 C {devices/lab_wire.sym} 6580 -8980 2 1 {name=l3926 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 6600 -8990 1 1 {name=l3927 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 6640 -8990 3 0 {name=l3928 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 6580 -8740 0 0 {name=l3929 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 6910 -8860 0 0 {name=x983}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 6910 -8860 0 0 {name=x983}
 C {devices/lab_wire.sym} 6840 -8980 2 1 {name=l3930 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 6860 -8990 1 1 {name=l3931 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 6900 -8990 3 0 {name=l3932 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 6840 -8740 0 0 {name=l3933 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 7170 -8860 0 0 {name=x984}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 7170 -8860 0 0 {name=x984}
 C {devices/lab_wire.sym} 7100 -8980 2 1 {name=l3934 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 7120 -8990 1 1 {name=l3935 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 7160 -8990 3 0 {name=l3936 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 7100 -8740 0 0 {name=l3937 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 7430 -8860 0 0 {name=x985}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 7430 -8860 0 0 {name=x985}
 C {devices/lab_wire.sym} 7360 -8980 2 1 {name=l3938 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 7380 -8990 1 1 {name=l3939 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 7420 -8990 3 0 {name=l3940 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 7360 -8740 0 0 {name=l3941 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 7690 -8860 0 0 {name=x986}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 7690 -8860 0 0 {name=x986}
 C {devices/lab_wire.sym} 7620 -8980 2 1 {name=l3942 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 7640 -8990 1 1 {name=l3943 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 7680 -8990 3 0 {name=l3944 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 7620 -8740 0 0 {name=l3945 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 7950 -8860 0 0 {name=x987}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 7950 -8860 0 0 {name=x987}
 C {devices/lab_wire.sym} 7880 -8980 2 1 {name=l3946 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 7900 -8990 1 1 {name=l3947 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 7940 -8990 3 0 {name=l3948 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 7880 -8740 0 0 {name=l3949 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 8210 -8860 0 0 {name=x988}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 8210 -8860 0 0 {name=x988}
 C {devices/lab_wire.sym} 8140 -8980 2 1 {name=l3950 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 8160 -8990 1 1 {name=l3951 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 8200 -8990 3 0 {name=l3952 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 8140 -8740 0 0 {name=l3953 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 8470 -8860 0 0 {name=x989}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 8470 -8860 0 0 {name=x989}
 C {devices/lab_wire.sym} 8400 -8980 2 1 {name=l3954 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 8420 -8990 1 1 {name=l3955 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 8460 -8990 3 0 {name=l3956 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 8400 -8740 0 0 {name=l3957 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 8730 -8860 0 0 {name=x990}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 8730 -8860 0 0 {name=x990}
 C {devices/lab_wire.sym} 8660 -8980 2 1 {name=l3958 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 8680 -8990 1 1 {name=l3959 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 8720 -8990 3 0 {name=l3960 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 8660 -8740 0 0 {name=l3961 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 8990 -8860 0 0 {name=x991}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 8990 -8860 0 0 {name=x991}
 C {devices/lab_wire.sym} 8920 -8980 2 1 {name=l3962 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 8940 -8990 1 1 {name=l3963 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 8980 -8990 3 0 {name=l3964 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 8920 -8740 0 0 {name=l3965 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 9250 -8860 0 0 {name=x992}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 9250 -8860 0 0 {name=x992}
 C {devices/lab_wire.sym} 9180 -8980 2 1 {name=l3966 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 9200 -8990 1 1 {name=l3967 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 9240 -8990 3 0 {name=l3968 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 9180 -8740 0 0 {name=l3969 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 1190 -9120 0 0 {name=x993}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 1190 -9120 0 0 {name=x993}
 C {devices/lab_wire.sym} 1120 -9240 2 1 {name=l3970 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 1140 -9250 1 1 {name=l3971 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 1180 -9250 3 0 {name=l3972 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 1120 -9000 0 0 {name=l3973 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 1450 -9120 0 0 {name=x994}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 1450 -9120 0 0 {name=x994}
 C {devices/lab_wire.sym} 1380 -9240 2 1 {name=l3974 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 1400 -9250 1 1 {name=l3975 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 1440 -9250 3 0 {name=l3976 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 1380 -9000 0 0 {name=l3977 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 1710 -9120 0 0 {name=x995}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 1710 -9120 0 0 {name=x995}
 C {devices/lab_wire.sym} 1640 -9240 2 1 {name=l3978 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 1660 -9250 1 1 {name=l3979 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 1700 -9250 3 0 {name=l3980 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 1640 -9000 0 0 {name=l3981 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 1970 -9120 0 0 {name=x996}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 1970 -9120 0 0 {name=x996}
 C {devices/lab_wire.sym} 1900 -9240 2 1 {name=l3982 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 1920 -9250 1 1 {name=l3983 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 1960 -9250 3 0 {name=l3984 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 1900 -9000 0 0 {name=l3985 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 2230 -9120 0 0 {name=x997}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 2230 -9120 0 0 {name=x997}
 C {devices/lab_wire.sym} 2160 -9240 2 1 {name=l3986 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 2180 -9250 1 1 {name=l3987 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 2220 -9250 3 0 {name=l3988 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 2160 -9000 0 0 {name=l3989 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 2490 -9120 0 0 {name=x998}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 2490 -9120 0 0 {name=x998}
 C {devices/lab_wire.sym} 2420 -9240 2 1 {name=l3990 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 2440 -9250 1 1 {name=l3991 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 2480 -9250 3 0 {name=l3992 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 2420 -9000 0 0 {name=l3993 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 2750 -9120 0 0 {name=x999}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 2750 -9120 0 0 {name=x999}
 C {devices/lab_wire.sym} 2680 -9240 2 1 {name=l3994 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 2700 -9250 1 1 {name=l3995 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 2740 -9250 3 0 {name=l3996 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 2680 -9000 0 0 {name=l3997 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 3010 -9120 0 0 {name=x1000}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 3010 -9120 0 0 {name=x1000}
 C {devices/lab_wire.sym} 2940 -9240 2 1 {name=l3998 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 2960 -9250 1 1 {name=l3999 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 3000 -9250 3 0 {name=l4000 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 2940 -9000 0 0 {name=l4001 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 3270 -9120 0 0 {name=x1001}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 3270 -9120 0 0 {name=x1001}
 C {devices/lab_wire.sym} 3200 -9240 2 1 {name=l4002 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 3220 -9250 1 1 {name=l4003 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 3260 -9250 3 0 {name=l4004 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 3200 -9000 0 0 {name=l4005 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 3530 -9120 0 0 {name=x1002}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 3530 -9120 0 0 {name=x1002}
 C {devices/lab_wire.sym} 3460 -9240 2 1 {name=l4006 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 3480 -9250 1 1 {name=l4007 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 3520 -9250 3 0 {name=l4008 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 3460 -9000 0 0 {name=l4009 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 3790 -9120 0 0 {name=x1003}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 3790 -9120 0 0 {name=x1003}
 C {devices/lab_wire.sym} 3720 -9240 2 1 {name=l4010 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 3740 -9250 1 1 {name=l4011 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 3780 -9250 3 0 {name=l4012 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 3720 -9000 0 0 {name=l4013 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 4050 -9120 0 0 {name=x1004}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 4050 -9120 0 0 {name=x1004}
 C {devices/lab_wire.sym} 3980 -9240 2 1 {name=l4014 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 4000 -9250 1 1 {name=l4015 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 4040 -9250 3 0 {name=l4016 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 3980 -9000 0 0 {name=l4017 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 4310 -9120 0 0 {name=x1005}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 4310 -9120 0 0 {name=x1005}
 C {devices/lab_wire.sym} 4240 -9240 2 1 {name=l4018 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 4260 -9250 1 1 {name=l4019 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 4300 -9250 3 0 {name=l4020 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 4240 -9000 0 0 {name=l4021 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 4570 -9120 0 0 {name=x1006}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 4570 -9120 0 0 {name=x1006}
 C {devices/lab_wire.sym} 4500 -9240 2 1 {name=l4022 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 4520 -9250 1 1 {name=l4023 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 4560 -9250 3 0 {name=l4024 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 4500 -9000 0 0 {name=l4025 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 4830 -9120 0 0 {name=x1007}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 4830 -9120 0 0 {name=x1007}
 C {devices/lab_wire.sym} 4760 -9240 2 1 {name=l4026 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 4780 -9250 1 1 {name=l4027 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 4820 -9250 3 0 {name=l4028 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 4760 -9000 0 0 {name=l4029 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 5090 -9120 0 0 {name=x1008}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 5090 -9120 0 0 {name=x1008}
 C {devices/lab_wire.sym} 5020 -9240 2 1 {name=l4030 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 5040 -9250 1 1 {name=l4031 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 5080 -9250 3 0 {name=l4032 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 5020 -9000 0 0 {name=l4033 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 5350 -9120 0 0 {name=x1009}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 5350 -9120 0 0 {name=x1009}
 C {devices/lab_wire.sym} 5280 -9240 2 1 {name=l4034 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 5300 -9250 1 1 {name=l4035 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 5340 -9250 3 0 {name=l4036 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 5280 -9000 0 0 {name=l4037 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 5610 -9120 0 0 {name=x1010}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 5610 -9120 0 0 {name=x1010}
 C {devices/lab_wire.sym} 5540 -9240 2 1 {name=l4038 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 5560 -9250 1 1 {name=l4039 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 5600 -9250 3 0 {name=l4040 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 5540 -9000 0 0 {name=l4041 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 5870 -9120 0 0 {name=x1011}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 5870 -9120 0 0 {name=x1011}
 C {devices/lab_wire.sym} 5800 -9240 2 1 {name=l4042 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 5820 -9250 1 1 {name=l4043 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 5860 -9250 3 0 {name=l4044 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 5800 -9000 0 0 {name=l4045 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 6130 -9120 0 0 {name=x1012}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 6130 -9120 0 0 {name=x1012}
 C {devices/lab_wire.sym} 6060 -9240 2 1 {name=l4046 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 6080 -9250 1 1 {name=l4047 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 6120 -9250 3 0 {name=l4048 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 6060 -9000 0 0 {name=l4049 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 6390 -9120 0 0 {name=x1013}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 6390 -9120 0 0 {name=x1013}
 C {devices/lab_wire.sym} 6320 -9240 2 1 {name=l4050 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 6340 -9250 1 1 {name=l4051 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 6380 -9250 3 0 {name=l4052 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 6320 -9000 0 0 {name=l4053 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 6650 -9120 0 0 {name=x1014}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 6650 -9120 0 0 {name=x1014}
 C {devices/lab_wire.sym} 6580 -9240 2 1 {name=l4054 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 6600 -9250 1 1 {name=l4055 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 6640 -9250 3 0 {name=l4056 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 6580 -9000 0 0 {name=l4057 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 6910 -9120 0 0 {name=x1015}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 6910 -9120 0 0 {name=x1015}
 C {devices/lab_wire.sym} 6840 -9240 2 1 {name=l4058 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 6860 -9250 1 1 {name=l4059 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 6900 -9250 3 0 {name=l4060 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 6840 -9000 0 0 {name=l4061 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 7170 -9120 0 0 {name=x1016}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 7170 -9120 0 0 {name=x1016}
 C {devices/lab_wire.sym} 7100 -9240 2 1 {name=l4062 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 7120 -9250 1 1 {name=l4063 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 7160 -9250 3 0 {name=l4064 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 7100 -9000 0 0 {name=l4065 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 7430 -9120 0 0 {name=x1017}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 7430 -9120 0 0 {name=x1017}
 C {devices/lab_wire.sym} 7360 -9240 2 1 {name=l4066 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 7380 -9250 1 1 {name=l4067 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 7420 -9250 3 0 {name=l4068 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 7360 -9000 0 0 {name=l4069 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 7690 -9120 0 0 {name=x1018}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 7690 -9120 0 0 {name=x1018}
 C {devices/lab_wire.sym} 7620 -9240 2 1 {name=l4070 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 7640 -9250 1 1 {name=l4071 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 7680 -9250 3 0 {name=l4072 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 7620 -9000 0 0 {name=l4073 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 7950 -9120 0 0 {name=x1019}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 7950 -9120 0 0 {name=x1019}
 C {devices/lab_wire.sym} 7880 -9240 2 1 {name=l4074 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 7900 -9250 1 1 {name=l4075 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 7940 -9250 3 0 {name=l4076 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 7880 -9000 0 0 {name=l4077 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 8210 -9120 0 0 {name=x1020}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 8210 -9120 0 0 {name=x1020}
 C {devices/lab_wire.sym} 8140 -9240 2 1 {name=l4078 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 8160 -9250 1 1 {name=l4079 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 8200 -9250 3 0 {name=l4080 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 8140 -9000 0 0 {name=l4081 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 8470 -9120 0 0 {name=x1021}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 8470 -9120 0 0 {name=x1021}
 C {devices/lab_wire.sym} 8400 -9240 2 1 {name=l4082 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 8420 -9250 1 1 {name=l4083 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 8460 -9250 3 0 {name=l4084 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 8400 -9000 0 0 {name=l4085 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 8730 -9120 0 0 {name=x1022}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 8730 -9120 0 0 {name=x1022}
 C {devices/lab_wire.sym} 8660 -9240 2 1 {name=l4086 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 8680 -9250 1 1 {name=l4087 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 8720 -9250 3 0 {name=l4088 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 8660 -9000 0 0 {name=l4089 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 8990 -9120 0 0 {name=x1023}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 8990 -9120 0 0 {name=x1023}
 C {devices/lab_wire.sym} 8920 -9240 2 1 {name=l4090 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 8940 -9250 1 1 {name=l4091 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 8980 -9250 3 0 {name=l4092 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 8920 -9000 0 0 {name=l4093 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sym} 9250 -9120 0 0 {name=x1024}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sym} 9250 -9120 0 0 {name=x1024}
 C {devices/lab_wire.sym} 9180 -9240 2 1 {name=l4094 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 9200 -9250 1 1 {name=l4095 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 9240 -9250 3 0 {name=l4096 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 9180 -9000 0 0 {name=l4097 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap_drv.sym} 930 -1060 0 0 {name=x1025}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap_drv.sym} 930 -1060 0 0 {name=x1025}
 C {devices/lab_wire.sym} 860 -1180 2 1 {name=l4098 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 880 -1190 1 1 {name=l4099 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 920 -1190 3 0 {name=l4100 sig_type=std_logic lab=ctop}
@@ -71855,7 +71855,7 @@ C {devices/lab_wire.sym} 800 -1030 0 0 {name=l4102 sig_type=std_logic lab=sample
 C {devices/lab_wire.sym} 800 -1090 0 0 {name=l4105 sig_type=std_logic lab=col_n[0]}
 C {devices/lab_wire.sym} 800 -1070 0 0 {name=l4104 sig_type=std_logic lab=colon_n[0]}
 C {devices/lab_wire.sym} 800 -1050 0 0 {name=l4103 sig_type=std_logic lab=sample}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap_drv.sym} 930 -1320 0 0 {name=x1026}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap_drv.sym} 930 -1320 0 0 {name=x1026}
 C {devices/lab_wire.sym} 860 -1440 2 1 {name=l4106 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 880 -1450 1 1 {name=l4107 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 920 -1450 3 0 {name=l4108 sig_type=std_logic lab=ctop}
@@ -71864,7 +71864,7 @@ C {devices/lab_wire.sym} 800 -1290 0 0 {name=l4110 sig_type=std_logic lab=sample
 C {devices/lab_wire.sym} 800 -1350 0 0 {name=l4111 sig_type=std_logic lab=col_n[1]}
 C {devices/lab_wire.sym} 800 -1330 0 0 {name=l4112 sig_type=std_logic lab=colon_n[1]}
 C {devices/lab_wire.sym} 800 -1310 0 0 {name=l4113 sig_type=std_logic lab=sample}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap_drv.sym} 930 -1580 0 0 {name=x1027}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap_drv.sym} 930 -1580 0 0 {name=x1027}
 C {devices/lab_wire.sym} 860 -1700 2 1 {name=l4114 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 880 -1710 1 1 {name=l4115 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 920 -1710 3 0 {name=l4116 sig_type=std_logic lab=ctop}
@@ -71873,11 +71873,11 @@ C {devices/lab_wire.sym} 800 -1550 0 0 {name=l4118 sig_type=std_logic lab=sample
 C {devices/lab_wire.sym} 800 -1610 0 0 {name=l4119 sig_type=std_logic lab=col_n[2]}
 C {devices/lab_wire.sym} 800 -1590 0 0 {name=l4120 sig_type=std_logic lab=colon_n[2]}
 C {devices/lab_wire.sym} 800 -1570 0 0 {name=l4121 sig_type=std_logic lab=sample}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap_drv.sym} 930 -1840 0 0 {name=x1028}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap_drv.sym} 930 -1840 0 0 {name=x1028}
 C {devices/lab_wire.sym} 860 -1960 2 1 {name=l4122 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 880 -1970 1 1 {name=l4123 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 920 -1970 3 0 {name=l4124 sig_type=std_logic lab=ctop}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap_drv.sym} 930 -2100 0 0 {name=x1029}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap_drv.sym} 930 -2100 0 0 {name=x1029}
 C {devices/lab_wire.sym} 860 -2220 2 1 {name=l4129 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 880 -2230 1 1 {name=l4130 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 920 -2230 3 0 {name=l4131 sig_type=std_logic lab=ctop}
@@ -71887,7 +71887,7 @@ C {devices/lab_wire.sym} 800 -1870 0 0 {name=l4134 sig_type=std_logic lab=col_n[
 C {devices/lab_wire.sym} 800 -1850 0 0 {name=l4135 sig_type=std_logic lab=colon_n[3]}
 C {devices/lab_wire.sym} 800 -1830 0 0 {name=l4136 sig_type=std_logic lab=sample}
 C {devices/lab_wire.sym} 860 -1720 0 0 {name=l4137 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap_drv.sym} 930 -2360 0 0 {name=x1030}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap_drv.sym} 930 -2360 0 0 {name=x1030}
 C {devices/lab_wire.sym} 860 -2480 2 1 {name=l4138 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 880 -2490 1 1 {name=l4139 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 920 -2490 3 0 {name=l4140 sig_type=std_logic lab=ctop}
@@ -71896,7 +71896,7 @@ C {devices/lab_wire.sym} 800 -2070 0 0 {name=l4142 sig_type=std_logic lab=sample
 C {devices/lab_wire.sym} 800 -2130 0 0 {name=l4143 sig_type=std_logic lab=col_n[4]}
 C {devices/lab_wire.sym} 800 -2110 0 0 {name=l4144 sig_type=std_logic lab=colon_n[4]}
 C {devices/lab_wire.sym} 800 -2090 0 0 {name=l4145 sig_type=std_logic lab=sample}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap_drv.sym} 930 -2620 0 0 {name=x1031}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap_drv.sym} 930 -2620 0 0 {name=x1031}
 C {devices/lab_wire.sym} 860 -2740 2 1 {name=l4146 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 880 -2750 1 1 {name=l4147 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 920 -2750 3 0 {name=l4148 sig_type=std_logic lab=ctop}
@@ -71905,7 +71905,7 @@ C {devices/lab_wire.sym} 800 -2330 0 0 {name=l4150 sig_type=std_logic lab=sample
 C {devices/lab_wire.sym} 800 -2390 0 0 {name=l4151 sig_type=std_logic lab=col_n[5]}
 C {devices/lab_wire.sym} 800 -2370 0 0 {name=l4152 sig_type=std_logic lab=colon_n[5]}
 C {devices/lab_wire.sym} 800 -2350 0 0 {name=l4153 sig_type=std_logic lab=sample}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap_drv.sym} 930 -2880 0 0 {name=x1032}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap_drv.sym} 930 -2880 0 0 {name=x1032}
 C {devices/lab_wire.sym} 860 -3000 2 1 {name=l4154 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 880 -3010 1 1 {name=l4155 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 920 -3010 3 0 {name=l4156 sig_type=std_logic lab=ctop}
@@ -71914,7 +71914,7 @@ C {devices/lab_wire.sym} 800 -2590 0 0 {name=l4158 sig_type=std_logic lab=sample
 C {devices/lab_wire.sym} 800 -2650 0 0 {name=l4159 sig_type=std_logic lab=col_n[6]}
 C {devices/lab_wire.sym} 800 -2630 0 0 {name=l4160 sig_type=std_logic lab=colon_n[6]}
 C {devices/lab_wire.sym} 800 -2610 0 0 {name=l4161 sig_type=std_logic lab=sample}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap_drv.sym} 930 -3140 0 0 {name=x1033}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap_drv.sym} 930 -3140 0 0 {name=x1033}
 C {devices/lab_wire.sym} 860 -3260 2 1 {name=l4162 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 880 -3270 1 1 {name=l4163 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 920 -3270 3 0 {name=l4164 sig_type=std_logic lab=ctop}
@@ -71922,7 +71922,7 @@ C {devices/lab_wire.sym} 800 -2850 0 0 {name=l4165 sig_type=std_logic lab=sample
 C {devices/lab_wire.sym} 800 -2910 0 0 {name=l4166 sig_type=std_logic lab=col_n[7]}
 C {devices/lab_wire.sym} 800 -2890 0 0 {name=l4167 sig_type=std_logic lab=colon_n[7]}
 C {devices/lab_wire.sym} 800 -2870 0 0 {name=l4168 sig_type=std_logic lab=sample}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap_drv.sym} 930 -3400 0 0 {name=x1034}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap_drv.sym} 930 -3400 0 0 {name=x1034}
 C {devices/lab_wire.sym} 860 -3520 2 1 {name=l4169 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 880 -3530 1 1 {name=l4170 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 920 -3530 3 0 {name=l4171 sig_type=std_logic lab=ctop}
@@ -71932,7 +71932,7 @@ C {devices/lab_wire.sym} 800 -3170 0 0 {name=l4174 sig_type=std_logic lab=col_n[
 C {devices/lab_wire.sym} 800 -3150 0 0 {name=l4175 sig_type=std_logic lab=colon_n[8]}
 C {devices/lab_wire.sym} 800 -3130 0 0 {name=l4176 sig_type=std_logic lab=sample}
 C {devices/lab_wire.sym} 860 -3020 0 0 {name=l4177 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap_drv.sym} 930 -3660 0 0 {name=x1035}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap_drv.sym} 930 -3660 0 0 {name=x1035}
 C {devices/lab_wire.sym} 860 -3780 2 1 {name=l4178 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 880 -3790 1 1 {name=l4179 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 920 -3790 3 0 {name=l4180 sig_type=std_logic lab=ctop}
@@ -71941,7 +71941,7 @@ C {devices/lab_wire.sym} 800 -3370 0 0 {name=l4182 sig_type=std_logic lab=sample
 C {devices/lab_wire.sym} 800 -3430 0 0 {name=l4183 sig_type=std_logic lab=col_n[9]}
 C {devices/lab_wire.sym} 800 -3410 0 0 {name=l4184 sig_type=std_logic lab=colon_n[9]}
 C {devices/lab_wire.sym} 800 -3390 0 0 {name=l4185 sig_type=std_logic lab=sample}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap_drv.sym} 930 -3920 0 0 {name=x1036}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap_drv.sym} 930 -3920 0 0 {name=x1036}
 C {devices/lab_wire.sym} 860 -4040 2 1 {name=l4186 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 880 -4050 1 1 {name=l4187 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 920 -4050 3 0 {name=l4188 sig_type=std_logic lab=ctop}
@@ -71950,7 +71950,7 @@ C {devices/lab_wire.sym} 800 -3630 0 0 {name=l4190 sig_type=std_logic lab=sample
 C {devices/lab_wire.sym} 800 -3690 0 0 {name=l4191 sig_type=std_logic lab=col_n[10]}
 C {devices/lab_wire.sym} 800 -3670 0 0 {name=l4192 sig_type=std_logic lab=colon_n[10]}
 C {devices/lab_wire.sym} 800 -3650 0 0 {name=l4193 sig_type=std_logic lab=sample}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap_drv.sym} 930 -4180 0 0 {name=x1037}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap_drv.sym} 930 -4180 0 0 {name=x1037}
 C {devices/lab_wire.sym} 860 -4300 2 1 {name=l4194 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 880 -4310 1 1 {name=l4195 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 920 -4310 3 0 {name=l4196 sig_type=std_logic lab=ctop}
@@ -71959,7 +71959,7 @@ C {devices/lab_wire.sym} 800 -3890 0 0 {name=l4198 sig_type=std_logic lab=sample
 C {devices/lab_wire.sym} 800 -3950 0 0 {name=l4199 sig_type=std_logic lab=col_n[11]}
 C {devices/lab_wire.sym} 800 -3930 0 0 {name=l4200 sig_type=std_logic lab=colon_n[11]}
 C {devices/lab_wire.sym} 800 -3910 0 0 {name=l4201 sig_type=std_logic lab=sample}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap_drv.sym} 930 -4440 0 0 {name=x1038}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap_drv.sym} 930 -4440 0 0 {name=x1038}
 C {devices/lab_wire.sym} 860 -4560 2 1 {name=l4202 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 880 -4570 1 1 {name=l4203 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 920 -4570 3 0 {name=l4204 sig_type=std_logic lab=ctop}
@@ -71967,7 +71967,7 @@ C {devices/lab_wire.sym} 800 -4150 0 0 {name=l4205 sig_type=std_logic lab=sample
 C {devices/lab_wire.sym} 800 -4210 0 0 {name=l4206 sig_type=std_logic lab=col_n[12]}
 C {devices/lab_wire.sym} 800 -4190 0 0 {name=l4207 sig_type=std_logic lab=colon_n[12]}
 C {devices/lab_wire.sym} 800 -4170 0 0 {name=l4208 sig_type=std_logic lab=sample}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap_drv.sym} 930 -4700 0 0 {name=x1039}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap_drv.sym} 930 -4700 0 0 {name=x1039}
 C {devices/lab_wire.sym} 860 -4820 2 1 {name=l4209 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 880 -4830 1 1 {name=l4210 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 920 -4830 3 0 {name=l4211 sig_type=std_logic lab=ctop}
@@ -71977,7 +71977,7 @@ C {devices/lab_wire.sym} 800 -4470 0 0 {name=l4214 sig_type=std_logic lab=col_n[
 C {devices/lab_wire.sym} 800 -4450 0 0 {name=l4215 sig_type=std_logic lab=colon_n[13]}
 C {devices/lab_wire.sym} 800 -4430 0 0 {name=l4216 sig_type=std_logic lab=sample}
 C {devices/lab_wire.sym} 860 -4320 0 0 {name=l4217 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap_drv.sym} 930 -4960 0 0 {name=x1040}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap_drv.sym} 930 -4960 0 0 {name=x1040}
 C {devices/lab_wire.sym} 860 -5080 2 1 {name=l4218 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 880 -5090 1 1 {name=l4219 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 920 -5090 3 0 {name=l4220 sig_type=std_logic lab=ctop}
@@ -71986,7 +71986,7 @@ C {devices/lab_wire.sym} 800 -4670 0 0 {name=l4222 sig_type=std_logic lab=sample
 C {devices/lab_wire.sym} 800 -4730 0 0 {name=l4223 sig_type=std_logic lab=col_n[14]}
 C {devices/lab_wire.sym} 800 -4710 0 0 {name=l4224 sig_type=std_logic lab=colon_n[14]}
 C {devices/lab_wire.sym} 800 -4690 0 0 {name=l4225 sig_type=std_logic lab=sample}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap_drv.sym} 930 -5220 0 0 {name=x1041}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap_drv.sym} 930 -5220 0 0 {name=x1041}
 C {devices/lab_wire.sym} 860 -5340 2 1 {name=l4226 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 880 -5350 1 1 {name=l4227 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 920 -5350 3 0 {name=l4228 sig_type=std_logic lab=ctop}
@@ -71995,7 +71995,7 @@ C {devices/lab_wire.sym} 800 -4930 0 0 {name=l4230 sig_type=std_logic lab=sample
 C {devices/lab_wire.sym} 800 -4990 0 0 {name=l4231 sig_type=std_logic lab=col_n[15]}
 C {devices/lab_wire.sym} 800 -4970 0 0 {name=l4232 sig_type=std_logic lab=colon_n[15]}
 C {devices/lab_wire.sym} 800 -4950 0 0 {name=l4233 sig_type=std_logic lab=sample}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap_drv.sym} 930 -5480 0 0 {name=x1042}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap_drv.sym} 930 -5480 0 0 {name=x1042}
 C {devices/lab_wire.sym} 860 -5600 2 1 {name=l4234 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 880 -5610 1 1 {name=l4235 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 920 -5610 3 0 {name=l4236 sig_type=std_logic lab=ctop}
@@ -72004,7 +72004,7 @@ C {devices/lab_wire.sym} 800 -5190 0 0 {name=l4238 sig_type=std_logic lab=sample
 C {devices/lab_wire.sym} 800 -5250 0 0 {name=l4239 sig_type=std_logic lab=col_n[16]}
 C {devices/lab_wire.sym} 800 -5230 0 0 {name=l4240 sig_type=std_logic lab=colon_n[16]}
 C {devices/lab_wire.sym} 800 -5210 0 0 {name=l4241 sig_type=std_logic lab=sample}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap_drv.sym} 930 -5740 0 0 {name=x1043}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap_drv.sym} 930 -5740 0 0 {name=x1043}
 C {devices/lab_wire.sym} 860 -5860 2 1 {name=l4242 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 880 -5870 1 1 {name=l4243 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 920 -5870 3 0 {name=l4244 sig_type=std_logic lab=ctop}
@@ -72012,7 +72012,7 @@ C {devices/lab_wire.sym} 800 -5450 0 0 {name=l4245 sig_type=std_logic lab=sample
 C {devices/lab_wire.sym} 800 -5510 0 0 {name=l4246 sig_type=std_logic lab=col_n[17]}
 C {devices/lab_wire.sym} 800 -5490 0 0 {name=l4247 sig_type=std_logic lab=colon_n[17]}
 C {devices/lab_wire.sym} 800 -5470 0 0 {name=l4248 sig_type=std_logic lab=sample}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap_drv.sym} 930 -6000 0 0 {name=x1044}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap_drv.sym} 930 -6000 0 0 {name=x1044}
 C {devices/lab_wire.sym} 860 -6120 2 1 {name=l4249 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 880 -6130 1 1 {name=l4250 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 920 -6130 3 0 {name=l4251 sig_type=std_logic lab=ctop}
@@ -72022,7 +72022,7 @@ C {devices/lab_wire.sym} 800 -5770 0 0 {name=l4254 sig_type=std_logic lab=col_n[
 C {devices/lab_wire.sym} 800 -5750 0 0 {name=l4255 sig_type=std_logic lab=colon_n[18]}
 C {devices/lab_wire.sym} 800 -5730 0 0 {name=l4256 sig_type=std_logic lab=sample}
 C {devices/lab_wire.sym} 860 -5620 0 0 {name=l4257 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap_drv.sym} 930 -6260 0 0 {name=x1045}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap_drv.sym} 930 -6260 0 0 {name=x1045}
 C {devices/lab_wire.sym} 860 -6380 2 1 {name=l4258 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 880 -6390 1 1 {name=l4259 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 920 -6390 3 0 {name=l4260 sig_type=std_logic lab=ctop}
@@ -72031,7 +72031,7 @@ C {devices/lab_wire.sym} 800 -5970 0 0 {name=l4262 sig_type=std_logic lab=sample
 C {devices/lab_wire.sym} 800 -6030 0 0 {name=l4263 sig_type=std_logic lab=col_n[19]}
 C {devices/lab_wire.sym} 800 -6010 0 0 {name=l4264 sig_type=std_logic lab=colon_n[19]}
 C {devices/lab_wire.sym} 800 -5990 0 0 {name=l4265 sig_type=std_logic lab=sample}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap_drv.sym} 930 -6520 0 0 {name=x1046}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap_drv.sym} 930 -6520 0 0 {name=x1046}
 C {devices/lab_wire.sym} 860 -6640 2 1 {name=l4266 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 880 -6650 1 1 {name=l4267 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 920 -6650 3 0 {name=l4268 sig_type=std_logic lab=ctop}
@@ -72040,7 +72040,7 @@ C {devices/lab_wire.sym} 800 -6230 0 0 {name=l4270 sig_type=std_logic lab=sample
 C {devices/lab_wire.sym} 800 -6290 0 0 {name=l4271 sig_type=std_logic lab=col_n[20]}
 C {devices/lab_wire.sym} 800 -6270 0 0 {name=l4272 sig_type=std_logic lab=colon_n[20]}
 C {devices/lab_wire.sym} 800 -6250 0 0 {name=l4273 sig_type=std_logic lab=sample}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap_drv.sym} 930 -6780 0 0 {name=x1047}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap_drv.sym} 930 -6780 0 0 {name=x1047}
 C {devices/lab_wire.sym} 860 -6900 2 1 {name=l4274 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 880 -6910 1 1 {name=l4275 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 920 -6910 3 0 {name=l4276 sig_type=std_logic lab=ctop}
@@ -72049,7 +72049,7 @@ C {devices/lab_wire.sym} 800 -6490 0 0 {name=l4278 sig_type=std_logic lab=sample
 C {devices/lab_wire.sym} 800 -6550 0 0 {name=l4279 sig_type=std_logic lab=col_n[21]}
 C {devices/lab_wire.sym} 800 -6530 0 0 {name=l4280 sig_type=std_logic lab=colon_n[21]}
 C {devices/lab_wire.sym} 800 -6510 0 0 {name=l4281 sig_type=std_logic lab=sample}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap_drv.sym} 930 -7040 0 0 {name=x1048}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap_drv.sym} 930 -7040 0 0 {name=x1048}
 C {devices/lab_wire.sym} 860 -7160 2 1 {name=l4282 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 880 -7170 1 1 {name=l4283 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 920 -7170 3 0 {name=l4284 sig_type=std_logic lab=ctop}
@@ -72057,7 +72057,7 @@ C {devices/lab_wire.sym} 800 -6750 0 0 {name=l4285 sig_type=std_logic lab=sample
 C {devices/lab_wire.sym} 800 -6810 0 0 {name=l4286 sig_type=std_logic lab=col_n[22]}
 C {devices/lab_wire.sym} 800 -6790 0 0 {name=l4287 sig_type=std_logic lab=colon_n[22]}
 C {devices/lab_wire.sym} 800 -6770 0 0 {name=l4288 sig_type=std_logic lab=sample}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap_drv.sym} 930 -7300 0 0 {name=x1049}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap_drv.sym} 930 -7300 0 0 {name=x1049}
 C {devices/lab_wire.sym} 860 -7420 2 1 {name=l4289 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 880 -7430 1 1 {name=l4290 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 920 -7430 3 0 {name=l4291 sig_type=std_logic lab=ctop}
@@ -72067,7 +72067,7 @@ C {devices/lab_wire.sym} 800 -7070 0 0 {name=l4294 sig_type=std_logic lab=col_n[
 C {devices/lab_wire.sym} 800 -7050 0 0 {name=l4295 sig_type=std_logic lab=colon_n[23]}
 C {devices/lab_wire.sym} 800 -7030 0 0 {name=l4296 sig_type=std_logic lab=sample}
 C {devices/lab_wire.sym} 860 -6920 0 0 {name=l4297 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap_drv.sym} 930 -7560 0 0 {name=x1050}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap_drv.sym} 930 -7560 0 0 {name=x1050}
 C {devices/lab_wire.sym} 860 -7680 2 1 {name=l4298 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 880 -7690 1 1 {name=l4299 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 920 -7690 3 0 {name=l4300 sig_type=std_logic lab=ctop}
@@ -72076,7 +72076,7 @@ C {devices/lab_wire.sym} 800 -7270 0 0 {name=l4302 sig_type=std_logic lab=sample
 C {devices/lab_wire.sym} 800 -7330 0 0 {name=l4303 sig_type=std_logic lab=col_n[24]}
 C {devices/lab_wire.sym} 800 -7310 0 0 {name=l4304 sig_type=std_logic lab=colon_n[24]}
 C {devices/lab_wire.sym} 800 -7290 0 0 {name=l4305 sig_type=std_logic lab=sample}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap_drv.sym} 930 -7820 0 0 {name=x1051}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap_drv.sym} 930 -7820 0 0 {name=x1051}
 C {devices/lab_wire.sym} 860 -7940 2 1 {name=l4306 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 880 -7950 1 1 {name=l4307 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 920 -7950 3 0 {name=l4308 sig_type=std_logic lab=ctop}
@@ -72085,7 +72085,7 @@ C {devices/lab_wire.sym} 800 -7530 0 0 {name=l4310 sig_type=std_logic lab=sample
 C {devices/lab_wire.sym} 800 -7590 0 0 {name=l4311 sig_type=std_logic lab=col_n[25]}
 C {devices/lab_wire.sym} 800 -7570 0 0 {name=l4312 sig_type=std_logic lab=colon_n[25]}
 C {devices/lab_wire.sym} 800 -7550 0 0 {name=l4313 sig_type=std_logic lab=sample}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap_drv.sym} 930 -8080 0 0 {name=x1052}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap_drv.sym} 930 -8080 0 0 {name=x1052}
 C {devices/lab_wire.sym} 860 -8200 2 1 {name=l4314 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 880 -8210 1 1 {name=l4315 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 920 -8210 3 0 {name=l4316 sig_type=std_logic lab=ctop}
@@ -72094,7 +72094,7 @@ C {devices/lab_wire.sym} 800 -7790 0 0 {name=l4318 sig_type=std_logic lab=sample
 C {devices/lab_wire.sym} 800 -7850 0 0 {name=l4319 sig_type=std_logic lab=col_n[26]}
 C {devices/lab_wire.sym} 800 -7830 0 0 {name=l4320 sig_type=std_logic lab=colon_n[26]}
 C {devices/lab_wire.sym} 800 -7810 0 0 {name=l4321 sig_type=std_logic lab=sample}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap_drv.sym} 930 -8340 0 0 {name=x1053}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap_drv.sym} 930 -8340 0 0 {name=x1053}
 C {devices/lab_wire.sym} 860 -8460 2 1 {name=l4322 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 880 -8470 1 1 {name=l4323 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 920 -8470 3 0 {name=l4324 sig_type=std_logic lab=ctop}
@@ -72102,7 +72102,7 @@ C {devices/lab_wire.sym} 800 -8050 0 0 {name=l4325 sig_type=std_logic lab=sample
 C {devices/lab_wire.sym} 800 -8110 0 0 {name=l4326 sig_type=std_logic lab=col_n[27]}
 C {devices/lab_wire.sym} 800 -8090 0 0 {name=l4327 sig_type=std_logic lab=colon_n[27]}
 C {devices/lab_wire.sym} 800 -8070 0 0 {name=l4328 sig_type=std_logic lab=sample}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap_drv.sym} 930 -8600 0 0 {name=x1054}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap_drv.sym} 930 -8600 0 0 {name=x1054}
 C {devices/lab_wire.sym} 860 -8720 2 1 {name=l4329 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 880 -8730 1 1 {name=l4330 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 920 -8730 3 0 {name=l4331 sig_type=std_logic lab=ctop}
@@ -72112,7 +72112,7 @@ C {devices/lab_wire.sym} 800 -8370 0 0 {name=l4334 sig_type=std_logic lab=col_n[
 C {devices/lab_wire.sym} 800 -8350 0 0 {name=l4335 sig_type=std_logic lab=colon_n[28]}
 C {devices/lab_wire.sym} 800 -8330 0 0 {name=l4336 sig_type=std_logic lab=sample}
 C {devices/lab_wire.sym} 860 -8220 0 0 {name=l4337 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap_drv.sym} 930 -8860 0 0 {name=x1055}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap_drv.sym} 930 -8860 0 0 {name=x1055}
 C {devices/lab_wire.sym} 860 -8980 2 1 {name=l4338 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 880 -8990 1 1 {name=l4339 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 920 -8990 3 0 {name=l4340 sig_type=std_logic lab=ctop}
@@ -72121,7 +72121,7 @@ C {devices/lab_wire.sym} 800 -8570 0 0 {name=l4342 sig_type=std_logic lab=sample
 C {devices/lab_wire.sym} 800 -8630 0 0 {name=l4343 sig_type=std_logic lab=col_n[29]}
 C {devices/lab_wire.sym} 800 -8610 0 0 {name=l4344 sig_type=std_logic lab=colon_n[29]}
 C {devices/lab_wire.sym} 800 -8590 0 0 {name=l4345 sig_type=std_logic lab=sample}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap_drv.sym} 930 -9120 0 0 {name=x1056}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap_drv.sym} 930 -9120 0 0 {name=x1056}
 C {devices/lab_wire.sym} 860 -9240 2 1 {name=l4346 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 880 -9250 1 1 {name=l4347 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 920 -9250 3 0 {name=l4348 sig_type=std_logic lab=ctop}
@@ -72130,18 +72130,18 @@ C {devices/lab_wire.sym} 800 -8830 0 0 {name=l4350 sig_type=std_logic lab=sample
 C {devices/lab_wire.sym} 800 -8890 0 0 {name=l4351 sig_type=std_logic lab=col_n[30]}
 C {devices/lab_wire.sym} 800 -8870 0 0 {name=l4352 sig_type=std_logic lab=colon_n[30]}
 C {devices/lab_wire.sym} 800 -8850 0 0 {name=l4353 sig_type=std_logic lab=sample}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap_dummy.sym} 930 -800 0 0 {name=x1057}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap_dummy.sym} 930 -800 0 0 {name=x1057}
 C {devices/lab_wire.sym} 860 -680 0 0 {name=l4354 sig_type=std_logic lab=VSS}
 C {devices/lab_wire.sym} 860 -920 2 1 {name=l4355 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 880 -930 1 1 {name=l4356 sig_type=std_logic lab=vcom}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap_dummy.sym} 1190 -800 0 0 {name=x1058}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap_dummy.sym} 1190 -800 0 0 {name=x1058}
 C {devices/lab_wire.sym} 1120 -680 0 0 {name=l4359 sig_type=std_logic lab=VSS}
 C {devices/lab_wire.sym} 1120 -920 2 1 {name=l4360 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 1140 -930 1 1 {name=l4361 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 1200 -670 3 0 {name=l4363 sig_type=std_logic lab=row_n[0]}
 C {devices/lab_wire.sym} 920 -930 3 0 {name=l4357 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 1180 -930 3 0 {name=l4362 sig_type=std_logic lab=ctop}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap_dummy.sym} 1450 -800 0 0 {name=x1059}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap_dummy.sym} 1450 -800 0 0 {name=x1059}
 C {devices/lab_wire.sym} 1380 -680 0 0 {name=l4364 sig_type=std_logic lab=VSS}
 C {devices/lab_wire.sym} 1380 -920 2 1 {name=l4365 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 1400 -930 1 1 {name=l4366 sig_type=std_logic lab=vcom}
@@ -72152,43 +72152,43 @@ C {devices/lab_wire.sym} 1660 -930 1 1 {name=l4370 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 1720 -670 3 0 {name=l4371 sig_type=std_logic lab=row_n[2]}
 C {devices/lab_wire.sym} 1440 -930 3 0 {name=l4372 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 1700 -930 3 0 {name=l4373 sig_type=std_logic lab=ctop}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap_dummy.sym} 1970 -800 0 0 {name=x1061}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap_dummy.sym} 1970 -800 0 0 {name=x1061}
 C {devices/lab_wire.sym} 1900 -680 0 0 {name=l4374 sig_type=std_logic lab=VSS}
 C {devices/lab_wire.sym} 1900 -920 2 1 {name=l4375 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 1920 -930 1 1 {name=l4376 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 1980 -670 3 0 {name=l4377 sig_type=std_logic lab=row_n[3]}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap_dummy.sym} 2230 -800 0 0 {name=x1062}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap_dummy.sym} 2230 -800 0 0 {name=x1062}
 C {devices/lab_wire.sym} 2160 -680 0 0 {name=l4378 sig_type=std_logic lab=VSS}
 C {devices/lab_wire.sym} 2160 -920 2 1 {name=l4379 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 2180 -930 1 1 {name=l4380 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 2240 -670 3 0 {name=l4381 sig_type=std_logic lab=row_n[4]}
 C {devices/lab_wire.sym} 1960 -930 3 0 {name=l4382 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 2220 -930 3 0 {name=l4383 sig_type=std_logic lab=ctop}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap_dummy.sym} 2490 -800 0 0 {name=x1063}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap_dummy.sym} 2490 -800 0 0 {name=x1063}
 C {devices/lab_wire.sym} 2420 -680 0 0 {name=l4384 sig_type=std_logic lab=VSS}
 C {devices/lab_wire.sym} 2420 -920 2 1 {name=l4385 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 2440 -930 1 1 {name=l4386 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 2500 -670 3 0 {name=l4387 sig_type=std_logic lab=row_n[5]}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap_dummy.sym} 2750 -800 0 0 {name=x1064}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap_dummy.sym} 2750 -800 0 0 {name=x1064}
 C {devices/lab_wire.sym} 2680 -680 0 0 {name=l4388 sig_type=std_logic lab=VSS}
 C {devices/lab_wire.sym} 2680 -920 2 1 {name=l4389 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 2700 -930 1 1 {name=l4390 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 2760 -670 3 0 {name=l4391 sig_type=std_logic lab=row_n[6]}
 C {devices/lab_wire.sym} 2480 -930 3 0 {name=l4392 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 2740 -930 3 0 {name=l4393 sig_type=std_logic lab=ctop}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap_dummy.sym} 3010 -800 0 0 {name=x1065}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap_dummy.sym} 3010 -800 0 0 {name=x1065}
 C {devices/lab_wire.sym} 2940 -680 0 0 {name=l4394 sig_type=std_logic lab=VSS}
 C {devices/lab_wire.sym} 2940 -920 2 1 {name=l4395 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 2960 -930 1 1 {name=l4396 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 3020 -670 3 0 {name=l4397 sig_type=std_logic lab=row_n[7]}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap_dummy.sym} 3270 -800 0 0 {name=x1066}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap_dummy.sym} 3270 -800 0 0 {name=x1066}
 C {devices/lab_wire.sym} 3200 -680 0 0 {name=l4398 sig_type=std_logic lab=VSS}
 C {devices/lab_wire.sym} 3200 -920 2 1 {name=l4399 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 3220 -930 1 1 {name=l4400 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 3280 -670 3 0 {name=l4401 sig_type=std_logic lab=row_n[8]}
 C {devices/lab_wire.sym} 3000 -930 3 0 {name=l4402 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 3260 -930 3 0 {name=l4403 sig_type=std_logic lab=ctop}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap_dummy.sym} 3530 -800 0 0 {name=x1067}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap_dummy.sym} 3530 -800 0 0 {name=x1067}
 C {devices/lab_wire.sym} 3460 -680 0 0 {name=l4404 sig_type=std_logic lab=VSS}
 C {devices/lab_wire.sym} 3460 -920 2 1 {name=l4405 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 3480 -930 1 1 {name=l4406 sig_type=std_logic lab=vcom}
@@ -72199,43 +72199,43 @@ C {devices/lab_wire.sym} 3740 -930 1 1 {name=l4410 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 3800 -670 3 0 {name=l4411 sig_type=std_logic lab=row_n[10]}
 C {devices/lab_wire.sym} 3520 -930 3 0 {name=l4412 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 3780 -930 3 0 {name=l4413 sig_type=std_logic lab=ctop}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap_dummy.sym} 4050 -800 0 0 {name=x1069}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap_dummy.sym} 4050 -800 0 0 {name=x1069}
 C {devices/lab_wire.sym} 3980 -680 0 0 {name=l4414 sig_type=std_logic lab=VSS}
 C {devices/lab_wire.sym} 3980 -920 2 1 {name=l4415 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 4000 -930 1 1 {name=l4416 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 4060 -670 3 0 {name=l4417 sig_type=std_logic lab=row_n[11]}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap_dummy.sym} 4310 -800 0 0 {name=x1070}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap_dummy.sym} 4310 -800 0 0 {name=x1070}
 C {devices/lab_wire.sym} 4240 -680 0 0 {name=l4418 sig_type=std_logic lab=VSS}
 C {devices/lab_wire.sym} 4240 -920 2 1 {name=l4419 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 4260 -930 1 1 {name=l4420 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 4320 -670 3 0 {name=l4421 sig_type=std_logic lab=row_n[12]}
 C {devices/lab_wire.sym} 4040 -930 3 0 {name=l4422 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 4300 -930 3 0 {name=l4423 sig_type=std_logic lab=ctop}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap_dummy.sym} 4570 -800 0 0 {name=x1071}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap_dummy.sym} 4570 -800 0 0 {name=x1071}
 C {devices/lab_wire.sym} 4500 -680 0 0 {name=l4424 sig_type=std_logic lab=VSS}
 C {devices/lab_wire.sym} 4500 -920 2 1 {name=l4425 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 4520 -930 1 1 {name=l4426 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 4580 -670 3 0 {name=l4427 sig_type=std_logic lab=row_n[13]}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap_dummy.sym} 4830 -800 0 0 {name=x1072}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap_dummy.sym} 4830 -800 0 0 {name=x1072}
 C {devices/lab_wire.sym} 4760 -680 0 0 {name=l4428 sig_type=std_logic lab=VSS}
 C {devices/lab_wire.sym} 4760 -920 2 1 {name=l4429 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 4780 -930 1 1 {name=l4430 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 4840 -670 3 0 {name=l4431 sig_type=std_logic lab=row_n[14]}
 C {devices/lab_wire.sym} 4560 -930 3 0 {name=l4432 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 4820 -930 3 0 {name=l4433 sig_type=std_logic lab=ctop}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap_dummy.sym} 5090 -800 0 0 {name=x1073}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap_dummy.sym} 5090 -800 0 0 {name=x1073}
 C {devices/lab_wire.sym} 5020 -680 0 0 {name=l4434 sig_type=std_logic lab=VSS}
 C {devices/lab_wire.sym} 5020 -920 2 1 {name=l4435 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 5040 -930 1 1 {name=l4436 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 5100 -670 3 0 {name=l4437 sig_type=std_logic lab=row_n[15]}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap_dummy.sym} 5350 -800 0 0 {name=x1074}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap_dummy.sym} 5350 -800 0 0 {name=x1074}
 C {devices/lab_wire.sym} 5280 -680 0 0 {name=l4438 sig_type=std_logic lab=VSS}
 C {devices/lab_wire.sym} 5280 -920 2 1 {name=l4439 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 5300 -930 1 1 {name=l4440 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 5360 -670 3 0 {name=l4441 sig_type=std_logic lab=row_n[16]}
 C {devices/lab_wire.sym} 5080 -930 3 0 {name=l4442 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 5340 -930 3 0 {name=l4443 sig_type=std_logic lab=ctop}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap_dummy.sym} 5610 -800 0 0 {name=x1075}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap_dummy.sym} 5610 -800 0 0 {name=x1075}
 C {devices/lab_wire.sym} 5540 -680 0 0 {name=l4444 sig_type=std_logic lab=VSS}
 C {devices/lab_wire.sym} 5540 -920 2 1 {name=l4445 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 5560 -930 1 1 {name=l4446 sig_type=std_logic lab=vcom}
@@ -72246,43 +72246,43 @@ C {devices/lab_wire.sym} 5820 -930 1 1 {name=l4450 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 5880 -670 3 0 {name=l4451 sig_type=std_logic lab=row_n[18]}
 C {devices/lab_wire.sym} 5600 -930 3 0 {name=l4452 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 5860 -930 3 0 {name=l4453 sig_type=std_logic lab=ctop}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap_dummy.sym} 6130 -800 0 0 {name=x1077}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap_dummy.sym} 6130 -800 0 0 {name=x1077}
 C {devices/lab_wire.sym} 6060 -680 0 0 {name=l4454 sig_type=std_logic lab=VSS}
 C {devices/lab_wire.sym} 6060 -920 2 1 {name=l4455 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 6080 -930 1 1 {name=l4456 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 6140 -670 3 0 {name=l4457 sig_type=std_logic lab=row_n[19]}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap_dummy.sym} 6390 -800 0 0 {name=x1078}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap_dummy.sym} 6390 -800 0 0 {name=x1078}
 C {devices/lab_wire.sym} 6320 -680 0 0 {name=l4458 sig_type=std_logic lab=VSS}
 C {devices/lab_wire.sym} 6320 -920 2 1 {name=l4459 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 6340 -930 1 1 {name=l4460 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 6400 -670 3 0 {name=l4461 sig_type=std_logic lab=row_n[20]}
 C {devices/lab_wire.sym} 6120 -930 3 0 {name=l4462 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 6380 -930 3 0 {name=l4463 sig_type=std_logic lab=ctop}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap_dummy.sym} 6650 -800 0 0 {name=x1079}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap_dummy.sym} 6650 -800 0 0 {name=x1079}
 C {devices/lab_wire.sym} 6580 -680 0 0 {name=l4464 sig_type=std_logic lab=VSS}
 C {devices/lab_wire.sym} 6580 -920 2 1 {name=l4465 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 6600 -930 1 1 {name=l4466 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 6660 -670 3 0 {name=l4467 sig_type=std_logic lab=row_n[21]}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap_dummy.sym} 6910 -800 0 0 {name=x1080}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap_dummy.sym} 6910 -800 0 0 {name=x1080}
 C {devices/lab_wire.sym} 6840 -680 0 0 {name=l4468 sig_type=std_logic lab=VSS}
 C {devices/lab_wire.sym} 6840 -920 2 1 {name=l4469 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 6860 -930 1 1 {name=l4470 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 6920 -670 3 0 {name=l4471 sig_type=std_logic lab=row_n[22]}
 C {devices/lab_wire.sym} 6640 -930 3 0 {name=l4472 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 6900 -930 3 0 {name=l4473 sig_type=std_logic lab=ctop}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap_dummy.sym} 7170 -800 0 0 {name=x1081}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap_dummy.sym} 7170 -800 0 0 {name=x1081}
 C {devices/lab_wire.sym} 7100 -680 0 0 {name=l4474 sig_type=std_logic lab=VSS}
 C {devices/lab_wire.sym} 7100 -920 2 1 {name=l4475 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 7120 -930 1 1 {name=l4476 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 7180 -670 3 0 {name=l4477 sig_type=std_logic lab=row_n[23]}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap_dummy.sym} 7430 -800 0 0 {name=x1082}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap_dummy.sym} 7430 -800 0 0 {name=x1082}
 C {devices/lab_wire.sym} 7360 -680 0 0 {name=l4478 sig_type=std_logic lab=VSS}
 C {devices/lab_wire.sym} 7360 -920 2 1 {name=l4479 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 7380 -930 1 1 {name=l4480 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 7440 -670 3 0 {name=l4481 sig_type=std_logic lab=row_n[24]}
 C {devices/lab_wire.sym} 7160 -930 3 0 {name=l4482 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 7420 -930 3 0 {name=l4483 sig_type=std_logic lab=ctop}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap_dummy.sym} 7690 -800 0 0 {name=x1083}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap_dummy.sym} 7690 -800 0 0 {name=x1083}
 C {devices/lab_wire.sym} 7620 -680 0 0 {name=l4484 sig_type=std_logic lab=VSS}
 C {devices/lab_wire.sym} 7620 -920 2 1 {name=l4485 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 7640 -930 1 1 {name=l4486 sig_type=std_logic lab=vcom}
@@ -72293,337 +72293,337 @@ C {devices/lab_wire.sym} 7900 -930 1 1 {name=l4490 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 7960 -670 3 0 {name=l4491 sig_type=std_logic lab=row_n[26]}
 C {devices/lab_wire.sym} 7680 -930 3 0 {name=l4492 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 7940 -930 3 0 {name=l4493 sig_type=std_logic lab=ctop}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap_dummy.sym} 8210 -800 0 0 {name=x1085}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap_dummy.sym} 8210 -800 0 0 {name=x1085}
 C {devices/lab_wire.sym} 8140 -680 0 0 {name=l4494 sig_type=std_logic lab=VSS}
 C {devices/lab_wire.sym} 8140 -920 2 1 {name=l4495 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 8160 -930 1 1 {name=l4496 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 8220 -670 3 0 {name=l4497 sig_type=std_logic lab=row_n[27]}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap_dummy.sym} 8470 -800 0 0 {name=x1086}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap_dummy.sym} 8470 -800 0 0 {name=x1086}
 C {devices/lab_wire.sym} 8400 -680 0 0 {name=l4498 sig_type=std_logic lab=VSS}
 C {devices/lab_wire.sym} 8400 -920 2 1 {name=l4499 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 8420 -930 1 1 {name=l4500 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 8480 -670 3 0 {name=l4501 sig_type=std_logic lab=row_n[28]}
 C {devices/lab_wire.sym} 8200 -930 3 0 {name=l4502 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 8460 -930 3 0 {name=l4503 sig_type=std_logic lab=ctop}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap_dummy.sym} 8730 -800 0 0 {name=x1087}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap_dummy.sym} 8730 -800 0 0 {name=x1087}
 C {devices/lab_wire.sym} 8660 -680 0 0 {name=l4504 sig_type=std_logic lab=VSS}
 C {devices/lab_wire.sym} 8660 -920 2 1 {name=l4505 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 8680 -930 1 1 {name=l4506 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 8740 -670 3 0 {name=l4507 sig_type=std_logic lab=row_n[29]}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap_dummy.sym} 8990 -800 0 0 {name=x1088}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap_dummy.sym} 8990 -800 0 0 {name=x1088}
 C {devices/lab_wire.sym} 8920 -680 0 0 {name=l4508 sig_type=std_logic lab=VSS}
 C {devices/lab_wire.sym} 8920 -920 2 1 {name=l4509 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 8940 -930 1 1 {name=l4510 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 9000 -670 3 0 {name=l4511 sig_type=std_logic lab=row_n[30]}
 C {devices/lab_wire.sym} 8720 -930 3 0 {name=l4512 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 8980 -930 3 0 {name=l4513 sig_type=std_logic lab=ctop}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap_dummy.sym} 9250 -800 0 0 {name=x1089}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap_dummy.sym} 9250 -800 0 0 {name=x1089}
 C {devices/lab_wire.sym} 9180 -680 0 0 {name=l4514 sig_type=std_logic lab=VSS}
 C {devices/lab_wire.sym} 9180 -920 2 1 {name=l4515 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 9200 -930 1 1 {name=l4516 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 9260 -670 3 0 {name=l4517 sig_type=std_logic lab=row_n[31]}
 C {devices/lab_wire.sym} 9240 -930 3 0 {name=l4518 sig_type=std_logic lab=ctop}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap_dummy.sym} 9510 -800 0 0 {name=x1090}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap_dummy.sym} 9510 -800 0 0 {name=x1090}
 C {devices/lab_wire.sym} 9440 -680 0 0 {name=l4519 sig_type=std_logic lab=VSS}
 C {devices/lab_wire.sym} 9440 -920 2 1 {name=l4520 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 9460 -930 1 1 {name=l4521 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 9520 -670 3 0 {name=l4522 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 9500 -930 3 0 {name=l4523 sig_type=std_logic lab=ctop}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap_dummy.sym} 930 -9380 0 0 {name=x1091}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap_dummy.sym} 930 -9380 0 0 {name=x1091}
 C {devices/lab_wire.sym} 860 -9260 0 0 {name=l4524 sig_type=std_logic lab=VSS}
 C {devices/lab_wire.sym} 860 -9500 2 1 {name=l4525 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 880 -9510 1 1 {name=l4526 sig_type=std_logic lab=vcom}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap_dummy.sym} 1190 -9380 0 0 {name=x1092}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap_dummy.sym} 1190 -9380 0 0 {name=x1092}
 C {devices/lab_wire.sym} 1120 -9260 0 0 {name=l4528 sig_type=std_logic lab=VSS}
 C {devices/lab_wire.sym} 1120 -9500 2 1 {name=l4529 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 1140 -9510 1 1 {name=l4530 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 920 -9510 3 0 {name=l4532 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 1180 -9510 3 0 {name=l4533 sig_type=std_logic lab=ctop}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap_dummy.sym} 1450 -9380 0 0 {name=x1093}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap_dummy.sym} 1450 -9380 0 0 {name=x1093}
 C {devices/lab_wire.sym} 1380 -9260 0 0 {name=l4534 sig_type=std_logic lab=VSS}
 C {devices/lab_wire.sym} 1380 -9500 2 1 {name=l4535 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 1400 -9510 1 1 {name=l4536 sig_type=std_logic lab=vcom}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap_dummy.sym} 1710 -9380 0 0 {name=x1094}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap_dummy.sym} 1710 -9380 0 0 {name=x1094}
 C {devices/lab_wire.sym} 1640 -9260 0 0 {name=l4538 sig_type=std_logic lab=VSS}
 C {devices/lab_wire.sym} 1640 -9500 2 1 {name=l4539 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 1660 -9510 1 1 {name=l4540 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 1440 -9510 3 0 {name=l4542 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 1700 -9510 3 0 {name=l4543 sig_type=std_logic lab=ctop}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap_dummy.sym} 1970 -9380 0 0 {name=x1095}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap_dummy.sym} 1970 -9380 0 0 {name=x1095}
 C {devices/lab_wire.sym} 1900 -9260 0 0 {name=l4544 sig_type=std_logic lab=VSS}
 C {devices/lab_wire.sym} 1900 -9500 2 1 {name=l4545 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 1920 -9510 1 1 {name=l4546 sig_type=std_logic lab=vcom}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap_dummy.sym} 2230 -9380 0 0 {name=x1096}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap_dummy.sym} 2230 -9380 0 0 {name=x1096}
 C {devices/lab_wire.sym} 2160 -9260 0 0 {name=l4548 sig_type=std_logic lab=VSS}
 C {devices/lab_wire.sym} 2160 -9500 2 1 {name=l4549 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 2180 -9510 1 1 {name=l4550 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 1960 -9510 3 0 {name=l4552 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 2220 -9510 3 0 {name=l4553 sig_type=std_logic lab=ctop}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap_dummy.sym} 2490 -9380 0 0 {name=x1097}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap_dummy.sym} 2490 -9380 0 0 {name=x1097}
 C {devices/lab_wire.sym} 2420 -9260 0 0 {name=l4554 sig_type=std_logic lab=VSS}
 C {devices/lab_wire.sym} 2420 -9500 2 1 {name=l4555 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 2440 -9510 1 1 {name=l4556 sig_type=std_logic lab=vcom}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap_dummy.sym} 2750 -9380 0 0 {name=x1098}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap_dummy.sym} 2750 -9380 0 0 {name=x1098}
 C {devices/lab_wire.sym} 2680 -9260 0 0 {name=l4558 sig_type=std_logic lab=VSS}
 C {devices/lab_wire.sym} 2680 -9500 2 1 {name=l4559 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 2700 -9510 1 1 {name=l4560 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 2480 -9510 3 0 {name=l4562 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 2740 -9510 3 0 {name=l4563 sig_type=std_logic lab=ctop}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap_dummy.sym} 3010 -9380 0 0 {name=x1099}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap_dummy.sym} 3010 -9380 0 0 {name=x1099}
 C {devices/lab_wire.sym} 2940 -9260 0 0 {name=l4564 sig_type=std_logic lab=VSS}
 C {devices/lab_wire.sym} 2940 -9500 2 1 {name=l4565 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 2960 -9510 1 1 {name=l4566 sig_type=std_logic lab=vcom}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap_dummy.sym} 3270 -9380 0 0 {name=x1100}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap_dummy.sym} 3270 -9380 0 0 {name=x1100}
 C {devices/lab_wire.sym} 3200 -9260 0 0 {name=l4568 sig_type=std_logic lab=VSS}
 C {devices/lab_wire.sym} 3200 -9500 2 1 {name=l4569 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 3220 -9510 1 1 {name=l4570 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 3000 -9510 3 0 {name=l4572 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 3260 -9510 3 0 {name=l4573 sig_type=std_logic lab=ctop}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap_dummy.sym} 3530 -9380 0 0 {name=x1101}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap_dummy.sym} 3530 -9380 0 0 {name=x1101}
 C {devices/lab_wire.sym} 3460 -9260 0 0 {name=l4574 sig_type=std_logic lab=VSS}
 C {devices/lab_wire.sym} 3460 -9500 2 1 {name=l4575 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 3480 -9510 1 1 {name=l4576 sig_type=std_logic lab=vcom}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap_dummy.sym} 3790 -9380 0 0 {name=x1102}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap_dummy.sym} 3790 -9380 0 0 {name=x1102}
 C {devices/lab_wire.sym} 3720 -9260 0 0 {name=l4578 sig_type=std_logic lab=VSS}
 C {devices/lab_wire.sym} 3720 -9500 2 1 {name=l4579 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 3740 -9510 1 1 {name=l4580 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 3520 -9510 3 0 {name=l4582 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 3780 -9510 3 0 {name=l4583 sig_type=std_logic lab=ctop}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap_dummy.sym} 4050 -9380 0 0 {name=x1103}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap_dummy.sym} 4050 -9380 0 0 {name=x1103}
 C {devices/lab_wire.sym} 3980 -9260 0 0 {name=l4584 sig_type=std_logic lab=VSS}
 C {devices/lab_wire.sym} 3980 -9500 2 1 {name=l4585 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 4000 -9510 1 1 {name=l4586 sig_type=std_logic lab=vcom}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap_dummy.sym} 4310 -9380 0 0 {name=x1104}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap_dummy.sym} 4310 -9380 0 0 {name=x1104}
 C {devices/lab_wire.sym} 4240 -9260 0 0 {name=l4588 sig_type=std_logic lab=VSS}
 C {devices/lab_wire.sym} 4240 -9500 2 1 {name=l4589 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 4260 -9510 1 1 {name=l4590 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 4040 -9510 3 0 {name=l4592 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 4300 -9510 3 0 {name=l4593 sig_type=std_logic lab=ctop}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap_dummy.sym} 4570 -9380 0 0 {name=x1105}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap_dummy.sym} 4570 -9380 0 0 {name=x1105}
 C {devices/lab_wire.sym} 4500 -9260 0 0 {name=l4594 sig_type=std_logic lab=VSS}
 C {devices/lab_wire.sym} 4500 -9500 2 1 {name=l4595 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 4520 -9510 1 1 {name=l4596 sig_type=std_logic lab=vcom}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap_dummy.sym} 4830 -9380 0 0 {name=x1106}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap_dummy.sym} 4830 -9380 0 0 {name=x1106}
 C {devices/lab_wire.sym} 4760 -9260 0 0 {name=l4598 sig_type=std_logic lab=VSS}
 C {devices/lab_wire.sym} 4760 -9500 2 1 {name=l4599 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 4780 -9510 1 1 {name=l4600 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 4560 -9510 3 0 {name=l4602 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 4820 -9510 3 0 {name=l4603 sig_type=std_logic lab=ctop}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap_dummy.sym} 5090 -9380 0 0 {name=x1107}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap_dummy.sym} 5090 -9380 0 0 {name=x1107}
 C {devices/lab_wire.sym} 5020 -9260 0 0 {name=l4604 sig_type=std_logic lab=VSS}
 C {devices/lab_wire.sym} 5020 -9500 2 1 {name=l4605 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 5040 -9510 1 1 {name=l4606 sig_type=std_logic lab=vcom}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap_dummy.sym} 5350 -9380 0 0 {name=x1108}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap_dummy.sym} 5350 -9380 0 0 {name=x1108}
 C {devices/lab_wire.sym} 5280 -9260 0 0 {name=l4608 sig_type=std_logic lab=VSS}
 C {devices/lab_wire.sym} 5280 -9500 2 1 {name=l4609 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 5300 -9510 1 1 {name=l4610 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 5080 -9510 3 0 {name=l4612 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 5340 -9510 3 0 {name=l4613 sig_type=std_logic lab=ctop}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap_dummy.sym} 5610 -9380 0 0 {name=x1109}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap_dummy.sym} 5610 -9380 0 0 {name=x1109}
 C {devices/lab_wire.sym} 5540 -9260 0 0 {name=l4614 sig_type=std_logic lab=VSS}
 C {devices/lab_wire.sym} 5540 -9500 2 1 {name=l4615 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 5560 -9510 1 1 {name=l4616 sig_type=std_logic lab=vcom}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap_dummy.sym} 5870 -9380 0 0 {name=x1110}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap_dummy.sym} 5870 -9380 0 0 {name=x1110}
 C {devices/lab_wire.sym} 5800 -9260 0 0 {name=l4618 sig_type=std_logic lab=VSS}
 C {devices/lab_wire.sym} 5800 -9500 2 1 {name=l4619 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 5820 -9510 1 1 {name=l4620 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 5600 -9510 3 0 {name=l4622 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 5860 -9510 3 0 {name=l4623 sig_type=std_logic lab=ctop}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap_dummy.sym} 6130 -9380 0 0 {name=x1111}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap_dummy.sym} 6130 -9380 0 0 {name=x1111}
 C {devices/lab_wire.sym} 6060 -9260 0 0 {name=l4624 sig_type=std_logic lab=VSS}
 C {devices/lab_wire.sym} 6060 -9500 2 1 {name=l4625 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 6080 -9510 1 1 {name=l4626 sig_type=std_logic lab=vcom}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap_dummy.sym} 6390 -9380 0 0 {name=x1112}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap_dummy.sym} 6390 -9380 0 0 {name=x1112}
 C {devices/lab_wire.sym} 6320 -9260 0 0 {name=l4628 sig_type=std_logic lab=VSS}
 C {devices/lab_wire.sym} 6320 -9500 2 1 {name=l4629 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 6340 -9510 1 1 {name=l4630 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 6120 -9510 3 0 {name=l4632 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 6380 -9510 3 0 {name=l4633 sig_type=std_logic lab=ctop}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap_dummy.sym} 6650 -9380 0 0 {name=x1113}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap_dummy.sym} 6650 -9380 0 0 {name=x1113}
 C {devices/lab_wire.sym} 6580 -9260 0 0 {name=l4634 sig_type=std_logic lab=VSS}
 C {devices/lab_wire.sym} 6580 -9500 2 1 {name=l4635 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 6600 -9510 1 1 {name=l4636 sig_type=std_logic lab=vcom}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap_dummy.sym} 6910 -9380 0 0 {name=x1114}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap_dummy.sym} 6910 -9380 0 0 {name=x1114}
 C {devices/lab_wire.sym} 6840 -9260 0 0 {name=l4638 sig_type=std_logic lab=VSS}
 C {devices/lab_wire.sym} 6840 -9500 2 1 {name=l4639 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 6860 -9510 1 1 {name=l4640 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 6640 -9510 3 0 {name=l4642 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 6900 -9510 3 0 {name=l4643 sig_type=std_logic lab=ctop}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap_dummy.sym} 7170 -9380 0 0 {name=x1115}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap_dummy.sym} 7170 -9380 0 0 {name=x1115}
 C {devices/lab_wire.sym} 7100 -9260 0 0 {name=l4644 sig_type=std_logic lab=VSS}
 C {devices/lab_wire.sym} 7100 -9500 2 1 {name=l4645 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 7120 -9510 1 1 {name=l4646 sig_type=std_logic lab=vcom}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap_dummy.sym} 7430 -9380 0 0 {name=x1116}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap_dummy.sym} 7430 -9380 0 0 {name=x1116}
 C {devices/lab_wire.sym} 7360 -9260 0 0 {name=l4648 sig_type=std_logic lab=VSS}
 C {devices/lab_wire.sym} 7360 -9500 2 1 {name=l4649 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 7380 -9510 1 1 {name=l4650 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 7160 -9510 3 0 {name=l4652 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 7420 -9510 3 0 {name=l4653 sig_type=std_logic lab=ctop}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap_dummy.sym} 7690 -9380 0 0 {name=x1117}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap_dummy.sym} 7690 -9380 0 0 {name=x1117}
 C {devices/lab_wire.sym} 7620 -9260 0 0 {name=l4654 sig_type=std_logic lab=VSS}
 C {devices/lab_wire.sym} 7620 -9500 2 1 {name=l4655 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 7640 -9510 1 1 {name=l4656 sig_type=std_logic lab=vcom}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap_dummy.sym} 7950 -9380 0 0 {name=x1118}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap_dummy.sym} 7950 -9380 0 0 {name=x1118}
 C {devices/lab_wire.sym} 7880 -9260 0 0 {name=l4658 sig_type=std_logic lab=VSS}
 C {devices/lab_wire.sym} 7880 -9500 2 1 {name=l4659 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 7900 -9510 1 1 {name=l4660 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 7680 -9510 3 0 {name=l4662 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 7940 -9510 3 0 {name=l4663 sig_type=std_logic lab=ctop}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap_dummy.sym} 8210 -9380 0 0 {name=x1119}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap_dummy.sym} 8210 -9380 0 0 {name=x1119}
 C {devices/lab_wire.sym} 8140 -9260 0 0 {name=l4664 sig_type=std_logic lab=VSS}
 C {devices/lab_wire.sym} 8140 -9500 2 1 {name=l4665 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 8160 -9510 1 1 {name=l4666 sig_type=std_logic lab=vcom}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap_dummy.sym} 8470 -9380 0 0 {name=x1120}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap_dummy.sym} 8470 -9380 0 0 {name=x1120}
 C {devices/lab_wire.sym} 8400 -9260 0 0 {name=l4668 sig_type=std_logic lab=VSS}
 C {devices/lab_wire.sym} 8400 -9500 2 1 {name=l4669 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 8420 -9510 1 1 {name=l4670 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 8200 -9510 3 0 {name=l4672 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 8460 -9510 3 0 {name=l4673 sig_type=std_logic lab=ctop}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap_dummy.sym} 8730 -9380 0 0 {name=x1121}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap_dummy.sym} 8730 -9380 0 0 {name=x1121}
 C {devices/lab_wire.sym} 8660 -9260 0 0 {name=l4674 sig_type=std_logic lab=VSS}
 C {devices/lab_wire.sym} 8660 -9500 2 1 {name=l4675 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 8680 -9510 1 1 {name=l4676 sig_type=std_logic lab=vcom}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap_dummy.sym} 8990 -9380 0 0 {name=x1122}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap_dummy.sym} 8990 -9380 0 0 {name=x1122}
 C {devices/lab_wire.sym} 8920 -9260 0 0 {name=l4678 sig_type=std_logic lab=VSS}
 C {devices/lab_wire.sym} 8920 -9500 2 1 {name=l4679 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 8940 -9510 1 1 {name=l4680 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 8720 -9510 3 0 {name=l4682 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 8980 -9510 3 0 {name=l4683 sig_type=std_logic lab=ctop}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap_dummy.sym} 9250 -9380 0 0 {name=x1123}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap_dummy.sym} 9250 -9380 0 0 {name=x1123}
 C {devices/lab_wire.sym} 9180 -9260 0 0 {name=l4684 sig_type=std_logic lab=VSS}
 C {devices/lab_wire.sym} 9180 -9500 2 1 {name=l4685 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 9200 -9510 1 1 {name=l4686 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 9240 -9510 3 0 {name=l4688 sig_type=std_logic lab=ctop}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap_dummy.sym} 9510 -9380 0 0 {name=x1124}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap_dummy.sym} 9510 -9380 0 0 {name=x1124}
 C {devices/lab_wire.sym} 9440 -9260 0 0 {name=l4689 sig_type=std_logic lab=VSS}
 C {devices/lab_wire.sym} 9440 -9500 2 1 {name=l4690 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 9460 -9510 1 1 {name=l4691 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 9500 -9510 3 0 {name=l4693 sig_type=std_logic lab=ctop}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap_dummy.sym} 9510 -1060 0 0 {name=x1125}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap_dummy.sym} 9510 -1060 0 0 {name=x1125}
 C {devices/lab_wire.sym} 9440 -1180 2 1 {name=l4527 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 9460 -1190 1 1 {name=l4531 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 9500 -1190 3 0 {name=l4537 sig_type=std_logic lab=ctop}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap_dummy.sym} 9510 -1320 0 0 {name=x1126}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap_dummy.sym} 9510 -1320 0 0 {name=x1126}
 C {devices/lab_wire.sym} 9440 -1440 2 1 {name=l4541 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 9460 -1450 1 1 {name=l4557 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 9500 -1450 3 0 {name=l4561 sig_type=std_logic lab=ctop}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap_dummy.sym} 9510 -1580 0 0 {name=x1127}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap_dummy.sym} 9510 -1580 0 0 {name=x1127}
 C {devices/lab_wire.sym} 9440 -1700 2 1 {name=l4567 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 9460 -1710 1 1 {name=l4571 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 9500 -1710 3 0 {name=l4577 sig_type=std_logic lab=ctop}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap_dummy.sym} 9510 -1840 0 0 {name=x1128}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap_dummy.sym} 9510 -1840 0 0 {name=x1128}
 C {devices/lab_wire.sym} 9440 -1960 2 1 {name=l4581 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 9460 -1970 1 1 {name=l4587 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 9500 -1970 3 0 {name=l4591 sig_type=std_logic lab=ctop}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap_dummy.sym} 9510 -2100 0 0 {name=x1129}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap_dummy.sym} 9510 -2100 0 0 {name=x1129}
 C {devices/lab_wire.sym} 9440 -2220 2 1 {name=l4547 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 9460 -2230 1 1 {name=l4551 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 9500 -2230 3 0 {name=l4597 sig_type=std_logic lab=ctop}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap_dummy.sym} 9510 -2360 0 0 {name=x1130}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap_dummy.sym} 9510 -2360 0 0 {name=x1130}
 C {devices/lab_wire.sym} 9440 -2480 2 1 {name=l4601 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 9460 -2490 1 1 {name=l4607 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 9500 -2490 3 0 {name=l4611 sig_type=std_logic lab=ctop}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap_dummy.sym} 9510 -2620 0 0 {name=x1131}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap_dummy.sym} 9510 -2620 0 0 {name=x1131}
 C {devices/lab_wire.sym} 9440 -2740 2 1 {name=l4617 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 9460 -2750 1 1 {name=l4621 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 9500 -2750 3 0 {name=l4627 sig_type=std_logic lab=ctop}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap_dummy.sym} 9510 -2880 0 0 {name=x1132}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap_dummy.sym} 9510 -2880 0 0 {name=x1132}
 C {devices/lab_wire.sym} 9440 -3000 2 1 {name=l4631 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 9460 -3010 1 1 {name=l4637 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 9500 -3010 3 0 {name=l4641 sig_type=std_logic lab=ctop}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap_dummy.sym} 9510 -3140 0 0 {name=x1133}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap_dummy.sym} 9510 -3140 0 0 {name=x1133}
 C {devices/lab_wire.sym} 9440 -3260 2 1 {name=l4647 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 9460 -3270 1 1 {name=l4651 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 9500 -3270 3 0 {name=l4657 sig_type=std_logic lab=ctop}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap_dummy.sym} 9510 -3400 0 0 {name=x1134}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap_dummy.sym} 9510 -3400 0 0 {name=x1134}
 C {devices/lab_wire.sym} 9440 -3520 2 1 {name=l4661 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 9460 -3530 1 1 {name=l4667 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 9500 -3530 3 0 {name=l4671 sig_type=std_logic lab=ctop}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap_dummy.sym} 9510 -3660 0 0 {name=x1135}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap_dummy.sym} 9510 -3660 0 0 {name=x1135}
 C {devices/lab_wire.sym} 9440 -3780 2 1 {name=l4677 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 9460 -3790 1 1 {name=l4681 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 9500 -3790 3 0 {name=l4687 sig_type=std_logic lab=ctop}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap_dummy.sym} 9510 -3920 0 0 {name=x1136}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap_dummy.sym} 9510 -3920 0 0 {name=x1136}
 C {devices/lab_wire.sym} 9440 -4040 2 1 {name=l4692 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 9460 -4050 1 1 {name=l4694 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 9500 -4050 3 0 {name=l4695 sig_type=std_logic lab=ctop}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap_dummy.sym} 9510 -4180 0 0 {name=x1137}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap_dummy.sym} 9510 -4180 0 0 {name=x1137}
 C {devices/lab_wire.sym} 9440 -4300 2 1 {name=l4696 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 9460 -4310 1 1 {name=l4697 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 9500 -4310 3 0 {name=l4698 sig_type=std_logic lab=ctop}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap_dummy.sym} 9510 -4440 0 0 {name=x1138}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap_dummy.sym} 9510 -4440 0 0 {name=x1138}
 C {devices/lab_wire.sym} 9440 -4560 2 1 {name=l4699 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 9460 -4570 1 1 {name=l4700 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 9500 -4570 3 0 {name=l4701 sig_type=std_logic lab=ctop}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap_dummy.sym} 9510 -4700 0 0 {name=x1139}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap_dummy.sym} 9510 -4700 0 0 {name=x1139}
 C {devices/lab_wire.sym} 9440 -4820 2 1 {name=l4702 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 9460 -4830 1 1 {name=l4703 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 9500 -4830 3 0 {name=l4704 sig_type=std_logic lab=ctop}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap_dummy.sym} 9510 -4960 0 0 {name=x1140}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap_dummy.sym} 9510 -4960 0 0 {name=x1140}
 C {devices/lab_wire.sym} 9440 -5080 2 1 {name=l4705 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 9460 -5090 1 1 {name=l4706 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 9500 -5090 3 0 {name=l4707 sig_type=std_logic lab=ctop}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap_dummy.sym} 9510 -5220 0 0 {name=x1141}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap_dummy.sym} 9510 -5220 0 0 {name=x1141}
 C {devices/lab_wire.sym} 9440 -5340 2 1 {name=l4708 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 9460 -5350 1 1 {name=l4709 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 9500 -5350 3 0 {name=l4710 sig_type=std_logic lab=ctop}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap_dummy.sym} 9510 -5480 0 0 {name=x1142}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap_dummy.sym} 9510 -5480 0 0 {name=x1142}
 C {devices/lab_wire.sym} 9440 -5600 2 1 {name=l4711 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 9460 -5610 1 1 {name=l4712 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 9500 -5610 3 0 {name=l4713 sig_type=std_logic lab=ctop}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap_dummy.sym} 9510 -5740 0 0 {name=x1143}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap_dummy.sym} 9510 -5740 0 0 {name=x1143}
 C {devices/lab_wire.sym} 9440 -5860 2 1 {name=l4714 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 9460 -5870 1 1 {name=l4715 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 9500 -5870 3 0 {name=l4716 sig_type=std_logic lab=ctop}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap_dummy.sym} 9510 -6000 0 0 {name=x1144}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap_dummy.sym} 9510 -6000 0 0 {name=x1144}
 C {devices/lab_wire.sym} 9440 -6120 2 1 {name=l4717 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 9460 -6130 1 1 {name=l4718 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 9500 -6130 3 0 {name=l4719 sig_type=std_logic lab=ctop}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap_dummy.sym} 9510 -6260 0 0 {name=x1145}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap_dummy.sym} 9510 -6260 0 0 {name=x1145}
 C {devices/lab_wire.sym} 9440 -6380 2 1 {name=l4720 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 9460 -6390 1 1 {name=l4721 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 9500 -6390 3 0 {name=l4722 sig_type=std_logic lab=ctop}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap_dummy.sym} 9510 -6520 0 0 {name=x1146}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap_dummy.sym} 9510 -6520 0 0 {name=x1146}
 C {devices/lab_wire.sym} 9440 -6640 2 1 {name=l4723 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 9460 -6650 1 1 {name=l4724 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 9500 -6650 3 0 {name=l4725 sig_type=std_logic lab=ctop}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap_dummy.sym} 9510 -6780 0 0 {name=x1147}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap_dummy.sym} 9510 -6780 0 0 {name=x1147}
 C {devices/lab_wire.sym} 9440 -6900 2 1 {name=l4726 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 9460 -6910 1 1 {name=l4727 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 9500 -6910 3 0 {name=l4728 sig_type=std_logic lab=ctop}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap_dummy.sym} 9510 -7040 0 0 {name=x1148}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap_dummy.sym} 9510 -7040 0 0 {name=x1148}
 C {devices/lab_wire.sym} 9440 -7160 2 1 {name=l4729 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 9460 -7170 1 1 {name=l4730 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 9500 -7170 3 0 {name=l4731 sig_type=std_logic lab=ctop}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap_dummy.sym} 9510 -7300 0 0 {name=x1149}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap_dummy.sym} 9510 -7300 0 0 {name=x1149}
 C {devices/lab_wire.sym} 9440 -7420 2 1 {name=l4732 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 9460 -7430 1 1 {name=l4733 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 9500 -7430 3 0 {name=l4734 sig_type=std_logic lab=ctop}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap_dummy.sym} 9510 -7560 0 0 {name=x1150}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap_dummy.sym} 9510 -7560 0 0 {name=x1150}
 C {devices/lab_wire.sym} 9440 -7680 2 1 {name=l4735 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 9460 -7690 1 1 {name=l4736 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 9500 -7690 3 0 {name=l4737 sig_type=std_logic lab=ctop}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap_dummy.sym} 9510 -7820 0 0 {name=x1151}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap_dummy.sym} 9510 -7820 0 0 {name=x1151}
 C {devices/lab_wire.sym} 9440 -7940 2 1 {name=l4738 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 9460 -7950 1 1 {name=l4739 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 9500 -7950 3 0 {name=l4740 sig_type=std_logic lab=ctop}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap_dummy.sym} 9510 -8080 0 0 {name=x1152}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap_dummy.sym} 9510 -8080 0 0 {name=x1152}
 C {devices/lab_wire.sym} 9440 -8200 2 1 {name=l4741 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 9460 -8210 1 1 {name=l4742 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 9500 -8210 3 0 {name=l4743 sig_type=std_logic lab=ctop}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap_dummy.sym} 9510 -8340 0 0 {name=x1153}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap_dummy.sym} 9510 -8340 0 0 {name=x1153}
 C {devices/lab_wire.sym} 9440 -8460 2 1 {name=l4744 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 9460 -8470 1 1 {name=l4745 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 9500 -8470 3 0 {name=l4746 sig_type=std_logic lab=ctop}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap_dummy.sym} 9510 -8600 0 0 {name=x1154}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap_dummy.sym} 9510 -8600 0 0 {name=x1154}
 C {devices/lab_wire.sym} 9440 -8720 2 1 {name=l4747 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 9460 -8730 1 1 {name=l4748 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 9500 -8730 3 0 {name=l4749 sig_type=std_logic lab=ctop}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap_dummy.sym} 9510 -8860 0 0 {name=x1155}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap_dummy.sym} 9510 -8860 0 0 {name=x1155}
 C {devices/lab_wire.sym} 9440 -8980 2 1 {name=l4750 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 9460 -8990 1 1 {name=l4751 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 9500 -8990 3 0 {name=l4752 sig_type=std_logic lab=ctop}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap_dummy.sym} 9510 -9120 0 0 {name=x1156}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap_dummy.sym} 9510 -9120 0 0 {name=x1156}
 C {devices/lab_wire.sym} 9440 -9240 2 1 {name=l4753 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 9460 -9250 1 1 {name=l4754 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 9500 -9250 3 0 {name=l4755 sig_type=std_logic lab=ctop}
@@ -72672,10 +72672,10 @@ C {devices/lab_wire.sym} 9440 -8220 0 0 {name=l4792 sig_type=std_logic lab=VSS}
 C {devices/lab_wire.sym} 9440 -8480 0 0 {name=l4793 sig_type=std_logic lab=VSS}
 C {devices/lab_wire.sym} 9440 -8740 0 0 {name=l4794 sig_type=std_logic lab=VSS}
 C {devices/lab_wire.sym} 9440 -9000 0 0 {name=l4795 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap_bin.sym} 1710 -800 0 0 {name=x1060}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap_bin.sym} 3790 -800 0 0 {name=x1068}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap_bin.sym} 5870 -800 0 0 {name=x1076}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap_bin.sym} 7950 -800 0 0 {name=x1084}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap_bin.sym} 1710 -800 0 0 {name=x1060}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap_bin.sym} 3790 -800 0 0 {name=x1068}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap_bin.sym} 5870 -800 0 0 {name=x1076}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap_bin.sym} 7950 -800 0 0 {name=x1084}
 C {devices/lab_wire.sym} 7910 -680 3 0 {name=l4796 sig_type=std_logic lab=en_n_bit[0]}
 C {devices/lab_wire.sym} 5830 -670 3 0 {name=l4797 sig_type=std_logic lab=en_n_bit[1]}
 C {devices/lab_wire.sym} 3750 -670 3 0 {name=l4798 sig_type=std_logic lab=en_n_bit[2]}

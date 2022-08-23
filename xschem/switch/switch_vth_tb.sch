@@ -349,7 +349,7 @@ sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
 }
-C {sky130_fd_pr/pfet_01v8.sym} 960 -1130 1 0 {name=M1
+C {sky130_fd_pr/pfet_01v8.sym} 960 -1130 3 1 {name=M1
 L=0.35
 W=2
 nf=1
@@ -375,7 +375,7 @@ C {devices/vdd.sym} 1380 -900 2 0 {name=l2 lab=VDD}
 C {devices/gnd.sym} 1390 -1180 0 0 {name=l3 lab=GND}
 C {devices/vdd.sym} 1420 -1080 2 0 {name=l5 lab=VDD}
 C {devices/gnd.sym} 1420 -1000 0 0 {name=l6 lab=GND}
-C {sky130_fd_pr/pfet_01v8_lvt.sym} 1380 -1130 1 0 {name=M3
+C {sky130_fd_pr/pfet_01v8_lvt.sym} 1380 -1130 3 1 {name=M3
 L=0.35
 W=2
 nf=1
@@ -421,7 +421,7 @@ sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
 }
-C {sky130_fd_pr/pfet_01v8.sym} 1810 -1130 1 0 {name=M5
+C {sky130_fd_pr/pfet_01v8.sym} 1810 -1130 3 1 {name=M5
 L=0.15
 W=0.86
 nf=1
@@ -463,7 +463,7 @@ sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
 }
-C {sky130_fd_pr/pfet_01v8.sym} 960 -780 1 0 {name=M7
+C {sky130_fd_pr/pfet_01v8.sym} 960 -780 3 1 {name=M7
 L=0.35
 W=2
 nf=1
@@ -489,7 +489,7 @@ C {devices/vdd.sym} 1380 -550 2 0 {name=l26 lab=VDD}
 C {devices/gnd.sym} 1390 -830 0 0 {name=l27 lab=GND}
 C {devices/vdd.sym} 1420 -730 2 0 {name=l28 lab=VDD}
 C {devices/gnd.sym} 1420 -650 0 0 {name=l29 lab=GND}
-C {sky130_fd_pr/pfet_01v8_lvt.sym} 1380 -780 1 0 {name=M9
+C {sky130_fd_pr/pfet_01v8_lvt.sym} 1380 -780 3 1 {name=M9
 L=0.35
 W=2
 nf=1
@@ -535,7 +535,7 @@ sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
 }
-C {sky130_fd_pr/pfet_01v8.sym} 1810 -780 1 0 {name=M11
+C {sky130_fd_pr/pfet_01v8.sym} 1810 -780 3 1 {name=M11
 L=0.15
 W=0.86
 nf=1
@@ -578,7 +578,7 @@ sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
 }
-C {sky130_fd_pr/pfet_01v8.sym} 960 -430 1 0 {name=M13
+C {sky130_fd_pr/pfet_01v8.sym} 960 -430 3 1 {name=M13
 L=0.35
 W=2
 nf=1
@@ -604,7 +604,7 @@ C {devices/vdd.sym} 1380 -200 2 0 {name=l45 lab=VDD}
 C {devices/gnd.sym} 1390 -480 0 0 {name=l46 lab=GND}
 C {devices/vdd.sym} 1420 -380 2 0 {name=l47 lab=VDD}
 C {devices/gnd.sym} 1420 -300 0 0 {name=l48 lab=GND}
-C {sky130_fd_pr/pfet_01v8_lvt.sym} 1380 -430 1 0 {name=M15
+C {sky130_fd_pr/pfet_01v8_lvt.sym} 1380 -430 3 1 {name=M15
 L=0.35
 W=2
 nf=1
@@ -650,7 +650,7 @@ sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
 }
-C {sky130_fd_pr/pfet_01v8.sym} 1810 -430 1 0 {name=M17
+C {sky130_fd_pr/pfet_01v8.sym} 1810 -430 3 1 {name=M17
 L=0.15
 W=0.86
 nf=1
