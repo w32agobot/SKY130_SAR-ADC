@@ -1068,13 +1068,4 @@ spiceprefix=X
 }
 C {devices/lab_wire.sym} 970 -1440 0 0 {name=l1 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 1140 -1440 0 0 {name=l2 sig_type=std_logic lab=VSS}
-C {devices/code.sym} 730 -1450 0 0 {name=TT_MODELS
-only_toplevel=true
-format="tcleval( @value )"
-value="
-** opencircuitdesign pdks install
-.lib $::SKYWATER_MODELS/sky130.lib.spice tt
-
-"
-spice_ignore=false}
 C {devices/title.sym} 170 -50 0 0 {name=l3 author="Manuel Moser"}

@@ -16,7 +16,7 @@ T {   Copyright 2022 Manuel Moser
    distributed under the License is distributed on an "AS IS" BASIS,
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
-   limitations under the License.} 430 -660 0 0 0.2 0.2 {}
+   limitations under the License.} 750 -240 0 0 0.2 0.2 {}
 N 100 -450 100 -430 {
 lab=VDD}
 N 100 -370 100 -350 {
@@ -67,9 +67,15 @@ N 590 -220 590 -210 {
 lab=phi2_n}
 N 590 -210 610 -210 {
 lab=phi2_n}
-C {devices/code_shown.sym} 10 -540 0 0 {name=SPICE only_toplevel=false value=".options reltol=1e-3 vabstol=1e-6 iabstol=1e-12
+C {devices/code_shown.sym} 170 -680 0 0 {name=SPICE only_toplevel=false value=".options reltol=1e-3 vabstol=1e-6 iabstol=1e-12
 .tran 0.1n 360n
-.save all"}
+.save all
+.control
+run
+plot v(Clock) v(phi1) v(phi2)
+plot v(Clock) v(phi1_n) v(phi2_n)
+.endc
+"}
 C {devices/vsource.sym} 100 -400 0 0 {name=V1 value=1}
 C {devices/vsource.sym} 30 -170 0 0 {name=V2 value="pulse(0 1 10p 10p 10p 100n 200n)"}
 C {devices/gnd.sym} 100 -350 0 0 {name=l1 lab=GND}
@@ -82,7 +88,7 @@ C {devices/lab_wire.sym} 640 -230 0 1 {name=l8 sig_type=std_logic lab=phi2}
 C {devices/lab_wire.sym} 640 -270 0 1 {name=l9 sig_type=std_logic lab=phi1_n}
 C {devices/lab_wire.sym} 640 -210 0 1 {name=l10 sig_type=std_logic lab=phi2_n}
 C {devices/lab_wire.sym} 160 -250 0 0 {name=l7 sig_type=std_logic lab=Clock}
-C {devices/code.sym} 0 -700 0 0 {name=TT_MODELS
+C {devices/code.sym} 30 -680 0 0 {name=TT_MODELS
 only_toplevel=true
 format="tcleval( @value )"
 value="
