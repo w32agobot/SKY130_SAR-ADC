@@ -106,8 +106,8 @@ lab=latch_qn}
 N 980 -380 1040 -380 {
 lab=latch_q}
 C {devices/title.sym} 150 -40 0 0 {name=l1 author="Manuel Moser"}
-C {/foss/designs/SKY130_SAR-ADC/xschem/NOR-Latch/NOR_Latch.sym} 910 -390 0 0 {name=x2}
-C {/foss/designs/SKY130_SAR-ADC/xschem/NOR/NOR_1.sym} 870 -570 0 0 {name=x3}
+C {/foss/designs/SKY130_SAR-ADC/xschem/NOR-Latch/NOR-Latch.sym} 910 -390 0 0 {name=x2}
+C {/foss/designs/SKY130_SAR-ADC/xschem/NOR/NOR.sym} 870 -570 0 0 {name=x3}
 C {/foss/designs/SKY130_SAR-ADC/xschem/inverter/inverter.sym} 270 -500 0 0 {name=x4}
 C {/foss/designs/SKY130_SAR-ADC/xschem/inverter/inverter.sym} 440 -500 0 0 {name=x5}
 C {devices/vdd.sym} 270 -530 0 0 {name=l2 lab=VDD}
