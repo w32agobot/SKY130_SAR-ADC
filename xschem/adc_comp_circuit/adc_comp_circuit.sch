@@ -482,5 +482,5 @@ C {devices/opin.sym} 1370 -520 0 0 {name=p7 lab=outp}
 C {devices/opin.sym} 1370 -370 0 0 {name=p8 lab=outn}
 C {/foss/designs/SKY130_SAR-ADC/xschem/adc_comp_buffer/adc_comp_buffer.sym} 1290 -520 0 0 {name=x1}
 C {/foss/designs/SKY130_SAR-ADC/xschem/adc_comp_buffer/adc_comp_buffer.sym} 1290 -370 0 0 {name=x2}
-C {sky130_fd_pr/cap_mim_m3_1.sym} 530 -430 0 0 {name=C3 model=cap_mim_m3_1 W=8 L=3.5 MF=8 spiceprefix=X}
-C {sky130_fd_pr/cap_mim_m3_1.sym} 660 -430 0 0 {name=C1 model=cap_mim_m3_1 W=8 L=3.5 MF=8 spiceprefix=X}
+C {sky130_fd_pr/cap_mim_m3_1.sym} 530 -430 0 0 {name=C3 model=cap_mim_m3_1 W=9.2 L=6.4 MF=4 spiceprefix=X}
+C {sky130_fd_pr/cap_mim_m3_1.sym} 660 -430 0 0 {name=C1 model=cap_mim_m3_1 W=9.2 L=6.4 MF=4 spiceprefix=X}

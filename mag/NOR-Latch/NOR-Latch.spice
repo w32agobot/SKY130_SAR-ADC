@@ -1,16 +1,17 @@
 * NGSPICE file created from NOR-Latch.ext - technology: sky130A
 
-.subckt NOR B Q A VDD VSS
-X0 a_312_106# A VDD VDD sky130_fd_pr__pfet_01v8 ad=2.64e+11p pd=2.26e+06u as=2.64e+11p ps=2.26e+06u w=800000u l=150000u
-X1 VDD B a_120_106# VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=2.64e+11p ps=2.26e+06u w=800000u l=150000u
-X2 Q B a_312_106# VDD sky130_fd_pr__pfet_01v8 ad=4.96e+11p pd=4.44e+06u as=0p ps=0u w=800000u l=150000u
-X3 Q B VSS VSS sky130_fd_pr__nfet_01v8 ad=2.604e+11p pd=2.92e+06u as=1.386e+11p ps=1.5e+06u w=420000u l=150000u
-X4 a_120_106# A Q VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=800000u l=150000u
-X5 VSS A Q VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=420000u l=150000u
-.ends
-
-.subckt NOR-Latch R QN VDD VSS Q S
-XNOR_0 QN Q R VDD VSS NOR
-XNOR_1 Q QN S VDD VSS NOR
+.subckt NOR-Latch R QN Q S VDD VSS
+X0 VSS S QN VSS sky130_fd_pr__nfet_01v8 ad=2.772e+11p pd=3e+06u as=2.604e+11p ps=2.92e+06u w=420000u l=150000u
+X1 Q QN VSS VSS sky130_fd_pr__nfet_01v8 ad=2.604e+11p pd=2.92e+06u as=0p ps=0u w=420000u l=150000u
+X2 a_624_342# S QN VDD sky130_fd_pr__pfet_01v8 ad=2.64e+11p pd=2.26e+06u as=4.96e+11p ps=4.44e+06u w=800000u l=150000u
+X3 VDD Q a_624_342# VDD sky130_fd_pr__pfet_01v8 ad=5.28e+11p pd=4.52e+06u as=0p ps=0u w=800000u l=150000u
+X4 QN Q a_816_342# VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=2.64e+11p ps=2.26e+06u w=800000u l=150000u
+X5 a_816_342# S VDD VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=800000u l=150000u
+X6 a_320_342# R VDD VDD sky130_fd_pr__pfet_01v8 ad=2.64e+11p pd=2.26e+06u as=0p ps=0u w=800000u l=150000u
+X7 VDD QN a_128_342# VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=2.64e+11p ps=2.26e+06u w=800000u l=150000u
+X8 Q QN a_320_342# VDD sky130_fd_pr__pfet_01v8 ad=4.96e+11p pd=4.44e+06u as=0p ps=0u w=800000u l=150000u
+X9 VSS R Q VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=420000u l=150000u
+X10 a_128_342# R Q VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=800000u l=150000u
+X11 QN Q VSS VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=420000u l=150000u
 .ends
 

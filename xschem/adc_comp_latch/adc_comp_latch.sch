@@ -50,23 +50,23 @@ lab=#net1}
 N 270 -530 270 -520 {
 lab=VDD}
 N 270 -480 270 -470 {
-lab=GND}
+lab=VSS}
 N 440 -530 440 -520 {
 lab=VDD}
 N 440 -480 440 -470 {
-lab=GND}
+lab=VSS}
 N 620 -480 620 -470 {
 lab=VDD}
 N 620 -330 620 -320 {
-lab=GND}
+lab=VSS}
 N 910 -450 910 -440 {
-lab=VDD}
+lab=#net5}
 N 910 -340 910 -330 {
-lab=GND}
+lab=VSS}
 N 870 -620 870 -610 {
 lab=VDD}
 N 870 -530 870 -520 {
-lab=GND}
+lab=VSS}
 N 810 -560 830 -560 {
 lab=#net2}
 N 810 -560 810 -400 {
@@ -105,33 +105,37 @@ N 980 -400 1040 -400 {
 lab=latch_qn}
 N 980 -380 1040 -380 {
 lab=latch_q}
+N 270 -470 270 -460 {
+lab=VSS}
+N 270 -540 270 -530 {
+lab=VDD}
+N 440 -540 440 -530 {
+lab=VDD}
+N 620 -490 620 -480 {
+lab=VDD}
+N 870 -630 870 -620 {
+lab=VDD}
 C {devices/title.sym} 150 -40 0 0 {name=l1 author="Manuel Moser"}
 C {/foss/designs/SKY130_SAR-ADC/xschem/NOR-Latch/NOR-Latch.sym} 910 -390 0 0 {name=x2}
 C {/foss/designs/SKY130_SAR-ADC/xschem/NOR/NOR.sym} 870 -570 0 0 {name=x3}
 C {/foss/designs/SKY130_SAR-ADC/xschem/inverter/inverter.sym} 270 -500 0 0 {name=x4}
 C {/foss/designs/SKY130_SAR-ADC/xschem/inverter/inverter.sym} 440 -500 0 0 {name=x5}
-C {devices/vdd.sym} 270 -530 0 0 {name=l2 lab=VDD}
-C {devices/vdd.sym} 440 -530 0 0 {name=l3 lab=VDD}
-C {devices/vdd.sym} 620 -480 0 0 {name=l4 lab=VDD}
-C {devices/vdd.sym} 910 -450 0 0 {name=l5 lab=VDD}
-C {devices/vdd.sym} 870 -620 0 0 {name=l6 lab=VDD}
-C {devices/gnd.sym} 270 -470 0 0 {name=l7 lab=GND}
-C {devices/gnd.sym} 440 -470 0 0 {name=l8 lab=GND}
-C {devices/gnd.sym} 620 -320 0 0 {name=l9 lab=GND}
-C {devices/gnd.sym} 910 -330 0 0 {name=l10 lab=GND}
-C {devices/gnd.sym} 870 -520 0 0 {name=l11 lab=GND}
 C {devices/iopin.sym} 200 -720 0 1 {name=p1 lab=VDD}
 C {devices/iopin.sym} 200 -640 0 1 {name=p2 lab=VSS}
 C {devices/ipin.sym} 200 -500 0 0 {name=p3 lab=clk}
 C {devices/ipin.sym} 200 -410 0 0 {name=p4 lab=inp}
 C {devices/ipin.sym} 200 -370 0 0 {name=p5 lab=inn}
-C {sky130_fd_pr/vpp_cap.sym} 240 -680 0 0 {name=C1
-model=cap_vpp_11p5x11p7_l1m1m2m3m4_shieldm5
-W=1
-L=1 
-mult=15 
-spiceprefix=X}
 C {devices/opin.sym} 1040 -570 0 0 {name=p6 lab=comp_trig}
 C {devices/opin.sym} 1040 -400 0 0 {name=p7 lab=latch_qn}
 C {devices/opin.sym} 1040 -380 0 0 {name=p8 lab=latch_q}
 C {/foss/designs/SKY130_SAR-ADC/xschem/adc_comp_circuit/adc_comp_circuit.sym} 620 -390 0 0 {name=x1}
+C {devices/lab_wire.sym} 270 -460 3 0 {name=l7 sig_type=std_logic lab=VSS}
+C {devices/lab_wire.sym} 440 -470 2 1 {name=l8 sig_type=std_logic lab=VSS}
+C {devices/lab_wire.sym} 620 -320 2 1 {name=l9 sig_type=std_logic lab=VSS}
+C {devices/lab_wire.sym} 910 -330 2 1 {name=l10 sig_type=std_logic lab=VSS}
+C {devices/lab_wire.sym} 870 -520 2 1 {name=l11 sig_type=std_logic lab=VSS}
+C {devices/lab_wire.sym} 270 -540 0 0 {name=l2 sig_type=std_logic lab=VDD}
+C {devices/lab_wire.sym} 440 -540 0 0 {name=l3 sig_type=std_logic lab=VDD}
+C {devices/lab_wire.sym} 620 -490 0 0 {name=l4 sig_type=std_logic lab=VDD}
+C {devices/lab_wire.sym} 870 -630 0 0 {name=l5 sig_type=std_logic lab=VDD}
+C {devices/lab_wire.sym} 910 -450 0 0 {name=l6 sig_type=std_logic lab=VDD}

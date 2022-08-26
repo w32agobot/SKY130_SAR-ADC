@@ -1,5 +1,68 @@
+** sch_path: /foss/designs/SKY130_SAR-ADC/xschem/adc_comp_latch/adc_comp_latch.sch
+.subckt adc_comp_latch VDD VSS clk inp inn comp_trig latch_qn latch_q
+*.PININFO VDD:B VSS:B clk:I inp:I inn:I comp_trig:O latch_qn:O latch_q:O
+x2 net2 latch_qn VDD latch_q VSS net3 NOR-Latch
+x3 net2 net3 VDD comp_trig VSS NOR
+x4 VDD net1 clk VSS inverter
+x5 VDD net4 net1 VSS inverter
+x1 VDD net4 net2 inp inn net3 net1 VSS adc_comp_circuit
+.ends
+
+* expanding   symbol:  /foss/designs/SKY130_SAR-ADC/xschem/NOR-Latch/NOR-Latch.sym # of pins=6
+** sym_path: /foss/designs/SKY130_SAR-ADC/xschem/NOR-Latch/NOR-Latch.sym
+** sch_path: /foss/designs/SKY130_SAR-ADC/xschem/NOR-Latch/NOR-Latch.sch
+.subckt NOR-Latch  S QN VDD Q VSS R
+*.PININFO VDD:B VSS:B S:I R:I Q:O QN:O
+x2 QN R VDD Q VSS NOR
+x1 Q S VDD QN VSS NOR
+.ends
+
+
+* expanding   symbol:  /foss/designs/SKY130_SAR-ADC/xschem/NOR/NOR.sym # of pins=5
+** sym_path: /foss/designs/SKY130_SAR-ADC/xschem/NOR/NOR.sym
+** sch_path: /foss/designs/SKY130_SAR-ADC/xschem/NOR/NOR.sch
+.subckt NOR  B A VDD Q VSS
+*.PININFO VDD:B VSS:B B:I A:I Q:O
+XM5 Q B VSS VSS sky130_fd_pr__nfet_01v8 L=0.15 W=0.42 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM6 Q A VSS VSS sky130_fd_pr__nfet_01v8 L=0.15 W=0.42 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM1 Q B net1 VDD sky130_fd_pr__pfet_01v8 L=0.15 W=0.8 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM2 Q A net2 VDD sky130_fd_pr__pfet_01v8 L=0.15 W=0.8 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM3 net2 B VDD VDD sky130_fd_pr__pfet_01v8 L=0.15 W=0.8 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM4 net1 A VDD VDD sky130_fd_pr__pfet_01v8 L=0.15 W=0.8 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+.ends
+
+
+* expanding   symbol:  /foss/designs/SKY130_SAR-ADC/xschem/inverter/inverter.sym # of pins=4
+** sym_path: /foss/designs/SKY130_SAR-ADC/xschem/inverter/inverter.sym
+** sch_path: /foss/designs/SKY130_SAR-ADC/xschem/inverter/inverter.sch
+.subckt inverter  VDD out in VSS
+*.PININFO VDD:B VSS:B out:O in:I
+XM1 out in VSS VSS sky130_fd_pr__nfet_01v8 L=0.15 W=0.42 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM2 out in VDD VDD sky130_fd_pr__pfet_01v8 L=0.15 W=0.42 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+.ends
+
+
+* expanding   symbol:  /foss/designs/SKY130_SAR-ADC/xschem/adc_comp_circuit/adc_comp_circuit.sym #
+*+ of pins=8
+** sym_path: /foss/designs/SKY130_SAR-ADC/xschem/adc_comp_circuit/adc_comp_circuit.sym
 ** sch_path: /foss/designs/SKY130_SAR-ADC/xschem/adc_comp_circuit/adc_comp_circuit.sch
-.subckt adc_comp_circuit VDD VSS inp inn clk nclk outp outn
+.subckt adc_comp_circuit  VDD clk outp inp inn outn nclk VSS
 *.PININFO VDD:B VSS:B inp:I inn:I clk:I nclk:I outp:O outn:O
 XM1 on clk VDD VDD sky130_fd_pr__pfet_01v8 L=0.15 W=2 nf=4 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
 + pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
@@ -45,6 +108,7 @@ x2 VDD bn outn VSS adc_comp_buffer
 XC3 on VSS sky130_fd_pr__cap_mim_m3_1 W=9.2 L=6.4 MF=4 m=4
 XC1 op VSS sky130_fd_pr__cap_mim_m3_1 W=9.2 L=6.4 MF=4 m=4
 .ends
+
 
 * expanding   symbol:  /foss/designs/SKY130_SAR-ADC/xschem/adc_comp_buffer/adc_comp_buffer.sym # of
 *+ pins=4
