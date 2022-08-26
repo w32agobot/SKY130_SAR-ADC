@@ -1,365 +1,385 @@
-timestamp 1661433008
+timestamp 1661508802
 version 8.3
 tech sky130A
 style ngspice()
 scale 1000 1 500000
 resistclasses 4400000 2200000 950000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12800 125 125 47 47 29 5
-use adc_comp_buffer adc_comp_buffer_1 1 0 2958 0 1 -1170
-use adc_comp_buffer adc_comp_buffer_0 1 0 2958 0 1 -358
+use adc_comp_buffer adc_comp_buffer_1 1 0 2448 0 -1 -870
+use adc_comp_buffer adc_comp_buffer_0 1 0 2448 0 1 -226
 parameters sky130_fd_pr__nfet_01v8 l=l w=w a1=as p1=ps a2=ad p2=pd
 parameters sky130_fd_pr__pfet_01v8 l=l w=w a1=as p1=ps a2=ad p2=pd
 parameters sky130_fd_pr__cap_mim_m3_1 w=w l=l
-port "outn" 8 3920 -1220 3920 -1174 m1
-port "outp" 7 3920 -408 3920 -362 m1
-port "nclk" 4 -716 -1780 -716 -1734 m1
-port "inn" 6 -714 -484 -714 -456 m1
-port "inp" 5 -714 -404 -714 -376 m1
-port "clk" 3 -716 -1706 -716 -1660 m1
-port "VDD" 1 -714 30 -714 168 m1
-port "VSS" 2 -714 -1616 -714 -1458 m1
-node "outn" 81 419.828 3920 -1220 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 10616 596 19872 956 0 0 0 0 0 0 0 0 0 0
-node "outp" 81 287.975 3920 -408 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 10616 596 19872 956 0 0 0 0 0 0 0 0 0 0
-node "nclk" 2451 2070.77 -716 -1780 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 45504 3036 0 0 29040 1052 213256 9364 0 0 0 0 0 0 0 0 0 0
-node "a_n14_n1302#" 8601 1159.36 -14 -1302 ndif 0 0 0 0 0 0 0 0 161000 6288 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 136312 7996 0 0 0 0 0 0 0 0 0 0 0 0
-node "a_2178_n578#" 3312 74.4239 2178 -578 pdif 0 0 0 0 0 0 0 0 0 0 52800 1864 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 43248 2612 0 0 0 0 0 0 0 0 0 0 0 0
-node "a_1664_n578#" 3312 35.5869 1664 -578 pdif 0 0 0 0 0 0 0 0 0 0 52800 1864 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 43248 2612 0 0 0 0 0 0 0 0 0 0 0 0
-node "inn" 3602 652.369 -714 -484 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 71000 4656 0 0 4320 264 28904 2020 0 0 0 0 0 0 0 0 0 0
-node "inp" 3656 706.329 -714 -404 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 72672 4744 0 0 4320 264 41856 2904 0 0 0 0 0 0 0 0 0 0
-node "bn" 7738 1486.86 1572 -578 pdif 0 0 0 0 0 0 0 0 26400 932 49600 1848 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 97876 5120 0 0 130256 6128 0 0 0 0 0 0 0 0 0 0 0 0
-node "bp" 7268 1091.96 1956 -624 p 0 0 0 0 0 0 0 0 26400 932 49600 1848 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 53808 3564 0 0 121656 5636 0 0 0 0 0 0 0 0 0 0 0 0
-node "on" 6116 26050.2 462 -1042 ndif 0 0 0 0 0 0 0 0 52800 1864 13200 664 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 38420 2520 0 0 275568 10556 145168 4932 31648 1080 31648 1080 8027728 42226 0 0 0 0
-node "op" 6087 26341.2 78 -1042 ndif 0 0 0 0 0 0 0 0 52800 1864 13200 664 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 37884 2528 0 0 290184 10536 92256 3732 30384 1064 30384 1064 8081682 43560 0 0 0 0
-node "clk" 7833 6354.74 -716 -1706 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 156708 9964 0 0 93588 3008 213256 9364 0 0 0 0 0 0 0 0 0 0
-node "VDD" 20513 11255.2 -714 30 m1 0 0 0 0 1686328 7544 0 0 81408 3584 108200 4424 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 208328 10108 904344 12480 0 0 0 0 0 0 0 0 0 0
-substrate "VSS" 0 0 -714 -1616 m1 0 0 0 0 0 0 0 0 102400 4108 900296 30328 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6817516 77968 1663980 24260 657664 11300 28139168 90798 0 0 0 0 0 0
-cap "a_2178_n578#" "a_n14_n1302#" 0.00947555
-cap "bp" "on" 191.555
-cap "op" "inn" 199.175
-cap "on" "inp" 173.547
-cap "VDD" "bp" 453.88
-cap "outp" "on" 0.222639
-cap "VDD" "inp" 218.033
-cap "outp" "VDD" 105.002
-cap "a_1664_n578#" "clk" 2.45034
-cap "bn" "outn" 5.59953
-cap "a_2178_n578#" "bn" 11.3164
-cap "on" "clk" 462.372
-cap "VDD" "clk" 297.596
-cap "bp" "inp" 0.29596
-cap "outp" "bp" 4.49253
-cap "a_n14_n1302#" "a_1664_n578#" 0.0316166
-cap "nclk" "inn" 0.840337
-cap "a_n14_n1302#" "on" 1092.77
-cap "nclk" "op" 572.898
-cap "a_n14_n1302#" "VDD" 64.4174
-cap "bp" "clk" 6.37694
-cap "inp" "clk" 131.942
-cap "outp" "clk" 0.464362
-cap "a_1664_n578#" "bn" 751.295
-cap "on" "bn" 112.569
-cap "a_n14_n1302#" "bp" 0.834438
-cap "VDD" "bn" 402.614
-cap "a_n14_n1302#" "inp" 37.2133
-cap "op" "outn" 0.774714
-cap "a_2178_n578#" "op" 26.5154
-cap "a_n14_n1302#" "clk" 81.922
-cap "inp" "bn" 4.09671
-cap "bp" "bn" 403.032
-cap "outp" "bn" 0.13831
-cap "inn" "a_1664_n578#" 0.147778
-cap "nclk" "outn" 1.32272
-cap "a_2178_n578#" "nclk" 0.508719
-cap "on" "inn" 12.1394
-cap "op" "a_1664_n578#" 36.1118
-cap "VDD" "inn" 38.2121
-cap "bn" "clk" 12.0125
-cap "op" "on" 1600.85
-cap "VDD" "op" 1446.02
-cap "a_n14_n1302#" "bn" 1.62521
-cap "inp" "inn" 714.975
-cap "nclk" "a_1664_n578#" 1.07257
-cap "bp" "op" 97.6448
-cap "op" "inp" 500.622
-cap "outp" "op" 0.454601
-cap "nclk" "VDD" 42.8794
-cap "nclk" "on" 422.33
-cap "inn" "clk" 75.7411
-cap "op" "clk" 119.302
-cap "nclk" "bp" 41.6086
-cap "a_2178_n578#" "a_1664_n578#" 17.291
-cap "a_n14_n1302#" "inn" 37.5789
-cap "nclk" "inp" 0.849011
-cap "nclk" "outp" 0.348635
-cap "VDD" "outn" 8.03899
-cap "a_n14_n1302#" "op" 910.959
-cap "a_2178_n578#" "on" 24.3793
-cap "a_2178_n578#" "VDD" 525.219
-cap "nclk" "clk" 6140.36
-cap "inn" "bn" 0.382162
-cap "bp" "outn" 0.411967
-cap "outp" "outn" 32.6759
-cap "op" "bn" 361.535
-cap "a_2178_n578#" "bp" 921.085
-cap "a_2178_n578#" "inp" 0.0945582
-cap "a_2178_n578#" "outp" 0.465335
-cap "a_n14_n1302#" "nclk" 2.7913
-cap "on" "a_1664_n578#" 19.4289
-cap "VDD" "a_1664_n578#" 515.727
-cap "clk" "outn" 1.23653
-cap "VDD" "on" 1391.41
-cap "a_2178_n578#" "clk" 0.965155
-cap "nclk" "bn" 65.2255
-cap "bp" "a_1664_n578#" 34.4522
-cap "inp" "a_1664_n578#" 2.63905
-cap "outp" "a_1664_n578#" 0.0757325
-device csubckt sky130_fd_pr__cap_mim_m3_1 1903 -5842 1904 -5841 w=1600 l=700 "None" "op" 4280 0 "VSS" 100 0
-device csubckt sky130_fd_pr__cap_mim_m3_1 -179 -5842 -178 -5841 w=1600 l=700 "None" "on" 4280 0 "VSS" 100 0
-device csubckt sky130_fd_pr__cap_mim_m3_1 1903 -4842 1904 -4841 w=1600 l=700 "None" "op" 4280 0 "VSS" 100 0
-device csubckt sky130_fd_pr__cap_mim_m3_1 -179 -4842 -178 -4841 w=1600 l=700 "None" "on" 4280 0 "VSS" 100 0
-device csubckt sky130_fd_pr__cap_mim_m3_1 1903 -3842 1904 -3841 w=1600 l=700 "None" "op" 4280 0 "VSS" 100 0
-device csubckt sky130_fd_pr__cap_mim_m3_1 -179 -3842 -178 -3841 w=1600 l=700 "None" "on" 4280 0 "VSS" 100 0
-device csubckt sky130_fd_pr__cap_mim_m3_1 1903 -2842 1904 -2841 w=1600 l=700 "None" "op" 4280 0 "VSS" 100 0
-device csubckt sky130_fd_pr__cap_mim_m3_1 -179 -2842 -178 -2841 w=1600 l=700 "None" "on" 4280 0 "VSS" 100 0
-device csubckt sky130_fd_pr__cap_mim_m3_1 1903 464 1904 465 w=1600 l=700 "None" "op" 4280 0 "VSS" 100 0
-device csubckt sky130_fd_pr__cap_mim_m3_1 -179 464 -178 465 w=1600 l=700 "None" "on" 4280 0 "VSS" 100 0
-device csubckt sky130_fd_pr__cap_mim_m3_1 1903 1464 1904 1465 w=1600 l=700 "None" "op" 4280 0 "VSS" 100 0
-device csubckt sky130_fd_pr__cap_mim_m3_1 -179 1464 -178 1465 w=1600 l=700 "None" "on" 4280 0 "VSS" 100 0
-device csubckt sky130_fd_pr__cap_mim_m3_1 1903 2464 1904 2465 w=1600 l=700 "None" "op" 4280 0 "VSS" 100 0
-device csubckt sky130_fd_pr__cap_mim_m3_1 -179 2464 -178 2465 w=1600 l=700 "None" "on" 4280 0 "VSS" 100 0
-device csubckt sky130_fd_pr__cap_mim_m3_1 1903 3464 1904 3465 w=1600 l=700 "None" "op" 4280 0 "VSS" 100 0
-device csubckt sky130_fd_pr__cap_mim_m3_1 -179 3464 -178 3465 w=1600 l=700 "None" "on" 4280 0 "VSS" 100 0
-device msubckt sky130_fd_pr__nfet_01v8 2244 -1308 2245 -1307 l=30 w=400 "VSS" "nclk" 60 0 "bp" 400 0 "VSS" 400 0
-device msubckt sky130_fd_pr__nfet_01v8 2148 -1308 2149 -1307 l=30 w=400 "VSS" "bn" 60 0 "VSS" 400 0 "bp" 400 0
-device msubckt sky130_fd_pr__nfet_01v8 2052 -1308 2053 -1307 l=30 w=400 "VSS" "bp" 60 0 "bn" 400 0 "VSS" 400 0
-device msubckt sky130_fd_pr__nfet_01v8 1956 -1308 1957 -1307 l=30 w=400 "VSS" "nclk" 60 0 "VSS" 400 0 "bn" 400 0
-device msubckt sky130_fd_pr__nfet_01v8 720 -1302 721 -1301 l=30 w=100 "VSS" "clk" 60 0 "VSS" 100 0 "a_n14_n1302#" 100 0
-device msubckt sky130_fd_pr__nfet_01v8 624 -1302 625 -1301 l=30 w=100 "VSS" "clk" 60 0 "a_n14_n1302#" 100 0 "VSS" 100 0
-device msubckt sky130_fd_pr__nfet_01v8 528 -1302 529 -1301 l=30 w=100 "VSS" "clk" 60 0 "VSS" 100 0 "a_n14_n1302#" 100 0
-device msubckt sky130_fd_pr__nfet_01v8 432 -1302 433 -1301 l=30 w=100 "VSS" "clk" 60 0 "a_n14_n1302#" 100 0 "VSS" 100 0
-device msubckt sky130_fd_pr__nfet_01v8 336 -1302 337 -1301 l=30 w=100 "VSS" "clk" 60 0 "VSS" 100 0 "a_n14_n1302#" 100 0
-device msubckt sky130_fd_pr__nfet_01v8 240 -1302 241 -1301 l=30 w=100 "VSS" "clk" 60 0 "a_n14_n1302#" 100 0 "VSS" 100 0
-device msubckt sky130_fd_pr__nfet_01v8 144 -1302 145 -1301 l=30 w=100 "VSS" "clk" 60 0 "VSS" 100 0 "a_n14_n1302#" 100 0
-device msubckt sky130_fd_pr__nfet_01v8 48 -1302 49 -1301 l=30 w=100 "VSS" "clk" 60 0 "a_n14_n1302#" 100 0 "VSS" 100 0
-device msubckt sky130_fd_pr__nfet_01v8 720 -1042 721 -1041 l=30 w=400 "VSS" "inp" 60 0 "on" 400 0 "a_n14_n1302#" 400 0
-device msubckt sky130_fd_pr__nfet_01v8 624 -1042 625 -1041 l=30 w=400 "VSS" "inp" 60 0 "a_n14_n1302#" 400 0 "on" 400 0
-device msubckt sky130_fd_pr__nfet_01v8 528 -1042 529 -1041 l=30 w=400 "VSS" "inp" 60 0 "on" 400 0 "a_n14_n1302#" 400 0
-device msubckt sky130_fd_pr__nfet_01v8 432 -1042 433 -1041 l=30 w=400 "VSS" "inp" 60 0 "a_n14_n1302#" 400 0 "on" 400 0
-device msubckt sky130_fd_pr__nfet_01v8 336 -1042 337 -1041 l=30 w=400 "VSS" "inn" 60 0 "op" 400 0 "a_n14_n1302#" 400 0
-device msubckt sky130_fd_pr__nfet_01v8 240 -1042 241 -1041 l=30 w=400 "VSS" "inn" 60 0 "a_n14_n1302#" 400 0 "op" 400 0
-device msubckt sky130_fd_pr__nfet_01v8 144 -1042 145 -1041 l=30 w=400 "VSS" "inn" 60 0 "op" 400 0 "a_n14_n1302#" 400 0
-device msubckt sky130_fd_pr__nfet_01v8 48 -1042 49 -1041 l=30 w=400 "VSS" "inn" 60 0 "a_n14_n1302#" 400 0 "op" 400 0
-device msubckt sky130_fd_pr__pfet_01v8 2566 -578 2567 -577 l=30 w=400 "VDD" "on" 60 0 "a_2178_n578#" 400 0 "bp" 400 0
-device msubckt sky130_fd_pr__pfet_01v8 2470 -578 2471 -577 l=30 w=400 "VDD" "on" 60 0 "bp" 400 0 "a_2178_n578#" 400 0
-device msubckt sky130_fd_pr__pfet_01v8 2244 -578 2245 -577 l=30 w=400 "VDD" "bn" 60 0 "a_2178_n578#" 400 0 "VDD" 400 0
-device msubckt sky130_fd_pr__pfet_01v8 2148 -578 2149 -577 l=30 w=400 "VDD" "bn" 60 0 "VDD" 400 0 "a_2178_n578#" 400 0
-device msubckt sky130_fd_pr__pfet_01v8 2052 -578 2053 -577 l=30 w=400 "VDD" "bp" 60 0 "a_1664_n578#" 400 0 "VDD" 400 0
-device msubckt sky130_fd_pr__pfet_01v8 1956 -578 1957 -577 l=30 w=400 "VDD" "bp" 60 0 "VDD" 400 0 "a_1664_n578#" 400 0
-device msubckt sky130_fd_pr__pfet_01v8 1730 -578 1731 -577 l=30 w=400 "VDD" "op" 60 0 "a_1664_n578#" 400 0 "bn" 400 0
-device msubckt sky130_fd_pr__pfet_01v8 1634 -578 1635 -577 l=30 w=400 "VDD" "op" 60 0 "bn" 400 0 "a_1664_n578#" 400 0
-device msubckt sky130_fd_pr__pfet_01v8 720 -228 721 -227 l=30 w=100 "VDD" "clk" 60 0 "on" 100 0 "VDD" 100 0
-device msubckt sky130_fd_pr__pfet_01v8 624 -228 625 -227 l=30 w=100 "VDD" "clk" 60 0 "VDD" 100 0 "on" 100 0
-device msubckt sky130_fd_pr__pfet_01v8 528 -228 529 -227 l=30 w=100 "VDD" "clk" 60 0 "on" 100 0 "VDD" 100 0
-device msubckt sky130_fd_pr__pfet_01v8 432 -228 433 -227 l=30 w=100 "VDD" "clk" 60 0 "VDD" 100 0 "on" 100 0
-device msubckt sky130_fd_pr__pfet_01v8 336 -228 337 -227 l=30 w=100 "VDD" "clk" 60 0 "op" 100 0 "VDD" 100 0
-device msubckt sky130_fd_pr__pfet_01v8 240 -228 241 -227 l=30 w=100 "VDD" "clk" 60 0 "VDD" 100 0 "op" 100 0
-device msubckt sky130_fd_pr__pfet_01v8 144 -228 145 -227 l=30 w=100 "VDD" "clk" 60 0 "op" 100 0 "VDD" 100 0
-device msubckt sky130_fd_pr__pfet_01v8 48 -228 49 -227 l=30 w=100 "VDD" "clk" 60 0 "VDD" 100 0 "op" 100 0
-cap "adc_comp_buffer_1/in" "op" 3.59337
-cap "op" "adc_comp_buffer_1/a_26_n218#" 7.87514
-cap "op" "adc_comp_buffer_1/VSS" 7.0636
-cap "op" "adc_comp_buffer_0/in" 0.00121442
-cap "op" "adc_comp_buffer_0/a_26_n218#" 0.0274124
-cap "op" "adc_comp_buffer_1/out" 4.03723
-cap "adc_comp_buffer_1/VDD" "op" 11.9134
-cap "adc_comp_buffer_1/a_26_n218#" "adc_comp_buffer_1/VSS" 5.16287e-06
-cap "adc_comp_buffer_1/out" "adc_comp_buffer_1/in" 0.104514
-cap "op" "adc_comp_buffer_1/VSS" 0.0808832
-cap "adc_comp_buffer_0/in" "adc_comp_buffer_1/VDD" 0.75607
-cap "adc_comp_buffer_1/VSS" "adc_comp_buffer_1/VDD" 0.421651
-cap "a_1664_n578#" "adc_comp_buffer_1/VSS" 0.102349
-cap "adc_comp_buffer_1/out" "adc_comp_buffer_1/VSS" 0.10511
-cap "adc_comp_buffer_1/a_26_n218#" "op" 0.111801
-cap "adc_comp_buffer_1/out" "adc_comp_buffer_0/in" 0.00956557
-cap "nclk" "adc_comp_buffer_1/in" 0.0609265
-cap "nclk" "adc_comp_buffer_1/VSS" 0.445429
-cap "nclk" "adc_comp_buffer_1/a_26_n218#" 0.15124
-cap "adc_comp_buffer_1/in" "adc_comp_buffer_1/VSS" 0.327286
-cap "op" "adc_comp_buffer_1/VDD" 0.988862
-cap "adc_comp_buffer_1/a_26_n218#" "adc_comp_buffer_1/in" 0.434251
-cap "adc_comp_buffer_0/in" "adc_comp_buffer_1/VSS" 0.0534972
-cap "adc_comp_buffer_1/a_26_n218#" "adc_comp_buffer_0/in" 0.0129397
-cap "adc_comp_buffer_1/a_26_n218#" "adc_comp_buffer_1/VSS" 0.351674
-cap "nclk" "adc_comp_buffer_1/VDD" 0.0826556
-cap "nclk" "adc_comp_buffer_1/out" 0.0215963
-cap "adc_comp_buffer_1/in" "adc_comp_buffer_1/VDD" 1.60431
-cap "op" "adc_comp_buffer_1/in" 0.166883
-cap "adc_comp_buffer_1/out" "clk" 1.05843
-cap "adc_comp_buffer_0/out" "adc_comp_buffer_1/VDD" 6.90801
-cap "adc_comp_buffer_1/VSS" "adc_comp_buffer_0/out" 6.97742
-cap "adc_comp_buffer_1/out" "adc_comp_buffer_0/a_26_n218#" 1.67445
-cap "clk" "adc_comp_buffer_1/VDD" 1.81472
-cap "adc_comp_buffer_1/VDD" "op" -0.0591138
-cap "adc_comp_buffer_1/VSS" "op" 0.941202
-cap "clk" "adc_comp_buffer_1/VSS" -1.0723
-cap "adc_comp_buffer_0/out" "adc_comp_buffer_1/a_26_n218#" 3.45493
-cap "clk" "adc_comp_buffer_1/a_26_n218#" 2.10722
-cap "adc_comp_buffer_1/a_26_n218#" "op" 1.61235
-cap "nclk" "adc_comp_buffer_1/in" 1.60136
-cap "adc_comp_buffer_1/VDD" "adc_comp_buffer_0/a_26_n218#" 13.3234
-cap "adc_comp_buffer_1/VSS" "adc_comp_buffer_0/a_26_n218#" 14.2964
-cap "clk" "adc_comp_buffer_0/out" 0.113367
-cap "adc_comp_buffer_1/a_26_n218#" "adc_comp_buffer_0/a_26_n218#" 7.97478
-cap "adc_comp_buffer_1/out" "nclk" 1.37936
-cap "nclk" "adc_comp_buffer_0/in" 0.013631
-cap "adc_comp_buffer_0/in" "adc_comp_buffer_1/in" 4.84447
-cap "adc_comp_buffer_1/out" "adc_comp_buffer_1/in" -1.62539
-cap "adc_comp_buffer_1/VSS" "nclk" -0.718425
-cap "nclk" "adc_comp_buffer_1/VDD" 1.50395
-cap "on" "adc_comp_buffer_1/in" 0.632104
-cap "adc_comp_buffer_1/VDD" "adc_comp_buffer_1/in" 46.7384
-cap "clk" "adc_comp_buffer_0/a_26_n218#" 0.215228
-cap "adc_comp_buffer_1/out" "adc_comp_buffer_0/in" 0.547646
-cap "adc_comp_buffer_1/VSS" "adc_comp_buffer_1/in" 43.8824
-cap "nclk" "adc_comp_buffer_1/a_26_n218#" 4.37812
-cap "adc_comp_buffer_1/a_26_n218#" "adc_comp_buffer_1/in" 20.7455
-cap "on" "adc_comp_buffer_0/in" -0.0479936
-cap "adc_comp_buffer_1/out" "on" 0.415683
-cap "adc_comp_buffer_1/VSS" "a_2178_n578#" -0.0799746
-cap "adc_comp_buffer_1/VDD" "adc_comp_buffer_0/in" 11.5713
-cap "adc_comp_buffer_1/out" "adc_comp_buffer_1/VSS" 61.2213
-cap "adc_comp_buffer_1/VSS" "adc_comp_buffer_0/in" 7.54893
-cap "adc_comp_buffer_1/out" "adc_comp_buffer_1/VDD" 15.9833
-cap "adc_comp_buffer_0/out" "nclk" 0.0534494
-cap "adc_comp_buffer_1/a_26_n218#" "adc_comp_buffer_0/in" 4.28169
-cap "adc_comp_buffer_1/out" "adc_comp_buffer_1/a_26_n218#" 4.54947
-cap "clk" "adc_comp_buffer_1/in" 1.24517
-cap "op" "adc_comp_buffer_1/in" 1.21602
-cap "on" "adc_comp_buffer_1/VDD" 19.5526
-cap "adc_comp_buffer_1/VSS" "on" -1.64717
-cap "adc_comp_buffer_1/VSS" "adc_comp_buffer_1/VDD" 342.268
-cap "on" "adc_comp_buffer_1/a_26_n218#" 5.04315
-cap "nclk" "adc_comp_buffer_0/a_26_n218#" 0.103516
-cap "adc_comp_buffer_1/out" "adc_comp_buffer_0/out" 0.561051
-cap "adc_comp_buffer_1/VSS" "adc_comp_buffer_1/a_26_n218#" 140.774
-cap "adc_comp_buffer_1/a_26_n218#" "adc_comp_buffer_1/VDD" 37.4017
-cap "adc_comp_buffer_1/out" "op" 0.553925
-cap "clk" "adc_comp_buffer_0/in" 0.102836
-cap "adc_comp_buffer_0/a_26_n218#" "adc_comp_buffer_1/in" 2.09208
-cap "nclk" "adc_comp_buffer_1/VSS" -0.43861
-cap "adc_comp_buffer_1/a_26_n218#" "adc_comp_buffer_1/out" 1.26233
-cap "adc_comp_buffer_1/in" "adc_comp_buffer_1/out" 0.749777
-cap "adc_comp_buffer_1/out" "adc_comp_buffer_0/in" -0.0126663
-cap "adc_comp_buffer_1/a_26_n218#" "adc_comp_buffer_1/VSS" 5.92137
-cap "adc_comp_buffer_1/in" "adc_comp_buffer_1/VSS" -2.88923
-cap "adc_comp_buffer_1/VSS" "adc_comp_buffer_0/in" -0.65356
-cap "nclk" "adc_comp_buffer_1/out" -0.00728908
-cap "adc_comp_buffer_1/VSS" "adc_comp_buffer_1/VDD" 12.7334
-cap "adc_comp_buffer_1/out" "adc_comp_buffer_1/VSS" 7.68785
-cap "on" "adc_comp_buffer_1/VSS" -1.11355
-cap "adc_comp_buffer_1/VDD" "adc_comp_buffer_0/in" 0.387491
-cap "a_1664_n578#" "adc_comp_buffer_0/in" 0.340717
-cap "a_1664_n578#" "adc_comp_buffer_1/VDD" -0.126535
-cap "adc_comp_buffer_1/in" "adc_comp_buffer_0/in" 0.313184
-cap "op" "adc_comp_buffer_0/out" 0.00384624
-cap "adc_comp_buffer_0/out" "adc_comp_buffer_0/in" 0.00621348
-cap "adc_comp_buffer_1/in" "adc_comp_buffer_1/VDD" -0.541698
-cap "op" "adc_comp_buffer_0/a_26_n218#" 0.161474
-cap "adc_comp_buffer_0/a_26_n218#" "adc_comp_buffer_0/in" 0.00870245
-cap "adc_comp_buffer_0/out" "adc_comp_buffer_1/VDD" 0.0805185
-cap "a_1664_n578#" "adc_comp_buffer_0/out" 0.0785453
-cap "op" "adc_comp_buffer_1/VSS" 0.0154096
-cap "adc_comp_buffer_1/VDD" "adc_comp_buffer_0/a_26_n218#" 0.262671
-cap "adc_comp_buffer_1/VSS" "adc_comp_buffer_0/in" 0.0181635
-cap "a_1664_n578#" "adc_comp_buffer_0/a_26_n218#" 0.425832
-cap "adc_comp_buffer_1/in" "adc_comp_buffer_0/out" 0.0688659
-cap "adc_comp_buffer_1/VSS" "adc_comp_buffer_1/VDD" 0.0550336
-cap "adc_comp_buffer_1/in" "adc_comp_buffer_0/a_26_n218#" 0.309634
-cap "a_1664_n578#" "adc_comp_buffer_1/VSS" 0.088586
-cap "op" "adc_comp_buffer_0/in" 0.0508104
-cap "adc_comp_buffer_1/in" "adc_comp_buffer_1/VSS" 0.0624126
-cap "op" "adc_comp_buffer_1/VDD" -0.571779
-cap "a_2178_n578#" "adc_comp_buffer_0/out" 0.674207
-cap "adc_comp_buffer_1/VDD" "adc_comp_buffer_0/in" 100.229
-cap "clk" "adc_comp_buffer_0/in" 0.258895
-cap "adc_comp_buffer_0/out" "adc_comp_buffer_1/VSS" 39.4963
-cap "a_2178_n578#" "adc_comp_buffer_0/a_26_n218#" 3.34131
-cap "a_1664_n578#" "adc_comp_buffer_0/in" 0.941881
-cap "adc_comp_buffer_0/out" "adc_comp_buffer_1/out" 0.678571
-cap "op" "adc_comp_buffer_1/a_26_n218#" 0.105712
-cap "on" "adc_comp_buffer_0/out" 0.39837
-cap "op" "adc_comp_buffer_1/in" 0.0191445
-cap "adc_comp_buffer_1/VSS" "adc_comp_buffer_0/a_26_n218#" 87.7416
-cap "clk" "adc_comp_buffer_1/VDD" 0.00828
-cap "adc_comp_buffer_1/a_26_n218#" "adc_comp_buffer_0/in" 2.34617
-cap "adc_comp_buffer_1/out" "adc_comp_buffer_0/a_26_n218#" 3.4087
-cap "a_1664_n578#" "adc_comp_buffer_1/VDD" 0.0667043
-cap "a_2178_n578#" "adc_comp_buffer_1/VSS" 0.485567
-cap "on" "adc_comp_buffer_0/a_26_n218#" 2.11214
-cap "adc_comp_buffer_1/in" "adc_comp_buffer_0/in" 3.86817
-cap "adc_comp_buffer_0/out" "nclk" 0.193583
-cap "op" "adc_comp_buffer_0/out" 1.25393
-cap "adc_comp_buffer_1/a_26_n218#" "adc_comp_buffer_1/VDD" 8.18402
-cap "adc_comp_buffer_1/out" "adc_comp_buffer_1/VSS" 5.17664
-cap "nclk" "adc_comp_buffer_0/a_26_n218#" 0.377258
-cap "adc_comp_buffer_0/out" "adc_comp_buffer_0/in" -1.53426
-cap "on" "adc_comp_buffer_1/VSS" 0.730279
-cap "op" "adc_comp_buffer_0/a_26_n218#" 3.86936
-cap "adc_comp_buffer_1/in" "adc_comp_buffer_1/VDD" 3.83615
-cap "adc_comp_buffer_0/a_26_n218#" "adc_comp_buffer_0/in" 24.3661
-cap "a_2178_n578#" "adc_comp_buffer_0/in" 2.33324
-cap "adc_comp_buffer_0/out" "clk" 0.248982
-cap "adc_comp_buffer_0/out" "adc_comp_buffer_1/VDD" 44.4812
-cap "op" "adc_comp_buffer_1/out" 0.0502342
-cap "a_1664_n578#" "adc_comp_buffer_0/out" 0.215075
-cap "op" "adc_comp_buffer_1/VSS" 0.587638
-cap "clk" "adc_comp_buffer_0/a_26_n218#" 0.450777
-cap "adc_comp_buffer_1/VSS" "adc_comp_buffer_0/in" 35.8134
-cap "adc_comp_buffer_1/VDD" "adc_comp_buffer_0/a_26_n218#" 126.872
-cap "a_2178_n578#" "adc_comp_buffer_1/VDD" 0.826587
-cap "a_1664_n578#" "adc_comp_buffer_0/a_26_n218#" 1.24773
-cap "on" "adc_comp_buffer_0/in" 0.492729
-cap "adc_comp_buffer_0/out" "adc_comp_buffer_1/a_26_n218#" 1.99516
-cap "adc_comp_buffer_1/in" "adc_comp_buffer_0/out" 0.350072
-cap "adc_comp_buffer_1/out" "adc_comp_buffer_1/VDD" 3.93716
-cap "adc_comp_buffer_1/VSS" "adc_comp_buffer_1/VDD" 182.895
-cap "nclk" "adc_comp_buffer_0/in" 0.211605
-cap "adc_comp_buffer_1/a_26_n218#" "adc_comp_buffer_0/a_26_n218#" 7.80115
-cap "a_1664_n578#" "adc_comp_buffer_1/VSS" 0.0955494
-cap "adc_comp_buffer_1/in" "adc_comp_buffer_0/a_26_n218#" 2.76017
-cap "op" "adc_comp_buffer_0/in" 1.93782
-cap "on" "adc_comp_buffer_1/VDD" 2.09692
-cap "nclk" "adc_comp_buffer_1/VDD" 0.004669
-cap "adc_comp_buffer_1/a_26_n218#" "adc_comp_buffer_1/VSS" 11.7551
-cap "adc_comp_buffer_0/out" "adc_comp_buffer_0/a_26_n218#" 4.34
-cap "op" "adc_comp_buffer_1/VDD" 3.65528
-cap "adc_comp_buffer_1/in" "adc_comp_buffer_1/VSS" 5.03757
-cap "adc_comp_buffer_0/out" "adc_comp_buffer_1/VSS" 6.89933
-cap "a_2178_n578#" "adc_comp_buffer_0/out" -0.028438
-cap "adc_comp_buffer_0/out" "a_1664_n578#" -0.00403649
-cap "adc_comp_buffer_1/VSS" "on" -1.44848
-cap "adc_comp_buffer_1/VSS" "adc_comp_buffer_0/a_26_n218#" 3.96236
-cap "adc_comp_buffer_0/out" "adc_comp_buffer_1/in" -0.0104391
-cap "adc_comp_buffer_1/VSS" "adc_comp_buffer_0/in" -4.57099
-cap "adc_comp_buffer_0/out" "adc_comp_buffer_1/VDD" -0.125647
-cap "a_2178_n578#" "adc_comp_buffer_1/VSS" -1.31139
-cap "adc_comp_buffer_0/out" "on" -0.0198108
-cap "adc_comp_buffer_1/VSS" "adc_comp_buffer_1/in" -0.48664
-cap "adc_comp_buffer_0/out" "adc_comp_buffer_0/a_26_n218#" 0.108397
-cap "adc_comp_buffer_1/VSS" "adc_comp_buffer_1/VDD" -3.55166
-cap "adc_comp_buffer_0/out" "adc_comp_buffer_0/in" -0.115445
-cap "adc_comp_buffer_1/VDD" "op" 0.596238
-cap "adc_comp_buffer_0/in" "op" 0.00561715
-cap "adc_comp_buffer_0/VSS" "adc_comp_buffer_1/VDD" 0.524566
-cap "adc_comp_buffer_0/VSS" "adc_comp_buffer_0/in" 0.0246257
-cap "adc_comp_buffer_0/out" "op" 0.00847036
-cap "adc_comp_buffer_0/out" "adc_comp_buffer_0/VSS" 0.0358365
-cap "adc_comp_buffer_0/a_26_n218#" "op" 0.0420191
-cap "adc_comp_buffer_0/VSS" "adc_comp_buffer_0/a_26_n218#" 0.101332
-merge "adc_comp_buffer_0/VDD" "adc_comp_buffer_1/VDD" -1856.22 0 0 0 0 -310592 -2702 0 0 -33504 -1444 -26000 -1320 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -87840 -4174 -264120 -3036 0 0 0 0 0 0 0 0 0 0
+port "outn" 7 2862 -862 2862 -824 li
+port "outp" 8 2860 -272 2860 -234 li
+port "nclk" 10 1440 -1298 1440 -1244 li
+port "inn" 6 -838 -352 -838 -324 m1
+port "inp" 5 -838 -296 -838 -268 m1
+port "clk" 9 -6 -1044 -6 -1014 li
+port "VDD" 1 -838 162 -838 300 m1
+port "VSS" 2 -838 -1484 -838 -1326 m1
+node "outn" 22 84.2906 2862 -862 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4056 264 3600 240 0 0 0 0 0 0 0 0 0 0
+node "outp" 23 60.5608 2860 -272 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4132 268 3600 240 0 0 0 0 0 0 0 0 0 0
+node "nclk" 2359 442.581 1440 -1298 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 45504 3036 0 0 3564 240 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_82_n1170#" 8601 965.752 82 -1170 ndif 0 0 0 0 0 0 0 0 161000 6288 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 136312 7996 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_1820_n446#" 3312 54.5347 1820 -446 pdif 0 0 0 0 0 0 0 0 0 0 52800 1864 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 43248 2612 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_1306_n446#" 3312 21.0141 1306 -446 pdif 0 0 0 0 0 0 0 0 0 0 52800 1864 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 43248 2612 0 0 0 0 0 0 0 0 0 0 0 0
+node "inn" 3603 671.828 -838 -352 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 71000 4656 0 0 4320 264 35064 2460 0 0 0 0 0 0 0 0 0 0
+node "inp" 3664 579.512 -838 -296 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 72900 4756 0 0 4320 264 46472 3256 0 0 0 0 0 0 0 0 0 0
+node "bn" 7788 1116.2 1214 -446 pdif 0 0 0 0 0 0 0 0 26400 932 49600 1848 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 97484 5128 0 0 83436 4976 0 0 0 0 0 0 0 0 0 0 0 0
+node "bp" 7453 1155.1 1598 -492 p 0 0 0 0 0 0 0 0 26400 932 49600 1848 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 64020 3988 0 0 108108 5424 7728 388 0 0 0 0 0 0 0 0 0 0
+node "on" 5939 25579.1 558 -910 ndif 0 0 0 0 0 0 0 0 52800 1864 13200 664 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 45124 2760 0 0 246016 9088 76112 3652 21576 832 21576 832 7992550 41270 0 0 0 0
+node "op" 5796 26226.2 174 -910 ndif 0 0 0 0 0 0 0 0 52800 1864 13200 664 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 42652 2640 0 0 238364 8620 57736 2672 20304 808 20304 808 8210314 45882 0 0 0 0
+node "clk" 7302 1466.09 -6 -1044 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 145824 9304 0 0 41432 1876 0 0 0 0 0 0 0 0 0 0 0 0
+node "VDD" 20403 10147.2 -838 162 m1 0 0 0 0 1529848 7184 0 0 75840 3352 108200 4424 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 330644 13460 830120 10464 0 0 0 0 0 0 0 0 0 0
+substrate "VSS" 0 0 -838 -1484 m1 0 0 0 0 0 0 0 0 102400 4108 943620 31680 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6930964 82840 1594500 23444 748288 12716 28230294 91412 0 0 0 0 0 0
+cap "outp" "a_1820_n446#" 1.10845
+cap "outp" "on" 0.462578
+cap "a_82_n1170#" "op" 887.94
+cap "VDD" "nclk" 42.2994
+cap "a_1306_n446#" "op" 34.982
+cap "VDD" "a_1820_n446#" 516.018
+cap "VDD" "on" 1221.98
+cap "outn" "op" 1.17473
+cap "a_1306_n446#" "a_82_n1170#" 0.0679018
+cap "bp" "op" 82.7882
+cap "inp" "a_1820_n446#" 2.04804
+cap "inp" "on" 184.845
+cap "clk" "op" 93.2346
+cap "bp" "a_82_n1170#" 4.20724
+cap "bn" "op" 335.012
+cap "inn" "op" 242.993
+cap "clk" "a_82_n1170#" 390.04
+cap "outp" "op" 1.52227
+cap "bn" "a_82_n1170#" 5.30043
+cap "a_1306_n446#" "bp" 40.4329
+cap "inn" "a_82_n1170#" 38.3336
+cap "clk" "a_1306_n446#" 1.94702
+cap "outn" "bp" 1.36074
+cap "a_1306_n446#" "bn" 750.196
+cap "inn" "a_1306_n446#" 1.35375
+cap "outn" "bn" 6.3459
+cap "a_1306_n446#" "outp" 0.462439
+cap "outn" "outp" 5.7688
+cap "VDD" "op" 1278.7
+cap "clk" "bp" 0.885719
+cap "VDD" "a_82_n1170#" 67.0501
+cap "bp" "bn" 398.083
+cap "clk" "bn" 4.05362
+cap "inn" "bp" 0.226952
+cap "nclk" "a_1820_n446#" 0.288197
+cap "nclk" "on" 8.54778
+cap "inn" "clk" 105.648
+cap "outp" "bp" 15.0854
+cap "VDD" "a_1306_n446#" 513.683
+cap "inn" "bn" 2.17969
+cap "on" "a_1820_n446#" 24.9317
+cap "VDD" "outn" 57.2555
+cap "outp" "bn" 0.565581
+cap "inp" "op" 358.268
+cap "inp" "a_82_n1170#" 20.28
+cap "VDD" "bp" 521.622
+cap "inp" "a_1306_n446#" 4.79188
+cap "clk" "VDD" 227.095
+cap "VDD" "bn" 402.013
+cap "inn" "VDD" 38.5171
+cap "VDD" "outp" 66.7799
+cap "inp" "bp" 2.42171
+cap "clk" "inp" 90.2656
+cap "inp" "bn" 6.59143
+cap "nclk" "op" 21.3736
+cap "inn" "inp" 1572.92
+cap "a_1820_n446#" "op" 26.9016
+cap "on" "op" 2762.61
+cap "nclk" "a_82_n1170#" 1.13739
+cap "a_1820_n446#" "a_82_n1170#" 0.0690577
+cap "on" "a_82_n1170#" 1113.37
+cap "a_1306_n446#" "nclk" 0.85205
+cap "a_1306_n446#" "a_1820_n446#" 17.291
+cap "outn" "nclk" 0.608288
+cap "a_1306_n446#" "on" 20.5096
+cap "inp" "VDD" 248.177
+cap "bp" "nclk" 38.5917
+cap "clk" "nclk" 0.460192
+cap "bp" "a_1820_n446#" 928.604
+cap "bp" "on" 159.592
+cap "nclk" "bn" 60.7476
+cap "clk" "a_1820_n446#" 0.531003
+cap "clk" "on" 57.4725
+cap "a_1820_n446#" "bn" 11.9982
+cap "on" "bn" 159.818
+cap "inn" "a_1820_n446#" 0.138776
+cap "inn" "on" 15.2883
+device csubckt sky130_fd_pr__cap_mim_m3_1 1903 -5628 1904 -5627 w=1600 l=700 "None" "op" 4280 0 "VSS" 100 0
+device csubckt sky130_fd_pr__cap_mim_m3_1 -179 -5628 -178 -5627 w=1600 l=700 "None" "on" 4280 0 "VSS" 100 0
+device csubckt sky130_fd_pr__cap_mim_m3_1 1903 -4628 1904 -4627 w=1600 l=700 "None" "op" 4280 0 "VSS" 100 0
+device csubckt sky130_fd_pr__cap_mim_m3_1 -179 -4628 -178 -4627 w=1600 l=700 "None" "on" 4280 0 "VSS" 100 0
+device csubckt sky130_fd_pr__cap_mim_m3_1 1903 -3628 1904 -3627 w=1600 l=700 "None" "op" 4280 0 "VSS" 100 0
+device csubckt sky130_fd_pr__cap_mim_m3_1 -179 -3628 -178 -3627 w=1600 l=700 "None" "on" 4280 0 "VSS" 100 0
+device csubckt sky130_fd_pr__cap_mim_m3_1 1903 -2628 1904 -2627 w=1600 l=700 "None" "op" 4280 0 "VSS" 100 0
+device csubckt sky130_fd_pr__cap_mim_m3_1 -179 -2628 -178 -2627 w=1600 l=700 "None" "on" 4280 0 "VSS" 100 0
+device csubckt sky130_fd_pr__cap_mim_m3_1 1903 612 1904 613 w=1600 l=700 "None" "op" 4280 0 "VSS" 100 0
+device csubckt sky130_fd_pr__cap_mim_m3_1 -179 612 -178 613 w=1600 l=700 "None" "on" 4280 0 "VSS" 100 0
+device csubckt sky130_fd_pr__cap_mim_m3_1 1903 1612 1904 1613 w=1600 l=700 "None" "op" 4280 0 "VSS" 100 0
+device csubckt sky130_fd_pr__cap_mim_m3_1 -179 1612 -178 1613 w=1600 l=700 "None" "on" 4280 0 "VSS" 100 0
+device csubckt sky130_fd_pr__cap_mim_m3_1 1903 2612 1904 2613 w=1600 l=700 "None" "op" 4280 0 "VSS" 100 0
+device csubckt sky130_fd_pr__cap_mim_m3_1 -179 2612 -178 2613 w=1600 l=700 "None" "on" 4280 0 "VSS" 100 0
+device csubckt sky130_fd_pr__cap_mim_m3_1 1903 3612 1904 3613 w=1600 l=700 "None" "op" 4280 0 "VSS" 100 0
+device csubckt sky130_fd_pr__cap_mim_m3_1 -179 3612 -178 3613 w=1600 l=700 "None" "on" 4280 0 "VSS" 100 0
+device msubckt sky130_fd_pr__nfet_01v8 1886 -1176 1887 -1175 l=30 w=400 "VSS" "nclk" 60 0 "bp" 400 0 "VSS" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 1790 -1176 1791 -1175 l=30 w=400 "VSS" "bn" 60 0 "VSS" 400 0 "bp" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 1694 -1176 1695 -1175 l=30 w=400 "VSS" "bp" 60 0 "bn" 400 0 "VSS" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 1598 -1176 1599 -1175 l=30 w=400 "VSS" "nclk" 60 0 "VSS" 400 0 "bn" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 816 -1170 817 -1169 l=30 w=100 "VSS" "clk" 60 0 "VSS" 100 0 "a_82_n1170#" 100 0
+device msubckt sky130_fd_pr__nfet_01v8 720 -1170 721 -1169 l=30 w=100 "VSS" "clk" 60 0 "a_82_n1170#" 100 0 "VSS" 100 0
+device msubckt sky130_fd_pr__nfet_01v8 624 -1170 625 -1169 l=30 w=100 "VSS" "clk" 60 0 "VSS" 100 0 "a_82_n1170#" 100 0
+device msubckt sky130_fd_pr__nfet_01v8 528 -1170 529 -1169 l=30 w=100 "VSS" "clk" 60 0 "a_82_n1170#" 100 0 "VSS" 100 0
+device msubckt sky130_fd_pr__nfet_01v8 432 -1170 433 -1169 l=30 w=100 "VSS" "clk" 60 0 "VSS" 100 0 "a_82_n1170#" 100 0
+device msubckt sky130_fd_pr__nfet_01v8 336 -1170 337 -1169 l=30 w=100 "VSS" "clk" 60 0 "a_82_n1170#" 100 0 "VSS" 100 0
+device msubckt sky130_fd_pr__nfet_01v8 240 -1170 241 -1169 l=30 w=100 "VSS" "clk" 60 0 "VSS" 100 0 "a_82_n1170#" 100 0
+device msubckt sky130_fd_pr__nfet_01v8 144 -1170 145 -1169 l=30 w=100 "VSS" "clk" 60 0 "a_82_n1170#" 100 0 "VSS" 100 0
+device msubckt sky130_fd_pr__nfet_01v8 816 -910 817 -909 l=30 w=400 "VSS" "inp" 60 0 "on" 400 0 "a_82_n1170#" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 720 -910 721 -909 l=30 w=400 "VSS" "inp" 60 0 "a_82_n1170#" 400 0 "on" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 624 -910 625 -909 l=30 w=400 "VSS" "inp" 60 0 "on" 400 0 "a_82_n1170#" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 528 -910 529 -909 l=30 w=400 "VSS" "inp" 60 0 "a_82_n1170#" 400 0 "on" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 432 -910 433 -909 l=30 w=400 "VSS" "inn" 60 0 "op" 400 0 "a_82_n1170#" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 336 -910 337 -909 l=30 w=400 "VSS" "inn" 60 0 "a_82_n1170#" 400 0 "op" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 240 -910 241 -909 l=30 w=400 "VSS" "inn" 60 0 "op" 400 0 "a_82_n1170#" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 144 -910 145 -909 l=30 w=400 "VSS" "inn" 60 0 "a_82_n1170#" 400 0 "op" 400 0
+device msubckt sky130_fd_pr__pfet_01v8 2208 -446 2209 -445 l=30 w=400 "VDD" "on" 60 0 "a_1820_n446#" 400 0 "bp" 400 0
+device msubckt sky130_fd_pr__pfet_01v8 2112 -446 2113 -445 l=30 w=400 "VDD" "on" 60 0 "bp" 400 0 "a_1820_n446#" 400 0
+device msubckt sky130_fd_pr__pfet_01v8 1886 -446 1887 -445 l=30 w=400 "VDD" "bn" 60 0 "a_1820_n446#" 400 0 "VDD" 400 0
+device msubckt sky130_fd_pr__pfet_01v8 1790 -446 1791 -445 l=30 w=400 "VDD" "bn" 60 0 "VDD" 400 0 "a_1820_n446#" 400 0
+device msubckt sky130_fd_pr__pfet_01v8 1694 -446 1695 -445 l=30 w=400 "VDD" "bp" 60 0 "a_1306_n446#" 400 0 "VDD" 400 0
+device msubckt sky130_fd_pr__pfet_01v8 1598 -446 1599 -445 l=30 w=400 "VDD" "bp" 60 0 "VDD" 400 0 "a_1306_n446#" 400 0
+device msubckt sky130_fd_pr__pfet_01v8 1372 -446 1373 -445 l=30 w=400 "VDD" "op" 60 0 "a_1306_n446#" 400 0 "bn" 400 0
+device msubckt sky130_fd_pr__pfet_01v8 1276 -446 1277 -445 l=30 w=400 "VDD" "op" 60 0 "bn" 400 0 "a_1306_n446#" 400 0
+device msubckt sky130_fd_pr__pfet_01v8 816 -96 817 -95 l=30 w=100 "VDD" "clk" 60 0 "on" 100 0 "VDD" 100 0
+device msubckt sky130_fd_pr__pfet_01v8 720 -96 721 -95 l=30 w=100 "VDD" "clk" 60 0 "VDD" 100 0 "on" 100 0
+device msubckt sky130_fd_pr__pfet_01v8 624 -96 625 -95 l=30 w=100 "VDD" "clk" 60 0 "on" 100 0 "VDD" 100 0
+device msubckt sky130_fd_pr__pfet_01v8 528 -96 529 -95 l=30 w=100 "VDD" "clk" 60 0 "VDD" 100 0 "on" 100 0
+device msubckt sky130_fd_pr__pfet_01v8 432 -96 433 -95 l=30 w=100 "VDD" "clk" 60 0 "op" 100 0 "VDD" 100 0
+device msubckt sky130_fd_pr__pfet_01v8 336 -96 337 -95 l=30 w=100 "VDD" "clk" 60 0 "VDD" 100 0 "op" 100 0
+device msubckt sky130_fd_pr__pfet_01v8 240 -96 241 -95 l=30 w=100 "VDD" "clk" 60 0 "op" 100 0 "VDD" 100 0
+device msubckt sky130_fd_pr__pfet_01v8 144 -96 145 -95 l=30 w=100 "VDD" "clk" 60 0 "VDD" 100 0 "op" 100 0
+cap "adc_comp_buffer_0/a_26_n218#" "op" 0.0263856
+cap "adc_comp_buffer_1/VDD" "op" 10.6428
+cap "adc_comp_buffer_1/VDD" "adc_comp_buffer_1/VSS" 0.0331846
+cap "op" "adc_comp_buffer_1/out" 0.113446
+cap "adc_comp_buffer_0/in" "op" 0.00811988
+cap "adc_comp_buffer_1/in" "op" 0.525522
+cap "adc_comp_buffer_1/VSS" "op" 1.03078
+cap "op" "adc_comp_buffer_1/a_26_n218#" 1.65069
+cap "adc_comp_buffer_1/VSS" "adc_comp_buffer_1/a_26_n218#" 1.31489e-05
+cap "adc_comp_buffer_1/out" "adc_comp_buffer_1/in" 0.255959
+cap "adc_comp_buffer_1/a_26_n218#" "a_82_n1170#" 0.00116093
+cap "inp" "adc_comp_buffer_1/VDD" 0.000170307
+cap "adc_comp_buffer_1/a_26_n218#" "adc_comp_buffer_1/VSS" 0.820764
+cap "adc_comp_buffer_0/out" "adc_comp_buffer_1/in" 0.012387
+cap "adc_comp_buffer_0/a_26_n218#" "adc_comp_buffer_0/in" 0.000747017
+cap "adc_comp_buffer_1/VDD" "op" 1.59722
+cap "adc_comp_buffer_0/a_26_n218#" "a_1820_n446#" 0.271016
+cap "adc_comp_buffer_0/in" "adc_comp_buffer_1/in" 0.471266
+cap "nclk" "adc_comp_buffer_1/a_26_n218#" 0.391296
+cap "adc_comp_buffer_1/out" "adc_comp_buffer_0/in" 0.399297
+cap "adc_comp_buffer_0/out" "adc_comp_buffer_0/in" 0.000586182
+cap "a_1820_n446#" "adc_comp_buffer_0/out" 0.0108283
+cap "a_1306_n446#" "adc_comp_buffer_1/VSS" 0.0243227
+cap "adc_comp_buffer_0/a_26_n218#" "op" 0.214614
+cap "adc_comp_buffer_1/a_26_n218#" "on" 0.169081
+cap "adc_comp_buffer_1/VDD" "a_82_n1170#" 0.00639199
+cap "op" "adc_comp_buffer_1/in" 0.436214
+cap "a_1820_n446#" "adc_comp_buffer_0/in" 0.0421838
+cap "nclk" "adc_comp_buffer_1/VSS" -0.2856
+cap "adc_comp_buffer_1/VDD" "adc_comp_buffer_1/VSS" 3.58612
+cap "adc_comp_buffer_1/out" "op" 0.125597
+cap "clk" "adc_comp_buffer_1/VDD" 0.000642583
+cap "adc_comp_buffer_0/out" "op" 0.0391857
+cap "adc_comp_buffer_1/a_26_n218#" "adc_comp_buffer_1/in" 0.781321
+cap "nclk" "adc_comp_buffer_1/VDD" 8.77804
+cap "adc_comp_buffer_1/VSS" "on" 0.0634538
+cap "adc_comp_buffer_0/in" "op" 0.0790994
+cap "a_82_n1170#" "adc_comp_buffer_1/in" 0.000352429
+cap "adc_comp_buffer_1/a_26_n218#" "adc_comp_buffer_0/in" 1.37128
+cap "adc_comp_buffer_1/in" "adc_comp_buffer_1/VSS" 0.869082
+cap "adc_comp_buffer_1/VDD" "on" 0.0864224
+cap "a_1306_n446#" "adc_comp_buffer_0/a_26_n218#" 0.229737
+cap "adc_comp_buffer_1/out" "adc_comp_buffer_1/VSS" 0.188168
+cap "adc_comp_buffer_0/a_26_n218#" "adc_comp_buffer_1/VDD" 0.0442312
+cap "nclk" "adc_comp_buffer_1/in" 0.356452
+cap "adc_comp_buffer_1/VDD" "adc_comp_buffer_1/in" 0.955212
+cap "a_1306_n446#" "adc_comp_buffer_0/out" 0.0124852
+cap "adc_comp_buffer_0/in" "adc_comp_buffer_1/VSS" 0.579376
+cap "adc_comp_buffer_1/out" "nclk" 0.0296721
+cap "adc_comp_buffer_1/a_26_n218#" "op" 0.72653
+cap "adc_comp_buffer_0/a_26_n218#" "on" 0.00168841
+cap "a_1820_n446#" "adc_comp_buffer_1/VSS" 0.0209949
+cap "a_1306_n446#" "adc_comp_buffer_0/in" 0.0435607
+cap "adc_comp_buffer_0/out" "adc_comp_buffer_1/VDD" 0.0169351
+cap "adc_comp_buffer_1/in" "on" 0.067556
+cap "adc_comp_buffer_0/in" "adc_comp_buffer_1/VDD" 1.15972
+cap "adc_comp_buffer_0/a_26_n218#" "adc_comp_buffer_1/in" 0.0463345
+cap "op" "adc_comp_buffer_1/VSS" 0.280814
+cap "adc_comp_buffer_0/in" "on" 0.00147191
+cap "adc_comp_buffer_1/VSS" "adc_comp_buffer_1/VDD" 160.536
+cap "adc_comp_buffer_1/VSS" "adc_comp_buffer_0/a_26_n218#" 23.1874
+cap "adc_comp_buffer_1/VDD" "nclk" -0.586252
+cap "a_1820_n446#" "adc_comp_buffer_0/out" 0.0412228
+cap "adc_comp_buffer_1/in" "nclk" 0.356452
+cap "adc_comp_buffer_1/VSS" "adc_comp_buffer_1/in" 31.9923
+cap "adc_comp_buffer_1/out" "adc_comp_buffer_0/out" 0.445588
+cap "adc_comp_buffer_1/a_26_n218#" "nclk" 0.879028
+cap "adc_comp_buffer_1/VSS" "adc_comp_buffer_1/a_26_n218#" 248.554
+cap "adc_comp_buffer_0/in" "a_1820_n446#" 0.0836221
+cap "adc_comp_buffer_0/in" "adc_comp_buffer_1/out" 0.290531
+cap "adc_comp_buffer_1/in" "adc_comp_buffer_0/out" 0.0223508
+cap "adc_comp_buffer_1/VDD" "adc_comp_buffer_0/out" 1.09118
+cap "adc_comp_buffer_1/VSS" "on" 5.27027
+cap "adc_comp_buffer_1/a_26_n218#" "adc_comp_buffer_0/out" 3.73379
+cap "adc_comp_buffer_0/in" "adc_comp_buffer_1/in" 4.99675
+cap "adc_comp_buffer_0/in" "adc_comp_buffer_0/a_26_n218#" 3.6453
+cap "adc_comp_buffer_0/in" "adc_comp_buffer_1/VDD" -0.418443
+cap "adc_comp_buffer_0/in" "adc_comp_buffer_1/a_26_n218#" 2.1816
+cap "a_1306_n446#" "adc_comp_buffer_1/VDD" -0.0536224
+cap "op" "adc_comp_buffer_1/VSS" 2.58503
+cap "a_1306_n446#" "adc_comp_buffer_0/a_26_n218#" 0.114805
+cap "on" "adc_comp_buffer_0/out" 0.0206231
+cap "adc_comp_buffer_0/in" "on" 0.740742
+cap "op" "adc_comp_buffer_0/out" 1.28981
+cap "op" "adc_comp_buffer_0/in" 0.956059
+cap "adc_comp_buffer_1/VSS" "nclk" 0.00679429
+cap "a_1820_n446#" "adc_comp_buffer_1/VDD" -0.174652
+cap "a_1820_n446#" "adc_comp_buffer_0/a_26_n218#" 0.298589
+cap "adc_comp_buffer_1/VDD" "adc_comp_buffer_1/out" 20.7077
+cap "adc_comp_buffer_0/a_26_n218#" "adc_comp_buffer_1/out" 2.96598
+cap "adc_comp_buffer_1/in" "adc_comp_buffer_1/out" 0.0752473
+cap "adc_comp_buffer_1/VSS" "adc_comp_buffer_0/out" -1.25119
+cap "adc_comp_buffer_1/a_26_n218#" "adc_comp_buffer_1/out" 3.12303
+cap "adc_comp_buffer_1/VSS" "adc_comp_buffer_0/in" 12.9348
+cap "adc_comp_buffer_0/a_26_n218#" "adc_comp_buffer_1/in" 2.67424
+cap "adc_comp_buffer_0/a_26_n218#" "adc_comp_buffer_1/VDD" 20.8335
+cap "adc_comp_buffer_1/VDD" "adc_comp_buffer_1/in" 9.07086
+cap "a_1306_n446#" "adc_comp_buffer_1/VSS" 0.0276218
+cap "adc_comp_buffer_0/a_26_n218#" "adc_comp_buffer_1/a_26_n218#" 24.3306
+cap "on" "adc_comp_buffer_1/out" 2.25435
+cap "adc_comp_buffer_1/a_26_n218#" "adc_comp_buffer_1/in" 0.641396
+cap "adc_comp_buffer_1/VDD" "adc_comp_buffer_1/a_26_n218#" 31.6801
+cap "a_82_n1170#" "adc_comp_buffer_1/a_26_n218#" 0.00175821
+cap "adc_comp_buffer_0/in" "adc_comp_buffer_0/out" 0.0988044
+cap "op" "adc_comp_buffer_1/out" 6.15761
+cap "adc_comp_buffer_0/a_26_n218#" "on" 0.884732
+cap "on" "adc_comp_buffer_1/in" 2.11429
+cap "adc_comp_buffer_1/VDD" "on" -3.96181
+cap "a_1306_n446#" "adc_comp_buffer_0/out" 0.0138725
+cap "adc_comp_buffer_1/a_26_n218#" "on" 4.78136
+cap "a_1306_n446#" "adc_comp_buffer_0/in" 0.0388797
+cap "op" "adc_comp_buffer_1/VDD" 21.9993
+cap "op" "adc_comp_buffer_0/a_26_n218#" 4.29153
+cap "op" "adc_comp_buffer_1/in" 4.30821
+cap "adc_comp_buffer_1/VSS" "a_1820_n446#" 0.0813042
+cap "op" "adc_comp_buffer_1/a_26_n218#" 16.6494
+cap "adc_comp_buffer_1/out" "nclk" 0.199466
+cap "adc_comp_buffer_1/VSS" "adc_comp_buffer_1/out" 9.65478
+cap "adc_comp_buffer_1/VSS" "adc_comp_buffer_1/in" 1.48099
+cap "adc_comp_buffer_1/VSS" "adc_comp_buffer_1/VDD" 19.7154
+cap "adc_comp_buffer_1/VSS" "adc_comp_buffer_0/in" 0.0968361
+cap "adc_comp_buffer_1/VSS" "adc_comp_buffer_1/a_26_n218#" 5.21114
+cap "adc_comp_buffer_1/VSS" "adc_comp_buffer_1/out" 1.59243
+cap "adc_comp_buffer_1/VSS" "adc_comp_buffer_0/a_26_n218#" 0.667568
+cap "adc_comp_buffer_1/VSS" "adc_comp_buffer_0/out" 0.0955455
+cap "adc_comp_buffer_0/out" "a_1306_n446#" 0.108205
+cap "a_1306_n446#" "adc_comp_buffer_1/VDD" -0.128099
+cap "op" "adc_comp_buffer_0/in" 0.188857
+cap "adc_comp_buffer_0/out" "a_1820_n446#" 0.0938451
+cap "adc_comp_buffer_1/VSS" "a_1306_n446#" 0.110804
+cap "a_1820_n446#" "adc_comp_buffer_1/VDD" 0.141508
+cap "adc_comp_buffer_1/in" "adc_comp_buffer_0/a_26_n218#" 0.51377
+cap "adc_comp_buffer_0/a_26_n218#" "adc_comp_buffer_0/in" 0.00971122
+cap "adc_comp_buffer_0/out" "adc_comp_buffer_1/VDD" 0.445896
+cap "adc_comp_buffer_1/VSS" "a_1820_n446#" 0.0956434
+cap "adc_comp_buffer_1/VSS" "adc_comp_buffer_1/VDD" 0.149876
+cap "on" "adc_comp_buffer_0/a_26_n218#" 0.0262805
+cap "a_1306_n446#" "adc_comp_buffer_0/in" 0.234709
+cap "a_1820_n446#" "adc_comp_buffer_0/in" 0.17519
+cap "adc_comp_buffer_1/VDD" "adc_comp_buffer_0/in" 0.63115
+cap "adc_comp_buffer_1/in" "adc_comp_buffer_0/out" 0.157572
+cap "adc_comp_buffer_0/out" "adc_comp_buffer_0/in" 0.00762037
+cap "adc_comp_buffer_1/in" "adc_comp_buffer_1/VDD" -0.229775
+cap "adc_comp_buffer_1/in" "adc_comp_buffer_1/VSS" 0.0969717
+cap "on" "adc_comp_buffer_1/VDD" -0.254378
+cap "op" "adc_comp_buffer_0/a_26_n218#" 0.760093
+cap "on" "adc_comp_buffer_1/VSS" 0.00265697
+cap "adc_comp_buffer_1/in" "adc_comp_buffer_0/in" 0.268573
+cap "a_1306_n446#" "adc_comp_buffer_0/a_26_n218#" 0.401563
+cap "a_1820_n446#" "adc_comp_buffer_0/a_26_n218#" 0.322644
+cap "on" "adc_comp_buffer_0/in" 0.0228421
+cap "op" "adc_comp_buffer_1/VDD" -2.26249
+cap "adc_comp_buffer_0/a_26_n218#" "adc_comp_buffer_1/VDD" 1.89963
+cap "op" "adc_comp_buffer_0/out" 0.16958
+cap "adc_comp_buffer_1/VSS" "op" 0.303
+cap "adc_comp_buffer_0/out" "a_1306_n446#" 0.252276
+cap "adc_comp_buffer_0/a_26_n218#" "adc_comp_buffer_1/in" 2.22862
+cap "adc_comp_buffer_1/VDD" "op" 20.9091
+cap "adc_comp_buffer_0/a_26_n218#" "a_1306_n446#" 0.885856
+cap "adc_comp_buffer_1/VDD" "adc_comp_buffer_0/in" 23.8756
+cap "adc_comp_buffer_1/VSS" "adc_comp_buffer_1/in" 3.49447
+cap "adc_comp_buffer_1/VDD" "adc_comp_buffer_0/out" 33.1838
+cap "adc_comp_buffer_0/in" "op" 5.1332
+cap "adc_comp_buffer_1/VSS" "a_1306_n446#" 0.118774
+cap "op" "adc_comp_buffer_0/out" 7.04657
+cap "adc_comp_buffer_1/VDD" "adc_comp_buffer_1/a_26_n218#" 13.0716
+cap "adc_comp_buffer_0/in" "adc_comp_buffer_0/out" -2.84665
+cap "adc_comp_buffer_1/out" "adc_comp_buffer_1/VDD" 5.67354
+cap "a_1820_n446#" "adc_comp_buffer_1/VDD" -1.76721
+cap "adc_comp_buffer_1/VDD" "adc_comp_buffer_0/a_26_n218#" 73.2908
+cap "op" "adc_comp_buffer_1/a_26_n218#" 5.03557
+cap "adc_comp_buffer_1/out" "op" 2.38375
+cap "adc_comp_buffer_0/in" "adc_comp_buffer_1/a_26_n218#" 2.31187
+cap "adc_comp_buffer_0/a_26_n218#" "op" 19.0766
+cap "adc_comp_buffer_1/a_26_n218#" "adc_comp_buffer_0/out" 0.693347
+cap "a_1820_n446#" "adc_comp_buffer_0/in" 0.900936
+cap "adc_comp_buffer_0/in" "adc_comp_buffer_0/a_26_n218#" 125.929
+cap "adc_comp_buffer_1/VDD" "on" 0.668359
+cap "adc_comp_buffer_1/VSS" "adc_comp_buffer_1/VDD" 74.9543
+cap "adc_comp_buffer_1/out" "adc_comp_buffer_0/out" 0.221606
+cap "a_1820_n446#" "adc_comp_buffer_0/out" 0.554208
+cap "adc_comp_buffer_0/a_26_n218#" "adc_comp_buffer_0/out" 1.96762
+cap "adc_comp_buffer_1/VSS" "op" 5.23296
+cap "adc_comp_buffer_0/in" "on" 0.0907594
+cap "adc_comp_buffer_0/a_26_n218#" "adc_comp_buffer_1/a_26_n218#" 1.5813
+cap "adc_comp_buffer_1/VSS" "adc_comp_buffer_0/in" 17.7861
+cap "on" "adc_comp_buffer_0/out" 0.379042
+cap "adc_comp_buffer_1/VSS" "adc_comp_buffer_0/out" 12.209
+cap "a_1820_n446#" "adc_comp_buffer_0/a_26_n218#" 1.81488
+cap "adc_comp_buffer_1/out" "adc_comp_buffer_0/a_26_n218#" 1.46116
+cap "adc_comp_buffer_1/VSS" "adc_comp_buffer_1/a_26_n218#" 12.0554
+cap "adc_comp_buffer_0/a_26_n218#" "on" 0.93357
+cap "adc_comp_buffer_1/VSS" "adc_comp_buffer_1/out" 5.18702
+cap "a_1820_n446#" "adc_comp_buffer_1/VSS" 0.356446
+cap "adc_comp_buffer_1/VSS" "adc_comp_buffer_0/a_26_n218#" 59.1953
+cap "adc_comp_buffer_1/VDD" "adc_comp_buffer_1/in" 1.89138
+cap "adc_comp_buffer_1/VSS" "on" 0.139924
+cap "op" "adc_comp_buffer_1/in" 1.40281
+cap "adc_comp_buffer_1/VDD" "a_1306_n446#" -0.610098
+cap "adc_comp_buffer_0/in" "adc_comp_buffer_1/in" 1.50493
+cap "adc_comp_buffer_1/in" "adc_comp_buffer_0/out" 0.395355
+cap "adc_comp_buffer_0/in" "a_1306_n446#" 0.420611
+cap "adc_comp_buffer_1/VSS" "adc_comp_buffer_0/a_26_n218#" 4.03247
+cap "adc_comp_buffer_1/VSS" "adc_comp_buffer_0/out" 1.49688
+cap "adc_comp_buffer_1/VSS" "adc_comp_buffer_0/in" 1.35868
+cap "adc_comp_buffer_1/VSS" "adc_comp_buffer_1/VDD" 4.71919
+cap "adc_comp_buffer_0/in" "op" 0.00347665
+cap "op" "adc_comp_buffer_0/VDD" 0.0907975
+cap "adc_comp_buffer_0/a_26_n218#" "adc_comp_buffer_1/VSS" 0.0455109
+cap "adc_comp_buffer_0/a_26_n218#" "op" 0.00961871
+cap "adc_comp_buffer_0/in" "adc_comp_buffer_1/VSS" 0.0208906
+cap "adc_comp_buffer_0/VDD" "adc_comp_buffer_1/VSS" 0.130017
+merge "adc_comp_buffer_0/VDD" "adc_comp_buffer_1/VDD" -1924.31 0 0 0 0 -331984 -3102 0 0 -23040 -1008 -19400 -988 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -80148 -3830 -242160 -3040 0 0 0 0 0 0 0 0 0 0
 merge "adc_comp_buffer_1/VDD" "VDD"
-merge "adc_comp_buffer_0/VSS" "adc_comp_buffer_1/VSS" -5714.04 0 0 0 0 0 0 0 0 -22800 -1156 -107168 -3950 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1012408 -12254 -571296 -6536 -231132 -3230 -1598574 -11452 0 0 0 0 0 0
-merge "adc_comp_buffer_1/VSS" "VSS"
-merge "adc_comp_buffer_1/out" "outn" -29.9276 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -76 0 0 0 0 0 0 0 0 0 0 0 0
-merge "adc_comp_buffer_0/in" "bp" -187.338 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -268 0 0 0 0 0 0 0 0 0 0 0 0
-merge "adc_comp_buffer_1/in" "bn" -131.9 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -272 -276 0 0 0 0 0 0 0 0 0 0 0 0
-merge "adc_comp_buffer_0/out" "outp" -33.978 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -76 0 0 0 0 0 0 0 0 0 0 0 0
+merge "adc_comp_buffer_0/VSS" "adc_comp_buffer_0/a_26_n326#" -6890.01 0 0 0 0 0 0 0 0 -13600 -772 -131196 -5122 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -962038 -13769 -563142 -7791 -317142 -4585 -3186264 -19111 0 0 0 0 0 0
+merge "adc_comp_buffer_0/a_26_n326#" "adc_comp_buffer_1/VSS"
+merge "adc_comp_buffer_1/VSS" "adc_comp_buffer_1/a_26_n326#"
+merge "adc_comp_buffer_1/a_26_n326#" "VSS"
+merge "adc_comp_buffer_1/out" "outn" -66.5816 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -2508 -208 0 0 0 0 0 0 0 0 0 0 0 0
+merge "adc_comp_buffer_0/in" "bp" -212.176 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -3584 -240 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "adc_comp_buffer_1/in" "bn" -109.089 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -3360 -232 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "adc_comp_buffer_0/out" "outp" -68.1851 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -2660 -216 0 0 0 0 0 0 0 0 0 0 0 0

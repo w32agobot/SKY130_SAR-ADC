@@ -66,8 +66,8 @@ lab=B}
 N 160 -430 220 -430 {
 lab=S}
 C {devices/title.sym} 200 -70 0 0 {name=l1 author="Manuel Moser"}
-C {/foss/designs/SKY130_SAR-ADC/xschem/NOR/NOR_1.sym} 260 -230 0 0 {name=x2}
-C {/foss/designs/SKY130_SAR-ADC/xschem/NOR/NOR_1.sym} 260 -420 0 0 {name=x1
+C {/foss/designs/SKY130_SAR-ADC/xschem/NOR/NOR.sym} 260 -230 0 0 {name=x2}
+C {/foss/designs/SKY130_SAR-ADC/xschem/NOR/NOR.sym} 260 -420 0 0 {name=x1
 }
 C {devices/iopin.sym} 150 -340 2 0 {name=p1 lab=VDD}
 C {devices/iopin.sym} 150 -320 2 0 {name=p2 lab=VSS}

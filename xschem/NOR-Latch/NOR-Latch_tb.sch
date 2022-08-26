@@ -78,6 +78,6 @@ C {devices/lab_wire.sym} 440 -320 0 0 {name=l9 sig_type=std_logic lab=r}
 C {devices/lab_wire.sym} 650 -320 0 0 {name=l10 sig_type=std_logic lab=out}
 C {devices/lab_wire.sym} 10 -30 0 0 {name=l11 sig_type=std_logic lab=out}
 C {devices/noconn.sym} 660 -320 0 1 {name=l12}
-C {NOR_Latch.sym} 550 -330 0 0 {name=x1}
+C {NOR-Latch.sym} 550 -330 0 0 {name=x1}
 C {devices/lab_wire.sym} 650 -340 0 0 {name=l13 sig_type=std_logic lab=outn}
 C {devices/noconn.sym} 660 -340 0 1 {name=l14}
