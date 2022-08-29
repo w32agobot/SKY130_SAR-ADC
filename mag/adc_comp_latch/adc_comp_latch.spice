@@ -49,7 +49,7 @@ X3 c1_270_n1430# m3_72_n1530# sky130_fd_pr__cap_mim_m3_1 l=6.4e+06u w=9.2e+06u
 Xadc_comp_buffer_0 VSS outp bp VDD VSS adc_comp_buffer
 Xadc_comp_buffer_1 VSS outn bn VDD VSS adc_comp_buffer
 Xcap_64_92_0 op on VSS VSS cap_64_92
-Xcap_64_92_1 op on VSS VSS cap_64_92
+Xcap_64_92_1 on op VSS VSS cap_64_92
 X0 bn op a_1306_n446# VDD sky130_fd_pr__pfet_01v8 ad=1.24e+12p pd=9.24e+06u as=1.32e+12p ps=9.32e+06u w=2e+06u l=150000u
 X1 VSS clk a_82_n1170# VSS sky130_fd_pr__nfet_01v8 ad=3.2e+12p pd=2.71e+07u as=4.025e+12p ps=3.144e+07u w=500000u l=150000u
 X2 VSS clk a_82_n1170# VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=500000u l=150000u
@@ -62,7 +62,7 @@ X8 a_82_n1170# clk VSS VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=500
 X9 a_1306_n446# op bn VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=2e+06u l=150000u
 X10 VSS clk a_82_n1170# VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=500000u l=150000u
 X11 a_82_n1170# inp on VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=2e+06u l=150000u
-X12 a_82_n1170# inn op VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=2.5e+07p ps=5000u w=2e+06u l=150000u
+X12 a_82_n1170# inn op VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=1.32e+12p ps=9.32e+06u w=2e+06u l=150000u
 X13 a_1306_n446# bp VDD VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=2e+06u l=150000u
 X14 VDD bn a_1820_n446# VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=2e+06u l=150000u
 X15 VSS clk a_82_n1170# VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=500000u l=150000u
@@ -76,7 +76,7 @@ X22 bp on a_1820_n446# VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=2e+
 X23 on inp a_82_n1170# VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=2e+06u l=150000u
 X24 bp bn VSS VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=2e+06u l=150000u
 X25 op inn a_82_n1170# VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=2e+06u l=150000u
-X26 op clk VDD VDD sky130_fd_pr__pfet_01v8 ad=2.5e+07p pd=5000u as=0p ps=0u w=500000u l=150000u
+X26 op clk VDD VDD sky130_fd_pr__pfet_01v8 ad=3.3e+11p pd=3.32e+06u as=0p ps=0u w=500000u l=150000u
 X27 VDD clk op VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=500000u l=150000u
 X28 VDD clk op VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=500000u l=150000u
 X29 on clk VDD VDD sky130_fd_pr__pfet_01v8 ad=3.3e+11p pd=3.32e+06u as=0p ps=0u w=500000u l=150000u
@@ -88,7 +88,7 @@ X34 VDD clk on VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=500000u l=1
 X35 VDD clk on VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=500000u l=150000u
 .ends
 
-.subckt adc_comp_latch clk comp_trig latch_q latch_qn VDD inp inn VSS
+.subckt adc_comp_latch clk comp_trig latch_q latch_qn inp inn VDD VSS
 Xinverter_0 inverter_1/in VDD VSS clk inverter
 Xinverter_1 inverter_1/out VDD VSS inverter_1/in inverter
 XNOR-Latch_0 NOR_0/A latch_qn latch_q NOR_0/B VDD VSS NOR-Latch
