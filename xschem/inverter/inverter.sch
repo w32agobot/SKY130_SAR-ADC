@@ -78,8 +78,8 @@ spiceprefix=X
 }
 C {sky130_fd_pr/pfet_01v8.sym} 270 -390 0 0 {name=M2
 L=0.15
-W=0.42
-nf=1
+W=0.84
+nf=2
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"

@@ -40,8 +40,8 @@ lab=VDD}
 N 250 -290 250 -280 {
 lab=GND}
 C {devices/title.sym} 210 -90 0 0 {name=l1 author="Manuel Moser"}
-C {devices/vsource.sym} 90 -250 0 0 {name=V1 value=1}
-C {devices/vsource.sym} 150 -250 0 0 {name=V2 value="0.5 PULSE(0 1 50p 1p 1p 600p 1200p)"}
+C {devices/vsource.sym} 90 -250 0 0 {name=V1 value=1.8}
+C {devices/vsource.sym} 150 -250 0 0 {name=V2 value="0.9 PULSE(0 1.8 5p 1p 1p 60p 120p)"}
 C {devices/gnd.sym} 250 -280 0 0 {name=l2 lab=GND}
 C {devices/gnd.sym} 90 -200 0 0 {name=l3 lab=GND}
 C {devices/gnd.sym} 150 -200 0 0 {name=l4 lab=GND}
@@ -55,7 +55,7 @@ C {devices/code_shown.sym} 220 -650 0 0 {name=s1 only_toplevel=false value="
 .control
 *SELECT dc OR tran
  *dc V2 0 1 1m
- tran 1p 1300p
+ tran 1p 130p
  plot v(in) V(out)
  plot -I(v1)
 .endc

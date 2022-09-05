@@ -46,7 +46,7 @@ lab=GND}
 N 590 -330 610 -330 {
 lab=out}
 C {devices/title.sym} 190 -90 0 0 {name=l1 author="Manuel Moser"}
-C {devices/vsource.sym} 60 -250 0 0 {name=V1 value=1}
+C {devices/vsource.sym} 60 -250 0 0 {name=V1 value=1.8}
 C {devices/gnd.sym} 60 -200 0 0 {name=l3 lab=GND}
 C {devices/gnd.sym} 120 -200 0 0 {name=l4 lab=GND}
 C {devices/vdd.sym} 60 -290 0 0 {name=l5 lab=VDD}
@@ -62,14 +62,14 @@ C {devices/code_shown.sym} 190 -700 0 0 {name=s1 only_toplevel=false value="
 .endc
 "}
 C {sky130_fd_pr/corner.sym} 50 -670 0 0 {name=CORNER only_toplevel=false corner=tt}
-C {NOR_1.sym} 520 -330 0 0 {name=x1}
 C {devices/vdd.sym} 520 -390 0 0 {name=l2 lab=VDD}
 C {devices/gnd.sym} 520 -270 0 0 {name=l6 lab=GND}
-C {devices/vsource.sym} 120 -400 0 0 {name=V3 value="0.5 PULSE(0 1 400p 1f 1f 400p 800p)"}
+C {devices/vsource.sym} 120 -400 0 0 {name=V3 value="0.9 PULSE(0 1.8 400p 1f 1f 400p 800p)"}
 C {devices/gnd.sym} 120 -350 0 0 {name=l7 lab=GND}
-C {devices/vsource.sym} 120 -250 0 0 {name=V2 value="0.5 PULSE(0 1 800p 1f 1f 800p 1600p)"}
+C {devices/vsource.sym} 120 -250 0 0 {name=V2 value="0.9 PULSE(0 1.8 800p 1f 1f 800p 1600p)"}
 C {devices/lab_wire.sym} 440 -340 0 0 {name=l8 sig_type=std_logic lab=a}
 C {devices/lab_wire.sym} 440 -320 0 0 {name=l9 sig_type=std_logic lab=b}
 C {devices/lab_wire.sym} 600 -330 0 0 {name=l10 sig_type=std_logic lab=out}
 C {devices/lab_wire.sym} 10 -30 0 0 {name=l11 sig_type=std_logic lab=out}
 C {devices/noconn.sym} 610 -330 0 1 {name=l12}
+C {NOR.sym} 520 -330 0 0 {name=x1}

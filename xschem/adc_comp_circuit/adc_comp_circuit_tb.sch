@@ -74,12 +74,12 @@ C {devices/lab_wire.sym} 560 -280 0 0 {name=l2 sig_type=std_logic lab=clk}
 C {devices/lab_wire.sym} 160 -320 0 0 {name=l3 sig_type=std_logic lab=nclk_int}
 C {devices/lab_wire.sym} 160 -280 0 0 {name=l5 sig_type=std_logic lab=inp}
 C {devices/lab_wire.sym} 160 -240 0 0 {name=l6 sig_type=std_logic lab=inn}
-C {devices/vsource.sym} 160 -530 0 0 {name=V1 value=1}
+C {devices/vsource.sym} 160 -530 0 0 {name=V1 value=1.8}
 C {devices/gnd.sym} 160 -460 0 0 {name=l12 lab=GND}
 C {devices/gnd.sym} 250 -190 0 0 {name=l10 lab=GND}
 C {devices/vdd.sym} 160 -590 0 0 {name=l7 lab=VDD}
 C {devices/vdd.sym} 250 -350 0 0 {name=l11 lab=VDD}
-C {devices/vsource.sym} 250 -530 0 0 {name=V2 value="0 PULSE(0 1 0 1n 1n 2.5m 5m)"}
+C {devices/vsource.sym} 250 -530 0 0 {name=V2 value="0 PULSE(0 1.8 0 1n 1n 2.5m 5m)"}
 C {devices/gnd.sym} 250 -460 0 0 {name=l4 lab=GND}
 C {devices/lab_wire.sym} 250 -590 0 0 {name=l13 sig_type=std_logic lab=clk}
 C {devices/lab_pin.sym} 380 -280 0 1 {name=l8 sig_type=std_logic lab=outp}
@@ -93,10 +93,10 @@ C {devices/vdd.sym} 640 -310 0 0 {name=l17 lab=VDD}
 C {devices/vdd.sym} 790 -310 0 0 {name=l18 lab=VDD}
 C {devices/gnd.sym} 640 -250 0 0 {name=l19 lab=GND}
 C {devices/gnd.sym} 790 -250 0 0 {name=l20 lab=GND}
-C {devices/vsource.sym} 460 -530 0 0 {name=V3 value="0 PULSE(490m 510m 0 50m 50m 50m 100m)"}
+C {devices/vsource.sym} 460 -530 0 0 {name=V3 value="0 PULSE(800m 1100m 0 50m 50m 50m 100m)"}
 C {devices/gnd.sym} 460 -460 0 0 {name=l21 lab=GND}
 C {devices/lab_wire.sym} 460 -590 0 0 {name=l22 sig_type=std_logic lab=inp}
-C {devices/vsource.sym} 770 -530 0 0 {name=V4 value="0 PULSE(510m 490m 0 50m 50m 50m 100m)"}
+C {devices/vsource.sym} 770 -530 0 0 {name=V4 value="0 PULSE(1100m 800m 0 50m 50m 50m 100m)"}
 C {devices/gnd.sym} 770 -460 0 0 {name=l23 lab=GND}
 C {devices/lab_wire.sym} 770 -590 0 0 {name=l24 sig_type=std_logic lab=inn}
 C {sky130_fd_pr/corner.sym} 140 -770 0 0 {name=CORNER only_toplevel=false corner=tt}
@@ -110,4 +110,4 @@ C {devices/code_shown.sym} 310 -770 0 0 {name=SPICE only_toplevel=false value=".
 .endc"}
 C {devices/noconn.sym} 360 -270 0 0 {name=l25}
 C {devices/noconn.sym} 360 -250 0 0 {name=l26}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_comp_circuit/adc_comp_circuit.sym} 250 -260 0 0 {name=x1}
+C {adc_comp_circuit.sym} 250 -260 0 0 {name=x1}

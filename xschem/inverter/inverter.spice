@@ -1,14 +1,11 @@
 ** sch_path: /foss/designs/SKY130_SAR-ADC/xschem/inverter/inverter.sch
-**.subckt inverter VDD VSS out in
-*.iopin VDD
-*.iopin VSS
-*.opin out
-*.ipin in
+.subckt inverter VDD VSS out in
+*.PININFO VDD:B VSS:B out:O in:I
 XM1 out in VSS VSS sky130_fd_pr__nfet_01v8 L=0.15 W=0.42 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
 + pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
 + sa=0 sb=0 sd=0 mult=1 m=1
-XM2 out in VDD VDD sky130_fd_pr__pfet_01v8 L=0.15 W=0.42 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
+XM2 out in VDD VDD sky130_fd_pr__pfet_01v8 L=0.15 W=0.8 nf=2 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
 + pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
 + sa=0 sb=0 sd=0 mult=1 m=1
-**.ends
+.ends
 .end

@@ -55,8 +55,8 @@ N 350 -320 440 -320 {
 lab=out}
 C {devices/title.sym} 210 -90 0 0 {name=l1 author="Manuel Moser"}
 C {inverter.sym} 260 -320 0 0 {name=x1}
-C {devices/vsource.sym} 90 -250 0 0 {name=V1 value=1}
-C {devices/vsource.sym} 150 -250 0 0 {name=V2 value="0.5 PULSE(0 1 1000p 1p 1p 2000p 4000p)"}
+C {devices/vsource.sym} 90 -250 0 0 {name=V1 value=1.8}
+C {devices/vsource.sym} 150 -250 0 0 {name=V2 value="0.9 PULSE(0 1.8 100p 1p 1p 200p 400p)"}
 C {devices/gnd.sym} 260 -280 0 0 {name=l2 lab=GND}
 C {devices/gnd.sym} 90 -200 0 0 {name=l3 lab=GND}
 C {devices/gnd.sym} 150 -200 0 0 {name=l4 lab=GND}
@@ -71,8 +71,8 @@ C {devices/code_shown.sym} 230 -670 0 0 {name=s1 only_toplevel=false value="
 .op
 .control
 *SELECT dc OR tran
- dc V2 0 1 1m
- *tran 10p 5000p
+ *dc V2 0 1.8 1m
+ tran 10p 500p
  plot v(in) V(out)
  plot -I(v1)
 .endc

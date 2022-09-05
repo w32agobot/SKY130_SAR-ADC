@@ -68,7 +68,7 @@ lab=phi2_n}
 N 590 -210 610 -210 {
 lab=phi2_n}
 C {devices/code_shown.sym} 170 -680 0 0 {name=SPICE only_toplevel=false value=".options reltol=1e-3 vabstol=1e-6 iabstol=1e-12
-.tran 0.1n 360n
+.tran 0.1n 36n
 .save all
 .control
 run
@@ -76,8 +76,8 @@ plot v(Clock) v(phi1) v(phi2)
 plot v(Clock) v(phi1_n) v(phi2_n)
 .endc
 "}
-C {devices/vsource.sym} 100 -400 0 0 {name=V1 value=1}
-C {devices/vsource.sym} 30 -170 0 0 {name=V2 value="pulse(0 1 10p 10p 10p 100n 200n)"}
+C {devices/vsource.sym} 100 -400 0 0 {name=V1 value=1.8}
+C {devices/vsource.sym} 30 -170 0 0 {name=V2 value="pulse(0 1.8 10p 10p 10p 10n 20n)"}
 C {devices/gnd.sym} 100 -350 0 0 {name=l1 lab=GND}
 C {devices/gnd.sym} 30 -120 0 0 {name=l2 lab=GND}
 C {devices/gnd.sym} 460 -130 0 0 {name=l3 lab=GND}
