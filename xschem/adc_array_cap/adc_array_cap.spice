@@ -1,13 +1,13 @@
-** sch_path: /foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap_150n/adc_array_cap.sch
-.subckt adc_array_cap sample_n sample vcom row_n col_n colon_n VDD ctop VSS cbot
-*.PININFO sample_n:I sample:I vcom:B row_n:I col_n:I colon_n:I VDD:B ctop:B VSS:B cbot:B
-x1 VDD row_n cbot col_n colon_n sample_n vcom sample VSS adc_array_circuit_150n
+** sch_path: /foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap.sch
+.subckt adc_array_cap vcom VDD ctop VSS row_n_i col_n_i colon_n_i sample_n_i sample_i
+*.PININFO vcom:B VDD:B ctop:B VSS:B row_n_i:I col_n_i:I colon_n_i:I sample_n_i:I sample_i:I
+x1 VDD row_n_i cbot col_n_i colon_n_i sample_n_i vcom sample_i VSS adc_array_circuit_150n
 .ends
 
 * expanding   symbol:
-*+  /foss/designs/SKY130_SAR-ADC/xschem/adc_array_circuit_150n/adc_array_circuit_150n.sym # of pins=9
-** sym_path: /foss/designs/SKY130_SAR-ADC/xschem/adc_array_circuit_150n/adc_array_circuit_150n.sym
-** sch_path: /foss/designs/SKY130_SAR-ADC/xschem/adc_array_circuit_150n/adc_array_circuit_150n.sch
+*+  /foss/designs/SKY130_SAR-ADC/xschem/adc_array_circuit/adc_array_circuit_150n.sym # of pins=9
+** sym_path: /foss/designs/SKY130_SAR-ADC/xschem/adc_array_circuit/adc_array_circuit_150n.sym
+** sch_path: /foss/designs/SKY130_SAR-ADC/xschem/adc_array_circuit/adc_array_circuit_150n.sch
 .subckt adc_array_circuit_150n  VDD row_n Cbot col_n colon_n sample_n vcom sample VSS
 *.PININFO sample_n:I sample:I vcom:B row_n:I col_n:I colon_n:I VDD:B VSS:B Cbot:B
 XM1 vcom sample Cbot VSS sky130_fd_pr__nfet_01v8 L=0.15 W=0.42 nf=1 ad='int((nf+1)/2) * W/nf * 0.29'

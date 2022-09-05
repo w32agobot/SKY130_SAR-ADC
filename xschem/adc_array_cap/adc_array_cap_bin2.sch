@@ -57,7 +57,7 @@ C {devices/iopin.sym} 190 -390 0 1 {name=p3 lab=vcom}
 C {devices/iopin.sym} 190 -440 0 1 {name=p7 lab=VDD}
 C {devices/capa.sym} 540 -350 0 0 {name=C3
 m=1
-value=7.87f
+value=1.194f
 footprint=1206
 device="ceramic capacitor"
 spice_ignore=true}
