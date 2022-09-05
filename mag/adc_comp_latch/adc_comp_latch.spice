@@ -1,8 +1,9 @@
 * NGSPICE file created from adc_comp_latch.ext - technology: sky130A
 
 .subckt inverter out VDD VSS in
-X0 VDD in out VDD sky130_fd_pr__pfet_01v8 ad=1.218e+11p pd=1.42e+06u as=1.218e+11p ps=1.42e+06u w=420000u l=150000u
-X1 out in VSS VSS sky130_fd_pr__nfet_01v8 ad=1.218e+11p pd=1.42e+06u as=1.218e+11p ps=1.42e+06u w=420000u l=150000u
+X0 out in VDD VDD sky130_fd_pr__pfet_01v8 ad=2.508e+11p pd=2.9e+06u as=1.364e+11p ps=1.5e+06u w=440000u l=150000u
+X1 VDD in out VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=440000u l=150000u
+X2 out in VSS VSS sky130_fd_pr__nfet_01v8 ad=1.218e+11p pd=1.42e+06u as=1.218e+11p ps=1.42e+06u w=420000u l=150000u
 .ends
 
 .subckt NOR-Latch R QN Q S VDD VSS
@@ -29,13 +30,13 @@ X4 a_120_106# A Q VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=800000u 
 X5 VSS A Q VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=420000u l=150000u
 .ends
 
-.subckt adc_comp_buffer VSS out in VDD a_26_n326#
-X0 VSS a_26_n218# out a_26_n326# sky130_fd_pr__nfet_01v8 ad=3.2e+11p pd=3.28e+06u as=1.65e+11p ps=1.66e+06u w=500000u l=150000u
-X1 VSS in a_26_n218# a_26_n326# sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=1.55e+11p ps=1.62e+06u w=500000u l=150000u
-X2 out a_26_n218# VDD VDD sky130_fd_pr__pfet_01v8 ad=3.3e+11p pd=2.66e+06u as=6.4e+11p ps=5.28e+06u w=1e+06u l=150000u
-X3 VDD a_26_n218# out VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
-X4 out a_26_n218# VSS a_26_n326# sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=500000u l=150000u
-X5 VDD in a_26_n218# VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=3.1e+11p ps=2.62e+06u w=1e+06u l=150000u
+.subckt adc_comp_buffer out in VDD VSS
+X0 out a_26_n216# VDD VDD sky130_fd_pr__pfet_01v8 ad=3.3e+11p pd=2.66e+06u as=6.4e+11p ps=5.28e+06u w=1e+06u l=150000u
+X1 VDD a_26_n216# out VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+X2 VSS a_26_n216# out VSS sky130_fd_pr__nfet_01v8 ad=3.2e+11p pd=3.28e+06u as=1.65e+11p ps=1.66e+06u w=500000u l=150000u
+X3 VSS in a_26_n216# VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=1.55e+11p ps=1.62e+06u w=500000u l=150000u
+X4 VDD in a_26_n216# VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=3.1e+11p ps=2.62e+06u w=1e+06u l=150000u
+X5 out a_26_n216# VSS VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=500000u l=150000u
 .ends
 
 .subckt cap_64_92 c1_270_n1430# c1_n2049_n1430# m3_72_n1530# m3_n2149_n1530#
@@ -45,9 +46,9 @@ X2 c1_270_n1430# m3_72_n1530# sky130_fd_pr__cap_mim_m3_1 l=6.4e+06u w=9.2e+06u
 X3 c1_270_n1430# m3_72_n1530# sky130_fd_pr__cap_mim_m3_1 l=6.4e+06u w=9.2e+06u
 .ends
 
-.subckt adc_comp_circuit inp inn outn outp clk nclk VSS VDD
-Xadc_comp_buffer_0 VSS outp bp VDD VSS adc_comp_buffer
-Xadc_comp_buffer_1 VSS outn bn VDD VSS adc_comp_buffer
+.subckt adc_comp_circuit inp inn outn outp clk nclk VDD VSS
+Xadc_comp_buffer_0 outp bp VDD VSS adc_comp_buffer
+Xadc_comp_buffer_1 outn bn VDD VSS adc_comp_buffer
 Xcap_64_92_0 op on VSS VSS cap_64_92
 Xcap_64_92_1 on op VSS VSS cap_64_92
 X0 bn op a_1306_n446# VDD sky130_fd_pr__pfet_01v8 ad=1.24e+12p pd=9.24e+06u as=1.32e+12p ps=9.32e+06u w=2e+06u l=150000u
@@ -93,6 +94,6 @@ Xinverter_0 inverter_1/in VDD VSS clk inverter
 Xinverter_1 inverter_1/out VDD VSS inverter_1/in inverter
 XNOR-Latch_0 NOR_0/A latch_qn latch_q NOR_0/B VDD VSS NOR-Latch
 XNOR_0 NOR_0/B comp_trig NOR_0/A VDD VSS NOR
-Xadc_comp_circuit_0 inp inn NOR_0/A NOR_0/B inverter_1/out inverter_1/in VSS VDD adc_comp_circuit
+Xadc_comp_circuit_0 inp inn NOR_0/A NOR_0/B inverter_1/out inverter_1/in VDD VSS adc_comp_circuit
 .ends
 
