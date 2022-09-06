@@ -17,6 +17,9 @@ T {   Copyright 2022 Manuel Moser
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.} 0 -240 0 0 0.2 0.2 {}
+T {           ss  tt  ff 
+rise-delay 5.9 5.1 4.4 ns 
+fall-delay 7.6 6.1 5.2 ns} 280 -340 0 0 0.4 0.4 {}
 N 240 -790 240 -780 {
 lab=GND}
 N 240 -860 240 -840 {
@@ -65,16 +68,16 @@ C {devices/title.sym} 170 -40 0 0 {name=l1 author="Manuel Moser"}
 C {devices/vsource.sym} 240 -820 0 0 {name=V1 value="(0 pulse(0 1.8 1p 1p 1p 1 2))"}
 C {devices/vdd.sym} 240 -860 0 0 {name=l2 lab=VDD}
 C {devices/gnd.sym} 240 -780 0 0 {name=l5 lab=GND}
-C {devices/vsource.sym} 140 -410 0 0 {name=V2 value="0 pulse(0 1.8 25n 1p 1p 100n 200n)"}
+C {devices/vsource.sym} 140 -410 0 0 {name=V2 value="0 pulse(0 1.8 15n 1p 1p 15n 30n)"}
 C {devices/gnd.sym} 140 -370 0 0 {name=l8 lab=GND}
 C {devices/lab_wire.sym} 140 -460 0 0 {name=l9 sig_type=std_logic lab=in}
-C {devices/code_shown.sym} 90 -720 0 0 {name=s1 only_toplevel=false value=".include /foss/pdk/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_fd_sc_hd.spice
+C {devices/code_shown.sym} 90 -720 0 0 {name=s1 only_toplevel=false value="*.include /foss/pdk/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_fd_sc_hd.spice
 .include /foss/designs/SKY130_SAR-ADC/xschem/delay_macrocell/delay_macrocell_postlayout.spice
+.OPTIONS RELTOL=.001 TRTOL=1 ABSTOL=1e-16 CHGTOL=1.0e-16 DEFAD=1.0e-16
 .save all
 .control
-tran 200p 300n
-plot v(in) v(out)
-plot v(in) v(out_postlayout)
+tran 1n 50n
+plot v(in) v(out) v(x1.cap_top) v(out_postlayout)
 .endc"}
 C {sky130_fd_pr/corner.sym} 80 -880 0 0 {name=CORNER only_toplevel=false corner=tt}
 C {devices/vdd.sym} 410 -540 0 0 {name=l3 lab=VDD}
