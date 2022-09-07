@@ -128,7 +128,7 @@ Results are located in `../openlane/<CELL-NAME>/runs/results`.
 
 Hint: You can copy the whole script and `Ctrl+V` it into the terminal
 
-#Note
+### Note
 Don't add the following commands. They are often suggested, but they will generate 2 identical custom-cells in the merged.unpadded.lef file when at detailed routing. The flow will then crash with Error `No vaid access pattern`. Including the lef files only in config.tcl works fine.
 ```
 set lefs [glob $::env(DESIGN_DIR)/src/*.lef]
