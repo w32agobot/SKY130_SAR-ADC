@@ -1,0 +1,18 @@
+digraph "adc_edge_detect_macrotest" {
+label="adc_edge_detect_macrotest";
+rankdir="LR";
+remincross=true;
+n1 [ shape=octagon, label="in", color="black", fontcolor="black" ];
+n2 [ shape=diamond, label="net_1", color="black", fontcolor="black" ];
+n3 [ shape=diamond, label="net_2", color="black", fontcolor="black" ];
+n4 [ shape=octagon, label="out", color="black", fontcolor="black" ];
+c7 [ shape=record, label="{{<p5> A}|$77\n$_NOT_|{<p6> Y}}" ];
+c8 [ shape=record, label="{{<p1> in}|delay_macrocell_0\ndelay_macrocell|{<p4> out}}" ];
+c9 [ shape=record, label="{{<p1> in}|delay_macrocell_1\ndelay_macrocell|{<p4> out}}" ];
+n1:e -> c8:p1:w [color="black", label=""];
+c8:p4:e -> n2:w [color="black", label=""];
+n2:e -> c9:p1:w [color="black", label=""];
+c9:p4:e -> n3:w [color="black", label=""];
+n3:e -> c7:p5:w [color="black", label=""];
+c7:p6:e -> n4:w [color="black", label=""];
+}

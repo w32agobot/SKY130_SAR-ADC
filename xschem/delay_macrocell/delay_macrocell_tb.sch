@@ -32,8 +32,6 @@ N 390 -390 390 -370 {
 lab=GND}
 N 490 -460 520 -460 {
 lab=out}
-N 390 -410 390 -390 {
-lab=GND}
 N 420 -410 420 -390 {
 lab=GND}
 N 340 -460 350 -460 {
@@ -44,14 +42,10 @@ N 410 -540 410 -510 {
 lab=VDD}
 N 410 -510 420 -510 {
 lab=VDD}
-N 390 -510 410 -510 {
-lab=VDD}
 N 650 -390 650 -370 {
 lab=GND}
 N 750 -460 780 -460 {
 lab=out_postlayout}
-N 650 -410 650 -390 {
-lab=GND}
 N 680 -410 680 -390 {
 lab=GND}
 N 600 -460 610 -460 {
@@ -62,8 +56,10 @@ N 670 -540 670 -510 {
 lab=VDD}
 N 670 -510 680 -510 {
 lab=VDD}
-N 650 -510 670 -510 {
-lab=VDD}
+N 390 -510 410 -510 {}
+N 390 -410 390 -390 {}
+N 650 -410 650 -390 {}
+N 650 -510 670 -510 {}
 C {devices/title.sym} 170 -40 0 0 {name=l1 author="Manuel Moser"}
 C {devices/vsource.sym} 240 -820 0 0 {name=V1 value="(0 pulse(0 1.8 1p 1p 1p 1 2))"}
 C {devices/vdd.sym} 240 -860 0 0 {name=l2 lab=VDD}

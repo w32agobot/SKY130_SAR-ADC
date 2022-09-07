@@ -25,9 +25,9 @@ lab=VPB}
 N 330 -670 330 -630 {
 lab=VPB}
 N 320 -510 330 -510 {
-lab=VNB}
+lab=VGND}
 N 330 -510 330 -470 {
-lab=VNB}
+lab=VGND}
 N 320 -480 320 -470 {
 lab=VGND}
 N 320 -670 320 -660 {
@@ -91,13 +91,13 @@ lab=out}
 N 820 -680 920 -680 {
 lab=#net1}
 N 820 -410 830 -410 {
-lab=VNB}
+lab=VGND}
 N 830 -410 830 -370 {
-lab=VNB}
+lab=VGND}
 N 820 -510 830 -510 {
-lab=VNB}
+lab=VGND}
 N 830 -510 830 -410 {
-lab=VNB}
+lab=VGND}
 N 820 -630 830 -630 {
 lab=VPB}
 N 830 -730 830 -630 {
@@ -112,8 +112,6 @@ N 820 -800 820 -760 {
 lab=VPWR}
 N 830 -770 830 -760 {
 lab=VPB}
-N 820 -800 950 -800 {
-lab=VPWR}
 N 450 -460 450 -360 {
 lab=VGND}
 N 450 -350 820 -350 {
@@ -130,38 +128,34 @@ N 980 -460 1020 -460 {
 lab=VPWR}
 N 1020 -800 1020 -460 {
 lab=VPWR}
-N 950 -800 1020 -800 {
-lab=VPWR}
 N 950 -570 1080 -570 {
 lab=out}
-N 220 -770 330 -770 {
-lab=VPB}
 N 330 -770 330 -670 {
-lab=VPB}
-N 330 -770 830 -770 {
 lab=VPB}
 N 950 -770 950 -680 {
 lab=VPB}
-N 830 -770 950 -770 {
-lab=VPB}
-N 330 -470 330 -320 {
-lab=VNB}
-N 220 -320 330 -320 {
-lab=VNB}
-N 330 -320 830 -320 {
-lab=VNB}
-N 830 -370 830 -320 {
-lab=VNB}
-N 830 -320 950 -320 {
-lab=VNB}
 N 610 -570 610 -520 {
 lab=cap_top}
 N 610 -460 610 -350 {
 lab=VGND}
-N 950 -460 950 -320 {
-lab=VNB}
 N 820 -350 1000 -350 {
 lab=VGND}
+N 220 -830 950 -830 {
+lab=VPB}
+N 950 -830 950 -770 {
+lab=VPB}
+N 820 -800 1020 -800 {
+lab=VPWR}
+N 830 -830 830 -770 {
+lab=VPB}
+N 330 -830 330 -770 {
+lab=VPB}
+N 330 -470 330 -330 {}
+N 220 -330 330 -330 {}
+N 330 -330 830 -330 {}
+N 830 -370 830 -330 {}
+N 830 -330 950 -330 {}
+N 950 -460 950 -330 {}
 C {devices/title.sym} 170 -40 0 0 {name=l1 author="Manuel Moser"}
 C {sky130_fd_pr/nfet_01v8.sym} 300 -510 0 0 {name=M2
 L=4
@@ -265,8 +259,6 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {devices/opin.sym} 1080 -570 0 0 {name=p4 lab=out}
-C {devices/iopin.sym} 220 -770 0 1 {name=p5 lab=VPB}
-C {devices/iopin.sym} 220 -320 0 1 {name=p6 lab=VNB}
 C {sky130_fd_pr/cap_mim_m3_1.sym} 450 -490 0 0 {name=C1 model=cap_mim_m3_1 W=3.68 L=1.93 MF=1 spiceprefix=X}
 C {sky130_fd_pr/cap_mim_m3_1.sym} 610 -490 0 0 {name=C2 model=cap_mim_m3_1 W=2.63 L=1.93 MF=1 spiceprefix=X}
 C {devices/lab_wire.sym} 530 -570 0 0 {name=l2 sig_type=std_logic lab=cap_top}
@@ -283,3 +275,5 @@ sa=0 sb=0 sd=0
 model=pfet_01v8_lvt
 spiceprefix=X
 }
+C {devices/iopin.sym} 220 -830 0 1 {name=p5 lab=VPB}
+C {devices/iopin.sym} 220 -330 0 1 {name=p6 lab=VNB}
