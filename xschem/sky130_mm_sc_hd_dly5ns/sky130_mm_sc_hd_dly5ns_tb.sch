@@ -18,8 +18,8 @@ T {   Copyright 2022 Manuel Moser
    See the License for the specific language governing permissions and
    limitations under the License.} 0 -240 0 0 0.2 0.2 {}
 T {TEMP=25    ss  tt  ff 
-rise-delay 5.9 5.0 4.2 ns 
-fall-delay 7.7 6.3 5.4 ns} 280 -340 0 0 0.4 0.4 {}
+rise-delay 4.8 4.0 3.7 ns 
+fall-delay 6.1 5.0 4.4 ns} 280 -340 0 0 0.4 0.4 {}
 N 240 -790 240 -780 {
 lab=GND}
 N 240 -860 240 -840 {

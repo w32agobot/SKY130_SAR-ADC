@@ -265,8 +265,8 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {devices/opin.sym} 1080 -570 0 0 {name=p4 lab=out}
-C {sky130_fd_pr/cap_mim_m3_1.sym} 450 -490 0 0 {name=C1 model=cap_mim_m3_1 W=3.695 L=1.93 MF=1 spiceprefix=X}
-C {sky130_fd_pr/cap_mim_m3_1.sym} 610 -490 0 0 {name=C2 model=cap_mim_m3_1 W=2.38 L=1.93 MF=1 spiceprefix=X}
+C {sky130_fd_pr/cap_mim_m3_1.sym} 450 -490 0 0 {name=C1 model=cap_mim_m3_1 W=3.695 L=1.24 MF=1 spiceprefix=X}
+C {sky130_fd_pr/cap_mim_m3_1.sym} 610 -490 0 0 {name=C2 model=cap_mim_m3_1 W=2.38 L=1.24 MF=1 spiceprefix=X}
 C {devices/lab_wire.sym} 530 -570 0 0 {name=l2 sig_type=std_logic lab=cap_top}
 C {sky130_fd_pr/pfet_01v8_lvt.sym} 300 -630 0 0 {name=M9
 L=4
