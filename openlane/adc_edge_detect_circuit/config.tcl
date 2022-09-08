@@ -24,13 +24,17 @@ set ::env(CLOCK_TREE_SYNTH) 0
 # set ::env(FP_ASPECT_RATIO) {1}
  set ::env(FP_SIZING) "absolute"
  set ::env(DIE_AREA) "0 0 100 100"
- set ::env(FP_CORE_UTIL) {40}
-# set ::env(FP_PDN_VOFFSET) 0
- set ::env(FP_PDN_VPITCH) {40}
-# set ::env(FP_PDN_HOFFSET) 0
- set ::env(FP_PDN_HPITCH) {40}
+ set ::env(FP_CORE_UTIL) {50}
+ 
+ set ::env(FP_PDN_VWIDTH) 1 
+ set ::env(FP_PDN_HWIDTH) 1 
+ set ::env(FP_PDN_HOFFSET) {11}
+ set ::env(FP_PDN_VOFFSET) $::env(FP_PDN_HOFFSET)
+ set ::env(FP_PDN_HPITCH) 62.6
+ set ::env(FP_PDN_VPITCH) $::env(FP_PDN_HPITCH)
  set ::env(FP_PIN_ORDER_CFG) $::env(DESIGN_DIR)/pin_order.cfg
 
+# PDN on Macro Level or Core Level
  set ::env(DESIGN_IS_CORE) 0
  set ::env(FP_PDN_CORE_RING) 0
  set ::env(RT_MAX_LAYER) {met4}
@@ -50,16 +54,21 @@ set ::env(CLOCK_TREE_SYNTH) 0
 
 # Placement
  set ::env(PL_BASIC_PLACEMENT) 1
- set ::env(PL_TARGET_DENSITY) {0.40}
+ set ::env(PL_TARGET_DENSITY) {0.70}
  set ::env(PL_RESIZER_TIMING_OPTIMIZATIONS) {0}
  set ::env(PL_RESIZER_DESIGN_OPTIMIZATIONS) {0}
+ set ::env(PL_ROUTABILITY_DRIVEN) {1}
 
- set ::env(CELL_PAD) 30
+# set ::env(CELL_PAD) {0}
 
  set ::env(DIODE_INSERTION_STRATEGY) 0
 
 # Router
  set ::env(GLB_RESIZER_TIMING_OPTIMIZATIONS) {0}
+
+# Signoff
+ set ::env(MAGIC_DRC_USE_GDS) {1}
+ set ::env(MAGIC_EXT_USE_GDS) {0}
 
 
 

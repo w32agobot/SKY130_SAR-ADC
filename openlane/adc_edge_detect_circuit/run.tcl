@@ -1,5 +1,4 @@
-
-flow.tcl -interactive -design adc_edge_detect_circuit -tag foobar -overwrite
+flow.tcl -interactive -design adc_edge_detect_circuit -tag foobar2 -overwrite
 package require openlane
 run_synthesis
 run_floorplan

@@ -1,0 +1,831 @@
+* NGSPICE file created from adc_edge_detect_circuit.ext - technology: sky130A
+
+* Black-box entry subcircuit for sky130_ef_sc_hd__decap_12 abstract view
+.subckt sky130_ef_sc_hd__decap_12 VGND VPWR VPB VNB
+.ends
+
+* Black-box entry subcircuit for sky130_mm_sc_hd_dly5ns abstract view
+.subckt sky130_mm_sc_hd_dly5ns in out VPWR VGND VPB VNB
+.ends
+
+* Black-box entry subcircuit for sky130_fd_sc_hd__fill_1 abstract view
+.subckt sky130_fd_sc_hd__fill_1 VGND VNB VPB VPWR
+.ends
+
+* Black-box entry subcircuit for sky130_fd_sc_hd__decap_8 abstract view
+.subckt sky130_fd_sc_hd__decap_8 VGND VNB VPB VPWR
+.ends
+
+* Black-box entry subcircuit for sky130_fd_sc_hd__decap_4 abstract view
+.subckt sky130_fd_sc_hd__decap_4 VGND VNB VPB VPWR
+.ends
+
+* Black-box entry subcircuit for sky130_fd_sc_hd__tapvpwrvgnd_1 abstract view
+.subckt sky130_fd_sc_hd__tapvpwrvgnd_1 VGND VPWR
+.ends
+
+* Black-box entry subcircuit for sky130_fd_sc_hd__decap_3 abstract view
+.subckt sky130_fd_sc_hd__decap_3 VGND VNB VPB VPWR
+.ends
+
+* Black-box entry subcircuit for sky130_fd_sc_hd__decap_6 abstract view
+.subckt sky130_fd_sc_hd__decap_6 VGND VNB VPB VPWR
+.ends
+
+* Black-box entry subcircuit for sky130_fd_sc_hd__fill_2 abstract view
+.subckt sky130_fd_sc_hd__fill_2 VGND VNB VPB VPWR
+.ends
+
+* Black-box entry subcircuit for sky130_fd_sc_hd__a21o_2 abstract view
+.subckt sky130_fd_sc_hd__a21o_2 A1 A2 B1 VGND VNB VPB VPWR X
+.ends
+
+* Black-box entry subcircuit for sky130_fd_sc_hd__inv_2 abstract view
+.subckt sky130_fd_sc_hd__inv_2 A VGND VNB VPB VPWR Y
+.ends
+
+.subckt adc_edge_detect_circuit VGND VPWR ena_in ena_out start_conv
+XFILLER_22_177 VGND VPWR VPWR VGND sky130_ef_sc_hd__decap_12
+Xdelay_400ns.genblk1\[35\].delay_unit delay_400ns.genblk1\[35\].delay_unit/in delay_400ns.genblk1\[36\].delay_unit/in
++ VPWR VGND VPWR VGND sky130_mm_sc_hd_dly5ns
+XFILLER_7_7 VGND VGND VPWR VPWR sky130_fd_sc_hd__fill_1
+XFILLER_26_85 VGND VPWR VPWR VGND sky130_ef_sc_hd__decap_12
+XFILLER_9_104 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_8
+XFILLER_9_137 VGND VPWR VPWR VGND sky130_ef_sc_hd__decap_12
+XFILLER_13_133 VGND VPWR VPWR VGND sky130_ef_sc_hd__decap_12
+XFILLER_2_165 VGND VPWR VPWR VGND sky130_ef_sc_hd__decap_12
+XFILLER_2_121 VGND VPWR VPWR VGND sky130_ef_sc_hd__decap_12
+XFILLER_0_57 VGND VPWR VPWR VGND sky130_ef_sc_hd__decap_12
+Xdelay_400ns.genblk1\[42\].delay_unit delay_400ns.genblk1\[42\].delay_unit/in delay_400ns.genblk1\[43\].delay_unit/in
++ VPWR VGND VPWR VGND sky130_mm_sc_hd_dly5ns
+XFILLER_26_109 VGND VPWR VPWR VGND sky130_ef_sc_hd__decap_12
+XFILLER_13_3 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_4
+XFILLER_16_153 VGND VPWR VPWR VGND sky130_ef_sc_hd__decap_12
+XTAP_145 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XTAP_134 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XFILLER_22_189 VGND VGND VPWR VPWR sky130_fd_sc_hd__fill_1
+XTAP_123 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XTAP_112 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XTAP_101 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XFILLER_26_97 VGND VPWR VPWR VGND sky130_ef_sc_hd__decap_12
+XFILLER_3_57 VGND VPWR VPWR VGND sky130_ef_sc_hd__decap_12
+XFILLER_9_149 VGND VPWR VPWR VGND sky130_ef_sc_hd__decap_12
+XFILLER_13_145 VGND VPWR VPWR VGND sky130_ef_sc_hd__decap_12
+XFILLER_13_189 VGND VGND VPWR VPWR sky130_fd_sc_hd__fill_1
+XFILLER_10_137 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_3
+Xdelay_400ns.genblk1\[47\].delay_unit delay_400ns.genblk1\[47\].delay_unit/in delay_400ns.genblk1\[48\].delay_unit/in
++ VPWR VGND VPWR VGND sky130_mm_sc_hd_dly5ns
+XFILLER_2_177 VGND VPWR VPWR VGND sky130_ef_sc_hd__decap_12
+XFILLER_2_133 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_6
+XFILLER_0_69 VGND VPWR VPWR VGND sky130_ef_sc_hd__decap_12
+XFILLER_15_7 VGND VGND VPWR VPWR sky130_fd_sc_hd__fill_1
+XFILLER_6_24 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_4
+XFILLER_16_165 VGND VPWR VPWR VGND sky130_ef_sc_hd__decap_12
+Xdelay_400ns.genblk1\[5\].delay_unit delay_400ns.genblk1\[5\].delay_unit/in delay_400ns.genblk1\[6\].delay_unit/in
++ VPWR VGND VPWR VGND sky130_mm_sc_hd_dly5ns
+XTAP_135 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XTAP_124 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XTAP_113 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XTAP_102 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+Xdelay_400ns.genblk1\[54\].delay_unit delay_400ns.genblk1\[54\].delay_unit/in delay_400ns.genblk1\[55\].delay_unit/in
++ VPWR VGND VPWR VGND sky130_mm_sc_hd_dly5ns
+XFILLER_13_157 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_8
+XFILLER_3_69 VGND VPWR VPWR VGND sky130_ef_sc_hd__decap_12
+XFILLER_6_109 VGND VPWR VPWR VGND sky130_ef_sc_hd__decap_12
+XFILLER_10_105 VGND VPWR VPWR VGND sky130_ef_sc_hd__decap_12
+XFILLER_12_56 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_4
+XFILLER_23_77 VGND VPWR VPWR VGND sky130_ef_sc_hd__decap_12
+XFILLER_3_3 VGND VPWR VPWR VGND sky130_ef_sc_hd__decap_12
+XFILLER_2_189 VGND VGND VPWR VPWR sky130_fd_sc_hd__fill_1
+XFILLER_0_15 VGND VPWR VPWR VGND sky130_ef_sc_hd__decap_12
+XFILLER_9_57 VGND VPWR VPWR VGND sky130_ef_sc_hd__decap_12
+Xdelay_400ns.genblk1\[59\].delay_unit delay_400ns.genblk1\[59\].delay_unit/in delay_400ns.genblk1\[60\].delay_unit/in
++ VPWR VGND VPWR VGND sky130_mm_sc_hd_dly5ns
+Xdelay_400ns.genblk1\[61\].delay_unit delay_400ns.genblk1\[61\].delay_unit/in delay_400ns.genblk1\[62\].delay_unit/in
++ VPWR VGND VPWR VGND sky130_mm_sc_hd_dly5ns
+XTAP_136 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XTAP_125 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XTAP_114 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XFILLER_16_177 VGND VPWR VPWR VGND sky130_ef_sc_hd__decap_12
+XTAP_103 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XFILLER_13_169 VGND VPWR VPWR VGND sky130_ef_sc_hd__decap_12
+XFILLER_3_15 VGND VPWR VPWR VGND sky130_ef_sc_hd__decap_12
+XFILLER_10_117 VGND VPWR VPWR VGND sky130_ef_sc_hd__decap_12
+XFILLER_12_24 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_4
+XFILLER_12_35 VGND VGND VPWR VPWR sky130_fd_sc_hd__fill_1
+XFILLER_23_89 VGND VPWR VPWR VGND sky130_ef_sc_hd__decap_12
+XFILLER_0_27 VGND VGND VPWR VPWR sky130_fd_sc_hd__fill_1
+Xdelay_400ns.genblk1\[66\].delay_unit delay_400ns.genblk1\[66\].delay_unit/in delay_400ns.genblk1\[67\].delay_unit/in
++ VPWR VGND VPWR VGND sky130_mm_sc_hd_dly5ns
+XFILLER_9_69 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_3
+XFILLER_18_56 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_4
+XFILLER_20_24 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_4
+XFILLER_1_81 VGND VPWR VPWR VGND sky130_ef_sc_hd__decap_12
+XFILLER_25_189 VGND VGND VPWR VPWR sky130_fd_sc_hd__fill_1
+XFILLER_25_167 VGND VGND VPWR VPWR sky130_fd_sc_hd__fill_1
+XFILLER_25_101 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_8
+XFILLER_15_57 VGND VPWR VPWR VGND sky130_ef_sc_hd__decap_12
+XTAP_137 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XTAP_126 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XTAP_115 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XFILLER_16_189 VGND VGND VPWR VPWR sky130_fd_sc_hd__fill_1
+XTAP_104 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XFILLER_11_3 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_4
+XFILLER_22_137 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_3
+XFILLER_21_181 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_8
+XFILLER_3_27 VGND VPWR VPWR VGND sky130_ef_sc_hd__decap_12
+XFILLER_8_141 VGND VPWR VPWR VGND sky130_ef_sc_hd__decap_12
+Xdelay_400ns.genblk1\[73\].delay_unit delay_400ns.genblk1\[73\].delay_unit/in delay_400ns.genblk1\[74\].delay_unit/in
++ VPWR VGND VPWR VGND sky130_mm_sc_hd_dly5ns
+XFILLER_10_129 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_8
+XFILLER_5_111 VGND VGND VPWR VPWR sky130_fd_sc_hd__fill_1
+XFILLER_18_35 VGND VGND VPWR VPWR sky130_fd_sc_hd__fill_1
+XFILLER_18_24 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_4
+Xdelay_400ns.genblk1\[12\].delay_unit delay_400ns.genblk1\[12\].delay_unit/in delay_400ns.genblk1\[13\].delay_unit/in
++ VPWR VGND VPWR VGND sky130_mm_sc_hd_dly5ns
+XFILLER_1_93 VGND VPWR VPWR VGND sky130_ef_sc_hd__decap_12
+XFILLER_19_165 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_3
+XFILLER_6_49 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_6
+XFILLER_10_80 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_4
+Xdelay_400ns.genblk1\[78\].delay_unit delay_400ns.genblk1\[78\].delay_unit/in delay_400ns.genblk1\[79\].delay_unit/in
++ VPWR VGND VPWR VGND sky130_mm_sc_hd_dly5ns
+XFILLER_13_7 VGND VGND VPWR VPWR sky130_fd_sc_hd__fill_1
+XFILLER_25_113 VGND VPWR VPWR VGND sky130_ef_sc_hd__decap_12
+XFILLER_15_69 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_3
+Xdelay_400ns.genblk1\[80\].delay_unit delay_400ns.genblk1\[80\].delay_unit/in _1_/A
++ VPWR VGND VPWR VGND sky130_mm_sc_hd_dly5ns
+XTAP_138 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XTAP_127 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XTAP_116 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XTAP_105 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XFILLER_22_105 VGND VPWR VPWR VGND sky130_ef_sc_hd__decap_12
+XFILLER_26_24 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_4
+XFILLER_3_39 VGND VPWR VPWR VGND sky130_ef_sc_hd__decap_12
+XFILLER_8_153 VGND VPWR VPWR VGND sky130_ef_sc_hd__decap_12
+Xdelay_400ns.genblk1\[17\].delay_unit delay_400ns.genblk1\[17\].delay_unit/in delay_400ns.genblk1\[18\].delay_unit/in
++ VPWR VGND VPWR VGND sky130_mm_sc_hd_dly5ns
+XFILLER_5_167 VGND VGND VPWR VPWR sky130_fd_sc_hd__fill_1
+XFILLER_5_189 VGND VGND VPWR VPWR sky130_fd_sc_hd__fill_1
+XFILLER_0_29 VGND VPWR VPWR VGND sky130_ef_sc_hd__decap_12
+XFILLER_13_91 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_4
+XFILLER_1_181 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_8
+XFILLER_1_3 VGND VPWR VPWR VGND sky130_ef_sc_hd__decap_12
+XFILLER_19_133 VGND VPWR VPWR VGND sky130_ef_sc_hd__decap_12
+XFILLER_19_111 VGND VGND VPWR VPWR sky130_fd_sc_hd__fill_1
+XFILLER_25_169 VGND VPWR VPWR VGND sky130_ef_sc_hd__decap_12
+XFILLER_25_125 VGND VPWR VPWR VGND sky130_ef_sc_hd__decap_12
+XTAP_139 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XTAP_128 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XFILLER_22_117 VGND VPWR VPWR VGND sky130_ef_sc_hd__decap_12
+XTAP_117 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XTAP_106 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XPHY_0 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_3
+Xdelay_400ns.genblk1\[24\].delay_unit delay_400ns.genblk1\[24\].delay_unit/in delay_400ns.genblk1\[25\].delay_unit/in
++ VPWR VGND VPWR VGND sky130_mm_sc_hd_dly5ns
+XFILLER_21_161 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_6
+XFILLER_16_80 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_4
+XFILLER_8_121 VGND VPWR VPWR VGND sky130_ef_sc_hd__decap_12
+XFILLER_8_165 VGND VPWR VPWR VGND sky130_ef_sc_hd__decap_12
+XFILLER_5_113 VGND VPWR VPWR VGND sky130_ef_sc_hd__decap_12
+XFILLER_4_83 VGND VGND VPWR VPWR sky130_fd_sc_hd__fill_1
+XFILLER_9_28 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_4
+XFILLER_13_70 VGND VGND VPWR VPWR sky130_fd_sc_hd__fill_1
+XFILLER_27_3 VGND VGND VPWR VPWR sky130_fd_sc_hd__fill_1
+Xdelay_400ns.genblk1\[29\].delay_unit delay_400ns.genblk1\[29\].delay_unit/in delay_400ns.genblk1\[30\].delay_unit/in
++ VPWR VGND VPWR VGND sky130_mm_sc_hd_dly5ns
+XFILLER_20_49 VGND VGND VPWR VPWR sky130_fd_sc_hd__fill_2
+Xdelay_400ns.genblk1\[31\].delay_unit delay_400ns.genblk1\[31\].delay_unit/in delay_400ns.genblk1\[32\].delay_unit/in
++ VPWR VGND VPWR VGND sky130_mm_sc_hd_dly5ns
+XFILLER_1_51 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_4
+XFILLER_19_189 VGND VGND VPWR VPWR sky130_fd_sc_hd__fill_1
+XFILLER_19_145 VGND VPWR VPWR VGND sky130_ef_sc_hd__decap_12
+XFILLER_25_137 VGND VPWR VPWR VGND sky130_ef_sc_hd__decap_12
+XFILLER_16_137 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_3
+XTAP_129 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XFILLER_22_129 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_8
+XTAP_118 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XTAP_107 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XFILLER_15_181 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_8
+XPHY_1 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_3
+XFILLER_8_133 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_6
+XFILLER_8_177 VGND VPWR VPWR VGND sky130_ef_sc_hd__decap_12
+XFILLER_5_125 VGND VPWR VPWR VGND sky130_ef_sc_hd__decap_12
+XFILLER_5_169 VGND VPWR VPWR VGND sky130_ef_sc_hd__decap_12
+Xdelay_400ns.genblk1\[36\].delay_unit delay_400ns.genblk1\[36\].delay_unit/in delay_400ns.genblk1\[37\].delay_unit/in
++ VPWR VGND VPWR VGND sky130_mm_sc_hd_dly5ns
+XFILLER_2_139 VGND VGND VPWR VPWR sky130_fd_sc_hd__fill_1
+XFILLER_1_161 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_6
+XFILLER_24_81 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_3
+XFILLER_19_157 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_8
+XFILLER_25_149 VGND VPWR VPWR VGND sky130_ef_sc_hd__decap_12
+XFILLER_16_105 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_4
+XFILLER_15_28 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_4
+XTAP_119 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XTAP_108 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XPHY_2 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_3
+XFILLER_11_7 VGND VGND VPWR VPWR sky130_fd_sc_hd__fill_1
+XFILLER_26_49 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_4
+Xdelay_400ns.genblk1\[43\].delay_unit delay_400ns.genblk1\[43\].delay_unit/in delay_400ns.genblk1\[44\].delay_unit/in
++ VPWR VGND VPWR VGND sky130_mm_sc_hd_dly5ns
+XFILLER_8_189 VGND VGND VPWR VPWR sky130_fd_sc_hd__fill_1
+XFILLER_12_141 VGND VPWR VPWR VGND sky130_ef_sc_hd__decap_12
+XFILLER_12_29 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_6
+XFILLER_5_137 VGND VPWR VPWR VGND sky130_ef_sc_hd__decap_12
+XFILLER_27_81 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_3
+XFILLER_4_41 VGND VPWR VPWR VGND sky130_ef_sc_hd__decap_12
+XFILLER_4_85 VGND VPWR VPWR VGND sky130_ef_sc_hd__decap_12
+XFILLER_23_28 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_4
+Xdelay_400ns.genblk1\[48\].delay_unit delay_400ns.genblk1\[48\].delay_unit/in delay_400ns.genblk1\[49\].delay_unit/in
++ VPWR VGND VPWR VGND sky130_mm_sc_hd_dly5ns
+XFILLER_20_29 VGND VPWR VPWR VGND sky130_ef_sc_hd__decap_12
+Xdelay_400ns.genblk1\[1\].delay_unit start_conv delay_400ns.genblk1\[2\].delay_unit/in
++ VPWR VGND VPWR VGND sky130_mm_sc_hd_dly5ns
+XFILLER_19_169 VGND VPWR VPWR VGND sky130_ef_sc_hd__decap_12
+XFILLER_19_103 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_8
+Xdelay_400ns.genblk1\[50\].delay_unit delay_400ns.genblk1\[50\].delay_unit/in delay_400ns.genblk1\[51\].delay_unit/in
++ VPWR VGND VPWR VGND sky130_mm_sc_hd_dly5ns
+XTAP_109 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XPHY_3 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_3
+XFILLER_7_52 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_4
+XFILLER_12_153 VGND VPWR VPWR VGND sky130_ef_sc_hd__decap_12
+XFILLER_5_105 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_6
+XFILLER_5_149 VGND VPWR VPWR VGND sky130_ef_sc_hd__decap_12
+Xdelay_400ns.genblk1\[6\].delay_unit delay_400ns.genblk1\[6\].delay_unit/in delay_400ns.genblk1\[7\].delay_unit/in
++ VPWR VGND VPWR VGND sky130_mm_sc_hd_dly5ns
+XFILLER_4_53 VGND VPWR VPWR VGND sky130_ef_sc_hd__decap_12
+XFILLER_4_97 VGND VPWR VPWR VGND sky130_ef_sc_hd__decap_12
+Xdelay_400ns.genblk1\[55\].delay_unit delay_400ns.genblk1\[55\].delay_unit/in delay_400ns.genblk1\[56\].delay_unit/in
++ VPWR VGND VPWR VGND sky130_mm_sc_hd_dly5ns
+XFILLER_18_29 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_6
+XFILLER_27_181 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_8
+XFILLER_25_3 VGND VGND VPWR VPWR sky130_fd_sc_hd__fill_2
+XFILLER_16_129 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_8
+XPHY_4 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_3
+Xdelay_400ns.genblk1\[62\].delay_unit delay_400ns.genblk1\[62\].delay_unit/in delay_400ns.genblk1\[63\].delay_unit/in
++ VPWR VGND VPWR VGND sky130_mm_sc_hd_dly5ns
+XFILLER_12_165 VGND VPWR VPWR VGND sky130_ef_sc_hd__decap_12
+XFILLER_2_109 VGND VPWR VPWR VGND sky130_ef_sc_hd__decap_12
+XFILLER_4_65 VGND VPWR VPWR VGND sky130_ef_sc_hd__decap_12
+XFILLER_13_52 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_4
+XFILLER_24_73 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_8
+XFILLER_1_55 VGND VGND VPWR VPWR sky130_fd_sc_hd__fill_1
+Xdelay_400ns.genblk1\[67\].delay_unit delay_400ns.genblk1\[67\].delay_unit/in delay_400ns.genblk1\[68\].delay_unit/in
++ VPWR VGND VPWR VGND sky130_mm_sc_hd_dly5ns
+XFILLER_18_3 VGND VGND VPWR VPWR sky130_fd_sc_hd__fill_1
+XFILLER_24_141 VGND VPWR VPWR VGND sky130_ef_sc_hd__decap_12
+XFILLER_21_52 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_4
+XPHY_5 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_3
+XFILLER_12_177 VGND VPWR VPWR VGND sky130_ef_sc_hd__decap_12
+XFILLER_7_181 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_8
+XFILLER_4_77 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_6
+XFILLER_13_64 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_6
+Xdelay_400ns.genblk1\[74\].delay_unit delay_400ns.genblk1\[74\].delay_unit/in delay_400ns.genblk1\[75\].delay_unit/in
++ VPWR VGND VPWR VGND sky130_mm_sc_hd_dly5ns
+XFILLER_24_85 VGND VPWR VPWR VGND sky130_ef_sc_hd__decap_12
+XFILLER_19_52 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_4
+XFILLER_25_109 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_3
+XFILLER_24_153 VGND VPWR VPWR VGND sky130_ef_sc_hd__decap_12
+Xdelay_400ns.genblk1\[13\].delay_unit delay_400ns.genblk1\[13\].delay_unit/in delay_400ns.genblk1\[14\].delay_unit/in
++ VPWR VGND VPWR VGND sky130_mm_sc_hd_dly5ns
+XPHY_6 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_3
+XFILLER_21_189 VGND VGND VPWR VPWR sky130_fd_sc_hd__fill_1
+XFILLER_21_167 VGND VGND VPWR VPWR sky130_fd_sc_hd__fill_1
+XFILLER_21_101 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_8
+Xdelay_400ns.genblk1\[79\].delay_unit delay_400ns.genblk1\[79\].delay_unit/in delay_400ns.genblk1\[80\].delay_unit/in
++ VPWR VGND VPWR VGND sky130_mm_sc_hd_dly5ns
+XFILLER_12_189 VGND VGND VPWR VPWR sky130_fd_sc_hd__fill_1
+XFILLER_27_85 VGND VPWR VPWR VGND sky130_ef_sc_hd__decap_12
+XFILLER_4_141 VGND VPWR VPWR VGND sky130_ef_sc_hd__decap_12
+XFILLER_1_111 VGND VGND VPWR VPWR sky130_fd_sc_hd__fill_1
+XFILLER_8_3 VGND VGND VPWR VPWR sky130_fd_sc_hd__fill_1
+XFILLER_13_98 VGND VPWR VPWR VGND sky130_ef_sc_hd__decap_12
+XFILLER_24_97 VGND VPWR VPWR VGND sky130_ef_sc_hd__decap_12
+Xdelay_400ns.genblk1\[18\].delay_unit delay_400ns.genblk1\[18\].delay_unit/in delay_400ns.genblk1\[19\].delay_unit/in
++ VPWR VGND VPWR VGND sky130_mm_sc_hd_dly5ns
+XFILLER_1_57 VGND VPWR VPWR VGND sky130_ef_sc_hd__decap_12
+Xdelay_400ns.genblk1\[20\].delay_unit delay_400ns.genblk1\[20\].delay_unit/in delay_400ns.genblk1\[21\].delay_unit/in
++ VPWR VGND VPWR VGND sky130_mm_sc_hd_dly5ns
+XTAP_90 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XFILLER_24_121 VGND VPWR VPWR VGND sky130_ef_sc_hd__decap_12
+XFILLER_24_165 VGND VPWR VPWR VGND sky130_ef_sc_hd__decap_12
+XFILLER_15_165 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_3
+XPHY_7 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_3
+XFILLER_23_3 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_4
+XFILLER_21_113 VGND VPWR VPWR VGND sky130_ef_sc_hd__decap_12
+XFILLER_7_89 VGND VPWR VPWR VGND sky130_ef_sc_hd__decap_12
+XFILLER_8_139 VGND VGND VPWR VPWR sky130_fd_sc_hd__fill_1
+XFILLER_7_161 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_6
+XFILLER_27_97 VGND VPWR VPWR VGND sky130_ef_sc_hd__decap_12
+Xdelay_400ns.genblk1\[25\].delay_unit delay_400ns.genblk1\[25\].delay_unit/in delay_400ns.genblk1\[26\].delay_unit/in
++ VPWR VGND VPWR VGND sky130_mm_sc_hd_dly5ns
+XFILLER_4_153 VGND VPWR VPWR VGND sky130_ef_sc_hd__decap_12
+XFILLER_1_189 VGND VGND VPWR VPWR sky130_fd_sc_hd__fill_1
+XFILLER_1_167 VGND VGND VPWR VPWR sky130_fd_sc_hd__fill_1
+XFILLER_1_69 VGND VPWR VPWR VGND sky130_ef_sc_hd__decap_12
+XTAP_80 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XFILLER_10_56 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_4
+XTAP_91 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XFILLER_27_141 VGND VPWR VPWR VGND sky130_ef_sc_hd__decap_12
+XFILLER_18_141 VGND VPWR VPWR VGND sky130_ef_sc_hd__decap_12
+XFILLER_24_177 VGND VPWR VPWR VGND sky130_ef_sc_hd__decap_12
+XFILLER_24_133 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_6
+XFILLER_21_77 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_4
+Xdelay_400ns.genblk1\[32\].delay_unit delay_400ns.genblk1\[32\].delay_unit/in delay_400ns.genblk1\[33\].delay_unit/in
++ VPWR VGND VPWR VGND sky130_mm_sc_hd_dly5ns
+XFILLER_16_3 VGND VGND VPWR VPWR sky130_fd_sc_hd__fill_1
+XFILLER_15_133 VGND VPWR VPWR VGND sky130_ef_sc_hd__decap_12
+XPHY_8 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_3
+XFILLER_7_57 VGND VPWR VPWR VGND sky130_ef_sc_hd__decap_12
+XFILLER_21_169 VGND VPWR VPWR VGND sky130_ef_sc_hd__decap_12
+XFILLER_21_125 VGND VPWR VPWR VGND sky130_ef_sc_hd__decap_12
+XFILLER_4_121 VGND VPWR VPWR VGND sky130_ef_sc_hd__decap_12
+XFILLER_4_165 VGND VPWR VPWR VGND sky130_ef_sc_hd__decap_12
+XFILLER_1_113 VGND VPWR VPWR VGND sky130_ef_sc_hd__decap_12
+Xdelay_400ns.genblk1\[37\].delay_unit delay_400ns.genblk1\[37\].delay_unit/in delay_400ns.genblk1\[38\].delay_unit/in
++ VPWR VGND VPWR VGND sky130_mm_sc_hd_dly5ns
+XFILLER_1_15 VGND VPWR VPWR VGND sky130_ef_sc_hd__decap_12
+XTAP_70 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XTAP_81 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XTAP_92 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XFILLER_27_153 VGND VPWR VPWR VGND sky130_ef_sc_hd__decap_12
+XFILLER_10_24 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_4
+XFILLER_10_35 VGND VGND VPWR VPWR sky130_fd_sc_hd__fill_1
+XFILLER_18_153 VGND VPWR VPWR VGND sky130_ef_sc_hd__decap_12
+XFILLER_24_189 VGND VGND VPWR VPWR sky130_fd_sc_hd__fill_1
+XFILLER_15_189 VGND VGND VPWR VPWR sky130_fd_sc_hd__fill_1
+XFILLER_15_145 VGND VPWR VPWR VGND sky130_ef_sc_hd__decap_12
+XPHY_9 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_3
+XFILLER_21_137 VGND VPWR VPWR VGND sky130_ef_sc_hd__decap_12
+XFILLER_16_56 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_4
+XFILLER_12_137 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_3
+XFILLER_11_181 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_8
+XFILLER_27_55 VGND VGND VPWR VPWR sky130_fd_sc_hd__fill_1
+XFILLER_4_15 VGND VPWR VPWR VGND sky130_ef_sc_hd__decap_12
+XFILLER_4_133 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_6
+XFILLER_4_177 VGND VPWR VPWR VGND sky130_ef_sc_hd__decap_12
+Xdelay_400ns.genblk1\[44\].delay_unit delay_400ns.genblk1\[44\].delay_unit/in delay_400ns.genblk1\[45\].delay_unit/in
++ VPWR VGND VPWR VGND sky130_mm_sc_hd_dly5ns
+XFILLER_1_125 VGND VPWR VPWR VGND sky130_ef_sc_hd__decap_12
+XFILLER_1_169 VGND VPWR VPWR VGND sky130_ef_sc_hd__decap_12
+XFILLER_1_27 VGND VPWR VPWR VGND sky130_ef_sc_hd__decap_12
+XFILLER_6_3 VGND VGND VPWR VPWR sky130_fd_sc_hd__fill_1
+XTAP_60 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XTAP_71 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XTAP_82 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XTAP_93 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XFILLER_27_165 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_3
+XFILLER_18_165 VGND VPWR VPWR VGND sky130_ef_sc_hd__decap_12
+XFILLER_15_157 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_8
+Xdelay_400ns.genblk1\[2\].delay_unit delay_400ns.genblk1\[2\].delay_unit/in delay_400ns.genblk1\[3\].delay_unit/in
++ VPWR VGND VPWR VGND sky130_mm_sc_hd_dly5ns
+XFILLER_21_149 VGND VPWR VPWR VGND sky130_ef_sc_hd__decap_12
+Xdelay_400ns.genblk1\[49\].delay_unit delay_400ns.genblk1\[49\].delay_unit/in delay_400ns.genblk1\[50\].delay_unit/in
++ VPWR VGND VPWR VGND sky130_mm_sc_hd_dly5ns
+XFILLER_16_35 VGND VGND VPWR VPWR sky130_fd_sc_hd__fill_1
+XFILLER_16_24 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_4
+XFILLER_8_109 VGND VPWR VPWR VGND sky130_ef_sc_hd__decap_12
+Xdelay_400ns.genblk1\[51\].delay_unit delay_400ns.genblk1\[51\].delay_unit/in delay_400ns.genblk1\[52\].delay_unit/in
++ VPWR VGND VPWR VGND sky130_mm_sc_hd_dly5ns
+XFILLER_12_105 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_4
+XFILLER_21_3 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_4
+XFILLER_8_80 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_4
+XFILLER_4_27 VGND VGND VPWR VPWR sky130_fd_sc_hd__fill_1
+XFILLER_4_189 VGND VGND VPWR VPWR sky130_fd_sc_hd__fill_1
+XFILLER_1_137 VGND VPWR VPWR VGND sky130_ef_sc_hd__decap_12
+XFILLER_0_181 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_8
+XFILLER_5_81 VGND VPWR VPWR VGND sky130_ef_sc_hd__decap_12
+XFILLER_24_24 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_4
+Xdelay_400ns.genblk1\[7\].delay_unit delay_400ns.genblk1\[7\].delay_unit/in delay_400ns.genblk1\[8\].delay_unit/in
++ VPWR VGND VPWR VGND sky130_mm_sc_hd_dly5ns
+XFILLER_1_39 VGND VPWR VPWR VGND sky130_ef_sc_hd__decap_12
+XFILLER_19_79 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_4
+Xdelay_400ns.genblk1\[56\].delay_unit delay_400ns.genblk1\[56\].delay_unit/in delay_400ns.genblk1\[57\].delay_unit/in
++ VPWR VGND VPWR VGND sky130_mm_sc_hd_dly5ns
+XFILLER_19_57 VGND VGND VPWR VPWR sky130_fd_sc_hd__fill_2
+XTAP_61 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XTAP_72 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XTAP_83 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XTAP_94 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XFILLER_18_177 VGND VPWR VPWR VGND sky130_ef_sc_hd__decap_12
+XFILLER_15_169 VGND VPWR VPWR VGND sky130_ef_sc_hd__decap_12
+XFILLER_23_7 VGND VGND VPWR VPWR sky130_fd_sc_hd__fill_1
+XFILLER_11_161 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_6
+XFILLER_14_3 VGND VGND VPWR VPWR sky130_fd_sc_hd__fill_1
+XFILLER_27_57 VGND VPWR VPWR VGND sky130_ef_sc_hd__decap_12
+XFILLER_27_24 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_4
+XFILLER_17_90 VGND VPWR VPWR VGND sky130_ef_sc_hd__decap_12
+XFILLER_1_149 VGND VPWR VPWR VGND sky130_ef_sc_hd__decap_12
+XFILLER_1_105 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_6
+Xdelay_400ns.genblk1\[63\].delay_unit delay_400ns.genblk1\[63\].delay_unit/in delay_400ns.genblk1\[64\].delay_unit/in
++ VPWR VGND VPWR VGND sky130_mm_sc_hd_dly5ns
+XFILLER_5_93 VGND VPWR VPWR VGND sky130_ef_sc_hd__decap_12
+XFILLER_14_80 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_4
+XTAP_62 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XTAP_73 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XTAP_84 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XTAP_95 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XFILLER_27_189 VGND VGND VPWR VPWR sky130_fd_sc_hd__fill_1
+XFILLER_18_189 VGND VGND VPWR VPWR sky130_fd_sc_hd__fill_1
+XFILLER_2_83 VGND VGND VPWR VPWR sky130_fd_sc_hd__fill_1
+XFILLER_23_181 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_8
+XFILLER_15_104 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_8
+XFILLER_7_28 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_4
+XFILLER_11_92 VGND VPWR VPWR VGND sky130_ef_sc_hd__decap_12
+Xdelay_400ns.genblk1\[68\].delay_unit delay_400ns.genblk1\[68\].delay_unit/in delay_400ns.genblk1\[69\].delay_unit/in
++ VPWR VGND VPWR VGND sky130_mm_sc_hd_dly5ns
+XFILLER_12_129 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_8
+Xdelay_400ns.genblk1\[70\].delay_unit delay_400ns.genblk1\[70\].delay_unit/in delay_400ns.genblk1\[71\].delay_unit/in
++ VPWR VGND VPWR VGND sky130_mm_sc_hd_dly5ns
+XFILLER_27_69 VGND VPWR VPWR VGND sky130_ef_sc_hd__decap_12
+XFILLER_4_29 VGND VPWR VPWR VGND sky130_ef_sc_hd__decap_12
+XTAP_63 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XTAP_74 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XTAP_85 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XTAP_96 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XFILLER_27_113 VGND VPWR VPWR VGND sky130_ef_sc_hd__decap_12
+XFILLER_4_3 VGND VPWR VPWR VGND sky130_ef_sc_hd__decap_12
+Xdelay_400ns.genblk1\[75\].delay_unit delay_400ns.genblk1\[75\].delay_unit/in delay_400ns.genblk1\[76\].delay_unit/in
++ VPWR VGND VPWR VGND sky130_mm_sc_hd_dly5ns
+XFILLER_20_141 VGND VPWR VPWR VGND sky130_ef_sc_hd__decap_12
+XFILLER_7_101 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_8
+XFILLER_7_167 VGND VGND VPWR VPWR sky130_fd_sc_hd__fill_1
+XFILLER_7_189 VGND VGND VPWR VPWR sky130_fd_sc_hd__fill_1
+Xdelay_400ns.genblk1\[14\].delay_unit delay_400ns.genblk1\[14\].delay_unit/in delay_400ns.genblk1\[15\].delay_unit/in
++ VPWR VGND VPWR VGND sky130_mm_sc_hd_dly5ns
+XFILLER_3_181 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_8
+XFILLER_13_28 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_4
+XFILLER_24_49 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_4
+XFILLER_5_51 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_4
+XTAP_64 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XTAP_75 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XTAP_86 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XTAP_97 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XFILLER_27_169 VGND VPWR VPWR VGND sky130_ef_sc_hd__decap_12
+XFILLER_27_125 VGND VPWR VPWR VGND sky130_ef_sc_hd__decap_12
+XFILLER_10_29 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_6
+X_2_ start_conv _1_/Y ena_in VGND VGND VPWR VPWR ena_out sky130_fd_sc_hd__a21o_2
+XFILLER_24_139 VGND VGND VPWR VPWR sky130_fd_sc_hd__fill_1
+Xdelay_400ns.genblk1\[19\].delay_unit delay_400ns.genblk1\[19\].delay_unit/in delay_400ns.genblk1\[20\].delay_unit/in
++ VPWR VGND VPWR VGND sky130_mm_sc_hd_dly5ns
+XFILLER_21_28 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_4
+XFILLER_2_85 VGND VPWR VPWR VGND sky130_ef_sc_hd__decap_12
+XFILLER_2_41 VGND VPWR VPWR VGND sky130_ef_sc_hd__decap_12
+XFILLER_23_161 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_6
+Xdelay_400ns.genblk1\[21\].delay_unit delay_400ns.genblk1\[21\].delay_unit/in delay_400ns.genblk1\[22\].delay_unit/in
++ VPWR VGND VPWR VGND sky130_mm_sc_hd_dly5ns
+XFILLER_21_109 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_3
+XFILLER_20_153 VGND VPWR VPWR VGND sky130_ef_sc_hd__decap_12
+XFILLER_21_7 VGND VGND VPWR VPWR sky130_fd_sc_hd__fill_1
+XFILLER_7_113 VGND VPWR VPWR VGND sky130_ef_sc_hd__decap_12
+XFILLER_27_49 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_6
+XFILLER_12_3 VGND VGND VPWR VPWR sky130_fd_sc_hd__fill_1
+XFILLER_0_141 VGND VPWR VPWR VGND sky130_ef_sc_hd__decap_12
+Xdelay_400ns.genblk1\[26\].delay_unit delay_400ns.genblk1\[26\].delay_unit/in delay_400ns.genblk1\[27\].delay_unit/in
++ VPWR VGND VPWR VGND sky130_mm_sc_hd_dly5ns
+XTAP_65 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XTAP_76 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XTAP_87 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XTAP_98 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XFILLER_27_137 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_3
+XFILLER_19_28 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_4
+XFILLER_18_137 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_3
+X_1_ _1_/A VGND VGND VPWR VPWR _1_/Y sky130_fd_sc_hd__inv_2
+XFILLER_17_181 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_8
+XFILLER_2_97 VGND VPWR VPWR VGND sky130_ef_sc_hd__decap_12
+XFILLER_2_53 VGND VPWR VPWR VGND sky130_ef_sc_hd__decap_12
+XFILLER_20_165 VGND VPWR VPWR VGND sky130_ef_sc_hd__decap_12
+XFILLER_16_29 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_6
+XFILLER_22_83 VGND VGND VPWR VPWR sky130_fd_sc_hd__fill_1
+XFILLER_7_125 VGND VPWR VPWR VGND sky130_ef_sc_hd__decap_12
+XFILLER_7_169 VGND VPWR VPWR VGND sky130_ef_sc_hd__decap_12
+XFILLER_8_85 VGND VPWR VPWR VGND sky130_ef_sc_hd__decap_12
+XFILLER_4_139 VGND VGND VPWR VPWR sky130_fd_sc_hd__fill_1
+Xdelay_400ns.genblk1\[33\].delay_unit delay_400ns.genblk1\[33\].delay_unit/in delay_400ns.genblk1\[34\].delay_unit/in
++ VPWR VGND VPWR VGND sky130_mm_sc_hd_dly5ns
+XFILLER_3_161 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_6
+XFILLER_0_153 VGND VPWR VPWR VGND sky130_ef_sc_hd__decap_12
+XTAP_66 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XTAP_77 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XTAP_88 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XTAP_99 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XPHY_50 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_3
+XFILLER_18_105 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_4
+XFILLER_2_65 VGND VPWR VPWR VGND sky130_ef_sc_hd__decap_12
+XFILLER_2_3 VGND VPWR VPWR VGND sky130_ef_sc_hd__decap_12
+Xdelay_400ns.genblk1\[38\].delay_unit delay_400ns.genblk1\[38\].delay_unit/in delay_400ns.genblk1\[39\].delay_unit/in
++ VPWR VGND VPWR VGND sky130_mm_sc_hd_dly5ns
+XFILLER_11_52 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_4
+XFILLER_14_141 VGND VPWR VPWR VGND sky130_ef_sc_hd__decap_12
+Xdelay_400ns.genblk1\[40\].delay_unit delay_400ns.genblk1\[40\].delay_unit/in delay_400ns.genblk1\[41\].delay_unit/in
++ VPWR VGND VPWR VGND sky130_mm_sc_hd_dly5ns
+XFILLER_20_177 VGND VPWR VPWR VGND sky130_ef_sc_hd__decap_12
+XFILLER_7_137 VGND VPWR VPWR VGND sky130_ef_sc_hd__decap_12
+XFILLER_8_97 VGND VPWR VPWR VGND sky130_ef_sc_hd__decap_12
+XFILLER_0_165 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_3
+XTAP_67 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XTAP_56 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XTAP_78 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+Xdelay_400ns.genblk1\[45\].delay_unit delay_400ns.genblk1\[45\].delay_unit/in delay_400ns.genblk1\[46\].delay_unit/in
++ VPWR VGND VPWR VGND sky130_mm_sc_hd_dly5ns
+XTAP_89 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XPHY_51 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_3
+XFILLER_24_109 VGND VPWR VPWR VGND sky130_ef_sc_hd__decap_12
+XPHY_40 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_3
+XFILLER_2_77 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_6
+XFILLER_14_153 VGND VPWR VPWR VGND sky130_ef_sc_hd__decap_12
+XFILLER_20_189 VGND VGND VPWR VPWR sky130_fd_sc_hd__fill_1
+XFILLER_22_63 VGND VPWR VPWR VGND sky130_ef_sc_hd__decap_12
+XFILLER_22_41 VGND VGND VPWR VPWR sky130_fd_sc_hd__fill_2
+XFILLER_7_149 VGND VPWR VPWR VGND sky130_ef_sc_hd__decap_12
+XFILLER_11_167 VGND VGND VPWR VPWR sky130_fd_sc_hd__fill_1
+XFILLER_11_189 VGND VGND VPWR VPWR sky130_fd_sc_hd__fill_1
+Xdelay_400ns.genblk1\[3\].delay_unit delay_400ns.genblk1\[3\].delay_unit/in delay_400ns.genblk1\[4\].delay_unit/in
++ VPWR VGND VPWR VGND sky130_mm_sc_hd_dly5ns
+XFILLER_17_52 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_4
+Xdelay_400ns.genblk1\[52\].delay_unit delay_400ns.genblk1\[52\].delay_unit/in delay_400ns.genblk1\[53\].delay_unit/in
++ VPWR VGND VPWR VGND sky130_mm_sc_hd_dly5ns
+XFILLER_5_55 VGND VGND VPWR VPWR sky130_fd_sc_hd__fill_1
+XFILLER_10_3 VGND VGND VPWR VPWR sky130_fd_sc_hd__fill_1
+XTAP_68 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XTAP_57 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XTAP_79 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XPHY_52 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_3
+XPHY_41 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_3
+XFILLER_18_129 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_8
+XPHY_30 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_3
+Xdelay_400ns.genblk1\[8\].delay_unit delay_400ns.genblk1\[8\].delay_unit/in delay_400ns.genblk1\[9\].delay_unit/in
++ VPWR VGND VPWR VGND sky130_mm_sc_hd_dly5ns
+Xdelay_400ns.genblk1\[57\].delay_unit delay_400ns.genblk1\[57\].delay_unit/in delay_400ns.genblk1\[58\].delay_unit/in
++ VPWR VGND VPWR VGND sky130_mm_sc_hd_dly5ns
+XFILLER_14_165 VGND VPWR VPWR VGND sky130_ef_sc_hd__decap_12
+XFILLER_22_75 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_8
+XFILLER_11_113 VGND VPWR VPWR VGND sky130_ef_sc_hd__decap_12
+XFILLER_4_109 VGND VPWR VPWR VGND sky130_ef_sc_hd__decap_12
+XFILLER_0_189 VGND VGND VPWR VPWR sky130_fd_sc_hd__fill_1
+XTAP_58 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XTAP_69 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+Xdelay_400ns.genblk1\[64\].delay_unit delay_400ns.genblk1\[64\].delay_unit/in delay_400ns.genblk1\[65\].delay_unit/in
++ VPWR VGND VPWR VGND sky130_mm_sc_hd_dly5ns
+XPHY_53 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_3
+XFILLER_26_141 VGND VPWR VPWR VGND sky130_ef_sc_hd__decap_12
+XPHY_42 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_3
+XPHY_31 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_3
+XPHY_20 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_3
+XFILLER_14_177 VGND VPWR VPWR VGND sky130_ef_sc_hd__decap_12
+XFILLER_9_181 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_8
+XFILLER_0_3 VGND VPWR VPWR VGND sky130_ef_sc_hd__decap_12
+XFILLER_8_56 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_4
+XFILLER_11_125 VGND VPWR VPWR VGND sky130_ef_sc_hd__decap_12
+XFILLER_11_169 VGND VPWR VPWR VGND sky130_ef_sc_hd__decap_12
+Xdelay_400ns.genblk1\[69\].delay_unit delay_400ns.genblk1\[69\].delay_unit/in delay_400ns.genblk1\[70\].delay_unit/in
++ VPWR VGND VPWR VGND sky130_mm_sc_hd_dly5ns
+XFILLER_0_113 VGND VPWR VPWR VGND sky130_ef_sc_hd__decap_12
+Xdelay_400ns.genblk1\[71\].delay_unit delay_400ns.genblk1\[71\].delay_unit/in delay_400ns.genblk1\[72\].delay_unit/in
++ VPWR VGND VPWR VGND sky130_mm_sc_hd_dly5ns
+XFILLER_5_57 VGND VPWR VPWR VGND sky130_ef_sc_hd__decap_12
+XTAP_59 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XFILLER_27_109 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_3
+XFILLER_26_153 VGND VPWR VPWR VGND sky130_ef_sc_hd__decap_12
+XPHY_54 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_3
+XPHY_43 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_3
+XPHY_32 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_3
+XPHY_10 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_3
+XPHY_21 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_3
+XFILLER_23_189 VGND VGND VPWR VPWR sky130_fd_sc_hd__fill_1
+XFILLER_23_167 VGND VGND VPWR VPWR sky130_fd_sc_hd__fill_1
+XFILLER_23_101 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_8
+Xdelay_400ns.genblk1\[10\].delay_unit delay_400ns.genblk1\[9\].delay_unit/out delay_400ns.genblk1\[11\].delay_unit/in
++ VPWR VGND VPWR VGND sky130_mm_sc_hd_dly5ns
+XFILLER_14_189 VGND VGND VPWR VPWR sky130_fd_sc_hd__fill_1
+XFILLER_20_137 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_3
+Xdelay_400ns.genblk1\[76\].delay_unit delay_400ns.genblk1\[76\].delay_unit/in delay_400ns.genblk1\[77\].delay_unit/in
++ VPWR VGND VPWR VGND sky130_mm_sc_hd_dly5ns
+XFILLER_11_104 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_8
+XFILLER_11_137 VGND VPWR VPWR VGND sky130_ef_sc_hd__decap_12
+XFILLER_26_3 VGND VGND VPWR VPWR sky130_fd_sc_hd__fill_1
+XFILLER_6_141 VGND VPWR VPWR VGND sky130_ef_sc_hd__decap_12
+XFILLER_8_24 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_4
+XFILLER_8_35 VGND VGND VPWR VPWR sky130_fd_sc_hd__fill_1
+XFILLER_3_111 VGND VGND VPWR VPWR sky130_fd_sc_hd__fill_1
+XFILLER_0_169 VGND VPWR VPWR VGND sky130_ef_sc_hd__decap_12
+XFILLER_0_125 VGND VPWR VPWR VGND sky130_ef_sc_hd__decap_12
+XFILLER_5_69 VGND VPWR VPWR VGND sky130_ef_sc_hd__decap_12
+Xdelay_400ns.genblk1\[15\].delay_unit delay_400ns.genblk1\[15\].delay_unit/in delay_400ns.genblk1\[16\].delay_unit/in
++ VPWR VGND VPWR VGND sky130_mm_sc_hd_dly5ns
+XFILLER_14_56 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_4
+XPHY_55 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_3
+XFILLER_26_165 VGND VPWR VPWR VGND sky130_ef_sc_hd__decap_12
+XFILLER_26_121 VGND VPWR VPWR VGND sky130_ef_sc_hd__decap_12
+XFILLER_25_77 VGND VPWR VPWR VGND sky130_ef_sc_hd__decap_12
+XFILLER_25_55 VGND VGND VPWR VPWR sky130_fd_sc_hd__fill_1
+XPHY_44 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_3
+XPHY_33 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_3
+XPHY_11 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_3
+XPHY_22 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_3
+XFILLER_17_165 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_3
+XFILLER_17_110 VGND VGND VPWR VPWR sky130_fd_sc_hd__fill_2
+XFILLER_2_15 VGND VPWR VPWR VGND sky130_ef_sc_hd__decap_12
+XFILLER_23_113 VGND VPWR VPWR VGND sky130_ef_sc_hd__decap_12
+XFILLER_11_57 VGND VPWR VPWR VGND sky130_ef_sc_hd__decap_12
+XFILLER_20_105 VGND VPWR VPWR VGND sky130_ef_sc_hd__decap_12
+XFILLER_9_161 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_6
+XFILLER_7_109 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_3
+XFILLER_11_149 VGND VPWR VPWR VGND sky130_ef_sc_hd__decap_12
+XFILLER_19_3 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_4
+XFILLER_6_153 VGND VPWR VPWR VGND sky130_ef_sc_hd__decap_12
+Xdelay_400ns.genblk1\[22\].delay_unit delay_400ns.genblk1\[22\].delay_unit/in delay_400ns.genblk1\[23\].delay_unit/in
++ VPWR VGND VPWR VGND sky130_mm_sc_hd_dly5ns
+XFILLER_3_167 VGND VGND VPWR VPWR sky130_fd_sc_hd__fill_1
+XFILLER_3_189 VGND VGND VPWR VPWR sky130_fd_sc_hd__fill_1
+XFILLER_0_81 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_3
+XFILLER_0_137 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_3
+XFILLER_5_15 VGND VPWR VPWR VGND sky130_ef_sc_hd__decap_12
+XFILLER_14_24 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_4
+XFILLER_14_35 VGND VGND VPWR VPWR sky130_fd_sc_hd__fill_1
+XFILLER_26_133 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_6
+XPHY_12 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_3
+XFILLER_26_177 VGND VPWR VPWR VGND sky130_ef_sc_hd__decap_12
+XFILLER_25_89 VGND VPWR VPWR VGND sky130_ef_sc_hd__decap_12
+XPHY_45 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_3
+XFILLER_17_133 VGND VPWR VPWR VGND sky130_ef_sc_hd__decap_12
+XPHY_34 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_3
+XFILLER_2_27 VGND VGND VPWR VPWR sky130_fd_sc_hd__fill_1
+XPHY_23 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_3
+XFILLER_23_169 VGND VPWR VPWR VGND sky130_ef_sc_hd__decap_12
+XFILLER_23_125 VGND VPWR VPWR VGND sky130_ef_sc_hd__decap_12
+Xdelay_400ns.genblk1\[27\].delay_unit delay_400ns.genblk1\[27\].delay_unit/in delay_400ns.genblk1\[28\].delay_unit/in
++ VPWR VGND VPWR VGND sky130_mm_sc_hd_dly5ns
+XFILLER_11_69 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_3
+XFILLER_20_117 VGND VPWR VPWR VGND sky130_ef_sc_hd__decap_12
+XFILLER_22_24 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_4
+XFILLER_3_81 VGND VPWR VPWR VGND sky130_ef_sc_hd__decap_12
+XFILLER_6_121 VGND VPWR VPWR VGND sky130_ef_sc_hd__decap_12
+XFILLER_6_165 VGND VPWR VPWR VGND sky130_ef_sc_hd__decap_12
+XFILLER_17_57 VGND VPWR VPWR VGND sky130_ef_sc_hd__decap_12
+XFILLER_3_113 VGND VPWR VPWR VGND sky130_ef_sc_hd__decap_12
+XFILLER_5_27 VGND VPWR VPWR VGND sky130_ef_sc_hd__decap_12
+Xdelay_400ns.genblk1\[34\].delay_unit delay_400ns.genblk1\[34\].delay_unit/in delay_400ns.genblk1\[35\].delay_unit/in
++ VPWR VGND VPWR VGND sky130_mm_sc_hd_dly5ns
+XFILLER_26_189 VGND VGND VPWR VPWR sky130_fd_sc_hd__fill_1
+XPHY_46 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_3
+XPHY_35 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_3
+XPHY_13 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_3
+XFILLER_9_3 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_4
+XPHY_24 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_3
+XFILLER_17_189 VGND VGND VPWR VPWR sky130_fd_sc_hd__fill_1
+XFILLER_17_145 VGND VPWR VPWR VGND sky130_ef_sc_hd__decap_12
+XFILLER_23_137 VGND VPWR VPWR VGND sky130_ef_sc_hd__decap_12
+XFILLER_14_137 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_3
+XFILLER_20_129 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_8
+XFILLER_13_181 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_8
+XFILLER_3_93 VGND VPWR VPWR VGND sky130_ef_sc_hd__decap_12
+XFILLER_6_133 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_6
+XFILLER_6_177 VGND VPWR VPWR VGND sky130_ef_sc_hd__decap_12
+XFILLER_12_80 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_4
+XFILLER_17_69 VGND VGND VPWR VPWR sky130_fd_sc_hd__fill_1
+Xdelay_400ns.genblk1\[39\].delay_unit delay_400ns.genblk1\[39\].delay_unit/in delay_400ns.genblk1\[40\].delay_unit/in
++ VPWR VGND VPWR VGND sky130_mm_sc_hd_dly5ns
+XFILLER_3_125 VGND VPWR VPWR VGND sky130_ef_sc_hd__decap_12
+XFILLER_3_169 VGND VPWR VPWR VGND sky130_ef_sc_hd__decap_12
+XFILLER_24_3 VGND VGND VPWR VPWR sky130_fd_sc_hd__fill_1
+Xdelay_400ns.genblk1\[41\].delay_unit delay_400ns.genblk1\[41\].delay_unit/in delay_400ns.genblk1\[42\].delay_unit/in
++ VPWR VGND VPWR VGND sky130_mm_sc_hd_dly5ns
+XFILLER_9_92 VGND VPWR VPWR VGND sky130_ef_sc_hd__decap_12
+XFILLER_5_39 VGND VPWR VPWR VGND sky130_ef_sc_hd__decap_12
+XFILLER_25_25 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_4
+XPHY_47 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_3
+XPHY_36 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_3
+XPHY_14 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_3
+XPHY_25 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_3
+XFILLER_17_157 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_8
+XFILLER_17_102 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_8
+XFILLER_2_29 VGND VPWR VPWR VGND sky130_ef_sc_hd__decap_12
+XFILLER_23_149 VGND VPWR VPWR VGND sky130_ef_sc_hd__decap_12
+XFILLER_14_105 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_4
+Xdelay_400ns.genblk1\[46\].delay_unit delay_400ns.genblk1\[46\].delay_unit/in delay_400ns.genblk1\[47\].delay_unit/in
++ VPWR VGND VPWR VGND sky130_mm_sc_hd_dly5ns
+XFILLER_10_141 VGND VPWR VPWR VGND sky130_ef_sc_hd__decap_12
+XFILLER_6_189 VGND VGND VPWR VPWR sky130_fd_sc_hd__fill_1
+XFILLER_3_137 VGND VPWR VPWR VGND sky130_ef_sc_hd__decap_12
+XFILLER_17_3 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_4
+XFILLER_18_80 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_4
+Xdelay_400ns.genblk1\[4\].delay_unit delay_400ns.genblk1\[4\].delay_unit/in delay_400ns.genblk1\[5\].delay_unit/in
++ VPWR VGND VPWR VGND sky130_mm_sc_hd_dly5ns
+Xdelay_400ns.genblk1\[53\].delay_unit delay_400ns.genblk1\[53\].delay_unit/in delay_400ns.genblk1\[54\].delay_unit/in
++ VPWR VGND VPWR VGND sky130_mm_sc_hd_dly5ns
+XPHY_48 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_3
+XPHY_37 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_3
+XFILLER_6_83 VGND VGND VPWR VPWR sky130_fd_sc_hd__fill_1
+XPHY_15 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_3
+XPHY_26 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_3
+XFILLER_17_169 VGND VPWR VPWR VGND sky130_ef_sc_hd__decap_12
+XFILLER_15_92 VGND VPWR VPWR VGND sky130_ef_sc_hd__decap_12
+XFILLER_11_28 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_4
+XFILLER_3_51 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_4
+XFILLER_19_7 VGND VGND VPWR VPWR sky130_fd_sc_hd__fill_1
+XFILLER_8_29 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_6
+XFILLER_10_153 VGND VPWR VPWR VGND sky130_ef_sc_hd__decap_12
+Xdelay_400ns.genblk1\[9\].delay_unit delay_400ns.genblk1\[9\].delay_unit/in delay_400ns.genblk1\[9\].delay_unit/out
++ VPWR VGND VPWR VGND sky130_mm_sc_hd_dly5ns
+Xdelay_400ns.genblk1\[58\].delay_unit delay_400ns.genblk1\[58\].delay_unit/in delay_400ns.genblk1\[59\].delay_unit/in
++ VPWR VGND VPWR VGND sky130_mm_sc_hd_dly5ns
+XFILLER_3_105 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_6
+XFILLER_3_149 VGND VPWR VPWR VGND sky130_ef_sc_hd__decap_12
+XFILLER_0_85 VGND VPWR VPWR VGND sky130_ef_sc_hd__decap_12
+XFILLER_0_41 VGND VPWR VPWR VGND sky130_ef_sc_hd__decap_12
+Xdelay_400ns.genblk1\[60\].delay_unit delay_400ns.genblk1\[60\].delay_unit/in delay_400ns.genblk1\[61\].delay_unit/in
++ VPWR VGND VPWR VGND sky130_mm_sc_hd_dly5ns
+XFILLER_20_71 VGND VPWR VPWR VGND sky130_ef_sc_hd__decap_12
+XFILLER_25_49 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_6
+XPHY_49 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_3
+XPHY_38 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_3
+XPHY_16 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_3
+XPHY_27 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_3
+XFILLER_25_181 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_8
+XTAP_140 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XFILLER_7_3 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_4
+XFILLER_14_129 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_8
+XFILLER_26_81 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_3
+Xdelay_400ns.genblk1\[65\].delay_unit delay_400ns.genblk1\[65\].delay_unit/in delay_400ns.genblk1\[66\].delay_unit/in
++ VPWR VGND VPWR VGND sky130_mm_sc_hd_dly5ns
+XFILLER_10_165 VGND VPWR VPWR VGND sky130_ef_sc_hd__decap_12
+XFILLER_17_28 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_4
+XFILLER_0_97 VGND VPWR VPWR VGND sky130_ef_sc_hd__decap_12
+XFILLER_0_53 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_3
+XFILLER_0_109 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_3
+XFILLER_22_3 VGND VGND VPWR VPWR sky130_fd_sc_hd__fill_1
+XFILLER_14_29 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_6
+XFILLER_20_83 VGND VGND VPWR VPWR sky130_fd_sc_hd__fill_1
+XFILLER_6_85 VGND VPWR VPWR VGND sky130_ef_sc_hd__decap_12
+XPHY_17 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_3
+XPHY_28 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_3
+XPHY_39 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_3
+XFILLER_9_7 VGND VGND VPWR VPWR sky130_fd_sc_hd__fill_1
+Xdelay_400ns.genblk1\[72\].delay_unit delay_400ns.genblk1\[72\].delay_unit/in delay_400ns.genblk1\[73\].delay_unit/in
++ VPWR VGND VPWR VGND sky130_mm_sc_hd_dly5ns
+XTAP_141 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XTAP_130 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XFILLER_22_141 VGND VPWR VPWR VGND sky130_ef_sc_hd__decap_12
+XFILLER_9_167 VGND VGND VPWR VPWR sky130_fd_sc_hd__fill_1
+XFILLER_9_189 VGND VGND VPWR VPWR sky130_fd_sc_hd__fill_1
+XFILLER_22_29 VGND VPWR VPWR VGND sky130_ef_sc_hd__decap_12
+XFILLER_10_177 VGND VPWR VPWR VGND sky130_ef_sc_hd__decap_12
+XFILLER_5_181 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_8
+Xdelay_400ns.genblk1\[11\].delay_unit delay_400ns.genblk1\[11\].delay_unit/in delay_400ns.genblk1\[12\].delay_unit/in
++ VPWR VGND VPWR VGND sky130_mm_sc_hd_dly5ns
+XFILLER_9_52 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_4
+Xdelay_400ns.genblk1\[77\].delay_unit delay_400ns.genblk1\[77\].delay_unit/in delay_400ns.genblk1\[78\].delay_unit/in
++ VPWR VGND VPWR VGND sky130_mm_sc_hd_dly5ns
+XFILLER_15_3 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_4
+XFILLER_6_75 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_8
+XFILLER_6_97 VGND VPWR VPWR VGND sky130_ef_sc_hd__decap_12
+XFILLER_26_139 VGND VGND VPWR VPWR sky130_fd_sc_hd__fill_1
+XPHY_18 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_3
+XPHY_29 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_3
+XFILLER_25_161 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_6
+XFILLER_23_109 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_3
+XTAP_142 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+Xdelay_400ns.genblk1\[16\].delay_unit delay_400ns.genblk1\[16\].delay_unit/in delay_400ns.genblk1\[17\].delay_unit/in
++ VPWR VGND VPWR VGND sky130_mm_sc_hd_dly5ns
+XTAP_131 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XTAP_120 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XFILLER_22_153 VGND VPWR VPWR VGND sky130_ef_sc_hd__decap_12
+XFILLER_9_113 VGND VPWR VPWR VGND sky130_ef_sc_hd__decap_12
+XFILLER_10_189 VGND VGND VPWR VPWR sky130_fd_sc_hd__fill_1
+XFILLER_17_7 VGND VGND VPWR VPWR sky130_fd_sc_hd__fill_1
+XFILLER_2_141 VGND VPWR VPWR VGND sky130_ef_sc_hd__decap_12
+Xdelay_400ns.genblk1\[23\].delay_unit delay_400ns.genblk1\[23\].delay_unit/in delay_400ns.genblk1\[24\].delay_unit/in
++ VPWR VGND VPWR VGND sky130_mm_sc_hd_dly5ns
+XFILLER_20_41 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_8
+XFILLER_19_181 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_8
+XPHY_19 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_3
+XFILLER_15_52 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_4
+XTAP_143 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XTAP_132 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XTAP_121 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XTAP_110 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XFILLER_26_73 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_8
+XFILLER_22_165 VGND VPWR VPWR VGND sky130_ef_sc_hd__decap_12
+XFILLER_3_55 VGND VGND VPWR VPWR sky130_fd_sc_hd__fill_1
+XFILLER_9_125 VGND VPWR VPWR VGND sky130_ef_sc_hd__decap_12
+XFILLER_9_169 VGND VPWR VPWR VGND sky130_ef_sc_hd__decap_12
+XFILLER_13_110 VGND VGND VPWR VPWR sky130_fd_sc_hd__fill_2
+XFILLER_13_165 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_3
+XFILLER_5_3 VGND VPWR VPWR VGND sky130_ef_sc_hd__decap_12
+XFILLER_6_139 VGND VGND VPWR VPWR sky130_fd_sc_hd__fill_1
+Xdelay_400ns.genblk1\[28\].delay_unit delay_400ns.genblk1\[28\].delay_unit/in delay_400ns.genblk1\[29\].delay_unit/in
++ VPWR VGND VPWR VGND sky130_mm_sc_hd_dly5ns
+XFILLER_5_161 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_6
+XFILLER_23_52 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_4
+XFILLER_2_153 VGND VPWR VPWR VGND sky130_ef_sc_hd__decap_12
+Xdelay_400ns.genblk1\[30\].delay_unit delay_400ns.genblk1\[30\].delay_unit/in delay_400ns.genblk1\[31\].delay_unit/in
++ VPWR VGND VPWR VGND sky130_mm_sc_hd_dly5ns
+XFILLER_20_3 VGND VGND VPWR VPWR sky130_fd_sc_hd__fill_1
+XTAP_144 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XTAP_133 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XTAP_122 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XTAP_111 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+XFILLER_16_141 VGND VPWR VPWR VGND sky130_ef_sc_hd__decap_12
+XTAP_100 VGND VPWR sky130_fd_sc_hd__tapvpwrvgnd_1
+.ends
+

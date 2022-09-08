@@ -1,0 +1,277 @@
+OpenROAD v2.0-3879-g0b8b7ae25 
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+[INFO ODB-0222] Reading LEF file: /foss/designs/SKY130_SAR-ADC/openlane/adc_edge_detect_circuit/runs/foobar2/tmp/merged.unpadded.nom.lef
+[INFO ODB-0223]     Created 13 technology layers
+[INFO ODB-0224]     Created 25 technology vias
+[INFO ODB-0225]     Created 442 library cells
+[INFO ODB-0226] Finished LEF file:  /foss/designs/SKY130_SAR-ADC/openlane/adc_edge_detect_circuit/runs/foobar2/tmp/merged.unpadded.nom.lef
+[INFO ODB-0127] Reading DEF file: /foss/designs/SKY130_SAR-ADC/openlane/adc_edge_detect_circuit/runs/foobar2/tmp/routing/11-fill.def
+[INFO ODB-0128] Design: adc_edge_detect_circuit
+[INFO ODB-0130]     Created 5 pins.
+[INFO ODB-0131]     Created 702 components and 2794 component-terminals.
+[INFO ODB-0132]     Created 4 special nets and 2628 connections.
+[INFO ODB-0133]     Created 84 nets and 166 connections.
+[INFO ODB-0134] Finished DEF file: /foss/designs/SKY130_SAR-ADC/openlane/adc_edge_detect_circuit/runs/foobar2/tmp/routing/11-fill.def
+###############################################################################
+# Created by write_sdc
+# Thu Sep  8 13:39:40 2022
+###############################################################################
+current_design adc_edge_detect_circuit
+###############################################################################
+# Timing Constraints
+###############################################################################
+create_clock -name clk -period 10.0000 
+set_clock_uncertainty 0.2500 clk
+set_input_delay 2.0000 -clock [get_clocks {clk}] -add_delay [get_ports {ena_in}]
+set_input_delay 2.0000 -clock [get_clocks {clk}] -add_delay [get_ports {start_conv}]
+set_output_delay 2.0000 -clock [get_clocks {clk}] -add_delay [get_ports {ena_out}]
+###############################################################################
+# Environment
+###############################################################################
+set_load -pin_load 0.0334 [get_ports {ena_out}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {ena_in}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {start_conv}]
+set_timing_derate -early 0.9500
+set_timing_derate -late 1.0500
+###############################################################################
+# Design Rules
+###############################################################################
+set_max_fanout 5.0000 [current_design]
+[WARNING STA-0357] virtual clock clk can not be propagated.
+[INFO]: Setting signal min routing layer to: met1 and clock min routing layer to met1. 
+[INFO]: Setting signal max routing layer to: met4 and clock max routing layer to met4. 
+-congestion_iterations 50 -verbose
+[INFO GRT-0020] Min routing layer: met1
+[INFO GRT-0021] Max routing layer: met4
+[INFO GRT-0022] Global adjustment: 30%
+[INFO GRT-0023] Grid origin: (0, 0)
+[INFO GRT-0043] No OR_DEFAULT vias defined.
+[INFO GRT-0088] Layer li1     Track-Pitch = 0.4600  line-2-Via Pitch: 0.3400
+[INFO GRT-0088] Layer met1    Track-Pitch = 0.3400  line-2-Via Pitch: 0.3400
+[INFO GRT-0088] Layer met2    Track-Pitch = 0.4600  line-2-Via Pitch: 0.3500
+[INFO GRT-0088] Layer met3    Track-Pitch = 0.6800  line-2-Via Pitch: 0.6150
+[INFO GRT-0088] Layer met4    Track-Pitch = 0.9200  line-2-Via Pitch: 0.6150
+[INFO GRT-0019] Found 0 clock nets.
+[INFO GRT-0001] Minimum degree: 2
+[INFO GRT-0002] Maximum degree: 3
+[INFO GRT-0003] Macros: 216
+[INFO GRT-0004] Blockages: 1120
+
+[INFO GRT-0053] Routing resources analysis:
+          Routing      Original      Derated      Resource
+Layer     Direction    Resources     Resources    Reduction (%)
+---------------------------------------------------------------
+li1        Vertical            0             0          0.00%
+met1       Horizontal       3920          1838          53.11%
+met2       Vertical         2940          1932          34.29%
+met3       Horizontal       1960          1274          35.00%
+met4       Vertical         1372           816          40.52%
+---------------------------------------------------------------
+
+[INFO GRT-0197] Via related to pin nodes: 243
+[INFO GRT-0198] Via related Steiner nodes: 0
+[INFO GRT-0199] Via filling finished.
+[INFO GRT-0111] Final number of vias: 308
+[INFO GRT-0112] Final usage 3D: 1280
+
+[INFO GRT-0096] Final congestion report:
+Layer         Resource        Demand        Usage (%)    Max H / Max V / Total Overflow
+---------------------------------------------------------------------------------------
+li1                  0             0            0.00%             0 /  0 /  0
+met1              1838           165            8.98%             0 /  0 /  0
+met2              1932           191            9.89%             0 /  0 /  0
+met3              1274             0            0.00%             0 /  0 /  0
+met4               816             0            0.00%             0 /  0 /  0
+---------------------------------------------------------------------------------------
+Total             5860           356            6.08%             0 /  0 /  0
+
+[INFO GRT-0018] Total wirelength: 3539 um
+[INFO GRT-0014] Routed nets: 84
+[INFO]: Setting RC values...
+min_report
+
+===========================================================================
+report_checks -path_delay min (Hold)
+============================================================================
+Startpoint: ena_in (input port clocked by clk)
+Endpoint: ena_out (output port clocked by clk)
+Path Group: clk
+Path Type: min
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                  0.00    0.00    0.00   clock clk (rise edge)
+                          0.00    0.00   clock network delay (ideal)
+                          2.00    2.00 ^ input external delay
+                  0.04    0.02    2.02 ^ ena_in (in)
+     1    0.01                           ena_in (net)
+                  0.04    0.00    2.02 ^ _2_/B1 (sky130_fd_sc_hd__a21o_2)
+                  0.20    0.19    2.22 ^ _2_/X (sky130_fd_sc_hd__a21o_2)
+     1    0.03                           ena_out (net)
+                  0.20    0.00    2.22 ^ ena_out (out)
+                                  2.22   data arrival time
+
+                  0.00    0.00    0.00   clock clk (rise edge)
+                          0.00    0.00   clock network delay (ideal)
+                          0.25    0.25   clock uncertainty
+                          0.00    0.25   clock reconvergence pessimism
+                         -2.00   -1.75   output external delay
+                                 -1.75   data required time
+-----------------------------------------------------------------------------
+                                 -1.75   data required time
+                                 -2.22   data arrival time
+-----------------------------------------------------------------------------
+                                  3.97   slack (MET)
+
+
+min_report_end
+max_report
+
+===========================================================================
+report_checks -path_delay max (Setup)
+============================================================================
+Startpoint: start_conv (input port clocked by clk)
+Endpoint: ena_out (output port clocked by clk)
+Path Group: clk
+Path Type: max
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                  0.00    0.00    0.00   clock clk (rise edge)
+                          0.00    0.00   clock network delay (ideal)
+                          2.00    2.00 ^ input external delay
+                  0.07    0.05    2.05 ^ start_conv (in)
+     2    0.01                           start_conv (net)
+                  0.07    0.00    2.05 ^ _2_/A1 (sky130_fd_sc_hd__a21o_2)
+                  0.20    0.26    2.31 ^ _2_/X (sky130_fd_sc_hd__a21o_2)
+     1    0.03                           ena_out (net)
+                  0.20    0.00    2.31 ^ ena_out (out)
+                                  2.31   data arrival time
+
+                  0.00   10.00   10.00   clock clk (rise edge)
+                          0.00   10.00   clock network delay (ideal)
+                         -0.25    9.75   clock uncertainty
+                          0.00    9.75   clock reconvergence pessimism
+                         -2.00    7.75   output external delay
+                                  7.75   data required time
+-----------------------------------------------------------------------------
+                                  7.75   data required time
+                                 -2.31   data arrival time
+-----------------------------------------------------------------------------
+                                  5.44   slack (MET)
+
+
+max_report_end
+check_report
+
+===========================================================================
+report_checks -unconstrained
+============================================================================
+Startpoint: start_conv (input port clocked by clk)
+Endpoint: ena_out (output port clocked by clk)
+Path Group: clk
+Path Type: max
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                  0.00    0.00    0.00   clock clk (rise edge)
+                          0.00    0.00   clock network delay (ideal)
+                          2.00    2.00 ^ input external delay
+                  0.07    0.05    2.05 ^ start_conv (in)
+     2    0.01                           start_conv (net)
+                  0.07    0.00    2.05 ^ _2_/A1 (sky130_fd_sc_hd__a21o_2)
+                  0.20    0.26    2.31 ^ _2_/X (sky130_fd_sc_hd__a21o_2)
+     1    0.03                           ena_out (net)
+                  0.20    0.00    2.31 ^ ena_out (out)
+                                  2.31   data arrival time
+
+                  0.00   10.00   10.00   clock clk (rise edge)
+                          0.00   10.00   clock network delay (ideal)
+                         -0.25    9.75   clock uncertainty
+                          0.00    9.75   clock reconvergence pessimism
+                         -2.00    7.75   output external delay
+                                  7.75   data required time
+-----------------------------------------------------------------------------
+                                  7.75   data required time
+                                 -2.31   data arrival time
+-----------------------------------------------------------------------------
+                                  5.44   slack (MET)
+
+
+
+===========================================================================
+report_checks --slack_max -0.01
+============================================================================
+No paths found.
+check_report_end
+check_slew
+
+===========================================================================
+ report_check_types -max_slew -max_cap -max_fanout -violators
+============================================================================
+
+===========================================================================
+max slew violation count 0
+max fanout violation count 0
+max cap violation count 0
+============================================================================
+check_slew_end
+tns_report
+
+===========================================================================
+ report_tns
+============================================================================
+tns 0.00
+tns_report_end
+wns_report
+
+===========================================================================
+ report_wns
+============================================================================
+wns 0.00
+wns_report_end
+worst_slack
+
+===========================================================================
+ report_worst_slack -max (Setup)
+============================================================================
+worst slack 5.44
+
+===========================================================================
+ report_worst_slack -min (Hold)
+============================================================================
+worst slack 3.97
+worst_slack_end
+clock_skew
+
+===========================================================================
+ report_clock_skew
+============================================================================
+Clock clk
+No launch/capture paths found.
+
+clock_skew_end
+power_report
+
+===========================================================================
+ report_power
+============================================================================
+Group                  Internal  Switching    Leakage      Total
+                          Power      Power      Power      Power (Watts)
+----------------------------------------------------------------
+Sequential             0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
+Combinational          2.76e-07   8.24e-07   9.70e-10   1.10e-06 100.0%
+Macro                  0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
+Pad                    0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
+----------------------------------------------------------------
+Total                  2.76e-07   8.24e-07   9.70e-10   1.10e-06 100.0%
+                          25.0%      74.9%       0.1%
+power_report_end
+area_report
+
+===========================================================================
+ report_design_area
+============================================================================
+Design area 6635 u^2 98% utilization.
+area_report_end
