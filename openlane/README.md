@@ -124,6 +124,8 @@ write_powered_verilog -output_def $::env(TMP_DIR)/routing/$::env(DESIGN_NAME).po
 run_magic
 run_magic_spice_export
 run_magic_drc
+run_lvs
+run_antenna_check
 ```
 
 Results are located in `../openlane/<CELL-NAME>/runs/results`.
