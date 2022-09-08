@@ -49,7 +49,7 @@ module adc_clk_generation(
    assign clk_dig = ~comp_trig_delayed; //needs a buffer?
    delaycell #(.Ntimes5ns(40)) delay_200ns_2 (.in(~comp_trig_delayed), .out(ncomp_trig_delayed));
    nor(net_1,ncomp_trig_delayed,~ena);
-   delaycell #(.Ntimes5ns(40)) delay_200ns_2 (.in(net_1), .out(clk_comp));
+   delaycell #(.Ntimes5ns(40)) delay_200ns_3 (.in(net_1), .out(clk_comp));
 endmodule
 
 

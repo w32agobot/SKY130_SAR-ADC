@@ -23,8 +23,8 @@ set ::env(CLOCK_TREE_SYNTH) 0
 # set ::env(FP_SIZING) "relative"
 # set ::env(FP_ASPECT_RATIO) {1}
  set ::env(FP_SIZING) "absolute"
- set ::env(DIE_AREA) "0 0 100 100"
- set ::env(FP_CORE_UTIL) {50}
+ set ::env(DIE_AREA) "0 0 90 150"
+ set ::env(FP_CORE_UTIL) {40}
  
  set ::env(FP_PDN_VWIDTH) 1 
  set ::env(FP_PDN_HWIDTH) 1 
@@ -67,8 +67,8 @@ set ::env(CLOCK_TREE_SYNTH) 0
  set ::env(GLB_RESIZER_TIMING_OPTIMIZATIONS) {0}
 
 # Signoff
- set ::env(MAGIC_DRC_USE_GDS) {1}
- set ::env(MAGIC_EXT_USE_GDS) {0}
+# set ::env(MAGIC_DRC_USE_GDS) {1}
+# set ::env(MAGIC_EXT_USE_GDS) {0}
 
 
 
