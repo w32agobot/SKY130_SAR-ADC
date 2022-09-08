@@ -1,0 +1,68 @@
+Wed Aug 31 12:35:54 UTC 2022 - Executing "openroad -python /foss/tools/openlane/2022.07/scripts/odbpy/lefutil.py get_metal_layers -o /foss/designs/SKY130_SAR-ADC/openlane/adc_edge_detect_circuit/runs/test3/tmp/layers.list /foss/pdk/sky130A/libs.ref/sky130_fd_sc_hd/techlef/sky130_fd_sc_hd__nom.tlef"
+
+Wed Aug 31 12:35:54 UTC 2022 - Executing "/foss/tools/openlane/2022.07/scripts/mergeLef.py -o /foss/designs/SKY130_SAR-ADC/openlane/adc_edge_detect_circuit/runs/test3/tmp/merged.unpadded.nom.lef -i /foss/pdk/sky130A/libs.ref/sky130_fd_sc_hd/techlef/sky130_fd_sc_hd__nom.tlef /foss/pdk/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef |& tee /dev/null"
+
+Wed Aug 31 12:35:54 UTC 2022 - Executing "/foss/tools/openlane/2022.07/scripts/mergeLef.py -o /foss/designs/SKY130_SAR-ADC/openlane/adc_edge_detect_circuit/runs/test3/tmp/merged.unpadded.min.lef -i /foss/pdk/sky130A/libs.ref/sky130_fd_sc_hd/techlef/sky130_fd_sc_hd__min.tlef /foss/pdk/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef |& tee /dev/null"
+
+Wed Aug 31 12:35:54 UTC 2022 - Executing "/foss/tools/openlane/2022.07/scripts/mergeLef.py -o /foss/designs/SKY130_SAR-ADC/openlane/adc_edge_detect_circuit/runs/test3/tmp/merged.unpadded.max.lef -i /foss/pdk/sky130A/libs.ref/sky130_fd_sc_hd/techlef/sky130_fd_sc_hd__max.tlef /foss/pdk/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef |& tee /dev/null"
+
+Wed Aug 31 12:35:54 UTC 2022 - Executing "openroad -python /foss/tools/openlane/2022.07/scripts/mergeLib.py --output /foss/designs/SKY130_SAR-ADC/openlane/adc_edge_detect_circuit/runs/test3/tmp/synthesis/merged.lib --name sky130A_merged /foss/pdk/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib"
+
+Wed Aug 31 12:35:54 UTC 2022 - Executing "openroad -python /foss/tools/openlane/2022.07/scripts/libtrim.py --cell-file /foss/designs/SKY130_SAR-ADC/openlane/adc_edge_detect_circuit/runs/test3/tmp/synthesis/trimmed.lib.exclude.list --output /foss/designs/SKY130_SAR-ADC/openlane/adc_edge_detect_circuit/runs/test3/tmp/synthesis/trimmed.lib /foss/designs/SKY130_SAR-ADC/openlane/adc_edge_detect_circuit/runs/test3/tmp/synthesis/merged.lib"
+
+Wed Aug 31 12:35:55 UTC 2022 - Executing "openroad -python /foss/tools/openlane/2022.07/scripts/new_tracks.py -i /foss/pdk/sky130A/libs.tech/openlane/sky130_fd_sc_hd/tracks.info -o /foss/designs/SKY130_SAR-ADC/openlane/adc_edge_detect_circuit/runs/test3/tmp/routing/config.tracks"
+
+Wed Aug 31 12:35:55 UTC 2022 - Executing "echo {openlane f9b5781f5ef0bbdf39ab1c2bbd78be8db11b27f2} > /foss/designs/SKY130_SAR-ADC/openlane/adc_edge_detect_circuit/runs/test3/OPENLANE_VERSION"
+
+Wed Aug 31 12:36:30 UTC 2022 - Executing "sed -i -e {s/\(set ::env(CURRENT_NETLIST)\).*/\1 \/foss\/designs\/SKY130_SAR-ADC\/openlane\/adc_edge_detect_circuit\/runs\/test3\/results\/synthesis\/adc_edge_detect_circuit.v/} /foss/designs/SKY130_SAR-ADC/openlane/adc_edge_detect_circuit/runs/test3/config.tcl"
+
+Wed Aug 31 12:36:30 UTC 2022 - Executing "sed -i -e {s/\(set ::env(PREV_NETLIST)\).*/\1 0/} /foss/designs/SKY130_SAR-ADC/openlane/adc_edge_detect_circuit/runs/test3/config.tcl"
+
+Wed Aug 31 12:36:30 UTC 2022 - Executing "openroad -exit /foss/tools/openlane/2022.07/scripts/openroad/sta.tcl |& tee /dev/null /foss/designs/SKY130_SAR-ADC/openlane/adc_edge_detect_circuit/runs/test3/logs/synthesis/2-sta.log"
+
+Wed Aug 31 12:36:40 UTC 2022 - Executing "openroad -exit /foss/tools/openlane/2022.07/scripts/openroad/floorplan.tcl |& tee /dev/null /foss/designs/SKY130_SAR-ADC/openlane/adc_edge_detect_circuit/runs/test3/logs/floorplan/3-initial_fp.log"
+
+Wed Aug 31 12:36:40 UTC 2022 - Executing "openroad -python /foss/tools/openlane/2022.07/scripts/odbpy/defutil.py extract_core_dims --output-data /foss/designs/SKY130_SAR-ADC/openlane/adc_edge_detect_circuit/runs/test3/tmp/dimensions.txt --input-lef /foss/designs/SKY130_SAR-ADC/openlane/adc_edge_detect_circuit/runs/test3/tmp/merged.nom.lef /foss/designs/SKY130_SAR-ADC/openlane/adc_edge_detect_circuit/runs/test3/tmp/floorplan/3-initial_fp.def"
+
+Wed Aug 31 12:36:40 UTC 2022 - Executing "openroad -python /foss/tools/openlane/2022.07/scripts/odbpy/io_place.py --output /foss/designs/SKY130_SAR-ADC/openlane/adc_edge_detect_circuit/runs/test3/tmp/floorplan/4-io.def --input-lef /foss/designs/SKY130_SAR-ADC/openlane/adc_edge_detect_circuit/runs/test3/tmp/merged.nom.lef --config /foss/designs/SKY130_SAR-ADC/openlane/adc_edge_detect_circuit/pin_order.cfg --hor-layer met3 --ver-layer met2 --ver-width-mult 2 --hor-width-mult 2 --hor-extension -1 --ver-extension -1 --length 4 --unmatched-error /foss/designs/SKY130_SAR-ADC/openlane/adc_edge_detect_circuit/runs/test3/tmp/floorplan/3-initial_fp.def |& tee /foss/designs/SKY130_SAR-ADC/openlane/adc_edge_detect_circuit/runs/test3/logs/floorplan/4-place_io_ol.log /dev/null"
+
+Wed Aug 31 12:36:41 UTC 2022 - Executing "openroad -exit /foss/tools/openlane/2022.07/scripts/openroad/tapcell.tcl |& tee /dev/null /foss/designs/SKY130_SAR-ADC/openlane/adc_edge_detect_circuit/runs/test3/logs/floorplan/5-tap.log"
+
+Wed Aug 31 12:36:41 UTC 2022 - Executing "openroad -exit /foss/tools/openlane/2022.07/scripts/openroad/pdn.tcl |& tee /dev/null /foss/designs/SKY130_SAR-ADC/openlane/adc_edge_detect_circuit/runs/test3/logs/floorplan/6-pdn.log"
+
+Wed Aug 31 12:36:47 UTC 2022 - Executing "openroad -exit /foss/tools/openlane/2022.07/scripts/openroad/replace.tcl |& tee /dev/null /foss/designs/SKY130_SAR-ADC/openlane/adc_edge_detect_circuit/runs/test3/logs/placement/7-global.log"
+
+Wed Aug 31 12:36:49 UTC 2022 - Executing "openroad -exit /foss/tools/openlane/2022.07/scripts/openroad/opendp.tcl |& tee /dev/null /foss/designs/SKY130_SAR-ADC/openlane/adc_edge_detect_circuit/runs/test3/logs/placement/8-detailed.log"
+
+Wed Aug 31 12:36:54 UTC 2022 - Executing "openroad -exit /foss/tools/openlane/2022.07/scripts/openroad/opendp.tcl |& tee /dev/null /foss/designs/SKY130_SAR-ADC/openlane/adc_edge_detect_circuit/runs/test3/logs/routing/9-diode_legalization.log"
+
+Wed Aug 31 12:36:54 UTC 2022 - Executing "openroad -exit /foss/tools/openlane/2022.07/scripts/openroad/groute.tcl |& tee /dev/null /foss/designs/SKY130_SAR-ADC/openlane/adc_edge_detect_circuit/runs/test3/logs/routing/10-global.log"
+
+Wed Aug 31 12:36:55 UTC 2022 - Executing "openroad -exit /foss/tools/openlane/2022.07/scripts/openroad/fill.tcl |& tee /dev/null /foss/designs/SKY130_SAR-ADC/openlane/adc_edge_detect_circuit/runs/test3/logs/routing/11-fill.log"
+
+Wed Aug 31 12:36:56 UTC 2022 - Executing "openroad -exit /foss/tools/openlane/2022.07/scripts/openroad/write_verilog.tcl |& tee /dev/null /foss/designs/SKY130_SAR-ADC/openlane/adc_edge_detect_circuit/runs/test3/logs/routing/12-write_verilog_global.log"
+
+Wed Aug 31 12:36:56 UTC 2022 - Executing "sed -i -e {s/\(set ::env(CURRENT_NETLIST)\).*/\1 \/foss\/designs\/SKY130_SAR-ADC\/openlane\/adc_edge_detect_circuit\/runs\/test3\/tmp\/routing\/11-global.v/} /foss/designs/SKY130_SAR-ADC/openlane/adc_edge_detect_circuit/runs/test3/config.tcl"
+
+Wed Aug 31 12:36:56 UTC 2022 - Executing "sed -i -e {s/\(set ::env(PREV_NETLIST)\).*/\1 \/foss\/designs\/SKY130_SAR-ADC\/openlane\/adc_edge_detect_circuit\/runs\/test3\/results\/synthesis\/adc_edge_detect_circuit.v/} /foss/designs/SKY130_SAR-ADC/openlane/adc_edge_detect_circuit/runs/test3/config.tcl"
+
+Wed Aug 31 12:36:56 UTC 2022 - Executing "openroad -exit /foss/tools/openlane/2022.07/scripts/openroad/droute.tcl |& tee /dev/null /foss/designs/SKY130_SAR-ADC/openlane/adc_edge_detect_circuit/runs/test3/logs/routing/13-detailed.log"
+
+Wed Aug 31 12:36:59 UTC 2022 - Executing "openroad -python /foss/tools/openlane/2022.07/scripts/drc_rosetta.py tr to_klayout -o /foss/designs/SKY130_SAR-ADC/openlane/adc_edge_detect_circuit/runs/test3/reports/routing/detailed.klayout.xml --design-name adc_edge_detect_circuit /foss/designs/SKY130_SAR-ADC/openlane/adc_edge_detect_circuit/runs/test3/reports/routing/detailed.drc"
+
+Wed Aug 31 12:36:59 UTC 2022 - Executing "openroad -exit /foss/tools/openlane/2022.07/scripts/openroad/write_verilog.tcl |& tee /dev/null /foss/designs/SKY130_SAR-ADC/openlane/adc_edge_detect_circuit/runs/test3/logs/routing/14-write_verilog_detailed.log"
+
+Wed Aug 31 12:37:00 UTC 2022 - Executing "sed -i -e {s/\(set ::env(CURRENT_NETLIST)\).*/\1 \/foss\/designs\/SKY130_SAR-ADC\/openlane\/adc_edge_detect_circuit\/runs\/test3\/tmp\/routing\/13-detailed.v/} /foss/designs/SKY130_SAR-ADC/openlane/adc_edge_detect_circuit/runs/test3/config.tcl"
+
+Wed Aug 31 12:37:00 UTC 2022 - Executing "sed -i -e {s/\(set ::env(PREV_NETLIST)\).*/\1 \/foss\/designs\/SKY130_SAR-ADC\/openlane\/adc_edge_detect_circuit\/runs\/test3\/tmp\/routing\/11-global.v/} /foss/designs/SKY130_SAR-ADC/openlane/adc_edge_detect_circuit/runs/test3/config.tcl"
+
+Wed Aug 31 12:37:04 UTC 2022 - Executing "magic -noconsole -dnull -rcfile /foss/pdk/sky130A/libs.tech/magic/sky130A.magicrc < /foss/tools/openlane/2022.07/scripts/magic/mag_gds.tcl |& tee /dev/null /foss/designs/SKY130_SAR-ADC/openlane/adc_edge_detect_circuit/runs/test3/logs/signoff/15-gdsii.log"
+
+Wed Aug 31 12:37:04 UTC 2022 - Executing "magic -noconsole -dnull -rcfile /foss/pdk/sky130A/libs.tech/magic/sky130A.magicrc < /foss/tools/openlane/2022.07/scripts/magic/gds_pointers.tcl |& tee /dev/null /foss/designs/SKY130_SAR-ADC/openlane/adc_edge_detect_circuit/runs/test3/logs/signoff/15-gds_ptrs.log"
+
+Wed Aug 31 12:37:05 UTC 2022 - Executing "sed -i -n {/^<< properties >>/,/^<< end >>/p} /foss/designs/SKY130_SAR-ADC/openlane/adc_edge_detect_circuit/runs/test3/tmp/signoff/gds_ptrs.mag"
+
+Wed Aug 31 12:37:05 UTC 2022 - Executing "magic -noconsole -dnull -rcfile /foss/pdk/sky130A/libs.tech/magic/sky130A.magicrc < /foss/tools/openlane/2022.07/scripts/magic/lef.tcl |& tee /dev/null /foss/designs/SKY130_SAR-ADC/openlane/adc_edge_detect_circuit/runs/test3/logs/signoff/15-lef.log"
+
+Wed Aug 31 12:37:05 UTC 2022 - Executing "magic -noconsole -dnull -rcfile /foss/pdk/sky130A/libs.tech/magic/sky130A.magicrc < /foss/tools/openlane/2022.07/scripts/magic/maglef.tcl |& tee /dev/null /foss/designs/SKY130_SAR-ADC/openlane/adc_edge_detect_circuit/runs/test3/logs/signoff/15-maglef.log"
+

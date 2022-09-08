@@ -2,6 +2,8 @@
 
 This workflow is written for the SKY130 [iic-osic-tools](https://github.com/hpretl/iic-osic-tools) design environment.
 
+![workflow](images/Flow.png "Workflow")
+
 ### Workaround for wrong-expectation for macros
 The design-flow will fail without workaround, because the flow expects macros when a lef-file is included in the config.tcl file. Openlane expects macros if a lef-file is added to the design, which is false since we are adding a standard-cell and not a macro-cell. Until an official workaround is out, erase or comment `basic_macro_placement` in `/foss/tools/openlane/2022.07/scripts/tcl_commands/floorplan.tcl`
 
@@ -127,6 +129,10 @@ run_magic_drc
 Results are located in `../openlane/<CELL-NAME>/runs/results`.
 
 Hint: You can copy the whole script and `Ctrl+V` it into the terminal
+
+###Result
+
+![Result](images/dly5ns_PnR.png "Result of PnR")
 
 ### Note
 Don't add the following commands. They are often suggested, but they will generate 2 identical custom-cells in the merged.unpadded.lef file when at detailed routing. The flow will then crash with Error `No vaid access pattern`. Including the lef files only in config.tcl works fine.
