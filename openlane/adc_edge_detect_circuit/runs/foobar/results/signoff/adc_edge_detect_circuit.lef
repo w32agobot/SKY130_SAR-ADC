@@ -1,0 +1,78 @@
+VERSION 5.7 ;
+  NOWIREEXTENSIONATPIN ON ;
+  DIVIDERCHAR "/" ;
+  BUSBITCHARS "[]" ;
+MACRO adc_edge_detect_circuit
+  CLASS BLOCK ;
+  FOREIGN adc_edge_detect_circuit ;
+  ORIGIN 0.000 0.000 ;
+  SIZE 100.000 BY 100.000 ;
+  PIN VGND
+    DIRECTION INOUT ;
+    USE GROUND ;
+    PORT
+      LAYER met4 ;
+        RECT 31.040 10.640 32.640 87.280 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 71.040 10.640 72.640 87.280 ;
+    END
+  END VGND
+  PIN VPWR
+    DIRECTION INOUT ;
+    USE POWER ;
+    PORT
+      LAYER met4 ;
+        RECT 21.040 10.640 22.640 87.280 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 61.040 10.640 62.640 87.280 ;
+    END
+  END VPWR
+  PIN ena_in
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 24.520 4.000 25.120 ;
+    END
+  END ena_in
+  PIN ena_out
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 96.000 49.680 100.000 50.280 ;
+    END
+  END ena_out
+  PIN start_conv
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 74.160 4.000 74.760 ;
+    END
+  END start_conv
+  OBS
+      LAYER li1 ;
+        RECT 5.520 10.795 94.300 87.125 ;
+      LAYER met1 ;
+        RECT 5.520 10.640 94.300 87.280 ;
+      LAYER met2 ;
+        RECT 6.990 10.695 76.270 87.225 ;
+      LAYER met3 ;
+        RECT 4.000 75.160 96.000 87.205 ;
+        RECT 4.400 73.760 96.000 75.160 ;
+        RECT 4.000 50.680 96.000 73.760 ;
+        RECT 4.000 49.280 95.600 50.680 ;
+        RECT 4.000 25.520 96.000 49.280 ;
+        RECT 4.400 24.120 96.000 25.520 ;
+        RECT 4.000 10.715 96.000 24.120 ;
+      LAYER met4 ;
+        RECT 11.010 42.090 14.750 48.120 ;
+  END
+END adc_edge_detect_circuit
+END LIBRARY
+

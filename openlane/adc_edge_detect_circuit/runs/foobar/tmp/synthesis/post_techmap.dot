@@ -1,0 +1,20 @@
+digraph "adc_edge_detect_circuit" {
+label="adc_edge_detect_circuit";
+rankdir="LR";
+remincross=true;
+n1 [ shape=octagon, label="ena_in", color="black", fontcolor="black" ];
+n2 [ shape=octagon, label="ena_out", color="black", fontcolor="black" ];
+n3 [ shape=diamond, label="net_1", color="black", fontcolor="black" ];
+n4 [ shape=diamond, label="net_2", color="black", fontcolor="black" ];
+n5 [ shape=octagon, label="start_conv", color="black", fontcolor="black" ];
+c9 [ shape=record, label="{{<p6> A|<p7> B}|$79\n$_ANDNOT_|{<p8> Y}}" ];
+c12 [ shape=record, label="{{<p10> in}|delay_macrocell_0\nsky130_mm_sc_hd_dly5ns|{<p11> out}}" ];
+c13 [ shape=record, label="{{<p10> in}|delay_macrocell_1\nsky130_mm_sc_hd_dly5ns|{<p11> out}}" ];
+n1:e -> c12:p10:w [color="black", label=""];
+c9:p8:e -> n2:w [color="black", label=""];
+c12:p11:e -> n3:w [color="black", label=""];
+n3:e -> c13:p10:w [color="black", label=""];
+c13:p11:e -> n4:w [color="black", label=""];
+n4:e -> c9:p7:w [color="black", label=""];
+n5:e -> c9:p6:w [color="black", label=""];
+}
