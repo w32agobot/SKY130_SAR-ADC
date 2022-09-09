@@ -23,14 +23,14 @@ set ::env(CLOCK_TREE_SYNTH) 0
 # set ::env(FP_SIZING) "relative"
 # set ::env(FP_ASPECT_RATIO) {1}
  set ::env(FP_SIZING) "absolute"
- set ::env(DIE_AREA) "0 0 94 150"
+ set ::env(DIE_AREA) "0 0 95 80"
  set ::env(FP_CORE_UTIL) {40}
  
  set ::env(FP_PDN_VWIDTH) 1 
  set ::env(FP_PDN_HWIDTH) 1 
- set ::env(FP_PDN_HOFFSET) {11}
+ set ::env(FP_PDN_HOFFSET) {10}
  set ::env(FP_PDN_VOFFSET) $::env(FP_PDN_HOFFSET)
- set ::env(FP_PDN_HPITCH) 62.6
+ set ::env(FP_PDN_HPITCH) 40
  set ::env(FP_PDN_VPITCH) $::env(FP_PDN_HPITCH)
  set ::env(FP_PIN_ORDER_CFG) $::env(DESIGN_DIR)/pin_order.cfg
 
@@ -53,7 +53,7 @@ set ::env(CLOCK_TREE_SYNTH) 0
 
 
 # Placement
- set ::env(PL_BASIC_PLACEMENT) 1
+ set ::env(PL_BASIC_PLACEMENT) 0
  set ::env(PL_TARGET_DENSITY) {0.70}
  set ::env(PL_RESIZER_TIMING_OPTIMIZATIONS) {0}
  set ::env(PL_RESIZER_DESIGN_OPTIMIZATIONS) {0}

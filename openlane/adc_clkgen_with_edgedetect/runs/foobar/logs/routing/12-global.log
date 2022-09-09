@@ -9,13 +9,13 @@ Components of this program may be licensed under more restrictive licenses which
 [INFO ODB-0127] Reading DEF file: /foss/designs/SKY130_SAR-ADC/openlane/adc_clkgen_with_edgedetect/runs/foobar/tmp/routing/11-fill.def
 [INFO ODB-0128] Design: adc_clkgen_with_edgedetect
 [INFO ODB-0130]     Created 7 pins.
-[INFO ODB-0131]     Created 1088 components and 4267 component-terminals.
-[INFO ODB-0132]     Created 4 special nets and 4058 connections.
+[INFO ODB-0131]     Created 504 components and 2087 component-terminals.
+[INFO ODB-0132]     Created 4 special nets and 1878 connections.
 [INFO ODB-0133]     Created 106 nets and 209 connections.
 [INFO ODB-0134] Finished DEF file: /foss/designs/SKY130_SAR-ADC/openlane/adc_clkgen_with_edgedetect/runs/foobar/tmp/routing/11-fill.def
 ###############################################################################
 # Created by write_sdc
-# Fri Sep  9 12:02:39 2022
+# Fri Sep  9 12:12:54 2022
 ###############################################################################
 current_design adc_clkgen_with_edgedetect
 ###############################################################################
@@ -59,7 +59,7 @@ set_max_fanout 5.0000 [current_design]
 [INFO GRT-0019] Found 0 clock nets.
 [INFO GRT-0001] Minimum degree: 2
 [INFO GRT-0002] Maximum degree: 3
-[INFO GRT-0003] Macros: 381
+[INFO GRT-0003] Macros: 55
 [INFO GRT-0004] Blockages: 1400
 
 [INFO GRT-0053] Routing resources analysis:
@@ -67,30 +67,30 @@ set_max_fanout 5.0000 [current_design]
 Layer     Direction    Resources     Resources    Reduction (%)
 ---------------------------------------------------------------
 li1        Vertical            0             0          0.00%
-met1       Horizontal       5460          2407          55.92%
-met2       Vertical         4095          2824          31.04%
-met3       Horizontal       2730          1779          34.84%
-met4       Vertical         1911          1170          38.78%
+met1       Horizontal       2860          1416          50.49%
+met2       Vertical         2145          1431          33.29%
+met3       Horizontal       1430           912          36.22%
+met4       Vertical         1001           600          40.06%
 ---------------------------------------------------------------
 
-[INFO GRT-0197] Via related to pin nodes: 286
+[INFO GRT-0197] Via related to pin nodes: 256
 [INFO GRT-0198] Via related Steiner nodes: 0
 [INFO GRT-0199] Via filling finished.
-[INFO GRT-0111] Final number of vias: 337
-[INFO GRT-0112] Final usage 3D: 1350
+[INFO GRT-0111] Final number of vias: 287
+[INFO GRT-0112] Final usage 3D: 1036
 
 [INFO GRT-0096] Final congestion report:
 Layer         Resource        Demand        Usage (%)    Max H / Max V / Total Overflow
 ---------------------------------------------------------------------------------------
 li1                  0             0            0.00%             0 /  0 /  0
-met1              2407            90            3.74%             0 /  0 /  0
-met2              2824           249            8.82%             0 /  0 /  0
-met3              1779             0            0.00%             0 /  0 /  0
-met4              1170             0            0.00%             0 /  0 /  0
+met1              1416            87            6.14%             0 /  0 /  0
+met2              1431            88            6.15%             0 /  0 /  0
+met3               912             0            0.00%             0 /  0 /  0
+met4               600             0            0.00%             0 /  0 /  0
 ---------------------------------------------------------------------------------------
-Total             8180           339            4.14%             0 /  0 /  0
+Total             4359           175            4.01%             0 /  0 /  0
 
-[INFO GRT-0018] Total wirelength: 3429 um
+[INFO GRT-0018] Total wirelength: 2111 um
 [INFO GRT-0014] Routed nets: 106
 [INFO]: Setting RC values...
 min_report
@@ -126,10 +126,10 @@ Fanout     Cap    Slew   Delay    Time   Description
                   0.04    0.19    2.20 v _2_/X (sky130_fd_sc_hd__and2b_2)
      1    0.00                           _0_ (net)
                   0.04    0.00    2.20 v _3_/A2 (sky130_fd_sc_hd__o21ba_2)
-                  0.04    0.20    2.40 v _3_/X (sky130_fd_sc_hd__o21ba_2)
-     1    0.00                           clkgen.delay_100ns_3._intsig_a_[1] (net)
-                  0.04    0.00    2.40 v clkgen.delay_100ns_3.genblk1[1].delay_unit/in (sky130_mm_sc_hd_dly5ns)
-                                  2.40   data arrival time
+                  0.05    0.21    2.42 v _3_/X (sky130_fd_sc_hd__o21ba_2)
+     1    0.01                           clkgen.delay_100ns_3._intsig_a_[1] (net)
+                  0.05    0.00    2.42 v clkgen.delay_100ns_3.genblk1[1].delay_unit/in (sky130_mm_sc_hd_dly5ns)
+                                  2.42   data arrival time
 -----------------------------------------------------------------------------
 (Path is unconstrained)
 
@@ -196,17 +196,17 @@ Group                  Internal  Switching    Leakage      Total
                           Power      Power      Power      Power (Watts)
 ----------------------------------------------------------------
 Sequential             0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
-Combinational          6.13e-07   4.12e-07   1.39e-09   1.03e-06 100.0%
+Combinational          6.21e-07   5.01e-07   1.01e-09   1.12e-06 100.0%
 Macro                  0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
 Pad                    0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
 ----------------------------------------------------------------
-Total                  6.13e-07   4.12e-07   1.39e-09   1.03e-06 100.0%
-                          59.7%      40.1%       0.1%
+Total                  6.21e-07   5.01e-07   1.01e-09   1.12e-06 100.0%
+                          55.3%      44.6%       0.1%
 power_report_end
 area_report
 
 ===========================================================================
  report_design_area
 ============================================================================
-Design area 10416 u^2 98% utilization.
+Design area 4674 u^2 98% utilization.
 area_report_end

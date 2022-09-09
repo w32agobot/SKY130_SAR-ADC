@@ -632,16 +632,16 @@ Mapping DFF cells in module `\adc_clkgen_with_edgedetect':
 
 18. Executing ABC pass (technology mapping using ABC).
 
-18.1. Extracting gate netlist of module `\adc_clkgen_with_edgedetect' to `/tmp/yosys-abc-xnjxZJ/input.blif'..
+18.1. Extracting gate netlist of module `\adc_clkgen_with_edgedetect' to `/tmp/yosys-abc-Mg77en/input.blif'..
 Extracted 4 gates and 9 wires to a netlist network with 5 inputs and 2 outputs.
 
 18.1.1. Executing ABC.
-Running ABC command: /foss/tools/yosys/cfe940a/bin/yosys-abc -s -f /tmp/yosys-abc-xnjxZJ/abc.script 2>&1
-ABC: ABC command line: "source /tmp/yosys-abc-xnjxZJ/abc.script".
+Running ABC command: /foss/tools/yosys/cfe940a/bin/yosys-abc -s -f /tmp/yosys-abc-Mg77en/abc.script 2>&1
+ABC: ABC command line: "source /tmp/yosys-abc-Mg77en/abc.script".
 ABC: 
-ABC: + read_blif /tmp/yosys-abc-xnjxZJ/input.blif 
+ABC: + read_blif /tmp/yosys-abc-Mg77en/input.blif 
 ABC: + read_lib -w /foss/designs/SKY130_SAR-ADC/openlane/adc_clkgen_with_edgedetect/runs/foobar/tmp/synthesis/trimmed.lib 
-ABC: Parsing finished successfully.  Parsing time =     0.08 sec
+ABC: Parsing finished successfully.  Parsing time =     0.12 sec
 ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfbbn_2".
 ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfrbp_2".
 ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfrtp_2".
@@ -659,8 +659,8 @@ ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dlxtp_1".
 ABC: Scl_LibertyReadGenlib() skipped three-state cell "sky130_fd_sc_hd__ebufn_2".
 ABC: Scl_LibertyReadGenlib() skipped three-state cell "sky130_fd_sc_hd__ebufn_4".
 ABC: Scl_LibertyReadGenlib() skipped three-state cell "sky130_fd_sc_hd__ebufn_8".
-ABC: Library "sky130A_merged" from "/foss/designs/SKY130_SAR-ADC/openlane/adc_clkgen_with_edgedetect/runs/foobar/tmp/synthesis/trimmed.lib" has 176 cells (17 skipped: 14 seq; 3 tri-state; 0 no func; 0 dont_use).  Time =     0.13 sec
-ABC: Memory =    7.78 MB. Time =     0.13 sec
+ABC: Library "sky130A_merged" from "/foss/designs/SKY130_SAR-ADC/openlane/adc_clkgen_with_edgedetect/runs/foobar/tmp/synthesis/trimmed.lib" has 176 cells (17 skipped: 14 seq; 3 tri-state; 0 no func; 0 dont_use).  Time =     0.18 sec
+ABC: Memory =    7.78 MB. Time =     0.18 sec
 ABC: Warning: Detected 2 multi-output gates (for example, "sky130_fd_sc_hd__fa_1").
 ABC: + read_constr -v /foss/designs/SKY130_SAR-ADC/openlane/adc_clkgen_with_edgedetect/runs/foobar/tmp/synthesis/synthesis.sdc 
 ABC: Setting driving cell to be "sky130_fd_sc_hd__inv_2".
@@ -739,7 +739,7 @@ ABC: Path  2 --       9 : 3    1 sky130_fd_sc_hd__o21ba_2 A =  10.01  Df = 461.2
 ABC: Start-point = pi1 (\edgedetect.delay_400ns.out).  End-point = po0 (\clkgen.delay_100ns_3.in).
 ABC: + print_stats -m 
 ABC: netlist                       : i/o =    5/    2  lat =    0  nd =     3  edge =      6  area =22.52  delay = 2.00  lev = 2
-ABC: + write_blif /tmp/yosys-abc-xnjxZJ/output.blif 
+ABC: + write_blif /tmp/yosys-abc-Mg77en/output.blif 
 
 18.1.2. Re-integrating ABC results.
 ABC RESULTS:   sky130_fd_sc_hd__and2b_2 cells:        1
@@ -789,6 +789,6 @@ Found and reported 0 problems.
 26. Executing Verilog backend.
 Dumping module `\adc_clkgen_with_edgedetect'.
 
-End of script. Logfile hash: e884e7fce7, CPU: user 1.34s system 0.15s, MEM: 40.91 MB peak
+End of script. Logfile hash: 9b8b6cfb94, CPU: user 1.56s system 0.07s, MEM: 40.83 MB peak
 Yosys 0.12+45 (git sha1 cfe940a98, gcc 9.2.1 -fPIC -Os)
-Time spent: 27% 2x read_liberty (0 sec), 17% 2x abc (0 sec), ...
+Time spent: 30% 2x read_liberty (0 sec), 21% 2x abc (0 sec), ...
