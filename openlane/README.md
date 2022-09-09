@@ -5,7 +5,7 @@ This workflow is written for the SKY130 [iic-osic-tools](https://github.com/hpre
 ![workflow](images/Flow.png "Workflow")
 
 ### Workaround for wrong-expectation for macros
-The design-flow will fail without workaround, because the flow expects macros when a lef-file is included in the config.tcl file. Openlane expects macros if a lef-file is added to the design, which is false since we are adding a standard-cell and not a macro-cell. Until an official workaround is out, erase or comment `basic_macro_placement` in `/foss/tools/openlane/2022.07/scripts/tcl_commands/floorplan.tcl`
+Openlane expects macros if a lef-file is added to the design, which is false since we are adding a standard-cell and not a macro-cell. Until an official workaround is out, erase or comment `basic_macro_placement` in `/foss/tools/openlane/2022.07/scripts/tcl_commands/floorplan.tcl`
 
 You ned root-access for this workaround. Start the docker-container with user `0` and group `0`. 
 If you're using iic-osic-tools, edit the start_vnc script.
@@ -66,7 +66,7 @@ Type in the TCL console
 property LEFclass CORE
 property LEFsource USER
 property LEFsite unithd
-property LEForigin 0 0
+property LEForigin {0 0}
 ```
 
 ### Generate LEF and GDS file
@@ -81,7 +81,7 @@ I suggest to copy the lef and gds file to your openlane-design `src`-directory.
 ### Modify the lib files, add your custom cell
 Copy the `ff` `ss` and `tt` library files from `/foss/pdk/sky130A/libs.ref/sky130_fd_sc_hd/lib/` to `/foss/designs/<PROJECT-NAME>/openlane/<CELL-NAME>/src/sky130/`.
 You need to add your custom-cell defines at the end of the file.
-To get the openlane-workflow running just copy one of the existing std-cells and update cell-name, ports, area. You can update cell timings in the future if neeed, but it is not necesary for GDSII generation since optimizations are not supported in this workflow anyways.
+To get the openlane-workflow running just copy one of the existing std-cells and update cell-name, ports, area, etc. You can update cell timings in the future if neeed, but it is not necessary for GDSII generation since optimizations are not supported in this workflow anyways.
 
 ## Openlane: RTL-GDSII config and workflow
 Openlane synthesizes the RTL file with the custom-cells treated as blackbox. The synthesized file is then parsed to floorplan-generation, placement, and routing. To get this going we have to use interactive-mode of flow.tcl and the config-file needs to be prepared properly.
@@ -132,7 +132,7 @@ Results are located in `../openlane/<CELL-NAME>/runs/results`.
 
 Hint: You can copy the whole script and `Ctrl+V` it into the terminal
 
-###Result
+### Result
 
 ![Result](images/dly5ns_PnR.png "Result of PnR")
 
