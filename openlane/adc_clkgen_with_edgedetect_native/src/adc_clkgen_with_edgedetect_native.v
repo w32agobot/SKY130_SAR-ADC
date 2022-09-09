@@ -45,11 +45,11 @@ module adc_clk_generation(
    wire ncomp_trig_delayed;
    wire net_1;
 
-   delaycell #(.Ntimes(540)) delay_200ns_1 (.in(comp_trig), .out(comp_trig_delayed));
+   delaycell #(.Ntimes(270)) delay_100ns_1 (.in(comp_trig), .out(comp_trig_delayed));
    assign clk_dig = ~comp_trig_delayed; //needs a buffer?
-   delaycell #(.Ntimes(540)) delay_200ns_2 (.in(~comp_trig_delayed), .out(ncomp_trig_delayed));
+   delaycell #(.Ntimes(270)) delay_100ns_2 (.in(~comp_trig_delayed), .out(ncomp_trig_delayed));
    nor(net_1,ncomp_trig_delayed,~ena);
-   delaycell #(.Ntimes(540)) delay_200ns_3 (.in(net_1), .out(clk_comp));
+   delaycell #(.Ntimes(270)) delay_100ns_3 (.in(net_1), .out(clk_comp));
 endmodule
 
 
@@ -68,7 +68,7 @@ module adc_edge_detect_circuit(
     wire start_conv_edge;
    
    //combinatoric process
-    delaycell #(.Ntimes(1080)) delay_400ns (.in(start_conv), .out(start_conv_delayed));
+    delaycell #(.Ntimes(540)) delay_200ns (.in(start_conv), .out(start_conv_delayed));
     nor(start_conv_edge,~start_conv,start_conv_delayed);
     or(ena_out,start_conv_edge,ena_in);
 

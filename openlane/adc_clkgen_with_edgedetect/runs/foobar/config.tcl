@@ -242,7 +242,7 @@ set ::env(RUN_TAG) {foobar}
 set ::env(SPEF_EDGE_CAP_FACTOR) {1}
 set ::env(SPEF_EXTRACTOR) {openrcx}
 set ::env(SPEF_WIRE_MODEL) {L}
-set ::env(START_TIME) {2022.09.08_19.22.18}
+set ::env(START_TIME) {2022.09.09_12.02.04}
 set ::env(STA_REPORT_POWER) {1}
 set ::env(STD_CELL_GROUND_PINS) {VGND VNB}
 set ::env(STD_CELL_LIBRARY_CDL) {/foss/pdk/sky130A/libs.ref/sky130_fd_sc_hd/cdl/sky130_fd_sc_hd.cdl}

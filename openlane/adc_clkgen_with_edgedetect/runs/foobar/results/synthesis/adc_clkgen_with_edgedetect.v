@@ -5,125 +5,65 @@ module adc_clkgen_with_edgedetect(ena_in, start_conv, comp_trig, clk_dig, clk_co
   output clk_comp;
   output clk_dig;
   wire \clkgen.comp_trig_delayed ;
-  wire \clkgen.delay_200ns_1._intsig_a_[10] ;
-  wire \clkgen.delay_200ns_1._intsig_a_[11] ;
-  wire \clkgen.delay_200ns_1._intsig_a_[12] ;
-  wire \clkgen.delay_200ns_1._intsig_a_[13] ;
-  wire \clkgen.delay_200ns_1._intsig_a_[14] ;
-  wire \clkgen.delay_200ns_1._intsig_a_[15] ;
-  wire \clkgen.delay_200ns_1._intsig_a_[16] ;
-  wire \clkgen.delay_200ns_1._intsig_a_[17] ;
-  wire \clkgen.delay_200ns_1._intsig_a_[18] ;
-  wire \clkgen.delay_200ns_1._intsig_a_[19] ;
-  wire \clkgen.delay_200ns_1._intsig_a_[20] ;
-  wire \clkgen.delay_200ns_1._intsig_a_[21] ;
-  wire \clkgen.delay_200ns_1._intsig_a_[22] ;
-  wire \clkgen.delay_200ns_1._intsig_a_[23] ;
-  wire \clkgen.delay_200ns_1._intsig_a_[24] ;
-  wire \clkgen.delay_200ns_1._intsig_a_[25] ;
-  wire \clkgen.delay_200ns_1._intsig_a_[26] ;
-  wire \clkgen.delay_200ns_1._intsig_a_[27] ;
-  wire \clkgen.delay_200ns_1._intsig_a_[28] ;
-  wire \clkgen.delay_200ns_1._intsig_a_[29] ;
-  wire \clkgen.delay_200ns_1._intsig_a_[2] ;
-  wire \clkgen.delay_200ns_1._intsig_a_[30] ;
-  wire \clkgen.delay_200ns_1._intsig_a_[31] ;
-  wire \clkgen.delay_200ns_1._intsig_a_[32] ;
-  wire \clkgen.delay_200ns_1._intsig_a_[33] ;
-  wire \clkgen.delay_200ns_1._intsig_a_[34] ;
-  wire \clkgen.delay_200ns_1._intsig_a_[35] ;
-  wire \clkgen.delay_200ns_1._intsig_a_[36] ;
-  wire \clkgen.delay_200ns_1._intsig_a_[37] ;
-  wire \clkgen.delay_200ns_1._intsig_a_[38] ;
-  wire \clkgen.delay_200ns_1._intsig_a_[39] ;
-  wire \clkgen.delay_200ns_1._intsig_a_[3] ;
-  wire \clkgen.delay_200ns_1._intsig_a_[40] ;
-  wire \clkgen.delay_200ns_1._intsig_a_[4] ;
-  wire \clkgen.delay_200ns_1._intsig_a_[5] ;
-  wire \clkgen.delay_200ns_1._intsig_a_[6] ;
-  wire \clkgen.delay_200ns_1._intsig_a_[7] ;
-  wire \clkgen.delay_200ns_1._intsig_a_[8] ;
-  wire \clkgen.delay_200ns_1._intsig_a_[9] ;
-  wire \clkgen.delay_200ns_2._intsig_a_[10] ;
-  wire \clkgen.delay_200ns_2._intsig_a_[11] ;
-  wire \clkgen.delay_200ns_2._intsig_a_[12] ;
-  wire \clkgen.delay_200ns_2._intsig_a_[13] ;
-  wire \clkgen.delay_200ns_2._intsig_a_[14] ;
-  wire \clkgen.delay_200ns_2._intsig_a_[15] ;
-  wire \clkgen.delay_200ns_2._intsig_a_[16] ;
-  wire \clkgen.delay_200ns_2._intsig_a_[17] ;
-  wire \clkgen.delay_200ns_2._intsig_a_[18] ;
-  wire \clkgen.delay_200ns_2._intsig_a_[19] ;
-  wire \clkgen.delay_200ns_2._intsig_a_[20] ;
-  wire \clkgen.delay_200ns_2._intsig_a_[21] ;
-  wire \clkgen.delay_200ns_2._intsig_a_[22] ;
-  wire \clkgen.delay_200ns_2._intsig_a_[23] ;
-  wire \clkgen.delay_200ns_2._intsig_a_[24] ;
-  wire \clkgen.delay_200ns_2._intsig_a_[25] ;
-  wire \clkgen.delay_200ns_2._intsig_a_[26] ;
-  wire \clkgen.delay_200ns_2._intsig_a_[27] ;
-  wire \clkgen.delay_200ns_2._intsig_a_[28] ;
-  wire \clkgen.delay_200ns_2._intsig_a_[29] ;
-  wire \clkgen.delay_200ns_2._intsig_a_[2] ;
-  wire \clkgen.delay_200ns_2._intsig_a_[30] ;
-  wire \clkgen.delay_200ns_2._intsig_a_[31] ;
-  wire \clkgen.delay_200ns_2._intsig_a_[32] ;
-  wire \clkgen.delay_200ns_2._intsig_a_[33] ;
-  wire \clkgen.delay_200ns_2._intsig_a_[34] ;
-  wire \clkgen.delay_200ns_2._intsig_a_[35] ;
-  wire \clkgen.delay_200ns_2._intsig_a_[36] ;
-  wire \clkgen.delay_200ns_2._intsig_a_[37] ;
-  wire \clkgen.delay_200ns_2._intsig_a_[38] ;
-  wire \clkgen.delay_200ns_2._intsig_a_[39] ;
-  wire \clkgen.delay_200ns_2._intsig_a_[3] ;
-  wire \clkgen.delay_200ns_2._intsig_a_[40] ;
-  wire \clkgen.delay_200ns_2._intsig_a_[4] ;
-  wire \clkgen.delay_200ns_2._intsig_a_[5] ;
-  wire \clkgen.delay_200ns_2._intsig_a_[6] ;
-  wire \clkgen.delay_200ns_2._intsig_a_[7] ;
-  wire \clkgen.delay_200ns_2._intsig_a_[8] ;
-  wire \clkgen.delay_200ns_2._intsig_a_[9] ;
-  wire \clkgen.delay_200ns_2.out ;
-  wire \clkgen.delay_200ns_3._intsig_a_[10] ;
-  wire \clkgen.delay_200ns_3._intsig_a_[11] ;
-  wire \clkgen.delay_200ns_3._intsig_a_[12] ;
-  wire \clkgen.delay_200ns_3._intsig_a_[13] ;
-  wire \clkgen.delay_200ns_3._intsig_a_[14] ;
-  wire \clkgen.delay_200ns_3._intsig_a_[15] ;
-  wire \clkgen.delay_200ns_3._intsig_a_[16] ;
-  wire \clkgen.delay_200ns_3._intsig_a_[17] ;
-  wire \clkgen.delay_200ns_3._intsig_a_[18] ;
-  wire \clkgen.delay_200ns_3._intsig_a_[19] ;
-  wire \clkgen.delay_200ns_3._intsig_a_[1] ;
-  wire \clkgen.delay_200ns_3._intsig_a_[20] ;
-  wire \clkgen.delay_200ns_3._intsig_a_[21] ;
-  wire \clkgen.delay_200ns_3._intsig_a_[22] ;
-  wire \clkgen.delay_200ns_3._intsig_a_[23] ;
-  wire \clkgen.delay_200ns_3._intsig_a_[24] ;
-  wire \clkgen.delay_200ns_3._intsig_a_[25] ;
-  wire \clkgen.delay_200ns_3._intsig_a_[26] ;
-  wire \clkgen.delay_200ns_3._intsig_a_[27] ;
-  wire \clkgen.delay_200ns_3._intsig_a_[28] ;
-  wire \clkgen.delay_200ns_3._intsig_a_[29] ;
-  wire \clkgen.delay_200ns_3._intsig_a_[2] ;
-  wire \clkgen.delay_200ns_3._intsig_a_[30] ;
-  wire \clkgen.delay_200ns_3._intsig_a_[31] ;
-  wire \clkgen.delay_200ns_3._intsig_a_[32] ;
-  wire \clkgen.delay_200ns_3._intsig_a_[33] ;
-  wire \clkgen.delay_200ns_3._intsig_a_[34] ;
-  wire \clkgen.delay_200ns_3._intsig_a_[35] ;
-  wire \clkgen.delay_200ns_3._intsig_a_[36] ;
-  wire \clkgen.delay_200ns_3._intsig_a_[37] ;
-  wire \clkgen.delay_200ns_3._intsig_a_[38] ;
-  wire \clkgen.delay_200ns_3._intsig_a_[39] ;
-  wire \clkgen.delay_200ns_3._intsig_a_[3] ;
-  wire \clkgen.delay_200ns_3._intsig_a_[40] ;
-  wire \clkgen.delay_200ns_3._intsig_a_[4] ;
-  wire \clkgen.delay_200ns_3._intsig_a_[5] ;
-  wire \clkgen.delay_200ns_3._intsig_a_[6] ;
-  wire \clkgen.delay_200ns_3._intsig_a_[7] ;
-  wire \clkgen.delay_200ns_3._intsig_a_[8] ;
-  wire \clkgen.delay_200ns_3._intsig_a_[9] ;
+  wire \clkgen.delay_100ns_1._intsig_a_[10] ;
+  wire \clkgen.delay_100ns_1._intsig_a_[11] ;
+  wire \clkgen.delay_100ns_1._intsig_a_[12] ;
+  wire \clkgen.delay_100ns_1._intsig_a_[13] ;
+  wire \clkgen.delay_100ns_1._intsig_a_[14] ;
+  wire \clkgen.delay_100ns_1._intsig_a_[15] ;
+  wire \clkgen.delay_100ns_1._intsig_a_[16] ;
+  wire \clkgen.delay_100ns_1._intsig_a_[17] ;
+  wire \clkgen.delay_100ns_1._intsig_a_[18] ;
+  wire \clkgen.delay_100ns_1._intsig_a_[19] ;
+  wire \clkgen.delay_100ns_1._intsig_a_[20] ;
+  wire \clkgen.delay_100ns_1._intsig_a_[2] ;
+  wire \clkgen.delay_100ns_1._intsig_a_[3] ;
+  wire \clkgen.delay_100ns_1._intsig_a_[4] ;
+  wire \clkgen.delay_100ns_1._intsig_a_[5] ;
+  wire \clkgen.delay_100ns_1._intsig_a_[6] ;
+  wire \clkgen.delay_100ns_1._intsig_a_[7] ;
+  wire \clkgen.delay_100ns_1._intsig_a_[8] ;
+  wire \clkgen.delay_100ns_1._intsig_a_[9] ;
+  wire \clkgen.delay_100ns_2._intsig_a_[10] ;
+  wire \clkgen.delay_100ns_2._intsig_a_[11] ;
+  wire \clkgen.delay_100ns_2._intsig_a_[12] ;
+  wire \clkgen.delay_100ns_2._intsig_a_[13] ;
+  wire \clkgen.delay_100ns_2._intsig_a_[14] ;
+  wire \clkgen.delay_100ns_2._intsig_a_[15] ;
+  wire \clkgen.delay_100ns_2._intsig_a_[16] ;
+  wire \clkgen.delay_100ns_2._intsig_a_[17] ;
+  wire \clkgen.delay_100ns_2._intsig_a_[18] ;
+  wire \clkgen.delay_100ns_2._intsig_a_[19] ;
+  wire \clkgen.delay_100ns_2._intsig_a_[20] ;
+  wire \clkgen.delay_100ns_2._intsig_a_[2] ;
+  wire \clkgen.delay_100ns_2._intsig_a_[3] ;
+  wire \clkgen.delay_100ns_2._intsig_a_[4] ;
+  wire \clkgen.delay_100ns_2._intsig_a_[5] ;
+  wire \clkgen.delay_100ns_2._intsig_a_[6] ;
+  wire \clkgen.delay_100ns_2._intsig_a_[7] ;
+  wire \clkgen.delay_100ns_2._intsig_a_[8] ;
+  wire \clkgen.delay_100ns_2._intsig_a_[9] ;
+  wire \clkgen.delay_100ns_2.out ;
+  wire \clkgen.delay_100ns_3._intsig_a_[10] ;
+  wire \clkgen.delay_100ns_3._intsig_a_[11] ;
+  wire \clkgen.delay_100ns_3._intsig_a_[12] ;
+  wire \clkgen.delay_100ns_3._intsig_a_[13] ;
+  wire \clkgen.delay_100ns_3._intsig_a_[14] ;
+  wire \clkgen.delay_100ns_3._intsig_a_[15] ;
+  wire \clkgen.delay_100ns_3._intsig_a_[16] ;
+  wire \clkgen.delay_100ns_3._intsig_a_[17] ;
+  wire \clkgen.delay_100ns_3._intsig_a_[18] ;
+  wire \clkgen.delay_100ns_3._intsig_a_[19] ;
+  wire \clkgen.delay_100ns_3._intsig_a_[1] ;
+  wire \clkgen.delay_100ns_3._intsig_a_[20] ;
+  wire \clkgen.delay_100ns_3._intsig_a_[2] ;
+  wire \clkgen.delay_100ns_3._intsig_a_[3] ;
+  wire \clkgen.delay_100ns_3._intsig_a_[4] ;
+  wire \clkgen.delay_100ns_3._intsig_a_[5] ;
+  wire \clkgen.delay_100ns_3._intsig_a_[6] ;
+  wire \clkgen.delay_100ns_3._intsig_a_[7] ;
+  wire \clkgen.delay_100ns_3._intsig_a_[8] ;
+  wire \clkgen.delay_100ns_3._intsig_a_[9] ;
   input comp_trig;
   wire \edgedetect.delay_400ns._intsig_a_[10] ;
   wire \edgedetect.delay_400ns._intsig_a_[11] ;
@@ -158,50 +98,10 @@ module adc_clkgen_with_edgedetect(ena_in, start_conv, comp_trig, clk_dig, clk_co
   wire \edgedetect.delay_400ns._intsig_a_[39] ;
   wire \edgedetect.delay_400ns._intsig_a_[3] ;
   wire \edgedetect.delay_400ns._intsig_a_[40] ;
-  wire \edgedetect.delay_400ns._intsig_a_[41] ;
-  wire \edgedetect.delay_400ns._intsig_a_[42] ;
-  wire \edgedetect.delay_400ns._intsig_a_[43] ;
-  wire \edgedetect.delay_400ns._intsig_a_[44] ;
-  wire \edgedetect.delay_400ns._intsig_a_[45] ;
-  wire \edgedetect.delay_400ns._intsig_a_[46] ;
-  wire \edgedetect.delay_400ns._intsig_a_[47] ;
-  wire \edgedetect.delay_400ns._intsig_a_[48] ;
-  wire \edgedetect.delay_400ns._intsig_a_[49] ;
   wire \edgedetect.delay_400ns._intsig_a_[4] ;
-  wire \edgedetect.delay_400ns._intsig_a_[50] ;
-  wire \edgedetect.delay_400ns._intsig_a_[51] ;
-  wire \edgedetect.delay_400ns._intsig_a_[52] ;
-  wire \edgedetect.delay_400ns._intsig_a_[53] ;
-  wire \edgedetect.delay_400ns._intsig_a_[54] ;
-  wire \edgedetect.delay_400ns._intsig_a_[55] ;
-  wire \edgedetect.delay_400ns._intsig_a_[56] ;
-  wire \edgedetect.delay_400ns._intsig_a_[57] ;
-  wire \edgedetect.delay_400ns._intsig_a_[58] ;
-  wire \edgedetect.delay_400ns._intsig_a_[59] ;
   wire \edgedetect.delay_400ns._intsig_a_[5] ;
-  wire \edgedetect.delay_400ns._intsig_a_[60] ;
-  wire \edgedetect.delay_400ns._intsig_a_[61] ;
-  wire \edgedetect.delay_400ns._intsig_a_[62] ;
-  wire \edgedetect.delay_400ns._intsig_a_[63] ;
-  wire \edgedetect.delay_400ns._intsig_a_[64] ;
-  wire \edgedetect.delay_400ns._intsig_a_[65] ;
-  wire \edgedetect.delay_400ns._intsig_a_[66] ;
-  wire \edgedetect.delay_400ns._intsig_a_[67] ;
-  wire \edgedetect.delay_400ns._intsig_a_[68] ;
-  wire \edgedetect.delay_400ns._intsig_a_[69] ;
   wire \edgedetect.delay_400ns._intsig_a_[6] ;
-  wire \edgedetect.delay_400ns._intsig_a_[70] ;
-  wire \edgedetect.delay_400ns._intsig_a_[71] ;
-  wire \edgedetect.delay_400ns._intsig_a_[72] ;
-  wire \edgedetect.delay_400ns._intsig_a_[73] ;
-  wire \edgedetect.delay_400ns._intsig_a_[74] ;
-  wire \edgedetect.delay_400ns._intsig_a_[75] ;
-  wire \edgedetect.delay_400ns._intsig_a_[76] ;
-  wire \edgedetect.delay_400ns._intsig_a_[77] ;
-  wire \edgedetect.delay_400ns._intsig_a_[78] ;
-  wire \edgedetect.delay_400ns._intsig_a_[79] ;
   wire \edgedetect.delay_400ns._intsig_a_[7] ;
-  wire \edgedetect.delay_400ns._intsig_a_[80] ;
   wire \edgedetect.delay_400ns._intsig_a_[8] ;
   wire \edgedetect.delay_400ns._intsig_a_[9] ;
   wire \edgedetect.delay_400ns.out ;
@@ -219,488 +119,248 @@ module adc_clkgen_with_edgedetect(ena_in, start_conv, comp_trig, clk_dig, clk_co
   sky130_fd_sc_hd__o21ba_2 _3_ (
     .A1(ena_in),
     .A2(_0_),
-    .B1_N(\clkgen.delay_200ns_2.out ),
-    .X(\clkgen.delay_200ns_3._intsig_a_[1] )
+    .B1_N(\clkgen.delay_100ns_2.out ),
+    .X(\clkgen.delay_100ns_3._intsig_a_[1] )
   );
-  sky130_mm_sc_hd_dly5ns \clkgen.delay_200ns_1.genblk1[10].delay_unit  (
-    .in(\clkgen.delay_200ns_1._intsig_a_[10] ),
-    .out(\clkgen.delay_200ns_1._intsig_a_[11] )
+  sky130_mm_sc_hd_dly5ns \clkgen.delay_100ns_1.genblk1[10].delay_unit  (
+    .in(\clkgen.delay_100ns_1._intsig_a_[10] ),
+    .out(\clkgen.delay_100ns_1._intsig_a_[11] )
   );
-  sky130_mm_sc_hd_dly5ns \clkgen.delay_200ns_1.genblk1[11].delay_unit  (
-    .in(\clkgen.delay_200ns_1._intsig_a_[11] ),
-    .out(\clkgen.delay_200ns_1._intsig_a_[12] )
+  sky130_mm_sc_hd_dly5ns \clkgen.delay_100ns_1.genblk1[11].delay_unit  (
+    .in(\clkgen.delay_100ns_1._intsig_a_[11] ),
+    .out(\clkgen.delay_100ns_1._intsig_a_[12] )
   );
-  sky130_mm_sc_hd_dly5ns \clkgen.delay_200ns_1.genblk1[12].delay_unit  (
-    .in(\clkgen.delay_200ns_1._intsig_a_[12] ),
-    .out(\clkgen.delay_200ns_1._intsig_a_[13] )
+  sky130_mm_sc_hd_dly5ns \clkgen.delay_100ns_1.genblk1[12].delay_unit  (
+    .in(\clkgen.delay_100ns_1._intsig_a_[12] ),
+    .out(\clkgen.delay_100ns_1._intsig_a_[13] )
   );
-  sky130_mm_sc_hd_dly5ns \clkgen.delay_200ns_1.genblk1[13].delay_unit  (
-    .in(\clkgen.delay_200ns_1._intsig_a_[13] ),
-    .out(\clkgen.delay_200ns_1._intsig_a_[14] )
+  sky130_mm_sc_hd_dly5ns \clkgen.delay_100ns_1.genblk1[13].delay_unit  (
+    .in(\clkgen.delay_100ns_1._intsig_a_[13] ),
+    .out(\clkgen.delay_100ns_1._intsig_a_[14] )
   );
-  sky130_mm_sc_hd_dly5ns \clkgen.delay_200ns_1.genblk1[14].delay_unit  (
-    .in(\clkgen.delay_200ns_1._intsig_a_[14] ),
-    .out(\clkgen.delay_200ns_1._intsig_a_[15] )
+  sky130_mm_sc_hd_dly5ns \clkgen.delay_100ns_1.genblk1[14].delay_unit  (
+    .in(\clkgen.delay_100ns_1._intsig_a_[14] ),
+    .out(\clkgen.delay_100ns_1._intsig_a_[15] )
   );
-  sky130_mm_sc_hd_dly5ns \clkgen.delay_200ns_1.genblk1[15].delay_unit  (
-    .in(\clkgen.delay_200ns_1._intsig_a_[15] ),
-    .out(\clkgen.delay_200ns_1._intsig_a_[16] )
+  sky130_mm_sc_hd_dly5ns \clkgen.delay_100ns_1.genblk1[15].delay_unit  (
+    .in(\clkgen.delay_100ns_1._intsig_a_[15] ),
+    .out(\clkgen.delay_100ns_1._intsig_a_[16] )
   );
-  sky130_mm_sc_hd_dly5ns \clkgen.delay_200ns_1.genblk1[16].delay_unit  (
-    .in(\clkgen.delay_200ns_1._intsig_a_[16] ),
-    .out(\clkgen.delay_200ns_1._intsig_a_[17] )
+  sky130_mm_sc_hd_dly5ns \clkgen.delay_100ns_1.genblk1[16].delay_unit  (
+    .in(\clkgen.delay_100ns_1._intsig_a_[16] ),
+    .out(\clkgen.delay_100ns_1._intsig_a_[17] )
   );
-  sky130_mm_sc_hd_dly5ns \clkgen.delay_200ns_1.genblk1[17].delay_unit  (
-    .in(\clkgen.delay_200ns_1._intsig_a_[17] ),
-    .out(\clkgen.delay_200ns_1._intsig_a_[18] )
+  sky130_mm_sc_hd_dly5ns \clkgen.delay_100ns_1.genblk1[17].delay_unit  (
+    .in(\clkgen.delay_100ns_1._intsig_a_[17] ),
+    .out(\clkgen.delay_100ns_1._intsig_a_[18] )
   );
-  sky130_mm_sc_hd_dly5ns \clkgen.delay_200ns_1.genblk1[18].delay_unit  (
-    .in(\clkgen.delay_200ns_1._intsig_a_[18] ),
-    .out(\clkgen.delay_200ns_1._intsig_a_[19] )
+  sky130_mm_sc_hd_dly5ns \clkgen.delay_100ns_1.genblk1[18].delay_unit  (
+    .in(\clkgen.delay_100ns_1._intsig_a_[18] ),
+    .out(\clkgen.delay_100ns_1._intsig_a_[19] )
   );
-  sky130_mm_sc_hd_dly5ns \clkgen.delay_200ns_1.genblk1[19].delay_unit  (
-    .in(\clkgen.delay_200ns_1._intsig_a_[19] ),
-    .out(\clkgen.delay_200ns_1._intsig_a_[20] )
+  sky130_mm_sc_hd_dly5ns \clkgen.delay_100ns_1.genblk1[19].delay_unit  (
+    .in(\clkgen.delay_100ns_1._intsig_a_[19] ),
+    .out(\clkgen.delay_100ns_1._intsig_a_[20] )
   );
-  sky130_mm_sc_hd_dly5ns \clkgen.delay_200ns_1.genblk1[1].delay_unit  (
+  sky130_mm_sc_hd_dly5ns \clkgen.delay_100ns_1.genblk1[1].delay_unit  (
     .in(comp_trig),
-    .out(\clkgen.delay_200ns_1._intsig_a_[2] )
+    .out(\clkgen.delay_100ns_1._intsig_a_[2] )
   );
-  sky130_mm_sc_hd_dly5ns \clkgen.delay_200ns_1.genblk1[20].delay_unit  (
-    .in(\clkgen.delay_200ns_1._intsig_a_[20] ),
-    .out(\clkgen.delay_200ns_1._intsig_a_[21] )
-  );
-  sky130_mm_sc_hd_dly5ns \clkgen.delay_200ns_1.genblk1[21].delay_unit  (
-    .in(\clkgen.delay_200ns_1._intsig_a_[21] ),
-    .out(\clkgen.delay_200ns_1._intsig_a_[22] )
-  );
-  sky130_mm_sc_hd_dly5ns \clkgen.delay_200ns_1.genblk1[22].delay_unit  (
-    .in(\clkgen.delay_200ns_1._intsig_a_[22] ),
-    .out(\clkgen.delay_200ns_1._intsig_a_[23] )
-  );
-  sky130_mm_sc_hd_dly5ns \clkgen.delay_200ns_1.genblk1[23].delay_unit  (
-    .in(\clkgen.delay_200ns_1._intsig_a_[23] ),
-    .out(\clkgen.delay_200ns_1._intsig_a_[24] )
-  );
-  sky130_mm_sc_hd_dly5ns \clkgen.delay_200ns_1.genblk1[24].delay_unit  (
-    .in(\clkgen.delay_200ns_1._intsig_a_[24] ),
-    .out(\clkgen.delay_200ns_1._intsig_a_[25] )
-  );
-  sky130_mm_sc_hd_dly5ns \clkgen.delay_200ns_1.genblk1[25].delay_unit  (
-    .in(\clkgen.delay_200ns_1._intsig_a_[25] ),
-    .out(\clkgen.delay_200ns_1._intsig_a_[26] )
-  );
-  sky130_mm_sc_hd_dly5ns \clkgen.delay_200ns_1.genblk1[26].delay_unit  (
-    .in(\clkgen.delay_200ns_1._intsig_a_[26] ),
-    .out(\clkgen.delay_200ns_1._intsig_a_[27] )
-  );
-  sky130_mm_sc_hd_dly5ns \clkgen.delay_200ns_1.genblk1[27].delay_unit  (
-    .in(\clkgen.delay_200ns_1._intsig_a_[27] ),
-    .out(\clkgen.delay_200ns_1._intsig_a_[28] )
-  );
-  sky130_mm_sc_hd_dly5ns \clkgen.delay_200ns_1.genblk1[28].delay_unit  (
-    .in(\clkgen.delay_200ns_1._intsig_a_[28] ),
-    .out(\clkgen.delay_200ns_1._intsig_a_[29] )
-  );
-  sky130_mm_sc_hd_dly5ns \clkgen.delay_200ns_1.genblk1[29].delay_unit  (
-    .in(\clkgen.delay_200ns_1._intsig_a_[29] ),
-    .out(\clkgen.delay_200ns_1._intsig_a_[30] )
-  );
-  sky130_mm_sc_hd_dly5ns \clkgen.delay_200ns_1.genblk1[2].delay_unit  (
-    .in(\clkgen.delay_200ns_1._intsig_a_[2] ),
-    .out(\clkgen.delay_200ns_1._intsig_a_[3] )
-  );
-  sky130_mm_sc_hd_dly5ns \clkgen.delay_200ns_1.genblk1[30].delay_unit  (
-    .in(\clkgen.delay_200ns_1._intsig_a_[30] ),
-    .out(\clkgen.delay_200ns_1._intsig_a_[31] )
-  );
-  sky130_mm_sc_hd_dly5ns \clkgen.delay_200ns_1.genblk1[31].delay_unit  (
-    .in(\clkgen.delay_200ns_1._intsig_a_[31] ),
-    .out(\clkgen.delay_200ns_1._intsig_a_[32] )
-  );
-  sky130_mm_sc_hd_dly5ns \clkgen.delay_200ns_1.genblk1[32].delay_unit  (
-    .in(\clkgen.delay_200ns_1._intsig_a_[32] ),
-    .out(\clkgen.delay_200ns_1._intsig_a_[33] )
-  );
-  sky130_mm_sc_hd_dly5ns \clkgen.delay_200ns_1.genblk1[33].delay_unit  (
-    .in(\clkgen.delay_200ns_1._intsig_a_[33] ),
-    .out(\clkgen.delay_200ns_1._intsig_a_[34] )
-  );
-  sky130_mm_sc_hd_dly5ns \clkgen.delay_200ns_1.genblk1[34].delay_unit  (
-    .in(\clkgen.delay_200ns_1._intsig_a_[34] ),
-    .out(\clkgen.delay_200ns_1._intsig_a_[35] )
-  );
-  sky130_mm_sc_hd_dly5ns \clkgen.delay_200ns_1.genblk1[35].delay_unit  (
-    .in(\clkgen.delay_200ns_1._intsig_a_[35] ),
-    .out(\clkgen.delay_200ns_1._intsig_a_[36] )
-  );
-  sky130_mm_sc_hd_dly5ns \clkgen.delay_200ns_1.genblk1[36].delay_unit  (
-    .in(\clkgen.delay_200ns_1._intsig_a_[36] ),
-    .out(\clkgen.delay_200ns_1._intsig_a_[37] )
-  );
-  sky130_mm_sc_hd_dly5ns \clkgen.delay_200ns_1.genblk1[37].delay_unit  (
-    .in(\clkgen.delay_200ns_1._intsig_a_[37] ),
-    .out(\clkgen.delay_200ns_1._intsig_a_[38] )
-  );
-  sky130_mm_sc_hd_dly5ns \clkgen.delay_200ns_1.genblk1[38].delay_unit  (
-    .in(\clkgen.delay_200ns_1._intsig_a_[38] ),
-    .out(\clkgen.delay_200ns_1._intsig_a_[39] )
-  );
-  sky130_mm_sc_hd_dly5ns \clkgen.delay_200ns_1.genblk1[39].delay_unit  (
-    .in(\clkgen.delay_200ns_1._intsig_a_[39] ),
-    .out(\clkgen.delay_200ns_1._intsig_a_[40] )
-  );
-  sky130_mm_sc_hd_dly5ns \clkgen.delay_200ns_1.genblk1[3].delay_unit  (
-    .in(\clkgen.delay_200ns_1._intsig_a_[3] ),
-    .out(\clkgen.delay_200ns_1._intsig_a_[4] )
-  );
-  sky130_mm_sc_hd_dly5ns \clkgen.delay_200ns_1.genblk1[40].delay_unit  (
-    .in(\clkgen.delay_200ns_1._intsig_a_[40] ),
+  sky130_mm_sc_hd_dly5ns \clkgen.delay_100ns_1.genblk1[20].delay_unit  (
+    .in(\clkgen.delay_100ns_1._intsig_a_[20] ),
     .out(\clkgen.comp_trig_delayed )
   );
-  sky130_mm_sc_hd_dly5ns \clkgen.delay_200ns_1.genblk1[4].delay_unit  (
-    .in(\clkgen.delay_200ns_1._intsig_a_[4] ),
-    .out(\clkgen.delay_200ns_1._intsig_a_[5] )
+  sky130_mm_sc_hd_dly5ns \clkgen.delay_100ns_1.genblk1[2].delay_unit  (
+    .in(\clkgen.delay_100ns_1._intsig_a_[2] ),
+    .out(\clkgen.delay_100ns_1._intsig_a_[3] )
   );
-  sky130_mm_sc_hd_dly5ns \clkgen.delay_200ns_1.genblk1[5].delay_unit  (
-    .in(\clkgen.delay_200ns_1._intsig_a_[5] ),
-    .out(\clkgen.delay_200ns_1._intsig_a_[6] )
+  sky130_mm_sc_hd_dly5ns \clkgen.delay_100ns_1.genblk1[3].delay_unit  (
+    .in(\clkgen.delay_100ns_1._intsig_a_[3] ),
+    .out(\clkgen.delay_100ns_1._intsig_a_[4] )
   );
-  sky130_mm_sc_hd_dly5ns \clkgen.delay_200ns_1.genblk1[6].delay_unit  (
-    .in(\clkgen.delay_200ns_1._intsig_a_[6] ),
-    .out(\clkgen.delay_200ns_1._intsig_a_[7] )
+  sky130_mm_sc_hd_dly5ns \clkgen.delay_100ns_1.genblk1[4].delay_unit  (
+    .in(\clkgen.delay_100ns_1._intsig_a_[4] ),
+    .out(\clkgen.delay_100ns_1._intsig_a_[5] )
   );
-  sky130_mm_sc_hd_dly5ns \clkgen.delay_200ns_1.genblk1[7].delay_unit  (
-    .in(\clkgen.delay_200ns_1._intsig_a_[7] ),
-    .out(\clkgen.delay_200ns_1._intsig_a_[8] )
+  sky130_mm_sc_hd_dly5ns \clkgen.delay_100ns_1.genblk1[5].delay_unit  (
+    .in(\clkgen.delay_100ns_1._intsig_a_[5] ),
+    .out(\clkgen.delay_100ns_1._intsig_a_[6] )
   );
-  sky130_mm_sc_hd_dly5ns \clkgen.delay_200ns_1.genblk1[8].delay_unit  (
-    .in(\clkgen.delay_200ns_1._intsig_a_[8] ),
-    .out(\clkgen.delay_200ns_1._intsig_a_[9] )
+  sky130_mm_sc_hd_dly5ns \clkgen.delay_100ns_1.genblk1[6].delay_unit  (
+    .in(\clkgen.delay_100ns_1._intsig_a_[6] ),
+    .out(\clkgen.delay_100ns_1._intsig_a_[7] )
   );
-  sky130_mm_sc_hd_dly5ns \clkgen.delay_200ns_1.genblk1[9].delay_unit  (
-    .in(\clkgen.delay_200ns_1._intsig_a_[9] ),
-    .out(\clkgen.delay_200ns_1._intsig_a_[10] )
+  sky130_mm_sc_hd_dly5ns \clkgen.delay_100ns_1.genblk1[7].delay_unit  (
+    .in(\clkgen.delay_100ns_1._intsig_a_[7] ),
+    .out(\clkgen.delay_100ns_1._intsig_a_[8] )
   );
-  sky130_mm_sc_hd_dly5ns \clkgen.delay_200ns_2.genblk1[10].delay_unit  (
-    .in(\clkgen.delay_200ns_2._intsig_a_[10] ),
-    .out(\clkgen.delay_200ns_2._intsig_a_[11] )
+  sky130_mm_sc_hd_dly5ns \clkgen.delay_100ns_1.genblk1[8].delay_unit  (
+    .in(\clkgen.delay_100ns_1._intsig_a_[8] ),
+    .out(\clkgen.delay_100ns_1._intsig_a_[9] )
   );
-  sky130_mm_sc_hd_dly5ns \clkgen.delay_200ns_2.genblk1[11].delay_unit  (
-    .in(\clkgen.delay_200ns_2._intsig_a_[11] ),
-    .out(\clkgen.delay_200ns_2._intsig_a_[12] )
+  sky130_mm_sc_hd_dly5ns \clkgen.delay_100ns_1.genblk1[9].delay_unit  (
+    .in(\clkgen.delay_100ns_1._intsig_a_[9] ),
+    .out(\clkgen.delay_100ns_1._intsig_a_[10] )
   );
-  sky130_mm_sc_hd_dly5ns \clkgen.delay_200ns_2.genblk1[12].delay_unit  (
-    .in(\clkgen.delay_200ns_2._intsig_a_[12] ),
-    .out(\clkgen.delay_200ns_2._intsig_a_[13] )
+  sky130_mm_sc_hd_dly5ns \clkgen.delay_100ns_2.genblk1[10].delay_unit  (
+    .in(\clkgen.delay_100ns_2._intsig_a_[10] ),
+    .out(\clkgen.delay_100ns_2._intsig_a_[11] )
   );
-  sky130_mm_sc_hd_dly5ns \clkgen.delay_200ns_2.genblk1[13].delay_unit  (
-    .in(\clkgen.delay_200ns_2._intsig_a_[13] ),
-    .out(\clkgen.delay_200ns_2._intsig_a_[14] )
+  sky130_mm_sc_hd_dly5ns \clkgen.delay_100ns_2.genblk1[11].delay_unit  (
+    .in(\clkgen.delay_100ns_2._intsig_a_[11] ),
+    .out(\clkgen.delay_100ns_2._intsig_a_[12] )
   );
-  sky130_mm_sc_hd_dly5ns \clkgen.delay_200ns_2.genblk1[14].delay_unit  (
-    .in(\clkgen.delay_200ns_2._intsig_a_[14] ),
-    .out(\clkgen.delay_200ns_2._intsig_a_[15] )
+  sky130_mm_sc_hd_dly5ns \clkgen.delay_100ns_2.genblk1[12].delay_unit  (
+    .in(\clkgen.delay_100ns_2._intsig_a_[12] ),
+    .out(\clkgen.delay_100ns_2._intsig_a_[13] )
   );
-  sky130_mm_sc_hd_dly5ns \clkgen.delay_200ns_2.genblk1[15].delay_unit  (
-    .in(\clkgen.delay_200ns_2._intsig_a_[15] ),
-    .out(\clkgen.delay_200ns_2._intsig_a_[16] )
+  sky130_mm_sc_hd_dly5ns \clkgen.delay_100ns_2.genblk1[13].delay_unit  (
+    .in(\clkgen.delay_100ns_2._intsig_a_[13] ),
+    .out(\clkgen.delay_100ns_2._intsig_a_[14] )
   );
-  sky130_mm_sc_hd_dly5ns \clkgen.delay_200ns_2.genblk1[16].delay_unit  (
-    .in(\clkgen.delay_200ns_2._intsig_a_[16] ),
-    .out(\clkgen.delay_200ns_2._intsig_a_[17] )
+  sky130_mm_sc_hd_dly5ns \clkgen.delay_100ns_2.genblk1[14].delay_unit  (
+    .in(\clkgen.delay_100ns_2._intsig_a_[14] ),
+    .out(\clkgen.delay_100ns_2._intsig_a_[15] )
   );
-  sky130_mm_sc_hd_dly5ns \clkgen.delay_200ns_2.genblk1[17].delay_unit  (
-    .in(\clkgen.delay_200ns_2._intsig_a_[17] ),
-    .out(\clkgen.delay_200ns_2._intsig_a_[18] )
+  sky130_mm_sc_hd_dly5ns \clkgen.delay_100ns_2.genblk1[15].delay_unit  (
+    .in(\clkgen.delay_100ns_2._intsig_a_[15] ),
+    .out(\clkgen.delay_100ns_2._intsig_a_[16] )
   );
-  sky130_mm_sc_hd_dly5ns \clkgen.delay_200ns_2.genblk1[18].delay_unit  (
-    .in(\clkgen.delay_200ns_2._intsig_a_[18] ),
-    .out(\clkgen.delay_200ns_2._intsig_a_[19] )
+  sky130_mm_sc_hd_dly5ns \clkgen.delay_100ns_2.genblk1[16].delay_unit  (
+    .in(\clkgen.delay_100ns_2._intsig_a_[16] ),
+    .out(\clkgen.delay_100ns_2._intsig_a_[17] )
   );
-  sky130_mm_sc_hd_dly5ns \clkgen.delay_200ns_2.genblk1[19].delay_unit  (
-    .in(\clkgen.delay_200ns_2._intsig_a_[19] ),
-    .out(\clkgen.delay_200ns_2._intsig_a_[20] )
+  sky130_mm_sc_hd_dly5ns \clkgen.delay_100ns_2.genblk1[17].delay_unit  (
+    .in(\clkgen.delay_100ns_2._intsig_a_[17] ),
+    .out(\clkgen.delay_100ns_2._intsig_a_[18] )
   );
-  sky130_mm_sc_hd_dly5ns \clkgen.delay_200ns_2.genblk1[1].delay_unit  (
+  sky130_mm_sc_hd_dly5ns \clkgen.delay_100ns_2.genblk1[18].delay_unit  (
+    .in(\clkgen.delay_100ns_2._intsig_a_[18] ),
+    .out(\clkgen.delay_100ns_2._intsig_a_[19] )
+  );
+  sky130_mm_sc_hd_dly5ns \clkgen.delay_100ns_2.genblk1[19].delay_unit  (
+    .in(\clkgen.delay_100ns_2._intsig_a_[19] ),
+    .out(\clkgen.delay_100ns_2._intsig_a_[20] )
+  );
+  sky130_mm_sc_hd_dly5ns \clkgen.delay_100ns_2.genblk1[1].delay_unit  (
     .in(clk_dig),
-    .out(\clkgen.delay_200ns_2._intsig_a_[2] )
+    .out(\clkgen.delay_100ns_2._intsig_a_[2] )
   );
-  sky130_mm_sc_hd_dly5ns \clkgen.delay_200ns_2.genblk1[20].delay_unit  (
-    .in(\clkgen.delay_200ns_2._intsig_a_[20] ),
-    .out(\clkgen.delay_200ns_2._intsig_a_[21] )
+  sky130_mm_sc_hd_dly5ns \clkgen.delay_100ns_2.genblk1[20].delay_unit  (
+    .in(\clkgen.delay_100ns_2._intsig_a_[20] ),
+    .out(\clkgen.delay_100ns_2.out )
   );
-  sky130_mm_sc_hd_dly5ns \clkgen.delay_200ns_2.genblk1[21].delay_unit  (
-    .in(\clkgen.delay_200ns_2._intsig_a_[21] ),
-    .out(\clkgen.delay_200ns_2._intsig_a_[22] )
+  sky130_mm_sc_hd_dly5ns \clkgen.delay_100ns_2.genblk1[2].delay_unit  (
+    .in(\clkgen.delay_100ns_2._intsig_a_[2] ),
+    .out(\clkgen.delay_100ns_2._intsig_a_[3] )
   );
-  sky130_mm_sc_hd_dly5ns \clkgen.delay_200ns_2.genblk1[22].delay_unit  (
-    .in(\clkgen.delay_200ns_2._intsig_a_[22] ),
-    .out(\clkgen.delay_200ns_2._intsig_a_[23] )
+  sky130_mm_sc_hd_dly5ns \clkgen.delay_100ns_2.genblk1[3].delay_unit  (
+    .in(\clkgen.delay_100ns_2._intsig_a_[3] ),
+    .out(\clkgen.delay_100ns_2._intsig_a_[4] )
   );
-  sky130_mm_sc_hd_dly5ns \clkgen.delay_200ns_2.genblk1[23].delay_unit  (
-    .in(\clkgen.delay_200ns_2._intsig_a_[23] ),
-    .out(\clkgen.delay_200ns_2._intsig_a_[24] )
+  sky130_mm_sc_hd_dly5ns \clkgen.delay_100ns_2.genblk1[4].delay_unit  (
+    .in(\clkgen.delay_100ns_2._intsig_a_[4] ),
+    .out(\clkgen.delay_100ns_2._intsig_a_[5] )
   );
-  sky130_mm_sc_hd_dly5ns \clkgen.delay_200ns_2.genblk1[24].delay_unit  (
-    .in(\clkgen.delay_200ns_2._intsig_a_[24] ),
-    .out(\clkgen.delay_200ns_2._intsig_a_[25] )
+  sky130_mm_sc_hd_dly5ns \clkgen.delay_100ns_2.genblk1[5].delay_unit  (
+    .in(\clkgen.delay_100ns_2._intsig_a_[5] ),
+    .out(\clkgen.delay_100ns_2._intsig_a_[6] )
   );
-  sky130_mm_sc_hd_dly5ns \clkgen.delay_200ns_2.genblk1[25].delay_unit  (
-    .in(\clkgen.delay_200ns_2._intsig_a_[25] ),
-    .out(\clkgen.delay_200ns_2._intsig_a_[26] )
+  sky130_mm_sc_hd_dly5ns \clkgen.delay_100ns_2.genblk1[6].delay_unit  (
+    .in(\clkgen.delay_100ns_2._intsig_a_[6] ),
+    .out(\clkgen.delay_100ns_2._intsig_a_[7] )
   );
-  sky130_mm_sc_hd_dly5ns \clkgen.delay_200ns_2.genblk1[26].delay_unit  (
-    .in(\clkgen.delay_200ns_2._intsig_a_[26] ),
-    .out(\clkgen.delay_200ns_2._intsig_a_[27] )
+  sky130_mm_sc_hd_dly5ns \clkgen.delay_100ns_2.genblk1[7].delay_unit  (
+    .in(\clkgen.delay_100ns_2._intsig_a_[7] ),
+    .out(\clkgen.delay_100ns_2._intsig_a_[8] )
   );
-  sky130_mm_sc_hd_dly5ns \clkgen.delay_200ns_2.genblk1[27].delay_unit  (
-    .in(\clkgen.delay_200ns_2._intsig_a_[27] ),
-    .out(\clkgen.delay_200ns_2._intsig_a_[28] )
+  sky130_mm_sc_hd_dly5ns \clkgen.delay_100ns_2.genblk1[8].delay_unit  (
+    .in(\clkgen.delay_100ns_2._intsig_a_[8] ),
+    .out(\clkgen.delay_100ns_2._intsig_a_[9] )
   );
-  sky130_mm_sc_hd_dly5ns \clkgen.delay_200ns_2.genblk1[28].delay_unit  (
-    .in(\clkgen.delay_200ns_2._intsig_a_[28] ),
-    .out(\clkgen.delay_200ns_2._intsig_a_[29] )
+  sky130_mm_sc_hd_dly5ns \clkgen.delay_100ns_2.genblk1[9].delay_unit  (
+    .in(\clkgen.delay_100ns_2._intsig_a_[9] ),
+    .out(\clkgen.delay_100ns_2._intsig_a_[10] )
   );
-  sky130_mm_sc_hd_dly5ns \clkgen.delay_200ns_2.genblk1[29].delay_unit  (
-    .in(\clkgen.delay_200ns_2._intsig_a_[29] ),
-    .out(\clkgen.delay_200ns_2._intsig_a_[30] )
+  sky130_mm_sc_hd_dly5ns \clkgen.delay_100ns_3.genblk1[10].delay_unit  (
+    .in(\clkgen.delay_100ns_3._intsig_a_[10] ),
+    .out(\clkgen.delay_100ns_3._intsig_a_[11] )
   );
-  sky130_mm_sc_hd_dly5ns \clkgen.delay_200ns_2.genblk1[2].delay_unit  (
-    .in(\clkgen.delay_200ns_2._intsig_a_[2] ),
-    .out(\clkgen.delay_200ns_2._intsig_a_[3] )
+  sky130_mm_sc_hd_dly5ns \clkgen.delay_100ns_3.genblk1[11].delay_unit  (
+    .in(\clkgen.delay_100ns_3._intsig_a_[11] ),
+    .out(\clkgen.delay_100ns_3._intsig_a_[12] )
   );
-  sky130_mm_sc_hd_dly5ns \clkgen.delay_200ns_2.genblk1[30].delay_unit  (
-    .in(\clkgen.delay_200ns_2._intsig_a_[30] ),
-    .out(\clkgen.delay_200ns_2._intsig_a_[31] )
+  sky130_mm_sc_hd_dly5ns \clkgen.delay_100ns_3.genblk1[12].delay_unit  (
+    .in(\clkgen.delay_100ns_3._intsig_a_[12] ),
+    .out(\clkgen.delay_100ns_3._intsig_a_[13] )
   );
-  sky130_mm_sc_hd_dly5ns \clkgen.delay_200ns_2.genblk1[31].delay_unit  (
-    .in(\clkgen.delay_200ns_2._intsig_a_[31] ),
-    .out(\clkgen.delay_200ns_2._intsig_a_[32] )
+  sky130_mm_sc_hd_dly5ns \clkgen.delay_100ns_3.genblk1[13].delay_unit  (
+    .in(\clkgen.delay_100ns_3._intsig_a_[13] ),
+    .out(\clkgen.delay_100ns_3._intsig_a_[14] )
   );
-  sky130_mm_sc_hd_dly5ns \clkgen.delay_200ns_2.genblk1[32].delay_unit  (
-    .in(\clkgen.delay_200ns_2._intsig_a_[32] ),
-    .out(\clkgen.delay_200ns_2._intsig_a_[33] )
+  sky130_mm_sc_hd_dly5ns \clkgen.delay_100ns_3.genblk1[14].delay_unit  (
+    .in(\clkgen.delay_100ns_3._intsig_a_[14] ),
+    .out(\clkgen.delay_100ns_3._intsig_a_[15] )
   );
-  sky130_mm_sc_hd_dly5ns \clkgen.delay_200ns_2.genblk1[33].delay_unit  (
-    .in(\clkgen.delay_200ns_2._intsig_a_[33] ),
-    .out(\clkgen.delay_200ns_2._intsig_a_[34] )
+  sky130_mm_sc_hd_dly5ns \clkgen.delay_100ns_3.genblk1[15].delay_unit  (
+    .in(\clkgen.delay_100ns_3._intsig_a_[15] ),
+    .out(\clkgen.delay_100ns_3._intsig_a_[16] )
   );
-  sky130_mm_sc_hd_dly5ns \clkgen.delay_200ns_2.genblk1[34].delay_unit  (
-    .in(\clkgen.delay_200ns_2._intsig_a_[34] ),
-    .out(\clkgen.delay_200ns_2._intsig_a_[35] )
+  sky130_mm_sc_hd_dly5ns \clkgen.delay_100ns_3.genblk1[16].delay_unit  (
+    .in(\clkgen.delay_100ns_3._intsig_a_[16] ),
+    .out(\clkgen.delay_100ns_3._intsig_a_[17] )
   );
-  sky130_mm_sc_hd_dly5ns \clkgen.delay_200ns_2.genblk1[35].delay_unit  (
-    .in(\clkgen.delay_200ns_2._intsig_a_[35] ),
-    .out(\clkgen.delay_200ns_2._intsig_a_[36] )
+  sky130_mm_sc_hd_dly5ns \clkgen.delay_100ns_3.genblk1[17].delay_unit  (
+    .in(\clkgen.delay_100ns_3._intsig_a_[17] ),
+    .out(\clkgen.delay_100ns_3._intsig_a_[18] )
   );
-  sky130_mm_sc_hd_dly5ns \clkgen.delay_200ns_2.genblk1[36].delay_unit  (
-    .in(\clkgen.delay_200ns_2._intsig_a_[36] ),
-    .out(\clkgen.delay_200ns_2._intsig_a_[37] )
+  sky130_mm_sc_hd_dly5ns \clkgen.delay_100ns_3.genblk1[18].delay_unit  (
+    .in(\clkgen.delay_100ns_3._intsig_a_[18] ),
+    .out(\clkgen.delay_100ns_3._intsig_a_[19] )
   );
-  sky130_mm_sc_hd_dly5ns \clkgen.delay_200ns_2.genblk1[37].delay_unit  (
-    .in(\clkgen.delay_200ns_2._intsig_a_[37] ),
-    .out(\clkgen.delay_200ns_2._intsig_a_[38] )
+  sky130_mm_sc_hd_dly5ns \clkgen.delay_100ns_3.genblk1[19].delay_unit  (
+    .in(\clkgen.delay_100ns_3._intsig_a_[19] ),
+    .out(\clkgen.delay_100ns_3._intsig_a_[20] )
   );
-  sky130_mm_sc_hd_dly5ns \clkgen.delay_200ns_2.genblk1[38].delay_unit  (
-    .in(\clkgen.delay_200ns_2._intsig_a_[38] ),
-    .out(\clkgen.delay_200ns_2._intsig_a_[39] )
+  sky130_mm_sc_hd_dly5ns \clkgen.delay_100ns_3.genblk1[1].delay_unit  (
+    .in(\clkgen.delay_100ns_3._intsig_a_[1] ),
+    .out(\clkgen.delay_100ns_3._intsig_a_[2] )
   );
-  sky130_mm_sc_hd_dly5ns \clkgen.delay_200ns_2.genblk1[39].delay_unit  (
-    .in(\clkgen.delay_200ns_2._intsig_a_[39] ),
-    .out(\clkgen.delay_200ns_2._intsig_a_[40] )
-  );
-  sky130_mm_sc_hd_dly5ns \clkgen.delay_200ns_2.genblk1[3].delay_unit  (
-    .in(\clkgen.delay_200ns_2._intsig_a_[3] ),
-    .out(\clkgen.delay_200ns_2._intsig_a_[4] )
-  );
-  sky130_mm_sc_hd_dly5ns \clkgen.delay_200ns_2.genblk1[40].delay_unit  (
-    .in(\clkgen.delay_200ns_2._intsig_a_[40] ),
-    .out(\clkgen.delay_200ns_2.out )
-  );
-  sky130_mm_sc_hd_dly5ns \clkgen.delay_200ns_2.genblk1[4].delay_unit  (
-    .in(\clkgen.delay_200ns_2._intsig_a_[4] ),
-    .out(\clkgen.delay_200ns_2._intsig_a_[5] )
-  );
-  sky130_mm_sc_hd_dly5ns \clkgen.delay_200ns_2.genblk1[5].delay_unit  (
-    .in(\clkgen.delay_200ns_2._intsig_a_[5] ),
-    .out(\clkgen.delay_200ns_2._intsig_a_[6] )
-  );
-  sky130_mm_sc_hd_dly5ns \clkgen.delay_200ns_2.genblk1[6].delay_unit  (
-    .in(\clkgen.delay_200ns_2._intsig_a_[6] ),
-    .out(\clkgen.delay_200ns_2._intsig_a_[7] )
-  );
-  sky130_mm_sc_hd_dly5ns \clkgen.delay_200ns_2.genblk1[7].delay_unit  (
-    .in(\clkgen.delay_200ns_2._intsig_a_[7] ),
-    .out(\clkgen.delay_200ns_2._intsig_a_[8] )
-  );
-  sky130_mm_sc_hd_dly5ns \clkgen.delay_200ns_2.genblk1[8].delay_unit  (
-    .in(\clkgen.delay_200ns_2._intsig_a_[8] ),
-    .out(\clkgen.delay_200ns_2._intsig_a_[9] )
-  );
-  sky130_mm_sc_hd_dly5ns \clkgen.delay_200ns_2.genblk1[9].delay_unit  (
-    .in(\clkgen.delay_200ns_2._intsig_a_[9] ),
-    .out(\clkgen.delay_200ns_2._intsig_a_[10] )
-  );
-  sky130_mm_sc_hd_dly5ns \clkgen.delay_200ns_3.genblk1[10].delay_unit  (
-    .in(\clkgen.delay_200ns_3._intsig_a_[10] ),
-    .out(\clkgen.delay_200ns_3._intsig_a_[11] )
-  );
-  sky130_mm_sc_hd_dly5ns \clkgen.delay_200ns_3.genblk1[11].delay_unit  (
-    .in(\clkgen.delay_200ns_3._intsig_a_[11] ),
-    .out(\clkgen.delay_200ns_3._intsig_a_[12] )
-  );
-  sky130_mm_sc_hd_dly5ns \clkgen.delay_200ns_3.genblk1[12].delay_unit  (
-    .in(\clkgen.delay_200ns_3._intsig_a_[12] ),
-    .out(\clkgen.delay_200ns_3._intsig_a_[13] )
-  );
-  sky130_mm_sc_hd_dly5ns \clkgen.delay_200ns_3.genblk1[13].delay_unit  (
-    .in(\clkgen.delay_200ns_3._intsig_a_[13] ),
-    .out(\clkgen.delay_200ns_3._intsig_a_[14] )
-  );
-  sky130_mm_sc_hd_dly5ns \clkgen.delay_200ns_3.genblk1[14].delay_unit  (
-    .in(\clkgen.delay_200ns_3._intsig_a_[14] ),
-    .out(\clkgen.delay_200ns_3._intsig_a_[15] )
-  );
-  sky130_mm_sc_hd_dly5ns \clkgen.delay_200ns_3.genblk1[15].delay_unit  (
-    .in(\clkgen.delay_200ns_3._intsig_a_[15] ),
-    .out(\clkgen.delay_200ns_3._intsig_a_[16] )
-  );
-  sky130_mm_sc_hd_dly5ns \clkgen.delay_200ns_3.genblk1[16].delay_unit  (
-    .in(\clkgen.delay_200ns_3._intsig_a_[16] ),
-    .out(\clkgen.delay_200ns_3._intsig_a_[17] )
-  );
-  sky130_mm_sc_hd_dly5ns \clkgen.delay_200ns_3.genblk1[17].delay_unit  (
-    .in(\clkgen.delay_200ns_3._intsig_a_[17] ),
-    .out(\clkgen.delay_200ns_3._intsig_a_[18] )
-  );
-  sky130_mm_sc_hd_dly5ns \clkgen.delay_200ns_3.genblk1[18].delay_unit  (
-    .in(\clkgen.delay_200ns_3._intsig_a_[18] ),
-    .out(\clkgen.delay_200ns_3._intsig_a_[19] )
-  );
-  sky130_mm_sc_hd_dly5ns \clkgen.delay_200ns_3.genblk1[19].delay_unit  (
-    .in(\clkgen.delay_200ns_3._intsig_a_[19] ),
-    .out(\clkgen.delay_200ns_3._intsig_a_[20] )
-  );
-  sky130_mm_sc_hd_dly5ns \clkgen.delay_200ns_3.genblk1[1].delay_unit  (
-    .in(\clkgen.delay_200ns_3._intsig_a_[1] ),
-    .out(\clkgen.delay_200ns_3._intsig_a_[2] )
-  );
-  sky130_mm_sc_hd_dly5ns \clkgen.delay_200ns_3.genblk1[20].delay_unit  (
-    .in(\clkgen.delay_200ns_3._intsig_a_[20] ),
-    .out(\clkgen.delay_200ns_3._intsig_a_[21] )
-  );
-  sky130_mm_sc_hd_dly5ns \clkgen.delay_200ns_3.genblk1[21].delay_unit  (
-    .in(\clkgen.delay_200ns_3._intsig_a_[21] ),
-    .out(\clkgen.delay_200ns_3._intsig_a_[22] )
-  );
-  sky130_mm_sc_hd_dly5ns \clkgen.delay_200ns_3.genblk1[22].delay_unit  (
-    .in(\clkgen.delay_200ns_3._intsig_a_[22] ),
-    .out(\clkgen.delay_200ns_3._intsig_a_[23] )
-  );
-  sky130_mm_sc_hd_dly5ns \clkgen.delay_200ns_3.genblk1[23].delay_unit  (
-    .in(\clkgen.delay_200ns_3._intsig_a_[23] ),
-    .out(\clkgen.delay_200ns_3._intsig_a_[24] )
-  );
-  sky130_mm_sc_hd_dly5ns \clkgen.delay_200ns_3.genblk1[24].delay_unit  (
-    .in(\clkgen.delay_200ns_3._intsig_a_[24] ),
-    .out(\clkgen.delay_200ns_3._intsig_a_[25] )
-  );
-  sky130_mm_sc_hd_dly5ns \clkgen.delay_200ns_3.genblk1[25].delay_unit  (
-    .in(\clkgen.delay_200ns_3._intsig_a_[25] ),
-    .out(\clkgen.delay_200ns_3._intsig_a_[26] )
-  );
-  sky130_mm_sc_hd_dly5ns \clkgen.delay_200ns_3.genblk1[26].delay_unit  (
-    .in(\clkgen.delay_200ns_3._intsig_a_[26] ),
-    .out(\clkgen.delay_200ns_3._intsig_a_[27] )
-  );
-  sky130_mm_sc_hd_dly5ns \clkgen.delay_200ns_3.genblk1[27].delay_unit  (
-    .in(\clkgen.delay_200ns_3._intsig_a_[27] ),
-    .out(\clkgen.delay_200ns_3._intsig_a_[28] )
-  );
-  sky130_mm_sc_hd_dly5ns \clkgen.delay_200ns_3.genblk1[28].delay_unit  (
-    .in(\clkgen.delay_200ns_3._intsig_a_[28] ),
-    .out(\clkgen.delay_200ns_3._intsig_a_[29] )
-  );
-  sky130_mm_sc_hd_dly5ns \clkgen.delay_200ns_3.genblk1[29].delay_unit  (
-    .in(\clkgen.delay_200ns_3._intsig_a_[29] ),
-    .out(\clkgen.delay_200ns_3._intsig_a_[30] )
-  );
-  sky130_mm_sc_hd_dly5ns \clkgen.delay_200ns_3.genblk1[2].delay_unit  (
-    .in(\clkgen.delay_200ns_3._intsig_a_[2] ),
-    .out(\clkgen.delay_200ns_3._intsig_a_[3] )
-  );
-  sky130_mm_sc_hd_dly5ns \clkgen.delay_200ns_3.genblk1[30].delay_unit  (
-    .in(\clkgen.delay_200ns_3._intsig_a_[30] ),
-    .out(\clkgen.delay_200ns_3._intsig_a_[31] )
-  );
-  sky130_mm_sc_hd_dly5ns \clkgen.delay_200ns_3.genblk1[31].delay_unit  (
-    .in(\clkgen.delay_200ns_3._intsig_a_[31] ),
-    .out(\clkgen.delay_200ns_3._intsig_a_[32] )
-  );
-  sky130_mm_sc_hd_dly5ns \clkgen.delay_200ns_3.genblk1[32].delay_unit  (
-    .in(\clkgen.delay_200ns_3._intsig_a_[32] ),
-    .out(\clkgen.delay_200ns_3._intsig_a_[33] )
-  );
-  sky130_mm_sc_hd_dly5ns \clkgen.delay_200ns_3.genblk1[33].delay_unit  (
-    .in(\clkgen.delay_200ns_3._intsig_a_[33] ),
-    .out(\clkgen.delay_200ns_3._intsig_a_[34] )
-  );
-  sky130_mm_sc_hd_dly5ns \clkgen.delay_200ns_3.genblk1[34].delay_unit  (
-    .in(\clkgen.delay_200ns_3._intsig_a_[34] ),
-    .out(\clkgen.delay_200ns_3._intsig_a_[35] )
-  );
-  sky130_mm_sc_hd_dly5ns \clkgen.delay_200ns_3.genblk1[35].delay_unit  (
-    .in(\clkgen.delay_200ns_3._intsig_a_[35] ),
-    .out(\clkgen.delay_200ns_3._intsig_a_[36] )
-  );
-  sky130_mm_sc_hd_dly5ns \clkgen.delay_200ns_3.genblk1[36].delay_unit  (
-    .in(\clkgen.delay_200ns_3._intsig_a_[36] ),
-    .out(\clkgen.delay_200ns_3._intsig_a_[37] )
-  );
-  sky130_mm_sc_hd_dly5ns \clkgen.delay_200ns_3.genblk1[37].delay_unit  (
-    .in(\clkgen.delay_200ns_3._intsig_a_[37] ),
-    .out(\clkgen.delay_200ns_3._intsig_a_[38] )
-  );
-  sky130_mm_sc_hd_dly5ns \clkgen.delay_200ns_3.genblk1[38].delay_unit  (
-    .in(\clkgen.delay_200ns_3._intsig_a_[38] ),
-    .out(\clkgen.delay_200ns_3._intsig_a_[39] )
-  );
-  sky130_mm_sc_hd_dly5ns \clkgen.delay_200ns_3.genblk1[39].delay_unit  (
-    .in(\clkgen.delay_200ns_3._intsig_a_[39] ),
-    .out(\clkgen.delay_200ns_3._intsig_a_[40] )
-  );
-  sky130_mm_sc_hd_dly5ns \clkgen.delay_200ns_3.genblk1[3].delay_unit  (
-    .in(\clkgen.delay_200ns_3._intsig_a_[3] ),
-    .out(\clkgen.delay_200ns_3._intsig_a_[4] )
-  );
-  sky130_mm_sc_hd_dly5ns \clkgen.delay_200ns_3.genblk1[40].delay_unit  (
-    .in(\clkgen.delay_200ns_3._intsig_a_[40] ),
+  sky130_mm_sc_hd_dly5ns \clkgen.delay_100ns_3.genblk1[20].delay_unit  (
+    .in(\clkgen.delay_100ns_3._intsig_a_[20] ),
     .out(clk_comp)
   );
-  sky130_mm_sc_hd_dly5ns \clkgen.delay_200ns_3.genblk1[4].delay_unit  (
-    .in(\clkgen.delay_200ns_3._intsig_a_[4] ),
-    .out(\clkgen.delay_200ns_3._intsig_a_[5] )
+  sky130_mm_sc_hd_dly5ns \clkgen.delay_100ns_3.genblk1[2].delay_unit  (
+    .in(\clkgen.delay_100ns_3._intsig_a_[2] ),
+    .out(\clkgen.delay_100ns_3._intsig_a_[3] )
   );
-  sky130_mm_sc_hd_dly5ns \clkgen.delay_200ns_3.genblk1[5].delay_unit  (
-    .in(\clkgen.delay_200ns_3._intsig_a_[5] ),
-    .out(\clkgen.delay_200ns_3._intsig_a_[6] )
+  sky130_mm_sc_hd_dly5ns \clkgen.delay_100ns_3.genblk1[3].delay_unit  (
+    .in(\clkgen.delay_100ns_3._intsig_a_[3] ),
+    .out(\clkgen.delay_100ns_3._intsig_a_[4] )
   );
-  sky130_mm_sc_hd_dly5ns \clkgen.delay_200ns_3.genblk1[6].delay_unit  (
-    .in(\clkgen.delay_200ns_3._intsig_a_[6] ),
-    .out(\clkgen.delay_200ns_3._intsig_a_[7] )
+  sky130_mm_sc_hd_dly5ns \clkgen.delay_100ns_3.genblk1[4].delay_unit  (
+    .in(\clkgen.delay_100ns_3._intsig_a_[4] ),
+    .out(\clkgen.delay_100ns_3._intsig_a_[5] )
   );
-  sky130_mm_sc_hd_dly5ns \clkgen.delay_200ns_3.genblk1[7].delay_unit  (
-    .in(\clkgen.delay_200ns_3._intsig_a_[7] ),
-    .out(\clkgen.delay_200ns_3._intsig_a_[8] )
+  sky130_mm_sc_hd_dly5ns \clkgen.delay_100ns_3.genblk1[5].delay_unit  (
+    .in(\clkgen.delay_100ns_3._intsig_a_[5] ),
+    .out(\clkgen.delay_100ns_3._intsig_a_[6] )
   );
-  sky130_mm_sc_hd_dly5ns \clkgen.delay_200ns_3.genblk1[8].delay_unit  (
-    .in(\clkgen.delay_200ns_3._intsig_a_[8] ),
-    .out(\clkgen.delay_200ns_3._intsig_a_[9] )
+  sky130_mm_sc_hd_dly5ns \clkgen.delay_100ns_3.genblk1[6].delay_unit  (
+    .in(\clkgen.delay_100ns_3._intsig_a_[6] ),
+    .out(\clkgen.delay_100ns_3._intsig_a_[7] )
   );
-  sky130_mm_sc_hd_dly5ns \clkgen.delay_200ns_3.genblk1[9].delay_unit  (
-    .in(\clkgen.delay_200ns_3._intsig_a_[9] ),
-    .out(\clkgen.delay_200ns_3._intsig_a_[10] )
+  sky130_mm_sc_hd_dly5ns \clkgen.delay_100ns_3.genblk1[7].delay_unit  (
+    .in(\clkgen.delay_100ns_3._intsig_a_[7] ),
+    .out(\clkgen.delay_100ns_3._intsig_a_[8] )
+  );
+  sky130_mm_sc_hd_dly5ns \clkgen.delay_100ns_3.genblk1[8].delay_unit  (
+    .in(\clkgen.delay_100ns_3._intsig_a_[8] ),
+    .out(\clkgen.delay_100ns_3._intsig_a_[9] )
+  );
+  sky130_mm_sc_hd_dly5ns \clkgen.delay_100ns_3.genblk1[9].delay_unit  (
+    .in(\clkgen.delay_100ns_3._intsig_a_[9] ),
+    .out(\clkgen.delay_100ns_3._intsig_a_[10] )
   );
   sky130_mm_sc_hd_dly5ns \edgedetect.delay_400ns.genblk1[10].delay_unit  (
     .in(\edgedetect.delay_400ns._intsig_a_[10] ),
@@ -836,183 +496,23 @@ module adc_clkgen_with_edgedetect(ena_in, start_conv, comp_trig, clk_dig, clk_co
   );
   sky130_mm_sc_hd_dly5ns \edgedetect.delay_400ns.genblk1[40].delay_unit  (
     .in(\edgedetect.delay_400ns._intsig_a_[40] ),
-    .out(\edgedetect.delay_400ns._intsig_a_[41] )
-  );
-  sky130_mm_sc_hd_dly5ns \edgedetect.delay_400ns.genblk1[41].delay_unit  (
-    .in(\edgedetect.delay_400ns._intsig_a_[41] ),
-    .out(\edgedetect.delay_400ns._intsig_a_[42] )
-  );
-  sky130_mm_sc_hd_dly5ns \edgedetect.delay_400ns.genblk1[42].delay_unit  (
-    .in(\edgedetect.delay_400ns._intsig_a_[42] ),
-    .out(\edgedetect.delay_400ns._intsig_a_[43] )
-  );
-  sky130_mm_sc_hd_dly5ns \edgedetect.delay_400ns.genblk1[43].delay_unit  (
-    .in(\edgedetect.delay_400ns._intsig_a_[43] ),
-    .out(\edgedetect.delay_400ns._intsig_a_[44] )
-  );
-  sky130_mm_sc_hd_dly5ns \edgedetect.delay_400ns.genblk1[44].delay_unit  (
-    .in(\edgedetect.delay_400ns._intsig_a_[44] ),
-    .out(\edgedetect.delay_400ns._intsig_a_[45] )
-  );
-  sky130_mm_sc_hd_dly5ns \edgedetect.delay_400ns.genblk1[45].delay_unit  (
-    .in(\edgedetect.delay_400ns._intsig_a_[45] ),
-    .out(\edgedetect.delay_400ns._intsig_a_[46] )
-  );
-  sky130_mm_sc_hd_dly5ns \edgedetect.delay_400ns.genblk1[46].delay_unit  (
-    .in(\edgedetect.delay_400ns._intsig_a_[46] ),
-    .out(\edgedetect.delay_400ns._intsig_a_[47] )
-  );
-  sky130_mm_sc_hd_dly5ns \edgedetect.delay_400ns.genblk1[47].delay_unit  (
-    .in(\edgedetect.delay_400ns._intsig_a_[47] ),
-    .out(\edgedetect.delay_400ns._intsig_a_[48] )
-  );
-  sky130_mm_sc_hd_dly5ns \edgedetect.delay_400ns.genblk1[48].delay_unit  (
-    .in(\edgedetect.delay_400ns._intsig_a_[48] ),
-    .out(\edgedetect.delay_400ns._intsig_a_[49] )
-  );
-  sky130_mm_sc_hd_dly5ns \edgedetect.delay_400ns.genblk1[49].delay_unit  (
-    .in(\edgedetect.delay_400ns._intsig_a_[49] ),
-    .out(\edgedetect.delay_400ns._intsig_a_[50] )
+    .out(\edgedetect.delay_400ns.out )
   );
   sky130_mm_sc_hd_dly5ns \edgedetect.delay_400ns.genblk1[4].delay_unit  (
     .in(\edgedetect.delay_400ns._intsig_a_[4] ),
     .out(\edgedetect.delay_400ns._intsig_a_[5] )
   );
-  sky130_mm_sc_hd_dly5ns \edgedetect.delay_400ns.genblk1[50].delay_unit  (
-    .in(\edgedetect.delay_400ns._intsig_a_[50] ),
-    .out(\edgedetect.delay_400ns._intsig_a_[51] )
-  );
-  sky130_mm_sc_hd_dly5ns \edgedetect.delay_400ns.genblk1[51].delay_unit  (
-    .in(\edgedetect.delay_400ns._intsig_a_[51] ),
-    .out(\edgedetect.delay_400ns._intsig_a_[52] )
-  );
-  sky130_mm_sc_hd_dly5ns \edgedetect.delay_400ns.genblk1[52].delay_unit  (
-    .in(\edgedetect.delay_400ns._intsig_a_[52] ),
-    .out(\edgedetect.delay_400ns._intsig_a_[53] )
-  );
-  sky130_mm_sc_hd_dly5ns \edgedetect.delay_400ns.genblk1[53].delay_unit  (
-    .in(\edgedetect.delay_400ns._intsig_a_[53] ),
-    .out(\edgedetect.delay_400ns._intsig_a_[54] )
-  );
-  sky130_mm_sc_hd_dly5ns \edgedetect.delay_400ns.genblk1[54].delay_unit  (
-    .in(\edgedetect.delay_400ns._intsig_a_[54] ),
-    .out(\edgedetect.delay_400ns._intsig_a_[55] )
-  );
-  sky130_mm_sc_hd_dly5ns \edgedetect.delay_400ns.genblk1[55].delay_unit  (
-    .in(\edgedetect.delay_400ns._intsig_a_[55] ),
-    .out(\edgedetect.delay_400ns._intsig_a_[56] )
-  );
-  sky130_mm_sc_hd_dly5ns \edgedetect.delay_400ns.genblk1[56].delay_unit  (
-    .in(\edgedetect.delay_400ns._intsig_a_[56] ),
-    .out(\edgedetect.delay_400ns._intsig_a_[57] )
-  );
-  sky130_mm_sc_hd_dly5ns \edgedetect.delay_400ns.genblk1[57].delay_unit  (
-    .in(\edgedetect.delay_400ns._intsig_a_[57] ),
-    .out(\edgedetect.delay_400ns._intsig_a_[58] )
-  );
-  sky130_mm_sc_hd_dly5ns \edgedetect.delay_400ns.genblk1[58].delay_unit  (
-    .in(\edgedetect.delay_400ns._intsig_a_[58] ),
-    .out(\edgedetect.delay_400ns._intsig_a_[59] )
-  );
-  sky130_mm_sc_hd_dly5ns \edgedetect.delay_400ns.genblk1[59].delay_unit  (
-    .in(\edgedetect.delay_400ns._intsig_a_[59] ),
-    .out(\edgedetect.delay_400ns._intsig_a_[60] )
-  );
   sky130_mm_sc_hd_dly5ns \edgedetect.delay_400ns.genblk1[5].delay_unit  (
     .in(\edgedetect.delay_400ns._intsig_a_[5] ),
     .out(\edgedetect.delay_400ns._intsig_a_[6] )
-  );
-  sky130_mm_sc_hd_dly5ns \edgedetect.delay_400ns.genblk1[60].delay_unit  (
-    .in(\edgedetect.delay_400ns._intsig_a_[60] ),
-    .out(\edgedetect.delay_400ns._intsig_a_[61] )
-  );
-  sky130_mm_sc_hd_dly5ns \edgedetect.delay_400ns.genblk1[61].delay_unit  (
-    .in(\edgedetect.delay_400ns._intsig_a_[61] ),
-    .out(\edgedetect.delay_400ns._intsig_a_[62] )
-  );
-  sky130_mm_sc_hd_dly5ns \edgedetect.delay_400ns.genblk1[62].delay_unit  (
-    .in(\edgedetect.delay_400ns._intsig_a_[62] ),
-    .out(\edgedetect.delay_400ns._intsig_a_[63] )
-  );
-  sky130_mm_sc_hd_dly5ns \edgedetect.delay_400ns.genblk1[63].delay_unit  (
-    .in(\edgedetect.delay_400ns._intsig_a_[63] ),
-    .out(\edgedetect.delay_400ns._intsig_a_[64] )
-  );
-  sky130_mm_sc_hd_dly5ns \edgedetect.delay_400ns.genblk1[64].delay_unit  (
-    .in(\edgedetect.delay_400ns._intsig_a_[64] ),
-    .out(\edgedetect.delay_400ns._intsig_a_[65] )
-  );
-  sky130_mm_sc_hd_dly5ns \edgedetect.delay_400ns.genblk1[65].delay_unit  (
-    .in(\edgedetect.delay_400ns._intsig_a_[65] ),
-    .out(\edgedetect.delay_400ns._intsig_a_[66] )
-  );
-  sky130_mm_sc_hd_dly5ns \edgedetect.delay_400ns.genblk1[66].delay_unit  (
-    .in(\edgedetect.delay_400ns._intsig_a_[66] ),
-    .out(\edgedetect.delay_400ns._intsig_a_[67] )
-  );
-  sky130_mm_sc_hd_dly5ns \edgedetect.delay_400ns.genblk1[67].delay_unit  (
-    .in(\edgedetect.delay_400ns._intsig_a_[67] ),
-    .out(\edgedetect.delay_400ns._intsig_a_[68] )
-  );
-  sky130_mm_sc_hd_dly5ns \edgedetect.delay_400ns.genblk1[68].delay_unit  (
-    .in(\edgedetect.delay_400ns._intsig_a_[68] ),
-    .out(\edgedetect.delay_400ns._intsig_a_[69] )
-  );
-  sky130_mm_sc_hd_dly5ns \edgedetect.delay_400ns.genblk1[69].delay_unit  (
-    .in(\edgedetect.delay_400ns._intsig_a_[69] ),
-    .out(\edgedetect.delay_400ns._intsig_a_[70] )
   );
   sky130_mm_sc_hd_dly5ns \edgedetect.delay_400ns.genblk1[6].delay_unit  (
     .in(\edgedetect.delay_400ns._intsig_a_[6] ),
     .out(\edgedetect.delay_400ns._intsig_a_[7] )
   );
-  sky130_mm_sc_hd_dly5ns \edgedetect.delay_400ns.genblk1[70].delay_unit  (
-    .in(\edgedetect.delay_400ns._intsig_a_[70] ),
-    .out(\edgedetect.delay_400ns._intsig_a_[71] )
-  );
-  sky130_mm_sc_hd_dly5ns \edgedetect.delay_400ns.genblk1[71].delay_unit  (
-    .in(\edgedetect.delay_400ns._intsig_a_[71] ),
-    .out(\edgedetect.delay_400ns._intsig_a_[72] )
-  );
-  sky130_mm_sc_hd_dly5ns \edgedetect.delay_400ns.genblk1[72].delay_unit  (
-    .in(\edgedetect.delay_400ns._intsig_a_[72] ),
-    .out(\edgedetect.delay_400ns._intsig_a_[73] )
-  );
-  sky130_mm_sc_hd_dly5ns \edgedetect.delay_400ns.genblk1[73].delay_unit  (
-    .in(\edgedetect.delay_400ns._intsig_a_[73] ),
-    .out(\edgedetect.delay_400ns._intsig_a_[74] )
-  );
-  sky130_mm_sc_hd_dly5ns \edgedetect.delay_400ns.genblk1[74].delay_unit  (
-    .in(\edgedetect.delay_400ns._intsig_a_[74] ),
-    .out(\edgedetect.delay_400ns._intsig_a_[75] )
-  );
-  sky130_mm_sc_hd_dly5ns \edgedetect.delay_400ns.genblk1[75].delay_unit  (
-    .in(\edgedetect.delay_400ns._intsig_a_[75] ),
-    .out(\edgedetect.delay_400ns._intsig_a_[76] )
-  );
-  sky130_mm_sc_hd_dly5ns \edgedetect.delay_400ns.genblk1[76].delay_unit  (
-    .in(\edgedetect.delay_400ns._intsig_a_[76] ),
-    .out(\edgedetect.delay_400ns._intsig_a_[77] )
-  );
-  sky130_mm_sc_hd_dly5ns \edgedetect.delay_400ns.genblk1[77].delay_unit  (
-    .in(\edgedetect.delay_400ns._intsig_a_[77] ),
-    .out(\edgedetect.delay_400ns._intsig_a_[78] )
-  );
-  sky130_mm_sc_hd_dly5ns \edgedetect.delay_400ns.genblk1[78].delay_unit  (
-    .in(\edgedetect.delay_400ns._intsig_a_[78] ),
-    .out(\edgedetect.delay_400ns._intsig_a_[79] )
-  );
-  sky130_mm_sc_hd_dly5ns \edgedetect.delay_400ns.genblk1[79].delay_unit  (
-    .in(\edgedetect.delay_400ns._intsig_a_[79] ),
-    .out(\edgedetect.delay_400ns._intsig_a_[80] )
-  );
   sky130_mm_sc_hd_dly5ns \edgedetect.delay_400ns.genblk1[7].delay_unit  (
     .in(\edgedetect.delay_400ns._intsig_a_[7] ),
     .out(\edgedetect.delay_400ns._intsig_a_[8] )
-  );
-  sky130_mm_sc_hd_dly5ns \edgedetect.delay_400ns.genblk1[80].delay_unit  (
-    .in(\edgedetect.delay_400ns._intsig_a_[80] ),
-    .out(\edgedetect.delay_400ns.out )
   );
   sky130_mm_sc_hd_dly5ns \edgedetect.delay_400ns.genblk1[8].delay_unit  (
     .in(\edgedetect.delay_400ns._intsig_a_[8] ),

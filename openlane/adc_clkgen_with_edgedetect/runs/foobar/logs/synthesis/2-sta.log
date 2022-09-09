@@ -75,7 +75,7 @@ check_report
 report_checks -unconstrained
 ============================================================================
 Startpoint: start_conv (input port clocked by clk)
-Endpoint: clkgen.delay_200ns_3.genblk1[1].delay_unit/in (internal pin)
+Endpoint: clkgen.delay_100ns_3.genblk1[1].delay_unit/in (internal pin)
 Path Group: (none)
 Path Type: max
 
@@ -89,8 +89,8 @@ Fanout     Cap    Slew   Delay    Time   Description
      1    0.00                           _0_ (net)
                   0.04    0.00    2.19 v _3_/A2 (sky130_fd_sc_hd__o21ba_2)
                   0.04    0.20    2.39 v _3_/X (sky130_fd_sc_hd__o21ba_2)
-     1    0.00                           clkgen.delay_200ns_3._intsig_a_[1] (net)
-                  0.04    0.01    2.39 v clkgen.delay_200ns_3.genblk1[1].delay_unit/in (sky130_mm_sc_hd_dly5ns)
+     1    0.00                           clkgen.delay_100ns_3._intsig_a_[1] (net)
+                  0.04    0.01    2.39 v clkgen.delay_100ns_3.genblk1[1].delay_unit/in (sky130_mm_sc_hd_dly5ns)
                                   2.39   data arrival time
 -----------------------------------------------------------------------------
 (Path is unconstrained)
@@ -158,17 +158,17 @@ Group                  Internal  Switching    Leakage      Total
                           Power      Power      Power      Power (Watts)
 ----------------------------------------------------------------
 Sequential             0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
-Combinational          6.09e-07   3.04e-07   6.39e-10   9.14e-07 100.0%
+Combinational          6.09e-07   3.04e-07   3.26e-10   9.14e-07 100.0%
 Macro                  0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
 Pad                    0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
 ----------------------------------------------------------------
-Total                  6.09e-07   3.04e-07   6.39e-10   9.14e-07 100.0%
-                          66.7%      33.3%       0.1%
+Total                  6.09e-07   3.04e-07   3.26e-10   9.14e-07 100.0%
+                          66.7%      33.3%       0.0%
 power_report_end
 area_report
 
 ===========================================================================
  report_design_area
 ============================================================================
-Design area 5027 u^2 100% utilization.
+Design area 2525 u^2 100% utilization.
 area_report_end

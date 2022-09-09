@@ -9,13 +9,13 @@ Components of this program may be licensed under more restrictive licenses which
 [INFO ODB-0127] Reading DEF file: /foss/designs/SKY130_SAR-ADC/openlane/adc_clkgen_with_edgedetect/runs/foobar/tmp/routing/11-fill.def
 [INFO ODB-0128] Design: adc_clkgen_with_edgedetect
 [INFO ODB-0130]     Created 7 pins.
-[INFO ODB-0131]     Created 1059 components and 4351 component-terminals.
-[INFO ODB-0132]     Created 4 special nets and 3942 connections.
-[INFO ODB-0133]     Created 206 nets and 409 connections.
+[INFO ODB-0131]     Created 1088 components and 4267 component-terminals.
+[INFO ODB-0132]     Created 4 special nets and 4058 connections.
+[INFO ODB-0133]     Created 106 nets and 209 connections.
 [INFO ODB-0134] Finished DEF file: /foss/designs/SKY130_SAR-ADC/openlane/adc_clkgen_with_edgedetect/runs/foobar/tmp/routing/11-fill.def
 ###############################################################################
 # Created by write_sdc
-# Thu Sep  8 19:22:55 2022
+# Fri Sep  9 12:02:39 2022
 ###############################################################################
 current_design adc_clkgen_with_edgedetect
 ###############################################################################
@@ -59,40 +59,39 @@ set_max_fanout 5.0000 [current_design]
 [INFO GRT-0019] Found 0 clock nets.
 [INFO GRT-0001] Minimum degree: 2
 [INFO GRT-0002] Maximum degree: 3
-[INFO GRT-0003] Macros: 181
-[INFO GRT-0004] Blockages: 2800
+[INFO GRT-0003] Macros: 381
+[INFO GRT-0004] Blockages: 1400
 
 [INFO GRT-0053] Routing resources analysis:
           Routing      Original      Derated      Resource
 Layer     Direction    Resources     Resources    Reduction (%)
 ---------------------------------------------------------------
 li1        Vertical            0             0          0.00%
-met1       Horizontal       5460          2400          56.04%
-met2       Vertical         4095          2805          31.50%
-met3       Horizontal       2730          1687          38.21%
-met4       Vertical         1911          1168          38.88%
+met1       Horizontal       5460          2407          55.92%
+met2       Vertical         4095          2824          31.04%
+met3       Horizontal       2730          1779          34.84%
+met4       Vertical         1911          1170          38.78%
 ---------------------------------------------------------------
 
-[INFO GRT-0101] Running extra iterations to remove overflow.
-[INFO GRT-0197] Via related to pin nodes: 620
-[INFO GRT-0198] Via related Steiner nodes: 1
+[INFO GRT-0197] Via related to pin nodes: 286
+[INFO GRT-0198] Via related Steiner nodes: 0
 [INFO GRT-0199] Via filling finished.
-[INFO GRT-0111] Final number of vias: 767
-[INFO GRT-0112] Final usage 3D: 3361
+[INFO GRT-0111] Final number of vias: 337
+[INFO GRT-0112] Final usage 3D: 1350
 
 [INFO GRT-0096] Final congestion report:
 Layer         Resource        Demand        Usage (%)    Max H / Max V / Total Overflow
 ---------------------------------------------------------------------------------------
 li1                  0             0            0.00%             0 /  0 /  0
-met1              2400           216            9.00%             0 /  0 /  0
-met2              2805           717           25.56%             0 /  0 /  0
-met3              1687             8            0.47%             0 /  0 /  0
-met4              1168           119           10.19%             0 /  0 /  0
+met1              2407            90            3.74%             0 /  0 /  0
+met2              2824           249            8.82%             0 /  0 /  0
+met3              1779             0            0.00%             0 /  0 /  0
+met4              1170             0            0.00%             0 /  0 /  0
 ---------------------------------------------------------------------------------------
-Total             8060          1060           13.15%             0 /  0 /  0
+Total             8180           339            4.14%             0 /  0 /  0
 
-[INFO GRT-0018] Total wirelength: 9708 um
-[INFO GRT-0014] Routed nets: 206
+[INFO GRT-0018] Total wirelength: 3429 um
+[INFO GRT-0014] Routed nets: 106
 [INFO]: Setting RC values...
 min_report
 
@@ -114,23 +113,23 @@ check_report
 report_checks -unconstrained
 ============================================================================
 Startpoint: start_conv (input port clocked by clk)
-Endpoint: clkgen.delay_200ns_3.genblk1[1].delay_unit/in (internal pin)
+Endpoint: clkgen.delay_100ns_3.genblk1[1].delay_unit/in (internal pin)
 Path Group: (none)
 Path Type: max
 
 Fanout     Cap    Slew   Delay    Time   Description
 -----------------------------------------------------------------------------
                           2.00    2.00 v input external delay
-                  0.03    0.02    2.02 v start_conv (in)
+                  0.02    0.01    2.01 v start_conv (in)
      2    0.01                           start_conv (net)
-                  0.03    0.00    2.02 v _2_/B (sky130_fd_sc_hd__and2b_2)
-                  0.04    0.20    2.22 v _2_/X (sky130_fd_sc_hd__and2b_2)
-     1    0.01                           _0_ (net)
-                  0.04    0.00    2.22 v _3_/A2 (sky130_fd_sc_hd__o21ba_2)
-                  0.04    0.21    2.43 v _3_/X (sky130_fd_sc_hd__o21ba_2)
-     1    0.01                           clkgen.delay_200ns_3._intsig_a_[1] (net)
-                  0.04    0.00    2.43 v clkgen.delay_200ns_3.genblk1[1].delay_unit/in (sky130_mm_sc_hd_dly5ns)
-                                  2.43   data arrival time
+                  0.02    0.00    2.01 v _2_/B (sky130_fd_sc_hd__and2b_2)
+                  0.04    0.19    2.20 v _2_/X (sky130_fd_sc_hd__and2b_2)
+     1    0.00                           _0_ (net)
+                  0.04    0.00    2.20 v _3_/A2 (sky130_fd_sc_hd__o21ba_2)
+                  0.04    0.20    2.40 v _3_/X (sky130_fd_sc_hd__o21ba_2)
+     1    0.00                           clkgen.delay_100ns_3._intsig_a_[1] (net)
+                  0.04    0.00    2.40 v clkgen.delay_100ns_3.genblk1[1].delay_unit/in (sky130_mm_sc_hd_dly5ns)
+                                  2.40   data arrival time
 -----------------------------------------------------------------------------
 (Path is unconstrained)
 
@@ -197,17 +196,17 @@ Group                  Internal  Switching    Leakage      Total
                           Power      Power      Power      Power (Watts)
 ----------------------------------------------------------------
 Sequential             0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
-Combinational          6.22e-07   6.03e-07   2.01e-09   1.23e-06 100.0%
+Combinational          6.13e-07   4.12e-07   1.39e-09   1.03e-06 100.0%
 Macro                  0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
 Pad                    0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
 ----------------------------------------------------------------
-Total                  6.22e-07   6.03e-07   2.01e-09   1.23e-06 100.0%
-                          50.7%      49.1%       0.2%
+Total                  6.13e-07   4.12e-07   1.39e-09   1.03e-06 100.0%
+                          59.7%      40.1%       0.1%
 power_report_end
 area_report
 
 ===========================================================================
  report_design_area
 ============================================================================
-Design area 10446 u^2 99% utilization.
+Design area 10416 u^2 98% utilization.
 area_report_end

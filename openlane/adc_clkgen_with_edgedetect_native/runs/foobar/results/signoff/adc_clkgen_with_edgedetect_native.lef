@@ -6,21 +6,17 @@ MACRO adc_clkgen_with_edgedetect_native
   CLASS BLOCK ;
   FOREIGN adc_clkgen_with_edgedetect_native ;
   ORIGIN 0.000 0.000 ;
-  SIZE 257.725 BY 268.445 ;
+  SIZE 185.535 BY 196.255 ;
   PIN VGND
     DIRECTION INOUT ;
     USE GROUND ;
     PORT
       LAYER met4 ;
-        RECT 49.520 10.640 51.520 255.920 ;
+        RECT 49.520 10.640 51.520 185.200 ;
     END
     PORT
       LAYER met4 ;
-        RECT 149.520 10.640 151.520 255.920 ;
-    END
-    PORT
-      LAYER met4 ;
-        RECT 249.520 10.640 251.520 255.920 ;
+        RECT 149.520 10.640 151.520 185.200 ;
     END
   END VGND
   PIN VPWR
@@ -28,15 +24,11 @@ MACRO adc_clkgen_with_edgedetect_native
     USE POWER ;
     PORT
       LAYER met4 ;
-        RECT 24.520 10.640 26.520 255.920 ;
+        RECT 24.520 10.640 26.520 185.200 ;
     END
     PORT
       LAYER met4 ;
-        RECT 124.520 10.640 126.520 255.920 ;
-    END
-    PORT
-      LAYER met4 ;
-        RECT 224.520 10.640 226.520 255.920 ;
+        RECT 124.520 10.640 126.520 185.200 ;
     END
   END VPWR
   PIN clk_comp
@@ -44,7 +36,7 @@ MACRO adc_clkgen_with_edgedetect_native
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 253.725 200.640 257.725 201.240 ;
+        RECT 181.535 146.920 185.535 147.520 ;
     END
   END clk_comp
   PIN clk_dig
@@ -52,7 +44,7 @@ MACRO adc_clkgen_with_edgedetect_native
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 253.725 66.680 257.725 67.280 ;
+        RECT 181.535 49.000 185.535 49.600 ;
     END
   END clk_dig
   PIN comp_trig
@@ -60,7 +52,7 @@ MACRO adc_clkgen_with_edgedetect_native
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 0.000 223.080 4.000 223.680 ;
+        RECT 0.000 163.240 4.000 163.840 ;
     END
   END comp_trig
   PIN ena_in
@@ -68,7 +60,7 @@ MACRO adc_clkgen_with_edgedetect_native
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 0.000 44.920 4.000 45.520 ;
+        RECT 0.000 32.680 4.000 33.280 ;
     END
   END ena_in
   PIN start_conv
@@ -76,30 +68,30 @@ MACRO adc_clkgen_with_edgedetect_native
     USE SIGNAL ;
     PORT
       LAYER met3 ;
-        RECT 0.000 134.000 4.000 134.600 ;
+        RECT 0.000 97.960 4.000 98.560 ;
     END
   END start_conv
   OBS
       LAYER li1 ;
-        RECT 5.520 10.795 252.080 255.765 ;
+        RECT 5.520 10.795 179.860 185.045 ;
       LAYER met1 ;
-        RECT 5.520 10.640 252.080 255.920 ;
+        RECT 5.520 10.240 179.860 185.200 ;
       LAYER met2 ;
-        RECT 6.990 10.695 251.460 255.865 ;
+        RECT 7.460 10.210 177.460 185.145 ;
       LAYER met3 ;
-        RECT 4.000 224.080 253.725 255.845 ;
-        RECT 4.400 222.680 253.725 224.080 ;
-        RECT 4.000 201.640 253.725 222.680 ;
-        RECT 4.000 200.240 253.325 201.640 ;
-        RECT 4.000 135.000 253.725 200.240 ;
-        RECT 4.400 133.600 253.725 135.000 ;
-        RECT 4.000 67.680 253.725 133.600 ;
-        RECT 4.000 66.280 253.325 67.680 ;
-        RECT 4.000 45.920 253.725 66.280 ;
-        RECT 4.400 44.520 253.725 45.920 ;
-        RECT 4.000 10.715 253.725 44.520 ;
+        RECT 4.000 164.240 181.535 185.125 ;
+        RECT 4.400 162.840 181.535 164.240 ;
+        RECT 4.000 147.920 181.535 162.840 ;
+        RECT 4.000 146.520 181.135 147.920 ;
+        RECT 4.000 98.960 181.535 146.520 ;
+        RECT 4.400 97.560 181.535 98.960 ;
+        RECT 4.000 50.000 181.535 97.560 ;
+        RECT 4.000 48.600 181.135 50.000 ;
+        RECT 4.000 33.680 181.535 48.600 ;
+        RECT 4.400 32.280 181.535 33.680 ;
+        RECT 4.000 10.715 181.535 32.280 ;
       LAYER met4 ;
-        RECT 245.015 151.135 248.105 241.905 ;
+        RECT 171.415 13.095 171.745 97.065 ;
   END
 END adc_clkgen_with_edgedetect_native
 END LIBRARY

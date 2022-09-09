@@ -50,34 +50,34 @@ Top module:  \adc_clkgen_with_edgedetect
 Used module:     \adc_clk_generation
 Used module:         \delaycell
 Used module:     \adc_edge_detect_circuit
-Parameter \Ntimes5ns = 80
+Parameter \Ntimes5ns = 40
 
 4.2. Executing AST frontend in derive mode using pre-parsed AST for module `\delaycell'.
-Parameter \Ntimes5ns = 80
-Generating RTLIL representation for module `$paramod\delaycell\Ntimes5ns=s32'00000000000000000000000001010000'.
-Parameter \Ntimes5ns = 40
-
-4.3. Executing AST frontend in derive mode using pre-parsed AST for module `\delaycell'.
 Parameter \Ntimes5ns = 40
 Generating RTLIL representation for module `$paramod\delaycell\Ntimes5ns=s32'00000000000000000000000000101000'.
-Parameter \Ntimes5ns = 40
-Found cached RTLIL representation for module `$paramod\delaycell\Ntimes5ns=s32'00000000000000000000000000101000'.
-Parameter \Ntimes5ns = 40
-Found cached RTLIL representation for module `$paramod\delaycell\Ntimes5ns=s32'00000000000000000000000000101000'.
+Parameter \Ntimes5ns = 20
+
+4.3. Executing AST frontend in derive mode using pre-parsed AST for module `\delaycell'.
+Parameter \Ntimes5ns = 20
+Generating RTLIL representation for module `$paramod\delaycell\Ntimes5ns=s32'00000000000000000000000000010100'.
+Parameter \Ntimes5ns = 20
+Found cached RTLIL representation for module `$paramod\delaycell\Ntimes5ns=s32'00000000000000000000000000010100'.
+Parameter \Ntimes5ns = 20
+Found cached RTLIL representation for module `$paramod\delaycell\Ntimes5ns=s32'00000000000000000000000000010100'.
 
 4.4. Analyzing design hierarchy..
 Top module:  \adc_clkgen_with_edgedetect
 Used module:     \adc_clk_generation
-Used module:         $paramod\delaycell\Ntimes5ns=s32'00000000000000000000000000101000
+Used module:         $paramod\delaycell\Ntimes5ns=s32'00000000000000000000000000010100
 Used module:     \adc_edge_detect_circuit
-Used module:         $paramod\delaycell\Ntimes5ns=s32'00000000000000000000000001010000
+Used module:         $paramod\delaycell\Ntimes5ns=s32'00000000000000000000000000101000
 
 4.5. Analyzing design hierarchy..
 Top module:  \adc_clkgen_with_edgedetect
 Used module:     \adc_clk_generation
-Used module:         $paramod\delaycell\Ntimes5ns=s32'00000000000000000000000000101000
+Used module:         $paramod\delaycell\Ntimes5ns=s32'00000000000000000000000000010100
 Used module:     \adc_edge_detect_circuit
-Used module:         $paramod\delaycell\Ntimes5ns=s32'00000000000000000000000001010000
+Used module:         $paramod\delaycell\Ntimes5ns=s32'00000000000000000000000000101000
 Removing unused module `\delaycell'.
 Removed 1 unused modules.
 
@@ -90,16 +90,16 @@ Removed 1 unused modules.
 6.1.1. Analyzing design hierarchy..
 Top module:  \adc_clkgen_with_edgedetect
 Used module:     \adc_clk_generation
-Used module:         $paramod\delaycell\Ntimes5ns=s32'00000000000000000000000000101000
+Used module:         $paramod\delaycell\Ntimes5ns=s32'00000000000000000000000000010100
 Used module:     \adc_edge_detect_circuit
-Used module:         $paramod\delaycell\Ntimes5ns=s32'00000000000000000000000001010000
+Used module:         $paramod\delaycell\Ntimes5ns=s32'00000000000000000000000000101000
 
 6.1.2. Analyzing design hierarchy..
 Top module:  \adc_clkgen_with_edgedetect
 Used module:     \adc_clk_generation
-Used module:         $paramod\delaycell\Ntimes5ns=s32'00000000000000000000000000101000
+Used module:         $paramod\delaycell\Ntimes5ns=s32'00000000000000000000000000010100
 Used module:     \adc_edge_detect_circuit
-Used module:         $paramod\delaycell\Ntimes5ns=s32'00000000000000000000000001010000
+Used module:         $paramod\delaycell\Ntimes5ns=s32'00000000000000000000000000101000
 Removed 0 unused modules.
 
 6.2. Executing PROC pass (convert processes to netlists).
@@ -130,15 +130,15 @@ Promoted 0 assignments to connections.
 Cleaned up 0 empty switches.
 
 6.2.11. Executing OPT_EXPR pass (perform const folding).
-Optimizing module $paramod\delaycell\Ntimes5ns=s32'00000000000000000000000001010000.
 Optimizing module $paramod\delaycell\Ntimes5ns=s32'00000000000000000000000000101000.
+Optimizing module $paramod\delaycell\Ntimes5ns=s32'00000000000000000000000000010100.
 Optimizing module adc_edge_detect_circuit.
 Optimizing module adc_clk_generation.
 Optimizing module adc_clkgen_with_edgedetect.
 
 6.3. Executing FLATTEN pass (flatten design).
-Deleting now unused module $paramod\delaycell\Ntimes5ns=s32'00000000000000000000000001010000.
 Deleting now unused module $paramod\delaycell\Ntimes5ns=s32'00000000000000000000000000101000.
+Deleting now unused module $paramod\delaycell\Ntimes5ns=s32'00000000000000000000000000010100.
 Deleting now unused module adc_edge_detect_circuit.
 Deleting now unused module adc_clk_generation.
 <suppressed ~6 debug messages>
@@ -477,17 +477,17 @@ Removed 0 unused modules.
 === adc_clkgen_with_edgedetect ===
 
    Number of wires:                 32
-   Number of wire bits:            424
+   Number of wire bits:            224
    Number of public wires:          30
-   Number of public wire bits:     422
+   Number of public wire bits:     222
    Number of memories:               0
    Number of memory bits:            0
    Number of processes:              0
-   Number of cells:                204
+   Number of cells:                104
      $_ANDNOT_                       2
      $_NOT_                          1
      $_OR_                           1
-     sky130_mm_sc_hd_dly5ns        200
+     sky130_mm_sc_hd_dly5ns        100
 
 6.27. Executing CHECK pass (checking for obvious problems).
 Checking module adc_clkgen_with_edgedetect...
@@ -542,17 +542,17 @@ Removed 0 unused cells and 17 unused wires.
 === adc_clkgen_with_edgedetect ===
 
    Number of wires:                 15
-   Number of wire bits:            211
+   Number of wire bits:            111
    Number of public wires:          13
-   Number of public wire bits:     209
+   Number of public wire bits:     109
    Number of memories:               0
    Number of memory bits:            0
    Number of processes:              0
-   Number of cells:                204
+   Number of cells:                104
      $_ANDNOT_                       2
      $_NOT_                          1
      $_OR_                           1
-     sky130_mm_sc_hd_dly5ns        200
+     sky130_mm_sc_hd_dly5ns        100
 
 mapping tbuf
 
@@ -616,32 +616,32 @@ Mapping DFF cells in module `\adc_clkgen_with_edgedetect':
 === adc_clkgen_with_edgedetect ===
 
    Number of wires:                 15
-   Number of wire bits:            211
+   Number of wire bits:            111
    Number of public wires:          13
-   Number of public wire bits:     209
+   Number of public wire bits:     109
    Number of memories:               0
    Number of memory bits:            0
    Number of processes:              0
-   Number of cells:                204
+   Number of cells:                104
      $_ANDNOT_                       2
      $_NOT_                          1
      $_OR_                           1
-     sky130_mm_sc_hd_dly5ns        200
+     sky130_mm_sc_hd_dly5ns        100
 
 [INFO]: USING STRATEGY AREA 0
 
 18. Executing ABC pass (technology mapping using ABC).
 
-18.1. Extracting gate netlist of module `\adc_clkgen_with_edgedetect' to `/tmp/yosys-abc-rkwSfA/input.blif'..
+18.1. Extracting gate netlist of module `\adc_clkgen_with_edgedetect' to `/tmp/yosys-abc-xnjxZJ/input.blif'..
 Extracted 4 gates and 9 wires to a netlist network with 5 inputs and 2 outputs.
 
 18.1.1. Executing ABC.
-Running ABC command: /foss/tools/yosys/cfe940a/bin/yosys-abc -s -f /tmp/yosys-abc-rkwSfA/abc.script 2>&1
-ABC: ABC command line: "source /tmp/yosys-abc-rkwSfA/abc.script".
+Running ABC command: /foss/tools/yosys/cfe940a/bin/yosys-abc -s -f /tmp/yosys-abc-xnjxZJ/abc.script 2>&1
+ABC: ABC command line: "source /tmp/yosys-abc-xnjxZJ/abc.script".
 ABC: 
-ABC: + read_blif /tmp/yosys-abc-rkwSfA/input.blif 
+ABC: + read_blif /tmp/yosys-abc-xnjxZJ/input.blif 
 ABC: + read_lib -w /foss/designs/SKY130_SAR-ADC/openlane/adc_clkgen_with_edgedetect/runs/foobar/tmp/synthesis/trimmed.lib 
-ABC: Parsing finished successfully.  Parsing time =     0.11 sec
+ABC: Parsing finished successfully.  Parsing time =     0.08 sec
 ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfbbn_2".
 ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfrbp_2".
 ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfrtp_2".
@@ -659,8 +659,8 @@ ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dlxtp_1".
 ABC: Scl_LibertyReadGenlib() skipped three-state cell "sky130_fd_sc_hd__ebufn_2".
 ABC: Scl_LibertyReadGenlib() skipped three-state cell "sky130_fd_sc_hd__ebufn_4".
 ABC: Scl_LibertyReadGenlib() skipped three-state cell "sky130_fd_sc_hd__ebufn_8".
-ABC: Library "sky130A_merged" from "/foss/designs/SKY130_SAR-ADC/openlane/adc_clkgen_with_edgedetect/runs/foobar/tmp/synthesis/trimmed.lib" has 176 cells (17 skipped: 14 seq; 3 tri-state; 0 no func; 0 dont_use).  Time =     0.15 sec
-ABC: Memory =    7.78 MB. Time =     0.15 sec
+ABC: Library "sky130A_merged" from "/foss/designs/SKY130_SAR-ADC/openlane/adc_clkgen_with_edgedetect/runs/foobar/tmp/synthesis/trimmed.lib" has 176 cells (17 skipped: 14 seq; 3 tri-state; 0 no func; 0 dont_use).  Time =     0.13 sec
+ABC: Memory =    7.78 MB. Time =     0.13 sec
 ABC: Warning: Detected 2 multi-output gates (for example, "sky130_fd_sc_hd__fa_1").
 ABC: + read_constr -v /foss/designs/SKY130_SAR-ADC/openlane/adc_clkgen_with_edgedetect/runs/foobar/tmp/synthesis/synthesis.sdc 
 ABC: Setting driving cell to be "sky130_fd_sc_hd__inv_2".
@@ -736,10 +736,10 @@ ABC: WireLoad = "none"  Gates =      3 ( 33.3 %)   Cap = 10.1 ff (  4.2 %)   Are
 ABC: Path  0 --       2 : 0    1 pi                       A =   0.00  Df =   6.1   -3.9 ps  S =  15.1 ps  Cin =  0.0 ff  Cout =   1.6 ff  Cmax =   0.0 ff  G =    0  
 ABC: Path  1 --       8 : 2    1 sky130_fd_sc_hd__and2b_2 A =   8.76  Df = 194.4  -11.3 ps  S =  34.6 ps  Cin =  1.6 ff  Cout =   2.5 ff  Cmax = 310.4 ff  G =  150  
 ABC: Path  2 --       9 : 3    1 sky130_fd_sc_hd__o21ba_2 A =  10.01  Df = 461.2  -42.6 ps  S = 202.4 ps  Cin =  2.1 ff  Cout =  33.4 ff  Cmax = 264.6 ff  G = 1630  
-ABC: Start-point = pi1 (\edgedetect.delay_400ns.out).  End-point = po0 (\clkgen.delay_200ns_3.in).
+ABC: Start-point = pi1 (\edgedetect.delay_400ns.out).  End-point = po0 (\clkgen.delay_100ns_3.in).
 ABC: + print_stats -m 
 ABC: netlist                       : i/o =    5/    2  lat =    0  nd =     3  edge =      6  area =22.52  delay = 2.00  lev = 2
-ABC: + write_blif /tmp/yosys-abc-rkwSfA/output.blif 
+ABC: + write_blif /tmp/yosys-abc-xnjxZJ/output.blif 
 
 18.1.2. Re-integrating ABC results.
 ABC RESULTS:   sky130_fd_sc_hd__and2b_2 cells:        1
@@ -771,24 +771,24 @@ Found and reported 0 problems.
 
 === adc_clkgen_with_edgedetect ===
 
-   Number of wires:                206
-   Number of wire bits:            206
-   Number of public wires:         205
-   Number of public wire bits:     205
+   Number of wires:                106
+   Number of wire bits:            106
+   Number of public wires:         105
+   Number of public wire bits:     105
    Number of memories:               0
    Number of memory bits:            0
    Number of processes:              0
-   Number of cells:                203
+   Number of cells:                103
      sky130_fd_sc_hd__and2b_2        1
      sky130_fd_sc_hd__inv_2          1
      sky130_fd_sc_hd__o21ba_2        1
-     sky130_mm_sc_hd_dly5ns        200
+     sky130_mm_sc_hd_dly5ns        100
 
-   Chip area for module '\adc_clkgen_with_edgedetect': 5027.321600
+   Chip area for module '\adc_clkgen_with_edgedetect': 2524.921600
 
 26. Executing Verilog backend.
 Dumping module `\adc_clkgen_with_edgedetect'.
 
-End of script. Logfile hash: d9c8c5f143, CPU: user 1.97s system 0.12s, MEM: 40.86 MB peak
+End of script. Logfile hash: e884e7fce7, CPU: user 1.34s system 0.15s, MEM: 40.91 MB peak
 Yosys 0.12+45 (git sha1 cfe940a98, gcc 9.2.1 -fPIC -Os)
-Time spent: 27% 2x read_liberty (0 sec), 19% 1x dfflibmap (0 sec), ...
+Time spent: 27% 2x read_liberty (0 sec), 17% 2x abc (0 sec), ...

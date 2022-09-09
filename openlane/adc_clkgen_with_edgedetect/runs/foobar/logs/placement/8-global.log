@@ -9,9 +9,9 @@ Components of this program may be licensed under more restrictive licenses which
 [INFO ODB-0127] Reading DEF file: /foss/designs/SKY130_SAR-ADC/openlane/adc_clkgen_with_edgedetect/runs/foobar/tmp/floorplan/7-pdn.def
 [INFO ODB-0128] Design: adc_clkgen_with_edgedetect
 [INFO ODB-0130]     Created 7 pins.
-[INFO ODB-0131]     Created 444 components and 1891 component-terminals.
-[INFO ODB-0132]     Created 4 special nets and 1482 connections.
-[INFO ODB-0133]     Created 206 nets and 409 connections.
+[INFO ODB-0131]     Created 344 components and 1291 component-terminals.
+[INFO ODB-0132]     Created 4 special nets and 1082 connections.
+[INFO ODB-0133]     Created 106 nets and 209 connections.
 [INFO ODB-0134] Finished DEF file: /foss/designs/SKY130_SAR-ADC/openlane/adc_clkgen_with_edgedetect/runs/foobar/tmp/floorplan/7-pdn.def
 [INFO]: Setting RC values...
 [INFO]: Setting signal min routing layer to: met1 and clock min routing layer to met1. 
@@ -20,43 +20,45 @@ Components of this program may be licensed under more restrictive licenses which
 [INFO GPL-0003] SiteSize: 460 2720
 [INFO GPL-0004] CoreAreaLxLy: 5520 10880
 [INFO GPL-0005] CoreAreaUxUy: 88320 138720
-[INFO GPL-0006] NumInstances: 444
-[INFO GPL-0007] NumPlaceInstances: 203
+[INFO GPL-0006] NumInstances: 344
+[INFO GPL-0007] NumPlaceInstances: 103
 [INFO GPL-0008] NumFixedInstances: 241
 [INFO GPL-0009] NumDummyInstances: 0
-[INFO GPL-0010] NumNets: 206
-[INFO GPL-0011] NumPins: 414
+[INFO GPL-0010] NumNets: 106
+[INFO GPL-0011] NumPins: 214
 [INFO GPL-0012] DieAreaLxLy: 0 0
 [INFO GPL-0013] DieAreaUxUy: 94000 150000
 [INFO GPL-0014] CoreAreaLxLy: 5520 10880
 [INFO GPL-0015] CoreAreaUxUy: 88320 138720
 [INFO GPL-0016] CoreArea: 10585152000
 [INFO GPL-0017] NonPlaceInstsArea: 536764800
-[INFO GPL-0018] PlaceInstsArea: 5027321600
-[INFO GPL-0019] Util(%): 50.03
-[INFO GPL-0020] StdInstsArea: 5027321600
+[INFO GPL-0018] PlaceInstsArea: 2524921600
+[INFO GPL-0019] Util(%): 25.13
+[INFO GPL-0020] StdInstsArea: 2524921600
 [INFO GPL-0021] MacroInstsArea: 0
-[InitialPlace]  Iter: 1 CG residual: 0.00156464 HPWL: 2896289
-[InitialPlace]  Iter: 2 CG residual: 0.00021148 HPWL: 2964209
-[InitialPlace]  Iter: 3 CG residual: 0.00003174 HPWL: 2985904
-[InitialPlace]  Iter: 4 CG residual: 0.00002015 HPWL: 2987488
-[InitialPlace]  Iter: 5 CG residual: 0.00000468 HPWL: 2989343
+[InitialPlace]  Iter: 1 CG residual: 0.00000022 HPWL: 1689594
+[InitialPlace]  Iter: 2 CG residual: 0.00003908 HPWL: 1715331
+[InitialPlace]  Iter: 3 CG residual: 0.00000494 HPWL: 1729594
+[InitialPlace]  Iter: 4 CG residual: 0.00000281 HPWL: 1733020
+[InitialPlace]  Iter: 5 CG residual: 0.00000055 HPWL: 1730764
 [INFO GPL-0031] FillerInit: NumGCells: 283
-[INFO GPL-0032] FillerInit: NumGNets: 206
-[INFO GPL-0033] FillerInit: NumGPins: 414
+[INFO GPL-0032] FillerInit: NumGNets: 106
+[INFO GPL-0033] FillerInit: NumGPins: 214
 [INFO GPL-0023] TargetDensity: 0.70
-[INFO GPL-0024] AveragePlaceInstArea: 24765131
-[INFO GPL-0025] IdealBinArea: 35378760
-[INFO GPL-0026] IdealBinCnt: 299
+[INFO GPL-0024] AveragePlaceInstArea: 24513801
+[INFO GPL-0025] IdealBinArea: 35019716
+[INFO GPL-0026] IdealBinCnt: 302
 [INFO GPL-0027] TotalBinArea: 10585152000
 [INFO GPL-0028] BinCnt: 64 64
 [INFO GPL-0029] BinSize: 1294 1998
 [INFO GPL-0030] NumBins: 4096
-[NesterovSolve] Iter: 1 overflow: 0.790248 HPWL: 1639770
-[NesterovSolve] Finished with Overflow: 0.790248
+[NesterovSolve] Iter: 1 overflow: 0.682963 HPWL: 884107
+[INFO GPL-0100] worst slack 1e+30
+[WARNING GPL-0102] No slacks found. Timing-driven mode disabled.
+[NesterovSolve] Finished with Overflow: 0.682963
 ###############################################################################
 # Created by write_sdc
-# Thu Sep  8 19:22:55 2022
+# Fri Sep  9 12:02:39 2022
 ###############################################################################
 current_design adc_clkgen_with_edgedetect
 ###############################################################################
@@ -104,7 +106,7 @@ check_report
 report_checks -unconstrained
 ============================================================================
 Startpoint: start_conv (input port clocked by clk)
-Endpoint: clkgen.delay_200ns_3.genblk1[1].delay_unit/in (internal pin)
+Endpoint: clkgen.delay_100ns_3.genblk1[1].delay_unit/in (internal pin)
 Path Group: (none)
 Path Type: max
 
@@ -117,10 +119,10 @@ Fanout     Cap    Slew   Delay    Time   Description
                   0.04    0.18    2.19 v _2_/X (sky130_fd_sc_hd__and2b_2)
      1    0.00                           _0_ (net)
                   0.04    0.00    2.19 v _3_/A2 (sky130_fd_sc_hd__o21ba_2)
-                  0.04    0.20    2.39 v _3_/X (sky130_fd_sc_hd__o21ba_2)
-     1    0.00                           clkgen.delay_200ns_3._intsig_a_[1] (net)
-                  0.04    0.00    2.39 v clkgen.delay_200ns_3.genblk1[1].delay_unit/in (sky130_mm_sc_hd_dly5ns)
-                                  2.39   data arrival time
+                  0.04    0.20    2.38 v _3_/X (sky130_fd_sc_hd__o21ba_2)
+     1    0.00                           clkgen.delay_100ns_3._intsig_a_[1] (net)
+                  0.04    0.00    2.38 v clkgen.delay_100ns_3.genblk1[1].delay_unit/in (sky130_mm_sc_hd_dly5ns)
+                                  2.38   data arrival time
 -----------------------------------------------------------------------------
 (Path is unconstrained)
 
@@ -187,17 +189,17 @@ Group                  Internal  Switching    Leakage      Total
                           Power      Power      Power      Power (Watts)
 ----------------------------------------------------------------
 Sequential             0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
-Combinational          6.11e-07   3.44e-07   9.44e-10   9.56e-07 100.0%
+Combinational          6.10e-07   3.37e-07   6.30e-10   9.47e-07 100.0%
 Macro                  0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
 Pad                    0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
 ----------------------------------------------------------------
-Total                  6.11e-07   3.44e-07   9.44e-10   9.56e-07 100.0%
-                          63.9%      36.0%       0.1%
+Total                  6.10e-07   3.37e-07   6.30e-10   9.47e-07 100.0%
+                          64.4%      35.5%       0.1%
 power_report_end
 area_report
 
 ===========================================================================
  report_design_area
 ============================================================================
-Design area 5564 u^2 53% utilization.
+Design area 3062 u^2 29% utilization.
 area_report_end
