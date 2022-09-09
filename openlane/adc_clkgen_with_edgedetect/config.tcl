@@ -23,7 +23,7 @@ set ::env(CLOCK_TREE_SYNTH) 0
 # set ::env(FP_SIZING) "relative"
 # set ::env(FP_ASPECT_RATIO) {1}
  set ::env(FP_SIZING) "absolute"
- set ::env(DIE_AREA) "0 0 90 150"
+ set ::env(DIE_AREA) "0 0 94 150"
  set ::env(FP_CORE_UTIL) {40}
  
  set ::env(FP_PDN_VWIDTH) 1 
