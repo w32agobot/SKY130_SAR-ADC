@@ -18,15 +18,15 @@ T {   Copyright 2022 Manuel Moser
    See the License for the specific language governing permissions and
    limitations under the License.} 0 -240 0 0 0.2 0.2 {}
 T {C1 is pre-defined and has fixed capacity and size.
-sky130_fd_pr__cap_vpp_11p5x11p7_l1m1m2m3m4_shieldm5
-LSL NOM USL 117.66 137.45 157.24 fF/cell
 
-
-Simulated delay is 180nF @ 3 x 137.45 = 412.35 fF} 200 -940 0 0 0.3 0.3 {}
+Goal is nom. 80ns rise, 140ns fall. 
+m=10 11umx11um VPP cap
+} 200 -940 0 0 0.3 0.3 {}
 T {ctot} 450 -330 0 0 0.2 0.2 {}
 T {schmitt-trigger inverter} 760 -830 0 0 0.4 0.4 {}
 T {for reference: const uint16_t adc_delay = 15;
--> goal is 320 fF total} 470 -460 0 0 0.2 0.2 {}
+-> reference circuit had 320 fF
+-> 200ns delay at 1.0V with those values} 470 -460 0 0 0.2 0.2 {}
 N 320 -600 320 -540 {
 lab=#net1}
 N 320 -630 330 -630 {
@@ -176,28 +176,14 @@ lab=VSS}
 N 420 -450 420 -350 {
 lab=VSS}
 C {devices/title.sym} 170 -40 0 0 {name=l1 author="Manuel Moser"}
-C {sky130_fd_pr/nfet_01v8.sym} 300 -510 0 0 {name=M2
-L=4
-W=0.42
-nf=1 
-mult=1
-ad="'int((nf+1)/2) * W/nf * 0.29'" 
-pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
-as="'int((nf+2)/2) * W/nf * 0.29'" 
-ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
-nrd="'0.29 / W'" nrs="'0.29 / W'"
-sa=0 sb=0 sd=0
-model=nfet_01v8
-spiceprefix=X
-}
 C {devices/iopin.sym} 220 -800 0 1 {name=p1 lab=VDD}
 C {devices/iopin.sym} 220 -350 0 1 {name=p2 lab=VSS}
 C {devices/ipin.sym} 220 -570 0 0 {name=p3 lab=in}
 C {sky130_fd_pr/vpp_cap.sym} 450 -490 0 0 {name=C1
-model=cap_vpp_11p5x11p7_l1m1m2m3m4_shieldm5
+model=cap_vpp_11p5x11p7_l1m1m2m3_shieldm4
 W=1
 L=1 
-mult=3 
+mult=10
 spiceprefix=X}
 C {sky130_fd_pr/nfet_01v8.sym} 800 -410 0 0 {name=M3
 L=0.15
@@ -284,7 +270,21 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {devices/opin.sym} 1080 -570 0 0 {name=p4 lab=out}
-C {sky130_fd_pr/pfet_01v8.sym} 300 -630 0 0 {name=M1
+C {sky130_fd_pr/nfet_01v8.sym} 300 -510 0 0 {name=M2
+L=4
+W=0.42
+nf=1
+mult=1
+ad="'int((nf+1)/2) * W/nf * 0.29'" 
+pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
+as="'int((nf+2)/2) * W/nf * 0.29'" 
+ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
+nrd="'0.29 / W'" nrs="'0.29 / W'"
+sa=0 sb=0 sd=0
+model=nfet_01v8
+spiceprefix=X
+}
+C {sky130_fd_pr/pfet_01v8_lvt.sym} 300 -630 0 0 {name=M1
 L=4
 W=0.8
 nf=1
@@ -295,6 +295,6 @@ as="'int((nf+2)/2) * W/nf * 0.29'"
 ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
 nrd="'0.29 / W'" nrs="'0.29 / W'"
 sa=0 sb=0 sd=0
-model=pfet_01v8
+model=pfet_01v8_lvt
 spiceprefix=X
 }
