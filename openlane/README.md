@@ -1,4 +1,4 @@
-# Workflow SKY130 Customcell RTL-to-GDSII-Macro Workflow
+# SKY130 from RTL with Custom-Standardcells to GDSII Macrocell
 
 This workflow is written for the SKY130 [iic-osic-tools](https://github.com/hpretl/iic-osic-tools) design environment.
 
