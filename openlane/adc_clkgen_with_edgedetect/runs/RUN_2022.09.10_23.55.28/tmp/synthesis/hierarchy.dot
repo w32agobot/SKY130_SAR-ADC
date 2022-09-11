@@ -1,0 +1,20 @@
+digraph "adc_clkgen_with_edgedetect" {
+label="adc_clkgen_with_edgedetect";
+rankdir="LR";
+remincross=true;
+n1 [ shape=diamond, label="start_edge_detect", color="black", fontcolor="black" ];
+n2 [ shape=octagon, label="clk_comp", color="black", fontcolor="black" ];
+n3 [ shape=octagon, label="clk_dig", color="black", fontcolor="black" ];
+n4 [ shape=octagon, label="comp_trig", color="black", fontcolor="black" ];
+n5 [ shape=octagon, label="start_conv", color="black", fontcolor="black" ];
+n6 [ shape=octagon, label="ena_in", color="black", fontcolor="black" ];
+c8 [ shape=record, label="{{<p4> comp_trig|<p7> ena}|clkgen\nadc_clk_generation|{<p2> clk_comp|<p3> clk_dig}}" ];
+c10 [ shape=record, label="{{<p6> ena_in|<p5> start_conv}|edgedetect\nadc_edge_detect_circuit|{<p9> ena_out}}" ];
+c10:p9:e -> n1:w [color="black", label=""];
+n1:e -> c8:p7:w [color="black", label=""];
+c8:p2:e -> n2:w [color="black", label=""];
+c8:p3:e -> n3:w [color="black", label=""];
+n4:e -> c8:p4:w [color="black", label=""];
+n5:e -> c10:p5:w [color="black", label=""];
+n6:e -> c10:p6:w [color="black", label=""];
+}

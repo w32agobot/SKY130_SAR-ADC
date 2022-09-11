@@ -1,3 +1,6 @@
+
+
+
 # User config
 set ::env(DESIGN_NAME) adc_clkgen_with_edgedetect
 
@@ -8,7 +11,8 @@ set ::env(DESIGN_NAME) adc_clkgen_with_edgedetect
  set ::env(LIB_FASTEST) "$::env(DESIGN_DIR)/src/sky130/sky130_fd_sc_hd__ff_n40C_1v95.lib"
  set ::env(LIB_TYPICAL) "$::env(DESIGN_DIR)/src/sky130/sky130_fd_sc_hd__tt_025C_1v80.lib"
 
- set ::env(CLOCK_PORT) "clk"
+# unused, but needed
+ set ::env(CLOCK_PORT) ""
  set ::env(CLOCK_NET) $::env(CLOCK_PORT)
  set ::env(CLOCK_TREE_SYNTH) 0
 
@@ -19,20 +23,18 @@ set ::env(DESIGN_NAME) adc_clkgen_with_edgedetect
  set ::env(SYNTH_READ_BLACKBOX_LIB) 1
 
 # Floorplanning
+# set ::env(FP_SIZING) "relative"
+# set ::env(FP_ASPECT_RATIO) 0.8
  set ::env(FP_SIZING) "absolute"
- set ::env(DIE_AREA) "0 0 90 76"
-# set ::env(DIE_AREA) "0 0 78 82"
-# set ::env(DIE_AREA) "0 0 68 110"
+ set ::env(DIE_AREA) "0 0 100 75"
  set ::env(FP_CORE_UTIL) {100}
 
 
- set ::env(FP_PDN_VWIDTH) 1 
- set ::env(FP_PDN_HWIDTH) 1 
-# set ::env(FP_PDN_HOFFSET) {11.6}
+ set ::env(FP_PDN_VWIDTH) 2 
+ set ::env(FP_PDN_HWIDTH) 2 
  set ::env(FP_PDN_HOFFSET) {11.6}
  set ::env(FP_PDN_VOFFSET) $::env(FP_PDN_HOFFSET)
-# set ::env(FP_PDN_HPITCH) 42
- set ::env(FP_PDN_HPITCH) 42
+ set ::env(FP_PDN_HPITCH) 35
  set ::env(FP_PDN_VPITCH) $::env(FP_PDN_HPITCH)
  set ::env(FP_PIN_ORDER_CFG) $::env(DESIGN_DIR)/pin_order.cfg
 
@@ -44,19 +46,24 @@ set ::env(DESIGN_NAME) adc_clkgen_with_edgedetect
  set ::env(GND_NETS) [list {VGND} {VNB}]
 
 # Placement
- set ::env(PL_BASIC_PLACEMENT) 0
- set ::env(PL_TARGET_DENSITY) {0.80}
+ set ::env(PL_BASIC_PLACEMENT) 1
+ set ::env(PL_TARGET_DENSITY) {0.70}
  set ::env(PL_RESIZER_TIMING_OPTIMIZATIONS) {0}
  set ::env(PL_RESIZER_DESIGN_OPTIMIZATIONS) {0}
-# set ::env(PL_ROUTABILITY_DRIVEN) {0}
-# set ::env(PL_TIME_DRIVEN) {1}
+ set ::env(PL_ROUTABILITY_DRIVEN) {1}
+ set ::env(PL_TIME_DRIVEN) {0}
  set ::env(DIODE_INSERTION_STRATEGY) 0
+
+# needed for Customcell DlyPoly6ns
+ set ::env(FP_TAPCELL_DIST) 14.26
+
 
 # Router
  set ::env(GLB_RESIZER_TIMING_OPTIMIZATIONS) {0}
 
 
-
+# LVS
+ set ::env(MAGIC_EXT_USE_GDS) {1}
 
 
 set filename $::env(DESIGN_DIR)/$::env(PDK)_$::env(STD_CELL_LIBRARY)_config.tcl
@@ -65,14 +72,6 @@ if { [file exists $filename] == 1} {
 }
 
 
-# set ::env(MAGIC_DRC_USE_GDS) {1}
-# set ::env(MAGIC_EXT_USE_GDS) {0}
-# set ::env(CELL_PAD) {0}
-
-# set ::env(FP_SIZING) "relative"
-# set ::env(FP_ASPECT_RATIO) {1}
-
-# set ::env(CLOCK_PERIOD) "10.000"
 
 # OpenROAD reports unconnected nodes as a warning.
 # OpenLane typically treats unconnected node warnings 
@@ -84,9 +83,3 @@ if { [file exists $filename] == 1} {
 # set ::env(FP_PDN_CHECK_NODES) 0
 
 
-# working
-# set ::env(DIE_AREA) "0 0 90 76"
-# set ::env(FP_CORE_UTIL) {90}
-# set ::env(PL_ROUTABILITY_DRIVEN) {1}
-# set ::env(PL_TARGET_DENSITY) {0.95}
-# set ::env(PL_TIME_DRIVEN) {0}

@@ -27,7 +27,7 @@ module adc_edge_detect_circuit(
     wire start_conv_edge;
    
    //combinatoric process
-    delaycell #(.Ntimes5ns(80)) delay_400ns (.in(start_conv), .out(start_conv_delayed));
+    delaycell #(.Ntimes5ns(40)) delay_200ns (.in(start_conv), .out(start_conv_delayed));
     nor(start_conv_edge,~start_conv,start_conv_delayed);
     or(ena_out,start_conv_edge,ena_in);
 

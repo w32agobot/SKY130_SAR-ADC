@@ -1,0 +1,282 @@
+OpenROAD v2.0-3879-g0b8b7ae25 
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+[INFO ODB-0222] Reading LEF file: /foss/designs/SKY130_SAR-ADC/openlane/adc_clkgen_with_edgedetect/runs/RUN_2022.09.10_23.55.28/tmp/merged.min.lef
+[INFO ODB-0223]     Created 13 technology layers
+[INFO ODB-0224]     Created 25 technology vias
+[INFO ODB-0225]     Created 442 library cells
+[INFO ODB-0226] Finished LEF file:  /foss/designs/SKY130_SAR-ADC/openlane/adc_clkgen_with_edgedetect/runs/RUN_2022.09.10_23.55.28/tmp/merged.min.lef
+[INFO ODB-0127] Reading DEF file: /foss/designs/SKY130_SAR-ADC/openlane/adc_clkgen_with_edgedetect/runs/RUN_2022.09.10_23.55.28/results/routing/adc_clkgen_with_edgedetect.def
+[INFO ODB-0128] Design: adc_clkgen_with_edgedetect
+[INFO ODB-0130]     Created 7 pins.
+[INFO ODB-0131]     Created 430 components and 1773 component-terminals.
+[INFO ODB-0132]     Created 4 special nets and 1594 connections.
+[INFO ODB-0133]     Created 91 nets and 179 connections.
+[INFO ODB-0134] Finished DEF file: /foss/designs/SKY130_SAR-ADC/openlane/adc_clkgen_with_edgedetect/runs/RUN_2022.09.10_23.55.28/results/routing/adc_clkgen_with_edgedetect.def
+###############################################################################
+# Created by write_sdc
+# Sat Sep 10 23:55:34 2022
+###############################################################################
+current_design adc_clkgen_with_edgedetect
+###############################################################################
+# Timing Constraints
+###############################################################################
+create_clock -name __VIRTUAL_CLK__ -period 10.0000 
+set_clock_uncertainty 0.2500 __VIRTUAL_CLK__
+set_input_delay 2.0000 -clock [get_clocks {__VIRTUAL_CLK__}] -add_delay [get_ports {comp_trig}]
+set_input_delay 2.0000 -clock [get_clocks {__VIRTUAL_CLK__}] -add_delay [get_ports {ena_in}]
+set_input_delay 2.0000 -clock [get_clocks {__VIRTUAL_CLK__}] -add_delay [get_ports {start_conv}]
+set_output_delay 2.0000 -clock [get_clocks {__VIRTUAL_CLK__}] -add_delay [get_ports {clk_comp}]
+set_output_delay 2.0000 -clock [get_clocks {__VIRTUAL_CLK__}] -add_delay [get_ports {clk_dig}]
+###############################################################################
+# Environment
+###############################################################################
+set_load -pin_load 0.0334 [get_ports {clk_comp}]
+set_load -pin_load 0.0334 [get_ports {clk_dig}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {comp_trig}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {ena_in}]
+set_driving_cell -lib_cell sky130_fd_sc_hd__inv_2 -pin {Y} -input_transition_rise 0.0000 -input_transition_fall 0.0000 [get_ports {start_conv}]
+set_timing_derate -early 0.9500
+set_timing_derate -late 1.0500
+###############################################################################
+# Design Rules
+###############################################################################
+set_max_fanout 5.0000 [current_design]
+[WARNING STA-0357] virtual clock __VIRTUAL_CLK__ can not be propagated.
+min_report
+
+===========================================================================
+report_checks -path_delay min (Hold)
+============================================================================
+
+======================= Slowest Corner ===================================
+
+No paths found.
+
+======================= Typical Corner ===================================
+
+No paths found.
+
+======================= Fastest Corner ===================================
+
+No paths found.
+min_report_end
+max_report
+
+===========================================================================
+report_checks -path_delay max (Setup)
+============================================================================
+
+======================= Slowest Corner ===================================
+
+No paths found.
+
+======================= Typical Corner ===================================
+
+No paths found.
+
+======================= Fastest Corner ===================================
+
+No paths found.
+max_report_end
+check_report
+
+===========================================================================
+report_checks -unconstrained
+============================================================================
+
+======================= Slowest Corner ===================================
+
+Startpoint: start_conv (input port clocked by __VIRTUAL_CLK__)
+Endpoint: clkgen.delay_100ns_3.genblk1[1].delay_unit/in (internal pin)
+Path Group: (none)
+Path Type: max
+Corner: ss
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                          2.00    2.00 v input external delay
+                  0.03    0.02    2.02 v start_conv (in)
+     2    0.01                           start_conv (net)
+                  0.03    0.00    2.02 v _2_/B (sky130_fd_sc_hd__and2b_2)
+                  0.07    0.40    2.42 v _2_/X (sky130_fd_sc_hd__and2b_2)
+     1    0.00                           _0_ (net)
+                  0.07    0.00    2.42 v _3_/A2 (sky130_fd_sc_hd__o21ba_2)
+                  0.08    0.41    2.83 v _3_/X (sky130_fd_sc_hd__o21ba_2)
+     1    0.01                           clkgen.delay_100ns_3._intsig_a_[1] (net)
+                  0.08    0.00    2.83 v clkgen.delay_100ns_3.genblk1[1].delay_unit/in (sky130_mm_sc_hd_dlyPoly6ns)
+                                  2.83   data arrival time
+-----------------------------------------------------------------------------
+(Path is unconstrained)
+
+
+
+======================= Typical Corner ===================================
+
+Startpoint: start_conv (input port clocked by __VIRTUAL_CLK__)
+Endpoint: clkgen.delay_100ns_3.genblk1[1].delay_unit/in (internal pin)
+Path Group: (none)
+Path Type: max
+Corner: tt
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                          2.00    2.00 v input external delay
+                  0.02    0.01    2.01 v start_conv (in)
+     2    0.01                           start_conv (net)
+                  0.02    0.00    2.01 v _2_/B (sky130_fd_sc_hd__and2b_2)
+                  0.04    0.18    2.19 v _2_/X (sky130_fd_sc_hd__and2b_2)
+     1    0.00                           _0_ (net)
+                  0.04    0.00    2.19 v _3_/A2 (sky130_fd_sc_hd__o21ba_2)
+                  0.05    0.21    2.41 v _3_/X (sky130_fd_sc_hd__o21ba_2)
+     1    0.01                           clkgen.delay_100ns_3._intsig_a_[1] (net)
+                  0.05    0.00    2.41 v clkgen.delay_100ns_3.genblk1[1].delay_unit/in (sky130_mm_sc_hd_dlyPoly6ns)
+                                  2.41   data arrival time
+-----------------------------------------------------------------------------
+(Path is unconstrained)
+
+
+
+======================= Fastest Corner ===================================
+
+Startpoint: start_conv (input port clocked by __VIRTUAL_CLK__)
+Endpoint: clkgen.delay_100ns_3.genblk1[1].delay_unit/in (internal pin)
+Path Group: (none)
+Path Type: max
+Corner: ff
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                          2.00    2.00 v input external delay
+                  0.01    0.01    2.01 v start_conv (in)
+     2    0.01                           start_conv (net)
+                  0.01    0.00    2.01 v _2_/B (sky130_fd_sc_hd__and2b_2)
+                  0.03    0.11    2.12 v _2_/X (sky130_fd_sc_hd__and2b_2)
+     1    0.00                           _0_ (net)
+                  0.03    0.00    2.12 v _3_/A2 (sky130_fd_sc_hd__o21ba_2)
+                  0.03    0.13    2.25 v _3_/X (sky130_fd_sc_hd__o21ba_2)
+     1    0.01                           clkgen.delay_100ns_3._intsig_a_[1] (net)
+                  0.03    0.00    2.25 v clkgen.delay_100ns_3.genblk1[1].delay_unit/in (sky130_mm_sc_hd_dlyPoly6ns)
+                                  2.25   data arrival time
+-----------------------------------------------------------------------------
+(Path is unconstrained)
+
+
+
+===========================================================================
+report_checks --slack_max -0.01
+============================================================================
+
+======================= Slowest Corner ===================================
+
+No paths found.
+
+======================= Typical Corner ===================================
+
+No paths found.
+
+======================= Fastest Corner ===================================
+
+No paths found.
+check_report_end
+check_slew
+
+===========================================================================
+ report_check_types -max_slew -max_cap -max_fanout -violators
+============================================================================
+
+======================= Slowest Corner ===================================
+
+
+======================= Typical Corner ===================================
+
+
+======================= Fastest Corner ===================================
+
+
+===========================================================================
+max slew violation count 0
+max fanout violation count 0
+max cap violation count 0
+============================================================================
+check_slew_end
+tns_report
+
+===========================================================================
+ report_tns
+============================================================================
+tns 0.00
+tns_report_end
+wns_report
+
+===========================================================================
+ report_wns
+============================================================================
+wns 0.00
+wns_report_end
+worst_slack
+
+===========================================================================
+ report_worst_slack -max (Setup)
+============================================================================
+worst slack INF
+
+===========================================================================
+ report_worst_slack -min (Hold)
+============================================================================
+worst slack INF
+worst_slack_end
+power_report
+
+===========================================================================
+ report_power
+============================================================================
+
+
+======================= Slowest Corner =================================
+
+Group                  Internal  Switching    Leakage      Total
+                          Power      Power      Power      Power (Watts)
+----------------------------------------------------------------
+Sequential             0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
+Combinational          5.27e-07   4.09e-07   1.85e-08   9.55e-07 100.0%
+Macro                  0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
+Pad                    0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
+----------------------------------------------------------------
+Total                  5.27e-07   4.09e-07   1.85e-08   9.55e-07 100.0%
+                          55.2%      42.9%       1.9%
+
+======================= Typical Corner ===================================
+
+Group                  Internal  Switching    Leakage      Total
+                          Power      Power      Power      Power (Watts)
+----------------------------------------------------------------
+Sequential             0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
+Combinational          6.21e-07   5.18e-07   7.88e-10   1.14e-06 100.0%
+Macro                  0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
+Pad                    0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
+----------------------------------------------------------------
+Total                  6.21e-07   5.18e-07   7.88e-10   1.14e-06 100.0%
+                          54.5%      45.5%       0.1%
+
+
+======================= Fastest Corner =================================
+
+Group                  Internal  Switching    Leakage      Total
+                          Power      Power      Power      Power (Watts)
+----------------------------------------------------------------
+Sequential             0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
+Combinational          6.79e-07   6.09e-07   8.03e-10   1.29e-06 100.0%
+Macro                  0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
+Pad                    0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
+----------------------------------------------------------------
+Total                  6.79e-07   6.09e-07   8.03e-10   1.29e-06 100.0%
+                          52.7%      47.2%       0.1%
+power_report_end
+area_report
+
+===========================================================================
+ report_design_area
+============================================================================
+Design area 4502 u^2 98% utilization.
+area_report_end
