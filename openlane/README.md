@@ -13,7 +13,7 @@ If you're using iic-osic-tools, you may edit the start_vnc script.
 docker run -d --user 0:0 %PARAMS% -v "%DESIGNS%":/foss/designs  %DOCKER_USER%/%DOCKER_IMAGE%:%DOCKER_TAG%
 ```
 
-## Magic: Layout of the custom cell
+## Magic: Design of a custom Standardcell
 Your custom-cell needs to have specific dimensions and the ports must be properly configured.
 
 ### Cell layout
@@ -83,6 +83,13 @@ Copy the `ff` `ss` and `tt` library files from `/foss/pdk/sky130A/libs.ref/sky13
 You need to add your custom-cell defines at the end of the file.
 To get the openlane-workflow running just copy one of the existing std-cells and update cell-name, ports, area, etc. You can update cell timings in the future if neeed, but it is not necessary for GDSII generation since optimizations are not supported in this workflow anyways.
 
+### Naming convention
+`sky130_<Vendor>_<Lib>_<Lib_Type>_<Cellname>` 
+Process = sky130
+Vendor mm = me
+Lib = Standard-Cells
+Type hd = High-Density
+ 
 ## Openlane: RTL-GDSII config and workflow
 Openlane synthesizes the RTL file with the custom-cells treated as blackbox. The synthesized file is then parsed to floorplan-generation, placement, and routing. To get this going we have to use interactive-mode of flow.tcl and the config-file needs to be prepared properly.
 ### Paths
