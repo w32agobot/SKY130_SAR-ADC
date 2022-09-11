@@ -27,8 +27,24 @@ module adc_clkgen_with_edgedetect(
    output clk_comp;
    wire start_edge_detect;
 
-   adc_edge_detect_circuit edgedetect (.start_conv(start_conv),.ena_in(ena_in),.ena_out(start_edge_detect));
-   adc_clk_generation clkgen (.comp_trig(comp_trig),.ena(start_edge_detect),.clk_dig(clk_dig),.clk_comp(clk_comp));
+   wire ena_in_buffered;
+   wire start_conv_buffered;
+   wire comp_trig_buffered;
+   wire clk_dig_unbuffered;
+   wire clk_comp_unbuffered;
+
+   //Input buffers
+   sky130_fd_sc_hd__buf_1 inbuf_1 (.A(ena_in),.X(ena_in_buffered));
+   sky130_fd_sc_hd__buf_1 inbuf_2 (.A(start_conv),.X(start_conv_buffered));
+   sky130_fd_sc_hd__buf_1 inbuf_3 (.A(comp_trig),.X(comp_trig_buffered));
+   
+   //Output buffers
+   sky130_fd_sc_hd__buf_4 outbuf_1 (.A(clk_dig_unbuffered),.X(clk_dig));
+   sky130_fd_sc_hd__buf_4 outbuf_2 (.A(clk_comp_unbuffered),.X(clk_comp));
+
+   //Circuit
+   adc_edge_detect_circuit edgedetect (.start_conv(start_conv_buffered),.ena_in(ena_in_buffered),.ena_out(start_edge_detect));
+   adc_clk_generation clkgen (.comp_trig(comp_trig_buffered),.ena(start_edge_detect),.clk_dig(clk_dig_unbuffered),.clk_comp(clk_comp_unbuffered));
 endmodule
 
 module adc_clk_generation(
