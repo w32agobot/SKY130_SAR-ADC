@@ -5,10 +5,10 @@ This workflow is written for the SKY130 [iic-osic-tools](https://github.com/hpre
 ![workflow](images/Flow.png "Workflow")
 
 ### Workaround for wrong-expectation for macros
-Openlane expects macros if a lef-file is added to the design, which is false since we are adding a standard-cell and not a macro-cell. Until an official workaround is out, erase or comment `basic_macro_placement` in `/foss/tools/openlane/2022.07/scripts/tcl_commands/floorplan.tcl`
+Openlane expects macros if a lef-file is added to the design, which is false since we are only adding a custom standard-cell. Until an official solution is out, disable `basic_macro_placement` in `/foss/tools/openlane/2022.07/scripts/tcl_commands/floorplan.tcl`
 
 You ned root-access for this workaround. Start the docker-container with user `0` and group `0`. 
-If you're using iic-osic-tools, edit the start_vnc script.
+If you're using iic-osic-tools, you may edit the start_vnc script.
 ```
 docker run -d --user 0:0 %PARAMS% -v "%DESIGNS%":/foss/designs  %DOCKER_USER%/%DOCKER_IMAGE%:%DOCKER_TAG%
 ```
@@ -20,11 +20,11 @@ Your custom-cell needs to have specific dimensions and the ports must be properl
 Read first: [Design rules](https://github.com/nickson-jose/vsdstdcelldesign). This guide includes everything important except one detail about Port-alignment. 
 
 ### Port alignment
-For Place&Route all ports have to be aligned on the crosssections of a grid. So show the grid for high-density cells (sky130_fd_sc_**hd**__...) type `grid 0.46um 0.34um 0.23um 0.17um` into the tcl-console.
+For Place&Route all ports should be aligned on the crosssections of a grid. To show the grid for high-density cells (sky130_fd_sc_**hd**__...) type `grid 0.46um 0.34um 0.23um 0.17um` into the tcl-console.
 
 ### Cell size
 Property FIXED_BBOX needs to be defined. X and Y dimensions must equal multiples of a constant value - [see PDK Documentation](https://antmicro-skywater-pdk-docs.readthedocs.io/en/latest/contents/libraries/foundry-provided.html).
-For a high-density custom cell the size in micrometers is (8 times 0,34)x(N times 0.46). Multiply the value by 200 to get the magic-internal-value. For h=2.72 and w=9.66um the correct input would be `property FIXED_BBOX {0 0 1932 544}`. 
+For a high-density custom cell the size in micrometers is (8 times 0,34)x(N times 0.46). Multiply the value by 200 to get the magic-internal-value for iic-osic-tools (yours may vary). For h=2.72 and w=9.66um the correct input would be `property FIXED_BBOX {0 0 1932 544}`. 
 
 The PDK high density standard cells are located in `/foss/pdk/sky130A/libs.ref/sky130_fd_sc_hd/mag/..`, you probably want to compare your custom cell with existing cells.
 
@@ -61,7 +61,7 @@ port class output
 ```
 
 ### Lef file options
-Type in the TCL console
+Enter in the Magic TCL-console:
 ```
 property LEFclass CORE
 property LEFsource USER
@@ -70,7 +70,7 @@ property LEForigin {0 0}
 ```
 
 ### Generate LEF and GDS file
-Type in the TCL console
+Type into the Magic TCL-console:
 ```
 lef write
 gds
@@ -87,7 +87,9 @@ To get the openlane-workflow running just copy one of the existing std-cells and
 Openlane synthesizes the RTL file with the custom-cells treated as blackbox. The synthesized file is then parsed to floorplan-generation, placement, and routing. To get this going we have to use interactive-mode of flow.tcl and the config-file needs to be prepared properly.
 ### Paths
 Workdir `/foss/designs/<PROJECT-NAME>/openlane/<CELL-NAME>/..`, 
+
 Sources (.lef .gds .v) `../openlane/<CELL-NAME>/src`, 
+
 Config `../openlane/<CELL-NAME>/config.tcl`, 
 
 ### Config file
@@ -107,7 +109,18 @@ In the openlane config-file `../openlane/<CELL-NAME>/config.tcl`, add the follow
  set ::env(SYNTH_READ_BLACKBOX_LIB) 1
 ```
 
+### Run openlane
+> Run `flow.tcl -design <DESIGN_NAME>` in `/foss/designs/<PROJECT-NAME>/openlane/` and the flow should run. 
+
+![Result](images/done.png "Flow runs through")    
+
+Results are located in `../openlane/<CELL-NAME>/runs/results`.
+
+![Result](images/dly5ns_PnR.png "Result of PnR")
+
 ### Interactive mode
+Not necessary, but maybe useful
+
 [Openlane Interactive Mode Documentation](https://openlane-docs.readthedocs.io/en/rtd-develop/doc/advanced_readme.html). Open a console in `/foss/designs/<PROJECT-NAME>/openlane/` and run the following command, the output-folder will be prepared with the current config in `../openlane/<CELL-NAME>/runs/foobar`. 
 ```
 flow.tcl -interactive -design adc_edge_detect_macrotest -tag foobar -overwrite
@@ -128,13 +141,7 @@ run_lvs
 run_antenna_check
 ```
 
-Results are located in `../openlane/<CELL-NAME>/runs/results`.
 
-Hint: You can copy the whole script and `Ctrl+V` it into the terminal
-
-### Result
-
-![Result](images/dly5ns_PnR.png "Result of PnR")
 
 ### Note
 Don't add the following commands. They are often suggested, but they will generate 2 identical custom-cells in the merged.unpadded.lef file when at detailed routing. The flow will then crash with Error `No vaid access pattern`. Including the lef files only in config.tcl works fine.
