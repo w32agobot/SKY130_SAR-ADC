@@ -18,7 +18,8 @@ Your custom-cell needs to have specific dimensions and the ports must be properl
 
 Making custom standardcells is pretty difficult. You have to make sure that your standard cells abut all other standard cells in all orientations without generating DRC errors. Keep an eye on your logfiles, especially the DRC and Manufacturability-Logs. 
 
-At the end, the standardcell should look like this. 
+In the end, the standardcell should look somewhat like this. 
+
 ![Result](images/buf8.png "8 stage buffer")   
 
 
