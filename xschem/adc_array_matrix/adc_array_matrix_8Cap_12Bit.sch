@@ -38505,8 +38505,6 @@ C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap_dummy.sym} 95
 C {devices/lab_wire.sym} 9440 -5080 2 1 {name=l4705 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 9460 -5090 1 1 {name=l4706 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 9500 -5090 3 0 {name=l4707 sig_type=std_logic lab=ctop}
-C {devices/lab_wire.sym} 800 -830 0 0 {name=l4756 sig_type=std_logic lab=VDD}
-C {devices/lab_wire.sym} 800 -810 0 0 {name=l4757 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 800 -770 0 0 {name=l4758 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 800 -790 0 0 {name=l4759 sig_type=std_logic lab=VSS}
 C {devices/lab_wire.sym} 800 -5250 0 0 {name=l4760 sig_type=std_logic lab=VDD}
@@ -38540,3 +38538,5 @@ C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap_dummy.sym} 79
 C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap_bin4.sym} 3270 -800 0 0 {name=x517}
 C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap_bin2.sym} 5350 -800 0 0 {name=x518}
 C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap_bin1.sym} 7430 -800 0 0 {name=x519}
+C {devices/lab_wire.sym} 800 -810 0 0 {name=l2050 sig_type=std_logic lab=VSS}
+C {devices/lab_wire.sym} 800 -830 0 0 {name=l2051 sig_type=std_logic lab=VSS}
