@@ -27,14 +27,14 @@ set ::env(DESIGN_NAME) adc_clkgen_with_edgedetect
 # set ::env(FP_ASPECT_RATIO) 0.8
  set ::env(FP_SIZING) "absolute"
  set ::env(DIE_AREA) "0 0 100 75"
- set ::env(FP_CORE_UTIL) {100}
+ set ::env(FP_CORE_UTIL) {65}
 
 
  set ::env(FP_PDN_VWIDTH) 2 
  set ::env(FP_PDN_HWIDTH) 2 
  set ::env(FP_PDN_HOFFSET) {11.6}
  set ::env(FP_PDN_VOFFSET) $::env(FP_PDN_HOFFSET)
- set ::env(FP_PDN_HPITCH) 35
+ set ::env(FP_PDN_HPITCH) 29
  set ::env(FP_PDN_VPITCH) $::env(FP_PDN_HPITCH)
  set ::env(FP_PIN_ORDER_CFG) $::env(DESIGN_DIR)/pin_order.cfg
 
@@ -50,9 +50,9 @@ set ::env(DESIGN_NAME) adc_clkgen_with_edgedetect
  set ::env(PL_TARGET_DENSITY) {0.70}
  set ::env(PL_RESIZER_TIMING_OPTIMIZATIONS) {0}
  set ::env(PL_RESIZER_DESIGN_OPTIMIZATIONS) {0}
- set ::env(PL_ROUTABILITY_DRIVEN) {1}
- set ::env(PL_TIME_DRIVEN) {0}
- set ::env(DIODE_INSERTION_STRATEGY) 0
+# set ::env(PL_ROUTABILITY_DRIVEN) {1}
+# set ::env(PL_TIME_DRIVEN) {0}
+# set ::env(DIODE_INSERTION_STRATEGY) 0
 
 # needed for Customcell DlyPoly6ns
  set ::env(FP_TAPCELL_DIST) 14.26

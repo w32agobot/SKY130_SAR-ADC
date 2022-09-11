@@ -6,16 +6,16 @@ Components of this program may be licensed under more restrictive licenses which
 [INFO ODB-0224]     Created 25 technology vias
 [INFO ODB-0225]     Created 442 library cells
 [INFO ODB-0226] Finished LEF file:  /foss/designs/SKY130_SAR-ADC/openlane/adc_clkgen_with_edgedetect/runs/kasleberkas/tmp/merged.unpadded.nom.lef
-[INFO ODB-0127] Reading DEF file: /foss/designs/SKY130_SAR-ADC/openlane/adc_clkgen_with_edgedetect/runs/kasleberkas/tmp/routing/11-fill.def
+[INFO ODB-0127] Reading DEF file: /foss/designs/SKY130_SAR-ADC/openlane/adc_clkgen_with_edgedetect/runs/kasleberkas/results/placement/adc_clkgen_with_edgedetect.def
 [INFO ODB-0128] Design: adc_clkgen_with_edgedetect
 [INFO ODB-0130]     Created 7 pins.
-[INFO ODB-0131]     Created 433 components and 1795 component-terminals.
-[INFO ODB-0132]     Created 4 special nets and 1606 connections.
+[INFO ODB-0131]     Created 194 components and 839 component-terminals.
+[INFO ODB-0132]     Created 4 special nets and 650 connections.
 [INFO ODB-0133]     Created 96 nets and 189 connections.
-[INFO ODB-0134] Finished DEF file: /foss/designs/SKY130_SAR-ADC/openlane/adc_clkgen_with_edgedetect/runs/kasleberkas/tmp/routing/11-fill.def
+[INFO ODB-0134] Finished DEF file: /foss/designs/SKY130_SAR-ADC/openlane/adc_clkgen_with_edgedetect/runs/kasleberkas/results/placement/adc_clkgen_with_edgedetect.def
 ###############################################################################
 # Created by write_sdc
-# Sun Sep 11 08:44:23 2022
+# Sun Sep 11 09:00:01 2022
 ###############################################################################
 current_design adc_clkgen_with_edgedetect
 ###############################################################################
@@ -59,7 +59,7 @@ set_max_fanout 5.0000 [current_design]
 [INFO GRT-0019] Found 0 clock nets.
 [INFO GRT-0001] Minimum degree: 2
 [INFO GRT-0002] Maximum degree: 3
-[INFO GRT-0003] Macros: 55
+[INFO GRT-0003] Macros: 0
 [INFO GRT-0004] Blockages: 1700
 
 [INFO GRT-0053] Routing resources analysis:
@@ -67,10 +67,10 @@ set_max_fanout 5.0000 [current_design]
 Layer     Direction    Resources     Resources    Reduction (%)
 ---------------------------------------------------------------
 li1        Vertical            0             0          0.00%
-met1       Horizontal       2800          1495          46.61%
+met1       Horizontal       2800          1654          40.93%
 met2       Vertical         2100          1350          35.71%
 met3       Horizontal       1400          1040          25.71%
-met4       Vertical          980           527          46.22%
+met4       Vertical          980           535          45.41%
 ---------------------------------------------------------------
 
 [INFO GRT-0197] Via related to pin nodes: 254
@@ -83,14 +83,17 @@ met4       Vertical          980           527          46.22%
 Layer         Resource        Demand        Usage (%)    Max H / Max V / Total Overflow
 ---------------------------------------------------------------------------------------
 li1                  0             0            0.00%             0 /  0 /  0
-met1              1495            99            6.62%             0 /  0 /  0
+met1              1654            99            5.99%             0 /  0 /  0
 met2              1350           205           15.19%             0 /  0 /  0
 met3              1040             0            0.00%             0 /  0 /  0
-met4               527             0            0.00%             0 /  0 /  0
+met4               535             0            0.00%             0 /  0 /  0
 ---------------------------------------------------------------------------------------
-Total             4412           304            6.89%             0 /  0 /  0
+Total             4579           304            6.64%             0 /  0 /  0
 
 [INFO GRT-0018] Total wirelength: 3049 um
+[INFO GRT-0006] Repairing antennas, iteration 1.
+[INFO GRT-0043] No OR_DEFAULT vias defined.
+[INFO GRT-0012] Antenna violations: 0
 [INFO GRT-0014] Routed nets: 96
 [INFO]: Setting RC values...
 min_report
@@ -190,11 +193,11 @@ Group                  Internal  Switching    Leakage      Total
                           Power      Power      Power      Power (Watts)
 ----------------------------------------------------------------
 Sequential             0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
-Combinational          8.73e-07   8.56e-07   8.20e-10   1.73e-06 100.0%
+Combinational          8.73e-07   8.56e-07   4.15e-10   1.73e-06 100.0%
 Macro                  0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
 Pad                    0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
 ----------------------------------------------------------------
-Total                  8.73e-07   8.56e-07   8.20e-10   1.73e-06 100.0%
+Total                  8.73e-07   8.56e-07   4.15e-10   1.73e-06 100.0%
                           50.5%      49.5%       0.0%
 power_report_end
 area_report
@@ -202,5 +205,5 @@ area_report
 ===========================================================================
  report_design_area
 ============================================================================
-Design area 4502 u^2 98% utilization.
+Design area 2929 u^2 64% utilization.
 area_report_end

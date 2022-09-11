@@ -638,14 +638,14 @@ Mapping DFF cells in module `\adc_clkgen_with_edgedetect':
 
 18. Executing ABC pass (technology mapping using ABC).
 
-18.1. Extracting gate netlist of module `\adc_clkgen_with_edgedetect' to `/tmp/yosys-abc-t31NCt/input.blif'..
+18.1. Extracting gate netlist of module `\adc_clkgen_with_edgedetect' to `/tmp/yosys-abc-xhDxoK/input.blif'..
 Extracted 4 gates and 9 wires to a netlist network with 5 inputs and 2 outputs.
 
 18.1.1. Executing ABC.
-Running ABC command: /foss/tools/yosys/cfe940a/bin/yosys-abc -s -f /tmp/yosys-abc-t31NCt/abc.script 2>&1
-ABC: ABC command line: "source /tmp/yosys-abc-t31NCt/abc.script".
+Running ABC command: /foss/tools/yosys/cfe940a/bin/yosys-abc -s -f /tmp/yosys-abc-xhDxoK/abc.script 2>&1
+ABC: ABC command line: "source /tmp/yosys-abc-xhDxoK/abc.script".
 ABC: 
-ABC: + read_blif /tmp/yosys-abc-t31NCt/input.blif 
+ABC: + read_blif /tmp/yosys-abc-xhDxoK/input.blif 
 ABC: + read_lib -w /foss/designs/SKY130_SAR-ADC/openlane/adc_clkgen_with_edgedetect/runs/kasleberkas/tmp/synthesis/trimmed.lib 
 ABC: Parsing finished successfully.  Parsing time =     0.04 sec
 ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfbbn_2".
@@ -745,7 +745,7 @@ ABC: Path  2 --       9 : 3    1 sky130_fd_sc_hd__o21ba_2 A =  10.01  Df = 461.2
 ABC: Start-point = pi1 (\edgedetect.delay_200ns.out).  End-point = po0 (\clkgen.delay_100ns_3.in).
 ABC: + print_stats -m 
 ABC: netlist                       : i/o =    5/    2  lat =    0  nd =     3  edge =      6  area =22.52  delay = 2.00  lev = 2
-ABC: + write_blif /tmp/yosys-abc-t31NCt/output.blif 
+ABC: + write_blif /tmp/yosys-abc-xhDxoK/output.blif 
 
 18.1.2. Re-integrating ABC results.
 ABC RESULTS:   sky130_fd_sc_hd__and2b_2 cells:        1
@@ -797,6 +797,6 @@ Found and reported 0 problems.
 26. Executing Verilog backend.
 Dumping module `\adc_clkgen_with_edgedetect'.
 
-End of script. Logfile hash: 31ac26fddf, CPU: user 0.40s system 0.02s, MEM: 40.82 MB peak
+End of script. Logfile hash: c6e124bd69, CPU: user 0.38s system 0.01s, MEM: 40.80 MB peak
 Yosys 0.12+45 (git sha1 cfe940a98, gcc 9.2.1 -fPIC -Os)
 Time spent: 24% 2x abc (0 sec), 22% 2x read_liberty (0 sec), ...

@@ -46,7 +46,7 @@ set ::env(DETAILED_ROUTER) {tritonroute}
 set ::env(DIE_AREA) {0 0 100 75}
 set ::env(DIODE_CELL) {sky130_fd_sc_hd__diode_2}
 set ::env(DIODE_CELL_PIN) {DIODE}
-set ::env(DIODE_INSERTION_STRATEGY) {0}
+set ::env(DIODE_INSERTION_STRATEGY) {3}
 set ::env(DIODE_PADDING) {2}
 set ::env(DRC_EXCLUDE_CELL_LIST) {/foss/pdk/sky130A/libs.tech/openlane/sky130_fd_sc_hd/drc_exclude.cells}
 set ::env(DRC_EXCLUDE_CELL_LIST_OPT) {/foss/pdk/sky130A/libs.tech/openlane/sky130_fd_sc_hd/drc_exclude.cells}
@@ -62,7 +62,7 @@ set ::env(FILL_CELL) {sky130_fd_sc_hd__fill*}
 set ::env(FILL_INSERTION) {1}
 set ::env(FP_ASPECT_RATIO) {1}
 set ::env(FP_CORE_MARGIN) {0}
-set ::env(FP_CORE_UTIL) {100}
+set ::env(FP_CORE_UTIL) {65}
 set ::env(FP_ENDCAP_CELL) {sky130_fd_sc_hd__decap_3}
 set ::env(FP_IO_HEXTEND) {-1}
 set ::env(FP_IO_HLAYER) {met3}
@@ -89,7 +89,7 @@ set ::env(FP_PDN_ENABLE_MACROS_GRID) {1}
 set ::env(FP_PDN_ENABLE_RAILS) {1}
 set ::env(FP_PDN_HOFFSET) {11.6}
 set ::env(FP_PDN_HORIZONTAL_HALO) {10}
-set ::env(FP_PDN_HPITCH) {35}
+set ::env(FP_PDN_HPITCH) {29}
 set ::env(FP_PDN_HSPACING) {1.7}
 set ::env(FP_PDN_HWIDTH) {2}
 set ::env(FP_PDN_IRDROP) {1}
@@ -100,7 +100,7 @@ set ::env(FP_PDN_RAIL_WIDTH) {0.48}
 set ::env(FP_PDN_UPPER_LAYER) {met5}
 set ::env(FP_PDN_VERTICAL_HALO) {10}
 set ::env(FP_PDN_VOFFSET) {11.6}
-set ::env(FP_PDN_VPITCH) {35}
+set ::env(FP_PDN_VPITCH) {29}
 set ::env(FP_PDN_VSPACING) {1.7}
 set ::env(FP_PDN_VWIDTH) {2}
 set ::env(FP_PIN_ORDER_CFG) {/foss/designs/SKY130_SAR-ADC/openlane/adc_clkgen_with_edgedetect/pin_order.cfg}
@@ -203,7 +203,7 @@ set ::env(PL_RESIZER_TIMING_OPTIMIZATIONS) {0}
 set ::env(PL_ROUTABILITY_DRIVEN) {1}
 set ::env(PL_SKIP_INITIAL_PLACEMENT) {0}
 set ::env(PL_TARGET_DENSITY) {0.70}
-set ::env(PL_TIME_DRIVEN) {0}
+set ::env(PL_TIME_DRIVEN) {1}
 set ::env(PRIMARY_SIGNOFF_TOOL) {magic}
 set ::env(PROCESS) {130}
 set ::env(QUIT_ON_HOLD_VIOLATIONS) {1}
@@ -242,7 +242,7 @@ set ::env(RUN_TAG) {kasleberkas}
 set ::env(SPEF_EDGE_CAP_FACTOR) {1}
 set ::env(SPEF_EXTRACTOR) {openrcx}
 set ::env(SPEF_WIRE_MODEL) {L}
-set ::env(START_TIME) {2022.09.11_08.44.16}
+set ::env(START_TIME) {2022.09.11_08.59.53}
 set ::env(STA_REPORT_POWER) {1}
 set ::env(STD_CELL_GROUND_PINS) {VGND VNB}
 set ::env(STD_CELL_LIBRARY_CDL) {/foss/pdk/sky130A/libs.ref/sky130_fd_sc_hd/cdl/sky130_fd_sc_hd.cdl}
@@ -325,7 +325,7 @@ set ::env(synthesis_results) {/foss/designs/SKY130_SAR-ADC/openlane/adc_clkgen_w
 set ::env(synthesis_tmpfiles) {/foss/designs/SKY130_SAR-ADC/openlane/adc_clkgen_with_edgedetect/runs/kasleberkas/tmp/synthesis}
 set ::env(SYNTH_MAX_TRAN) {0.75}
 set ::env(CURRENT_DEF) /foss/designs/SKY130_SAR-ADC/openlane/adc_clkgen_with_edgedetect/runs/kasleberkas/results/routing/adc_clkgen_with_edgedetect.def
-set ::env(CURRENT_GUIDE) /foss/designs/SKY130_SAR-ADC/openlane/adc_clkgen_with_edgedetect/runs/kasleberkas/tmp/routing/12-global.guide
+set ::env(CURRENT_GUIDE) /foss/designs/SKY130_SAR-ADC/openlane/adc_clkgen_with_edgedetect/runs/kasleberkas/tmp/routing/11-global.guide
 set ::env(CURRENT_INDEX) 31
 set ::env(CURRENT_NETLIST) /foss/designs/SKY130_SAR-ADC/openlane/adc_clkgen_with_edgedetect/runs/kasleberkas/tmp/signoff/26-powered_netlist.v
 set ::env(PREV_NETLIST) /foss/designs/SKY130_SAR-ADC/openlane/adc_clkgen_with_edgedetect/runs/kasleberkas/tmp/routing/14-detailed.v
@@ -375,7 +375,7 @@ set ::env(CTS_TECH_DIR) {N/A}
 set ::env(CTS_TOLERANCE) {100}
 set ::env(CURRENT_DEF) {/foss/designs/SKY130_SAR-ADC/openlane/adc_clkgen_with_edgedetect/runs/kasleberkas/results/routing/adc_clkgen_with_edgedetect.def}
 set ::env(CURRENT_GDS) {/foss/designs/SKY130_SAR-ADC/openlane/adc_clkgen_with_edgedetect/runs/kasleberkas/results/signoff/adc_clkgen_with_edgedetect.gds}
-set ::env(CURRENT_GUIDE) {/foss/designs/SKY130_SAR-ADC/openlane/adc_clkgen_with_edgedetect/runs/kasleberkas/tmp/routing/12-global.guide}
+set ::env(CURRENT_GUIDE) {/foss/designs/SKY130_SAR-ADC/openlane/adc_clkgen_with_edgedetect/runs/kasleberkas/tmp/routing/11-global.guide}
 set ::env(CURRENT_INDEX) {31}
 set ::env(CURRENT_NETLIST) {/foss/designs/SKY130_SAR-ADC/openlane/adc_clkgen_with_edgedetect/runs/kasleberkas/tmp/signoff/26-powered_netlist.v}
 set ::env(CURRENT_SDC) {/foss/designs/SKY130_SAR-ADC/openlane/adc_clkgen_with_edgedetect/runs/kasleberkas/tmp/floorplan/3-initial_fp.sdc}
@@ -399,7 +399,7 @@ set ::env(DIE_AREA) {0 0 100 75}
 set ::env(DIODE_CELL) {sky130_fd_sc_hd__diode_2}
 set ::env(DIODE_CELL_PIN) {DIODE}
 set ::env(DIODE_INSERTION_CURRENT_DEF) {/foss/designs/SKY130_SAR-ADC/openlane/adc_clkgen_with_edgedetect/runs/kasleberkas/results/routing/adc_clkgen_with_edgedetect.def}
-set ::env(DIODE_INSERTION_STRATEGY) {0}
+set ::env(DIODE_INSERTION_STRATEGY) {3}
 set ::env(DIODE_PADDING) {2}
 set ::env(DISPLAY) {:1.0}
 set ::env(DONT_USE_CELLS) {sky130_fd_sc_hd__a2111oi_0 sky130_fd_sc_hd__a21boi_0 sky130_fd_sc_hd__and2_0 sky130_fd_sc_hd__buf_16 sky130_fd_sc_hd__clkdlybuf4s15_1 sky130_fd_sc_hd__clkdlybuf4s18_1 sky130_fd_sc_hd__fa_4 sky130_fd_sc_hd__lpflow_bleeder_1 sky130_fd_sc_hd__lpflow_clkbufkapwr_1 sky130_fd_sc_hd__lpflow_clkbufkapwr_16 sky130_fd_sc_hd__lpflow_clkbufkapwr_2 sky130_fd_sc_hd__lpflow_clkbufkapwr_4 sky130_fd_sc_hd__lpflow_clkbufkapwr_8 sky130_fd_sc_hd__lpflow_clkinvkapwr_1 sky130_fd_sc_hd__lpflow_clkinvkapwr_16 sky130_fd_sc_hd__lpflow_clkinvkapwr_2 sky130_fd_sc_hd__lpflow_clkinvkapwr_4 sky130_fd_sc_hd__lpflow_clkinvkapwr_8 sky130_fd_sc_hd__lpflow_decapkapwr_12 sky130_fd_sc_hd__lpflow_decapkapwr_3 sky130_fd_sc_hd__lpflow_decapkapwr_4 sky130_fd_sc_hd__lpflow_decapkapwr_6 sky130_fd_sc_hd__lpflow_decapkapwr_8 sky130_fd_sc_hd__lpflow_inputiso0n_1 sky130_fd_sc_hd__lpflow_inputiso0p_1 sky130_fd_sc_hd__lpflow_inputiso1n_1 sky130_fd_sc_hd__lpflow_inputiso1p_1 sky130_fd_sc_hd__lpflow_inputisolatch_1 sky130_fd_sc_hd__lpflow_isobufsrc_1 sky130_fd_sc_hd__lpflow_isobufsrc_16 sky130_fd_sc_hd__lpflow_isobufsrc_2 sky130_fd_sc_hd__lpflow_isobufsrc_4 sky130_fd_sc_hd__lpflow_isobufsrc_8 sky130_fd_sc_hd__lpflow_isobufsrckapwr_16 sky130_fd_sc_hd__lpflow_lsbuf_lh_hl_isowell_tap_1 sky130_fd_sc_hd__lpflow_lsbuf_lh_hl_isowell_tap_2 sky130_fd_sc_hd__lpflow_lsbuf_lh_hl_isowell_tap_4 sky130_fd_sc_hd__lpflow_lsbuf_lh_isowell_4 sky130_fd_sc_hd__lpflow_lsbuf_lh_isowell_tap_1 sky130_fd_sc_hd__lpflow_lsbuf_lh_isowell_tap_2 sky130_fd_sc_hd__lpflow_lsbuf_lh_isowell_tap_4 sky130_fd_sc_hd__mux4_4 sky130_fd_sc_hd__o21ai_0 sky130_fd_sc_hd__o311ai_0 sky130_fd_sc_hd__or2_0 sky130_fd_sc_hd__probe_p_8 sky130_fd_sc_hd__probec_p_8 sky130_fd_sc_hd__xor3_1 sky130_fd_sc_hd__xor3_2 sky130_fd_sc_hd__xor3_4 sky130_fd_sc_hd__xnor3_1 sky130_fd_sc_hd__xnor3_2 sky130_fd_sc_hd__xnor3_4 }
@@ -421,7 +421,7 @@ set ::env(FILL_INSERTION) {1}
 set ::env(FOSS_PATH_SET) {1}
 set ::env(FP_ASPECT_RATIO) {1}
 set ::env(FP_CORE_MARGIN) {0}
-set ::env(FP_CORE_UTIL) {100}
+set ::env(FP_CORE_UTIL) {65}
 set ::env(FP_ENDCAP_CELL) {sky130_fd_sc_hd__decap_3}
 set ::env(FP_IO_HEXTEND) {-1}
 set ::env(FP_IO_HLAYER) {met3}
@@ -448,7 +448,7 @@ set ::env(FP_PDN_ENABLE_MACROS_GRID) {1}
 set ::env(FP_PDN_ENABLE_RAILS) {1}
 set ::env(FP_PDN_HOFFSET) {11.6}
 set ::env(FP_PDN_HORIZONTAL_HALO) {10}
-set ::env(FP_PDN_HPITCH) {35}
+set ::env(FP_PDN_HPITCH) {29}
 set ::env(FP_PDN_HSPACING) {1.7}
 set ::env(FP_PDN_HWIDTH) {2}
 set ::env(FP_PDN_IRDROP) {1}
@@ -459,7 +459,7 @@ set ::env(FP_PDN_RAIL_WIDTH) {0.48}
 set ::env(FP_PDN_UPPER_LAYER) {met5}
 set ::env(FP_PDN_VERTICAL_HALO) {10}
 set ::env(FP_PDN_VOFFSET) {11.6}
-set ::env(FP_PDN_VPITCH) {35}
+set ::env(FP_PDN_VPITCH) {29}
 set ::env(FP_PDN_VSPACING) {1.7}
 set ::env(FP_PDN_VWIDTH) {2}
 set ::env(FP_PIN_ORDER_CFG) {/foss/designs/SKY130_SAR-ADC/openlane/adc_clkgen_with_edgedetect/pin_order.cfg}
@@ -605,7 +605,7 @@ set ::env(PL_RESIZER_TIMING_OPTIMIZATIONS) {0}
 set ::env(PL_ROUTABILITY_DRIVEN) {1}
 set ::env(PL_SKIP_INITIAL_PLACEMENT) {0}
 set ::env(PL_TARGET_DENSITY) {0.70}
-set ::env(PL_TIME_DRIVEN) {0}
+set ::env(PL_TIME_DRIVEN) {1}
 set ::env(PREV_NETLIST) {/foss/designs/SKY130_SAR-ADC/openlane/adc_clkgen_with_edgedetect/runs/kasleberkas/tmp/routing/14-detailed.v}
 set ::env(PRIMARY_SIGNOFF_TOOL) {magic}
 set ::env(PROCESS) {130}
@@ -650,7 +650,7 @@ set ::env(RUN_STANDALONE) {1}
 set ::env(RUN_TAG) {kasleberkas}
 set ::env(SAK) {/foss/tools/sak/}
 set ::env(SAVE_DEF) {/foss/designs/SKY130_SAR-ADC/openlane/adc_clkgen_with_edgedetect/runs/kasleberkas/results/routing/adc_clkgen_with_edgedetect.def}
-set ::env(SAVE_GUIDE) {/foss/designs/SKY130_SAR-ADC/openlane/adc_clkgen_with_edgedetect/runs/kasleberkas/tmp/routing/12-global.guide}
+set ::env(SAVE_GUIDE) {/foss/designs/SKY130_SAR-ADC/openlane/adc_clkgen_with_edgedetect/runs/kasleberkas/tmp/routing/11-global.guide}
 set ::env(SAVE_NETLIST) {/foss/designs/SKY130_SAR-ADC/openlane/adc_clkgen_with_edgedetect/runs/kasleberkas/tmp/signoff/26-powered_netlist.v}
 set ::env(SAVE_SDC) {/foss/designs/SKY130_SAR-ADC/openlane/adc_clkgen_with_edgedetect/runs/kasleberkas/tmp/floorplan/3-initial_fp.sdc}
 set ::env(SAVE_SDF) {/foss/designs/SKY130_SAR-ADC/openlane/adc_clkgen_with_edgedetect/runs/kasleberkas/results/routing/adc_clkgen_with_edgedetect.sdf}
@@ -665,7 +665,7 @@ set ::env(SPEF_WIRE_MODEL) {L}
 set ::env(SSH_AGENT_PID) {122}
 set ::env(SSH_AUTH_SOCK) {/tmp/ssh-n8mElhiC4EKG/agent.121}
 set ::env(STARTUPDIR) {/dockerstartup}
-set ::env(START_TIME) {2022.09.11_08.44.16}
+set ::env(START_TIME) {2022.09.11_08.59.53}
 set ::env(STA_LEF) {/foss/designs/SKY130_SAR-ADC/openlane/adc_clkgen_with_edgedetect/runs/kasleberkas/tmp/merged.nom.lef}
 set ::env(STA_PRE_CTS) {0}
 set ::env(STA_REPORT_POWER) {1}
@@ -735,7 +735,7 @@ set ::env(VNC_VIEW_ONLY) {false}
 set ::env(VTE_VERSION) {5204}
 set ::env(WIDEN_SITE) {1}
 set ::env(WIDEN_SITE_IS_FACTOR) {1}
-set ::env(WINDOWID) {33583214}
+set ::env(WINDOWID) {35651587}
 set ::env(WIRE_RC_LAYER) {met1}
 set ::env(XDG_CONFIG_DIRS) {/etc/xdg}
 set ::env(XDG_CURRENT_DESKTOP) {XFCE}
@@ -775,6 +775,6 @@ set ::env(synthesis_logs) {/foss/designs/SKY130_SAR-ADC/openlane/adc_clkgen_with
 set ::env(synthesis_reports) {/foss/designs/SKY130_SAR-ADC/openlane/adc_clkgen_with_edgedetect/runs/kasleberkas/reports/synthesis}
 set ::env(synthesis_results) {/foss/designs/SKY130_SAR-ADC/openlane/adc_clkgen_with_edgedetect/runs/kasleberkas/results/synthesis}
 set ::env(synthesis_tmpfiles) {/foss/designs/SKY130_SAR-ADC/openlane/adc_clkgen_with_edgedetect/runs/kasleberkas/tmp/synthesis}
-set ::env(timer_end) {1662885885}
-set ::env(timer_routed) {1662885870}
-set ::env(timer_start) {1662885856}
+set ::env(timer_end) {1662886824}
+set ::env(timer_routed) {1662886809}
+set ::env(timer_start) {1662886793}
