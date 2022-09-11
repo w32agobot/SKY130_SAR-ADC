@@ -1,11 +1,11 @@
-set ::env(DESIGN_NAME) "adc_edge_detect_circuit"
+set ::env(DESIGN_NAME) "adc_edge_detect_circuit_native"
 
 set filename $::env(DESIGN_DIR)/$::env(PDK)_$::env(STD_CELL_LIBRARY)_config.tcl
 if { [file exists $filename] == 1} {
 	source $filename
 }
 
-set ::env(VERILOG_FILES) "/foss/designs/SKY130_SAR-ADC/verilog/adc_edge_detect_circuit/adc_edge_detect_circuit.v"
+set ::env(VERILOG_FILES) "src/*.v"
 
 # set ::env(CLOCK_PERIOD) "10.000"
 set ::env(CLOCK_PORT) "clk"
