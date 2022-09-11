@@ -4,8 +4,8 @@ This workflow is written for the SKY130 [iic-osic-tools](https://github.com/hpre
 
 ![workflow](images/Flow.png "Workflow")
 
-### Workaround for wrong-expectation for macros
-Openlane expects macros if a lef-file is added to the design, which is false since we are only adding a custom standard-cell. Until an official solution is out, disable `basic_macro_placement` in `/foss/tools/openlane/2022.07/scripts/tcl_commands/floorplan.tcl`
+### Workaround for falsely-expected macros
+Openlane expects macros if a lef-file is added to the design, which is false since we are adding a custom standardcell. Macros are handled different to standardcells in terms of placement and power-distribution. Standardcells are placed inside of a horizontal power-grid on Metal1 after the PDN on metal1 and metal4 have been generated and routed. The result is a hardened macro. Macros should therefore already have a vertical PDN on Metal4, they should be connected to the horizontal PDN on Metal5 later. Until an official solution is out, disable `basic_macro_placement` in `/foss/tools/openlane/2022.07/scripts/tcl_commands/floorplan.tcl` as suggested in Slack.
 
 You ned root-access for this workaround. Start the docker-container with user `0` and group `0`. 
 If you're using iic-osic-tools, you may edit the start_vnc script.
@@ -14,25 +14,37 @@ docker run -d --user 0:0 %PARAMS% -v "%DESIGNS%":/foss/designs  %DOCKER_USER%/%D
 ```
 
 ## Magic: Design of a custom Standardcell
-Your custom-cell needs to have specific dimensions and the ports must be properly configured.
+Your custom-cell needs to have specific dimensions and the ports must be properly configured, otherwise Place and Route won't work.
+
+Making custom standardcells is pretty difficult. You have to make sure that your standard cells abut all other standard cells in all orientations without generating DRC errors. Keep an eye on your logfiles, especially the DRC and Manufacturability-Logs. 
+
+At the end, the standardcell should look like this. 
+![Result](images/buf8.png "8 stage buffer")   
+
 
 ### Cell layout
-Read first: [Design rules](https://github.com/nickson-jose/vsdstdcelldesign). This guide includes everything important except one detail about Port-alignment. 
+Read first: [Design rules](https://github.com/nickson-jose/vsdstdcelldesign). This guide includes lots of important stuff except a detail about Port-alignment. 
 
 ### Port alignment
-For Place&Route all ports should be aligned on the crosssections of a grid. To show the grid for high-density cells (sky130_fd_sc_**hd**__...) type `grid 0.46um 0.34um 0.23um 0.17um` into the tcl-console.
+For Place&Route all ports should be aligned on the crosssections of a grid. To show the grid for high-density cells (sky130_fd_sc_**hd**__...) type `grid 0.46um 0.34um 0.23um 0.17um` into the magic tcl-console.
 
 ### Cell size
-Property FIXED_BBOX needs to be defined. X and Y dimensions must equal multiples of a constant value - [see PDK Documentation](https://antmicro-skywater-pdk-docs.readthedocs.io/en/latest/contents/libraries/foundry-provided.html).
-For a high-density custom cell the size in micrometers is (8 times 0,34)x(N times 0.46). Multiply the value by 200 to get the magic-internal-value for iic-osic-tools (yours may vary). For h=2.72 and w=9.66um the correct input would be `property FIXED_BBOX {0 0 1932 544}`. 
+Property FIXED_BBOX needs to be defined, this value is used to align multiple standardcells next to each other, the bboxes should not overlap in all directions. 
 
-The PDK high density standard cells are located in `/foss/pdk/sky130A/libs.ref/sky130_fd_sc_hd/mag/..`, you probably want to compare your custom cell with existing cells.
+X and Y dimensions must equal multiples of a constant value - [see PDK Documentation](https://antmicro-skywater-pdk-docs.readthedocs.io/en/latest/contents/libraries/foundry-provided.html).
+For a high-density custom cell the size in micrometers is (8 times 0.34)x(N times 0.46). Multiply the value by 200 to get the magic-internal-value for iic-osic-tools (yours may vary). For h=2.72 and w=9.66um the correct input would be `property FIXED_BBOX {0 0 1932 544}`. 
 
-### Port creation
-select the area where your port should be, Select `Edit` then `Text..`. 
+The length should not exceed the tap-distance value in your configuration, unless you place your own tap conenctions inside of the cell. Notice that most standard-cells don't have tap connections, instead there is a port "VNB" on pwell and "VPB" on nwell. 
+
+If you look at other standard cells, you may notice it is good practice to place poly-connectors only in the middle-area of the standardcell.
+
+The PDK high density standard cell magic-files are located in `/foss/pdk/sky130A/libs.ref/sky130_fd_sc_hd/mag/..`.
+
+### Port definition
+Select the area where you want your port connection to be, then `Edit` and `Text..`. 
 Enter the name of the port in Text-string, check sticky, uncheck default, enter the layer where the port should be (li, metal1, etc.), size to 0.1um, check Port enable.
 
-The router also needs to know some further properties of your ports. Set the following properties in the tcl console for each port:
+The router needs to know some additional properties of your ports. Set the following properties in the tcl console for each port:
 
 VPWR and VPB (pmos Bias):
 ```
@@ -70,7 +82,7 @@ property LEForigin {0 0}
 ```
 
 ### Generate LEF and GDS file
-Type into the Magic TCL-console:
+Type in the Magic TCL-console:
 ```
 lef write
 gds
@@ -79,9 +91,11 @@ gds
 I suggest to copy the lef and gds file to your openlane-design `src`-directory.
 
 ### Modify the lib files, add your custom cell
+The LIB Files (Liberty Timing Format) contains timing-tables for calculation of Slack etc.. Some comercial tools offer LIB data generators, but I know of no script to generate this data with open source and sky130, yet. Just keep in mind that Optimizations are disabled in this workflow anyways, and the results may contain wrong timing-data if the tables are not updated, but anyways if you exactly know what you want for place&route then just update the header and ignore the timings.
+
 Copy the `ff` `ss` and `tt` library files from `/foss/pdk/sky130A/libs.ref/sky130_fd_sc_hd/lib/` to `/foss/designs/<PROJECT-NAME>/openlane/<CELL-NAME>/src/sky130/`.
-You need to add your custom-cell defines at the end of the file.
-To get the openlane-workflow running just copy one of the existing std-cells and update cell-name, ports, area, etc. You can update cell timings in the future if neeed, but it is not necessary for GDSII generation since optimizations are not supported in this workflow anyways.
+You need to add the data of your custom standardcells.
+Easiest way is to just copy one of the existing std-cells and update cell-name, ports, area, etc. You can update cell timings in the future if neeed.
 
 ### Naming convention
 `sky130_<Vendor>_<Lib>_<Lib_Type>_<Cellname>` 
@@ -103,7 +117,7 @@ Config `../openlane/<CELL-NAME>/config.tcl`,
 In the openlane config-file `../openlane/<CELL-NAME>/config.tcl`, add the following lines
 
 ```
-# Custom Library with Custom Std-Cells
+# Custom Liberty with Custom Std-Cells
  set ::env(LIB_SYNTH) "$::env(DESIGN_DIR)/src/sky130/sky130_fd_sc_hd__tt_025C_1v80.lib"
  set ::env(LIB_SLOWEST) "$::env(DESIGN_DIR)/src/sky130/sky130_fd_sc_hd__ss_100C_1v60.lib"
  set ::env(LIB_FASTEST) "$::env(DESIGN_DIR)/src/sky130/sky130_fd_sc_hd__ff_n40C_1v95.lib"
