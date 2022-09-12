@@ -42,9 +42,9 @@ lab=sample_n}
 N 260 -390 320 -390 {
 lab=sample}
 N 490 -570 490 -520 {
-lab=out}
+lab=ctop}
 N 490 -570 540 -570 {
-lab=out}
+lab=ctop}
 N 250 -390 260 -390 {
 lab=sample}
 N 250 -410 260 -410 {
@@ -71,7 +71,7 @@ N 460 -360 460 -270 {
 lab=sw}
 C {devices/iopin.sym} 260 -570 0 1 {name=p3 lab=vcom}
 C {devices/iopin.sym} 260 -620 0 1 {name=p7 lab=VDD}
-C {devices/iopin.sym} 540 -570 2 1 {name=p9 lab=out}
+C {devices/iopin.sym} 540 -570 2 1 {name=p9 lab=ctop}
 C {devices/iopin.sym} 260 -310 0 1 {name=p10 lab=VSS}
 C {devices/title.sym} 170 -40 0 0 {name=l1 author="Manuel Moser"}
 C {devices/ipin.sym} 250 -470 0 0 {name=p1 lab=row_n}
