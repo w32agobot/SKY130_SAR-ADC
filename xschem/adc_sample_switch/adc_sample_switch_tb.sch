@@ -71,11 +71,11 @@ C {devices/gnd.sym} 240 -160 0 0 {name=l1 lab=GND}
 C {devices/gnd.sym} 690 -300 0 0 {name=l2 lab=GND}
 C {devices/vdd.sym} 690 -460 0 0 {name=l3 lab=VDD}
 C {devices/vdd.sym} 240 -310 0 0 {name=l4 lab=VDD}
-C {devices/vsource.sym} 240 -230 0 0 {name=V1 value=1}
-C {devices/vsource.sym} 90 -230 0 0 {name=V2 value="0 sine(0.5 0.5 800)"}
+C {devices/vsource.sym} 240 -230 0 0 {name=V1 value=1.8}
+C {devices/vsource.sym} 90 -230 0 0 {name=V2 value="0 sine(0.9 0.9 800)"}
 C {devices/lab_wire.sym} 530 -400 0 0 {name=l7 sig_type=std_logic lab=sig_in}
-C {devices/vsource.sym} 360 -250 0 0 {name=V3 value="0 pulse(0 1 1u 1u 1u 4m 8m)"}
-C {devices/vsource.sym} 570 -250 0 0 {name=V4 value="0 pulse(1 0 1u 1u 1u 4m 8m)"}
+C {devices/vsource.sym} 360 -250 0 0 {name=V3 value="0 pulse(0 1.8 1u 1u 1u 4m 8m)"}
+C {devices/vsource.sym} 570 -250 0 0 {name=V4 value="0 pulse(1.8 0 1u 1u 1u 4m 8m)"}
 C {devices/gnd.sym} 570 -160 0 0 {name=l9 lab=GND}
 C {devices/gnd.sym} 360 -160 0 0 {name=l10 lab=GND}
 C {devices/code_shown.sym} 10 -730 0 0 {name=SPICE only_toplevel=false value="

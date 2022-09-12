@@ -35359,6 +35359,9 @@ N 5310 -690 5310 -670 {
 lab=en_n_bit[1]}
 N 3230 -690 3230 -670 {
 lab=en_n_bit[2]}
+N 4340 -690 4340 -670 {}
+N 4380 -690 4380 -670 {}
+N 4360 -690 4360 -670 {}
 C {devices/title.sym} 170 -40 0 0 {name=l1 author="Manuel Moser"}
 C {devices/iopin.sym} 200 -570 0 1 {name=p1 lab=VDD}
 C {devices/iopin.sym} 200 -550 0 1 {name=p2 lab=VSS}
@@ -38148,7 +38151,6 @@ C {devices/lab_wire.sym} 3980 -680 0 0 {name=l4414 sig_type=std_logic lab=VSS}
 C {devices/lab_wire.sym} 3980 -920 2 1 {name=l4415 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 4000 -930 1 1 {name=l4416 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 4060 -670 3 0 {name=l4417 sig_type=std_logic lab=row_n[11]}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap_dummy.sym} 4310 -800 0 0 {name=x1070}
 C {devices/lab_wire.sym} 4240 -680 0 0 {name=l4418 sig_type=std_logic lab=VSS}
 C {devices/lab_wire.sym} 4240 -920 2 1 {name=l4419 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 4260 -930 1 1 {name=l4420 sig_type=std_logic lab=vcom}
@@ -38540,3 +38542,7 @@ C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap_bin2.sym} 535
 C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap_bin1.sym} 7430 -800 0 0 {name=x519}
 C {devices/lab_wire.sym} 800 -810 0 0 {name=l2050 sig_type=std_logic lab=VSS}
 C {devices/lab_wire.sym} 800 -830 0 0 {name=l2051 sig_type=std_logic lab=VSS}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_cap_gate.sym} 4310 -800 0 0 {name=x520}
+C {devices/lab_wire.sym} 4340 -670 3 0 {name=l2052 sig_type=std_logic lab=sw}
+C {devices/lab_wire.sym} 4360 -670 3 0 {name=l2053 sig_type=std_logic lab=in}
+C {devices/lab_wire.sym} 4380 -670 3 0 {name=l2054 sig_type=std_logic lab=sw_in}

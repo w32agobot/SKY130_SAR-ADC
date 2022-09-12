@@ -20,7 +20,7 @@ T {   Copyright 2022 Manuel Moser
    See the License for the specific language governing permissions and
    limitations under the License.} 50 -250 0 0 0.2 0.2 {}
 T {Switching transient} 800 -990 0 0 0.6 0.6 {}
-T {On-/off-Resistance from vin-vout = 999mV to 1 mV while vin=1V} 810 -550 0 0 0.6 0.6 {}
+T {On-/off-Resistance from vin-vout = 1799mV to 1 mV while vin=1.8V} 810 -550 0 0 0.6 0.6 {}
 T {ON} 870 -480 0 0 0.8 0.8 {}
 T {OFF} 1300 -480 0 0 0.8 0.8 {}
 N 1000 -830 1000 -780 {
@@ -175,17 +175,17 @@ C {devices/gnd.sym} 1000 -680 0 0 {name=l1 lab=GND}
 C {devices/gnd.sym} 1440 -760 0 0 {name=l2 lab=GND}
 C {devices/vdd.sym} 1440 -910 0 0 {name=l3 lab=VDD}
 C {devices/vdd.sym} 1000 -830 0 0 {name=l4 lab=VDD}
-C {devices/vsource.sym} 1000 -750 0 0 {name=V1 value=1}
-C {devices/vsource.sym} 870 -750 0 0 {name=V2 value="1 pulse(0 1 0 10m 20m 10m 40m)"}
+C {devices/vsource.sym} 1000 -750 0 0 {name=V1 value=1.8}
+C {devices/vsource.sym} 870 -750 0 0 {name=V2 value="1.8 pulse(0.01 1.8 0 10m 20m 10m 40m)"}
 C {devices/lab_wire.sym} 1210 -930 0 0 {name=l7 sig_type=std_logic lab=sig_in}
-C {devices/vsource.sym} 1150 -790 0 0 {name=V3 value="1 pulse(0 1 1u 1u 1u 4m 8m)"}
-C {devices/vsource.sym} 1520 -790 0 0 {name=V4 value="0 pulse(1 0 1u 1u 1u 4m 8m)"}
+C {devices/vsource.sym} 1150 -790 0 0 {name=V3 value="1.8 pulse(0 1.8 1u 1u 1u 4m 8m)"}
+C {devices/vsource.sym} 1520 -790 0 0 {name=V4 value="0 pulse(1.8 0.01 1u 1u 1u 4m 8m)"}
 C {devices/gnd.sym} 1520 -730 0 0 {name=l9 lab=GND}
 C {devices/gnd.sym} 1150 -720 0 0 {name=l10 lab=GND}
 C {devices/code_shown.sym} 30 -970 0 0 {name=SPICE only_toplevel=false value="
 .save all 
 .OPTIONS savecurrents
-.OPTIONS RELTOL=.001 TRTOL=1 ABSTOL=1e-16 CHGTOL=1.0e-16 DEFAD=1.0e-16
+*.OPTIONS RELTOL=.001 TRTOL=1 ABSTOL=1e-14 CHGTOL=1.0e-14 DEFAD=1.0e-14
 .save @m.x1.xm1.msky130_fd_pr__pfet_01v8[gm] 
 .save @m.x1.xm1.msky130_fd_pr__pfet_01v8[CGS] 
 .save @m.x1.xm1.msky130_fd_pr__pfet_01v8[Vth] 
@@ -202,11 +202,12 @@ tran 10u 40m
 plot v(sig_in) v(sig_out)
 plot -(v(sig2_in)-v(sig2_out))/I(v8)
 plot -(v(sig3_in)-v(sig3_out))/I(v7)
+plot I(v7) I(v8)
 .endc
 "}
 C {devices/lab_wire.sym} 1240 -830 0 0 {name=l11 sig_type=std_logic lab=SW}
 C {devices/lab_wire.sym} 1470 -830 0 0 {name=l12 sig_type=std_logic lab=SW_N}
-C {sky130_fd_pr/corner.sym} 40 -480 0 0 {name=CORNER only_toplevel=false corner=ff}
+C {sky130_fd_pr/corner.sym} 40 -480 0 0 {name=CORNER only_toplevel=false corner=tt}
 C {switch_150n.sym} 1370 -830 0 0 {name=X1}
 C {devices/title.sym} 160 -40 0 0 {name=l13 author="Manuel Moser"}
 C {devices/ngspice_probe.sym} 1440 -880 0 0 {name=r1}
@@ -230,7 +231,7 @@ C {devices/gnd.sym} 1370 -620 0 0 {name=l5 lab=GND}
 C {devices/lab_wire.sym} 1430 -720 0 0 {name=l6 sig_type=std_logic lab=sig_out}
 C {devices/capa.sym} 1370 -670 0 0 {name=C1
 m=1
-value=6p
+value=2.44p
 footprint=1206
 device="ceramic capacitor"}
 C {devices/lab_wire.sym} 870 -850 0 0 {name=l15 sig_type=std_logic lab=sig_in}
@@ -245,7 +246,7 @@ C {devices/ngspice_probe.sym} 1090 -410 0 0 {name=r10}
 C {devices/gnd.sym} 1090 -100 0 0 {name=l22 lab=GND}
 C {devices/lab_wire.sym} 1150 -200 0 0 {name=l23 sig_type=std_logic lab=sig2_out}
 C {devices/vdd.sym} 870 -340 0 0 {name=l24 lab=VDD}
-C {devices/vsource.sym} 1090 -150 0 0 {name=V5 value="0 pulse(1m 999m 0 40m 40m 1p 40m)"}
+C {devices/vsource.sym} 1090 -150 0 0 {name=V5 value="0 pulse(1m 1799m 0 40m 40m 1p 40m)"}
 C {devices/gnd.sym} 1640 -240 0 0 {name=l20 lab=GND}
 C {devices/vdd.sym} 1640 -390 0 0 {name=l21 lab=VDD}
 C {devices/lab_wire.sym} 1350 -410 0 0 {name=l26 sig_type=std_logic lab=sig3_in}
@@ -256,9 +257,9 @@ C {devices/ngspice_probe.sym} 1570 -410 0 0 {name=r12}
 C {devices/gnd.sym} 1570 -100 0 0 {name=l28 lab=GND}
 C {devices/lab_wire.sym} 1630 -200 0 0 {name=l29 sig_type=std_logic lab=sig3_out}
 C {devices/vdd.sym} 1700 -320 0 0 {name=l30 lab=VDD}
-C {devices/vsource.sym} 1570 -150 0 0 {name=V6 value="0 pulse(1m 999m 0 40m 40m 1p 40m)"}
-C {devices/vsource.sym} 1380 -290 0 0 {name=V7 value="1 pulse(999m 1m 0 40m 40m 1p 40m)"}
-C {devices/vsource.sym} 950 -250 0 0 {name=V8 value="1 pulse(999m 1m 0 40m 40m 1p 40m)"}
+C {devices/vsource.sym} 1570 -150 0 0 {name=V6 value="0 pulse(1m 1799m 0 40m 40m 1p 40m)"}
+C {devices/vsource.sym} 1380 -290 0 0 {name=V7 value="1.8 pulse(1799m 1m 0 40m 40m 1p 40m)"}
+C {devices/vsource.sym} 950 -250 0 0 {name=V8 value="1.8 pulse(1799m 1m 0 40m 40m 1p 40m)"}
 C {devices/ngspice_probe.sym} 1500 -830 0 0 {name=r13}
 C {devices/ngspice_probe.sym} 1260 -830 0 0 {name=r14}
 C {devices/ngspice_probe.sym} 1370 -730 0 0 {name=r15}

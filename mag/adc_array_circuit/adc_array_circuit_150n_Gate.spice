@@ -1,0 +1,10 @@
+* NGSPICE file created from adc_array_circuit_150n_Gate.ext - technology: sky130A
+
+.subckt adc_array_circuit_150n_Gate vcom sample sample_n col_n colon_n row_n sw_n
++ in sw out VDD VSS
+X0 in sw out VSS sky130_fd_pr__nfet_01v8 ad=2.9e+11p pd=3.16e+06u as=1.45e+11p ps=1.58e+06u w=500000u l=500000u
+X1 out sw in VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=500000u l=500000u
+X2 out sw_n in VDD sky130_fd_pr__pfet_01v8 ad=5.9e+11p pd=3.18e+06u as=5.8e+11p ps=5.16e+06u w=1e+06u l=1e+06u
+X3 in sw_n out VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+06u l=1e+06u
+.ends
+
