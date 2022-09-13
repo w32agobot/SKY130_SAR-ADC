@@ -18,8 +18,8 @@ T {   Copyright 2022 Manuel Moser
    See the License for the specific language governing permissions and
    limitations under the License.} 0 -240 0 0 0.2 0.2 {}
 T {TEMP=25    ss  tt  ff 
-rise-delay 6.0 5.2 4.7 ns 
-fall-delay 7.0 5.8 4.8 ns} 280 -340 0 0 0.4 0.4 {}
+rise-delay 6.1 5.2 4.6 ns 
+fall-delay 6.7 5.5 4.7 ns} 280 -340 0 0 0.4 0.4 {}
 T {schmitt-trigger inverter} 1050 -860 0 0 0.4 0.4 {}
 N 240 -790 240 -780 {
 lab=GND}
@@ -168,7 +168,7 @@ C {devices/code_shown.sym} 90 -720 0 0 {name=s1 only_toplevel=false value="*.inc
 tran 100p 50n
 plot v(in) v(out) v(x1.cap_top) v(out_postlayout) 
 .endc"}
-C {sky130_fd_pr/corner.sym} 80 -880 0 0 {name=CORNER only_toplevel=false corner=tt}
+C {sky130_fd_pr/corner.sym} 80 -880 0 0 {name=CORNER only_toplevel=false corner=ss}
 C {devices/vdd.sym} 410 -540 0 0 {name=l3 lab=VDD}
 C {devices/gnd.sym} 390 -370 0 0 {name=l4 lab=GND}
 C {devices/lab_wire.sym} 520 -460 0 1 {name=l6 sig_type=std_logic lab=out}

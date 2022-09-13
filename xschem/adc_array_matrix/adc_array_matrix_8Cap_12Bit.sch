@@ -35377,9 +35377,9 @@ N 5310 -690 5310 -670 {
 lab=en_n_bit[1]}
 N 3230 -690 3230 -670 {
 lab=en_n_bit[2]}
-N 8240 -690 8240 -670 {}
-N 8280 -690 8280 -670 {}
-N 8260 -690 8260 -670 {}
+N 9280 -690 9280 -670 {}
+N 9320 -690 9320 -670 {}
+N 9300 -690 9300 -670 {}
 C {devices/title.sym} 170 -40 0 0 {name=l1 author="Manuel Moser"}
 C {devices/iopin.sym} 240 -670 1 1 {name=p1 lab=VDD}
 C {devices/iopin.sym} 250 -290 3 1 {name=p2 lab=VSS}
@@ -38278,7 +38278,7 @@ C {devices/lab_wire.sym} 8940 -930 1 1 {name=l4510 sig_type=std_logic lab=vcom}
 C {devices/lab_wire.sym} 9000 -670 3 0 {name=l4511 sig_type=std_logic lab=row_n[30]}
 C {devices/lab_wire.sym} 8720 -930 3 0 {name=l4512 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 8980 -930 3 0 {name=l4513 sig_type=std_logic lab=ctop}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_wafflecap_8_Dummy.sym} 9250 -800 0 0 {name=x1089}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_wafflecap_8_Dummy.sym} 8210 -800 0 0 {name=x1089}
 C {devices/lab_wire.sym} 9180 -680 0 0 {name=l4514 sig_type=std_logic lab=VSS}
 C {devices/lab_wire.sym} 9180 -920 2 1 {name=l4515 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 9200 -930 1 1 {name=l4516 sig_type=std_logic lab=vcom}
@@ -38559,10 +38559,10 @@ C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_wafflecap_8_2.sym
 C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_wafflecap_8_1.sym} 7430 -800 0 0 {name=x519}
 C {devices/lab_wire.sym} 800 -810 0 0 {name=l2050 sig_type=std_logic lab=VSS}
 C {devices/lab_wire.sym} 800 -830 0 0 {name=l2051 sig_type=std_logic lab=VSS}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_wafflecap_8_Gate.sym} 8210 -800 0 0 {name=x520}
-C {devices/lab_wire.sym} 8240 -670 3 0 {name=l2052 sig_type=std_logic lab=sw}
-C {devices/lab_wire.sym} 8260 -670 3 0 {name=l2053 sig_type=std_logic lab=analog_in}
-C {devices/lab_wire.sym} 8280 -670 3 0 {name=l2054 sig_type=std_logic lab=sw_n}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_cap/adc_array_wafflecap_8_Gate.sym} 9250 -800 0 0 {name=x520}
+C {devices/lab_wire.sym} 9280 -670 3 0 {name=l2052 sig_type=std_logic lab=sw}
+C {devices/lab_wire.sym} 9300 -670 3 0 {name=l2053 sig_type=std_logic lab=analog_in}
+C {devices/lab_wire.sym} 9320 -670 3 0 {name=l2054 sig_type=std_logic lab=sw_n}
 C {devices/ipin.sym} 200 -390 0 0 {name=p8 lab=analog_in}
 C {devices/ipin.sym} 200 -370 0 0 {name=p11 lab=sw}
 C {devices/ipin.sym} 200 -350 0 0 {name=p12 lab=sw_n}
