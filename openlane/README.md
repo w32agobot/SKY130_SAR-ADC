@@ -35,7 +35,7 @@ For Place&Route all ports should be aligned on the crosssections of a grid. To s
 Property FIXED_BBOX needs to be defined, this value is used to align multiple standardcells next to each other, the bboxes should not overlap in all directions. 
 
 X and Y dimensions must equal multiples of a constant value - [see PDK Documentation](https://antmicro-skywater-pdk-docs.readthedocs.io/en/latest/contents/libraries/foundry-provided.html).
-For a high-density custom cell the size in micrometers is (8 times 0.34)x(N times 0.46). Multiply the value by 200 to get the magic-internal-value for iic-osic-tools (yours may vary). For h=2.72 and w=9.66um the correct input would be `property FIXED_BBOX {0 0 1932 544}`. 
+For a high-density custom cell the size in micrometers is (8 times 0.34)x(N times 0.46). Multiply the value by 200 to get the magic-internal-value for iic-osic-tools (yours may vary?). For h=2.72 and w=9.66um the command would be `property FIXED_BBOX {0 0 1932 544}`. 
 
 The length should not exceed the tap-distance value in your configuration, unless you place your own tap conenctions inside of the cell. Notice that most standard-cells don't have tap connections, instead there is a port "VNB" on pwell and "VPB" on nwell. 
 
@@ -98,7 +98,7 @@ The LIB Files (Liberty) contain timing- and Power-tables for calculation of Slac
 
 Copy the `ff` `ss` and `tt` library files from `/foss/pdk/sky130A/libs.ref/sky130_fd_sc_hd/lib/` to `/foss/designs/<PROJECT-NAME>/openlane/<CELL-NAME>/src/sky130/`.
 You need to add the data of your custom standardcells.
-Easiest way is to just copy one of the existing std-cells and update cell-name, ports, area, etc. You can update cell timings in the future if neeed.
+Easiest way is to just copy one of the existing std-cells and update cell-name, ports, area, etc.
 
 ### Naming convention
 `sky130_<Vendor>_<Lib>_<Lib_Type>_<Cellname>` 
