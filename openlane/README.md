@@ -5,6 +5,8 @@ This workflow is written for the SKY130 [iic-osic-tools](https://github.com/hpre
 ![workflow](images/Flow.png "Workflow")
 
 ### Workaround for falsely-expected macros
+UPDATE: MPL-0004 has been changed to a warning, which means the workaround should not be needed after an update of openlane. 
+
 Openlane expects macros if a lef-file is added to the design, which is false since we are adding a custom standardcell. Macros are handled different to standardcells in terms of placement and power-distribution. Standardcells are placed inside of a horizontal power-grid on Metal1 after the PDN on metal1 and metal4 have been generated and routed. The result is a hardened macro. Macros should therefore already have a vertical PDN on Metal4, they should be connected to the horizontal PDN on Metal5 later. Until an official solution is out, disable `basic_macro_placement` in `/foss/tools/openlane/2022.07/scripts/tcl_commands/floorplan.tcl` as suggested in Slack.
 
 You ned root-access for this workaround. Start the docker-container with user `0` and group `0`. 
