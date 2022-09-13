@@ -1,1 +1,0 @@
-netgen -batch lvs "../mag/delay_macrocell/delay_macrocell.spice delay_macrocell" "../xschem/delay_macrocell/delay_macrocell.spice delay_macrocell" /foss/pdk/sky130A/libs.tech/netgen/sky130A_setup.tcl delay_macrocell.out

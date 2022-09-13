@@ -1,0 +1,1 @@
+netgen -batch lvs "../stdcells/sky130_mm_sc_hd_dlyPoly6ns/sky130_mm_sc_hd_dlyPoly6ns.spice sky130_mm_sc_hd_dlyPoly6ns" "../xschem/sky130_mm_sc_hd_dlyPoly6ns/sky130_mm_sc_hd_dlyPoly6ns.spice sky130_mm_sc_hd_dlyPoly6ns" /foss/pdk/sky130A/libs.tech/netgen/sky130A_setup.tcl sky130_mm_sc_hd_dlyPoly6ns.out

@@ -1,0 +1,1 @@
+netgen -batch lvs   "../mag/adc_array_matrix/adc_array_matrix_flat.spice     adc_array_matrix_flat"                 "../xschem/adc_array_matrix/adc_array_matrix_8Cap_12Bit.spice    adc_array_matrix_8Cap_12Bit"    /foss/pdk/sky130A/libs.tech/netgen/sky130A_setup.tcl adc_array_matrix_8Cap_12Bit.out

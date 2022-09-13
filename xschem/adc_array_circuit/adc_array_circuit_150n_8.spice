@@ -1,5 +1,5 @@
 ** sch_path: /foss/designs/SKY130_SAR-ADC/xschem/adc_array_circuit_150n/adc_array_circuit_150n.sch
-.subckt adc_array_circuit_150n sample_n sample vcom row_n col_n colon_n VDD VSS Cbot
+.subckt adc_array_circuit_150n_8 sample_n sample vcom row_n col_n colon_n VDD VSS Cbot
 *.PININFO sample_n:I sample:I vcom:B row_n:I col_n:I colon_n:I VDD:B VSS:B Cbot:B
 XM1 vcom sample Cbot VSS sky130_fd_pr__nfet_01v8 L=0.15 W=0.42 nf=1 ad='int((nf+1)/2) * W/nf * 0.29'
 + as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
