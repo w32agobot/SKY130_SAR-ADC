@@ -94,7 +94,7 @@ gds
 I suggest to copy the lef and gds file to your openlane-design `src`-directory.
 
 ### Modify the lib files, add your custom cell
-The LIB Files (Liberty Timing Format) contains timing-tables for calculation of Slack etc.. Some comercial tools offer LIB data generators, but I know of no script to generate this data with open source and sky130, yet. Just keep in mind that Optimizations are disabled in this workflow anyways, and the results may contain wrong timing-data if the tables are not updated, but anyways if you exactly know what you want for place&route then just update the header and ignore the timings.
+The LIB Files (Liberty) contain timing- and Power-tables for calculation of Slack etc.. Keep in mind that Optimizations are disabled in this workflow to prevent substitution of our custom-cells, but if you exactly know what structure you want at gate-level then just update the header and ignore the timings. There is no official workflow integrated in openlane as far as I know to generate a lib file, yet, and I have not done a characterization yet, but here is a script which yould be useful if you want to characterize your cell [Standard-Cell-Characterization](https://github.com/spider-tronix/Standard-Cell-Characterization)
 
 Copy the `ff` `ss` and `tt` library files from `/foss/pdk/sky130A/libs.ref/sky130_fd_sc_hd/lib/` to `/foss/designs/<PROJECT-NAME>/openlane/<CELL-NAME>/src/sky130/`.
 You need to add the data of your custom standardcells.
@@ -103,12 +103,15 @@ Easiest way is to just copy one of the existing std-cells and update cell-name, 
 ### Naming convention
 `sky130_<Vendor>_<Lib>_<Lib_Type>_<Cellname>` 
 Process = sky130
+
 Vendor mm = me
+
 Lib = Standard-Cells
+
 Type hd = High-Density
  
 ## Openlane: RTL-GDSII config and workflow
-Openlane synthesizes the RTL file with the custom-cells treated as blackbox. The synthesized file is then parsed to floorplan-generation, placement, and routing. To get this going we have to use interactive-mode of flow.tcl and the config-file needs to be prepared properly.
+Openlane synthesizes the RTL file with the custom-cells treated as blackbox. The synthesized file is then parsed to floorplan-generation, placement, and routing. 
 ### Paths
 Workdir `/foss/designs/<PROJECT-NAME>/openlane/<CELL-NAME>/..`, 
 
@@ -164,7 +167,6 @@ run_magic_drc
 run_lvs
 run_antenna_check
 ```
-
 
 
 ### Note
