@@ -52,7 +52,7 @@ set ::env(DESIGN_NAME) adc_clkgen_with_edgedetect
  set ::env(PL_RESIZER_DESIGN_OPTIMIZATIONS) {0}
 # set ::env(PL_ROUTABILITY_DRIVEN) {1}
 # set ::env(PL_TIME_DRIVEN) {0}
-# set ::env(DIODE_INSERTION_STRATEGY) 0
+# set ::env(DIODE_INSERTION_STRATEGY) 2
 
 # needed for Customcell DlyPoly6ns
  set ::env(FP_TAPCELL_DIST) 14.26

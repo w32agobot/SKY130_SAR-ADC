@@ -787,22 +787,22 @@ NETS 96 ;
     - _0_ ( _3_ A2 ) ( _2_ X ) + USE SIGNAL
       + ROUTED met1 ( 8970 35870 ) ( 9430 * )
       NEW met2 ( 8970 33830 ) ( * 35870 )
-      NEW li1 ( 8970 33830 ) L1M1_PR
+      NEW li1 ( 8970 33830 ) L1M1_PR_MR
       NEW met1 ( 8970 33830 ) M1M2_PR
       NEW met1 ( 8970 35870 ) M1M2_PR
-      NEW li1 ( 9430 35870 ) L1M1_PR
+      NEW li1 ( 9430 35870 ) L1M1_PR_MR
       NEW met1 ( 8970 33830 ) RECT ( -355 -70 0 70 )  ;
     - clk_comp ( PIN clk_comp ) ( outbuf_2 X ) + USE SIGNAL
       + ROUTED met2 ( 88090 53550 ) ( * 56100 )
       NEW met3 ( 88090 56100 ) ( 97060 * 0 )
-      NEW li1 ( 88090 53550 ) L1M1_PR
+      NEW li1 ( 88090 53550 ) L1M1_PR_MR
       NEW met1 ( 88090 53550 ) M1M2_PR
       NEW met2 ( 88090 56100 ) M2M3_PR
       NEW met1 ( 88090 53550 ) RECT ( -355 -70 0 70 )  ;
     - clk_dig ( PIN clk_dig ) ( outbuf_1 X ) + USE SIGNAL
       + ROUTED met2 ( 88090 15470 ) ( * 18700 )
       NEW met3 ( 88090 18700 ) ( 97060 * 0 )
-      NEW li1 ( 88090 15470 ) L1M1_PR
+      NEW li1 ( 88090 15470 ) L1M1_PR_MR
       NEW met1 ( 88090 15470 ) M1M2_PR
       NEW met2 ( 88090 18700 ) M2M3_PR
       NEW met1 ( 88090 15470 ) RECT ( -355 -70 0 70 )  ;
@@ -811,9 +811,9 @@ NETS 96 ;
       NEW met2 ( 79810 58820 ) ( * 60350 )
       NEW met1 ( 79810 60350 ) ( 86710 * )
       NEW met1 ( 86710 60350 ) M1M2_PR
-      NEW li1 ( 86710 53210 ) L1M1_PR
+      NEW li1 ( 86710 53210 ) L1M1_PR_MR
       NEW met1 ( 86710 53210 ) M1M2_PR
-      NEW li1 ( 79810 58820 ) L1M1_PR
+      NEW li1 ( 79810 58820 ) L1M1_PR_MR
       NEW met1 ( 79810 58820 ) M1M2_PR
       NEW met1 ( 79810 60350 ) M1M2_PR
       NEW met1 ( 86710 53210 ) RECT ( -355 -70 0 70 ) 
@@ -824,11 +824,11 @@ NETS 96 ;
       NEW met1 ( 73830 27710 ) ( 74290 * )
       NEW met2 ( 75670 15130 ) ( * 17510 )
       NEW met1 ( 75670 15130 ) ( 86710 * )
-      NEW li1 ( 86710 15130 ) L1M1_PR
-      NEW li1 ( 79810 17510 ) L1M1_PR
+      NEW li1 ( 86710 15130 ) L1M1_PR_MR
+      NEW li1 ( 79810 17510 ) L1M1_PR_MR
       NEW met1 ( 73830 17510 ) M1M2_PR
       NEW met1 ( 73830 27710 ) M1M2_PR
-      NEW li1 ( 74290 27710 ) L1M1_PR
+      NEW li1 ( 74290 27710 ) L1M1_PR_MR
       NEW met1 ( 75670 15130 ) M1M2_PR
       NEW met1 ( 75670 17510 ) M1M2_PR
       NEW met1 ( 75670 17510 ) RECT ( -595 -70 0 70 )  ;
@@ -837,48 +837,48 @@ NETS 96 ;
       NEW met1 ( 8050 55930 ) ( 13800 * )
       NEW met1 ( 13800 55590 ) ( * 55930 )
       NEW met1 ( 13800 55590 ) ( 20470 * )
-      NEW li1 ( 8050 56270 ) L1M1_PR
-      NEW li1 ( 20470 55590 ) L1M1_PR ;
+      NEW li1 ( 8050 56270 ) L1M1_PR_MR
+      NEW li1 ( 20470 55590 ) L1M1_PR_MR ;
     - clkgen.comp_trig_delayed ( clkgen.delay_100ns_1.genblk1\[17\].delay_unit out ) ( _1_ A ) + USE SIGNAL
       + ROUTED met1 ( 74750 28390 ) ( 76590 * )
       NEW met2 ( 76590 22950 ) ( * 28390 )
       NEW met1 ( 76590 22950 ) ( 79810 * )
       NEW met1 ( 79810 22780 ) ( * 22950 )
       NEW met1 ( 79810 22780 ) ( 81420 * )
-      NEW li1 ( 74750 28390 ) L1M1_PR
+      NEW li1 ( 74750 28390 ) L1M1_PR_MR
       NEW met1 ( 76590 28390 ) M1M2_PR
       NEW met1 ( 76590 22950 ) M1M2_PR
-      NEW li1 ( 81420 22780 ) L1M1_PR ;
+      NEW li1 ( 81420 22780 ) L1M1_PR_MR ;
     - clkgen.delay_100ns_1._intsig_a_\[10\] ( clkgen.delay_100ns_1.genblk1\[9\].delay_unit out ) ( clkgen.delay_100ns_1.genblk1\[10\].delay_unit in ) + USE SIGNAL
       + ROUTED met1 ( 44620 39100 ) ( 46230 * )
       NEW met1 ( 46230 38930 ) ( * 39100 )
       NEW met2 ( 46230 36890 ) ( * 38930 )
-      NEW li1 ( 44620 39100 ) L1M1_PR
+      NEW li1 ( 44620 39100 ) L1M1_PR_MR
       NEW met1 ( 46230 38930 ) M1M2_PR
-      NEW li1 ( 46230 36890 ) L1M1_PR
+      NEW li1 ( 46230 36890 ) L1M1_PR_MR
       NEW met1 ( 46230 36890 ) M1M2_PR
       NEW met1 ( 46230 36890 ) RECT ( -355 -70 0 70 )  ;
     - clkgen.delay_100ns_1._intsig_a_\[11\] ( clkgen.delay_100ns_1.genblk1\[11\].delay_unit in ) ( clkgen.delay_100ns_1.genblk1\[10\].delay_unit out ) + USE SIGNAL
       + ROUTED met2 ( 55430 37060 ) ( * 39270 )
-      NEW li1 ( 55430 37060 ) L1M1_PR
+      NEW li1 ( 55430 37060 ) L1M1_PR_MR
       NEW met1 ( 55430 37060 ) M1M2_PR
-      NEW li1 ( 55430 39270 ) L1M1_PR
+      NEW li1 ( 55430 39270 ) L1M1_PR_MR
       NEW met1 ( 55430 39270 ) M1M2_PR
       NEW met1 ( 55430 37060 ) RECT ( 0 -70 355 70 ) 
       NEW met1 ( 55430 39270 ) RECT ( -355 -70 0 70 )  ;
     - clkgen.delay_100ns_1._intsig_a_\[12\] ( clkgen.delay_100ns_1.genblk1\[12\].delay_unit in ) ( clkgen.delay_100ns_1.genblk1\[11\].delay_unit out ) + USE SIGNAL
       + ROUTED met2 ( 61410 33830 ) ( * 39100 )
-      NEW li1 ( 61410 39100 ) L1M1_PR
+      NEW li1 ( 61410 39100 ) L1M1_PR_MR
       NEW met1 ( 61410 39100 ) M1M2_PR
-      NEW li1 ( 61410 33830 ) L1M1_PR
+      NEW li1 ( 61410 33830 ) L1M1_PR_MR
       NEW met1 ( 61410 33830 ) M1M2_PR
       NEW met1 ( 61410 39100 ) RECT ( 0 -70 355 70 ) 
       NEW met1 ( 61410 33830 ) RECT ( -355 -70 0 70 )  ;
     - clkgen.delay_100ns_1._intsig_a_\[13\] ( clkgen.delay_100ns_1.genblk1\[13\].delay_unit in ) ( clkgen.delay_100ns_1.genblk1\[12\].delay_unit out ) + USE SIGNAL
       + ROUTED met2 ( 67390 33660 ) ( * 36890 )
-      NEW li1 ( 67390 33660 ) L1M1_PR
+      NEW li1 ( 67390 33660 ) L1M1_PR_MR
       NEW met1 ( 67390 33660 ) M1M2_PR
-      NEW li1 ( 67390 36890 ) L1M1_PR
+      NEW li1 ( 67390 36890 ) L1M1_PR_MR
       NEW met1 ( 67390 36890 ) M1M2_PR
       NEW met1 ( 67390 33660 ) RECT ( 0 -70 355 70 ) 
       NEW met1 ( 67390 36890 ) RECT ( -355 -70 0 70 )  ;
@@ -887,24 +887,24 @@ NETS 96 ;
       NEW met1 ( 75670 36890 ) ( * 37060 )
       NEW met1 ( 74060 37060 ) ( 75670 * )
       NEW met2 ( 77510 33830 ) ( * 36890 )
-      NEW li1 ( 77510 33830 ) L1M1_PR
+      NEW li1 ( 77510 33830 ) L1M1_PR_MR
       NEW met1 ( 77510 33830 ) M1M2_PR
       NEW met1 ( 77510 36890 ) M1M2_PR
-      NEW li1 ( 74060 37060 ) L1M1_PR
+      NEW li1 ( 74060 37060 ) L1M1_PR_MR
       NEW met1 ( 77510 33830 ) RECT ( -355 -70 0 70 )  ;
     - clkgen.delay_100ns_1._intsig_a_\[15\] ( clkgen.delay_100ns_1.genblk1\[15\].delay_unit in ) ( clkgen.delay_100ns_1.genblk1\[14\].delay_unit out ) + USE SIGNAL
       + ROUTED met2 ( 86710 33660 ) ( * 36890 )
-      NEW li1 ( 86710 33660 ) L1M1_PR
+      NEW li1 ( 86710 33660 ) L1M1_PR_MR
       NEW met1 ( 86710 33660 ) M1M2_PR
-      NEW li1 ( 86710 36890 ) L1M1_PR
+      NEW li1 ( 86710 36890 ) L1M1_PR_MR
       NEW met1 ( 86710 36890 ) M1M2_PR
       NEW met1 ( 86710 33660 ) RECT ( 0 -70 355 70 ) 
       NEW met1 ( 86710 36890 ) RECT ( -355 -70 0 70 )  ;
     - clkgen.delay_100ns_1._intsig_a_\[16\] ( clkgen.delay_100ns_1.genblk1\[16\].delay_unit in ) ( clkgen.delay_100ns_1.genblk1\[15\].delay_unit out ) + USE SIGNAL
       + ROUTED met2 ( 79810 37060 ) ( * 39270 )
-      NEW li1 ( 79810 37060 ) L1M1_PR
+      NEW li1 ( 79810 37060 ) L1M1_PR_MR
       NEW met1 ( 79810 37060 ) M1M2_PR
-      NEW li1 ( 79810 39270 ) L1M1_PR
+      NEW li1 ( 79810 39270 ) L1M1_PR_MR
       NEW met1 ( 79810 39270 ) M1M2_PR
       NEW met1 ( 79810 37060 ) RECT ( -355 -70 0 70 ) 
       NEW met1 ( 79810 39270 ) RECT ( -355 -70 0 70 )  ;
@@ -912,9 +912,9 @@ NETS 96 ;
       + ROUTED met1 ( 89240 39100 ) ( 90850 * )
       NEW met1 ( 90850 38930 ) ( * 39100 )
       NEW met2 ( 90850 22950 ) ( * 38930 )
-      NEW li1 ( 90850 22950 ) L1M1_PR
+      NEW li1 ( 90850 22950 ) L1M1_PR_MR
       NEW met1 ( 90850 22950 ) M1M2_PR
-      NEW li1 ( 89240 39100 ) L1M1_PR
+      NEW li1 ( 89240 39100 ) L1M1_PR_MR
       NEW met1 ( 90850 38930 ) M1M2_PR
       NEW met1 ( 90850 22950 ) RECT ( -355 -70 0 70 )  ;
     - clkgen.delay_100ns_1._intsig_a_\[2\] ( clkgen.delay_100ns_1.genblk1\[2\].delay_unit in ) ( clkgen.delay_100ns_1.genblk1\[1\].delay_unit out ) + USE SIGNAL
@@ -922,18 +922,18 @@ NETS 96 ;
       NEW met3 ( 20470 56780 ) ( 29670 * )
       NEW met2 ( 20470 56780 ) ( * 58650 )
       NEW met1 ( 18170 58650 ) ( 20470 * )
-      NEW li1 ( 29670 55420 ) L1M1_PR
+      NEW li1 ( 29670 55420 ) L1M1_PR_MR
       NEW met1 ( 29670 55420 ) M1M2_PR
       NEW met2 ( 29670 56780 ) M2M3_PR
       NEW met2 ( 20470 56780 ) M2M3_PR
       NEW met1 ( 20470 58650 ) M1M2_PR
-      NEW li1 ( 18170 58650 ) L1M1_PR
+      NEW li1 ( 18170 58650 ) L1M1_PR_MR
       NEW met1 ( 29670 55420 ) RECT ( 0 -70 355 70 )  ;
     - clkgen.delay_100ns_1._intsig_a_\[3\] ( clkgen.delay_100ns_1.genblk1\[3\].delay_unit in ) ( clkgen.delay_100ns_1.genblk1\[2\].delay_unit out ) + USE SIGNAL
       + ROUTED met2 ( 8970 42330 ) ( * 58820 )
-      NEW li1 ( 8970 58820 ) L1M1_PR
+      NEW li1 ( 8970 58820 ) L1M1_PR_MR
       NEW met1 ( 8970 58820 ) M1M2_PR
-      NEW li1 ( 8970 42330 ) L1M1_PR
+      NEW li1 ( 8970 42330 ) L1M1_PR_MR
       NEW met1 ( 8970 42330 ) M1M2_PR
       NEW met1 ( 8970 58820 ) RECT ( -355 -70 0 70 ) 
       NEW met1 ( 8970 42330 ) RECT ( -355 -70 0 70 )  ;
@@ -942,33 +942,33 @@ NETS 96 ;
       NEW met1 ( 18630 42500 ) ( * 42670 )
       NEW met1 ( 18630 42670 ) ( 20930 * )
       NEW met2 ( 20930 42670 ) ( * 53210 )
-      NEW li1 ( 17020 42500 ) L1M1_PR
+      NEW li1 ( 17020 42500 ) L1M1_PR_MR
       NEW met1 ( 20930 42670 ) M1M2_PR
-      NEW li1 ( 20930 53210 ) L1M1_PR
+      NEW li1 ( 20930 53210 ) L1M1_PR_MR
       NEW met1 ( 20930 53210 ) M1M2_PR
       NEW met1 ( 20930 53210 ) RECT ( -355 -70 0 70 )  ;
     - clkgen.delay_100ns_1._intsig_a_\[5\] ( clkgen.delay_100ns_1.genblk1\[5\].delay_unit in ) ( clkgen.delay_100ns_1.genblk1\[4\].delay_unit out ) + USE SIGNAL
       + ROUTED met2 ( 14030 47770 ) ( * 53380 )
       NEW met1 ( 14030 47770 ) ( 15410 * )
       NEW met2 ( 12650 53380 ) ( 14030 * )
-      NEW li1 ( 12650 53380 ) L1M1_PR
+      NEW li1 ( 12650 53380 ) L1M1_PR_MR
       NEW met1 ( 12650 53380 ) M1M2_PR
       NEW met1 ( 14030 47770 ) M1M2_PR
-      NEW li1 ( 15410 47770 ) L1M1_PR
+      NEW li1 ( 15410 47770 ) L1M1_PR_MR
       NEW met1 ( 12650 53380 ) RECT ( -355 -70 0 70 )  ;
     - clkgen.delay_100ns_1._intsig_a_\[6\] ( clkgen.delay_100ns_1.genblk1\[6\].delay_unit in ) ( clkgen.delay_100ns_1.genblk1\[5\].delay_unit out ) + USE SIGNAL
       + ROUTED met2 ( 24610 44710 ) ( * 47940 )
-      NEW li1 ( 24610 44710 ) L1M1_PR
+      NEW li1 ( 24610 44710 ) L1M1_PR_MR
       NEW met1 ( 24610 44710 ) M1M2_PR
-      NEW li1 ( 24610 47940 ) L1M1_PR
+      NEW li1 ( 24610 47940 ) L1M1_PR_MR
       NEW met1 ( 24610 47940 ) M1M2_PR
       NEW met1 ( 24610 44710 ) RECT ( -355 -70 0 70 ) 
       NEW met1 ( 24610 47940 ) RECT ( 0 -70 355 70 )  ;
     - clkgen.delay_100ns_1._intsig_a_\[7\] ( clkgen.delay_100ns_1.genblk1\[7\].delay_unit in ) ( clkgen.delay_100ns_1.genblk1\[6\].delay_unit out ) + USE SIGNAL
       + ROUTED met2 ( 30590 42330 ) ( * 44540 )
-      NEW li1 ( 30590 44540 ) L1M1_PR
+      NEW li1 ( 30590 44540 ) L1M1_PR_MR
       NEW met1 ( 30590 44540 ) M1M2_PR
-      NEW li1 ( 30590 42330 ) L1M1_PR
+      NEW li1 ( 30590 42330 ) L1M1_PR_MR
       NEW met1 ( 30590 42330 ) M1M2_PR
       NEW met1 ( 30590 44540 ) RECT ( 0 -70 355 70 ) 
       NEW met1 ( 30590 42330 ) RECT ( -355 -70 0 70 )  ;
@@ -977,37 +977,37 @@ NETS 96 ;
       NEW met2 ( 27830 34170 ) ( * 42500 )
       NEW met1 ( 27830 34170 ) ( 33810 * )
       NEW met1 ( 33810 33830 ) ( * 34170 )
-      NEW li1 ( 22770 42500 ) L1M1_PR
+      NEW li1 ( 22770 42500 ) L1M1_PR_MR
       NEW met1 ( 22770 42500 ) M1M2_PR
       NEW met1 ( 27830 34170 ) M1M2_PR
-      NEW li1 ( 33810 33830 ) L1M1_PR
+      NEW li1 ( 33810 33830 ) L1M1_PR_MR
       NEW met1 ( 22770 42500 ) RECT ( -355 -70 0 70 )  ;
     - clkgen.delay_100ns_1._intsig_a_\[9\] ( clkgen.delay_100ns_1.genblk1\[9\].delay_unit in ) ( clkgen.delay_100ns_1.genblk1\[8\].delay_unit out ) + USE SIGNAL
       + ROUTED met2 ( 38870 37570 ) ( * 39270 )
       NEW met1 ( 38870 37570 ) ( 43010 * )
       NEW met2 ( 43010 33660 ) ( * 37570 )
-      NEW li1 ( 38870 39270 ) L1M1_PR
+      NEW li1 ( 38870 39270 ) L1M1_PR_MR
       NEW met1 ( 38870 39270 ) M1M2_PR
       NEW met1 ( 38870 37570 ) M1M2_PR
       NEW met1 ( 43010 37570 ) M1M2_PR
-      NEW li1 ( 43010 33660 ) L1M1_PR
+      NEW li1 ( 43010 33660 ) L1M1_PR_MR
       NEW met1 ( 43010 33660 ) M1M2_PR
       NEW met1 ( 38870 39270 ) RECT ( -355 -70 0 70 ) 
       NEW met1 ( 43010 33660 ) RECT ( 0 -70 355 70 )  ;
     - clkgen.delay_100ns_2._intsig_a_\[10\] ( clkgen.delay_100ns_2.genblk1\[9\].delay_unit out ) ( clkgen.delay_100ns_2.genblk1\[10\].delay_unit in ) + USE SIGNAL
       + ROUTED met2 ( 47610 26180 ) ( * 31450 )
       NEW met1 ( 47150 31450 ) ( 47610 * )
-      NEW li1 ( 47610 26180 ) L1M1_PR
+      NEW li1 ( 47610 26180 ) L1M1_PR_MR
       NEW met1 ( 47610 26180 ) M1M2_PR
       NEW met1 ( 47610 31450 ) M1M2_PR
-      NEW li1 ( 47150 31450 ) L1M1_PR
+      NEW li1 ( 47150 31450 ) L1M1_PR_MR
       NEW met1 ( 47610 26180 ) RECT ( -355 -70 0 70 )  ;
     - clkgen.delay_100ns_2._intsig_a_\[11\] ( clkgen.delay_100ns_2.genblk1\[11\].delay_unit in ) ( clkgen.delay_100ns_2.genblk1\[10\].delay_unit out ) + USE SIGNAL
       + ROUTED met2 ( 42090 28390 ) ( * 31620 )
       NEW met2 ( 37950 31620 ) ( 42090 * )
-      NEW li1 ( 42090 28390 ) L1M1_PR
+      NEW li1 ( 42090 28390 ) L1M1_PR_MR
       NEW met1 ( 42090 28390 ) M1M2_PR
-      NEW li1 ( 37950 31620 ) L1M1_PR
+      NEW li1 ( 37950 31620 ) L1M1_PR_MR
       NEW met1 ( 37950 31620 ) M1M2_PR
       NEW met1 ( 42090 28390 ) RECT ( -355 -70 0 70 ) 
       NEW met1 ( 37950 31620 ) RECT ( -355 -70 0 70 )  ;
@@ -1016,42 +1016,42 @@ NETS 96 ;
       NEW met1 ( 34730 28220 ) ( * 28390 )
       NEW met1 ( 31510 28390 ) ( 34730 * )
       NEW met2 ( 31510 28390 ) ( * 33830 )
-      NEW li1 ( 36340 28220 ) L1M1_PR
+      NEW li1 ( 36340 28220 ) L1M1_PR_MR
       NEW met1 ( 31510 28390 ) M1M2_PR
-      NEW li1 ( 31510 33830 ) L1M1_PR
+      NEW li1 ( 31510 33830 ) L1M1_PR_MR
       NEW met1 ( 31510 33830 ) M1M2_PR
       NEW met1 ( 31510 33830 ) RECT ( -355 -70 0 70 )  ;
     - clkgen.delay_100ns_2._intsig_a_\[13\] ( clkgen.delay_100ns_2.genblk1\[13\].delay_unit in ) ( clkgen.delay_100ns_2.genblk1\[12\].delay_unit out ) + USE SIGNAL
       + ROUTED met2 ( 22310 31450 ) ( * 33660 )
-      NEW li1 ( 22310 33660 ) L1M1_PR
+      NEW li1 ( 22310 33660 ) L1M1_PR_MR
       NEW met1 ( 22310 33660 ) M1M2_PR
-      NEW li1 ( 22310 31450 ) L1M1_PR
+      NEW li1 ( 22310 31450 ) L1M1_PR_MR
       NEW met1 ( 22310 31450 ) M1M2_PR
       NEW met1 ( 22310 33660 ) RECT ( -355 -70 0 70 ) 
       NEW met1 ( 22310 31450 ) RECT ( -355 -70 0 70 )  ;
     - clkgen.delay_100ns_2._intsig_a_\[14\] ( clkgen.delay_100ns_2.genblk1\[14\].delay_unit in ) ( clkgen.delay_100ns_2.genblk1\[13\].delay_unit out ) + USE SIGNAL
       + ROUTED met2 ( 30130 28390 ) ( * 31620 )
-      NEW li1 ( 30130 31620 ) L1M1_PR
+      NEW li1 ( 30130 31620 ) L1M1_PR_MR
       NEW met1 ( 30130 31620 ) M1M2_PR
-      NEW li1 ( 30130 28390 ) L1M1_PR
+      NEW li1 ( 30130 28390 ) L1M1_PR_MR
       NEW met1 ( 30130 28390 ) M1M2_PR
       NEW met1 ( 30130 31620 ) RECT ( 0 -70 355 70 ) 
       NEW met1 ( 30130 28390 ) RECT ( -355 -70 0 70 )  ;
     - clkgen.delay_100ns_2._intsig_a_\[15\] ( clkgen.delay_100ns_2.genblk1\[15\].delay_unit in ) ( clkgen.delay_100ns_2.genblk1\[14\].delay_unit out ) + USE SIGNAL
       + ROUTED met2 ( 22310 26010 ) ( * 28220 )
-      NEW li1 ( 22310 28220 ) L1M1_PR
+      NEW li1 ( 22310 28220 ) L1M1_PR_MR
       NEW met1 ( 22310 28220 ) M1M2_PR
-      NEW li1 ( 22310 26010 ) L1M1_PR
+      NEW li1 ( 22310 26010 ) L1M1_PR_MR
       NEW met1 ( 22310 26010 ) M1M2_PR
       NEW met1 ( 22310 28220 ) RECT ( -355 -70 0 70 ) 
       NEW met1 ( 22310 26010 ) RECT ( -355 -70 0 70 )  ;
     - clkgen.delay_100ns_2._intsig_a_\[16\] ( clkgen.delay_100ns_2.genblk1\[16\].delay_unit in ) ( clkgen.delay_100ns_2.genblk1\[15\].delay_unit out ) + USE SIGNAL
       + ROUTED met2 ( 14030 22950 ) ( * 26180 )
       NEW met1 ( 14030 22950 ) ( 20470 * )
-      NEW li1 ( 14030 26180 ) L1M1_PR
+      NEW li1 ( 14030 26180 ) L1M1_PR_MR
       NEW met1 ( 14030 26180 ) M1M2_PR
       NEW met1 ( 14030 22950 ) M1M2_PR
-      NEW li1 ( 20470 22950 ) L1M1_PR
+      NEW li1 ( 20470 22950 ) L1M1_PR_MR
       NEW met1 ( 14030 26180 ) RECT ( 0 -70 355 70 )  ;
     - clkgen.delay_100ns_2._intsig_a_\[17\] ( clkgen.delay_100ns_2.genblk1\[17\].delay_unit in ) ( clkgen.delay_100ns_2.genblk1\[16\].delay_unit out ) + USE SIGNAL
       + ROUTED met2 ( 62790 12070 ) ( * 25500 )
@@ -1064,17 +1064,17 @@ NETS 96 ;
       NEW met3 ( 45310 25500 ) ( 62790 * )
       NEW met2 ( 62790 25500 ) M2M3_PR
       NEW met1 ( 62790 12070 ) M1M2_PR
-      NEW li1 ( 63250 12070 ) L1M1_PR
+      NEW li1 ( 63250 12070 ) L1M1_PR_MR
       NEW met2 ( 45310 25500 ) M2M3_PR
       NEW met1 ( 45310 24990 ) M1M2_PR
       NEW met1 ( 31510 24990 ) M1M2_PR
       NEW met1 ( 31510 22950 ) M1M2_PR
-      NEW li1 ( 29900 22780 ) L1M1_PR ;
+      NEW li1 ( 29900 22780 ) L1M1_PR_MR ;
     - clkgen.delay_100ns_2._intsig_a_\[2\] ( clkgen.delay_100ns_2.genblk1\[2\].delay_unit in ) ( clkgen.delay_100ns_2.genblk1\[1\].delay_unit out ) + USE SIGNAL
       + ROUTED met2 ( 89010 17340 ) ( * 20570 )
-      NEW li1 ( 89010 17340 ) L1M1_PR
+      NEW li1 ( 89010 17340 ) L1M1_PR_MR
       NEW met1 ( 89010 17340 ) M1M2_PR
-      NEW li1 ( 89010 20570 ) L1M1_PR
+      NEW li1 ( 89010 20570 ) L1M1_PR_MR
       NEW met1 ( 89010 20570 ) M1M2_PR
       NEW met1 ( 89010 17340 ) RECT ( 0 -70 355 70 ) 
       NEW met1 ( 89010 20570 ) RECT ( -355 -70 0 70 )  ;
@@ -1082,25 +1082,25 @@ NETS 96 ;
       + ROUTED met2 ( 85330 24820 ) ( * 26010 )
       NEW met2 ( 79810 20740 ) ( * 24820 )
       NEW met2 ( 79810 24820 ) ( 85330 * )
-      NEW li1 ( 85330 26010 ) L1M1_PR
+      NEW li1 ( 85330 26010 ) L1M1_PR_MR
       NEW met1 ( 85330 26010 ) M1M2_PR
-      NEW li1 ( 79810 20740 ) L1M1_PR
+      NEW li1 ( 79810 20740 ) L1M1_PR_MR
       NEW met1 ( 79810 20740 ) M1M2_PR
       NEW met1 ( 85330 26010 ) RECT ( -355 -70 0 70 ) 
       NEW met1 ( 79810 20740 ) RECT ( -355 -70 0 70 )  ;
     - clkgen.delay_100ns_2._intsig_a_\[4\] ( clkgen.delay_100ns_2.genblk1\[4\].delay_unit in ) ( clkgen.delay_100ns_2.genblk1\[3\].delay_unit out ) + USE SIGNAL
       + ROUTED met2 ( 79810 26180 ) ( * 28390 )
-      NEW li1 ( 79810 26180 ) L1M1_PR
+      NEW li1 ( 79810 26180 ) L1M1_PR_MR
       NEW met1 ( 79810 26180 ) M1M2_PR
-      NEW li1 ( 79810 28390 ) L1M1_PR
+      NEW li1 ( 79810 28390 ) L1M1_PR_MR
       NEW met1 ( 79810 28390 ) M1M2_PR
       NEW met1 ( 79810 26180 ) RECT ( -355 -70 0 70 ) 
       NEW met1 ( 79810 28390 ) RECT ( -355 -70 0 70 )  ;
     - clkgen.delay_100ns_2._intsig_a_\[5\] ( clkgen.delay_100ns_2.genblk1\[5\].delay_unit in ) ( clkgen.delay_100ns_2.genblk1\[4\].delay_unit out ) + USE SIGNAL
       + ROUTED met2 ( 86710 28220 ) ( * 31450 )
-      NEW li1 ( 86710 28220 ) L1M1_PR
+      NEW li1 ( 86710 28220 ) L1M1_PR_MR
       NEW met1 ( 86710 28220 ) M1M2_PR
-      NEW li1 ( 86710 31450 ) L1M1_PR
+      NEW li1 ( 86710 31450 ) L1M1_PR_MR
       NEW met1 ( 86710 31450 ) M1M2_PR
       NEW met1 ( 86710 28220 ) RECT ( 0 -70 355 70 ) 
       NEW met1 ( 86710 31450 ) RECT ( -355 -70 0 70 )  ;
@@ -1108,21 +1108,21 @@ NETS 96 ;
       + ROUTED met1 ( 76590 31620 ) ( 78200 * )
       NEW met1 ( 76590 31450 ) ( * 31620 )
       NEW met1 ( 74290 31450 ) ( 76590 * )
-      NEW li1 ( 78200 31620 ) L1M1_PR
-      NEW li1 ( 74290 31450 ) L1M1_PR ;
+      NEW li1 ( 78200 31620 ) L1M1_PR_MR
+      NEW li1 ( 74290 31450 ) L1M1_PR_MR ;
     - clkgen.delay_100ns_2._intsig_a_\[7\] ( clkgen.delay_100ns_2.genblk1\[7\].delay_unit in ) ( clkgen.delay_100ns_2.genblk1\[6\].delay_unit out ) + USE SIGNAL
       + ROUTED met2 ( 65090 28390 ) ( * 31620 )
-      NEW li1 ( 65090 28390 ) L1M1_PR
+      NEW li1 ( 65090 28390 ) L1M1_PR_MR
       NEW met1 ( 65090 28390 ) M1M2_PR
-      NEW li1 ( 65090 31620 ) L1M1_PR
+      NEW li1 ( 65090 31620 ) L1M1_PR_MR
       NEW met1 ( 65090 31620 ) M1M2_PR
       NEW met1 ( 65090 28390 ) RECT ( -355 -70 0 70 ) 
       NEW met1 ( 65090 31620 ) RECT ( -355 -70 0 70 )  ;
     - clkgen.delay_100ns_2._intsig_a_\[8\] ( clkgen.delay_100ns_2.genblk1\[8\].delay_unit in ) ( clkgen.delay_100ns_2.genblk1\[7\].delay_unit out ) + USE SIGNAL
       + ROUTED met2 ( 58650 28220 ) ( * 31450 )
-      NEW li1 ( 58650 28220 ) L1M1_PR
+      NEW li1 ( 58650 28220 ) L1M1_PR_MR
       NEW met1 ( 58650 28220 ) M1M2_PR
-      NEW li1 ( 58650 31450 ) L1M1_PR
+      NEW li1 ( 58650 31450 ) L1M1_PR_MR
       NEW met1 ( 58650 31450 ) M1M2_PR
       NEW met1 ( 58650 28220 ) RECT ( -355 -70 0 70 ) 
       NEW met1 ( 58650 31450 ) RECT ( -355 -70 0 70 )  ;
@@ -1130,11 +1130,11 @@ NETS 96 ;
       + ROUTED met2 ( 55430 26010 ) ( * 29410 )
       NEW met1 ( 51290 29410 ) ( 55430 * )
       NEW met2 ( 51290 29410 ) ( * 31620 )
-      NEW li1 ( 55430 26010 ) L1M1_PR
+      NEW li1 ( 55430 26010 ) L1M1_PR_MR
       NEW met1 ( 55430 26010 ) M1M2_PR
       NEW met1 ( 55430 29410 ) M1M2_PR
       NEW met1 ( 51290 29410 ) M1M2_PR
-      NEW li1 ( 51290 31620 ) L1M1_PR
+      NEW li1 ( 51290 31620 ) L1M1_PR_MR
       NEW met1 ( 51290 31620 ) M1M2_PR
       NEW met1 ( 55430 26010 ) RECT ( -355 -70 0 70 ) 
       NEW met1 ( 51290 31620 ) RECT ( -355 -70 0 70 )  ;
@@ -1143,68 +1143,68 @@ NETS 96 ;
       NEW met2 ( 72450 9690 ) ( * 11900 )
       NEW met1 ( 10810 9690 ) ( 72450 * )
       NEW met1 ( 10810 9690 ) M1M2_PR
-      NEW li1 ( 10810 33830 ) L1M1_PR
+      NEW li1 ( 10810 33830 ) L1M1_PR_MR
       NEW met1 ( 10810 33830 ) M1M2_PR
-      NEW li1 ( 72450 11900 ) L1M1_PR
+      NEW li1 ( 72450 11900 ) L1M1_PR_MR
       NEW met1 ( 72450 11900 ) M1M2_PR
       NEW met1 ( 72450 9690 ) M1M2_PR
       NEW met1 ( 10810 33830 ) RECT ( -355 -70 0 70 ) 
       NEW met1 ( 72450 11900 ) RECT ( 0 -70 355 70 )  ;
     - clkgen.delay_100ns_3._intsig_a_\[10\] ( clkgen.delay_100ns_3.genblk1\[9\].delay_unit out ) ( clkgen.delay_100ns_3.genblk1\[10\].delay_unit in ) + USE SIGNAL
       + ROUTED met2 ( 56350 42500 ) ( * 44710 )
-      NEW li1 ( 56350 42500 ) L1M1_PR
+      NEW li1 ( 56350 42500 ) L1M1_PR_MR
       NEW met1 ( 56350 42500 ) M1M2_PR
-      NEW li1 ( 56350 44710 ) L1M1_PR
+      NEW li1 ( 56350 44710 ) L1M1_PR_MR
       NEW met1 ( 56350 44710 ) M1M2_PR
       NEW met1 ( 56350 42500 ) RECT ( 0 -70 355 70 ) 
       NEW met1 ( 56350 44710 ) RECT ( -355 -70 0 70 )  ;
     - clkgen.delay_100ns_3._intsig_a_\[11\] ( clkgen.delay_100ns_3.genblk1\[11\].delay_unit in ) ( clkgen.delay_100ns_3.genblk1\[10\].delay_unit out ) + USE SIGNAL
       + ROUTED met2 ( 62790 44540 ) ( * 47770 )
       NEW met1 ( 62790 47770 ) ( 63250 * )
-      NEW li1 ( 62790 44540 ) L1M1_PR
+      NEW li1 ( 62790 44540 ) L1M1_PR_MR
       NEW met1 ( 62790 44540 ) M1M2_PR
       NEW met1 ( 62790 47770 ) M1M2_PR
-      NEW li1 ( 63250 47770 ) L1M1_PR
+      NEW li1 ( 63250 47770 ) L1M1_PR_MR
       NEW met1 ( 62790 44540 ) RECT ( 0 -70 355 70 )  ;
     - clkgen.delay_100ns_3._intsig_a_\[12\] ( clkgen.delay_100ns_3.genblk1\[12\].delay_unit in ) ( clkgen.delay_100ns_3.genblk1\[11\].delay_unit out ) + USE SIGNAL
       + ROUTED met2 ( 72450 47940 ) ( * 50150 )
-      NEW li1 ( 72450 47940 ) L1M1_PR
+      NEW li1 ( 72450 47940 ) L1M1_PR_MR
       NEW met1 ( 72450 47940 ) M1M2_PR
-      NEW li1 ( 72450 50150 ) L1M1_PR
+      NEW li1 ( 72450 50150 ) L1M1_PR_MR
       NEW met1 ( 72450 50150 ) M1M2_PR
       NEW met1 ( 72450 47940 ) RECT ( 0 -70 355 70 ) 
       NEW met1 ( 72450 50150 ) RECT ( -355 -70 0 70 )  ;
     - clkgen.delay_100ns_3._intsig_a_\[13\] ( clkgen.delay_100ns_3.genblk1\[13\].delay_unit in ) ( clkgen.delay_100ns_3.genblk1\[12\].delay_unit out ) + USE SIGNAL
       + ROUTED met2 ( 65550 49980 ) ( * 53210 )
       NEW met1 ( 65550 53210 ) ( 71990 * )
-      NEW li1 ( 65550 49980 ) L1M1_PR
+      NEW li1 ( 65550 49980 ) L1M1_PR_MR
       NEW met1 ( 65550 49980 ) M1M2_PR
       NEW met1 ( 65550 53210 ) M1M2_PR
-      NEW li1 ( 71990 53210 ) L1M1_PR
+      NEW li1 ( 71990 53210 ) L1M1_PR_MR
       NEW met1 ( 65550 49980 ) RECT ( -355 -70 0 70 )  ;
     - clkgen.delay_100ns_3._intsig_a_\[14\] ( clkgen.delay_100ns_3.genblk1\[14\].delay_unit in ) ( clkgen.delay_100ns_3.genblk1\[13\].delay_unit out ) + USE SIGNAL
       + ROUTED met2 ( 84870 50150 ) ( * 53210 )
       NEW met1 ( 82800 53210 ) ( 84870 * )
       NEW met1 ( 82800 53210 ) ( * 53380 )
       NEW met1 ( 81420 53380 ) ( 82800 * )
-      NEW li1 ( 84870 50150 ) L1M1_PR
+      NEW li1 ( 84870 50150 ) L1M1_PR_MR
       NEW met1 ( 84870 50150 ) M1M2_PR
       NEW met1 ( 84870 53210 ) M1M2_PR
-      NEW li1 ( 81420 53380 ) L1M1_PR
+      NEW li1 ( 81420 53380 ) L1M1_PR_MR
       NEW met1 ( 84870 50150 ) RECT ( -355 -70 0 70 )  ;
     - clkgen.delay_100ns_3._intsig_a_\[15\] ( clkgen.delay_100ns_3.genblk1\[15\].delay_unit in ) ( clkgen.delay_100ns_3.genblk1\[14\].delay_unit out ) + USE SIGNAL
       + ROUTED met2 ( 79350 49980 ) ( * 55590 )
       NEW met1 ( 79350 55590 ) ( 79810 * )
-      NEW li1 ( 79350 49980 ) L1M1_PR
+      NEW li1 ( 79350 49980 ) L1M1_PR_MR
       NEW met1 ( 79350 49980 ) M1M2_PR
       NEW met1 ( 79350 55590 ) M1M2_PR
-      NEW li1 ( 79810 55590 ) L1M1_PR
+      NEW li1 ( 79810 55590 ) L1M1_PR_MR
       NEW met1 ( 79350 49980 ) RECT ( -355 -70 0 70 )  ;
     - clkgen.delay_100ns_3._intsig_a_\[16\] ( clkgen.delay_100ns_3.genblk1\[16\].delay_unit in ) ( clkgen.delay_100ns_3.genblk1\[15\].delay_unit out ) + USE SIGNAL
       + ROUTED met2 ( 89010 47770 ) ( * 55420 )
-      NEW li1 ( 89010 55420 ) L1M1_PR
+      NEW li1 ( 89010 55420 ) L1M1_PR_MR
       NEW met1 ( 89010 55420 ) M1M2_PR
-      NEW li1 ( 89010 47770 ) L1M1_PR
+      NEW li1 ( 89010 47770 ) L1M1_PR_MR
       NEW met1 ( 89010 47770 ) M1M2_PR
       NEW met1 ( 89010 55420 ) RECT ( 0 -70 355 70 ) 
       NEW met1 ( 89010 47770 ) RECT ( -355 -70 0 70 )  ;
@@ -1214,10 +1214,10 @@ NETS 96 ;
       NEW met2 ( 79810 54060 ) ( 80270 * )
       NEW met2 ( 80270 54060 ) ( * 60690 )
       NEW met1 ( 80270 60690 ) ( 85330 * )
-      NEW li1 ( 85330 58650 ) L1M1_PR
+      NEW li1 ( 85330 58650 ) L1M1_PR_MR
       NEW met1 ( 85330 58650 ) M1M2_PR
       NEW met1 ( 85330 60690 ) M1M2_PR
-      NEW li1 ( 79810 47940 ) L1M1_PR
+      NEW li1 ( 79810 47940 ) L1M1_PR_MR
       NEW met1 ( 79810 47940 ) M1M2_PR
       NEW met1 ( 80270 60690 ) M1M2_PR
       NEW met1 ( 85330 58650 ) RECT ( -355 -70 0 70 ) 
@@ -1229,11 +1229,11 @@ NETS 96 ;
       NEW met2 ( 20470 33490 ) ( * 33660 )
       NEW met3 ( 20470 33660 ) ( 48990 * )
       NEW met2 ( 48990 33660 ) ( * 61030 )
-      NEW li1 ( 10350 33150 ) L1M1_PR
+      NEW li1 ( 10350 33150 ) L1M1_PR_MR
       NEW met1 ( 20470 33490 ) M1M2_PR
       NEW met2 ( 20470 33660 ) M2M3_PR
       NEW met2 ( 48990 33660 ) M2M3_PR
-      NEW li1 ( 48990 61030 ) L1M1_PR
+      NEW li1 ( 48990 61030 ) L1M1_PR_MR
       NEW met1 ( 48990 61030 ) M1M2_PR
       NEW met1 ( 48990 61030 ) RECT ( -355 -70 0 70 )  ;
     - clkgen.delay_100ns_3._intsig_a_\[2\] ( clkgen.delay_100ns_3.genblk1\[2\].delay_unit in ) ( clkgen.delay_100ns_3.genblk1\[1\].delay_unit out ) + USE SIGNAL
@@ -1241,18 +1241,18 @@ NETS 96 ;
       NEW met3 ( 20010 61540 ) ( 58190 * )
       NEW met2 ( 20010 20570 ) ( * 61540 )
       NEW met1 ( 19090 20570 ) ( 20010 * )
-      NEW li1 ( 58190 60860 ) L1M1_PR
+      NEW li1 ( 58190 60860 ) L1M1_PR_MR
       NEW met1 ( 58190 60860 ) M1M2_PR
       NEW met2 ( 58190 61540 ) M2M3_PR
       NEW met2 ( 20010 61540 ) M2M3_PR
       NEW met1 ( 20010 20570 ) M1M2_PR
-      NEW li1 ( 19090 20570 ) L1M1_PR
+      NEW li1 ( 19090 20570 ) L1M1_PR_MR
       NEW met1 ( 58190 60860 ) RECT ( 0 -70 355 70 )  ;
     - clkgen.delay_100ns_3._intsig_a_\[3\] ( clkgen.delay_100ns_3.genblk1\[3\].delay_unit in ) ( clkgen.delay_100ns_3.genblk1\[2\].delay_unit out ) + USE SIGNAL
       + ROUTED met2 ( 9890 20740 ) ( * 31450 )
-      NEW li1 ( 9890 20740 ) L1M1_PR
+      NEW li1 ( 9890 20740 ) L1M1_PR_MR
       NEW met1 ( 9890 20740 ) M1M2_PR
-      NEW li1 ( 9890 31450 ) L1M1_PR
+      NEW li1 ( 9890 31450 ) L1M1_PR_MR
       NEW met1 ( 9890 31450 ) M1M2_PR
       NEW met1 ( 9890 20740 ) RECT ( -355 -70 0 70 ) 
       NEW met1 ( 9890 31450 ) RECT ( -355 -70 0 70 )  ;
@@ -1260,50 +1260,50 @@ NETS 96 ;
       + ROUTED met1 ( 17020 31620 ) ( 18630 * )
       NEW met1 ( 18630 31620 ) ( * 31790 )
       NEW met2 ( 18630 31790 ) ( * 36890 )
-      NEW li1 ( 17020 31620 ) L1M1_PR
+      NEW li1 ( 17020 31620 ) L1M1_PR_MR
       NEW met1 ( 18630 31790 ) M1M2_PR
-      NEW li1 ( 18630 36890 ) L1M1_PR
+      NEW li1 ( 18630 36890 ) L1M1_PR_MR
       NEW met1 ( 18630 36890 ) M1M2_PR
       NEW met1 ( 18630 36890 ) RECT ( -355 -70 0 70 )  ;
     - clkgen.delay_100ns_3._intsig_a_\[5\] ( clkgen.delay_100ns_3.genblk1\[5\].delay_unit in ) ( clkgen.delay_100ns_3.genblk1\[4\].delay_unit out ) + USE SIGNAL
       + ROUTED met2 ( 25990 37060 ) ( * 39100 )
       NEW met2 ( 25530 39100 ) ( 25990 * )
       NEW met2 ( 25530 39100 ) ( * 39270 )
-      NEW li1 ( 25990 37060 ) L1M1_PR
+      NEW li1 ( 25990 37060 ) L1M1_PR_MR
       NEW met1 ( 25990 37060 ) M1M2_PR
-      NEW li1 ( 25530 39270 ) L1M1_PR
+      NEW li1 ( 25530 39270 ) L1M1_PR_MR
       NEW met1 ( 25530 39270 ) M1M2_PR
       NEW met1 ( 25990 37060 ) RECT ( 0 -70 355 70 ) 
       NEW met1 ( 25530 39270 ) RECT ( -355 -70 0 70 )  ;
     - clkgen.delay_100ns_3._intsig_a_\[6\] ( clkgen.delay_100ns_3.genblk1\[6\].delay_unit in ) ( clkgen.delay_100ns_3.genblk1\[5\].delay_unit out ) + USE SIGNAL
       + ROUTED met2 ( 31050 39100 ) ( * 50150 )
-      NEW li1 ( 31050 39100 ) L1M1_PR
+      NEW li1 ( 31050 39100 ) L1M1_PR_MR
       NEW met1 ( 31050 39100 ) M1M2_PR
-      NEW li1 ( 31050 50150 ) L1M1_PR
+      NEW li1 ( 31050 50150 ) L1M1_PR_MR
       NEW met1 ( 31050 50150 ) M1M2_PR
       NEW met1 ( 31050 39100 ) RECT ( 0 -70 355 70 ) 
       NEW met1 ( 31050 50150 ) RECT ( -355 -70 0 70 )  ;
     - clkgen.delay_100ns_3._intsig_a_\[7\] ( clkgen.delay_100ns_3.genblk1\[7\].delay_unit in ) ( clkgen.delay_100ns_3.genblk1\[6\].delay_unit out ) + USE SIGNAL
       + ROUTED met2 ( 37950 44710 ) ( * 49980 )
-      NEW li1 ( 37950 49980 ) L1M1_PR
+      NEW li1 ( 37950 49980 ) L1M1_PR_MR
       NEW met1 ( 37950 49980 ) M1M2_PR
-      NEW li1 ( 37950 44710 ) L1M1_PR
+      NEW li1 ( 37950 44710 ) L1M1_PR_MR
       NEW met1 ( 37950 44710 ) M1M2_PR
       NEW met1 ( 37950 49980 ) RECT ( 0 -70 355 70 ) 
       NEW met1 ( 37950 44710 ) RECT ( -355 -70 0 70 )  ;
     - clkgen.delay_100ns_3._intsig_a_\[8\] ( clkgen.delay_100ns_3.genblk1\[8\].delay_unit in ) ( clkgen.delay_100ns_3.genblk1\[7\].delay_unit out ) + USE SIGNAL
       + ROUTED met2 ( 44390 44540 ) ( * 47770 )
-      NEW li1 ( 44390 47770 ) L1M1_PR
+      NEW li1 ( 44390 47770 ) L1M1_PR_MR
       NEW met1 ( 44390 47770 ) M1M2_PR
-      NEW li1 ( 44390 44540 ) L1M1_PR
+      NEW li1 ( 44390 44540 ) L1M1_PR_MR
       NEW met1 ( 44390 44540 ) M1M2_PR
       NEW met1 ( 44390 47770 ) RECT ( -355 -70 0 70 ) 
       NEW met1 ( 44390 44540 ) RECT ( 0 -70 355 70 )  ;
     - clkgen.delay_100ns_3._intsig_a_\[9\] ( clkgen.delay_100ns_3.genblk1\[9\].delay_unit in ) ( clkgen.delay_100ns_3.genblk1\[8\].delay_unit out ) + USE SIGNAL
       + ROUTED met2 ( 50370 42330 ) ( * 47940 )
-      NEW li1 ( 50370 42330 ) L1M1_PR
+      NEW li1 ( 50370 42330 ) L1M1_PR_MR
       NEW met1 ( 50370 42330 ) M1M2_PR
-      NEW li1 ( 50370 47940 ) L1M1_PR
+      NEW li1 ( 50370 47940 ) L1M1_PR_MR
       NEW met1 ( 50370 47940 ) M1M2_PR
       NEW met1 ( 50370 42330 ) RECT ( -355 -70 0 70 ) 
       NEW met1 ( 50370 47940 ) RECT ( 0 -70 355 70 )  ;
@@ -1311,7 +1311,7 @@ NETS 96 ;
       + ROUTED met3 ( 3220 61540 0 ) ( 7130 * )
       NEW met2 ( 7130 55590 ) ( * 61540 )
       NEW met2 ( 7130 61540 ) M2M3_PR
-      NEW li1 ( 7130 55590 ) L1M1_PR
+      NEW li1 ( 7130 55590 ) L1M1_PR_MR
       NEW met1 ( 7130 55590 ) M1M2_PR
       NEW met1 ( 7130 55590 ) RECT ( -355 -70 0 70 )  ;
     - edgedetect.delay_200ns._intsig_a_\[10\] ( edgedetect.delay_200ns.genblk1\[9\].delay_unit out ) ( edgedetect.delay_200ns.genblk1\[10\].delay_unit in ) + USE SIGNAL
@@ -1322,12 +1322,12 @@ NETS 96 ;
       NEW met1 ( 36110 20570 ) ( 38410 * )
       NEW met2 ( 36110 20570 ) ( * 53380 )
       NEW met1 ( 36110 53380 ) ( 36340 * )
-      NEW li1 ( 41630 17510 ) L1M1_PR
+      NEW li1 ( 41630 17510 ) L1M1_PR_MR
       NEW met1 ( 41170 17510 ) M1M2_PR
       NEW met1 ( 38410 20570 ) M1M2_PR
       NEW met1 ( 36110 20570 ) M1M2_PR
       NEW met1 ( 36110 53380 ) M1M2_PR
-      NEW li1 ( 36340 53380 ) L1M1_PR ;
+      NEW li1 ( 36340 53380 ) L1M1_PR_MR ;
     - edgedetect.delay_200ns._intsig_a_\[11\] ( edgedetect.delay_200ns.genblk1\[11\].delay_unit in ) ( edgedetect.delay_200ns.genblk1\[10\].delay_unit out ) + USE SIGNAL
       + ROUTED met1 ( 41170 55590 ) ( 41630 * )
       NEW met2 ( 41170 37060 ) ( * 55590 )
@@ -1336,17 +1336,17 @@ NETS 96 ;
       NEW met1 ( 35190 20230 ) ( 37490 * )
       NEW met2 ( 35190 17340 ) ( * 20230 )
       NEW met1 ( 35190 17340 ) ( 35420 * )
-      NEW li1 ( 41630 55590 ) L1M1_PR
+      NEW li1 ( 41630 55590 ) L1M1_PR_MR
       NEW met1 ( 41170 55590 ) M1M2_PR
       NEW met1 ( 37490 20230 ) M1M2_PR
       NEW met1 ( 35190 20230 ) M1M2_PR
       NEW met1 ( 35190 17340 ) M1M2_PR
-      NEW li1 ( 35420 17340 ) L1M1_PR ;
+      NEW li1 ( 35420 17340 ) L1M1_PR_MR ;
     - edgedetect.delay_200ns._intsig_a_\[12\] ( edgedetect.delay_200ns.genblk1\[12\].delay_unit in ) ( edgedetect.delay_200ns.genblk1\[11\].delay_unit out ) + USE SIGNAL
       + ROUTED met2 ( 35650 15130 ) ( * 55420 )
-      NEW li1 ( 35650 55420 ) L1M1_PR
+      NEW li1 ( 35650 55420 ) L1M1_PR_MR
       NEW met1 ( 35650 55420 ) M1M2_PR
-      NEW li1 ( 35650 15130 ) L1M1_PR
+      NEW li1 ( 35650 15130 ) L1M1_PR_MR
       NEW met1 ( 35650 15130 ) M1M2_PR
       NEW met1 ( 35650 55420 ) RECT ( -355 -70 0 70 ) 
       NEW met1 ( 35650 15130 ) RECT ( -355 -70 0 70 )  ;
@@ -1354,9 +1354,9 @@ NETS 96 ;
       + ROUTED met2 ( 43930 15300 ) ( * 20060 )
       NEW met2 ( 43470 20060 ) ( 43930 * )
       NEW met2 ( 43470 20060 ) ( * 58650 )
-      NEW li1 ( 43930 15300 ) L1M1_PR
+      NEW li1 ( 43930 15300 ) L1M1_PR_MR
       NEW met1 ( 43930 15300 ) M1M2_PR
-      NEW li1 ( 43470 58650 ) L1M1_PR
+      NEW li1 ( 43470 58650 ) L1M1_PR_MR
       NEW met1 ( 43470 58650 ) M1M2_PR
       NEW met1 ( 43930 15300 ) RECT ( 0 -70 355 70 ) 
       NEW met1 ( 43470 58650 ) RECT ( -355 -70 0 70 )  ;
@@ -1365,17 +1365,17 @@ NETS 96 ;
       NEW met3 ( 36110 58820 ) ( 48530 * )
       NEW met2 ( 48530 22950 ) ( * 58820 )
       NEW met1 ( 48530 22950 ) ( 48990 * )
-      NEW li1 ( 36570 58820 ) L1M1_PR
+      NEW li1 ( 36570 58820 ) L1M1_PR_MR
       NEW met1 ( 36110 58820 ) M1M2_PR
       NEW met2 ( 36110 58820 ) M2M3_PR
       NEW met2 ( 48530 58820 ) M2M3_PR
       NEW met1 ( 48530 22950 ) M1M2_PR
-      NEW li1 ( 48990 22950 ) L1M1_PR ;
+      NEW li1 ( 48990 22950 ) L1M1_PR_MR ;
     - edgedetect.delay_200ns._intsig_a_\[15\] ( edgedetect.delay_200ns.genblk1\[15\].delay_unit in ) ( edgedetect.delay_200ns.genblk1\[14\].delay_unit out ) + USE SIGNAL
       + ROUTED met2 ( 58190 22780 ) ( * 50150 )
-      NEW li1 ( 58190 22780 ) L1M1_PR
+      NEW li1 ( 58190 22780 ) L1M1_PR_MR
       NEW met1 ( 58190 22780 ) M1M2_PR
-      NEW li1 ( 58190 50150 ) L1M1_PR
+      NEW li1 ( 58190 50150 ) L1M1_PR_MR
       NEW met1 ( 58190 50150 ) M1M2_PR
       NEW met1 ( 58190 22780 ) RECT ( 0 -70 355 70 ) 
       NEW met1 ( 58190 50150 ) RECT ( -355 -70 0 70 )  ;
@@ -1386,8 +1386,8 @@ NETS 96 ;
       NEW met1 ( 52210 48450 ) ( 58650 * )
       NEW met2 ( 58650 42330 ) ( * 48450 )
       NEW met1 ( 58650 42330 ) ( 63250 * )
-      NEW li1 ( 63250 42330 ) L1M1_PR
-      NEW li1 ( 50830 49980 ) L1M1_PR
+      NEW li1 ( 63250 42330 ) L1M1_PR_MR
+      NEW li1 ( 50830 49980 ) L1M1_PR_MR
       NEW met1 ( 50830 49980 ) M1M2_PR
       NEW met1 ( 52210 48110 ) M1M2_PR
       NEW met1 ( 58650 48450 ) M1M2_PR
@@ -1403,19 +1403,19 @@ NETS 96 ;
       NEW met2 ( 71530 10370 ) ( * 38590 )
       NEW met1 ( 71530 10370 ) M1M2_PR
       NEW met1 ( 45770 10030 ) M1M2_PR
-      NEW li1 ( 45770 12070 ) L1M1_PR
+      NEW li1 ( 45770 12070 ) L1M1_PR_MR
       NEW met1 ( 45770 12070 ) M1M2_PR
       NEW met1 ( 71530 38590 ) M1M2_PR
       NEW met1 ( 72450 38590 ) M1M2_PR
-      NEW li1 ( 72450 42500 ) L1M1_PR
+      NEW li1 ( 72450 42500 ) L1M1_PR_MR
       NEW met1 ( 72450 42500 ) M1M2_PR
       NEW met1 ( 45770 12070 ) RECT ( -355 -70 0 70 ) 
       NEW met1 ( 72450 42500 ) RECT ( 0 -70 355 70 )  ;
     - edgedetect.delay_200ns._intsig_a_\[18\] ( edgedetect.delay_200ns.genblk1\[18\].delay_unit in ) ( edgedetect.delay_200ns.genblk1\[17\].delay_unit out ) + USE SIGNAL
       + ROUTED met2 ( 36570 11900 ) ( * 61030 )
-      NEW li1 ( 36570 11900 ) L1M1_PR
+      NEW li1 ( 36570 11900 ) L1M1_PR_MR
       NEW met1 ( 36570 11900 ) M1M2_PR
-      NEW li1 ( 36570 61030 ) L1M1_PR
+      NEW li1 ( 36570 61030 ) L1M1_PR_MR
       NEW met1 ( 36570 61030 ) M1M2_PR
       NEW met1 ( 36570 11900 ) RECT ( -355 -70 0 70 ) 
       NEW met1 ( 36570 61030 ) RECT ( -355 -70 0 70 )  ;
@@ -1424,9 +1424,9 @@ NETS 96 ;
       NEW met1 ( 45770 60690 ) ( * 60860 )
       NEW met1 ( 45770 60690 ) ( 48070 * )
       NEW met2 ( 48070 20570 ) ( * 60690 )
-      NEW li1 ( 44160 60860 ) L1M1_PR
+      NEW li1 ( 44160 60860 ) L1M1_PR_MR
       NEW met1 ( 48070 60690 ) M1M2_PR
-      NEW li1 ( 48070 20570 ) L1M1_PR
+      NEW li1 ( 48070 20570 ) L1M1_PR_MR
       NEW met1 ( 48070 20570 ) M1M2_PR
       NEW met1 ( 48070 20570 ) RECT ( -355 -70 0 70 )  ;
     - edgedetect.delay_200ns._intsig_a_\[1\] ( inbuf_2 X ) ( edgedetect.delay_200ns.genblk1\[1\].delay_unit in ) ( _2_ B ) + USE SIGNAL
@@ -1434,28 +1434,28 @@ NETS 96 ;
       NEW met2 ( 8050 36210 ) ( * 38590 )
       NEW met1 ( 9890 36210 ) ( 10350 * )
       NEW met2 ( 10350 15130 ) ( * 36210 )
-      NEW li1 ( 10350 15130 ) L1M1_PR
+      NEW li1 ( 10350 15130 ) L1M1_PR_MR
       NEW met1 ( 10350 15130 ) M1M2_PR
-      NEW li1 ( 9890 36210 ) L1M1_PR
+      NEW li1 ( 9890 36210 ) L1M1_PR_MR
       NEW met1 ( 8050 36210 ) M1M2_PR
-      NEW li1 ( 8050 38590 ) L1M1_PR
+      NEW li1 ( 8050 38590 ) L1M1_PR_MR
       NEW met1 ( 8050 38590 ) M1M2_PR
       NEW met1 ( 10350 36210 ) M1M2_PR
       NEW met1 ( 10350 15130 ) RECT ( -355 -70 0 70 ) 
       NEW met1 ( 8050 38590 ) RECT ( -355 -70 0 70 )  ;
     - edgedetect.delay_200ns._intsig_a_\[20\] ( edgedetect.delay_200ns.genblk1\[20\].delay_unit in ) ( edgedetect.delay_200ns.genblk1\[19\].delay_unit out ) + USE SIGNAL
       + ROUTED met2 ( 57270 20740 ) ( * 53210 )
-      NEW li1 ( 57270 20740 ) L1M1_PR
+      NEW li1 ( 57270 20740 ) L1M1_PR_MR
       NEW met1 ( 57270 20740 ) M1M2_PR
-      NEW li1 ( 57270 53210 ) L1M1_PR
+      NEW li1 ( 57270 53210 ) L1M1_PR_MR
       NEW met1 ( 57270 53210 ) M1M2_PR
       NEW met1 ( 57270 20740 ) RECT ( 0 -70 355 70 ) 
       NEW met1 ( 57270 53210 ) RECT ( -355 -70 0 70 )  ;
     - edgedetect.delay_200ns._intsig_a_\[21\] ( edgedetect.delay_200ns.genblk1\[21\].delay_unit in ) ( edgedetect.delay_200ns.genblk1\[20\].delay_unit out ) + USE SIGNAL
       + ROUTED met2 ( 49910 17510 ) ( * 53380 )
-      NEW li1 ( 49910 53380 ) L1M1_PR
+      NEW li1 ( 49910 53380 ) L1M1_PR_MR
       NEW met1 ( 49910 53380 ) M1M2_PR
-      NEW li1 ( 49910 17510 ) L1M1_PR
+      NEW li1 ( 49910 17510 ) L1M1_PR_MR
       NEW met1 ( 49910 17510 ) M1M2_PR
       NEW met1 ( 49910 53380 ) RECT ( -355 -70 0 70 ) 
       NEW met1 ( 49910 17510 ) RECT ( -355 -70 0 70 )  ;
@@ -1463,9 +1463,9 @@ NETS 96 ;
       + ROUTED met2 ( 58190 17340 ) ( * 22100 )
       NEW met2 ( 57730 22100 ) ( 58190 * )
       NEW met2 ( 57730 22100 ) ( * 55590 )
-      NEW li1 ( 58190 17340 ) L1M1_PR
+      NEW li1 ( 58190 17340 ) L1M1_PR_MR
       NEW met1 ( 58190 17340 ) M1M2_PR
-      NEW li1 ( 57730 55590 ) L1M1_PR
+      NEW li1 ( 57730 55590 ) L1M1_PR_MR
       NEW met1 ( 57730 55590 ) M1M2_PR
       NEW met1 ( 58190 17340 ) RECT ( 0 -70 355 70 ) 
       NEW met1 ( 57730 55590 ) RECT ( -355 -70 0 70 )  ;
@@ -1479,8 +1479,8 @@ NETS 96 ;
       NEW met1 ( 53130 26350 ) ( 55890 * )
       NEW met1 ( 55890 26010 ) ( * 26350 )
       NEW met1 ( 55890 26010 ) ( 63250 * )
-      NEW li1 ( 63250 26010 ) L1M1_PR
-      NEW li1 ( 50830 55420 ) L1M1_PR
+      NEW li1 ( 63250 26010 ) L1M1_PR_MR
+      NEW li1 ( 50830 55420 ) L1M1_PR_MR
       NEW met1 ( 50370 55420 ) M1M2_PR
       NEW met1 ( 53130 26350 ) M1M2_PR ;
     - edgedetect.delay_200ns._intsig_a_\[24\] ( edgedetect.delay_200ns.genblk1\[24\].delay_unit in ) ( edgedetect.delay_200ns.genblk1\[23\].delay_unit out ) + USE SIGNAL
@@ -1492,12 +1492,12 @@ NETS 96 ;
       NEW met1 ( 65550 15470 ) ( 66930 * )
       NEW met1 ( 65550 15130 ) ( * 15470 )
       NEW met1 ( 59110 15130 ) ( 65550 * )
-      NEW li1 ( 72680 26180 ) L1M1_PR
+      NEW li1 ( 72680 26180 ) L1M1_PR_MR
       NEW met1 ( 74290 26350 ) M1M2_PR
       NEW met2 ( 74290 26180 ) M2M3_PR
       NEW met2 ( 66930 26180 ) M2M3_PR
       NEW met1 ( 66930 15470 ) M1M2_PR
-      NEW li1 ( 59110 15130 ) L1M1_PR ;
+      NEW li1 ( 59110 15130 ) L1M1_PR_MR ;
     - edgedetect.delay_200ns._intsig_a_\[25\] ( edgedetect.delay_200ns.genblk1\[25\].delay_unit in ) ( edgedetect.delay_200ns.genblk1\[24\].delay_unit out ) + USE SIGNAL
       + ROUTED met2 ( 49910 15300 ) ( * 16830 )
       NEW met1 ( 49910 16830 ) ( 52670 * )
@@ -1506,11 +1506,11 @@ NETS 96 ;
       NEW met2 ( 54970 17340 ) ( * 57460 )
       NEW met2 ( 54970 57460 ) ( 55890 * )
       NEW met2 ( 55890 57460 ) ( * 58650 )
-      NEW li1 ( 49910 15300 ) L1M1_PR
+      NEW li1 ( 49910 15300 ) L1M1_PR_MR
       NEW met1 ( 49910 15300 ) M1M2_PR
       NEW met1 ( 49910 16830 ) M1M2_PR
       NEW met1 ( 52670 16830 ) M1M2_PR
-      NEW li1 ( 55890 58650 ) L1M1_PR
+      NEW li1 ( 55890 58650 ) L1M1_PR_MR
       NEW met1 ( 55890 58650 ) M1M2_PR
       NEW met1 ( 49910 15300 ) RECT ( -355 -70 0 70 ) 
       NEW met1 ( 55890 58650 ) RECT ( -355 -70 0 70 )  ;
@@ -1523,13 +1523,13 @@ NETS 96 ;
       NEW met1 ( 49450 58820 ) ( 49680 * )
       NEW met1 ( 53130 25670 ) ( 62330 * )
       NEW met1 ( 62330 25670 ) M1M2_PR
-      NEW li1 ( 62330 22950 ) L1M1_PR
+      NEW li1 ( 62330 22950 ) L1M1_PR_MR
       NEW met1 ( 62330 22950 ) M1M2_PR
       NEW met1 ( 53130 25670 ) M1M2_PR
       NEW met1 ( 52670 23290 ) M1M2_PR
       NEW met1 ( 49450 23290 ) M1M2_PR
       NEW met1 ( 49450 58820 ) M1M2_PR
-      NEW li1 ( 49680 58820 ) L1M1_PR
+      NEW li1 ( 49680 58820 ) L1M1_PR_MR
       NEW met1 ( 62330 22950 ) RECT ( -355 -70 0 70 )  ;
     - edgedetect.delay_200ns._intsig_a_\[27\] ( edgedetect.delay_200ns.genblk1\[27\].delay_unit in ) ( edgedetect.delay_200ns.genblk1\[26\].delay_unit out ) + USE SIGNAL
       + ROUTED met1 ( 73370 22780 ) ( * 22950 )
@@ -1539,9 +1539,9 @@ NETS 96 ;
       NEW met1 ( 74290 42330 ) ( 76590 * )
       NEW met2 ( 73370 22950 ) ( * 41820 )
       NEW met1 ( 73370 22950 ) M1M2_PR
-      NEW li1 ( 71760 22780 ) L1M1_PR
+      NEW li1 ( 71760 22780 ) L1M1_PR_MR
       NEW met1 ( 74290 42330 ) M1M2_PR
-      NEW li1 ( 76590 42330 ) L1M1_PR ;
+      NEW li1 ( 76590 42330 ) L1M1_PR_MR ;
     - edgedetect.delay_200ns._intsig_a_\[28\] ( edgedetect.delay_200ns.genblk1\[28\].delay_unit in ) ( edgedetect.delay_200ns.genblk1\[27\].delay_unit out ) + USE SIGNAL
       + ROUTED met1 ( 87630 42330 ) ( * 42500 )
       NEW met1 ( 86020 42500 ) ( 87630 * )
@@ -1550,9 +1550,9 @@ NETS 96 ;
       NEW met1 ( 60030 10030 ) ( 87630 * )
       NEW met1 ( 87630 10030 ) M1M2_PR
       NEW met1 ( 87630 42330 ) M1M2_PR
-      NEW li1 ( 86020 42500 ) L1M1_PR
+      NEW li1 ( 86020 42500 ) L1M1_PR_MR
       NEW met1 ( 60030 10030 ) M1M2_PR
-      NEW li1 ( 60030 12070 ) L1M1_PR
+      NEW li1 ( 60030 12070 ) L1M1_PR_MR
       NEW met1 ( 60030 12070 ) M1M2_PR
       NEW met1 ( 60030 12070 ) RECT ( -355 -70 0 70 )  ;
     - edgedetect.delay_200ns._intsig_a_\[29\] ( edgedetect.delay_200ns.genblk1\[29\].delay_unit in ) ( edgedetect.delay_200ns.genblk1\[28\].delay_unit out ) + USE SIGNAL
@@ -1560,11 +1560,11 @@ NETS 96 ;
       NEW met1 ( 50830 10370 ) ( 59110 * )
       NEW met2 ( 59110 10370 ) ( * 20570 )
       NEW met1 ( 59110 20570 ) ( 63250 * )
-      NEW li1 ( 50830 11900 ) L1M1_PR
+      NEW li1 ( 50830 11900 ) L1M1_PR_MR
       NEW met1 ( 50830 11900 ) M1M2_PR
       NEW met1 ( 50830 10370 ) M1M2_PR
       NEW met1 ( 59110 10370 ) M1M2_PR
-      NEW li1 ( 63250 20570 ) L1M1_PR
+      NEW li1 ( 63250 20570 ) L1M1_PR_MR
       NEW met1 ( 59110 20570 ) M1M2_PR
       NEW met1 ( 50830 11900 ) RECT ( -355 -70 0 70 )  ;
     - edgedetect.delay_200ns._intsig_a_\[2\] ( edgedetect.delay_200ns.genblk1\[2\].delay_unit in ) ( edgedetect.delay_200ns.genblk1\[1\].delay_unit out ) + USE SIGNAL
@@ -1572,9 +1572,9 @@ NETS 96 ;
       NEW met1 ( 18170 15300 ) ( * 15470 )
       NEW met1 ( 18170 15470 ) ( 20470 * )
       NEW met2 ( 20470 15470 ) ( * 17510 )
-      NEW li1 ( 16560 15300 ) L1M1_PR
+      NEW li1 ( 16560 15300 ) L1M1_PR_MR
       NEW met1 ( 20470 15470 ) M1M2_PR
-      NEW li1 ( 20470 17510 ) L1M1_PR
+      NEW li1 ( 20470 17510 ) L1M1_PR_MR
       NEW met1 ( 20470 17510 ) M1M2_PR
       NEW met1 ( 20470 17510 ) RECT ( -355 -70 0 70 )  ;
     - edgedetect.delay_200ns._intsig_a_\[30\] ( edgedetect.delay_200ns.genblk1\[30\].delay_unit in ) ( edgedetect.delay_200ns.genblk1\[29\].delay_unit out ) + USE SIGNAL
@@ -1582,12 +1582,12 @@ NETS 96 ;
       NEW met2 ( 71070 34850 ) ( * 44710 )
       NEW met1 ( 71070 44710 ) ( 77510 * )
       NEW met2 ( 72450 20740 ) ( * 34850 )
-      NEW li1 ( 72450 20740 ) L1M1_PR
+      NEW li1 ( 72450 20740 ) L1M1_PR_MR
       NEW met1 ( 72450 20740 ) M1M2_PR
       NEW met1 ( 72450 34850 ) M1M2_PR
       NEW met1 ( 71070 34850 ) M1M2_PR
       NEW met1 ( 71070 44710 ) M1M2_PR
-      NEW li1 ( 77510 44710 ) L1M1_PR
+      NEW li1 ( 77510 44710 ) L1M1_PR_MR
       NEW met1 ( 72450 20740 ) RECT ( 0 -70 355 70 )  ;
     - edgedetect.delay_200ns._intsig_a_\[31\] ( edgedetect.delay_200ns.genblk1\[31\].delay_unit in ) ( edgedetect.delay_200ns.genblk1\[30\].delay_unit out ) + USE SIGNAL
       + ROUTED met2 ( 83490 17850 ) ( * 18020 )
@@ -1599,15 +1599,15 @@ NETS 96 ;
       NEW met1 ( 73370 17510 ) ( * 17850 )
       NEW met1 ( 73370 17850 ) ( 83490 * )
       NEW met1 ( 83490 17850 ) M1M2_PR
-      NEW li1 ( 86710 44540 ) L1M1_PR
+      NEW li1 ( 86710 44540 ) L1M1_PR_MR
       NEW met1 ( 86710 44540 ) M1M2_PR
-      NEW li1 ( 73370 17510 ) L1M1_PR
+      NEW li1 ( 73370 17510 ) L1M1_PR_MR
       NEW met1 ( 86710 44540 ) RECT ( 0 -70 355 70 )  ;
     - edgedetect.delay_200ns._intsig_a_\[32\] ( edgedetect.delay_200ns.genblk1\[32\].delay_unit in ) ( edgedetect.delay_200ns.genblk1\[31\].delay_unit out ) + USE SIGNAL
       + ROUTED met2 ( 64170 17340 ) ( * 55590 )
-      NEW li1 ( 64170 17340 ) L1M1_PR
+      NEW li1 ( 64170 17340 ) L1M1_PR_MR
       NEW met1 ( 64170 17340 ) M1M2_PR
-      NEW li1 ( 64170 55590 ) L1M1_PR
+      NEW li1 ( 64170 55590 ) L1M1_PR_MR
       NEW met1 ( 64170 55590 ) M1M2_PR
       NEW met1 ( 64170 17340 ) RECT ( -355 -70 0 70 ) 
       NEW met1 ( 64170 55590 ) RECT ( -355 -70 0 70 )  ;
@@ -1619,28 +1619,28 @@ NETS 96 ;
       NEW met1 ( 69690 17850 ) ( 71990 * )
       NEW met2 ( 71530 55420 ) ( 71990 * )
       NEW met2 ( 71990 17850 ) ( * 55420 )
-      NEW li1 ( 66470 15130 ) L1M1_PR
+      NEW li1 ( 66470 15130 ) L1M1_PR_MR
       NEW met1 ( 66470 15130 ) M1M2_PR
       NEW met1 ( 69690 17850 ) M1M2_PR
       NEW met1 ( 71990 17850 ) M1M2_PR
-      NEW li1 ( 71530 55420 ) L1M1_PR
+      NEW li1 ( 71530 55420 ) L1M1_PR_MR
       NEW met1 ( 71530 55420 ) M1M2_PR
       NEW met1 ( 66470 15130 ) RECT ( -355 -70 0 70 ) 
       NEW met1 ( 71530 55420 ) RECT ( 0 -70 355 70 )  ;
     - edgedetect.delay_200ns._intsig_a_\[34\] ( edgedetect.delay_200ns.genblk1\[34\].delay_unit in ) ( edgedetect.delay_200ns.genblk1\[33\].delay_unit out ) + USE SIGNAL
       + ROUTED met2 ( 72450 15300 ) ( 72910 * )
       NEW met2 ( 72910 15300 ) ( * 58650 )
-      NEW li1 ( 72450 15300 ) L1M1_PR
+      NEW li1 ( 72450 15300 ) L1M1_PR_MR
       NEW met1 ( 72450 15300 ) M1M2_PR
-      NEW li1 ( 72910 58650 ) L1M1_PR
+      NEW li1 ( 72910 58650 ) L1M1_PR_MR
       NEW met1 ( 72910 58650 ) M1M2_PR
       NEW met1 ( 72450 15300 ) RECT ( 0 -70 355 70 ) 
       NEW met1 ( 72910 58650 ) RECT ( -355 -70 0 70 )  ;
     - edgedetect.delay_200ns._intsig_a_\[3\] ( edgedetect.delay_200ns.genblk1\[3\].delay_unit in ) ( edgedetect.delay_200ns.genblk1\[2\].delay_unit out ) + USE SIGNAL
       + ROUTED met2 ( 29670 15130 ) ( * 17340 )
-      NEW li1 ( 29670 17340 ) L1M1_PR
+      NEW li1 ( 29670 17340 ) L1M1_PR_MR
       NEW met1 ( 29670 17340 ) M1M2_PR
-      NEW li1 ( 29670 15130 ) L1M1_PR
+      NEW li1 ( 29670 15130 ) L1M1_PR_MR
       NEW met1 ( 29670 15130 ) M1M2_PR
       NEW met1 ( 29670 17340 ) RECT ( 0 -70 355 70 ) 
       NEW met1 ( 29670 15130 ) RECT ( -355 -70 0 70 )  ;
@@ -1648,11 +1648,11 @@ NETS 96 ;
       + ROUTED met2 ( 22310 15300 ) ( * 19550 )
       NEW met1 ( 22310 19550 ) ( 28290 * )
       NEW met2 ( 28290 19550 ) ( * 58650 )
-      NEW li1 ( 22310 15300 ) L1M1_PR
+      NEW li1 ( 22310 15300 ) L1M1_PR_MR
       NEW met1 ( 22310 15300 ) M1M2_PR
       NEW met1 ( 22310 19550 ) M1M2_PR
       NEW met1 ( 28290 19550 ) M1M2_PR
-      NEW li1 ( 28290 58650 ) L1M1_PR
+      NEW li1 ( 28290 58650 ) L1M1_PR_MR
       NEW met1 ( 28290 58650 ) M1M2_PR
       NEW met1 ( 22310 15300 ) RECT ( -355 -70 0 70 ) 
       NEW met1 ( 28290 58650 ) RECT ( -355 -70 0 70 )  ;
@@ -1662,11 +1662,11 @@ NETS 96 ;
       NEW met2 ( 22770 25670 ) ( * 40460 )
       NEW met1 ( 22770 25670 ) ( 33810 * )
       NEW met2 ( 33810 22950 ) ( * 25670 )
-      NEW li1 ( 22310 58820 ) L1M1_PR
+      NEW li1 ( 22310 58820 ) L1M1_PR_MR
       NEW met1 ( 22310 58820 ) M1M2_PR
       NEW met1 ( 22770 25670 ) M1M2_PR
       NEW met1 ( 33810 25670 ) M1M2_PR
-      NEW li1 ( 33810 22950 ) L1M1_PR
+      NEW li1 ( 33810 22950 ) L1M1_PR_MR
       NEW met1 ( 33810 22950 ) M1M2_PR
       NEW met1 ( 22310 58820 ) RECT ( -355 -70 0 70 ) 
       NEW met1 ( 33810 22950 ) RECT ( -355 -70 0 70 )  ;
@@ -1675,10 +1675,10 @@ NETS 96 ;
       NEW met1 ( 31510 10370 ) ( 43010 * )
       NEW met2 ( 43010 10370 ) ( * 22780 )
       NEW met1 ( 31510 10370 ) M1M2_PR
-      NEW li1 ( 31510 12070 ) L1M1_PR
+      NEW li1 ( 31510 12070 ) L1M1_PR_MR
       NEW met1 ( 31510 12070 ) M1M2_PR
       NEW met1 ( 43010 10370 ) M1M2_PR
-      NEW li1 ( 43010 22780 ) L1M1_PR
+      NEW li1 ( 43010 22780 ) L1M1_PR_MR
       NEW met1 ( 43010 22780 ) M1M2_PR
       NEW met1 ( 31510 12070 ) RECT ( -355 -70 0 70 ) 
       NEW met1 ( 43010 22780 ) RECT ( 0 -70 355 70 )  ;
@@ -1689,29 +1689,29 @@ NETS 96 ;
       NEW met2 ( 31970 10030 ) ( * 61030 )
       NEW met1 ( 31970 10030 ) M1M2_PR
       NEW met1 ( 22310 10030 ) M1M2_PR
-      NEW li1 ( 22310 11900 ) L1M1_PR
+      NEW li1 ( 22310 11900 ) L1M1_PR_MR
       NEW met1 ( 22310 11900 ) M1M2_PR
       NEW met1 ( 31970 61030 ) M1M2_PR
-      NEW li1 ( 31510 61030 ) L1M1_PR
+      NEW li1 ( 31510 61030 ) L1M1_PR_MR
       NEW met1 ( 22310 11900 ) RECT ( -355 -70 0 70 )  ;
     - edgedetect.delay_200ns._intsig_a_\[8\] ( edgedetect.delay_200ns.genblk1\[8\].delay_unit in ) ( edgedetect.delay_200ns.genblk1\[7\].delay_unit out ) + USE SIGNAL
       + ROUTED met2 ( 22310 60860 ) ( 27830 * )
       NEW met2 ( 27830 60860 ) ( * 61370 )
       NEW met1 ( 27830 61370 ) ( 34730 * )
       NEW met2 ( 34730 20570 ) ( * 61370 )
-      NEW li1 ( 22310 60860 ) L1M1_PR
+      NEW li1 ( 22310 60860 ) L1M1_PR_MR
       NEW met1 ( 22310 60860 ) M1M2_PR
       NEW met1 ( 27830 61370 ) M1M2_PR
       NEW met1 ( 34730 61370 ) M1M2_PR
-      NEW li1 ( 34730 20570 ) L1M1_PR
+      NEW li1 ( 34730 20570 ) L1M1_PR_MR
       NEW met1 ( 34730 20570 ) M1M2_PR
       NEW met1 ( 22310 60860 ) RECT ( -355 -70 0 70 ) 
       NEW met1 ( 34730 20570 ) RECT ( -355 -70 0 70 )  ;
     - edgedetect.delay_200ns._intsig_a_\[9\] ( edgedetect.delay_200ns.genblk1\[9\].delay_unit in ) ( edgedetect.delay_200ns.genblk1\[8\].delay_unit out ) + USE SIGNAL
       + ROUTED met2 ( 43930 20740 ) ( * 53210 )
-      NEW li1 ( 43930 20740 ) L1M1_PR
+      NEW li1 ( 43930 20740 ) L1M1_PR_MR
       NEW met1 ( 43930 20740 ) M1M2_PR
-      NEW li1 ( 43930 53210 ) L1M1_PR
+      NEW li1 ( 43930 53210 ) L1M1_PR_MR
       NEW met1 ( 43930 53210 ) M1M2_PR
       NEW met1 ( 43930 20740 ) RECT ( 0 -70 355 70 ) 
       NEW met1 ( 43930 53210 ) RECT ( -355 -70 0 70 )  ;
@@ -1726,10 +1726,10 @@ NETS 96 ;
       NEW met1 ( 55430 58310 ) ( 62100 * )
       NEW met1 ( 62100 58310 ) ( * 58650 )
       NEW met1 ( 11730 61030 ) ( 20470 * )
-      NEW li1 ( 11730 37230 ) L1M1_PR
+      NEW li1 ( 11730 37230 ) L1M1_PR_MR
       NEW met1 ( 11730 37230 ) M1M2_PR
       NEW met1 ( 11730 61030 ) M1M2_PR
-      NEW li1 ( 64860 58820 ) L1M1_PR
+      NEW li1 ( 64860 58820 ) L1M1_PR_MR
       NEW met1 ( 20470 61030 ) M1M2_PR
       NEW met2 ( 20470 60860 ) M2M3_PR
       NEW met2 ( 55430 60860 ) M2M3_PR
@@ -1737,9 +1737,9 @@ NETS 96 ;
       NEW met1 ( 11730 37230 ) RECT ( -355 -70 0 70 )  ;
     - edgedetect.ena_in ( inbuf_1 X ) ( _3_ A1 ) + USE SIGNAL
       + ROUTED met2 ( 8050 26690 ) ( * 33830 )
-      NEW li1 ( 8050 26690 ) L1M1_PR
+      NEW li1 ( 8050 26690 ) L1M1_PR_MR
       NEW met1 ( 8050 26690 ) M1M2_PR
-      NEW li1 ( 8050 33830 ) L1M1_PR
+      NEW li1 ( 8050 33830 ) L1M1_PR_MR
       NEW met1 ( 8050 33830 ) M1M2_PR
       NEW met1 ( 8050 26690 ) RECT ( -355 -70 0 70 ) 
       NEW met1 ( 8050 33830 ) RECT ( -355 -70 0 70 )  ;
@@ -1747,14 +1747,14 @@ NETS 96 ;
       + ROUTED met3 ( 3220 12580 0 ) ( 7130 * )
       NEW met2 ( 7130 12580 ) ( * 26010 )
       NEW met2 ( 7130 12580 ) M2M3_PR
-      NEW li1 ( 7130 26010 ) L1M1_PR
+      NEW li1 ( 7130 26010 ) L1M1_PR_MR
       NEW met1 ( 7130 26010 ) M1M2_PR
       NEW met1 ( 7130 26010 ) RECT ( -355 -70 0 70 )  ;
     - start_conv ( PIN start_conv ) ( inbuf_2 A ) + USE SIGNAL
       + ROUTED met3 ( 3220 37060 0 ) ( 7130 * )
       NEW met2 ( 7130 37060 ) ( * 39270 )
       NEW met2 ( 7130 37060 ) M2M3_PR
-      NEW li1 ( 7130 39270 ) L1M1_PR
+      NEW li1 ( 7130 39270 ) L1M1_PR_MR
       NEW met1 ( 7130 39270 ) M1M2_PR
       NEW met1 ( 7130 39270 ) RECT ( -355 -70 0 70 )  ;
 END NETS
