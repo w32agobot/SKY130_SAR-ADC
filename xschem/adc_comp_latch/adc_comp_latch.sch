@@ -4,10 +4,7 @@ K {}
 V {}
 S {}
 E {}
-T {Decoupling Cap
-sky130_fd_pr__cap_vpp_11p5x11p7_l1m1m2m3m4_shieldm5
-137.45fF per cell
-15x137.45=2.06pF} 260 -650 0 0 0.2 0.2 {}
+T {Decoupling Caps} 260 -650 0 0 0.2 0.2 {}
 T {   Copyright 2022 Manuel Moser
 
    Licensed under the Apache License, Version 2.0 (the "License");

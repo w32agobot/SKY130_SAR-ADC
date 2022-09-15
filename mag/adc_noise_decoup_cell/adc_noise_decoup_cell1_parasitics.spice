@@ -1,0 +1,16 @@
+* SPICE3 file created from decoup.ext - technology: sky130A
+
+.subckt adc_noise_decoup_cell nmoscap_top nmoscap_bot mimcap_top mimcap_bot pwell
+X0 mimcap_top mimcap_bot sky130_fd_pr__cap_mim_m3_1 l=1.72e+07u w=1.72e+07u
+X1 nmoscap_bot nmoscap_top nmoscap_bot pwell sky130_fd_pr__nfet_01v8 ad=2.296e+13p pd=6.84e+07u as=0p ps=0u w=1.64e+07u l=1.6e+07u
+C0 mimcap_top nmoscap_top 2.88fF
+C1 mimcap_top nmoscap_bot 1.88fF
+C2 nmoscap_top nmoscap_bot 498.24fF
+C3 mimcap_top mimcap_bot 30.34fF
+C4 mimcap_bot nmoscap_top 15.33fF
+C5 mimcap_bot nmoscap_bot 16.21fF
+C6 mimcap_top pwell 2.58fF
+C7 mimcap_bot pwell 2.09fF
+C8 nmoscap_top pwell 13.07fF
+C9 nmoscap_bot pwell 7.80fF
+.ends

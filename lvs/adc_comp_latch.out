@@ -1,16 +1,3 @@
-Warning: Equate pins:  cell sky130_fd_pr__pfet_01v8 is a placeholder, treated as a black box.
-Warning: Equate pins:  cell sky130_fd_pr__pfet_01v8 is a placeholder, treated as a black box.
-
-Subcircuit pins:
-Circuit 1: sky130_fd_pr__pfet_01v8         |Circuit 2: sky130_fd_pr__pfet_01v8         
--------------------------------------------|-------------------------------------------
-1                                          |1                                          
-2                                          |2                                          
-3                                          |3                                          
-4                                          |4                                          
----------------------------------------------------------------------------------------
-Cell pin lists are equivalent.
-Device classes sky130_fd_pr__pfet_01v8 and sky130_fd_pr__pfet_01v8 are equivalent.
 Warning: Equate pins:  cell sky130_fd_pr__nfet_01v8 is a placeholder, treated as a black box.
 Warning: Equate pins:  cell sky130_fd_pr__nfet_01v8 is a placeholder, treated as a black box.
 
@@ -35,6 +22,42 @@ Circuit 1: sky130_fd_pr__cap_mim_m3_1      |Circuit 2: sky130_fd_pr__cap_mim_m3_
 ---------------------------------------------------------------------------------------
 Cell pin lists are equivalent.
 Device classes sky130_fd_pr__cap_mim_m3_1 and sky130_fd_pr__cap_mim_m3_1 are equivalent.
+Warning: Equate pins:  cell sky130_fd_pr__pfet_01v8 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__pfet_01v8 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__pfet_01v8         |Circuit 2: sky130_fd_pr__pfet_01v8         
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__pfet_01v8 and sky130_fd_pr__pfet_01v8 are equivalent.
+
+Subcircuit summary:
+Circuit 1: adc_noise_decoup_cell2          |Circuit 2: adc_noise_decoup_cell2          
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__nfet_01v8 (1)                |sky130_fd_pr__nfet_01v8 (1)                
+sky130_fd_pr__cap_mim_m3_1 (1)             |sky130_fd_pr__cap_mim_m3_1 (1)             
+Number of devices: 2                       |Number of devices: 2                       
+Number of nets: 5                          |Number of nets: 5                          
+---------------------------------------------------------------------------------------
+Circuits match uniquely.
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: adc_noise_decoup_cell2          |Circuit 2: adc_noise_decoup_cell2          
+-------------------------------------------|-------------------------------------------
+mimcap_top                                 |mimcap_top                                 
+mimcap_bot                                 |mimcap_bot                                 
+nmoscap_top                                |nmoscap_top                                
+pwell                                      |pwell                                      
+nmoscap_bot                                |nmoscap_bot                                
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes adc_noise_decoup_cell2 and adc_noise_decoup_cell2 are equivalent.
 
 Class adc_comp_buffer (0):  Merged 2 parallel devices.
 Subcircuit summary:
@@ -107,6 +130,37 @@ VDD                                        |VDD
 Cell pin lists are equivalent.
 Device classes inverter and inverter are equivalent.
 
+Class adc_comp_circuit (0):  Merged 23 parallel devices.
+Subcircuit summary:
+Circuit 1: adc_comp_circuit                |Circuit 2: adc_comp_circuit                
+-------------------------------------------|-------------------------------------------
+adc_noise_decoup_cell2 (2)                 |adc_noise_decoup_cell2 (2)                 
+adc_comp_buffer (2)                        |adc_comp_buffer (2)                        
+sky130_fd_pr__pfet_01v8 (16->6)            |sky130_fd_pr__pfet_01v8 (6)                
+sky130_fd_pr__nfet_01v8 (20->7)            |sky130_fd_pr__nfet_01v8 (7)                
+Number of devices: 17                      |Number of devices: 17                      
+Number of nets: 15                         |Number of nets: 15                         
+---------------------------------------------------------------------------------------
+Resolving automorphisms by property value.
+Resolving automorphisms by pin name.
+Netlists match uniquely.
+Circuits match correctly.
+
+Subcircuit pins:
+Circuit 1: adc_comp_circuit                |Circuit 2: adc_comp_circuit                
+-------------------------------------------|-------------------------------------------
+clk                                        |clk                                        
+nclk                                       |nclk                                       
+VDD                                        |VDD                                        
+inn                                        |inn                                        
+inp                                        |inp                                        
+outn                                       |outn                                       
+outp                                       |outp                                       
+VSS                                        |VSS                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes adc_comp_circuit and adc_comp_circuit are equivalent.
+
 Flattening instances of NOR in cell NOR-Latch (1) makes a better match
 Making another compare attempt.
 
@@ -135,46 +189,14 @@ VSS                                        |VSS
 ---------------------------------------------------------------------------------------
 Cell pin lists are equivalent.
 Device classes NOR-Latch and NOR-Latch are equivalent.
-Flattening unmatched subcell cap_64_92 in circuit adc_comp_circuit (0)(2 instances)
-
-Class adc_comp_circuit (0):  Merged 29 parallel devices.
-Subcircuit summary:
-Circuit 1: adc_comp_circuit                |Circuit 2: adc_comp_circuit                
--------------------------------------------|-------------------------------------------
-adc_comp_buffer (2)                        |adc_comp_buffer (2)                        
-sky130_fd_pr__cap_mim_m3_1 (8->2)          |sky130_fd_pr__cap_mim_m3_1 (8->2)          
-sky130_fd_pr__pfet_01v8 (16->6)            |sky130_fd_pr__pfet_01v8 (6)                
-sky130_fd_pr__nfet_01v8 (20->7)            |sky130_fd_pr__nfet_01v8 (7)                
-Number of devices: 17                      |Number of devices: 17                      
-Number of nets: 15                         |Number of nets: 15                         
----------------------------------------------------------------------------------------
-Resolving automorphisms by property value.
-Resolving automorphisms by pin name.
-Netlists match uniquely.
-Circuits match correctly.
-
-Subcircuit pins:
-Circuit 1: adc_comp_circuit                |Circuit 2: adc_comp_circuit                
--------------------------------------------|-------------------------------------------
-clk                                        |clk                                        
-nclk                                       |nclk                                       
-VSS                                        |VSS                                        
-VDD                                        |VDD                                        
-inn                                        |inn                                        
-inp                                        |inp                                        
-outn                                       |outn                                       
-outp                                       |outp                                       
----------------------------------------------------------------------------------------
-Cell pin lists are equivalent.
-Device classes adc_comp_circuit and adc_comp_circuit are equivalent.
 
 Subcircuit summary:
 Circuit 1: adc_comp_latch                  |Circuit 2: adc_comp_latch                  
 -------------------------------------------|-------------------------------------------
 inverter (2)                               |inverter (2)                               
+adc_comp_circuit (1)                       |adc_comp_circuit (1)                       
 NOR-Latch (1)                              |NOR-Latch (1)                              
 NOR (1)                                    |NOR (1)                                    
-adc_comp_circuit (1)                       |adc_comp_circuit (1)                       
 Number of devices: 5                       |Number of devices: 5                       
 Number of nets: 12                         |Number of nets: 12                         
 ---------------------------------------------------------------------------------------
