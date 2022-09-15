@@ -38,7 +38,8 @@ T {   Copyright 2022 Manuel Moser
 T {32*16=512 Wafflecaps for 9 Bit. 
 8 Unitcaps per Wafflecap makes 3 Bin-Caps (4/8F, 2/8F and 1/8F) for 3 extra bits.
 --> DAC for 12 Bit. 
-512*4.77fF=2.44pF} 510 -540 0 0 0.6 0.6 {}
+512*4.77fF=2.44pF} 490 -390 0 0 0.6 0.6 {}
+T {Noise decoupling caps} 470 -620 0 0 0.4 0.4 {}
 N 1200 -950 1210 -960 {
 lab=row_n[0]}
 N 1210 -1160 1210 -960 {
@@ -35380,6 +35381,18 @@ lab=en_n_bit[2]}
 N 9280 -690 9280 -670 {}
 N 9320 -690 9320 -670 {}
 N 9300 -690 9300 -670 {}
+N 520 -560 520 -550 {}
+N 520 -560 620 -560 {}
+N 620 -560 620 -550 {}
+N 520 -490 520 -480 {}
+N 520 -480 620 -480 {}
+N 620 -490 620 -480 {}
+N 570 -490 570 -480 {}
+N 570 -580 570 -560 {}
+N 520 -580 570 -580 {}
+N 570 -480 570 -470 {}
+N 570 -470 570 -460 {}
+N 520 -460 570 -460 {}
 C {devices/title.sym} 170 -40 0 0 {name=l1 author="Manuel Moser"}
 C {devices/iopin.sym} 240 -670 1 1 {name=p1 lab=VDD}
 C {devices/iopin.sym} 250 -290 3 1 {name=p2 lab=VSS}
@@ -38567,3 +38580,6 @@ C {devices/ipin.sym} 200 -390 0 0 {name=p8 lab=analog_in}
 C {devices/ipin.sym} 200 -370 0 0 {name=p11 lab=sw}
 C {devices/ipin.sym} 200 -350 0 0 {name=p12 lab=sw_n}
 C {devices/iopin.sym} 300 -630 0 0 {name=p14 lab=ctop}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_noise_decoup_cell/adc_noise_decoup_cell1.sym} 570 -500 0 0 {name=x521[1..15]}
+C {devices/lab_wire.sym} 520 -580 0 0 {name=l2055 sig_type=std_logic lab=VDD}
+C {devices/lab_wire.sym} 520 -460 0 0 {name=l2056 sig_type=std_logic lab=VSS}
