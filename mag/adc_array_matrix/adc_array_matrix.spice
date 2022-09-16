@@ -72,7 +72,7 @@ X8 vdrv sample cbot VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=800000
 X9 vint1 en_n VDD VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=800000u l=150000u
 .ends
 
-.subckt adc_array_wafflecap_8_4 sample_n colon_n col_n sample vcom row_n en_n ctop
+.subckt adc_array_wafflecap_8_4 sample_n colon_n col_n vcom row_n en_n ctop sample
 + vdd VSS
 Xadc_array_circuit_150n_0 vcom sample sample_n col_n colon_n row_n adc_array_circuit_150n_0/cbot
 + en_n vdd VSS adc_array_circuit_150n_4
@@ -92,10 +92,15 @@ X8 vdrv sample cbot VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=800000
 X9 vint1 en_n VDD VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=800000u l=150000u
 .ends
 
-.subckt adc_array_wafflecap_8_2 sample_n colon_n vcom row_n en_n adc_array_wafflecap_8_2_25um2_0/m3_164_740#
-+ sample vdd col_n VSS
+.subckt adc_array_wafflecap_8_2 vdd sample_n colon_n col_n sample vcom row_n en_n
++ adc_array_wafflecap_8_2_25um2_0/m3_164_740# VSS
 Xadc_array_circuit_150n_0 vcom sample sample_n col_n colon_n row_n adc_array_circuit_150n_0/cbot
 + en_n vdd VSS adc_array_circuit_150n_2
+.ends
+
+.subckt adc_noise_decoup_cell1 nmoscap_top nmoscap_bot mimcap_top mimcap_bot pwell
+X0 mimcap_top mimcap_bot sky130_fd_pr__cap_mim_m3_1 l=1.72e+07u w=1.72e+07u
+X1 nmoscap_bot nmoscap_top nmoscap_bot pwell sky130_fd_pr__nfet_01v8 ad=2.296e+13p pd=6.84e+07u as=0p ps=0u w=1.64e+07u l=1.6e+07u
 .ends
 
 .subckt adc_array_circuit_150n_Gate vcom sample sample_n col_n colon_n row_n sw_n
@@ -132,16 +137,15 @@ Xadc_array_circuit_150n_0 vcom sample sample_n col_n colon_n row_n adc_array_cir
 + en_n vdd VSS adc_array_circuit_150n_1
 .ends
 
-.subckt adc_array_matrix colon_n[0] colon_n[1] colon_n[2] colon_n[3] colon_n[4] colon_n[5]
-+ colon_n[6] colon_n[7] colon_n[8] colon_n[9] colon_n[10] colon_n[11] colon_n[12]
-+ colon_n[13] colon_n[14] colon_n[15] col_n[0] col_n[1] col_n[2] col_n[3] col_n[4]
-+ col_n[5] col_n[6] col_n[7] col_n[8] col_n[9] col_n[10] col_n[11] col_n[12] col_n[13]
-+ col_n[14] col_n[15] sample_n sample vcom VDD VSS row_n[0] row_n[1] row_n[2] row_n[3]
+.subckt adc_array_matrix sample_n sample vcom VDD VSS row_n[0] row_n[1] row_n[2] row_n[3]
 + row_n[4] row_n[5] row_n[6] row_n[7] row_n[8] row_n[9] row_n[10] row_n[11] row_n[12]
 + row_n[13] row_n[14] row_n[15] row_n[16] row_n[17] row_n[18] row_n[19] row_n[20]
 + row_n[21] row_n[22] row_n[23] row_n[24] row_n[25] row_n[26] row_n[27] row_n[28]
-+ row_n[29] row_n[30] row_n[31] en_n_bit[2] en_n_bit[1] en_n_bit[0] ctop analog_in
-+ sw_n sw
++ row_n[29] row_n[30] row_n[31] en_n_bit[2] en_n_bit[1] en_n_bit[0] sw_n sw ctop analog_in
++ col_n[0] col_n[1] col_n[2] col_n[3] col_n[4] col_n[5] col_n[6] col_n[7] col_n[8]
++ col_n[9] col_n[10] col_n[11] col_n[12] col_n[13] col_n[14] col_n[15] colon_n[0]
++ colon_n[1] colon_n[2] colon_n[3] colon_n[4] colon_n[5] colon_n[6] colon_n[7] colon_n[8]
++ colon_n[9] colon_n[10] colon_n[11] colon_n[12] colon_n[13] colon_n[14] colon_n[15]
 Xadc_array_wafflecap_8_8_0[0|0] adc_array_wafflecap_8_8_0[0|9]/sample_n colon_n[0]
 + vcom row_n[0] ctop adc_array_wafflecap_8_8_0[0|9]/sample VDD col_n[0] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[1|0] adc_array_wafflecap_8_8_0[1|9]/sample_n colon_n[1]
@@ -1245,6 +1249,8 @@ Xadc_array_wafflecap_8_Dummy_1[5] VDD VSS vcom row_n[14] adc_array_wafflecap_8_D
 + VSS VDD VSS VSS adc_array_wafflecap_8_Dummy
 Xadc_array_wafflecap_8_Dummy_1[6] VDD VSS vcom row_n[15] adc_array_wafflecap_8_Dummy_1[6]/ctop
 + VSS VDD VSS VSS adc_array_wafflecap_8_Dummy
+Xadc_array_wafflecap_8_4_0 VDD VSS VSS vcom row_n[8] en_n_bit[2] ctop VSS VDD VSS
++ adc_array_wafflecap_8_4
 Xadc_array_wafflecap_8_Dummy_2[0] VDD VSS vcom row_n[17] adc_array_wafflecap_8_Dummy_2[0]/ctop
 + VSS VDD VSS VSS adc_array_wafflecap_8_Dummy
 Xadc_array_wafflecap_8_Dummy_2[1] VDD VSS vcom row_n[18] adc_array_wafflecap_8_Dummy_2[1]/ctop
@@ -1259,11 +1265,16 @@ Xadc_array_wafflecap_8_Dummy_2[5] VDD VSS vcom row_n[22] adc_array_wafflecap_8_D
 + VSS VDD VSS VSS adc_array_wafflecap_8_Dummy
 Xadc_array_wafflecap_8_Dummy_2[6] VDD VSS vcom row_n[23] adc_array_wafflecap_8_Dummy_2[6]/ctop
 + VSS VDD VSS VSS adc_array_wafflecap_8_Dummy
-Xadc_array_wafflecap_8_4_0 VDD VSS VSS VSS vcom row_n[8] en_n_bit[2] ctop VDD VSS
-+ adc_array_wafflecap_8_4
 Xadc_array_wafflecap_8_Dummy_3[0] VDD VSS vcom row_n[25] adc_array_wafflecap_8_Dummy_3[0]/ctop
 + VSS VDD VSS VSS adc_array_wafflecap_8_Dummy
 Xadc_array_wafflecap_8_Dummy_3[1] VDD VSS vcom row_n[26] adc_array_wafflecap_8_Dummy_3[1]/ctop
++ VSS VDD VSS VSS adc_array_wafflecap_8_Dummy
+Xadc_array_wafflecap_8_Dummy_3[2] VDD VSS vcom row_n[27] ctop VSS VDD VSS VSS adc_array_wafflecap_8_Dummy
+Xadc_array_wafflecap_8_Dummy_3[3] VDD VSS vcom row_n[28] adc_array_wafflecap_8_Dummy_3[3]/ctop
++ VSS VDD VSS VSS adc_array_wafflecap_8_Dummy
+Xadc_array_wafflecap_8_Dummy_3[4] VDD VSS vcom row_n[29] adc_array_wafflecap_8_Dummy_3[4]/ctop
++ VSS VDD VSS VSS adc_array_wafflecap_8_Dummy
+Xadc_array_wafflecap_8_Dummy_3[5] VDD VSS vcom row_n[30] adc_array_wafflecap_8_Dummy_3[5]/ctop
 + VSS VDD VSS VSS adc_array_wafflecap_8_Dummy
 Xadc_array_wafflecap_8_Dummy_4[0] VDD VDD vcom VDD adc_array_wafflecap_8_Dummy_4[0]/ctop
 + VSS VDD VDD VSS adc_array_wafflecap_8_Dummy
@@ -1333,7 +1344,7 @@ Xadc_array_wafflecap_8_Dummy_4[32] VDD VDD vcom row_n[31] adc_array_wafflecap_8_
 + VSS VDD VDD VSS adc_array_wafflecap_8_Dummy
 Xadc_array_wafflecap_8_Dummy_4[33] VDD VDD vcom VDD adc_array_wafflecap_8_Dummy_4[33]/ctop
 + VSS VDD VDD VSS adc_array_wafflecap_8_Dummy
-Xadc_array_wafflecap_8_2_0 VDD VSS vcom row_n[16] en_n_bit[1] ctop VSS VDD VSS VSS
+Xadc_array_wafflecap_8_2_0 VDD VDD VSS VSS VSS vcom row_n[16] en_n_bit[1] ctop VSS
 + adc_array_wafflecap_8_2
 Xadc_array_wafflecap_8_Dummy_5[0] adc_array_wafflecap_8_8_0[0|9]/sample_n colon_n[0]
 + vcom VDD adc_array_wafflecap_8_Dummy_5[0]/ctop adc_array_wafflecap_8_8_0[0|9]/sample
@@ -1383,17 +1394,24 @@ Xadc_array_wafflecap_8_Dummy_5[14] adc_array_wafflecap_8_8_0[14|9]/sample_n colo
 Xadc_array_wafflecap_8_Dummy_5[15] adc_array_wafflecap_8_8_0[15|9]/sample_n colon_n[15]
 + vcom VDD adc_array_wafflecap_8_Dummy_5[15]/ctop adc_array_wafflecap_8_8_0[15|9]/sample
 + VDD col_n[15] VSS adc_array_wafflecap_8_Dummy
-Xadc_array_wafflecap_8_Dummy_6[0] VDD VSS vcom row_n[28] adc_array_wafflecap_8_Dummy_6[0]/ctop
+Xadc_array_wafflecap_8_Dummy_6 VDD VSS vcom VDD adc_array_wafflecap_8_Dummy_6/ctop
 + VSS VDD VSS VSS adc_array_wafflecap_8_Dummy
-Xadc_array_wafflecap_8_Dummy_6[1] VDD VSS vcom row_n[29] adc_array_wafflecap_8_Dummy_6[1]/ctop
-+ VSS VDD VSS VSS adc_array_wafflecap_8_Dummy
-Xadc_array_wafflecap_8_Dummy_6[2] VDD VSS vcom row_n[30] adc_array_wafflecap_8_Dummy_6[2]/ctop
-+ VSS VDD VSS VSS adc_array_wafflecap_8_Dummy
-Xadc_array_wafflecap_8_Dummy_6[3] VDD VSS vcom row_n[31] adc_array_wafflecap_8_Dummy_6[3]/ctop
-+ VSS VDD VSS VSS adc_array_wafflecap_8_Dummy
-Xadc_array_wafflecap_8_Dummy_6[4] VDD VSS vcom VDD adc_array_wafflecap_8_Dummy_6[4]/ctop
-+ VSS VDD VSS VSS adc_array_wafflecap_8_Dummy
-Xadc_array_wafflecap_8_Gate_0 VDD VSS vcom row_n[27] sw_n analog_in sw ctop VSS VDD
+Xadc_noise_decoup_cell1_0[0] VDD VSS VDD VSS VSS adc_noise_decoup_cell1
+Xadc_noise_decoup_cell1_0[1] VDD VSS VDD VSS VSS adc_noise_decoup_cell1
+Xadc_noise_decoup_cell1_0[2] VDD VSS VDD VSS VSS adc_noise_decoup_cell1
+Xadc_noise_decoup_cell1_0[3] VDD VSS VDD VSS VSS adc_noise_decoup_cell1
+Xadc_noise_decoup_cell1_0[4] VDD VSS VDD VSS VSS adc_noise_decoup_cell1
+Xadc_noise_decoup_cell1_0[5] VDD VSS VDD VSS VSS adc_noise_decoup_cell1
+Xadc_noise_decoup_cell1_1[0] VDD VSS VDD VSS VSS adc_noise_decoup_cell1
+Xadc_noise_decoup_cell1_1[1] VDD VSS VDD VSS VSS adc_noise_decoup_cell1
+Xadc_noise_decoup_cell1_1[2] VDD VSS VDD VSS VSS adc_noise_decoup_cell1
+Xadc_noise_decoup_cell1_1[3] VDD VSS VDD VSS VSS adc_noise_decoup_cell1
+Xadc_noise_decoup_cell1_1[4] VDD VSS VDD VSS VSS adc_noise_decoup_cell1
+Xadc_noise_decoup_cell1_1[5] VDD VSS VDD VSS VSS adc_noise_decoup_cell1
+Xadc_noise_decoup_cell1_1[6] VDD VSS VDD VSS VSS adc_noise_decoup_cell1
+Xadc_noise_decoup_cell1_1[7] VDD VSS VDD VSS VSS adc_noise_decoup_cell1
+Xadc_noise_decoup_cell1_1[8] VDD VSS VDD VSS VSS adc_noise_decoup_cell1
+Xadc_array_wafflecap_8_Gate_0 VDD VSS vcom row_n[31] sw_n analog_in sw ctop VSS VDD
 + VSS VSS adc_array_wafflecap_8_Gate
 Xadc_array_wafflecap_8_1_0 VDD VSS vcom row_n[24] en_n_bit[0] ctop VSS VDD VSS VSS
 + adc_array_wafflecap_8_1

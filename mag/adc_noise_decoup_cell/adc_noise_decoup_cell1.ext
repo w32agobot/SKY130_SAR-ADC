@@ -45,11 +45,11 @@ node "mimcap_bot" 2 2599.71 3120 0 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 node "nmoscap_top" 88 13144.5 1360 0 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 11260200 13560 0 0 3115200 137400 4977800 171200 4778800 186680 0 0 0 0 0 0 0 0
 node "nmoscap_bot" 5887 8635.74 0 3120 m1 0 0 0 0 0 0 0 0 918400 13680 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3798400 132280 5045000 174640 4699980 195356 0 0 0 0 0 0 0 0
 substrate "pwell" 0 0 890 0 li 0 0 0 0 0 0 0 0 0 0 331200 8800 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1534400 31520 0 0 0 0 0 0 0 0 0 0 0 0
+cap "nmoscap_bot" "nmoscap_top" 510695
 cap "nmoscap_top" "mimcap_top" 2892.26
 cap "nmoscap_bot" "mimcap_bot" 16576.6
-cap "nmoscap_bot" "nmoscap_top" 510695
-cap "nmoscap_bot" "mimcap_top" 1347.09
-cap "nmoscap_top" "mimcap_bot" 15245.3
 cap "mimcap_bot" "mimcap_top" 33251.1
-device csubckt sky130_fd_pr__cap_mim_m3_1 280 280 281 281 w=3440 l=3440 "None" "mimcap_top" 13520 0 "mimcap_bot" 0 0
-device msubckt sky130_fd_pr__nfet_01v8 360 400 361 401 l=3200 w=3280 "pwell" "nmoscap_top" 6400 0 "nmoscap_bot" 0 0 "nmoscap_bot" 6560 0
+cap "nmoscap_top" "mimcap_bot" 15245.3
+cap "nmoscap_bot" "mimcap_top" 1347.09
+device csubckt sky130_fd_pr__cap_mim_m3_1 280 280 281 281 w=3440 l=3440 "None" "mimcap_top" 13520 0 "mimcap_bot" 160 0
+device msubckt sky130_fd_pr__nfet_01v8 360 400 361 401 l=3200 w=3280 "pwell" "nmoscap_top" 6400 0 "nmoscap_bot" 6560 0 "nmoscap_bot" 0 0
