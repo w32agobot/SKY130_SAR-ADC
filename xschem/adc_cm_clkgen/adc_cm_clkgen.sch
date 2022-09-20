@@ -185,7 +185,7 @@ lab=#net4}
 N 1150 -260 1190 -260 {
 lab=#net7}
 N 1270 -260 1310 -260 {
-lab=PHI2}
+lab=phi2}
 N 1270 -320 1310 -320 {
 lab=phi2_n}
 N 1270 -480 1310 -480 {
@@ -247,8 +247,6 @@ C {devices/opin.sym} 1310 -260 0 0 {name=p10 lab=phi2}
 C {devices/opin.sym} 1310 -540 0 0 {name=p5 lab=phi1}
 C {devices/opin.sym} 1310 -480 0 0 {name=p4 lab=phi1_n}
 C {devices/title.sym} 170 -50 0 0 {name=l3 author="Manuel Moser"}
-C {sky130_stdcells/nand2_2.sym} 440 -480 0 0 {name=x21 VGND=VSS VNB=VSS VPB=VDD VPWR=VDD prefix=sky130_fd_sc_hd__ }
-C {sky130_stdcells/nand2_2.sym} 440 -320 0 0 {name=x22 VGND=VSS VNB=VSS VPB=VDD VPWR=VDD prefix=sky130_fd_sc_hd__ }
 C {sky130_stdcells/inv_1.sym} 280 -300 2 1 {name=x23 VGND=VSS VNB=VSS VPB=VDD VPWR=VDD prefix=sky130_fd_sc_hd__ }
 C {sky130_stdcells/buf_4.sym} 1220 -540 0 0 {name=x2 VGND=VSS VNB=VSS VPB=VDD VPWR=VDD prefix=sky130_fd_sc_hd__ }
 C {devices/ipin.sym} 120 -500 0 0 {name=p3 lab=clk}
@@ -265,3 +263,5 @@ C {sky130_stdcells/dlymetal6s6s_1.sym} 670 -320 0 0 {name=x13 VGND=VSS VNB=VSS V
 C {sky130_stdcells/inv_1.sym} 910 -320 0 0 {name=x1 VGND=VSS VNB=VSS VPB=VDD VPWR=VDD prefix=sky130_fd_sc_hd__ }
 C {sky130_stdcells/dlymetal6s6s_1.sym} 790 -480 0 0 {name=x9 VGND=VSS VNB=VSS VPB=VDD VPWR=VDD prefix=sky130_fd_sc_hd__ }
 C {sky130_stdcells/dlymetal6s6s_1.sym} 790 -320 0 0 {name=x14 VGND=VSS VNB=VSS VPB=VDD VPWR=VDD prefix=sky130_fd_sc_hd__ }
+C {sky130_stdcells/nand2_1.sym} 440 -480 0 0 {name=x15 VGND=VSS VNB=VSS VPB=VDD VPWR=VDD prefix=sky130_fd_sc_hd__ }
+C {sky130_stdcells/nand2_1.sym} 440 -320 0 0 {name=x16 VGND=VSS VNB=VSS VPB=VDD VPWR=VDD prefix=sky130_fd_sc_hd__ }

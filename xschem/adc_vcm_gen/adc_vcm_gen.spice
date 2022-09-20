@@ -1,0 +1,153 @@
+** sch_path: /foss/designs/SKY130_SAR-ADC/xschem/adc_vcm_gen/adc_vcm_gen.sch
+.subckt adc_vcm_gen VDD VSS clk vcm
+*.PININFO VDD:B VSS:B clk:I vcm:B
+X1 clk VDD VSS phi1_n phi1 phi2 phi2_n adc_cm_clkgen
+X2 phi2_n VDD phi2 mimtop1 VDD VSS switch_150n
+X3 phi2_n mimbot1 phi2 mimtop2 VDD VSS switch_150n
+X4 phi1_n mimbot1 phi1 VSS VDD VSS switch_150n
+X5 phi1_n mimtop1 phi1 vcm VDD VSS switch_150n
+X6 phi1_n mimtop2 phi1 vcm VDD VSS switch_150n
+x7_1 mimtop1 mimbot1 vcm VSS VSS adc_noise_decoup_cell1
+x7_2 mimtop1 mimbot1 vcm VSS VSS adc_noise_decoup_cell1
+x7_3 mimtop1 mimbot1 vcm VSS VSS adc_noise_decoup_cell1
+x7_4 mimtop1 mimbot1 vcm VSS VSS adc_noise_decoup_cell1
+x7_5 mimtop1 mimbot1 vcm VSS VSS adc_noise_decoup_cell1
+x7_6 mimtop1 mimbot1 vcm VSS VSS adc_noise_decoup_cell1
+x7_7 mimtop1 mimbot1 vcm VSS VSS adc_noise_decoup_cell1
+x7_8 mimtop1 mimbot1 vcm VSS VSS adc_noise_decoup_cell1
+x7_9 mimtop1 mimbot1 vcm VSS VSS adc_noise_decoup_cell1
+x7_10 mimtop1 mimbot1 vcm VSS VSS adc_noise_decoup_cell1
+x7_11 mimtop1 mimbot1 vcm VSS VSS adc_noise_decoup_cell1
+x7_12 mimtop1 mimbot1 vcm VSS VSS adc_noise_decoup_cell1
+x7_13 mimtop1 mimbot1 vcm VSS VSS adc_noise_decoup_cell1
+x7_14 mimtop1 mimbot1 vcm VSS VSS adc_noise_decoup_cell1
+x7_15 mimtop1 mimbot1 vcm VSS VSS adc_noise_decoup_cell1
+x7_16 mimtop1 mimbot1 vcm VSS VSS adc_noise_decoup_cell1
+x7_17 mimtop1 mimbot1 vcm VSS VSS adc_noise_decoup_cell1
+x7_18 mimtop1 mimbot1 vcm VSS VSS adc_noise_decoup_cell1
+x7_19 mimtop1 mimbot1 vcm VSS VSS adc_noise_decoup_cell1
+x7_20 mimtop1 mimbot1 vcm VSS VSS adc_noise_decoup_cell1
+x7_21 mimtop1 mimbot1 vcm VSS VSS adc_noise_decoup_cell1
+x7_22 mimtop1 mimbot1 vcm VSS VSS adc_noise_decoup_cell1
+x7_23 mimtop1 mimbot1 vcm VSS VSS adc_noise_decoup_cell1
+x7_24 mimtop1 mimbot1 vcm VSS VSS adc_noise_decoup_cell1
+x7_25 mimtop1 mimbot1 vcm VSS VSS adc_noise_decoup_cell1
+x7_26 mimtop1 mimbot1 vcm VSS VSS adc_noise_decoup_cell1
+x7_27 mimtop1 mimbot1 vcm VSS VSS adc_noise_decoup_cell1
+x7_28 mimtop1 mimbot1 vcm VSS VSS adc_noise_decoup_cell1
+x7_29 mimtop1 mimbot1 vcm VSS VSS adc_noise_decoup_cell1
+x7_30 mimtop1 mimbot1 vcm VSS VSS adc_noise_decoup_cell1
+x7_31 mimtop1 mimbot1 vcm VSS VSS adc_noise_decoup_cell1
+x7_32 mimtop1 mimbot1 vcm VSS VSS adc_noise_decoup_cell1
+x7_33 mimtop1 mimbot1 vcm VSS VSS adc_noise_decoup_cell1
+x7_34 mimtop1 mimbot1 vcm VSS VSS adc_noise_decoup_cell1
+x7_35 mimtop1 mimbot1 vcm VSS VSS adc_noise_decoup_cell1
+x7_36 mimtop1 mimbot1 vcm VSS VSS adc_noise_decoup_cell1
+x7_37 mimtop1 mimbot1 vcm VSS VSS adc_noise_decoup_cell1
+x7_38 mimtop1 mimbot1 vcm VSS VSS adc_noise_decoup_cell1
+x7_39 mimtop1 mimbot1 vcm VSS VSS adc_noise_decoup_cell1
+x7_40 mimtop1 mimbot1 vcm VSS VSS adc_noise_decoup_cell1
+x7_41 mimtop1 mimbot1 vcm VSS VSS adc_noise_decoup_cell1
+x7_42 mimtop1 mimbot1 vcm VSS VSS adc_noise_decoup_cell1
+x81 mimtop2 VSS vcm VSS VSS adc_noise_decoup_cell1
+x82 mimtop2 VSS vcm VSS VSS adc_noise_decoup_cell1
+x83 mimtop2 VSS vcm VSS VSS adc_noise_decoup_cell1
+x84 mimtop2 VSS vcm VSS VSS adc_noise_decoup_cell1
+x85 mimtop2 VSS vcm VSS VSS adc_noise_decoup_cell1
+x86 mimtop2 VSS vcm VSS VSS adc_noise_decoup_cell1
+x87 mimtop2 VSS vcm VSS VSS adc_noise_decoup_cell1
+x88 mimtop2 VSS vcm VSS VSS adc_noise_decoup_cell1
+x89 mimtop2 VSS vcm VSS VSS adc_noise_decoup_cell1
+x810 mimtop2 VSS vcm VSS VSS adc_noise_decoup_cell1
+x811 mimtop2 VSS vcm VSS VSS adc_noise_decoup_cell1
+x812 mimtop2 VSS vcm VSS VSS adc_noise_decoup_cell1
+x813 mimtop2 VSS vcm VSS VSS adc_noise_decoup_cell1
+x814 mimtop2 VSS vcm VSS VSS adc_noise_decoup_cell1
+x815 mimtop2 VSS vcm VSS VSS adc_noise_decoup_cell1
+x816 mimtop2 VSS vcm VSS VSS adc_noise_decoup_cell1
+x817 mimtop2 VSS vcm VSS VSS adc_noise_decoup_cell1
+x818 mimtop2 VSS vcm VSS VSS adc_noise_decoup_cell1
+x819 mimtop2 VSS vcm VSS VSS adc_noise_decoup_cell1
+x820 mimtop2 VSS vcm VSS VSS adc_noise_decoup_cell1
+x821 mimtop2 VSS vcm VSS VSS adc_noise_decoup_cell1
+x822 mimtop2 VSS vcm VSS VSS adc_noise_decoup_cell1
+x823 mimtop2 VSS vcm VSS VSS adc_noise_decoup_cell1
+x824 mimtop2 VSS vcm VSS VSS adc_noise_decoup_cell1
+x825 mimtop2 VSS vcm VSS VSS adc_noise_decoup_cell1
+x826 mimtop2 VSS vcm VSS VSS adc_noise_decoup_cell1
+x827 mimtop2 VSS vcm VSS VSS adc_noise_decoup_cell1
+x828 mimtop2 VSS vcm VSS VSS adc_noise_decoup_cell1
+x829 mimtop2 VSS vcm VSS VSS adc_noise_decoup_cell1
+x830 mimtop2 VSS vcm VSS VSS adc_noise_decoup_cell1
+x831 mimtop2 VSS vcm VSS VSS adc_noise_decoup_cell1
+x832 mimtop2 VSS vcm VSS VSS adc_noise_decoup_cell1
+x833 mimtop2 VSS vcm VSS VSS adc_noise_decoup_cell1
+x834 mimtop2 VSS vcm VSS VSS adc_noise_decoup_cell1
+x835 mimtop2 VSS vcm VSS VSS adc_noise_decoup_cell1
+x836 mimtop2 VSS vcm VSS VSS adc_noise_decoup_cell1
+x837 mimtop2 VSS vcm VSS VSS adc_noise_decoup_cell1
+x838 mimtop2 VSS vcm VSS VSS adc_noise_decoup_cell1
+x839 mimtop2 VSS vcm VSS VSS adc_noise_decoup_cell1
+x840 mimtop2 VSS vcm VSS VSS adc_noise_decoup_cell1
+x841 mimtop2 VSS vcm VSS VSS adc_noise_decoup_cell1
+x842 mimtop2 VSS vcm VSS VSS adc_noise_decoup_cell1
+**** begin user architecture code
+
+.include /foss/pdk/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_fd_sc_hd.spice
+
+**** end user architecture code
+.ends
+
+* expanding   symbol:  /foss/designs/SKY130_SAR-ADC/xschem/adc_cm_clkgen/adc_cm_clkgen.sym # of
+*+ pins=7
+** sym_path: /foss/designs/SKY130_SAR-ADC/xschem/adc_cm_clkgen/adc_cm_clkgen.sym
+** sch_path: /foss/designs/SKY130_SAR-ADC/xschem/adc_cm_clkgen/adc_cm_clkgen.sch
+.subckt adc_cm_clkgen clk VDD VSS phi1_n phi1 phi2 phi2_n
+*.PININFO VDD:B VSS:B phi2_n:O phi2:O phi1:O phi1_n:O clk:I
+x23 clk VSS VSS VDD VDD net5 sky130_fd_sc_hd__inv_1
+x2 net6 VSS VSS VDD VDD phi1 sky130_fd_sc_hd__buf_4
+x5 net6 VSS VSS VDD VDD net3 sky130_fd_sc_hd__inv_1
+x11 net11 VSS VSS VDD VDD net6 sky130_fd_sc_hd__inv_1
+x12 net7 VSS VSS VDD VDD net4 sky130_fd_sc_hd__inv_1
+x4 net3 VSS VSS VDD VDD phi1_n sky130_fd_sc_hd__buf_4
+x7 net4 VSS VSS VDD VDD phi2_n sky130_fd_sc_hd__buf_4
+x8 net7 VSS VSS VDD VDD phi2 sky130_fd_sc_hd__buf_4
+x3 net1 VSS VSS VDD VDD net8 sky130_fd_sc_hd__dlymetal6s6s_1
+x10 net2 VSS VSS VDD VDD net9 sky130_fd_sc_hd__dlymetal6s6s_1
+x6 net8 VSS VSS VDD VDD net10 sky130_fd_sc_hd__dlymetal6s6s_1
+x13 net9 VSS VSS VDD VDD net13 sky130_fd_sc_hd__dlymetal6s6s_1
+x1 net12 VSS VSS VDD VDD net7 sky130_fd_sc_hd__inv_1
+x9 net10 VSS VSS VDD VDD net11 sky130_fd_sc_hd__dlymetal6s6s_1
+x14 net13 VSS VSS VDD VDD net12 sky130_fd_sc_hd__dlymetal6s6s_1
+x15 clk net4 VSS VSS VDD VDD net1 sky130_fd_sc_hd__nand2_1
+x16 net3 net5 VSS VSS VDD VDD net2 sky130_fd_sc_hd__nand2_1
+.ends
+
+
+* expanding   symbol:  /foss/designs/SKY130_SAR-ADC/xschem/switch/switch_150n.sym # of pins=6
+** sym_path: /foss/designs/SKY130_SAR-ADC/xschem/switch/switch_150n.sym
+** sch_path: /foss/designs/SKY130_SAR-ADC/xschem/switch/switch_150n.sch
+.subckt switch_150n sw_n in sw out VP VN
+*.PININFO VN:B VP:B sw_n:I sw:I in:B out:B
+XM1 in sw_n out VP sky130_fd_pr__pfet_01v8 L=1 W=2 nf=2 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM3 in sw out VN sky130_fd_pr__nfet_01v8 L=0.5 W=1 nf=2 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+.ends
+
+
+* expanding   symbol:
+*+  /foss/designs/SKY130_SAR-ADC/xschem/adc_noise_decoup_cell/adc_noise_decoup_cell1.sym # of pins=5
+** sym_path: /foss/designs/SKY130_SAR-ADC/xschem/adc_noise_decoup_cell/adc_noise_decoup_cell1.sym
+** sch_path: /foss/designs/SKY130_SAR-ADC/xschem/adc_noise_decoup_cell/adc_noise_decoup_cell1.sch
+.subckt adc_noise_decoup_cell1 mimcap_top mimcap_bot nmoscap_top nmoscap_bot pwell
+*.PININFO nmoscap_top:B mimcap_top:B mimcap_bot:B nmoscap_bot:B pwell:B
+XC1 mimcap_top mimcap_bot sky130_fd_pr__cap_mim_m3_1 W=17.2 L=17.2 MF=1 m=1
+XM1 nmoscap_bot nmoscap_top nmoscap_bot pwell sky130_fd_pr__nfet_01v8 L=16.0 W=16.4 nf=1 ad='int((nf+1)/2) * W/nf * 0.29'
++ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+.ends
+
+.end
