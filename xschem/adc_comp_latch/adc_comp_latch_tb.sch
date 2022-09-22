@@ -1,4 +1,5 @@
-v {xschem version=3.0.0 file_version=1.2 }
+v {xschem version=3.1.0 file_version=1.2
+}
 G {}
 K {}
 V {}
@@ -52,20 +53,20 @@ lab=comp_trig}
 C {devices/title.sym} 170 -50 0 0 {name=l1 author="Manuel Moser"}
 C {devices/lab_wire.sym} 180 -280 0 0 {name=l5 sig_type=std_logic lab=inp}
 C {devices/lab_wire.sym} 180 -260 0 0 {name=l6 sig_type=std_logic lab=inn}
-C {devices/vsource.sym} 160 -530 0 0 {name=V1 value=1}
+C {devices/vsource.sym} 160 -530 0 0 {name=V1 value=1.8}
 C {devices/gnd.sym} 160 -460 0 0 {name=l12 lab=GND}
 C {devices/gnd.sym} 360 -210 0 0 {name=l10 lab=GND}
 C {devices/vdd.sym} 160 -590 0 0 {name=l7 lab=VDD}
 C {devices/vdd.sym} 360 -350 0 0 {name=l11 lab=VDD}
-C {devices/vsource.sym} 250 -530 0 0 {name=V2 value="0 PULSE(0 1 0 1n 1n 2.5m 5m)"}
+C {devices/vsource.sym} 250 -530 0 0 {name=V2 value="0 PULSE(0 1.8 2.5m 1n 1n 2.5m 5m)"}
 C {devices/gnd.sym} 250 -460 0 0 {name=l4 lab=GND}
 C {devices/lab_wire.sym} 250 -590 0 0 {name=l13 sig_type=std_logic lab=clk}
 C {devices/lab_pin.sym} 540 -280 0 1 {name=l8 sig_type=std_logic lab=qn}
 C {devices/lab_pin.sym} 540 -260 0 1 {name=l9 sig_type=std_logic lab=q}
-C {devices/vsource.sym} 460 -530 0 0 {name=V3 value="0 PULSE(490m 510m 0 50m 50m 50m 100m)"}
+C {devices/vsource.sym} 460 -530 0 0 {name=V3 value="0 PULSE(890m 910m 0 50m 50m 50m 100m)"}
 C {devices/gnd.sym} 460 -460 0 0 {name=l21 lab=GND}
 C {devices/lab_wire.sym} 460 -590 0 0 {name=l22 sig_type=std_logic lab=inp}
-C {devices/vsource.sym} 770 -530 0 0 {name=V4 value="0 PULSE(510m 490m 0 50m 50m 50m 100m)"}
+C {devices/vsource.sym} 770 -530 0 0 {name=V4 value="0 PULSE(910m 890m 0 50m 50m 50m 100m)"}
 C {devices/gnd.sym} 770 -460 0 0 {name=l23 lab=GND}
 C {devices/lab_wire.sym} 770 -590 0 0 {name=l24 sig_type=std_logic lab=inn}
 C {sky130_fd_pr/corner.sym} 140 -770 0 0 {name=CORNER only_toplevel=false corner=tt}
