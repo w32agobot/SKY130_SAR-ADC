@@ -59,214 +59,178 @@ X3 Y B VPWR VPB sky130_fd_pr__pfet_01v8_hvt ad=0p pd=0u as=0p ps=0u w=1e+06u l=1
 
 .subckt adc_vcm_gen VDD VSS clk vcm
 Xsky130_fd_sc_hd__inv_1_4 clk VSS VDD sky130_fd_sc_hd__inv_1_4/Y VSS VDD sky130_fd_sc_hd__inv_1
-Xsky130_fd_pr__pfet_01v8_K25L97_0 adc_noise_decoup_cell1_1[5|1]/mimcap_top vcm phi1_n
-+ vcm phi1_n VDD sky130_fd_pr__pfet_01v8_K25L97
-Xsky130_fd_pr__pfet_01v8_K25L97_1 adc_noise_decoup_cell1_3[5|1]/mimcap_top vcm phi1_n
-+ vcm phi1_n VDD sky130_fd_pr__pfet_01v8_K25L97
-Xsky130_fd_pr__pfet_01v8_K25L97_2 adc_noise_decoup_cell1_1[5|1]/mimcap_top adc_noise_decoup_cell1_3[5|1]/mimcap_bot
+Xsky130_fd_pr__pfet_01v8_K25L97_0 mimtop2 vcm phi1_n vcm phi1_n VDD sky130_fd_pr__pfet_01v8_K25L97
+Xsky130_fd_pr__pfet_01v8_K25L97_1 mimtop1 vcm phi1_n vcm phi1_n VDD sky130_fd_pr__pfet_01v8_K25L97
+Xsky130_fd_pr__pfet_01v8_K25L97_2 mimtop2 adc_noise_decoup_cell1_3[5|1]/mimcap_bot
 + phi2_n adc_noise_decoup_cell1_3[5|1]/mimcap_bot phi2_n VDD sky130_fd_pr__pfet_01v8_K25L97
-Xsky130_fd_pr__pfet_01v8_K25L97_3 VDD adc_noise_decoup_cell1_3[5|1]/mimcap_top phi2_n
-+ adc_noise_decoup_cell1_3[5|1]/mimcap_top phi2_n VDD sky130_fd_pr__pfet_01v8_K25L97
+Xsky130_fd_pr__pfet_01v8_K25L97_3 VDD mimtop1 phi2_n mimtop1 phi2_n VDD sky130_fd_pr__pfet_01v8_K25L97
 Xsky130_fd_pr__pfet_01v8_K25L97_4 VSS adc_noise_decoup_cell1_3[5|1]/mimcap_bot phi1_n
 + adc_noise_decoup_cell1_3[5|1]/mimcap_bot phi1_n VDD sky130_fd_pr__pfet_01v8_K25L97
-Xsky130_fd_sc_hd__buf_4_0 sky130_fd_sc_hd__inv_1_0/A VSS VDD phi1 VSS VDD sky130_fd_sc_hd__buf_4
+Xsky130_fd_sc_hd__buf_4_0 sky130_fd_sc_hd__inv_1_2/A VSS VDD phi1 VSS VDD sky130_fd_sc_hd__buf_4
 Xsky130_fd_sc_hd__buf_4_1 sky130_fd_sc_hd__inv_1_2/Y VSS VDD phi1_n VSS VDD sky130_fd_sc_hd__buf_4
-Xsky130_fd_sc_hd__buf_4_2 sky130_fd_sc_hd__inv_1_1/A VSS VDD phi2 VSS VDD sky130_fd_sc_hd__buf_4
+Xsky130_fd_sc_hd__buf_4_2 sky130_fd_sc_hd__inv_1_3/A VSS VDD phi2 VSS VDD sky130_fd_sc_hd__buf_4
 Xsky130_fd_sc_hd__buf_4_3 sky130_fd_sc_hd__inv_1_3/Y VSS VDD phi2_n VSS VDD sky130_fd_sc_hd__buf_4
 Xsky130_fd_sc_hd__dlymetal6s6s_1_0 sky130_fd_sc_hd__nand2_1_0/Y VSS VDD sky130_fd_sc_hd__dlymetal6s6s_1_2/A
 + VSS VDD sky130_fd_sc_hd__dlymetal6s6s_1
-Xsky130_fd_sc_hd__dlymetal6s6s_1_1 sky130_fd_sc_hd__inv_1_1/A VSS VDD sky130_fd_sc_hd__dlymetal6s6s_1_4/A
+Xsky130_fd_sc_hd__dlymetal6s6s_1_1 sky130_fd_sc_hd__nand2_1_1/Y VSS VDD sky130_fd_sc_hd__dlymetal6s6s_1_4/A
 + VSS VDD sky130_fd_sc_hd__dlymetal6s6s_1
 Xsky130_fd_sc_hd__dlymetal6s6s_1_2 sky130_fd_sc_hd__dlymetal6s6s_1_2/A VSS VDD sky130_fd_sc_hd__dlymetal6s6s_1_3/A
 + VSS VDD sky130_fd_sc_hd__dlymetal6s6s_1
 Xsky130_fd_sc_hd__dlymetal6s6s_1_3 sky130_fd_sc_hd__dlymetal6s6s_1_3/A VSS VDD sky130_fd_sc_hd__inv_1_0/A
 + VSS VDD sky130_fd_sc_hd__dlymetal6s6s_1
-Xsky130_fd_pr__nfet_01v8_8PFHMD_0 phi1 adc_noise_decoup_cell1_1[5|1]/mimcap_top vcm
-+ phi1 vcm VSS sky130_fd_pr__nfet_01v8_8PFHMD
+Xsky130_fd_pr__nfet_01v8_8PFHMD_0 phi1 mimtop2 vcm phi1 vcm VSS sky130_fd_pr__nfet_01v8_8PFHMD
 Xsky130_fd_sc_hd__dlymetal6s6s_1_5 sky130_fd_sc_hd__dlymetal6s6s_1_5/A VSS VDD sky130_fd_sc_hd__inv_1_1/A
 + VSS VDD sky130_fd_sc_hd__dlymetal6s6s_1
 Xsky130_fd_sc_hd__dlymetal6s6s_1_4 sky130_fd_sc_hd__dlymetal6s6s_1_4/A VSS VDD sky130_fd_sc_hd__dlymetal6s6s_1_5/A
 + VSS VDD sky130_fd_sc_hd__dlymetal6s6s_1
-Xsky130_fd_pr__nfet_01v8_8PFHMD_1 phi1 adc_noise_decoup_cell1_3[5|1]/mimcap_top vcm
-+ phi1 vcm VSS sky130_fd_pr__nfet_01v8_8PFHMD
-Xadc_noise_decoup_cell1_1[0|0] vcm VSS adc_noise_decoup_cell1_1[5|1]/mimcap_top VSS
+Xadc_noise_decoup_cell1_0[0|0] vcm VSS mimtop2 VSS VSS adc_noise_decoup_cell1
+Xadc_noise_decoup_cell1_0[1|0] vcm VSS mimtop2 VSS VSS adc_noise_decoup_cell1
+Xadc_noise_decoup_cell1_0[0|1] vcm VSS mimtop2 VSS VSS adc_noise_decoup_cell1
+Xadc_noise_decoup_cell1_0[1|1] vcm VSS mimtop2 VSS VSS adc_noise_decoup_cell1
+Xadc_noise_decoup_cell1_0[0|2] vcm VSS mimtop2 VSS VSS adc_noise_decoup_cell1
+Xadc_noise_decoup_cell1_0[1|2] vcm VSS mimtop2 VSS VSS adc_noise_decoup_cell1
+Xadc_noise_decoup_cell1_0[0|3] vcm VSS mimtop2 VSS VSS adc_noise_decoup_cell1
+Xadc_noise_decoup_cell1_0[1|3] vcm VSS mimtop2 VSS VSS adc_noise_decoup_cell1
+Xadc_noise_decoup_cell1_0[0|4] vcm VSS mimtop2 VSS VSS adc_noise_decoup_cell1
+Xadc_noise_decoup_cell1_0[1|4] vcm VSS mimtop2 VSS VSS adc_noise_decoup_cell1
+Xadc_noise_decoup_cell1_0[0|5] vcm VSS mimtop2 VSS VSS adc_noise_decoup_cell1
+Xadc_noise_decoup_cell1_0[1|5] vcm VSS mimtop2 VSS VSS adc_noise_decoup_cell1
+Xadc_noise_decoup_cell1_0[0|6] vcm VSS mimtop2 VSS VSS adc_noise_decoup_cell1
+Xadc_noise_decoup_cell1_0[1|6] vcm VSS mimtop2 VSS VSS adc_noise_decoup_cell1
+Xadc_noise_decoup_cell1_0[0|7] vcm VSS mimtop2 VSS VSS adc_noise_decoup_cell1
+Xadc_noise_decoup_cell1_0[1|7] vcm VSS mimtop2 VSS VSS adc_noise_decoup_cell1
+Xadc_noise_decoup_cell1_0[0|8] vcm VSS mimtop2 VSS VSS adc_noise_decoup_cell1
+Xadc_noise_decoup_cell1_0[1|8] vcm VSS mimtop2 VSS VSS adc_noise_decoup_cell1
+Xadc_noise_decoup_cell1_0[0|9] vcm VSS mimtop2 VSS VSS adc_noise_decoup_cell1
+Xadc_noise_decoup_cell1_0[1|9] vcm VSS mimtop2 VSS VSS adc_noise_decoup_cell1
+Xadc_noise_decoup_cell1_0[0|10] vcm VSS mimtop2 VSS VSS adc_noise_decoup_cell1
+Xadc_noise_decoup_cell1_0[1|10] vcm VSS mimtop2 VSS VSS adc_noise_decoup_cell1
+Xadc_noise_decoup_cell1_0[0|11] vcm VSS mimtop2 VSS VSS adc_noise_decoup_cell1
+Xadc_noise_decoup_cell1_0[1|11] vcm VSS mimtop2 VSS VSS adc_noise_decoup_cell1
+Xadc_noise_decoup_cell1_0[0|12] vcm VSS mimtop2 VSS VSS adc_noise_decoup_cell1
+Xadc_noise_decoup_cell1_0[1|12] vcm VSS mimtop2 VSS VSS adc_noise_decoup_cell1
+Xadc_noise_decoup_cell1_0[0|13] vcm VSS mimtop2 VSS VSS adc_noise_decoup_cell1
+Xadc_noise_decoup_cell1_0[1|13] vcm VSS mimtop2 VSS VSS adc_noise_decoup_cell1
+Xadc_noise_decoup_cell1_0[0|14] vcm VSS mimtop2 VSS VSS adc_noise_decoup_cell1
+Xadc_noise_decoup_cell1_0[1|14] vcm VSS mimtop2 VSS VSS adc_noise_decoup_cell1
+Xadc_noise_decoup_cell1_0[0|15] vcm VSS mimtop2 VSS VSS adc_noise_decoup_cell1
+Xadc_noise_decoup_cell1_0[1|15] vcm VSS mimtop2 VSS VSS adc_noise_decoup_cell1
+Xadc_noise_decoup_cell1_0[0|16] vcm VSS mimtop2 VSS VSS adc_noise_decoup_cell1
+Xadc_noise_decoup_cell1_0[1|16] vcm VSS mimtop2 VSS VSS adc_noise_decoup_cell1
+Xsky130_fd_pr__nfet_01v8_8PFHMD_1 phi1 mimtop1 vcm phi1 vcm VSS sky130_fd_pr__nfet_01v8_8PFHMD
+Xadc_noise_decoup_cell1_1[0|0] vcm VSS mimtop2 VSS VSS adc_noise_decoup_cell1
+Xadc_noise_decoup_cell1_1[1|0] vcm VSS mimtop2 VSS VSS adc_noise_decoup_cell1
+Xadc_noise_decoup_cell1_1[2|0] vcm VSS mimtop2 VSS VSS adc_noise_decoup_cell1
+Xadc_noise_decoup_cell1_1[3|0] vcm VSS mimtop2 VSS VSS adc_noise_decoup_cell1
+Xadc_noise_decoup_cell1_1[4|0] vcm VSS mimtop2 VSS VSS adc_noise_decoup_cell1
+Xadc_noise_decoup_cell1_1[5|0] vcm VSS mimtop2 VSS VSS adc_noise_decoup_cell1
+Xadc_noise_decoup_cell1_1[0|1] vcm VSS mimtop2 VSS VSS adc_noise_decoup_cell1
+Xadc_noise_decoup_cell1_1[1|1] vcm VSS mimtop2 VSS VSS adc_noise_decoup_cell1
+Xadc_noise_decoup_cell1_1[2|1] vcm VSS mimtop2 VSS VSS adc_noise_decoup_cell1
+Xadc_noise_decoup_cell1_1[3|1] vcm VSS mimtop2 VSS VSS adc_noise_decoup_cell1
+Xadc_noise_decoup_cell1_1[4|1] vcm VSS mimtop2 VSS VSS adc_noise_decoup_cell1
+Xadc_noise_decoup_cell1_1[5|1] vcm VSS mimtop2 VSS VSS adc_noise_decoup_cell1
+Xadc_noise_decoup_cell1_2[0|0] vcm VSS mimtop1 adc_noise_decoup_cell1_3[5|1]/mimcap_bot
 + VSS adc_noise_decoup_cell1
-Xadc_noise_decoup_cell1_1[1|0] vcm VSS adc_noise_decoup_cell1_1[5|1]/mimcap_top VSS
+Xadc_noise_decoup_cell1_2[1|0] vcm VSS mimtop1 adc_noise_decoup_cell1_3[5|1]/mimcap_bot
 + VSS adc_noise_decoup_cell1
-Xadc_noise_decoup_cell1_1[2|0] vcm VSS adc_noise_decoup_cell1_1[5|1]/mimcap_top VSS
+Xadc_noise_decoup_cell1_2[0|1] vcm VSS mimtop1 adc_noise_decoup_cell1_3[5|1]/mimcap_bot
 + VSS adc_noise_decoup_cell1
-Xadc_noise_decoup_cell1_1[3|0] vcm VSS adc_noise_decoup_cell1_1[5|1]/mimcap_top VSS
+Xadc_noise_decoup_cell1_2[1|1] vcm VSS mimtop1 adc_noise_decoup_cell1_3[5|1]/mimcap_bot
 + VSS adc_noise_decoup_cell1
-Xadc_noise_decoup_cell1_1[4|0] vcm VSS adc_noise_decoup_cell1_1[5|1]/mimcap_top VSS
+Xadc_noise_decoup_cell1_2[0|2] vcm VSS mimtop1 adc_noise_decoup_cell1_3[5|1]/mimcap_bot
 + VSS adc_noise_decoup_cell1
-Xadc_noise_decoup_cell1_1[5|0] vcm VSS adc_noise_decoup_cell1_1[5|1]/mimcap_top VSS
+Xadc_noise_decoup_cell1_2[1|2] vcm VSS mimtop1 adc_noise_decoup_cell1_3[5|1]/mimcap_bot
 + VSS adc_noise_decoup_cell1
-Xadc_noise_decoup_cell1_1[0|1] vcm VSS adc_noise_decoup_cell1_1[5|1]/mimcap_top VSS
+Xadc_noise_decoup_cell1_2[0|3] vcm VSS mimtop1 adc_noise_decoup_cell1_3[5|1]/mimcap_bot
 + VSS adc_noise_decoup_cell1
-Xadc_noise_decoup_cell1_1[1|1] vcm VSS adc_noise_decoup_cell1_1[5|1]/mimcap_top VSS
+Xadc_noise_decoup_cell1_2[1|3] vcm VSS mimtop1 adc_noise_decoup_cell1_3[5|1]/mimcap_bot
 + VSS adc_noise_decoup_cell1
-Xadc_noise_decoup_cell1_1[2|1] vcm VSS adc_noise_decoup_cell1_1[5|1]/mimcap_top VSS
+Xadc_noise_decoup_cell1_2[0|4] vcm VSS mimtop1 adc_noise_decoup_cell1_3[5|1]/mimcap_bot
 + VSS adc_noise_decoup_cell1
-Xadc_noise_decoup_cell1_1[3|1] vcm VSS adc_noise_decoup_cell1_1[5|1]/mimcap_top VSS
+Xadc_noise_decoup_cell1_2[1|4] vcm VSS mimtop1 adc_noise_decoup_cell1_3[5|1]/mimcap_bot
 + VSS adc_noise_decoup_cell1
-Xadc_noise_decoup_cell1_1[4|1] vcm VSS adc_noise_decoup_cell1_1[5|1]/mimcap_top VSS
+Xadc_noise_decoup_cell1_2[0|5] vcm VSS mimtop1 adc_noise_decoup_cell1_3[5|1]/mimcap_bot
 + VSS adc_noise_decoup_cell1
-Xadc_noise_decoup_cell1_1[5|1] vcm VSS adc_noise_decoup_cell1_1[5|1]/mimcap_top VSS
+Xadc_noise_decoup_cell1_2[1|5] vcm VSS mimtop1 adc_noise_decoup_cell1_3[5|1]/mimcap_bot
 + VSS adc_noise_decoup_cell1
-Xadc_noise_decoup_cell1_0[0|0] vcm VSS adc_noise_decoup_cell1_1[5|1]/mimcap_top VSS
+Xadc_noise_decoup_cell1_2[0|6] vcm VSS mimtop1 adc_noise_decoup_cell1_3[5|1]/mimcap_bot
 + VSS adc_noise_decoup_cell1
-Xadc_noise_decoup_cell1_0[1|0] vcm VSS adc_noise_decoup_cell1_1[5|1]/mimcap_top VSS
+Xadc_noise_decoup_cell1_2[1|6] vcm VSS mimtop1 adc_noise_decoup_cell1_3[5|1]/mimcap_bot
 + VSS adc_noise_decoup_cell1
-Xadc_noise_decoup_cell1_0[0|1] vcm VSS adc_noise_decoup_cell1_1[5|1]/mimcap_top VSS
+Xadc_noise_decoup_cell1_2[0|7] vcm VSS mimtop1 adc_noise_decoup_cell1_3[5|1]/mimcap_bot
 + VSS adc_noise_decoup_cell1
-Xadc_noise_decoup_cell1_0[1|1] vcm VSS adc_noise_decoup_cell1_1[5|1]/mimcap_top VSS
+Xadc_noise_decoup_cell1_2[1|7] vcm VSS mimtop1 adc_noise_decoup_cell1_3[5|1]/mimcap_bot
 + VSS adc_noise_decoup_cell1
-Xadc_noise_decoup_cell1_0[0|2] vcm VSS adc_noise_decoup_cell1_1[5|1]/mimcap_top VSS
+Xadc_noise_decoup_cell1_2[0|8] vcm VSS mimtop1 adc_noise_decoup_cell1_3[5|1]/mimcap_bot
 + VSS adc_noise_decoup_cell1
-Xadc_noise_decoup_cell1_0[1|2] vcm VSS adc_noise_decoup_cell1_1[5|1]/mimcap_top VSS
+Xadc_noise_decoup_cell1_2[1|8] vcm VSS mimtop1 adc_noise_decoup_cell1_3[5|1]/mimcap_bot
 + VSS adc_noise_decoup_cell1
-Xadc_noise_decoup_cell1_0[0|3] vcm VSS adc_noise_decoup_cell1_1[5|1]/mimcap_top VSS
+Xadc_noise_decoup_cell1_2[0|9] vcm VSS mimtop1 adc_noise_decoup_cell1_3[5|1]/mimcap_bot
 + VSS adc_noise_decoup_cell1
-Xadc_noise_decoup_cell1_0[1|3] vcm VSS adc_noise_decoup_cell1_1[5|1]/mimcap_top VSS
+Xadc_noise_decoup_cell1_2[1|9] vcm VSS mimtop1 adc_noise_decoup_cell1_3[5|1]/mimcap_bot
 + VSS adc_noise_decoup_cell1
-Xadc_noise_decoup_cell1_0[0|4] vcm VSS adc_noise_decoup_cell1_1[5|1]/mimcap_top VSS
+Xadc_noise_decoup_cell1_2[0|10] vcm VSS mimtop1 adc_noise_decoup_cell1_3[5|1]/mimcap_bot
 + VSS adc_noise_decoup_cell1
-Xadc_noise_decoup_cell1_0[1|4] vcm VSS adc_noise_decoup_cell1_1[5|1]/mimcap_top VSS
+Xadc_noise_decoup_cell1_2[1|10] vcm VSS mimtop1 adc_noise_decoup_cell1_3[5|1]/mimcap_bot
 + VSS adc_noise_decoup_cell1
-Xadc_noise_decoup_cell1_0[0|5] vcm VSS adc_noise_decoup_cell1_1[5|1]/mimcap_top VSS
+Xadc_noise_decoup_cell1_2[0|11] vcm VSS mimtop1 adc_noise_decoup_cell1_3[5|1]/mimcap_bot
 + VSS adc_noise_decoup_cell1
-Xadc_noise_decoup_cell1_0[1|5] vcm VSS adc_noise_decoup_cell1_1[5|1]/mimcap_top VSS
+Xadc_noise_decoup_cell1_2[1|11] vcm VSS mimtop1 adc_noise_decoup_cell1_3[5|1]/mimcap_bot
 + VSS adc_noise_decoup_cell1
-Xadc_noise_decoup_cell1_0[0|6] vcm VSS adc_noise_decoup_cell1_1[5|1]/mimcap_top VSS
+Xadc_noise_decoup_cell1_2[0|12] vcm VSS mimtop1 adc_noise_decoup_cell1_3[5|1]/mimcap_bot
 + VSS adc_noise_decoup_cell1
-Xadc_noise_decoup_cell1_0[1|6] vcm VSS adc_noise_decoup_cell1_1[5|1]/mimcap_top VSS
+Xadc_noise_decoup_cell1_2[1|12] vcm VSS mimtop1 adc_noise_decoup_cell1_3[5|1]/mimcap_bot
 + VSS adc_noise_decoup_cell1
-Xadc_noise_decoup_cell1_0[0|7] vcm VSS adc_noise_decoup_cell1_1[5|1]/mimcap_top VSS
+Xadc_noise_decoup_cell1_2[0|13] vcm VSS mimtop1 adc_noise_decoup_cell1_3[5|1]/mimcap_bot
 + VSS adc_noise_decoup_cell1
-Xadc_noise_decoup_cell1_0[1|7] vcm VSS adc_noise_decoup_cell1_1[5|1]/mimcap_top VSS
+Xadc_noise_decoup_cell1_2[1|13] vcm VSS mimtop1 adc_noise_decoup_cell1_3[5|1]/mimcap_bot
 + VSS adc_noise_decoup_cell1
-Xadc_noise_decoup_cell1_0[0|8] vcm VSS adc_noise_decoup_cell1_1[5|1]/mimcap_top VSS
+Xadc_noise_decoup_cell1_2[0|14] vcm VSS mimtop1 adc_noise_decoup_cell1_3[5|1]/mimcap_bot
 + VSS adc_noise_decoup_cell1
-Xadc_noise_decoup_cell1_0[1|8] vcm VSS adc_noise_decoup_cell1_1[5|1]/mimcap_top VSS
+Xadc_noise_decoup_cell1_2[1|14] vcm VSS mimtop1 adc_noise_decoup_cell1_3[5|1]/mimcap_bot
 + VSS adc_noise_decoup_cell1
-Xadc_noise_decoup_cell1_0[0|9] vcm VSS adc_noise_decoup_cell1_1[5|1]/mimcap_top VSS
+Xadc_noise_decoup_cell1_2[0|15] vcm VSS mimtop1 adc_noise_decoup_cell1_3[5|1]/mimcap_bot
 + VSS adc_noise_decoup_cell1
-Xadc_noise_decoup_cell1_0[1|9] vcm VSS adc_noise_decoup_cell1_1[5|1]/mimcap_top VSS
+Xadc_noise_decoup_cell1_2[1|15] vcm VSS mimtop1 adc_noise_decoup_cell1_3[5|1]/mimcap_bot
 + VSS adc_noise_decoup_cell1
-Xadc_noise_decoup_cell1_0[0|10] vcm VSS adc_noise_decoup_cell1_1[5|1]/mimcap_top VSS
+Xadc_noise_decoup_cell1_2[0|16] vcm VSS mimtop1 adc_noise_decoup_cell1_3[5|1]/mimcap_bot
 + VSS adc_noise_decoup_cell1
-Xadc_noise_decoup_cell1_0[1|10] vcm VSS adc_noise_decoup_cell1_1[5|1]/mimcap_top VSS
+Xadc_noise_decoup_cell1_2[1|16] vcm VSS mimtop1 adc_noise_decoup_cell1_3[5|1]/mimcap_bot
 + VSS adc_noise_decoup_cell1
-Xadc_noise_decoup_cell1_0[0|11] vcm VSS adc_noise_decoup_cell1_1[5|1]/mimcap_top VSS
-+ VSS adc_noise_decoup_cell1
-Xadc_noise_decoup_cell1_0[1|11] vcm VSS adc_noise_decoup_cell1_1[5|1]/mimcap_top VSS
-+ VSS adc_noise_decoup_cell1
-Xadc_noise_decoup_cell1_0[0|12] vcm VSS adc_noise_decoup_cell1_1[5|1]/mimcap_top VSS
-+ VSS adc_noise_decoup_cell1
-Xadc_noise_decoup_cell1_0[1|12] vcm VSS adc_noise_decoup_cell1_1[5|1]/mimcap_top VSS
-+ VSS adc_noise_decoup_cell1
-Xadc_noise_decoup_cell1_0[0|13] vcm VSS adc_noise_decoup_cell1_1[5|1]/mimcap_top VSS
-+ VSS adc_noise_decoup_cell1
-Xadc_noise_decoup_cell1_0[1|13] vcm VSS adc_noise_decoup_cell1_1[5|1]/mimcap_top VSS
-+ VSS adc_noise_decoup_cell1
-Xadc_noise_decoup_cell1_0[0|14] vcm VSS adc_noise_decoup_cell1_1[5|1]/mimcap_top VSS
-+ VSS adc_noise_decoup_cell1
-Xadc_noise_decoup_cell1_0[1|14] vcm VSS adc_noise_decoup_cell1_1[5|1]/mimcap_top VSS
-+ VSS adc_noise_decoup_cell1
-Xadc_noise_decoup_cell1_2[0|0] vcm VSS adc_noise_decoup_cell1_3[5|1]/mimcap_top adc_noise_decoup_cell1_3[5|1]/mimcap_bot
-+ VSS adc_noise_decoup_cell1
-Xadc_noise_decoup_cell1_2[1|0] vcm VSS adc_noise_decoup_cell1_3[5|1]/mimcap_top adc_noise_decoup_cell1_3[5|1]/mimcap_bot
-+ VSS adc_noise_decoup_cell1
-Xadc_noise_decoup_cell1_2[0|1] vcm VSS adc_noise_decoup_cell1_3[5|1]/mimcap_top adc_noise_decoup_cell1_3[5|1]/mimcap_bot
-+ VSS adc_noise_decoup_cell1
-Xadc_noise_decoup_cell1_2[1|1] vcm VSS adc_noise_decoup_cell1_3[5|1]/mimcap_top adc_noise_decoup_cell1_3[5|1]/mimcap_bot
-+ VSS adc_noise_decoup_cell1
-Xadc_noise_decoup_cell1_2[0|2] vcm VSS adc_noise_decoup_cell1_3[5|1]/mimcap_top adc_noise_decoup_cell1_3[5|1]/mimcap_bot
-+ VSS adc_noise_decoup_cell1
-Xadc_noise_decoup_cell1_2[1|2] vcm VSS adc_noise_decoup_cell1_3[5|1]/mimcap_top adc_noise_decoup_cell1_3[5|1]/mimcap_bot
-+ VSS adc_noise_decoup_cell1
-Xadc_noise_decoup_cell1_2[0|3] vcm VSS adc_noise_decoup_cell1_3[5|1]/mimcap_top adc_noise_decoup_cell1_3[5|1]/mimcap_bot
-+ VSS adc_noise_decoup_cell1
-Xadc_noise_decoup_cell1_2[1|3] vcm VSS adc_noise_decoup_cell1_3[5|1]/mimcap_top adc_noise_decoup_cell1_3[5|1]/mimcap_bot
-+ VSS adc_noise_decoup_cell1
-Xadc_noise_decoup_cell1_2[0|4] vcm VSS adc_noise_decoup_cell1_3[5|1]/mimcap_top adc_noise_decoup_cell1_3[5|1]/mimcap_bot
-+ VSS adc_noise_decoup_cell1
-Xadc_noise_decoup_cell1_2[1|4] vcm VSS adc_noise_decoup_cell1_3[5|1]/mimcap_top adc_noise_decoup_cell1_3[5|1]/mimcap_bot
-+ VSS adc_noise_decoup_cell1
-Xadc_noise_decoup_cell1_2[0|5] vcm VSS adc_noise_decoup_cell1_3[5|1]/mimcap_top adc_noise_decoup_cell1_3[5|1]/mimcap_bot
-+ VSS adc_noise_decoup_cell1
-Xadc_noise_decoup_cell1_2[1|5] vcm VSS adc_noise_decoup_cell1_3[5|1]/mimcap_top adc_noise_decoup_cell1_3[5|1]/mimcap_bot
-+ VSS adc_noise_decoup_cell1
-Xadc_noise_decoup_cell1_2[0|6] vcm VSS adc_noise_decoup_cell1_3[5|1]/mimcap_top adc_noise_decoup_cell1_3[5|1]/mimcap_bot
-+ VSS adc_noise_decoup_cell1
-Xadc_noise_decoup_cell1_2[1|6] vcm VSS adc_noise_decoup_cell1_3[5|1]/mimcap_top adc_noise_decoup_cell1_3[5|1]/mimcap_bot
-+ VSS adc_noise_decoup_cell1
-Xadc_noise_decoup_cell1_2[0|7] vcm VSS adc_noise_decoup_cell1_3[5|1]/mimcap_top adc_noise_decoup_cell1_3[5|1]/mimcap_bot
-+ VSS adc_noise_decoup_cell1
-Xadc_noise_decoup_cell1_2[1|7] vcm VSS adc_noise_decoup_cell1_3[5|1]/mimcap_top adc_noise_decoup_cell1_3[5|1]/mimcap_bot
-+ VSS adc_noise_decoup_cell1
-Xadc_noise_decoup_cell1_2[0|8] vcm VSS adc_noise_decoup_cell1_3[5|1]/mimcap_top adc_noise_decoup_cell1_3[5|1]/mimcap_bot
-+ VSS adc_noise_decoup_cell1
-Xadc_noise_decoup_cell1_2[1|8] vcm VSS adc_noise_decoup_cell1_3[5|1]/mimcap_top adc_noise_decoup_cell1_3[5|1]/mimcap_bot
-+ VSS adc_noise_decoup_cell1
-Xadc_noise_decoup_cell1_2[0|9] vcm VSS adc_noise_decoup_cell1_3[5|1]/mimcap_top adc_noise_decoup_cell1_3[5|1]/mimcap_bot
-+ VSS adc_noise_decoup_cell1
-Xadc_noise_decoup_cell1_2[1|9] vcm VSS adc_noise_decoup_cell1_3[5|1]/mimcap_top adc_noise_decoup_cell1_3[5|1]/mimcap_bot
-+ VSS adc_noise_decoup_cell1
-Xadc_noise_decoup_cell1_2[0|10] vcm VSS adc_noise_decoup_cell1_3[5|1]/mimcap_top adc_noise_decoup_cell1_3[5|1]/mimcap_bot
-+ VSS adc_noise_decoup_cell1
-Xadc_noise_decoup_cell1_2[1|10] vcm VSS adc_noise_decoup_cell1_3[5|1]/mimcap_top adc_noise_decoup_cell1_3[5|1]/mimcap_bot
-+ VSS adc_noise_decoup_cell1
-Xadc_noise_decoup_cell1_2[0|11] vcm VSS adc_noise_decoup_cell1_3[5|1]/mimcap_top adc_noise_decoup_cell1_3[5|1]/mimcap_bot
-+ VSS adc_noise_decoup_cell1
-Xadc_noise_decoup_cell1_2[1|11] vcm VSS adc_noise_decoup_cell1_3[5|1]/mimcap_top adc_noise_decoup_cell1_3[5|1]/mimcap_bot
-+ VSS adc_noise_decoup_cell1
-Xadc_noise_decoup_cell1_2[0|12] vcm VSS adc_noise_decoup_cell1_3[5|1]/mimcap_top adc_noise_decoup_cell1_3[5|1]/mimcap_bot
-+ VSS adc_noise_decoup_cell1
-Xadc_noise_decoup_cell1_2[1|12] vcm VSS adc_noise_decoup_cell1_3[5|1]/mimcap_top adc_noise_decoup_cell1_3[5|1]/mimcap_bot
-+ VSS adc_noise_decoup_cell1
-Xadc_noise_decoup_cell1_2[0|13] vcm VSS adc_noise_decoup_cell1_3[5|1]/mimcap_top adc_noise_decoup_cell1_3[5|1]/mimcap_bot
-+ VSS adc_noise_decoup_cell1
-Xadc_noise_decoup_cell1_2[1|13] vcm VSS adc_noise_decoup_cell1_3[5|1]/mimcap_top adc_noise_decoup_cell1_3[5|1]/mimcap_bot
-+ VSS adc_noise_decoup_cell1
-Xadc_noise_decoup_cell1_2[0|14] vcm VSS adc_noise_decoup_cell1_3[5|1]/mimcap_top adc_noise_decoup_cell1_3[5|1]/mimcap_bot
-+ VSS adc_noise_decoup_cell1
-Xadc_noise_decoup_cell1_2[1|14] vcm VSS adc_noise_decoup_cell1_3[5|1]/mimcap_top adc_noise_decoup_cell1_3[5|1]/mimcap_bot
-+ VSS adc_noise_decoup_cell1
-Xsky130_fd_pr__nfet_01v8_8PFHMD_2 phi2 adc_noise_decoup_cell1_1[5|1]/mimcap_top adc_noise_decoup_cell1_3[5|1]/mimcap_bot
+Xsky130_fd_pr__nfet_01v8_8PFHMD_2 phi2 mimtop2 adc_noise_decoup_cell1_3[5|1]/mimcap_bot
 + phi2 adc_noise_decoup_cell1_3[5|1]/mimcap_bot VSS sky130_fd_pr__nfet_01v8_8PFHMD
-Xadc_noise_decoup_cell1_3[0|0] vcm VSS adc_noise_decoup_cell1_3[5|1]/mimcap_top adc_noise_decoup_cell1_3[5|1]/mimcap_bot
+Xadc_noise_decoup_cell1_3[0|0] vcm VSS mimtop1 adc_noise_decoup_cell1_3[5|1]/mimcap_bot
 + VSS adc_noise_decoup_cell1
-Xadc_noise_decoup_cell1_3[1|0] vcm VSS adc_noise_decoup_cell1_3[5|1]/mimcap_top adc_noise_decoup_cell1_3[5|1]/mimcap_bot
+Xadc_noise_decoup_cell1_3[1|0] vcm VSS mimtop1 adc_noise_decoup_cell1_3[5|1]/mimcap_bot
 + VSS adc_noise_decoup_cell1
-Xadc_noise_decoup_cell1_3[2|0] vcm VSS adc_noise_decoup_cell1_3[5|1]/mimcap_top adc_noise_decoup_cell1_3[5|1]/mimcap_bot
+Xadc_noise_decoup_cell1_3[2|0] vcm VSS mimtop1 adc_noise_decoup_cell1_3[5|1]/mimcap_bot
 + VSS adc_noise_decoup_cell1
-Xadc_noise_decoup_cell1_3[3|0] vcm VSS adc_noise_decoup_cell1_3[5|1]/mimcap_top adc_noise_decoup_cell1_3[5|1]/mimcap_bot
+Xadc_noise_decoup_cell1_3[3|0] vcm VSS mimtop1 adc_noise_decoup_cell1_3[5|1]/mimcap_bot
 + VSS adc_noise_decoup_cell1
-Xadc_noise_decoup_cell1_3[4|0] vcm VSS adc_noise_decoup_cell1_3[5|1]/mimcap_top adc_noise_decoup_cell1_3[5|1]/mimcap_bot
+Xadc_noise_decoup_cell1_3[4|0] vcm VSS mimtop1 adc_noise_decoup_cell1_3[5|1]/mimcap_bot
 + VSS adc_noise_decoup_cell1
-Xadc_noise_decoup_cell1_3[5|0] vcm VSS adc_noise_decoup_cell1_3[5|1]/mimcap_top adc_noise_decoup_cell1_3[5|1]/mimcap_bot
+Xadc_noise_decoup_cell1_3[5|0] vcm VSS mimtop1 adc_noise_decoup_cell1_3[5|1]/mimcap_bot
 + VSS adc_noise_decoup_cell1
-Xadc_noise_decoup_cell1_3[0|1] vcm VSS adc_noise_decoup_cell1_3[5|1]/mimcap_top adc_noise_decoup_cell1_3[5|1]/mimcap_bot
+Xadc_noise_decoup_cell1_3[0|1] vcm VSS mimtop1 adc_noise_decoup_cell1_3[5|1]/mimcap_bot
 + VSS adc_noise_decoup_cell1
-Xadc_noise_decoup_cell1_3[1|1] vcm VSS adc_noise_decoup_cell1_3[5|1]/mimcap_top adc_noise_decoup_cell1_3[5|1]/mimcap_bot
+Xadc_noise_decoup_cell1_3[1|1] vcm VSS mimtop1 adc_noise_decoup_cell1_3[5|1]/mimcap_bot
 + VSS adc_noise_decoup_cell1
-Xadc_noise_decoup_cell1_3[2|1] vcm VSS adc_noise_decoup_cell1_3[5|1]/mimcap_top adc_noise_decoup_cell1_3[5|1]/mimcap_bot
+Xadc_noise_decoup_cell1_3[2|1] vcm VSS mimtop1 adc_noise_decoup_cell1_3[5|1]/mimcap_bot
 + VSS adc_noise_decoup_cell1
-Xadc_noise_decoup_cell1_3[3|1] vcm VSS adc_noise_decoup_cell1_3[5|1]/mimcap_top adc_noise_decoup_cell1_3[5|1]/mimcap_bot
+Xadc_noise_decoup_cell1_3[3|1] vcm VSS mimtop1 adc_noise_decoup_cell1_3[5|1]/mimcap_bot
 + VSS adc_noise_decoup_cell1
-Xadc_noise_decoup_cell1_3[4|1] vcm VSS adc_noise_decoup_cell1_3[5|1]/mimcap_top adc_noise_decoup_cell1_3[5|1]/mimcap_bot
+Xadc_noise_decoup_cell1_3[4|1] vcm VSS mimtop1 adc_noise_decoup_cell1_3[5|1]/mimcap_bot
 + VSS adc_noise_decoup_cell1
-Xadc_noise_decoup_cell1_3[5|1] vcm VSS adc_noise_decoup_cell1_3[5|1]/mimcap_top adc_noise_decoup_cell1_3[5|1]/mimcap_bot
+Xadc_noise_decoup_cell1_3[5|1] vcm VSS mimtop1 adc_noise_decoup_cell1_3[5|1]/mimcap_bot
 + VSS adc_noise_decoup_cell1
-Xsky130_fd_pr__nfet_01v8_8PFHMD_3 phi2 VDD adc_noise_decoup_cell1_3[5|1]/mimcap_top
-+ phi2 adc_noise_decoup_cell1_3[5|1]/mimcap_top VSS sky130_fd_pr__nfet_01v8_8PFHMD
+Xsky130_fd_pr__nfet_01v8_8PFHMD_3 phi2 VDD mimtop1 phi2 mimtop1 VSS sky130_fd_pr__nfet_01v8_8PFHMD
 Xsky130_fd_pr__nfet_01v8_8PFHMD_4 phi1 VSS adc_noise_decoup_cell1_3[5|1]/mimcap_bot
 + phi1 adc_noise_decoup_cell1_3[5|1]/mimcap_bot VSS sky130_fd_pr__nfet_01v8_8PFHMD
-Xsky130_fd_sc_hd__nand2_1_0 clk sky130_fd_sc_hd__nand2_1_0/B VSS VDD sky130_fd_sc_hd__nand2_1_0/Y
+Xsky130_fd_sc_hd__nand2_1_0 clk sky130_fd_sc_hd__inv_1_3/Y VSS VDD sky130_fd_sc_hd__nand2_1_0/Y
 + VSS VDD sky130_fd_sc_hd__nand2_1
-Xsky130_fd_sc_hd__nand2_1_1 sky130_fd_sc_hd__nand2_1_1/A sky130_fd_sc_hd__inv_1_4/Y
-+ VSS VDD sky130_fd_sc_hd__inv_1_1/A VSS VDD sky130_fd_sc_hd__nand2_1
+Xsky130_fd_sc_hd__nand2_1_1 sky130_fd_sc_hd__inv_1_2/Y sky130_fd_sc_hd__inv_1_4/Y
++ VSS VDD sky130_fd_sc_hd__nand2_1_1/Y VSS VDD sky130_fd_sc_hd__nand2_1
 Xsky130_fd_sc_hd__inv_1_0 sky130_fd_sc_hd__inv_1_0/A VSS VDD sky130_fd_sc_hd__inv_1_2/A
 + VSS VDD sky130_fd_sc_hd__inv_1
 Xsky130_fd_sc_hd__inv_1_1 sky130_fd_sc_hd__inv_1_1/A VSS VDD sky130_fd_sc_hd__inv_1_3/A

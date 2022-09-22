@@ -22,6 +22,7 @@ T {non-overlapping
 clock generation} 460 -1080 0 0 0.4 0.4 {}
 T {switched cap
 voltage divider} 1060 -1080 0 0 0.4 0.4 {}
+T {CAVE! UN-COMMENT FOR LVS NETLIST-EXTRACTION} 210 -1260 0 0 1 1 {}
 N 460 -690 490 -690 {
 lab=clk}
 N 540 -640 540 -610 {
@@ -147,8 +148,8 @@ C {/foss/designs/SKY130_SAR-ADC/xschem/switch/switch_150n.sym} 1090 -580 0 0 {na
 C {/foss/designs/SKY130_SAR-ADC/xschem/switch/switch_150n.sym} 880 -570 0 0 {name=X4}
 C {/foss/designs/SKY130_SAR-ADC/xschem/switch/switch_150n.sym} 1350 -790 3 0 {name=X5}
 C {/foss/designs/SKY130_SAR-ADC/xschem/switch/switch_150n.sym} 1360 -480 3 0 {name=X6}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_noise_decoup_cell/adc_noise_decoup_cell1.sym} 1040 -720 0 0 {name=x7_[1..42]}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_noise_decoup_cell/adc_noise_decoup_cell1.sym} 1040 -410 0 0 {name=x8[1..42]}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_noise_decoup_cell/adc_noise_decoup_cell1.sym} 1040 -720 0 0 {name=x7_[1..46]}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_noise_decoup_cell/adc_noise_decoup_cell1.sym} 1040 -410 0 0 {name=x8_[1..46]}
 C {devices/iopin.sym} 330 -1010 0 1 {name=p1 lab=VDD}
 C {devices/iopin.sym} 350 -290 0 1 {name=p1 lab=VSS}
 C {devices/lab_wire.sym} 1020 -890 0 0 {name=l1 sig_type=std_logic lab=phi2}
@@ -178,7 +179,7 @@ C {devices/lab_wire.sym} 1150 -580 0 1 {name=l1 sig_type=std_logic lab=phi2_n}
 C {devices/lab_wire.sym} 1030 -580 0 0 {name=l1 sig_type=std_logic lab=phi2}
 C {devices/lab_wire.sym} 980 -770 0 0 {name=l1 sig_type=std_logic lab=vcm}
 C {devices/lab_wire.sym} 980 -460 0 0 {name=l1 sig_type=std_logic lab=vcm}
-C {devices/code_shown.sym} 210 -1170 0 0 {name=FOR_NETLIST_EXTRACTION_LVS only_toplevel=false value="*.include /foss/pdk/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_fd_sc_hd.spice"}
+C {devices/code_shown.sym} 210 -1170 0 0 {name=FOR_NETLIST_EXTRACTION_LVS only_toplevel=false value=".include /foss/pdk/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_fd_sc_hd.spice"}
 C {devices/lab_wire.sym} 1220 -790 0 0 {name=l1 sig_type=std_logic lab=mimtop1}
 C {devices/lab_wire.sym} 1230 -480 0 0 {name=l1 sig_type=std_logic lab=mimtop2}
 C {devices/lab_wire.sym} 900 -660 0 0 {name=l1 sig_type=std_logic lab=mimbot1}
