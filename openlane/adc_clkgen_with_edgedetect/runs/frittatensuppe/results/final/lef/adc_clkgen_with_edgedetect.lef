@@ -1,0 +1,96 @@
+VERSION 5.7 ;
+  NOWIREEXTENSIONATPIN ON ;
+  DIVIDERCHAR "/" ;
+  BUSBITCHARS "[]" ;
+MACRO adc_clkgen_with_edgedetect
+  CLASS BLOCK ;
+  FOREIGN adc_clkgen_with_edgedetect ;
+  ORIGIN 0.000 0.000 ;
+  SIZE 60.000 BY 85.000 ;
+  PIN VGND
+    DIRECTION INOUT ;
+    USE GROUND ;
+    PORT
+      LAYER met4 ;
+        RECT 18.510 2.480 20.110 81.840 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 47.510 2.480 49.110 81.840 ;
+    END
+  END VGND
+  PIN VPWR
+    DIRECTION INOUT ;
+    USE POWER ;
+    PORT
+      LAYER met4 ;
+        RECT 11.260 2.480 12.860 81.840 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 40.260 2.480 41.860 81.840 ;
+    END
+  END VPWR
+  PIN clk_comp
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 56.000 63.280 60.000 63.880 ;
+    END
+  END clk_comp
+  PIN clk_dig
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 56.000 21.120 60.000 21.720 ;
+    END
+  END clk_dig
+  PIN comp_trig
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 70.080 4.000 70.680 ;
+    END
+  END comp_trig
+  PIN ena_in
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 14.320 4.000 14.920 ;
+    END
+  END ena_in
+  PIN start_conv
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 42.200 4.000 42.800 ;
+    END
+  END start_conv
+  OBS
+      LAYER li1 ;
+        RECT 0.460 2.635 59.340 81.685 ;
+      LAYER met1 ;
+        RECT 0.460 2.080 59.340 81.840 ;
+      LAYER met2 ;
+        RECT 2.850 2.050 56.940 81.785 ;
+      LAYER met3 ;
+        RECT 2.825 71.080 56.000 81.765 ;
+        RECT 4.400 69.680 56.000 71.080 ;
+        RECT 2.825 64.280 56.000 69.680 ;
+        RECT 2.825 62.880 55.600 64.280 ;
+        RECT 2.825 43.200 56.000 62.880 ;
+        RECT 4.400 41.800 56.000 43.200 ;
+        RECT 2.825 22.120 56.000 41.800 ;
+        RECT 2.825 20.720 55.600 22.120 ;
+        RECT 2.825 15.320 56.000 20.720 ;
+        RECT 4.400 13.920 56.000 15.320 ;
+        RECT 2.825 2.555 56.000 13.920 ;
+  END
+END adc_clkgen_with_edgedetect
+END LIBRARY
+

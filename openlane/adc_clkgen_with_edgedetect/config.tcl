@@ -23,15 +23,14 @@ set ::env(DESIGN_NAME) adc_clkgen_with_edgedetect
  set ::env(SYNTH_READ_BLACKBOX_LIB) 1
 
 # Floorplanning
-# set ::env(FP_SIZING) "relative"
-# set ::env(FP_ASPECT_RATIO) 0.8
  set ::env(FP_SIZING) "absolute"
- set ::env(DIE_AREA) "0 0 100 75"
- set ::env(FP_CORE_UTIL) {65}
+ set ::env(DIE_AREA) "0 0 60 85"
+ set ::env(BOTTOM_MARGIN_MULT) 1
+ set ::env(TOP_MARGIN_MULT) 1
+ set ::env(LEFT_MARGIN_MULT) 1
+ set ::env(RIGHT_MARGIN_MULT) 1
 
 
- set ::env(FP_PDN_VWIDTH) 2 
- set ::env(FP_PDN_HWIDTH) 2 
  set ::env(FP_PDN_HOFFSET) {11.6}
  set ::env(FP_PDN_VOFFSET) $::env(FP_PDN_HOFFSET)
  set ::env(FP_PDN_HPITCH) 29
@@ -47,7 +46,7 @@ set ::env(DESIGN_NAME) adc_clkgen_with_edgedetect
 
 # Placement
  set ::env(PL_BASIC_PLACEMENT) 1
- set ::env(PL_TARGET_DENSITY) {0.70}
+ set ::env(PL_TARGET_DENSITY) {0.90}
  set ::env(PL_RESIZER_TIMING_OPTIMIZATIONS) {0}
  set ::env(PL_RESIZER_DESIGN_OPTIMIZATIONS) {0}
 # set ::env(PL_ROUTABILITY_DRIVEN) {1}

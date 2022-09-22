@@ -1,0 +1,184 @@
+OpenROAD v2.0-4818-g4174c3ad8 
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+[INFO ODB-0222] Reading LEF file: /foss/designs/SKY130_SAR-ADC/openlane/adc_clkgen_with_edgedetect/runs/frittatensuppe/tmp/merged.nom.lef
+[WARNING ODB-0220] WARNING (LEFPARS-2036): SOURCE statement is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /foss/designs/SKY130_SAR-ADC/openlane/adc_clkgen_with_edgedetect/runs/frittatensuppe/tmp/merged.nom.lef at line 930.
+
+[INFO ODB-0223]     Created 13 technology layers
+[INFO ODB-0224]     Created 25 technology vias
+[INFO ODB-0225]     Created 442 library cells
+[INFO ODB-0226] Finished LEF file:  /foss/designs/SKY130_SAR-ADC/openlane/adc_clkgen_with_edgedetect/runs/frittatensuppe/tmp/merged.nom.lef
+[INFO ODB-0127] Reading DEF file: /foss/designs/SKY130_SAR-ADC/openlane/adc_clkgen_with_edgedetect/runs/frittatensuppe/results/placement/adc_clkgen_with_edgedetect.buffers_removed.buffers_removed.def
+[INFO ODB-0128] Design: adc_clkgen_with_edgedetect
+[INFO ODB-0130]     Created 7 pins.
+[INFO ODB-0131]     Created 213 components and 917 component-terminals.
+[INFO ODB-0132]     Created 4 special nets and 728 connections.
+[INFO ODB-0133]     Created 96 nets and 189 connections.
+[INFO ODB-0134] Finished DEF file: /foss/designs/SKY130_SAR-ADC/openlane/adc_clkgen_with_edgedetect/runs/frittatensuppe/results/placement/adc_clkgen_with_edgedetect.buffers_removed.buffers_removed.def
+[WARNING STA-0357] virtual clock __VIRTUAL_CLK__ can not be propagated.
+[INFO]: Setting signal min routing layer to: met1 and clock min routing layer to met1. 
+[INFO]: Setting signal max routing layer to: met4 and clock max routing layer to met4. 
+-congestion_iterations 50 -verbose
+[INFO GRT-0020] Min routing layer: met1
+[INFO GRT-0021] Max routing layer: met4
+[INFO GRT-0022] Global adjustment: 30%
+[INFO GRT-0023] Grid origin: (0, 0)
+[INFO GRT-0043] No OR_DEFAULT vias defined.
+[INFO GRT-0088] Layer li1     Track-Pitch = 0.4600  line-2-Via Pitch: 0.3400
+[INFO GRT-0088] Layer met1    Track-Pitch = 0.3400  line-2-Via Pitch: 0.3400
+[INFO GRT-0088] Layer met2    Track-Pitch = 0.4600  line-2-Via Pitch: 0.3500
+[INFO GRT-0088] Layer met3    Track-Pitch = 0.6800  line-2-Via Pitch: 0.6150
+[INFO GRT-0088] Layer met4    Track-Pitch = 0.9200  line-2-Via Pitch: 0.6150
+[INFO GRT-0019] Found 0 clock nets.
+[INFO GRT-0001] Minimum degree: 2
+[INFO GRT-0002] Maximum degree: 3
+[INFO GRT-0003] Macros: 0
+[INFO GRT-0004] Blockages: 1700
+
+[INFO GRT-0053] Routing resources analysis:
+          Routing      Original      Derated      Resource
+Layer     Direction    Resources     Resources    Reduction (%)
+---------------------------------------------------------------
+li1        Vertical            0             0          0.00%
+met1       Horizontal       1920           963          49.84%
+met2       Vertical         1440          1023          28.96%
+met3       Horizontal        960           616          35.83%
+met4       Vertical          672           440          34.52%
+---------------------------------------------------------------
+
+[INFO GRT-0197] Via related to pin nodes: 272
+[INFO GRT-0198] Via related Steiner nodes: 0
+[INFO GRT-0199] Via filling finished.
+[INFO GRT-0111] Final number of vias: 329
+[INFO GRT-0112] Final usage 3D: 1403
+
+[INFO GRT-0096] Final congestion report:
+Layer         Resource        Demand        Usage (%)    Max H / Max V / Total Overflow
+---------------------------------------------------------------------------------------
+li1                  0             0            0.00%             0 /  0 /  0
+met1               963            89            9.24%             0 /  0 /  0
+met2              1023           327           31.96%             0 /  0 /  0
+met3               616             0            0.00%             0 /  0 /  0
+met4               440             0            0.00%             0 /  0 /  0
+---------------------------------------------------------------------------------------
+Total             3042           416           13.68%             0 /  0 /  0
+
+[INFO GRT-0018] Total wirelength: 3953 um
+[INFO GRT-0014] Routed nets: 96
+[INFO GRT-0006] Repairing antennas, iteration 1.
+[INFO GRT-0043] No OR_DEFAULT vias defined.
+[INFO GRT-0012] Found 0 antenna violations.
+[INFO]: Setting RC values...
+min_report
+
+===========================================================================
+report_checks -path_delay min (Hold)
+============================================================================
+No paths found.
+min_report_end
+max_report
+
+===========================================================================
+report_checks -path_delay max (Setup)
+============================================================================
+No paths found.
+max_report_end
+check_report
+
+===========================================================================
+report_checks -unconstrained
+============================================================================
+Startpoint: start_conv (input port clocked by __VIRTUAL_CLK__)
+Endpoint: clkgen.delay_100ns_3.genblk1[1].delay_unit/in (internal pin)
+Path Group: (none)
+Path Type: max
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                          2.00    2.00 v input external delay
+                  0.01    0.01    2.01 v start_conv (in)
+     1    0.00                           start_conv (net)
+                  0.01    0.00    2.01 v inbuf_2/A (sky130_fd_sc_hd__buf_1)
+                  0.06    0.11    2.11 v inbuf_2/X (sky130_fd_sc_hd__buf_1)
+     2    0.01                           edgedetect.delay_200ns._intsig_a_[1] (net)
+                  0.06    0.00    2.11 v _1_/B (sky130_fd_sc_hd__and2b_2)
+                  0.04    0.20    2.32 v _1_/X (sky130_fd_sc_hd__and2b_2)
+     1    0.00                           _0_ (net)
+                  0.04    0.00    2.32 v _2_/A2 (sky130_fd_sc_hd__o21ba_2)
+                  0.05    0.21    2.53 v _2_/X (sky130_fd_sc_hd__o21ba_2)
+     1    0.01                           clkgen.delay_100ns_3._intsig_a_[1] (net)
+                  0.05    0.00    2.53 v clkgen.delay_100ns_3.genblk1[1].delay_unit/in (sky130_mm_sc_hd_dlyPoly6ns)
+                                  2.53   data arrival time
+-----------------------------------------------------------------------------
+(Path is unconstrained)
+
+
+
+===========================================================================
+report_checks --slack_max -0.01
+============================================================================
+No paths found.
+check_report_end
+check_slew
+
+===========================================================================
+ report_check_types -max_slew -max_cap -max_fanout -violators
+============================================================================
+
+===========================================================================
+max slew violation count 0
+max fanout violation count 0
+max cap violation count 0
+============================================================================
+check_slew_end
+tns_report
+
+===========================================================================
+ report_tns
+============================================================================
+tns 0.00
+tns_report_end
+wns_report
+
+===========================================================================
+ report_wns
+============================================================================
+wns 0.00
+wns_report_end
+worst_slack
+
+===========================================================================
+ report_worst_slack -max (Setup)
+============================================================================
+worst slack INF
+
+===========================================================================
+ report_worst_slack -min (Hold)
+============================================================================
+worst slack INF
+worst_slack_end
+power_report
+
+===========================================================================
+ report_power
+============================================================================
+Group                  Internal  Switching    Leakage      Total
+                          Power      Power      Power      Power (Watts)
+----------------------------------------------------------------
+Sequential             0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
+Combinational          8.69e-07   8.98e-07   4.80e-10   1.77e-06 100.0%
+Macro                  0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
+Pad                    0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
+----------------------------------------------------------------
+Total                  8.69e-07   8.98e-07   4.80e-10   1.77e-06 100.0%
+                          49.2%      50.8%       0.0%
+power_report_end
+area_report
+
+===========================================================================
+ report_design_area
+============================================================================
+Design area 2785 u^2 60% utilization.
+area_report_end
