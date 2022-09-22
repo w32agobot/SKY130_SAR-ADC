@@ -1,0 +1,37 @@
+v {xschem version=3.1.0 file_version=1.2
+}
+G {}
+K {type=primitive
+format="@name @pinlist @symname"
+template="name=x1"
+}
+V {}
+S {}
+E {}
+L 4 -130 -40 130 -40 {}
+L 4 -130 40 130 40 {}
+L 4 -130 -40 -130 40 {}
+L 4 130 -40 130 40 {}
+L 4 130 10 150 10 {}
+L 4 130 30 150 30 {}
+L 4 -150 -30 -130 -30 {}
+L 4 -150 -10 -130 -10 {}
+L 4 -150 10 -130 10 {}
+L 7 0 -60 0 -40 {}
+L 7 0 40 0 60 {}
+B 5 -2.5 -62.5 2.5 -57.5 {name=VPWR dir=inout }
+B 5 -2.5 57.5 2.5 62.5 {name=VGND dir=inout }
+B 5 147.5 7.5 152.5 12.5 {name=clk_comp dir=out }
+B 5 147.5 27.5 152.5 32.5 {name=clk_dig dir=out }
+B 5 -152.5 -32.5 -147.5 -27.5 {name=ena_in dir=in }
+B 5 -152.5 -12.5 -147.5 -7.5 {name=start_conv dir=in }
+B 5 -152.5 7.5 -147.5 12.5 {name=comp_trig dir=in }
+T {@symname} 37.5 44 0 0 0.3 0.3 {}
+T {@name} 45 68 0 0 0.2 0.2 {}
+T {VPWR} -4 -35 3 1 0.2 0.2 {}
+T {VGND} 4 35 1 1 0.2 0.2 {}
+T {clk_comp} 125 6 0 1 0.2 0.2 {}
+T {clk_dig} 125 26 0 1 0.2 0.2 {}
+T {ena_in} -125 -34 0 0 0.2 0.2 {}
+T {start_conv} -125 -14 0 0 0.2 0.2 {}
+T {comp_trig} -125 6 0 0 0.2 0.2 {}
