@@ -1,0 +1,107 @@
+
+===========================================================================
+report_checks -unconstrained
+============================================================================
+
+======================= Slowest Corner ===================================
+
+Startpoint: start_conv (input port clocked by __VIRTUAL_CLK__)
+Endpoint: clkgen.delay_100ns_3.genblk1[1].delay_unit/in (internal pin)
+Path Group: (none)
+Path Type: max
+Corner: ss
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                          2.00    2.00 v input external delay
+                  0.02    0.01    2.01 v start_conv (in)
+     1    0.00                           start_conv (net)
+                  0.02    0.00    2.01 v inbuf_2/A (sky130_fd_sc_hd__buf_1)
+                  0.21    0.27    2.28 v inbuf_2/X (sky130_fd_sc_hd__buf_1)
+     2    0.02                           edgedetect.delay_200ns._intsig_a_[1] (net)
+                  0.21    0.00    2.28 v _1_/B (sky130_fd_sc_hd__and2b_2)
+                  0.07    0.49    2.78 v _1_/X (sky130_fd_sc_hd__and2b_2)
+     1    0.00                           _0_ (net)
+                  0.07    0.00    2.78 v _2_/A2 (sky130_fd_sc_hd__o21ba_2)
+                  0.06    0.38    3.16 v _2_/X (sky130_fd_sc_hd__o21ba_2)
+     1    0.00                           clkgen.delay_100ns_3._intsig_a_[1] (net)
+                  0.06    0.00    3.16 v clkgen.delay_100ns_3.genblk1[1].delay_unit/in (sky130_mm_sc_hd_dlyPoly6ns)
+                                  3.16   data arrival time
+-----------------------------------------------------------------------------
+(Path is unconstrained)
+
+
+
+======================= Typical Corner ===================================
+
+Startpoint: start_conv (input port clocked by __VIRTUAL_CLK__)
+Endpoint: clkgen.delay_100ns_3.genblk1[1].delay_unit/in (internal pin)
+Path Group: (none)
+Path Type: max
+Corner: tt
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                          2.00    2.00 v input external delay
+                  0.01    0.00    2.00 v start_conv (in)
+     1    0.00                           start_conv (net)
+                  0.01    0.00    2.00 v inbuf_2/A (sky130_fd_sc_hd__buf_1)
+                  0.11    0.14    2.15 v inbuf_2/X (sky130_fd_sc_hd__buf_1)
+     2    0.02                           edgedetect.delay_200ns._intsig_a_[1] (net)
+                  0.11    0.00    2.15 v _1_/B (sky130_fd_sc_hd__and2b_2)
+                  0.04    0.23    2.38 v _1_/X (sky130_fd_sc_hd__and2b_2)
+     1    0.00                           _0_ (net)
+                  0.04    0.00    2.38 v _2_/A2 (sky130_fd_sc_hd__o21ba_2)
+                  0.04    0.20    2.57 v _2_/X (sky130_fd_sc_hd__o21ba_2)
+     1    0.00                           clkgen.delay_100ns_3._intsig_a_[1] (net)
+                  0.04    0.00    2.57 v clkgen.delay_100ns_3.genblk1[1].delay_unit/in (sky130_mm_sc_hd_dlyPoly6ns)
+                                  2.57   data arrival time
+-----------------------------------------------------------------------------
+(Path is unconstrained)
+
+
+
+======================= Fastest Corner ===================================
+
+Startpoint: start_conv (input port clocked by __VIRTUAL_CLK__)
+Endpoint: clkgen.delay_100ns_3.genblk1[1].delay_unit/in (internal pin)
+Path Group: (none)
+Path Type: max
+Corner: ff
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                          2.00    2.00 v input external delay
+                  0.00    0.00    2.00 v start_conv (in)
+     1    0.00                           start_conv (net)
+                  0.00    0.00    2.00 v inbuf_2/A (sky130_fd_sc_hd__buf_1)
+                  0.07    0.10    2.10 v inbuf_2/X (sky130_fd_sc_hd__buf_1)
+     2    0.02                           edgedetect.delay_200ns._intsig_a_[1] (net)
+                  0.07    0.00    2.10 v _1_/B (sky130_fd_sc_hd__and2b_2)
+                  0.03    0.14    2.24 v _1_/X (sky130_fd_sc_hd__and2b_2)
+     1    0.00                           _0_ (net)
+                  0.03    0.00    2.24 v _2_/A2 (sky130_fd_sc_hd__o21ba_2)
+                  0.03    0.12    2.36 v _2_/X (sky130_fd_sc_hd__o21ba_2)
+     1    0.00                           clkgen.delay_100ns_3._intsig_a_[1] (net)
+                  0.03    0.00    2.36 v clkgen.delay_100ns_3.genblk1[1].delay_unit/in (sky130_mm_sc_hd_dlyPoly6ns)
+                                  2.36   data arrival time
+-----------------------------------------------------------------------------
+(Path is unconstrained)
+
+
+
+===========================================================================
+report_checks --slack_max -0.01
+============================================================================
+
+======================= Slowest Corner ===================================
+
+No paths found.
+
+======================= Typical Corner ===================================
+
+No paths found.
+
+======================= Fastest Corner ===================================
+
+No paths found.

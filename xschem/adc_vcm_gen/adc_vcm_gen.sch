@@ -137,6 +137,26 @@ N 540 -610 540 -290 {
 lab=VSS}
 N 310 -690 460 -690 {
 lab=clk}
+N 610 -930 610 -910 {
+lab=VDD}
+N 610 -930 710 -930 {
+lab=VDD}
+N 710 -930 710 -910 {
+lab=VDD}
+N 610 -850 610 -830 {
+lab=VSS}
+N 610 -830 710 -830 {
+lab=VSS}
+N 710 -850 710 -830 {
+lab=VSS}
+N 660 -1010 660 -930 {
+lab=VDD}
+N 660 -800 670 -800 {
+lab=VSS}
+N 660 -830 660 -800 {
+lab=VSS}
+N 660 -850 660 -830 {
+lab=VSS}
 C {devices/title.sym} 170 -40 0 0 {name=l1 author="Manuel Moser"}
 C {/foss/designs/SKY130_SAR-ADC/xschem/adc_cm_clkgen/adc_cm_clkgen.sym} 490 -690 0 0 {name=X1}
 C {devices/lab_wire.sym} 700 -720 0 1 {name=l7 sig_type=std_logic lab=phi1}
@@ -148,8 +168,8 @@ C {/foss/designs/SKY130_SAR-ADC/xschem/switch/switch_150n.sym} 1090 -580 0 0 {na
 C {/foss/designs/SKY130_SAR-ADC/xschem/switch/switch_150n.sym} 880 -570 0 0 {name=X4}
 C {/foss/designs/SKY130_SAR-ADC/xschem/switch/switch_150n.sym} 1350 -790 3 0 {name=X5}
 C {/foss/designs/SKY130_SAR-ADC/xschem/switch/switch_150n.sym} 1360 -480 3 0 {name=X6}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_noise_decoup_cell/adc_noise_decoup_cell1.sym} 1040 -720 0 0 {name=x7_[1..46]}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_noise_decoup_cell/adc_noise_decoup_cell1.sym} 1040 -410 0 0 {name=x8_[1..46]}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_noise_decoup_cell/adc_noise_decoup_cell1.sym} 1040 -720 0 0 {name=x7_[1..42]}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_noise_decoup_cell/adc_noise_decoup_cell1.sym} 1040 -410 0 0 {name=x8_[1..42]}
 C {devices/iopin.sym} 330 -1010 0 1 {name=p1 lab=VDD}
 C {devices/iopin.sym} 350 -290 0 1 {name=p1 lab=VSS}
 C {devices/lab_wire.sym} 1020 -890 0 0 {name=l1 sig_type=std_logic lab=phi2}
@@ -179,7 +199,9 @@ C {devices/lab_wire.sym} 1150 -580 0 1 {name=l1 sig_type=std_logic lab=phi2_n}
 C {devices/lab_wire.sym} 1030 -580 0 0 {name=l1 sig_type=std_logic lab=phi2}
 C {devices/lab_wire.sym} 980 -770 0 0 {name=l1 sig_type=std_logic lab=vcm}
 C {devices/lab_wire.sym} 980 -460 0 0 {name=l1 sig_type=std_logic lab=vcm}
-C {devices/code_shown.sym} 210 -1170 0 0 {name=FOR_NETLIST_EXTRACTION_LVS only_toplevel=false value=".include /foss/pdk/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_fd_sc_hd.spice"}
+C {devices/code_shown.sym} 210 -1170 0 0 {name=FOR_NETLIST_EXTRACTION_LVS only_toplevel=false value="*.include /foss/pdk/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_fd_sc_hd.spice"}
 C {devices/lab_wire.sym} 1220 -790 0 0 {name=l1 sig_type=std_logic lab=mimtop1}
 C {devices/lab_wire.sym} 1230 -480 0 0 {name=l1 sig_type=std_logic lab=mimtop2}
 C {devices/lab_wire.sym} 900 -660 0 0 {name=l1 sig_type=std_logic lab=mimbot1}
+C {/foss/designs/SKY130_SAR-ADC/xschem/adc_noise_decoup_cell/adc_noise_decoup_cell1.sym} 660 -860 0 0 {name=x9_[1..4]}
+C {devices/lab_wire.sym} 670 -800 0 1 {name=l1 sig_type=std_logic lab=VSS}
