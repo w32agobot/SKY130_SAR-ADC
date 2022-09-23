@@ -3,11 +3,13 @@ VERSION 5.7 ;
   DIVIDERCHAR "/" ;
   BUSBITCHARS "[]" ;
 MACRO adc_comp_latch
-  CLASS BLOCK ;
+  CLASS CORE ;
   FOREIGN adc_comp_latch ;
   ORIGIN 2.790 -13.980 ;
   SIZE 30.050 BY 27.980 ;
   PIN latch_q
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
     ANTENNAGATEAREA 0.303000 ;
     ANTENNADIFFAREA 0.756400 ;
     PORT
@@ -41,6 +43,8 @@ MACRO adc_comp_latch
     END
   END latch_q
   PIN latch_qn
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
     ANTENNAGATEAREA 0.303000 ;
     ANTENNADIFFAREA 0.756400 ;
     PORT
@@ -76,6 +80,8 @@ MACRO adc_comp_latch
     END
   END latch_qn
   PIN comp_trig
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
     ANTENNADIFFAREA 0.756400 ;
     PORT
       LAYER li1 ;
@@ -97,12 +103,13 @@ MACRO adc_comp_latch
         RECT 19.460 26.880 19.690 27.020 ;
         RECT 20.420 26.880 20.650 27.020 ;
         RECT 21.900 26.710 22.580 26.760 ;
-        RECT 21.900 26.570 27.260 26.710 ;
+        RECT 21.900 26.570 23.850 26.710 ;
         RECT 21.900 26.520 22.580 26.570 ;
     END
   END comp_trig
   PIN VSS
-    ANTENNADIFFAREA 79.479301 ;
+    DIRECTION INOUT ;
+    USE POWER ;
     PORT
       LAYER pwell ;
         RECT 4.530 39.970 6.930 40.870 ;
@@ -824,7 +831,8 @@ MACRO adc_comp_latch
     END
   END VSS
   PIN VDD
-    ANTENNADIFFAREA 8.718300 ;
+    DIRECTION INOUT ;
+    USE POWER ;
     PORT
       LAYER nwell ;
         RECT 15.590 32.000 23.500 32.020 ;
@@ -927,6 +935,8 @@ MACRO adc_comp_latch
     END
   END VDD
   PIN inn
+    DIRECTION INPUT ;
+    USE ANALOG ;
     ANTENNAGATEAREA 1.200000 ;
     PORT
       LAYER li1 ;
@@ -939,6 +949,8 @@ MACRO adc_comp_latch
     END
   END inn
   PIN inp
+    DIRECTION INPUT ;
+    USE ANALOG ;
     ANTENNAGATEAREA 1.200000 ;
     PORT
       LAYER li1 ;
@@ -951,6 +963,8 @@ MACRO adc_comp_latch
     END
   END inp
   PIN clk
+    DIRECTION INPUT ;
+    USE SIGNAL ;
     ANTENNAGATEAREA 0.195000 ;
     PORT
       LAYER li1 ;
@@ -959,7 +973,7 @@ MACRO adc_comp_latch
         RECT 1.390 25.850 1.560 26.020 ;
       LAYER met1 ;
         RECT 1.280 26.010 1.590 26.100 ;
-        RECT -2.790 25.870 1.590 26.010 ;
+        RECT 0.570 25.870 1.590 26.010 ;
         RECT 1.280 25.770 1.590 25.870 ;
     END
   END clk

@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1663595907
+timestamp 1663932573
 << nwell >>
 rect 3118 6400 4700 6404
 rect 760 5996 4700 6400
@@ -3154,7 +3154,7 @@ rect 3784 5300 3832 5312
 rect 4380 5310 4392 5346
 rect 4428 5310 4468 5346
 rect 4504 5342 4516 5346
-rect 4504 5314 5452 5342
+rect 4504 5314 4770 5342
 rect 4504 5310 4516 5314
 rect 4380 5304 4516 5310
 rect 588 5258 596 5292
@@ -3172,7 +3172,7 @@ rect 3784 5248 3882 5250
 rect 4014 5246 4080 5250
 rect 256 5204 318 5220
 rect 256 5202 278 5204
-rect -558 5174 278 5202
+rect 114 5174 278 5202
 rect 256 5170 278 5174
 rect 312 5170 318 5204
 rect 256 5154 318 5170
@@ -4441,22 +4441,22 @@ rect 3980 5048 4000 5196
 rect 4088 5060 4126 5196
 rect 4214 5054 4234 5202
 << labels >>
-flabel metal1 s -558 5174 -544 5202 7 FreeSans 160 0 0 0 clk
-port 32 w
 flabel metal1 s -558 5822 -544 5850 7 FreeSans 160 0 0 0 inn
-port 30 w
+port 30 w analog input
 flabel metal1 s -558 5878 -544 5906 7 FreeSans 160 0 0 0 inp
-port 31 w
+port 31 w analog input
 flabel metal1 s -558 6336 -530 6566 7 FreeSans 160 0 0 0 VDD
-port 27 w
+port 27 w power bidirectional
 flabel metal1 s -558 4616 -536 4848 7 FreeSans 160 0 0 0 VSS
-port 26 w
+port 26 w power bidirectional
 flabel metal1 s 5290 5972 5452 6000 3 FreeSans 160 0 0 0 latch_q
-port 21 e
+port 21 e signal output
 flabel metal1 s 5290 5904 5452 5932 3 FreeSans 160 0 0 0 latch_qn
-port 22 e
-flabel metal1 s 5290 5314 5452 5342 3 FreeSans 160 0 0 0 comp_trig
-port 23 e
+port 22 e signal output
+flabel metal1 s 4608 5314 4770 5342 3 FreeSans 160 0 0 0 comp_trig
+port 23 e signal output
+flabel metal1 s 114 5174 128 5202 7 FreeSans 160 0 0 0 clk
+port 32 w signal input
 rlabel locali 496 5164 496 5210 7 inverter_1/in
 rlabel locali 730 5164 730 5210 3 inverter_1/out
 rlabel metal1 578 4902 578 4948 7 inverter_1/VSS
