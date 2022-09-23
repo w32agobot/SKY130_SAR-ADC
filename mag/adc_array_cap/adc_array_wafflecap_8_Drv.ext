@@ -1,11 +1,11 @@
-timestamp 1662993166
+timestamp 1663932020
 version 8.3
 tech sky130A
 style ngspice()
 scale 1000 1 500000
 resistclasses 4400000 2200000 950000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12800 125 125 47 47 29 5
-use adc_array_circuit_150n_Drv adc_array_circuit_150n_0 1 0 -140 0 1 -442
 use adc_array_wafflecap_8_Drv_25um2 adc_array_wafflecap_8_Drv_25um2_0 1 0 0 0 1 0
+use adc_array_circuit_150n_Drv adc_array_circuit_150n_0 1 0 -140 0 1 -442
 port "ctop" 1 184 934 244 934 m4
 port "VSS" 6 0 136 0 192 m1
 port "vcom" 5 0 220 0 248 m1
@@ -18,7 +18,7 @@ port "sample_n_i" 13 0 740 0 770 m1
 port "vdd" 2 0 798 0 854 m1
 port "row_n" 7 854 0 888 0 li
 node "ctop" 0 31.5843 184 934 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1560 172 0 0 0 0
-node "cbot" 3 38.6329 418 968 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 392 204 0 0 0 0 0 0 0 0
+node "cbot" 3 38.6388 418 968 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 392 204 0 0 0 0 0 0 0 0
 node "m1_902_136#" 0 44.2135 902 136 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 5712 316 0 0 0 0 0 0 0 0 0 0
 node "VSS" 0 42.2717 0 136 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 5264 300 0 0 0 0 0 0 0 0 0 0
 node "m1_902_220#" 0 13.8459 902 220 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2856 260 0 0 0 0 0 0 0 0 0 0
@@ -40,124 +40,124 @@ node "li_114_886#" 44 54.6736 114 886 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 node "w_902_506#" 3483 114.444 902 506 nw 0 0 0 0 38148 952 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 node "w_0_506#" 3780 105.468 0 506 nw 0 0 0 0 35156 936 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-cap "sample_n_o" "m1_902_512#" 18.819
-cap "li_114_886#" "ctop" 0.22158
-cap "m1_902_798#" "w_902_506#" 4.37029
-cap "w_902_506#" "colon_n" 0.26945
-cap "w_0_506#" "m1_902_512#" 0.249425
 cap "w_0_506#" "col_n" 0.359184
-cap "m1_902_220#" "vcom" 1.27871
-cap "cbot" "li_854_886#" 0.0538527
-cap "m1_902_798#" "sample_n_o" 134.421
-cap "sample_n_i" "vdd" 123.879
-cap "m1_902_798#" "w_0_506#" 0.49885
-cap "w_0_506#" "colon_n" 2.92121
 cap "w_0_506#" "sample_i" 0.183621
-cap "sample_n_o" "w_902_506#" 2.95277
-cap "m1_902_220#" "sample_o" 29.8714
-cap "li_114_886#" "li_114_0#" 1.25594
-cap "w_902_506#" "m1_902_136#" 0.183049
-cap "ctop" "li_854_886#" 0.180816
-cap "w_0_506#" "VSS" 0.168692
-cap "li_114_0#" "row_n" 5.07649
-cap "m1_902_798#" "vdd" 2.55743
-cap "vcom" "sample_i" 27.5286
-cap "m1_902_136#" "VSS" 2.55743
-cap "sample_n_i" "colon_n" 17.343
-cap "w_0_506#" "sample_n_o" 0.267241
-cap "m1_902_512#" "m1_902_430#" 69.7
-cap "m1_902_430#" "col_n" 1.27871
-cap "m1_902_220#" "w_902_506#" 0.844673
-cap "w_902_506#" "vdd" 0.538899
-cap "m1_902_512#" "colon_n" 1.27871
-cap "colon_n" "col_n" 64.2333
-cap "sample_o" "m1_902_430#" 134.421
-cap "vcom" "VSS" 123.879
-cap "w_902_506#" "sample_n_i" 0.288696
-cap "sample_i" "col_n" 123.879
-cap "cbot" "li_114_886#" 0.0550977
-cap "li_114_886#" "li_854_886#" 4.67989
-cap "sample_i" "sample_o" 1.27871
-cap "w_902_506#" "m1_902_512#" 3.16982
-cap "w_0_506#" "vcom" 0.778424
-cap "li_854_886#" "row_n" 1.25594
+cap "m1_902_220#" "m1_902_136#" 57.5385
+cap "vcom" "w_0_506#" 0.778424
+cap "sample_n_o" "m1_902_798#" 57.5385
+cap "li_114_886#" "li_114_0#" 1.10305
+cap "li_114_886#" "cbot" 0.0550977
+cap "w_902_506#" "colon_n" 0.26945
+cap "li_854_886#" "row_n" 1.10305
+cap "w_0_506#" "m1_902_798#" 0.49885
+cap "col_n" "m1_902_430#" 1.4359
+cap "sample_n_o" "m1_902_512#" 17.952
+cap "vdd" "m1_902_798#" 2.87179
+cap "w_902_506#" "m1_902_220#" 0.844673
+cap "col_n" "sample_i" 53.0256
 cap "w_902_506#" "sample_o" 0.199249
-cap "w_0_506#" "vdd" 4.02752
-cap "sample_n_o" "sample_n_i" 1.37005
+cap "w_0_506#" "m1_902_512#" 0.249425
+cap "vcom" "sample_i" 23.5
+cap "w_0_506#" "VSS" 0.168692
+cap "sample_o" "m1_902_220#" 25.5
+cap "w_902_506#" "sample_n_i" 0.288696
+cap "sample_n_i" "colon_n" 16.544
+cap "li_114_886#" "li_854_886#" 4.09946
+cap "m1_902_430#" "m1_902_512#" 43.1538
+cap "w_902_506#" "sample_n_o" 2.95277
+cap "w_0_506#" "colon_n" 2.92121
+cap "w_902_506#" "vdd" 0.538899
+cap "vcom" "VSS" 53.0256
+cap "li_854_886#" "ctop" 0.180816
+cap "sample_n_i" "sample_n_o" 1.53846
 cap "w_0_506#" "sample_n_i" 2.72118
-cap "m1_902_220#" "m1_902_136#" 134.421
+cap "vdd" "sample_n_i" 53.0256
 cap "w_902_506#" "m1_902_430#" 0.389753
-cap "adc_array_circuit_150n_0/col_n" "adc_array_wafflecap_8_Drv_25um2_0/m3_164_164#" 11.063
-cap "adc_array_circuit_150n_0/VDD" "adc_array_circuit_150n_0/row_n" 10.6228
-cap "adc_array_circuit_150n_0/sample_i" "adc_array_circuit_150n_0/sample_o" -0.898616
-cap "adc_array_circuit_150n_0/sample_n_i" "adc_array_circuit_150n_0/sample_n_o" -1.13395
-cap "adc_array_circuit_150n_0/row_n" "adc_array_wafflecap_8_Drv_25um2_0/symmetry_metal" 0.14111
-cap "adc_array_circuit_150n_0/sample_n_o" "adc_array_wafflecap_8_Drv_25um2_0/m3_164_164#" 20.7283
-cap "adc_array_circuit_150n_0/sample_n_i" "adc_array_circuit_150n_0/vcom" 99.1046
-cap "adc_array_circuit_150n_0/VDD" "adc_array_circuit_150n_0/sample_n_i" 8.01239
-cap "adc_array_wafflecap_8_Drv_25um2_0/m3_164_164#" "adc_array_circuit_150n_0/vcom" 22.1051
-cap "adc_array_circuit_150n_0/sample_o" "adc_array_circuit_150n_0/colon_n" 0.178217
-cap "adc_array_circuit_150n_0/VDD" "adc_array_wafflecap_8_Drv_25um2_0/m3_164_164#" 136.849
-cap "adc_array_circuit_150n_0/sample_n_i" "adc_array_wafflecap_8_Drv_25um2_0/symmetry_metal" 0.175945
-cap "adc_array_circuit_150n_0/sample_i" "adc_array_circuit_150n_0/col_n" 0.293743
+cap "col_n" "colon_n" 39.7692
+cap "sample_o" "m1_902_430#" 57.5385
+cap "VSS" "m1_902_136#" 2.87179
+cap "w_0_506#" "sample_n_o" 0.267241
+cap "sample_o" "sample_i" 1.4359
+cap "vcom" "m1_902_220#" 1.4359
+cap "w_0_506#" "vdd" 4.02752
+cap "li_854_886#" "cbot" 0.0538527
+cap "w_902_506#" "m1_902_798#" 4.37029
+cap "li_114_886#" "ctop" 0.22158
+cap "w_902_506#" "m1_902_512#" 3.16982
+cap "colon_n" "m1_902_512#" 1.4359
+cap "w_902_506#" "m1_902_136#" 0.183049
+cap "li_114_0#" "row_n" 4.44687
+cap "adc_array_wafflecap_8_Drv_25um2_0/symmetry_metal" "adc_array_circuit_150n_0/sample_n_o" 0.270938
+cap "adc_array_wafflecap_8_Drv_25um2_0/m3_164_164#" "adc_array_circuit_150n_0/sample_o" 22.0983
+cap "adc_array_wafflecap_8_Drv_25um2_0/m2_32_32#" "adc_array_circuit_150n_0/VSS" 309.493
+cap "adc_array_circuit_150n_0/col_n" "adc_array_circuit_150n_0/row_n" 0.621701
 cap "adc_array_circuit_150n_0/sample_i" "adc_array_circuit_150n_0/sample_n_o" 0.0670021
 cap "adc_array_circuit_150n_0/sample_n_i" "adc_array_circuit_150n_0/row_n" 0.0205142
-cap "adc_array_circuit_150n_0/row_n" "adc_array_wafflecap_8_Drv_25um2_0/m3_164_164#" 16.2571
-cap "adc_array_circuit_150n_0/sample_i" "adc_array_circuit_150n_0/vcom" 119.673
+cap "adc_array_circuit_150n_0/colon_n" "adc_array_wafflecap_8_Drv_25um2_0/symmetry_metal" 8.45573
+cap "adc_array_wafflecap_8_Drv_25um2_0/m3_164_164#" "adc_array_circuit_150n_0/VSS" 49.2009
+cap "adc_array_wafflecap_8_Drv_25um2_0/symmetry_metal" "adc_array_circuit_150n_0/VDD" 1.99874
+cap "adc_array_circuit_150n_0/colon_n" "adc_array_circuit_150n_0/sample_i" 0.291943
+cap "adc_array_circuit_150n_0/col_n" "adc_array_circuit_150n_0/sample_n_i" 0.279921
+cap "adc_array_wafflecap_8_Drv_25um2_0/m2_32_32#" "adc_array_circuit_150n_0/sample_n_o" 126.805
 cap "adc_array_circuit_150n_0/VDD" "adc_array_circuit_150n_0/sample_i" 2.47545
-cap "adc_array_circuit_150n_0/colon_n" "adc_array_circuit_150n_0/col_n" -1.56319e-13
-cap "adc_array_circuit_150n_0/sample_n_o" "adc_array_circuit_150n_0/colon_n" 0.194684
-cap "adc_array_circuit_150n_0/sample_o" "adc_array_circuit_150n_0/col_n" 0.188043
-cap "adc_array_circuit_150n_0/sample_i" "adc_array_wafflecap_8_Drv_25um2_0/symmetry_metal" 0.664725
-cap "adc_array_circuit_150n_0/sample_n_i" "adc_array_wafflecap_8_Drv_25um2_0/m3_164_164#" 22.6207
+cap "adc_array_wafflecap_8_Drv_25um2_0/symmetry_metal" "adc_array_circuit_150n_0/row_n" 0.14111
+cap "adc_array_wafflecap_8_Drv_25um2_0/m3_164_164#" "adc_array_circuit_150n_0/sample_n_o" 20.7283
+cap "adc_array_circuit_150n_0/colon_n" "adc_array_wafflecap_8_Drv_25um2_0/m2_32_32#" 106.058
+cap "adc_array_wafflecap_8_Drv_25um2_0/m2_32_32#" "adc_array_circuit_150n_0/VDD" 553.035
 cap "adc_array_circuit_150n_0/sample_o" "adc_array_circuit_150n_0/sample_n_o" 0.0727569
 cap "adc_array_circuit_150n_0/sample_i" "adc_array_circuit_150n_0/row_n" 0.0486274
-cap "adc_array_circuit_150n_0/colon_n" "adc_array_circuit_150n_0/vcom" 106.058
-cap "adc_array_circuit_150n_0/VDD" "adc_array_circuit_150n_0/colon_n" -0.507009
-cap "adc_array_circuit_150n_0/sample_o" "adc_array_circuit_150n_0/vcom" 149.472
-cap "adc_array_circuit_150n_0/VDD" "adc_array_circuit_150n_0/sample_o" 0.732342
-cap "adc_array_circuit_150n_0/sample_n_i" "adc_array_circuit_150n_0/sample_i" 0.220365
-cap "adc_array_circuit_150n_0/colon_n" "adc_array_wafflecap_8_Drv_25um2_0/symmetry_metal" 8.45573
-cap "adc_array_circuit_150n_0/sample_n_o" "adc_array_circuit_150n_0/col_n" 0.197059
-cap "adc_array_circuit_150n_0/sample_o" "adc_array_wafflecap_8_Drv_25um2_0/symmetry_metal" 0.512105
-cap "adc_array_circuit_150n_0/VSS" "adc_array_circuit_150n_0/VDD" -4.94049e-15
-cap "adc_array_circuit_150n_0/VSS" "adc_array_circuit_150n_0/vcom" 309.493
-cap "adc_array_circuit_150n_0/row_n" "adc_array_circuit_150n_0/colon_n" 0.805499
-cap "adc_array_circuit_150n_0/sample_i" "adc_array_wafflecap_8_Drv_25um2_0/m3_164_164#" 26.3518
-cap "adc_array_circuit_150n_0/sample_o" "adc_array_circuit_150n_0/row_n" 0.68828
-cap "adc_array_circuit_150n_0/col_n" "adc_array_circuit_150n_0/vcom" 107.186
-cap "adc_array_circuit_150n_0/VSS" "adc_array_wafflecap_8_Drv_25um2_0/symmetry_metal" 0.589061
-cap "adc_array_circuit_150n_0/VDD" "adc_array_circuit_150n_0/col_n" -1.66533e-16
-cap "adc_array_circuit_150n_0/sample_n_o" "adc_array_circuit_150n_0/vcom" 126.805
-cap "adc_array_circuit_150n_0/sample_n_i" "adc_array_circuit_150n_0/colon_n" 0.277791
-cap "adc_array_circuit_150n_0/VDD" "adc_array_circuit_150n_0/sample_n_o" 4.99961
-cap "adc_array_circuit_150n_0/VSS" "adc_array_circuit_150n_0/row_n" 2.6699
-cap "adc_array_circuit_150n_0/sample_n_i" "adc_array_circuit_150n_0/sample_o" 0.0208254
 cap "adc_array_circuit_150n_0/col_n" "adc_array_wafflecap_8_Drv_25um2_0/symmetry_metal" 7.08054
 cap "adc_array_circuit_150n_0/colon_n" "adc_array_wafflecap_8_Drv_25um2_0/m3_164_164#" 9.86803
-cap "adc_array_circuit_150n_0/sample_n_o" "adc_array_wafflecap_8_Drv_25um2_0/symmetry_metal" 0.270938
-cap "adc_array_circuit_150n_0/sample_o" "adc_array_wafflecap_8_Drv_25um2_0/m3_164_164#" 22.0983
-cap "adc_array_circuit_150n_0/VDD" "adc_array_circuit_150n_0/vcom" 551.123
-cap "adc_array_circuit_150n_0/row_n" "adc_array_circuit_150n_0/col_n" 0.621701
+cap "adc_array_circuit_150n_0/colon_n" "adc_array_circuit_150n_0/sample_o" 0.178217
+cap "adc_array_wafflecap_8_Drv_25um2_0/m3_164_164#" "adc_array_circuit_150n_0/VDD" 136.849
+cap "adc_array_circuit_150n_0/VDD" "adc_array_circuit_150n_0/sample_o" 0.732342
+cap "adc_array_wafflecap_8_Drv_25um2_0/m2_32_32#" "adc_array_circuit_150n_0/row_n" 74.0244
+cap "adc_array_wafflecap_8_Drv_25um2_0/symmetry_metal" "adc_array_circuit_150n_0/sample_n_i" 0.175945
+cap "adc_array_circuit_150n_0/col_n" "adc_array_circuit_150n_0/sample_i" 0.293743
+cap "adc_array_circuit_150n_0/sample_n_i" "adc_array_circuit_150n_0/sample_i" 0.220365
+cap "adc_array_circuit_150n_0/col_n" "adc_array_wafflecap_8_Drv_25um2_0/m2_32_32#" 107.186
+cap "adc_array_circuit_150n_0/VSS" "adc_array_circuit_150n_0/VDD" -4.94049e-15
+cap "adc_array_wafflecap_8_Drv_25um2_0/m3_164_164#" "adc_array_circuit_150n_0/row_n" 16.2571
+cap "adc_array_circuit_150n_0/sample_o" "adc_array_circuit_150n_0/row_n" 0.68828
+cap "adc_array_wafflecap_8_Drv_25um2_0/m2_32_32#" "adc_array_circuit_150n_0/sample_n_i" 99.1046
+cap "adc_array_circuit_150n_0/col_n" "adc_array_wafflecap_8_Drv_25um2_0/m3_164_164#" 11.063
+cap "adc_array_circuit_150n_0/colon_n" "adc_array_circuit_150n_0/sample_n_o" 0.194684
+cap "adc_array_circuit_150n_0/col_n" "adc_array_circuit_150n_0/sample_o" 0.188043
+cap "adc_array_circuit_150n_0/VDD" "adc_array_circuit_150n_0/sample_n_o" 4.99961
+cap "adc_array_circuit_150n_0/VSS" "adc_array_circuit_150n_0/row_n" 2.6699
+cap "adc_array_wafflecap_8_Drv_25um2_0/symmetry_metal" "adc_array_circuit_150n_0/sample_i" 0.664725
+cap "adc_array_circuit_150n_0/sample_n_i" "adc_array_circuit_150n_0/sample_o" 0.0208254
+cap "adc_array_wafflecap_8_Drv_25um2_0/m3_164_164#" "adc_array_circuit_150n_0/sample_n_i" 22.6207
+cap "adc_array_circuit_150n_0/colon_n" "adc_array_circuit_150n_0/VDD" -0.507009
+cap "adc_array_wafflecap_8_Drv_25um2_0/symmetry_metal" "adc_array_wafflecap_8_Drv_25um2_0/m2_32_32#" 0.36783
 cap "adc_array_circuit_150n_0/sample_n_o" "adc_array_circuit_150n_0/row_n" 0.746901
-cap "adc_array_wafflecap_8_Drv_25um2_0/symmetry_metal" "adc_array_circuit_150n_0/vcom" 0.36783
-cap "adc_array_circuit_150n_0/VSS" "adc_array_wafflecap_8_Drv_25um2_0/m3_164_164#" 49.2009
-cap "adc_array_circuit_150n_0/VDD" "adc_array_wafflecap_8_Drv_25um2_0/symmetry_metal" 1.98614
-cap "adc_array_circuit_150n_0/sample_i" "adc_array_circuit_150n_0/colon_n" 0.291943
-cap "adc_array_circuit_150n_0/sample_n_i" "adc_array_circuit_150n_0/col_n" 0.279921
-cap "adc_array_circuit_150n_0/row_n" "adc_array_circuit_150n_0/vcom" 74.0244
-merge "adc_array_wafflecap_8_Drv_25um2_0/VSUBS" "adc_array_circuit_150n_0/VSS" -40.6718 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -224 0 0 0 0 0 0 0 0 0 0
-merge "adc_array_circuit_150n_0/VSS" "VSUBS"
+cap "adc_array_wafflecap_8_Drv_25um2_0/m2_32_32#" "adc_array_circuit_150n_0/sample_i" 119.673
+cap "adc_array_circuit_150n_0/col_n" "adc_array_circuit_150n_0/sample_n_o" 0.197059
+cap "adc_array_wafflecap_8_Drv_25um2_0/symmetry_metal" "adc_array_circuit_150n_0/sample_o" 0.512105
+cap "adc_array_circuit_150n_0/colon_n" "adc_array_circuit_150n_0/row_n" 0.805499
+cap "adc_array_wafflecap_8_Drv_25um2_0/m3_164_164#" "adc_array_circuit_150n_0/sample_i" 26.3518
+cap "adc_array_circuit_150n_0/VDD" "adc_array_circuit_150n_0/row_n" 10.6228
+cap "adc_array_circuit_150n_0/sample_i" "adc_array_circuit_150n_0/sample_o" -1.0558
+cap "adc_array_circuit_150n_0/sample_n_i" "adc_array_circuit_150n_0/sample_n_o" -1.30236
+cap "adc_array_circuit_150n_0/colon_n" "adc_array_circuit_150n_0/col_n" -1.27898e-13
+cap "adc_array_wafflecap_8_Drv_25um2_0/symmetry_metal" "adc_array_circuit_150n_0/VSS" 0.589061
+cap "adc_array_circuit_150n_0/col_n" "adc_array_circuit_150n_0/VDD" -1.66533e-16
+cap "adc_array_wafflecap_8_Drv_25um2_0/m3_164_164#" "adc_array_wafflecap_8_Drv_25um2_0/m2_32_32#" 22.1051
+cap "adc_array_circuit_150n_0/colon_n" "adc_array_circuit_150n_0/sample_n_i" 0.277791
+cap "adc_array_wafflecap_8_Drv_25um2_0/m2_32_32#" "adc_array_circuit_150n_0/sample_o" 149.472
+cap "adc_array_circuit_150n_0/VDD" "adc_array_circuit_150n_0/sample_n_i" 8.01239
+merge "adc_array_circuit_150n_0/VSS" "adc_array_wafflecap_8_Drv_25um2_0/VSUBS" -40.6718 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -224 0 0 0 0 0 0 0 0 0 0
+merge "adc_array_wafflecap_8_Drv_25um2_0/VSUBS" "VSUBS"
 merge "VSUBS" "m1_902_136#"
 merge "m1_902_136#" "VSS"
 merge "adc_array_circuit_150n_0/sample_i" "sample_i" -12.9966 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -56 0 0 0 0 0 0 0 0 0 0
 merge "adc_array_circuit_150n_0/col_n" "m1_902_430#" -19.5754 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -112 0 0 0 0 0 0 0 0 0 0
 merge "m1_902_430#" "col_n"
-merge "adc_array_wafflecap_8_Drv_25um2_0/m2_32_32#" "cbot" -562.708 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -136 0 -112 -3720 -436 0 0 0 0 0 0 0 0
-merge "cbot" "adc_array_circuit_150n_0/vcom"
-merge "adc_array_circuit_150n_0/vcom" "m1_902_220#"
+merge "adc_array_circuit_150n_0/vcom" "m1_902_220#" -571.161 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -136 0 -112 -3720 -436 0 0 0 0 0 0 0 0
 merge "m1_902_220#" "vcom"
-merge "vcom" "li_114_0#"
+merge "vcom" "adc_array_wafflecap_8_Drv_25um2_0/m2_32_32#"
+merge "adc_array_wafflecap_8_Drv_25um2_0/m2_32_32#" "cbot"
+merge "cbot" "li_114_0#"
 merge "li_114_0#" "li_114_886#"
 merge "adc_array_circuit_150n_0/VDD" "m1_902_798#" -40.6757 0 0 0 0 0 -1496 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -224 0 0 0 0 0 0 0 0 0 0
 merge "m1_902_798#" "vdd"

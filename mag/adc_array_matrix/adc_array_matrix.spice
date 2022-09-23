@@ -137,1264 +137,1263 @@ Xadc_array_circuit_150n_0 vcom sample sample_n col_n colon_n row_n adc_array_cir
 + en_n vdd VSS adc_array_circuit_150n_1
 .ends
 
-.subckt adc_array_matrix sample_n sample vcom VDD VSS row_n[0] row_n[1] row_n[2] row_n[3]
-+ row_n[4] row_n[5] row_n[6] row_n[7] row_n[8] row_n[9] row_n[10] row_n[11] row_n[12]
-+ row_n[13] row_n[14] row_n[15] row_n[16] row_n[17] row_n[18] row_n[19] row_n[20]
-+ row_n[21] row_n[22] row_n[23] row_n[24] row_n[25] row_n[26] row_n[27] row_n[28]
-+ row_n[29] row_n[30] row_n[31] en_n_bit[2] en_n_bit[1] en_n_bit[0] sw_n sw ctop analog_in
-+ col_n[0] col_n[1] col_n[2] col_n[3] col_n[4] col_n[5] col_n[6] col_n[7] col_n[8]
-+ col_n[9] col_n[10] col_n[11] col_n[12] col_n[13] col_n[14] col_n[15] colon_n[0]
+.subckt adc_array_matrix VDD VSS vcm ctop analog_in sample sample_n sw sw_n row_n[0]
++ row_n[1] row_n[2] row_n[3] row_n[4] row_n[5] row_n[6] row_n[7] row_n[8] row_n[9]
++ row_n[10] row_n[11] row_n[12] row_n[13] row_n[14] row_n[15] row_n[16] row_n[17]
++ row_n[18] row_n[19] row_n[20] row_n[21] row_n[22] row_n[23] row_n[24] row_n[25]
++ row_n[26] row_n[27] row_n[28] row_n[29] row_n[30] row_n[31] en_n_bit[2] en_n_bit[1]
++ en_n_bit[0] col_n[0] col_n[1] col_n[2] col_n[3] col_n[4] col_n[5] col_n[6] col_n[7]
++ col_n[8] col_n[9] col_n[10] col_n[11] col_n[12] col_n[13] col_n[14] col_n[15] colon_n[0]
 + colon_n[1] colon_n[2] colon_n[3] colon_n[4] colon_n[5] colon_n[6] colon_n[7] colon_n[8]
 + colon_n[9] colon_n[10] colon_n[11] colon_n[12] colon_n[13] colon_n[14] colon_n[15]
 Xadc_array_wafflecap_8_8_0[0|0] adc_array_wafflecap_8_8_0[0|9]/sample_n colon_n[0]
-+ vcom row_n[0] ctop adc_array_wafflecap_8_8_0[0|9]/sample VDD col_n[0] VSS adc_array_wafflecap_8_8
++ vcm row_n[0] ctop adc_array_wafflecap_8_8_0[0|9]/sample VDD col_n[0] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[1|0] adc_array_wafflecap_8_8_0[1|9]/sample_n colon_n[1]
-+ vcom row_n[0] ctop adc_array_wafflecap_8_8_0[1|9]/sample VDD col_n[1] VSS adc_array_wafflecap_8_8
++ vcm row_n[0] ctop adc_array_wafflecap_8_8_0[1|9]/sample VDD col_n[1] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[2|0] adc_array_wafflecap_8_8_0[2|9]/sample_n colon_n[2]
-+ vcom row_n[0] ctop adc_array_wafflecap_8_8_0[2|9]/sample VDD col_n[2] VSS adc_array_wafflecap_8_8
++ vcm row_n[0] ctop adc_array_wafflecap_8_8_0[2|9]/sample VDD col_n[2] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[3|0] adc_array_wafflecap_8_8_0[3|9]/sample_n colon_n[3]
-+ vcom row_n[0] ctop adc_array_wafflecap_8_8_0[3|9]/sample VDD col_n[3] VSS adc_array_wafflecap_8_8
++ vcm row_n[0] ctop adc_array_wafflecap_8_8_0[3|9]/sample VDD col_n[3] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[4|0] adc_array_wafflecap_8_8_0[4|9]/sample_n colon_n[4]
-+ vcom row_n[0] ctop adc_array_wafflecap_8_8_0[4|9]/sample VDD col_n[4] VSS adc_array_wafflecap_8_8
++ vcm row_n[0] ctop adc_array_wafflecap_8_8_0[4|9]/sample VDD col_n[4] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[5|0] adc_array_wafflecap_8_8_0[5|9]/sample_n colon_n[5]
-+ vcom row_n[0] ctop adc_array_wafflecap_8_8_0[5|9]/sample VDD col_n[5] VSS adc_array_wafflecap_8_8
++ vcm row_n[0] ctop adc_array_wafflecap_8_8_0[5|9]/sample VDD col_n[5] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[6|0] adc_array_wafflecap_8_8_0[6|9]/sample_n colon_n[6]
-+ vcom row_n[0] ctop adc_array_wafflecap_8_8_0[6|9]/sample VDD col_n[6] VSS adc_array_wafflecap_8_8
++ vcm row_n[0] ctop adc_array_wafflecap_8_8_0[6|9]/sample VDD col_n[6] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[7|0] adc_array_wafflecap_8_8_0[7|9]/sample_n colon_n[7]
-+ vcom row_n[0] ctop adc_array_wafflecap_8_8_0[7|9]/sample VDD col_n[7] VSS adc_array_wafflecap_8_8
++ vcm row_n[0] ctop adc_array_wafflecap_8_8_0[7|9]/sample VDD col_n[7] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[8|0] adc_array_wafflecap_8_8_0[8|9]/sample_n colon_n[8]
-+ vcom row_n[0] ctop adc_array_wafflecap_8_8_0[8|9]/sample VDD col_n[8] VSS adc_array_wafflecap_8_8
++ vcm row_n[0] ctop adc_array_wafflecap_8_8_0[8|9]/sample VDD col_n[8] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[9|0] adc_array_wafflecap_8_8_0[9|9]/sample_n colon_n[9]
-+ vcom row_n[0] ctop adc_array_wafflecap_8_8_0[9|9]/sample VDD col_n[9] VSS adc_array_wafflecap_8_8
++ vcm row_n[0] ctop adc_array_wafflecap_8_8_0[9|9]/sample VDD col_n[9] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[10|0] adc_array_wafflecap_8_8_0[10|9]/sample_n colon_n[10]
-+ vcom row_n[0] ctop adc_array_wafflecap_8_8_0[10|9]/sample VDD col_n[10] VSS adc_array_wafflecap_8_8
++ vcm row_n[0] ctop adc_array_wafflecap_8_8_0[10|9]/sample VDD col_n[10] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[11|0] adc_array_wafflecap_8_8_0[11|9]/sample_n colon_n[11]
-+ vcom row_n[0] ctop adc_array_wafflecap_8_8_0[11|9]/sample VDD col_n[11] VSS adc_array_wafflecap_8_8
++ vcm row_n[0] ctop adc_array_wafflecap_8_8_0[11|9]/sample VDD col_n[11] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[12|0] adc_array_wafflecap_8_8_0[12|9]/sample_n colon_n[12]
-+ vcom row_n[0] ctop adc_array_wafflecap_8_8_0[12|9]/sample VDD col_n[12] VSS adc_array_wafflecap_8_8
++ vcm row_n[0] ctop adc_array_wafflecap_8_8_0[12|9]/sample VDD col_n[12] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[13|0] adc_array_wafflecap_8_8_0[13|9]/sample_n colon_n[13]
-+ vcom row_n[0] ctop adc_array_wafflecap_8_8_0[13|9]/sample VDD col_n[13] VSS adc_array_wafflecap_8_8
++ vcm row_n[0] ctop adc_array_wafflecap_8_8_0[13|9]/sample VDD col_n[13] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[14|0] adc_array_wafflecap_8_8_0[14|9]/sample_n colon_n[14]
-+ vcom row_n[0] ctop adc_array_wafflecap_8_8_0[14|9]/sample VDD col_n[14] VSS adc_array_wafflecap_8_8
++ vcm row_n[0] ctop adc_array_wafflecap_8_8_0[14|9]/sample VDD col_n[14] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[15|0] adc_array_wafflecap_8_8_0[15|9]/sample_n colon_n[15]
-+ vcom row_n[0] ctop adc_array_wafflecap_8_8_0[15|9]/sample VDD col_n[15] VSS adc_array_wafflecap_8_8
++ vcm row_n[0] ctop adc_array_wafflecap_8_8_0[15|9]/sample VDD col_n[15] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[0|1] adc_array_wafflecap_8_8_0[0|9]/sample_n colon_n[0]
-+ vcom row_n[1] ctop adc_array_wafflecap_8_8_0[0|9]/sample VDD col_n[0] VSS adc_array_wafflecap_8_8
++ vcm row_n[1] ctop adc_array_wafflecap_8_8_0[0|9]/sample VDD col_n[0] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[1|1] adc_array_wafflecap_8_8_0[1|9]/sample_n colon_n[1]
-+ vcom row_n[1] ctop adc_array_wafflecap_8_8_0[1|9]/sample VDD col_n[1] VSS adc_array_wafflecap_8_8
++ vcm row_n[1] ctop adc_array_wafflecap_8_8_0[1|9]/sample VDD col_n[1] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[2|1] adc_array_wafflecap_8_8_0[2|9]/sample_n colon_n[2]
-+ vcom row_n[1] ctop adc_array_wafflecap_8_8_0[2|9]/sample VDD col_n[2] VSS adc_array_wafflecap_8_8
++ vcm row_n[1] ctop adc_array_wafflecap_8_8_0[2|9]/sample VDD col_n[2] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[3|1] adc_array_wafflecap_8_8_0[3|9]/sample_n colon_n[3]
-+ vcom row_n[1] ctop adc_array_wafflecap_8_8_0[3|9]/sample VDD col_n[3] VSS adc_array_wafflecap_8_8
++ vcm row_n[1] ctop adc_array_wafflecap_8_8_0[3|9]/sample VDD col_n[3] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[4|1] adc_array_wafflecap_8_8_0[4|9]/sample_n colon_n[4]
-+ vcom row_n[1] ctop adc_array_wafflecap_8_8_0[4|9]/sample VDD col_n[4] VSS adc_array_wafflecap_8_8
++ vcm row_n[1] ctop adc_array_wafflecap_8_8_0[4|9]/sample VDD col_n[4] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[5|1] adc_array_wafflecap_8_8_0[5|9]/sample_n colon_n[5]
-+ vcom row_n[1] ctop adc_array_wafflecap_8_8_0[5|9]/sample VDD col_n[5] VSS adc_array_wafflecap_8_8
++ vcm row_n[1] ctop adc_array_wafflecap_8_8_0[5|9]/sample VDD col_n[5] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[6|1] adc_array_wafflecap_8_8_0[6|9]/sample_n colon_n[6]
-+ vcom row_n[1] ctop adc_array_wafflecap_8_8_0[6|9]/sample VDD col_n[6] VSS adc_array_wafflecap_8_8
++ vcm row_n[1] ctop adc_array_wafflecap_8_8_0[6|9]/sample VDD col_n[6] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[7|1] adc_array_wafflecap_8_8_0[7|9]/sample_n colon_n[7]
-+ vcom row_n[1] ctop adc_array_wafflecap_8_8_0[7|9]/sample VDD col_n[7] VSS adc_array_wafflecap_8_8
++ vcm row_n[1] ctop adc_array_wafflecap_8_8_0[7|9]/sample VDD col_n[7] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[8|1] adc_array_wafflecap_8_8_0[8|9]/sample_n colon_n[8]
-+ vcom row_n[1] ctop adc_array_wafflecap_8_8_0[8|9]/sample VDD col_n[8] VSS adc_array_wafflecap_8_8
++ vcm row_n[1] ctop adc_array_wafflecap_8_8_0[8|9]/sample VDD col_n[8] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[9|1] adc_array_wafflecap_8_8_0[9|9]/sample_n colon_n[9]
-+ vcom row_n[1] ctop adc_array_wafflecap_8_8_0[9|9]/sample VDD col_n[9] VSS adc_array_wafflecap_8_8
++ vcm row_n[1] ctop adc_array_wafflecap_8_8_0[9|9]/sample VDD col_n[9] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[10|1] adc_array_wafflecap_8_8_0[10|9]/sample_n colon_n[10]
-+ vcom row_n[1] ctop adc_array_wafflecap_8_8_0[10|9]/sample VDD col_n[10] VSS adc_array_wafflecap_8_8
++ vcm row_n[1] ctop adc_array_wafflecap_8_8_0[10|9]/sample VDD col_n[10] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[11|1] adc_array_wafflecap_8_8_0[11|9]/sample_n colon_n[11]
-+ vcom row_n[1] ctop adc_array_wafflecap_8_8_0[11|9]/sample VDD col_n[11] VSS adc_array_wafflecap_8_8
++ vcm row_n[1] ctop adc_array_wafflecap_8_8_0[11|9]/sample VDD col_n[11] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[12|1] adc_array_wafflecap_8_8_0[12|9]/sample_n colon_n[12]
-+ vcom row_n[1] ctop adc_array_wafflecap_8_8_0[12|9]/sample VDD col_n[12] VSS adc_array_wafflecap_8_8
++ vcm row_n[1] ctop adc_array_wafflecap_8_8_0[12|9]/sample VDD col_n[12] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[13|1] adc_array_wafflecap_8_8_0[13|9]/sample_n colon_n[13]
-+ vcom row_n[1] ctop adc_array_wafflecap_8_8_0[13|9]/sample VDD col_n[13] VSS adc_array_wafflecap_8_8
++ vcm row_n[1] ctop adc_array_wafflecap_8_8_0[13|9]/sample VDD col_n[13] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[14|1] adc_array_wafflecap_8_8_0[14|9]/sample_n colon_n[14]
-+ vcom row_n[1] ctop adc_array_wafflecap_8_8_0[14|9]/sample VDD col_n[14] VSS adc_array_wafflecap_8_8
++ vcm row_n[1] ctop adc_array_wafflecap_8_8_0[14|9]/sample VDD col_n[14] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[15|1] adc_array_wafflecap_8_8_0[15|9]/sample_n colon_n[15]
-+ vcom row_n[1] ctop adc_array_wafflecap_8_8_0[15|9]/sample VDD col_n[15] VSS adc_array_wafflecap_8_8
++ vcm row_n[1] ctop adc_array_wafflecap_8_8_0[15|9]/sample VDD col_n[15] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[0|2] adc_array_wafflecap_8_8_0[0|9]/sample_n colon_n[0]
-+ vcom row_n[2] ctop adc_array_wafflecap_8_8_0[0|9]/sample VDD col_n[0] VSS adc_array_wafflecap_8_8
++ vcm row_n[2] ctop adc_array_wafflecap_8_8_0[0|9]/sample VDD col_n[0] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[1|2] adc_array_wafflecap_8_8_0[1|9]/sample_n colon_n[1]
-+ vcom row_n[2] ctop adc_array_wafflecap_8_8_0[1|9]/sample VDD col_n[1] VSS adc_array_wafflecap_8_8
++ vcm row_n[2] ctop adc_array_wafflecap_8_8_0[1|9]/sample VDD col_n[1] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[2|2] adc_array_wafflecap_8_8_0[2|9]/sample_n colon_n[2]
-+ vcom row_n[2] ctop adc_array_wafflecap_8_8_0[2|9]/sample VDD col_n[2] VSS adc_array_wafflecap_8_8
++ vcm row_n[2] ctop adc_array_wafflecap_8_8_0[2|9]/sample VDD col_n[2] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[3|2] adc_array_wafflecap_8_8_0[3|9]/sample_n colon_n[3]
-+ vcom row_n[2] ctop adc_array_wafflecap_8_8_0[3|9]/sample VDD col_n[3] VSS adc_array_wafflecap_8_8
++ vcm row_n[2] ctop adc_array_wafflecap_8_8_0[3|9]/sample VDD col_n[3] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[4|2] adc_array_wafflecap_8_8_0[4|9]/sample_n colon_n[4]
-+ vcom row_n[2] ctop adc_array_wafflecap_8_8_0[4|9]/sample VDD col_n[4] VSS adc_array_wafflecap_8_8
++ vcm row_n[2] ctop adc_array_wafflecap_8_8_0[4|9]/sample VDD col_n[4] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[5|2] adc_array_wafflecap_8_8_0[5|9]/sample_n colon_n[5]
-+ vcom row_n[2] ctop adc_array_wafflecap_8_8_0[5|9]/sample VDD col_n[5] VSS adc_array_wafflecap_8_8
++ vcm row_n[2] ctop adc_array_wafflecap_8_8_0[5|9]/sample VDD col_n[5] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[6|2] adc_array_wafflecap_8_8_0[6|9]/sample_n colon_n[6]
-+ vcom row_n[2] ctop adc_array_wafflecap_8_8_0[6|9]/sample VDD col_n[6] VSS adc_array_wafflecap_8_8
++ vcm row_n[2] ctop adc_array_wafflecap_8_8_0[6|9]/sample VDD col_n[6] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[7|2] adc_array_wafflecap_8_8_0[7|9]/sample_n colon_n[7]
-+ vcom row_n[2] ctop adc_array_wafflecap_8_8_0[7|9]/sample VDD col_n[7] VSS adc_array_wafflecap_8_8
++ vcm row_n[2] ctop adc_array_wafflecap_8_8_0[7|9]/sample VDD col_n[7] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[8|2] adc_array_wafflecap_8_8_0[8|9]/sample_n colon_n[8]
-+ vcom row_n[2] ctop adc_array_wafflecap_8_8_0[8|9]/sample VDD col_n[8] VSS adc_array_wafflecap_8_8
++ vcm row_n[2] ctop adc_array_wafflecap_8_8_0[8|9]/sample VDD col_n[8] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[9|2] adc_array_wafflecap_8_8_0[9|9]/sample_n colon_n[9]
-+ vcom row_n[2] ctop adc_array_wafflecap_8_8_0[9|9]/sample VDD col_n[9] VSS adc_array_wafflecap_8_8
++ vcm row_n[2] ctop adc_array_wafflecap_8_8_0[9|9]/sample VDD col_n[9] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[10|2] adc_array_wafflecap_8_8_0[10|9]/sample_n colon_n[10]
-+ vcom row_n[2] ctop adc_array_wafflecap_8_8_0[10|9]/sample VDD col_n[10] VSS adc_array_wafflecap_8_8
++ vcm row_n[2] ctop adc_array_wafflecap_8_8_0[10|9]/sample VDD col_n[10] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[11|2] adc_array_wafflecap_8_8_0[11|9]/sample_n colon_n[11]
-+ vcom row_n[2] ctop adc_array_wafflecap_8_8_0[11|9]/sample VDD col_n[11] VSS adc_array_wafflecap_8_8
++ vcm row_n[2] ctop adc_array_wafflecap_8_8_0[11|9]/sample VDD col_n[11] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[12|2] adc_array_wafflecap_8_8_0[12|9]/sample_n colon_n[12]
-+ vcom row_n[2] ctop adc_array_wafflecap_8_8_0[12|9]/sample VDD col_n[12] VSS adc_array_wafflecap_8_8
++ vcm row_n[2] ctop adc_array_wafflecap_8_8_0[12|9]/sample VDD col_n[12] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[13|2] adc_array_wafflecap_8_8_0[13|9]/sample_n colon_n[13]
-+ vcom row_n[2] ctop adc_array_wafflecap_8_8_0[13|9]/sample VDD col_n[13] VSS adc_array_wafflecap_8_8
++ vcm row_n[2] ctop adc_array_wafflecap_8_8_0[13|9]/sample VDD col_n[13] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[14|2] adc_array_wafflecap_8_8_0[14|9]/sample_n colon_n[14]
-+ vcom row_n[2] ctop adc_array_wafflecap_8_8_0[14|9]/sample VDD col_n[14] VSS adc_array_wafflecap_8_8
++ vcm row_n[2] ctop adc_array_wafflecap_8_8_0[14|9]/sample VDD col_n[14] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[15|2] adc_array_wafflecap_8_8_0[15|9]/sample_n colon_n[15]
-+ vcom row_n[2] ctop adc_array_wafflecap_8_8_0[15|9]/sample VDD col_n[15] VSS adc_array_wafflecap_8_8
++ vcm row_n[2] ctop adc_array_wafflecap_8_8_0[15|9]/sample VDD col_n[15] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[0|3] adc_array_wafflecap_8_8_0[0|9]/sample_n colon_n[0]
-+ vcom row_n[3] ctop adc_array_wafflecap_8_8_0[0|9]/sample VDD col_n[0] VSS adc_array_wafflecap_8_8
++ vcm row_n[3] ctop adc_array_wafflecap_8_8_0[0|9]/sample VDD col_n[0] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[1|3] adc_array_wafflecap_8_8_0[1|9]/sample_n colon_n[1]
-+ vcom row_n[3] ctop adc_array_wafflecap_8_8_0[1|9]/sample VDD col_n[1] VSS adc_array_wafflecap_8_8
++ vcm row_n[3] ctop adc_array_wafflecap_8_8_0[1|9]/sample VDD col_n[1] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[2|3] adc_array_wafflecap_8_8_0[2|9]/sample_n colon_n[2]
-+ vcom row_n[3] ctop adc_array_wafflecap_8_8_0[2|9]/sample VDD col_n[2] VSS adc_array_wafflecap_8_8
++ vcm row_n[3] ctop adc_array_wafflecap_8_8_0[2|9]/sample VDD col_n[2] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[3|3] adc_array_wafflecap_8_8_0[3|9]/sample_n colon_n[3]
-+ vcom row_n[3] ctop adc_array_wafflecap_8_8_0[3|9]/sample VDD col_n[3] VSS adc_array_wafflecap_8_8
++ vcm row_n[3] ctop adc_array_wafflecap_8_8_0[3|9]/sample VDD col_n[3] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[4|3] adc_array_wafflecap_8_8_0[4|9]/sample_n colon_n[4]
-+ vcom row_n[3] ctop adc_array_wafflecap_8_8_0[4|9]/sample VDD col_n[4] VSS adc_array_wafflecap_8_8
++ vcm row_n[3] ctop adc_array_wafflecap_8_8_0[4|9]/sample VDD col_n[4] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[5|3] adc_array_wafflecap_8_8_0[5|9]/sample_n colon_n[5]
-+ vcom row_n[3] ctop adc_array_wafflecap_8_8_0[5|9]/sample VDD col_n[5] VSS adc_array_wafflecap_8_8
++ vcm row_n[3] ctop adc_array_wafflecap_8_8_0[5|9]/sample VDD col_n[5] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[6|3] adc_array_wafflecap_8_8_0[6|9]/sample_n colon_n[6]
-+ vcom row_n[3] ctop adc_array_wafflecap_8_8_0[6|9]/sample VDD col_n[6] VSS adc_array_wafflecap_8_8
++ vcm row_n[3] ctop adc_array_wafflecap_8_8_0[6|9]/sample VDD col_n[6] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[7|3] adc_array_wafflecap_8_8_0[7|9]/sample_n colon_n[7]
-+ vcom row_n[3] ctop adc_array_wafflecap_8_8_0[7|9]/sample VDD col_n[7] VSS adc_array_wafflecap_8_8
++ vcm row_n[3] ctop adc_array_wafflecap_8_8_0[7|9]/sample VDD col_n[7] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[8|3] adc_array_wafflecap_8_8_0[8|9]/sample_n colon_n[8]
-+ vcom row_n[3] ctop adc_array_wafflecap_8_8_0[8|9]/sample VDD col_n[8] VSS adc_array_wafflecap_8_8
++ vcm row_n[3] ctop adc_array_wafflecap_8_8_0[8|9]/sample VDD col_n[8] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[9|3] adc_array_wafflecap_8_8_0[9|9]/sample_n colon_n[9]
-+ vcom row_n[3] ctop adc_array_wafflecap_8_8_0[9|9]/sample VDD col_n[9] VSS adc_array_wafflecap_8_8
++ vcm row_n[3] ctop adc_array_wafflecap_8_8_0[9|9]/sample VDD col_n[9] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[10|3] adc_array_wafflecap_8_8_0[10|9]/sample_n colon_n[10]
-+ vcom row_n[3] ctop adc_array_wafflecap_8_8_0[10|9]/sample VDD col_n[10] VSS adc_array_wafflecap_8_8
++ vcm row_n[3] ctop adc_array_wafflecap_8_8_0[10|9]/sample VDD col_n[10] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[11|3] adc_array_wafflecap_8_8_0[11|9]/sample_n colon_n[11]
-+ vcom row_n[3] ctop adc_array_wafflecap_8_8_0[11|9]/sample VDD col_n[11] VSS adc_array_wafflecap_8_8
++ vcm row_n[3] ctop adc_array_wafflecap_8_8_0[11|9]/sample VDD col_n[11] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[12|3] adc_array_wafflecap_8_8_0[12|9]/sample_n colon_n[12]
-+ vcom row_n[3] ctop adc_array_wafflecap_8_8_0[12|9]/sample VDD col_n[12] VSS adc_array_wafflecap_8_8
++ vcm row_n[3] ctop adc_array_wafflecap_8_8_0[12|9]/sample VDD col_n[12] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[13|3] adc_array_wafflecap_8_8_0[13|9]/sample_n colon_n[13]
-+ vcom row_n[3] ctop adc_array_wafflecap_8_8_0[13|9]/sample VDD col_n[13] VSS adc_array_wafflecap_8_8
++ vcm row_n[3] ctop adc_array_wafflecap_8_8_0[13|9]/sample VDD col_n[13] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[14|3] adc_array_wafflecap_8_8_0[14|9]/sample_n colon_n[14]
-+ vcom row_n[3] ctop adc_array_wafflecap_8_8_0[14|9]/sample VDD col_n[14] VSS adc_array_wafflecap_8_8
++ vcm row_n[3] ctop adc_array_wafflecap_8_8_0[14|9]/sample VDD col_n[14] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[15|3] adc_array_wafflecap_8_8_0[15|9]/sample_n colon_n[15]
-+ vcom row_n[3] ctop adc_array_wafflecap_8_8_0[15|9]/sample VDD col_n[15] VSS adc_array_wafflecap_8_8
++ vcm row_n[3] ctop adc_array_wafflecap_8_8_0[15|9]/sample VDD col_n[15] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[0|4] adc_array_wafflecap_8_8_0[0|9]/sample_n colon_n[0]
-+ vcom row_n[4] ctop adc_array_wafflecap_8_8_0[0|9]/sample VDD col_n[0] VSS adc_array_wafflecap_8_8
++ vcm row_n[4] ctop adc_array_wafflecap_8_8_0[0|9]/sample VDD col_n[0] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[1|4] adc_array_wafflecap_8_8_0[1|9]/sample_n colon_n[1]
-+ vcom row_n[4] ctop adc_array_wafflecap_8_8_0[1|9]/sample VDD col_n[1] VSS adc_array_wafflecap_8_8
++ vcm row_n[4] ctop adc_array_wafflecap_8_8_0[1|9]/sample VDD col_n[1] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[2|4] adc_array_wafflecap_8_8_0[2|9]/sample_n colon_n[2]
-+ vcom row_n[4] ctop adc_array_wafflecap_8_8_0[2|9]/sample VDD col_n[2] VSS adc_array_wafflecap_8_8
++ vcm row_n[4] ctop adc_array_wafflecap_8_8_0[2|9]/sample VDD col_n[2] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[3|4] adc_array_wafflecap_8_8_0[3|9]/sample_n colon_n[3]
-+ vcom row_n[4] ctop adc_array_wafflecap_8_8_0[3|9]/sample VDD col_n[3] VSS adc_array_wafflecap_8_8
++ vcm row_n[4] ctop adc_array_wafflecap_8_8_0[3|9]/sample VDD col_n[3] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[4|4] adc_array_wafflecap_8_8_0[4|9]/sample_n colon_n[4]
-+ vcom row_n[4] ctop adc_array_wafflecap_8_8_0[4|9]/sample VDD col_n[4] VSS adc_array_wafflecap_8_8
++ vcm row_n[4] ctop adc_array_wafflecap_8_8_0[4|9]/sample VDD col_n[4] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[5|4] adc_array_wafflecap_8_8_0[5|9]/sample_n colon_n[5]
-+ vcom row_n[4] ctop adc_array_wafflecap_8_8_0[5|9]/sample VDD col_n[5] VSS adc_array_wafflecap_8_8
++ vcm row_n[4] ctop adc_array_wafflecap_8_8_0[5|9]/sample VDD col_n[5] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[6|4] adc_array_wafflecap_8_8_0[6|9]/sample_n colon_n[6]
-+ vcom row_n[4] ctop adc_array_wafflecap_8_8_0[6|9]/sample VDD col_n[6] VSS adc_array_wafflecap_8_8
++ vcm row_n[4] ctop adc_array_wafflecap_8_8_0[6|9]/sample VDD col_n[6] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[7|4] adc_array_wafflecap_8_8_0[7|9]/sample_n colon_n[7]
-+ vcom row_n[4] ctop adc_array_wafflecap_8_8_0[7|9]/sample VDD col_n[7] VSS adc_array_wafflecap_8_8
++ vcm row_n[4] ctop adc_array_wafflecap_8_8_0[7|9]/sample VDD col_n[7] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[8|4] adc_array_wafflecap_8_8_0[8|9]/sample_n colon_n[8]
-+ vcom row_n[4] ctop adc_array_wafflecap_8_8_0[8|9]/sample VDD col_n[8] VSS adc_array_wafflecap_8_8
++ vcm row_n[4] ctop adc_array_wafflecap_8_8_0[8|9]/sample VDD col_n[8] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[9|4] adc_array_wafflecap_8_8_0[9|9]/sample_n colon_n[9]
-+ vcom row_n[4] ctop adc_array_wafflecap_8_8_0[9|9]/sample VDD col_n[9] VSS adc_array_wafflecap_8_8
++ vcm row_n[4] ctop adc_array_wafflecap_8_8_0[9|9]/sample VDD col_n[9] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[10|4] adc_array_wafflecap_8_8_0[10|9]/sample_n colon_n[10]
-+ vcom row_n[4] ctop adc_array_wafflecap_8_8_0[10|9]/sample VDD col_n[10] VSS adc_array_wafflecap_8_8
++ vcm row_n[4] ctop adc_array_wafflecap_8_8_0[10|9]/sample VDD col_n[10] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[11|4] adc_array_wafflecap_8_8_0[11|9]/sample_n colon_n[11]
-+ vcom row_n[4] ctop adc_array_wafflecap_8_8_0[11|9]/sample VDD col_n[11] VSS adc_array_wafflecap_8_8
++ vcm row_n[4] ctop adc_array_wafflecap_8_8_0[11|9]/sample VDD col_n[11] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[12|4] adc_array_wafflecap_8_8_0[12|9]/sample_n colon_n[12]
-+ vcom row_n[4] ctop adc_array_wafflecap_8_8_0[12|9]/sample VDD col_n[12] VSS adc_array_wafflecap_8_8
++ vcm row_n[4] ctop adc_array_wafflecap_8_8_0[12|9]/sample VDD col_n[12] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[13|4] adc_array_wafflecap_8_8_0[13|9]/sample_n colon_n[13]
-+ vcom row_n[4] ctop adc_array_wafflecap_8_8_0[13|9]/sample VDD col_n[13] VSS adc_array_wafflecap_8_8
++ vcm row_n[4] ctop adc_array_wafflecap_8_8_0[13|9]/sample VDD col_n[13] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[14|4] adc_array_wafflecap_8_8_0[14|9]/sample_n colon_n[14]
-+ vcom row_n[4] ctop adc_array_wafflecap_8_8_0[14|9]/sample VDD col_n[14] VSS adc_array_wafflecap_8_8
++ vcm row_n[4] ctop adc_array_wafflecap_8_8_0[14|9]/sample VDD col_n[14] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[15|4] adc_array_wafflecap_8_8_0[15|9]/sample_n colon_n[15]
-+ vcom row_n[4] ctop adc_array_wafflecap_8_8_0[15|9]/sample VDD col_n[15] VSS adc_array_wafflecap_8_8
++ vcm row_n[4] ctop adc_array_wafflecap_8_8_0[15|9]/sample VDD col_n[15] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[0|5] adc_array_wafflecap_8_8_0[0|9]/sample_n colon_n[0]
-+ vcom row_n[5] ctop adc_array_wafflecap_8_8_0[0|9]/sample VDD col_n[0] VSS adc_array_wafflecap_8_8
++ vcm row_n[5] ctop adc_array_wafflecap_8_8_0[0|9]/sample VDD col_n[0] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[1|5] adc_array_wafflecap_8_8_0[1|9]/sample_n colon_n[1]
-+ vcom row_n[5] ctop adc_array_wafflecap_8_8_0[1|9]/sample VDD col_n[1] VSS adc_array_wafflecap_8_8
++ vcm row_n[5] ctop adc_array_wafflecap_8_8_0[1|9]/sample VDD col_n[1] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[2|5] adc_array_wafflecap_8_8_0[2|9]/sample_n colon_n[2]
-+ vcom row_n[5] ctop adc_array_wafflecap_8_8_0[2|9]/sample VDD col_n[2] VSS adc_array_wafflecap_8_8
++ vcm row_n[5] ctop adc_array_wafflecap_8_8_0[2|9]/sample VDD col_n[2] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[3|5] adc_array_wafflecap_8_8_0[3|9]/sample_n colon_n[3]
-+ vcom row_n[5] ctop adc_array_wafflecap_8_8_0[3|9]/sample VDD col_n[3] VSS adc_array_wafflecap_8_8
++ vcm row_n[5] ctop adc_array_wafflecap_8_8_0[3|9]/sample VDD col_n[3] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[4|5] adc_array_wafflecap_8_8_0[4|9]/sample_n colon_n[4]
-+ vcom row_n[5] ctop adc_array_wafflecap_8_8_0[4|9]/sample VDD col_n[4] VSS adc_array_wafflecap_8_8
++ vcm row_n[5] ctop adc_array_wafflecap_8_8_0[4|9]/sample VDD col_n[4] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[5|5] adc_array_wafflecap_8_8_0[5|9]/sample_n colon_n[5]
-+ vcom row_n[5] ctop adc_array_wafflecap_8_8_0[5|9]/sample VDD col_n[5] VSS adc_array_wafflecap_8_8
++ vcm row_n[5] ctop adc_array_wafflecap_8_8_0[5|9]/sample VDD col_n[5] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[6|5] adc_array_wafflecap_8_8_0[6|9]/sample_n colon_n[6]
-+ vcom row_n[5] ctop adc_array_wafflecap_8_8_0[6|9]/sample VDD col_n[6] VSS adc_array_wafflecap_8_8
++ vcm row_n[5] ctop adc_array_wafflecap_8_8_0[6|9]/sample VDD col_n[6] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[7|5] adc_array_wafflecap_8_8_0[7|9]/sample_n colon_n[7]
-+ vcom row_n[5] ctop adc_array_wafflecap_8_8_0[7|9]/sample VDD col_n[7] VSS adc_array_wafflecap_8_8
++ vcm row_n[5] ctop adc_array_wafflecap_8_8_0[7|9]/sample VDD col_n[7] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[8|5] adc_array_wafflecap_8_8_0[8|9]/sample_n colon_n[8]
-+ vcom row_n[5] ctop adc_array_wafflecap_8_8_0[8|9]/sample VDD col_n[8] VSS adc_array_wafflecap_8_8
++ vcm row_n[5] ctop adc_array_wafflecap_8_8_0[8|9]/sample VDD col_n[8] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[9|5] adc_array_wafflecap_8_8_0[9|9]/sample_n colon_n[9]
-+ vcom row_n[5] ctop adc_array_wafflecap_8_8_0[9|9]/sample VDD col_n[9] VSS adc_array_wafflecap_8_8
++ vcm row_n[5] ctop adc_array_wafflecap_8_8_0[9|9]/sample VDD col_n[9] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[10|5] adc_array_wafflecap_8_8_0[10|9]/sample_n colon_n[10]
-+ vcom row_n[5] ctop adc_array_wafflecap_8_8_0[10|9]/sample VDD col_n[10] VSS adc_array_wafflecap_8_8
++ vcm row_n[5] ctop adc_array_wafflecap_8_8_0[10|9]/sample VDD col_n[10] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[11|5] adc_array_wafflecap_8_8_0[11|9]/sample_n colon_n[11]
-+ vcom row_n[5] ctop adc_array_wafflecap_8_8_0[11|9]/sample VDD col_n[11] VSS adc_array_wafflecap_8_8
++ vcm row_n[5] ctop adc_array_wafflecap_8_8_0[11|9]/sample VDD col_n[11] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[12|5] adc_array_wafflecap_8_8_0[12|9]/sample_n colon_n[12]
-+ vcom row_n[5] ctop adc_array_wafflecap_8_8_0[12|9]/sample VDD col_n[12] VSS adc_array_wafflecap_8_8
++ vcm row_n[5] ctop adc_array_wafflecap_8_8_0[12|9]/sample VDD col_n[12] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[13|5] adc_array_wafflecap_8_8_0[13|9]/sample_n colon_n[13]
-+ vcom row_n[5] ctop adc_array_wafflecap_8_8_0[13|9]/sample VDD col_n[13] VSS adc_array_wafflecap_8_8
++ vcm row_n[5] ctop adc_array_wafflecap_8_8_0[13|9]/sample VDD col_n[13] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[14|5] adc_array_wafflecap_8_8_0[14|9]/sample_n colon_n[14]
-+ vcom row_n[5] ctop adc_array_wafflecap_8_8_0[14|9]/sample VDD col_n[14] VSS adc_array_wafflecap_8_8
++ vcm row_n[5] ctop adc_array_wafflecap_8_8_0[14|9]/sample VDD col_n[14] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[15|5] adc_array_wafflecap_8_8_0[15|9]/sample_n colon_n[15]
-+ vcom row_n[5] ctop adc_array_wafflecap_8_8_0[15|9]/sample VDD col_n[15] VSS adc_array_wafflecap_8_8
++ vcm row_n[5] ctop adc_array_wafflecap_8_8_0[15|9]/sample VDD col_n[15] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[0|6] adc_array_wafflecap_8_8_0[0|9]/sample_n colon_n[0]
-+ vcom row_n[6] ctop adc_array_wafflecap_8_8_0[0|9]/sample VDD col_n[0] VSS adc_array_wafflecap_8_8
++ vcm row_n[6] ctop adc_array_wafflecap_8_8_0[0|9]/sample VDD col_n[0] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[1|6] adc_array_wafflecap_8_8_0[1|9]/sample_n colon_n[1]
-+ vcom row_n[6] ctop adc_array_wafflecap_8_8_0[1|9]/sample VDD col_n[1] VSS adc_array_wafflecap_8_8
++ vcm row_n[6] ctop adc_array_wafflecap_8_8_0[1|9]/sample VDD col_n[1] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[2|6] adc_array_wafflecap_8_8_0[2|9]/sample_n colon_n[2]
-+ vcom row_n[6] ctop adc_array_wafflecap_8_8_0[2|9]/sample VDD col_n[2] VSS adc_array_wafflecap_8_8
++ vcm row_n[6] ctop adc_array_wafflecap_8_8_0[2|9]/sample VDD col_n[2] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[3|6] adc_array_wafflecap_8_8_0[3|9]/sample_n colon_n[3]
-+ vcom row_n[6] ctop adc_array_wafflecap_8_8_0[3|9]/sample VDD col_n[3] VSS adc_array_wafflecap_8_8
++ vcm row_n[6] ctop adc_array_wafflecap_8_8_0[3|9]/sample VDD col_n[3] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[4|6] adc_array_wafflecap_8_8_0[4|9]/sample_n colon_n[4]
-+ vcom row_n[6] ctop adc_array_wafflecap_8_8_0[4|9]/sample VDD col_n[4] VSS adc_array_wafflecap_8_8
++ vcm row_n[6] ctop adc_array_wafflecap_8_8_0[4|9]/sample VDD col_n[4] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[5|6] adc_array_wafflecap_8_8_0[5|9]/sample_n colon_n[5]
-+ vcom row_n[6] ctop adc_array_wafflecap_8_8_0[5|9]/sample VDD col_n[5] VSS adc_array_wafflecap_8_8
++ vcm row_n[6] ctop adc_array_wafflecap_8_8_0[5|9]/sample VDD col_n[5] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[6|6] adc_array_wafflecap_8_8_0[6|9]/sample_n colon_n[6]
-+ vcom row_n[6] ctop adc_array_wafflecap_8_8_0[6|9]/sample VDD col_n[6] VSS adc_array_wafflecap_8_8
++ vcm row_n[6] ctop adc_array_wafflecap_8_8_0[6|9]/sample VDD col_n[6] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[7|6] adc_array_wafflecap_8_8_0[7|9]/sample_n colon_n[7]
-+ vcom row_n[6] ctop adc_array_wafflecap_8_8_0[7|9]/sample VDD col_n[7] VSS adc_array_wafflecap_8_8
++ vcm row_n[6] ctop adc_array_wafflecap_8_8_0[7|9]/sample VDD col_n[7] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[8|6] adc_array_wafflecap_8_8_0[8|9]/sample_n colon_n[8]
-+ vcom row_n[6] ctop adc_array_wafflecap_8_8_0[8|9]/sample VDD col_n[8] VSS adc_array_wafflecap_8_8
++ vcm row_n[6] ctop adc_array_wafflecap_8_8_0[8|9]/sample VDD col_n[8] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[9|6] adc_array_wafflecap_8_8_0[9|9]/sample_n colon_n[9]
-+ vcom row_n[6] ctop adc_array_wafflecap_8_8_0[9|9]/sample VDD col_n[9] VSS adc_array_wafflecap_8_8
++ vcm row_n[6] ctop adc_array_wafflecap_8_8_0[9|9]/sample VDD col_n[9] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[10|6] adc_array_wafflecap_8_8_0[10|9]/sample_n colon_n[10]
-+ vcom row_n[6] ctop adc_array_wafflecap_8_8_0[10|9]/sample VDD col_n[10] VSS adc_array_wafflecap_8_8
++ vcm row_n[6] ctop adc_array_wafflecap_8_8_0[10|9]/sample VDD col_n[10] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[11|6] adc_array_wafflecap_8_8_0[11|9]/sample_n colon_n[11]
-+ vcom row_n[6] ctop adc_array_wafflecap_8_8_0[11|9]/sample VDD col_n[11] VSS adc_array_wafflecap_8_8
++ vcm row_n[6] ctop adc_array_wafflecap_8_8_0[11|9]/sample VDD col_n[11] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[12|6] adc_array_wafflecap_8_8_0[12|9]/sample_n colon_n[12]
-+ vcom row_n[6] ctop adc_array_wafflecap_8_8_0[12|9]/sample VDD col_n[12] VSS adc_array_wafflecap_8_8
++ vcm row_n[6] ctop adc_array_wafflecap_8_8_0[12|9]/sample VDD col_n[12] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[13|6] adc_array_wafflecap_8_8_0[13|9]/sample_n colon_n[13]
-+ vcom row_n[6] ctop adc_array_wafflecap_8_8_0[13|9]/sample VDD col_n[13] VSS adc_array_wafflecap_8_8
++ vcm row_n[6] ctop adc_array_wafflecap_8_8_0[13|9]/sample VDD col_n[13] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[14|6] adc_array_wafflecap_8_8_0[14|9]/sample_n colon_n[14]
-+ vcom row_n[6] ctop adc_array_wafflecap_8_8_0[14|9]/sample VDD col_n[14] VSS adc_array_wafflecap_8_8
++ vcm row_n[6] ctop adc_array_wafflecap_8_8_0[14|9]/sample VDD col_n[14] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[15|6] adc_array_wafflecap_8_8_0[15|9]/sample_n colon_n[15]
-+ vcom row_n[6] ctop adc_array_wafflecap_8_8_0[15|9]/sample VDD col_n[15] VSS adc_array_wafflecap_8_8
++ vcm row_n[6] ctop adc_array_wafflecap_8_8_0[15|9]/sample VDD col_n[15] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[0|7] adc_array_wafflecap_8_8_0[0|9]/sample_n colon_n[0]
-+ vcom row_n[7] ctop adc_array_wafflecap_8_8_0[0|9]/sample VDD col_n[0] VSS adc_array_wafflecap_8_8
++ vcm row_n[7] ctop adc_array_wafflecap_8_8_0[0|9]/sample VDD col_n[0] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[1|7] adc_array_wafflecap_8_8_0[1|9]/sample_n colon_n[1]
-+ vcom row_n[7] ctop adc_array_wafflecap_8_8_0[1|9]/sample VDD col_n[1] VSS adc_array_wafflecap_8_8
++ vcm row_n[7] ctop adc_array_wafflecap_8_8_0[1|9]/sample VDD col_n[1] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[2|7] adc_array_wafflecap_8_8_0[2|9]/sample_n colon_n[2]
-+ vcom row_n[7] ctop adc_array_wafflecap_8_8_0[2|9]/sample VDD col_n[2] VSS adc_array_wafflecap_8_8
++ vcm row_n[7] ctop adc_array_wafflecap_8_8_0[2|9]/sample VDD col_n[2] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[3|7] adc_array_wafflecap_8_8_0[3|9]/sample_n colon_n[3]
-+ vcom row_n[7] ctop adc_array_wafflecap_8_8_0[3|9]/sample VDD col_n[3] VSS adc_array_wafflecap_8_8
++ vcm row_n[7] ctop adc_array_wafflecap_8_8_0[3|9]/sample VDD col_n[3] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[4|7] adc_array_wafflecap_8_8_0[4|9]/sample_n colon_n[4]
-+ vcom row_n[7] ctop adc_array_wafflecap_8_8_0[4|9]/sample VDD col_n[4] VSS adc_array_wafflecap_8_8
++ vcm row_n[7] ctop adc_array_wafflecap_8_8_0[4|9]/sample VDD col_n[4] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[5|7] adc_array_wafflecap_8_8_0[5|9]/sample_n colon_n[5]
-+ vcom row_n[7] ctop adc_array_wafflecap_8_8_0[5|9]/sample VDD col_n[5] VSS adc_array_wafflecap_8_8
++ vcm row_n[7] ctop adc_array_wafflecap_8_8_0[5|9]/sample VDD col_n[5] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[6|7] adc_array_wafflecap_8_8_0[6|9]/sample_n colon_n[6]
-+ vcom row_n[7] ctop adc_array_wafflecap_8_8_0[6|9]/sample VDD col_n[6] VSS adc_array_wafflecap_8_8
++ vcm row_n[7] ctop adc_array_wafflecap_8_8_0[6|9]/sample VDD col_n[6] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[7|7] adc_array_wafflecap_8_8_0[7|9]/sample_n colon_n[7]
-+ vcom row_n[7] ctop adc_array_wafflecap_8_8_0[7|9]/sample VDD col_n[7] VSS adc_array_wafflecap_8_8
++ vcm row_n[7] ctop adc_array_wafflecap_8_8_0[7|9]/sample VDD col_n[7] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[8|7] adc_array_wafflecap_8_8_0[8|9]/sample_n colon_n[8]
-+ vcom row_n[7] ctop adc_array_wafflecap_8_8_0[8|9]/sample VDD col_n[8] VSS adc_array_wafflecap_8_8
++ vcm row_n[7] ctop adc_array_wafflecap_8_8_0[8|9]/sample VDD col_n[8] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[9|7] adc_array_wafflecap_8_8_0[9|9]/sample_n colon_n[9]
-+ vcom row_n[7] ctop adc_array_wafflecap_8_8_0[9|9]/sample VDD col_n[9] VSS adc_array_wafflecap_8_8
++ vcm row_n[7] ctop adc_array_wafflecap_8_8_0[9|9]/sample VDD col_n[9] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[10|7] adc_array_wafflecap_8_8_0[10|9]/sample_n colon_n[10]
-+ vcom row_n[7] ctop adc_array_wafflecap_8_8_0[10|9]/sample VDD col_n[10] VSS adc_array_wafflecap_8_8
++ vcm row_n[7] ctop adc_array_wafflecap_8_8_0[10|9]/sample VDD col_n[10] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[11|7] adc_array_wafflecap_8_8_0[11|9]/sample_n colon_n[11]
-+ vcom row_n[7] ctop adc_array_wafflecap_8_8_0[11|9]/sample VDD col_n[11] VSS adc_array_wafflecap_8_8
++ vcm row_n[7] ctop adc_array_wafflecap_8_8_0[11|9]/sample VDD col_n[11] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[12|7] adc_array_wafflecap_8_8_0[12|9]/sample_n colon_n[12]
-+ vcom row_n[7] ctop adc_array_wafflecap_8_8_0[12|9]/sample VDD col_n[12] VSS adc_array_wafflecap_8_8
++ vcm row_n[7] ctop adc_array_wafflecap_8_8_0[12|9]/sample VDD col_n[12] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[13|7] adc_array_wafflecap_8_8_0[13|9]/sample_n colon_n[13]
-+ vcom row_n[7] ctop adc_array_wafflecap_8_8_0[13|9]/sample VDD col_n[13] VSS adc_array_wafflecap_8_8
++ vcm row_n[7] ctop adc_array_wafflecap_8_8_0[13|9]/sample VDD col_n[13] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[14|7] adc_array_wafflecap_8_8_0[14|9]/sample_n colon_n[14]
-+ vcom row_n[7] ctop adc_array_wafflecap_8_8_0[14|9]/sample VDD col_n[14] VSS adc_array_wafflecap_8_8
++ vcm row_n[7] ctop adc_array_wafflecap_8_8_0[14|9]/sample VDD col_n[14] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[15|7] adc_array_wafflecap_8_8_0[15|9]/sample_n colon_n[15]
-+ vcom row_n[7] ctop adc_array_wafflecap_8_8_0[15|9]/sample VDD col_n[15] VSS adc_array_wafflecap_8_8
++ vcm row_n[7] ctop adc_array_wafflecap_8_8_0[15|9]/sample VDD col_n[15] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[0|8] adc_array_wafflecap_8_8_0[0|9]/sample_n colon_n[0]
-+ vcom row_n[8] ctop adc_array_wafflecap_8_8_0[0|9]/sample VDD col_n[0] VSS adc_array_wafflecap_8_8
++ vcm row_n[8] ctop adc_array_wafflecap_8_8_0[0|9]/sample VDD col_n[0] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[1|8] adc_array_wafflecap_8_8_0[1|9]/sample_n colon_n[1]
-+ vcom row_n[8] ctop adc_array_wafflecap_8_8_0[1|9]/sample VDD col_n[1] VSS adc_array_wafflecap_8_8
++ vcm row_n[8] ctop adc_array_wafflecap_8_8_0[1|9]/sample VDD col_n[1] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[2|8] adc_array_wafflecap_8_8_0[2|9]/sample_n colon_n[2]
-+ vcom row_n[8] ctop adc_array_wafflecap_8_8_0[2|9]/sample VDD col_n[2] VSS adc_array_wafflecap_8_8
++ vcm row_n[8] ctop adc_array_wafflecap_8_8_0[2|9]/sample VDD col_n[2] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[3|8] adc_array_wafflecap_8_8_0[3|9]/sample_n colon_n[3]
-+ vcom row_n[8] ctop adc_array_wafflecap_8_8_0[3|9]/sample VDD col_n[3] VSS adc_array_wafflecap_8_8
++ vcm row_n[8] ctop adc_array_wafflecap_8_8_0[3|9]/sample VDD col_n[3] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[4|8] adc_array_wafflecap_8_8_0[4|9]/sample_n colon_n[4]
-+ vcom row_n[8] ctop adc_array_wafflecap_8_8_0[4|9]/sample VDD col_n[4] VSS adc_array_wafflecap_8_8
++ vcm row_n[8] ctop adc_array_wafflecap_8_8_0[4|9]/sample VDD col_n[4] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[5|8] adc_array_wafflecap_8_8_0[5|9]/sample_n colon_n[5]
-+ vcom row_n[8] ctop adc_array_wafflecap_8_8_0[5|9]/sample VDD col_n[5] VSS adc_array_wafflecap_8_8
++ vcm row_n[8] ctop adc_array_wafflecap_8_8_0[5|9]/sample VDD col_n[5] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[6|8] adc_array_wafflecap_8_8_0[6|9]/sample_n colon_n[6]
-+ vcom row_n[8] ctop adc_array_wafflecap_8_8_0[6|9]/sample VDD col_n[6] VSS adc_array_wafflecap_8_8
++ vcm row_n[8] ctop adc_array_wafflecap_8_8_0[6|9]/sample VDD col_n[6] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[7|8] adc_array_wafflecap_8_8_0[7|9]/sample_n colon_n[7]
-+ vcom row_n[8] ctop adc_array_wafflecap_8_8_0[7|9]/sample VDD col_n[7] VSS adc_array_wafflecap_8_8
++ vcm row_n[8] ctop adc_array_wafflecap_8_8_0[7|9]/sample VDD col_n[7] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[8|8] adc_array_wafflecap_8_8_0[8|9]/sample_n colon_n[8]
-+ vcom row_n[8] ctop adc_array_wafflecap_8_8_0[8|9]/sample VDD col_n[8] VSS adc_array_wafflecap_8_8
++ vcm row_n[8] ctop adc_array_wafflecap_8_8_0[8|9]/sample VDD col_n[8] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[9|8] adc_array_wafflecap_8_8_0[9|9]/sample_n colon_n[9]
-+ vcom row_n[8] ctop adc_array_wafflecap_8_8_0[9|9]/sample VDD col_n[9] VSS adc_array_wafflecap_8_8
++ vcm row_n[8] ctop adc_array_wafflecap_8_8_0[9|9]/sample VDD col_n[9] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[10|8] adc_array_wafflecap_8_8_0[10|9]/sample_n colon_n[10]
-+ vcom row_n[8] ctop adc_array_wafflecap_8_8_0[10|9]/sample VDD col_n[10] VSS adc_array_wafflecap_8_8
++ vcm row_n[8] ctop adc_array_wafflecap_8_8_0[10|9]/sample VDD col_n[10] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[11|8] adc_array_wafflecap_8_8_0[11|9]/sample_n colon_n[11]
-+ vcom row_n[8] ctop adc_array_wafflecap_8_8_0[11|9]/sample VDD col_n[11] VSS adc_array_wafflecap_8_8
++ vcm row_n[8] ctop adc_array_wafflecap_8_8_0[11|9]/sample VDD col_n[11] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[12|8] adc_array_wafflecap_8_8_0[12|9]/sample_n colon_n[12]
-+ vcom row_n[8] ctop adc_array_wafflecap_8_8_0[12|9]/sample VDD col_n[12] VSS adc_array_wafflecap_8_8
++ vcm row_n[8] ctop adc_array_wafflecap_8_8_0[12|9]/sample VDD col_n[12] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[13|8] adc_array_wafflecap_8_8_0[13|9]/sample_n colon_n[13]
-+ vcom row_n[8] ctop adc_array_wafflecap_8_8_0[13|9]/sample VDD col_n[13] VSS adc_array_wafflecap_8_8
++ vcm row_n[8] ctop adc_array_wafflecap_8_8_0[13|9]/sample VDD col_n[13] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[14|8] adc_array_wafflecap_8_8_0[14|9]/sample_n colon_n[14]
-+ vcom row_n[8] ctop adc_array_wafflecap_8_8_0[14|9]/sample VDD col_n[14] VSS adc_array_wafflecap_8_8
++ vcm row_n[8] ctop adc_array_wafflecap_8_8_0[14|9]/sample VDD col_n[14] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[15|8] adc_array_wafflecap_8_8_0[15|9]/sample_n colon_n[15]
-+ vcom row_n[8] ctop adc_array_wafflecap_8_8_0[15|9]/sample VDD col_n[15] VSS adc_array_wafflecap_8_8
++ vcm row_n[8] ctop adc_array_wafflecap_8_8_0[15|9]/sample VDD col_n[15] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[0|9] adc_array_wafflecap_8_8_0[0|9]/sample_n colon_n[0]
-+ vcom row_n[9] ctop adc_array_wafflecap_8_8_0[0|9]/sample VDD col_n[0] VSS adc_array_wafflecap_8_8
++ vcm row_n[9] ctop adc_array_wafflecap_8_8_0[0|9]/sample VDD col_n[0] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[1|9] adc_array_wafflecap_8_8_0[1|9]/sample_n colon_n[1]
-+ vcom row_n[9] ctop adc_array_wafflecap_8_8_0[1|9]/sample VDD col_n[1] VSS adc_array_wafflecap_8_8
++ vcm row_n[9] ctop adc_array_wafflecap_8_8_0[1|9]/sample VDD col_n[1] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[2|9] adc_array_wafflecap_8_8_0[2|9]/sample_n colon_n[2]
-+ vcom row_n[9] ctop adc_array_wafflecap_8_8_0[2|9]/sample VDD col_n[2] VSS adc_array_wafflecap_8_8
++ vcm row_n[9] ctop adc_array_wafflecap_8_8_0[2|9]/sample VDD col_n[2] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[3|9] adc_array_wafflecap_8_8_0[3|9]/sample_n colon_n[3]
-+ vcom row_n[9] ctop adc_array_wafflecap_8_8_0[3|9]/sample VDD col_n[3] VSS adc_array_wafflecap_8_8
++ vcm row_n[9] ctop adc_array_wafflecap_8_8_0[3|9]/sample VDD col_n[3] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[4|9] adc_array_wafflecap_8_8_0[4|9]/sample_n colon_n[4]
-+ vcom row_n[9] ctop adc_array_wafflecap_8_8_0[4|9]/sample VDD col_n[4] VSS adc_array_wafflecap_8_8
++ vcm row_n[9] ctop adc_array_wafflecap_8_8_0[4|9]/sample VDD col_n[4] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[5|9] adc_array_wafflecap_8_8_0[5|9]/sample_n colon_n[5]
-+ vcom row_n[9] ctop adc_array_wafflecap_8_8_0[5|9]/sample VDD col_n[5] VSS adc_array_wafflecap_8_8
++ vcm row_n[9] ctop adc_array_wafflecap_8_8_0[5|9]/sample VDD col_n[5] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[6|9] adc_array_wafflecap_8_8_0[6|9]/sample_n colon_n[6]
-+ vcom row_n[9] ctop adc_array_wafflecap_8_8_0[6|9]/sample VDD col_n[6] VSS adc_array_wafflecap_8_8
++ vcm row_n[9] ctop adc_array_wafflecap_8_8_0[6|9]/sample VDD col_n[6] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[7|9] adc_array_wafflecap_8_8_0[7|9]/sample_n colon_n[7]
-+ vcom row_n[9] ctop adc_array_wafflecap_8_8_0[7|9]/sample VDD col_n[7] VSS adc_array_wafflecap_8_8
++ vcm row_n[9] ctop adc_array_wafflecap_8_8_0[7|9]/sample VDD col_n[7] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[8|9] adc_array_wafflecap_8_8_0[8|9]/sample_n colon_n[8]
-+ vcom row_n[9] ctop adc_array_wafflecap_8_8_0[8|9]/sample VDD col_n[8] VSS adc_array_wafflecap_8_8
++ vcm row_n[9] ctop adc_array_wafflecap_8_8_0[8|9]/sample VDD col_n[8] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[9|9] adc_array_wafflecap_8_8_0[9|9]/sample_n colon_n[9]
-+ vcom row_n[9] ctop adc_array_wafflecap_8_8_0[9|9]/sample VDD col_n[9] VSS adc_array_wafflecap_8_8
++ vcm row_n[9] ctop adc_array_wafflecap_8_8_0[9|9]/sample VDD col_n[9] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[10|9] adc_array_wafflecap_8_8_0[10|9]/sample_n colon_n[10]
-+ vcom row_n[9] ctop adc_array_wafflecap_8_8_0[10|9]/sample VDD col_n[10] VSS adc_array_wafflecap_8_8
++ vcm row_n[9] ctop adc_array_wafflecap_8_8_0[10|9]/sample VDD col_n[10] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[11|9] adc_array_wafflecap_8_8_0[11|9]/sample_n colon_n[11]
-+ vcom row_n[9] ctop adc_array_wafflecap_8_8_0[11|9]/sample VDD col_n[11] VSS adc_array_wafflecap_8_8
++ vcm row_n[9] ctop adc_array_wafflecap_8_8_0[11|9]/sample VDD col_n[11] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[12|9] adc_array_wafflecap_8_8_0[12|9]/sample_n colon_n[12]
-+ vcom row_n[9] ctop adc_array_wafflecap_8_8_0[12|9]/sample VDD col_n[12] VSS adc_array_wafflecap_8_8
++ vcm row_n[9] ctop adc_array_wafflecap_8_8_0[12|9]/sample VDD col_n[12] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[13|9] adc_array_wafflecap_8_8_0[13|9]/sample_n colon_n[13]
-+ vcom row_n[9] ctop adc_array_wafflecap_8_8_0[13|9]/sample VDD col_n[13] VSS adc_array_wafflecap_8_8
++ vcm row_n[9] ctop adc_array_wafflecap_8_8_0[13|9]/sample VDD col_n[13] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[14|9] adc_array_wafflecap_8_8_0[14|9]/sample_n colon_n[14]
-+ vcom row_n[9] ctop adc_array_wafflecap_8_8_0[14|9]/sample VDD col_n[14] VSS adc_array_wafflecap_8_8
++ vcm row_n[9] ctop adc_array_wafflecap_8_8_0[14|9]/sample VDD col_n[14] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[15|9] adc_array_wafflecap_8_8_0[15|9]/sample_n colon_n[15]
-+ vcom row_n[9] ctop adc_array_wafflecap_8_8_0[15|9]/sample VDD col_n[15] VSS adc_array_wafflecap_8_8
++ vcm row_n[9] ctop adc_array_wafflecap_8_8_0[15|9]/sample VDD col_n[15] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[0|10] adc_array_wafflecap_8_8_0[0|9]/sample_n colon_n[0]
-+ vcom row_n[10] ctop adc_array_wafflecap_8_8_0[0|9]/sample VDD col_n[0] VSS adc_array_wafflecap_8_8
++ vcm row_n[10] ctop adc_array_wafflecap_8_8_0[0|9]/sample VDD col_n[0] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[1|10] adc_array_wafflecap_8_8_0[1|9]/sample_n colon_n[1]
-+ vcom row_n[10] ctop adc_array_wafflecap_8_8_0[1|9]/sample VDD col_n[1] VSS adc_array_wafflecap_8_8
++ vcm row_n[10] ctop adc_array_wafflecap_8_8_0[1|9]/sample VDD col_n[1] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[2|10] adc_array_wafflecap_8_8_0[2|9]/sample_n colon_n[2]
-+ vcom row_n[10] ctop adc_array_wafflecap_8_8_0[2|9]/sample VDD col_n[2] VSS adc_array_wafflecap_8_8
++ vcm row_n[10] ctop adc_array_wafflecap_8_8_0[2|9]/sample VDD col_n[2] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[3|10] adc_array_wafflecap_8_8_0[3|9]/sample_n colon_n[3]
-+ vcom row_n[10] ctop adc_array_wafflecap_8_8_0[3|9]/sample VDD col_n[3] VSS adc_array_wafflecap_8_8
++ vcm row_n[10] ctop adc_array_wafflecap_8_8_0[3|9]/sample VDD col_n[3] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[4|10] adc_array_wafflecap_8_8_0[4|9]/sample_n colon_n[4]
-+ vcom row_n[10] ctop adc_array_wafflecap_8_8_0[4|9]/sample VDD col_n[4] VSS adc_array_wafflecap_8_8
++ vcm row_n[10] ctop adc_array_wafflecap_8_8_0[4|9]/sample VDD col_n[4] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[5|10] adc_array_wafflecap_8_8_0[5|9]/sample_n colon_n[5]
-+ vcom row_n[10] ctop adc_array_wafflecap_8_8_0[5|9]/sample VDD col_n[5] VSS adc_array_wafflecap_8_8
++ vcm row_n[10] ctop adc_array_wafflecap_8_8_0[5|9]/sample VDD col_n[5] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[6|10] adc_array_wafflecap_8_8_0[6|9]/sample_n colon_n[6]
-+ vcom row_n[10] ctop adc_array_wafflecap_8_8_0[6|9]/sample VDD col_n[6] VSS adc_array_wafflecap_8_8
++ vcm row_n[10] ctop adc_array_wafflecap_8_8_0[6|9]/sample VDD col_n[6] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[7|10] adc_array_wafflecap_8_8_0[7|9]/sample_n colon_n[7]
-+ vcom row_n[10] ctop adc_array_wafflecap_8_8_0[7|9]/sample VDD col_n[7] VSS adc_array_wafflecap_8_8
++ vcm row_n[10] ctop adc_array_wafflecap_8_8_0[7|9]/sample VDD col_n[7] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[8|10] adc_array_wafflecap_8_8_0[8|9]/sample_n colon_n[8]
-+ vcom row_n[10] ctop adc_array_wafflecap_8_8_0[8|9]/sample VDD col_n[8] VSS adc_array_wafflecap_8_8
++ vcm row_n[10] ctop adc_array_wafflecap_8_8_0[8|9]/sample VDD col_n[8] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[9|10] adc_array_wafflecap_8_8_0[9|9]/sample_n colon_n[9]
-+ vcom row_n[10] ctop adc_array_wafflecap_8_8_0[9|9]/sample VDD col_n[9] VSS adc_array_wafflecap_8_8
++ vcm row_n[10] ctop adc_array_wafflecap_8_8_0[9|9]/sample VDD col_n[9] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[10|10] adc_array_wafflecap_8_8_0[10|9]/sample_n colon_n[10]
-+ vcom row_n[10] ctop adc_array_wafflecap_8_8_0[10|9]/sample VDD col_n[10] VSS adc_array_wafflecap_8_8
++ vcm row_n[10] ctop adc_array_wafflecap_8_8_0[10|9]/sample VDD col_n[10] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[11|10] adc_array_wafflecap_8_8_0[11|9]/sample_n colon_n[11]
-+ vcom row_n[10] ctop adc_array_wafflecap_8_8_0[11|9]/sample VDD col_n[11] VSS adc_array_wafflecap_8_8
++ vcm row_n[10] ctop adc_array_wafflecap_8_8_0[11|9]/sample VDD col_n[11] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[12|10] adc_array_wafflecap_8_8_0[12|9]/sample_n colon_n[12]
-+ vcom row_n[10] ctop adc_array_wafflecap_8_8_0[12|9]/sample VDD col_n[12] VSS adc_array_wafflecap_8_8
++ vcm row_n[10] ctop adc_array_wafflecap_8_8_0[12|9]/sample VDD col_n[12] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[13|10] adc_array_wafflecap_8_8_0[13|9]/sample_n colon_n[13]
-+ vcom row_n[10] ctop adc_array_wafflecap_8_8_0[13|9]/sample VDD col_n[13] VSS adc_array_wafflecap_8_8
++ vcm row_n[10] ctop adc_array_wafflecap_8_8_0[13|9]/sample VDD col_n[13] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[14|10] adc_array_wafflecap_8_8_0[14|9]/sample_n colon_n[14]
-+ vcom row_n[10] ctop adc_array_wafflecap_8_8_0[14|9]/sample VDD col_n[14] VSS adc_array_wafflecap_8_8
++ vcm row_n[10] ctop adc_array_wafflecap_8_8_0[14|9]/sample VDD col_n[14] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[15|10] adc_array_wafflecap_8_8_0[15|9]/sample_n colon_n[15]
-+ vcom row_n[10] ctop adc_array_wafflecap_8_8_0[15|9]/sample VDD col_n[15] VSS adc_array_wafflecap_8_8
++ vcm row_n[10] ctop adc_array_wafflecap_8_8_0[15|9]/sample VDD col_n[15] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[0|11] adc_array_wafflecap_8_8_0[0|9]/sample_n colon_n[0]
-+ vcom row_n[11] ctop adc_array_wafflecap_8_8_0[0|9]/sample VDD col_n[0] VSS adc_array_wafflecap_8_8
++ vcm row_n[11] ctop adc_array_wafflecap_8_8_0[0|9]/sample VDD col_n[0] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[1|11] adc_array_wafflecap_8_8_0[1|9]/sample_n colon_n[1]
-+ vcom row_n[11] ctop adc_array_wafflecap_8_8_0[1|9]/sample VDD col_n[1] VSS adc_array_wafflecap_8_8
++ vcm row_n[11] ctop adc_array_wafflecap_8_8_0[1|9]/sample VDD col_n[1] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[2|11] adc_array_wafflecap_8_8_0[2|9]/sample_n colon_n[2]
-+ vcom row_n[11] ctop adc_array_wafflecap_8_8_0[2|9]/sample VDD col_n[2] VSS adc_array_wafflecap_8_8
++ vcm row_n[11] ctop adc_array_wafflecap_8_8_0[2|9]/sample VDD col_n[2] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[3|11] adc_array_wafflecap_8_8_0[3|9]/sample_n colon_n[3]
-+ vcom row_n[11] ctop adc_array_wafflecap_8_8_0[3|9]/sample VDD col_n[3] VSS adc_array_wafflecap_8_8
++ vcm row_n[11] ctop adc_array_wafflecap_8_8_0[3|9]/sample VDD col_n[3] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[4|11] adc_array_wafflecap_8_8_0[4|9]/sample_n colon_n[4]
-+ vcom row_n[11] ctop adc_array_wafflecap_8_8_0[4|9]/sample VDD col_n[4] VSS adc_array_wafflecap_8_8
++ vcm row_n[11] ctop adc_array_wafflecap_8_8_0[4|9]/sample VDD col_n[4] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[5|11] adc_array_wafflecap_8_8_0[5|9]/sample_n colon_n[5]
-+ vcom row_n[11] ctop adc_array_wafflecap_8_8_0[5|9]/sample VDD col_n[5] VSS adc_array_wafflecap_8_8
++ vcm row_n[11] ctop adc_array_wafflecap_8_8_0[5|9]/sample VDD col_n[5] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[6|11] adc_array_wafflecap_8_8_0[6|9]/sample_n colon_n[6]
-+ vcom row_n[11] ctop adc_array_wafflecap_8_8_0[6|9]/sample VDD col_n[6] VSS adc_array_wafflecap_8_8
++ vcm row_n[11] ctop adc_array_wafflecap_8_8_0[6|9]/sample VDD col_n[6] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[7|11] adc_array_wafflecap_8_8_0[7|9]/sample_n colon_n[7]
-+ vcom row_n[11] ctop adc_array_wafflecap_8_8_0[7|9]/sample VDD col_n[7] VSS adc_array_wafflecap_8_8
++ vcm row_n[11] ctop adc_array_wafflecap_8_8_0[7|9]/sample VDD col_n[7] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[8|11] adc_array_wafflecap_8_8_0[8|9]/sample_n colon_n[8]
-+ vcom row_n[11] ctop adc_array_wafflecap_8_8_0[8|9]/sample VDD col_n[8] VSS adc_array_wafflecap_8_8
++ vcm row_n[11] ctop adc_array_wafflecap_8_8_0[8|9]/sample VDD col_n[8] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[9|11] adc_array_wafflecap_8_8_0[9|9]/sample_n colon_n[9]
-+ vcom row_n[11] ctop adc_array_wafflecap_8_8_0[9|9]/sample VDD col_n[9] VSS adc_array_wafflecap_8_8
++ vcm row_n[11] ctop adc_array_wafflecap_8_8_0[9|9]/sample VDD col_n[9] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[10|11] adc_array_wafflecap_8_8_0[10|9]/sample_n colon_n[10]
-+ vcom row_n[11] ctop adc_array_wafflecap_8_8_0[10|9]/sample VDD col_n[10] VSS adc_array_wafflecap_8_8
++ vcm row_n[11] ctop adc_array_wafflecap_8_8_0[10|9]/sample VDD col_n[10] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[11|11] adc_array_wafflecap_8_8_0[11|9]/sample_n colon_n[11]
-+ vcom row_n[11] ctop adc_array_wafflecap_8_8_0[11|9]/sample VDD col_n[11] VSS adc_array_wafflecap_8_8
++ vcm row_n[11] ctop adc_array_wafflecap_8_8_0[11|9]/sample VDD col_n[11] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[12|11] adc_array_wafflecap_8_8_0[12|9]/sample_n colon_n[12]
-+ vcom row_n[11] ctop adc_array_wafflecap_8_8_0[12|9]/sample VDD col_n[12] VSS adc_array_wafflecap_8_8
++ vcm row_n[11] ctop adc_array_wafflecap_8_8_0[12|9]/sample VDD col_n[12] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[13|11] adc_array_wafflecap_8_8_0[13|9]/sample_n colon_n[13]
-+ vcom row_n[11] ctop adc_array_wafflecap_8_8_0[13|9]/sample VDD col_n[13] VSS adc_array_wafflecap_8_8
++ vcm row_n[11] ctop adc_array_wafflecap_8_8_0[13|9]/sample VDD col_n[13] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[14|11] adc_array_wafflecap_8_8_0[14|9]/sample_n colon_n[14]
-+ vcom row_n[11] ctop adc_array_wafflecap_8_8_0[14|9]/sample VDD col_n[14] VSS adc_array_wafflecap_8_8
++ vcm row_n[11] ctop adc_array_wafflecap_8_8_0[14|9]/sample VDD col_n[14] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[15|11] adc_array_wafflecap_8_8_0[15|9]/sample_n colon_n[15]
-+ vcom row_n[11] ctop adc_array_wafflecap_8_8_0[15|9]/sample VDD col_n[15] VSS adc_array_wafflecap_8_8
++ vcm row_n[11] ctop adc_array_wafflecap_8_8_0[15|9]/sample VDD col_n[15] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[0|12] adc_array_wafflecap_8_8_0[0|9]/sample_n colon_n[0]
-+ vcom row_n[12] ctop adc_array_wafflecap_8_8_0[0|9]/sample VDD col_n[0] VSS adc_array_wafflecap_8_8
++ vcm row_n[12] ctop adc_array_wafflecap_8_8_0[0|9]/sample VDD col_n[0] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[1|12] adc_array_wafflecap_8_8_0[1|9]/sample_n colon_n[1]
-+ vcom row_n[12] ctop adc_array_wafflecap_8_8_0[1|9]/sample VDD col_n[1] VSS adc_array_wafflecap_8_8
++ vcm row_n[12] ctop adc_array_wafflecap_8_8_0[1|9]/sample VDD col_n[1] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[2|12] adc_array_wafflecap_8_8_0[2|9]/sample_n colon_n[2]
-+ vcom row_n[12] ctop adc_array_wafflecap_8_8_0[2|9]/sample VDD col_n[2] VSS adc_array_wafflecap_8_8
++ vcm row_n[12] ctop adc_array_wafflecap_8_8_0[2|9]/sample VDD col_n[2] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[3|12] adc_array_wafflecap_8_8_0[3|9]/sample_n colon_n[3]
-+ vcom row_n[12] ctop adc_array_wafflecap_8_8_0[3|9]/sample VDD col_n[3] VSS adc_array_wafflecap_8_8
++ vcm row_n[12] ctop adc_array_wafflecap_8_8_0[3|9]/sample VDD col_n[3] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[4|12] adc_array_wafflecap_8_8_0[4|9]/sample_n colon_n[4]
-+ vcom row_n[12] ctop adc_array_wafflecap_8_8_0[4|9]/sample VDD col_n[4] VSS adc_array_wafflecap_8_8
++ vcm row_n[12] ctop adc_array_wafflecap_8_8_0[4|9]/sample VDD col_n[4] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[5|12] adc_array_wafflecap_8_8_0[5|9]/sample_n colon_n[5]
-+ vcom row_n[12] ctop adc_array_wafflecap_8_8_0[5|9]/sample VDD col_n[5] VSS adc_array_wafflecap_8_8
++ vcm row_n[12] ctop adc_array_wafflecap_8_8_0[5|9]/sample VDD col_n[5] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[6|12] adc_array_wafflecap_8_8_0[6|9]/sample_n colon_n[6]
-+ vcom row_n[12] ctop adc_array_wafflecap_8_8_0[6|9]/sample VDD col_n[6] VSS adc_array_wafflecap_8_8
++ vcm row_n[12] ctop adc_array_wafflecap_8_8_0[6|9]/sample VDD col_n[6] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[7|12] adc_array_wafflecap_8_8_0[7|9]/sample_n colon_n[7]
-+ vcom row_n[12] ctop adc_array_wafflecap_8_8_0[7|9]/sample VDD col_n[7] VSS adc_array_wafflecap_8_8
++ vcm row_n[12] ctop adc_array_wafflecap_8_8_0[7|9]/sample VDD col_n[7] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[8|12] adc_array_wafflecap_8_8_0[8|9]/sample_n colon_n[8]
-+ vcom row_n[12] ctop adc_array_wafflecap_8_8_0[8|9]/sample VDD col_n[8] VSS adc_array_wafflecap_8_8
++ vcm row_n[12] ctop adc_array_wafflecap_8_8_0[8|9]/sample VDD col_n[8] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[9|12] adc_array_wafflecap_8_8_0[9|9]/sample_n colon_n[9]
-+ vcom row_n[12] ctop adc_array_wafflecap_8_8_0[9|9]/sample VDD col_n[9] VSS adc_array_wafflecap_8_8
++ vcm row_n[12] ctop adc_array_wafflecap_8_8_0[9|9]/sample VDD col_n[9] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[10|12] adc_array_wafflecap_8_8_0[10|9]/sample_n colon_n[10]
-+ vcom row_n[12] ctop adc_array_wafflecap_8_8_0[10|9]/sample VDD col_n[10] VSS adc_array_wafflecap_8_8
++ vcm row_n[12] ctop adc_array_wafflecap_8_8_0[10|9]/sample VDD col_n[10] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[11|12] adc_array_wafflecap_8_8_0[11|9]/sample_n colon_n[11]
-+ vcom row_n[12] ctop adc_array_wafflecap_8_8_0[11|9]/sample VDD col_n[11] VSS adc_array_wafflecap_8_8
++ vcm row_n[12] ctop adc_array_wafflecap_8_8_0[11|9]/sample VDD col_n[11] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[12|12] adc_array_wafflecap_8_8_0[12|9]/sample_n colon_n[12]
-+ vcom row_n[12] ctop adc_array_wafflecap_8_8_0[12|9]/sample VDD col_n[12] VSS adc_array_wafflecap_8_8
++ vcm row_n[12] ctop adc_array_wafflecap_8_8_0[12|9]/sample VDD col_n[12] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[13|12] adc_array_wafflecap_8_8_0[13|9]/sample_n colon_n[13]
-+ vcom row_n[12] ctop adc_array_wafflecap_8_8_0[13|9]/sample VDD col_n[13] VSS adc_array_wafflecap_8_8
++ vcm row_n[12] ctop adc_array_wafflecap_8_8_0[13|9]/sample VDD col_n[13] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[14|12] adc_array_wafflecap_8_8_0[14|9]/sample_n colon_n[14]
-+ vcom row_n[12] ctop adc_array_wafflecap_8_8_0[14|9]/sample VDD col_n[14] VSS adc_array_wafflecap_8_8
++ vcm row_n[12] ctop adc_array_wafflecap_8_8_0[14|9]/sample VDD col_n[14] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[15|12] adc_array_wafflecap_8_8_0[15|9]/sample_n colon_n[15]
-+ vcom row_n[12] ctop adc_array_wafflecap_8_8_0[15|9]/sample VDD col_n[15] VSS adc_array_wafflecap_8_8
++ vcm row_n[12] ctop adc_array_wafflecap_8_8_0[15|9]/sample VDD col_n[15] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[0|13] adc_array_wafflecap_8_8_0[0|9]/sample_n colon_n[0]
-+ vcom row_n[13] ctop adc_array_wafflecap_8_8_0[0|9]/sample VDD col_n[0] VSS adc_array_wafflecap_8_8
++ vcm row_n[13] ctop adc_array_wafflecap_8_8_0[0|9]/sample VDD col_n[0] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[1|13] adc_array_wafflecap_8_8_0[1|9]/sample_n colon_n[1]
-+ vcom row_n[13] ctop adc_array_wafflecap_8_8_0[1|9]/sample VDD col_n[1] VSS adc_array_wafflecap_8_8
++ vcm row_n[13] ctop adc_array_wafflecap_8_8_0[1|9]/sample VDD col_n[1] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[2|13] adc_array_wafflecap_8_8_0[2|9]/sample_n colon_n[2]
-+ vcom row_n[13] ctop adc_array_wafflecap_8_8_0[2|9]/sample VDD col_n[2] VSS adc_array_wafflecap_8_8
++ vcm row_n[13] ctop adc_array_wafflecap_8_8_0[2|9]/sample VDD col_n[2] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[3|13] adc_array_wafflecap_8_8_0[3|9]/sample_n colon_n[3]
-+ vcom row_n[13] ctop adc_array_wafflecap_8_8_0[3|9]/sample VDD col_n[3] VSS adc_array_wafflecap_8_8
++ vcm row_n[13] ctop adc_array_wafflecap_8_8_0[3|9]/sample VDD col_n[3] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[4|13] adc_array_wafflecap_8_8_0[4|9]/sample_n colon_n[4]
-+ vcom row_n[13] ctop adc_array_wafflecap_8_8_0[4|9]/sample VDD col_n[4] VSS adc_array_wafflecap_8_8
++ vcm row_n[13] ctop adc_array_wafflecap_8_8_0[4|9]/sample VDD col_n[4] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[5|13] adc_array_wafflecap_8_8_0[5|9]/sample_n colon_n[5]
-+ vcom row_n[13] ctop adc_array_wafflecap_8_8_0[5|9]/sample VDD col_n[5] VSS adc_array_wafflecap_8_8
++ vcm row_n[13] ctop adc_array_wafflecap_8_8_0[5|9]/sample VDD col_n[5] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[6|13] adc_array_wafflecap_8_8_0[6|9]/sample_n colon_n[6]
-+ vcom row_n[13] ctop adc_array_wafflecap_8_8_0[6|9]/sample VDD col_n[6] VSS adc_array_wafflecap_8_8
++ vcm row_n[13] ctop adc_array_wafflecap_8_8_0[6|9]/sample VDD col_n[6] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[7|13] adc_array_wafflecap_8_8_0[7|9]/sample_n colon_n[7]
-+ vcom row_n[13] ctop adc_array_wafflecap_8_8_0[7|9]/sample VDD col_n[7] VSS adc_array_wafflecap_8_8
++ vcm row_n[13] ctop adc_array_wafflecap_8_8_0[7|9]/sample VDD col_n[7] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[8|13] adc_array_wafflecap_8_8_0[8|9]/sample_n colon_n[8]
-+ vcom row_n[13] ctop adc_array_wafflecap_8_8_0[8|9]/sample VDD col_n[8] VSS adc_array_wafflecap_8_8
++ vcm row_n[13] ctop adc_array_wafflecap_8_8_0[8|9]/sample VDD col_n[8] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[9|13] adc_array_wafflecap_8_8_0[9|9]/sample_n colon_n[9]
-+ vcom row_n[13] ctop adc_array_wafflecap_8_8_0[9|9]/sample VDD col_n[9] VSS adc_array_wafflecap_8_8
++ vcm row_n[13] ctop adc_array_wafflecap_8_8_0[9|9]/sample VDD col_n[9] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[10|13] adc_array_wafflecap_8_8_0[10|9]/sample_n colon_n[10]
-+ vcom row_n[13] ctop adc_array_wafflecap_8_8_0[10|9]/sample VDD col_n[10] VSS adc_array_wafflecap_8_8
++ vcm row_n[13] ctop adc_array_wafflecap_8_8_0[10|9]/sample VDD col_n[10] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[11|13] adc_array_wafflecap_8_8_0[11|9]/sample_n colon_n[11]
-+ vcom row_n[13] ctop adc_array_wafflecap_8_8_0[11|9]/sample VDD col_n[11] VSS adc_array_wafflecap_8_8
++ vcm row_n[13] ctop adc_array_wafflecap_8_8_0[11|9]/sample VDD col_n[11] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[12|13] adc_array_wafflecap_8_8_0[12|9]/sample_n colon_n[12]
-+ vcom row_n[13] ctop adc_array_wafflecap_8_8_0[12|9]/sample VDD col_n[12] VSS adc_array_wafflecap_8_8
++ vcm row_n[13] ctop adc_array_wafflecap_8_8_0[12|9]/sample VDD col_n[12] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[13|13] adc_array_wafflecap_8_8_0[13|9]/sample_n colon_n[13]
-+ vcom row_n[13] ctop adc_array_wafflecap_8_8_0[13|9]/sample VDD col_n[13] VSS adc_array_wafflecap_8_8
++ vcm row_n[13] ctop adc_array_wafflecap_8_8_0[13|9]/sample VDD col_n[13] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[14|13] adc_array_wafflecap_8_8_0[14|9]/sample_n colon_n[14]
-+ vcom row_n[13] ctop adc_array_wafflecap_8_8_0[14|9]/sample VDD col_n[14] VSS adc_array_wafflecap_8_8
++ vcm row_n[13] ctop adc_array_wafflecap_8_8_0[14|9]/sample VDD col_n[14] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[15|13] adc_array_wafflecap_8_8_0[15|9]/sample_n colon_n[15]
-+ vcom row_n[13] ctop adc_array_wafflecap_8_8_0[15|9]/sample VDD col_n[15] VSS adc_array_wafflecap_8_8
++ vcm row_n[13] ctop adc_array_wafflecap_8_8_0[15|9]/sample VDD col_n[15] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[0|14] adc_array_wafflecap_8_8_0[0|9]/sample_n colon_n[0]
-+ vcom row_n[14] ctop adc_array_wafflecap_8_8_0[0|9]/sample VDD col_n[0] VSS adc_array_wafflecap_8_8
++ vcm row_n[14] ctop adc_array_wafflecap_8_8_0[0|9]/sample VDD col_n[0] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[1|14] adc_array_wafflecap_8_8_0[1|9]/sample_n colon_n[1]
-+ vcom row_n[14] ctop adc_array_wafflecap_8_8_0[1|9]/sample VDD col_n[1] VSS adc_array_wafflecap_8_8
++ vcm row_n[14] ctop adc_array_wafflecap_8_8_0[1|9]/sample VDD col_n[1] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[2|14] adc_array_wafflecap_8_8_0[2|9]/sample_n colon_n[2]
-+ vcom row_n[14] ctop adc_array_wafflecap_8_8_0[2|9]/sample VDD col_n[2] VSS adc_array_wafflecap_8_8
++ vcm row_n[14] ctop adc_array_wafflecap_8_8_0[2|9]/sample VDD col_n[2] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[3|14] adc_array_wafflecap_8_8_0[3|9]/sample_n colon_n[3]
-+ vcom row_n[14] ctop adc_array_wafflecap_8_8_0[3|9]/sample VDD col_n[3] VSS adc_array_wafflecap_8_8
++ vcm row_n[14] ctop adc_array_wafflecap_8_8_0[3|9]/sample VDD col_n[3] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[4|14] adc_array_wafflecap_8_8_0[4|9]/sample_n colon_n[4]
-+ vcom row_n[14] ctop adc_array_wafflecap_8_8_0[4|9]/sample VDD col_n[4] VSS adc_array_wafflecap_8_8
++ vcm row_n[14] ctop adc_array_wafflecap_8_8_0[4|9]/sample VDD col_n[4] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[5|14] adc_array_wafflecap_8_8_0[5|9]/sample_n colon_n[5]
-+ vcom row_n[14] ctop adc_array_wafflecap_8_8_0[5|9]/sample VDD col_n[5] VSS adc_array_wafflecap_8_8
++ vcm row_n[14] ctop adc_array_wafflecap_8_8_0[5|9]/sample VDD col_n[5] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[6|14] adc_array_wafflecap_8_8_0[6|9]/sample_n colon_n[6]
-+ vcom row_n[14] ctop adc_array_wafflecap_8_8_0[6|9]/sample VDD col_n[6] VSS adc_array_wafflecap_8_8
++ vcm row_n[14] ctop adc_array_wafflecap_8_8_0[6|9]/sample VDD col_n[6] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[7|14] adc_array_wafflecap_8_8_0[7|9]/sample_n colon_n[7]
-+ vcom row_n[14] ctop adc_array_wafflecap_8_8_0[7|9]/sample VDD col_n[7] VSS adc_array_wafflecap_8_8
++ vcm row_n[14] ctop adc_array_wafflecap_8_8_0[7|9]/sample VDD col_n[7] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[8|14] adc_array_wafflecap_8_8_0[8|9]/sample_n colon_n[8]
-+ vcom row_n[14] ctop adc_array_wafflecap_8_8_0[8|9]/sample VDD col_n[8] VSS adc_array_wafflecap_8_8
++ vcm row_n[14] ctop adc_array_wafflecap_8_8_0[8|9]/sample VDD col_n[8] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[9|14] adc_array_wafflecap_8_8_0[9|9]/sample_n colon_n[9]
-+ vcom row_n[14] ctop adc_array_wafflecap_8_8_0[9|9]/sample VDD col_n[9] VSS adc_array_wafflecap_8_8
++ vcm row_n[14] ctop adc_array_wafflecap_8_8_0[9|9]/sample VDD col_n[9] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[10|14] adc_array_wafflecap_8_8_0[10|9]/sample_n colon_n[10]
-+ vcom row_n[14] ctop adc_array_wafflecap_8_8_0[10|9]/sample VDD col_n[10] VSS adc_array_wafflecap_8_8
++ vcm row_n[14] ctop adc_array_wafflecap_8_8_0[10|9]/sample VDD col_n[10] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[11|14] adc_array_wafflecap_8_8_0[11|9]/sample_n colon_n[11]
-+ vcom row_n[14] ctop adc_array_wafflecap_8_8_0[11|9]/sample VDD col_n[11] VSS adc_array_wafflecap_8_8
++ vcm row_n[14] ctop adc_array_wafflecap_8_8_0[11|9]/sample VDD col_n[11] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[12|14] adc_array_wafflecap_8_8_0[12|9]/sample_n colon_n[12]
-+ vcom row_n[14] ctop adc_array_wafflecap_8_8_0[12|9]/sample VDD col_n[12] VSS adc_array_wafflecap_8_8
++ vcm row_n[14] ctop adc_array_wafflecap_8_8_0[12|9]/sample VDD col_n[12] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[13|14] adc_array_wafflecap_8_8_0[13|9]/sample_n colon_n[13]
-+ vcom row_n[14] ctop adc_array_wafflecap_8_8_0[13|9]/sample VDD col_n[13] VSS adc_array_wafflecap_8_8
++ vcm row_n[14] ctop adc_array_wafflecap_8_8_0[13|9]/sample VDD col_n[13] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[14|14] adc_array_wafflecap_8_8_0[14|9]/sample_n colon_n[14]
-+ vcom row_n[14] ctop adc_array_wafflecap_8_8_0[14|9]/sample VDD col_n[14] VSS adc_array_wafflecap_8_8
++ vcm row_n[14] ctop adc_array_wafflecap_8_8_0[14|9]/sample VDD col_n[14] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[15|14] adc_array_wafflecap_8_8_0[15|9]/sample_n colon_n[15]
-+ vcom row_n[14] ctop adc_array_wafflecap_8_8_0[15|9]/sample VDD col_n[15] VSS adc_array_wafflecap_8_8
++ vcm row_n[14] ctop adc_array_wafflecap_8_8_0[15|9]/sample VDD col_n[15] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[0|15] adc_array_wafflecap_8_8_0[0|9]/sample_n colon_n[0]
-+ vcom row_n[15] ctop adc_array_wafflecap_8_8_0[0|9]/sample VDD col_n[0] VSS adc_array_wafflecap_8_8
++ vcm row_n[15] ctop adc_array_wafflecap_8_8_0[0|9]/sample VDD col_n[0] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[1|15] adc_array_wafflecap_8_8_0[1|9]/sample_n colon_n[1]
-+ vcom row_n[15] ctop adc_array_wafflecap_8_8_0[1|9]/sample VDD col_n[1] VSS adc_array_wafflecap_8_8
++ vcm row_n[15] ctop adc_array_wafflecap_8_8_0[1|9]/sample VDD col_n[1] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[2|15] adc_array_wafflecap_8_8_0[2|9]/sample_n colon_n[2]
-+ vcom row_n[15] ctop adc_array_wafflecap_8_8_0[2|9]/sample VDD col_n[2] VSS adc_array_wafflecap_8_8
++ vcm row_n[15] ctop adc_array_wafflecap_8_8_0[2|9]/sample VDD col_n[2] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[3|15] adc_array_wafflecap_8_8_0[3|9]/sample_n colon_n[3]
-+ vcom row_n[15] ctop adc_array_wafflecap_8_8_0[3|9]/sample VDD col_n[3] VSS adc_array_wafflecap_8_8
++ vcm row_n[15] ctop adc_array_wafflecap_8_8_0[3|9]/sample VDD col_n[3] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[4|15] adc_array_wafflecap_8_8_0[4|9]/sample_n colon_n[4]
-+ vcom row_n[15] ctop adc_array_wafflecap_8_8_0[4|9]/sample VDD col_n[4] VSS adc_array_wafflecap_8_8
++ vcm row_n[15] ctop adc_array_wafflecap_8_8_0[4|9]/sample VDD col_n[4] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[5|15] adc_array_wafflecap_8_8_0[5|9]/sample_n colon_n[5]
-+ vcom row_n[15] ctop adc_array_wafflecap_8_8_0[5|9]/sample VDD col_n[5] VSS adc_array_wafflecap_8_8
++ vcm row_n[15] ctop adc_array_wafflecap_8_8_0[5|9]/sample VDD col_n[5] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[6|15] adc_array_wafflecap_8_8_0[6|9]/sample_n colon_n[6]
-+ vcom row_n[15] ctop adc_array_wafflecap_8_8_0[6|9]/sample VDD col_n[6] VSS adc_array_wafflecap_8_8
++ vcm row_n[15] ctop adc_array_wafflecap_8_8_0[6|9]/sample VDD col_n[6] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[7|15] adc_array_wafflecap_8_8_0[7|9]/sample_n colon_n[7]
-+ vcom row_n[15] ctop adc_array_wafflecap_8_8_0[7|9]/sample VDD col_n[7] VSS adc_array_wafflecap_8_8
++ vcm row_n[15] ctop adc_array_wafflecap_8_8_0[7|9]/sample VDD col_n[7] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[8|15] adc_array_wafflecap_8_8_0[8|9]/sample_n colon_n[8]
-+ vcom row_n[15] ctop adc_array_wafflecap_8_8_0[8|9]/sample VDD col_n[8] VSS adc_array_wafflecap_8_8
++ vcm row_n[15] ctop adc_array_wafflecap_8_8_0[8|9]/sample VDD col_n[8] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[9|15] adc_array_wafflecap_8_8_0[9|9]/sample_n colon_n[9]
-+ vcom row_n[15] ctop adc_array_wafflecap_8_8_0[9|9]/sample VDD col_n[9] VSS adc_array_wafflecap_8_8
++ vcm row_n[15] ctop adc_array_wafflecap_8_8_0[9|9]/sample VDD col_n[9] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[10|15] adc_array_wafflecap_8_8_0[10|9]/sample_n colon_n[10]
-+ vcom row_n[15] ctop adc_array_wafflecap_8_8_0[10|9]/sample VDD col_n[10] VSS adc_array_wafflecap_8_8
++ vcm row_n[15] ctop adc_array_wafflecap_8_8_0[10|9]/sample VDD col_n[10] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[11|15] adc_array_wafflecap_8_8_0[11|9]/sample_n colon_n[11]
-+ vcom row_n[15] ctop adc_array_wafflecap_8_8_0[11|9]/sample VDD col_n[11] VSS adc_array_wafflecap_8_8
++ vcm row_n[15] ctop adc_array_wafflecap_8_8_0[11|9]/sample VDD col_n[11] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[12|15] adc_array_wafflecap_8_8_0[12|9]/sample_n colon_n[12]
-+ vcom row_n[15] ctop adc_array_wafflecap_8_8_0[12|9]/sample VDD col_n[12] VSS adc_array_wafflecap_8_8
++ vcm row_n[15] ctop adc_array_wafflecap_8_8_0[12|9]/sample VDD col_n[12] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[13|15] adc_array_wafflecap_8_8_0[13|9]/sample_n colon_n[13]
-+ vcom row_n[15] ctop adc_array_wafflecap_8_8_0[13|9]/sample VDD col_n[13] VSS adc_array_wafflecap_8_8
++ vcm row_n[15] ctop adc_array_wafflecap_8_8_0[13|9]/sample VDD col_n[13] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[14|15] adc_array_wafflecap_8_8_0[14|9]/sample_n colon_n[14]
-+ vcom row_n[15] ctop adc_array_wafflecap_8_8_0[14|9]/sample VDD col_n[14] VSS adc_array_wafflecap_8_8
++ vcm row_n[15] ctop adc_array_wafflecap_8_8_0[14|9]/sample VDD col_n[14] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[15|15] adc_array_wafflecap_8_8_0[15|9]/sample_n colon_n[15]
-+ vcom row_n[15] ctop adc_array_wafflecap_8_8_0[15|9]/sample VDD col_n[15] VSS adc_array_wafflecap_8_8
++ vcm row_n[15] ctop adc_array_wafflecap_8_8_0[15|9]/sample VDD col_n[15] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[0|16] adc_array_wafflecap_8_8_0[0|9]/sample_n colon_n[0]
-+ vcom row_n[16] ctop adc_array_wafflecap_8_8_0[0|9]/sample VDD col_n[0] VSS adc_array_wafflecap_8_8
++ vcm row_n[16] ctop adc_array_wafflecap_8_8_0[0|9]/sample VDD col_n[0] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[1|16] adc_array_wafflecap_8_8_0[1|9]/sample_n colon_n[1]
-+ vcom row_n[16] ctop adc_array_wafflecap_8_8_0[1|9]/sample VDD col_n[1] VSS adc_array_wafflecap_8_8
++ vcm row_n[16] ctop adc_array_wafflecap_8_8_0[1|9]/sample VDD col_n[1] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[2|16] adc_array_wafflecap_8_8_0[2|9]/sample_n colon_n[2]
-+ vcom row_n[16] ctop adc_array_wafflecap_8_8_0[2|9]/sample VDD col_n[2] VSS adc_array_wafflecap_8_8
++ vcm row_n[16] ctop adc_array_wafflecap_8_8_0[2|9]/sample VDD col_n[2] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[3|16] adc_array_wafflecap_8_8_0[3|9]/sample_n colon_n[3]
-+ vcom row_n[16] ctop adc_array_wafflecap_8_8_0[3|9]/sample VDD col_n[3] VSS adc_array_wafflecap_8_8
++ vcm row_n[16] ctop adc_array_wafflecap_8_8_0[3|9]/sample VDD col_n[3] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[4|16] adc_array_wafflecap_8_8_0[4|9]/sample_n colon_n[4]
-+ vcom row_n[16] ctop adc_array_wafflecap_8_8_0[4|9]/sample VDD col_n[4] VSS adc_array_wafflecap_8_8
++ vcm row_n[16] ctop adc_array_wafflecap_8_8_0[4|9]/sample VDD col_n[4] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[5|16] adc_array_wafflecap_8_8_0[5|9]/sample_n colon_n[5]
-+ vcom row_n[16] ctop adc_array_wafflecap_8_8_0[5|9]/sample VDD col_n[5] VSS adc_array_wafflecap_8_8
++ vcm row_n[16] ctop adc_array_wafflecap_8_8_0[5|9]/sample VDD col_n[5] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[6|16] adc_array_wafflecap_8_8_0[6|9]/sample_n colon_n[6]
-+ vcom row_n[16] ctop adc_array_wafflecap_8_8_0[6|9]/sample VDD col_n[6] VSS adc_array_wafflecap_8_8
++ vcm row_n[16] ctop adc_array_wafflecap_8_8_0[6|9]/sample VDD col_n[6] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[7|16] adc_array_wafflecap_8_8_0[7|9]/sample_n colon_n[7]
-+ vcom row_n[16] ctop adc_array_wafflecap_8_8_0[7|9]/sample VDD col_n[7] VSS adc_array_wafflecap_8_8
++ vcm row_n[16] ctop adc_array_wafflecap_8_8_0[7|9]/sample VDD col_n[7] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[8|16] adc_array_wafflecap_8_8_0[8|9]/sample_n colon_n[8]
-+ vcom row_n[16] ctop adc_array_wafflecap_8_8_0[8|9]/sample VDD col_n[8] VSS adc_array_wafflecap_8_8
++ vcm row_n[16] ctop adc_array_wafflecap_8_8_0[8|9]/sample VDD col_n[8] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[9|16] adc_array_wafflecap_8_8_0[9|9]/sample_n colon_n[9]
-+ vcom row_n[16] ctop adc_array_wafflecap_8_8_0[9|9]/sample VDD col_n[9] VSS adc_array_wafflecap_8_8
++ vcm row_n[16] ctop adc_array_wafflecap_8_8_0[9|9]/sample VDD col_n[9] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[10|16] adc_array_wafflecap_8_8_0[10|9]/sample_n colon_n[10]
-+ vcom row_n[16] ctop adc_array_wafflecap_8_8_0[10|9]/sample VDD col_n[10] VSS adc_array_wafflecap_8_8
++ vcm row_n[16] ctop adc_array_wafflecap_8_8_0[10|9]/sample VDD col_n[10] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[11|16] adc_array_wafflecap_8_8_0[11|9]/sample_n colon_n[11]
-+ vcom row_n[16] ctop adc_array_wafflecap_8_8_0[11|9]/sample VDD col_n[11] VSS adc_array_wafflecap_8_8
++ vcm row_n[16] ctop adc_array_wafflecap_8_8_0[11|9]/sample VDD col_n[11] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[12|16] adc_array_wafflecap_8_8_0[12|9]/sample_n colon_n[12]
-+ vcom row_n[16] ctop adc_array_wafflecap_8_8_0[12|9]/sample VDD col_n[12] VSS adc_array_wafflecap_8_8
++ vcm row_n[16] ctop adc_array_wafflecap_8_8_0[12|9]/sample VDD col_n[12] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[13|16] adc_array_wafflecap_8_8_0[13|9]/sample_n colon_n[13]
-+ vcom row_n[16] ctop adc_array_wafflecap_8_8_0[13|9]/sample VDD col_n[13] VSS adc_array_wafflecap_8_8
++ vcm row_n[16] ctop adc_array_wafflecap_8_8_0[13|9]/sample VDD col_n[13] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[14|16] adc_array_wafflecap_8_8_0[14|9]/sample_n colon_n[14]
-+ vcom row_n[16] ctop adc_array_wafflecap_8_8_0[14|9]/sample VDD col_n[14] VSS adc_array_wafflecap_8_8
++ vcm row_n[16] ctop adc_array_wafflecap_8_8_0[14|9]/sample VDD col_n[14] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[15|16] adc_array_wafflecap_8_8_0[15|9]/sample_n colon_n[15]
-+ vcom row_n[16] ctop adc_array_wafflecap_8_8_0[15|9]/sample VDD col_n[15] VSS adc_array_wafflecap_8_8
++ vcm row_n[16] ctop adc_array_wafflecap_8_8_0[15|9]/sample VDD col_n[15] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[0|17] adc_array_wafflecap_8_8_0[0|9]/sample_n colon_n[0]
-+ vcom row_n[17] ctop adc_array_wafflecap_8_8_0[0|9]/sample VDD col_n[0] VSS adc_array_wafflecap_8_8
++ vcm row_n[17] ctop adc_array_wafflecap_8_8_0[0|9]/sample VDD col_n[0] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[1|17] adc_array_wafflecap_8_8_0[1|9]/sample_n colon_n[1]
-+ vcom row_n[17] ctop adc_array_wafflecap_8_8_0[1|9]/sample VDD col_n[1] VSS adc_array_wafflecap_8_8
++ vcm row_n[17] ctop adc_array_wafflecap_8_8_0[1|9]/sample VDD col_n[1] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[2|17] adc_array_wafflecap_8_8_0[2|9]/sample_n colon_n[2]
-+ vcom row_n[17] ctop adc_array_wafflecap_8_8_0[2|9]/sample VDD col_n[2] VSS adc_array_wafflecap_8_8
++ vcm row_n[17] ctop adc_array_wafflecap_8_8_0[2|9]/sample VDD col_n[2] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[3|17] adc_array_wafflecap_8_8_0[3|9]/sample_n colon_n[3]
-+ vcom row_n[17] ctop adc_array_wafflecap_8_8_0[3|9]/sample VDD col_n[3] VSS adc_array_wafflecap_8_8
++ vcm row_n[17] ctop adc_array_wafflecap_8_8_0[3|9]/sample VDD col_n[3] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[4|17] adc_array_wafflecap_8_8_0[4|9]/sample_n colon_n[4]
-+ vcom row_n[17] ctop adc_array_wafflecap_8_8_0[4|9]/sample VDD col_n[4] VSS adc_array_wafflecap_8_8
++ vcm row_n[17] ctop adc_array_wafflecap_8_8_0[4|9]/sample VDD col_n[4] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[5|17] adc_array_wafflecap_8_8_0[5|9]/sample_n colon_n[5]
-+ vcom row_n[17] ctop adc_array_wafflecap_8_8_0[5|9]/sample VDD col_n[5] VSS adc_array_wafflecap_8_8
++ vcm row_n[17] ctop adc_array_wafflecap_8_8_0[5|9]/sample VDD col_n[5] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[6|17] adc_array_wafflecap_8_8_0[6|9]/sample_n colon_n[6]
-+ vcom row_n[17] ctop adc_array_wafflecap_8_8_0[6|9]/sample VDD col_n[6] VSS adc_array_wafflecap_8_8
++ vcm row_n[17] ctop adc_array_wafflecap_8_8_0[6|9]/sample VDD col_n[6] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[7|17] adc_array_wafflecap_8_8_0[7|9]/sample_n colon_n[7]
-+ vcom row_n[17] ctop adc_array_wafflecap_8_8_0[7|9]/sample VDD col_n[7] VSS adc_array_wafflecap_8_8
++ vcm row_n[17] ctop adc_array_wafflecap_8_8_0[7|9]/sample VDD col_n[7] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[8|17] adc_array_wafflecap_8_8_0[8|9]/sample_n colon_n[8]
-+ vcom row_n[17] ctop adc_array_wafflecap_8_8_0[8|9]/sample VDD col_n[8] VSS adc_array_wafflecap_8_8
++ vcm row_n[17] ctop adc_array_wafflecap_8_8_0[8|9]/sample VDD col_n[8] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[9|17] adc_array_wafflecap_8_8_0[9|9]/sample_n colon_n[9]
-+ vcom row_n[17] ctop adc_array_wafflecap_8_8_0[9|9]/sample VDD col_n[9] VSS adc_array_wafflecap_8_8
++ vcm row_n[17] ctop adc_array_wafflecap_8_8_0[9|9]/sample VDD col_n[9] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[10|17] adc_array_wafflecap_8_8_0[10|9]/sample_n colon_n[10]
-+ vcom row_n[17] ctop adc_array_wafflecap_8_8_0[10|9]/sample VDD col_n[10] VSS adc_array_wafflecap_8_8
++ vcm row_n[17] ctop adc_array_wafflecap_8_8_0[10|9]/sample VDD col_n[10] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[11|17] adc_array_wafflecap_8_8_0[11|9]/sample_n colon_n[11]
-+ vcom row_n[17] ctop adc_array_wafflecap_8_8_0[11|9]/sample VDD col_n[11] VSS adc_array_wafflecap_8_8
++ vcm row_n[17] ctop adc_array_wafflecap_8_8_0[11|9]/sample VDD col_n[11] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[12|17] adc_array_wafflecap_8_8_0[12|9]/sample_n colon_n[12]
-+ vcom row_n[17] ctop adc_array_wafflecap_8_8_0[12|9]/sample VDD col_n[12] VSS adc_array_wafflecap_8_8
++ vcm row_n[17] ctop adc_array_wafflecap_8_8_0[12|9]/sample VDD col_n[12] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[13|17] adc_array_wafflecap_8_8_0[13|9]/sample_n colon_n[13]
-+ vcom row_n[17] ctop adc_array_wafflecap_8_8_0[13|9]/sample VDD col_n[13] VSS adc_array_wafflecap_8_8
++ vcm row_n[17] ctop adc_array_wafflecap_8_8_0[13|9]/sample VDD col_n[13] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[14|17] adc_array_wafflecap_8_8_0[14|9]/sample_n colon_n[14]
-+ vcom row_n[17] ctop adc_array_wafflecap_8_8_0[14|9]/sample VDD col_n[14] VSS adc_array_wafflecap_8_8
++ vcm row_n[17] ctop adc_array_wafflecap_8_8_0[14|9]/sample VDD col_n[14] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[15|17] adc_array_wafflecap_8_8_0[15|9]/sample_n colon_n[15]
-+ vcom row_n[17] ctop adc_array_wafflecap_8_8_0[15|9]/sample VDD col_n[15] VSS adc_array_wafflecap_8_8
++ vcm row_n[17] ctop adc_array_wafflecap_8_8_0[15|9]/sample VDD col_n[15] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[0|18] adc_array_wafflecap_8_8_0[0|9]/sample_n colon_n[0]
-+ vcom row_n[18] ctop adc_array_wafflecap_8_8_0[0|9]/sample VDD col_n[0] VSS adc_array_wafflecap_8_8
++ vcm row_n[18] ctop adc_array_wafflecap_8_8_0[0|9]/sample VDD col_n[0] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[1|18] adc_array_wafflecap_8_8_0[1|9]/sample_n colon_n[1]
-+ vcom row_n[18] ctop adc_array_wafflecap_8_8_0[1|9]/sample VDD col_n[1] VSS adc_array_wafflecap_8_8
++ vcm row_n[18] ctop adc_array_wafflecap_8_8_0[1|9]/sample VDD col_n[1] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[2|18] adc_array_wafflecap_8_8_0[2|9]/sample_n colon_n[2]
-+ vcom row_n[18] ctop adc_array_wafflecap_8_8_0[2|9]/sample VDD col_n[2] VSS adc_array_wafflecap_8_8
++ vcm row_n[18] ctop adc_array_wafflecap_8_8_0[2|9]/sample VDD col_n[2] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[3|18] adc_array_wafflecap_8_8_0[3|9]/sample_n colon_n[3]
-+ vcom row_n[18] ctop adc_array_wafflecap_8_8_0[3|9]/sample VDD col_n[3] VSS adc_array_wafflecap_8_8
++ vcm row_n[18] ctop adc_array_wafflecap_8_8_0[3|9]/sample VDD col_n[3] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[4|18] adc_array_wafflecap_8_8_0[4|9]/sample_n colon_n[4]
-+ vcom row_n[18] ctop adc_array_wafflecap_8_8_0[4|9]/sample VDD col_n[4] VSS adc_array_wafflecap_8_8
++ vcm row_n[18] ctop adc_array_wafflecap_8_8_0[4|9]/sample VDD col_n[4] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[5|18] adc_array_wafflecap_8_8_0[5|9]/sample_n colon_n[5]
-+ vcom row_n[18] ctop adc_array_wafflecap_8_8_0[5|9]/sample VDD col_n[5] VSS adc_array_wafflecap_8_8
++ vcm row_n[18] ctop adc_array_wafflecap_8_8_0[5|9]/sample VDD col_n[5] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[6|18] adc_array_wafflecap_8_8_0[6|9]/sample_n colon_n[6]
-+ vcom row_n[18] ctop adc_array_wafflecap_8_8_0[6|9]/sample VDD col_n[6] VSS adc_array_wafflecap_8_8
++ vcm row_n[18] ctop adc_array_wafflecap_8_8_0[6|9]/sample VDD col_n[6] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[7|18] adc_array_wafflecap_8_8_0[7|9]/sample_n colon_n[7]
-+ vcom row_n[18] ctop adc_array_wafflecap_8_8_0[7|9]/sample VDD col_n[7] VSS adc_array_wafflecap_8_8
++ vcm row_n[18] ctop adc_array_wafflecap_8_8_0[7|9]/sample VDD col_n[7] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[8|18] adc_array_wafflecap_8_8_0[8|9]/sample_n colon_n[8]
-+ vcom row_n[18] ctop adc_array_wafflecap_8_8_0[8|9]/sample VDD col_n[8] VSS adc_array_wafflecap_8_8
++ vcm row_n[18] ctop adc_array_wafflecap_8_8_0[8|9]/sample VDD col_n[8] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[9|18] adc_array_wafflecap_8_8_0[9|9]/sample_n colon_n[9]
-+ vcom row_n[18] ctop adc_array_wafflecap_8_8_0[9|9]/sample VDD col_n[9] VSS adc_array_wafflecap_8_8
++ vcm row_n[18] ctop adc_array_wafflecap_8_8_0[9|9]/sample VDD col_n[9] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[10|18] adc_array_wafflecap_8_8_0[10|9]/sample_n colon_n[10]
-+ vcom row_n[18] ctop adc_array_wafflecap_8_8_0[10|9]/sample VDD col_n[10] VSS adc_array_wafflecap_8_8
++ vcm row_n[18] ctop adc_array_wafflecap_8_8_0[10|9]/sample VDD col_n[10] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[11|18] adc_array_wafflecap_8_8_0[11|9]/sample_n colon_n[11]
-+ vcom row_n[18] ctop adc_array_wafflecap_8_8_0[11|9]/sample VDD col_n[11] VSS adc_array_wafflecap_8_8
++ vcm row_n[18] ctop adc_array_wafflecap_8_8_0[11|9]/sample VDD col_n[11] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[12|18] adc_array_wafflecap_8_8_0[12|9]/sample_n colon_n[12]
-+ vcom row_n[18] ctop adc_array_wafflecap_8_8_0[12|9]/sample VDD col_n[12] VSS adc_array_wafflecap_8_8
++ vcm row_n[18] ctop adc_array_wafflecap_8_8_0[12|9]/sample VDD col_n[12] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[13|18] adc_array_wafflecap_8_8_0[13|9]/sample_n colon_n[13]
-+ vcom row_n[18] ctop adc_array_wafflecap_8_8_0[13|9]/sample VDD col_n[13] VSS adc_array_wafflecap_8_8
++ vcm row_n[18] ctop adc_array_wafflecap_8_8_0[13|9]/sample VDD col_n[13] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[14|18] adc_array_wafflecap_8_8_0[14|9]/sample_n colon_n[14]
-+ vcom row_n[18] ctop adc_array_wafflecap_8_8_0[14|9]/sample VDD col_n[14] VSS adc_array_wafflecap_8_8
++ vcm row_n[18] ctop adc_array_wafflecap_8_8_0[14|9]/sample VDD col_n[14] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[15|18] adc_array_wafflecap_8_8_0[15|9]/sample_n colon_n[15]
-+ vcom row_n[18] ctop adc_array_wafflecap_8_8_0[15|9]/sample VDD col_n[15] VSS adc_array_wafflecap_8_8
++ vcm row_n[18] ctop adc_array_wafflecap_8_8_0[15|9]/sample VDD col_n[15] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[0|19] adc_array_wafflecap_8_8_0[0|9]/sample_n colon_n[0]
-+ vcom row_n[19] ctop adc_array_wafflecap_8_8_0[0|9]/sample VDD col_n[0] VSS adc_array_wafflecap_8_8
++ vcm row_n[19] ctop adc_array_wafflecap_8_8_0[0|9]/sample VDD col_n[0] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[1|19] adc_array_wafflecap_8_8_0[1|9]/sample_n colon_n[1]
-+ vcom row_n[19] ctop adc_array_wafflecap_8_8_0[1|9]/sample VDD col_n[1] VSS adc_array_wafflecap_8_8
++ vcm row_n[19] ctop adc_array_wafflecap_8_8_0[1|9]/sample VDD col_n[1] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[2|19] adc_array_wafflecap_8_8_0[2|9]/sample_n colon_n[2]
-+ vcom row_n[19] ctop adc_array_wafflecap_8_8_0[2|9]/sample VDD col_n[2] VSS adc_array_wafflecap_8_8
++ vcm row_n[19] ctop adc_array_wafflecap_8_8_0[2|9]/sample VDD col_n[2] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[3|19] adc_array_wafflecap_8_8_0[3|9]/sample_n colon_n[3]
-+ vcom row_n[19] ctop adc_array_wafflecap_8_8_0[3|9]/sample VDD col_n[3] VSS adc_array_wafflecap_8_8
++ vcm row_n[19] ctop adc_array_wafflecap_8_8_0[3|9]/sample VDD col_n[3] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[4|19] adc_array_wafflecap_8_8_0[4|9]/sample_n colon_n[4]
-+ vcom row_n[19] ctop adc_array_wafflecap_8_8_0[4|9]/sample VDD col_n[4] VSS adc_array_wafflecap_8_8
++ vcm row_n[19] ctop adc_array_wafflecap_8_8_0[4|9]/sample VDD col_n[4] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[5|19] adc_array_wafflecap_8_8_0[5|9]/sample_n colon_n[5]
-+ vcom row_n[19] ctop adc_array_wafflecap_8_8_0[5|9]/sample VDD col_n[5] VSS adc_array_wafflecap_8_8
++ vcm row_n[19] ctop adc_array_wafflecap_8_8_0[5|9]/sample VDD col_n[5] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[6|19] adc_array_wafflecap_8_8_0[6|9]/sample_n colon_n[6]
-+ vcom row_n[19] ctop adc_array_wafflecap_8_8_0[6|9]/sample VDD col_n[6] VSS adc_array_wafflecap_8_8
++ vcm row_n[19] ctop adc_array_wafflecap_8_8_0[6|9]/sample VDD col_n[6] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[7|19] adc_array_wafflecap_8_8_0[7|9]/sample_n colon_n[7]
-+ vcom row_n[19] ctop adc_array_wafflecap_8_8_0[7|9]/sample VDD col_n[7] VSS adc_array_wafflecap_8_8
++ vcm row_n[19] ctop adc_array_wafflecap_8_8_0[7|9]/sample VDD col_n[7] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[8|19] adc_array_wafflecap_8_8_0[8|9]/sample_n colon_n[8]
-+ vcom row_n[19] ctop adc_array_wafflecap_8_8_0[8|9]/sample VDD col_n[8] VSS adc_array_wafflecap_8_8
++ vcm row_n[19] ctop adc_array_wafflecap_8_8_0[8|9]/sample VDD col_n[8] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[9|19] adc_array_wafflecap_8_8_0[9|9]/sample_n colon_n[9]
-+ vcom row_n[19] ctop adc_array_wafflecap_8_8_0[9|9]/sample VDD col_n[9] VSS adc_array_wafflecap_8_8
++ vcm row_n[19] ctop adc_array_wafflecap_8_8_0[9|9]/sample VDD col_n[9] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[10|19] adc_array_wafflecap_8_8_0[10|9]/sample_n colon_n[10]
-+ vcom row_n[19] ctop adc_array_wafflecap_8_8_0[10|9]/sample VDD col_n[10] VSS adc_array_wafflecap_8_8
++ vcm row_n[19] ctop adc_array_wafflecap_8_8_0[10|9]/sample VDD col_n[10] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[11|19] adc_array_wafflecap_8_8_0[11|9]/sample_n colon_n[11]
-+ vcom row_n[19] ctop adc_array_wafflecap_8_8_0[11|9]/sample VDD col_n[11] VSS adc_array_wafflecap_8_8
++ vcm row_n[19] ctop adc_array_wafflecap_8_8_0[11|9]/sample VDD col_n[11] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[12|19] adc_array_wafflecap_8_8_0[12|9]/sample_n colon_n[12]
-+ vcom row_n[19] ctop adc_array_wafflecap_8_8_0[12|9]/sample VDD col_n[12] VSS adc_array_wafflecap_8_8
++ vcm row_n[19] ctop adc_array_wafflecap_8_8_0[12|9]/sample VDD col_n[12] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[13|19] adc_array_wafflecap_8_8_0[13|9]/sample_n colon_n[13]
-+ vcom row_n[19] ctop adc_array_wafflecap_8_8_0[13|9]/sample VDD col_n[13] VSS adc_array_wafflecap_8_8
++ vcm row_n[19] ctop adc_array_wafflecap_8_8_0[13|9]/sample VDD col_n[13] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[14|19] adc_array_wafflecap_8_8_0[14|9]/sample_n colon_n[14]
-+ vcom row_n[19] ctop adc_array_wafflecap_8_8_0[14|9]/sample VDD col_n[14] VSS adc_array_wafflecap_8_8
++ vcm row_n[19] ctop adc_array_wafflecap_8_8_0[14|9]/sample VDD col_n[14] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[15|19] adc_array_wafflecap_8_8_0[15|9]/sample_n colon_n[15]
-+ vcom row_n[19] ctop adc_array_wafflecap_8_8_0[15|9]/sample VDD col_n[15] VSS adc_array_wafflecap_8_8
++ vcm row_n[19] ctop adc_array_wafflecap_8_8_0[15|9]/sample VDD col_n[15] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[0|20] adc_array_wafflecap_8_8_0[0|9]/sample_n colon_n[0]
-+ vcom row_n[20] ctop adc_array_wafflecap_8_8_0[0|9]/sample VDD col_n[0] VSS adc_array_wafflecap_8_8
++ vcm row_n[20] ctop adc_array_wafflecap_8_8_0[0|9]/sample VDD col_n[0] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[1|20] adc_array_wafflecap_8_8_0[1|9]/sample_n colon_n[1]
-+ vcom row_n[20] ctop adc_array_wafflecap_8_8_0[1|9]/sample VDD col_n[1] VSS adc_array_wafflecap_8_8
++ vcm row_n[20] ctop adc_array_wafflecap_8_8_0[1|9]/sample VDD col_n[1] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[2|20] adc_array_wafflecap_8_8_0[2|9]/sample_n colon_n[2]
-+ vcom row_n[20] ctop adc_array_wafflecap_8_8_0[2|9]/sample VDD col_n[2] VSS adc_array_wafflecap_8_8
++ vcm row_n[20] ctop adc_array_wafflecap_8_8_0[2|9]/sample VDD col_n[2] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[3|20] adc_array_wafflecap_8_8_0[3|9]/sample_n colon_n[3]
-+ vcom row_n[20] ctop adc_array_wafflecap_8_8_0[3|9]/sample VDD col_n[3] VSS adc_array_wafflecap_8_8
++ vcm row_n[20] ctop adc_array_wafflecap_8_8_0[3|9]/sample VDD col_n[3] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[4|20] adc_array_wafflecap_8_8_0[4|9]/sample_n colon_n[4]
-+ vcom row_n[20] ctop adc_array_wafflecap_8_8_0[4|9]/sample VDD col_n[4] VSS adc_array_wafflecap_8_8
++ vcm row_n[20] ctop adc_array_wafflecap_8_8_0[4|9]/sample VDD col_n[4] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[5|20] adc_array_wafflecap_8_8_0[5|9]/sample_n colon_n[5]
-+ vcom row_n[20] ctop adc_array_wafflecap_8_8_0[5|9]/sample VDD col_n[5] VSS adc_array_wafflecap_8_8
++ vcm row_n[20] ctop adc_array_wafflecap_8_8_0[5|9]/sample VDD col_n[5] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[6|20] adc_array_wafflecap_8_8_0[6|9]/sample_n colon_n[6]
-+ vcom row_n[20] ctop adc_array_wafflecap_8_8_0[6|9]/sample VDD col_n[6] VSS adc_array_wafflecap_8_8
++ vcm row_n[20] ctop adc_array_wafflecap_8_8_0[6|9]/sample VDD col_n[6] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[7|20] adc_array_wafflecap_8_8_0[7|9]/sample_n colon_n[7]
-+ vcom row_n[20] ctop adc_array_wafflecap_8_8_0[7|9]/sample VDD col_n[7] VSS adc_array_wafflecap_8_8
++ vcm row_n[20] ctop adc_array_wafflecap_8_8_0[7|9]/sample VDD col_n[7] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[8|20] adc_array_wafflecap_8_8_0[8|9]/sample_n colon_n[8]
-+ vcom row_n[20] ctop adc_array_wafflecap_8_8_0[8|9]/sample VDD col_n[8] VSS adc_array_wafflecap_8_8
++ vcm row_n[20] ctop adc_array_wafflecap_8_8_0[8|9]/sample VDD col_n[8] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[9|20] adc_array_wafflecap_8_8_0[9|9]/sample_n colon_n[9]
-+ vcom row_n[20] ctop adc_array_wafflecap_8_8_0[9|9]/sample VDD col_n[9] VSS adc_array_wafflecap_8_8
++ vcm row_n[20] ctop adc_array_wafflecap_8_8_0[9|9]/sample VDD col_n[9] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[10|20] adc_array_wafflecap_8_8_0[10|9]/sample_n colon_n[10]
-+ vcom row_n[20] ctop adc_array_wafflecap_8_8_0[10|9]/sample VDD col_n[10] VSS adc_array_wafflecap_8_8
++ vcm row_n[20] ctop adc_array_wafflecap_8_8_0[10|9]/sample VDD col_n[10] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[11|20] adc_array_wafflecap_8_8_0[11|9]/sample_n colon_n[11]
-+ vcom row_n[20] ctop adc_array_wafflecap_8_8_0[11|9]/sample VDD col_n[11] VSS adc_array_wafflecap_8_8
++ vcm row_n[20] ctop adc_array_wafflecap_8_8_0[11|9]/sample VDD col_n[11] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[12|20] adc_array_wafflecap_8_8_0[12|9]/sample_n colon_n[12]
-+ vcom row_n[20] ctop adc_array_wafflecap_8_8_0[12|9]/sample VDD col_n[12] VSS adc_array_wafflecap_8_8
++ vcm row_n[20] ctop adc_array_wafflecap_8_8_0[12|9]/sample VDD col_n[12] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[13|20] adc_array_wafflecap_8_8_0[13|9]/sample_n colon_n[13]
-+ vcom row_n[20] ctop adc_array_wafflecap_8_8_0[13|9]/sample VDD col_n[13] VSS adc_array_wafflecap_8_8
++ vcm row_n[20] ctop adc_array_wafflecap_8_8_0[13|9]/sample VDD col_n[13] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[14|20] adc_array_wafflecap_8_8_0[14|9]/sample_n colon_n[14]
-+ vcom row_n[20] ctop adc_array_wafflecap_8_8_0[14|9]/sample VDD col_n[14] VSS adc_array_wafflecap_8_8
++ vcm row_n[20] ctop adc_array_wafflecap_8_8_0[14|9]/sample VDD col_n[14] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[15|20] adc_array_wafflecap_8_8_0[15|9]/sample_n colon_n[15]
-+ vcom row_n[20] ctop adc_array_wafflecap_8_8_0[15|9]/sample VDD col_n[15] VSS adc_array_wafflecap_8_8
++ vcm row_n[20] ctop adc_array_wafflecap_8_8_0[15|9]/sample VDD col_n[15] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[0|21] adc_array_wafflecap_8_8_0[0|9]/sample_n colon_n[0]
-+ vcom row_n[21] ctop adc_array_wafflecap_8_8_0[0|9]/sample VDD col_n[0] VSS adc_array_wafflecap_8_8
++ vcm row_n[21] ctop adc_array_wafflecap_8_8_0[0|9]/sample VDD col_n[0] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[1|21] adc_array_wafflecap_8_8_0[1|9]/sample_n colon_n[1]
-+ vcom row_n[21] ctop adc_array_wafflecap_8_8_0[1|9]/sample VDD col_n[1] VSS adc_array_wafflecap_8_8
++ vcm row_n[21] ctop adc_array_wafflecap_8_8_0[1|9]/sample VDD col_n[1] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[2|21] adc_array_wafflecap_8_8_0[2|9]/sample_n colon_n[2]
-+ vcom row_n[21] ctop adc_array_wafflecap_8_8_0[2|9]/sample VDD col_n[2] VSS adc_array_wafflecap_8_8
++ vcm row_n[21] ctop adc_array_wafflecap_8_8_0[2|9]/sample VDD col_n[2] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[3|21] adc_array_wafflecap_8_8_0[3|9]/sample_n colon_n[3]
-+ vcom row_n[21] ctop adc_array_wafflecap_8_8_0[3|9]/sample VDD col_n[3] VSS adc_array_wafflecap_8_8
++ vcm row_n[21] ctop adc_array_wafflecap_8_8_0[3|9]/sample VDD col_n[3] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[4|21] adc_array_wafflecap_8_8_0[4|9]/sample_n colon_n[4]
-+ vcom row_n[21] ctop adc_array_wafflecap_8_8_0[4|9]/sample VDD col_n[4] VSS adc_array_wafflecap_8_8
++ vcm row_n[21] ctop adc_array_wafflecap_8_8_0[4|9]/sample VDD col_n[4] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[5|21] adc_array_wafflecap_8_8_0[5|9]/sample_n colon_n[5]
-+ vcom row_n[21] ctop adc_array_wafflecap_8_8_0[5|9]/sample VDD col_n[5] VSS adc_array_wafflecap_8_8
++ vcm row_n[21] ctop adc_array_wafflecap_8_8_0[5|9]/sample VDD col_n[5] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[6|21] adc_array_wafflecap_8_8_0[6|9]/sample_n colon_n[6]
-+ vcom row_n[21] ctop adc_array_wafflecap_8_8_0[6|9]/sample VDD col_n[6] VSS adc_array_wafflecap_8_8
++ vcm row_n[21] ctop adc_array_wafflecap_8_8_0[6|9]/sample VDD col_n[6] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[7|21] adc_array_wafflecap_8_8_0[7|9]/sample_n colon_n[7]
-+ vcom row_n[21] ctop adc_array_wafflecap_8_8_0[7|9]/sample VDD col_n[7] VSS adc_array_wafflecap_8_8
++ vcm row_n[21] ctop adc_array_wafflecap_8_8_0[7|9]/sample VDD col_n[7] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[8|21] adc_array_wafflecap_8_8_0[8|9]/sample_n colon_n[8]
-+ vcom row_n[21] ctop adc_array_wafflecap_8_8_0[8|9]/sample VDD col_n[8] VSS adc_array_wafflecap_8_8
++ vcm row_n[21] ctop adc_array_wafflecap_8_8_0[8|9]/sample VDD col_n[8] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[9|21] adc_array_wafflecap_8_8_0[9|9]/sample_n colon_n[9]
-+ vcom row_n[21] ctop adc_array_wafflecap_8_8_0[9|9]/sample VDD col_n[9] VSS adc_array_wafflecap_8_8
++ vcm row_n[21] ctop adc_array_wafflecap_8_8_0[9|9]/sample VDD col_n[9] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[10|21] adc_array_wafflecap_8_8_0[10|9]/sample_n colon_n[10]
-+ vcom row_n[21] ctop adc_array_wafflecap_8_8_0[10|9]/sample VDD col_n[10] VSS adc_array_wafflecap_8_8
++ vcm row_n[21] ctop adc_array_wafflecap_8_8_0[10|9]/sample VDD col_n[10] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[11|21] adc_array_wafflecap_8_8_0[11|9]/sample_n colon_n[11]
-+ vcom row_n[21] ctop adc_array_wafflecap_8_8_0[11|9]/sample VDD col_n[11] VSS adc_array_wafflecap_8_8
++ vcm row_n[21] ctop adc_array_wafflecap_8_8_0[11|9]/sample VDD col_n[11] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[12|21] adc_array_wafflecap_8_8_0[12|9]/sample_n colon_n[12]
-+ vcom row_n[21] ctop adc_array_wafflecap_8_8_0[12|9]/sample VDD col_n[12] VSS adc_array_wafflecap_8_8
++ vcm row_n[21] ctop adc_array_wafflecap_8_8_0[12|9]/sample VDD col_n[12] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[13|21] adc_array_wafflecap_8_8_0[13|9]/sample_n colon_n[13]
-+ vcom row_n[21] ctop adc_array_wafflecap_8_8_0[13|9]/sample VDD col_n[13] VSS adc_array_wafflecap_8_8
++ vcm row_n[21] ctop adc_array_wafflecap_8_8_0[13|9]/sample VDD col_n[13] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[14|21] adc_array_wafflecap_8_8_0[14|9]/sample_n colon_n[14]
-+ vcom row_n[21] ctop adc_array_wafflecap_8_8_0[14|9]/sample VDD col_n[14] VSS adc_array_wafflecap_8_8
++ vcm row_n[21] ctop adc_array_wafflecap_8_8_0[14|9]/sample VDD col_n[14] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[15|21] adc_array_wafflecap_8_8_0[15|9]/sample_n colon_n[15]
-+ vcom row_n[21] ctop adc_array_wafflecap_8_8_0[15|9]/sample VDD col_n[15] VSS adc_array_wafflecap_8_8
++ vcm row_n[21] ctop adc_array_wafflecap_8_8_0[15|9]/sample VDD col_n[15] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[0|22] adc_array_wafflecap_8_8_0[0|9]/sample_n colon_n[0]
-+ vcom row_n[22] ctop adc_array_wafflecap_8_8_0[0|9]/sample VDD col_n[0] VSS adc_array_wafflecap_8_8
++ vcm row_n[22] ctop adc_array_wafflecap_8_8_0[0|9]/sample VDD col_n[0] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[1|22] adc_array_wafflecap_8_8_0[1|9]/sample_n colon_n[1]
-+ vcom row_n[22] ctop adc_array_wafflecap_8_8_0[1|9]/sample VDD col_n[1] VSS adc_array_wafflecap_8_8
++ vcm row_n[22] ctop adc_array_wafflecap_8_8_0[1|9]/sample VDD col_n[1] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[2|22] adc_array_wafflecap_8_8_0[2|9]/sample_n colon_n[2]
-+ vcom row_n[22] ctop adc_array_wafflecap_8_8_0[2|9]/sample VDD col_n[2] VSS adc_array_wafflecap_8_8
++ vcm row_n[22] ctop adc_array_wafflecap_8_8_0[2|9]/sample VDD col_n[2] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[3|22] adc_array_wafflecap_8_8_0[3|9]/sample_n colon_n[3]
-+ vcom row_n[22] ctop adc_array_wafflecap_8_8_0[3|9]/sample VDD col_n[3] VSS adc_array_wafflecap_8_8
++ vcm row_n[22] ctop adc_array_wafflecap_8_8_0[3|9]/sample VDD col_n[3] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[4|22] adc_array_wafflecap_8_8_0[4|9]/sample_n colon_n[4]
-+ vcom row_n[22] ctop adc_array_wafflecap_8_8_0[4|9]/sample VDD col_n[4] VSS adc_array_wafflecap_8_8
++ vcm row_n[22] ctop adc_array_wafflecap_8_8_0[4|9]/sample VDD col_n[4] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[5|22] adc_array_wafflecap_8_8_0[5|9]/sample_n colon_n[5]
-+ vcom row_n[22] ctop adc_array_wafflecap_8_8_0[5|9]/sample VDD col_n[5] VSS adc_array_wafflecap_8_8
++ vcm row_n[22] ctop adc_array_wafflecap_8_8_0[5|9]/sample VDD col_n[5] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[6|22] adc_array_wafflecap_8_8_0[6|9]/sample_n colon_n[6]
-+ vcom row_n[22] ctop adc_array_wafflecap_8_8_0[6|9]/sample VDD col_n[6] VSS adc_array_wafflecap_8_8
++ vcm row_n[22] ctop adc_array_wafflecap_8_8_0[6|9]/sample VDD col_n[6] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[7|22] adc_array_wafflecap_8_8_0[7|9]/sample_n colon_n[7]
-+ vcom row_n[22] ctop adc_array_wafflecap_8_8_0[7|9]/sample VDD col_n[7] VSS adc_array_wafflecap_8_8
++ vcm row_n[22] ctop adc_array_wafflecap_8_8_0[7|9]/sample VDD col_n[7] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[8|22] adc_array_wafflecap_8_8_0[8|9]/sample_n colon_n[8]
-+ vcom row_n[22] ctop adc_array_wafflecap_8_8_0[8|9]/sample VDD col_n[8] VSS adc_array_wafflecap_8_8
++ vcm row_n[22] ctop adc_array_wafflecap_8_8_0[8|9]/sample VDD col_n[8] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[9|22] adc_array_wafflecap_8_8_0[9|9]/sample_n colon_n[9]
-+ vcom row_n[22] ctop adc_array_wafflecap_8_8_0[9|9]/sample VDD col_n[9] VSS adc_array_wafflecap_8_8
++ vcm row_n[22] ctop adc_array_wafflecap_8_8_0[9|9]/sample VDD col_n[9] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[10|22] adc_array_wafflecap_8_8_0[10|9]/sample_n colon_n[10]
-+ vcom row_n[22] ctop adc_array_wafflecap_8_8_0[10|9]/sample VDD col_n[10] VSS adc_array_wafflecap_8_8
++ vcm row_n[22] ctop adc_array_wafflecap_8_8_0[10|9]/sample VDD col_n[10] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[11|22] adc_array_wafflecap_8_8_0[11|9]/sample_n colon_n[11]
-+ vcom row_n[22] ctop adc_array_wafflecap_8_8_0[11|9]/sample VDD col_n[11] VSS adc_array_wafflecap_8_8
++ vcm row_n[22] ctop adc_array_wafflecap_8_8_0[11|9]/sample VDD col_n[11] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[12|22] adc_array_wafflecap_8_8_0[12|9]/sample_n colon_n[12]
-+ vcom row_n[22] ctop adc_array_wafflecap_8_8_0[12|9]/sample VDD col_n[12] VSS adc_array_wafflecap_8_8
++ vcm row_n[22] ctop adc_array_wafflecap_8_8_0[12|9]/sample VDD col_n[12] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[13|22] adc_array_wafflecap_8_8_0[13|9]/sample_n colon_n[13]
-+ vcom row_n[22] ctop adc_array_wafflecap_8_8_0[13|9]/sample VDD col_n[13] VSS adc_array_wafflecap_8_8
++ vcm row_n[22] ctop adc_array_wafflecap_8_8_0[13|9]/sample VDD col_n[13] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[14|22] adc_array_wafflecap_8_8_0[14|9]/sample_n colon_n[14]
-+ vcom row_n[22] ctop adc_array_wafflecap_8_8_0[14|9]/sample VDD col_n[14] VSS adc_array_wafflecap_8_8
++ vcm row_n[22] ctop adc_array_wafflecap_8_8_0[14|9]/sample VDD col_n[14] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[15|22] adc_array_wafflecap_8_8_0[15|9]/sample_n colon_n[15]
-+ vcom row_n[22] ctop adc_array_wafflecap_8_8_0[15|9]/sample VDD col_n[15] VSS adc_array_wafflecap_8_8
++ vcm row_n[22] ctop adc_array_wafflecap_8_8_0[15|9]/sample VDD col_n[15] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[0|23] adc_array_wafflecap_8_8_0[0|9]/sample_n colon_n[0]
-+ vcom row_n[23] ctop adc_array_wafflecap_8_8_0[0|9]/sample VDD col_n[0] VSS adc_array_wafflecap_8_8
++ vcm row_n[23] ctop adc_array_wafflecap_8_8_0[0|9]/sample VDD col_n[0] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[1|23] adc_array_wafflecap_8_8_0[1|9]/sample_n colon_n[1]
-+ vcom row_n[23] ctop adc_array_wafflecap_8_8_0[1|9]/sample VDD col_n[1] VSS adc_array_wafflecap_8_8
++ vcm row_n[23] ctop adc_array_wafflecap_8_8_0[1|9]/sample VDD col_n[1] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[2|23] adc_array_wafflecap_8_8_0[2|9]/sample_n colon_n[2]
-+ vcom row_n[23] ctop adc_array_wafflecap_8_8_0[2|9]/sample VDD col_n[2] VSS adc_array_wafflecap_8_8
++ vcm row_n[23] ctop adc_array_wafflecap_8_8_0[2|9]/sample VDD col_n[2] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[3|23] adc_array_wafflecap_8_8_0[3|9]/sample_n colon_n[3]
-+ vcom row_n[23] ctop adc_array_wafflecap_8_8_0[3|9]/sample VDD col_n[3] VSS adc_array_wafflecap_8_8
++ vcm row_n[23] ctop adc_array_wafflecap_8_8_0[3|9]/sample VDD col_n[3] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[4|23] adc_array_wafflecap_8_8_0[4|9]/sample_n colon_n[4]
-+ vcom row_n[23] ctop adc_array_wafflecap_8_8_0[4|9]/sample VDD col_n[4] VSS adc_array_wafflecap_8_8
++ vcm row_n[23] ctop adc_array_wafflecap_8_8_0[4|9]/sample VDD col_n[4] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[5|23] adc_array_wafflecap_8_8_0[5|9]/sample_n colon_n[5]
-+ vcom row_n[23] ctop adc_array_wafflecap_8_8_0[5|9]/sample VDD col_n[5] VSS adc_array_wafflecap_8_8
++ vcm row_n[23] ctop adc_array_wafflecap_8_8_0[5|9]/sample VDD col_n[5] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[6|23] adc_array_wafflecap_8_8_0[6|9]/sample_n colon_n[6]
-+ vcom row_n[23] ctop adc_array_wafflecap_8_8_0[6|9]/sample VDD col_n[6] VSS adc_array_wafflecap_8_8
++ vcm row_n[23] ctop adc_array_wafflecap_8_8_0[6|9]/sample VDD col_n[6] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[7|23] adc_array_wafflecap_8_8_0[7|9]/sample_n colon_n[7]
-+ vcom row_n[23] ctop adc_array_wafflecap_8_8_0[7|9]/sample VDD col_n[7] VSS adc_array_wafflecap_8_8
++ vcm row_n[23] ctop adc_array_wafflecap_8_8_0[7|9]/sample VDD col_n[7] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[8|23] adc_array_wafflecap_8_8_0[8|9]/sample_n colon_n[8]
-+ vcom row_n[23] ctop adc_array_wafflecap_8_8_0[8|9]/sample VDD col_n[8] VSS adc_array_wafflecap_8_8
++ vcm row_n[23] ctop adc_array_wafflecap_8_8_0[8|9]/sample VDD col_n[8] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[9|23] adc_array_wafflecap_8_8_0[9|9]/sample_n colon_n[9]
-+ vcom row_n[23] ctop adc_array_wafflecap_8_8_0[9|9]/sample VDD col_n[9] VSS adc_array_wafflecap_8_8
++ vcm row_n[23] ctop adc_array_wafflecap_8_8_0[9|9]/sample VDD col_n[9] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[10|23] adc_array_wafflecap_8_8_0[10|9]/sample_n colon_n[10]
-+ vcom row_n[23] ctop adc_array_wafflecap_8_8_0[10|9]/sample VDD col_n[10] VSS adc_array_wafflecap_8_8
++ vcm row_n[23] ctop adc_array_wafflecap_8_8_0[10|9]/sample VDD col_n[10] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[11|23] adc_array_wafflecap_8_8_0[11|9]/sample_n colon_n[11]
-+ vcom row_n[23] ctop adc_array_wafflecap_8_8_0[11|9]/sample VDD col_n[11] VSS adc_array_wafflecap_8_8
++ vcm row_n[23] ctop adc_array_wafflecap_8_8_0[11|9]/sample VDD col_n[11] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[12|23] adc_array_wafflecap_8_8_0[12|9]/sample_n colon_n[12]
-+ vcom row_n[23] ctop adc_array_wafflecap_8_8_0[12|9]/sample VDD col_n[12] VSS adc_array_wafflecap_8_8
++ vcm row_n[23] ctop adc_array_wafflecap_8_8_0[12|9]/sample VDD col_n[12] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[13|23] adc_array_wafflecap_8_8_0[13|9]/sample_n colon_n[13]
-+ vcom row_n[23] ctop adc_array_wafflecap_8_8_0[13|9]/sample VDD col_n[13] VSS adc_array_wafflecap_8_8
++ vcm row_n[23] ctop adc_array_wafflecap_8_8_0[13|9]/sample VDD col_n[13] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[14|23] adc_array_wafflecap_8_8_0[14|9]/sample_n colon_n[14]
-+ vcom row_n[23] ctop adc_array_wafflecap_8_8_0[14|9]/sample VDD col_n[14] VSS adc_array_wafflecap_8_8
++ vcm row_n[23] ctop adc_array_wafflecap_8_8_0[14|9]/sample VDD col_n[14] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[15|23] adc_array_wafflecap_8_8_0[15|9]/sample_n colon_n[15]
-+ vcom row_n[23] ctop adc_array_wafflecap_8_8_0[15|9]/sample VDD col_n[15] VSS adc_array_wafflecap_8_8
++ vcm row_n[23] ctop adc_array_wafflecap_8_8_0[15|9]/sample VDD col_n[15] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[0|24] adc_array_wafflecap_8_8_0[0|9]/sample_n colon_n[0]
-+ vcom row_n[24] ctop adc_array_wafflecap_8_8_0[0|9]/sample VDD col_n[0] VSS adc_array_wafflecap_8_8
++ vcm row_n[24] ctop adc_array_wafflecap_8_8_0[0|9]/sample VDD col_n[0] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[1|24] adc_array_wafflecap_8_8_0[1|9]/sample_n colon_n[1]
-+ vcom row_n[24] ctop adc_array_wafflecap_8_8_0[1|9]/sample VDD col_n[1] VSS adc_array_wafflecap_8_8
++ vcm row_n[24] ctop adc_array_wafflecap_8_8_0[1|9]/sample VDD col_n[1] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[2|24] adc_array_wafflecap_8_8_0[2|9]/sample_n colon_n[2]
-+ vcom row_n[24] ctop adc_array_wafflecap_8_8_0[2|9]/sample VDD col_n[2] VSS adc_array_wafflecap_8_8
++ vcm row_n[24] ctop adc_array_wafflecap_8_8_0[2|9]/sample VDD col_n[2] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[3|24] adc_array_wafflecap_8_8_0[3|9]/sample_n colon_n[3]
-+ vcom row_n[24] ctop adc_array_wafflecap_8_8_0[3|9]/sample VDD col_n[3] VSS adc_array_wafflecap_8_8
++ vcm row_n[24] ctop adc_array_wafflecap_8_8_0[3|9]/sample VDD col_n[3] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[4|24] adc_array_wafflecap_8_8_0[4|9]/sample_n colon_n[4]
-+ vcom row_n[24] ctop adc_array_wafflecap_8_8_0[4|9]/sample VDD col_n[4] VSS adc_array_wafflecap_8_8
++ vcm row_n[24] ctop adc_array_wafflecap_8_8_0[4|9]/sample VDD col_n[4] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[5|24] adc_array_wafflecap_8_8_0[5|9]/sample_n colon_n[5]
-+ vcom row_n[24] ctop adc_array_wafflecap_8_8_0[5|9]/sample VDD col_n[5] VSS adc_array_wafflecap_8_8
++ vcm row_n[24] ctop adc_array_wafflecap_8_8_0[5|9]/sample VDD col_n[5] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[6|24] adc_array_wafflecap_8_8_0[6|9]/sample_n colon_n[6]
-+ vcom row_n[24] ctop adc_array_wafflecap_8_8_0[6|9]/sample VDD col_n[6] VSS adc_array_wafflecap_8_8
++ vcm row_n[24] ctop adc_array_wafflecap_8_8_0[6|9]/sample VDD col_n[6] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[7|24] adc_array_wafflecap_8_8_0[7|9]/sample_n colon_n[7]
-+ vcom row_n[24] ctop adc_array_wafflecap_8_8_0[7|9]/sample VDD col_n[7] VSS adc_array_wafflecap_8_8
++ vcm row_n[24] ctop adc_array_wafflecap_8_8_0[7|9]/sample VDD col_n[7] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[8|24] adc_array_wafflecap_8_8_0[8|9]/sample_n colon_n[8]
-+ vcom row_n[24] ctop adc_array_wafflecap_8_8_0[8|9]/sample VDD col_n[8] VSS adc_array_wafflecap_8_8
++ vcm row_n[24] ctop adc_array_wafflecap_8_8_0[8|9]/sample VDD col_n[8] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[9|24] adc_array_wafflecap_8_8_0[9|9]/sample_n colon_n[9]
-+ vcom row_n[24] ctop adc_array_wafflecap_8_8_0[9|9]/sample VDD col_n[9] VSS adc_array_wafflecap_8_8
++ vcm row_n[24] ctop adc_array_wafflecap_8_8_0[9|9]/sample VDD col_n[9] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[10|24] adc_array_wafflecap_8_8_0[10|9]/sample_n colon_n[10]
-+ vcom row_n[24] ctop adc_array_wafflecap_8_8_0[10|9]/sample VDD col_n[10] VSS adc_array_wafflecap_8_8
++ vcm row_n[24] ctop adc_array_wafflecap_8_8_0[10|9]/sample VDD col_n[10] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[11|24] adc_array_wafflecap_8_8_0[11|9]/sample_n colon_n[11]
-+ vcom row_n[24] ctop adc_array_wafflecap_8_8_0[11|9]/sample VDD col_n[11] VSS adc_array_wafflecap_8_8
++ vcm row_n[24] ctop adc_array_wafflecap_8_8_0[11|9]/sample VDD col_n[11] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[12|24] adc_array_wafflecap_8_8_0[12|9]/sample_n colon_n[12]
-+ vcom row_n[24] ctop adc_array_wafflecap_8_8_0[12|9]/sample VDD col_n[12] VSS adc_array_wafflecap_8_8
++ vcm row_n[24] ctop adc_array_wafflecap_8_8_0[12|9]/sample VDD col_n[12] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[13|24] adc_array_wafflecap_8_8_0[13|9]/sample_n colon_n[13]
-+ vcom row_n[24] ctop adc_array_wafflecap_8_8_0[13|9]/sample VDD col_n[13] VSS adc_array_wafflecap_8_8
++ vcm row_n[24] ctop adc_array_wafflecap_8_8_0[13|9]/sample VDD col_n[13] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[14|24] adc_array_wafflecap_8_8_0[14|9]/sample_n colon_n[14]
-+ vcom row_n[24] ctop adc_array_wafflecap_8_8_0[14|9]/sample VDD col_n[14] VSS adc_array_wafflecap_8_8
++ vcm row_n[24] ctop adc_array_wafflecap_8_8_0[14|9]/sample VDD col_n[14] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[15|24] adc_array_wafflecap_8_8_0[15|9]/sample_n colon_n[15]
-+ vcom row_n[24] ctop adc_array_wafflecap_8_8_0[15|9]/sample VDD col_n[15] VSS adc_array_wafflecap_8_8
++ vcm row_n[24] ctop adc_array_wafflecap_8_8_0[15|9]/sample VDD col_n[15] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[0|25] adc_array_wafflecap_8_8_0[0|9]/sample_n colon_n[0]
-+ vcom row_n[25] ctop adc_array_wafflecap_8_8_0[0|9]/sample VDD col_n[0] VSS adc_array_wafflecap_8_8
++ vcm row_n[25] ctop adc_array_wafflecap_8_8_0[0|9]/sample VDD col_n[0] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[1|25] adc_array_wafflecap_8_8_0[1|9]/sample_n colon_n[1]
-+ vcom row_n[25] ctop adc_array_wafflecap_8_8_0[1|9]/sample VDD col_n[1] VSS adc_array_wafflecap_8_8
++ vcm row_n[25] ctop adc_array_wafflecap_8_8_0[1|9]/sample VDD col_n[1] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[2|25] adc_array_wafflecap_8_8_0[2|9]/sample_n colon_n[2]
-+ vcom row_n[25] ctop adc_array_wafflecap_8_8_0[2|9]/sample VDD col_n[2] VSS adc_array_wafflecap_8_8
++ vcm row_n[25] ctop adc_array_wafflecap_8_8_0[2|9]/sample VDD col_n[2] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[3|25] adc_array_wafflecap_8_8_0[3|9]/sample_n colon_n[3]
-+ vcom row_n[25] ctop adc_array_wafflecap_8_8_0[3|9]/sample VDD col_n[3] VSS adc_array_wafflecap_8_8
++ vcm row_n[25] ctop adc_array_wafflecap_8_8_0[3|9]/sample VDD col_n[3] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[4|25] adc_array_wafflecap_8_8_0[4|9]/sample_n colon_n[4]
-+ vcom row_n[25] ctop adc_array_wafflecap_8_8_0[4|9]/sample VDD col_n[4] VSS adc_array_wafflecap_8_8
++ vcm row_n[25] ctop adc_array_wafflecap_8_8_0[4|9]/sample VDD col_n[4] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[5|25] adc_array_wafflecap_8_8_0[5|9]/sample_n colon_n[5]
-+ vcom row_n[25] ctop adc_array_wafflecap_8_8_0[5|9]/sample VDD col_n[5] VSS adc_array_wafflecap_8_8
++ vcm row_n[25] ctop adc_array_wafflecap_8_8_0[5|9]/sample VDD col_n[5] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[6|25] adc_array_wafflecap_8_8_0[6|9]/sample_n colon_n[6]
-+ vcom row_n[25] ctop adc_array_wafflecap_8_8_0[6|9]/sample VDD col_n[6] VSS adc_array_wafflecap_8_8
++ vcm row_n[25] ctop adc_array_wafflecap_8_8_0[6|9]/sample VDD col_n[6] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[7|25] adc_array_wafflecap_8_8_0[7|9]/sample_n colon_n[7]
-+ vcom row_n[25] ctop adc_array_wafflecap_8_8_0[7|9]/sample VDD col_n[7] VSS adc_array_wafflecap_8_8
++ vcm row_n[25] ctop adc_array_wafflecap_8_8_0[7|9]/sample VDD col_n[7] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[8|25] adc_array_wafflecap_8_8_0[8|9]/sample_n colon_n[8]
-+ vcom row_n[25] ctop adc_array_wafflecap_8_8_0[8|9]/sample VDD col_n[8] VSS adc_array_wafflecap_8_8
++ vcm row_n[25] ctop adc_array_wafflecap_8_8_0[8|9]/sample VDD col_n[8] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[9|25] adc_array_wafflecap_8_8_0[9|9]/sample_n colon_n[9]
-+ vcom row_n[25] ctop adc_array_wafflecap_8_8_0[9|9]/sample VDD col_n[9] VSS adc_array_wafflecap_8_8
++ vcm row_n[25] ctop adc_array_wafflecap_8_8_0[9|9]/sample VDD col_n[9] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[10|25] adc_array_wafflecap_8_8_0[10|9]/sample_n colon_n[10]
-+ vcom row_n[25] ctop adc_array_wafflecap_8_8_0[10|9]/sample VDD col_n[10] VSS adc_array_wafflecap_8_8
++ vcm row_n[25] ctop adc_array_wafflecap_8_8_0[10|9]/sample VDD col_n[10] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[11|25] adc_array_wafflecap_8_8_0[11|9]/sample_n colon_n[11]
-+ vcom row_n[25] ctop adc_array_wafflecap_8_8_0[11|9]/sample VDD col_n[11] VSS adc_array_wafflecap_8_8
++ vcm row_n[25] ctop adc_array_wafflecap_8_8_0[11|9]/sample VDD col_n[11] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[12|25] adc_array_wafflecap_8_8_0[12|9]/sample_n colon_n[12]
-+ vcom row_n[25] ctop adc_array_wafflecap_8_8_0[12|9]/sample VDD col_n[12] VSS adc_array_wafflecap_8_8
++ vcm row_n[25] ctop adc_array_wafflecap_8_8_0[12|9]/sample VDD col_n[12] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[13|25] adc_array_wafflecap_8_8_0[13|9]/sample_n colon_n[13]
-+ vcom row_n[25] ctop adc_array_wafflecap_8_8_0[13|9]/sample VDD col_n[13] VSS adc_array_wafflecap_8_8
++ vcm row_n[25] ctop adc_array_wafflecap_8_8_0[13|9]/sample VDD col_n[13] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[14|25] adc_array_wafflecap_8_8_0[14|9]/sample_n colon_n[14]
-+ vcom row_n[25] ctop adc_array_wafflecap_8_8_0[14|9]/sample VDD col_n[14] VSS adc_array_wafflecap_8_8
++ vcm row_n[25] ctop adc_array_wafflecap_8_8_0[14|9]/sample VDD col_n[14] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[15|25] adc_array_wafflecap_8_8_0[15|9]/sample_n colon_n[15]
-+ vcom row_n[25] ctop adc_array_wafflecap_8_8_0[15|9]/sample VDD col_n[15] VSS adc_array_wafflecap_8_8
++ vcm row_n[25] ctop adc_array_wafflecap_8_8_0[15|9]/sample VDD col_n[15] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[0|26] adc_array_wafflecap_8_8_0[0|9]/sample_n colon_n[0]
-+ vcom row_n[26] ctop adc_array_wafflecap_8_8_0[0|9]/sample VDD col_n[0] VSS adc_array_wafflecap_8_8
++ vcm row_n[26] ctop adc_array_wafflecap_8_8_0[0|9]/sample VDD col_n[0] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[1|26] adc_array_wafflecap_8_8_0[1|9]/sample_n colon_n[1]
-+ vcom row_n[26] ctop adc_array_wafflecap_8_8_0[1|9]/sample VDD col_n[1] VSS adc_array_wafflecap_8_8
++ vcm row_n[26] ctop adc_array_wafflecap_8_8_0[1|9]/sample VDD col_n[1] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[2|26] adc_array_wafflecap_8_8_0[2|9]/sample_n colon_n[2]
-+ vcom row_n[26] ctop adc_array_wafflecap_8_8_0[2|9]/sample VDD col_n[2] VSS adc_array_wafflecap_8_8
++ vcm row_n[26] ctop adc_array_wafflecap_8_8_0[2|9]/sample VDD col_n[2] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[3|26] adc_array_wafflecap_8_8_0[3|9]/sample_n colon_n[3]
-+ vcom row_n[26] ctop adc_array_wafflecap_8_8_0[3|9]/sample VDD col_n[3] VSS adc_array_wafflecap_8_8
++ vcm row_n[26] ctop adc_array_wafflecap_8_8_0[3|9]/sample VDD col_n[3] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[4|26] adc_array_wafflecap_8_8_0[4|9]/sample_n colon_n[4]
-+ vcom row_n[26] ctop adc_array_wafflecap_8_8_0[4|9]/sample VDD col_n[4] VSS adc_array_wafflecap_8_8
++ vcm row_n[26] ctop adc_array_wafflecap_8_8_0[4|9]/sample VDD col_n[4] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[5|26] adc_array_wafflecap_8_8_0[5|9]/sample_n colon_n[5]
-+ vcom row_n[26] ctop adc_array_wafflecap_8_8_0[5|9]/sample VDD col_n[5] VSS adc_array_wafflecap_8_8
++ vcm row_n[26] ctop adc_array_wafflecap_8_8_0[5|9]/sample VDD col_n[5] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[6|26] adc_array_wafflecap_8_8_0[6|9]/sample_n colon_n[6]
-+ vcom row_n[26] ctop adc_array_wafflecap_8_8_0[6|9]/sample VDD col_n[6] VSS adc_array_wafflecap_8_8
++ vcm row_n[26] ctop adc_array_wafflecap_8_8_0[6|9]/sample VDD col_n[6] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[7|26] adc_array_wafflecap_8_8_0[7|9]/sample_n colon_n[7]
-+ vcom row_n[26] ctop adc_array_wafflecap_8_8_0[7|9]/sample VDD col_n[7] VSS adc_array_wafflecap_8_8
++ vcm row_n[26] ctop adc_array_wafflecap_8_8_0[7|9]/sample VDD col_n[7] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[8|26] adc_array_wafflecap_8_8_0[8|9]/sample_n colon_n[8]
-+ vcom row_n[26] ctop adc_array_wafflecap_8_8_0[8|9]/sample VDD col_n[8] VSS adc_array_wafflecap_8_8
++ vcm row_n[26] ctop adc_array_wafflecap_8_8_0[8|9]/sample VDD col_n[8] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[9|26] adc_array_wafflecap_8_8_0[9|9]/sample_n colon_n[9]
-+ vcom row_n[26] ctop adc_array_wafflecap_8_8_0[9|9]/sample VDD col_n[9] VSS adc_array_wafflecap_8_8
++ vcm row_n[26] ctop adc_array_wafflecap_8_8_0[9|9]/sample VDD col_n[9] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[10|26] adc_array_wafflecap_8_8_0[10|9]/sample_n colon_n[10]
-+ vcom row_n[26] ctop adc_array_wafflecap_8_8_0[10|9]/sample VDD col_n[10] VSS adc_array_wafflecap_8_8
++ vcm row_n[26] ctop adc_array_wafflecap_8_8_0[10|9]/sample VDD col_n[10] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[11|26] adc_array_wafflecap_8_8_0[11|9]/sample_n colon_n[11]
-+ vcom row_n[26] ctop adc_array_wafflecap_8_8_0[11|9]/sample VDD col_n[11] VSS adc_array_wafflecap_8_8
++ vcm row_n[26] ctop adc_array_wafflecap_8_8_0[11|9]/sample VDD col_n[11] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[12|26] adc_array_wafflecap_8_8_0[12|9]/sample_n colon_n[12]
-+ vcom row_n[26] ctop adc_array_wafflecap_8_8_0[12|9]/sample VDD col_n[12] VSS adc_array_wafflecap_8_8
++ vcm row_n[26] ctop adc_array_wafflecap_8_8_0[12|9]/sample VDD col_n[12] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[13|26] adc_array_wafflecap_8_8_0[13|9]/sample_n colon_n[13]
-+ vcom row_n[26] ctop adc_array_wafflecap_8_8_0[13|9]/sample VDD col_n[13] VSS adc_array_wafflecap_8_8
++ vcm row_n[26] ctop adc_array_wafflecap_8_8_0[13|9]/sample VDD col_n[13] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[14|26] adc_array_wafflecap_8_8_0[14|9]/sample_n colon_n[14]
-+ vcom row_n[26] ctop adc_array_wafflecap_8_8_0[14|9]/sample VDD col_n[14] VSS adc_array_wafflecap_8_8
++ vcm row_n[26] ctop adc_array_wafflecap_8_8_0[14|9]/sample VDD col_n[14] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[15|26] adc_array_wafflecap_8_8_0[15|9]/sample_n colon_n[15]
-+ vcom row_n[26] ctop adc_array_wafflecap_8_8_0[15|9]/sample VDD col_n[15] VSS adc_array_wafflecap_8_8
++ vcm row_n[26] ctop adc_array_wafflecap_8_8_0[15|9]/sample VDD col_n[15] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[0|27] adc_array_wafflecap_8_8_0[0|9]/sample_n colon_n[0]
-+ vcom row_n[27] ctop adc_array_wafflecap_8_8_0[0|9]/sample VDD col_n[0] VSS adc_array_wafflecap_8_8
++ vcm row_n[27] ctop adc_array_wafflecap_8_8_0[0|9]/sample VDD col_n[0] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[1|27] adc_array_wafflecap_8_8_0[1|9]/sample_n colon_n[1]
-+ vcom row_n[27] ctop adc_array_wafflecap_8_8_0[1|9]/sample VDD col_n[1] VSS adc_array_wafflecap_8_8
++ vcm row_n[27] ctop adc_array_wafflecap_8_8_0[1|9]/sample VDD col_n[1] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[2|27] adc_array_wafflecap_8_8_0[2|9]/sample_n colon_n[2]
-+ vcom row_n[27] ctop adc_array_wafflecap_8_8_0[2|9]/sample VDD col_n[2] VSS adc_array_wafflecap_8_8
++ vcm row_n[27] ctop adc_array_wafflecap_8_8_0[2|9]/sample VDD col_n[2] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[3|27] adc_array_wafflecap_8_8_0[3|9]/sample_n colon_n[3]
-+ vcom row_n[27] ctop adc_array_wafflecap_8_8_0[3|9]/sample VDD col_n[3] VSS adc_array_wafflecap_8_8
++ vcm row_n[27] ctop adc_array_wafflecap_8_8_0[3|9]/sample VDD col_n[3] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[4|27] adc_array_wafflecap_8_8_0[4|9]/sample_n colon_n[4]
-+ vcom row_n[27] ctop adc_array_wafflecap_8_8_0[4|9]/sample VDD col_n[4] VSS adc_array_wafflecap_8_8
++ vcm row_n[27] ctop adc_array_wafflecap_8_8_0[4|9]/sample VDD col_n[4] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[5|27] adc_array_wafflecap_8_8_0[5|9]/sample_n colon_n[5]
-+ vcom row_n[27] ctop adc_array_wafflecap_8_8_0[5|9]/sample VDD col_n[5] VSS adc_array_wafflecap_8_8
++ vcm row_n[27] ctop adc_array_wafflecap_8_8_0[5|9]/sample VDD col_n[5] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[6|27] adc_array_wafflecap_8_8_0[6|9]/sample_n colon_n[6]
-+ vcom row_n[27] ctop adc_array_wafflecap_8_8_0[6|9]/sample VDD col_n[6] VSS adc_array_wafflecap_8_8
++ vcm row_n[27] ctop adc_array_wafflecap_8_8_0[6|9]/sample VDD col_n[6] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[7|27] adc_array_wafflecap_8_8_0[7|9]/sample_n colon_n[7]
-+ vcom row_n[27] ctop adc_array_wafflecap_8_8_0[7|9]/sample VDD col_n[7] VSS adc_array_wafflecap_8_8
++ vcm row_n[27] ctop adc_array_wafflecap_8_8_0[7|9]/sample VDD col_n[7] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[8|27] adc_array_wafflecap_8_8_0[8|9]/sample_n colon_n[8]
-+ vcom row_n[27] ctop adc_array_wafflecap_8_8_0[8|9]/sample VDD col_n[8] VSS adc_array_wafflecap_8_8
++ vcm row_n[27] ctop adc_array_wafflecap_8_8_0[8|9]/sample VDD col_n[8] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[9|27] adc_array_wafflecap_8_8_0[9|9]/sample_n colon_n[9]
-+ vcom row_n[27] ctop adc_array_wafflecap_8_8_0[9|9]/sample VDD col_n[9] VSS adc_array_wafflecap_8_8
++ vcm row_n[27] ctop adc_array_wafflecap_8_8_0[9|9]/sample VDD col_n[9] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[10|27] adc_array_wafflecap_8_8_0[10|9]/sample_n colon_n[10]
-+ vcom row_n[27] ctop adc_array_wafflecap_8_8_0[10|9]/sample VDD col_n[10] VSS adc_array_wafflecap_8_8
++ vcm row_n[27] ctop adc_array_wafflecap_8_8_0[10|9]/sample VDD col_n[10] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[11|27] adc_array_wafflecap_8_8_0[11|9]/sample_n colon_n[11]
-+ vcom row_n[27] ctop adc_array_wafflecap_8_8_0[11|9]/sample VDD col_n[11] VSS adc_array_wafflecap_8_8
++ vcm row_n[27] ctop adc_array_wafflecap_8_8_0[11|9]/sample VDD col_n[11] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[12|27] adc_array_wafflecap_8_8_0[12|9]/sample_n colon_n[12]
-+ vcom row_n[27] ctop adc_array_wafflecap_8_8_0[12|9]/sample VDD col_n[12] VSS adc_array_wafflecap_8_8
++ vcm row_n[27] ctop adc_array_wafflecap_8_8_0[12|9]/sample VDD col_n[12] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[13|27] adc_array_wafflecap_8_8_0[13|9]/sample_n colon_n[13]
-+ vcom row_n[27] ctop adc_array_wafflecap_8_8_0[13|9]/sample VDD col_n[13] VSS adc_array_wafflecap_8_8
++ vcm row_n[27] ctop adc_array_wafflecap_8_8_0[13|9]/sample VDD col_n[13] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[14|27] adc_array_wafflecap_8_8_0[14|9]/sample_n colon_n[14]
-+ vcom row_n[27] ctop adc_array_wafflecap_8_8_0[14|9]/sample VDD col_n[14] VSS adc_array_wafflecap_8_8
++ vcm row_n[27] ctop adc_array_wafflecap_8_8_0[14|9]/sample VDD col_n[14] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[15|27] adc_array_wafflecap_8_8_0[15|9]/sample_n colon_n[15]
-+ vcom row_n[27] ctop adc_array_wafflecap_8_8_0[15|9]/sample VDD col_n[15] VSS adc_array_wafflecap_8_8
++ vcm row_n[27] ctop adc_array_wafflecap_8_8_0[15|9]/sample VDD col_n[15] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[0|28] adc_array_wafflecap_8_8_0[0|9]/sample_n colon_n[0]
-+ vcom row_n[28] ctop adc_array_wafflecap_8_8_0[0|9]/sample VDD col_n[0] VSS adc_array_wafflecap_8_8
++ vcm row_n[28] ctop adc_array_wafflecap_8_8_0[0|9]/sample VDD col_n[0] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[1|28] adc_array_wafflecap_8_8_0[1|9]/sample_n colon_n[1]
-+ vcom row_n[28] ctop adc_array_wafflecap_8_8_0[1|9]/sample VDD col_n[1] VSS adc_array_wafflecap_8_8
++ vcm row_n[28] ctop adc_array_wafflecap_8_8_0[1|9]/sample VDD col_n[1] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[2|28] adc_array_wafflecap_8_8_0[2|9]/sample_n colon_n[2]
-+ vcom row_n[28] ctop adc_array_wafflecap_8_8_0[2|9]/sample VDD col_n[2] VSS adc_array_wafflecap_8_8
++ vcm row_n[28] ctop adc_array_wafflecap_8_8_0[2|9]/sample VDD col_n[2] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[3|28] adc_array_wafflecap_8_8_0[3|9]/sample_n colon_n[3]
-+ vcom row_n[28] ctop adc_array_wafflecap_8_8_0[3|9]/sample VDD col_n[3] VSS adc_array_wafflecap_8_8
++ vcm row_n[28] ctop adc_array_wafflecap_8_8_0[3|9]/sample VDD col_n[3] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[4|28] adc_array_wafflecap_8_8_0[4|9]/sample_n colon_n[4]
-+ vcom row_n[28] ctop adc_array_wafflecap_8_8_0[4|9]/sample VDD col_n[4] VSS adc_array_wafflecap_8_8
++ vcm row_n[28] ctop adc_array_wafflecap_8_8_0[4|9]/sample VDD col_n[4] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[5|28] adc_array_wafflecap_8_8_0[5|9]/sample_n colon_n[5]
-+ vcom row_n[28] ctop adc_array_wafflecap_8_8_0[5|9]/sample VDD col_n[5] VSS adc_array_wafflecap_8_8
++ vcm row_n[28] ctop adc_array_wafflecap_8_8_0[5|9]/sample VDD col_n[5] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[6|28] adc_array_wafflecap_8_8_0[6|9]/sample_n colon_n[6]
-+ vcom row_n[28] ctop adc_array_wafflecap_8_8_0[6|9]/sample VDD col_n[6] VSS adc_array_wafflecap_8_8
++ vcm row_n[28] ctop adc_array_wafflecap_8_8_0[6|9]/sample VDD col_n[6] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[7|28] adc_array_wafflecap_8_8_0[7|9]/sample_n colon_n[7]
-+ vcom row_n[28] ctop adc_array_wafflecap_8_8_0[7|9]/sample VDD col_n[7] VSS adc_array_wafflecap_8_8
++ vcm row_n[28] ctop adc_array_wafflecap_8_8_0[7|9]/sample VDD col_n[7] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[8|28] adc_array_wafflecap_8_8_0[8|9]/sample_n colon_n[8]
-+ vcom row_n[28] ctop adc_array_wafflecap_8_8_0[8|9]/sample VDD col_n[8] VSS adc_array_wafflecap_8_8
++ vcm row_n[28] ctop adc_array_wafflecap_8_8_0[8|9]/sample VDD col_n[8] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[9|28] adc_array_wafflecap_8_8_0[9|9]/sample_n colon_n[9]
-+ vcom row_n[28] ctop adc_array_wafflecap_8_8_0[9|9]/sample VDD col_n[9] VSS adc_array_wafflecap_8_8
++ vcm row_n[28] ctop adc_array_wafflecap_8_8_0[9|9]/sample VDD col_n[9] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[10|28] adc_array_wafflecap_8_8_0[10|9]/sample_n colon_n[10]
-+ vcom row_n[28] ctop adc_array_wafflecap_8_8_0[10|9]/sample VDD col_n[10] VSS adc_array_wafflecap_8_8
++ vcm row_n[28] ctop adc_array_wafflecap_8_8_0[10|9]/sample VDD col_n[10] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[11|28] adc_array_wafflecap_8_8_0[11|9]/sample_n colon_n[11]
-+ vcom row_n[28] ctop adc_array_wafflecap_8_8_0[11|9]/sample VDD col_n[11] VSS adc_array_wafflecap_8_8
++ vcm row_n[28] ctop adc_array_wafflecap_8_8_0[11|9]/sample VDD col_n[11] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[12|28] adc_array_wafflecap_8_8_0[12|9]/sample_n colon_n[12]
-+ vcom row_n[28] ctop adc_array_wafflecap_8_8_0[12|9]/sample VDD col_n[12] VSS adc_array_wafflecap_8_8
++ vcm row_n[28] ctop adc_array_wafflecap_8_8_0[12|9]/sample VDD col_n[12] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[13|28] adc_array_wafflecap_8_8_0[13|9]/sample_n colon_n[13]
-+ vcom row_n[28] ctop adc_array_wafflecap_8_8_0[13|9]/sample VDD col_n[13] VSS adc_array_wafflecap_8_8
++ vcm row_n[28] ctop adc_array_wafflecap_8_8_0[13|9]/sample VDD col_n[13] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[14|28] adc_array_wafflecap_8_8_0[14|9]/sample_n colon_n[14]
-+ vcom row_n[28] ctop adc_array_wafflecap_8_8_0[14|9]/sample VDD col_n[14] VSS adc_array_wafflecap_8_8
++ vcm row_n[28] ctop adc_array_wafflecap_8_8_0[14|9]/sample VDD col_n[14] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[15|28] adc_array_wafflecap_8_8_0[15|9]/sample_n colon_n[15]
-+ vcom row_n[28] ctop adc_array_wafflecap_8_8_0[15|9]/sample VDD col_n[15] VSS adc_array_wafflecap_8_8
++ vcm row_n[28] ctop adc_array_wafflecap_8_8_0[15|9]/sample VDD col_n[15] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[0|29] adc_array_wafflecap_8_8_0[0|9]/sample_n colon_n[0]
-+ vcom row_n[29] ctop adc_array_wafflecap_8_8_0[0|9]/sample VDD col_n[0] VSS adc_array_wafflecap_8_8
++ vcm row_n[29] ctop adc_array_wafflecap_8_8_0[0|9]/sample VDD col_n[0] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[1|29] adc_array_wafflecap_8_8_0[1|9]/sample_n colon_n[1]
-+ vcom row_n[29] ctop adc_array_wafflecap_8_8_0[1|9]/sample VDD col_n[1] VSS adc_array_wafflecap_8_8
++ vcm row_n[29] ctop adc_array_wafflecap_8_8_0[1|9]/sample VDD col_n[1] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[2|29] adc_array_wafflecap_8_8_0[2|9]/sample_n colon_n[2]
-+ vcom row_n[29] ctop adc_array_wafflecap_8_8_0[2|9]/sample VDD col_n[2] VSS adc_array_wafflecap_8_8
++ vcm row_n[29] ctop adc_array_wafflecap_8_8_0[2|9]/sample VDD col_n[2] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[3|29] adc_array_wafflecap_8_8_0[3|9]/sample_n colon_n[3]
-+ vcom row_n[29] ctop adc_array_wafflecap_8_8_0[3|9]/sample VDD col_n[3] VSS adc_array_wafflecap_8_8
++ vcm row_n[29] ctop adc_array_wafflecap_8_8_0[3|9]/sample VDD col_n[3] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[4|29] adc_array_wafflecap_8_8_0[4|9]/sample_n colon_n[4]
-+ vcom row_n[29] ctop adc_array_wafflecap_8_8_0[4|9]/sample VDD col_n[4] VSS adc_array_wafflecap_8_8
++ vcm row_n[29] ctop adc_array_wafflecap_8_8_0[4|9]/sample VDD col_n[4] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[5|29] adc_array_wafflecap_8_8_0[5|9]/sample_n colon_n[5]
-+ vcom row_n[29] ctop adc_array_wafflecap_8_8_0[5|9]/sample VDD col_n[5] VSS adc_array_wafflecap_8_8
++ vcm row_n[29] ctop adc_array_wafflecap_8_8_0[5|9]/sample VDD col_n[5] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[6|29] adc_array_wafflecap_8_8_0[6|9]/sample_n colon_n[6]
-+ vcom row_n[29] ctop adc_array_wafflecap_8_8_0[6|9]/sample VDD col_n[6] VSS adc_array_wafflecap_8_8
++ vcm row_n[29] ctop adc_array_wafflecap_8_8_0[6|9]/sample VDD col_n[6] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[7|29] adc_array_wafflecap_8_8_0[7|9]/sample_n colon_n[7]
-+ vcom row_n[29] ctop adc_array_wafflecap_8_8_0[7|9]/sample VDD col_n[7] VSS adc_array_wafflecap_8_8
++ vcm row_n[29] ctop adc_array_wafflecap_8_8_0[7|9]/sample VDD col_n[7] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[8|29] adc_array_wafflecap_8_8_0[8|9]/sample_n colon_n[8]
-+ vcom row_n[29] ctop adc_array_wafflecap_8_8_0[8|9]/sample VDD col_n[8] VSS adc_array_wafflecap_8_8
++ vcm row_n[29] ctop adc_array_wafflecap_8_8_0[8|9]/sample VDD col_n[8] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[9|29] adc_array_wafflecap_8_8_0[9|9]/sample_n colon_n[9]
-+ vcom row_n[29] ctop adc_array_wafflecap_8_8_0[9|9]/sample VDD col_n[9] VSS adc_array_wafflecap_8_8
++ vcm row_n[29] ctop adc_array_wafflecap_8_8_0[9|9]/sample VDD col_n[9] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[10|29] adc_array_wafflecap_8_8_0[10|9]/sample_n colon_n[10]
-+ vcom row_n[29] ctop adc_array_wafflecap_8_8_0[10|9]/sample VDD col_n[10] VSS adc_array_wafflecap_8_8
++ vcm row_n[29] ctop adc_array_wafflecap_8_8_0[10|9]/sample VDD col_n[10] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[11|29] adc_array_wafflecap_8_8_0[11|9]/sample_n colon_n[11]
-+ vcom row_n[29] ctop adc_array_wafflecap_8_8_0[11|9]/sample VDD col_n[11] VSS adc_array_wafflecap_8_8
++ vcm row_n[29] ctop adc_array_wafflecap_8_8_0[11|9]/sample VDD col_n[11] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[12|29] adc_array_wafflecap_8_8_0[12|9]/sample_n colon_n[12]
-+ vcom row_n[29] ctop adc_array_wafflecap_8_8_0[12|9]/sample VDD col_n[12] VSS adc_array_wafflecap_8_8
++ vcm row_n[29] ctop adc_array_wafflecap_8_8_0[12|9]/sample VDD col_n[12] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[13|29] adc_array_wafflecap_8_8_0[13|9]/sample_n colon_n[13]
-+ vcom row_n[29] ctop adc_array_wafflecap_8_8_0[13|9]/sample VDD col_n[13] VSS adc_array_wafflecap_8_8
++ vcm row_n[29] ctop adc_array_wafflecap_8_8_0[13|9]/sample VDD col_n[13] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[14|29] adc_array_wafflecap_8_8_0[14|9]/sample_n colon_n[14]
-+ vcom row_n[29] ctop adc_array_wafflecap_8_8_0[14|9]/sample VDD col_n[14] VSS adc_array_wafflecap_8_8
++ vcm row_n[29] ctop adc_array_wafflecap_8_8_0[14|9]/sample VDD col_n[14] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[15|29] adc_array_wafflecap_8_8_0[15|9]/sample_n colon_n[15]
-+ vcom row_n[29] ctop adc_array_wafflecap_8_8_0[15|9]/sample VDD col_n[15] VSS adc_array_wafflecap_8_8
++ vcm row_n[29] ctop adc_array_wafflecap_8_8_0[15|9]/sample VDD col_n[15] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[0|30] adc_array_wafflecap_8_8_0[0|9]/sample_n colon_n[0]
-+ vcom row_n[30] ctop adc_array_wafflecap_8_8_0[0|9]/sample VDD col_n[0] VSS adc_array_wafflecap_8_8
++ vcm row_n[30] ctop adc_array_wafflecap_8_8_0[0|9]/sample VDD col_n[0] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[1|30] adc_array_wafflecap_8_8_0[1|9]/sample_n colon_n[1]
-+ vcom row_n[30] ctop adc_array_wafflecap_8_8_0[1|9]/sample VDD col_n[1] VSS adc_array_wafflecap_8_8
++ vcm row_n[30] ctop adc_array_wafflecap_8_8_0[1|9]/sample VDD col_n[1] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[2|30] adc_array_wafflecap_8_8_0[2|9]/sample_n colon_n[2]
-+ vcom row_n[30] ctop adc_array_wafflecap_8_8_0[2|9]/sample VDD col_n[2] VSS adc_array_wafflecap_8_8
++ vcm row_n[30] ctop adc_array_wafflecap_8_8_0[2|9]/sample VDD col_n[2] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[3|30] adc_array_wafflecap_8_8_0[3|9]/sample_n colon_n[3]
-+ vcom row_n[30] ctop adc_array_wafflecap_8_8_0[3|9]/sample VDD col_n[3] VSS adc_array_wafflecap_8_8
++ vcm row_n[30] ctop adc_array_wafflecap_8_8_0[3|9]/sample VDD col_n[3] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[4|30] adc_array_wafflecap_8_8_0[4|9]/sample_n colon_n[4]
-+ vcom row_n[30] ctop adc_array_wafflecap_8_8_0[4|9]/sample VDD col_n[4] VSS adc_array_wafflecap_8_8
++ vcm row_n[30] ctop adc_array_wafflecap_8_8_0[4|9]/sample VDD col_n[4] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[5|30] adc_array_wafflecap_8_8_0[5|9]/sample_n colon_n[5]
-+ vcom row_n[30] ctop adc_array_wafflecap_8_8_0[5|9]/sample VDD col_n[5] VSS adc_array_wafflecap_8_8
++ vcm row_n[30] ctop adc_array_wafflecap_8_8_0[5|9]/sample VDD col_n[5] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[6|30] adc_array_wafflecap_8_8_0[6|9]/sample_n colon_n[6]
-+ vcom row_n[30] ctop adc_array_wafflecap_8_8_0[6|9]/sample VDD col_n[6] VSS adc_array_wafflecap_8_8
++ vcm row_n[30] ctop adc_array_wafflecap_8_8_0[6|9]/sample VDD col_n[6] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[7|30] adc_array_wafflecap_8_8_0[7|9]/sample_n colon_n[7]
-+ vcom row_n[30] ctop adc_array_wafflecap_8_8_0[7|9]/sample VDD col_n[7] VSS adc_array_wafflecap_8_8
++ vcm row_n[30] ctop adc_array_wafflecap_8_8_0[7|9]/sample VDD col_n[7] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[8|30] adc_array_wafflecap_8_8_0[8|9]/sample_n colon_n[8]
-+ vcom row_n[30] ctop adc_array_wafflecap_8_8_0[8|9]/sample VDD col_n[8] VSS adc_array_wafflecap_8_8
++ vcm row_n[30] ctop adc_array_wafflecap_8_8_0[8|9]/sample VDD col_n[8] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[9|30] adc_array_wafflecap_8_8_0[9|9]/sample_n colon_n[9]
-+ vcom row_n[30] ctop adc_array_wafflecap_8_8_0[9|9]/sample VDD col_n[9] VSS adc_array_wafflecap_8_8
++ vcm row_n[30] ctop adc_array_wafflecap_8_8_0[9|9]/sample VDD col_n[9] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[10|30] adc_array_wafflecap_8_8_0[10|9]/sample_n colon_n[10]
-+ vcom row_n[30] ctop adc_array_wafflecap_8_8_0[10|9]/sample VDD col_n[10] VSS adc_array_wafflecap_8_8
++ vcm row_n[30] ctop adc_array_wafflecap_8_8_0[10|9]/sample VDD col_n[10] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[11|30] adc_array_wafflecap_8_8_0[11|9]/sample_n colon_n[11]
-+ vcom row_n[30] ctop adc_array_wafflecap_8_8_0[11|9]/sample VDD col_n[11] VSS adc_array_wafflecap_8_8
++ vcm row_n[30] ctop adc_array_wafflecap_8_8_0[11|9]/sample VDD col_n[11] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[12|30] adc_array_wafflecap_8_8_0[12|9]/sample_n colon_n[12]
-+ vcom row_n[30] ctop adc_array_wafflecap_8_8_0[12|9]/sample VDD col_n[12] VSS adc_array_wafflecap_8_8
++ vcm row_n[30] ctop adc_array_wafflecap_8_8_0[12|9]/sample VDD col_n[12] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[13|30] adc_array_wafflecap_8_8_0[13|9]/sample_n colon_n[13]
-+ vcom row_n[30] ctop adc_array_wafflecap_8_8_0[13|9]/sample VDD col_n[13] VSS adc_array_wafflecap_8_8
++ vcm row_n[30] ctop adc_array_wafflecap_8_8_0[13|9]/sample VDD col_n[13] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[14|30] adc_array_wafflecap_8_8_0[14|9]/sample_n colon_n[14]
-+ vcom row_n[30] ctop adc_array_wafflecap_8_8_0[14|9]/sample VDD col_n[14] VSS adc_array_wafflecap_8_8
++ vcm row_n[30] ctop adc_array_wafflecap_8_8_0[14|9]/sample VDD col_n[14] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[15|30] adc_array_wafflecap_8_8_0[15|9]/sample_n colon_n[15]
-+ vcom row_n[30] ctop adc_array_wafflecap_8_8_0[15|9]/sample VDD col_n[15] VSS adc_array_wafflecap_8_8
++ vcm row_n[30] ctop adc_array_wafflecap_8_8_0[15|9]/sample VDD col_n[15] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[0|31] adc_array_wafflecap_8_8_0[0|9]/sample_n colon_n[0]
-+ vcom row_n[31] ctop adc_array_wafflecap_8_8_0[0|9]/sample VDD col_n[0] VSS adc_array_wafflecap_8_8
++ vcm row_n[31] ctop adc_array_wafflecap_8_8_0[0|9]/sample VDD col_n[0] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[1|31] adc_array_wafflecap_8_8_0[1|9]/sample_n colon_n[1]
-+ vcom row_n[31] ctop adc_array_wafflecap_8_8_0[1|9]/sample VDD col_n[1] VSS adc_array_wafflecap_8_8
++ vcm row_n[31] ctop adc_array_wafflecap_8_8_0[1|9]/sample VDD col_n[1] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[2|31] adc_array_wafflecap_8_8_0[2|9]/sample_n colon_n[2]
-+ vcom row_n[31] ctop adc_array_wafflecap_8_8_0[2|9]/sample VDD col_n[2] VSS adc_array_wafflecap_8_8
++ vcm row_n[31] ctop adc_array_wafflecap_8_8_0[2|9]/sample VDD col_n[2] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[3|31] adc_array_wafflecap_8_8_0[3|9]/sample_n colon_n[3]
-+ vcom row_n[31] ctop adc_array_wafflecap_8_8_0[3|9]/sample VDD col_n[3] VSS adc_array_wafflecap_8_8
++ vcm row_n[31] ctop adc_array_wafflecap_8_8_0[3|9]/sample VDD col_n[3] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[4|31] adc_array_wafflecap_8_8_0[4|9]/sample_n colon_n[4]
-+ vcom row_n[31] ctop adc_array_wafflecap_8_8_0[4|9]/sample VDD col_n[4] VSS adc_array_wafflecap_8_8
++ vcm row_n[31] ctop adc_array_wafflecap_8_8_0[4|9]/sample VDD col_n[4] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[5|31] adc_array_wafflecap_8_8_0[5|9]/sample_n colon_n[5]
-+ vcom row_n[31] ctop adc_array_wafflecap_8_8_0[5|9]/sample VDD col_n[5] VSS adc_array_wafflecap_8_8
++ vcm row_n[31] ctop adc_array_wafflecap_8_8_0[5|9]/sample VDD col_n[5] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[6|31] adc_array_wafflecap_8_8_0[6|9]/sample_n colon_n[6]
-+ vcom row_n[31] ctop adc_array_wafflecap_8_8_0[6|9]/sample VDD col_n[6] VSS adc_array_wafflecap_8_8
++ vcm row_n[31] ctop adc_array_wafflecap_8_8_0[6|9]/sample VDD col_n[6] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[7|31] adc_array_wafflecap_8_8_0[7|9]/sample_n colon_n[7]
-+ vcom row_n[31] ctop adc_array_wafflecap_8_8_0[7|9]/sample VDD col_n[7] VSS adc_array_wafflecap_8_8
++ vcm row_n[31] ctop adc_array_wafflecap_8_8_0[7|9]/sample VDD col_n[7] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[8|31] adc_array_wafflecap_8_8_0[8|9]/sample_n colon_n[8]
-+ vcom row_n[31] ctop adc_array_wafflecap_8_8_0[8|9]/sample VDD col_n[8] VSS adc_array_wafflecap_8_8
++ vcm row_n[31] ctop adc_array_wafflecap_8_8_0[8|9]/sample VDD col_n[8] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[9|31] adc_array_wafflecap_8_8_0[9|9]/sample_n colon_n[9]
-+ vcom row_n[31] ctop adc_array_wafflecap_8_8_0[9|9]/sample VDD col_n[9] VSS adc_array_wafflecap_8_8
++ vcm row_n[31] ctop adc_array_wafflecap_8_8_0[9|9]/sample VDD col_n[9] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[10|31] adc_array_wafflecap_8_8_0[10|9]/sample_n colon_n[10]
-+ vcom row_n[31] ctop adc_array_wafflecap_8_8_0[10|9]/sample VDD col_n[10] VSS adc_array_wafflecap_8_8
++ vcm row_n[31] ctop adc_array_wafflecap_8_8_0[10|9]/sample VDD col_n[10] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[11|31] adc_array_wafflecap_8_8_0[11|9]/sample_n colon_n[11]
-+ vcom row_n[31] ctop adc_array_wafflecap_8_8_0[11|9]/sample VDD col_n[11] VSS adc_array_wafflecap_8_8
++ vcm row_n[31] ctop adc_array_wafflecap_8_8_0[11|9]/sample VDD col_n[11] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[12|31] adc_array_wafflecap_8_8_0[12|9]/sample_n colon_n[12]
-+ vcom row_n[31] ctop adc_array_wafflecap_8_8_0[12|9]/sample VDD col_n[12] VSS adc_array_wafflecap_8_8
++ vcm row_n[31] ctop adc_array_wafflecap_8_8_0[12|9]/sample VDD col_n[12] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[13|31] adc_array_wafflecap_8_8_0[13|9]/sample_n colon_n[13]
-+ vcom row_n[31] ctop adc_array_wafflecap_8_8_0[13|9]/sample VDD col_n[13] VSS adc_array_wafflecap_8_8
++ vcm row_n[31] ctop adc_array_wafflecap_8_8_0[13|9]/sample VDD col_n[13] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[14|31] adc_array_wafflecap_8_8_0[14|9]/sample_n colon_n[14]
-+ vcom row_n[31] ctop adc_array_wafflecap_8_8_0[14|9]/sample VDD col_n[14] VSS adc_array_wafflecap_8_8
++ vcm row_n[31] ctop adc_array_wafflecap_8_8_0[14|9]/sample VDD col_n[14] VSS adc_array_wafflecap_8_8
 Xadc_array_wafflecap_8_8_0[15|31] adc_array_wafflecap_8_8_0[15|9]/sample_n colon_n[15]
-+ vcom row_n[31] ctop adc_array_wafflecap_8_8_0[15|9]/sample VDD col_n[15] VSS adc_array_wafflecap_8_8
-Xadc_array_wafflecap_8_Drv_0[0] adc_array_wafflecap_8_Drv_0[0]/ctop colon_n[0] vcom
++ vcm row_n[31] ctop adc_array_wafflecap_8_8_0[15|9]/sample VDD col_n[15] VSS adc_array_wafflecap_8_8
+Xadc_array_wafflecap_8_Drv_0[0] adc_array_wafflecap_8_Drv_0[0]/ctop colon_n[0] vcm
 + VDD sample sample_n adc_array_wafflecap_8_8_0[0|9]/sample_n adc_array_wafflecap_8_8_0[0|9]/sample
 + VDD col_n[0] VSS adc_array_wafflecap_8_Drv
-Xadc_array_wafflecap_8_Drv_0[1] adc_array_wafflecap_8_Drv_0[1]/ctop colon_n[1] vcom
+Xadc_array_wafflecap_8_Drv_0[1] adc_array_wafflecap_8_Drv_0[1]/ctop colon_n[1] vcm
 + VDD sample sample_n adc_array_wafflecap_8_8_0[1|9]/sample_n adc_array_wafflecap_8_8_0[1|9]/sample
 + VDD col_n[1] VSS adc_array_wafflecap_8_Drv
-Xadc_array_wafflecap_8_Drv_0[2] adc_array_wafflecap_8_Drv_0[2]/ctop colon_n[2] vcom
+Xadc_array_wafflecap_8_Drv_0[2] adc_array_wafflecap_8_Drv_0[2]/ctop colon_n[2] vcm
 + VDD sample sample_n adc_array_wafflecap_8_8_0[2|9]/sample_n adc_array_wafflecap_8_8_0[2|9]/sample
 + VDD col_n[2] VSS adc_array_wafflecap_8_Drv
-Xadc_array_wafflecap_8_Drv_0[3] adc_array_wafflecap_8_Drv_0[3]/ctop colon_n[3] vcom
+Xadc_array_wafflecap_8_Drv_0[3] adc_array_wafflecap_8_Drv_0[3]/ctop colon_n[3] vcm
 + VDD sample sample_n adc_array_wafflecap_8_8_0[3|9]/sample_n adc_array_wafflecap_8_8_0[3|9]/sample
 + VDD col_n[3] VSS adc_array_wafflecap_8_Drv
-Xadc_array_wafflecap_8_Drv_0[4] adc_array_wafflecap_8_Drv_0[4]/ctop colon_n[4] vcom
+Xadc_array_wafflecap_8_Drv_0[4] adc_array_wafflecap_8_Drv_0[4]/ctop colon_n[4] vcm
 + VDD sample sample_n adc_array_wafflecap_8_8_0[4|9]/sample_n adc_array_wafflecap_8_8_0[4|9]/sample
 + VDD col_n[4] VSS adc_array_wafflecap_8_Drv
-Xadc_array_wafflecap_8_Drv_0[5] adc_array_wafflecap_8_Drv_0[5]/ctop colon_n[5] vcom
+Xadc_array_wafflecap_8_Drv_0[5] adc_array_wafflecap_8_Drv_0[5]/ctop colon_n[5] vcm
 + VDD sample sample_n adc_array_wafflecap_8_8_0[5|9]/sample_n adc_array_wafflecap_8_8_0[5|9]/sample
 + VDD col_n[5] VSS adc_array_wafflecap_8_Drv
-Xadc_array_wafflecap_8_Drv_0[6] adc_array_wafflecap_8_Drv_0[6]/ctop colon_n[6] vcom
+Xadc_array_wafflecap_8_Drv_0[6] adc_array_wafflecap_8_Drv_0[6]/ctop colon_n[6] vcm
 + VDD sample sample_n adc_array_wafflecap_8_8_0[6|9]/sample_n adc_array_wafflecap_8_8_0[6|9]/sample
 + VDD col_n[6] VSS adc_array_wafflecap_8_Drv
-Xadc_array_wafflecap_8_Drv_0[7] adc_array_wafflecap_8_Drv_0[7]/ctop colon_n[7] vcom
+Xadc_array_wafflecap_8_Drv_0[7] adc_array_wafflecap_8_Drv_0[7]/ctop colon_n[7] vcm
 + VDD sample sample_n adc_array_wafflecap_8_8_0[7|9]/sample_n adc_array_wafflecap_8_8_0[7|9]/sample
 + VDD col_n[7] VSS adc_array_wafflecap_8_Drv
-Xadc_array_wafflecap_8_Drv_0[8] adc_array_wafflecap_8_Drv_0[8]/ctop colon_n[8] vcom
+Xadc_array_wafflecap_8_Drv_0[8] adc_array_wafflecap_8_Drv_0[8]/ctop colon_n[8] vcm
 + VDD sample sample_n adc_array_wafflecap_8_8_0[8|9]/sample_n adc_array_wafflecap_8_8_0[8|9]/sample
 + VDD col_n[8] VSS adc_array_wafflecap_8_Drv
-Xadc_array_wafflecap_8_Drv_0[9] adc_array_wafflecap_8_Drv_0[9]/ctop colon_n[9] vcom
+Xadc_array_wafflecap_8_Drv_0[9] adc_array_wafflecap_8_Drv_0[9]/ctop colon_n[9] vcm
 + VDD sample sample_n adc_array_wafflecap_8_8_0[9|9]/sample_n adc_array_wafflecap_8_8_0[9|9]/sample
 + VDD col_n[9] VSS adc_array_wafflecap_8_Drv
 Xadc_array_wafflecap_8_Drv_0[10] adc_array_wafflecap_8_Drv_0[10]/ctop colon_n[10]
-+ vcom VDD sample sample_n adc_array_wafflecap_8_8_0[10|9]/sample_n adc_array_wafflecap_8_8_0[10|9]/sample
++ vcm VDD sample sample_n adc_array_wafflecap_8_8_0[10|9]/sample_n adc_array_wafflecap_8_8_0[10|9]/sample
 + VDD col_n[10] VSS adc_array_wafflecap_8_Drv
 Xadc_array_wafflecap_8_Drv_0[11] adc_array_wafflecap_8_Drv_0[11]/ctop colon_n[11]
-+ vcom VDD sample sample_n adc_array_wafflecap_8_8_0[11|9]/sample_n adc_array_wafflecap_8_8_0[11|9]/sample
++ vcm VDD sample sample_n adc_array_wafflecap_8_8_0[11|9]/sample_n adc_array_wafflecap_8_8_0[11|9]/sample
 + VDD col_n[11] VSS adc_array_wafflecap_8_Drv
 Xadc_array_wafflecap_8_Drv_0[12] adc_array_wafflecap_8_Drv_0[12]/ctop colon_n[12]
-+ vcom VDD sample sample_n adc_array_wafflecap_8_8_0[12|9]/sample_n adc_array_wafflecap_8_8_0[12|9]/sample
++ vcm VDD sample sample_n adc_array_wafflecap_8_8_0[12|9]/sample_n adc_array_wafflecap_8_8_0[12|9]/sample
 + VDD col_n[12] VSS adc_array_wafflecap_8_Drv
 Xadc_array_wafflecap_8_Drv_0[13] adc_array_wafflecap_8_Drv_0[13]/ctop colon_n[13]
-+ vcom VDD sample sample_n adc_array_wafflecap_8_8_0[13|9]/sample_n adc_array_wafflecap_8_8_0[13|9]/sample
++ vcm VDD sample sample_n adc_array_wafflecap_8_8_0[13|9]/sample_n adc_array_wafflecap_8_8_0[13|9]/sample
 + VDD col_n[13] VSS adc_array_wafflecap_8_Drv
 Xadc_array_wafflecap_8_Drv_0[14] adc_array_wafflecap_8_Drv_0[14]/ctop colon_n[14]
-+ vcom VDD sample sample_n adc_array_wafflecap_8_8_0[14|9]/sample_n adc_array_wafflecap_8_8_0[14|9]/sample
++ vcm VDD sample sample_n adc_array_wafflecap_8_8_0[14|9]/sample_n adc_array_wafflecap_8_8_0[14|9]/sample
 + VDD col_n[14] VSS adc_array_wafflecap_8_Drv
 Xadc_array_wafflecap_8_Drv_0[15] adc_array_wafflecap_8_Drv_0[15]/ctop colon_n[15]
-+ vcom VDD sample sample_n adc_array_wafflecap_8_8_0[15|9]/sample_n adc_array_wafflecap_8_8_0[15|9]/sample
++ vcm VDD sample sample_n adc_array_wafflecap_8_8_0[15|9]/sample_n adc_array_wafflecap_8_8_0[15|9]/sample
 + VDD col_n[15] VSS adc_array_wafflecap_8_Drv
-Xadc_array_wafflecap_8_Dummy_0[0] VDD VSS vcom VDD adc_array_wafflecap_8_Dummy_0[0]/ctop
+Xadc_array_wafflecap_8_Dummy_0[0] VDD VSS vcm VDD adc_array_wafflecap_8_Dummy_0[0]/ctop
 + VSS VDD VSS VSS adc_array_wafflecap_8_Dummy
-Xadc_array_wafflecap_8_Dummy_0[1] VDD VSS vcom row_n[0] adc_array_wafflecap_8_Dummy_0[1]/ctop
+Xadc_array_wafflecap_8_Dummy_0[1] VDD VSS vcm row_n[0] adc_array_wafflecap_8_Dummy_0[1]/ctop
 + VSS VDD VSS VSS adc_array_wafflecap_8_Dummy
-Xadc_array_wafflecap_8_Dummy_0[2] VDD VSS vcom row_n[1] adc_array_wafflecap_8_Dummy_0[2]/ctop
+Xadc_array_wafflecap_8_Dummy_0[2] VDD VSS vcm row_n[1] adc_array_wafflecap_8_Dummy_0[2]/ctop
 + VSS VDD VSS VSS adc_array_wafflecap_8_Dummy
-Xadc_array_wafflecap_8_Dummy_0[3] VDD VSS vcom row_n[2] adc_array_wafflecap_8_Dummy_0[3]/ctop
+Xadc_array_wafflecap_8_Dummy_0[3] VDD VSS vcm row_n[2] adc_array_wafflecap_8_Dummy_0[3]/ctop
 + VSS VDD VSS VSS adc_array_wafflecap_8_Dummy
-Xadc_array_wafflecap_8_Dummy_0[4] VDD VSS vcom row_n[3] adc_array_wafflecap_8_Dummy_0[4]/ctop
+Xadc_array_wafflecap_8_Dummy_0[4] VDD VSS vcm row_n[3] adc_array_wafflecap_8_Dummy_0[4]/ctop
 + VSS VDD VSS VSS adc_array_wafflecap_8_Dummy
-Xadc_array_wafflecap_8_Dummy_0[5] VDD VSS vcom row_n[4] adc_array_wafflecap_8_Dummy_0[5]/ctop
+Xadc_array_wafflecap_8_Dummy_0[5] VDD VSS vcm row_n[4] adc_array_wafflecap_8_Dummy_0[5]/ctop
 + VSS VDD VSS VSS adc_array_wafflecap_8_Dummy
-Xadc_array_wafflecap_8_Dummy_0[6] VDD VSS vcom row_n[5] adc_array_wafflecap_8_Dummy_0[6]/ctop
+Xadc_array_wafflecap_8_Dummy_0[6] VDD VSS vcm row_n[5] adc_array_wafflecap_8_Dummy_0[6]/ctop
 + VSS VDD VSS VSS adc_array_wafflecap_8_Dummy
-Xadc_array_wafflecap_8_Dummy_0[7] VDD VSS vcom row_n[6] adc_array_wafflecap_8_Dummy_0[7]/ctop
+Xadc_array_wafflecap_8_Dummy_0[7] VDD VSS vcm row_n[6] adc_array_wafflecap_8_Dummy_0[7]/ctop
 + VSS VDD VSS VSS adc_array_wafflecap_8_Dummy
-Xadc_array_wafflecap_8_Dummy_0[8] VDD VSS vcom row_n[7] adc_array_wafflecap_8_Dummy_0[8]/ctop
+Xadc_array_wafflecap_8_Dummy_0[8] VDD VSS vcm row_n[7] adc_array_wafflecap_8_Dummy_0[8]/ctop
 + VSS VDD VSS VSS adc_array_wafflecap_8_Dummy
-Xadc_array_wafflecap_8_Dummy_1[0] VDD VSS vcom row_n[9] adc_array_wafflecap_8_Dummy_1[0]/ctop
+Xadc_array_wafflecap_8_Dummy_1[0] VDD VSS vcm row_n[9] adc_array_wafflecap_8_Dummy_1[0]/ctop
 + VSS VDD VSS VSS adc_array_wafflecap_8_Dummy
-Xadc_array_wafflecap_8_Dummy_1[1] VDD VSS vcom row_n[10] adc_array_wafflecap_8_Dummy_1[1]/ctop
+Xadc_array_wafflecap_8_Dummy_1[1] VDD VSS vcm row_n[10] adc_array_wafflecap_8_Dummy_1[1]/ctop
 + VSS VDD VSS VSS adc_array_wafflecap_8_Dummy
-Xadc_array_wafflecap_8_Dummy_1[2] VDD VSS vcom row_n[11] adc_array_wafflecap_8_Dummy_1[2]/ctop
+Xadc_array_wafflecap_8_Dummy_1[2] VDD VSS vcm row_n[11] adc_array_wafflecap_8_Dummy_1[2]/ctop
 + VSS VDD VSS VSS adc_array_wafflecap_8_Dummy
-Xadc_array_wafflecap_8_Dummy_1[3] VDD VSS vcom row_n[12] ctop VSS VDD VSS VSS adc_array_wafflecap_8_Dummy
-Xadc_array_wafflecap_8_Dummy_1[4] VDD VSS vcom row_n[13] adc_array_wafflecap_8_Dummy_1[4]/ctop
+Xadc_array_wafflecap_8_Dummy_1[3] VDD VSS vcm row_n[12] ctop VSS VDD VSS VSS adc_array_wafflecap_8_Dummy
+Xadc_array_wafflecap_8_Dummy_1[4] VDD VSS vcm row_n[13] adc_array_wafflecap_8_Dummy_1[4]/ctop
 + VSS VDD VSS VSS adc_array_wafflecap_8_Dummy
-Xadc_array_wafflecap_8_Dummy_1[5] VDD VSS vcom row_n[14] adc_array_wafflecap_8_Dummy_1[5]/ctop
+Xadc_array_wafflecap_8_Dummy_1[5] VDD VSS vcm row_n[14] adc_array_wafflecap_8_Dummy_1[5]/ctop
 + VSS VDD VSS VSS adc_array_wafflecap_8_Dummy
-Xadc_array_wafflecap_8_Dummy_1[6] VDD VSS vcom row_n[15] adc_array_wafflecap_8_Dummy_1[6]/ctop
+Xadc_array_wafflecap_8_Dummy_1[6] VDD VSS vcm row_n[15] adc_array_wafflecap_8_Dummy_1[6]/ctop
 + VSS VDD VSS VSS adc_array_wafflecap_8_Dummy
-Xadc_array_wafflecap_8_4_0 VDD VSS VSS vcom row_n[8] en_n_bit[2] ctop VSS VDD VSS
-+ adc_array_wafflecap_8_4
-Xadc_array_wafflecap_8_Dummy_2[0] VDD VSS vcom row_n[17] adc_array_wafflecap_8_Dummy_2[0]/ctop
+Xadc_array_wafflecap_8_Dummy_2[0] VDD VSS vcm row_n[17] adc_array_wafflecap_8_Dummy_2[0]/ctop
 + VSS VDD VSS VSS adc_array_wafflecap_8_Dummy
-Xadc_array_wafflecap_8_Dummy_2[1] VDD VSS vcom row_n[18] adc_array_wafflecap_8_Dummy_2[1]/ctop
+Xadc_array_wafflecap_8_Dummy_2[1] VDD VSS vcm row_n[18] adc_array_wafflecap_8_Dummy_2[1]/ctop
 + VSS VDD VSS VSS adc_array_wafflecap_8_Dummy
-Xadc_array_wafflecap_8_Dummy_2[2] VDD VSS vcom row_n[19] adc_array_wafflecap_8_Dummy_2[2]/ctop
+Xadc_array_wafflecap_8_Dummy_2[2] VDD VSS vcm row_n[19] adc_array_wafflecap_8_Dummy_2[2]/ctop
 + VSS VDD VSS VSS adc_array_wafflecap_8_Dummy
-Xadc_array_wafflecap_8_Dummy_2[3] VDD VSS vcom row_n[20] adc_array_wafflecap_8_Dummy_2[3]/ctop
+Xadc_array_wafflecap_8_Dummy_2[3] VDD VSS vcm row_n[20] adc_array_wafflecap_8_Dummy_2[3]/ctop
 + VSS VDD VSS VSS adc_array_wafflecap_8_Dummy
-Xadc_array_wafflecap_8_Dummy_2[4] VDD VSS vcom row_n[21] adc_array_wafflecap_8_Dummy_2[4]/ctop
+Xadc_array_wafflecap_8_Dummy_2[4] VDD VSS vcm row_n[21] adc_array_wafflecap_8_Dummy_2[4]/ctop
 + VSS VDD VSS VSS adc_array_wafflecap_8_Dummy
-Xadc_array_wafflecap_8_Dummy_2[5] VDD VSS vcom row_n[22] adc_array_wafflecap_8_Dummy_2[5]/ctop
+Xadc_array_wafflecap_8_Dummy_2[5] VDD VSS vcm row_n[22] adc_array_wafflecap_8_Dummy_2[5]/ctop
 + VSS VDD VSS VSS adc_array_wafflecap_8_Dummy
-Xadc_array_wafflecap_8_Dummy_2[6] VDD VSS vcom row_n[23] adc_array_wafflecap_8_Dummy_2[6]/ctop
+Xadc_array_wafflecap_8_Dummy_2[6] VDD VSS vcm row_n[23] adc_array_wafflecap_8_Dummy_2[6]/ctop
 + VSS VDD VSS VSS adc_array_wafflecap_8_Dummy
-Xadc_array_wafflecap_8_Dummy_3[0] VDD VSS vcom row_n[25] adc_array_wafflecap_8_Dummy_3[0]/ctop
+Xadc_array_wafflecap_8_4_0 VDD VSS VSS vcm row_n[8] en_n_bit[2] ctop VSS VDD VSS adc_array_wafflecap_8_4
+Xadc_array_wafflecap_8_Dummy_3[0] VDD VSS vcm row_n[25] adc_array_wafflecap_8_Dummy_3[0]/ctop
 + VSS VDD VSS VSS adc_array_wafflecap_8_Dummy
-Xadc_array_wafflecap_8_Dummy_3[1] VDD VSS vcom row_n[26] adc_array_wafflecap_8_Dummy_3[1]/ctop
+Xadc_array_wafflecap_8_Dummy_3[1] VDD VSS vcm row_n[26] adc_array_wafflecap_8_Dummy_3[1]/ctop
 + VSS VDD VSS VSS adc_array_wafflecap_8_Dummy
-Xadc_array_wafflecap_8_Dummy_3[2] VDD VSS vcom row_n[27] ctop VSS VDD VSS VSS adc_array_wafflecap_8_Dummy
-Xadc_array_wafflecap_8_Dummy_3[3] VDD VSS vcom row_n[28] adc_array_wafflecap_8_Dummy_3[3]/ctop
+Xadc_array_wafflecap_8_Dummy_3[2] VDD VSS vcm row_n[27] ctop VSS VDD VSS VSS adc_array_wafflecap_8_Dummy
+Xadc_array_wafflecap_8_Dummy_3[3] VDD VSS vcm row_n[28] adc_array_wafflecap_8_Dummy_3[3]/ctop
 + VSS VDD VSS VSS adc_array_wafflecap_8_Dummy
-Xadc_array_wafflecap_8_Dummy_3[4] VDD VSS vcom row_n[29] adc_array_wafflecap_8_Dummy_3[4]/ctop
+Xadc_array_wafflecap_8_Dummy_3[4] VDD VSS vcm row_n[29] adc_array_wafflecap_8_Dummy_3[4]/ctop
 + VSS VDD VSS VSS adc_array_wafflecap_8_Dummy
-Xadc_array_wafflecap_8_Dummy_3[5] VDD VSS vcom row_n[30] adc_array_wafflecap_8_Dummy_3[5]/ctop
+Xadc_array_wafflecap_8_Dummy_3[5] VDD VSS vcm row_n[30] adc_array_wafflecap_8_Dummy_3[5]/ctop
 + VSS VDD VSS VSS adc_array_wafflecap_8_Dummy
-Xadc_array_wafflecap_8_Dummy_4[0] VDD VDD vcom VDD adc_array_wafflecap_8_Dummy_4[0]/ctop
+Xadc_array_wafflecap_8_Dummy_4[0] VDD VDD vcm VDD adc_array_wafflecap_8_Dummy_4[0]/ctop
 + VSS VDD VDD VSS adc_array_wafflecap_8_Dummy
-Xadc_array_wafflecap_8_Dummy_4[1] VDD VDD vcom row_n[0] adc_array_wafflecap_8_Dummy_4[1]/ctop
+Xadc_array_wafflecap_8_Dummy_4[1] VDD VDD vcm row_n[0] adc_array_wafflecap_8_Dummy_4[1]/ctop
 + VSS VDD VDD VSS adc_array_wafflecap_8_Dummy
-Xadc_array_wafflecap_8_Dummy_4[2] VDD VDD vcom row_n[1] adc_array_wafflecap_8_Dummy_4[2]/ctop
+Xadc_array_wafflecap_8_Dummy_4[2] VDD VDD vcm row_n[1] adc_array_wafflecap_8_Dummy_4[2]/ctop
 + VSS VDD VDD VSS adc_array_wafflecap_8_Dummy
-Xadc_array_wafflecap_8_Dummy_4[3] VDD VDD vcom row_n[2] adc_array_wafflecap_8_Dummy_4[3]/ctop
+Xadc_array_wafflecap_8_Dummy_4[3] VDD VDD vcm row_n[2] adc_array_wafflecap_8_Dummy_4[3]/ctop
 + VSS VDD VDD VSS adc_array_wafflecap_8_Dummy
-Xadc_array_wafflecap_8_Dummy_4[4] VDD VDD vcom row_n[3] adc_array_wafflecap_8_Dummy_4[4]/ctop
+Xadc_array_wafflecap_8_Dummy_4[4] VDD VDD vcm row_n[3] adc_array_wafflecap_8_Dummy_4[4]/ctop
 + VSS VDD VDD VSS adc_array_wafflecap_8_Dummy
-Xadc_array_wafflecap_8_Dummy_4[5] VDD VDD vcom row_n[4] adc_array_wafflecap_8_Dummy_4[5]/ctop
+Xadc_array_wafflecap_8_Dummy_4[5] VDD VDD vcm row_n[4] adc_array_wafflecap_8_Dummy_4[5]/ctop
 + VSS VDD VDD VSS adc_array_wafflecap_8_Dummy
-Xadc_array_wafflecap_8_Dummy_4[6] VDD VDD vcom row_n[5] adc_array_wafflecap_8_Dummy_4[6]/ctop
+Xadc_array_wafflecap_8_Dummy_4[6] VDD VDD vcm row_n[5] adc_array_wafflecap_8_Dummy_4[6]/ctop
 + VSS VDD VDD VSS adc_array_wafflecap_8_Dummy
-Xadc_array_wafflecap_8_Dummy_4[7] VDD VDD vcom row_n[6] adc_array_wafflecap_8_Dummy_4[7]/ctop
+Xadc_array_wafflecap_8_Dummy_4[7] VDD VDD vcm row_n[6] adc_array_wafflecap_8_Dummy_4[7]/ctop
 + VSS VDD VDD VSS adc_array_wafflecap_8_Dummy
-Xadc_array_wafflecap_8_Dummy_4[8] VDD VDD vcom row_n[7] adc_array_wafflecap_8_Dummy_4[8]/ctop
+Xadc_array_wafflecap_8_Dummy_4[8] VDD VDD vcm row_n[7] adc_array_wafflecap_8_Dummy_4[8]/ctop
 + VSS VDD VDD VSS adc_array_wafflecap_8_Dummy
-Xadc_array_wafflecap_8_Dummy_4[9] VDD VDD vcom row_n[8] adc_array_wafflecap_8_Dummy_4[9]/ctop
+Xadc_array_wafflecap_8_Dummy_4[9] VDD VDD vcm row_n[8] adc_array_wafflecap_8_Dummy_4[9]/ctop
 + VSS VDD VDD VSS adc_array_wafflecap_8_Dummy
-Xadc_array_wafflecap_8_Dummy_4[10] VDD VDD vcom row_n[9] adc_array_wafflecap_8_Dummy_4[10]/ctop
+Xadc_array_wafflecap_8_Dummy_4[10] VDD VDD vcm row_n[9] adc_array_wafflecap_8_Dummy_4[10]/ctop
 + VSS VDD VDD VSS adc_array_wafflecap_8_Dummy
-Xadc_array_wafflecap_8_Dummy_4[11] VDD VDD vcom row_n[10] adc_array_wafflecap_8_Dummy_4[11]/ctop
+Xadc_array_wafflecap_8_Dummy_4[11] VDD VDD vcm row_n[10] adc_array_wafflecap_8_Dummy_4[11]/ctop
 + VSS VDD VDD VSS adc_array_wafflecap_8_Dummy
-Xadc_array_wafflecap_8_Dummy_4[12] VDD VDD vcom row_n[11] adc_array_wafflecap_8_Dummy_4[12]/ctop
+Xadc_array_wafflecap_8_Dummy_4[12] VDD VDD vcm row_n[11] adc_array_wafflecap_8_Dummy_4[12]/ctop
 + VSS VDD VDD VSS adc_array_wafflecap_8_Dummy
-Xadc_array_wafflecap_8_Dummy_4[13] VDD VDD vcom row_n[12] adc_array_wafflecap_8_Dummy_4[13]/ctop
+Xadc_array_wafflecap_8_Dummy_4[13] VDD VDD vcm row_n[12] adc_array_wafflecap_8_Dummy_4[13]/ctop
 + VSS VDD VDD VSS adc_array_wafflecap_8_Dummy
-Xadc_array_wafflecap_8_Dummy_4[14] VDD VDD vcom row_n[13] adc_array_wafflecap_8_Dummy_4[14]/ctop
+Xadc_array_wafflecap_8_Dummy_4[14] VDD VDD vcm row_n[13] adc_array_wafflecap_8_Dummy_4[14]/ctop
 + VSS VDD VDD VSS adc_array_wafflecap_8_Dummy
-Xadc_array_wafflecap_8_Dummy_4[15] VDD VDD vcom row_n[14] adc_array_wafflecap_8_Dummy_4[15]/ctop
+Xadc_array_wafflecap_8_Dummy_4[15] VDD VDD vcm row_n[14] adc_array_wafflecap_8_Dummy_4[15]/ctop
 + VSS VDD VDD VSS adc_array_wafflecap_8_Dummy
-Xadc_array_wafflecap_8_Dummy_4[16] VDD VDD vcom row_n[15] adc_array_wafflecap_8_Dummy_4[16]/ctop
+Xadc_array_wafflecap_8_Dummy_4[16] VDD VDD vcm row_n[15] adc_array_wafflecap_8_Dummy_4[16]/ctop
 + VSS VDD VDD VSS adc_array_wafflecap_8_Dummy
-Xadc_array_wafflecap_8_Dummy_4[17] VDD VDD vcom row_n[16] adc_array_wafflecap_8_Dummy_4[17]/ctop
+Xadc_array_wafflecap_8_Dummy_4[17] VDD VDD vcm row_n[16] adc_array_wafflecap_8_Dummy_4[17]/ctop
 + VSS VDD VDD VSS adc_array_wafflecap_8_Dummy
-Xadc_array_wafflecap_8_Dummy_4[18] VDD VDD vcom row_n[17] adc_array_wafflecap_8_Dummy_4[18]/ctop
+Xadc_array_wafflecap_8_Dummy_4[18] VDD VDD vcm row_n[17] adc_array_wafflecap_8_Dummy_4[18]/ctop
 + VSS VDD VDD VSS adc_array_wafflecap_8_Dummy
-Xadc_array_wafflecap_8_Dummy_4[19] VDD VDD vcom row_n[18] adc_array_wafflecap_8_Dummy_4[19]/ctop
+Xadc_array_wafflecap_8_Dummy_4[19] VDD VDD vcm row_n[18] adc_array_wafflecap_8_Dummy_4[19]/ctop
 + VSS VDD VDD VSS adc_array_wafflecap_8_Dummy
-Xadc_array_wafflecap_8_Dummy_4[20] VDD VDD vcom row_n[19] adc_array_wafflecap_8_Dummy_4[20]/ctop
+Xadc_array_wafflecap_8_Dummy_4[20] VDD VDD vcm row_n[19] adc_array_wafflecap_8_Dummy_4[20]/ctop
 + VSS VDD VDD VSS adc_array_wafflecap_8_Dummy
-Xadc_array_wafflecap_8_Dummy_4[21] VDD VDD vcom row_n[20] adc_array_wafflecap_8_Dummy_4[21]/ctop
+Xadc_array_wafflecap_8_Dummy_4[21] VDD VDD vcm row_n[20] adc_array_wafflecap_8_Dummy_4[21]/ctop
 + VSS VDD VDD VSS adc_array_wafflecap_8_Dummy
-Xadc_array_wafflecap_8_Dummy_4[22] VDD VDD vcom row_n[21] adc_array_wafflecap_8_Dummy_4[22]/ctop
+Xadc_array_wafflecap_8_Dummy_4[22] VDD VDD vcm row_n[21] adc_array_wafflecap_8_Dummy_4[22]/ctop
 + VSS VDD VDD VSS adc_array_wafflecap_8_Dummy
-Xadc_array_wafflecap_8_Dummy_4[23] VDD VDD vcom row_n[22] adc_array_wafflecap_8_Dummy_4[23]/ctop
+Xadc_array_wafflecap_8_Dummy_4[23] VDD VDD vcm row_n[22] adc_array_wafflecap_8_Dummy_4[23]/ctop
 + VSS VDD VDD VSS adc_array_wafflecap_8_Dummy
-Xadc_array_wafflecap_8_Dummy_4[24] VDD VDD vcom row_n[23] adc_array_wafflecap_8_Dummy_4[24]/ctop
+Xadc_array_wafflecap_8_Dummy_4[24] VDD VDD vcm row_n[23] adc_array_wafflecap_8_Dummy_4[24]/ctop
 + VSS VDD VDD VSS adc_array_wafflecap_8_Dummy
-Xadc_array_wafflecap_8_Dummy_4[25] VDD VDD vcom row_n[24] adc_array_wafflecap_8_Dummy_4[25]/ctop
+Xadc_array_wafflecap_8_Dummy_4[25] VDD VDD vcm row_n[24] adc_array_wafflecap_8_Dummy_4[25]/ctop
 + VSS VDD VDD VSS adc_array_wafflecap_8_Dummy
-Xadc_array_wafflecap_8_Dummy_4[26] VDD VDD vcom row_n[25] adc_array_wafflecap_8_Dummy_4[26]/ctop
+Xadc_array_wafflecap_8_Dummy_4[26] VDD VDD vcm row_n[25] adc_array_wafflecap_8_Dummy_4[26]/ctop
 + VSS VDD VDD VSS adc_array_wafflecap_8_Dummy
-Xadc_array_wafflecap_8_Dummy_4[27] VDD VDD vcom row_n[26] adc_array_wafflecap_8_Dummy_4[27]/ctop
+Xadc_array_wafflecap_8_Dummy_4[27] VDD VDD vcm row_n[26] adc_array_wafflecap_8_Dummy_4[27]/ctop
 + VSS VDD VDD VSS adc_array_wafflecap_8_Dummy
-Xadc_array_wafflecap_8_Dummy_4[28] VDD VDD vcom row_n[27] adc_array_wafflecap_8_Dummy_4[28]/ctop
+Xadc_array_wafflecap_8_Dummy_4[28] VDD VDD vcm row_n[27] adc_array_wafflecap_8_Dummy_4[28]/ctop
 + VSS VDD VDD VSS adc_array_wafflecap_8_Dummy
-Xadc_array_wafflecap_8_Dummy_4[29] VDD VDD vcom row_n[28] adc_array_wafflecap_8_Dummy_4[29]/ctop
+Xadc_array_wafflecap_8_Dummy_4[29] VDD VDD vcm row_n[28] adc_array_wafflecap_8_Dummy_4[29]/ctop
 + VSS VDD VDD VSS adc_array_wafflecap_8_Dummy
-Xadc_array_wafflecap_8_Dummy_4[30] VDD VDD vcom row_n[29] adc_array_wafflecap_8_Dummy_4[30]/ctop
+Xadc_array_wafflecap_8_Dummy_4[30] VDD VDD vcm row_n[29] adc_array_wafflecap_8_Dummy_4[30]/ctop
 + VSS VDD VDD VSS adc_array_wafflecap_8_Dummy
-Xadc_array_wafflecap_8_Dummy_4[31] VDD VDD vcom row_n[30] adc_array_wafflecap_8_Dummy_4[31]/ctop
+Xadc_array_wafflecap_8_Dummy_4[31] VDD VDD vcm row_n[30] adc_array_wafflecap_8_Dummy_4[31]/ctop
 + VSS VDD VDD VSS adc_array_wafflecap_8_Dummy
-Xadc_array_wafflecap_8_Dummy_4[32] VDD VDD vcom row_n[31] adc_array_wafflecap_8_Dummy_4[32]/ctop
+Xadc_array_wafflecap_8_Dummy_4[32] VDD VDD vcm row_n[31] adc_array_wafflecap_8_Dummy_4[32]/ctop
 + VSS VDD VDD VSS adc_array_wafflecap_8_Dummy
-Xadc_array_wafflecap_8_Dummy_4[33] VDD VDD vcom VDD adc_array_wafflecap_8_Dummy_4[33]/ctop
+Xadc_array_wafflecap_8_Dummy_4[33] VDD VDD vcm VDD adc_array_wafflecap_8_Dummy_4[33]/ctop
 + VSS VDD VDD VSS adc_array_wafflecap_8_Dummy
-Xadc_array_wafflecap_8_2_0 VDD VDD VSS VSS VSS vcom row_n[16] en_n_bit[1] ctop VSS
-+ adc_array_wafflecap_8_2
 Xadc_array_wafflecap_8_Dummy_5[0] adc_array_wafflecap_8_8_0[0|9]/sample_n colon_n[0]
-+ vcom VDD adc_array_wafflecap_8_Dummy_5[0]/ctop adc_array_wafflecap_8_8_0[0|9]/sample
++ vcm VDD adc_array_wafflecap_8_Dummy_5[0]/ctop adc_array_wafflecap_8_8_0[0|9]/sample
 + VDD col_n[0] VSS adc_array_wafflecap_8_Dummy
 Xadc_array_wafflecap_8_Dummy_5[1] adc_array_wafflecap_8_8_0[1|9]/sample_n colon_n[1]
-+ vcom VDD adc_array_wafflecap_8_Dummy_5[1]/ctop adc_array_wafflecap_8_8_0[1|9]/sample
++ vcm VDD adc_array_wafflecap_8_Dummy_5[1]/ctop adc_array_wafflecap_8_8_0[1|9]/sample
 + VDD col_n[1] VSS adc_array_wafflecap_8_Dummy
 Xadc_array_wafflecap_8_Dummy_5[2] adc_array_wafflecap_8_8_0[2|9]/sample_n colon_n[2]
-+ vcom VDD adc_array_wafflecap_8_Dummy_5[2]/ctop adc_array_wafflecap_8_8_0[2|9]/sample
++ vcm VDD adc_array_wafflecap_8_Dummy_5[2]/ctop adc_array_wafflecap_8_8_0[2|9]/sample
 + VDD col_n[2] VSS adc_array_wafflecap_8_Dummy
 Xadc_array_wafflecap_8_Dummy_5[3] adc_array_wafflecap_8_8_0[3|9]/sample_n colon_n[3]
-+ vcom VDD adc_array_wafflecap_8_Dummy_5[3]/ctop adc_array_wafflecap_8_8_0[3|9]/sample
++ vcm VDD adc_array_wafflecap_8_Dummy_5[3]/ctop adc_array_wafflecap_8_8_0[3|9]/sample
 + VDD col_n[3] VSS adc_array_wafflecap_8_Dummy
 Xadc_array_wafflecap_8_Dummy_5[4] adc_array_wafflecap_8_8_0[4|9]/sample_n colon_n[4]
-+ vcom VDD adc_array_wafflecap_8_Dummy_5[4]/ctop adc_array_wafflecap_8_8_0[4|9]/sample
++ vcm VDD adc_array_wafflecap_8_Dummy_5[4]/ctop adc_array_wafflecap_8_8_0[4|9]/sample
 + VDD col_n[4] VSS adc_array_wafflecap_8_Dummy
 Xadc_array_wafflecap_8_Dummy_5[5] adc_array_wafflecap_8_8_0[5|9]/sample_n colon_n[5]
-+ vcom VDD adc_array_wafflecap_8_Dummy_5[5]/ctop adc_array_wafflecap_8_8_0[5|9]/sample
++ vcm VDD adc_array_wafflecap_8_Dummy_5[5]/ctop adc_array_wafflecap_8_8_0[5|9]/sample
 + VDD col_n[5] VSS adc_array_wafflecap_8_Dummy
 Xadc_array_wafflecap_8_Dummy_5[6] adc_array_wafflecap_8_8_0[6|9]/sample_n colon_n[6]
-+ vcom VDD adc_array_wafflecap_8_Dummy_5[6]/ctop adc_array_wafflecap_8_8_0[6|9]/sample
++ vcm VDD adc_array_wafflecap_8_Dummy_5[6]/ctop adc_array_wafflecap_8_8_0[6|9]/sample
 + VDD col_n[6] VSS adc_array_wafflecap_8_Dummy
 Xadc_array_wafflecap_8_Dummy_5[7] adc_array_wafflecap_8_8_0[7|9]/sample_n colon_n[7]
-+ vcom VDD adc_array_wafflecap_8_Dummy_5[7]/ctop adc_array_wafflecap_8_8_0[7|9]/sample
++ vcm VDD adc_array_wafflecap_8_Dummy_5[7]/ctop adc_array_wafflecap_8_8_0[7|9]/sample
 + VDD col_n[7] VSS adc_array_wafflecap_8_Dummy
 Xadc_array_wafflecap_8_Dummy_5[8] adc_array_wafflecap_8_8_0[8|9]/sample_n colon_n[8]
-+ vcom VDD adc_array_wafflecap_8_Dummy_5[8]/ctop adc_array_wafflecap_8_8_0[8|9]/sample
++ vcm VDD adc_array_wafflecap_8_Dummy_5[8]/ctop adc_array_wafflecap_8_8_0[8|9]/sample
 + VDD col_n[8] VSS adc_array_wafflecap_8_Dummy
 Xadc_array_wafflecap_8_Dummy_5[9] adc_array_wafflecap_8_8_0[9|9]/sample_n colon_n[9]
-+ vcom VDD adc_array_wafflecap_8_Dummy_5[9]/ctop adc_array_wafflecap_8_8_0[9|9]/sample
++ vcm VDD adc_array_wafflecap_8_Dummy_5[9]/ctop adc_array_wafflecap_8_8_0[9|9]/sample
 + VDD col_n[9] VSS adc_array_wafflecap_8_Dummy
 Xadc_array_wafflecap_8_Dummy_5[10] adc_array_wafflecap_8_8_0[10|9]/sample_n colon_n[10]
-+ vcom VDD adc_array_wafflecap_8_Dummy_5[10]/ctop adc_array_wafflecap_8_8_0[10|9]/sample
++ vcm VDD adc_array_wafflecap_8_Dummy_5[10]/ctop adc_array_wafflecap_8_8_0[10|9]/sample
 + VDD col_n[10] VSS adc_array_wafflecap_8_Dummy
 Xadc_array_wafflecap_8_Dummy_5[11] adc_array_wafflecap_8_8_0[11|9]/sample_n colon_n[11]
-+ vcom VDD adc_array_wafflecap_8_Dummy_5[11]/ctop adc_array_wafflecap_8_8_0[11|9]/sample
++ vcm VDD adc_array_wafflecap_8_Dummy_5[11]/ctop adc_array_wafflecap_8_8_0[11|9]/sample
 + VDD col_n[11] VSS adc_array_wafflecap_8_Dummy
 Xadc_array_wafflecap_8_Dummy_5[12] adc_array_wafflecap_8_8_0[12|9]/sample_n colon_n[12]
-+ vcom VDD adc_array_wafflecap_8_Dummy_5[12]/ctop adc_array_wafflecap_8_8_0[12|9]/sample
++ vcm VDD adc_array_wafflecap_8_Dummy_5[12]/ctop adc_array_wafflecap_8_8_0[12|9]/sample
 + VDD col_n[12] VSS adc_array_wafflecap_8_Dummy
 Xadc_array_wafflecap_8_Dummy_5[13] adc_array_wafflecap_8_8_0[13|9]/sample_n colon_n[13]
-+ vcom VDD adc_array_wafflecap_8_Dummy_5[13]/ctop adc_array_wafflecap_8_8_0[13|9]/sample
++ vcm VDD adc_array_wafflecap_8_Dummy_5[13]/ctop adc_array_wafflecap_8_8_0[13|9]/sample
 + VDD col_n[13] VSS adc_array_wafflecap_8_Dummy
 Xadc_array_wafflecap_8_Dummy_5[14] adc_array_wafflecap_8_8_0[14|9]/sample_n colon_n[14]
-+ vcom VDD adc_array_wafflecap_8_Dummy_5[14]/ctop adc_array_wafflecap_8_8_0[14|9]/sample
++ vcm VDD adc_array_wafflecap_8_Dummy_5[14]/ctop adc_array_wafflecap_8_8_0[14|9]/sample
 + VDD col_n[14] VSS adc_array_wafflecap_8_Dummy
 Xadc_array_wafflecap_8_Dummy_5[15] adc_array_wafflecap_8_8_0[15|9]/sample_n colon_n[15]
-+ vcom VDD adc_array_wafflecap_8_Dummy_5[15]/ctop adc_array_wafflecap_8_8_0[15|9]/sample
++ vcm VDD adc_array_wafflecap_8_Dummy_5[15]/ctop adc_array_wafflecap_8_8_0[15|9]/sample
 + VDD col_n[15] VSS adc_array_wafflecap_8_Dummy
-Xadc_array_wafflecap_8_Dummy_6 VDD VSS vcom VDD adc_array_wafflecap_8_Dummy_6/ctop
+Xadc_array_wafflecap_8_2_0 VDD VDD VSS VSS VSS vcm row_n[16] en_n_bit[1] ctop VSS
++ adc_array_wafflecap_8_2
+Xadc_array_wafflecap_8_Dummy_6 VDD VSS vcm VDD adc_array_wafflecap_8_Dummy_6/ctop
 + VSS VDD VSS VSS adc_array_wafflecap_8_Dummy
 Xadc_noise_decoup_cell1_0[0] VDD VSS VDD VSS VSS adc_noise_decoup_cell1
 Xadc_noise_decoup_cell1_0[1] VDD VSS VDD VSS VSS adc_noise_decoup_cell1
@@ -1411,9 +1410,9 @@ Xadc_noise_decoup_cell1_1[5] VDD VSS VDD VSS VSS adc_noise_decoup_cell1
 Xadc_noise_decoup_cell1_1[6] VDD VSS VDD VSS VSS adc_noise_decoup_cell1
 Xadc_noise_decoup_cell1_1[7] VDD VSS VDD VSS VSS adc_noise_decoup_cell1
 Xadc_noise_decoup_cell1_1[8] VDD VSS VDD VSS VSS adc_noise_decoup_cell1
-Xadc_array_wafflecap_8_Gate_0 VDD VSS vcom row_n[31] sw_n analog_in sw ctop VSS VDD
+Xadc_array_wafflecap_8_Gate_0 VDD VSS vcm row_n[31] sw_n analog_in sw ctop VSS VDD
 + VSS VSS adc_array_wafflecap_8_Gate
-Xadc_array_wafflecap_8_1_0 VDD VSS vcom row_n[24] en_n_bit[0] ctop VSS VDD VSS VSS
+Xadc_array_wafflecap_8_1_0 VDD VSS vcm row_n[24] en_n_bit[0] ctop VSS VDD VSS VSS
 + adc_array_wafflecap_8_1
 .ends
 
