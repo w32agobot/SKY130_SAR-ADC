@@ -1,6 +1,6 @@
 magic
 tech sky130A
-timestamp 1663934390
+timestamp 1664102566
 << psubdiff >>
 rect 238 9567 445 9731
 rect 238 9550 252 9567
@@ -4085,6 +4085,7 @@ rect 1617 145 1620 162
 rect 1637 145 1639 162
 rect 1617 141 1639 145
 rect 2124 0 2141 457
+rect 2460 0 2477 457
 rect 2626 0 2643 457
 rect 3128 0 3145 457
 rect 3630 0 3647 457
@@ -14244,8 +14245,6 @@ rect 15718 1553 15788 1583
 rect 16220 1553 16290 1583
 rect 16722 1553 16792 1583
 rect 17224 1553 17294 1583
-rect 1789 1426 1819 1496
-rect 2077 1426 2107 1496
 rect 2291 1426 2321 1496
 rect 2579 1426 2609 1496
 rect 2793 1426 2823 1496
@@ -14314,7 +14313,6 @@ rect 238 974 445 1382
 rect 18827 1414 19034 1822
 rect 18827 1382 18845 1414
 rect 19020 1382 19034 1414
-rect 2164 1339 2234 1369
 rect 2666 1339 2736 1369
 rect 3168 1339 3238 1369
 rect 3670 1339 3740 1369
@@ -14365,7 +14363,6 @@ rect 18930 1154 18942 1186
 rect 18974 1154 18986 1186
 rect 19018 1154 19034 1186
 rect 18826 1150 19034 1154
-rect 2164 1051 2234 1081
 rect 2666 1051 2736 1081
 rect 3168 1051 3238 1081
 rect 3670 1051 3740 1081
@@ -14399,13 +14396,13 @@ rect 17224 1051 17294 1081
 rect 238 942 252 974
 rect 427 942 445 974
 rect 238 534 445 942
+rect 2291 924 2321 994
 rect 5805 924 5835 994
 rect 6093 924 6123 994
 rect 7957 924 7987 994
 rect 9821 924 9851 994
 rect 9965 924 9995 994
 rect 13837 924 13867 994
-rect 15487 924 15517 994
 rect 17495 924 17525 994
 rect 18827 974 19034 1150
 rect 18827 942 18845 974
@@ -14635,6 +14632,10 @@ use adc_array_wafflecap_8_1  adc_array_wafflecap_8_1_0 ../adc_array_cap
 timestamp 1662987872
 transform 1 0 13745 0 1 457
 box 0 0 502 502
+use adc_array_wafflecap_8_1  adc_array_wafflecap_8_1_1
+timestamp 1662987872
+transform 1 0 2199 0 1 457
+box 0 0 502 502
 use adc_array_wafflecap_8_2  adc_array_wafflecap_8_2_0 ../adc_array_cap
 timestamp 1662983799
 transform 1 0 9729 0 1 457
@@ -14644,9 +14645,14 @@ timestamp 1662985026
 transform 1 0 5713 0 1 457
 box 0 0 502 502
 use adc_array_wafflecap_8_8  adc_array_wafflecap_8_8_0 ../adc_array_cap
-array 0 31 502 0 15 502
+array 0 31 502 0 14 502
 timestamp 1662984960
-transform 1 0 1697 0 1 959
+transform 1 0 1697 0 1 1461
+box 0 0 502 502
+use adc_array_wafflecap_8_8  adc_array_wafflecap_8_8_1
+array 0 30 502 0 0 502
+timestamp 1662984960
+transform 1 0 2199 0 1 959
 box 0 0 502 502
 use adc_array_wafflecap_8_Drv  adc_array_wafflecap_8_Drv_0 ../adc_array_cap
 array 0 0 502 0 15 502
@@ -14654,7 +14660,7 @@ timestamp 1663932020
 transform 1 0 1195 0 1 959
 box 0 0 502 502
 use adc_array_wafflecap_8_Dummy  adc_array_wafflecap_8_Dummy_0 ../adc_array_cap
-array 0 8 502 0 0 502
+array 0 1 502 0 0 502
 timestamp 1663073688
 transform 1 0 1195 0 1 457
 box 0 0 502 502
@@ -14687,8 +14693,17 @@ use adc_array_wafflecap_8_Dummy  adc_array_wafflecap_8_Dummy_6
 timestamp 1663073688
 transform 1 0 17761 0 1 457
 box 0 0 502 502
+use adc_array_wafflecap_8_Dummy  adc_array_wafflecap_8_Dummy_7
+timestamp 1663073688
+transform 1 0 1697 0 1 959
+box 0 0 502 502
+use adc_array_wafflecap_8_Dummy  adc_array_wafflecap_8_Dummy_8
+array 0 5 502 0 0 502
+timestamp 1663073688
+transform 1 0 2701 0 1 457
+box 0 0 502 502
 use adc_array_wafflecap_8_Gate  adc_array_wafflecap_8_Gate_0 ../adc_array_cap
-timestamp 1663061126
+timestamp 1664101219
 transform 1 0 17259 0 1 457
 box 0 0 502 502
 use adc_noise_decoup_cell1  adc_noise_decoup_cell1_0 ../adc_noise_decoup_cell
@@ -14707,60 +14722,60 @@ port 7 s signal input
 flabel locali s 590 0 624 21 5 FreeSans 40 0 0 0 sample
 port 6 s signal input
 flabel locali s 644 0 712 21 5 FreeSans 40 0 0 0 vcm
-port 3 s analog input
+port 3 s signal input
 flabel locali s 755 0 901 21 5 FreeSans 40 0 0 0 VDD
 port 1 s power bidirectional
 flabel locali s 944 0 1090 21 5 FreeSans 40 0 0 0 VSS
 port 2 s power bidirectional
-flabel locali s 2124 0 2141 21 5 FreeSans 80 0 0 0 row_n[0]
+flabel locali s 2124 0 2141 21 5 FreeSans 80 0 0 0 col_n[0]
 port 70 s signal input
-flabel locali s 2626 0 2643 21 5 FreeSans 80 0 0 0 row_n[1]
+flabel locali s 2626 0 2643 21 5 FreeSans 80 0 0 0 col_n[1]
 port 71 s signal input
-flabel locali s 3128 0 3145 21 5 FreeSans 80 0 0 0 row_n[2]
+flabel locali s 3128 0 3145 21 5 FreeSans 80 0 0 0 col_n[2]
 port 72 s signal input
-flabel locali s 3630 0 3647 21 5 FreeSans 80 0 0 0 row_n[3]
+flabel locali s 3630 0 3647 21 5 FreeSans 80 0 0 0 col_n[3]
 port 73 s signal input
-flabel locali s 4132 0 4149 21 5 FreeSans 80 0 0 0 row_n[4]
+flabel locali s 4132 0 4149 21 5 FreeSans 80 0 0 0 col_n[4]
 port 74 s signal input
-flabel locali s 4634 0 4651 21 5 FreeSans 80 0 0 0 row_n[5]
+flabel locali s 4634 0 4651 21 5 FreeSans 80 0 0 0 col_n[5]
 port 75 s signal input
-flabel locali s 5136 0 5153 21 5 FreeSans 80 0 0 0 row_n[6]
+flabel locali s 5136 0 5153 21 5 FreeSans 80 0 0 0 col_n[6]
 port 76 s signal input
-flabel locali s 5638 0 5655 21 5 FreeSans 80 0 0 0 row_n[7]
+flabel locali s 5638 0 5655 21 5 FreeSans 80 0 0 0 col_n[7]
 port 77 s signal input
-flabel locali s 6140 0 6157 21 5 FreeSans 80 0 0 0 row_n[8]
+flabel locali s 6140 0 6157 21 5 FreeSans 80 0 0 0 col_n[8]
 port 78 s signal input
-flabel locali s 6642 0 6659 21 5 FreeSans 80 0 0 0 row_n[9]
+flabel locali s 6642 0 6659 21 5 FreeSans 80 0 0 0 col_n[9]
 port 79 s signal input
-flabel locali s 7144 0 7161 21 5 FreeSans 80 0 0 0 row_n[10]
+flabel locali s 7144 0 7161 21 5 FreeSans 80 0 0 0 col_n[10]
 port 80 s signal input
-flabel locali s 7646 0 7663 21 5 FreeSans 80 0 0 0 row_n[11]
+flabel locali s 7646 0 7663 21 5 FreeSans 80 0 0 0 col_n[11]
 port 81 s signal input
-flabel locali s 8148 0 8165 21 5 FreeSans 80 0 0 0 row_n[12]
+flabel locali s 8148 0 8165 21 5 FreeSans 80 0 0 0 col_n[12]
 port 82 s signal input
-flabel locali s 8650 0 8667 21 5 FreeSans 80 0 0 0 row_n[13]
+flabel locali s 8650 0 8667 21 5 FreeSans 80 0 0 0 col_n[13]
 port 83 s signal input
-flabel locali s 9152 0 9169 21 5 FreeSans 80 0 0 0 row_n[14]
+flabel locali s 9152 0 9169 21 5 FreeSans 80 0 0 0 col_n[14]
 port 84 s signal input
-flabel locali s 9654 0 9671 21 5 FreeSans 80 0 0 0 row_n[15]
+flabel locali s 9654 0 9671 21 5 FreeSans 80 0 0 0 col_n[15]
 port 85 s signal input
-flabel locali s 10156 0 10173 21 5 FreeSans 80 0 0 0 row_n[16]
+flabel locali s 10156 0 10173 21 5 FreeSans 80 0 0 0 col_n[16]
 port 86 s signal input
-flabel locali s 10658 0 10675 21 5 FreeSans 80 0 0 0 row_n[17]
+flabel locali s 10658 0 10675 21 5 FreeSans 80 0 0 0 col_n[17]
 port 87 s signal input
-flabel locali s 11160 0 11177 21 5 FreeSans 80 0 0 0 row_n[18]
+flabel locali s 11160 0 11177 21 5 FreeSans 80 0 0 0 col_n[18]
 port 88 s signal input
-flabel locali s 11662 0 11679 21 5 FreeSans 80 0 0 0 row_n[19]
+flabel locali s 11662 0 11679 21 5 FreeSans 80 0 0 0 col_n[19]
 port 89 s signal input
-flabel locali s 12164 0 12181 21 5 FreeSans 80 0 0 0 row_n[20]
+flabel locali s 12164 0 12181 21 5 FreeSans 80 0 0 0 col_n[20]
 port 90 s signal input
-flabel locali s 12666 0 12683 21 5 FreeSans 80 0 0 0 row_n[21]
+flabel locali s 12666 0 12683 21 5 FreeSans 80 0 0 0 col_n[21]
 port 91 s signal input
-flabel locali s 13168 0 13185 21 5 FreeSans 80 0 0 0 row_n[22]
+flabel locali s 13168 0 13185 21 5 FreeSans 80 0 0 0 col_n[22]
 port 92 s signal input
-flabel locali s 13670 0 13687 21 5 FreeSans 80 0 0 0 row_n[23]
+flabel locali s 13670 0 13687 21 5 FreeSans 80 0 0 0 col_n[23]
 port 93 s signal input
-flabel locali s 14172 0 14189 21 5 FreeSans 80 0 0 0 row_n[24]
+flabel locali s 14172 0 14189 21 5 FreeSans 80 0 0 0 col_n[24]
 port 94 s signal input
 flabel locali s 5974 0 5991 21 5 FreeSans 80 0 0 0 en_n_bit[2]
 port 102 s signal input
@@ -14768,91 +14783,89 @@ flabel locali s 9990 0 10007 21 5 FreeSans 80 0 0 0 en_n_bit[1]
 port 103 s signal input
 flabel locali s 14006 0 14023 21 5 FreeSans 80 0 0 0 en_n_bit[0]
 port 104 s signal input
-flabel locali s 14274 0 14291 21 5 FreeSans 80 0 0 0 row_n[25]
+flabel locali s 14274 0 14291 21 5 FreeSans 80 0 0 0 col_n[25]
 port 95 s signal input
-flabel locali s 14376 0 14393 21 5 FreeSans 80 0 0 0 row_n[26]
+flabel locali s 14376 0 14393 21 5 FreeSans 80 0 0 0 col_n[26]
 port 96 s signal input
-flabel locali s 14478 0 14495 21 5 FreeSans 80 0 0 0 row_n[27]
+flabel locali s 14478 0 14495 21 5 FreeSans 80 0 0 0 col_n[27]
 port 97 s signal input
-flabel locali s 14580 0 14597 21 5 FreeSans 80 0 0 0 row_n[28]
+flabel locali s 14580 0 14597 21 5 FreeSans 80 0 0 0 col_n[28]
 port 98 s signal input
-flabel locali s 14682 0 14699 21 5 FreeSans 80 0 0 0 row_n[29]
+flabel locali s 14682 0 14699 21 5 FreeSans 80 0 0 0 col_n[29]
 port 99 s signal input
-flabel locali s 14784 0 14801 21 5 FreeSans 80 0 0 0 row_n[30]
+flabel locali s 14784 0 14801 21 5 FreeSans 80 0 0 0 col_n[30]
 port 100 s signal input
-flabel locali s 14886 0 14903 21 5 FreeSans 80 0 0 0 row_n[31]
+flabel locali s 14886 0 14903 21 5 FreeSans 80 0 0 0 col_n[31]
 port 101 s signal input
 flabel locali s 17238 1 17255 22 5 FreeSans 80 90 0 0 sw_n
 port 9 s signal input
 flabel locali s 17299 1 17316 22 5 FreeSans 80 90 0 0 sw
 port 8 s signal input
 flabel metal4 s 17495 1 17525 30 5 FreeSans 80 0 0 0 ctop
-port 4 s analog output
-flabel metal1 s 19297 4 19391 28 0 FreeSans 80 0 0 0 analog_in
-port 5 nsew analog input
-flabel metal1 s 522 1174 575 1188 7 FreeSans 80 0 0 0 col_n[0]
+port 4 s signal output
+flabel metal1 s 522 1174 575 1188 7 FreeSans 80 0 0 0 row_n[0]
 port 123 w signal input
-flabel metal1 s 522 1676 575 1690 7 FreeSans 80 0 0 0 col_n[1]
+flabel metal1 s 522 1676 575 1690 7 FreeSans 80 0 0 0 row_n[1]
 port 124 w signal input
-flabel metal1 s 522 2178 575 2192 7 FreeSans 80 0 0 0 col_n[2]
+flabel metal1 s 522 2178 575 2192 7 FreeSans 80 0 0 0 row_n[2]
 port 125 w signal input
-flabel metal1 s 522 2680 575 2694 7 FreeSans 80 0 0 0 col_n[3]
+flabel metal1 s 522 2680 575 2694 7 FreeSans 80 0 0 0 row_n[3]
 port 126 w signal input
-flabel metal1 s 522 3182 575 3196 7 FreeSans 80 0 0 0 col_n[4]
+flabel metal1 s 522 3182 575 3196 7 FreeSans 80 0 0 0 row_n[4]
 port 127 w signal input
-flabel metal1 s 522 3684 575 3698 7 FreeSans 80 0 0 0 col_n[5]
+flabel metal1 s 522 3684 575 3698 7 FreeSans 80 0 0 0 row_n[5]
 port 128 w signal input
-flabel metal1 s 522 4186 575 4200 7 FreeSans 80 0 0 0 col_n[6]
+flabel metal1 s 522 4186 575 4200 7 FreeSans 80 0 0 0 row_n[6]
 port 129 w signal input
-flabel metal1 s 522 4688 575 4702 7 FreeSans 80 0 0 0 col_n[7]
+flabel metal1 s 522 4688 575 4702 7 FreeSans 80 0 0 0 row_n[7]
 port 130 w signal input
-flabel metal1 s 522 5190 575 5204 7 FreeSans 80 0 0 0 col_n[8]
+flabel metal1 s 522 5190 575 5204 7 FreeSans 80 0 0 0 row_n[8]
 port 131 w signal input
-flabel metal1 s 522 5692 575 5706 7 FreeSans 80 0 0 0 col_n[9]
+flabel metal1 s 522 5692 575 5706 7 FreeSans 80 0 0 0 row_n[9]
 port 132 w signal input
-flabel metal1 s 522 6194 575 6208 7 FreeSans 80 0 0 0 col_n[10]
+flabel metal1 s 522 6194 575 6208 7 FreeSans 80 0 0 0 row_n[10]
 port 133 w signal input
-flabel metal1 s 522 6696 575 6710 7 FreeSans 80 0 0 0 col_n[11]
+flabel metal1 s 522 6696 575 6710 7 FreeSans 80 0 0 0 row_n[11]
 port 134 w signal input
-flabel metal1 s 522 7198 575 7212 7 FreeSans 80 0 0 0 col_n[12]
+flabel metal1 s 522 7198 575 7212 7 FreeSans 80 0 0 0 row_n[12]
 port 135 w signal input
-flabel metal1 s 522 7700 575 7714 7 FreeSans 80 0 0 0 col_n[13]
+flabel metal1 s 522 7700 575 7714 7 FreeSans 80 0 0 0 row_n[13]
 port 136 w signal input
-flabel metal1 s 522 8202 575 8216 7 FreeSans 80 0 0 0 col_n[14]
+flabel metal1 s 522 8202 575 8216 7 FreeSans 80 0 0 0 row_n[14]
 port 137 w signal input
-flabel metal1 s 522 8704 575 8718 7 FreeSans 80 0 0 0 col_n[15]
+flabel metal1 s 522 8704 575 8718 7 FreeSans 80 0 0 0 row_n[15]
 port 138 w signal input
-flabel metal1 s 522 1215 575 1229 7 FreeSans 80 0 0 0 colon_n[0]
+flabel metal1 s 522 1215 575 1229 7 FreeSans 80 0 0 0 rowon_n[0]
 port 139 w signal input
-flabel metal1 s 522 1717 575 1731 7 FreeSans 80 0 0 0 colon_n[1]
+flabel metal1 s 522 1717 575 1731 7 FreeSans 80 0 0 0 rowon_n[1]
 port 140 w signal input
-flabel metal1 s 522 2219 575 2233 7 FreeSans 80 0 0 0 colon_n[2]
+flabel metal1 s 522 2219 575 2233 7 FreeSans 80 0 0 0 rowon_n[2]
 port 141 w signal input
-flabel metal1 s 522 2721 575 2735 7 FreeSans 80 0 0 0 colon_n[3]
+flabel metal1 s 522 2721 575 2735 7 FreeSans 80 0 0 0 rowon_n[3]
 port 142 w signal input
-flabel metal1 s 521 3223 574 3237 7 FreeSans 80 0 0 0 colon_n[4]
+flabel metal1 s 521 3223 574 3237 7 FreeSans 80 0 0 0 rowon_n[4]
 port 143 w signal input
-flabel metal1 s 522 3725 575 3739 7 FreeSans 80 0 0 0 colon_n[5]
+flabel metal1 s 522 3725 575 3739 7 FreeSans 80 0 0 0 rowon_n[5]
 port 144 w signal input
-flabel metal1 s 522 4227 575 4241 7 FreeSans 80 0 0 0 colon_n[6]
+flabel metal1 s 522 4227 575 4241 7 FreeSans 80 0 0 0 rowon_n[6]
 port 145 w signal input
-flabel metal1 s 522 4729 575 4743 7 FreeSans 80 0 0 0 colon_n[7]
+flabel metal1 s 522 4729 575 4743 7 FreeSans 80 0 0 0 rowon_n[7]
 port 146 w signal input
-flabel metal1 s 522 5231 575 5245 7 FreeSans 80 0 0 0 colon_n[8]
+flabel metal1 s 522 5231 575 5245 7 FreeSans 80 0 0 0 rowon_n[8]
 port 147 w signal input
-flabel metal1 s 522 5733 575 5747 7 FreeSans 80 0 0 0 colon_n[9]
+flabel metal1 s 522 5733 575 5747 7 FreeSans 80 0 0 0 rowon_n[9]
 port 148 w signal input
-flabel metal1 s 522 6235 575 6249 7 FreeSans 80 0 0 0 colon_n[10]
+flabel metal1 s 522 6235 575 6249 7 FreeSans 80 0 0 0 rowon_n[10]
 port 149 w signal input
-flabel metal1 s 522 6737 575 6751 7 FreeSans 80 0 0 0 colon_n[11]
+flabel metal1 s 522 6737 575 6751 7 FreeSans 80 0 0 0 rowon_n[11]
 port 150 w signal input
-flabel metal1 s 522 7239 575 7253 7 FreeSans 80 0 0 0 colon_n[12]
+flabel metal1 s 522 7239 575 7253 7 FreeSans 80 0 0 0 rowon_n[12]
 port 151 w signal input
-flabel metal1 s 522 7741 575 7755 7 FreeSans 80 0 0 0 colon_n[13]
+flabel metal1 s 522 7741 575 7755 7 FreeSans 80 0 0 0 rowon_n[13]
 port 152 w signal input
-flabel metal1 s 522 8243 575 8257 7 FreeSans 80 0 0 0 colon_n[14]
+flabel metal1 s 522 8243 575 8257 7 FreeSans 80 0 0 0 rowon_n[14]
 port 153 w signal input
-flabel metal1 s 522 8745 575 8759 7 FreeSans 80 0 0 0 colon_n[15]
+flabel metal1 s 522 8745 575 8759 7 FreeSans 80 0 0 0 rowon_n[15]
 port 154 w signal input
 flabel metal4 s 0 21 207 12083 0 FreeSans 800 90 0 0 VDD
 port 1 nsew power bidirectional
@@ -14866,6 +14879,10 @@ flabel metal4 s 21386 83 21593 12083 0 FreeSans 800 90 0 0 VDD
 port 1 nsew power bidirectional
 flabel metal4 s 21630 84 21837 12084 0 FreeSans 800 90 0 0 VSS
 port 2 nsew power bidirectional
+flabel metal1 s 19297 4 19391 28 0 FreeSans 160 0 0 0 analog_in
+port 156 nsew signal input
+flabel locali s 2460 0 2477 21 5 FreeSans 80 0 0 0 en_C0_n
+port 157 s
 << properties >>
 string LEFclass CORE
 string LEForigin 0 0
