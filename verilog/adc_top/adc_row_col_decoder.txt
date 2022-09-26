@@ -1,0 +1,89 @@
+`default_nettype none
+//`include "define.vh"
+
+//  Copyright 2022 Manuel Moser
+//
+//   Licensed under the Apache License, Version 2.0 (the "License");
+//   you may not use this file except in compliance with the License.
+//   You may obtain a copy of the License at
+//
+//       http://www.apache.org/licenses/LICENSE-2.0
+//
+//   Unless required by applicable law or agreed to in writing, software
+//   distributed under the License is distributed on an "AS IS" BASIS,
+//   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+//   See the License for the specific language governing permissions and
+//   limitations under the License.
+
+
+// Combinatoric process. 
+// Converts binary to thermometer-code in a
+// capacitor array with 16 rows, 32 columns, and 3 additional Bin-Caps.
+// Notes: row[0] col[0] is a dummy-cap. 
+//        c0_n and c0_p control the second LSB-Capacitor
+module adc_row_col_decoder(
+    input wire[11:0] data;
+    output reg[15:0] row_n;
+    output reg[15:0] rowon_n;
+    output reg[15:0] col_n;
+    output reg[2:0]  bincap_n;
+    output reg       c0_p;
+    output reg       c0_n;
+	);
+
+reg[15:0] row;
+reg[15:0] rowon;
+reg[31:0] col;
+reg[2:0] bincap;
+
+//[                data                ]
+//[11][10][9][8][7][6][5][4][3][2][1][0]
+//[    row     ][    col      ][bincap ]
+assign bincap = data[2:0];
+
+//[       shifted data         ] for C0 bias
+//[9][8][7][6][5][4][3][2][1][0]
+//[   row(on)   ][    col      ]
+
+assign reg[4:0] col_intermediate = data[7:3];
+assign reg[3:0] row_intermediate = data[11:8];
+
+
+always @(data) begin
+	genvar i;
+	generate
+	for (i = 0; i <= 31 ; i = i + 1) begin: 
+	    col[i] <= 1'b0;
+		if col_intermediate >= i 
+	    	col[i] <= 1'b1;
+	end
+	endgenerate
+end
+
+always @(data) begin
+	genvar i;
+	generate
+	for (i = 0; i <= 15 ; i = i + 1) begin: 
+	    row[i] <= 1'b0;
+		if row_intermediate >= i 
+	    	row[i] <= 1'b1;
+	    rowon[i] <= 1'b0;
+		if row_intermediate > i 
+	    	rowon[i] <= 1'b1;
+	end
+	endgenerate	
+end
+
+//convert to Active-Low signals
+assign row_n = ~row;
+assign rowon_n = ~rowon;
+assign col_n = ~col;
+
+//LSB capacitor C0 is always enabled or disabled
+assign C0_p = 1`b1;
+assign C0_n = 1`b0;
+
+endmodule
+
+
+
