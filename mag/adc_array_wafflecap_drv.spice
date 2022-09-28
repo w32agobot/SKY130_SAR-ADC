@@ -1,0 +1,20 @@
+* NGSPICE file created from adc_array_wafflecap_8_Drv.ext - technology: sky130A
+
+.subckt adc_array_circuit_drv vcom col_n colon_n row_n sample_n_i sample_i sample_o
++ sample_n_o VDD VSS
+X0 sample_n_o sample_i VSS VSS sky130_fd_pr__nfet_01v8 ad=1.386e+11p pd=1.5e+06u as=5.208e+11p ps=5.84e+06u w=420000u l=150000u
+X1 VSS sample_i sample_n_o VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=420000u l=150000u
+X2 sample_n_o sample_i VDD VDD sky130_fd_pr__pfet_01v8 ad=2.64e+11p pd=2.26e+06u as=9.92e+11p ps=8.88e+06u w=800000u l=150000u
+X3 VDD sample_i sample_n_o VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=800000u l=150000u
+X4 sample_o sample_n_i VSS VSS sky130_fd_pr__nfet_01v8 ad=1.386e+11p pd=1.5e+06u as=0p ps=0u w=420000u l=150000u
+X5 VSS sample_n_i sample_o VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=420000u l=150000u
+X6 sample_o sample_n_i VDD VDD sky130_fd_pr__pfet_01v8 ad=2.64e+11p pd=2.26e+06u as=0p ps=0u w=800000u l=150000u
+X7 VDD sample_n_i sample_o VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=800000u l=150000u
+.ends
+
+.subckt adc_array_wafflecap_drv ctop vdd colon_n col_n vcom VSS row_n sample_i sample_n_i
++ sample_n_o sample_o
+Xadc_array_circuit_150n_0 vcom col_n colon_n row_n sample_n_i sample_i sample_o sample_n_o
++ vdd VSS adc_array_circuit_150n_Drv
+.ends
+

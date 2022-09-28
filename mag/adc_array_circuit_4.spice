@@ -1,0 +1,16 @@
+* NGSPICE file created from /foss/designs/SKY130_SAR-ADC/mag/adc_array_circuit/adc_array_circuit_150n(4).ext - technology: sky130A
+
+.subckt adc_array_circuit_4
++ vcom sample sample_n col_n colon_n row_n cbot en_n VDD VSS
+X0 VDD en_n vdrv VDD sky130_fd_pr__pfet_01v8 ad=2.64e+11p pd=2.26e+06u as=7.44e+11p ps=6.66e+06u w=800000u l=150000u
+X1 VSS en_n vint2 VSS sky130_fd_pr__nfet_01v8 ad=1.386e+11p pd=1.5e+06u as=2.688e+11p ps=2.96e+06u w=420000u l=150000u
+X2 vint2 en_n vdrv VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=2.604e+11p ps=2.92e+06u w=420000u l=150000u
+X3 vint2 en_n VSS VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=420000u l=150000u
+X4 cbot sample_n vdrv VSS sky130_fd_pr__nfet_01v8 ad=1.386e+11p pd=1.5e+06u as=0p ps=0u w=420000u l=150000u
+X5 vdrv en_n vint1 VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=2.64e+11p ps=2.26e+06u w=800000u l=150000u
+X6 vcom sample cbot VSS sky130_fd_pr__nfet_01v8 ad=1.302e+11p pd=1.46e+06u as=0p ps=0u w=420000u l=150000u
+X7 cbot sample_n vcom VDD sky130_fd_pr__pfet_01v8 ad=2.64e+11p pd=2.26e+06u as=2.48e+11p ps=2.22e+06u w=800000u l=150000u
+X8 vdrv sample cbot VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=800000u l=150000u
+X9 vint1 en_n VDD VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=800000u l=150000u
+.ends
+
