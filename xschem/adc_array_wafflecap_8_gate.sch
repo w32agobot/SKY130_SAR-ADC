@@ -1,4 +1,5 @@
-v {xschem version=3.0.0 file_version=1.2 }
+v {xschem version=3.1.0 file_version=1.2
+}
 G {}
 K {}
 V {}
@@ -82,4 +83,4 @@ C {devices/ipin.sym} 250 -390 0 0 {name=p6 lab=sample}
 C {devices/iopin.sym} 260 -250 0 1 {name=p8 lab=in}
 C {devices/ipin.sym} 260 -270 0 0 {name=p11 lab=sw}
 C {devices/ipin.sym} 260 -230 0 0 {name=p12 lab=sw_n}
-C {/foss/designs/SKY130_SAR-ADC/xschem/adc_array_circuit/adc_array_circuit_150n_gate.sym} 430 -430 0 0 {name=x1}
+C {adc_array_circuit_gate.sym} 430 -430 0 0 {name=x1}
