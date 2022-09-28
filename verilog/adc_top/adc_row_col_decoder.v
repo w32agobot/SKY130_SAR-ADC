@@ -22,66 +22,75 @@
 // Notes: row[0] col[0] is a dummy-cap. 
 //        c0_n and c0_p control the second LSB-Capacitor
 module adc_row_col_decoder(
-    input wire[11:0] data;
-    output reg[15:0] row_n;
-    output reg[15:0] rowon_n;
-    output reg[15:0] col_n;
-    output reg[2:0]  bincap_n;
-    output reg       c0_p;
-    output reg       c0_n;
+    input  wire[11:0] data,
+    output wire[15:0] row_n,
+    output wire[15:0] rowon_n,
+    output wire[15:0] col_n,
+    output wire[2:0]  bincap_n,
+    output wire       c0_p,
+    output wire       c0_n
 	);
 
 reg[15:0] row;
 reg[15:0] rowon;
 reg[31:0] col;
+
 reg[2:0] bincap;
+reg[4:0] col_intermediate;
+reg[3:0] row_intermediate;
 
 //[                data                ]
 //[11][10][9][8][7][6][5][4][3][2][1][0]
 //[    row     ][    col      ][bincap ]
-assign bincap = data[2:0];
-
-//[       shifted data         ] for C0 bias
-//[9][8][7][6][5][4][3][2][1][0]
-//[   row(on)   ][    col      ]
-
-assign reg[4:0] col_intermediate = data[7:3];
-assign reg[3:0] row_intermediate = data[11:8];
-
-
 always @(data) begin
-	genvar i;
-	generate
-	for (i = 0; i <= 31 ; i = i + 1) begin: 
-	    col[i] <= 1'b0;
-		if col_intermediate >= i 
-	    	col[i] <= 1'b1;
-	end
-	endgenerate
+	bincap <= data[2:0];
+	col_intermediate <= data[7:3];
+	row_intermediate <= data[11:8];
 end
 
-always @(data) begin
-	genvar i;
-	generate
-	for (i = 0; i <= 15 ; i = i + 1) begin: 
-	    row[i] <= 1'b0;
-		if row_intermediate >= i 
-	    	row[i] <= 1'b1;
-	    rowon[i] <= 1'b0;
-		if row_intermediate > i 
-	    	rowon[i] <= 1'b1;
+
+
+generate
+genvar i;
+always @(col_intermediate) begin
+	for (i = 0; i <= 31 ; i = i + 1) begin 
+		if (i%2==1) begin //odd
+		    col[i] <= 1'b0;
+			if (col_intermediate >= (31-i))
+		    	col[i] <= 1'b1;
+		end else begin //even
+		    col[i] <= 1'b0;
+			if (col_intermediate >= i)
+		    	col[i] <= 1'b1;
+		end
 	end
-	endgenerate	
 end
+endgenerate
+
+generate
+genvar j;
+always @(row_intermediate) begin
+	for (j = 0; j <= 15 ; j = j + 1) begin 
+	    row[j] <= 1'b0;
+		if (row_intermediate >= j) 
+	    	row[j] <= 1'b1;
+
+	    rowon[j] <= 1'b0;
+		if (row_intermediate > j) 
+	    	rowon[j] <= 1'b1;
+	end
+end
+endgenerate	
 
 //convert to Active-Low signals
 assign row_n = ~row;
 assign rowon_n = ~rowon;
 assign col_n = ~col;
+assign bincap_n = ~bincap;
 
 //LSB capacitor C0 is always enabled or disabled
-assign C0_p = 1`b1;
-assign C0_n = 1`b0;
+assign c0_p = 1'b1;
+assign c0_n = 1'b0;
 
 endmodule
 
