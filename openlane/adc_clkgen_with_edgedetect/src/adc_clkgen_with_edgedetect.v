@@ -13,6 +13,16 @@
 //   See the License for the specific language governing permissions and
 //   limitations under the License.
 
+
+// Asynchronous Clockgenerator with Edge-Detection for self-clocked ADC.
+//
+// Important: This verilog-file can not be synthesized with openlane-Optimizations 
+//            activated. It must be simulated with analog tools. 
+//
+// Reason:    Asynchronous design. 
+//            An ingoing signal transition from LOW to HIGH is translated to a LOW-HIGH-LOW Pulse 
+//            at the output. Digital design flows would like to optimize this away.
+
 module adc_clkgen_with_edgedetect(
    ena_in,
    start_conv,
@@ -93,7 +103,7 @@ endmodule
 
 // ##############################################
 //
-// Delay-Module with N times 5ns-Standard Cells
+// Delay-Generation with N times 6ns Delay
 //
 module delaycell #(parameter Ntimes6ns = 4)
 (

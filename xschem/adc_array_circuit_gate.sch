@@ -1,4 +1,5 @@
-v {xschem version=3.0.0 file_version=1.2 }
+v {xschem version=3.1.0 file_version=1.2
+}
 G {}
 K {}
 V {}
@@ -118,8 +119,8 @@ C {devices/ipin.sym} 140 -840 0 0 {name=p12 lab=sample_n}
 C {devices/noconn.sym} 150 -820 2 0 {name=l5}
 C {devices/noconn.sym} 150 -840 2 0 {name=l6}
 C {sky130_fd_pr/pfet_01v8.sym} 460 -640 1 0 {name=M1
-L=1
-W=2
+L=0.5
+W=1
 nf=2
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
