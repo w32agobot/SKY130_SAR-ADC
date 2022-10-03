@@ -1,1 +1,0 @@
-netgen -batch lvs "../mag/adc_vcm_gen/adc_vcm_gen_flattened.spice adc_vcm_gen_flattened" "../xschem/adc_vcm_gen/adc_vcm_gen.spice adc_vcm_gen" /foss/pdk/sky130A/libs.tech/netgen/sky130A_setup.tcl adc_vcm_gen.out

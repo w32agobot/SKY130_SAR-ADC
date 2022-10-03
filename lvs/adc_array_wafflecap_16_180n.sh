@@ -1,1 +1,0 @@
-netgen -batch lvs "../mag/180n_legacy/adc_array_cap_180n/adc_array_wafflecap_16x544aF_46um2.spice adc_array_wafflecap_16x544aF_46um2" "../xschem/180n_legacy/adc_array_cap_180n/adc_array_cap_16.spice adc_array_cap_16" /foss/pdk/sky130A/libs.tech/netgen/sky130A_setup.tcl adc_array_cap_16_lvs.out

@@ -57,20 +57,10 @@ lab=VSS}
 N 200 -210 210 -210 {
 lab=VSS}
 C {devices/title.sym} 200 -50 0 0 {name=l1 author="Manuel Moser"}
-C {sky130_fd_pr/nfet_01v8.sym} 270 -290 0 0 {name=M1
-L=0.15
-W=0.42
-nf=1 
-mult=1
-ad="'int((nf+1)/2) * W/nf * 0.29'" 
-pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
-as="'int((nf+2)/2) * W/nf * 0.29'" 
-ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
-nrd="'0.29 / W'" nrs="'0.29 / W'"
-sa=0 sb=0 sd=0
-model=nfet_01v8
-spiceprefix=X
-}
+C {devices/iopin.sym} 200 -470 0 1 {name=p1 lab=VDD}
+C {devices/iopin.sym} 200 -210 0 1 {name=p2 lab=VSS}
+C {devices/ipin.sym} 200 -340 0 0 {name=p4 lab=in}
+C {devices/opin.sym} 390 -340 0 0 {name=p3 lab=out}
 C {sky130_fd_pr/pfet_01v8.sym} 270 -390 0 0 {name=M2
 L=0.15
 W=0.84
@@ -85,7 +75,17 @@ sa=0 sb=0 sd=0
 model=pfet_01v8
 spiceprefix=X
 }
-C {devices/iopin.sym} 200 -470 0 1 {name=p1 lab=VDD}
-C {devices/iopin.sym} 200 -210 0 1 {name=p2 lab=VSS}
-C {devices/opin.sym} 390 -340 0 0 {name=p3 lab=out}
-C {devices/ipin.sym} 200 -340 0 0 {name=p4 lab=in}
+C {sky130_fd_pr/nfet_01v8.sym} 270 -290 0 0 {name=M1
+L=0.15
+W=0.42
+nf=1 
+mult=1
+ad="'int((nf+1)/2) * W/nf * 0.29'" 
+pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
+as="'int((nf+2)/2) * W/nf * 0.29'" 
+ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
+nrd="'0.29 / W'" nrs="'0.29 / W'"
+sa=0 sb=0 sd=0
+model=nfet_01v8
+spiceprefix=X
+}

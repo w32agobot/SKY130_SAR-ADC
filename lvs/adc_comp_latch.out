@@ -74,8 +74,8 @@ Netlists match uniquely.
 Subcircuit pins:
 Circuit 1: adc_comp_buffer                 |Circuit 2: adc_comp_buffer                 
 -------------------------------------------|-------------------------------------------
-VDD                                        |VDD                                        
 VSS                                        |VSS                                        
+VDD                                        |VDD                                        
 in                                         |in                                         
 out                                        |out                                        
 ---------------------------------------------------------------------------------------
@@ -83,7 +83,7 @@ Cell pin lists are equivalent.
 Device classes adc_comp_buffer and adc_comp_buffer are equivalent.
 
 Subcircuit summary:
-Circuit 1: NOR                             |Circuit 2: NOR                             
+Circuit 1: adc_nor                         |Circuit 2: adc_nor                         
 -------------------------------------------|-------------------------------------------
 sky130_fd_pr__pfet_01v8 (4)                |sky130_fd_pr__pfet_01v8 (4)                
 sky130_fd_pr__nfet_01v8 (2)                |sky130_fd_pr__nfet_01v8 (2)                
@@ -96,20 +96,20 @@ Netlists match uniquely.
 Circuits match correctly.
 
 Subcircuit pins:
-Circuit 1: NOR                             |Circuit 2: NOR                             
+Circuit 1: adc_nor                         |Circuit 2: adc_nor                         
 -------------------------------------------|-------------------------------------------
-Q                                          |Q                                          
+Q                                          |q                                          
 VSS                                        |VSS                                        
 VDD                                        |VDD                                        
-B                                          |B                                          
-A                                          |A                                          
+B                                          |b                                          
+A                                          |a                                          
 ---------------------------------------------------------------------------------------
 Cell pin lists are equivalent.
-Device classes NOR and NOR are equivalent.
+Device classes adc_nor and adc_nor are equivalent.
 
-Class inverter (0):  Merged 1 parallel devices.
+Class adc_inverter (0):  Merged 1 parallel devices.
 Subcircuit summary:
-Circuit 1: inverter                        |Circuit 2: inverter                        
+Circuit 1: adc_inverter                    |Circuit 2: adc_inverter                    
 -------------------------------------------|-------------------------------------------
 sky130_fd_pr__pfet_01v8 (2->1)             |sky130_fd_pr__pfet_01v8 (1)                
 sky130_fd_pr__nfet_01v8 (1)                |sky130_fd_pr__nfet_01v8 (1)                
@@ -120,15 +120,44 @@ Circuits match uniquely.
 Netlists match uniquely.
 
 Subcircuit pins:
-Circuit 1: inverter                        |Circuit 2: inverter                        
+Circuit 1: adc_inverter                    |Circuit 2: adc_inverter                    
 -------------------------------------------|-------------------------------------------
 out                                        |out                                        
 in                                         |in                                         
-VSS                                        |VSS                                        
 VDD                                        |VDD                                        
+VSS                                        |VSS                                        
 ---------------------------------------------------------------------------------------
 Cell pin lists are equivalent.
-Device classes inverter and inverter are equivalent.
+Device classes adc_inverter and adc_inverter are equivalent.
+
+Flattening instances of adc_nor in cell adc_nor_latch (1) makes a better match
+Making another compare attempt.
+
+Subcircuit summary:
+Circuit 1: adc_nor_latch                   |Circuit 2: adc_nor_latch                   
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__nfet_01v8 (4)                |sky130_fd_pr__nfet_01v8 (4)                
+sky130_fd_pr__pfet_01v8 (8)                |sky130_fd_pr__pfet_01v8 (8)                
+Number of devices: 12                      |Number of devices: 12                      
+Number of nets: 10                         |Number of nets: 10                         
+---------------------------------------------------------------------------------------
+Resolving automorphisms by property value.
+Resolving automorphisms by pin name.
+Netlists match uniquely.
+Circuits match correctly.
+
+Subcircuit pins:
+Circuit 1: adc_nor_latch                   |Circuit 2: adc_nor_latch                   
+-------------------------------------------|-------------------------------------------
+VDD                                        |VDD                                        
+Q                                          |q                                          
+QN                                         |qn                                         
+R                                          |r                                          
+S                                          |s                                          
+VSS                                        |VSS                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes adc_nor_latch and adc_nor_latch are equivalent.
 
 Class adc_comp_circuit (0):  Merged 23 parallel devices.
 Subcircuit summary:
@@ -161,42 +190,13 @@ VSS                                        |VSS
 Cell pin lists are equivalent.
 Device classes adc_comp_circuit and adc_comp_circuit are equivalent.
 
-Flattening instances of NOR in cell NOR-Latch (1) makes a better match
-Making another compare attempt.
-
-Subcircuit summary:
-Circuit 1: NOR-Latch                       |Circuit 2: NOR-Latch                       
--------------------------------------------|-------------------------------------------
-sky130_fd_pr__nfet_01v8 (4)                |sky130_fd_pr__nfet_01v8 (4)                
-sky130_fd_pr__pfet_01v8 (8)                |sky130_fd_pr__pfet_01v8 (8)                
-Number of devices: 12                      |Number of devices: 12                      
-Number of nets: 10                         |Number of nets: 10                         
----------------------------------------------------------------------------------------
-Resolving automorphisms by property value.
-Resolving automorphisms by pin name.
-Netlists match uniquely.
-Circuits match correctly.
-
-Subcircuit pins:
-Circuit 1: NOR-Latch                       |Circuit 2: NOR-Latch                       
--------------------------------------------|-------------------------------------------
-VDD                                        |VDD                                        
-Q                                          |Q                                          
-QN                                         |QN                                         
-R                                          |R                                          
-S                                          |S                                          
-VSS                                        |VSS                                        
----------------------------------------------------------------------------------------
-Cell pin lists are equivalent.
-Device classes NOR-Latch and NOR-Latch are equivalent.
-
 Subcircuit summary:
 Circuit 1: adc_comp_latch                  |Circuit 2: adc_comp_latch                  
 -------------------------------------------|-------------------------------------------
-inverter (2)                               |inverter (2)                               
+adc_inverter (2)                           |adc_inverter (2)                           
+adc_nor (1)                                |adc_nor (1)                                
+adc_nor_latch (1)                          |adc_nor_latch (1)                          
 adc_comp_circuit (1)                       |adc_comp_circuit (1)                       
-NOR-Latch (1)                              |NOR-Latch (1)                              
-NOR (1)                                    |NOR (1)                                    
 Number of devices: 5                       |Number of devices: 5                       
 Number of nets: 12                         |Number of nets: 12                         
 ---------------------------------------------------------------------------------------
@@ -206,12 +206,12 @@ Netlists match uniquely.
 Subcircuit pins:
 Circuit 1: adc_comp_latch                  |Circuit 2: adc_comp_latch                  
 -------------------------------------------|-------------------------------------------
-latch_qn                                   |latch_qn                                   
-latch_q                                    |latch_q                                    
-comp_trig                                  |comp_trig                                  
 clk                                        |clk                                        
 inp                                        |inp                                        
 inn                                        |inn                                        
+comp_trig                                  |comp_trig                                  
+latch_qn                                   |latch_qn                                   
+latch_q                                    |latch_q                                    
 VDD                                        |VDD                                        
 VSS                                        |VSS                                        
 ---------------------------------------------------------------------------------------
