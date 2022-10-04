@@ -20,8 +20,8 @@ T {   Copyright 2022 Manuel Moser
    limitations under the License.} 50 -250 0 0 0.2 0.2 {}
 T {Switching transient} 580 -1050 0 0 0.6 0.6 {}
 T {On-/off-Resistance from vin-vout = 1799mV to 1 mV while vin=1.8V} 570 -580 0 0 0.6 0.6 {}
-T {ON} 630 -510 0 0 0.8 0.8 {}
-T {OFF} 1170 -510 0 0 0.8 0.8 {}
+T {ON} 740 -480 0 0 0.8 0.8 {}
+T {OFF} 1280 -480 0 0 0.8 0.8 {}
 T {If the channel length is too small: Backcurrent drains output at 125°C and FF.
 Choice: Values for Transient 4 (W=1u L=0.5u) are good at fast and slow corner.
 WN=WP and LN=LP for charge-injection-compensation} 180 -1260 0 0 0.6 0.6 {}
@@ -55,10 +55,6 @@ N 850 -230 880 -230 {
 lab=sig2_out}
 N 880 -230 910 -230 {
 lab=sig2_out}
-N 690 -440 760 -440 {
-lab=sig2_in}
-N 760 -440 820 -440 {
-lab=sig2_in}
 N 850 -150 850 -130 {
 lab=GND}
 N 850 -230 850 -210 {
@@ -67,36 +63,12 @@ N 1440 -230 1470 -230 {
 lab=sig3_out}
 N 1470 -230 1500 -230 {
 lab=sig3_out}
-N 1280 -440 1350 -440 {
-lab=sig3_in}
-N 1350 -440 1410 -440 {
-lab=sig3_in}
 N 1440 -150 1440 -130 {
 lab=GND}
 N 1440 -230 1440 -210 {
 lab=sig3_out}
 N 1540 -350 1540 -340 {
 lab=VDD}
-N 1250 -400 1250 -350 {
-lab=sig3_in}
-N 1250 -440 1250 -400 {
-lab=sig3_in}
-N 1250 -290 1250 -240 {
-lab=sig3_out}
-N 1250 -240 1250 -230 {
-lab=sig3_out}
-N 1250 -230 1440 -230 {
-lab=sig3_out}
-N 1220 -440 1280 -440 {
-lab=sig3_in}
-N 710 -440 710 -310 {
-lab=sig2_in}
-N 710 -250 710 -240 {
-lab=sig2_out}
-N 710 -240 710 -230 {
-lab=sig2_out}
-N 710 -230 850 -230 {
-lab=sig2_out}
 N 1050 -910 1050 -890 {
 lab=sig_in}
 N 1050 -910 1160 -910 {
@@ -147,10 +119,6 @@ N 910 -340 920 -340 {
 lab=VDD}
 N 910 -390 910 -340 {
 lab=VDD}
-N 820 -440 860 -440 {
-lab=sig2_in}
-N 860 -440 860 -380 {
-lab=sig2_in}
 N 850 -290 850 -230 {
 lab=sig2_out}
 N 1370 -380 1370 -360 {
@@ -173,8 +141,6 @@ N 1470 -340 1480 -340 {
 lab=VDD}
 N 1470 -390 1470 -340 {
 lab=VDD}
-N 1410 -440 1410 -380 {
-lab=sig3_in}
 N 1440 -290 1440 -230 {
 lab=sig3_out}
 N 750 -340 750 -330 {
@@ -187,6 +153,16 @@ N 960 -340 960 -310 {
 lab=GND}
 N 1330 -330 1330 -310 {
 lab=GND}
+N 860 -410 860 -380 {
+lab=sig2_in}
+N 860 -490 860 -470 {
+lab=VDD}
+N 1430 -400 1430 -380 {
+lab=sig3_in}
+N 1430 -470 1430 -460 {
+lab=VDD}
+N 1430 -480 1430 -470 {
+lab=VDD}
 C {devices/gnd.sym} 760 -710 0 0 {name=l1 lab=GND}
 C {devices/gnd.sym} 1060 -810 0 0 {name=l2 lab=GND}
 C {devices/vdd.sym} 1150 -920 0 0 {name=l3 lab=VDD}
@@ -200,7 +176,7 @@ C {devices/gnd.sym} 1280 -760 0 0 {name=l9 lab=GND}
 C {devices/gnd.sym} 910 -750 0 0 {name=l10 lab=GND}
 C {devices/lab_wire.sym} 1010 -860 0 0 {name=l11 sig_type=std_logic lab=sw}
 C {devices/lab_wire.sym} 1200 -870 0 1 {name=l12 sig_type=std_logic lab=sw_n}
-C {sky130_fd_pr/corner.sym} 40 -480 0 0 {name=CORNER only_toplevel=false corner=ss}
+C {sky130_fd_pr/corner.sym} 40 -480 0 0 {name=CORNER only_toplevel=false corner=ff}
 C {devices/title.sym} 160 -40 0 0 {name=l13 author="Manuel Moser"}
 C {devices/launcher.sym} 240 -370 0 0 {name=h1
 descr=Backannotate
@@ -214,17 +190,15 @@ footprint=1206
 device="ceramic capacitor"}
 C {devices/lab_wire.sym} 630 -880 0 0 {name=l15 sig_type=std_logic lab=sig_in}
 C {devices/gnd.sym} 630 -710 0 0 {name=l16 lab=GND}
-C {devices/lab_wire.sym} 690 -440 0 0 {name=l17 sig_type=std_logic lab=sig2_in}
+C {devices/lab_wire.sym} 810 -380 0 0 {name=l17 sig_type=std_logic lab=sig2_in}
 C {devices/gnd.sym} 850 -130 0 0 {name=l22 lab=GND}
 C {devices/lab_wire.sym} 910 -230 0 0 {name=l23 sig_type=std_logic lab=sig2_out}
 C {devices/vsource.sym} 850 -180 0 0 {name=V5 value="0 pulse(1m 1799m 0 40m 40m 1p 40m)"}
-C {devices/lab_wire.sym} 1220 -440 0 0 {name=l26 sig_type=std_logic lab=sig3_in}
+C {devices/lab_wire.sym} 1370 -380 0 0 {name=l26 sig_type=std_logic lab=sig3_in}
 C {devices/gnd.sym} 1440 -130 0 0 {name=l28 lab=GND}
 C {devices/lab_wire.sym} 1500 -230 0 0 {name=l29 sig_type=std_logic lab=sig3_out}
 C {devices/vdd.sym} 1540 -350 0 0 {name=l30 lab=VDD}
 C {devices/vsource.sym} 1440 -180 0 0 {name=V6 value="0 pulse(1m 1799m 0 40m 40m 1p 40m)"}
-C {devices/vsource.sym} 1250 -320 0 1 {name=V7 value="1.8 pulse(1799m 1m 0 40m 40m 1p 40m)"}
-C {devices/vsource.sym} 710 -280 0 1 {name=V8 value="1.8 pulse(1799m 1m 0 40m 40m 1p 40m)"}
 C {devices/ngspice_probe.sym} 1020 -860 0 0 {name=r14}
 C {sky130_fd_pr/pfet_01v8.sym} 1180 -870 2 0 {name=M1
 L=l_p
@@ -319,7 +293,7 @@ spiceprefix=X
 }
 C {devices/code.sym} 30 -650 0 0 {name=STIMULI only_toplevel=false value="
 .save all 
-.temp = -25
+.temp = 100
 *.options method=gear
 .OPTIONS savecurrents
 .OPTIONS RELTOL=.1 TRTOL=1 ABSTOL=1e-20 CHGTOL=1.0e-20 DEFAD=1.0e-18
@@ -381,3 +355,7 @@ plot (-(tran1.v(sig2_in)-tran1.v(sig2_out))/tran1.I(v8)) (-(tran2.v(sig2_in)-tra
 plot (-(tran1.v(sig3_in)-tran1.v(sig3_out))/tran1.I(v7)) (-(tran2.v(sig3_in)-tran2.v(sig3_out))/tran2.I(v7)) (-(tran3.v(sig3_in)-tran3.v(sig3_out))/tran3.I(v7)) (-(tran4.v(sig3_in)-tran4.v(sig3_out))/tran4.I(v7))
 .endc
 "}
+C {devices/vsource.sym} 860 -440 2 0 {name=V8 value=0}
+C {devices/vsource.sym} 1430 -430 2 0 {name=V7 value=0}
+C {devices/vdd.sym} 860 -490 0 0 {name=l3 lab=VDD}
+C {devices/vdd.sym} 1430 -480 0 0 {name=l3 lab=VDD}
