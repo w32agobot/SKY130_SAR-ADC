@@ -1,15 +1,6 @@
 
 
-
-# User config
 set ::env(DESIGN_NAME) adc_clkgen_with_edgedetect
-
-
-# Custom Library with Custom Std-Cells
- set ::env(LIB_SYNTH) "$::env(DESIGN_DIR)/src/sky130/sky130_fd_sc_hd__tt_025C_1v80.lib"
- set ::env(LIB_SLOWEST) "$::env(DESIGN_DIR)/src/sky130/sky130_fd_sc_hd__ss_100C_1v60.lib"
- set ::env(LIB_FASTEST) "$::env(DESIGN_DIR)/src/sky130/sky130_fd_sc_hd__ff_n40C_1v95.lib"
- set ::env(LIB_TYPICAL) "$::env(DESIGN_DIR)/src/sky130/sky130_fd_sc_hd__tt_025C_1v80.lib"
 
 # unused, but needed
  set ::env(CLOCK_PORT) ""
@@ -19,6 +10,7 @@ set ::env(DESIGN_NAME) adc_clkgen_with_edgedetect
 # Files
  set ::env(VERILOG_FILES) [glob $::env(DESIGN_DIR)/src/*.v]
  set ::env(EXTRA_LEFS) [glob $::env(DESIGN_DIR)/src/*.lef]
+ set ::env(EXTRA_LIBS) [glob $::env(DESIGN_DIR)/src/*.lib]
  set ::env(EXTRA_GDS_FILES) [glob $::env(DESIGN_DIR)/src/*.gds]
  set ::env(SYNTH_READ_BLACKBOX_LIB) 1
 

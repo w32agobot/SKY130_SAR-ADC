@@ -57,6 +57,7 @@ set ::env(ECO_ITER) {0}
 set ::env(ECO_SKIP_PIN) {1}
 set ::env(EXTRA_GDS_FILES) {/foss/designs/SKY130_SAR-ADC/openlane/adc_clkgen_with_edgedetect/src/sky130_mm_sc_hd_dlyPoly6ns.gds}
 set ::env(EXTRA_LEFS) {/foss/designs/SKY130_SAR-ADC/openlane/adc_clkgen_with_edgedetect/src/sky130_mm_sc_hd_dlyPoly6ns.lef}
+set ::env(EXTRA_LIBS) {/foss/designs/SKY130_SAR-ADC/openlane/adc_clkgen_with_edgedetect/src/sky130_mm_sc_hd_dlyPoly6ns.lib}
 set ::env(FAKEDIODE_CELL) {sky130_ef_sc_hd__fakediode_2}
 set ::env(FILL_CELL) {sky130_fd_sc_hd__fill*}
 set ::env(FILL_INSERTION) {1}
@@ -147,11 +148,11 @@ set ::env(KLAYOUT_XOR_GDS) {1}
 set ::env(KLAYOUT_XOR_XML) {1}
 set ::env(LEC_ENABLE) {0}
 set ::env(LEFT_MARGIN_MULT) {1}
-set ::env(LIB_FASTEST) {/foss/designs/SKY130_SAR-ADC/openlane/adc_clkgen_with_edgedetect/src/sky130/sky130_fd_sc_hd__ff_n40C_1v95.lib}
-set ::env(LIB_SLOWEST) {/foss/designs/SKY130_SAR-ADC/openlane/adc_clkgen_with_edgedetect/src/sky130/sky130_fd_sc_hd__ss_100C_1v60.lib}
+set ::env(LIB_FASTEST) {/foss/pdk/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__ff_n40C_1v95.lib}
+set ::env(LIB_SLOWEST) {/foss/pdk/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__ss_100C_1v60.lib}
 set ::env(LIB_SLOWEST_OPT) {/foss/pdk/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__ss_100C_1v60.lib}
-set ::env(LIB_SYNTH) {/foss/designs/SKY130_SAR-ADC/openlane/adc_clkgen_with_edgedetect/src/sky130/sky130_fd_sc_hd__tt_025C_1v80.lib}
-set ::env(LIB_TYPICAL) {/foss/designs/SKY130_SAR-ADC/openlane/adc_clkgen_with_edgedetect/src/sky130/sky130_fd_sc_hd__tt_025C_1v80.lib}
+set ::env(LIB_SYNTH) {/foss/pdk/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib}
+set ::env(LIB_TYPICAL) {/foss/pdk/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib}
 set ::env(LOGS_DIR) {/foss/designs/SKY130_SAR-ADC/openlane/adc_clkgen_with_edgedetect/runs/kasleberkas/logs}
 set ::env(LVS_CONNECT_BY_LABEL) {0}
 set ::env(LVS_INSERT_POWER_PINS) {1}
@@ -245,7 +246,7 @@ set ::env(RUN_SIMPLE_CTS) {0}
 set ::env(RUN_SPEF_EXTRACTION) {1}
 set ::env(RUN_TAG) {kasleberkas}
 set ::env(SPEF_EXTRACTOR) {openrcx}
-set ::env(START_TIME) {2022.09.23_08.36.21}
+set ::env(START_TIME) {2022.10.05_12.06.20}
 set ::env(STA_REPORT_POWER) {1}
 set ::env(STD_CELL_GROUND_PINS) {VGND VNB}
 set ::env(STD_CELL_LIBRARY_CDL) {/foss/pdk/sky130A/libs.ref/sky130_fd_sc_hd/cdl/sky130_fd_sc_hd.cdl}
@@ -384,7 +385,7 @@ set ::env(CURRENT_SPEF) {/foss/designs/SKY130_SAR-ADC/openlane/adc_clkgen_with_e
 set ::env(CURRENT_STEP) {}
 set ::env(CVC_SCRIPTS_DIR) {/foss/pdk/sky130A/libs.tech/openlane/cvc}
 set ::env(DATA_WIRE_RC_LAYER) {met2}
-set ::env(DBUS_SESSION_BUS_ADDRESS) {unix:abstract=/tmp/dbus-sLsnduqPil,guid=7974687e8d0b13d4d9f4ea74632d6a74}
+set ::env(DBUS_SESSION_BUS_ADDRESS) {unix:abstract=/tmp/dbus-MVMIcijhcG,guid=61df569e9ca342a5a8aaf8a6633d63eb}
 set ::env(DECAP_CELL) {sky130_ef_sc_hd__decap_12 sky130_fd_sc_hd__decap_8 sky130_fd_sc_hd__decap_6 sky130_fd_sc_hd__decap_4 sky130_fd_sc_hd__decap_3}
 set ::env(DEFAULT_MAX_TRAN) {0.75}
 set ::env(DEF_UNITS_PER_MICRON) {1000}
@@ -415,6 +416,7 @@ set ::env(ECO_SKIP_PIN) {1}
 set ::env(EDITOR) {gedit}
 set ::env(EXTRA_GDS_FILES) {/foss/designs/SKY130_SAR-ADC/openlane/adc_clkgen_with_edgedetect/src/sky130_mm_sc_hd_dlyPoly6ns.gds}
 set ::env(EXTRA_LEFS) {/foss/designs/SKY130_SAR-ADC/openlane/adc_clkgen_with_edgedetect/src/sky130_mm_sc_hd_dlyPoly6ns.lef}
+set ::env(EXTRA_LIBS) {/foss/designs/SKY130_SAR-ADC/openlane/adc_clkgen_with_edgedetect/src/sky130_mm_sc_hd_dlyPoly6ns.lib}
 set ::env(EXT_NETLIST) {/foss/designs/SKY130_SAR-ADC/openlane/adc_clkgen_with_edgedetect/runs/kasleberkas/results/signoff/adc_clkgen_with_edgedetect.gds.spice}
 set ::env(FAKEDIODE_CELL) {sky130_ef_sc_hd__fakediode_2}
 set ::env(FILL_CELL) {sky130_fd_sc_hd__fill*}
@@ -516,16 +518,16 @@ set ::env(LD_LIBRARY_PATH) {/foss/tools/klayout/428d0fe}
 set ::env(LEC_ENABLE) {0}
 set ::env(LEFT_MARGIN_MULT) {1}
 set ::env(LIBGL_ALWAYS_INDIRECT) {1}
-set ::env(LIB_FASTEST) {/foss/designs/SKY130_SAR-ADC/openlane/adc_clkgen_with_edgedetect/src/sky130/sky130_fd_sc_hd__ff_n40C_1v95.lib}
+set ::env(LIB_FASTEST) {/foss/pdk/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__ff_n40C_1v95.lib}
 set ::env(LIB_RESIZER_OPT) {/foss/designs/SKY130_SAR-ADC/openlane/adc_clkgen_with_edgedetect/runs/kasleberkas/tmp/synthesis/resizer_sky130_fd_sc_hd__tt_025C_1v80.lib}
-set ::env(LIB_SLOWEST) {/foss/designs/SKY130_SAR-ADC/openlane/adc_clkgen_with_edgedetect/src/sky130/sky130_fd_sc_hd__ss_100C_1v60.lib}
+set ::env(LIB_SLOWEST) {/foss/pdk/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__ss_100C_1v60.lib}
 set ::env(LIB_SLOWEST_OPT) {/foss/pdk/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__ss_100C_1v60.lib}
 set ::env(LIB_SYNTH) {/foss/designs/SKY130_SAR-ADC/openlane/adc_clkgen_with_edgedetect/runs/kasleberkas/tmp/synthesis/trimmed.lib}
-set ::env(LIB_SYNTH_COMPLETE) {/foss/designs/SKY130_SAR-ADC/openlane/adc_clkgen_with_edgedetect/src/sky130/sky130_fd_sc_hd__tt_025C_1v80.lib}
+set ::env(LIB_SYNTH_COMPLETE) {/foss/pdk/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib}
 set ::env(LIB_SYNTH_COMPLETE_NO_PG) {/foss/designs/SKY130_SAR-ADC/openlane/adc_clkgen_with_edgedetect/runs/kasleberkas/tmp/synthesis/1-sky130_fd_sc_hd__tt_025C_1v80.no_pg.lib}
 set ::env(LIB_SYNTH_MERGED) {/foss/designs/SKY130_SAR-ADC/openlane/adc_clkgen_with_edgedetect/runs/kasleberkas/tmp/synthesis/merged.lib}
 set ::env(LIB_SYNTH_NO_PG) {/foss/designs/SKY130_SAR-ADC/openlane/adc_clkgen_with_edgedetect/runs/kasleberkas/tmp/synthesis/1-trimmed.no_pg.lib}
-set ::env(LIB_TYPICAL) {/foss/designs/SKY130_SAR-ADC/openlane/adc_clkgen_with_edgedetect/src/sky130/sky130_fd_sc_hd__tt_025C_1v80.lib}
+set ::env(LIB_TYPICAL) {/foss/pdk/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib}
 set ::env(LOGS_DIR) {/foss/designs/SKY130_SAR-ADC/openlane/adc_clkgen_with_edgedetect/runs/kasleberkas/logs}
 set ::env(LVS_CONNECT_BY_LABEL) {0}
 set ::env(LVS_CURRENT_DEF) {/foss/designs/SKY130_SAR-ADC/openlane/adc_clkgen_with_edgedetect/runs/kasleberkas/results/routing/adc_clkgen_with_edgedetect.def}
@@ -615,7 +617,7 @@ set ::env(RCX_CONTEXT_DEPTH) {5}
 set ::env(RCX_CORNER_COUNT) {1}
 set ::env(RCX_COUPLING_THRESHOLD) {0.1}
 set ::env(RCX_LEF) {/foss/designs/SKY130_SAR-ADC/openlane/adc_clkgen_with_edgedetect/runs/kasleberkas/tmp/merged.nom.lef}
-set ::env(RCX_LIB) {/foss/designs/SKY130_SAR-ADC/openlane/adc_clkgen_with_edgedetect/src/sky130/sky130_fd_sc_hd__tt_025C_1v80.lib}
+set ::env(RCX_LIB) {/foss/pdk/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib}
 set ::env(RCX_MAX_RESISTANCE) {50}
 set ::env(RCX_MERGE_VIA_WIRE_RES) {1}
 set ::env(RCX_RULES) {/foss/pdk/sky130A/libs.tech/openlane/rules.openrcx.sky130A.nom.spef_extractor}
@@ -654,14 +656,14 @@ set ::env(SAVE_SDC) {/foss/designs/SKY130_SAR-ADC/openlane/adc_clkgen_with_edged
 set ::env(SAVE_SDF) {/foss/designs/SKY130_SAR-ADC/openlane/adc_clkgen_with_edgedetect/runs/kasleberkas/results/routing/adc_clkgen_with_edgedetect.sdf}
 set ::env(SAVE_SPEF) {/foss/designs/SKY130_SAR-ADC/openlane/adc_clkgen_with_edgedetect/runs/kasleberkas/results/routing/adc_clkgen_with_edgedetect.nom.spef}
 set ::env(SCRIPTS_DIR) {/foss/tools/openlane/2022.09/scripts}
-set ::env(SESSION_MANAGER) {local/unix:@/tmp/.ICE-unix/46,unix/unix:/tmp/.ICE-unix/46}
+set ::env(SESSION_MANAGER) {local/unix:@/tmp/.ICE-unix/45,unix/unix:/tmp/.ICE-unix/45}
 set ::env(SHLVL) {2}
 set ::env(SPEF_EXTRACTOR) {openrcx}
 set ::env(SPEF_PREFIX) {/foss/designs/SKY130_SAR-ADC/openlane/adc_clkgen_with_edgedetect/runs/kasleberkas/results/routing/adc_clkgen_with_edgedetect}
 set ::env(SSH_AGENT_PID) {115}
-set ::env(SSH_AUTH_SOCK) {/tmp/ssh-XXXXXXI0uUeh/agent.114}
+set ::env(SSH_AUTH_SOCK) {/tmp/ssh-XXXXXXSyZRzi/agent.114}
 set ::env(STARTUPDIR) {/dockerstartup}
-set ::env(START_TIME) {2022.09.23_08.36.21}
+set ::env(START_TIME) {2022.10.05_12.06.20}
 set ::env(STA_LEF) {/foss/designs/SKY130_SAR-ADC/openlane/adc_clkgen_with_edgedetect/runs/kasleberkas/tmp/merged.nom.lef}
 set ::env(STA_PRE_CTS) {0}
 set ::env(STA_REPORT_POWER) {1}
@@ -727,7 +729,7 @@ set ::env(VNC_PW) {abc123}
 set ::env(VNC_RESOLUTION) {1680x1050}
 set ::env(VNC_VIEW_ONLY) {false}
 set ::env(VTE_VERSION) {6402}
-set ::env(WINDOWID) {37748739}
+set ::env(WINDOWID) {33556029}
 set ::env(WIRE_RC_LAYER) {met1}
 set ::env(XDG_CONFIG_DIRS) {/etc/xdg}
 set ::env(XDG_CURRENT_DESKTOP) {XFCE}
@@ -767,6 +769,6 @@ set ::env(synthesis_logs) {/foss/designs/SKY130_SAR-ADC/openlane/adc_clkgen_with
 set ::env(synthesis_reports) {/foss/designs/SKY130_SAR-ADC/openlane/adc_clkgen_with_edgedetect/runs/kasleberkas/reports/synthesis}
 set ::env(synthesis_results) {/foss/designs/SKY130_SAR-ADC/openlane/adc_clkgen_with_edgedetect/runs/kasleberkas/results/synthesis}
 set ::env(synthesis_tmpfiles) {/foss/designs/SKY130_SAR-ADC/openlane/adc_clkgen_with_edgedetect/runs/kasleberkas/tmp/synthesis}
-set ::env(timer_end) {1663922324}
-set ::env(timer_routed) {1663922253}
-set ::env(timer_start) {1663922180}
+set ::env(timer_end) {1664971704}
+set ::env(timer_routed) {1664971646}
+set ::env(timer_start) {1664971580}

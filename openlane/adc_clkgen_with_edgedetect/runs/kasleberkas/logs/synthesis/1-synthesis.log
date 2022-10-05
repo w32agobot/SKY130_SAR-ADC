@@ -29,9 +29,12 @@
 Reading /foss/designs/SKY130_SAR-ADC/openlane/adc_clkgen_with_edgedetect/runs/kasleberkas/tmp/synthesis/1-sky130_fd_sc_hd__tt_025C_1v80.no_pg.lib as a blackbox
 
 1. Executing Liberty frontend.
-Imported 429 cell types from liberty file.
+Imported 428 cell types from liberty file.
 
-2. Executing Verilog-2005 frontend: /foss/designs/SKY130_SAR-ADC/openlane/adc_clkgen_with_edgedetect/src/adc_clkgen_with_edgedetect.v
+2. Executing Liberty frontend.
+Imported 1 cell types from liberty file.
+
+3. Executing Verilog-2005 frontend: /foss/designs/SKY130_SAR-ADC/openlane/adc_clkgen_with_edgedetect/src/adc_clkgen_with_edgedetect.v
 Parsing SystemVerilog input from `/foss/designs/SKY130_SAR-ADC/openlane/adc_clkgen_with_edgedetect/src/adc_clkgen_with_edgedetect.v' to AST representation.
 Generating RTLIL representation for module `\adc_clkgen_with_edgedetect'.
 Generating RTLIL representation for module `\adc_clk_generation'.
@@ -39,25 +42,25 @@ Generating RTLIL representation for module `\adc_edge_detect_circuit'.
 Generating RTLIL representation for module `\delaycell'.
 Successfully finished Verilog frontend.
 
-3. Generating Graphviz representation of design.
+4. Generating Graphviz representation of design.
 Writing dot description to `/foss/designs/SKY130_SAR-ADC/openlane/adc_clkgen_with_edgedetect/runs/kasleberkas/tmp/synthesis/hierarchy.dot'.
 Dumping module adc_clkgen_with_edgedetect to page 1.
 
-4. Executing HIERARCHY pass (managing design hierarchy).
+5. Executing HIERARCHY pass (managing design hierarchy).
 
-4.1. Analyzing design hierarchy..
+5.1. Analyzing design hierarchy..
 Top module:  \adc_clkgen_with_edgedetect
 Used module:     \adc_clk_generation
 Used module:         \delaycell
 Used module:     \adc_edge_detect_circuit
 Parameter \Ntimes6ns = 34
 
-4.2. Executing AST frontend in derive mode using pre-parsed AST for module `\delaycell'.
+5.2. Executing AST frontend in derive mode using pre-parsed AST for module `\delaycell'.
 Parameter \Ntimes6ns = 34
 Generating RTLIL representation for module `$paramod\delaycell\Ntimes6ns=s32'00000000000000000000000000100010'.
 Parameter \Ntimes6ns = 17
 
-4.3. Executing AST frontend in derive mode using pre-parsed AST for module `\delaycell'.
+5.3. Executing AST frontend in derive mode using pre-parsed AST for module `\delaycell'.
 Parameter \Ntimes6ns = 17
 Generating RTLIL representation for module `$paramod\delaycell\Ntimes6ns=s32'00000000000000000000000000010001'.
 Parameter \Ntimes6ns = 17
@@ -65,14 +68,14 @@ Found cached RTLIL representation for module `$paramod\delaycell\Ntimes6ns=s32'0
 Parameter \Ntimes6ns = 17
 Found cached RTLIL representation for module `$paramod\delaycell\Ntimes6ns=s32'00000000000000000000000000010001'.
 
-4.4. Analyzing design hierarchy..
+5.4. Analyzing design hierarchy..
 Top module:  \adc_clkgen_with_edgedetect
 Used module:     \adc_clk_generation
 Used module:         $paramod\delaycell\Ntimes6ns=s32'00000000000000000000000000010001
 Used module:     \adc_edge_detect_circuit
 Used module:         $paramod\delaycell\Ntimes6ns=s32'00000000000000000000000000100010
 
-4.5. Analyzing design hierarchy..
+5.5. Analyzing design hierarchy..
 Top module:  \adc_clkgen_with_edgedetect
 Used module:     \adc_clk_generation
 Used module:         $paramod\delaycell\Ntimes6ns=s32'00000000000000000000000000010001
@@ -81,20 +84,20 @@ Used module:         $paramod\delaycell\Ntimes6ns=s32'00000000000000000000000000
 Removing unused module `\delaycell'.
 Removed 1 unused modules.
 
-5. Executing TRIBUF pass.
+6. Executing TRIBUF pass.
 
-6. Executing SYNTH pass.
+7. Executing SYNTH pass.
 
-6.1. Executing HIERARCHY pass (managing design hierarchy).
+7.1. Executing HIERARCHY pass (managing design hierarchy).
 
-6.1.1. Analyzing design hierarchy..
+7.1.1. Analyzing design hierarchy..
 Top module:  \adc_clkgen_with_edgedetect
 Used module:     \adc_clk_generation
 Used module:         $paramod\delaycell\Ntimes6ns=s32'00000000000000000000000000010001
 Used module:     \adc_edge_detect_circuit
 Used module:         $paramod\delaycell\Ntimes6ns=s32'00000000000000000000000000100010
 
-6.1.2. Analyzing design hierarchy..
+7.1.2. Analyzing design hierarchy..
 Top module:  \adc_clkgen_with_edgedetect
 Used module:     \adc_clk_generation
 Used module:         $paramod\delaycell\Ntimes6ns=s32'00000000000000000000000000010001
@@ -102,280 +105,280 @@ Used module:     \adc_edge_detect_circuit
 Used module:         $paramod\delaycell\Ntimes6ns=s32'00000000000000000000000000100010
 Removed 0 unused modules.
 
-6.2. Executing PROC pass (convert processes to netlists).
+7.2. Executing PROC pass (convert processes to netlists).
 
-6.2.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+7.2.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
 Cleaned up 0 empty switches.
 
-6.2.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+7.2.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
 Removed a total of 0 dead cases.
 
-6.2.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+7.2.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
 Removed 0 redundant assignments.
 Promoted 0 assignments to connections.
 
-6.2.4. Executing PROC_INIT pass (extract init attributes).
+7.2.4. Executing PROC_INIT pass (extract init attributes).
 
-6.2.5. Executing PROC_ARST pass (detect async resets in processes).
+7.2.5. Executing PROC_ARST pass (detect async resets in processes).
 
-6.2.6. Executing PROC_ROM pass (convert switches to ROMs).
+7.2.6. Executing PROC_ROM pass (convert switches to ROMs).
 Converted 0 switches.
 
-6.2.7. Executing PROC_MUX pass (convert decision trees to multiplexers).
+7.2.7. Executing PROC_MUX pass (convert decision trees to multiplexers).
 
-6.2.8. Executing PROC_DLATCH pass (convert process syncs to latches).
+7.2.8. Executing PROC_DLATCH pass (convert process syncs to latches).
 
-6.2.9. Executing PROC_DFF pass (convert process syncs to FFs).
+7.2.9. Executing PROC_DFF pass (convert process syncs to FFs).
 
-6.2.10. Executing PROC_MEMWR pass (convert process memory writes to cells).
+7.2.10. Executing PROC_MEMWR pass (convert process memory writes to cells).
 
-6.2.11. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+7.2.11. Executing PROC_CLEAN pass (remove empty switches from decision trees).
 Cleaned up 0 empty switches.
 
-6.2.12. Executing OPT_EXPR pass (perform const folding).
+7.2.12. Executing OPT_EXPR pass (perform const folding).
 Optimizing module $paramod\delaycell\Ntimes6ns=s32'00000000000000000000000000100010.
 Optimizing module $paramod\delaycell\Ntimes6ns=s32'00000000000000000000000000010001.
 Optimizing module adc_edge_detect_circuit.
 Optimizing module adc_clk_generation.
 Optimizing module adc_clkgen_with_edgedetect.
 
-6.3. Executing FLATTEN pass (flatten design).
+7.3. Executing FLATTEN pass (flatten design).
 Deleting now unused module $paramod\delaycell\Ntimes6ns=s32'00000000000000000000000000100010.
 Deleting now unused module $paramod\delaycell\Ntimes6ns=s32'00000000000000000000000000010001.
 Deleting now unused module adc_edge_detect_circuit.
 Deleting now unused module adc_clk_generation.
 <suppressed ~6 debug messages>
 
-6.4. Executing OPT_EXPR pass (perform const folding).
+7.4. Executing OPT_EXPR pass (perform const folding).
 Optimizing module adc_clkgen_with_edgedetect.
 
-6.5. Executing OPT_CLEAN pass (remove unused cells and wires).
+7.5. Executing OPT_CLEAN pass (remove unused cells and wires).
 Finding unused cells or wires in module \adc_clkgen_with_edgedetect..
 Removed 0 unused cells and 5 unused wires.
 <suppressed ~1 debug messages>
 
-6.6. Executing CHECK pass (checking for obvious problems).
+7.6. Executing CHECK pass (checking for obvious problems).
 Checking module adc_clkgen_with_edgedetect...
 Found and reported 0 problems.
 
-6.7. Executing OPT pass (performing simple optimizations).
+7.7. Executing OPT pass (performing simple optimizations).
 
-6.7.1. Executing OPT_EXPR pass (perform const folding).
+7.7.1. Executing OPT_EXPR pass (perform const folding).
 Optimizing module adc_clkgen_with_edgedetect.
 
-6.7.2. Executing OPT_MERGE pass (detect identical cells).
+7.7.2. Executing OPT_MERGE pass (detect identical cells).
 Finding identical cells in module `\adc_clkgen_with_edgedetect'.
 <suppressed ~3 debug messages>
 Removed a total of 1 cells.
 
-6.7.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+7.7.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
 Running muxtree optimizer on module \adc_clkgen_with_edgedetect..
   Creating internal representation of mux trees.
   No muxes found in this module.
 Removed 0 multiplexer ports.
 
-6.7.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+7.7.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
   Optimizing cells in module \adc_clkgen_with_edgedetect.
 Performed a total of 0 changes.
 
-6.7.5. Executing OPT_MERGE pass (detect identical cells).
+7.7.5. Executing OPT_MERGE pass (detect identical cells).
 Finding identical cells in module `\adc_clkgen_with_edgedetect'.
 Removed a total of 0 cells.
 
-6.7.6. Executing OPT_DFF pass (perform DFF optimizations).
+7.7.6. Executing OPT_DFF pass (perform DFF optimizations).
 
-6.7.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+7.7.7. Executing OPT_CLEAN pass (remove unused cells and wires).
 Finding unused cells or wires in module \adc_clkgen_with_edgedetect..
 
-6.7.8. Executing OPT_EXPR pass (perform const folding).
+7.7.8. Executing OPT_EXPR pass (perform const folding).
 Optimizing module adc_clkgen_with_edgedetect.
 
-6.7.9. Finished OPT passes. (There is nothing left to do.)
+7.7.9. Finished OPT passes. (There is nothing left to do.)
 
-6.8. Executing FSM pass (extract and optimize FSM).
+7.8. Executing FSM pass (extract and optimize FSM).
 
-6.8.1. Executing FSM_DETECT pass (finding FSMs in design).
+7.8.1. Executing FSM_DETECT pass (finding FSMs in design).
 
-6.8.2. Executing FSM_EXTRACT pass (extracting FSM from design).
+7.8.2. Executing FSM_EXTRACT pass (extracting FSM from design).
 
-6.8.3. Executing FSM_OPT pass (simple optimizations of FSMs).
+7.8.3. Executing FSM_OPT pass (simple optimizations of FSMs).
 
-6.8.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+7.8.4. Executing OPT_CLEAN pass (remove unused cells and wires).
 Finding unused cells or wires in module \adc_clkgen_with_edgedetect..
 
-6.8.5. Executing FSM_OPT pass (simple optimizations of FSMs).
+7.8.5. Executing FSM_OPT pass (simple optimizations of FSMs).
 
-6.8.6. Executing FSM_RECODE pass (re-assigning FSM state encoding).
+7.8.6. Executing FSM_RECODE pass (re-assigning FSM state encoding).
 
-6.8.7. Executing FSM_INFO pass (dumping all available information on FSM cells).
+7.8.7. Executing FSM_INFO pass (dumping all available information on FSM cells).
 
-6.8.8. Executing FSM_MAP pass (mapping FSMs to basic logic).
+7.8.8. Executing FSM_MAP pass (mapping FSMs to basic logic).
 
-6.9. Executing OPT pass (performing simple optimizations).
+7.9. Executing OPT pass (performing simple optimizations).
 
-6.9.1. Executing OPT_EXPR pass (perform const folding).
+7.9.1. Executing OPT_EXPR pass (perform const folding).
 Optimizing module adc_clkgen_with_edgedetect.
 
-6.9.2. Executing OPT_MERGE pass (detect identical cells).
+7.9.2. Executing OPT_MERGE pass (detect identical cells).
 Finding identical cells in module `\adc_clkgen_with_edgedetect'.
 Removed a total of 0 cells.
 
-6.9.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+7.9.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
 Running muxtree optimizer on module \adc_clkgen_with_edgedetect..
   Creating internal representation of mux trees.
   No muxes found in this module.
 Removed 0 multiplexer ports.
 
-6.9.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+7.9.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
   Optimizing cells in module \adc_clkgen_with_edgedetect.
 Performed a total of 0 changes.
 
-6.9.5. Executing OPT_MERGE pass (detect identical cells).
+7.9.5. Executing OPT_MERGE pass (detect identical cells).
 Finding identical cells in module `\adc_clkgen_with_edgedetect'.
 Removed a total of 0 cells.
 
-6.9.6. Executing OPT_DFF pass (perform DFF optimizations).
+7.9.6. Executing OPT_DFF pass (perform DFF optimizations).
 
-6.9.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+7.9.7. Executing OPT_CLEAN pass (remove unused cells and wires).
 Finding unused cells or wires in module \adc_clkgen_with_edgedetect..
 
-6.9.8. Executing OPT_EXPR pass (perform const folding).
+7.9.8. Executing OPT_EXPR pass (perform const folding).
 Optimizing module adc_clkgen_with_edgedetect.
 
-6.9.9. Finished OPT passes. (There is nothing left to do.)
+7.9.9. Finished OPT passes. (There is nothing left to do.)
 
-6.10. Executing WREDUCE pass (reducing word size of cells).
+7.10. Executing WREDUCE pass (reducing word size of cells).
 
-6.11. Executing PEEPOPT pass (run peephole optimizers).
+7.11. Executing PEEPOPT pass (run peephole optimizers).
 
-6.12. Executing OPT_CLEAN pass (remove unused cells and wires).
+7.12. Executing OPT_CLEAN pass (remove unused cells and wires).
 Finding unused cells or wires in module \adc_clkgen_with_edgedetect..
 
-6.13. Executing ALUMACC pass (create $alu and $macc cells).
+7.13. Executing ALUMACC pass (create $alu and $macc cells).
 Extracting $alu and $macc cells in module adc_clkgen_with_edgedetect:
   created 0 $alu and 0 $macc cells.
 
-6.14. Executing SHARE pass (SAT-based resource sharing).
+7.14. Executing SHARE pass (SAT-based resource sharing).
 
-6.15. Executing OPT pass (performing simple optimizations).
+7.15. Executing OPT pass (performing simple optimizations).
 
-6.15.1. Executing OPT_EXPR pass (perform const folding).
+7.15.1. Executing OPT_EXPR pass (perform const folding).
 Optimizing module adc_clkgen_with_edgedetect.
 
-6.15.2. Executing OPT_MERGE pass (detect identical cells).
+7.15.2. Executing OPT_MERGE pass (detect identical cells).
 Finding identical cells in module `\adc_clkgen_with_edgedetect'.
 Removed a total of 0 cells.
 
-6.15.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+7.15.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
 Running muxtree optimizer on module \adc_clkgen_with_edgedetect..
   Creating internal representation of mux trees.
   No muxes found in this module.
 Removed 0 multiplexer ports.
 
-6.15.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+7.15.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
   Optimizing cells in module \adc_clkgen_with_edgedetect.
 Performed a total of 0 changes.
 
-6.15.5. Executing OPT_MERGE pass (detect identical cells).
+7.15.5. Executing OPT_MERGE pass (detect identical cells).
 Finding identical cells in module `\adc_clkgen_with_edgedetect'.
 Removed a total of 0 cells.
 
-6.15.6. Executing OPT_DFF pass (perform DFF optimizations).
+7.15.6. Executing OPT_DFF pass (perform DFF optimizations).
 
-6.15.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+7.15.7. Executing OPT_CLEAN pass (remove unused cells and wires).
 Finding unused cells or wires in module \adc_clkgen_with_edgedetect..
 
-6.15.8. Executing OPT_EXPR pass (perform const folding).
+7.15.8. Executing OPT_EXPR pass (perform const folding).
 Optimizing module adc_clkgen_with_edgedetect.
 
-6.15.9. Finished OPT passes. (There is nothing left to do.)
+7.15.9. Finished OPT passes. (There is nothing left to do.)
 
-6.16. Executing MEMORY pass.
+7.16. Executing MEMORY pass.
 
-6.16.1. Executing OPT_MEM pass (optimize memories).
+7.16.1. Executing OPT_MEM pass (optimize memories).
 Performed a total of 0 transformations.
 
-6.16.2. Executing OPT_MEM_PRIORITY pass (removing unnecessary memory write priority relations).
+7.16.2. Executing OPT_MEM_PRIORITY pass (removing unnecessary memory write priority relations).
 Performed a total of 0 transformations.
 
-6.16.3. Executing OPT_MEM_FEEDBACK pass (finding memory read-to-write feedback paths).
+7.16.3. Executing OPT_MEM_FEEDBACK pass (finding memory read-to-write feedback paths).
 
-6.16.4. Executing MEMORY_BMUX2ROM pass (converting muxes to ROMs).
+7.16.4. Executing MEMORY_BMUX2ROM pass (converting muxes to ROMs).
 
-6.16.5. Executing MEMORY_DFF pass (merging $dff cells to $memrd).
+7.16.5. Executing MEMORY_DFF pass (merging $dff cells to $memrd).
 
-6.16.6. Executing OPT_CLEAN pass (remove unused cells and wires).
+7.16.6. Executing OPT_CLEAN pass (remove unused cells and wires).
 Finding unused cells or wires in module \adc_clkgen_with_edgedetect..
 
-6.16.7. Executing MEMORY_SHARE pass (consolidating $memrd/$memwr cells).
+7.16.7. Executing MEMORY_SHARE pass (consolidating $memrd/$memwr cells).
 
-6.16.8. Executing OPT_MEM_WIDEN pass (optimize memories where all ports are wide).
+7.16.8. Executing OPT_MEM_WIDEN pass (optimize memories where all ports are wide).
 Performed a total of 0 transformations.
 
-6.16.9. Executing OPT_CLEAN pass (remove unused cells and wires).
+7.16.9. Executing OPT_CLEAN pass (remove unused cells and wires).
 Finding unused cells or wires in module \adc_clkgen_with_edgedetect..
 
-6.16.10. Executing MEMORY_COLLECT pass (generating $mem cells).
+7.16.10. Executing MEMORY_COLLECT pass (generating $mem cells).
 
-6.17. Executing OPT_CLEAN pass (remove unused cells and wires).
+7.17. Executing OPT_CLEAN pass (remove unused cells and wires).
 Finding unused cells or wires in module \adc_clkgen_with_edgedetect..
 
-6.18. Executing OPT pass (performing simple optimizations).
+7.18. Executing OPT pass (performing simple optimizations).
 
-6.18.1. Executing OPT_EXPR pass (perform const folding).
+7.18.1. Executing OPT_EXPR pass (perform const folding).
 Optimizing module adc_clkgen_with_edgedetect.
 
-6.18.2. Executing OPT_MERGE pass (detect identical cells).
+7.18.2. Executing OPT_MERGE pass (detect identical cells).
 Finding identical cells in module `\adc_clkgen_with_edgedetect'.
 Removed a total of 0 cells.
 
-6.18.3. Executing OPT_DFF pass (perform DFF optimizations).
+7.18.3. Executing OPT_DFF pass (perform DFF optimizations).
 
-6.18.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+7.18.4. Executing OPT_CLEAN pass (remove unused cells and wires).
 Finding unused cells or wires in module \adc_clkgen_with_edgedetect..
 
-6.18.5. Finished fast OPT passes.
+7.18.5. Finished fast OPT passes.
 
-6.19. Executing MEMORY_MAP pass (converting memories to logic and flip-flops).
+7.19. Executing MEMORY_MAP pass (converting memories to logic and flip-flops).
 
-6.20. Executing OPT pass (performing simple optimizations).
+7.20. Executing OPT pass (performing simple optimizations).
 
-6.20.1. Executing OPT_EXPR pass (perform const folding).
+7.20.1. Executing OPT_EXPR pass (perform const folding).
 Optimizing module adc_clkgen_with_edgedetect.
 
-6.20.2. Executing OPT_MERGE pass (detect identical cells).
+7.20.2. Executing OPT_MERGE pass (detect identical cells).
 Finding identical cells in module `\adc_clkgen_with_edgedetect'.
 Removed a total of 0 cells.
 
-6.20.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+7.20.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
 Running muxtree optimizer on module \adc_clkgen_with_edgedetect..
   Creating internal representation of mux trees.
   No muxes found in this module.
 Removed 0 multiplexer ports.
 
-6.20.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+7.20.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
   Optimizing cells in module \adc_clkgen_with_edgedetect.
 Performed a total of 0 changes.
 
-6.20.5. Executing OPT_MERGE pass (detect identical cells).
+7.20.5. Executing OPT_MERGE pass (detect identical cells).
 Finding identical cells in module `\adc_clkgen_with_edgedetect'.
 Removed a total of 0 cells.
 
-6.20.6. Executing OPT_SHARE pass.
+7.20.6. Executing OPT_SHARE pass.
 
-6.20.7. Executing OPT_DFF pass (perform DFF optimizations).
+7.20.7. Executing OPT_DFF pass (perform DFF optimizations).
 
-6.20.8. Executing OPT_CLEAN pass (remove unused cells and wires).
+7.20.8. Executing OPT_CLEAN pass (remove unused cells and wires).
 Finding unused cells or wires in module \adc_clkgen_with_edgedetect..
 
-6.20.9. Executing OPT_EXPR pass (perform const folding).
+7.20.9. Executing OPT_EXPR pass (perform const folding).
 Optimizing module adc_clkgen_with_edgedetect.
 
-6.20.10. Finished OPT passes. (There is nothing left to do.)
+7.20.10. Finished OPT passes. (There is nothing left to do.)
 
-6.21. Executing TECHMAP pass (map to technology primitives).
+7.21. Executing TECHMAP pass (map to technology primitives).
 
-6.21.1. Executing Verilog-2005 frontend: /foss/tools/yosys/6e907ac/bin/../share/yosys/techmap.v
+7.21.1. Executing Verilog-2005 frontend: /foss/tools/yosys/6e907ac/bin/../share/yosys/techmap.v
 Parsing Verilog input from `/foss/tools/yosys/6e907ac/bin/../share/yosys/techmap.v' to AST representation.
 Generating RTLIL representation for module `\_90_simplemap_bool_ops'.
 Generating RTLIL representation for module `\_90_simplemap_reduce_ops'.
@@ -403,34 +406,34 @@ Generating RTLIL representation for module `\_90_demux'.
 Generating RTLIL representation for module `\_90_lut'.
 Successfully finished Verilog frontend.
 
-6.21.2. Continuing TECHMAP pass.
+7.21.2. Continuing TECHMAP pass.
 Using extmapper simplemap for cells of type $or.
 Using extmapper simplemap for cells of type $not.
 No more expansions possible.
 <suppressed ~79 debug messages>
 
-6.22. Executing OPT pass (performing simple optimizations).
+7.22. Executing OPT pass (performing simple optimizations).
 
-6.22.1. Executing OPT_EXPR pass (perform const folding).
+7.22.1. Executing OPT_EXPR pass (perform const folding).
 Optimizing module adc_clkgen_with_edgedetect.
 
-6.22.2. Executing OPT_MERGE pass (detect identical cells).
+7.22.2. Executing OPT_MERGE pass (detect identical cells).
 Finding identical cells in module `\adc_clkgen_with_edgedetect'.
 Removed a total of 0 cells.
 
-6.22.3. Executing OPT_DFF pass (perform DFF optimizations).
+7.22.3. Executing OPT_DFF pass (perform DFF optimizations).
 
-6.22.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+7.22.4. Executing OPT_CLEAN pass (remove unused cells and wires).
 Finding unused cells or wires in module \adc_clkgen_with_edgedetect..
 
-6.22.5. Finished fast OPT passes.
+7.22.5. Finished fast OPT passes.
 
-6.23. Executing ABC pass (technology mapping using ABC).
+7.23. Executing ABC pass (technology mapping using ABC).
 
-6.23.1. Extracting gate netlist of module `\adc_clkgen_with_edgedetect' to `<abc-temp-dir>/input.blif'..
+7.23.1. Extracting gate netlist of module `\adc_clkgen_with_edgedetect' to `<abc-temp-dir>/input.blif'..
 Extracted 8 gates and 13 wires to a netlist network with 5 inputs and 2 outputs.
 
-6.23.1.1. Executing ABC.
+7.23.1.1. Executing ABC.
 Running ABC command: "<yosys-exe-dir>/yosys-abc" -s -f <abc-temp-dir>/abc.script 2>&1
 ABC: ABC command line: "source <abc-temp-dir>/abc.script".
 ABC: 
@@ -442,7 +445,7 @@ ABC: + dretime
 ABC: + map 
 ABC: + write_blif <abc-temp-dir>/output.blif 
 
-6.23.1.2. Re-integrating ABC results.
+7.23.1.2. Re-integrating ABC results.
 ABC RESULTS:                OR cells:        1
 ABC RESULTS:            ANDNOT cells:        2
 ABC RESULTS:               NOT cells:        1
@@ -451,34 +454,34 @@ ABC RESULTS:           input signals:        5
 ABC RESULTS:          output signals:        2
 Removing temp directory.
 
-6.24. Executing OPT pass (performing simple optimizations).
+7.24. Executing OPT pass (performing simple optimizations).
 
-6.24.1. Executing OPT_EXPR pass (perform const folding).
+7.24.1. Executing OPT_EXPR pass (perform const folding).
 Optimizing module adc_clkgen_with_edgedetect.
 
-6.24.2. Executing OPT_MERGE pass (detect identical cells).
+7.24.2. Executing OPT_MERGE pass (detect identical cells).
 Finding identical cells in module `\adc_clkgen_with_edgedetect'.
 Removed a total of 0 cells.
 
-6.24.3. Executing OPT_DFF pass (perform DFF optimizations).
+7.24.3. Executing OPT_DFF pass (perform DFF optimizations).
 
-6.24.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+7.24.4. Executing OPT_CLEAN pass (remove unused cells and wires).
 Finding unused cells or wires in module \adc_clkgen_with_edgedetect..
 Removed 0 unused cells and 15 unused wires.
 <suppressed ~5 debug messages>
 
-6.24.5. Finished fast OPT passes.
+7.24.5. Finished fast OPT passes.
 
-6.25. Executing HIERARCHY pass (managing design hierarchy).
+7.25. Executing HIERARCHY pass (managing design hierarchy).
 
-6.25.1. Analyzing design hierarchy..
+7.25.1. Analyzing design hierarchy..
 Top module:  \adc_clkgen_with_edgedetect
 
-6.25.2. Analyzing design hierarchy..
+7.25.2. Analyzing design hierarchy..
 Top module:  \adc_clkgen_with_edgedetect
 Removed 0 unused modules.
 
-6.26. Printing statistics.
+7.26. Printing statistics.
 
 === adc_clkgen_with_edgedetect ===
 
@@ -497,11 +500,11 @@ Removed 0 unused modules.
      sky130_fd_sc_hd__buf_4          2
      sky130_mm_sc_hd_dlyPoly6ns     85
 
-6.27. Executing CHECK pass (checking for obvious problems).
+7.27. Executing CHECK pass (checking for obvious problems).
 Checking module adc_clkgen_with_edgedetect...
 Found and reported 0 problems.
 
-7. Generating Graphviz representation of design.
+8. Generating Graphviz representation of design.
 Writing dot description to `/foss/designs/SKY130_SAR-ADC/openlane/adc_clkgen_with_edgedetect/runs/kasleberkas/tmp/synthesis/post_techmap.dot'.
 Dumping module adc_clkgen_with_edgedetect to page 1.
 Warning: WIDTHLABEL \clkgen.delay_100ns_1._intsig_a_ [9] 1
@@ -667,47 +670,47 @@ Warning: WIDTHLABEL \edgedetect.delay_200ns._intsig_a_ [8] 1
 Warning: WIDTHLABEL \edgedetect.delay_200ns._intsig_a_ [8] 1
 Warning: WIDTHLABEL \edgedetect.delay_200ns._intsig_a_ [9] 1
 
-8. Executing SHARE pass (SAT-based resource sharing).
+9. Executing SHARE pass (SAT-based resource sharing).
 
-9. Executing OPT pass (performing simple optimizations).
+10. Executing OPT pass (performing simple optimizations).
 
-9.1. Executing OPT_EXPR pass (perform const folding).
+10.1. Executing OPT_EXPR pass (perform const folding).
 Optimizing module adc_clkgen_with_edgedetect.
 
-9.2. Executing OPT_MERGE pass (detect identical cells).
+10.2. Executing OPT_MERGE pass (detect identical cells).
 Finding identical cells in module `\adc_clkgen_with_edgedetect'.
 Removed a total of 0 cells.
 
-9.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+10.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
 Running muxtree optimizer on module \adc_clkgen_with_edgedetect..
   Creating internal representation of mux trees.
   No muxes found in this module.
 Removed 0 multiplexer ports.
 
-9.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+10.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
   Optimizing cells in module \adc_clkgen_with_edgedetect.
 Performed a total of 0 changes.
 
-9.5. Executing OPT_MERGE pass (detect identical cells).
+10.5. Executing OPT_MERGE pass (detect identical cells).
 Finding identical cells in module `\adc_clkgen_with_edgedetect'.
 Removed a total of 0 cells.
 
-9.6. Executing OPT_DFF pass (perform DFF optimizations).
+10.6. Executing OPT_DFF pass (perform DFF optimizations).
 
-9.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+10.7. Executing OPT_CLEAN pass (remove unused cells and wires).
 Finding unused cells or wires in module \adc_clkgen_with_edgedetect..
 
-9.8. Executing OPT_EXPR pass (perform const folding).
+10.8. Executing OPT_EXPR pass (perform const folding).
 Optimizing module adc_clkgen_with_edgedetect.
 
-9.9. Finished OPT passes. (There is nothing left to do.)
+10.9. Finished OPT passes. (There is nothing left to do.)
 
-10. Executing OPT_CLEAN pass (remove unused cells and wires).
+11. Executing OPT_CLEAN pass (remove unused cells and wires).
 Finding unused cells or wires in module \adc_clkgen_with_edgedetect..
 Removed 0 unused cells and 17 unused wires.
 <suppressed ~17 debug messages>
 
-11. Printing statistics.
+12. Printing statistics.
 
 === adc_clkgen_with_edgedetect ===
 
@@ -728,34 +731,34 @@ Removed 0 unused cells and 17 unused wires.
 
 mapping tbuf
 
-12. Executing TECHMAP pass (map to technology primitives).
+13. Executing TECHMAP pass (map to technology primitives).
 
-12.1. Executing Verilog-2005 frontend: /foss/pdk/sky130A/libs.tech/openlane/sky130_fd_sc_hd/tribuff_map.v
+13.1. Executing Verilog-2005 frontend: /foss/pdk/sky130A/libs.tech/openlane/sky130_fd_sc_hd/tribuff_map.v
 Parsing Verilog input from `/foss/pdk/sky130A/libs.tech/openlane/sky130_fd_sc_hd/tribuff_map.v' to AST representation.
 Generating RTLIL representation for module `\$_TBUF_'.
 Successfully finished Verilog frontend.
 
-12.2. Continuing TECHMAP pass.
+13.2. Continuing TECHMAP pass.
 No more expansions possible.
 <suppressed ~3 debug messages>
 
-13. Executing SIMPLEMAP pass (map simple cells to gate primitives).
+14. Executing SIMPLEMAP pass (map simple cells to gate primitives).
 
-14. Executing TECHMAP pass (map to technology primitives).
+15. Executing TECHMAP pass (map to technology primitives).
 
-14.1. Executing Verilog-2005 frontend: /foss/pdk/sky130A/libs.tech/openlane/sky130_fd_sc_hd/latch_map.v
+15.1. Executing Verilog-2005 frontend: /foss/pdk/sky130A/libs.tech/openlane/sky130_fd_sc_hd/latch_map.v
 Parsing Verilog input from `/foss/pdk/sky130A/libs.tech/openlane/sky130_fd_sc_hd/latch_map.v' to AST representation.
 Generating RTLIL representation for module `\$_DLATCH_P_'.
 Generating RTLIL representation for module `\$_DLATCH_N_'.
 Successfully finished Verilog frontend.
 
-14.2. Continuing TECHMAP pass.
+15.2. Continuing TECHMAP pass.
 No more expansions possible.
 <suppressed ~4 debug messages>
 
-15. Executing SIMPLEMAP pass (map simple cells to gate primitives).
+16. Executing SIMPLEMAP pass (map simple cells to gate primitives).
 
-16. Executing DFFLIBMAP pass (mapping DFF cells to sequential cells from liberty file).
+17. Executing DFFLIBMAP pass (mapping DFF cells to sequential cells from liberty file).
   cell sky130_fd_sc_hd__dfxtp_2 (noninv, pins=3, area=21.27) is a direct match for cell type $_DFF_P_.
   cell sky130_fd_sc_hd__dfrtp_2 (noninv, pins=4, area=26.28) is a direct match for cell type $_DFF_PN0_.
   cell sky130_fd_sc_hd__dfstp_2 (noninv, pins=4, area=26.28) is a direct match for cell type $_DFF_PN1_.
@@ -780,10 +783,10 @@ No more expansions possible.
     unmapped dff cell: $_DFFSR_PPN_
     unmapped dff cell: $_DFFSR_PPP_
 
-16.1. Executing DFFLEGALIZE pass (convert FFs to types supported by the target).
+17.1. Executing DFFLEGALIZE pass (convert FFs to types supported by the target).
 Mapping DFF cells in module `\adc_clkgen_with_edgedetect':
 
-17. Printing statistics.
+18. Printing statistics.
 
 === adc_clkgen_with_edgedetect ===
 
@@ -804,18 +807,18 @@ Mapping DFF cells in module `\adc_clkgen_with_edgedetect':
 
 [INFO]: USING STRATEGY AREA 0
 
-18. Executing ABC pass (technology mapping using ABC).
+19. Executing ABC pass (technology mapping using ABC).
 
-18.1. Extracting gate netlist of module `\adc_clkgen_with_edgedetect' to `/tmp/yosys-abc-oedC7C/input.blif'..
+19.1. Extracting gate netlist of module `\adc_clkgen_with_edgedetect' to `/tmp/yosys-abc-7HZMyB/input.blif'..
 Extracted 4 gates and 9 wires to a netlist network with 5 inputs and 2 outputs.
 
-18.1.1. Executing ABC.
-Running ABC command: "/foss/tools/yosys/6e907ac/bin/yosys-abc" -s -f /tmp/yosys-abc-oedC7C/abc.script 2>&1
-ABC: ABC command line: "source /tmp/yosys-abc-oedC7C/abc.script".
+19.1.1. Executing ABC.
+Running ABC command: "/foss/tools/yosys/6e907ac/bin/yosys-abc" -s -f /tmp/yosys-abc-7HZMyB/abc.script 2>&1
+ABC: ABC command line: "source /tmp/yosys-abc-7HZMyB/abc.script".
 ABC: 
-ABC: + read_blif /tmp/yosys-abc-oedC7C/input.blif 
+ABC: + read_blif /tmp/yosys-abc-7HZMyB/input.blif 
 ABC: + read_lib -w /foss/designs/SKY130_SAR-ADC/openlane/adc_clkgen_with_edgedetect/runs/kasleberkas/tmp/synthesis/trimmed.lib 
-ABC: Parsing finished successfully.  Parsing time =     0.15 sec
+ABC: Parsing finished successfully.  Parsing time =     0.12 sec
 ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfbbn_2".
 ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfrbp_2".
 ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfrtp_2".
@@ -833,8 +836,8 @@ ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dlxtp_1".
 ABC: Scl_LibertyReadGenlib() skipped three-state cell "sky130_fd_sc_hd__ebufn_2".
 ABC: Scl_LibertyReadGenlib() skipped three-state cell "sky130_fd_sc_hd__ebufn_4".
 ABC: Scl_LibertyReadGenlib() skipped three-state cell "sky130_fd_sc_hd__ebufn_8".
-ABC: Library "sky130A_merged" from "/foss/designs/SKY130_SAR-ADC/openlane/adc_clkgen_with_edgedetect/runs/kasleberkas/tmp/synthesis/trimmed.lib" has 176 cells (17 skipped: 14 seq; 3 tri-state; 0 no func; 0 dont_use).  Time =     0.21 sec
-ABC: Memory =    7.78 MB. Time =     0.21 sec
+ABC: Library "sky130A_merged" from "/foss/designs/SKY130_SAR-ADC/openlane/adc_clkgen_with_edgedetect/runs/kasleberkas/tmp/synthesis/trimmed.lib" has 175 cells (17 skipped: 14 seq; 3 tri-state; 0 no func; 0 dont_use).  Time =     0.19 sec
+ABC: Memory =    7.77 MB. Time =     0.19 sec
 ABC: Warning: Detected 2 multi-output gates (for example, "sky130_fd_sc_hd__fa_1").
 ABC: + read_constr -v /foss/designs/SKY130_SAR-ADC/openlane/adc_clkgen_with_edgedetect/runs/kasleberkas/tmp/synthesis/synthesis.sdc 
 ABC: Setting driving cell to be "sky130_fd_sc_hd__inv_2".
@@ -913,9 +916,9 @@ ABC: Path  2 --       9 : 3    1 sky130_fd_sc_hd__o21ba_2 A =  10.01  Df = 461.2
 ABC: Start-point = pi1 (\edgedetect.delay_200ns.out).  End-point = po0 (\clkgen.delay_100ns_3.in).
 ABC: + print_stats -m 
 ABC: netlist                       : i/o =    5/    2  lat =    0  nd =     3  edge =      6  area =22.52  delay = 2.00  lev = 2
-ABC: + write_blif /tmp/yosys-abc-oedC7C/output.blif 
+ABC: + write_blif /tmp/yosys-abc-7HZMyB/output.blif 
 
-18.1.2. Re-integrating ABC results.
+19.1.2. Re-integrating ABC results.
 ABC RESULTS:   sky130_fd_sc_hd__and2b_2 cells:        1
 ABC RESULTS:   sky130_fd_sc_hd__o21ba_2 cells:        1
 ABC RESULTS:   sky130_fd_sc_hd__inv_2 cells:        1
@@ -924,24 +927,24 @@ ABC RESULTS:           input signals:        5
 ABC RESULTS:          output signals:        2
 Removing temp directory.
 
-19. Executing SETUNDEF pass (replace undef values with defined constants).
+20. Executing SETUNDEF pass (replace undef values with defined constants).
 
-20. Executing HILOMAP pass (mapping to constant drivers).
+21. Executing HILOMAP pass (mapping to constant drivers).
 
-21. Executing SPLITNETS pass (splitting up multi-bit signals).
+22. Executing SPLITNETS pass (splitting up multi-bit signals).
 
-22. Executing OPT_CLEAN pass (remove unused cells and wires).
+23. Executing OPT_CLEAN pass (remove unused cells and wires).
 Finding unused cells or wires in module \adc_clkgen_with_edgedetect..
 Removed 0 unused cells and 13 unused wires.
 <suppressed ~5 debug messages>
 
-23. Executing INSBUF pass (insert buffer cells for connected wires).
+24. Executing INSBUF pass (insert buffer cells for connected wires).
 
-24. Executing CHECK pass (checking for obvious problems).
+25. Executing CHECK pass (checking for obvious problems).
 Checking module adc_clkgen_with_edgedetect...
 Found and reported 0 problems.
 
-25. Printing statistics.
+26. Printing statistics.
 
 === adc_clkgen_with_edgedetect ===
 
@@ -960,16 +963,18 @@ Found and reported 0 problems.
      sky130_fd_sc_hd__o21ba_2        1
      sky130_mm_sc_hd_dlyPoly6ns     85
 
-   Chip area for module '\adc_clkgen_with_edgedetect': 2707.596800
+   Area for cell type \sky130_mm_sc_hd_dlyPoly6ns is unknown!
 
-26. Executing Verilog backend.
+   Chip area for module '\adc_clkgen_with_edgedetect': 48.796800
 
-26.1. Executing BMUXMAP pass.
+27. Executing Verilog backend.
 
-26.2. Executing DEMUXMAP pass.
+27.1. Executing BMUXMAP pass.
+
+27.2. Executing DEMUXMAP pass.
 Dumping module `\adc_clkgen_with_edgedetect'.
 
 Warnings: 81 unique messages, 162 total
-End of script. Logfile hash: 5d4566b1d2, CPU: user 2.14s system 0.26s, MEM: 41.30 MB peak
+End of script. Logfile hash: bfe56f27ef, CPU: user 2.04s system 0.26s, MEM: 41.20 MB peak
 Yosys 0.20+70 (git sha1 6e907acf8, gcc 11.2.1 -fPIC -Os)
-Time spent: 25% 2x read_liberty (0 sec), 18% 2x abc (0 sec), ...
+Time spent: 32% 4x read_liberty (0 sec), 18% 2x abc (0 sec), ...
