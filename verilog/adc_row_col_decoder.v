@@ -1,5 +1,4 @@
 `default_nettype none
-//`include "define.vh"
 
 //  Copyright 2022 Manuel Moser
 //
@@ -19,16 +18,18 @@
 // Combinatoric process. 
 // Converts binary to thermometer-code in a
 // capacitor array with 16 rows, 32 columns, and 3 additional Bin-Caps.
-// Notes: row[0] col[0] is a dummy-cap. 
-//        c0_n and c0_p control the second LSB-Capacitor
+
+// Note:  row[0] col[0] is a dummy-cap. 
+//        c0n_n and c0p_n control the second LSB-Capacitor C0
+
 module adc_row_col_decoder(
     input  wire[11:0] data,
     output wire[15:0] row_n,
     output wire[15:0] rowon_n,
     output wire[15:0] col_n,
     output wire[2:0]  bincap_n,
-    output wire       c0_p,
-    output wire       c0_n
+    output wire       c0p_n,
+    output wire       c0n_n
 	);
 
 reg[15:0] row;
@@ -49,48 +50,54 @@ always @(data) begin
 end
 
 
+integer i;
+integer j;
 
-generate
-genvar i;
+// ******************
+//   COLUMN DECODER
+// ******************
 always @(col_intermediate) begin
 	for (i = 0; i <= 31 ; i = i + 1) begin 
-		if (i%2==1) begin //odd
-		    col[i] <= 1'b0;
+		if (row_intermediate%2==1) begin //odd
+			col[i] <= 1'b0;
 			if (col_intermediate >= (31-i))
 		    	col[i] <= 1'b1;
 		end else begin //even
-		    col[i] <= 1'b0;
-			if (col_intermediate >= i)
+			col[i] <= 1'b0;
+		    if (col_intermediate >= i)
 		    	col[i] <= 1'b1;
 		end
 	end
 end
-endgenerate
 
-generate
-genvar j;
+// ******************
+//   ROW DECODER
+// ******************
 always @(row_intermediate) begin
 	for (j = 0; j <= 15 ; j = j + 1) begin 
 	    row[j] <= 1'b0;
 		if (row_intermediate >= j) 
 	    	row[j] <= 1'b1;
-
-	    rowon[j] <= 1'b0;
-		if (row_intermediate > j) 
-	    	rowon[j] <= 1'b1;
 	end
 end
-endgenerate	
 
-//convert to Active-Low signals
+// ******************
+//   ROWON DECODER
+// ******************
+always @(row) begin
+	rowon <= row>>1;
+end
+	
+
+//convert to active-low signals
 assign row_n = ~row;
 assign rowon_n = ~rowon;
 assign col_n = ~col;
 assign bincap_n = ~bincap;
 
 //LSB capacitor C0 is always enabled or disabled
-assign c0_p = 1'b1;
-assign c0_n = 1'b0;
+assign c0p_n = 1'b1;
+assign c0n_n = 1'b0;
 
 endmodule
 

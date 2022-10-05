@@ -17,15 +17,15 @@
 
 module adc_row_col_decoder_tb;
     reg[11:0] data;
-    reg[15:0] row_n;
-    reg[15:0] rowon_n;
-    reg[15:0] col_n;
-    reg[2:0]  bincap_n;
-    reg       c0_p;
-    reg       c0_n;
+    wire[15:0] row_n;
+    wire[15:0] rowon_n;
+    wire[15:0] col_n;
+    wire[2:0]  bincap_n;
+    wire       c0p_n;
+    wire       c0n_n;
 
   adc_row_col_decoder decoder (
-    .data(data),.row_n(row_n),.rowon_n(rowon_n),.col_n(col_n),.bincap_n(bincap_n),.c0_p(c0_p),.c0_n(c0_n)
+    .data(data),.row_n(row_n),.rowon_n(rowon_n),.col_n(col_n),.bincap_n(bincap_n),.c0p_n(c0p_n),.c0n_n(c0n_n)
     );
 
    initial begin
@@ -36,20 +36,18 @@ module adc_row_col_decoder_tb;
    		rowon_n,
    		col_n,
    		bincap_n,
-   		c0_p,
-   		c0_n,
-        decoder);
+   		c0p_n,
+   		c0n_n,
+      decoder);
    end
    
+   integer i;
+
    initial begin
-   	#1 data=12'd0;
-    #1 data=12'd1;
-    #1 data=12'd2;
-    #1 data=12'd3;
-    #1 data=12'd14;
-    #1 data=12'd15;
-    #1 data=12'd16;
-    #1 data=12'd17;
+    data=0;
+   	for(i=1;i<4096;i=i+1) begin
+       #1 data=data+1;
+    end
     #1 data=12'd4093;
     #1 data=12'd4094;
     #1 data=12'd4095;
