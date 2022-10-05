@@ -44,6 +44,7 @@ module adc_control_nonbinary #(parameter MATRIX_BITS = 12, NONBINARY_REDUNDANCY 
    reg average_result;
    reg lsb_region;
    reg [2:0] sampled_avg_control;
+   reg [2:0] next_sampled_avg_control;
    
    reg [MATRIX_BITS+NONBINARY_REDUNDANCY:0] shift_register;
    reg [MATRIX_BITS+NONBINARY_REDUNDANCY:0] next_shift_register;
@@ -105,10 +106,17 @@ module adc_control_nonbinary #(parameter MATRIX_BITS = 12, NONBINARY_REDUNDANCY 
    always @(posedge clk, negedge rst) begin
       if (rst == 1'b0)  //reset ACTIVE LOW
          sampled_avg_control <= 3'b000;     
-      else if (shift_register[0]==1'b1)
-         sampled_avg_control <= avg_control; 
+      else 
+         sampled_avg_control <= next_sampled_avg_control; 
    end //always clk, rst
    
+   always @(shift_register,sampled_avg_control,avg_control) begin
+   if (shift_register[0]==1'b1)
+       next_sampled_avg_control <= avg_control;
+   else
+       next_sampled_avg_control <= sampled_avg_control;
+   end //always
+
 
     //*******************************
     //   Data Register Handling
