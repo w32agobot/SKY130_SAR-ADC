@@ -1,4 +1,5 @@
-v {xschem version=3.0.0 file_version=1.2 }
+v {xschem version=3.1.0 file_version=1.2
+}
 G {}
 K {}
 V {}
@@ -74,6 +75,10 @@ N 1650 -590 1680 -590 {
 lab=in,net_dlygate4_[0..8]}
 N 1760 -590 1800 -590 {
 lab=net_dlygate4_[0..8],out_dlygate4}
+N 1630 -420 1660 -420 {
+lab=in,net_dlygate4LOWLEAK_[0..8]}
+N 1740 -420 1780 -420 {
+lab=net_dlygate4LOWLEAK_[0..8],out_dlygate4LOWLEAK}
 C {devices/title.sym} 170 -40 0 0 {name=l1 author="Manuel Moser"}
 C {sky130_stdcells/dlymetal6s6s_1.sym} 1070 -690 0 0 {name=x1_[0..9] VGND=VGND VNB=VNB VPB=VPB VPWR=VPWR prefix=sky130_fd_sc_hd__ }
 C {devices/launcher.sym} 870 -580 0 0 {name=h1
@@ -108,14 +113,15 @@ C {devices/code_shown.sym} 60 -1060 0 0 {name=SPICE only_toplevel=false value=".
 *uncomment for TRANSIENT
 .control
 run
-plot v(in) v(out_dlymetal6s6s) v(out_clkdlybuf4s50_1) v(out_clkdlybuf4s50_2) v(out_clkdlybuf4s15_1) v(out_buf4) v(out_dlygate4) v(out_clkdlybuf4s15_2)
+plot v(in) v(out_dlymetal6s6s) v(out_clkdlybuf4s50_1) v(out_clkdlybuf4s50_2) v(out_clkdlybuf4s15_1) v(out_buf4) v(out_dlygate4) v(out_clkdlybuf4s15_2) v(out_dlygate4LOWLEAK)
 .endc
 "}
 C {sky130_fd_pr/corner.sym} 50 -690 0 0 {name=CORNER only_toplevel=false corner=tt}
 C {devices/vsource.sym} 390 -370 0 0 {name=V5 value="(0 pulse(0 1.8 2n 1p 1p 10n 20n))"}
 C {devices/gnd.sym} 390 -300 0 0 {name=l13 lab=GND}
 C {devices/lab_wire.sym} 390 -420 0 0 {name=l14 sig_type=std_logic lab=in}
-C {devices/code_shown.sym} 60 -750 0 0 {name=s1 only_toplevel=false value=".include /foss/pdk/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_fd_sc_hd.spice"}
+C {devices/code_shown.sym} 60 -750 0 0 {name=s1 only_toplevel=false value=".include /foss/pdk/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_fd_sc_hd.spice
+.include /foss/pdk/sky130A/libs.ref/sky130_fd_sc_hdll/spice/sky130_fd_sc_hdll.spice"}
 C {devices/lab_wire.sym} 980 -440 0 0 {name=l4 sig_type=std_logic lab=in,net_dlybuf50_2_[0..8]}
 C {devices/lab_wire.sym} 1080 -440 2 0 {name=l7 sig_type=std_logic lab=net_dlybuf50_2_[0..8],out_clkdlybuf4s50_2}
 C {devices/launcher.sym} 880 -340 0 0 {name=h3
@@ -133,3 +139,6 @@ C {devices/lab_wire.sym} 1800 -680 0 1 {name=l20 sig_type=std_logic lab=net_buf4
 C {devices/lab_wire.sym} 1650 -590 0 0 {name=l21 sig_type=std_logic lab=in,net_dlygate4_[0..8]}
 C {devices/lab_wire.sym} 1800 -590 0 1 {name=l22 sig_type=std_logic lab=net_dlygate4_[0..8],out_dlygate4}
 C {sky130_stdcells/dlygate4sd3_1.sym} 1720 -590 0 0 {name=x7_[0..9] VGND=VGND VNB=VNB VPB=VPB VPWR=VPWR prefix=sky130_fd_sc_hd__ }
+C {sky130_stdcells/dlygate4sd3_1.sym} 1700 -420 0 0 {name=x1123_[0..9] VGND=VGND VNB=VNB VPB=VPB VPWR=VPWR prefix=sky130_fd_sc_hdll__ }
+C {devices/lab_wire.sym} 1630 -420 0 0 {name=l21 sig_type=std_logic lab=in,net_dlygate4LOWLEAK_[0..8]}
+C {devices/lab_wire.sym} 1780 -420 0 1 {name=l22 sig_type=std_logic lab=net_dlygate4LOWLEAK_[0..8],out_dlygate4LOWLEAK}
