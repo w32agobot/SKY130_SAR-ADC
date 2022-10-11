@@ -120,9 +120,7 @@ lab=GND}
 N 1030 -640 1070 -640 {
 lab=GND}
 N 1030 -760 1030 -710 {
-lab=vctrl}
-N 530 -750 530 -710 {
-lab=vctrl}
+lab=vctrl2}
 N 1070 -740 1070 -720 {
 lab=#net1}
 N 570 -950 570 -920 {
@@ -154,11 +152,13 @@ lab=GND}
 N 220 -850 220 -830 {
 lab=VDD}
 N 570 -770 570 -720 {
-lab=#net6}
-N 530 -670 530 -650 {
 lab=GND}
-N 530 -650 570 -650 {
+N 570 -720 570 -660 {
 lab=GND}
+N 290 -600 290 -580 {
+lab=GND}
+N 290 -680 290 -660 {
+lab=vctrl2}
 C {sky130_fd_pr/corner.sym} 40 -670 0 0 {name=CORNER only_toplevel=false corner=tt}
 C {devices/title.sym} 160 -40 0 0 {name=l13 author="Manuel Moser"}
 C {devices/launcher.sym} 130 -490 0 0 {name=h1
@@ -202,7 +202,7 @@ spiceprefix=X
 }
 C {devices/code.sym} 40 -840 0 0 {name=STIMULI only_toplevel=false value="
 .save all 
-*.temp = 100
+.temp = 100
 *.options method=gear
 .OPTIONS savecurrents
 *.OPTIONS RELTOL=.1 TRTOL=1 ABSTOL=1e-20 CHGTOL=1.0e-20 DEFAD=1.0e-18
@@ -219,7 +219,7 @@ C {devices/code.sym} 40 -840 0 0 {name=STIMULI only_toplevel=false value="
 .param l_n=1
 .param VIN = 1.8
 
-.dc V5 100m 1.7 10m
+.dc V5 100m 1.7 10m V2 0 1.8 900m
 
 .control
 alterparam w_p=0.42
@@ -260,10 +260,10 @@ set appendwrite
 *********************************************************
 
 *On-Resistance
-plot (-(dc1.v(inon)-dc1.v(outon))/dc1.I(v11)) (-(dc2.v(inon)-dc2.v(outon))/dc2.I(v11)) (-(dc3.v(inon)-dc3.v(outon))/dc3.I(v11)) ylog xlabel 'Vout' ylabel 'R_in_Ohm' title 'RON with VDS=1mV'
+plot (-(dc1.v(inon)-dc1.v(outon))/dc1.I(v11)) (-(dc2.v(inon)-dc2.v(outon))/dc2.I(v11)) (-(dc3.v(inon)-dc3.v(outon))/dc3.I(v11)) ylog xlabel 'Vout' ylabel 'on-resistance in ohm' title 'RON with VDS=1mV'
 
-*Off-Resistance
-plot (-dc1.I(v21)) (-dc2.I(v21)) (-dc3.I(v21)) xlabel 'output voltage' ylabel 'Leitwert in 1/Ohm' title 'leakage current with VDS=1mV'
+*Off-Leakage
+plot (-dc1.I(v21)) (-dc2.I(v21)) (-dc3.I(v21)) ylimit -50p 50p xlabel 'output voltage' ylabel 'Leakage current in A' title 'leakage currents with VDS=0V..900mV..1.8V'
 
 .endc
 "}
@@ -324,9 +324,8 @@ value=3p
 footprint=1206
 device="ceramic capacitor"}
 C {devices/gnd.sym} 1190 -500 0 0 {name=l22 lab=GND}
-C {devices/vcvs.sym} 570 -690 0 0 {name=E3 value=1}
 C {devices/vcvs.sym} 1070 -690 0 0 {name=E4 value=1}
-C {devices/vsource.sym} 1070 -790 0 0 {name=V21 value=1m}
+C {devices/vsource.sym} 1070 -790 0 0 {name=V21 value=0m}
 C {devices/vsource.sym} 570 -800 0 0 {name=V11 value=1m}
 C {devices/vsource.sym} 450 -850 2 0 {name=V12 value=0}
 C {devices/vsource.sym} 740 -860 2 0 {name=V13 value=0}
@@ -335,5 +334,7 @@ C {devices/vsource.sym} 1240 -850 2 0 {name=V23 value=0}
 C {devices/vsource.sym} 220 -800 0 0 {name=V1 value=1.8}
 C {devices/vdd.sym} 220 -850 0 0 {name=l30 lab=VDD}
 C {devices/gnd.sym} 220 -740 0 0 {name=l22 lab=GND}
-C {devices/lab_wire.sym} 530 -750 0 0 {name=l23 sig_type=std_logic lab=vctrl}
-C {devices/lab_wire.sym} 1030 -760 0 0 {name=l23 sig_type=std_logic lab=vctrl}
+C {devices/lab_wire.sym} 1030 -760 0 0 {name=l23 sig_type=std_logic lab=vctrl2}
+C {devices/vsource.sym} 290 -630 0 0 {name=V2 value=0.9}
+C {devices/lab_wire.sym} 290 -680 0 0 {name=l23 sig_type=std_logic lab=vctrl2}
+C {devices/gnd.sym} 290 -580 0 0 {name=l22 lab=GND}

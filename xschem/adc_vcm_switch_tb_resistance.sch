@@ -18,12 +18,13 @@ T {   Copyright 2022 Manuel Moser
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.} 50 -250 0 0 0.2 0.2 {}
-T {On-/off-Resistance from vin-vout = 1799mV to 1 mV while vin=1.8V} 570 -630 0 0 0.6 0.6 {}
-T {gate ON} 740 -580 0 0 0.8 0.8 {}
+T {gate ON
+VDS=1mV} 720 -630 0 0 0.8 0.8 {}
 T {If the channel length is too small: Backcurrent drains output at 125°C and FF.
 Choice: Values for Transient 4 (W=1u L=0.5u) are good at fast and slow corner.
 WN=WP and LN=LP for charge-injection-compensation} 180 -1260 0 0 0.6 0.6 {}
-T {gate OFF, Leakage Current} 1230 -560 0 0 0.8 0.8 {}
+T {gate OFF, Leakage Current
+VDS=[0V..-1.8V] or [1.8V..0V]} 1210 -640 0 0 0.8 0.8 {}
 N 850 -130 850 -110 {
 lab=GND}
 N 850 -210 850 -190 {
@@ -117,7 +118,7 @@ lab=vctrl}
 N 1350 -280 1350 -260 {
 lab=GND}
 N 850 -280 850 -260 {
-lab=GND}
+lab=on_out}
 N 970 -220 970 -180 {
 lab=on_out}
 N 970 -120 970 -110 {
@@ -136,30 +137,24 @@ N 1310 -290 1310 -260 {
 lab=GND}
 N 1310 -260 1350 -260 {
 lab=GND}
-N 810 -290 810 -260 {
-lab=GND}
-N 810 -260 850 -260 {
-lab=GND}
 N 1310 -380 1310 -330 {
 lab=vctrl2}
-N 810 -370 810 -330 {
-lab=vctrl2}
-N 850 -360 850 -340 {
-lab=#net1}
 N 1350 -360 1350 -340 {
-lab=#net2}
-N 850 -390 850 -360 {
 lab=#net1}
-N 850 -480 850 -450 {
-lab=on_in}
 N 1350 -480 1350 -440 {
 lab=off_in}
 N 1350 -380 1350 -360 {
-lab=#net2}
+lab=#net1}
 N 380 -440 380 -430 {
 lab=GND}
 N 380 -510 380 -500 {
 lab=VDD}
+N 850 -260 850 -220 {
+lab=on_out}
+N 850 -310 850 -280 {
+lab=on_out}
+N 850 -480 850 -370 {
+lab=on_in}
 C {sky130_fd_pr/corner.sym} 40 -480 0 0 {name=CORNER only_toplevel=false corner=ff}
 C {devices/title.sym} 160 -40 0 0 {name=l13 author="Manuel Moser"}
 C {devices/launcher.sym} 240 -370 0 0 {name=h1
@@ -234,9 +229,9 @@ set appendwrite
 
 
 alterparam w_p=0.42
-alterparam l_p=0.2
+alterparam l_p=0.3
 alterparam w_n=0.42
-alterparam l_n=0.2
+alterparam l_n=0.3
 reset
 run
 write dc-sweep.out v(on_in) v(on_out) v(off_in) v(off_out) I(v1) I(v4)
@@ -262,18 +257,18 @@ write dc-sweep.out v(on_in) v(on_out) v(off_in) v(off_out) I(v1) I(v4)
 set appendwrite
 
 alterparam w_p=4
-alterparam l_p=0.4
+alterparam l_p=0.5
 alterparam w_n=4
-alterparam l_n=0.4
+alterparam l_n=0.5
 reset
 run
 write dc-sweep.out v(on_in) v(on_out) v(off_in) v(off_out) I(v1) I(v4)
 set appendwrite
 
 *On-Resistance
-plot (-(dc1.v(on_in)-dc1.v(on_out))/dc1.I(v1))  (-(dc2.v(on_in)-dc2.v(on_out))/dc2.I(v1)) (-(dc3.v(on_in)-dc3.v(on_out))/dc3.I(v1)) (-(dc4.v(on_in)-dc4.v(on_out))/dc4.I(v1)) (-(dc5.v(on_in)-dc5.v(on_out))/dc5.I(v1)) title 'ON-Resistance at VIN=1.8 VIN=0'
+plot (-(dc1.v(on_in)-dc1.v(on_out))/dc1.I(v1))  (-(dc2.v(on_in)-dc2.v(on_out))/dc2.I(v1)) (-(dc3.v(on_in)-dc3.v(on_out))/dc3.I(v1)) (-(dc4.v(on_in)-dc4.v(on_out))/dc4.I(v1)) (-(dc5.v(on_in)-dc5.v(on_out))/dc5.I(v1)) ylog title 'ON-Resistance at VIN=1.8 VIN=0'
 *Leakage Current
-plot (-dc1.I(v4)) (-dc2.I(v4)) (-dc3.I(v4)) (-dc4.I(v4)) (-dc5.I(v4)) ylimit -100p 100p title 'ON-Resistance at VIN=1.8 VIN=0'
+plot (-dc1.I(v4)) (-dc2.I(v4)) (-dc3.I(v4)) (-dc4.I(v4)) (-dc5.I(v4)) ylimit -100p 100p  title 'ON-Resistance at VIN=1.8 VIN=0'
 .endc
 "}
 C {devices/lab_wire.sym} 1230 -480 0 0 {name=l17 sig_type=std_logic lab=off_in}
@@ -320,7 +315,6 @@ C {devices/lab_wire.sym} 790 -180 0 0 {name=l23 sig_type=std_logic lab=vctrl}
 C {devices/lab_wire.sym} 1290 -180 0 0 {name=l23 sig_type=std_logic lab=vctrl}
 C {devices/lab_wire.sym} 570 -520 0 0 {name=l23 sig_type=std_logic lab=vctrl}
 C {devices/gnd.sym} 570 -420 0 0 {name=l22 lab=GND}
-C {devices/gnd.sym} 850 -260 0 0 {name=l22 lab=GND}
 C {devices/gnd.sym} 1350 -260 0 0 {name=l22 lab=GND}
 C {devices/capa.sym} 970 -150 0 0 {name=C1
 m=1
@@ -336,12 +330,10 @@ device="ceramic capacitor"}
 C {devices/gnd.sym} 1470 -120 0 0 {name=l22 lab=GND}
 C {devices/gnd.sym} 490 -420 0 0 {name=l22 lab=GND}
 C {devices/lab_wire.sym} 490 -530 0 0 {name=l23 sig_type=std_logic lab=vctrl2}
-C {devices/vcvs.sym} 850 -310 0 0 {name=E3 value=1}
 C {devices/vcvs.sym} 1350 -310 0 0 {name=E4 value=1}
-C {devices/lab_wire.sym} 810 -370 0 0 {name=l23 sig_type=std_logic lab=vctrl2}
 C {devices/lab_wire.sym} 1310 -380 0 0 {name=l23 sig_type=std_logic lab=vctrl2}
 C {devices/vsource.sym} 1350 -410 0 0 {name=V4 value=0}
-C {devices/vsource.sym} 850 -420 0 0 {name=V1 value=0}
+C {devices/vsource.sym} 850 -340 0 0 {name=V1 value=1m}
 C {devices/vsource.sym} 380 -470 0 0 {name=V3 value=1.8}
 C {devices/vdd.sym} 380 -510 0 0 {name=l3 lab=VDD}
 C {devices/gnd.sym} 380 -430 0 0 {name=l22 lab=GND}
