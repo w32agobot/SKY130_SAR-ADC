@@ -92,15 +92,16 @@ C {devices/vdd.sym} 640 -310 0 0 {name=l17 lab=VDD}
 C {devices/vdd.sym} 790 -310 0 0 {name=l18 lab=VDD}
 C {devices/gnd.sym} 640 -250 0 0 {name=l19 lab=GND}
 C {devices/gnd.sym} 790 -250 0 0 {name=l20 lab=GND}
-C {devices/vsource.sym} 460 -530 0 0 {name=V3 value="0 PULSE(800m 1100m 0 50m 50m 50m 100m)"}
+C {devices/vsource.sym} 460 -530 0 0 {name=V3 value="0 PULSE(890m 910m 0 50m 50m 50m 100m)"}
 C {devices/gnd.sym} 460 -460 0 0 {name=l21 lab=GND}
 C {devices/lab_wire.sym} 460 -590 0 0 {name=l22 sig_type=std_logic lab=inp}
-C {devices/vsource.sym} 770 -530 0 0 {name=V4 value="0 PULSE(1100m 800m 0 50m 50m 50m 100m)"}
+C {devices/vsource.sym} 770 -530 0 0 {name=V4 value="0 PULSE(910m 890m 0 50m 50m 50m 100m)"}
 C {devices/gnd.sym} 770 -460 0 0 {name=l23 lab=GND}
 C {devices/lab_wire.sym} 770 -590 0 0 {name=l24 sig_type=std_logic lab=inn}
-C {sky130_fd_pr/corner.sym} 140 -770 0 0 {name=CORNER only_toplevel=false corner=tt}
+C {sky130_fd_pr/corner.sym} 140 -770 0 0 {name=CORNER only_toplevel=false corner=ss}
 C {devices/code_shown.sym} 310 -770 0 0 {name=SPICE only_toplevel=false value=".save all
 .OPTIONS RELTOL=.001 TRTOL=1 ABSTOL=1e-16 CHGTOL=1.0e-16 DEFAD=1.0e-16
+.temp -20
 .control
  tran 400u 50m
  plot v(inp)-v(inn)

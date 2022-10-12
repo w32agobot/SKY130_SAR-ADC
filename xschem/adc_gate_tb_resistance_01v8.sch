@@ -314,13 +314,13 @@ C {devices/gnd.sym} 570 -640 0 0 {name=l22 lab=GND}
 C {devices/gnd.sym} 1070 -640 0 0 {name=l22 lab=GND}
 C {devices/capa.sym} 690 -530 0 0 {name=C1
 m=1
-value=3p
+value=2.44p
 footprint=1206
 device="ceramic capacitor"}
 C {devices/gnd.sym} 690 -490 0 0 {name=l22 lab=GND}
 C {devices/capa.sym} 1190 -540 0 0 {name=C2
 m=1
-value=3p
+value=2.44p
 footprint=1206
 device="ceramic capacitor"}
 C {devices/gnd.sym} 1190 -500 0 0 {name=l22 lab=GND}

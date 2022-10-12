@@ -37,8 +37,6 @@ N 740 -690 740 -600 {
 lab=outon}
 N 450 -710 460 -710 {
 lab=GND}
-N 460 -710 460 -660 {
-lab=GND}
 N 730 -720 740 -720 {
 lab=VDD}
 N 570 -600 570 -590 {
@@ -52,8 +50,6 @@ lab=GND}
 N 450 -680 450 -610 {
 lab=outon}
 N 720 -720 730 -720 {
-lab=VDD}
-N 720 -760 720 -720 {
 lab=VDD}
 N 1070 -510 1070 -490 {
 lab=GND}
@@ -71,8 +67,6 @@ N 1240 -690 1240 -600 {
 lab=outoff}
 N 950 -710 960 -710 {
 lab=GND}
-N 960 -710 960 -660 {
-lab=GND}
 N 1230 -720 1240 -720 {
 lab=VDD}
 N 1070 -600 1070 -590 {
@@ -82,8 +76,6 @@ lab=GND}
 N 950 -680 950 -610 {
 lab=outoff}
 N 1220 -720 1230 -720 {
-lab=VDD}
-N 1220 -760 1220 -720 {
 lab=VDD}
 N 890 -710 890 -660 {
 lab=GND}
@@ -120,7 +112,7 @@ lab=GND}
 N 1030 -640 1070 -640 {
 lab=GND}
 N 1030 -760 1030 -710 {
-lab=vctrl}
+lab=vctrl2}
 N 530 -750 530 -710 {
 lab=vctrl}
 N 1070 -740 1070 -720 {
@@ -159,7 +151,19 @@ N 530 -670 530 -650 {
 lab=GND}
 N 530 -650 570 -650 {
 lab=GND}
-C {sky130_fd_pr/corner.sym} 40 -670 0 0 {name=CORNER only_toplevel=false corner=tt}
+N 1220 -740 1220 -720 {
+lab=VDD}
+N 960 -710 960 -680 {
+lab=GND}
+N 460 -710 460 -690 {
+lab=GND}
+N 720 -750 720 -720 {
+lab=VDD}
+N 300 -600 300 -580 {
+lab=GND}
+N 300 -680 300 -660 {
+lab=vctrl2}
+C {sky130_fd_pr/corner.sym} 40 -670 0 0 {name=CORNER only_toplevel=false corner=ff}
 C {devices/title.sym} 160 -40 0 0 {name=l13 author="Manuel Moser"}
 C {devices/launcher.sym} 130 -490 0 0 {name=h1
 descr=Backannotate
@@ -168,13 +172,11 @@ C {devices/lab_wire.sym} 450 -950 0 0 {name=l17 sig_type=std_logic lab=inon}
 C {devices/gnd.sym} 570 -490 0 0 {name=l22 lab=GND}
 C {devices/lab_wire.sym} 740 -600 2 0 {name=l23 sig_type=std_logic lab=outon}
 C {devices/vsource.sym} 220 -630 0 0 {name=V5 value=0.9}
-C {devices/gnd.sym} 460 -660 0 0 {name=l2 lab=GND}
-C {devices/vdd.sym} 720 -760 0 0 {name=l3 lab=VDD}
 C {devices/vdd.sym} 390 -720 0 0 {name=l30 lab=VDD}
 C {devices/gnd.sym} 780 -690 0 0 {name=l2 lab=GND}
 C {devices/code.sym} 40 -840 0 0 {name=STIMULI only_toplevel=false value="
 .save all 
-*.temp = 100
+.temp = 100
 *.options method=gear
 .OPTIONS savecurrents
 *.OPTIONS RELTOL=.1 TRTOL=1 ABSTOL=1e-20 CHGTOL=1.0e-20 DEFAD=1.0e-18
@@ -190,7 +192,9 @@ C {devices/code.sym} 40 -840 0 0 {name=STIMULI only_toplevel=false value="
 .param w_n=1 
 .param l_n=0.5
 
-.dc V5 100m 1.7 10m
+.dc V5 100m 1.7 10m V2 0 1.8 900m
+
+*********************************************************
 
 .control
 alterparam w_p=1
@@ -234,15 +238,13 @@ set appendwrite
 plot (-(dc1.v(inon)-dc1.v(outon))/dc1.I(v11)) (-(dc2.v(inon)-dc2.v(outon))/dc2.I(v11)) (-(dc3.v(inon)-dc3.v(outon))/dc3.I(v11)) ylog xlabel 'Vout' ylabel 'R_in_Ohm' title 'RON Thickoxide-FET with VDS=1mV'
 
 *Off-Resistance
-plot (-dc1.I(v21)) (-dc2.I(v21)) (-dc3.I(v21)) xlabel 'output voltage' ylabel 'Leitwert in 1/Ohm' title 'leakage current with VDS=1mV'
+plot (-dc1.I(v21)) (-dc2.I(v21)) (-dc3.I(v21)) xlabel 'output voltage' ylabel 'Current in Ampere' title 'leakage current with VDS=1mV'
 
 .endc
 "}
 C {devices/lab_wire.sym} 950 -950 0 0 {name=l17 sig_type=std_logic lab=inoff}
 C {devices/gnd.sym} 1070 -490 0 0 {name=l22 lab=GND}
 C {devices/lab_wire.sym} 1240 -600 2 0 {name=l23 sig_type=std_logic lab=outoff}
-C {devices/gnd.sym} 960 -660 0 0 {name=l2 lab=GND}
-C {devices/vdd.sym} 1220 -760 0 0 {name=l3 lab=VDD}
 C {devices/vdd.sym} 1310 -760 0 0 {name=l30 lab=VDD}
 C {devices/gnd.sym} 890 -660 0 0 {name=l1 lab=GND}
 C {sky130_fd_pr/nfet_01v8.sym} 930 -710 0 0 {name=M3
@@ -285,19 +287,19 @@ C {devices/gnd.sym} 570 -640 0 0 {name=l22 lab=GND}
 C {devices/gnd.sym} 1070 -640 0 0 {name=l22 lab=GND}
 C {devices/capa.sym} 690 -530 0 0 {name=C1
 m=1
-value=3p
+value=2.44p
 footprint=1206
 device="ceramic capacitor"}
 C {devices/gnd.sym} 690 -490 0 0 {name=l22 lab=GND}
 C {devices/capa.sym} 1190 -540 0 0 {name=C2
 m=1
-value=3p
+value=2.44p
 footprint=1206
 device="ceramic capacitor"}
 C {devices/gnd.sym} 1190 -500 0 0 {name=l22 lab=GND}
 C {devices/vcvs.sym} 570 -690 0 0 {name=E3 value=1}
 C {devices/vcvs.sym} 1070 -690 0 0 {name=E4 value=1}
-C {devices/vsource.sym} 1070 -790 0 0 {name=V21 value=1m}
+C {devices/vsource.sym} 1070 -790 0 0 {name=V21 value=0}
 C {devices/vsource.sym} 570 -800 0 0 {name=V11 value=1m}
 C {devices/vsource.sym} 450 -850 2 0 {name=V12 value=0}
 C {devices/vsource.sym} 740 -860 2 0 {name=V13 value=0}
@@ -307,7 +309,7 @@ C {devices/vsource.sym} 220 -800 0 0 {name=V1 value=1.8}
 C {devices/vdd.sym} 220 -850 0 0 {name=l30 lab=VDD}
 C {devices/gnd.sym} 220 -740 0 0 {name=l22 lab=GND}
 C {devices/lab_wire.sym} 530 -750 0 0 {name=l23 sig_type=std_logic lab=vctrl}
-C {devices/lab_wire.sym} 1030 -760 0 0 {name=l23 sig_type=std_logic lab=vctrl}
+C {devices/lab_wire.sym} 1030 -760 0 0 {name=l23 sig_type=std_logic lab=vctrl2}
 C {sky130_fd_pr/nfet_g5v0d10v5.sym} 430 -710 0 0 {name=M5
 L=l_n
 W=w_n
@@ -336,3 +338,10 @@ sa=0 sb=0 sd=0
 model=pfet_g5v0d10v5
 spiceprefix=X
 }
+C {devices/gnd.sym} 960 -680 0 0 {name=l1 lab=GND}
+C {devices/vdd.sym} 1220 -740 0 0 {name=l30 lab=VDD}
+C {devices/gnd.sym} 460 -690 0 0 {name=l1 lab=GND}
+C {devices/vdd.sym} 720 -750 0 0 {name=l30 lab=VDD}
+C {devices/vsource.sym} 300 -630 0 0 {name=V2 value=0.9}
+C {devices/lab_wire.sym} 300 -680 0 0 {name=l23 sig_type=std_logic lab=vctrl2}
+C {devices/gnd.sym} 300 -580 0 0 {name=l22 lab=GND}

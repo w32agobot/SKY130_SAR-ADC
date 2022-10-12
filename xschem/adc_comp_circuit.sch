@@ -330,7 +330,7 @@ as="'int((nf+2)/2) * W/nf * 0.29'"
 ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
 nrd="'0.29 / W'" nrs="'0.29 / W'"
 sa=0 sb=0 sd=0
-model=nfet_01v8
+model=nfet_01v8_lvt
 spiceprefix=X
 }
 C {sky130_fd_pr/nfet_01v8.sym} 400 -450 0 1 {name=M4
@@ -344,7 +344,7 @@ as="'int((nf+2)/2) * W/nf * 0.29'"
 ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
 nrd="'0.29 / W'" nrs="'0.29 / W'"
 sa=0 sb=0 sd=0
-model=nfet_01v8
+model=nfet_01v8_lvt
 spiceprefix=X
 }
 C {sky130_fd_pr/nfet_01v8.sym} 280 -330 0 0 {name=M5
