@@ -18,164 +18,165 @@ T {   Copyright 2022 Manuel Moser
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.} 50 -250 0 0 0.2 0.2 {}
-T {Gate ON} 440 -1050 0 0 0.8 0.8 {}
-T {Gate OFF} 950 -1040 0 0 0.8 0.8 {}
-T {1mV-Methode} 440 -1130 0 0 0.4 0.4 {}
-N 570 -510 570 -490 {
+T {Gate ON (VDS=1mV)} 450 -890 0 0 0.8 0.8 {}
+T {Gate OFF (VIN=0V..900mV..1800mV)} 1000 -880 0 0 0.8 0.8 {}
+N 610 -350 610 -330 {
 lab=GND}
-N 570 -590 570 -570 {
+N 610 -430 610 -410 {
 lab=outon}
-N 450 -950 740 -950 {
+N 490 -790 780 -790 {
 lab=inon}
-N 740 -950 740 -940 {
+N 780 -790 780 -780 {
 lab=inon}
-N 450 -610 450 -600 {
+N 490 -450 490 -440 {
 lab=outon}
-N 450 -600 740 -600 {
+N 490 -440 780 -440 {
 lab=outon}
-N 740 -690 740 -600 {
+N 780 -530 780 -440 {
 lab=outon}
-N 450 -710 460 -710 {
+N 490 -550 500 -550 {
 lab=GND}
-N 460 -710 460 -660 {
+N 500 -550 500 -500 {
 lab=GND}
-N 730 -720 740 -720 {
+N 770 -560 780 -560 {
 lab=VDD}
-N 570 -600 570 -590 {
+N 610 -440 610 -430 {
 lab=outon}
-N 390 -720 390 -710 {
+N 430 -560 430 -550 {
 lab=VDD}
-N 390 -710 410 -710 {
+N 430 -550 450 -550 {
 lab=VDD}
-N 780 -720 780 -690 {
+N 820 -560 820 -530 {
 lab=GND}
-N 450 -680 450 -610 {
+N 490 -520 490 -450 {
 lab=outon}
-N 720 -720 730 -720 {
+N 760 -560 770 -560 {
 lab=VDD}
-N 720 -760 720 -720 {
+N 760 -600 760 -560 {
 lab=VDD}
-N 1070 -510 1070 -490 {
+N 1150 -350 1150 -330 {
 lab=GND}
-N 1070 -590 1070 -570 {
+N 1150 -430 1150 -410 {
 lab=outoff}
-N 950 -950 1240 -950 {
+N 1030 -790 1320 -790 {
 lab=inoff}
-N 1240 -950 1240 -940 {
+N 1320 -790 1320 -780 {
 lab=inoff}
-N 950 -610 950 -600 {
+N 1030 -450 1030 -440 {
 lab=outoff}
-N 950 -600 1240 -600 {
+N 1030 -440 1320 -440 {
 lab=outoff}
-N 1240 -690 1240 -600 {
+N 1320 -530 1320 -440 {
 lab=outoff}
-N 950 -710 960 -710 {
+N 1030 -550 1040 -550 {
 lab=GND}
-N 960 -710 960 -660 {
+N 1040 -550 1040 -500 {
 lab=GND}
-N 1230 -720 1240 -720 {
+N 1310 -560 1320 -560 {
 lab=VDD}
-N 1070 -600 1070 -590 {
+N 1150 -440 1150 -430 {
 lab=outoff}
-N 890 -710 910 -710 {
+N 970 -550 990 -550 {
 lab=GND}
-N 950 -680 950 -610 {
+N 1030 -520 1030 -450 {
 lab=outoff}
-N 1220 -720 1230 -720 {
+N 1300 -560 1310 -560 {
 lab=VDD}
-N 1220 -760 1220 -720 {
+N 1300 -600 1300 -560 {
 lab=VDD}
-N 890 -710 890 -660 {
+N 970 -550 970 -500 {
 lab=GND}
-N 1310 -760 1310 -720 {
+N 1390 -600 1390 -560 {
 lab=VDD}
-N 1280 -720 1310 -720 {
+N 1360 -560 1390 -560 {
 lab=VDD}
-N 1030 -520 1030 -490 {
+N 1110 -360 1110 -330 {
 lab=GND}
-N 530 -520 530 -490 {
+N 570 -360 570 -330 {
 lab=GND}
-N 510 -560 530 -560 {
+N 550 -400 570 -400 {
 lab=vctrl}
-N 1010 -560 1030 -560 {
+N 1090 -400 1110 -400 {
 lab=vctrl}
-N 220 -600 220 -580 {
+N 260 -440 260 -420 {
 lab=GND}
-N 220 -680 220 -660 {
+N 260 -520 260 -500 {
 lab=vctrl}
-N 1070 -660 1070 -640 {
+N 1150 -500 1150 -480 {
 lab=GND}
-N 570 -660 570 -640 {
-lab=GND}
-N 690 -600 690 -560 {
+N 610 -500 610 -480 {
 lab=outon}
-N 690 -500 690 -490 {
+N 730 -440 730 -400 {
+lab=outon}
+N 730 -340 730 -330 {
 lab=GND}
-N 1190 -600 1190 -570 {
+N 1270 -440 1270 -410 {
 lab=outoff}
-N 1190 -510 1190 -500 {
+N 1270 -350 1270 -340 {
 lab=GND}
-N 1030 -670 1030 -640 {
+N 1110 -510 1110 -480 {
 lab=GND}
-N 1030 -640 1070 -640 {
+N 1110 -480 1150 -480 {
 lab=GND}
-N 1030 -760 1030 -710 {
+N 1110 -600 1110 -550 {
 lab=vctrl2}
-N 1070 -740 1070 -720 {
+N 1150 -580 1150 -560 {
 lab=#net1}
-N 570 -950 570 -920 {
+N 610 -790 610 -760 {
 lab=inon}
-N 1070 -950 1070 -820 {
+N 1150 -790 1150 -660 {
 lab=inoff}
-N 1070 -760 1070 -740 {
+N 1150 -600 1150 -580 {
 lab=#net1}
-N 570 -920 570 -830 {
+N 610 -760 610 -670 {
 lab=inon}
-N 450 -950 450 -880 {
+N 490 -790 490 -720 {
 lab=inon}
-N 740 -940 740 -890 {
+N 780 -780 780 -730 {
 lab=inon}
-N 450 -820 450 -740 {
+N 490 -660 490 -580 {
 lab=#net2}
-N 740 -830 740 -750 {
+N 780 -670 780 -590 {
 lab=#net3}
-N 950 -950 950 -870 {
+N 1030 -790 1030 -710 {
 lab=inoff}
-N 950 -810 950 -740 {
+N 1030 -650 1030 -580 {
 lab=#net4}
-N 1240 -940 1240 -880 {
+N 1320 -780 1320 -720 {
 lab=inoff}
-N 1240 -820 1240 -750 {
+N 1320 -660 1320 -590 {
 lab=#net5}
-N 220 -770 220 -740 {
+N 260 -610 260 -580 {
 lab=GND}
-N 220 -850 220 -830 {
+N 260 -690 260 -670 {
 lab=VDD}
-N 570 -770 570 -720 {
+N 610 -610 610 -560 {
+lab=outon}
+N 610 -560 610 -500 {
+lab=outon}
+N 330 -440 330 -420 {
 lab=GND}
-N 570 -720 570 -660 {
-lab=GND}
-N 290 -600 290 -580 {
-lab=GND}
-N 290 -680 290 -660 {
+N 330 -520 330 -500 {
 lab=vctrl2}
-C {sky130_fd_pr/corner.sym} 40 -670 0 0 {name=CORNER only_toplevel=false corner=tt}
+N 610 -480 610 -440 {
+lab=outon}
+C {sky130_fd_pr/corner.sym} 80 -510 0 0 {name=CORNER only_toplevel=false corner=tt}
 C {devices/title.sym} 160 -40 0 0 {name=l13 author="Manuel Moser"}
-C {devices/launcher.sym} 130 -490 0 0 {name=h1
+C {devices/launcher.sym} 170 -330 0 0 {name=h1
 descr=Backannotate
 tclcommand="ngspice::annotate"}
-C {devices/lab_wire.sym} 450 -950 0 0 {name=l17 sig_type=std_logic lab=inon}
-C {devices/gnd.sym} 570 -490 0 0 {name=l22 lab=GND}
-C {devices/lab_wire.sym} 740 -600 2 0 {name=l23 sig_type=std_logic lab=outon}
-C {devices/vsource.sym} 220 -630 0 0 {name=V5 value=0.9}
-C {devices/gnd.sym} 460 -660 0 0 {name=l2 lab=GND}
-C {devices/vdd.sym} 720 -760 0 0 {name=l3 lab=VDD}
-C {devices/vdd.sym} 390 -720 0 0 {name=l30 lab=VDD}
-C {devices/gnd.sym} 780 -690 0 0 {name=l2 lab=GND}
-C {sky130_fd_pr/nfet_01v8.sym} 430 -710 0 0 {name=M1
+C {devices/lab_wire.sym} 490 -790 0 0 {name=l17 sig_type=std_logic lab=inon}
+C {devices/gnd.sym} 610 -330 0 0 {name=l22 lab=GND}
+C {devices/lab_wire.sym} 780 -440 2 0 {name=l23 sig_type=std_logic lab=outon}
+C {devices/vsource.sym} 260 -470 0 0 {name=V5 value=0.9}
+C {devices/gnd.sym} 500 -500 0 0 {name=l2 lab=GND}
+C {devices/vdd.sym} 760 -600 0 0 {name=l3 lab=VDD}
+C {devices/vdd.sym} 430 -560 0 0 {name=l30 lab=VDD}
+C {devices/gnd.sym} 820 -530 0 0 {name=l2 lab=GND}
+C {sky130_fd_pr/nfet_01v8.sym} 470 -550 0 0 {name=M1
 L=l_n
 W=w_n
-nf=1
+nf=fingers
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
@@ -186,10 +187,10 @@ sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
 }
-C {sky130_fd_pr/pfet_01v8.sym} 760 -720 2 0 {name=M2
+C {sky130_fd_pr/pfet_01v8.sym} 800 -560 2 0 {name=M2
 L=l_p
 W=w_p
-nf=1
+nf=fingers
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
@@ -200,9 +201,9 @@ sa=0 sb=0 sd=0
 model=pfet_01v8
 spiceprefix=X
 }
-C {devices/code.sym} 40 -840 0 0 {name=STIMULI only_toplevel=false value="
+C {devices/code.sym} 80 -680 0 0 {name=STIMULI only_toplevel=false value="
 .save all 
-.temp = 100
+.temp =25
 *.options method=gear
 .OPTIONS savecurrents
 *.OPTIONS RELTOL=.1 TRTOL=1 ABSTOL=1e-20 CHGTOL=1.0e-20 DEFAD=1.0e-18
@@ -217,6 +218,7 @@ C {devices/code.sym} 40 -840 0 0 {name=STIMULI only_toplevel=false value="
 .param l_p = 1
 .param w_n=1 
 .param l_n=1
+.param fingers=1
 .param VIN = 1.8
 
 .dc V5 100m 1.7 10m V2 0 1.8 900m
@@ -235,9 +237,9 @@ set appendwrite
 *********************************************************
 
 alterparam w_p=0.42
-alterparam l_p=0.5
+alterparam l_p=0.24
 alterparam w_n=0.42
-alterparam l_n=0.5
+alterparam l_n=0.24
 
 reset
 run
@@ -247,10 +249,11 @@ set appendwrite
 
 *********************************************************
 
-alterparam w_p=4
-alterparam l_p=0.5
-alterparam w_n=4
-alterparam l_n=0.5
+alterparam w_p=16
+alterparam l_p=0.24
+alterparam w_n=16
+alterparam l_n=0.24
+alterparam fingers=8
 
 reset
 run
@@ -267,17 +270,17 @@ plot (-dc1.I(v21)) (-dc2.I(v21)) (-dc3.I(v21)) ylimit -50p 50p xlabel 'output vo
 
 .endc
 "}
-C {devices/lab_wire.sym} 950 -950 0 0 {name=l17 sig_type=std_logic lab=inoff}
-C {devices/gnd.sym} 1070 -490 0 0 {name=l22 lab=GND}
-C {devices/lab_wire.sym} 1240 -600 2 0 {name=l23 sig_type=std_logic lab=outoff}
-C {devices/gnd.sym} 960 -660 0 0 {name=l2 lab=GND}
-C {devices/vdd.sym} 1220 -760 0 0 {name=l3 lab=VDD}
-C {devices/vdd.sym} 1310 -760 0 0 {name=l30 lab=VDD}
-C {devices/gnd.sym} 890 -660 0 0 {name=l1 lab=GND}
-C {sky130_fd_pr/nfet_01v8.sym} 930 -710 0 0 {name=M3
+C {devices/lab_wire.sym} 1030 -790 0 0 {name=l17 sig_type=std_logic lab=inoff}
+C {devices/gnd.sym} 1150 -330 0 0 {name=l22 lab=GND}
+C {devices/lab_wire.sym} 1320 -440 2 0 {name=l23 sig_type=std_logic lab=outoff}
+C {devices/gnd.sym} 1040 -500 0 0 {name=l2 lab=GND}
+C {devices/vdd.sym} 1300 -600 0 0 {name=l3 lab=VDD}
+C {devices/vdd.sym} 1390 -600 0 0 {name=l30 lab=VDD}
+C {devices/gnd.sym} 970 -500 0 0 {name=l1 lab=GND}
+C {sky130_fd_pr/nfet_01v8.sym} 1010 -550 0 0 {name=M3
 L=l_n
 W=w_n
-nf=1
+nf=fingers
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
@@ -288,10 +291,10 @@ sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
 }
-C {sky130_fd_pr/pfet_01v8.sym} 1260 -720 2 0 {name=M4
+C {sky130_fd_pr/pfet_01v8.sym} 1340 -560 2 0 {name=M4
 L=l_p
 W=w_p
-nf=1
+nf=fingers
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
@@ -302,39 +305,38 @@ sa=0 sb=0 sd=0
 model=pfet_01v8
 spiceprefix=X
 }
-C {devices/vcvs.sym} 570 -540 0 0 {name=E1 value=1}
-C {devices/vcvs.sym} 1070 -540 0 0 {name=E2 value=1}
-C {devices/gnd.sym} 530 -490 0 0 {name=l22 lab=GND}
-C {devices/gnd.sym} 1030 -490 0 0 {name=l22 lab=GND}
-C {devices/lab_wire.sym} 510 -560 0 0 {name=l23 sig_type=std_logic lab=vctrl}
-C {devices/lab_wire.sym} 1010 -560 0 0 {name=l23 sig_type=std_logic lab=vctrl}
-C {devices/lab_wire.sym} 220 -680 0 0 {name=l23 sig_type=std_logic lab=vctrl}
-C {devices/gnd.sym} 220 -580 0 0 {name=l22 lab=GND}
-C {devices/gnd.sym} 570 -640 0 0 {name=l22 lab=GND}
-C {devices/gnd.sym} 1070 -640 0 0 {name=l22 lab=GND}
-C {devices/capa.sym} 690 -530 0 0 {name=C1
+C {devices/vcvs.sym} 610 -380 0 0 {name=E1 value=1}
+C {devices/vcvs.sym} 1150 -380 0 0 {name=E2 value=1}
+C {devices/gnd.sym} 570 -330 0 0 {name=l22 lab=GND}
+C {devices/gnd.sym} 1110 -330 0 0 {name=l22 lab=GND}
+C {devices/lab_wire.sym} 550 -400 0 0 {name=l23 sig_type=std_logic lab=vctrl}
+C {devices/lab_wire.sym} 1090 -400 0 0 {name=l23 sig_type=std_logic lab=vctrl}
+C {devices/lab_wire.sym} 260 -520 0 0 {name=l23 sig_type=std_logic lab=vctrl}
+C {devices/gnd.sym} 260 -420 0 0 {name=l22 lab=GND}
+C {devices/gnd.sym} 1150 -480 0 0 {name=l22 lab=GND}
+C {devices/capa.sym} 730 -370 0 0 {name=C1
 m=1
 value=2.44p
 footprint=1206
 device="ceramic capacitor"}
-C {devices/gnd.sym} 690 -490 0 0 {name=l22 lab=GND}
-C {devices/capa.sym} 1190 -540 0 0 {name=C2
+C {devices/gnd.sym} 730 -330 0 0 {name=l22 lab=GND}
+C {devices/capa.sym} 1270 -380 0 0 {name=C2
 m=1
 value=2.44p
 footprint=1206
 device="ceramic capacitor"}
-C {devices/gnd.sym} 1190 -500 0 0 {name=l22 lab=GND}
-C {devices/vcvs.sym} 1070 -690 0 0 {name=E4 value=1}
-C {devices/vsource.sym} 1070 -790 0 0 {name=V21 value=0m}
-C {devices/vsource.sym} 570 -800 0 0 {name=V11 value=1m}
-C {devices/vsource.sym} 450 -850 2 0 {name=V12 value=0}
-C {devices/vsource.sym} 740 -860 2 0 {name=V13 value=0}
-C {devices/vsource.sym} 950 -840 2 0 {name=V22 value=0}
-C {devices/vsource.sym} 1240 -850 2 0 {name=V23 value=0}
-C {devices/vsource.sym} 220 -800 0 0 {name=V1 value=1.8}
-C {devices/vdd.sym} 220 -850 0 0 {name=l30 lab=VDD}
-C {devices/gnd.sym} 220 -740 0 0 {name=l22 lab=GND}
-C {devices/lab_wire.sym} 1030 -760 0 0 {name=l23 sig_type=std_logic lab=vctrl2}
-C {devices/vsource.sym} 290 -630 0 0 {name=V2 value=0.9}
-C {devices/lab_wire.sym} 290 -680 0 0 {name=l23 sig_type=std_logic lab=vctrl2}
-C {devices/gnd.sym} 290 -580 0 0 {name=l22 lab=GND}
+C {devices/gnd.sym} 1270 -340 0 0 {name=l22 lab=GND}
+C {devices/vcvs.sym} 1150 -530 0 0 {name=E4 value=1}
+C {devices/vsource.sym} 1150 -630 0 0 {name=V21 value=0m}
+C {devices/vsource.sym} 610 -640 0 0 {name=V11 value=1m}
+C {devices/vsource.sym} 490 -690 2 0 {name=V12 value=0}
+C {devices/vsource.sym} 780 -700 2 0 {name=V13 value=0}
+C {devices/vsource.sym} 1030 -680 2 0 {name=V22 value=0}
+C {devices/vsource.sym} 1320 -690 2 0 {name=V23 value=0}
+C {devices/vsource.sym} 260 -640 0 0 {name=V1 value=1.8}
+C {devices/vdd.sym} 260 -690 0 0 {name=l30 lab=VDD}
+C {devices/gnd.sym} 260 -580 0 0 {name=l22 lab=GND}
+C {devices/lab_wire.sym} 1110 -600 0 0 {name=l23 sig_type=std_logic lab=vctrl2}
+C {devices/vsource.sym} 330 -470 0 0 {name=V2 value=0.9}
+C {devices/lab_wire.sym} 330 -520 0 0 {name=l23 sig_type=std_logic lab=vctrl2}
+C {devices/gnd.sym} 330 -420 0 0 {name=l22 lab=GND}

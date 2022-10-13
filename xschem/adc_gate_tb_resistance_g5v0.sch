@@ -97,8 +97,6 @@ N 220 -680 220 -660 {
 lab=vctrl}
 N 1070 -660 1070 -640 {
 lab=GND}
-N 570 -660 570 -640 {
-lab=GND}
 N 690 -600 690 -560 {
 lab=outon}
 N 690 -500 690 -490 {
@@ -113,8 +111,6 @@ N 1030 -640 1070 -640 {
 lab=GND}
 N 1030 -760 1030 -710 {
 lab=vctrl2}
-N 530 -750 530 -710 {
-lab=vctrl}
 N 1070 -740 1070 -720 {
 lab=#net1}
 N 570 -950 570 -920 {
@@ -146,11 +142,7 @@ lab=GND}
 N 220 -850 220 -830 {
 lab=VDD}
 N 570 -770 570 -720 {
-lab=#net6}
-N 530 -670 530 -650 {
-lab=GND}
-N 530 -650 570 -650 {
-lab=GND}
+lab=outon}
 N 1220 -740 1220 -720 {
 lab=VDD}
 N 960 -710 960 -680 {
@@ -163,6 +155,8 @@ N 300 -600 300 -580 {
 lab=GND}
 N 300 -680 300 -660 {
 lab=vctrl2}
+N 570 -720 570 -600 {
+lab=outon}
 C {sky130_fd_pr/corner.sym} 40 -670 0 0 {name=CORNER only_toplevel=false corner=ff}
 C {devices/title.sym} 160 -40 0 0 {name=l13 author="Manuel Moser"}
 C {devices/launcher.sym} 130 -490 0 0 {name=h1
@@ -283,7 +277,6 @@ C {devices/lab_wire.sym} 510 -560 0 0 {name=l23 sig_type=std_logic lab=vctrl}
 C {devices/lab_wire.sym} 1010 -560 0 0 {name=l23 sig_type=std_logic lab=vctrl}
 C {devices/lab_wire.sym} 220 -680 0 0 {name=l23 sig_type=std_logic lab=vctrl}
 C {devices/gnd.sym} 220 -580 0 0 {name=l22 lab=GND}
-C {devices/gnd.sym} 570 -640 0 0 {name=l22 lab=GND}
 C {devices/gnd.sym} 1070 -640 0 0 {name=l22 lab=GND}
 C {devices/capa.sym} 690 -530 0 0 {name=C1
 m=1
@@ -297,7 +290,6 @@ value=2.44p
 footprint=1206
 device="ceramic capacitor"}
 C {devices/gnd.sym} 1190 -500 0 0 {name=l22 lab=GND}
-C {devices/vcvs.sym} 570 -690 0 0 {name=E3 value=1}
 C {devices/vcvs.sym} 1070 -690 0 0 {name=E4 value=1}
 C {devices/vsource.sym} 1070 -790 0 0 {name=V21 value=0}
 C {devices/vsource.sym} 570 -800 0 0 {name=V11 value=1m}
@@ -308,7 +300,6 @@ C {devices/vsource.sym} 1240 -850 2 0 {name=V23 value=0}
 C {devices/vsource.sym} 220 -800 0 0 {name=V1 value=1.8}
 C {devices/vdd.sym} 220 -850 0 0 {name=l30 lab=VDD}
 C {devices/gnd.sym} 220 -740 0 0 {name=l22 lab=GND}
-C {devices/lab_wire.sym} 530 -750 0 0 {name=l23 sig_type=std_logic lab=vctrl}
 C {devices/lab_wire.sym} 1030 -760 0 0 {name=l23 sig_type=std_logic lab=vctrl2}
 C {sky130_fd_pr/nfet_g5v0d10v5.sym} 430 -710 0 0 {name=M5
 L=l_n

@@ -60,6 +60,69 @@ $$Samplerate = 1/(16 \cdot 40ns)=1.56MSamples/s$$
 Hier liegt die Comparator-Entscheidungszeit bei  $T_{decision} = 2.2ns$.
 $$Samplerate = 1/(16 \cdot 22.2ns)=2.84MSamples/s$$ 
 
-# Switch Topologieauswahl
-Width und Length, Nominal oder Thick-Oxide?
+# Switch Topologieauswahl bei Fast-Corner
+Spezifikationen können hier nicht eingehalten werden, die Leakage Current wird zu hoch wenn man in einen okay'ishen On-Resistance-Bereich kommt
 
+## 01V8 Nominal Mosfets
+R zu hoch wenn Leakage current ebenfalls zu hoch
+```tcl
+red: w=0.42 L=0.15
+blue: w=0.42 L=0.4
+orange: W=4 L=0.4
+```
+![01V8](img/resistance_01v8_ff.png)
+Abb: Leakage Currents und Channel-Resistance bei worst case corner (ff 100°C)
+
+## 01V8 LVT Mosfets
+Die LVT Type hat ein großes Problem mit Leakage Currents
+```tcl
+red: w=0.42 L=0.35
+blue: w=0.42 L=0.75
+orange: W=4 L=0.75
+```
+![01V8](img/resistance_01v8_lvt_ff.png)
+Abb: Leakage Currents und Channel-Resistance bei worst case corner (ff 100°C)
+
+## 01V8 HVT Mosfets
+NMOS nominal und PMOS hvt
+R zu hoch wenn Leakage current ebenfalls zu hoch
+```tcl
+red: w=0.42 L=0.15
+blue: w=0.42 L=0.30
+orange: W=4.2 L=0.30
+```
+![01V8](img/resistance_01v8_hvt_ff.png)
+Abb: Leakage Currents und Channel-Resistance bei worst case corner (ff 100°C)
+
+## Thick Oxide 5V0 Mosfets
+Mosfets 5v0 thick oxide type  
+Leakage currents sind bei vergleichbarer Channel Resistance sogar noch höher als bei andere types
+```tcl
+red: w=0.42 L=0.5
+blue: w=4 L=0.5
+orange: W=16 L=0.5
+```
+![01V8](img/resistance_5v0_ff.png)
+Abb: Leakage Currents und Channel-Resistance bei worst case corner (ff 100°C)
+
+# Mögliche Lösung
+Bootstrapping-Switch. Wandlung um 1 Cycle verlängern, im IDLE Zustand das Bootstrapping vorbereiten, dann erst im ersten Takt den Switch durchschalten.
+
+Kurze Evaluation: 3V3 Nmos hat hier viel zu hohen Leakage Current. g5v0 Mosfet kommt nicht bis zu 1V8 am Ausgang, macht zu früh wieder zu. 
+
+# Switch Topologieauswahl bei Typical-Corner
+## 01V8 Nominal Mosfets
+```tcl
+red: w=0.42 L=0.15
+blue: w=0.42 L=0.24
+orange: W=16 L=0.24
+```
+![01V8](img/resistance_01v8_tt.png)
+Abb: Leakage Currents und Channel-Resistance bei nominal corner (tt 25°C)
+
+![01V8](img/resistance_01v8_ff_nomtemp.png)
+Abb: Leakage Currents und Channel-Resistance bei fast corner (ff 25°C)
+
+# Auswahl
+Nominal 01V8 Mosfets ohne Bootstrapping mit
+W=16 L=0.24
