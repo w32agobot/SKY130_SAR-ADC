@@ -25,26 +25,26 @@ module adc_row_col_decoder(
     input  wire[11:0] data,
     output wire[15:0] row_n,
     output wire[15:0] rowon_n,
-    output wire[15:0] col_n,
+    output wire[31:0] col_n,
     output wire[2:0]  bincap_n,
     output wire       c0p_n,
     output wire       c0n_n
 	);
 
 reg[15:0] row;
-reg[15:0] rowon;
+wire[15:0] rowon;
 reg[31:0] col;
 
-reg[2:0] bincap;
-reg[4:0] col_intermediate;
-reg[3:0] row_intermediate;
+wire[2:0] bincap;
+wire[4:0] col_intermediate;
+wire[3:0] row_intermediate;
 
 //[                data                ]
 //[11][10][9][8][7][6][5][4][3][2][1][0]
 //[    row     ][    col      ][bincap ]
-assign  bincap <= data[2:0];
-assign 	col_intermediate <= data[7:3];
-assign 	row_intermediate <= data[11:8];
+assign  bincap = data[2:0];
+assign 	col_intermediate = data[7:3];
+assign 	row_intermediate = data[11:8];
 
 integer i;
 integer j;
@@ -79,7 +79,7 @@ end
 // ******************
 //   ROWON DECODER
 // ******************
-assign rowon <= row>>1;	
+assign rowon = row>>1;	
 
 //convert to active-low signals
 assign row_n = ~row;

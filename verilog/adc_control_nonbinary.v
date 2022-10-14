@@ -31,7 +31,7 @@ module adc_control_nonbinary #(parameter MATRIX_BITS = 12, NONBINARY_REDUNDANCY 
    output reg[MATRIX_BITS-1:0]   result
    );
 
-   // Synchronous data registers
+   // internal signals for synchronous clk and reset handling
    wire [MATRIX_BITS-1:0] next_result;
    wire [4:0] next_average_counter;
    wire [5:0] next_average_sum;
@@ -52,26 +52,15 @@ module adc_control_nonbinary #(parameter MATRIX_BITS = 12, NONBINARY_REDUNDANCY 
    reg [MATRIX_BITS-1:0] nonbinary_value;
 
    // states of the machine
-   wire is_sampling; 
-   assign is_sampling = shift_register[0];
-   wire lsb_region;
-   assign lsb_region  = (shift_register[1] | shift_register[2] | shift_register[3] | shift_register[4]);
-   wire is_averaging; 
-   assign is_averaging = (lsb_region && (average_counter < average_count_limit));
-   wire conversion_ending;
-   assign conversion_ending = ((shift_register[1]==1'b1)&~is_averaging);
+   wire is_sampling = shift_register[0];
+   wire lsb_region  = (shift_register[1] | shift_register[2] | shift_register[3] | shift_register[4]);
+   wire is_averaging = (lsb_region && (average_counter < average_count_limit));
+   wire conversion_ending = ((shift_register[1]==1'b1)&~is_averaging);
 
-   // direct output of internal states
-   assign sample = is_sampling;
-   assign nsample = ~is_sampling;
-   assign conv_finished = is_sampling;
-   assign enable = ~is_sampling;
-   assign n_switch = data_register + nonbinary_value;
-   assign p_switch = ~(data_register + nonbinary_value);
 
-    //******************************************
-    //   Synchronous process and Reset Handling
-    //******************************************
+   //******************************************
+   //   Synchronous process and Reset Handling
+   //******************************************
    always @(posedge clk, negedge nrst) begin
       if (nrst == 1'b0) begin  
          result    <= {MATRIX_BITS{1'b0}};
@@ -91,30 +80,40 @@ module adc_control_nonbinary #(parameter MATRIX_BITS = 12, NONBINARY_REDUNDANCY 
       end
    end 
 
-    //*******************************
-    //   Combinatorial Processes
-    //*******************************
+   //*******************************
+   //   Combinatorial Processes
+   //*******************************
+
+   // direct output of internal states
+   assign sample = is_sampling;
+   assign nsample = ~is_sampling;
+   assign conv_finished = is_sampling;
+   assign enable = ~is_sampling;
+   assign n_switch = data_register + nonbinary_value;
+   assign p_switch = ~(data_register + nonbinary_value);
+
+   // shift register and data handling
+   // save avg_control in a register to prevent changes of this value during conversion
    assign next_shift_register = is_averaging ? shift_register : {shift_register[0],shift_register[MATRIX_BITS+NONBINARY_REDUNDANCY:1]};
    assign next_sampled_avg_control = is_sampling ? avg_control : sampled_avg_control;
-   assign next_data_register = is_sampling    ? {MATRIX_BITS{1'b0}} :
+   assign next_data_register = is_sampling ? {MATRIX_BITS{1'b0}} :
                                averaged_comparator_in ? data_register+nonbinary_value: 
-                                                data_register;
+                               data_register;
    
+   // update the result-output at the last step of conversion
    assign next_result = conversion_ending ? next_data_register : result;
    
-   // Handling of Averaging Counter, Sum and Result
-   // While averaging, count up and preserve the last result.
-   // Wnen averaging is done and in lsb_region, then update the result and reset the counter.
-   // Else reset values in registers
+   // Calculating the averaged comparator_in signal.
+   // While averaging in lsb_region is active, comparator_in is summed up.
+   // Afterwards the result in average_sum is evaluated.
    assign next_average_counter = is_averaging ? average_counter+1 : 5'd1;
    assign next_average_sum     = is_averaging ? average_sum+comparator_in : {4'b0000, comparator_in};
-
    assign averaged_comparator_in = (~lsb_region) ? comparator_in :
                                    is_averaging ? 1'b0 :
-                                   (sampled_avg_control ==  3'b001) ? average_sum[1] :
-                                   (sampled_avg_control ==  3'b010) ? average_sum[2] :
-                                   (sampled_avg_control ==  3'b011) ? average_sum[3] :
-                                   (sampled_avg_control ==  3'b100) ? average_sum[4] :
+                                   (average_count_limit ==  5'd3) ? average_sum[1] :
+                                   (average_count_limit ==  5'd7) ? average_sum[2] :
+                                   (average_count_limit ==  5'd15) ? average_sum[3] :
+                                   (average_count_limit ==  5'd31) ? average_sum[4] :
                                    comparator_in;
 
 
@@ -151,11 +150,11 @@ module adc_control_nonbinary #(parameter MATRIX_BITS = 12, NONBINARY_REDUNDANCY 
     // Decide how often comparator_in should be sampled.
     // Default is 1 sample per 1 decision, 
     // max. is 31 samples for 1 decision
-    assign average_count_limit = (sampled_avg_control == 3'b001) ? 5'd3 :
-                                  (sampled_avg_control == 3'b010) ? 5'd7 :
-                                  (sampled_avg_control == 3'b011) ? 5'd15 :
-                                  (sampled_avg_control == 3'b100) ? 5'd31 :
-                                  5'd1;
+    assign average_count_limit = (sampled_avg_control == 3'b001) ? 5'd3  :
+                                 (sampled_avg_control == 3'b010) ? 5'd7  :
+                                 (sampled_avg_control == 3'b011) ? 5'd15 :
+                                 (sampled_avg_control == 3'b100) ? 5'd31 :
+                                 5'd1;
     
 endmodule
 

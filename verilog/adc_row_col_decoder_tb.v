@@ -19,7 +19,7 @@ module adc_row_col_decoder_tb;
     reg[11:0] data;
     wire[15:0] row_n;
     wire[15:0] rowon_n;
-    wire[15:0] col_n;
+    wire[31:0] col_n;
     wire[2:0]  bincap_n;
     wire       c0p_n;
     wire       c0n_n;
