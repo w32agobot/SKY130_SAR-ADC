@@ -49,66 +49,36 @@ N 140 -840 150 -840 {
 lab=sample_n}
 N 140 -820 150 -820 {
 lab=sample}
-N 460 -620 460 -590 {
-lab=VDD}
-N 460 -510 460 -470 {
-lab=VSS}
-N 550 -620 550 -470 {
-lab=out}
 N 160 -550 270 -550 {
 lab=in}
 N 550 -550 590 -550 {
 lab=out}
-N 490 -620 520 -620 {
-lab=out}
-N 370 -590 460 -590 {
-lab=VDD}
-N 400 -620 430 -620 {
-lab=in}
-N 330 -620 340 -620 {
-lab=in}
-N 330 -620 330 -550 {
-lab=in}
-N 270 -550 330 -550 {
-lab=in}
-N 330 -550 330 -470 {
-lab=in}
-N 330 -470 340 -470 {
-lab=in}
-N 400 -470 430 -470 {
-lab=in}
-N 490 -470 520 -470 {
-lab=out}
-N 310 -590 370 -590 {
-lab=VDD}
-N 370 -510 460 -510 {
+N 160 -630 310 -630 {
 lab=VSS}
-N 310 -510 370 -510 {
-lab=VSS}
-N 460 -430 460 -420 {
-lab=sw}
-N 460 -670 460 -660 {
-lab=sw_n}
-N 160 -510 310 -510 {
-lab=VSS}
-N 160 -590 310 -590 {
+N 160 -600 310 -600 {
 lab=VDD}
-N 340 -620 400 -620 {
+N 270 -550 370 -550 {
 lab=in}
-N 340 -470 400 -470 {
-lab=in}
-N 520 -620 550 -620 {
+N 510 -550 550 -550 {
 lab=out}
-N 520 -470 550 -470 {
-lab=out}
-C {devices/ipin.sym} 140 -900 0 0 {name=p1 lab=sw}
-C {devices/ipin.sym} 140 -880 0 0 {name=p2 lab=sw_n}
+N 310 -600 390 -600 {
+lab=VDD}
+N 310 -630 490 -630 {
+lab=VSS}
+N 490 -630 490 -600 {
+lab=VSS}
+N 160 -670 440 -670 {}
+N 440 -670 440 -600 {}
+N 160 -460 440 -460 {}
+N 440 -500 440 -460 {}
+C {devices/ipin.sym} 160 -460 0 0 {name=p1 lab=sw}
+C {devices/ipin.sym} 160 -670 0 0 {name=p2 lab=sw_n}
 C {devices/iopin.sym} 140 -740 0 1 {name=p3 lab=vcom}
 C {devices/ipin.sym} 140 -760 0 0 {name=p4 lab=row_n}
 C {devices/ipin.sym} 140 -780 0 0 {name=p5 lab=col_n}
 C {devices/ipin.sym} 140 -800 0 0 {name=p6 lab=colon_n}
-C {devices/iopin.sym} 160 -590 0 1 {name=p7 lab=VDD}
-C {devices/iopin.sym} 160 -510 0 1 {name=p8 lab=VSS}
+C {devices/iopin.sym} 160 -600 0 1 {name=p7 lab=VDD}
+C {devices/iopin.sym} 160 -630 0 1 {name=p8 lab=VSS}
 C {devices/title.sym} 160 -40 0 0 {name=l13 author="Manuel Moser"}
 C {devices/noconn.sym} 150 -760 2 0 {name=l1}
 C {devices/noconn.sym} 150 -780 2 0 {name=l2}
@@ -118,35 +88,6 @@ C {devices/ipin.sym} 140 -820 0 0 {name=p11 lab=sample}
 C {devices/ipin.sym} 140 -840 0 0 {name=p12 lab=sample_n}
 C {devices/noconn.sym} 150 -820 2 0 {name=l5}
 C {devices/noconn.sym} 150 -840 2 0 {name=l6}
-C {sky130_fd_pr/pfet_01v8.sym} 460 -640 1 0 {name=M1
-L=0.5
-W=1
-nf=2
-mult=1
-ad="'int((nf+1)/2) * W/nf * 0.29'" 
-pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
-as="'int((nf+2)/2) * W/nf * 0.29'" 
-ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
-nrd="'0.29 / W'" nrs="'0.29 / W'"
-sa=0 sb=0 sd=0
-model=pfet_01v8
-spiceprefix=X
-}
-C {sky130_fd_pr/nfet_01v8.sym} 460 -450 3 0 {name=M3
-L=0.5
-W=1
-nf=2
-mult=1
-ad="'int((nf+1)/2) * W/nf * 0.29'" 
-pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
-as="'int((nf+2)/2) * W/nf * 0.29'" 
-ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
-nrd="'0.29 / W'" nrs="'0.29 / W'"
-sa=0 sb=0 sd=0
-model=nfet_01v8
-spiceprefix=X
-}
 C {devices/iopin.sym} 160 -550 0 1 {name=p17 lab=in}
 C {devices/iopin.sym} 590 -550 0 0 {name=p18 lab=out}
-C {devices/lab_wire.sym} 460 -670 0 0 {name=l7 sig_type=std_logic lab=sw_n}
-C {devices/lab_wire.sym} 460 -420 2 1 {name=l8 sig_type=std_logic lab=sw}
+C {adc_gate_switch.sym} 440 -550 3 0 {name=X1}

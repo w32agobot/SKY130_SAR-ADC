@@ -552,8 +552,8 @@ x1067 VDD ctop vcm VSS VSS VDD VSS VSS col_n[9] adc_array_wafflecap_8_dummy
 x1069 VDD ctop vcm VSS VSS VDD VSS VSS col_n[11] adc_array_wafflecap_8_dummy
 x1071 VDD ctop vcm VSS VSS VDD VSS VSS col_n[13] adc_array_wafflecap_8_dummy
 x1072 VDD ctop vcm VSS VSS VDD VSS VSS col_n[14] adc_array_wafflecap_8_dummy
-x1073 VDD ctop vcm VSS VSS VDD VSS VSS col_n[15] adc_array_wafflecap_8_dummy
-x1075 VDD ctop vcm VSS VSS VDD VSS VSS col_n[17] adc_array_wafflecap_8_dummy
+x1073 VDD ctop vcm VSS VSS VDD VSS VSS col_n[8] adc_array_wafflecap_8_dummy
+x1075 VDD ctop vcm VSS VSS VDD VSS VSS col_n[24] adc_array_wafflecap_8_dummy
 x1077 VDD ctop vcm VSS VSS VDD VSS VSS col_n[19] adc_array_wafflecap_8_dummy
 x1078 VDD ctop vcm VSS VSS VDD VSS VSS col_n[20] adc_array_wafflecap_8_dummy
 x1079 VDD ctop vcm VSS VSS VDD VSS VSS col_n[21] adc_array_wafflecap_8_dummy
@@ -620,9 +620,9 @@ x513 VDD ctop vcm VSS VSS VDD VSS VSS col_n[2] adc_array_wafflecap_8_dummy
 x514 VDD ctop vcm VSS VSS VDD VSS VSS col_n[10] adc_array_wafflecap_8_dummy
 x515 VDD ctop vcm VSS VSS VDD VSS VSS col_n[18] adc_array_wafflecap_8_dummy
 x516 VDD ctop vcm VSS VSS VDD VSS VSS col_n[26] adc_array_wafflecap_8_dummy
-x517 VDD ctop vcm VSS VSS VDD VSS VSS col_n[8] en_bit_n[2] adc_array_wafflecap_8_4
-x518 VDD ctop vcm VSS VSS VDD VSS VSS col_n[16] en_bit_n[1] adc_array_wafflecap_8_2
-x519 VDD ctop vcm VSS VSS VDD VSS VSS col_n[24] en_bit_n[0] adc_array_wafflecap_8_1
+x517 VDD ctop vcm VSS VSS VDD VSS VSS col_n[16] en_bit_n[2] adc_array_wafflecap_8_4
+x518 VDD ctop vcm VSS VSS VDD VSS VSS col_n[15] en_bit_n[1] adc_array_wafflecap_8_2
+x519 VDD ctop vcm VSS VSS VDD VSS VSS col_n[17] en_bit_n[0] adc_array_wafflecap_8_1
 x520 VDD ctop vcm VSS VSS VDD VSS VSS col_n[31] sw analog_in sw_n adc_array_wafflecap_8_gate
 x14 VDD ctop vcm row_n[0] rowon_n[0] net2 net1 VSS col_n[13] adc_array_wafflecap_8_8
 x5211 VDD VSS VDD VSS VSS adc_noise_decoup_cell1
@@ -900,10 +900,25 @@ XM10 VSS en_n vint2 VSS sky130_fd_pr__nfet_01v8 L=0.15 W=0.42 nf=1 ad='int((nf+1
 ** sch_path: /foss/designs/SKY130_SAR-ADC/xschem/adc_array_circuit_gate.sch
 .subckt adc_array_circuit_gate VDD row_n col_n colon_n sample_n vcom sample VSS out in sw_n sw
 *.PININFO sw:I sw_n:I vcom:B row_n:I col_n:I colon_n:I VDD:B VSS:B sample:I sample_n:I in:B out:B
-XM1 in sw_n out VDD sky130_fd_pr__pfet_01v8 L=0.5 W=1 nf=2 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
+X1 sw_n in sw out VDD VSS adc_gate_switch
+.ends
+
+
+* expanding   symbol:  adc_gate_switch.sym # of pins=6
+** sym_path: /foss/designs/SKY130_SAR-ADC/xschem/adc_gate_switch.sym
+** sch_path: /foss/designs/SKY130_SAR-ADC/xschem/adc_gate_switch.sch
+.subckt adc_gate_switch sw_n a sw b VDD VSS
+*.PININFO VSS:B VDD:B sw_n:I sw:I a:B b:B
+XM1 a sw_n b VDD sky130_fd_pr__pfet_01v8 L=0.22 W=7.6 nf=4 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
 + pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
 + sa=0 sb=0 sd=0 mult=1 m=1
-XM3 in sw out VSS sky130_fd_pr__nfet_01v8 L=0.5 W=1 nf=2 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
+XM3 a sw b VSS sky130_fd_pr__nfet_01v8 L=0.22 W=7.6 nf=4 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM2 b sw b VDD sky130_fd_pr__pfet_01v8 L=0.22 W=3.8 nf=2 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM4 b sw_n b VSS sky130_fd_pr__nfet_01v8 L=0.22 W=3.8 nf=2 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
 + pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
 + sa=0 sb=0 sd=0 mult=1 m=1
 .ends

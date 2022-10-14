@@ -35537,11 +35537,11 @@ N 8940 -4310 8940 -4300 {
 lab=VSS}
 N 8940 -4310 8940 -4300 {
 lab=VSS}
-N 6890 -930 6890 -920 {
+N 5070 -930 5070 -920 {
 lab=en_n_bit[0]}
-N 4810 -930 4810 -910 {
+N 4550 -930 4550 -910 {
 lab=en_n_bit[1]}
-N 2730 -930 2730 -910 {
+N 4810 -930 4810 -910 {
 lab=en_n_bit[2]}
 N 8780 -930 8780 -910 {
 lab=sw}
@@ -38379,7 +38379,7 @@ C {devices/lab_wire.sym} 4280 -1170 1 1 {name=l4430 sig_type=std_logic lab=vcm}
 C {devices/lab_wire.sym} 4340 -910 3 0 {name=l4431 sig_type=std_logic lab=col_n[14]}
 C {devices/lab_wire.sym} 4060 -1170 3 0 {name=l4432 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 4320 -1170 3 0 {name=l4433 sig_type=std_logic lab=ctop}
-C {adc_array_wafflecap_8_dummy.sym} 4590 -1040 0 0 {name=x1073}
+C {adc_array_wafflecap_8_dummy.sym} 2770 -1040 0 0 {name=x1073}
 C {devices/lab_wire.sym} 4520 -920 0 0 {name=l4434 sig_type=std_logic lab=VSS}
 C {devices/lab_wire.sym} 4520 -1160 2 1 {name=l4435 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 4540 -1170 1 1 {name=l4436 sig_type=std_logic lab=vcm}
@@ -38390,7 +38390,7 @@ C {devices/lab_wire.sym} 4800 -1170 1 1 {name=l4440 sig_type=std_logic lab=vcm}
 C {devices/lab_wire.sym} 4860 -910 3 0 {name=l4441 sig_type=std_logic lab=col_n[16]}
 C {devices/lab_wire.sym} 4580 -1170 3 0 {name=l4442 sig_type=std_logic lab=ctop}
 C {devices/lab_wire.sym} 4840 -1170 3 0 {name=l4443 sig_type=std_logic lab=ctop}
-C {adc_array_wafflecap_8_dummy.sym} 5110 -1040 0 0 {name=x1075}
+C {adc_array_wafflecap_8_dummy.sym} 6930 -1040 0 0 {name=x1075}
 C {devices/lab_wire.sym} 5040 -920 0 0 {name=l4444 sig_type=std_logic lab=VSS}
 C {devices/lab_wire.sym} 5040 -1160 2 1 {name=l4445 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 5060 -1170 1 1 {name=l4446 sig_type=std_logic lab=vcm}
@@ -38740,16 +38740,16 @@ C {devices/lab_wire.sym} 8940 -4300 0 0 {name=l4776 sig_type=std_logic lab=VSS}
 C {devices/lab_wire.sym} 8940 -4560 0 0 {name=l4777 sig_type=std_logic lab=VSS}
 C {devices/lab_wire.sym} 8940 -4820 0 0 {name=l4778 sig_type=std_logic lab=VSS}
 C {devices/lab_wire.sym} 8940 -5080 0 0 {name=l4779 sig_type=std_logic lab=VSS}
-C {devices/lab_wire.sym} 6890 -920 3 0 {name=l4796 sig_type=std_logic lab=en_bit_n[0]}
-C {devices/lab_wire.sym} 4810 -910 3 0 {name=l4797 sig_type=std_logic lab=en_bit_n[1]}
-C {devices/lab_wire.sym} 2730 -910 3 0 {name=l4798 sig_type=std_logic lab=en_bit_n[2]}
+C {devices/lab_wire.sym} 5070 -920 3 0 {name=l4796 sig_type=std_logic lab=en_bit_n[0]}
+C {devices/lab_wire.sym} 4550 -910 3 0 {name=l4797 sig_type=std_logic lab=en_bit_n[1]}
+C {devices/lab_wire.sym} 4810 -910 3 0 {name=l4798 sig_type=std_logic lab=en_bit_n[2]}
 C {adc_array_wafflecap_8_dummy.sym} 1210 -1040 0 0 {name=x513}
 C {adc_array_wafflecap_8_dummy.sym} 3290 -1040 0 0 {name=x514}
 C {adc_array_wafflecap_8_dummy.sym} 5370 -1040 0 0 {name=x515}
 C {adc_array_wafflecap_8_dummy.sym} 7450 -1040 0 0 {name=x516}
-C {adc_array_wafflecap_8_4.sym} 2770 -1040 0 0 {name=x517}
-C {adc_array_wafflecap_8_2.sym} 4850 -1040 0 0 {name=x518}
-C {adc_array_wafflecap_8_1.sym} 6930 -1040 0 0 {name=x519}
+C {adc_array_wafflecap_8_4.sym} 4850 -1040 0 0 {name=x517}
+C {adc_array_wafflecap_8_2.sym} 4590 -1040 0 0 {name=x518}
+C {adc_array_wafflecap_8_1.sym} 5110 -1040 0 0 {name=x519}
 C {devices/lab_wire.sym} 300 -1050 0 0 {name=l2050 sig_type=std_logic lab=VSS}
 C {devices/lab_wire.sym} 300 -1070 0 0 {name=l2051 sig_type=std_logic lab=VSS}
 C {adc_array_wafflecap_8_gate.sym} 8750 -1040 0 0 {name=x520}
