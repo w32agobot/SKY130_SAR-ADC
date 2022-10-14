@@ -15,12 +15,11 @@
 //   limitations under the License.
 
 
-// Combinatoric process. 
-// Converts binary to thermometer-code in a
+// Converts binary to thermometer-code for a
 // capacitor array with 16 rows, 32 columns, and 3 additional Bin-Caps.
 
 // Note:  row[0] col[0] is a dummy-cap. 
-//        c0n_n and c0p_n control the second LSB-Capacitor C0
+//        c0n_n and c0p_n enable the second LSB-Capacitor C0
 
 module adc_row_col_decoder(
     input  wire[11:0] data,
@@ -43,20 +42,16 @@ reg[3:0] row_intermediate;
 //[                data                ]
 //[11][10][9][8][7][6][5][4][3][2][1][0]
 //[    row     ][    col      ][bincap ]
-always @(data) begin
-	bincap <= data[2:0];
-	col_intermediate <= data[7:3];
-	row_intermediate <= data[11:8];
-end
-
+assign  bincap <= data[2:0];
+assign 	col_intermediate <= data[7:3];
+assign 	row_intermediate <= data[11:8];
 
 integer i;
 integer j;
-
 // ******************
 //   COLUMN DECODER
 // ******************
-always @(col_intermediate) begin
+always @(*) begin
 	for (i = 0; i <= 31 ; i = i + 1) begin 
 		if (row_intermediate%2==1) begin //odd
 			col[i] <= 1'b0;
@@ -73,7 +68,7 @@ end
 // ******************
 //   ROW DECODER
 // ******************
-always @(row_intermediate) begin
+always @(*) begin
 	for (j = 0; j <= 15 ; j = j + 1) begin 
 	    row[j] <= 1'b0;
 		if (row_intermediate >= j) 
@@ -84,10 +79,7 @@ end
 // ******************
 //   ROWON DECODER
 // ******************
-always @(row) begin
-	rowon <= row>>1;
-end
-	
+assign rowon <= row>>1;	
 
 //convert to active-low signals
 assign row_n = ~row;

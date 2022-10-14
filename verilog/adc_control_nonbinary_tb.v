@@ -18,7 +18,7 @@
 module adc_control_nonbinary_tb;
   parameter MATRIX_BITS = 12;
   reg clk;
-  reg rst;
+  reg nrst;
   reg comparator_in;
   reg [2:0] avg_control;
   wire sample;
@@ -31,7 +31,7 @@ module adc_control_nonbinary_tb;
 
   adc_control_nonbinary testmodule (
 	   .clk(clk),
-	   .rst(rst),
+	   .nrst(nrst),
 	   .comparator_in(comparator_in),
 	   .avg_control(avg_control),
 	   .sample(sample),
@@ -47,7 +47,7 @@ module adc_control_nonbinary_tb;
    	$dumpfile("dump.vcd");
    	$dumpvars(0,
    		clk,
-   		rst,
+   		nrst,
    		comparator_in,
    		avg_control,
    		sample,
@@ -61,13 +61,13 @@ module adc_control_nonbinary_tb;
    end
    
    initial begin
-   	#1 rst=1;
-    #1 rst=0;
-    #1 rst=1;
-    #1 rst=1; avg_control = 3'b001;
+   	#1 nrst=1;
+    #1 nrst=0;
+    #1 nrst=1;
+    #1 nrst=1; avg_control = 3'b001;
     #1 comparator_in = 0;
 
-    // first value is d1792
+    // first value is d2048
     avg_control = 3'b001; //4x averaging    
     #2 comparator_in = 0; //0001
     #2 comparator_in = 1; //8000
@@ -99,11 +99,11 @@ module adc_control_nonbinary_tb;
     #2 comparator_in = 0;
         
 
-    // second value is d1024
+    // second value is d806
     avg_control = 3'b000; //0x averaging
     #2 comparator_in = 0; //0001
     #2 comparator_in = 0; //8000
-    #2 comparator_in = 1; //4000
+    #2 comparator_in = 1; //4000 +806
     #2 comparator_in = 0; //2000
     #2 comparator_in = 0; //1000
     #2 comparator_in = 0; //0800
@@ -137,20 +137,20 @@ module adc_control_nonbinary_tb;
     #2 comparator_in = 0; //0040
     #2 comparator_in = 0; //0020
     //averaging
-    #2 comparator_in = 1; //0010
+    #2 comparator_in = 1; //0010 +6
     //averaging
-    #2 comparator_in = 1; //0008
+    #2 comparator_in = 1; //0008 +4
     //averaging
-    #2 comparator_in = 1; //0004
+    #2 comparator_in = 1; //0004 +2
     //averaging
-    #2 comparator_in = 1; //0002
+    #2 comparator_in = 1; //0002 +1
 
-    // fourth value is d515
+    // fourth value is d489
     avg_control = 3'b010; //8x averaging
     #2 comparator_in = 0; //0001
     #2 comparator_in = 0; //8000
     #2 comparator_in = 0; //4000
-    #2 comparator_in = 1; //2000 +512
+    #2 comparator_in = 1; //2000 +486
     #2 comparator_in = 0; //1000
     #2 comparator_in = 0; //0800
     #2 comparator_in = 0; //0400
