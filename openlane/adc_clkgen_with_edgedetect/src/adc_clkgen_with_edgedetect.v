@@ -17,117 +17,202 @@
 // Asynchronous Clockgenerator with Edge-Detection for self-clocked ADC.
 //
 // Important: This verilog-file can not be synthesized with openlane-Optimizations 
-//            activated. It must be simulated with analog tools. 
-//
-// Reason:    Asynchronous design. 
-//            An ingoing signal transition from LOW to HIGH is translated to a LOW-HIGH-LOW Pulse 
-//            at the output. Digital design flows would like to optimize this away.
+//            activated. Delays will be subsitituted otherwise. Verify in xschem with postlayout extraction 
 
 module adc_clkgen_with_edgedetect(
-   ena_in,
-   start_conv,
-   comp_trig,
-   clk_dig,
-   clk_comp
+    input wire ena_in,             // enable signal from the digital clock core. 0 halts the self-clocked loop
+    input wire start_conv,         // triggers a conversion once with edge-detection
+    input wire ndecision_finish,   // comparator signalizes finished conversion
+    output wire clk_dig,           // digital clock
+    output wire clk_comp,          // comparator clock
+    input wire enable_dlycontrol,  // 0 = max delays, 1 = configurable delays
+    input wire [4:0] dlycontrol1,  // delay 1 of 3 in loop
+    input wire [4:0] dlycontrol2,  // delay 2 of 3 in loop
+    input wire [4:0] dlycontrol3,  // delay 3 of 3 in loop
+    input wire [5:0] dlycontrol4,  // edge detect pulse width
+    input wire sample_p,           // sample signals for matrix using additional buffers 
+    input wire sample_n,
+    input wire nsample_p,
+    input wire nsample_n,
+    output wire sample_p_buf,
+    output wire sample_n_buf,
+    output wire nsample_p_buf,
+    output wire nsample_n_buf
 );
-   input ena_in;
-   input start_conv;
-   input comp_trig;
-   output clk_dig;
-   output clk_comp;
-   wire start_edge_detect;
-
+   wire enable_loop;
    wire ena_in_buffered;
    wire start_conv_buffered;
-   wire comp_trig_buffered;
+   wire ndecision_finish_buffered;
    wire clk_dig_unbuffered;
    wire clk_comp_unbuffered;
 
    //Input buffers
    sky130_fd_sc_hd__buf_1 inbuf_1 (.A(ena_in),.X(ena_in_buffered));
    sky130_fd_sc_hd__buf_1 inbuf_2 (.A(start_conv),.X(start_conv_buffered));
-   sky130_fd_sc_hd__buf_1 inbuf_3 (.A(comp_trig),.X(comp_trig_buffered));
+   sky130_fd_sc_hd__buf_1 inbuf_3 (.A(ndecision_finish),.X(ndecision_finish_buffered));
    
    //Output buffers
    sky130_fd_sc_hd__buf_4 outbuf_1 (.A(clk_dig_unbuffered),.X(clk_dig));
    sky130_fd_sc_hd__buf_4 outbuf_2 (.A(clk_comp_unbuffered),.X(clk_comp));
 
+   // Output buffers for integrated sample-signal-buffeing
+   sky130_fd_sc_hd__buf_4 outbuf_3 (.A(sample_p),.X(sample_p_buf));
+   sky130_fd_sc_hd__buf_4 outbuf_4 (.A(sample_n),.X(sample_n_buf));
+   sky130_fd_sc_hd__buf_4 outbuf_5 (.A(nsample_p),.X(nsample_p_buf));
+   sky130_fd_sc_hd__buf_4 outbuf_6 (.A(nsample_n),.X(nsample_n_buf));
+   
+
    //Circuit
-   adc_edge_detect_circuit edgedetect (.start_conv(start_conv_buffered),.ena_in(ena_in_buffered),.ena_out(start_edge_detect));
-   adc_clk_generation clkgen (.comp_trig(comp_trig_buffered),.ena(start_edge_detect),.clk_dig(clk_dig_unbuffered),.clk_comp(clk_comp_unbuffered));
+   adc_edge_detect_circuit edgedetect (.start_conv(start_conv_buffered),
+                                       .ena_in(ena_in_buffered),
+                                       .ena_out(enable_loop),
+                                       .enable_dlycontrol(),
+                                       .dlycontrol());
+
+   adc_clk_generation clkgen (.ndecision_finish(ndecision_finish_buffered),
+                              .enable_loop(enable_loop),
+                              .clk_dig(clk_dig_unbuffered),
+                              .clk_comp(clk_comp_unbuffered),
+                              .enable_dlycontrol(enable_dlycontrol),
+                              .dlycontrol1(dlycontrol1),
+                              .dlycontrol2(dlycontrol2),
+                              .dlycontrol3(dlycontrol3));
 endmodule
 
+// generate the clock signals for comparator and digital core of the self-clocked SKY130_12Bit-SAR-ADC.
 module adc_clk_generation(
-   comp_trig,
-   ena,
-   clk_dig,
-   clk_comp
+   input wire ndecision_finish,   // 0 = comparator finished
+   input wire enable_loop,        // 1 = self clocked loop enabled
+   output wire clk_dig,           // clk for digital core
+   output wire clk_comp,          // clk for comparator
+   input wire enable_dlycontrol,  // 0 = max delays, 1 = configured delays
+   input wire [4:0] dlycontrol1,  // delay1 = N times 5ns up to 100ns
+   input wire [4:0] dlycontrol2,  // delay2 = N times 5ns up to 100ns
+   input wire [4:0] dlycontrol3   // delay3 = N times 5ns up to 100ns
 );
-   input comp_trig;
-   input ena;
-   output clk_dig;
-   output clk_comp;
-   wire comp_trig_delayed;
-   wire ncomp_trig_delayed;
+   wire ndecision_finish_delayed;
+   wire clk_dig_delayed;
    wire net_1;
 
-   delaycell #(.Ntimes6ns(17)) delay_100ns_1 (.in(comp_trig), .out(comp_trig_delayed));
-   assign clk_dig = ~comp_trig_delayed; //needs a buffer?
-   delaycell #(.Ntimes6ns(17)) delay_100ns_2 (.in(~comp_trig_delayed), .out(ncomp_trig_delayed));
-   nor(net_1,ncomp_trig_delayed,~ena);
-   delaycell #(.Ntimes6ns(17)) delay_100ns_3 (.in(net_1), .out(clk_comp));
+   delaycell_100ns delay_100ns_1 (.in(ndecision_finish), .enable_dlycontrol(enable_dlycontrol), .dlycontrol(dlycontrol1), .out(ndecision_finish_delayed));
+   assign clk_dig = ~ndecision_finish_delayed;
+   delaycell_100ns delay_100ns_2 (.in(clk_dig),.enable_dlycontrol(enable_dlycontrol), .dlycontrol(dlycontrol2), .out(clk_dig_delayed));
+   nand(net_1,clk_dig_delayed,~enable_loop);
+   delaycell_100ns delay_100ns_3 (.in(net_1),.enable_dlycontrol(enable_dlycontrol), .dlycontrol(dlycontrol3), .out(clk_comp));
 endmodule
 
-
-
+// if ena_in is HIGH, then ena_out is HIGH.
+// Else, detect the positive edge of start_conv and generate a pulsed signal at ena_out (low->high->low)
 module adc_edge_detect_circuit(
-    start_conv,
-    ena_in,
-    ena_out,
-);
-    input ena_in;
-    input start_conv;
-    output ena_out;
-   
+    input wire start_conv,          // Tell the ADC to start a conversion
+    input wire ena_in,              // signal from the digital core to enable the self-clocked-loop
+    output wire ena_out,            // enable the self-clocked-loop
+    input wire enable_dlycontrol,   // 0 = max delays, 1 = configured delays
+    input wire [5:0] dlycontrol     // delay = N times 5ns up to 200ns
+);   
    // Internal wires
     wire start_conv_delayed;
     wire start_conv_edge;
    
    //combinatoric process
-    delaycell #(.Ntimes6ns(34)) delay_200ns (.in(start_conv), .out(start_conv_delayed));
+    delaycell_200ns dly200cell (.in(start_conv), .enable_dlycontrol(enable_dlycontrol), .dlycontrol(dlycontrol), .out(start_conv_delayed));
     nor(start_conv_edge,~start_conv,start_conv_delayed);
     or(ena_out,start_conv_edge,ena_in);
-
 endmodule
 
 
-// ##############################################
-//
-// Delay-Generation with N times 6ns Delay
-//
-module delaycell #(parameter Ntimes6ns = 4)
+// ####################################################
+// 100ns delay cell with bypass control and enable-pin
+// control sets the delay from 0ns to 100ns in 5ns steps
+// delay is 100ns if delay control is disabled
+module delaycell_100ns
 (
-    in,
-    out
+    input wire in,
+    input wire enable_dlycontrol,
+    input wire [4:0] dlycontrol,
+    output wire out
 );
-    input  in;
-    output out;
-    wire [Ntimes6ns:1] _intsig_a_;
-    wire [Ntimes6ns:1] _intsig_b_;
+    parameter Ntimes5ns = 20;
+
+    // Conversion from binary (dlycontrol) 
+    // to inverted thermo-code (_bypass_)
+    // with enable handling   
+    wire [Ntimes5ns-1:0] _bypass_;
+    genvar i;
+    generate  
+      for (i = 0; i < Ntimes5ns ; i=i+1) begin 
+         assign _bypass_[i] = (~enable_dlycontrol) ? 1'b0 : 
+                              (j<dlycontrol) ? 1'b0 : 1'b1;
+      end
+    endgenerate
+
     
+    // Generate delaycell with bypass function
+    //                                ___________               bypass[j]
+    //              _____            |           |              |-------\
+    // bypass[j]--o| AND |--sigb[j]--| Delay 5ns |----sigc[j]---|0 mux   |--sigd[j]--
+    //  siga[j]-.--|_____|           |___________|   .--siga[j]-|1______/
+    //           \__________________________________/
+    //
+    wire [Ntimes5ns-1:0] _siga_;
+    wire [Ntimes5ns-1:0] _sigb_;
+    wire [Ntimes5ns-1:0] _sigc_;
+    wire [Ntimes5ns-1:0] _sigd_;
     genvar j;
     generate
-       for(j=1;j<= Ntimes6ns;j=j+1) begin
-          sky130_mm_sc_hd_dlyPoly6ns delay_unit (.in(_intsig_a_[j]), .out(_intsig_b_[j]));    
-       end
-       for(j=1;j< Ntimes6ns;j=j+1) begin
-          assign _intsig_a_[j+1] = _intsig_b_[j];   
-       end
-    assign _intsig_a_[1] = in;
-    assign _intsig_b_[Ntimes6ns] = out;
+       for(j=0;j<Ntimes5ns;j=j+1) begin
+          sky130_fd_sc_hd__and2_1 and1 (.A(~_bypass_[j]),.B(_siga_[j]),.X(_sigb_[j]));
+          sky130_mm_sc_hd_dlyPoly5ns delay_unit (.in(_sigb_[j]), .out(_sigc_[j]));
+          sky130_fd_sc_hd__mux2_1 mux1 (.A0(_sigc_[j]),.A1(_siga_[j]),.S( _bypass_[j]),.X(_sigd_[j]));
+          assign _siga_[j] = (j==0) ? in : _sigd_[j-1];
+       end             
+       assign out = _sigd_[Ntimes5ns-1];
     endgenerate
 endmodule
 
+module delaycell_200ns
+(
+    input wire in,
+    input wire enable_dlycontrol,
+    input wire [5:0] dlycontrol,
+    output wire out
+);
+    parameter Ntimes5ns = 40;
+
+    // Conversion from binary (dlycontrol) 
+    // to inverted thermo-code (_bypass_)
+    // with enable-signal   
+    wire [Ntimes5ns-1:0] _bypass_;
+    genvar i;
+    generate  
+      for (i = 0; i < Ntimes5ns ; i=i+1) begin 
+         assign _bypass_[i] = (~enable_dlycontrol) ? 1'b0 : 
+                              (j<dlycontrol) ? 1'b0 : 1'b1;
+      end
+    endgenerate
+    
+    // Generate delaycell with bypass function
+    //                                ___________               bypass[j]
+    //              _____            |           |              |-------\
+    // bypass[j]--o| AND |--sigb[j]--| Delay 5ns |----sigc[j]---|0 mux   |--sigd[j]--
+    //  siga[j]-.--|_____|           |___________|   .--siga[j]-|1______/
+    //           \__________________________________/
+    //
+    wire [Ntimes5ns-1:0] _siga_;
+    wire [Ntimes5ns-1:0] _sigb_;
+    wire [Ntimes5ns-1:0] _sigc_;
+    wire [Ntimes5ns-1:0] _sigd_;
+    genvar j;
+    generate
+       assign _siga_[0] = in;
+       for(j=0;j<Ntimes5ns;j=j+1) begin
+          sky130_fd_sc_hd__and2_1 and1 (.A(~_bypass_[j]),.B(_siga_[j]),.X(_sigb_[j]));
+          sky130_mm_sc_hd_dlyPoly5ns delay_unit (.in(_sigb_[j]), .out(_sigc_[j]));
+          sky130_fd_sc_hd__mux2_1 mux1 (.A0(_sigc_[j]),.A1(_siga_[j]),.S( _bypass_[j]),.X(_sigd_[j]));
+          assign _sigd_[j] = (j<(Ntimes5ns-1)) ? _siga_[j+1] : out;
+       end             
+    endgenerate
+endmodule
 
 
 

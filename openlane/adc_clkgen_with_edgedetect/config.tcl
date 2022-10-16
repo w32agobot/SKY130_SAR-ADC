@@ -16,17 +16,16 @@ set ::env(DESIGN_NAME) adc_clkgen_with_edgedetect
 
 # Floorplanning
  set ::env(FP_SIZING) "absolute"
-# set ::env(DIE_AREA) "0 0 60 85"
- set ::env(DIE_AREA) "0 0 160 32"
- set ::env(BOTTOM_MARGIN_MULT) 0.5
- set ::env(TOP_MARGIN_MULT) 0.5
- set ::env(LEFT_MARGIN_MULT) 1
- set ::env(RIGHT_MARGIN_MULT) 1
+ set ::env(DIE_AREA) "0 0 174 64"
+ set ::env(BOTTOM_MARGIN_MULT) 1
+ set ::env(TOP_MARGIN_MULT) 1
+ set ::env(LEFT_MARGIN_MULT) 9
+ set ::env(RIGHT_MARGIN_MULT) 9
 
 
- set ::env(FP_PDN_HOFFSET) 12
+ set ::env(FP_PDN_HOFFSET) 24
  set ::env(FP_PDN_VOFFSET) $::env(FP_PDN_HOFFSET)
- set ::env(FP_PDN_HPITCH) 12
+ set ::env(FP_PDN_HPITCH) 24
  set ::env(FP_PDN_VPITCH) $::env(FP_PDN_HPITCH)
  set ::env(FP_PIN_ORDER_CFG) $::env(DESIGN_DIR)/pin_order.cfg
 
@@ -38,7 +37,7 @@ set ::env(DESIGN_NAME) adc_clkgen_with_edgedetect
  set ::env(GND_NETS) [list {VGND} {VNB}]
 
 # Placement
- set ::env(PL_BASIC_PLACEMENT) 1
+ set ::env(PL_BASIC_PLACEMENT) 0
  set ::env(PL_TARGET_DENSITY) {0.90}
  set ::env(PL_RESIZER_TIMING_OPTIMIZATIONS) {0}
  set ::env(PL_RESIZER_DESIGN_OPTIMIZATIONS) {0}
