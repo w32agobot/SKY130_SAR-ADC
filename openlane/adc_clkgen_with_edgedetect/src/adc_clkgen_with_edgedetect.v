@@ -111,7 +111,7 @@ module adc_clk_generation(
         .dlycontrol(dlycontrol2), 
         .out(_clk_dig_delayed_)
     );
-    sky130_fd_sc_hd__nand2b_1 nand1 (.A_N(enable_loop),.B(_clk_dig_delayed_),.Y(_net_1_)); //2 input nand, A inverted
+    sky130_fd_sc_hd__nor2b_1 nor1 (.A(_clk_dig_delayed_),.B_N(enable_loop),.Y(_net_1_)); //2 input nor, B inverted
     binary_delaycell #(.control_bitwidth(5)) delay_155ns_3
     (
         .in(_net_1_), 

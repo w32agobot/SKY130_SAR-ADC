@@ -895,9 +895,9 @@ module adc_clkgen_with_edgedetect(ena_in, start_conv, ndecision_finish, clk_dig,
     .S(\clkgen.delay_155ns_3.genblk1[4].dly_binary.bypass ),
     .X(\clkgen.clk_comp )
   );
-  sky130_fd_sc_hd__nand2b_1 \clkgen.nand1  (
-    .A_N(\clkgen.enable_loop ),
-    .B(\clkgen._clk_dig_delayed_ ),
+  sky130_fd_sc_hd__nor2b_1 \clkgen.nor1  (
+    .A(\clkgen._clk_dig_delayed_ ),
+    .B_N(\clkgen.enable_loop ),
     .Y(\clkgen._net_1_ )
   );
   sky130_fd_sc_hd__buf_4 \edgedetect.dly_315ns_1.enablebuffer  (

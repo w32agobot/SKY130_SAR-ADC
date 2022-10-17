@@ -246,7 +246,7 @@ set ::env(RUN_SIMPLE_CTS) {0}
 set ::env(RUN_SPEF_EXTRACTION) {1}
 set ::env(RUN_TAG) {germknedl}
 set ::env(SPEF_EXTRACTOR) {openrcx}
-set ::env(START_TIME) {2022.10.17_15.04.32}
+set ::env(START_TIME) {2022.10.17_22.02.45}
 set ::env(STA_REPORT_POWER) {1}
 set ::env(STD_CELL_GROUND_PINS) {VGND VNB}
 set ::env(STD_CELL_LIBRARY_CDL) {/foss/pdk/sky130A/libs.ref/sky130_fd_sc_hd/cdl/sky130_fd_sc_hd.cdl}
@@ -385,7 +385,7 @@ set ::env(CURRENT_SPEF) {/foss/designs/SKY130_SAR-ADC/openlane/adc_clkgen_with_e
 set ::env(CURRENT_STEP) {}
 set ::env(CVC_SCRIPTS_DIR) {/foss/pdk/sky130A/libs.tech/openlane/cvc}
 set ::env(DATA_WIRE_RC_LAYER) {met2}
-set ::env(DBUS_SESSION_BUS_ADDRESS) {unix:abstract=/tmp/dbus-pI9aAITVBf,guid=8b53a3cfd97fb7181675fbfa634bceef}
+set ::env(DBUS_SESSION_BUS_ADDRESS) {unix:abstract=/tmp/dbus-AOtuyzQ2Ha,guid=cc5877e1c58752d00160e97e634dd0ed}
 set ::env(DECAP_CELL) {sky130_ef_sc_hd__decap_12 sky130_fd_sc_hd__decap_8 sky130_fd_sc_hd__decap_6 sky130_fd_sc_hd__decap_4 sky130_fd_sc_hd__decap_3}
 set ::env(DEFAULT_MAX_TRAN) {0.75}
 set ::env(DEF_UNITS_PER_MICRON) {1000}
@@ -561,7 +561,6 @@ set ::env(OPENLANE_ROOT) {/foss/tools/openlane/2022.09}
 set ::env(OPENLANE_VERBOSE) {0}
 set ::env(OPENLANE_VERSION) {63b5966c2874da8bf01a831f0ee9dc68382a4958}
 set ::env(OPENROAD_BIN) {openroad}
-set ::env(PANEL_GDK_CORE_DEVICE_EVENTS) {0}
 set ::env(PARSITICS_CURRENT_DEF) {/foss/designs/SKY130_SAR-ADC/openlane/adc_clkgen_with_edgedetect/runs/germknedl/results/routing/adc_clkgen_with_edgedetect.def}
 set ::env(PATH) {/foss/tools/bin:/foss/tools/sak/:/usr/local/sbin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/foss/tools/covered/19d30fc/bin:/foss/tools/cvc-check/6295fd9/bin:/foss/tools/fault/080f4be/:/foss/tools/cvc-check/6295fd9/bin:/foss/tools/gaw3-xschem/854bee4/bin:/foss/tools/gds3d/173da0c/bin:/foss/tools/ghdl/v2.0.0/bin:/foss/tools/gtkwave/860e977/bin:/foss/tools/iic-osic/:/foss/tools/irsim/3813495/bin:/foss/tools/iverilog/542da11/bin:/foss/tools/klayout/428d0fe/:/foss/tools/magic/4afc476/bin:/foss/tools/netgen/2056b37/bin:/foss/tools/ngspice/ngspice/bin:/foss/tools/openlane/2022.09/:/foss/tools/openroad/4174c3a/bin:/foss/tools/opensta/489ffac/bin:/foss/tools/padring/b2a64ab/bin:/foss/tools/qflow/a550469/bin:/foss/tools/verilator/v4.226/bin:/foss/tools/xschem/9073151/bin:/foss/tools/xyce/Parallel/Release/bin:/foss/tools/yosys/6e907ac/bin}
 set ::env(PDK) {sky130A}
@@ -661,10 +660,10 @@ set ::env(SESSION_MANAGER) {local/unix:@/tmp/.ICE-unix/47,unix/unix:/tmp/.ICE-un
 set ::env(SHLVL) {2}
 set ::env(SPEF_EXTRACTOR) {openrcx}
 set ::env(SPEF_PREFIX) {/foss/designs/SKY130_SAR-ADC/openlane/adc_clkgen_with_edgedetect/runs/germknedl/results/routing/adc_clkgen_with_edgedetect}
-set ::env(SSH_AGENT_PID) {116}
-set ::env(SSH_AUTH_SOCK) {/tmp/ssh-XXXXXXZ05fGT/agent.115}
+set ::env(SSH_AGENT_PID) {115}
+set ::env(SSH_AUTH_SOCK) {/tmp/ssh-XXXXXXo3e6Pk/agent.114}
 set ::env(STARTUPDIR) {/dockerstartup}
-set ::env(START_TIME) {2022.10.17_15.04.32}
+set ::env(START_TIME) {2022.10.17_22.02.45}
 set ::env(STA_LEF) {/foss/designs/SKY130_SAR-ADC/openlane/adc_clkgen_with_edgedetect/runs/germknedl/tmp/merged.nom.lef}
 set ::env(STA_PRE_CTS) {0}
 set ::env(STA_REPORT_POWER) {1}
@@ -770,6 +769,6 @@ set ::env(synthesis_logs) {/foss/designs/SKY130_SAR-ADC/openlane/adc_clkgen_with
 set ::env(synthesis_reports) {/foss/designs/SKY130_SAR-ADC/openlane/adc_clkgen_with_edgedetect/runs/germknedl/reports/synthesis}
 set ::env(synthesis_results) {/foss/designs/SKY130_SAR-ADC/openlane/adc_clkgen_with_edgedetect/runs/germknedl/results/synthesis}
 set ::env(synthesis_tmpfiles) {/foss/designs/SKY130_SAR-ADC/openlane/adc_clkgen_with_edgedetect/runs/germknedl/tmp/synthesis}
-set ::env(timer_end) {1666019182}
-set ::env(timer_routed) {1666019139}
-set ::env(timer_start) {1666019072}
+set ::env(timer_end) {1666044282}
+set ::env(timer_routed) {1666044241}
+set ::env(timer_start) {1666044165}
