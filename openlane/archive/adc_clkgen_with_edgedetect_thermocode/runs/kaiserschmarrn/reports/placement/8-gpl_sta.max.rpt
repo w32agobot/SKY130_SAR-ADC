@@ -1,0 +1,423 @@
+
+===========================================================================
+report_checks -path_delay max (Setup)
+============================================================================
+Startpoint: enable_dlycontrol (input port clocked by __VIRTUAL_CLK__)
+Endpoint: clk_comp (output port clocked by __VIRTUAL_CLK__)
+Path Group: __VIRTUAL_CLK__
+Path Type: max
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                  0.00    0.00    0.00   clock __VIRTUAL_CLK__ (rise edge)
+                          0.00    0.00   clock network delay (ideal)
+                       200000.00 200000.00 ^ input external delay
+                  0.21    0.15 200000.14 ^ enable_dlycontrol (in)
+    10    0.04                           enable_dlycontrol (net)
+                  0.21    0.00 200000.14 ^ _183_/A (sky130_fd_sc_hd__buf_1)
+                  0.43    0.41 200000.55 ^ _183_/X (sky130_fd_sc_hd__buf_1)
+    10    0.04                           _100_ (net)
+                  0.43    0.00 200000.55 ^ _184_/A (sky130_fd_sc_hd__buf_1)
+                  0.66    0.60 200001.16 ^ _184_/X (sky130_fd_sc_hd__buf_1)
+    10    0.06                           _101_ (net)
+                  0.66    0.00 200001.16 ^ _191_/A1 (sky130_fd_sc_hd__a21oi_2)
+                  0.11    0.10 200001.25 v _191_/Y (sky130_fd_sc_hd__a21oi_2)
+     1    0.00                           edgedetect.dly200cell._bypass_[0] (net)
+                  0.11    0.00 200001.25 v edgedetect.dly200cell.genblk1[0].mux1/S (sky130_fd_sc_hd__mux2_1)
+                  0.06    0.35 200001.59 v edgedetect.dly200cell.genblk1[0].mux1/X (sky130_fd_sc_hd__mux2_1)
+     2    0.00                           edgedetect.dly200cell._siga_[1] (net)
+                  0.06    0.00 200001.59 v edgedetect.dly200cell.genblk1[1].mux1/A1 (sky130_fd_sc_hd__mux2_1)
+                  0.07    0.32 200001.92 v edgedetect.dly200cell.genblk1[1].mux1/X (sky130_fd_sc_hd__mux2_1)
+     2    0.00                           edgedetect.dly200cell._siga_[2] (net)
+                  0.07    0.00 200001.92 v edgedetect.dly200cell.genblk1[2].mux1/A1 (sky130_fd_sc_hd__mux2_1)
+                  0.06    0.32 200002.23 v edgedetect.dly200cell.genblk1[2].mux1/X (sky130_fd_sc_hd__mux2_1)
+     2    0.00                           edgedetect.dly200cell._siga_[3] (net)
+                  0.06    0.00 200002.23 v edgedetect.dly200cell.genblk1[3].mux1/A1 (sky130_fd_sc_hd__mux2_1)
+                  0.07    0.32 200002.56 v edgedetect.dly200cell.genblk1[3].mux1/X (sky130_fd_sc_hd__mux2_1)
+     2    0.00                           edgedetect.dly200cell._siga_[4] (net)
+                  0.07    0.00 200002.56 v edgedetect.dly200cell.genblk1[4].mux1/A1 (sky130_fd_sc_hd__mux2_1)
+                  0.06    0.32 200002.88 v edgedetect.dly200cell.genblk1[4].mux1/X (sky130_fd_sc_hd__mux2_1)
+     2    0.00                           edgedetect.dly200cell._siga_[5] (net)
+                  0.06    0.00 200002.88 v edgedetect.dly200cell.genblk1[5].mux1/A1 (sky130_fd_sc_hd__mux2_1)
+                  0.06    0.32 200003.20 v edgedetect.dly200cell.genblk1[5].mux1/X (sky130_fd_sc_hd__mux2_1)
+     2    0.00                           edgedetect.dly200cell._siga_[6] (net)
+                  0.06    0.00 200003.20 v edgedetect.dly200cell.genblk1[6].mux1/A1 (sky130_fd_sc_hd__mux2_1)
+                  0.06    0.32 200003.52 v edgedetect.dly200cell.genblk1[6].mux1/X (sky130_fd_sc_hd__mux2_1)
+     2    0.00                           edgedetect.dly200cell._siga_[7] (net)
+                  0.06    0.00 200003.52 v edgedetect.dly200cell.genblk1[7].mux1/A1 (sky130_fd_sc_hd__mux2_1)
+                  0.06    0.32 200003.84 v edgedetect.dly200cell.genblk1[7].mux1/X (sky130_fd_sc_hd__mux2_1)
+     2    0.00                           edgedetect.dly200cell._siga_[8] (net)
+                  0.06    0.00 200003.84 v edgedetect.dly200cell.genblk1[8].mux1/A1 (sky130_fd_sc_hd__mux2_1)
+                  0.06    0.32 200004.16 v edgedetect.dly200cell.genblk1[8].mux1/X (sky130_fd_sc_hd__mux2_1)
+     2    0.00                           edgedetect.dly200cell._siga_[9] (net)
+                  0.06    0.00 200004.16 v edgedetect.dly200cell.genblk1[9].mux1/A1 (sky130_fd_sc_hd__mux2_1)
+                  0.06    0.32 200004.48 v edgedetect.dly200cell.genblk1[9].mux1/X (sky130_fd_sc_hd__mux2_1)
+     2    0.00                           edgedetect.dly200cell._siga_[10] (net)
+                  0.06    0.00 200004.48 v edgedetect.dly200cell.genblk1[10].mux1/A1 (sky130_fd_sc_hd__mux2_1)
+                  0.06    0.32 200004.80 v edgedetect.dly200cell.genblk1[10].mux1/X (sky130_fd_sc_hd__mux2_1)
+     2    0.00                           edgedetect.dly200cell._siga_[11] (net)
+                  0.06    0.00 200004.80 v edgedetect.dly200cell.genblk1[11].mux1/A1 (sky130_fd_sc_hd__mux2_1)
+                  0.06    0.32 200005.12 v edgedetect.dly200cell.genblk1[11].mux1/X (sky130_fd_sc_hd__mux2_1)
+     2    0.00                           edgedetect.dly200cell._siga_[12] (net)
+                  0.06    0.00 200005.12 v edgedetect.dly200cell.genblk1[12].mux1/A1 (sky130_fd_sc_hd__mux2_1)
+                  0.06    0.32 200005.44 v edgedetect.dly200cell.genblk1[12].mux1/X (sky130_fd_sc_hd__mux2_1)
+     2    0.00                           edgedetect.dly200cell._siga_[13] (net)
+                  0.06    0.00 200005.44 v edgedetect.dly200cell.genblk1[13].mux1/A1 (sky130_fd_sc_hd__mux2_1)
+                  0.06    0.32 200005.77 v edgedetect.dly200cell.genblk1[13].mux1/X (sky130_fd_sc_hd__mux2_1)
+     2    0.00                           edgedetect.dly200cell._siga_[14] (net)
+                  0.06    0.00 200005.77 v edgedetect.dly200cell.genblk1[14].mux1/A1 (sky130_fd_sc_hd__mux2_1)
+                  0.06    0.32 200006.08 v edgedetect.dly200cell.genblk1[14].mux1/X (sky130_fd_sc_hd__mux2_1)
+     2    0.00                           edgedetect.dly200cell._siga_[15] (net)
+                  0.06    0.00 200006.08 v edgedetect.dly200cell.genblk1[15].mux1/A1 (sky130_fd_sc_hd__mux2_1)
+                  0.09    0.35 200006.44 v edgedetect.dly200cell.genblk1[15].mux1/X (sky130_fd_sc_hd__mux2_1)
+     2    0.01                           edgedetect.dly200cell._siga_[16] (net)
+                  0.09    0.00 200006.44 v edgedetect.dly200cell.genblk1[16].mux1/A1 (sky130_fd_sc_hd__mux2_1)
+                  0.06    0.32 200006.75 v edgedetect.dly200cell.genblk1[16].mux1/X (sky130_fd_sc_hd__mux2_1)
+     2    0.00                           edgedetect.dly200cell._siga_[17] (net)
+                  0.06    0.00 200006.75 v edgedetect.dly200cell.genblk1[17].mux1/A1 (sky130_fd_sc_hd__mux2_1)
+                  0.06    0.32 200007.08 v edgedetect.dly200cell.genblk1[17].mux1/X (sky130_fd_sc_hd__mux2_1)
+     2    0.00                           edgedetect.dly200cell._siga_[18] (net)
+                  0.06    0.00 200007.08 v edgedetect.dly200cell.genblk1[18].mux1/A1 (sky130_fd_sc_hd__mux2_1)
+                  0.07    0.32 200007.39 v edgedetect.dly200cell.genblk1[18].mux1/X (sky130_fd_sc_hd__mux2_1)
+     2    0.00                           edgedetect.dly200cell._siga_[19] (net)
+                  0.07    0.00 200007.39 v edgedetect.dly200cell.genblk1[19].mux1/A1 (sky130_fd_sc_hd__mux2_1)
+                  0.07    0.32 200007.72 v edgedetect.dly200cell.genblk1[19].mux1/X (sky130_fd_sc_hd__mux2_1)
+     2    0.00                           edgedetect.dly200cell._siga_[20] (net)
+                  0.07    0.00 200007.72 v edgedetect.dly200cell.genblk1[20].mux1/A1 (sky130_fd_sc_hd__mux2_1)
+                  0.06    0.32 200008.03 v edgedetect.dly200cell.genblk1[20].mux1/X (sky130_fd_sc_hd__mux2_1)
+     2    0.00                           edgedetect.dly200cell._siga_[21] (net)
+                  0.06    0.00 200008.03 v edgedetect.dly200cell.genblk1[21].mux1/A1 (sky130_fd_sc_hd__mux2_1)
+                  0.06    0.32 200008.36 v edgedetect.dly200cell.genblk1[21].mux1/X (sky130_fd_sc_hd__mux2_1)
+     2    0.00                           edgedetect.dly200cell._siga_[22] (net)
+                  0.06    0.00 200008.36 v edgedetect.dly200cell.genblk1[22].mux1/A1 (sky130_fd_sc_hd__mux2_1)
+                  0.06    0.32 200008.67 v edgedetect.dly200cell.genblk1[22].mux1/X (sky130_fd_sc_hd__mux2_1)
+     2    0.00                           edgedetect.dly200cell._siga_[23] (net)
+                  0.06    0.00 200008.67 v edgedetect.dly200cell.genblk1[23].mux1/A1 (sky130_fd_sc_hd__mux2_1)
+                  0.06    0.32 200009.00 v edgedetect.dly200cell.genblk1[23].mux1/X (sky130_fd_sc_hd__mux2_1)
+     2    0.00                           edgedetect.dly200cell._siga_[24] (net)
+                  0.06    0.00 200009.00 v edgedetect.dly200cell.genblk1[24].mux1/A1 (sky130_fd_sc_hd__mux2_1)
+                  0.06    0.32 200009.31 v edgedetect.dly200cell.genblk1[24].mux1/X (sky130_fd_sc_hd__mux2_1)
+     2    0.00                           edgedetect.dly200cell._siga_[25] (net)
+                  0.06    0.00 200009.31 v edgedetect.dly200cell.genblk1[25].mux1/A1 (sky130_fd_sc_hd__mux2_1)
+                  0.06    0.32 200009.64 v edgedetect.dly200cell.genblk1[25].mux1/X (sky130_fd_sc_hd__mux2_1)
+     2    0.00                           edgedetect.dly200cell._siga_[26] (net)
+                  0.06    0.00 200009.64 v edgedetect.dly200cell.genblk1[26].mux1/A1 (sky130_fd_sc_hd__mux2_1)
+                  0.06    0.32 200009.95 v edgedetect.dly200cell.genblk1[26].mux1/X (sky130_fd_sc_hd__mux2_1)
+     2    0.00                           edgedetect.dly200cell._siga_[27] (net)
+                  0.06    0.00 200009.95 v edgedetect.dly200cell.genblk1[27].mux1/A1 (sky130_fd_sc_hd__mux2_1)
+                  0.06    0.32 200010.28 v edgedetect.dly200cell.genblk1[27].mux1/X (sky130_fd_sc_hd__mux2_1)
+     2    0.00                           edgedetect.dly200cell._siga_[28] (net)
+                  0.06    0.00 200010.28 v edgedetect.dly200cell.genblk1[28].mux1/A1 (sky130_fd_sc_hd__mux2_1)
+                  0.06    0.32 200010.59 v edgedetect.dly200cell.genblk1[28].mux1/X (sky130_fd_sc_hd__mux2_1)
+     2    0.00                           edgedetect.dly200cell._siga_[29] (net)
+                  0.06    0.00 200010.59 v edgedetect.dly200cell.genblk1[29].mux1/A1 (sky130_fd_sc_hd__mux2_1)
+                  0.06    0.32 200010.92 v edgedetect.dly200cell.genblk1[29].mux1/X (sky130_fd_sc_hd__mux2_1)
+     2    0.00                           edgedetect.dly200cell._siga_[30] (net)
+                  0.06    0.00 200010.92 v edgedetect.dly200cell.genblk1[30].mux1/A1 (sky130_fd_sc_hd__mux2_1)
+                  0.06    0.32 200011.23 v edgedetect.dly200cell.genblk1[30].mux1/X (sky130_fd_sc_hd__mux2_1)
+     2    0.00                           edgedetect.dly200cell._siga_[31] (net)
+                  0.06    0.00 200011.23 v edgedetect.dly200cell.genblk1[31].mux1/A1 (sky130_fd_sc_hd__mux2_1)
+                  0.06    0.32 200011.56 v edgedetect.dly200cell.genblk1[31].mux1/X (sky130_fd_sc_hd__mux2_1)
+     2    0.00                           edgedetect.dly200cell._siga_[32] (net)
+                  0.06    0.00 200011.56 v edgedetect.dly200cell.genblk1[32].mux1/A1 (sky130_fd_sc_hd__mux2_1)
+                  0.06    0.32 200011.88 v edgedetect.dly200cell.genblk1[32].mux1/X (sky130_fd_sc_hd__mux2_1)
+     2    0.00                           edgedetect.dly200cell._siga_[33] (net)
+                  0.06    0.00 200011.88 v edgedetect.dly200cell.genblk1[33].mux1/A1 (sky130_fd_sc_hd__mux2_1)
+                  0.06    0.32 200012.19 v edgedetect.dly200cell.genblk1[33].mux1/X (sky130_fd_sc_hd__mux2_1)
+     2    0.00                           edgedetect.dly200cell._siga_[34] (net)
+                  0.06    0.00 200012.19 v edgedetect.dly200cell.genblk1[34].mux1/A1 (sky130_fd_sc_hd__mux2_1)
+                  0.06    0.32 200012.52 v edgedetect.dly200cell.genblk1[34].mux1/X (sky130_fd_sc_hd__mux2_1)
+     2    0.00                           edgedetect.dly200cell._siga_[35] (net)
+                  0.06    0.00 200012.52 v edgedetect.dly200cell.genblk1[35].mux1/A1 (sky130_fd_sc_hd__mux2_1)
+                  0.06    0.32 200012.83 v edgedetect.dly200cell.genblk1[35].mux1/X (sky130_fd_sc_hd__mux2_1)
+     2    0.00                           edgedetect.dly200cell._siga_[36] (net)
+                  0.06    0.00 200012.83 v edgedetect.dly200cell.genblk1[36].mux1/A1 (sky130_fd_sc_hd__mux2_1)
+                  0.06    0.32 200013.16 v edgedetect.dly200cell.genblk1[36].mux1/X (sky130_fd_sc_hd__mux2_1)
+     2    0.00                           edgedetect.dly200cell._siga_[37] (net)
+                  0.06    0.00 200013.16 v edgedetect.dly200cell.genblk1[37].mux1/A1 (sky130_fd_sc_hd__mux2_1)
+                  0.06    0.32 200013.47 v edgedetect.dly200cell.genblk1[37].mux1/X (sky130_fd_sc_hd__mux2_1)
+     2    0.00                           edgedetect.dly200cell._siga_[38] (net)
+                  0.06    0.00 200013.47 v edgedetect.dly200cell.genblk1[38].mux1/A1 (sky130_fd_sc_hd__mux2_1)
+                  0.06    0.32 200013.80 v edgedetect.dly200cell.genblk1[38].mux1/X (sky130_fd_sc_hd__mux2_1)
+     2    0.00                           edgedetect.dly200cell._siga_[39] (net)
+                  0.06    0.00 200013.80 v edgedetect.dly200cell.genblk1[39].mux1/A1 (sky130_fd_sc_hd__mux2_1)
+                  0.07    0.32 200014.11 v edgedetect.dly200cell.genblk1[39].mux1/X (sky130_fd_sc_hd__mux2_1)
+     1    0.00                           edgedetect._start_conv_delayed_ (net)
+                  0.07    0.00 200014.11 v _429_/A (sky130_fd_sc_hd__inv_2)
+                  0.03    0.06 200014.17 ^ _429_/Y (sky130_fd_sc_hd__inv_2)
+     1    0.00                           _176_ (net)
+                  0.03    0.00 200014.17 ^ _431_/A2 (sky130_fd_sc_hd__a211o_2)
+                  0.05    0.13 200014.31 ^ _431_/X (sky130_fd_sc_hd__a211o_2)
+     2    0.01                           clkgen._net_1_ (net)
+                  0.05    0.00 200014.31 ^ clkgen.delay_100ns_3.genblk1[0].mux1/A1 (sky130_fd_sc_hd__mux2_1)
+                  0.06    0.15 200014.45 ^ clkgen.delay_100ns_3.genblk1[0].mux1/X (sky130_fd_sc_hd__mux2_1)
+     2    0.00                           clkgen.delay_100ns_3._siga_[1] (net)
+                  0.06    0.00 200014.45 ^ clkgen.delay_100ns_3.genblk1[1].mux1/A1 (sky130_fd_sc_hd__mux2_1)
+                  0.06    0.15 200014.59 ^ clkgen.delay_100ns_3.genblk1[1].mux1/X (sky130_fd_sc_hd__mux2_1)
+     2    0.00                           clkgen.delay_100ns_3._siga_[2] (net)
+                  0.06    0.00 200014.59 ^ clkgen.delay_100ns_3.genblk1[2].mux1/A1 (sky130_fd_sc_hd__mux2_1)
+                  0.06    0.15 200014.73 ^ clkgen.delay_100ns_3.genblk1[2].mux1/X (sky130_fd_sc_hd__mux2_1)
+     2    0.00                           clkgen.delay_100ns_3._siga_[3] (net)
+                  0.06    0.00 200014.73 ^ clkgen.delay_100ns_3.genblk1[3].mux1/A1 (sky130_fd_sc_hd__mux2_1)
+                  0.06    0.15 200014.89 ^ clkgen.delay_100ns_3.genblk1[3].mux1/X (sky130_fd_sc_hd__mux2_1)
+     2    0.00                           clkgen.delay_100ns_3._siga_[4] (net)
+                  0.06    0.00 200014.89 ^ clkgen.delay_100ns_3.genblk1[4].mux1/A1 (sky130_fd_sc_hd__mux2_1)
+                  0.06    0.15 200015.03 ^ clkgen.delay_100ns_3.genblk1[4].mux1/X (sky130_fd_sc_hd__mux2_1)
+     2    0.01                           clkgen.delay_100ns_3._siga_[5] (net)
+                  0.06    0.00 200015.03 ^ clkgen.delay_100ns_3.genblk1[5].mux1/A1 (sky130_fd_sc_hd__mux2_1)
+                  0.05    0.13 200015.16 ^ clkgen.delay_100ns_3.genblk1[5].mux1/X (sky130_fd_sc_hd__mux2_1)
+     2    0.00                           clkgen.delay_100ns_3._siga_[6] (net)
+                  0.05    0.00 200015.16 ^ clkgen.delay_100ns_3.genblk1[6].mux1/A1 (sky130_fd_sc_hd__mux2_1)
+                  0.05    0.13 200015.30 ^ clkgen.delay_100ns_3.genblk1[6].mux1/X (sky130_fd_sc_hd__mux2_1)
+     2    0.00                           clkgen.delay_100ns_3._siga_[7] (net)
+                  0.05    0.00 200015.30 ^ clkgen.delay_100ns_3.genblk1[7].mux1/A1 (sky130_fd_sc_hd__mux2_1)
+                  0.06    0.15 200015.44 ^ clkgen.delay_100ns_3.genblk1[7].mux1/X (sky130_fd_sc_hd__mux2_1)
+     2    0.00                           clkgen.delay_100ns_3._siga_[8] (net)
+                  0.06    0.00 200015.44 ^ clkgen.delay_100ns_3.genblk1[8].mux1/A1 (sky130_fd_sc_hd__mux2_1)
+                  0.06    0.13 200015.58 ^ clkgen.delay_100ns_3.genblk1[8].mux1/X (sky130_fd_sc_hd__mux2_1)
+     2    0.00                           clkgen.delay_100ns_3._siga_[9] (net)
+                  0.06    0.00 200015.58 ^ clkgen.delay_100ns_3.genblk1[9].mux1/A1 (sky130_fd_sc_hd__mux2_1)
+                  0.06    0.15 200015.72 ^ clkgen.delay_100ns_3.genblk1[9].mux1/X (sky130_fd_sc_hd__mux2_1)
+     2    0.01                           clkgen.delay_100ns_3._siga_[10] (net)
+                  0.06    0.00 200015.72 ^ clkgen.delay_100ns_3.genblk1[10].mux1/A1 (sky130_fd_sc_hd__mux2_1)
+                  0.06    0.15 200015.86 ^ clkgen.delay_100ns_3.genblk1[10].mux1/X (sky130_fd_sc_hd__mux2_1)
+     2    0.00                           clkgen.delay_100ns_3._siga_[11] (net)
+                  0.06    0.00 200015.86 ^ clkgen.delay_100ns_3.genblk1[11].mux1/A1 (sky130_fd_sc_hd__mux2_1)
+                  0.06    0.15 200016.00 ^ clkgen.delay_100ns_3.genblk1[11].mux1/X (sky130_fd_sc_hd__mux2_1)
+     2    0.01                           clkgen.delay_100ns_3._siga_[12] (net)
+                  0.06    0.00 200016.00 ^ clkgen.delay_100ns_3.genblk1[12].mux1/A1 (sky130_fd_sc_hd__mux2_1)
+                  0.06    0.15 200016.16 ^ clkgen.delay_100ns_3.genblk1[12].mux1/X (sky130_fd_sc_hd__mux2_1)
+     2    0.00                           clkgen.delay_100ns_3._siga_[13] (net)
+                  0.06    0.00 200016.16 ^ clkgen.delay_100ns_3.genblk1[13].mux1/A1 (sky130_fd_sc_hd__mux2_1)
+                  0.05    0.13 200016.28 ^ clkgen.delay_100ns_3.genblk1[13].mux1/X (sky130_fd_sc_hd__mux2_1)
+     2    0.00                           clkgen.delay_100ns_3._siga_[14] (net)
+                  0.05    0.00 200016.28 ^ clkgen.delay_100ns_3.genblk1[14].mux1/A1 (sky130_fd_sc_hd__mux2_1)
+                  0.05    0.13 200016.42 ^ clkgen.delay_100ns_3.genblk1[14].mux1/X (sky130_fd_sc_hd__mux2_1)
+     2    0.00                           clkgen.delay_100ns_3._siga_[15] (net)
+                  0.05    0.00 200016.42 ^ clkgen.delay_100ns_3.genblk1[15].mux1/A1 (sky130_fd_sc_hd__mux2_1)
+                  0.06    0.13 200016.55 ^ clkgen.delay_100ns_3.genblk1[15].mux1/X (sky130_fd_sc_hd__mux2_1)
+     2    0.00                           clkgen.delay_100ns_3._siga_[16] (net)
+                  0.06    0.00 200016.55 ^ clkgen.delay_100ns_3.genblk1[16].mux1/A1 (sky130_fd_sc_hd__mux2_1)
+                  0.05    0.13 200016.67 ^ clkgen.delay_100ns_3.genblk1[16].mux1/X (sky130_fd_sc_hd__mux2_1)
+     2    0.00                           clkgen.delay_100ns_3._siga_[17] (net)
+                  0.05    0.00 200016.67 ^ clkgen.delay_100ns_3.genblk1[17].mux1/A1 (sky130_fd_sc_hd__mux2_1)
+                  0.06    0.15 200016.83 ^ clkgen.delay_100ns_3.genblk1[17].mux1/X (sky130_fd_sc_hd__mux2_1)
+     2    0.00                           clkgen.delay_100ns_3._siga_[18] (net)
+                  0.06    0.00 200016.83 ^ clkgen.delay_100ns_3.genblk1[18].mux1/A1 (sky130_fd_sc_hd__mux2_1)
+                  0.06    0.15 200016.97 ^ clkgen.delay_100ns_3.genblk1[18].mux1/X (sky130_fd_sc_hd__mux2_1)
+     2    0.00                           clkgen.delay_100ns_3._siga_[19] (net)
+                  0.06    0.00 200016.97 ^ clkgen.delay_100ns_3.genblk1[19].mux1/A1 (sky130_fd_sc_hd__mux2_1)
+                  0.05    0.13 200017.09 ^ clkgen.delay_100ns_3.genblk1[19].mux1/X (sky130_fd_sc_hd__mux2_1)
+     1    0.00                           clkgen.clk_comp (net)
+                  0.05    0.00 200017.09 ^ outbuf_2/A (sky130_fd_sc_hd__buf_4)
+                  0.10    0.17 200017.28 ^ outbuf_2/X (sky130_fd_sc_hd__buf_4)
+     1    0.03                           clk_comp (net)
+                  0.10    0.00 200017.28 ^ clk_comp (out)
+                               200017.28   data arrival time
+
+                  0.00 999999.94 999999.94   clock __VIRTUAL_CLK__ (rise edge)
+                          0.00 999999.94   clock network delay (ideal)
+                         -0.25 999999.75   clock uncertainty
+                          0.00 999999.75   clock reconvergence pessimism
+                       -200000.00 799999.69   output external delay
+                               799999.69   data required time
+-----------------------------------------------------------------------------
+                               799999.69   data required time
+                               -200017.28   data arrival time
+-----------------------------------------------------------------------------
+                               599982.44   slack (MET)
+
+
+Startpoint: enable_dlycontrol (input port clocked by __VIRTUAL_CLK__)
+Endpoint: clk_dig (output port clocked by __VIRTUAL_CLK__)
+Path Group: __VIRTUAL_CLK__
+Path Type: max
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                  0.00    0.00    0.00   clock __VIRTUAL_CLK__ (rise edge)
+                          0.00    0.00   clock network delay (ideal)
+                       200000.00 200000.00 ^ input external delay
+                  0.21    0.15 200000.14 ^ enable_dlycontrol (in)
+    10    0.04                           enable_dlycontrol (net)
+                  0.21    0.00 200000.14 ^ _183_/A (sky130_fd_sc_hd__buf_1)
+                  0.43    0.41 200000.55 ^ _183_/X (sky130_fd_sc_hd__buf_1)
+    10    0.04                           _100_ (net)
+                  0.43    0.00 200000.55 ^ _220_/A (sky130_fd_sc_hd__buf_1)
+                  0.65    0.58 200001.14 ^ _220_/X (sky130_fd_sc_hd__buf_1)
+    10    0.06                           _119_ (net)
+                  0.65    0.00 200001.14 ^ _386_/B1 (sky130_fd_sc_hd__o21ai_2)
+                  0.14    0.16 200001.30 v _386_/Y (sky130_fd_sc_hd__o21ai_2)
+     2    0.01                           clkgen.delay_100ns_1._bypass_[1] (net)
+                  0.14    0.00 200001.30 v clkgen.delay_100ns_1.genblk1[1].mux1/S (sky130_fd_sc_hd__mux2_1)
+                  0.07    0.38 200001.67 v clkgen.delay_100ns_1.genblk1[1].mux1/X (sky130_fd_sc_hd__mux2_1)
+     2    0.00                           clkgen.delay_100ns_1._siga_[2] (net)
+                  0.07    0.00 200001.67 v clkgen.delay_100ns_1.genblk1[2].mux1/A1 (sky130_fd_sc_hd__mux2_1)
+                  0.06    0.32 200002.00 v clkgen.delay_100ns_1.genblk1[2].mux1/X (sky130_fd_sc_hd__mux2_1)
+     2    0.00                           clkgen.delay_100ns_1._siga_[3] (net)
+                  0.06    0.00 200002.00 v clkgen.delay_100ns_1.genblk1[3].mux1/A1 (sky130_fd_sc_hd__mux2_1)
+                  0.06    0.32 200002.31 v clkgen.delay_100ns_1.genblk1[3].mux1/X (sky130_fd_sc_hd__mux2_1)
+     2    0.00                           clkgen.delay_100ns_1._siga_[4] (net)
+                  0.06    0.00 200002.31 v clkgen.delay_100ns_1.genblk1[4].mux1/A1 (sky130_fd_sc_hd__mux2_1)
+                  0.06    0.32 200002.64 v clkgen.delay_100ns_1.genblk1[4].mux1/X (sky130_fd_sc_hd__mux2_1)
+     2    0.00                           clkgen.delay_100ns_1._siga_[5] (net)
+                  0.06    0.00 200002.64 v clkgen.delay_100ns_1.genblk1[5].mux1/A1 (sky130_fd_sc_hd__mux2_1)
+                  0.07    0.32 200002.95 v clkgen.delay_100ns_1.genblk1[5].mux1/X (sky130_fd_sc_hd__mux2_1)
+     2    0.00                           clkgen.delay_100ns_1._siga_[6] (net)
+                  0.07    0.00 200002.95 v clkgen.delay_100ns_1.genblk1[6].mux1/A1 (sky130_fd_sc_hd__mux2_1)
+                  0.06    0.32 200003.28 v clkgen.delay_100ns_1.genblk1[6].mux1/X (sky130_fd_sc_hd__mux2_1)
+     2    0.00                           clkgen.delay_100ns_1._siga_[7] (net)
+                  0.06    0.00 200003.28 v clkgen.delay_100ns_1.genblk1[7].mux1/A1 (sky130_fd_sc_hd__mux2_1)
+                  0.07    0.32 200003.59 v clkgen.delay_100ns_1.genblk1[7].mux1/X (sky130_fd_sc_hd__mux2_1)
+     2    0.01                           clkgen.delay_100ns_1._siga_[8] (net)
+                  0.07    0.00 200003.59 v clkgen.delay_100ns_1.genblk1[8].mux1/A1 (sky130_fd_sc_hd__mux2_1)
+                  0.06    0.32 200003.92 v clkgen.delay_100ns_1.genblk1[8].mux1/X (sky130_fd_sc_hd__mux2_1)
+     2    0.00                           clkgen.delay_100ns_1._siga_[9] (net)
+                  0.06    0.00 200003.92 v clkgen.delay_100ns_1.genblk1[9].mux1/A1 (sky130_fd_sc_hd__mux2_1)
+                  0.06    0.32 200004.23 v clkgen.delay_100ns_1.genblk1[9].mux1/X (sky130_fd_sc_hd__mux2_1)
+     2    0.00                           clkgen.delay_100ns_1._siga_[10] (net)
+                  0.06    0.00 200004.23 v clkgen.delay_100ns_1.genblk1[10].mux1/A1 (sky130_fd_sc_hd__mux2_1)
+                  0.06    0.32 200004.56 v clkgen.delay_100ns_1.genblk1[10].mux1/X (sky130_fd_sc_hd__mux2_1)
+     2    0.00                           clkgen.delay_100ns_1._siga_[11] (net)
+                  0.06    0.00 200004.56 v clkgen.delay_100ns_1.genblk1[11].mux1/A1 (sky130_fd_sc_hd__mux2_1)
+                  0.07    0.32 200004.88 v clkgen.delay_100ns_1.genblk1[11].mux1/X (sky130_fd_sc_hd__mux2_1)
+     2    0.00                           clkgen.delay_100ns_1._siga_[12] (net)
+                  0.07    0.00 200004.88 v clkgen.delay_100ns_1.genblk1[12].mux1/A1 (sky130_fd_sc_hd__mux2_1)
+                  0.06    0.32 200005.20 v clkgen.delay_100ns_1.genblk1[12].mux1/X (sky130_fd_sc_hd__mux2_1)
+     2    0.00                           clkgen.delay_100ns_1._siga_[13] (net)
+                  0.06    0.00 200005.20 v clkgen.delay_100ns_1.genblk1[13].mux1/A1 (sky130_fd_sc_hd__mux2_1)
+                  0.06    0.32 200005.52 v clkgen.delay_100ns_1.genblk1[13].mux1/X (sky130_fd_sc_hd__mux2_1)
+     2    0.00                           clkgen.delay_100ns_1._siga_[14] (net)
+                  0.06    0.00 200005.52 v clkgen.delay_100ns_1.genblk1[14].mux1/A1 (sky130_fd_sc_hd__mux2_1)
+                  0.06    0.32 200005.83 v clkgen.delay_100ns_1.genblk1[14].mux1/X (sky130_fd_sc_hd__mux2_1)
+     2    0.00                           clkgen.delay_100ns_1._siga_[15] (net)
+                  0.06    0.00 200005.83 v clkgen.delay_100ns_1.genblk1[15].mux1/A1 (sky130_fd_sc_hd__mux2_1)
+                  0.06    0.32 200006.16 v clkgen.delay_100ns_1.genblk1[15].mux1/X (sky130_fd_sc_hd__mux2_1)
+     2    0.00                           clkgen.delay_100ns_1._siga_[16] (net)
+                  0.06    0.00 200006.16 v clkgen.delay_100ns_1.genblk1[16].mux1/A1 (sky130_fd_sc_hd__mux2_1)
+                  0.06    0.32 200006.47 v clkgen.delay_100ns_1.genblk1[16].mux1/X (sky130_fd_sc_hd__mux2_1)
+     2    0.00                           clkgen.delay_100ns_1._siga_[17] (net)
+                  0.06    0.00 200006.47 v clkgen.delay_100ns_1.genblk1[17].mux1/A1 (sky130_fd_sc_hd__mux2_1)
+                  0.06    0.32 200006.80 v clkgen.delay_100ns_1.genblk1[17].mux1/X (sky130_fd_sc_hd__mux2_1)
+     2    0.00                           clkgen.delay_100ns_1._siga_[18] (net)
+                  0.06    0.00 200006.80 v clkgen.delay_100ns_1.genblk1[18].mux1/A1 (sky130_fd_sc_hd__mux2_1)
+                  0.06    0.32 200007.11 v clkgen.delay_100ns_1.genblk1[18].mux1/X (sky130_fd_sc_hd__mux2_1)
+     2    0.00                           clkgen.delay_100ns_1._siga_[19] (net)
+                  0.06    0.00 200007.11 v clkgen.delay_100ns_1.genblk1[19].mux1/A1 (sky130_fd_sc_hd__mux2_1)
+                  0.07    0.32 200007.44 v clkgen.delay_100ns_1.genblk1[19].mux1/X (sky130_fd_sc_hd__mux2_1)
+     1    0.00                           clkgen._ndecision_finish_delayed_ (net)
+                  0.07    0.00 200007.44 v _432_/A (sky130_fd_sc_hd__inv_2)
+                  0.04    0.07 200007.52 ^ _432_/Y (sky130_fd_sc_hd__inv_2)
+     3    0.01                           clkgen.clk_dig (net)
+                  0.04    0.00 200007.52 ^ outbuf_1/A (sky130_fd_sc_hd__buf_4)
+                  0.10    0.16 200007.67 ^ outbuf_1/X (sky130_fd_sc_hd__buf_4)
+     1    0.03                           clk_dig (net)
+                  0.10    0.00 200007.67 ^ clk_dig (out)
+                               200007.67   data arrival time
+
+                  0.00 999999.94 999999.94   clock __VIRTUAL_CLK__ (rise edge)
+                          0.00 999999.94   clock network delay (ideal)
+                         -0.25 999999.75   clock uncertainty
+                          0.00 999999.75   clock reconvergence pessimism
+                       -200000.00 799999.69   output external delay
+                               799999.69   data required time
+-----------------------------------------------------------------------------
+                               799999.69   data required time
+                               -200007.67   data arrival time
+-----------------------------------------------------------------------------
+                               599992.00   slack (MET)
+
+
+Startpoint: nsample_n (input port clocked by __VIRTUAL_CLK__)
+Endpoint: nsample_n_buf (output port clocked by __VIRTUAL_CLK__)
+Path Group: __VIRTUAL_CLK__
+Path Type: max
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                  0.00    0.00    0.00   clock __VIRTUAL_CLK__ (rise edge)
+                          0.00    0.00   clock network delay (ideal)
+                       200000.00 200000.00 ^ input external delay
+                  0.05    0.04 200000.05 ^ nsample_n (in)
+     1    0.01                           nsample_n (net)
+                  0.05    0.00 200000.05 ^ outbuf_6/A (sky130_fd_sc_hd__buf_4)
+                  0.10    0.16 200000.20 ^ outbuf_6/X (sky130_fd_sc_hd__buf_4)
+     1    0.03                           nsample_n_buf (net)
+                  0.10    0.00 200000.20 ^ nsample_n_buf (out)
+                               200000.20   data arrival time
+
+                  0.00 999999.94 999999.94   clock __VIRTUAL_CLK__ (rise edge)
+                          0.00 999999.94   clock network delay (ideal)
+                         -0.25 999999.75   clock uncertainty
+                          0.00 999999.75   clock reconvergence pessimism
+                       -200000.00 799999.69   output external delay
+                               799999.69   data required time
+-----------------------------------------------------------------------------
+                               799999.69   data required time
+                               -200000.20   data arrival time
+-----------------------------------------------------------------------------
+                               599999.50   slack (MET)
+
+
+Startpoint: nsample_p (input port clocked by __VIRTUAL_CLK__)
+Endpoint: nsample_p_buf (output port clocked by __VIRTUAL_CLK__)
+Path Group: __VIRTUAL_CLK__
+Path Type: max
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                  0.00    0.00    0.00   clock __VIRTUAL_CLK__ (rise edge)
+                          0.00    0.00   clock network delay (ideal)
+                       200000.00 200000.00 ^ input external delay
+                  0.05    0.04 200000.05 ^ nsample_p (in)
+     1    0.01                           nsample_p (net)
+                  0.05    0.00 200000.05 ^ outbuf_5/A (sky130_fd_sc_hd__buf_4)
+                  0.10    0.16 200000.20 ^ outbuf_5/X (sky130_fd_sc_hd__buf_4)
+     1    0.03                           nsample_p_buf (net)
+                  0.10    0.00 200000.20 ^ nsample_p_buf (out)
+                               200000.20   data arrival time
+
+                  0.00 999999.94 999999.94   clock __VIRTUAL_CLK__ (rise edge)
+                          0.00 999999.94   clock network delay (ideal)
+                         -0.25 999999.75   clock uncertainty
+                          0.00 999999.75   clock reconvergence pessimism
+                       -200000.00 799999.69   output external delay
+                               799999.69   data required time
+-----------------------------------------------------------------------------
+                               799999.69   data required time
+                               -200000.20   data arrival time
+-----------------------------------------------------------------------------
+                               599999.50   slack (MET)
+
+
+Startpoint: sample_n (input port clocked by __VIRTUAL_CLK__)
+Endpoint: sample_n_buf (output port clocked by __VIRTUAL_CLK__)
+Path Group: __VIRTUAL_CLK__
+Path Type: max
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                  0.00    0.00    0.00   clock __VIRTUAL_CLK__ (rise edge)
+                          0.00    0.00   clock network delay (ideal)
+                       200000.00 200000.00 ^ input external delay
+                  0.05    0.04 200000.05 ^ sample_n (in)
+     1    0.01                           sample_n (net)
+                  0.05    0.00 200000.05 ^ outbuf_4/A (sky130_fd_sc_hd__buf_4)
+                  0.10    0.16 200000.20 ^ outbuf_4/X (sky130_fd_sc_hd__buf_4)
+     1    0.03                           sample_n_buf (net)
+                  0.10    0.00 200000.20 ^ sample_n_buf (out)
+                               200000.20   data arrival time
+
+                  0.00 999999.94 999999.94   clock __VIRTUAL_CLK__ (rise edge)
+                          0.00 999999.94   clock network delay (ideal)
+                         -0.25 999999.75   clock uncertainty
+                          0.00 999999.75   clock reconvergence pessimism
+                       -200000.00 799999.69   output external delay
+                               799999.69   data required time
+-----------------------------------------------------------------------------
+                               799999.69   data required time
+                               -200000.20   data arrival time
+-----------------------------------------------------------------------------
+                               599999.50   slack (MET)
+
+

@@ -2,10 +2,13 @@
 
 set ::env(DESIGN_NAME) adc_clkgen_with_edgedetect
 
-# unused, but needed
+# technically unused because combinatoric. Values are workarounds.
+# otherwise the flow will fail with STA errors, or because the
+# STA report will not be found although STA is skipped intentionally
  set ::env(CLOCK_PORT) ""
- set ::env(CLOCK_NET) $::env(CLOCK_PORT)
+ set ::env(CLOCK_NET) ""
  set ::env(CLOCK_TREE_SYNTH) 0
+ set ::env(CLOCK_PERIOD) 1000000
 
 # Files
  set ::env(VERILOG_FILES) [glob $::env(DESIGN_DIR)/src/*.v]
@@ -16,17 +19,22 @@ set ::env(DESIGN_NAME) adc_clkgen_with_edgedetect
 
 # Floorplanning
  set ::env(FP_SIZING) "absolute"
- set ::env(DIE_AREA) "0 0 174 64"
+# set ::env(DIE_AREA) "0 0 184 84"
+ set ::env(DIE_AREA) "0 0 160 64"
  set ::env(BOTTOM_MARGIN_MULT) 1
  set ::env(TOP_MARGIN_MULT) 1
- set ::env(LEFT_MARGIN_MULT) 9
- set ::env(RIGHT_MARGIN_MULT) 9
+ set ::env(LEFT_MARGIN_MULT) 12
+ set ::env(RIGHT_MARGIN_MULT) 12
 
+ # -synth_explore report: AREA 4 leads to best area
+ set ::env(SYNTH_STRATEGY) "DELAY 4"
+ set ::env(SYNTH_MAX_FANOUT) 12
 
- set ::env(FP_PDN_HOFFSET) 24
- set ::env(FP_PDN_VOFFSET) $::env(FP_PDN_HOFFSET)
- set ::env(FP_PDN_HPITCH) 24
- set ::env(FP_PDN_VPITCH) $::env(FP_PDN_HPITCH)
+# Power distribution network settings
+ set ::env(FP_PDN_HOFFSET) 12
+ set ::env(FP_PDN_VOFFSET) 12
+ set ::env(FP_PDN_HPITCH) 12
+ set ::env(FP_PDN_VPITCH) 24
  set ::env(FP_PIN_ORDER_CFG) $::env(DESIGN_DIR)/pin_order.cfg
 
 # PDN on Macro Level or Core Level
@@ -38,12 +46,12 @@ set ::env(DESIGN_NAME) adc_clkgen_with_edgedetect
 
 # Placement
  set ::env(PL_BASIC_PLACEMENT) 0
- set ::env(PL_TARGET_DENSITY) {0.90}
+ set ::env(PL_TARGET_DENSITY) {0.85}
  set ::env(PL_RESIZER_TIMING_OPTIMIZATIONS) {0}
  set ::env(PL_RESIZER_DESIGN_OPTIMIZATIONS) {0}
 # set ::env(PL_ROUTABILITY_DRIVEN) {1}
-# set ::env(PL_TIME_DRIVEN) {0}
-# set ::env(DIODE_INSERTION_STRATEGY) 2
+# set ::env(PL_TIME_DRIVEN) {1}
+ set ::env(DIODE_INSERTION_STRATEGY) 4
 
 # needed for Customcell DlyPoly6ns
  set ::env(FP_TAPCELL_DIST) 14.26
@@ -51,7 +59,6 @@ set ::env(DESIGN_NAME) adc_clkgen_with_edgedetect
 
 # Router
  set ::env(GLB_RESIZER_TIMING_OPTIMIZATIONS) {0}
-
 
 # LVS
  set ::env(MAGIC_EXT_USE_GDS) {1}

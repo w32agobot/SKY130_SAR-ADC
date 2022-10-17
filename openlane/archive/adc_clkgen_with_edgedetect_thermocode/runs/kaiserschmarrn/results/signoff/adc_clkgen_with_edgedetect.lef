@@ -1,0 +1,397 @@
+VERSION 5.7 ;
+  NOWIREEXTENSIONATPIN ON ;
+  DIVIDERCHAR "/" ;
+  BUSBITCHARS "[]" ;
+MACRO adc_clkgen_with_edgedetect
+  CLASS BLOCK ;
+  FOREIGN adc_clkgen_with_edgedetect ;
+  ORIGIN 0.000 0.000 ;
+  SIZE 184.000 BY 78.000 ;
+  PIN VGND
+    DIRECTION INOUT ;
+    USE GROUND ;
+    PORT
+      LAYER met4 ;
+        RECT 75.340 2.480 76.940 73.680 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 171.340 2.480 172.940 73.680 ;
+    END
+  END VGND
+  PIN VPWR
+    DIRECTION INOUT ;
+    USE POWER ;
+    PORT
+      LAYER met4 ;
+        RECT 51.340 2.480 52.940 73.680 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 147.340 2.480 148.940 73.680 ;
+    END
+  END VPWR
+  PIN clk_comp
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 180.000 19.080 184.000 19.680 ;
+    END
+  END clk_comp
+  PIN clk_dig
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 11.600 4.000 12.200 ;
+    END
+  END clk_dig
+  PIN dlycontrol1[0]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 17.040 4.000 17.640 ;
+    END
+  END dlycontrol1[0]
+  PIN dlycontrol1[1]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 19.760 4.000 20.360 ;
+    END
+  END dlycontrol1[1]
+  PIN dlycontrol1[2]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 22.480 4.000 23.080 ;
+    END
+  END dlycontrol1[2]
+  PIN dlycontrol1[3]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 25.200 4.000 25.800 ;
+    END
+  END dlycontrol1[3]
+  PIN dlycontrol1[4]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 27.920 4.000 28.520 ;
+    END
+  END dlycontrol1[4]
+  PIN dlycontrol2[0]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 30.640 4.000 31.240 ;
+    END
+  END dlycontrol2[0]
+  PIN dlycontrol2[1]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 33.360 4.000 33.960 ;
+    END
+  END dlycontrol2[1]
+  PIN dlycontrol2[2]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 36.080 4.000 36.680 ;
+    END
+  END dlycontrol2[2]
+  PIN dlycontrol2[3]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 38.800 4.000 39.400 ;
+    END
+  END dlycontrol2[3]
+  PIN dlycontrol2[4]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 41.520 4.000 42.120 ;
+    END
+  END dlycontrol2[4]
+  PIN dlycontrol3[0]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 44.240 4.000 44.840 ;
+    END
+  END dlycontrol3[0]
+  PIN dlycontrol3[1]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 46.960 4.000 47.560 ;
+    END
+  END dlycontrol3[1]
+  PIN dlycontrol3[2]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 49.680 4.000 50.280 ;
+    END
+  END dlycontrol3[2]
+  PIN dlycontrol3[3]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 52.400 4.000 53.000 ;
+    END
+  END dlycontrol3[3]
+  PIN dlycontrol3[4]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 55.120 4.000 55.720 ;
+    END
+  END dlycontrol3[4]
+  PIN dlycontrol4[0]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 57.840 4.000 58.440 ;
+    END
+  END dlycontrol4[0]
+  PIN dlycontrol4[1]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 60.560 4.000 61.160 ;
+    END
+  END dlycontrol4[1]
+  PIN dlycontrol4[2]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 63.280 4.000 63.880 ;
+    END
+  END dlycontrol4[2]
+  PIN dlycontrol4[3]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 66.000 4.000 66.600 ;
+    END
+  END dlycontrol4[3]
+  PIN dlycontrol4[4]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 68.720 4.000 69.320 ;
+    END
+  END dlycontrol4[4]
+  PIN dlycontrol4[5]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 71.440 4.000 72.040 ;
+    END
+  END dlycontrol4[5]
+  PIN ena_in
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 6.160 4.000 6.760 ;
+    END
+  END ena_in
+  PIN enable_dlycontrol
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 14.320 4.000 14.920 ;
+    END
+  END enable_dlycontrol
+  PIN ndecision_finish
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 180.000 57.840 184.000 58.440 ;
+    END
+  END ndecision_finish
+  PIN nsample_n
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 68.630 0.000 68.910 4.000 ;
+    END
+  END nsample_n
+  PIN nsample_n_buf
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 160.630 0.000 160.910 4.000 ;
+    END
+  END nsample_n_buf
+  PIN nsample_p
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 68.630 74.000 68.910 78.000 ;
+    END
+  END nsample_p
+  PIN nsample_p_buf
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 160.630 74.000 160.910 78.000 ;
+    END
+  END nsample_p_buf
+  PIN sample_n
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 22.630 0.000 22.910 4.000 ;
+    END
+  END sample_n
+  PIN sample_n_buf
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 114.630 0.000 114.910 4.000 ;
+    END
+  END sample_n_buf
+  PIN sample_p
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 22.630 74.000 22.910 78.000 ;
+    END
+  END sample_p
+  PIN sample_p_buf
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 114.630 74.000 114.910 78.000 ;
+    END
+  END sample_p_buf
+  PIN start_conv
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 8.880 4.000 9.480 ;
+    END
+  END start_conv
+  OBS
+      LAYER li1 ;
+        RECT 4.140 2.635 179.860 73.525 ;
+      LAYER met1 ;
+        RECT 4.140 0.040 179.860 77.820 ;
+      LAYER met2 ;
+        RECT 5.160 73.720 22.350 77.930 ;
+        RECT 23.190 73.720 68.350 77.930 ;
+        RECT 69.190 73.720 114.350 77.930 ;
+        RECT 115.190 73.720 160.350 77.930 ;
+        RECT 161.190 73.720 172.910 77.930 ;
+        RECT 5.160 4.280 172.910 73.720 ;
+        RECT 5.160 0.010 22.350 4.280 ;
+        RECT 23.190 0.010 68.350 4.280 ;
+        RECT 69.190 0.010 114.350 4.280 ;
+        RECT 115.190 0.010 160.350 4.280 ;
+        RECT 161.190 0.010 172.910 4.280 ;
+      LAYER met3 ;
+        RECT 48.840 78.000 61.330 78.010 ;
+        RECT 64.710 78.000 74.210 78.010 ;
+        RECT 74.600 78.000 138.380 78.010 ;
+        RECT 4.000 72.440 180.000 78.000 ;
+        RECT 4.400 71.040 180.000 72.440 ;
+        RECT 4.000 69.720 180.000 71.040 ;
+        RECT 4.400 68.320 180.000 69.720 ;
+        RECT 4.000 67.000 180.000 68.320 ;
+        RECT 4.400 65.600 180.000 67.000 ;
+        RECT 4.000 64.280 180.000 65.600 ;
+        RECT 4.400 62.880 180.000 64.280 ;
+        RECT 4.000 61.560 180.000 62.880 ;
+        RECT 4.400 60.160 180.000 61.560 ;
+        RECT 4.000 58.840 180.000 60.160 ;
+        RECT 4.400 57.440 179.600 58.840 ;
+        RECT 4.000 56.120 180.000 57.440 ;
+        RECT 4.400 54.720 180.000 56.120 ;
+        RECT 4.000 53.400 180.000 54.720 ;
+        RECT 4.400 52.000 180.000 53.400 ;
+        RECT 4.000 50.680 180.000 52.000 ;
+        RECT 4.400 49.280 180.000 50.680 ;
+        RECT 4.000 47.960 180.000 49.280 ;
+        RECT 4.400 46.560 180.000 47.960 ;
+        RECT 4.000 45.240 180.000 46.560 ;
+        RECT 4.400 43.840 180.000 45.240 ;
+        RECT 4.000 42.520 180.000 43.840 ;
+        RECT 4.400 41.120 180.000 42.520 ;
+        RECT 4.000 39.800 180.000 41.120 ;
+        RECT 4.400 38.400 180.000 39.800 ;
+        RECT 4.000 37.080 180.000 38.400 ;
+        RECT 4.400 35.680 180.000 37.080 ;
+        RECT 4.000 34.360 180.000 35.680 ;
+        RECT 4.400 32.960 180.000 34.360 ;
+        RECT 4.000 31.640 180.000 32.960 ;
+        RECT 4.400 30.240 180.000 31.640 ;
+        RECT 4.000 28.920 180.000 30.240 ;
+        RECT 4.400 27.520 180.000 28.920 ;
+        RECT 4.000 26.200 180.000 27.520 ;
+        RECT 4.400 24.800 180.000 26.200 ;
+        RECT 4.000 23.480 180.000 24.800 ;
+        RECT 4.400 22.080 180.000 23.480 ;
+        RECT 4.000 20.760 180.000 22.080 ;
+        RECT 4.400 20.080 180.000 20.760 ;
+        RECT 4.400 19.360 179.600 20.080 ;
+        RECT 4.000 18.680 179.600 19.360 ;
+        RECT 4.000 18.040 180.000 18.680 ;
+        RECT 4.400 16.640 180.000 18.040 ;
+        RECT 4.000 15.320 180.000 16.640 ;
+        RECT 4.400 13.920 180.000 15.320 ;
+        RECT 4.000 12.600 180.000 13.920 ;
+        RECT 4.400 11.200 180.000 12.600 ;
+        RECT 4.000 9.880 180.000 11.200 ;
+        RECT 4.400 8.480 180.000 9.880 ;
+        RECT 4.000 7.160 180.000 8.480 ;
+        RECT 4.400 5.760 180.000 7.160 ;
+        RECT 4.000 0.175 180.000 5.760 ;
+      LAYER met4 ;
+        RECT 14.095 74.080 146.905 77.345 ;
+        RECT 14.095 2.080 50.940 74.080 ;
+        RECT 53.340 2.080 74.940 74.080 ;
+        RECT 77.340 2.080 146.905 74.080 ;
+        RECT 14.095 0.175 146.905 2.080 ;
+  END
+END adc_clkgen_with_edgedetect
+END LIBRARY
+

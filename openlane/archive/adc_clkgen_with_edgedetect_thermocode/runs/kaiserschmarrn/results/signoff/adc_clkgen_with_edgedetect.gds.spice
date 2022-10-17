@@ -1,0 +1,1995 @@
+* NGSPICE file created from adc_clkgen_with_edgedetect.ext - technology: sky130A
+
+.subckt sky130_mm_sc_hd_dlyPoly5ns VPWR in out VGND VNB VPB
+X0 a_851_95# in VGND VNB sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=420000u l=3.83e+06u
+X1 a_1724_71# a_851_95# VGND VNB sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=420000u l=150000u
+X2 VPWR out a_1724_71# VNB sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=420000u l=150000u
+X3 VGND out a_1783_329# VPB sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=800000u l=150000u
+X4 a_1783_329# out VGND VPB sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=800000u l=150000u
+X5 a_1724_71# out VPWR VNB sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=420000u l=150000u
+X6 VGND a_851_95# VGND VNB sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.375e+06u l=2.25e+06u
+X7 a_1783_329# a_851_95# VPWR VPB sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=800000u l=150000u
+X8 out a_851_95# a_1783_329# VPB sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=800000u l=150000u
+X9 a_851_95# in VPWR VPB sky130_fd_pr__pfet_01v8_lvt ad=0p pd=0u as=0p ps=0u w=800000u l=3.83e+06u
+X10 out a_851_95# a_1724_71# VNB sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=420000u l=150000u
+.ends
+
+.subckt sky130_fd_sc_hd__decap_4 VGND VPWR VNB VPB
+X0 VPWR VGND VPWR VPB sky130_fd_pr__pfet_01v8_hvt ad=0p pd=0u as=0p ps=0u w=870000u l=1.05e+06u
+X1 VGND VPWR VGND VNB sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=550000u l=1.05e+06u
+.ends
+
+.subckt sky130_fd_sc_hd__inv_2 A Y VPWR VGND VNB VPB
+X0 Y A VPWR VPB sky130_fd_pr__pfet_01v8_hvt ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+X1 VGND A Y VNB sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=650000u l=150000u
+X2 Y A VGND VNB sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=650000u l=150000u
+X3 VPWR A Y VPB sky130_fd_pr__pfet_01v8_hvt ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+.ends
+
+.subckt sky130_fd_sc_hd__buf_1 VGND VPWR X A VNB VPB
+X0 VPWR A a_27_47# VPB sky130_fd_pr__pfet_01v8_hvt ad=0p pd=0u as=0p ps=0u w=790000u l=150000u
+X1 X a_27_47# VGND VNB sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=520000u l=150000u
+X2 X a_27_47# VPWR VPB sky130_fd_pr__pfet_01v8_hvt ad=0p pd=0u as=0p ps=0u w=790000u l=150000u
+X3 VGND A a_27_47# VNB sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=520000u l=150000u
+.ends
+
+.subckt sky130_fd_sc_hd__mux2_1 VGND VPWR S A1 A0 X VNB VPB
+X0 VPWR a_505_21# a_535_374# VPB sky130_fd_pr__pfet_01v8_hvt ad=0p pd=0u as=0p ps=0u w=420000u l=150000u
+X1 a_505_21# S VPWR VPB sky130_fd_pr__pfet_01v8_hvt ad=0p pd=0u as=0p ps=0u w=420000u l=150000u
+X2 a_218_374# S VPWR VPB sky130_fd_pr__pfet_01v8_hvt ad=0p pd=0u as=0p ps=0u w=420000u l=150000u
+X3 VGND a_505_21# a_439_47# VNB sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=420000u l=150000u
+X4 a_76_199# A0 a_218_374# VPB sky130_fd_pr__pfet_01v8_hvt ad=0p pd=0u as=0p ps=0u w=420000u l=150000u
+X5 a_505_21# S VGND VNB sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=420000u l=150000u
+X6 a_439_47# A0 a_76_199# VNB sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=420000u l=150000u
+X7 a_535_374# A1 a_76_199# VPB sky130_fd_pr__pfet_01v8_hvt ad=0p pd=0u as=0p ps=0u w=420000u l=150000u
+X8 a_76_199# A1 a_218_47# VNB sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=420000u l=150000u
+X9 a_218_47# S VGND VNB sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=420000u l=150000u
+X10 VPWR a_76_199# X VPB sky130_fd_pr__pfet_01v8_hvt ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+X11 VGND a_76_199# X VNB sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=650000u l=150000u
+.ends
+
+.subckt sky130_fd_sc_hd__o21ai_2 B1 Y A2 A1 VGND VPWR VNB VPB
+X0 VGND A2 a_29_47# VNB sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=650000u l=150000u
+X1 Y B1 a_29_47# VNB sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=650000u l=150000u
+X2 VPWR B1 Y VPB sky130_fd_pr__pfet_01v8_hvt ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+X3 VPWR A1 a_112_297# VPB sky130_fd_pr__pfet_01v8_hvt ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+X4 a_29_47# A2 VGND VNB sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=650000u l=150000u
+X5 Y A2 a_112_297# VPB sky130_fd_pr__pfet_01v8_hvt ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+X6 VGND A1 a_29_47# VNB sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=650000u l=150000u
+X7 a_112_297# A1 VPWR VPB sky130_fd_pr__pfet_01v8_hvt ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+X8 a_112_297# A2 Y VPB sky130_fd_pr__pfet_01v8_hvt ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+X9 a_29_47# B1 Y VNB sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=650000u l=150000u
+X10 Y B1 VPWR VPB sky130_fd_pr__pfet_01v8_hvt ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+X11 a_29_47# A1 VGND VNB sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=650000u l=150000u
+.ends
+
+.subckt sky130_fd_sc_hd__and2_1 VPWR VGND X B A VNB VPB
+X0 VPWR B a_59_75# VPB sky130_fd_pr__pfet_01v8_hvt ad=0p pd=0u as=0p ps=0u w=420000u l=150000u
+X1 X a_59_75# VPWR VPB sky130_fd_pr__pfet_01v8_hvt ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+X2 VGND B a_145_75# VNB sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=420000u l=150000u
+X3 a_59_75# A VPWR VPB sky130_fd_pr__pfet_01v8_hvt ad=0p pd=0u as=0p ps=0u w=420000u l=150000u
+X4 X a_59_75# VGND VNB sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=650000u l=150000u
+X5 a_145_75# A a_59_75# VNB sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=420000u l=150000u
+.ends
+
+.subckt sky130_fd_sc_hd__decap_6 VPWR VGND VNB VPB
+X0 VPWR VGND VPWR VPB sky130_fd_pr__pfet_01v8_hvt ad=0p pd=0u as=0p ps=0u w=870000u l=1.97e+06u
+X1 VGND VPWR VGND VNB sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=550000u l=1.97e+06u
+.ends
+
+.subckt sky130_fd_sc_hd__and3_2 B X A C VPWR VGND VNB VPB
+X0 VPWR a_29_311# X VPB sky130_fd_pr__pfet_01v8_hvt ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+X1 X a_29_311# VPWR VPB sky130_fd_pr__pfet_01v8_hvt ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+X2 VPWR A a_29_311# VPB sky130_fd_pr__pfet_01v8_hvt ad=0p pd=0u as=0p ps=0u w=420000u l=150000u
+X3 VGND a_29_311# X VNB sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=650000u l=150000u
+X4 a_184_53# B a_112_53# VNB sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=420000u l=150000u
+X5 VPWR C a_29_311# VPB sky130_fd_pr__pfet_01v8_hvt ad=0p pd=0u as=0p ps=0u w=420000u l=150000u
+X6 X a_29_311# VGND VNB sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=650000u l=150000u
+X7 a_112_53# A a_29_311# VNB sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=420000u l=150000u
+X8 a_29_311# B VPWR VPB sky130_fd_pr__pfet_01v8_hvt ad=0p pd=0u as=0p ps=0u w=420000u l=150000u
+X9 VGND C a_184_53# VNB sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=420000u l=150000u
+.ends
+
+.subckt sky130_fd_sc_hd__a21o_2 X B1 A1 A2 VGND VPWR VNB VPB
+X0 VPWR a_80_199# X VPB sky130_fd_pr__pfet_01v8_hvt ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+X1 X a_80_199# VPWR VPB sky130_fd_pr__pfet_01v8_hvt ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+X2 VGND a_80_199# X VNB sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=650000u l=150000u
+X3 a_386_297# A2 VPWR VPB sky130_fd_pr__pfet_01v8_hvt ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+X4 X a_80_199# VGND VNB sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=650000u l=150000u
+X5 a_80_199# B1 VGND VNB sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=650000u l=150000u
+X6 a_386_297# B1 a_80_199# VPB sky130_fd_pr__pfet_01v8_hvt ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+X7 a_458_47# A1 a_80_199# VNB sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=650000u l=150000u
+X8 VPWR A1 a_386_297# VPB sky130_fd_pr__pfet_01v8_hvt ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+X9 VGND A2 a_458_47# VNB sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=650000u l=150000u
+.ends
+
+.subckt sky130_fd_sc_hd__a21oi_2 B1 A2 A1 Y VGND VPWR VNB VPB
+X0 VGND A2 a_285_47# VNB sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=650000u l=150000u
+X1 VGND B1 Y VNB sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=650000u l=150000u
+X2 Y A1 a_114_47# VNB sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=650000u l=150000u
+X3 a_114_47# A2 VGND VNB sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=650000u l=150000u
+X4 a_27_297# B1 Y VPB sky130_fd_pr__pfet_01v8_hvt ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+X5 a_27_297# A1 VPWR VPB sky130_fd_pr__pfet_01v8_hvt ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+X6 Y B1 a_27_297# VPB sky130_fd_pr__pfet_01v8_hvt ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+X7 VPWR A2 a_27_297# VPB sky130_fd_pr__pfet_01v8_hvt ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+X8 a_27_297# A2 VPWR VPB sky130_fd_pr__pfet_01v8_hvt ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+X9 VPWR A1 a_27_297# VPB sky130_fd_pr__pfet_01v8_hvt ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+X10 a_285_47# A1 Y VNB sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=650000u l=150000u
+X11 Y B1 VGND VNB sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=650000u l=150000u
+.ends
+
+.subckt sky130_fd_sc_hd__diode_2 DIODE VGND VPWR VPB VNB
+D0 VNB DIODE sky130_fd_pr__diode_pw2nd_05v5 pj=2.64e+06u area=4.347e+11p
+.ends
+
+.subckt sky130_fd_sc_hd__decap_3 VPWR VGND VNB VPB
+X0 VPWR VGND VPWR VPB sky130_fd_pr__pfet_01v8_hvt ad=0p pd=0u as=0p ps=0u w=870000u l=590000u
+X1 VGND VPWR VGND VNB sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=550000u l=590000u
+.ends
+
+.subckt sky130_ef_sc_hd__decap_12 VGND VPWR VNB VPB
+X0 VPWR VGND VPWR VPB sky130_fd_pr__pfet_01v8_hvt ad=0p pd=0u as=0p ps=0u w=870000u l=4.73e+06u
+X1 VGND VPWR VGND VNB sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=550000u l=4.73e+06u
+.ends
+
+.subckt sky130_fd_sc_hd__a211o_2 X A2 A1 B1 C1 VGND VPWR VNB VPB
+X0 a_79_21# A1 a_348_47# VNB sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=650000u l=150000u
+X1 a_79_21# C1 VGND VNB sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=650000u l=150000u
+X2 VGND a_79_21# X VNB sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=650000u l=150000u
+X3 VPWR a_79_21# X VPB sky130_fd_pr__pfet_01v8_hvt ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+X4 a_79_21# C1 a_585_297# VPB sky130_fd_pr__pfet_01v8_hvt ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+X5 VPWR A2 a_299_297# VPB sky130_fd_pr__pfet_01v8_hvt ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+X6 a_299_297# A1 VPWR VPB sky130_fd_pr__pfet_01v8_hvt ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+X7 a_585_297# B1 a_299_297# VPB sky130_fd_pr__pfet_01v8_hvt ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+X8 a_348_47# A2 VGND VNB sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=650000u l=150000u
+X9 X a_79_21# VPWR VPB sky130_fd_pr__pfet_01v8_hvt ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+X10 X a_79_21# VGND VNB sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=650000u l=150000u
+X11 VGND B1 a_79_21# VNB sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=650000u l=150000u
+.ends
+
+.subckt sky130_fd_sc_hd__and2_2 VPWR VGND A X B VNB VPB
+X0 X a_61_75# VPWR VPB sky130_fd_pr__pfet_01v8_hvt ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+X1 VPWR a_61_75# X VPB sky130_fd_pr__pfet_01v8_hvt ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+X2 VPWR B a_61_75# VPB sky130_fd_pr__pfet_01v8_hvt ad=0p pd=0u as=0p ps=0u w=420000u l=150000u
+X3 VGND B a_147_75# VNB sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=420000u l=150000u
+X4 X a_61_75# VGND VNB sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=650000u l=150000u
+X5 VGND a_61_75# X VNB sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=650000u l=150000u
+X6 a_61_75# A VPWR VPB sky130_fd_pr__pfet_01v8_hvt ad=0p pd=0u as=0p ps=0u w=420000u l=150000u
+X7 a_147_75# A a_61_75# VNB sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=420000u l=150000u
+.ends
+
+.subckt sky130_fd_sc_hd__o21a_2 A1 B1 A2 X VGND VPWR VNB VPB
+X0 VPWR A1 a_470_297# VPB sky130_fd_pr__pfet_01v8_hvt ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+X1 a_79_21# B1 VPWR VPB sky130_fd_pr__pfet_01v8_hvt ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+X2 VGND a_79_21# X VNB sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=650000u l=150000u
+X3 VGND A2 a_384_47# VNB sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=650000u l=150000u
+X4 a_470_297# A2 a_79_21# VPB sky130_fd_pr__pfet_01v8_hvt ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+X5 VPWR a_79_21# X VPB sky130_fd_pr__pfet_01v8_hvt ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+X6 a_384_47# B1 a_79_21# VNB sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=650000u l=150000u
+X7 a_384_47# A1 VGND VNB sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=650000u l=150000u
+X8 X a_79_21# VPWR VPB sky130_fd_pr__pfet_01v8_hvt ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+X9 X a_79_21# VGND VNB sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=650000u l=150000u
+.ends
+
+.subckt sky130_fd_sc_hd__nand2_2 Y A B VGND VPWR VNB VPB
+X0 VPWR A Y VPB sky130_fd_pr__pfet_01v8_hvt ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+X1 Y A VPWR VPB sky130_fd_pr__pfet_01v8_hvt ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+X2 VPWR B Y VPB sky130_fd_pr__pfet_01v8_hvt ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+X3 a_27_47# B VGND VNB sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=650000u l=150000u
+X4 a_27_47# A Y VNB sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=650000u l=150000u
+X5 Y A a_27_47# VNB sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=650000u l=150000u
+X6 Y B VPWR VPB sky130_fd_pr__pfet_01v8_hvt ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+X7 VGND B a_27_47# VNB sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=650000u l=150000u
+.ends
+
+.subckt sky130_fd_sc_hd__decap_8 VPWR VGND VNB VPB
+X0 VPWR VGND VPWR VPB sky130_fd_pr__pfet_01v8_hvt ad=0p pd=0u as=0p ps=0u w=870000u l=2.89e+06u
+X1 VGND VPWR VGND VNB sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=550000u l=2.89e+06u
+.ends
+
+.subckt sky130_fd_sc_hd__or2_2 B X A VPWR VGND VNB VPB
+X0 a_121_297# B a_39_297# VPB sky130_fd_pr__pfet_01v8_hvt ad=0p pd=0u as=0p ps=0u w=420000u l=150000u
+X1 X a_39_297# VGND VNB sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=650000u l=150000u
+X2 VPWR a_39_297# X VPB sky130_fd_pr__pfet_01v8_hvt ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+X3 X a_39_297# VPWR VPB sky130_fd_pr__pfet_01v8_hvt ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+X4 VGND a_39_297# X VNB sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=650000u l=150000u
+X5 VPWR A a_121_297# VPB sky130_fd_pr__pfet_01v8_hvt ad=0p pd=0u as=0p ps=0u w=420000u l=150000u
+X6 VGND A a_39_297# VNB sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=420000u l=150000u
+X7 a_39_297# B VGND VNB sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=420000u l=150000u
+.ends
+
+.subckt sky130_fd_sc_hd__a31o_2 X B1 A3 A1 A2 VGND VPWR VNB VPB
+X0 VPWR A2 a_277_297# VPB sky130_fd_pr__pfet_01v8_hvt ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+X1 a_277_297# A1 VPWR VPB sky130_fd_pr__pfet_01v8_hvt ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+X2 a_79_21# B1 a_277_297# VPB sky130_fd_pr__pfet_01v8_hvt ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+X3 a_277_297# A3 VPWR VPB sky130_fd_pr__pfet_01v8_hvt ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+X4 VPWR a_79_21# X VPB sky130_fd_pr__pfet_01v8_hvt ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+X5 VGND a_79_21# X VNB sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=650000u l=150000u
+X6 a_361_47# A2 a_277_47# VNB sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=650000u l=150000u
+X7 a_277_47# A3 VGND VNB sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=650000u l=150000u
+X8 VGND B1 a_79_21# VNB sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=650000u l=150000u
+X9 a_79_21# A1 a_361_47# VNB sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=650000u l=150000u
+X10 X a_79_21# VPWR VPB sky130_fd_pr__pfet_01v8_hvt ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+X11 X a_79_21# VGND VNB sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=650000u l=150000u
+.ends
+
+.subckt sky130_fd_sc_hd__nor2_2 B Y A VGND VPWR VNB VPB
+X0 Y B a_27_297# VPB sky130_fd_pr__pfet_01v8_hvt ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+X1 Y B VGND VNB sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=650000u l=150000u
+X2 a_27_297# A VPWR VPB sky130_fd_pr__pfet_01v8_hvt ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+X3 VGND A Y VNB sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=650000u l=150000u
+X4 Y A VGND VNB sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=650000u l=150000u
+X5 VGND B Y VNB sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=650000u l=150000u
+X6 VPWR A a_27_297# VPB sky130_fd_pr__pfet_01v8_hvt ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+X7 a_27_297# B Y VPB sky130_fd_pr__pfet_01v8_hvt ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+.ends
+
+.subckt sky130_fd_sc_hd__a31oi_2 A3 B1 Y A1 A2 VPWR VGND VNB VPB
+X0 VGND B1 Y VNB sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=650000u l=150000u
+X1 VPWR A1 a_27_297# VPB sky130_fd_pr__pfet_01v8_hvt ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+X2 a_27_297# A2 VPWR VPB sky130_fd_pr__pfet_01v8_hvt ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+X3 a_27_297# B1 Y VPB sky130_fd_pr__pfet_01v8_hvt ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+X4 a_277_47# A1 Y VNB sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=650000u l=150000u
+X5 VPWR A2 a_27_297# VPB sky130_fd_pr__pfet_01v8_hvt ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+X6 a_27_297# A3 VPWR VPB sky130_fd_pr__pfet_01v8_hvt ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+X7 a_27_47# A3 VGND VNB sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=650000u l=150000u
+X8 a_27_47# A2 a_277_47# VNB sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=650000u l=150000u
+X9 a_27_297# A1 VPWR VPB sky130_fd_pr__pfet_01v8_hvt ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+X10 Y B1 a_27_297# VPB sky130_fd_pr__pfet_01v8_hvt ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+X11 a_277_47# A2 a_27_47# VNB sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=650000u l=150000u
+X12 Y B1 VGND VNB sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=650000u l=150000u
+X13 Y A1 a_277_47# VNB sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=650000u l=150000u
+X14 VPWR A3 a_27_297# VPB sky130_fd_pr__pfet_01v8_hvt ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+X15 VGND A3 a_27_47# VNB sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=650000u l=150000u
+.ends
+
+.subckt sky130_fd_sc_hd__o31a_2 X A1 A2 B1 A3 VGND VPWR VNB VPB
+X0 a_108_21# B1 a_346_47# VNB sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=650000u l=150000u
+X1 a_346_47# A3 VGND VNB sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=650000u l=150000u
+X2 X a_108_21# VGND VNB sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=650000u l=150000u
+X3 a_108_21# A3 a_430_297# VPB sky130_fd_pr__pfet_01v8_hvt ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+X4 a_430_297# A2 a_346_297# VPB sky130_fd_pr__pfet_01v8_hvt ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+X5 VPWR a_108_21# X VPB sky130_fd_pr__pfet_01v8_hvt ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+X6 a_346_297# A1 VPWR VPB sky130_fd_pr__pfet_01v8_hvt ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+X7 VGND A2 a_346_47# VNB sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=650000u l=150000u
+X8 X a_108_21# VPWR VPB sky130_fd_pr__pfet_01v8_hvt ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+X9 VPWR B1 a_108_21# VPB sky130_fd_pr__pfet_01v8_hvt ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+X10 VGND a_108_21# X VNB sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=650000u l=150000u
+X11 a_346_47# A1 VGND VNB sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=650000u l=150000u
+.ends
+
+.subckt sky130_fd_sc_hd__o211a_2 C1 B1 A2 A1 X VPWR VGND VNB VPB
+X0 a_27_47# B1 VPWR VPB sky130_fd_pr__pfet_01v8_hvt ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+X1 VGND a_27_47# X VNB sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=650000u l=150000u
+X2 VPWR C1 a_27_47# VPB sky130_fd_pr__pfet_01v8_hvt ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+X3 VPWR A1 a_373_297# VPB sky130_fd_pr__pfet_01v8_hvt ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+X4 a_182_47# A2 VGND VNB sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=650000u l=150000u
+X5 X a_27_47# VPWR VPB sky130_fd_pr__pfet_01v8_hvt ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+X6 a_182_47# B1 a_110_47# VNB sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=650000u l=150000u
+X7 X a_27_47# VGND VNB sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=650000u l=150000u
+X8 a_373_297# A2 a_27_47# VPB sky130_fd_pr__pfet_01v8_hvt ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+X9 a_110_47# C1 a_27_47# VNB sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=650000u l=150000u
+X10 VPWR a_27_47# X VPB sky130_fd_pr__pfet_01v8_hvt ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+X11 VGND A1 a_182_47# VNB sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=650000u l=150000u
+.ends
+
+.subckt sky130_fd_sc_hd__buf_4 VPWR VGND X A VNB VPB
+X0 VPWR a_27_47# X VPB sky130_fd_pr__pfet_01v8_hvt ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+X1 X a_27_47# VPWR VPB sky130_fd_pr__pfet_01v8_hvt ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+X2 VPWR a_27_47# X VPB sky130_fd_pr__pfet_01v8_hvt ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+X3 X a_27_47# VPWR VPB sky130_fd_pr__pfet_01v8_hvt ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+X4 X a_27_47# VGND VNB sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=650000u l=150000u
+X5 X a_27_47# VGND VNB sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=650000u l=150000u
+X6 VGND a_27_47# X VNB sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=650000u l=150000u
+X7 VGND a_27_47# X VNB sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=650000u l=150000u
+X8 VPWR A a_27_47# VPB sky130_fd_pr__pfet_01v8_hvt ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+X9 VGND A a_27_47# VNB sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=650000u l=150000u
+.ends
+
+.subckt adc_clkgen_with_edgedetect VGND VPWR clk_comp clk_dig dlycontrol1[0] dlycontrol1[1]
++ dlycontrol1[2] dlycontrol1[3] dlycontrol1[4] dlycontrol2[0] dlycontrol2[1] dlycontrol2[2]
++ dlycontrol2[3] dlycontrol2[4] dlycontrol3[0] dlycontrol3[1] dlycontrol3[2] dlycontrol3[3]
++ dlycontrol3[4] dlycontrol4[0] dlycontrol4[1] dlycontrol4[2] dlycontrol4[3] dlycontrol4[4]
++ dlycontrol4[5] ena_in enable_dlycontrol ndecision_finish nsample_n nsample_n_buf
++ nsample_p nsample_p_buf sample_n sample_n_buf sample_p sample_p_buf start_conv
+Xedgedetect.dly200cell.genblk1\[14\].delay_unit VPWR edgedetect.dly200cell.genblk1\[14\].and1/X
++ edgedetect.dly200cell.genblk1\[14\].mux1/A0 VGND VGND VPWR sky130_mm_sc_hd_dlyPoly5ns
+XFILLER_13_111 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+X_432_ _432_/A _432_/Y VPWR VGND VGND VPWR sky130_fd_sc_hd__inv_2
+X_294_ VGND VPWR _302_/A _294_/A VGND VPWR sky130_fd_sc_hd__buf_1
+Xclkgen.delay_100ns_2.genblk1\[19\].mux1 VGND VPWR _379_/A clkgen.delay_100ns_2.genblk1\[19\].and1/B
++ clkgen.delay_100ns_2.genblk1\[19\].mux1/A0 _430_/A VGND VPWR sky130_fd_sc_hd__mux2_1
+X_363_ _351_/A _364_/A _362_/X dlycontrol2[4] VGND VPWR VGND VPWR sky130_fd_sc_hd__o21ai_2
+Xclkgen.delay_100ns_1.genblk1\[9\].delay_unit VPWR clkgen.delay_100ns_1.genblk1\[9\].and1/X
++ clkgen.delay_100ns_1.genblk1\[9\].mux1/A0 VGND VGND VPWR sky130_mm_sc_hd_dlyPoly5ns
+Xclkgen.delay_100ns_1.genblk1\[11\].and1 VPWR VGND clkgen.delay_100ns_1.genblk1\[11\].and1/X
++ clkgen.delay_100ns_1.genblk1\[11\].and1/B _408_/A VGND VPWR sky130_fd_sc_hd__and2_1
+Xedgedetect.dly200cell.genblk1\[17\].mux1 VGND VPWR _235_/Y edgedetect.dly200cell.genblk1\[17\].and1/B
++ edgedetect.dly200cell.genblk1\[17\].mux1/A0 edgedetect.dly200cell.genblk1\[18\].and1/B
++ VGND VPWR sky130_fd_sc_hd__mux2_1
+XFILLER_12_32 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_6
+XFILLER_2_335 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_6
+XFILLER_18_258 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+Xedgedetect.dly200cell.genblk1\[2\].mux1 VGND VPWR _200_/Y edgedetect.dly200cell.genblk1\[2\].and1/B
++ edgedetect.dly200cell.genblk1\[2\].mux1/A0 edgedetect.dly200cell.genblk1\[3\].and1/B
++ VGND VPWR sky130_fd_sc_hd__mux2_1
+X_346_ dlycontrol2[2] _347_/B _414_/A dlycontrol2[1] VPWR VGND VGND VPWR sky130_fd_sc_hd__and3_2
+X_415_ _426_/A _415_/Y VPWR VGND VGND VPWR sky130_fd_sc_hd__inv_2
+X_277_ _278_/A _281_/A _251_/X _243_/B VGND VPWR VGND VPWR sky130_fd_sc_hd__a21o_2
+XFILLER_17_280 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+Xedgedetect.dly200cell.genblk1\[6\].and1 VPWR VGND edgedetect.dly200cell.genblk1\[6\].and1/X
++ edgedetect.dly200cell.genblk1\[6\].and1/B _440_/X VGND VPWR sky130_fd_sc_hd__and2_1
+X_200_ _438_/A _236_/B _184_/X _200_/Y VGND VPWR VGND VPWR sky130_fd_sc_hd__a21oi_2
+XFILLER_23_294 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+X_329_ VGND VPWR _330_/A _329_/A VGND VPWR sky130_fd_sc_hd__buf_1
+XFILLER_11_286 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_25_301 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+Xedgedetect.dly200cell.genblk1\[19\].delay_unit VPWR edgedetect.dly200cell.genblk1\[19\].and1/X
++ edgedetect.dly200cell.genblk1\[19\].mux1/A0 VGND VGND VPWR sky130_mm_sc_hd_dlyPoly5ns
+XFILLER_4_238 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+Xclkgen.delay_100ns_2.genblk1\[3\].mux1 VGND VPWR _341_/Y clkgen.delay_100ns_2.genblk1\[3\].and1/B
++ clkgen.delay_100ns_2.genblk1\[3\].mux1/A0 clkgen.delay_100ns_2.genblk1\[4\].and1/B
++ VGND VPWR sky130_fd_sc_hd__mux2_1
+XANTENNA_5 start_conv VGND VPWR VPWR VGND sky130_fd_sc_hd__diode_2
+Xedgedetect.dly200cell.genblk1\[21\].delay_unit VPWR edgedetect.dly200cell.genblk1\[21\].and1/X
++ edgedetect.dly200cell.genblk1\[21\].mux1/A0 VGND VGND VPWR sky130_mm_sc_hd_dlyPoly5ns
+XFILLER_13_3 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_3
+XFILLER_22_315 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+Xclkgen.delay_100ns_2.genblk1\[7\].and1 VPWR VGND clkgen.delay_100ns_2.genblk1\[7\].and1/X
++ clkgen.delay_100ns_2.genblk1\[7\].and1/B _351_/A VGND VPWR sky130_fd_sc_hd__and2_1
+XFILLER_25_142 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_15_76 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_13_359 VGND VPWR VGND VPWR sky130_ef_sc_hd__decap_12
+XFILLER_0_241 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_6
+XFILLER_0_285 VGND VPWR VGND VPWR sky130_ef_sc_hd__decap_12
+XFILLER_8_330 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_22_167 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_6
+X_431_ _431_/X _429_/Y _431_/A1 _431_/B1 _430_/Y VGND VPWR VGND VPWR sky130_fd_sc_hd__a211o_2
+X_362_ VPWR VGND dlycontrol2[2] _362_/X dlycontrol2[1] VGND VPWR sky130_fd_sc_hd__and2_2
+X_293_ dlycontrol3[3] enable_dlycontrol dlycontrol3[4] _294_/A VGND VPWR VGND VPWR
++ sky130_fd_sc_hd__o21a_2
+XFILLER_9_138 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_5_300 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_12_44 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_12_99 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+X_414_ _426_/A _414_/A dlycontrol1[4] VGND VPWR VGND VPWR sky130_fd_sc_hd__nand2_2
+X_276_ _276_/A _276_/Y VPWR VGND VGND VPWR sky130_fd_sc_hd__inv_2
+X_345_ _345_/A _345_/Y VPWR VGND VGND VPWR sky130_fd_sc_hd__inv_2
+Xedgedetect.dly200cell.genblk1\[23\].mux1 VGND VPWR _249_/Y edgedetect.dly200cell.genblk1\[23\].and1/B
++ edgedetect.dly200cell.genblk1\[23\].mux1/A0 edgedetect.dly200cell.genblk1\[24\].and1/B
++ VGND VPWR sky130_fd_sc_hd__mux2_1
+XFILLER_23_43 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_8
+Xedgedetect.dly200cell.genblk1\[27\].and1 VPWR VGND edgedetect.dly200cell.genblk1\[27\].and1/X
++ edgedetect.dly200cell.genblk1\[27\].and1/B _257_/Y VGND VPWR sky130_fd_sc_hd__and2_1
+Xedgedetect.dly200cell.genblk1\[26\].delay_unit VPWR edgedetect.dly200cell.genblk1\[26\].and1/X
++ edgedetect.dly200cell.genblk1\[26\].mux1/A0 VGND VGND VPWR sky130_mm_sc_hd_dlyPoly5ns
+X_259_ _259_/A _259_/Y VPWR VGND VGND VPWR sky130_fd_sc_hd__inv_2
+X_328_ _328_/B _329_/A _328_/A VPWR VGND VGND VPWR sky130_fd_sc_hd__or2_2
+XFILLER_9_34 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+Xclkgen.delay_100ns_2.genblk1\[12\].and1 VPWR VGND clkgen.delay_100ns_2.genblk1\[12\].and1/X
++ clkgen.delay_100ns_2.genblk1\[12\].and1/B _461_/X VGND VPWR sky130_fd_sc_hd__and2_1
+XFILLER_20_276 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_3
+XFILLER_18_43 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_6
+XFILLER_7_203 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+Xedgedetect.dly200cell.genblk1\[10\].and1 VPWR VGND edgedetect.dly200cell.genblk1\[10\].and1/X
++ edgedetect.dly200cell.genblk1\[9\].mux1/X _216_/A VGND VPWR sky130_fd_sc_hd__and2_1
+Xclkgen.delay_100ns_3.genblk1\[1\].mux1 VGND VPWR _289_/A clkgen.delay_100ns_3.genblk1\[1\].and1/B
++ clkgen.delay_100ns_3.genblk1\[1\].mux1/A0 clkgen.delay_100ns_3.genblk1\[2\].and1/B
++ VGND VPWR sky130_fd_sc_hd__mux2_1
+XFILLER_6_291 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_16_324 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+Xclkgen.delay_100ns_3.genblk1\[5\].and1 VPWR VGND clkgen.delay_100ns_3.genblk1\[5\].and1/X
++ clkgen.delay_100ns_3.genblk1\[5\].and1/B _299_/Y VGND VPWR sky130_fd_sc_hd__and2_1
+XANTENNA_6 _458_/X VGND VPWR VPWR VGND sky130_fd_sc_hd__diode_2
+XFILLER_3_294 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_19_173 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_25_187 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_6
+XFILLER_25_165 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_25_121 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_3
+XFILLER_13_338 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+Xclkgen.delay_100ns_2.genblk1\[12\].delay_unit VPWR clkgen.delay_100ns_2.genblk1\[12\].and1/X
++ clkgen.delay_100ns_2.genblk1\[12\].mux1/A0 VGND VGND VPWR sky130_mm_sc_hd_dlyPoly5ns
+XFILLER_0_275 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_0_297 VGND VPWR VGND VPWR sky130_ef_sc_hd__decap_12
+XFILLER_12_371 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_8
+XFILLER_8_353 VGND VPWR VGND VPWR sky130_ef_sc_hd__decap_12
+X_430_ _430_/A _430_/Y VPWR VGND VGND VPWR sky130_fd_sc_hd__inv_2
+XFILLER_13_179 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_6
+XFILLER_13_168 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+X_361_ _351_/A _361_/Y _360_/X dlycontrol2[4] VGND VPWR VGND VPWR sky130_fd_sc_hd__o21ai_2
+X_292_ _451_/A _292_/Y VPWR VGND VGND VPWR sky130_fd_sc_hd__inv_2
+XFILLER_3_47 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+Xedgedetect.dly200cell.genblk1\[33\].delay_unit VPWR edgedetect.dly200cell.genblk1\[33\].and1/X
++ edgedetect.dly200cell.genblk1\[33\].mux1/A0 VGND VGND VPWR sky130_mm_sc_hd_dlyPoly5ns
+Xedgedetect.dly200cell.genblk1\[4\].delay_unit VPWR edgedetect.dly200cell.genblk1\[4\].and1/X
++ edgedetect.dly200cell.genblk1\[4\].mux1/A0 VGND VGND VPWR sky130_mm_sc_hd_dlyPoly5ns
+Xclkgen.delay_100ns_3.genblk1\[2\].delay_unit VPWR clkgen.delay_100ns_3.genblk1\[2\].and1/X
++ clkgen.delay_100ns_3.genblk1\[2\].mux1/A0 VGND VGND VPWR sky130_mm_sc_hd_dlyPoly5ns
+X_413_ _413_/A _413_/Y VPWR VGND VGND VPWR sky130_fd_sc_hd__inv_2
+XFILLER_18_249 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+X_275_ _276_/A _281_/A _251_/X _240_/B VGND VPWR VGND VPWR sky130_fd_sc_hd__a21o_2
+X_344_ _345_/A _351_/A _360_/B _388_/A dlycontrol2[2] VGND VPWR VGND VPWR sky130_fd_sc_hd__a31o_2
+XFILLER_23_274 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_8
+XFILLER_2_101 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_0_59 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_3
+X_189_ _190_/A _210_/A _388_/A _187_/X VGND VPWR VGND VPWR sky130_fd_sc_hd__a21o_2
+X_258_ _259_/A _251_/X _240_/B _246_/B VGND VPWR VGND VPWR sky130_fd_sc_hd__a21o_2
+X_327_ _327_/A _327_/Y VPWR VGND VGND VPWR sky130_fd_sc_hd__inv_2
+Xedgedetect.dly200cell.genblk1\[33\].and1 VPWR VGND edgedetect.dly200cell.genblk1\[33\].and1/X
++ ANTENNA_11/DIODE _267_/A VGND VPWR sky130_fd_sc_hd__and2_1
+Xclkgen.delay_100ns_2.genblk1\[17\].delay_unit VPWR clkgen.delay_100ns_2.genblk1\[17\].and1/X
++ clkgen.delay_100ns_2.genblk1\[17\].mux1/A0 VGND VGND VPWR sky130_mm_sc_hd_dlyPoly5ns
+Xclkgen.delay_100ns_1.genblk1\[13\].mux1 VGND VPWR _413_/A clkgen.delay_100ns_1.genblk1\[13\].and1/B
++ clkgen.delay_100ns_1.genblk1\[13\].mux1/A0 clkgen.delay_100ns_1.genblk1\[14\].and1/B
++ VGND VPWR sky130_fd_sc_hd__mux2_1
+XFILLER_4_229 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+Xclkgen.delay_100ns_1.genblk1\[17\].and1 VPWR VGND clkgen.delay_100ns_1.genblk1\[17\].and1/X
++ clkgen.delay_100ns_1.genblk1\[17\].and1/B _421_/Y VGND VPWR sky130_fd_sc_hd__and2_1
+Xedgedetect.dly200cell.genblk1\[38\].delay_unit VPWR edgedetect.dly200cell.genblk1\[38\].and1/X
++ edgedetect.dly200cell.genblk1\[38\].mux1/A0 VGND VGND VPWR sky130_mm_sc_hd_dlyPoly5ns
+XANTENNA_7 _376_/A VGND VPWR VPWR VGND sky130_fd_sc_hd__diode_2
+Xedgedetect.dly200cell.genblk1\[9\].delay_unit VPWR edgedetect.dly200cell.genblk1\[9\].and1/X
++ edgedetect.dly200cell.genblk1\[9\].mux1/A0 VGND VGND VPWR sky130_mm_sc_hd_dlyPoly5ns
+Xedgedetect.dly200cell.genblk1\[8\].mux1 VGND VPWR _212_/Y edgedetect.dly200cell.genblk1\[8\].and1/B
++ edgedetect.dly200cell.genblk1\[8\].mux1/A0 edgedetect.dly200cell.genblk1\[9\].and1/B
++ VGND VPWR sky130_fd_sc_hd__mux2_1
+Xclkgen.delay_100ns_3.genblk1\[7\].delay_unit VPWR clkgen.delay_100ns_3.genblk1\[7\].and1/X
++ clkgen.delay_100ns_3.genblk1\[7\].mux1/A0 VGND VGND VPWR sky130_mm_sc_hd_dlyPoly5ns
+Xclkgen.delay_100ns_3.genblk1\[13\].and1 VPWR VGND clkgen.delay_100ns_3.genblk1\[13\].and1/X
++ clkgen.delay_100ns_3.genblk1\[13\].and1/B _315_/Y VGND VPWR sky130_fd_sc_hd__and2_1
+XFILLER_25_133 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_21_361 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_8
+XFILLER_0_254 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_8_365 VGND VPWR VGND VPWR sky130_ef_sc_hd__decap_12
+XFILLER_7_90 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+X_291_ _451_/B _291_/Y _451_/A VGND VPWR VGND VPWR sky130_fd_sc_hd__nor2_2
+XFILLER_13_125 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+X_360_ VPWR VGND dlycontrol2[2] _360_/X _360_/B VGND VPWR sky130_fd_sc_hd__and2_2
+XFILLER_3_37 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_8_140 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_18_206 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+X_412_ _400_/A _413_/A _411_/X dlycontrol1[4] VGND VPWR VGND VPWR sky130_fd_sc_hd__o21ai_2
+X_343_ VGND VPWR _351_/A _343_/A VGND VPWR sky130_fd_sc_hd__buf_1
+X_274_ _274_/A _274_/Y VPWR VGND VGND VPWR sky130_fd_sc_hd__inv_2
+Xclkgen.delay_100ns_2.genblk1\[9\].mux1 VGND VPWR _355_/Y clkgen.delay_100ns_2.genblk1\[9\].and1/B
++ clkgen.delay_100ns_2.genblk1\[9\].mux1/A0 clkgen.delay_100ns_2.genblk1\[9\].mux1/X
++ VGND VPWR sky130_fd_sc_hd__mux2_1
+X_326_ _328_/A _325_/Y _328_/B _327_/A VGND VPWR VGND VPWR sky130_fd_sc_hd__a21oi_2
+X_257_ _257_/A _257_/Y VPWR VGND VGND VPWR sky130_fd_sc_hd__inv_2
+X_188_ dlycontrol4[4] enable_dlycontrol dlycontrol4[5] _210_/A VGND VPWR VGND VPWR
++ sky130_fd_sc_hd__o21a_2
+XFILLER_11_212 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_19_323 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+X_309_ _310_/A _451_/B dlycontrol3[3] _309_/Y VGND VPWR VGND VPWR sky130_fd_sc_hd__a21oi_2
+XFILLER_16_315 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+Xclkgen.delay_100ns_1.genblk1\[0\].mux1 VGND VPWR _384_/Y inbuf_3/X clkgen.delay_100ns_1.genblk1\[0\].mux1/A0
++ clkgen.delay_100ns_1.genblk1\[1\].and1/B VGND VPWR sky130_fd_sc_hd__mux2_1
+XANTENNA_8 _193_/A VGND VPWR VPWR VGND sky130_fd_sc_hd__diode_2
+XFILLER_6_59 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_6
+Xclkgen.delay_100ns_1.genblk1\[4\].and1 VPWR VGND clkgen.delay_100ns_1.genblk1\[4\].and1/X
++ clkgen.delay_100ns_1.genblk1\[4\].and1/B _394_/A VGND VPWR sky130_fd_sc_hd__and2_1
+Xedgedetect.dly200cell.genblk1\[29\].mux1 VGND VPWR _261_/Y edgedetect.dly200cell.genblk1\[29\].and1/B
++ edgedetect.dly200cell.genblk1\[29\].mux1/A0 edgedetect.dly200cell.genblk1\[30\].and1/B
++ VGND VPWR sky130_fd_sc_hd__mux2_1
+XFILLER_21_373 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_6
+XFILLER_16_101 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+Xclkgen.delay_100ns_2.genblk1\[14\].mux1 VGND VPWR _368_/Y clkgen.delay_100ns_2.genblk1\[14\].and1/B
++ clkgen.delay_100ns_2.genblk1\[14\].mux1/A0 clkgen.delay_100ns_2.genblk1\[15\].and1/B
++ VGND VPWR sky130_fd_sc_hd__mux2_1
+XFILLER_11_3 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_7_80 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+Xclkgen.delay_100ns_2.genblk1\[18\].and1 VPWR VGND clkgen.delay_100ns_2.genblk1\[18\].and1/X
++ clkgen.delay_100ns_2.genblk1\[18\].and1/B _376_/A VGND VPWR sky130_fd_sc_hd__and2_1
+X_290_ dlycontrol3[0] _451_/B _388_/A dlycontrol3[1] VPWR VGND VGND VPWR sky130_fd_sc_hd__and3_2
+Xedgedetect.dly200cell.genblk1\[12\].mux1 VGND VPWR _222_/Y edgedetect.dly200cell.genblk1\[12\].and1/B
++ edgedetect.dly200cell.genblk1\[12\].mux1/A0 edgedetect.dly200cell.genblk1\[13\].and1/B
++ VGND VPWR sky130_fd_sc_hd__mux2_1
+XFILLER_8_196 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_8
+XFILLER_8_130 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+Xedgedetect.dly200cell.genblk1\[16\].and1 VPWR VGND edgedetect.dly200cell.genblk1\[16\].and1/X
++ edgedetect.dly200cell.genblk1\[16\].and1/B _442_/X VGND VPWR sky130_fd_sc_hd__and2_1
+Xclkgen.delay_100ns_2.genblk1\[1\].delay_unit VPWR clkgen.delay_100ns_2.genblk1\[1\].and1/X
++ clkgen.delay_100ns_2.genblk1\[1\].mux1/A0 VGND VGND VPWR sky130_mm_sc_hd_dlyPoly5ns
+Xclkgen.delay_100ns_3.genblk1\[7\].mux1 VGND VPWR _302_/Y clkgen.delay_100ns_3.genblk1\[7\].and1/B
++ clkgen.delay_100ns_3.genblk1\[7\].mux1/A0 clkgen.delay_100ns_3.genblk1\[8\].and1/B
++ VGND VPWR sky130_fd_sc_hd__mux2_1
+XFILLER_18_218 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_6
+Xedgedetect.dly200cell.genblk1\[1\].and1 VPWR VGND edgedetect.dly200cell.genblk1\[1\].and1/X
++ edgedetect.dly200cell.genblk1\[1\].and1/B _435_/X VGND VPWR sky130_fd_sc_hd__and2_1
+X_411_ VPWR VGND dlycontrol1[2] _411_/X dlycontrol1[1] VGND VPWR sky130_fd_sc_hd__and2_2
+X_342_ dlycontrol2[3] enable_dlycontrol dlycontrol2[4] _343_/A VGND VPWR VGND VPWR
++ sky130_fd_sc_hd__o21a_2
+X_273_ _274_/A _281_/A dlycontrol4[2] _251_/A VGND VPWR VGND VPWR sky130_fd_sc_hd__a21o_2
+XFILLER_5_155 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_5_144 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_23_265 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_23_287 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+X_325_ _325_/Y dlycontrol3[0] dlycontrol3[1] VGND VPWR VGND VPWR sky130_fd_sc_hd__nand2_2
+XFILLER_9_59 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_3
+XFILLER_9_48 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+X_256_ _251_/A _217_/X _234_/A _257_/A VGND VPWR VGND VPWR sky130_fd_sc_hd__a21oi_2
+X_187_ dlycontrol4[2] _187_/X _243_/A VPWR VGND VGND VPWR sky130_fd_sc_hd__or2_2
+X_239_ _239_/A _239_/Y VPWR VGND VGND VPWR sky130_fd_sc_hd__inv_2
+X_308_ VGND VPWR _310_/A _308_/A VGND VPWR sky130_fd_sc_hd__buf_1
+XFILLER_25_316 VGND VPWR VGND VPWR sky130_ef_sc_hd__decap_12
+XFILLER_1_93 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_20_69 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+Xclkgen.delay_100ns_2.genblk1\[2\].and1 VPWR VGND clkgen.delay_100ns_2.genblk1\[2\].and1/X
++ clkgen.delay_100ns_2.genblk1\[2\].and1/B _458_/X VGND VPWR sky130_fd_sc_hd__and2_1
+XFILLER_6_16 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XANTENNA_9 ANTENNA_9/DIODE VGND VPWR VPWR VGND sky130_fd_sc_hd__diode_2
+XFILLER_3_242 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_6
+XFILLER_19_187 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_8
+Xclkgen.delay_100ns_2.genblk1\[6\].delay_unit VPWR clkgen.delay_100ns_2.genblk1\[6\].and1/X
++ clkgen.delay_100ns_2.genblk1\[6\].mux1/A0 VGND VGND VPWR sky130_mm_sc_hd_dlyPoly5ns
+XFILLER_21_330 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_0_212 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_0_234 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+Xedgedetect.dly200cell.genblk1\[35\].mux1 VGND VPWR _274_/Y edgedetect.dly200cell.genblk1\[35\].and1/B
++ edgedetect.dly200cell.genblk1\[35\].mux1/A0 edgedetect.dly200cell.genblk1\[36\].and1/B
++ VGND VPWR sky130_fd_sc_hd__mux2_1
+Xedgedetect.dly200cell.genblk1\[39\].and1 VPWR VGND edgedetect.dly200cell.genblk1\[39\].and1/X
++ edgedetect.dly200cell.genblk1\[39\].and1/B _281_/A VGND VPWR sky130_fd_sc_hd__and2_1
+XFILLER_13_138 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_9_109 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+Xclkgen.delay_100ns_1.genblk1\[19\].mux1 VGND VPWR _428_/A clkgen.delay_100ns_1.genblk1\[19\].and1/B
++ clkgen.delay_100ns_1.genblk1\[19\].mux1/A0 _432_/A VGND VPWR sky130_fd_sc_hd__mux2_1
+XFILLER_5_9 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+Xclkgen.delay_100ns_1.genblk1\[11\].delay_unit VPWR clkgen.delay_100ns_1.genblk1\[11\].and1/X
++ clkgen.delay_100ns_1.genblk1\[11\].mux1/A0 VGND VGND VPWR sky130_mm_sc_hd_dlyPoly5ns
+X_341_ _457_/A _341_/Y VPWR VGND VGND VPWR sky130_fd_sc_hd__inv_2
+X_272_ _272_/A _272_/Y VPWR VGND VGND VPWR sky130_fd_sc_hd__inv_2
+X_410_ _400_/A _410_/Y _409_/X dlycontrol1[4] VGND VPWR VGND VPWR sky130_fd_sc_hd__o21ai_2
+Xedgedetect.dly200cell.genblk1\[22\].and1 VPWR VGND edgedetect.dly200cell.genblk1\[22\].and1/X
++ edgedetect.dly200cell.genblk1\[22\].and1/B _447_/X VGND VPWR sky130_fd_sc_hd__and2_1
+XFILLER_5_134 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_1_373 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_6
+Xclkgen.delay_100ns_3.genblk1\[15\].mux1 VGND VPWR _328_/A clkgen.delay_100ns_3.genblk1\[15\].and1/B
++ clkgen.delay_100ns_3.genblk1\[15\].mux1/A0 clkgen.delay_100ns_3.genblk1\[16\].and1/B
++ VGND VPWR sky130_fd_sc_hd__mux2_1
+Xclkgen.delay_100ns_3.genblk1\[19\].and1 VPWR VGND clkgen.delay_100ns_3.genblk1\[19\].and1/X
++ clkgen.delay_100ns_3.genblk1\[19\].and1/B _330_/Y VGND VPWR sky130_fd_sc_hd__and2_1
+XFILLER_23_14 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+X_255_ _255_/A _255_/Y VPWR VGND VGND VPWR sky130_fd_sc_hd__inv_2
+XFILLER_14_266 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_14_255 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+X_324_ dlycontrol3[2] _328_/B dlycontrol3[3] VGND VPWR VGND VPWR sky130_fd_sc_hd__nor2_2
+X_186_ VGND VPWR _243_/A dlycontrol4[3] VGND VPWR sky130_fd_sc_hd__buf_1
+XFILLER_1_170 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_20_214 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_3
+XFILLER_20_203 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_20_269 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_20_247 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_18_69 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_18_58 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_11_269 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_8
+XFILLER_11_225 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_6
+XFILLER_1_3 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_6
+XFILLER_19_369 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_3
+X_238_ _237_/X _236_/X _234_/X _238_/Y VGND VPWR VGND VPWR sky130_fd_sc_hd__a21oi_2
+X_307_ dlycontrol3[2] _302_/A dlycontrol3[4] _308_/A VGND VPWR VGND VPWR sky130_fd_sc_hd__o21a_2
+Xclkgen.delay_100ns_3.genblk1\[0\].and1 VPWR VGND clkgen.delay_100ns_3.genblk1\[0\].and1/X
++ _431_/X _450_/X VGND VPWR sky130_fd_sc_hd__and2_1
+XFILLER_25_328 VGND VPWR VGND VPWR sky130_ef_sc_hd__decap_12
+XFILLER_20_59 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_3_287 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+Xclkgen.delay_100ns_3.genblk1\[14\].delay_unit VPWR clkgen.delay_100ns_3.genblk1\[14\].and1/X
++ clkgen.delay_100ns_3.genblk1\[14\].mux1/A0 VGND VGND VPWR sky130_mm_sc_hd_dlyPoly5ns
+Xclkgen.delay_100ns_1.genblk1\[16\].delay_unit VPWR clkgen.delay_100ns_1.genblk1\[16\].and1/X
++ clkgen.delay_100ns_1.genblk1\[16\].mux1/A0 VGND VGND VPWR sky130_mm_sc_hd_dlyPoly5ns
+XFILLER_0_268 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_16_114 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_8
+XPHY_0 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_3
+XFILLER_21_161 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_5_316 VGND VPWR VGND VPWR sky130_ef_sc_hd__decap_12
+XFILLER_16_80 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_12_150 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_8_187 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+Xclkgen.delay_100ns_1.genblk1\[0\].delay_unit VPWR clkgen.delay_100ns_1.genblk1\[0\].and1/X
++ clkgen.delay_100ns_1.genblk1\[0\].mux1/A0 VGND VGND VPWR sky130_mm_sc_hd_dlyPoly5ns
+X_271_ _272_/A _281_/A _251_/X _236_/B VGND VPWR VGND VPWR sky130_fd_sc_hd__a21o_2
+X_340_ _457_/B _340_/Y _457_/A VGND VPWR VGND VPWR sky130_fd_sc_hd__nor2_2
+Xclkgen.delay_100ns_1.genblk1\[6\].mux1 VGND VPWR _399_/Y clkgen.delay_100ns_1.genblk1\[6\].and1/B
++ clkgen.delay_100ns_1.genblk1\[6\].mux1/A0 clkgen.delay_100ns_1.genblk1\[7\].and1/B
++ VGND VPWR sky130_fd_sc_hd__mux2_1
+XFILLER_23_256 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+X_254_ _255_/A _251_/X _236_/B _246_/B VGND VPWR VGND VPWR sky130_fd_sc_hd__a21o_2
+X_185_ dlycontrol4[0] _185_/X dlycontrol4[1] VPWR VGND VGND VPWR sky130_fd_sc_hd__or2_2
+XFILLER_14_289 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+X_323_ _323_/A _323_/Y VPWR VGND VGND VPWR sky130_fd_sc_hd__inv_2
+Xclkgen.delay_100ns_3.genblk1\[19\].delay_unit VPWR clkgen.delay_100ns_3.genblk1\[19\].and1/X
++ clkgen.delay_100ns_3.genblk1\[19\].mux1/A0 VGND VGND VPWR sky130_mm_sc_hd_dlyPoly5ns
+XFILLER_9_282 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_9_260 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_8
+XFILLER_19_337 VGND VPWR VGND VPWR sky130_ef_sc_hd__decap_12
+Xclkgen.delay_100ns_1.genblk1\[12\].and1 VPWR VGND clkgen.delay_100ns_1.genblk1\[12\].and1/X
++ clkgen.delay_100ns_1.genblk1\[12\].and1/B _467_/X VGND VPWR sky130_fd_sc_hd__and2_1
+Xedgedetect.dly200cell.genblk1\[18\].mux1 VGND VPWR _238_/Y edgedetect.dly200cell.genblk1\[18\].and1/B
++ edgedetect.dly200cell.genblk1\[18\].mux1/A0 edgedetect.dly200cell.genblk1\[19\].and1/B
++ VGND VPWR sky130_fd_sc_hd__mux2_1
+X_306_ _306_/A _306_/Y VPWR VGND VGND VPWR sky130_fd_sc_hd__inv_2
+X_237_ VGND VPWR _237_/X _251_/A VGND VPWR sky130_fd_sc_hd__buf_1
+Xedgedetect.dly200cell.genblk1\[3\].mux1 VGND VPWR _201_/Y edgedetect.dly200cell.genblk1\[3\].and1/B
++ edgedetect.dly200cell.genblk1\[3\].mux1/A0 edgedetect.dly200cell.genblk1\[4\].and1/B
++ VGND VPWR sky130_fd_sc_hd__mux2_1
+Xedgedetect.dly200cell.genblk1\[10\].delay_unit VPWR edgedetect.dly200cell.genblk1\[10\].and1/X
++ edgedetect.dly200cell.genblk1\[10\].mux1/A0 VGND VGND VPWR sky130_mm_sc_hd_dlyPoly5ns
+Xedgedetect.dly200cell.genblk1\[7\].and1 VPWR VGND edgedetect.dly200cell.genblk1\[7\].and1/X
++ edgedetect.dly200cell.genblk1\[7\].and1/B _209_/A VGND VPWR sky130_fd_sc_hd__and2_1
+XFILLER_3_233 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_13_9 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+Xclkgen.delay_100ns_1.genblk1\[5\].delay_unit VPWR clkgen.delay_100ns_1.genblk1\[5\].and1/X
++ clkgen.delay_100ns_1.genblk1\[5\].mux1/A0 VGND VGND VPWR sky130_mm_sc_hd_dlyPoly5ns
+XFILLER_15_373 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_6
+XFILLER_0_203 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_16_148 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_6
+XFILLER_12_332 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XPHY_1 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_3
+XFILLER_22_118 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_22_129 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_21_173 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_5_328 VGND VPWR VGND VPWR sky130_ef_sc_hd__decap_12
+Xinbuf_1 VGND VPWR _431_/B1 ena_in VGND VPWR sky130_fd_sc_hd__buf_1
+Xclkgen.delay_100ns_2.genblk1\[4\].mux1 VGND VPWR _345_/Y clkgen.delay_100ns_2.genblk1\[4\].and1/B
++ clkgen.delay_100ns_2.genblk1\[4\].mux1/A0 clkgen.delay_100ns_2.genblk1\[5\].and1/B
++ VGND VPWR sky130_fd_sc_hd__mux2_1
+X_270_ VGND VPWR _281_/A _270_/A VGND VPWR sky130_fd_sc_hd__buf_1
+Xclkgen.delay_100ns_2.genblk1\[8\].and1 VPWR VGND clkgen.delay_100ns_2.genblk1\[8\].and1/X
++ clkgen.delay_100ns_2.genblk1\[8\].and1/B _459_/X VGND VPWR sky130_fd_sc_hd__and2_1
+XFILLER_17_243 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+X_399_ _399_/A _399_/Y VPWR VGND VGND VPWR sky130_fd_sc_hd__inv_2
+XFILLER_4_191 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_3_8 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+Xedgedetect.dly200cell.genblk1\[15\].delay_unit VPWR edgedetect.dly200cell.genblk1\[15\].and1/X
++ edgedetect.dly200cell.genblk1\[15\].mux1/A0 VGND VGND VPWR sky130_mm_sc_hd_dlyPoly5ns
+X_322_ _317_/Y _323_/A _287_/X dlycontrol3[3] VGND VPWR VGND VPWR sky130_fd_sc_hd__o21ai_2
+X_253_ _253_/A _253_/Y VPWR VGND VGND VPWR sky130_fd_sc_hd__inv_2
+X_184_ VGND VPWR _184_/X _388_/A VGND VPWR sky130_fd_sc_hd__buf_1
+XFILLER_1_194 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_9_294 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_18_16 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_19_316 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_19_349 VGND VPWR VGND VPWR sky130_ef_sc_hd__decap_12
+XFILLER_19_305 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+X_305_ dlycontrol3[0] _306_/A _305_/Y _433_/A dlycontrol3[3] VPWR VGND VGND VPWR sky130_fd_sc_hd__a31oi_2
+X_236_ _236_/B _236_/X _243_/A VPWR VGND VGND VPWR sky130_fd_sc_hd__or2_2
+XFILLER_10_260 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_1_63 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+Xedgedetect.dly200cell.genblk1\[24\].mux1 VGND VPWR _250_/Y edgedetect.dly200cell.genblk1\[24\].and1/B
++ edgedetect.dly200cell.genblk1\[24\].mux1/A0 edgedetect.dly200cell.genblk1\[25\].and1/B
++ VGND VPWR sky130_fd_sc_hd__mux2_1
+XFILLER_10_94 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_3
+XFILLER_19_157 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_8
+X_219_ _219_/A _219_/Y VPWR VGND VGND VPWR sky130_fd_sc_hd__inv_2
+Xedgedetect.dly200cell.genblk1\[28\].and1 VPWR VGND edgedetect.dly200cell.genblk1\[28\].and1/X
++ edgedetect.dly200cell.genblk1\[28\].and1/B _259_/A VGND VPWR sky130_fd_sc_hd__and2_1
+Xclkgen.delay_100ns_2.genblk1\[13\].and1 VPWR VGND clkgen.delay_100ns_2.genblk1\[13\].and1/X
++ clkgen.delay_100ns_2.genblk1\[13\].and1/B _364_/Y VGND VPWR sky130_fd_sc_hd__and2_1
+XPHY_2 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_3
+XFILLER_22_108 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+Xedgedetect.dly200cell.genblk1\[11\].and1 VPWR VGND edgedetect.dly200cell.genblk1\[11\].and1/X
++ edgedetect.dly200cell.genblk1\[11\].and1/B _219_/Y VGND VPWR sky130_fd_sc_hd__and2_1
+XFILLER_5_307 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_3
+Xclkgen.delay_100ns_3.genblk1\[2\].mux1 VGND VPWR _291_/Y clkgen.delay_100ns_3.genblk1\[2\].and1/B
++ clkgen.delay_100ns_3.genblk1\[2\].mux1/A0 clkgen.delay_100ns_3.genblk1\[3\].and1/B
++ VGND VPWR sky130_fd_sc_hd__mux2_1
+Xinbuf_2 VGND VPWR _431_/A1 start_conv VGND VPWR sky130_fd_sc_hd__buf_1
+Xedgedetect.dly200cell.genblk1\[22\].delay_unit VPWR edgedetect.dly200cell.genblk1\[22\].and1/X
++ edgedetect.dly200cell.genblk1\[22\].mux1/A0 VGND VGND VPWR sky130_mm_sc_hd_dlyPoly5ns
+XFILLER_12_185 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_8
+XFILLER_8_156 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_6
+XFILLER_8_101 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+Xclkgen.delay_100ns_3.genblk1\[6\].and1 VPWR VGND clkgen.delay_100ns_3.genblk1\[6\].and1/X
++ clkgen.delay_100ns_3.genblk1\[6\].and1/B _301_/A VGND VPWR sky130_fd_sc_hd__and2_1
+XFILLER_12_18 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+X_398_ _399_/A _400_/A dlycontrol1[2] _463_/B VGND VPWR VGND VPWR sky130_fd_sc_hd__a21o_2
+X_467_ dlycontrol1[4] _400_/A _409_/X _467_/X VGND VPWR VGND VPWR sky130_fd_sc_hd__o21a_2
+X_252_ _253_/A _251_/X _211_/B _243_/A _234_/A VGND VPWR VGND VPWR sky130_fd_sc_hd__a31o_2
+XFILLER_14_225 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+X_321_ _321_/A _321_/Y VPWR VGND VGND VPWR sky130_fd_sc_hd__inv_2
+X_183_ VGND VPWR _388_/A enable_dlycontrol VGND VPWR sky130_fd_sc_hd__buf_1
+XFILLER_9_273 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+X_235_ _239_/A _234_/X dlycontrol4[1] _235_/Y VGND VPWR VGND VPWR sky130_fd_sc_hd__a21oi_2
+X_304_ VGND VPWR _306_/A _304_/A VGND VPWR sky130_fd_sc_hd__buf_1
+XFILLER_6_298 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_8
+XFILLER_6_254 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_1_53 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_20_18 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+Xedgedetect.dly200cell.genblk1\[27\].delay_unit VPWR edgedetect.dly200cell.genblk1\[27\].and1/X
++ edgedetect.dly200cell.genblk1\[27\].mux1/A0 VGND VGND VPWR sky130_mm_sc_hd_dlyPoly5ns
+XFILLER_24_342 VGND VPWR VGND VPWR sky130_ef_sc_hd__decap_12
+XFILLER_3_224 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_19_125 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_6
+XFILLER_19_71 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+Xedgedetect.dly200cell.genblk1\[30\].mux1 VGND VPWR _263_/Y edgedetect.dly200cell.genblk1\[30\].and1/B
++ edgedetect.dly200cell.genblk1\[30\].mux1/A0 edgedetect.dly200cell.genblk1\[31\].and1/B
++ VGND VPWR sky130_fd_sc_hd__mux2_1
+X_218_ _227_/A _217_/X _388_/A _219_/A VGND VPWR VGND VPWR sky130_fd_sc_hd__a21oi_2
+Xedgedetect.dly200cell.genblk1\[0\].delay_unit VPWR edgedetect.dly200cell.genblk1\[0\].and1/X
++ edgedetect.dly200cell.genblk1\[0\].mux1/A0 VGND VGND VPWR sky130_mm_sc_hd_dlyPoly5ns
+XFILLER_21_323 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+Xedgedetect.dly200cell.genblk1\[34\].and1 VPWR VGND edgedetect.dly200cell.genblk1\[34\].and1/X
++ edgedetect.dly200cell.genblk1\[34\].and1/B _272_/A VGND VPWR sky130_fd_sc_hd__and2_1
+XFILLER_24_183 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_21_50 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XPHY_3 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_3
+XFILLER_15_194 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_8
+XFILLER_15_183 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_3
+XFILLER_15_161 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_6
+XFILLER_7_63 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_3
+Xclkgen.delay_100ns_1.genblk1\[14\].mux1 VGND VPWR _417_/Y clkgen.delay_100ns_1.genblk1\[14\].and1/B
++ clkgen.delay_100ns_1.genblk1\[14\].mux1/A0 clkgen.delay_100ns_1.genblk1\[15\].and1/B
++ VGND VPWR sky130_fd_sc_hd__mux2_1
+XFILLER_21_120 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+Xinbuf_3 VGND VPWR inbuf_3/X ndecision_finish VGND VPWR sky130_fd_sc_hd__buf_1
+Xclkgen.delay_100ns_1.genblk1\[18\].and1 VPWR VGND clkgen.delay_100ns_1.genblk1\[18\].and1/X
++ ANTENNA_9/DIODE _425_/A VGND VPWR sky130_fd_sc_hd__and2_1
+Xclkgen.delay_100ns_3.genblk1\[10\].mux1 VGND VPWR _309_/Y clkgen.delay_100ns_3.genblk1\[9\].mux1/X
++ clkgen.delay_100ns_3.genblk1\[10\].mux1/A0 clkgen.delay_100ns_3.genblk1\[11\].and1/B
++ VGND VPWR sky130_fd_sc_hd__mux2_1
+Xedgedetect.dly200cell.genblk1\[9\].mux1 VGND VPWR _214_/Y edgedetect.dly200cell.genblk1\[9\].and1/B
++ edgedetect.dly200cell.genblk1\[9\].mux1/A0 edgedetect.dly200cell.genblk1\[9\].mux1/X
++ VGND VPWR sky130_fd_sc_hd__mux2_1
+Xclkgen.delay_100ns_2.genblk1\[13\].delay_unit VPWR clkgen.delay_100ns_2.genblk1\[13\].and1/X
++ clkgen.delay_100ns_2.genblk1\[13\].mux1/A0 VGND VGND VPWR sky130_mm_sc_hd_dlyPoly5ns
+Xclkgen.delay_100ns_3.genblk1\[14\].and1 VPWR VGND clkgen.delay_100ns_3.genblk1\[14\].and1/X
++ clkgen.delay_100ns_3.genblk1\[14\].and1/B _319_/A VGND VPWR sky130_fd_sc_hd__and2_1
+XFILLER_1_311 VGND VPWR VGND VPWR sky130_ef_sc_hd__decap_12
+XFILLER_17_234 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+X_466_ _466_/X _408_/A dlycontrol1[3] _463_/B VGND VPWR VGND VPWR sky130_fd_sc_hd__a21o_2
+XFILLER_17_289 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+X_397_ _397_/A _397_/Y VPWR VGND VGND VPWR sky130_fd_sc_hd__inv_2
+XFILLER_4_20 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_23_237 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+X_251_ VGND VPWR _251_/X _251_/A VGND VPWR sky130_fd_sc_hd__buf_1
+X_320_ _321_/A dlycontrol3[3] dlycontrol3[2] _317_/Y _311_/B VGND VPWR VGND VPWR sky130_fd_sc_hd__o31a_2
+XFILLER_1_141 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+Xedgedetect.dly200cell.genblk1\[34\].delay_unit VPWR edgedetect.dly200cell.genblk1\[34\].and1/X
++ edgedetect.dly200cell.genblk1\[34\].mux1/A0 VGND VGND VPWR sky130_mm_sc_hd_dlyPoly5ns
+Xedgedetect.dly200cell.genblk1\[5\].delay_unit VPWR edgedetect.dly200cell.genblk1\[5\].and1/X
++ edgedetect.dly200cell.genblk1\[5\].mux1/A0 VGND VGND VPWR sky130_mm_sc_hd_dlyPoly5ns
+X_449_ _449_/X _267_/A dlycontrol4[0] _237_/X VGND VPWR VGND VPWR sky130_fd_sc_hd__a21o_2
+XFILLER_20_218 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+Xclkgen.delay_100ns_3.genblk1\[3\].delay_unit VPWR clkgen.delay_100ns_3.genblk1\[3\].and1/X
++ clkgen.delay_100ns_3.genblk1\[3\].mux1/A0 VGND VGND VPWR sky130_mm_sc_hd_dlyPoly5ns
+X_234_ VGND VPWR _234_/X _234_/A VGND VPWR sky130_fd_sc_hd__buf_1
+X_303_ dlycontrol3[4] _302_/A _287_/X _304_/A VGND VPWR VGND VPWR sky130_fd_sc_hd__o21a_2
+XFILLER_6_211 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_6
+XFILLER_24_354 VGND VPWR VGND VPWR sky130_ef_sc_hd__decap_12
+XFILLER_19_83 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_6
+XFILLER_15_343 VGND VPWR VGND VPWR sky130_ef_sc_hd__decap_12
+X_217_ VPWR VGND _243_/A _217_/X dlycontrol4[2] VGND VPWR sky130_fd_sc_hd__and2_2
+XFILLER_25_3 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_3
+Xclkgen.delay_100ns_2.genblk1\[18\].delay_unit VPWR clkgen.delay_100ns_2.genblk1\[18\].and1/X
++ clkgen.delay_100ns_2.genblk1\[18\].mux1/A0 VGND VGND VPWR sky130_mm_sc_hd_dlyPoly5ns
+XFILLER_8_317 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XPHY_4 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_3
+XFILLER_15_173 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_7_20 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_21_132 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_21_198 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_6
+Xedgedetect.dly200cell.genblk1\[39\].delay_unit VPWR edgedetect.dly200cell.genblk1\[39\].and1/X
++ edgedetect.dly200cell.genblk1\[39\].mux1/A0 VGND VGND VPWR sky130_mm_sc_hd_dlyPoly5ns
+XFILLER_16_51 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+Xclkgen.delay_100ns_3.genblk1\[8\].delay_unit VPWR clkgen.delay_100ns_3.genblk1\[8\].and1/X
++ clkgen.delay_100ns_3.genblk1\[8\].mux1/A0 VGND VGND VPWR sky130_mm_sc_hd_dlyPoly5ns
+XFILLER_4_342 VGND VPWR VGND VPWR sky130_ef_sc_hd__decap_12
+Xclkgen.delay_100ns_1.genblk1\[1\].mux1 VGND VPWR _387_/A clkgen.delay_100ns_1.genblk1\[1\].and1/B
++ clkgen.delay_100ns_1.genblk1\[1\].mux1/A0 clkgen.delay_100ns_1.genblk1\[2\].and1/B
++ VGND VPWR sky130_fd_sc_hd__mux2_1
+Xclkgen.delay_100ns_1.genblk1\[5\].and1 VPWR VGND clkgen.delay_100ns_1.genblk1\[5\].and1/X
++ clkgen.delay_100ns_1.genblk1\[5\].and1/B _397_/Y VGND VPWR sky130_fd_sc_hd__and2_1
+XFILLER_1_334 VGND VPWR VGND VPWR sky130_ef_sc_hd__decap_12
+X_465_ _465_/X _404_/A dlycontrol1[0] _184_/X dlycontrol1[3] VGND VPWR VGND VPWR sky130_fd_sc_hd__a31o_2
+X_396_ _396_/B _397_/A _400_/A VGND VPWR VGND VPWR sky130_fd_sc_hd__nor2_2
+XFILLER_4_183 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_4_43 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_8
+Xclkgen.delay_100ns_2.genblk1\[15\].mux1 VGND VPWR _377_/A clkgen.delay_100ns_2.genblk1\[15\].and1/B
++ clkgen.delay_100ns_2.genblk1\[15\].mux1/A0 clkgen.delay_100ns_2.genblk1\[16\].and1/B
++ VGND VPWR sky130_fd_sc_hd__mux2_1
+X_250_ _249_/A _250_/Y _211_/X _237_/X VGND VPWR VGND VPWR sky130_fd_sc_hd__o21ai_2
+XFILLER_13_63 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_8
+XFILLER_13_96 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_8
+Xclkgen.delay_100ns_2.genblk1\[19\].and1 VPWR VGND clkgen.delay_100ns_2.genblk1\[19\].and1/X
++ clkgen.delay_100ns_2.genblk1\[19\].and1/B _379_/Y VGND VPWR sky130_fd_sc_hd__and2_1
+X_448_ _237_/X _249_/A _211_/X _448_/X VGND VPWR VGND VPWR sky130_fd_sc_hd__o21a_2
+Xedgedetect.dly200cell.genblk1\[13\].mux1 VGND VPWR _224_/Y edgedetect.dly200cell.genblk1\[13\].and1/B
++ edgedetect.dly200cell.genblk1\[13\].mux1/A0 edgedetect.dly200cell.genblk1\[14\].and1/B
++ VGND VPWR sky130_fd_sc_hd__mux2_1
+X_379_ _379_/A _379_/Y VPWR VGND VGND VPWR sky130_fd_sc_hd__inv_2
+XFILLER_13_293 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_6
+XFILLER_13_282 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_13_271 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+Xedgedetect.dly200cell.genblk1\[17\].and1 VPWR VGND edgedetect.dly200cell.genblk1\[17\].and1/X
++ edgedetect.dly200cell.genblk1\[17\].and1/B _443_/X VGND VPWR sky130_fd_sc_hd__and2_1
+X_302_ _302_/A _302_/Y VPWR VGND VGND VPWR sky130_fd_sc_hd__inv_2
+X_233_ _185_/X _239_/A _233_/Y _433_/A dlycontrol4[4] VPWR VGND VGND VPWR sky130_fd_sc_hd__a31oi_2
+Xclkgen.delay_100ns_3.genblk1\[8\].mux1 VGND VPWR _305_/Y clkgen.delay_100ns_3.genblk1\[8\].and1/B
++ clkgen.delay_100ns_3.genblk1\[8\].mux1/A0 clkgen.delay_100ns_3.genblk1\[9\].and1/B
++ VGND VPWR sky130_fd_sc_hd__mux2_1
+XFILLER_10_285 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_6_245 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+Xedgedetect.dly200cell.genblk1\[2\].and1 VPWR VGND edgedetect.dly200cell.genblk1\[2\].and1/X
++ edgedetect.dly200cell.genblk1\[2\].and1/B _436_/X VGND VPWR sky130_fd_sc_hd__and2_1
+XFILLER_24_366 VGND VPWR VGND VPWR sky130_ef_sc_hd__decap_12
+XFILLER_15_355 VGND VPWR VGND VPWR sky130_ef_sc_hd__decap_12
+XFILLER_15_322 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+X_216_ _216_/A _216_/Y VPWR VGND VGND VPWR sky130_fd_sc_hd__inv_2
+XFILLER_18_3 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_8
+XFILLER_21_369 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_3
+XFILLER_12_347 VGND VPWR VGND VPWR sky130_ef_sc_hd__decap_12
+XFILLER_12_303 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_21_63 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_6
+XPHY_5 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_3
+XFILLER_7_340 VGND VPWR VGND VPWR sky130_ef_sc_hd__decap_12
+XFILLER_7_373 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_6
+XFILLER_4_354 VGND VPWR VGND VPWR sky130_ef_sc_hd__decap_12
+Xclkgen.delay_100ns_2.genblk1\[3\].and1 VPWR VGND clkgen.delay_100ns_2.genblk1\[3\].and1/X
++ clkgen.delay_100ns_2.genblk1\[3\].and1/B _457_/A VGND VPWR sky130_fd_sc_hd__and2_1
+XFILLER_1_346 VGND VPWR VGND VPWR sky130_ef_sc_hd__decap_12
+X_464_ VGND VPWR _464_/X _464_/A VGND VPWR sky130_fd_sc_hd__buf_1
+X_395_ dlycontrol1[2] _396_/B _414_/A dlycontrol1[1] VPWR VGND VGND VPWR sky130_fd_sc_hd__and3_2
+XFILLER_4_77 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+Xedgedetect.dly200cell.genblk1\[36\].mux1 VGND VPWR _276_/Y edgedetect.dly200cell.genblk1\[36\].and1/B
++ edgedetect.dly200cell.genblk1\[36\].mux1/A0 edgedetect.dly200cell.genblk1\[37\].and1/B
++ VGND VPWR sky130_fd_sc_hd__mux2_1
+XFILLER_1_132 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+X_447_ _447_/X _249_/A _234_/X _207_/X VGND VPWR VGND VPWR sky130_fd_sc_hd__a21o_2
+X_378_ VGND VPWR _379_/A _378_/A VGND VPWR sky130_fd_sc_hd__buf_1
+Xclkgen.delay_100ns_2.genblk1\[2\].delay_unit VPWR clkgen.delay_100ns_2.genblk1\[2\].and1/X
++ clkgen.delay_100ns_2.genblk1\[2\].mux1/A0 VGND VGND VPWR sky130_mm_sc_hd_dlyPoly5ns
+X_232_ VGND VPWR _239_/A _232_/A VGND VPWR sky130_fd_sc_hd__buf_1
+X_301_ _301_/A _301_/Y VPWR VGND VGND VPWR sky130_fd_sc_hd__inv_2
+XFILLER_6_268 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_18_342 VGND VPWR VGND VPWR sky130_ef_sc_hd__decap_12
+Xedgedetect.dly200cell.genblk1\[23\].and1 VPWR VGND edgedetect.dly200cell.genblk1\[23\].and1/X
++ edgedetect.dly200cell.genblk1\[23\].and1/B _249_/A VGND VPWR sky130_fd_sc_hd__and2_1
+Xclkgen.delay_100ns_3.genblk1\[16\].mux1 VGND VPWR _321_/Y clkgen.delay_100ns_3.genblk1\[16\].and1/B
++ clkgen.delay_100ns_3.genblk1\[16\].mux1/A0 clkgen.delay_100ns_3.genblk1\[17\].and1/B
++ VGND VPWR sky130_fd_sc_hd__mux2_1
+XFILLER_24_301 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_19_30 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_10_65 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_10_54 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_10_43 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_3_249 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_6
+X_215_ _216_/A _227_/A _195_/B _236_/B VGND VPWR VGND VPWR sky130_fd_sc_hd__a21o_2
+XFILLER_15_367 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_2_260 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_21_337 VGND VPWR VGND VPWR sky130_ef_sc_hd__decap_12
+XFILLER_12_359 VGND VPWR VGND VPWR sky130_ef_sc_hd__decap_12
+XPHY_6 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_3
+XFILLER_7_352 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_8
+XFILLER_7_11 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+Xclkgen.delay_100ns_3.genblk1\[1\].and1 VPWR VGND clkgen.delay_100ns_3.genblk1\[1\].and1/X
++ clkgen.delay_100ns_3.genblk1\[1\].and1/B _289_/Y VGND VPWR sky130_fd_sc_hd__and2_1
+XFILLER_12_156 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_3
+Xclkgen.delay_100ns_2.genblk1\[7\].delay_unit VPWR clkgen.delay_100ns_2.genblk1\[7\].and1/X
++ clkgen.delay_100ns_2.genblk1\[7\].mux1/A0 VGND VGND VPWR sky130_mm_sc_hd_dlyPoly5ns
+XFILLER_4_366 VGND VPWR VGND VPWR sky130_ef_sc_hd__decap_12
+XFILLER_1_358 VGND VPWR VGND VPWR sky130_ef_sc_hd__decap_12
+X_394_ _394_/A _394_/Y VPWR VGND VGND VPWR sky130_fd_sc_hd__inv_2
+X_463_ _463_/B _464_/A _463_/A VPWR VGND VGND VPWR sky130_fd_sc_hd__or2_2
+XFILLER_4_89 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_22_273 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_6
+X_377_ _377_/B _378_/A _377_/A VPWR VGND VGND VPWR sky130_fd_sc_hd__or2_2
+X_446_ _446_/X _237_/X _234_/X _243_/X VGND VPWR VGND VPWR sky130_fd_sc_hd__a21o_2
+XFILLER_9_222 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_8
+Xclkgen.delay_100ns_3.genblk1\[10\].delay_unit VPWR clkgen.delay_100ns_3.genblk1\[10\].and1/X
++ clkgen.delay_100ns_3.genblk1\[10\].mux1/A0 VGND VGND VPWR sky130_mm_sc_hd_dlyPoly5ns
+Xclkgen.delay_100ns_1.genblk1\[12\].delay_unit VPWR clkgen.delay_100ns_1.genblk1\[12\].and1/X
++ clkgen.delay_100ns_1.genblk1\[12\].mux1/A0 VGND VGND VPWR sky130_mm_sc_hd_dlyPoly5ns
+X_231_ _232_/A _251_/A _187_/X _234_/A VGND VPWR VGND VPWR sky130_fd_sc_hd__a21o_2
+XFILLER_24_86 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_6
+X_300_ _301_/A _302_/A dlycontrol3[2] _451_/B VGND VPWR VGND VPWR sky130_fd_sc_hd__a21o_2
+XFILLER_10_276 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_3
+XFILLER_1_24 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_18_354 VGND VPWR VGND VPWR sky130_ef_sc_hd__decap_12
+XFILLER_18_332 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_8
+X_429_ _429_/A _429_/Y VPWR VGND VGND VPWR sky130_fd_sc_hd__inv_2
+Xclkgen.delay_100ns_1.genblk1\[7\].mux1 VGND VPWR _400_/Y clkgen.delay_100ns_1.genblk1\[7\].and1/B
++ clkgen.delay_100ns_1.genblk1\[7\].mux1/A0 clkgen.delay_100ns_1.genblk1\[8\].and1/B
++ VGND VPWR sky130_fd_sc_hd__mux2_1
+XFILLER_19_97 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+X_214_ _214_/A _214_/Y VPWR VGND VGND VPWR sky130_fd_sc_hd__inv_2
+XFILLER_21_316 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_21_349 VGND VPWR VGND VPWR sky130_ef_sc_hd__decap_12
+XFILLER_18_195 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_18_184 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_21_98 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_15_132 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XPHY_7 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_3
+XFILLER_23_3 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+Xclkgen.delay_100ns_1.genblk1\[13\].and1 VPWR VGND clkgen.delay_100ns_1.genblk1\[13\].and1/X
++ clkgen.delay_100ns_1.genblk1\[13\].and1/B _413_/Y VGND VPWR sky130_fd_sc_hd__and2_1
+Xedgedetect.dly200cell.genblk1\[19\].mux1 VGND VPWR _239_/Y edgedetect.dly200cell.genblk1\[19\].and1/B
++ edgedetect.dly200cell.genblk1\[19\].mux1/A0 edgedetect.dly200cell.genblk1\[20\].and1/B
++ VGND VPWR sky130_fd_sc_hd__mux2_1
+Xedgedetect.dly200cell.genblk1\[4\].mux1 VGND VPWR _203_/Y edgedetect.dly200cell.genblk1\[4\].and1/B
++ edgedetect.dly200cell.genblk1\[4\].mux1/A0 edgedetect.dly200cell.genblk1\[5\].and1/B
++ VGND VPWR sky130_fd_sc_hd__mux2_1
+XFILLER_16_32 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_3
+XFILLER_12_168 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_8
+XFILLER_4_301 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+Xclkgen.delay_100ns_3.genblk1\[15\].delay_unit VPWR clkgen.delay_100ns_3.genblk1\[15\].and1/X
++ clkgen.delay_100ns_3.genblk1\[15\].mux1/A0 VGND VGND VPWR sky130_mm_sc_hd_dlyPoly5ns
+Xedgedetect.dly200cell.genblk1\[8\].and1 VPWR VGND edgedetect.dly200cell.genblk1\[8\].and1/X
++ edgedetect.dly200cell.genblk1\[8\].and1/B _441_/X VGND VPWR sky130_fd_sc_hd__and2_1
+Xclkgen.delay_100ns_1.genblk1\[17\].delay_unit VPWR clkgen.delay_100ns_1.genblk1\[17\].and1/X
++ clkgen.delay_100ns_1.genblk1\[17\].mux1/A0 VGND VGND VPWR sky130_mm_sc_hd_dlyPoly5ns
+XFILLER_19_290 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_6
+XFILLER_17_249 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_6
+XFILLER_17_205 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+X_462_ _462_/X _463_/A _433_/X _409_/B VGND VPWR VGND VPWR sky130_fd_sc_hd__a21o_2
+X_393_ _394_/A _400_/A _409_/B _388_/A dlycontrol1[2] VGND VPWR VGND VPWR sky130_fd_sc_hd__a31o_2
+XFILLER_23_208 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_22_285 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+X_445_ _445_/X _237_/X _234_/X _240_/X VGND VPWR VGND VPWR sky130_fd_sc_hd__a21o_2
+X_376_ _376_/A _376_/Y VPWR VGND VGND VPWR sky130_fd_sc_hd__inv_2
+Xclkgen.delay_100ns_1.genblk1\[1\].delay_unit VPWR clkgen.delay_100ns_1.genblk1\[1\].and1/X
++ clkgen.delay_100ns_1.genblk1\[1\].mux1/A0 VGND VGND VPWR sky130_mm_sc_hd_dlyPoly5ns
+XFILLER_24_43 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+X_230_ _230_/A _251_/A VPWR VGND VGND VPWR sky130_fd_sc_hd__inv_2
+Xclkgen.delay_100ns_2.genblk1\[5\].mux1 VGND VPWR _348_/A clkgen.delay_100ns_2.genblk1\[5\].and1/B
++ clkgen.delay_100ns_2.genblk1\[5\].mux1/A0 clkgen.delay_100ns_2.genblk1\[6\].and1/B
++ VGND VPWR sky130_fd_sc_hd__mux2_1
+XFILLER_18_366 VGND VPWR VGND VPWR sky130_ef_sc_hd__decap_12
+X_428_ _428_/A _428_/Y VPWR VGND VGND VPWR sky130_fd_sc_hd__inv_2
+X_359_ _359_/A _359_/Y VPWR VGND VGND VPWR sky130_fd_sc_hd__inv_2
+Xclkgen.delay_100ns_2.genblk1\[9\].and1 VPWR VGND clkgen.delay_100ns_2.genblk1\[9\].and1/X
++ clkgen.delay_100ns_2.genblk1\[9\].and1/B _355_/A VGND VPWR sky130_fd_sc_hd__and2_1
+XFILLER_24_336 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_10_78 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_19_108 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_10_89 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_15_336 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+X_213_ _214_/A _227_/A _211_/B _195_/B VGND VPWR VGND VPWR sky130_fd_sc_hd__a21o_2
+XFILLER_2_273 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_6
+XFILLER_18_152 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_3
+XFILLER_18_141 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_2_90 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_3
+XFILLER_24_144 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_21_77 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_11_350 VGND VPWR VGND VPWR sky130_ef_sc_hd__decap_12
+XPHY_8 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_3
+XFILLER_16_3 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_8
+Xedgedetect.dly200cell.genblk1\[11\].delay_unit VPWR edgedetect.dly200cell.genblk1\[11\].and1/X
++ edgedetect.dly200cell.genblk1\[11\].mux1/A0 VGND VGND VPWR sky130_mm_sc_hd_dlyPoly5ns
+Xclkgen.delay_100ns_1.genblk1\[6\].delay_unit VPWR clkgen.delay_100ns_1.genblk1\[6\].and1/X
++ clkgen.delay_100ns_1.genblk1\[6\].mux1/A0 VGND VGND VPWR sky130_mm_sc_hd_dlyPoly5ns
+Xedgedetect.dly200cell.genblk1\[25\].mux1 VGND VPWR _253_/Y edgedetect.dly200cell.genblk1\[25\].and1/B
++ edgedetect.dly200cell.genblk1\[25\].mux1/A0 edgedetect.dly200cell.genblk1\[26\].and1/B
++ VGND VPWR sky130_fd_sc_hd__mux2_1
+Xclkgen.delay_100ns_1.genblk1\[0\].and1 VPWR VGND clkgen.delay_100ns_1.genblk1\[0\].and1/X
++ inbuf_3/X _462_/X VGND VPWR sky130_fd_sc_hd__and2_1
+Xedgedetect.dly200cell.genblk1\[29\].and1 VPWR VGND edgedetect.dly200cell.genblk1\[29\].and1/X
++ edgedetect.dly200cell.genblk1\[29\].and1/B _261_/A VGND VPWR sky130_fd_sc_hd__and2_1
+Xclkgen.delay_100ns_2.genblk1\[10\].mux1 VGND VPWR _358_/Y clkgen.delay_100ns_2.genblk1\[9\].mux1/X
++ clkgen.delay_100ns_2.genblk1\[10\].mux1/A0 clkgen.delay_100ns_2.genblk1\[11\].and1/B
++ VGND VPWR sky130_fd_sc_hd__mux2_1
+X_461_ dlycontrol2[4] _351_/A _360_/X _461_/X VGND VPWR VGND VPWR sky130_fd_sc_hd__o21a_2
+XFILLER_25_294 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+X_392_ VGND VPWR _400_/A _392_/A VGND VPWR sky130_fd_sc_hd__buf_1
+Xclkgen.delay_100ns_2.genblk1\[14\].and1 VPWR VGND clkgen.delay_100ns_2.genblk1\[14\].and1/X
++ clkgen.delay_100ns_2.genblk1\[14\].and1/B _368_/A VGND VPWR sky130_fd_sc_hd__and2_1
+XFILLER_22_264 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_1_179 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_6
+X_444_ _444_/X _237_/X _234_/X _236_/X VGND VPWR VGND VPWR sky130_fd_sc_hd__a21o_2
+Xedgedetect.dly200cell.genblk1\[12\].and1 VPWR VGND edgedetect.dly200cell.genblk1\[12\].and1/X
++ edgedetect.dly200cell.genblk1\[12\].and1/B _222_/A VGND VPWR sky130_fd_sc_hd__and2_1
+X_375_ _377_/A _374_/Y _377_/B _376_/A VGND VPWR VGND VPWR sky130_fd_sc_hd__a21oi_2
+Xclkgen.delay_100ns_3.genblk1\[3\].mux1 VGND VPWR _292_/Y clkgen.delay_100ns_3.genblk1\[3\].and1/B
++ clkgen.delay_100ns_3.genblk1\[3\].mux1/A0 clkgen.delay_100ns_3.genblk1\[4\].and1/B
++ VGND VPWR sky130_fd_sc_hd__mux2_1
+Xclkgen.delay_100ns_3.genblk1\[7\].and1 VPWR VGND clkgen.delay_100ns_3.genblk1\[7\].and1/X
++ clkgen.delay_100ns_3.genblk1\[7\].and1/B _302_/A VGND VPWR sky130_fd_sc_hd__and2_1
+XFILLER_1_15 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+X_427_ VGND VPWR _428_/A _427_/A VGND VPWR sky130_fd_sc_hd__buf_1
+X_358_ _359_/A _457_/B dlycontrol2[3] _358_/Y VGND VPWR VGND VPWR sky130_fd_sc_hd__a21oi_2
+X_289_ _289_/A _289_/Y VPWR VGND VGND VPWR sky130_fd_sc_hd__inv_2
+XFILLER_5_293 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_24_315 VGND VPWR VGND VPWR sky130_ef_sc_hd__decap_12
+Xedgedetect.dly200cell.genblk1\[16\].delay_unit VPWR edgedetect.dly200cell.genblk1\[16\].and1/X
++ edgedetect.dly200cell.genblk1\[16\].mux1/A0 VGND VGND VPWR sky130_mm_sc_hd_dlyPoly5ns
+X_212_ _209_/A _212_/Y _211_/X _227_/A VGND VPWR VGND VPWR sky130_fd_sc_hd__o21ai_2
+XFILLER_24_167 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_6
+XFILLER_21_89 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XPHY_9 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_3
+XFILLER_11_373 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_6
+XFILLER_11_362 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_8
+XFILLER_7_311 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_7_69 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_12_137 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_20_192 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_7_163 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_7_196 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+Xedgedetect.dly200cell.genblk1\[31\].mux1 VGND VPWR _230_/A edgedetect.dly200cell.genblk1\[31\].and1/B
++ edgedetect.dly200cell.genblk1\[31\].mux1/A0 edgedetect.dly200cell.genblk1\[32\].and1/B
++ VGND VPWR sky130_fd_sc_hd__mux2_1
+X_460_ _460_/X _359_/A dlycontrol2[3] _457_/B VGND VPWR VGND VPWR sky130_fd_sc_hd__a21o_2
+X_391_ dlycontrol1[3] enable_dlycontrol dlycontrol1[4] _392_/A VGND VPWR VGND VPWR
++ sky130_fd_sc_hd__o21a_2
+Xedgedetect.dly200cell.genblk1\[35\].and1 VPWR VGND edgedetect.dly200cell.genblk1\[35\].and1/X
++ edgedetect.dly200cell.genblk1\[35\].and1/B _274_/A VGND VPWR sky130_fd_sc_hd__and2_1
+XFILLER_16_273 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_6
+Xedgedetect.dly200cell.genblk1\[23\].delay_unit VPWR edgedetect.dly200cell.genblk1\[23\].and1/X
++ edgedetect.dly200cell.genblk1\[23\].mux1/A0 VGND VGND VPWR sky130_mm_sc_hd_dlyPoly5ns
+X_374_ _374_/Y dlycontrol2[0] dlycontrol2[1] VGND VPWR VGND VPWR sky130_fd_sc_hd__nand2_2
+X_443_ _443_/X _239_/A dlycontrol4[1] _234_/X VGND VPWR VGND VPWR sky130_fd_sc_hd__a21o_2
+Xclkgen.delay_100ns_1.genblk1\[15\].mux1 VGND VPWR _426_/A clkgen.delay_100ns_1.genblk1\[15\].and1/B
++ clkgen.delay_100ns_1.genblk1\[15\].mux1/A0 clkgen.delay_100ns_1.genblk1\[16\].and1/B
++ VGND VPWR sky130_fd_sc_hd__mux2_1
+Xclkgen.delay_100ns_1.genblk1\[19\].and1 VPWR VGND clkgen.delay_100ns_1.genblk1\[19\].and1/X
++ clkgen.delay_100ns_1.genblk1\[19\].and1/B _428_/Y VGND VPWR sky130_fd_sc_hd__and2_1
+Xclkgen.delay_100ns_3.genblk1\[11\].mux1 VGND VPWR _310_/Y clkgen.delay_100ns_3.genblk1\[11\].and1/B
++ clkgen.delay_100ns_3.genblk1\[11\].mux1/A0 clkgen.delay_100ns_3.genblk1\[12\].and1/B
++ VGND VPWR sky130_fd_sc_hd__mux2_1
+XFILLER_6_3 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_8
+X_426_ _426_/B _427_/A _426_/A VPWR VGND VGND VPWR sky130_fd_sc_hd__or2_2
+X_357_ VGND VPWR _359_/A _357_/A VGND VPWR sky130_fd_sc_hd__buf_1
+Xclkgen.delay_100ns_3.genblk1\[15\].and1 VPWR VGND clkgen.delay_100ns_3.genblk1\[15\].and1/X
++ clkgen.delay_100ns_3.genblk1\[15\].and1/B _317_/Y VGND VPWR sky130_fd_sc_hd__and2_1
+X_288_ _433_/A _289_/A _287_/X _283_/X VGND VPWR VGND VPWR sky130_fd_sc_hd__o21ai_2
+XFILLER_24_327 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_3
+X_211_ _211_/B _211_/X dlycontrol4[0] VPWR VGND VGND VPWR sky130_fd_sc_hd__or2_2
+XFILLER_25_9 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+X_409_ VPWR VGND dlycontrol1[2] _409_/X _409_/B VGND VPWR sky130_fd_sc_hd__and2_2
+XFILLER_14_371 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_8
+XFILLER_24_102 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_20_330 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+Xedgedetect.dly200cell.genblk1\[28\].delay_unit VPWR edgedetect.dly200cell.genblk1\[28\].and1/X
++ edgedetect.dly200cell.genblk1\[28\].mux1/A0 VGND VGND VPWR sky130_mm_sc_hd_dlyPoly5ns
+XFILLER_4_315 VGND VPWR VGND VPWR sky130_ef_sc_hd__decap_12
+Xedgedetect.dly200cell.genblk1\[30\].delay_unit VPWR edgedetect.dly200cell.genblk1\[30\].and1/X
++ edgedetect.dly200cell.genblk1\[30\].mux1/A0 VGND VGND VPWR sky130_mm_sc_hd_dlyPoly5ns
+Xedgedetect.dly200cell.genblk1\[1\].delay_unit VPWR edgedetect.dly200cell.genblk1\[1\].and1/X
++ edgedetect.dly200cell.genblk1\[1\].mux1/A0 VGND VGND VPWR sky130_mm_sc_hd_dlyPoly5ns
+XFILLER_1_307 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_3
+XFILLER_25_274 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+X_390_ _463_/A _390_/Y VPWR VGND VGND VPWR sky130_fd_sc_hd__inv_2
+XFILLER_0_373 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_6
+XFILLER_16_285 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_13_47 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_8
+X_373_ dlycontrol2[2] _377_/B dlycontrol2[3] VGND VPWR VGND VPWR sky130_fd_sc_hd__nor2_2
+X_442_ _442_/X _239_/A _185_/X _433_/X dlycontrol4[4] VGND VPWR VGND VPWR sky130_fd_sc_hd__a31o_2
+XFILLER_13_233 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_6
+XFILLER_9_237 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+Xclkgen.delay_100ns_2.genblk1\[14\].delay_unit VPWR clkgen.delay_100ns_2.genblk1\[14\].and1/X
++ clkgen.delay_100ns_2.genblk1\[14\].mux1/A0 VGND VGND VPWR sky130_mm_sc_hd_dlyPoly5ns
+XFILLER_24_57 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_10_225 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_8
+Xclkgen.delay_100ns_1.genblk1\[2\].mux1 VGND VPWR _389_/Y clkgen.delay_100ns_1.genblk1\[2\].and1/B
++ clkgen.delay_100ns_1.genblk1\[2\].mux1/A0 clkgen.delay_100ns_1.genblk1\[3\].and1/B
++ VGND VPWR sky130_fd_sc_hd__mux2_1
+XFILLER_10_269 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_18_325 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+X_425_ _425_/A _425_/Y VPWR VGND VGND VPWR sky130_fd_sc_hd__inv_2
+X_287_ dlycontrol3[1] _287_/X dlycontrol3[2] VPWR VGND VGND VPWR sky130_fd_sc_hd__or2_2
+X_356_ dlycontrol2[2] _351_/A dlycontrol2[4] _357_/A VGND VPWR VGND VPWR sky130_fd_sc_hd__o21a_2
+Xclkgen.delay_100ns_1.genblk1\[6\].and1 VPWR VGND clkgen.delay_100ns_1.genblk1\[6\].and1/X
++ clkgen.delay_100ns_1.genblk1\[6\].and1/B _399_/A VGND VPWR sky130_fd_sc_hd__and2_1
+Xedgedetect.dly200cell.genblk1\[35\].delay_unit VPWR edgedetect.dly200cell.genblk1\[35\].and1/X
++ edgedetect.dly200cell.genblk1\[35\].mux1/A0 VGND VGND VPWR sky130_mm_sc_hd_dlyPoly5ns
+X_210_ VGND VPWR _227_/A _210_/A VGND VPWR sky130_fd_sc_hd__buf_1
+Xedgedetect.dly200cell.genblk1\[6\].delay_unit VPWR edgedetect.dly200cell.genblk1\[6\].and1/X
++ edgedetect.dly200cell.genblk1\[6\].mux1/A0 VGND VGND VPWR sky130_mm_sc_hd_dlyPoly5ns
+XFILLER_2_243 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_8
+Xclkgen.delay_100ns_2.genblk1\[16\].mux1 VGND VPWR _370_/Y clkgen.delay_100ns_2.genblk1\[16\].and1/B
++ clkgen.delay_100ns_2.genblk1\[16\].mux1/A0 clkgen.delay_100ns_2.genblk1\[17\].and1/B
++ VGND VPWR sky130_fd_sc_hd__mux2_1
+Xclkgen.delay_100ns_3.genblk1\[4\].delay_unit VPWR clkgen.delay_100ns_3.genblk1\[4\].and1/X
++ clkgen.delay_100ns_3.genblk1\[4\].mux1/A0 VGND VGND VPWR sky130_mm_sc_hd_dlyPoly5ns
+X_408_ _408_/A _408_/Y VPWR VGND VGND VPWR sky130_fd_sc_hd__inv_2
+X_339_ dlycontrol2[0] _457_/B _388_/A dlycontrol2[1] VPWR VGND VGND VPWR sky130_fd_sc_hd__and3_2
+XFILLER_20_342 VGND VPWR VGND VPWR sky130_ef_sc_hd__decap_12
+XANTENNA_10 _378_/A VGND VPWR VPWR VGND sky130_fd_sc_hd__diode_2
+Xedgedetect.dly200cell.genblk1\[14\].mux1 VGND VPWR _226_/Y edgedetect.dly200cell.genblk1\[14\].and1/B
++ edgedetect.dly200cell.genblk1\[14\].mux1/A0 edgedetect.dly200cell.genblk1\[15\].and1/B
++ VGND VPWR sky130_fd_sc_hd__mux2_1
+XFILLER_15_114 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_7_368 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_7_49 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+Xedgedetect.dly200cell.genblk1\[18\].and1 VPWR VGND edgedetect.dly200cell.genblk1\[18\].and1/X
++ edgedetect.dly200cell.genblk1\[18\].and1/B _444_/X VGND VPWR sky130_fd_sc_hd__and2_1
+Xclkgen.delay_100ns_3.genblk1\[9\].mux1 VGND VPWR _306_/Y clkgen.delay_100ns_3.genblk1\[9\].and1/B
++ clkgen.delay_100ns_3.genblk1\[9\].mux1/A0 clkgen.delay_100ns_3.genblk1\[9\].mux1/X
++ VGND VPWR sky130_fd_sc_hd__mux2_1
+Xedgedetect.dly200cell.genblk1\[3\].and1 VPWR VGND edgedetect.dly200cell.genblk1\[3\].and1/X
++ edgedetect.dly200cell.genblk1\[3\].and1/B _201_/A VGND VPWR sky130_fd_sc_hd__and2_1
+XFILLER_4_327 VGND VPWR VGND VPWR sky130_ef_sc_hd__decap_12
+Xclkgen.delay_100ns_2.genblk1\[19\].delay_unit VPWR clkgen.delay_100ns_2.genblk1\[19\].and1/X
++ clkgen.delay_100ns_2.genblk1\[19\].mux1/A0 VGND VGND VPWR sky130_mm_sc_hd_dlyPoly5ns
+XFILLER_7_176 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_7_132 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_6
+XFILLER_14_3 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_22_234 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_8_8 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+X_441_ _227_/A _209_/A _211_/X _441_/X VGND VPWR VGND VPWR sky130_fd_sc_hd__o21a_2
+Xclkgen.delay_100ns_3.genblk1\[9\].delay_unit VPWR clkgen.delay_100ns_3.genblk1\[9\].and1/X
++ clkgen.delay_100ns_3.genblk1\[9\].mux1/A0 VGND VGND VPWR sky130_mm_sc_hd_dlyPoly5ns
+X_372_ _372_/A _372_/Y VPWR VGND VGND VPWR sky130_fd_sc_hd__inv_2
+Xclkgen.delay_100ns_2.genblk1\[0\].mux1 VGND VPWR _335_/Y _432_/Y clkgen.delay_100ns_2.genblk1\[0\].mux1/A0
++ clkgen.delay_100ns_2.genblk1\[1\].and1/B VGND VPWR sky130_fd_sc_hd__mux2_1
+XFILLER_5_93 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+Xclkgen.delay_100ns_2.genblk1\[4\].and1 VPWR VGND clkgen.delay_100ns_2.genblk1\[4\].and1/X
++ clkgen.delay_100ns_2.genblk1\[4\].and1/B _345_/A VGND VPWR sky130_fd_sc_hd__and2_1
+X_424_ _426_/A _423_/Y _426_/B _425_/A VGND VPWR VGND VPWR sky130_fd_sc_hd__a21oi_2
+X_286_ _451_/A _311_/B _184_/X _286_/Y VGND VPWR VGND VPWR sky130_fd_sc_hd__a21oi_2
+X_355_ _355_/A _355_/Y VPWR VGND VGND VPWR sky130_fd_sc_hd__inv_2
+XFILLER_10_16 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_23_340 VGND VPWR VGND VPWR sky130_ef_sc_hd__decap_12
+Xedgedetect.dly200cell.genblk1\[37\].mux1 VGND VPWR _278_/Y edgedetect.dly200cell.genblk1\[37\].and1/B
++ edgedetect.dly200cell.genblk1\[37\].mux1/A0 edgedetect.dly200cell.genblk1\[38\].and1/B
++ VGND VPWR sky130_fd_sc_hd__mux2_1
+XFILLER_15_329 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_23_373 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_6
+XFILLER_2_299 VGND VPWR VGND VPWR sky130_ef_sc_hd__decap_12
+XFILLER_18_167 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_8
+XFILLER_18_156 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_18_112 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_18_101 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+X_407_ _408_/A _463_/B dlycontrol1[3] _407_/Y VGND VPWR VGND VPWR sky130_fd_sc_hd__a21oi_2
+X_338_ _338_/A _338_/Y VPWR VGND VGND VPWR sky130_fd_sc_hd__inv_2
+X_269_ _414_/A dlycontrol4[5] _243_/A dlycontrol4[4] _270_/A VPWR VGND VGND VPWR sky130_fd_sc_hd__o211a_2
+XFILLER_24_115 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_20_354 VGND VPWR VGND VPWR sky130_ef_sc_hd__decap_12
+XFILLER_21_37 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XANTENNA_11 ANTENNA_11/DIODE VGND VPWR VPWR VGND sky130_fd_sc_hd__diode_2
+XFILLER_11_343 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+Xedgedetect.dly200cell.genblk1\[20\].mux1 VGND VPWR _241_/Y edgedetect.dly200cell.genblk1\[20\].and1/B
++ edgedetect.dly200cell.genblk1\[20\].mux1/A0 edgedetect.dly200cell.genblk1\[21\].and1/B
++ VGND VPWR sky130_fd_sc_hd__mux2_1
+Xedgedetect.dly200cell.genblk1\[24\].and1 VPWR VGND edgedetect.dly200cell.genblk1\[24\].and1/X
++ edgedetect.dly200cell.genblk1\[24\].and1/B _448_/X VGND VPWR sky130_fd_sc_hd__and2_1
+XFILLER_20_151 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+Xclkgen.delay_100ns_3.genblk1\[17\].mux1 VGND VPWR _323_/A clkgen.delay_100ns_3.genblk1\[17\].and1/B
++ clkgen.delay_100ns_3.genblk1\[17\].mux1/A0 clkgen.delay_100ns_3.genblk1\[18\].and1/B
++ VGND VPWR sky130_fd_sc_hd__mux2_1
+XFILLER_22_80 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_19_240 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_8
+XFILLER_25_287 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_25_265 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_25_243 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_4_136 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_8
+XFILLER_4_125 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_4_114 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_4_103 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_0_342 VGND VPWR VGND VPWR sky130_ef_sc_hd__decap_12
+X_440_ _440_/X _209_/A _433_/X _207_/X VGND VPWR VGND VPWR sky130_fd_sc_hd__a21o_2
+X_371_ _366_/Y _372_/A _336_/X dlycontrol2[3] VGND VPWR VGND VPWR sky130_fd_sc_hd__o21ai_2
+Xclkgen.delay_100ns_3.genblk1\[2\].and1 VPWR VGND clkgen.delay_100ns_3.genblk1\[2\].and1/X
++ clkgen.delay_100ns_3.genblk1\[2\].and1/B _452_/X VGND VPWR sky130_fd_sc_hd__and2_1
+XFILLER_0_194 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_12_290 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_18_316 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+X_423_ _423_/Y dlycontrol1[0] dlycontrol1[1] VGND VPWR VGND VPWR sky130_fd_sc_hd__nand2_2
+X_354_ dlycontrol2[0] _355_/A _354_/Y _433_/A dlycontrol2[3] VPWR VGND VGND VPWR sky130_fd_sc_hd__a31oi_2
+X_285_ VGND VPWR _451_/A _285_/A VGND VPWR sky130_fd_sc_hd__buf_1
+XFILLER_5_286 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_24_308 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_19_59 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_3
+XFILLER_23_352 VGND VPWR VGND VPWR sky130_ef_sc_hd__decap_12
+XFILLER_2_234 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+Xclkgen.delay_100ns_2.genblk1\[3\].delay_unit VPWR clkgen.delay_100ns_2.genblk1\[3\].and1/X
++ clkgen.delay_100ns_2.genblk1\[3\].mux1/A0 VGND VGND VPWR sky130_mm_sc_hd_dlyPoly5ns
+X_406_ VGND VPWR _408_/A _406_/A VGND VPWR sky130_fd_sc_hd__buf_1
+X_337_ _433_/A _338_/A _336_/X _332_/X VGND VPWR VGND VPWR sky130_fd_sc_hd__o21ai_2
+X_268_ VGND VPWR _414_/A enable_dlycontrol VGND VPWR sky130_fd_sc_hd__buf_1
+X_199_ _236_/B dlycontrol4[2] dlycontrol4[1] dlycontrol4[0] VGND VPWR VGND VPWR sky130_fd_sc_hd__a21o_2
+XANTENNA_12 start_conv VGND VPWR VPWR VGND sky130_fd_sc_hd__diode_2
+XFILLER_20_366 VGND VPWR VGND VPWR sky130_ef_sc_hd__decap_12
+XFILLER_7_304 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_6
+XFILLER_11_82 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_16_16 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_16_38 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_12_108 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_20_163 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+Xclkgen.delay_100ns_1.genblk1\[8\].mux1 VGND VPWR _403_/Y clkgen.delay_100ns_1.genblk1\[8\].and1/B
++ clkgen.delay_100ns_1.genblk1\[8\].mux1/A0 clkgen.delay_100ns_1.genblk1\[9\].and1/B
++ VGND VPWR sky130_fd_sc_hd__mux2_1
+XFILLER_11_152 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_6
+XFILLER_3_373 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_6
+Xedgedetect.dly200cell.genblk1\[30\].and1 VPWR VGND edgedetect.dly200cell.genblk1\[30\].and1/X
++ edgedetect.dly200cell.genblk1\[30\].and1/B _263_/A VGND VPWR sky130_fd_sc_hd__and2_1
+XFILLER_0_354 VGND VPWR VGND VPWR sky130_ef_sc_hd__decap_12
+Xclkgen.delay_100ns_1.genblk1\[10\].mux1 VGND VPWR _407_/Y clkgen.delay_100ns_1.genblk1\[9\].mux1/X
++ clkgen.delay_100ns_1.genblk1\[10\].mux1/A0 clkgen.delay_100ns_1.genblk1\[11\].and1/B
++ VGND VPWR sky130_fd_sc_hd__mux2_1
+Xclkgen.delay_100ns_2.genblk1\[8\].delay_unit VPWR clkgen.delay_100ns_2.genblk1\[8\].and1/X
++ clkgen.delay_100ns_2.genblk1\[8\].mux1/A0 VGND VGND VPWR sky130_mm_sc_hd_dlyPoly5ns
+Xclkgen.delay_100ns_1.genblk1\[14\].and1 VPWR VGND clkgen.delay_100ns_1.genblk1\[14\].and1/X
++ clkgen.delay_100ns_1.genblk1\[14\].and1/B _417_/A VGND VPWR sky130_fd_sc_hd__and2_1
+XFILLER_13_258 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_6
+X_370_ _370_/A _370_/Y VPWR VGND VGND VPWR sky130_fd_sc_hd__inv_2
+Xedgedetect.dly200cell.genblk1\[5\].mux1 VGND VPWR _205_/Y edgedetect.dly200cell.genblk1\[5\].and1/B
++ edgedetect.dly200cell.genblk1\[5\].mux1/A0 edgedetect.dly200cell.genblk1\[6\].and1/B
++ VGND VPWR sky130_fd_sc_hd__mux2_1
+Xclkgen.delay_100ns_3.genblk1\[10\].and1 VPWR VGND clkgen.delay_100ns_3.genblk1\[10\].and1/X
++ clkgen.delay_100ns_3.genblk1\[9\].mux1/X _454_/X VGND VPWR sky130_fd_sc_hd__and2_1
+XFILLER_24_16 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+Xedgedetect.dly200cell.genblk1\[9\].and1 VPWR VGND edgedetect.dly200cell.genblk1\[9\].and1/X
++ edgedetect.dly200cell.genblk1\[9\].and1/B _214_/A VGND VPWR sky130_fd_sc_hd__and2_1
+X_422_ dlycontrol1[2] _426_/B dlycontrol1[3] VGND VPWR VGND VPWR sky130_fd_sc_hd__nor2_2
+X_284_ dlycontrol3[2] _414_/A _283_/X _285_/A VGND VPWR VGND VPWR sky130_fd_sc_hd__o21a_2
+X_353_ VGND VPWR _355_/A _353_/A VGND VPWR sky130_fd_sc_hd__buf_1
+XFILLER_17_361 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_8
+XFILLER_23_364 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_8
+XFILLER_2_213 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+X_267_ _267_/A _267_/Y VPWR VGND VGND VPWR sky130_fd_sc_hd__inv_2
+XFILLER_25_81 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+X_336_ dlycontrol2[1] _336_/X dlycontrol2[2] VPWR VGND VGND VPWR sky130_fd_sc_hd__or2_2
+X_405_ dlycontrol1[2] _400_/A dlycontrol1[4] _406_/A VGND VPWR VGND VPWR sky130_fd_sc_hd__o21a_2
+X_198_ _209_/A _211_/B _184_/X _198_/Y VGND VPWR VGND VPWR sky130_fd_sc_hd__a21oi_2
+Xclkgen.delay_100ns_3.genblk1\[11\].delay_unit VPWR clkgen.delay_100ns_3.genblk1\[11\].and1/X
++ clkgen.delay_100ns_3.genblk1\[11\].mux1/A0 VGND VGND VPWR sky130_mm_sc_hd_dlyPoly5ns
+Xclkgen.delay_100ns_1.genblk1\[13\].delay_unit VPWR clkgen.delay_100ns_1.genblk1\[13\].and1/X
++ clkgen.delay_100ns_1.genblk1\[13\].mux1/A0 VGND VGND VPWR sky130_mm_sc_hd_dlyPoly5ns
+XFILLER_23_194 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_11_94 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_6
+XFILLER_21_109 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+Xclkgen.delay_100ns_2.genblk1\[6\].mux1 VGND VPWR _350_/Y clkgen.delay_100ns_2.genblk1\[6\].and1/B
++ clkgen.delay_100ns_2.genblk1\[6\].mux1/A0 clkgen.delay_100ns_2.genblk1\[7\].and1/B
++ VGND VPWR sky130_fd_sc_hd__mux2_1
+X_319_ _319_/A _319_/Y VPWR VGND VGND VPWR sky130_fd_sc_hd__inv_2
+XFILLER_20_120 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_8
+XFILLER_4_308 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_25_234 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_0_311 VGND VPWR VGND VPWR sky130_ef_sc_hd__decap_12
+XFILLER_0_366 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_6
+XFILLER_16_212 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_3_160 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_3_182 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_12_3 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_3
+XFILLER_13_18 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_13_204 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_0_141 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_6
+Xclkgen.delay_100ns_3.genblk1\[16\].delay_unit VPWR clkgen.delay_100ns_3.genblk1\[16\].and1/X
++ clkgen.delay_100ns_3.genblk1\[16\].mux1/A0 VGND VGND VPWR sky130_mm_sc_hd_dlyPoly5ns
+Xclkgen.delay_100ns_1.genblk1\[18\].delay_unit VPWR clkgen.delay_100ns_1.genblk1\[18\].and1/X
++ clkgen.delay_100ns_1.genblk1\[18\].mux1/A0 VGND VGND VPWR sky130_mm_sc_hd_dlyPoly5ns
+XFILLER_8_274 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_5_63 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_6
+Xedgedetect.dly200cell.genblk1\[26\].mux1 VGND VPWR _255_/Y edgedetect.dly200cell.genblk1\[26\].and1/B
++ edgedetect.dly200cell.genblk1\[26\].mux1/A0 edgedetect.dly200cell.genblk1\[27\].and1/B
++ VGND VPWR sky130_fd_sc_hd__mux2_1
+Xclkgen.delay_100ns_1.genblk1\[1\].and1 VPWR VGND clkgen.delay_100ns_1.genblk1\[1\].and1/X
++ clkgen.delay_100ns_1.genblk1\[1\].and1/B _387_/Y VGND VPWR sky130_fd_sc_hd__and2_1
+X_421_ _421_/A _421_/Y VPWR VGND VGND VPWR sky130_fd_sc_hd__inv_2
+XFILLER_18_307 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+X_283_ dlycontrol3[4] _283_/X dlycontrol3[3] VPWR VGND VGND VPWR sky130_fd_sc_hd__or2_2
+XFILLER_14_94 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_8
+XFILLER_14_50 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+X_352_ dlycontrol2[4] _351_/A _336_/X _353_/A VGND VPWR VGND VPWR sky130_fd_sc_hd__o21a_2
+XFILLER_5_244 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+Xclkgen.delay_100ns_2.genblk1\[11\].mux1 VGND VPWR _359_/Y clkgen.delay_100ns_2.genblk1\[11\].and1/B
++ clkgen.delay_100ns_2.genblk1\[11\].mux1/A0 clkgen.delay_100ns_2.genblk1\[12\].and1/B
++ VGND VPWR sky130_fd_sc_hd__mux2_1
+XFILLER_17_373 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_6
+Xclkgen.delay_100ns_2.genblk1\[15\].and1 VPWR VGND clkgen.delay_100ns_2.genblk1\[15\].and1/X
++ clkgen.delay_100ns_2.genblk1\[15\].and1/B _366_/Y VGND VPWR sky130_fd_sc_hd__and2_1
+XFILLER_2_225 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+Xclkgen.delay_100ns_1.genblk1\[2\].delay_unit VPWR clkgen.delay_100ns_1.genblk1\[2\].and1/X
++ clkgen.delay_100ns_1.genblk1\[2\].mux1/A0 VGND VGND VPWR sky130_mm_sc_hd_dlyPoly5ns
+X_404_ _404_/A _404_/Y VPWR VGND VGND VPWR sky130_fd_sc_hd__inv_2
+XFILLER_14_332 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+X_197_ VGND VPWR _209_/A _438_/A VGND VPWR sky130_fd_sc_hd__buf_1
+X_266_ _267_/A _251_/X dlycontrol4[0] _266_/Y VGND VPWR VGND VPWR sky130_fd_sc_hd__a21oi_2
+X_335_ _457_/A _360_/B _184_/X _335_/Y VGND VPWR VGND VPWR sky130_fd_sc_hd__a21oi_2
+Xedgedetect.dly200cell.genblk1\[13\].and1 VPWR VGND edgedetect.dly200cell.genblk1\[13\].and1/X
++ edgedetect.dly200cell.genblk1\[13\].and1/B _224_/A VGND VPWR sky130_fd_sc_hd__and2_1
+XFILLER_17_192 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+Xclkgen.delay_100ns_3.genblk1\[4\].mux1 VGND VPWR _296_/Y clkgen.delay_100ns_3.genblk1\[4\].and1/B
++ clkgen.delay_100ns_3.genblk1\[4\].mux1/A0 clkgen.delay_100ns_3.genblk1\[5\].and1/B
++ VGND VPWR sky130_fd_sc_hd__mux2_1
+Xclkgen.delay_100ns_3.genblk1\[8\].and1 VPWR VGND clkgen.delay_100ns_3.genblk1\[8\].and1/X
++ clkgen.delay_100ns_3.genblk1\[8\].and1/B _453_/X VGND VPWR sky130_fd_sc_hd__and2_1
+XFILLER_14_184 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_6
+XFILLER_14_173 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+X_249_ _249_/A _249_/Y VPWR VGND VGND VPWR sky130_fd_sc_hd__inv_2
+X_318_ _319_/A _317_/Y _298_/B dlycontrol3[3] dlycontrol3[0] VGND VPWR VGND VPWR sky130_fd_sc_hd__a31o_2
+XFILLER_22_72 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_22_94 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_11_198 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_8
+XFILLER_7_103 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_21_8 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_19_276 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_25_213 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_25_202 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_0_323 VGND VPWR VGND VPWR sky130_ef_sc_hd__decap_12
+XFILLER_3_194 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_22_227 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+Xedgedetect.dly200cell.genblk1\[12\].delay_unit VPWR edgedetect.dly200cell.genblk1\[12\].and1/X
++ edgedetect.dly200cell.genblk1\[12\].mux1/A0 VGND VGND VPWR sky130_mm_sc_hd_dlyPoly5ns
+Xclkgen.delay_100ns_1.genblk1\[7\].delay_unit VPWR clkgen.delay_100ns_1.genblk1\[7\].and1/X
++ clkgen.delay_100ns_1.genblk1\[7\].mux1/A0 VGND VGND VPWR sky130_mm_sc_hd_dlyPoly5ns
+XFILLER_21_282 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_12_260 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+X_351_ _351_/A _351_/Y VPWR VGND VGND VPWR sky130_fd_sc_hd__inv_2
+X_420_ _415_/Y _421_/A _385_/X dlycontrol1[3] VGND VPWR VGND VPWR sky130_fd_sc_hd__o21ai_2
+Xedgedetect.dly200cell.genblk1\[32\].mux1 VGND VPWR _266_/Y edgedetect.dly200cell.genblk1\[32\].and1/B
++ edgedetect.dly200cell.genblk1\[32\].mux1/A0 ANTENNA_11/DIODE VGND VPWR sky130_fd_sc_hd__mux2_1
+X_282_ dlycontrol3[1] _311_/B dlycontrol3[0] VPWR VGND VGND VPWR sky130_fd_sc_hd__or2_2
+XFILLER_5_256 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_17_330 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+Xedgedetect.dly200cell.genblk1\[36\].and1 VPWR VGND edgedetect.dly200cell.genblk1\[36\].and1/X
++ edgedetect.dly200cell.genblk1\[36\].and1/B _276_/A VGND VPWR sky130_fd_sc_hd__and2_1
+XFILLER_2_204 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XPHY_50 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_3
+X_403_ dlycontrol1[0] _404_/A _403_/Y _433_/A dlycontrol1[3] VPWR VGND VGND VPWR sky130_fd_sc_hd__a31oi_2
+X_334_ VGND VPWR _457_/A _334_/A VGND VPWR sky130_fd_sc_hd__buf_1
+X_265_ VGND VPWR _267_/A _265_/A VGND VPWR sky130_fd_sc_hd__buf_1
+X_196_ VGND VPWR _438_/A _196_/A VGND VPWR sky130_fd_sc_hd__buf_1
+XFILLER_1_270 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_2_32 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_6
+Xclkgen.delay_100ns_1.genblk1\[16\].mux1 VGND VPWR _419_/Y clkgen.delay_100ns_1.genblk1\[16\].and1/B
++ clkgen.delay_100ns_1.genblk1\[16\].mux1/A0 clkgen.delay_100ns_1.genblk1\[17\].and1/B
++ VGND VPWR sky130_fd_sc_hd__mux2_1
+XFILLER_11_336 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_11_41 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_2_3 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_8
+XFILLER_11_63 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_3
+Xclkgen.delay_100ns_3.genblk1\[12\].mux1 VGND VPWR _312_/Y clkgen.delay_100ns_3.genblk1\[12\].and1/B
++ clkgen.delay_100ns_3.genblk1\[12\].mux1/A0 clkgen.delay_100ns_3.genblk1\[13\].and1/B
++ VGND VPWR sky130_fd_sc_hd__mux2_1
+X_317_ _328_/A _317_/Y VPWR VGND VGND VPWR sky130_fd_sc_hd__inv_2
+X_248_ _249_/A _207_/X _234_/X _248_/Y VGND VPWR VGND VPWR sky130_fd_sc_hd__a21oi_2
+Xedgedetect.dly200cell.genblk1\[17\].delay_unit VPWR edgedetect.dly200cell.genblk1\[17\].and1/X
++ edgedetect.dly200cell.genblk1\[17\].mux1/A0 VGND VGND VPWR sky130_mm_sc_hd_dlyPoly5ns
+Xclkgen.delay_100ns_3.genblk1\[16\].and1 VPWR VGND clkgen.delay_100ns_3.genblk1\[16\].and1/X
++ clkgen.delay_100ns_3.genblk1\[16\].and1/B _321_/A VGND VPWR sky130_fd_sc_hd__and2_1
+XFILLER_25_225 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_0_335 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_6
+XFILLER_3_173 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_0_132 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_8_287 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_8_265 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+X_350_ _350_/A _350_/Y VPWR VGND VGND VPWR sky130_fd_sc_hd__inv_2
+X_281_ _281_/A _281_/Y VPWR VGND VGND VPWR sky130_fd_sc_hd__inv_2
+XFILLER_5_235 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+Xedgedetect.dly200cell.genblk1\[24\].delay_unit VPWR edgedetect.dly200cell.genblk1\[24\].and1/X
++ edgedetect.dly200cell.genblk1\[24\].mux1/A0 VGND VGND VPWR sky130_mm_sc_hd_dlyPoly5ns
+XFILLER_23_301 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+X_402_ VGND VPWR _404_/A _402_/A VGND VPWR sky130_fd_sc_hd__buf_1
+X_264_ _265_/A dlycontrol4[4] _243_/A _251_/A _211_/B VGND VPWR VGND VPWR sky130_fd_sc_hd__o31a_2
+XPHY_51 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_3
+XPHY_40 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_3
+X_333_ dlycontrol2[2] _414_/A _332_/X _334_/A VGND VPWR VGND VPWR sky130_fd_sc_hd__o21a_2
+X_195_ _195_/B _196_/A _210_/A VPWR VGND VGND VPWR sky130_fd_sc_hd__or2_2
+XFILLER_2_77 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_20_337 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+X_247_ VGND VPWR _249_/A _247_/A VGND VPWR sky130_fd_sc_hd__buf_1
+X_316_ _328_/A _414_/A dlycontrol3[4] VGND VPWR VGND VPWR sky130_fd_sc_hd__nand2_2
+Xclkgen.delay_100ns_1.genblk1\[3\].mux1 VGND VPWR _390_/Y clkgen.delay_100ns_1.genblk1\[3\].and1/B
++ clkgen.delay_100ns_1.genblk1\[3\].mux1/A0 clkgen.delay_100ns_1.genblk1\[4\].and1/B
++ VGND VPWR sky130_fd_sc_hd__mux2_1
+Xclkgen.delay_100ns_1.genblk1\[7\].and1 VPWR VGND clkgen.delay_100ns_1.genblk1\[7\].and1/X
++ clkgen.delay_100ns_1.genblk1\[7\].and1/B _400_/A VGND VPWR sky130_fd_sc_hd__and2_1
+XFILLER_7_116 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_8
+XFILLER_3_311 VGND VPWR VGND VPWR sky130_ef_sc_hd__decap_12
+XFILLER_19_267 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+Xclkgen.delay_100ns_2.genblk1\[17\].mux1 VGND VPWR _372_/A clkgen.delay_100ns_2.genblk1\[17\].and1/B
++ clkgen.delay_100ns_2.genblk1\[17\].mux1/A0 clkgen.delay_100ns_2.genblk1\[18\].and1/B
++ VGND VPWR sky130_fd_sc_hd__mux2_1
+Xclkgen.delay_100ns_2.genblk1\[10\].delay_unit VPWR clkgen.delay_100ns_2.genblk1\[10\].and1/X
++ clkgen.delay_100ns_2.genblk1\[10\].mux1/A0 VGND VGND VPWR sky130_mm_sc_hd_dlyPoly5ns
+XFILLER_8_54 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_6
+XFILLER_8_43 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_6_182 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_8
+XFILLER_17_85 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_17_74 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+Xedgedetect.dly200cell.genblk1\[15\].mux1 VGND VPWR _227_/Y edgedetect.dly200cell.genblk1\[15\].and1/B
++ edgedetect.dly200cell.genblk1\[15\].mux1/A0 edgedetect.dly200cell.genblk1\[16\].and1/B
++ VGND VPWR sky130_fd_sc_hd__mux2_1
+Xedgedetect.dly200cell.genblk1\[29\].delay_unit VPWR edgedetect.dly200cell.genblk1\[29\].and1/X
++ edgedetect.dly200cell.genblk1\[29\].mux1/A0 VGND VGND VPWR sky130_mm_sc_hd_dlyPoly5ns
+Xedgedetect.dly200cell.genblk1\[0\].mux1 VGND VPWR _191_/Y _431_/A1 edgedetect.dly200cell.genblk1\[0\].mux1/A0
++ edgedetect.dly200cell.genblk1\[1\].and1/B VGND VPWR sky130_fd_sc_hd__mux2_1
+Xedgedetect.dly200cell.genblk1\[19\].and1 VPWR VGND edgedetect.dly200cell.genblk1\[19\].and1/X
++ edgedetect.dly200cell.genblk1\[19\].and1/B _239_/A VGND VPWR sky130_fd_sc_hd__and2_1
+XFILLER_21_295 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+Xedgedetect.dly200cell.genblk1\[31\].delay_unit VPWR edgedetect.dly200cell.genblk1\[31\].and1/X
++ edgedetect.dly200cell.genblk1\[31\].mux1/A0 VGND VGND VPWR sky130_mm_sc_hd_dlyPoly5ns
+Xedgedetect.dly200cell.genblk1\[4\].and1 VPWR VGND edgedetect.dly200cell.genblk1\[4\].and1/X
++ edgedetect.dly200cell.genblk1\[4\].and1/B _437_/X VGND VPWR sky130_fd_sc_hd__and2_1
+Xedgedetect.dly200cell.genblk1\[2\].delay_unit VPWR edgedetect.dly200cell.genblk1\[2\].and1/X
++ edgedetect.dly200cell.genblk1\[2\].mux1/A0 VGND VGND VPWR sky130_mm_sc_hd_dlyPoly5ns
+Xclkgen.delay_100ns_3.genblk1\[0\].delay_unit VPWR clkgen.delay_100ns_3.genblk1\[0\].and1/X
++ clkgen.delay_100ns_3.genblk1\[0\].mux1/A0 VGND VGND VPWR sky130_mm_sc_hd_dlyPoly5ns
+XFILLER_10_3 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_6
+X_280_ _280_/A _280_/Y VPWR VGND VGND VPWR sky130_fd_sc_hd__inv_2
+XPHY_30 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_3
+X_401_ dlycontrol1[4] _400_/A _385_/X _402_/A VGND VPWR VGND VPWR sky130_fd_sc_hd__o21a_2
+X_332_ dlycontrol2[4] _332_/X dlycontrol2[3] VPWR VGND VGND VPWR sky130_fd_sc_hd__or2_2
+XPHY_41 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_3
+X_263_ _263_/A _263_/Y VPWR VGND VGND VPWR sky130_fd_sc_hd__inv_2
+X_194_ VPWR VGND enable_dlycontrol _195_/B dlycontrol4[3] VGND VPWR sky130_fd_sc_hd__and2_2
+Xclkgen.delay_100ns_2.genblk1\[15\].delay_unit VPWR clkgen.delay_100ns_2.genblk1\[15\].and1/X
++ clkgen.delay_100ns_2.genblk1\[15\].mux1/A0 VGND VGND VPWR sky130_mm_sc_hd_dlyPoly5ns
+Xclkgen.delay_100ns_2.genblk1\[1\].mux1 VGND VPWR _338_/A clkgen.delay_100ns_2.genblk1\[1\].and1/B
++ clkgen.delay_100ns_2.genblk1\[1\].mux1/A0 clkgen.delay_100ns_2.genblk1\[2\].and1/B
++ VGND VPWR sky130_fd_sc_hd__mux2_1
+XFILLER_11_327 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+Xclkgen.delay_100ns_2.genblk1\[5\].and1 VPWR VGND clkgen.delay_100ns_2.genblk1\[5\].and1/X
++ clkgen.delay_100ns_2.genblk1\[5\].and1/B _348_/Y VGND VPWR sky130_fd_sc_hd__and2_1
+X_246_ _246_/B _247_/A _251_/A VPWR VGND VGND VPWR sky130_fd_sc_hd__or2_2
+X_315_ _315_/A _315_/Y VPWR VGND VGND VPWR sky130_fd_sc_hd__inv_2
+XFILLER_6_342 VGND VPWR VGND VPWR sky130_ef_sc_hd__decap_12
+Xedgedetect.dly200cell.genblk1\[36\].delay_unit VPWR edgedetect.dly200cell.genblk1\[36\].and1/X
++ edgedetect.dly200cell.genblk1\[36\].mux1/A0 VGND VGND VPWR sky130_mm_sc_hd_dlyPoly5ns
+Xedgedetect.dly200cell.genblk1\[7\].delay_unit VPWR edgedetect.dly200cell.genblk1\[7\].and1/X
++ edgedetect.dly200cell.genblk1\[7\].mux1/A0 VGND VGND VPWR sky130_mm_sc_hd_dlyPoly5ns
+Xclkgen.delay_100ns_3.genblk1\[5\].delay_unit VPWR clkgen.delay_100ns_3.genblk1\[5\].and1/X
++ clkgen.delay_100ns_3.genblk1\[5\].mux1/A0 VGND VGND VPWR sky130_mm_sc_hd_dlyPoly5ns
+XFILLER_3_323 VGND VPWR VGND VPWR sky130_ef_sc_hd__decap_12
+XFILLER_3_301 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_8
+XFILLER_19_213 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_6
+XFILLER_19_202 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+Xedgedetect.dly200cell.genblk1\[38\].mux1 VGND VPWR _280_/Y edgedetect.dly200cell.genblk1\[38\].and1/B
++ edgedetect.dly200cell.genblk1\[38\].mux1/A0 edgedetect.dly200cell.genblk1\[39\].and1/B
++ VGND VPWR sky130_fd_sc_hd__mux2_1
+X_229_ _230_/A enable_dlycontrol dlycontrol4[5] VGND VPWR VGND VPWR sky130_fd_sc_hd__nand2_2
+XFILLER_16_238 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_8
+XFILLER_15_260 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+Xedgedetect.dly200cell.genblk1\[21\].mux1 VGND VPWR _244_/Y edgedetect.dly200cell.genblk1\[21\].and1/B
++ edgedetect.dly200cell.genblk1\[21\].mux1/A0 edgedetect.dly200cell.genblk1\[22\].and1/B
++ VGND VPWR sky130_fd_sc_hd__mux2_1
+XFILLER_0_156 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_0_178 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_8
+Xedgedetect.dly200cell.genblk1\[25\].and1 VPWR VGND edgedetect.dly200cell.genblk1\[25\].and1/X
++ edgedetect.dly200cell.genblk1\[25\].and1/B _253_/A VGND VPWR sky130_fd_sc_hd__and2_1
+Xclkgen.delay_100ns_3.genblk1\[18\].mux1 VGND VPWR _327_/Y clkgen.delay_100ns_3.genblk1\[18\].and1/B
++ clkgen.delay_100ns_3.genblk1\[18\].mux1/A0 clkgen.delay_100ns_3.genblk1\[19\].and1/B
++ VGND VPWR sky130_fd_sc_hd__mux2_1
+XFILLER_5_78 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_6
+XFILLER_14_43 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+Xclkgen.delay_100ns_2.genblk1\[10\].and1 VPWR VGND clkgen.delay_100ns_2.genblk1\[10\].and1/X
++ clkgen.delay_100ns_2.genblk1\[9\].mux1/X _460_/X VGND VPWR sky130_fd_sc_hd__and2_1
+X_400_ _400_/A _400_/Y VPWR VGND VGND VPWR sky130_fd_sc_hd__inv_2
+XPHY_42 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_3
+XPHY_31 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_3
+XFILLER_14_347 VGND VPWR VGND VPWR sky130_ef_sc_hd__decap_12
+XFILLER_14_303 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XPHY_20 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_3
+X_331_ dlycontrol2[1] _360_/B dlycontrol2[0] VPWR VGND VGND VPWR sky130_fd_sc_hd__or2_2
+X_193_ VGND VPWR _211_/B _193_/A VGND VPWR sky130_fd_sc_hd__buf_1
+X_262_ _263_/A _251_/X _207_/X _246_/B VGND VPWR VGND VPWR sky130_fd_sc_hd__a21o_2
+XFILLER_1_295 VGND VPWR VGND VPWR sky130_ef_sc_hd__decap_12
+Xclkgen.delay_100ns_3.genblk1\[3\].and1 VPWR VGND clkgen.delay_100ns_3.genblk1\[3\].and1/X
++ clkgen.delay_100ns_3.genblk1\[3\].and1/B _451_/A VGND VPWR sky130_fd_sc_hd__and2_1
+XFILLER_9_373 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_6
+X_314_ _302_/A _315_/A _313_/X dlycontrol3[4] VGND VPWR VGND VPWR sky130_fd_sc_hd__o21ai_2
+XFILLER_14_166 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_14_111 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+X_245_ dlycontrol4[4] _246_/B enable_dlycontrol dlycontrol4[3] VPWR VGND VGND VPWR
++ sky130_fd_sc_hd__and3_2
+XFILLER_6_354 VGND VPWR VGND VPWR sky130_ef_sc_hd__decap_12
+XFILLER_22_43 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_3_335 VGND VPWR VGND VPWR sky130_ef_sc_hd__decap_12
+XFILLER_19_258 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_8_67 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+X_228_ VPWR VGND enable_dlycontrol _234_/A dlycontrol4[4] VGND VPWR sky130_fd_sc_hd__and2_2
+XFILLER_8_78 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_6
+XFILLER_17_10 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_24_294 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_8_213 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+Xclkgen.delay_100ns_1.genblk1\[9\].mux1 VGND VPWR _404_/Y clkgen.delay_100ns_1.genblk1\[9\].and1/B
++ clkgen.delay_100ns_1.genblk1\[9\].mux1/A0 clkgen.delay_100ns_1.genblk1\[9\].mux1/X
++ VGND VPWR sky130_fd_sc_hd__mux2_1
+Xedgedetect.dly200cell.genblk1\[31\].and1 VPWR VGND edgedetect.dly200cell.genblk1\[31\].and1/X
++ edgedetect.dly200cell.genblk1\[31\].and1/B _237_/X VGND VPWR sky130_fd_sc_hd__and2_1
+XFILLER_14_88 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_17_323 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+Xclkgen.delay_100ns_1.genblk1\[11\].mux1 VGND VPWR _408_/Y clkgen.delay_100ns_1.genblk1\[11\].and1/B
++ clkgen.delay_100ns_1.genblk1\[11\].mux1/A0 clkgen.delay_100ns_1.genblk1\[12\].and1/B
++ VGND VPWR sky130_fd_sc_hd__mux2_1
+XPHY_43 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_3
+XPHY_32 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_3
+XFILLER_14_359 VGND VPWR VGND VPWR sky130_ef_sc_hd__decap_12
+XPHY_21 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_3
+X_330_ _330_/A _330_/Y VPWR VGND VGND VPWR sky130_fd_sc_hd__inv_2
+XPHY_10 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_3
+X_261_ _261_/A _261_/Y VPWR VGND VGND VPWR sky130_fd_sc_hd__inv_2
+X_192_ dlycontrol4[1] _193_/A dlycontrol4[2] VPWR VGND VGND VPWR sky130_fd_sc_hd__or2_2
+XFILLER_1_263 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+Xclkgen.delay_100ns_1.genblk1\[15\].and1 VPWR VGND clkgen.delay_100ns_1.genblk1\[15\].and1/X
++ clkgen.delay_100ns_1.genblk1\[15\].and1/B _415_/Y VGND VPWR sky130_fd_sc_hd__and2_1
+XFILLER_20_307 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+X_459_ _459_/X _355_/A dlycontrol2[0] _184_/X dlycontrol2[3] VGND VPWR VGND VPWR sky130_fd_sc_hd__a31o_2
+Xedgedetect.dly200cell.genblk1\[6\].mux1 VGND VPWR _208_/Y edgedetect.dly200cell.genblk1\[6\].and1/B
++ edgedetect.dly200cell.genblk1\[6\].mux1/A0 edgedetect.dly200cell.genblk1\[7\].and1/B
++ VGND VPWR sky130_fd_sc_hd__mux2_1
+XFILLER_11_318 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_11_12 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+Xoutbuf_1 VPWR VGND clk_dig _432_/Y VGND VPWR sky130_fd_sc_hd__buf_4
+Xclkgen.delay_100ns_3.genblk1\[11\].and1 VPWR VGND clkgen.delay_100ns_3.genblk1\[11\].and1/X
++ clkgen.delay_100ns_3.genblk1\[11\].and1/B _310_/A VGND VPWR sky130_fd_sc_hd__and2_1
+X_244_ _237_/X _243_/X _234_/X _244_/Y VGND VPWR VGND VPWR sky130_fd_sc_hd__a21oi_2
+X_313_ VPWR VGND dlycontrol3[2] _313_/X dlycontrol3[1] VGND VPWR sky130_fd_sc_hd__and2_2
+XFILLER_14_156 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_3
+XFILLER_6_366 VGND VPWR VGND VPWR sky130_ef_sc_hd__decap_12
+XFILLER_9_193 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_3_90 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+Xclkgen.delay_100ns_2.genblk1\[4\].delay_unit VPWR clkgen.delay_100ns_2.genblk1\[4\].and1/X
++ clkgen.delay_100ns_2.genblk1\[4\].mux1/A0 VGND VGND VPWR sky130_mm_sc_hd_dlyPoly5ns
+XFILLER_3_347 VGND VPWR VGND VPWR sky130_ef_sc_hd__decap_12
+X_227_ _227_/A _227_/Y VPWR VGND VGND VPWR sky130_fd_sc_hd__inv_2
+XFILLER_16_229 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_24_273 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_6
+XFILLER_3_133 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_8
+XFILLER_12_9 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_15_273 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_8
+XFILLER_21_243 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+Xclkgen.delay_100ns_2.genblk1\[7\].mux1 VGND VPWR _351_/Y clkgen.delay_100ns_2.genblk1\[7\].and1/B
++ clkgen.delay_100ns_2.genblk1\[7\].mux1/A0 clkgen.delay_100ns_2.genblk1\[8\].and1/B
++ VGND VPWR sky130_fd_sc_hd__mux2_1
+XFILLER_0_169 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_8_236 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_5_206 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_17_302 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_8
+XFILLER_4_294 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_23_316 VGND VPWR VGND VPWR sky130_ef_sc_hd__decap_12
+Xclkgen.delay_100ns_2.genblk1\[9\].delay_unit VPWR clkgen.delay_100ns_2.genblk1\[9\].and1/X
++ clkgen.delay_100ns_2.genblk1\[9\].mux1/A0 VGND VGND VPWR sky130_mm_sc_hd_dlyPoly5ns
+XPHY_44 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_3
+X_260_ _261_/A _251_/X _243_/B _246_/B VGND VPWR VGND VPWR sky130_fd_sc_hd__a21o_2
+XPHY_33 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_3
+XPHY_22 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_3
+XPHY_11 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_3
+X_191_ _201_/A _185_/X _184_/X _191_/Y VGND VPWR VGND VPWR sky130_fd_sc_hd__a21oi_2
+XFILLER_2_48 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+X_389_ _463_/B _389_/Y _463_/A VGND VPWR VGND VPWR sky130_fd_sc_hd__nor2_2
+X_458_ VGND VPWR _458_/X _458_/A VGND VPWR sky130_fd_sc_hd__buf_1
+Xoutbuf_2 VPWR VGND clk_comp outbuf_2/A VGND VPWR sky130_fd_sc_hd__buf_4
+Xedgedetect.dly200cell.genblk1\[27\].mux1 VGND VPWR _257_/A edgedetect.dly200cell.genblk1\[27\].and1/B
++ edgedetect.dly200cell.genblk1\[27\].mux1/A0 edgedetect.dly200cell.genblk1\[28\].and1/B
++ VGND VPWR sky130_fd_sc_hd__mux2_1
+Xclkgen.delay_100ns_1.genblk1\[2\].and1 VPWR VGND clkgen.delay_100ns_1.genblk1\[2\].and1/X
++ clkgen.delay_100ns_1.genblk1\[2\].and1/B _464_/X VGND VPWR sky130_fd_sc_hd__and2_1
+X_243_ _243_/B _243_/X _243_/A VPWR VGND VGND VPWR sky130_fd_sc_hd__or2_2
+X_312_ _302_/A _312_/Y _311_/X dlycontrol3[4] VGND VPWR VGND VPWR sky130_fd_sc_hd__o21ai_2
+XFILLER_6_312 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_8
+XFILLER_20_138 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+Xclkgen.delay_100ns_2.genblk1\[12\].mux1 VGND VPWR _361_/Y clkgen.delay_100ns_2.genblk1\[12\].and1/B
++ clkgen.delay_100ns_2.genblk1\[12\].mux1/A0 clkgen.delay_100ns_2.genblk1\[13\].and1/B
++ VGND VPWR sky130_fd_sc_hd__mux2_1
+XFILLER_3_359 VGND VPWR VGND VPWR sky130_ef_sc_hd__decap_12
+XFILLER_19_227 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+Xclkgen.delay_100ns_3.genblk1\[12\].delay_unit VPWR clkgen.delay_100ns_3.genblk1\[12\].and1/X
++ clkgen.delay_100ns_3.genblk1\[12\].mux1/A0 VGND VGND VPWR sky130_mm_sc_hd_dlyPoly5ns
+Xclkgen.delay_100ns_2.genblk1\[16\].and1 VPWR VGND clkgen.delay_100ns_2.genblk1\[16\].and1/X
++ clkgen.delay_100ns_2.genblk1\[16\].and1/B _370_/A VGND VPWR sky130_fd_sc_hd__and2_1
+X_226_ _226_/A _226_/Y VPWR VGND VGND VPWR sky130_fd_sc_hd__inv_2
+XFILLER_6_142 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+Xclkgen.delay_100ns_1.genblk1\[14\].delay_unit VPWR clkgen.delay_100ns_1.genblk1\[14\].and1/X
++ clkgen.delay_100ns_1.genblk1\[14\].mux1/A0 VGND VGND VPWR sky130_mm_sc_hd_dlyPoly5ns
+Xedgedetect.dly200cell.genblk1\[10\].mux1 VGND VPWR _216_/Y edgedetect.dly200cell.genblk1\[9\].mux1/X
++ edgedetect.dly200cell.genblk1\[10\].mux1/A0 edgedetect.dly200cell.genblk1\[11\].and1/B
++ VGND VPWR sky130_fd_sc_hd__mux2_1
+XFILLER_18_271 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_8
+Xedgedetect.dly200cell.genblk1\[14\].and1 VPWR VGND edgedetect.dly200cell.genblk1\[14\].and1/X
++ edgedetect.dly200cell.genblk1\[14\].and1/B _226_/A VGND VPWR sky130_fd_sc_hd__and2_1
+Xclkgen.delay_100ns_3.genblk1\[5\].mux1 VGND VPWR _299_/A clkgen.delay_100ns_3.genblk1\[5\].and1/B
++ clkgen.delay_100ns_3.genblk1\[5\].mux1/A0 clkgen.delay_100ns_3.genblk1\[6\].and1/B
++ VGND VPWR sky130_fd_sc_hd__mux2_1
+X_209_ _209_/A _209_/Y VPWR VGND VGND VPWR sky130_fd_sc_hd__inv_2
+Xclkgen.delay_100ns_3.genblk1\[9\].and1 VPWR VGND clkgen.delay_100ns_3.genblk1\[9\].and1/X
++ clkgen.delay_100ns_3.genblk1\[9\].and1/B _306_/A VGND VPWR sky130_fd_sc_hd__and2_1
+XFILLER_7_292 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_6
+XFILLER_17_369 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_3
+XFILLER_23_328 VGND VPWR VGND VPWR sky130_ef_sc_hd__decap_12
+Xclkgen.delay_100ns_3.genblk1\[17\].delay_unit VPWR clkgen.delay_100ns_3.genblk1\[17\].and1/X
++ clkgen.delay_100ns_3.genblk1\[17\].mux1/A0 VGND VGND VPWR sky130_mm_sc_hd_dlyPoly5ns
+XPHY_12 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_3
+XPHY_45 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_3
+XPHY_34 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_3
+X_190_ VGND VPWR _201_/A _190_/A VGND VPWR sky130_fd_sc_hd__buf_1
+XPHY_23 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_3
+XFILLER_1_254 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_2_16 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+Xclkgen.delay_100ns_1.genblk1\[19\].delay_unit VPWR clkgen.delay_100ns_1.genblk1\[19\].and1/X
++ clkgen.delay_100ns_1.genblk1\[19\].mux1/A0 VGND VGND VPWR sky130_mm_sc_hd_dlyPoly5ns
+Xclkgen.delay_100ns_2.genblk1\[0\].and1 VPWR VGND clkgen.delay_100ns_2.genblk1\[0\].and1/X
++ _432_/Y _456_/X VGND VPWR sky130_fd_sc_hd__and2_1
+X_457_ _457_/B _458_/A _457_/A VPWR VGND VGND VPWR sky130_fd_sc_hd__or2_2
+X_388_ dlycontrol1[0] _463_/B _388_/A dlycontrol1[1] VPWR VGND VGND VPWR sky130_fd_sc_hd__and3_2
+XFILLER_23_136 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_8
+XFILLER_23_169 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_8
+Xoutbuf_3 VPWR VGND sample_p_buf sample_p VGND VPWR sky130_fd_sc_hd__buf_4
+XFILLER_11_69 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+X_242_ VPWR VGND dlycontrol4[2] _243_/B dlycontrol4[1] VGND VPWR sky130_fd_sc_hd__and2_2
+X_311_ VPWR VGND dlycontrol3[2] _311_/X _311_/B VGND VPWR sky130_fd_sc_hd__and2_2
+XFILLER_6_324 VGND VPWR VGND VPWR sky130_ef_sc_hd__decap_12
+Xedgedetect.dly200cell.genblk1\[33\].mux1 VGND VPWR _267_/Y ANTENNA_11/DIODE edgedetect.dly200cell.genblk1\[33\].mux1/A0
++ edgedetect.dly200cell.genblk1\[34\].and1/B VGND VPWR sky130_fd_sc_hd__mux2_1
+Xclkgen.delay_100ns_1.genblk1\[3\].delay_unit VPWR clkgen.delay_100ns_1.genblk1\[3\].and1/X
++ clkgen.delay_100ns_1.genblk1\[3\].mux1/A0 VGND VGND VPWR sky130_mm_sc_hd_dlyPoly5ns
+Xedgedetect.dly200cell.genblk1\[37\].and1 VPWR VGND edgedetect.dly200cell.genblk1\[37\].and1/X
++ edgedetect.dly200cell.genblk1\[37\].and1/B _278_/A VGND VPWR sky130_fd_sc_hd__and2_1
+X_225_ _226_/A _227_/A _195_/B _207_/X VGND VPWR VGND VPWR sky130_fd_sc_hd__a21o_2
+XFILLER_6_132 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_6_198 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_6
+Xclkgen.delay_100ns_1.genblk1\[17\].mux1 VGND VPWR _421_/A clkgen.delay_100ns_1.genblk1\[17\].and1/B
++ clkgen.delay_100ns_1.genblk1\[17\].mux1/A0 ANTENNA_9/DIODE VGND VPWR sky130_fd_sc_hd__mux2_1
+XFILLER_24_264 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_17_57 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+X_208_ _438_/A _207_/X _184_/X _208_/Y VGND VPWR VGND VPWR sky130_fd_sc_hd__a21oi_2
+Xedgedetect.dly200cell.genblk1\[20\].and1 VPWR VGND edgedetect.dly200cell.genblk1\[20\].and1/X
++ edgedetect.dly200cell.genblk1\[20\].and1/B _445_/X VGND VPWR sky130_fd_sc_hd__and2_1
+Xclkgen.delay_100ns_3.genblk1\[13\].mux1 VGND VPWR _315_/A clkgen.delay_100ns_3.genblk1\[13\].and1/B
++ clkgen.delay_100ns_3.genblk1\[13\].mux1/A0 clkgen.delay_100ns_3.genblk1\[14\].and1/B
++ VGND VPWR sky130_fd_sc_hd__mux2_1
+XFILLER_12_267 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+Xclkgen.delay_100ns_3.genblk1\[17\].and1 VPWR VGND clkgen.delay_100ns_3.genblk1\[17\].and1/X
++ clkgen.delay_100ns_3.genblk1\[17\].and1/B _323_/Y VGND VPWR sky130_fd_sc_hd__and2_1
+XFILLER_5_49 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_5_38 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_17_337 VGND VPWR VGND VPWR sky130_ef_sc_hd__decap_12
+Xedgedetect.dly200cell.genblk1\[13\].delay_unit VPWR edgedetect.dly200cell.genblk1\[13\].and1/X
++ edgedetect.dly200cell.genblk1\[13\].mux1/A0 VGND VGND VPWR sky130_mm_sc_hd_dlyPoly5ns
+Xclkgen.delay_100ns_1.genblk1\[8\].delay_unit VPWR clkgen.delay_100ns_1.genblk1\[8\].and1/X
++ clkgen.delay_100ns_1.genblk1\[8\].mux1/A0 VGND VGND VPWR sky130_mm_sc_hd_dlyPoly5ns
+XPHY_46 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_3
+XPHY_35 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_3
+XPHY_24 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_3
+XPHY_13 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_3
+XFILLER_25_68 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_9_3 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_6
+XFILLER_17_145 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_17_134 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_6
+X_456_ _456_/X _457_/A _433_/X _360_/B VGND VPWR VGND VPWR sky130_fd_sc_hd__a21o_2
+XFILLER_13_373 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_6
+X_387_ _387_/A _387_/Y VPWR VGND VGND VPWR sky130_fd_sc_hd__inv_2
+Xoutbuf_4 VPWR VGND sample_n_buf sample_n VGND VPWR sky130_fd_sc_hd__buf_4
+X_310_ _310_/A _310_/Y VPWR VGND VGND VPWR sky130_fd_sc_hd__inv_2
+X_241_ _237_/X _240_/X _234_/X _241_/Y VGND VPWR VGND VPWR sky130_fd_sc_hd__a21oi_2
+XFILLER_10_354 VGND VPWR VGND VPWR sky130_ef_sc_hd__decap_12
+XFILLER_6_336 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+X_439_ VGND VPWR _439_/X _439_/A VGND VPWR sky130_fd_sc_hd__buf_1
+X_224_ _224_/A _224_/Y VPWR VGND VGND VPWR sky130_fd_sc_hd__inv_2
+XFILLER_10_140 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_8
+XFILLER_24_287 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+Xedgedetect.dly200cell.genblk1\[18\].delay_unit VPWR edgedetect.dly200cell.genblk1\[18\].and1/X
++ edgedetect.dly200cell.genblk1\[18\].mux1/A0 VGND VGND VPWR sky130_mm_sc_hd_dlyPoly5ns
+X_207_ VGND VPWR _207_/X _207_/A VGND VPWR sky130_fd_sc_hd__buf_1
+XFILLER_23_90 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_6
+XFILLER_24_3 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_8
+XFILLER_0_83 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_0_94 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_6
+Xclkgen.delay_100ns_1.genblk1\[4\].mux1 VGND VPWR _394_/Y clkgen.delay_100ns_1.genblk1\[4\].and1/B
++ clkgen.delay_100ns_1.genblk1\[4\].mux1/A0 clkgen.delay_100ns_1.genblk1\[5\].and1/B
++ VGND VPWR sky130_fd_sc_hd__mux2_1
+Xedgedetect.dly200cell.genblk1\[20\].delay_unit VPWR edgedetect.dly200cell.genblk1\[20\].and1/X
++ edgedetect.dly200cell.genblk1\[20\].mux1/A0 VGND VGND VPWR sky130_mm_sc_hd_dlyPoly5ns
+XFILLER_0_106 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_12_213 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_12_202 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+Xclkgen.delay_100ns_1.genblk1\[8\].and1 VPWR VGND clkgen.delay_100ns_1.genblk1\[8\].and1/X
++ clkgen.delay_100ns_1.genblk1\[8\].and1/B _465_/X VGND VPWR sky130_fd_sc_hd__and2_1
+XFILLER_14_59 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+Xclkgen.delay_100ns_2.genblk1\[18\].mux1 VGND VPWR _376_/Y clkgen.delay_100ns_2.genblk1\[18\].and1/B
++ clkgen.delay_100ns_2.genblk1\[18\].mux1/A0 clkgen.delay_100ns_2.genblk1\[19\].and1/B
++ VGND VPWR sky130_fd_sc_hd__mux2_1
+XFILLER_17_349 VGND VPWR VGND VPWR sky130_ef_sc_hd__decap_12
+XFILLER_17_316 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_20_80 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_4_275 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+Xclkgen.delay_100ns_1.genblk1\[10\].and1 VPWR VGND clkgen.delay_100ns_1.genblk1\[10\].and1/X
++ clkgen.delay_100ns_1.genblk1\[9\].mux1/X _466_/X VGND VPWR sky130_fd_sc_hd__and2_1
+Xedgedetect.dly200cell.genblk1\[16\].mux1 VGND VPWR _233_/Y edgedetect.dly200cell.genblk1\[16\].and1/B
++ edgedetect.dly200cell.genblk1\[16\].mux1/A0 edgedetect.dly200cell.genblk1\[17\].and1/B
++ VGND VPWR sky130_fd_sc_hd__mux2_1
+XPHY_47 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_3
+XPHY_36 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_3
+XPHY_25 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_3
+XPHY_14 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_3
+Xedgedetect.dly200cell.genblk1\[1\].mux1 VGND VPWR _198_/Y edgedetect.dly200cell.genblk1\[1\].and1/B
++ edgedetect.dly200cell.genblk1\[1\].mux1/A0 edgedetect.dly200cell.genblk1\[2\].and1/B
++ VGND VPWR sky130_fd_sc_hd__mux2_1
+XFILLER_1_212 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_1_245 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_3
+X_455_ dlycontrol3[4] _302_/A _311_/X _455_/X VGND VPWR VGND VPWR sky130_fd_sc_hd__o21a_2
+X_386_ _433_/A _387_/A _385_/X _381_/X VGND VPWR VGND VPWR sky130_fd_sc_hd__o21ai_2
+XFILLER_9_345 VGND VPWR VGND VPWR sky130_ef_sc_hd__decap_12
+Xedgedetect.dly200cell.genblk1\[5\].and1 VPWR VGND edgedetect.dly200cell.genblk1\[5\].and1/X
++ edgedetect.dly200cell.genblk1\[5\].and1/B _439_/X VGND VPWR sky130_fd_sc_hd__and2_1
+Xoutbuf_5 VPWR VGND nsample_p_buf nsample_p VGND VPWR sky130_fd_sc_hd__buf_4
+XFILLER_11_49 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+X_240_ _240_/B _240_/X _243_/A VPWR VGND VGND VPWR sky130_fd_sc_hd__or2_2
+XFILLER_14_138 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_6
+XFILLER_14_127 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_10_366 VGND VPWR VGND VPWR sky130_ef_sc_hd__decap_12
+X_438_ _438_/B _439_/A _438_/A VPWR VGND VGND VPWR sky130_fd_sc_hd__or2_2
+Xedgedetect.dly200cell.genblk1\[25\].delay_unit VPWR edgedetect.dly200cell.genblk1\[25\].and1/X
++ edgedetect.dly200cell.genblk1\[25\].mux1/A0 VGND VGND VPWR sky130_mm_sc_hd_dlyPoly5ns
+XFILLER_20_108 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_13_193 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+X_369_ _370_/A dlycontrol2[3] dlycontrol2[2] _366_/Y _360_/B VGND VPWR VGND VPWR sky130_fd_sc_hd__o31a_2
+XFILLER_11_108 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+X_223_ _224_/A _227_/A _243_/A _438_/B VGND VPWR VGND VPWR sky130_fd_sc_hd__a21o_2
+XFILLER_6_156 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_3
+XFILLER_24_255 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+Xclkgen.delay_100ns_2.genblk1\[2\].mux1 VGND VPWR _340_/Y clkgen.delay_100ns_2.genblk1\[2\].and1/B
++ clkgen.delay_100ns_2.genblk1\[2\].mux1/A0 clkgen.delay_100ns_2.genblk1\[3\].and1/B
++ VGND VPWR sky130_fd_sc_hd__mux2_1
+X_206_ dlycontrol4[1] _207_/A dlycontrol4[2] dlycontrol4[0] VPWR VGND VGND VPWR sky130_fd_sc_hd__and3_2
+XFILLER_2_192 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_6
+Xclkgen.delay_100ns_2.genblk1\[6\].and1 VPWR VGND clkgen.delay_100ns_2.genblk1\[6\].and1/X
++ clkgen.delay_100ns_2.genblk1\[6\].and1/B _350_/A VGND VPWR sky130_fd_sc_hd__and2_1
+XFILLER_8_229 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_18_80 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+Xclkgen.delay_100ns_2.genblk1\[11\].delay_unit VPWR clkgen.delay_100ns_2.genblk1\[11\].and1/X
++ clkgen.delay_100ns_2.genblk1\[11\].mux1/A0 VGND VGND VPWR sky130_mm_sc_hd_dlyPoly5ns
+Xedgedetect.dly200cell.genblk1\[39\].mux1 VGND VPWR _281_/Y edgedetect.dly200cell.genblk1\[39\].and1/B
++ edgedetect.dly200cell.genblk1\[39\].mux1/A0 _429_/A VGND VPWR sky130_fd_sc_hd__mux2_1
+XFILLER_14_16 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_4_287 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_6_94 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_3
+Xedgedetect.dly200cell.genblk1\[32\].delay_unit VPWR edgedetect.dly200cell.genblk1\[32\].and1/X
++ edgedetect.dly200cell.genblk1\[32\].mux1/A0 VGND VGND VPWR sky130_mm_sc_hd_dlyPoly5ns
+XFILLER_22_342 VGND VPWR VGND VPWR sky130_ef_sc_hd__decap_12
+XPHY_48 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_3
+XFILLER_25_59 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_3
+XPHY_37 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_3
+Xedgedetect.dly200cell.genblk1\[3\].delay_unit VPWR edgedetect.dly200cell.genblk1\[3\].and1/X
++ edgedetect.dly200cell.genblk1\[3\].mux1/A0 VGND VGND VPWR sky130_mm_sc_hd_dlyPoly5ns
+XPHY_26 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_3
+XPHY_15 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_3
+Xclkgen.delay_100ns_3.genblk1\[1\].delay_unit VPWR clkgen.delay_100ns_3.genblk1\[1\].and1/X
++ clkgen.delay_100ns_3.genblk1\[1\].mux1/A0 VGND VGND VPWR sky130_mm_sc_hd_dlyPoly5ns
+Xedgedetect.dly200cell.genblk1\[22\].mux1 VGND VPWR _248_/Y edgedetect.dly200cell.genblk1\[22\].and1/B
++ edgedetect.dly200cell.genblk1\[22\].mux1/A0 edgedetect.dly200cell.genblk1\[23\].and1/B
++ VGND VPWR sky130_fd_sc_hd__mux2_1
+XFILLER_17_169 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_6
+XFILLER_17_158 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_17_114 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+X_385_ dlycontrol1[1] _385_/X dlycontrol1[2] VPWR VGND VGND VPWR sky130_fd_sc_hd__or2_2
+X_454_ _454_/X _310_/A dlycontrol3[3] _451_/B VGND VPWR VGND VPWR sky130_fd_sc_hd__a21o_2
+XFILLER_9_357 VGND VPWR VGND VPWR sky130_ef_sc_hd__decap_12
+Xoutbuf_6 VPWR VGND nsample_n_buf nsample_n VGND VPWR sky130_fd_sc_hd__buf_4
+Xedgedetect.dly200cell.genblk1\[26\].and1 VPWR VGND edgedetect.dly200cell.genblk1\[26\].and1/X
++ edgedetect.dly200cell.genblk1\[26\].and1/B _255_/A VGND VPWR sky130_fd_sc_hd__and2_1
+Xclkgen.delay_100ns_3.genblk1\[19\].mux1 VGND VPWR _330_/A clkgen.delay_100ns_3.genblk1\[19\].and1/B
++ clkgen.delay_100ns_3.genblk1\[19\].mux1/A0 outbuf_2/A VGND VPWR sky130_fd_sc_hd__mux2_1
+Xclkgen.delay_100ns_2.genblk1\[11\].and1 VPWR VGND clkgen.delay_100ns_2.genblk1\[11\].and1/X
++ clkgen.delay_100ns_2.genblk1\[11\].and1/B _359_/A VGND VPWR sky130_fd_sc_hd__and2_1
+X_437_ _437_/X _209_/A _433_/X _240_/B VGND VPWR VGND VPWR sky130_fd_sc_hd__a21o_2
+X_368_ _368_/A _368_/Y VPWR VGND VGND VPWR sky130_fd_sc_hd__inv_2
+XFILLER_9_187 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_3
+X_299_ _299_/A _299_/Y VPWR VGND VGND VPWR sky130_fd_sc_hd__inv_2
+Xclkgen.delay_100ns_2.genblk1\[16\].delay_unit VPWR clkgen.delay_100ns_2.genblk1\[16\].and1/X
++ clkgen.delay_100ns_2.genblk1\[16\].mux1/A0 VGND VGND VPWR sky130_mm_sc_hd_dlyPoly5ns
+X_222_ _222_/A _222_/Y VPWR VGND VGND VPWR sky130_fd_sc_hd__inv_2
+XFILLER_8_18 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_12_82 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+Xclkgen.delay_100ns_3.genblk1\[0\].mux1 VGND VPWR _286_/Y _431_/X clkgen.delay_100ns_3.genblk1\[0\].mux1/A0
++ clkgen.delay_100ns_3.genblk1\[1\].and1/B VGND VPWR sky130_fd_sc_hd__mux2_1
+XFILLER_24_212 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+Xclkgen.delay_100ns_3.genblk1\[4\].and1 VPWR VGND clkgen.delay_100ns_3.genblk1\[4\].and1/X
++ clkgen.delay_100ns_3.genblk1\[4\].and1/B _296_/A VGND VPWR sky130_fd_sc_hd__and2_1
+XFILLER_3_149 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_15_212 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+X_205_ _438_/B _205_/Y _209_/A VGND VPWR VGND VPWR sky130_fd_sc_hd__nor2_2
+XFILLER_0_74 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+Xedgedetect.dly200cell.genblk1\[37\].delay_unit VPWR edgedetect.dly200cell.genblk1\[37\].and1/X
++ edgedetect.dly200cell.genblk1\[37\].mux1/A0 VGND VGND VPWR sky130_mm_sc_hd_dlyPoly5ns
+Xedgedetect.dly200cell.genblk1\[8\].delay_unit VPWR edgedetect.dly200cell.genblk1\[8\].and1/X
++ edgedetect.dly200cell.genblk1\[8\].mux1/A0 VGND VGND VPWR sky130_mm_sc_hd_dlyPoly5ns
+XFILLER_0_119 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+Xclkgen.delay_100ns_3.genblk1\[6\].delay_unit VPWR clkgen.delay_100ns_3.genblk1\[6\].and1/X
++ clkgen.delay_100ns_3.genblk1\[6\].mux1/A0 VGND VGND VPWR sky130_mm_sc_hd_dlyPoly5ns
+XFILLER_7_285 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_25_373 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_6
+XFILLER_22_354 VGND VPWR VGND VPWR sky130_ef_sc_hd__decap_12
+XPHY_49 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_3
+XPHY_38 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_3
+XPHY_27 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_3
+XPHY_16 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_3
+XFILLER_1_203 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+X_453_ _453_/X _306_/A dlycontrol3[0] _433_/X dlycontrol3[3] VGND VPWR VGND VPWR sky130_fd_sc_hd__a31o_2
+XFILLER_9_369 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_3
+XFILLER_9_303 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_6
+X_384_ _463_/A _409_/B _184_/X _384_/Y VGND VPWR VGND VPWR sky130_fd_sc_hd__a21oi_2
+XFILLER_14_118 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_22_140 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_6
+XFILLER_7_3 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_3
+Xedgedetect.dly200cell.genblk1\[32\].and1 VPWR VGND edgedetect.dly200cell.genblk1\[32\].and1/X
++ edgedetect.dly200cell.genblk1\[32\].and1/B _449_/X VGND VPWR sky130_fd_sc_hd__and2_1
+X_436_ _436_/X _209_/A _433_/X _236_/B VGND VPWR VGND VPWR sky130_fd_sc_hd__a21o_2
+X_367_ _368_/A _366_/Y _347_/B dlycontrol2[3] dlycontrol2[0] VGND VPWR VGND VPWR sky130_fd_sc_hd__a31o_2
+XFILLER_9_155 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+X_298_ _298_/B _299_/A _302_/A VGND VPWR VGND VPWR sky130_fd_sc_hd__nor2_2
+X_221_ _222_/A _227_/A _240_/B _433_/A _243_/A VGND VPWR VGND VPWR sky130_fd_sc_hd__a31o_2
+XFILLER_6_103 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_2_342 VGND VPWR VGND VPWR sky130_ef_sc_hd__decap_12
+Xclkgen.delay_100ns_1.genblk1\[12\].mux1 VGND VPWR _410_/Y clkgen.delay_100ns_1.genblk1\[12\].and1/B
++ clkgen.delay_100ns_1.genblk1\[12\].mux1/A0 clkgen.delay_100ns_1.genblk1\[13\].and1/B
++ VGND VPWR sky130_fd_sc_hd__mux2_1
+XFILLER_6_169 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+X_419_ _419_/A _419_/Y VPWR VGND VGND VPWR sky130_fd_sc_hd__inv_2
+Xclkgen.delay_100ns_1.genblk1\[16\].and1 VPWR VGND clkgen.delay_100ns_1.genblk1\[16\].and1/X
++ clkgen.delay_100ns_1.genblk1\[16\].and1/B _419_/A VGND VPWR sky130_fd_sc_hd__and2_1
+XFILLER_24_246 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_17_28 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+Xedgedetect.dly200cell.genblk1\[7\].mux1 VGND VPWR _209_/Y edgedetect.dly200cell.genblk1\[7\].and1/B
++ edgedetect.dly200cell.genblk1\[7\].mux1/A0 edgedetect.dly200cell.genblk1\[8\].and1/B
++ VGND VPWR sky130_fd_sc_hd__mux2_1
+X_204_ dlycontrol4[2] _438_/B _388_/A dlycontrol4[1] VPWR VGND VGND VPWR sky130_fd_sc_hd__and3_2
+XFILLER_15_235 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+Xclkgen.delay_100ns_3.genblk1\[12\].and1 VPWR VGND clkgen.delay_100ns_3.genblk1\[12\].and1/X
++ clkgen.delay_100ns_3.genblk1\[12\].and1/B _455_/X VGND VPWR sky130_fd_sc_hd__and2_1
+XFILLER_2_183 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_0_20 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_21_249 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_8
+XFILLER_12_249 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_20_260 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_11_260 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_22_3 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_8
+XFILLER_20_94 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_6
+XFILLER_4_245 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XANTENNA_1 ena_in VGND VPWR VPWR VGND sky130_fd_sc_hd__diode_2
+XPHY_28 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_3
+XPHY_17 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_3
+XPHY_39 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_3
+XFILLER_22_322 VGND VPWR VGND VPWR sky130_ef_sc_hd__decap_12
+XFILLER_22_366 VGND VPWR VGND VPWR sky130_ef_sc_hd__decap_12
+Xclkgen.delay_100ns_2.genblk1\[0\].delay_unit VPWR clkgen.delay_100ns_2.genblk1\[0\].and1/X
++ clkgen.delay_100ns_2.genblk1\[0\].mux1/A0 VGND VGND VPWR sky130_mm_sc_hd_dlyPoly5ns
+X_452_ VGND VPWR _452_/X _452_/A VGND VPWR sky130_fd_sc_hd__buf_1
+Xclkgen.delay_100ns_2.genblk1\[8\].mux1 VGND VPWR _354_/Y clkgen.delay_100ns_2.genblk1\[8\].and1/B
++ clkgen.delay_100ns_2.genblk1\[8\].mux1/A0 clkgen.delay_100ns_2.genblk1\[9\].and1/B
++ VGND VPWR sky130_fd_sc_hd__mux2_1
+X_383_ VGND VPWR _463_/A _383_/A VGND VPWR sky130_fd_sc_hd__buf_1
+XFILLER_10_347 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_10_336 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_10_314 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+X_435_ _435_/X _209_/A _433_/X _211_/B VGND VPWR VGND VPWR sky130_fd_sc_hd__a21o_2
+X_366_ _377_/A _366_/Y VPWR VGND VGND VPWR sky130_fd_sc_hd__inv_2
+X_297_ dlycontrol3[2] _298_/B _414_/A dlycontrol3[1] VPWR VGND VGND VPWR sky130_fd_sc_hd__and3_2
+XFILLER_5_373 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_6
+XFILLER_5_340 VGND VPWR VGND VPWR sky130_ef_sc_hd__decap_12
+XFILLER_22_18 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+X_220_ VGND VPWR _433_/A _388_/A VGND VPWR sky130_fd_sc_hd__buf_1
+XFILLER_10_100 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_10_199 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_6
+XFILLER_10_111 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_2_354 VGND VPWR VGND VPWR sky130_ef_sc_hd__decap_12
+X_349_ _350_/A _351_/A dlycontrol2[2] _457_/B VGND VPWR VGND VPWR sky130_fd_sc_hd__a21o_2
+X_418_ _419_/A dlycontrol1[3] dlycontrol1[2] _415_/Y _409_/B VGND VPWR VGND VPWR sky130_fd_sc_hd__o31a_2
+XFILLER_15_225 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+X_203_ _438_/A _240_/B _184_/X _203_/Y VGND VPWR VGND VPWR sky130_fd_sc_hd__a21oi_2
+XFILLER_2_140 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+Xedgedetect.dly200cell.genblk1\[28\].mux1 VGND VPWR _259_/Y edgedetect.dly200cell.genblk1\[28\].and1/B
++ edgedetect.dly200cell.genblk1\[28\].mux1/A0 edgedetect.dly200cell.genblk1\[29\].and1/B
++ VGND VPWR sky130_fd_sc_hd__mux2_1
+Xclkgen.delay_100ns_1.genblk1\[3\].and1 VPWR VGND clkgen.delay_100ns_1.genblk1\[3\].and1/X
++ clkgen.delay_100ns_1.genblk1\[3\].and1/B _463_/A VGND VPWR sky130_fd_sc_hd__and2_1
+XFILLER_9_63 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_6
+Xclkgen.delay_100ns_2.genblk1\[5\].delay_unit VPWR clkgen.delay_100ns_2.genblk1\[5\].and1/X
++ clkgen.delay_100ns_2.genblk1\[5\].mux1/A0 VGND VGND VPWR sky130_mm_sc_hd_dlyPoly5ns
+Xclkgen.delay_100ns_2.genblk1\[13\].mux1 VGND VPWR _364_/A clkgen.delay_100ns_2.genblk1\[13\].and1/B
++ clkgen.delay_100ns_2.genblk1\[13\].mux1/A0 clkgen.delay_100ns_2.genblk1\[14\].and1/B
++ VGND VPWR sky130_fd_sc_hd__mux2_1
+XFILLER_7_232 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_7_276 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_19_361 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_8
+XFILLER_15_3 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_3
+Xclkgen.delay_100ns_2.genblk1\[17\].and1 VPWR VGND clkgen.delay_100ns_2.genblk1\[17\].and1/X
++ clkgen.delay_100ns_2.genblk1\[17\].and1/B _372_/Y VGND VPWR sky130_fd_sc_hd__and2_1
+Xedgedetect.dly200cell.genblk1\[11\].mux1 VGND VPWR _219_/A edgedetect.dly200cell.genblk1\[11\].and1/B
++ edgedetect.dly200cell.genblk1\[11\].mux1/A0 edgedetect.dly200cell.genblk1\[12\].and1/B
++ VGND VPWR sky130_fd_sc_hd__mux2_1
+XFILLER_25_342 VGND VPWR VGND VPWR sky130_ef_sc_hd__decap_12
+XFILLER_4_202 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+Xedgedetect.dly200cell.genblk1\[15\].and1 VPWR VGND edgedetect.dly200cell.genblk1\[15\].and1/X
++ edgedetect.dly200cell.genblk1\[15\].and1/B _227_/A VGND VPWR sky130_fd_sc_hd__and2_1
+XFILLER_16_342 VGND VPWR VGND VPWR sky130_ef_sc_hd__decap_12
+XFILLER_16_331 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_8
+XANTENNA_2 nsample_n VGND VPWR VPWR VGND sky130_fd_sc_hd__diode_2
+Xclkgen.delay_100ns_3.genblk1\[6\].mux1 VGND VPWR _301_/Y clkgen.delay_100ns_3.genblk1\[6\].and1/B
++ clkgen.delay_100ns_3.genblk1\[6\].mux1/A0 clkgen.delay_100ns_3.genblk1\[7\].and1/B
++ VGND VPWR sky130_fd_sc_hd__mux2_1
+XFILLER_25_18 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XPHY_29 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_3
+Xedgedetect.dly200cell.genblk1\[0\].and1 VPWR VGND edgedetect.dly200cell.genblk1\[0\].and1/X
++ _431_/A1 _434_/X VGND VPWR sky130_fd_sc_hd__and2_1
+XPHY_18 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_3
+XFILLER_22_334 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_6
+XFILLER_1_238 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+X_451_ _451_/B _452_/A _451_/A VPWR VGND VGND VPWR sky130_fd_sc_hd__or2_2
+X_382_ dlycontrol1[2] _414_/A _381_/X _383_/A VGND VPWR VGND VPWR sky130_fd_sc_hd__o21a_2
+XFILLER_9_338 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+Xclkgen.delay_100ns_1.genblk1\[10\].delay_unit VPWR clkgen.delay_100ns_1.genblk1\[10\].and1/X
++ clkgen.delay_100ns_1.genblk1\[10\].mux1/A0 VGND VGND VPWR sky130_mm_sc_hd_dlyPoly5ns
+XFILLER_16_183 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+X_434_ _434_/X _201_/A _433_/X _185_/X VGND VPWR VGND VPWR sky130_fd_sc_hd__a21o_2
+X_365_ _377_/A _414_/A dlycontrol2[4] VGND VPWR VGND VPWR sky130_fd_sc_hd__nand2_2
+X_296_ _296_/A _296_/Y VPWR VGND VGND VPWR sky130_fd_sc_hd__inv_2
+XFILLER_9_146 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_5_352 VGND VPWR VGND VPWR sky130_ef_sc_hd__decap_12
+XFILLER_2_311 VGND VPWR VGND VPWR sky130_ef_sc_hd__decap_12
+XFILLER_10_156 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_3
+XFILLER_2_366 VGND VPWR VGND VPWR sky130_ef_sc_hd__decap_12
+X_417_ _417_/A _417_/Y VPWR VGND VGND VPWR sky130_fd_sc_hd__inv_2
+X_279_ _280_/A _281_/A _251_/X _207_/X VGND VPWR VGND VPWR sky130_fd_sc_hd__a21o_2
+X_348_ _348_/A _348_/Y VPWR VGND VGND VPWR sky130_fd_sc_hd__inv_2
+XFILLER_17_19 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_24_237 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+Xclkgen.delay_100ns_2.genblk1\[1\].and1 VPWR VGND clkgen.delay_100ns_2.genblk1\[1\].and1/X
++ clkgen.delay_100ns_2.genblk1\[1\].and1/B _338_/Y VGND VPWR sky130_fd_sc_hd__and2_1
+X_202_ dlycontrol4[1] dlycontrol4[2] dlycontrol4[0] _240_/B VGND VPWR VGND VPWR sky130_fd_sc_hd__o21a_2
+XFILLER_2_130 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_21_229 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+Xedgedetect.dly200cell.genblk1\[34\].mux1 VGND VPWR _272_/Y edgedetect.dly200cell.genblk1\[34\].and1/B
++ edgedetect.dly200cell.genblk1\[34\].mux1/A0 edgedetect.dly200cell.genblk1\[35\].and1/B
++ VGND VPWR sky130_fd_sc_hd__mux2_1
+Xclkgen.delay_100ns_3.genblk1\[13\].delay_unit VPWR clkgen.delay_100ns_3.genblk1\[13\].and1/X
++ clkgen.delay_100ns_3.genblk1\[13\].mux1/A0 VGND VGND VPWR sky130_mm_sc_hd_dlyPoly5ns
+XFILLER_12_218 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_6
+Xclkgen.delay_100ns_1.genblk1\[15\].delay_unit VPWR clkgen.delay_100ns_1.genblk1\[15\].and1/X
++ clkgen.delay_100ns_1.genblk1\[15\].mux1/A0 VGND VGND VPWR sky130_mm_sc_hd_dlyPoly5ns
+XFILLER_11_295 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_11_240 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_8
+Xedgedetect.dly200cell.genblk1\[38\].and1 VPWR VGND edgedetect.dly200cell.genblk1\[38\].and1/X
++ edgedetect.dly200cell.genblk1\[38\].and1/B _280_/A VGND VPWR sky130_fd_sc_hd__and2_1
+XFILLER_19_373 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_6
+XFILLER_25_354 VGND VPWR VGND VPWR sky130_ef_sc_hd__decap_12
+Xclkgen.delay_100ns_1.genblk1\[18\].mux1 VGND VPWR _425_/Y ANTENNA_9/DIODE clkgen.delay_100ns_1.genblk1\[18\].mux1/A0
++ clkgen.delay_100ns_1.genblk1\[19\].and1/B VGND VPWR sky130_fd_sc_hd__mux2_1
+XFILLER_16_354 VGND VPWR VGND VPWR sky130_ef_sc_hd__decap_12
+XANTENNA_3 sample_n VGND VPWR VPWR VGND sky130_fd_sc_hd__diode_2
+XFILLER_3_280 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XPHY_19 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_3
+Xedgedetect.dly200cell.genblk1\[21\].and1 VPWR VGND edgedetect.dly200cell.genblk1\[21\].and1/X
++ edgedetect.dly200cell.genblk1\[21\].and1/B _446_/X VGND VPWR sky130_fd_sc_hd__and2_1
+Xclkgen.delay_100ns_3.genblk1\[14\].mux1 VGND VPWR _319_/Y clkgen.delay_100ns_3.genblk1\[14\].and1/B
++ clkgen.delay_100ns_3.genblk1\[14\].mux1/A0 clkgen.delay_100ns_3.genblk1\[15\].and1/B
++ VGND VPWR sky130_fd_sc_hd__mux2_1
+XFILLER_25_173 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_15_85 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_15_63 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+X_450_ _450_/X _451_/A _433_/X _311_/B VGND VPWR VGND VPWR sky130_fd_sc_hd__a21o_2
+X_381_ dlycontrol1[4] _381_/X dlycontrol1[3] VPWR VGND VGND VPWR sky130_fd_sc_hd__or2_2
+XFILLER_0_261 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+Xclkgen.delay_100ns_3.genblk1\[18\].and1 VPWR VGND clkgen.delay_100ns_3.genblk1\[18\].and1/X
++ clkgen.delay_100ns_3.genblk1\[18\].and1/B _327_/A VGND VPWR sky130_fd_sc_hd__and2_1
+XFILLER_22_198 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_8
+XFILLER_10_327 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+X_433_ VGND VPWR _433_/X _433_/A VGND VPWR sky130_fd_sc_hd__buf_1
+XFILLER_13_187 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_3
+X_295_ _296_/A _302_/A _311_/B _433_/A dlycontrol3[2] VGND VPWR VGND VPWR sky130_fd_sc_hd__a31o_2
+XFILLER_9_125 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+X_364_ _364_/A _364_/Y VPWR VGND VGND VPWR sky130_fd_sc_hd__inv_2
+XFILLER_5_364 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_8
+XFILLER_3_99 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+Xclkgen.delay_100ns_3.genblk1\[18\].delay_unit VPWR clkgen.delay_100ns_3.genblk1\[18\].and1/X
++ clkgen.delay_100ns_3.genblk1\[18\].mux1/A0 VGND VGND VPWR sky130_mm_sc_hd_dlyPoly5ns
+XFILLER_10_168 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_6
+XFILLER_2_323 VGND VPWR VGND VPWR sky130_ef_sc_hd__decap_12
+XFILLER_12_53 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_5_3 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_3
+X_416_ _417_/A _415_/Y _396_/B dlycontrol1[3] dlycontrol1[0] VGND VPWR VGND VPWR sky130_fd_sc_hd__a31o_2
+X_347_ _347_/B _348_/A _351_/A VGND VPWR VGND VPWR sky130_fd_sc_hd__nor2_2
+X_278_ _278_/A _278_/Y VPWR VGND VGND VPWR sky130_fd_sc_hd__inv_2
+XFILLER_5_194 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_3_109 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+X_201_ _201_/A _201_/Y VPWR VGND VGND VPWR sky130_fd_sc_hd__inv_2
+XFILLER_9_87 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_9_76 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_9_98 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+Xclkgen.delay_100ns_1.genblk1\[4\].delay_unit VPWR clkgen.delay_100ns_1.genblk1\[4\].and1/X
++ clkgen.delay_100ns_1.genblk1\[4\].mux1/A0 VGND VGND VPWR sky130_mm_sc_hd_dlyPoly5ns
+XFILLER_7_245 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_3
+XFILLER_19_330 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+XFILLER_25_366 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_6
+XFILLER_16_366 VGND VPWR VGND VPWR sky130_ef_sc_hd__decap_12
+XANTENNA_4 sample_p VGND VPWR VPWR VGND sky130_fd_sc_hd__diode_2
+XFILLER_20_3 VPWR VGND VGND VPWR sky130_fd_sc_hd__decap_8
+Xclkgen.delay_100ns_1.genblk1\[5\].mux1 VGND VPWR _397_/A clkgen.delay_100ns_1.genblk1\[5\].and1/B
++ clkgen.delay_100ns_1.genblk1\[5\].mux1/A0 clkgen.delay_100ns_1.genblk1\[6\].and1/B
++ VGND VPWR sky130_fd_sc_hd__mux2_1
+X_380_ dlycontrol1[1] _409_/B dlycontrol1[0] VPWR VGND VGND VPWR sky130_fd_sc_hd__or2_2
+XFILLER_15_31 VGND VPWR VGND VPWR sky130_fd_sc_hd__decap_4
+Xclkgen.delay_100ns_1.genblk1\[9\].and1 VPWR VGND clkgen.delay_100ns_1.genblk1\[9\].and1/X
++ clkgen.delay_100ns_1.genblk1\[9\].and1/B _404_/A VGND VPWR sky130_fd_sc_hd__and2_1
+.ends
+
