@@ -27,11 +27,12 @@ module adc_clkgen_with_edgedetect(
     output wire clk_dig,           // digital clock
     output wire clk_comp,          // comparator clock
     input wire enable_dlycontrol,  // 0 = max delays, 1 = configurable delays
-    input wire [4:0] dlycontrol1,  // delay 1 of 3 in loop
-    input wire [4:0] dlycontrol2,  // delay 2 of 3 in loop
-    input wire [4:0] dlycontrol3,  // delay 3 of 3 in loop
-    input wire [5:0] dlycontrol4,  // edge detect pulse width
-    input wire sample_p,           // sample signals for matrix using additional buffers 
+    input wire [4:0] dlycontrol1,  // delay 1 of 3 in loop. Delay = 5ns*dlycontrol1
+    input wire [4:0] dlycontrol2,  // delay 2 of 3 in loop. Delay = 5ns*dlycontrol2
+    input wire [4:0] dlycontrol3,  // delay 3 of 3 in loop. Delay = 5ns*dlycontrol3
+    input wire [5:0] dlycontrol4,  // edge detect pulse width. Delay = 5ns*dlycontrol4
+    // integration of additional buffers for sample matrix
+    input wire sample_p,           
     input wire sample_n,
     input wire nsample_p,
     input wire nsample_n,
@@ -63,7 +64,7 @@ module adc_clkgen_with_edgedetect(
    sky130_fd_sc_hd__buf_4 outbuf_6 (.A(nsample_n),.X(nsample_n_buf));
    
 
-   //Circuit
+   //Circuits
    adc_edge_detect_circuit edgedetect (.start_conv(_start_conv_buffered_),
                                        .ena_in(_ena_in_buffered_),
                                        .ena_out(_enable_loop_),
@@ -87,9 +88,9 @@ module adc_clk_generation(
    output wire clk_dig,           // clk for digital core
    output wire clk_comp,          // clk for comparator
    input wire enable_dlycontrol,  // 0 = max delays, 1 = configured delays
-   input wire [4:0] dlycontrol1,  // delay1 = N times 5ns up to 100ns
-   input wire [4:0] dlycontrol2,  // delay2 = N times 5ns up to 100ns
-   input wire [4:0] dlycontrol3   // delay3 = N times 5ns up to 100ns
+   input wire [4:0] dlycontrol1,  // delay1 = N times 5ns
+   input wire [4:0] dlycontrol2,  // delay2 = N times 5ns
+   input wire [4:0] dlycontrol3   // delay3 = N times 5ns
 );
    wire _ndecision_finish_delayed_;
    wire _clk_dig_delayed_;
@@ -127,7 +128,7 @@ module adc_edge_detect_circuit(
     input wire ena_in,              // signal from the digital core to enable the self-clocked-loop
     output wire ena_out,            // enable the self-clocked-loop
     input wire enable_dlycontrol,   // 0 = max delays, 1 = configured delays
-    input wire [5:0] dlycontrol     // delay = N times 5ns up to 315ns
+    input wire [5:0] dlycontrol     // delay = N times 5ns
 );   
    // Internal wires
     wire _start_conv_delayed_;
