@@ -320,7 +320,7 @@ C {devices/lab_wire.sym} 1100 -790 1 0 {name=l18 sig_type=std_logic lab=dlyctrl4
 C {sky130_fd_pr/corner.sym} 20 -360 0 0 {name=CORNER only_toplevel=false corner=tt}
 C {devices/gnd.sym} 50 -780 0 0 {name=l7 lab=GND}
 C {devices/lab_wire.sym} 1360 -490 0 1 {name=l1 sig_type=std_logic lab=ndecision_finish}
-C {devices/vsource.sym} 50 -1040 0 0 {name=V25 value=0}
+C {devices/vsource.sym} 50 -1040 0 0 {name=V25 value=1.8}
 C {devices/gnd.sym} 50 -990 0 0 {name=l7 lab=GND}
 C {devices/lab_wire.sym} 50 -1080 3 1 {name=l1 sig_type=std_logic lab=ena_delaycontrol}
 C {/foss/designs/SKY130_SAR-ADC/xschem/adc_comp_latch.sym} 1150 -460 0 0 {name=x2}

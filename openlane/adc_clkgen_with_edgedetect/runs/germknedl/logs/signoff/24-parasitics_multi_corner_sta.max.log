@@ -15,9 +15,9 @@ To avoid this warning in the future, remove this statement from the LEF file wit
 [INFO ODB-0127] Reading DEF file: /foss/designs/SKY130_SAR-ADC/openlane/adc_clkgen_with_edgedetect/runs/germknedl/results/routing/adc_clkgen_with_edgedetect.def
 [INFO ODB-0128] Design: adc_clkgen_with_edgedetect
 [INFO ODB-0130]     Created 37 pins.
-[INFO ODB-0131]     Created 1016 components and 4468 component-terminals.
-[INFO ODB-0132]     Created 4 special nets and 3834 connections.
-[INFO ODB-0133]     Created 265 nets and 634 connections.
+[INFO ODB-0131]     Created 1008 components and 4423 component-terminals.
+[INFO ODB-0132]     Created 4 special nets and 3802 connections.
+[INFO ODB-0133]     Created 265 nets and 621 connections.
 [INFO ODB-0134] Finished DEF file: /foss/designs/SKY130_SAR-ADC/openlane/adc_clkgen_with_edgedetect/runs/germknedl/results/routing/adc_clkgen_with_edgedetect.def
 [WARNING STA-0357] virtual clock __VIRTUAL_CLK__ can not be propagated.
 min_report
@@ -28,8 +28,8 @@ report_checks -path_delay min (Hold)
 
 ======================= Slowest Corner ===================================
 
-Startpoint: nsample_n (input port clocked by __VIRTUAL_CLK__)
-Endpoint: nsample_n_buf (output port clocked by __VIRTUAL_CLK__)
+Startpoint: nsample_n_in (input port clocked by __VIRTUAL_CLK__)
+Endpoint: nsample_n_out (output port clocked by __VIRTUAL_CLK__)
 Path Group: __VIRTUAL_CLK__
 Path Type: min
 Corner: ss
@@ -39,12 +39,12 @@ Fanout     Cap    Slew   Delay    Time   Description
                   0.00    0.00    0.00   clock __VIRTUAL_CLK__ (rise edge)
                           0.00    0.00   clock network delay (ideal)
                        200000.00 200000.00 ^ input external delay
-                  0.05    0.03 200000.03 ^ nsample_n (in)
-     2    0.00                           nsample_n (net)
+                  0.05    0.03 200000.03 ^ nsample_n_in (in)
+     2    0.00                           nsample_n_in (net)
                   0.05    0.00 200000.03 ^ outbuf_6/A (sky130_fd_sc_hd__buf_4)
                   0.17    0.26 200000.30 ^ outbuf_6/X (sky130_fd_sc_hd__buf_4)
-     1    0.03                           nsample_n_buf (net)
-                  0.17    0.00 200000.30 ^ nsample_n_buf (out)
+     1    0.03                           nsample_n_out (net)
+                  0.17    0.00 200000.30 ^ nsample_n_out (out)
                                200000.30   data arrival time
 
                   0.00    0.00    0.00   clock __VIRTUAL_CLK__ (rise edge)
@@ -60,8 +60,8 @@ Fanout     Cap    Slew   Delay    Time   Description
                                400000.03   slack (MET)
 
 
-Startpoint: nsample_p (input port clocked by __VIRTUAL_CLK__)
-Endpoint: nsample_p_buf (output port clocked by __VIRTUAL_CLK__)
+Startpoint: nsample_p_in (input port clocked by __VIRTUAL_CLK__)
+Endpoint: nsample_p_out (output port clocked by __VIRTUAL_CLK__)
 Path Group: __VIRTUAL_CLK__
 Path Type: min
 Corner: ss
@@ -71,12 +71,12 @@ Fanout     Cap    Slew   Delay    Time   Description
                   0.00    0.00    0.00   clock __VIRTUAL_CLK__ (rise edge)
                           0.00    0.00   clock network delay (ideal)
                        200000.00 200000.00 ^ input external delay
-                  0.09    0.06 200000.06 ^ nsample_p (in)
-     2    0.01                           nsample_p (net)
-                  0.09    0.00 200000.06 ^ outbuf_5/A (sky130_fd_sc_hd__buf_4)
+                  0.08    0.04 200000.05 ^ nsample_p_in (in)
+     2    0.01                           nsample_p_in (net)
+                  0.08    0.00 200000.05 ^ outbuf_5/A (sky130_fd_sc_hd__buf_4)
                   0.17    0.28 200000.33 ^ outbuf_5/X (sky130_fd_sc_hd__buf_4)
-     1    0.03                           nsample_p_buf (net)
-                  0.17    0.00 200000.33 ^ nsample_p_buf (out)
+     1    0.03                           nsample_p_out (net)
+                  0.17    0.00 200000.33 ^ nsample_p_out (out)
                                200000.33   data arrival time
 
                   0.00    0.00    0.00   clock __VIRTUAL_CLK__ (rise edge)
@@ -92,8 +92,8 @@ Fanout     Cap    Slew   Delay    Time   Description
                                400000.09   slack (MET)
 
 
-Startpoint: sample_n (input port clocked by __VIRTUAL_CLK__)
-Endpoint: sample_n_buf (output port clocked by __VIRTUAL_CLK__)
+Startpoint: sample_n_in (input port clocked by __VIRTUAL_CLK__)
+Endpoint: sample_n_out (output port clocked by __VIRTUAL_CLK__)
 Path Group: __VIRTUAL_CLK__
 Path Type: min
 Corner: ss
@@ -103,12 +103,44 @@ Fanout     Cap    Slew   Delay    Time   Description
                   0.00    0.00    0.00   clock __VIRTUAL_CLK__ (rise edge)
                           0.00    0.00   clock network delay (ideal)
                        200000.00 200000.00 ^ input external delay
-                  0.11    0.07 200000.08 ^ sample_n (in)
-     2    0.01                           sample_n (net)
-                  0.11    0.00 200000.08 ^ outbuf_4/A (sky130_fd_sc_hd__buf_4)
-                  0.17    0.29 200000.36 ^ outbuf_4/X (sky130_fd_sc_hd__buf_4)
-     1    0.03                           sample_n_buf (net)
-                  0.17    0.00 200000.36 ^ sample_n_buf (out)
+                  0.10    0.06 200000.06 ^ sample_n_in (in)
+     2    0.01                           sample_n_in (net)
+                  0.10    0.00 200000.06 ^ outbuf_4/A (sky130_fd_sc_hd__buf_4)
+                  0.16    0.28 200000.33 ^ outbuf_4/X (sky130_fd_sc_hd__buf_4)
+     1    0.03                           sample_n_out (net)
+                  0.16    0.00 200000.33 ^ sample_n_out (out)
+                               200000.33   data arrival time
+
+                  0.00    0.00    0.00   clock __VIRTUAL_CLK__ (rise edge)
+                          0.00    0.00   clock network delay (ideal)
+                          0.25    0.25   clock uncertainty
+                          0.00    0.25   clock reconvergence pessimism
+                       -200000.00 -199999.75   output external delay
+                               -199999.75   data required time
+-----------------------------------------------------------------------------
+                               -199999.75   data required time
+                               -200000.33   data arrival time
+-----------------------------------------------------------------------------
+                               400000.09   slack (MET)
+
+
+Startpoint: sample_p_in (input port clocked by __VIRTUAL_CLK__)
+Endpoint: sample_p_out (output port clocked by __VIRTUAL_CLK__)
+Path Group: __VIRTUAL_CLK__
+Path Type: min
+Corner: ss
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                  0.00    0.00    0.00   clock __VIRTUAL_CLK__ (rise edge)
+                          0.00    0.00   clock network delay (ideal)
+                       200000.00 200000.00 ^ input external delay
+                  0.11    0.07 200000.08 ^ sample_p_in (in)
+     2    0.01                           sample_p_in (net)
+                  0.11    0.00 200000.08 ^ outbuf_3/A (sky130_fd_sc_hd__buf_4)
+                  0.17    0.29 200000.36 ^ outbuf_3/X (sky130_fd_sc_hd__buf_4)
+     1    0.03                           sample_p_out (net)
+                  0.17    0.00 200000.36 ^ sample_p_out (out)
                                200000.36   data arrival time
 
                   0.00    0.00    0.00   clock __VIRTUAL_CLK__ (rise edge)
@@ -124,40 +156,8 @@ Fanout     Cap    Slew   Delay    Time   Description
                                400000.12   slack (MET)
 
 
-Startpoint: sample_p (input port clocked by __VIRTUAL_CLK__)
-Endpoint: sample_p_buf (output port clocked by __VIRTUAL_CLK__)
-Path Group: __VIRTUAL_CLK__
-Path Type: min
-Corner: ss
-
-Fanout     Cap    Slew   Delay    Time   Description
------------------------------------------------------------------------------
-                  0.00    0.00    0.00   clock __VIRTUAL_CLK__ (rise edge)
-                          0.00    0.00   clock network delay (ideal)
-                       200000.00 200000.00 ^ input external delay
-                  0.09    0.06 200000.06 ^ sample_p (in)
-     2    0.01                           sample_p (net)
-                  0.09    0.00 200000.06 ^ outbuf_3/A (sky130_fd_sc_hd__buf_4)
-                  0.17    0.28 200000.33 ^ outbuf_3/X (sky130_fd_sc_hd__buf_4)
-     1    0.03                           sample_p_buf (net)
-                  0.17    0.00 200000.33 ^ sample_p_buf (out)
-                               200000.33   data arrival time
-
-                  0.00    0.00    0.00   clock __VIRTUAL_CLK__ (rise edge)
-                          0.00    0.00   clock network delay (ideal)
-                          0.25    0.25   clock uncertainty
-                          0.00    0.25   clock reconvergence pessimism
-                       -200000.00 -199999.75   output external delay
-                               -199999.75   data required time
------------------------------------------------------------------------------
-                               -199999.75   data required time
-                               -200000.33   data arrival time
------------------------------------------------------------------------------
-                               400000.09   slack (MET)
-
-
-Startpoint: dlycontrol3[4] (input port clocked by __VIRTUAL_CLK__)
-Endpoint: clk_comp (output port clocked by __VIRTUAL_CLK__)
+Startpoint: dlycontrol3_in[4] (input port clocked by __VIRTUAL_CLK__)
+Endpoint: clk_comp_out (output port clocked by __VIRTUAL_CLK__)
 Path Group: __VIRTUAL_CLK__
 Path Type: min
 Corner: ss
@@ -167,19 +167,19 @@ Fanout     Cap    Slew   Delay    Time   Description
                   0.00    0.00    0.00   clock __VIRTUAL_CLK__ (rise edge)
                           0.00    0.00   clock network delay (ideal)
                        200000.00 200000.00 v input external delay
-                  0.05    0.03 200000.03 v dlycontrol3[4] (in)
-     2    0.01                           dlycontrol3[4] (net)
-                  0.05    0.00 200000.03 v clkgen.delay_155ns_3.genblk1[4].bypass_enable/B (sky130_fd_sc_hd__and2_1)
+                  0.04    0.03 200000.03 v dlycontrol3_in[4] (in)
+     2    0.01                           dlycontrol3_in[4] (net)
+                  0.04    0.00 200000.03 v clkgen.delay_155ns_3.genblk1[4].bypass_enable/B (sky130_fd_sc_hd__and2_1)
                   0.10    0.32 200000.34 v clkgen.delay_155ns_3.genblk1[4].bypass_enable/X (sky130_fd_sc_hd__and2_1)
-     2    0.01                           clkgen.delay_155ns_3.genblk1[4].dly_binary.bypass (net)
+     2    0.01                           clkgen.delay_155ns_3.genblk1[4].dly_binary.bypass_in (net)
                   0.10    0.00 200000.34 v clkgen.delay_155ns_3.genblk1[4].dly_binary.out_mux/S (sky130_fd_sc_hd__mux2_1)
-                  0.19    0.47 200000.81 ^ clkgen.delay_155ns_3.genblk1[4].dly_binary.out_mux/X (sky130_fd_sc_hd__mux2_1)
-     2    0.01                           clkgen.clk_comp (net)
-                  0.19    0.00 200000.81 ^ outbuf_2/A (sky130_fd_sc_hd__buf_4)
-                  0.17    0.32 200001.14 ^ outbuf_2/X (sky130_fd_sc_hd__buf_4)
-     1    0.03                           clk_comp (net)
-                  0.17    0.00 200001.14 ^ clk_comp (out)
-                               200001.14   data arrival time
+                  0.16    0.44 200000.78 ^ clkgen.delay_155ns_3.genblk1[4].dly_binary.out_mux/X (sky130_fd_sc_hd__mux2_1)
+     1    0.01                           clkgen.clk_comp_out (net)
+                  0.16    0.00 200000.78 ^ outbuf_2/A (sky130_fd_sc_hd__buf_4)
+                  0.17    0.31 200001.09 ^ outbuf_2/X (sky130_fd_sc_hd__buf_4)
+     1    0.03                           clk_comp_out (net)
+                  0.17    0.00 200001.09 ^ clk_comp_out (out)
+                               200001.09   data arrival time
 
                   0.00    0.00    0.00   clock __VIRTUAL_CLK__ (rise edge)
                           0.00    0.00   clock network delay (ideal)
@@ -189,13 +189,13 @@ Fanout     Cap    Slew   Delay    Time   Description
                                -199999.75   data required time
 -----------------------------------------------------------------------------
                                -199999.75   data required time
-                               -200001.14   data arrival time
+                               -200001.09   data arrival time
 -----------------------------------------------------------------------------
-                               400000.91   slack (MET)
+                               400000.84   slack (MET)
 
 
-Startpoint: dlycontrol1[4] (input port clocked by __VIRTUAL_CLK__)
-Endpoint: clk_dig (output port clocked by __VIRTUAL_CLK__)
+Startpoint: dlycontrol1_in[4] (input port clocked by __VIRTUAL_CLK__)
+Endpoint: clk_dig_out (output port clocked by __VIRTUAL_CLK__)
 Path Group: __VIRTUAL_CLK__
 Path Type: min
 Corner: ss
@@ -205,22 +205,22 @@ Fanout     Cap    Slew   Delay    Time   Description
                   0.00    0.00    0.00   clock __VIRTUAL_CLK__ (rise edge)
                           0.00    0.00   clock network delay (ideal)
                        200000.00 200000.00 ^ input external delay
-                  0.10    0.07 200000.08 ^ dlycontrol1[4] (in)
-     2    0.01                           dlycontrol1[4] (net)
-                  0.10    0.00 200000.08 ^ clkgen.delay_155ns_1.genblk1[4].bypass_enable/B (sky130_fd_sc_hd__and2_1)
-                  0.29    0.38 200000.45 ^ clkgen.delay_155ns_1.genblk1[4].bypass_enable/X (sky130_fd_sc_hd__and2_1)
-     4    0.02                           clkgen.delay_155ns_1.genblk1[4].dly_binary.bypass (net)
-                  0.29    0.00 200000.45 ^ clkgen.delay_155ns_1.genblk1[4].dly_binary.out_mux/S (sky130_fd_sc_hd__mux2_1)
-                  0.14    0.77 200001.22 v clkgen.delay_155ns_1.genblk1[4].dly_binary.out_mux/X (sky130_fd_sc_hd__mux2_1)
-     1    0.01                           clkgen._ndecision_finish_delayed_ (net)
-                  0.14    0.00 200001.22 v clkgen.clkdig_inverter/A (sky130_fd_sc_hd__inv_2)
-                  0.12    0.15 200001.38 ^ clkgen.clkdig_inverter/Y (sky130_fd_sc_hd__inv_2)
-     3    0.01                           clkgen.clk_dig (net)
-                  0.12    0.00 200001.38 ^ outbuf_1/A (sky130_fd_sc_hd__buf_4)
-                  0.19    0.31 200001.67 ^ outbuf_1/X (sky130_fd_sc_hd__buf_4)
-     1    0.03                           clk_dig (net)
-                  0.19    0.00 200001.67 ^ clk_dig (out)
-                               200001.67   data arrival time
+                  0.10    0.06 200000.06 ^ dlycontrol1_in[4] (in)
+     2    0.01                           dlycontrol1_in[4] (net)
+                  0.10    0.00 200000.06 ^ clkgen.delay_155ns_1.genblk1[4].bypass_enable/B (sky130_fd_sc_hd__and2_1)
+                  0.20    0.32 200000.38 ^ clkgen.delay_155ns_1.genblk1[4].bypass_enable/X (sky130_fd_sc_hd__and2_1)
+     2    0.01                           clkgen.delay_155ns_1.genblk1[4].dly_binary.bypass_in (net)
+                  0.20    0.00 200000.38 ^ clkgen.delay_155ns_1.genblk1[4].dly_binary.out_mux/S (sky130_fd_sc_hd__mux2_1)
+                  0.16    0.77 200001.16 v clkgen.delay_155ns_1.genblk1[4].dly_binary.out_mux/X (sky130_fd_sc_hd__mux2_1)
+     1    0.01                           clkgen.delay_155ns_1.genblk1[4].dly_binary.out (net)
+                  0.16    0.00 200001.16 v clkgen.clkdig_inverter/A (sky130_fd_sc_hd__inv_2)
+                  0.12    0.16 200001.31 ^ clkgen.clkdig_inverter/Y (sky130_fd_sc_hd__inv_2)
+     3    0.01                           clkgen.clk_dig_out (net)
+                  0.12    0.00 200001.31 ^ outbuf_1/A (sky130_fd_sc_hd__buf_4)
+                  0.19    0.31 200001.61 ^ outbuf_1/X (sky130_fd_sc_hd__buf_4)
+     1    0.03                           clk_dig_out (net)
+                  0.19    0.00 200001.61 ^ clk_dig_out (out)
+                               200001.61   data arrival time
 
                   0.00    0.00    0.00   clock __VIRTUAL_CLK__ (rise edge)
                           0.00    0.00   clock network delay (ideal)
@@ -230,16 +230,16 @@ Fanout     Cap    Slew   Delay    Time   Description
                                -199999.75   data required time
 -----------------------------------------------------------------------------
                                -199999.75   data required time
-                               -200001.67   data arrival time
+                               -200001.61   data arrival time
 -----------------------------------------------------------------------------
-                               400001.44   slack (MET)
+                               400001.38   slack (MET)
 
 
 
 ======================= Typical Corner ===================================
 
-Startpoint: nsample_n (input port clocked by __VIRTUAL_CLK__)
-Endpoint: nsample_n_buf (output port clocked by __VIRTUAL_CLK__)
+Startpoint: nsample_n_in (input port clocked by __VIRTUAL_CLK__)
+Endpoint: nsample_n_out (output port clocked by __VIRTUAL_CLK__)
 Path Group: __VIRTUAL_CLK__
 Path Type: min
 Corner: tt
@@ -249,12 +249,12 @@ Fanout     Cap    Slew   Delay    Time   Description
                   0.00    0.00    0.00   clock __VIRTUAL_CLK__ (rise edge)
                           0.00    0.00   clock network delay (ideal)
                        200000.00 200000.00 ^ input external delay
-                  0.03    0.01 200000.02 ^ nsample_n (in)
-     2    0.00                           nsample_n (net)
+                  0.03    0.01 200000.02 ^ nsample_n_in (in)
+     2    0.00                           nsample_n_in (net)
                   0.03    0.00 200000.02 ^ outbuf_6/A (sky130_fd_sc_hd__buf_4)
                   0.11    0.15 200000.16 ^ outbuf_6/X (sky130_fd_sc_hd__buf_4)
-     1    0.03                           nsample_n_buf (net)
-                  0.11    0.00 200000.16 ^ nsample_n_buf (out)
+     1    0.03                           nsample_n_out (net)
+                  0.11    0.00 200000.16 ^ nsample_n_out (out)
                                200000.16   data arrival time
 
                   0.00    0.00    0.00   clock __VIRTUAL_CLK__ (rise edge)
@@ -270,8 +270,8 @@ Fanout     Cap    Slew   Delay    Time   Description
                                399999.91   slack (MET)
 
 
-Startpoint: nsample_p (input port clocked by __VIRTUAL_CLK__)
-Endpoint: nsample_p_buf (output port clocked by __VIRTUAL_CLK__)
+Startpoint: nsample_p_in (input port clocked by __VIRTUAL_CLK__)
+Endpoint: nsample_p_out (output port clocked by __VIRTUAL_CLK__)
 Path Group: __VIRTUAL_CLK__
 Path Type: min
 Corner: tt
@@ -281,12 +281,12 @@ Fanout     Cap    Slew   Delay    Time   Description
                   0.00    0.00    0.00   clock __VIRTUAL_CLK__ (rise edge)
                           0.00    0.00   clock network delay (ideal)
                        200000.00 200000.00 ^ input external delay
-                  0.06    0.03 200000.03 ^ nsample_p (in)
-     2    0.01                           nsample_p (net)
-                  0.06    0.00 200000.03 ^ outbuf_5/A (sky130_fd_sc_hd__buf_4)
+                  0.05    0.03 200000.03 ^ nsample_p_in (in)
+     2    0.01                           nsample_p_in (net)
+                  0.05    0.00 200000.03 ^ outbuf_5/A (sky130_fd_sc_hd__buf_4)
                   0.10    0.15 200000.17 ^ outbuf_5/X (sky130_fd_sc_hd__buf_4)
-     1    0.03                           nsample_p_buf (net)
-                  0.10    0.00 200000.17 ^ nsample_p_buf (out)
+     1    0.03                           nsample_p_out (net)
+                  0.10    0.00 200000.17 ^ nsample_p_out (out)
                                200000.17   data arrival time
 
                   0.00    0.00    0.00   clock __VIRTUAL_CLK__ (rise edge)
@@ -302,8 +302,8 @@ Fanout     Cap    Slew   Delay    Time   Description
                                399999.91   slack (MET)
 
 
-Startpoint: dlycontrol3[4] (input port clocked by __VIRTUAL_CLK__)
-Endpoint: clk_comp (output port clocked by __VIRTUAL_CLK__)
+Startpoint: dlycontrol3_in[4] (input port clocked by __VIRTUAL_CLK__)
+Endpoint: clk_comp_out (output port clocked by __VIRTUAL_CLK__)
 Path Group: __VIRTUAL_CLK__
 Path Type: min
 Corner: tt
@@ -313,19 +313,19 @@ Fanout     Cap    Slew   Delay    Time   Description
                   0.00    0.00    0.00   clock __VIRTUAL_CLK__ (rise edge)
                           0.00    0.00   clock network delay (ideal)
                        200000.00 200000.00 v input external delay
-                  0.03    0.01 200000.02 v dlycontrol3[4] (in)
-     2    0.01                           dlycontrol3[4] (net)
-                  0.03    0.00 200000.02 v clkgen.delay_155ns_3.genblk1[4].bypass_enable/B (sky130_fd_sc_hd__and2_1)
+                  0.02    0.01 200000.02 v dlycontrol3_in[4] (in)
+     2    0.01                           dlycontrol3_in[4] (net)
+                  0.02    0.00 200000.02 v clkgen.delay_155ns_3.genblk1[4].bypass_enable/B (sky130_fd_sc_hd__and2_1)
                   0.05    0.16 200000.17 v clkgen.delay_155ns_3.genblk1[4].bypass_enable/X (sky130_fd_sc_hd__and2_1)
-     2    0.01                           clkgen.delay_155ns_3.genblk1[4].dly_binary.bypass (net)
+     2    0.01                           clkgen.delay_155ns_3.genblk1[4].dly_binary.bypass_in (net)
                   0.05    0.00 200000.17 v clkgen.delay_155ns_3.genblk1[4].dly_binary.out_mux/S (sky130_fd_sc_hd__mux2_1)
-                  0.11    0.23 200000.41 ^ clkgen.delay_155ns_3.genblk1[4].dly_binary.out_mux/X (sky130_fd_sc_hd__mux2_1)
-     2    0.01                           clkgen.clk_comp (net)
-                  0.11    0.00 200000.41 ^ outbuf_2/A (sky130_fd_sc_hd__buf_4)
-                  0.10    0.17 200000.58 ^ outbuf_2/X (sky130_fd_sc_hd__buf_4)
-     1    0.03                           clk_comp (net)
-                  0.10    0.00 200000.58 ^ clk_comp (out)
-                               200000.58   data arrival time
+                  0.10    0.23 200000.41 ^ clkgen.delay_155ns_3.genblk1[4].dly_binary.out_mux/X (sky130_fd_sc_hd__mux2_1)
+     1    0.01                           clkgen.clk_comp_out (net)
+                  0.10    0.00 200000.41 ^ outbuf_2/A (sky130_fd_sc_hd__buf_4)
+                  0.10    0.16 200000.56 ^ outbuf_2/X (sky130_fd_sc_hd__buf_4)
+     1    0.03                           clk_comp_out (net)
+                  0.10    0.00 200000.56 ^ clk_comp_out (out)
+                               200000.56   data arrival time
 
                   0.00    0.00    0.00   clock __VIRTUAL_CLK__ (rise edge)
                           0.00    0.00   clock network delay (ideal)
@@ -335,13 +335,13 @@ Fanout     Cap    Slew   Delay    Time   Description
                                -199999.75   data required time
 -----------------------------------------------------------------------------
                                -199999.75   data required time
-                               -200000.58   data arrival time
+                               -200000.56   data arrival time
 -----------------------------------------------------------------------------
                                400000.31   slack (MET)
 
 
-Startpoint: sample_n (input port clocked by __VIRTUAL_CLK__)
-Endpoint: sample_n_buf (output port clocked by __VIRTUAL_CLK__)
+Startpoint: sample_n_in (input port clocked by __VIRTUAL_CLK__)
+Endpoint: sample_n_out (output port clocked by __VIRTUAL_CLK__)
 Path Group: __VIRTUAL_CLK__
 Path Type: min
 Corner: tt
@@ -351,12 +351,12 @@ Fanout     Cap    Slew   Delay    Time   Description
                   0.00    0.00    0.00   clock __VIRTUAL_CLK__ (rise edge)
                           0.00    0.00   clock network delay (ideal)
                        200000.00 200000.00 ^ input external delay
-                  0.07    0.04 200000.05 ^ sample_n (in)
-     2    0.01                           sample_n (net)
+                  0.07    0.04 200000.05 ^ sample_n_in (in)
+     2    0.01                           sample_n_in (net)
                   0.07    0.00 200000.05 ^ outbuf_4/A (sky130_fd_sc_hd__buf_4)
                   0.10    0.16 200000.20 ^ outbuf_4/X (sky130_fd_sc_hd__buf_4)
-     1    0.03                           sample_n_buf (net)
-                  0.10    0.00 200000.20 ^ sample_n_buf (out)
+     1    0.03                           sample_n_out (net)
+                  0.10    0.00 200000.20 ^ sample_n_out (out)
                                200000.20   data arrival time
 
                   0.00    0.00    0.00   clock __VIRTUAL_CLK__ (rise edge)
@@ -372,8 +372,8 @@ Fanout     Cap    Slew   Delay    Time   Description
                                399999.97   slack (MET)
 
 
-Startpoint: sample_p (input port clocked by __VIRTUAL_CLK__)
-Endpoint: sample_p_buf (output port clocked by __VIRTUAL_CLK__)
+Startpoint: sample_p_in (input port clocked by __VIRTUAL_CLK__)
+Endpoint: sample_p_out (output port clocked by __VIRTUAL_CLK__)
 Path Group: __VIRTUAL_CLK__
 Path Type: min
 Corner: tt
@@ -383,13 +383,13 @@ Fanout     Cap    Slew   Delay    Time   Description
                   0.00    0.00    0.00   clock __VIRTUAL_CLK__ (rise edge)
                           0.00    0.00   clock network delay (ideal)
                        200000.00 200000.00 ^ input external delay
-                  0.05    0.03 200000.03 ^ sample_p (in)
-     2    0.01                           sample_p (net)
-                  0.05    0.00 200000.03 ^ outbuf_3/A (sky130_fd_sc_hd__buf_4)
-                  0.10    0.15 200000.17 ^ outbuf_3/X (sky130_fd_sc_hd__buf_4)
-     1    0.03                           sample_p_buf (net)
-                  0.10    0.00 200000.17 ^ sample_p_buf (out)
-                               200000.17   data arrival time
+                  0.07    0.04 200000.05 ^ sample_p_in (in)
+     2    0.01                           sample_p_in (net)
+                  0.07    0.00 200000.05 ^ outbuf_3/A (sky130_fd_sc_hd__buf_4)
+                  0.10    0.16 200000.20 ^ outbuf_3/X (sky130_fd_sc_hd__buf_4)
+     1    0.03                           sample_p_out (net)
+                  0.10    0.00 200000.20 ^ sample_p_out (out)
+                               200000.20   data arrival time
 
                   0.00    0.00    0.00   clock __VIRTUAL_CLK__ (rise edge)
                           0.00    0.00   clock network delay (ideal)
@@ -399,13 +399,13 @@ Fanout     Cap    Slew   Delay    Time   Description
                                -199999.75   data required time
 -----------------------------------------------------------------------------
                                -199999.75   data required time
-                               -200000.17   data arrival time
+                               -200000.20   data arrival time
 -----------------------------------------------------------------------------
-                               399999.91   slack (MET)
+                               399999.97   slack (MET)
 
 
-Startpoint: dlycontrol1[4] (input port clocked by __VIRTUAL_CLK__)
-Endpoint: clk_dig (output port clocked by __VIRTUAL_CLK__)
+Startpoint: dlycontrol1_in[4] (input port clocked by __VIRTUAL_CLK__)
+Endpoint: clk_dig_out (output port clocked by __VIRTUAL_CLK__)
 Path Group: __VIRTUAL_CLK__
 Path Type: min
 Corner: tt
@@ -415,22 +415,22 @@ Fanout     Cap    Slew   Delay    Time   Description
                   0.00    0.00    0.00   clock __VIRTUAL_CLK__ (rise edge)
                           0.00    0.00   clock network delay (ideal)
                        200000.00 200000.00 ^ input external delay
-                  0.07    0.04 200000.05 ^ dlycontrol1[4] (in)
-     2    0.01                           dlycontrol1[4] (net)
-                  0.07    0.00 200000.05 ^ clkgen.delay_155ns_1.genblk1[4].bypass_enable/B (sky130_fd_sc_hd__and2_1)
-                  0.18    0.20 200000.25 ^ clkgen.delay_155ns_1.genblk1[4].bypass_enable/X (sky130_fd_sc_hd__and2_1)
-     4    0.02                           clkgen.delay_155ns_1.genblk1[4].dly_binary.bypass (net)
-                  0.18    0.00 200000.25 ^ clkgen.delay_155ns_1.genblk1[4].dly_binary.out_mux/S (sky130_fd_sc_hd__mux2_1)
-                  0.07    0.33 200000.58 v clkgen.delay_155ns_1.genblk1[4].dly_binary.out_mux/X (sky130_fd_sc_hd__mux2_1)
-     1    0.01                           clkgen._ndecision_finish_delayed_ (net)
-                  0.07    0.00 200000.58 v clkgen.clkdig_inverter/A (sky130_fd_sc_hd__inv_2)
-                  0.07    0.09 200000.67 ^ clkgen.clkdig_inverter/Y (sky130_fd_sc_hd__inv_2)
-     3    0.01                           clkgen.clk_dig (net)
-                  0.07    0.00 200000.67 ^ outbuf_1/A (sky130_fd_sc_hd__buf_4)
-                  0.12    0.17 200000.84 ^ outbuf_1/X (sky130_fd_sc_hd__buf_4)
-     1    0.03                           clk_dig (net)
-                  0.12    0.00 200000.84 ^ clk_dig (out)
-                               200000.84   data arrival time
+                  0.06    0.04 200000.05 ^ dlycontrol1_in[4] (in)
+     2    0.01                           dlycontrol1_in[4] (net)
+                  0.06    0.00 200000.05 ^ clkgen.delay_155ns_1.genblk1[4].bypass_enable/B (sky130_fd_sc_hd__and2_1)
+                  0.12    0.17 200000.22 ^ clkgen.delay_155ns_1.genblk1[4].bypass_enable/X (sky130_fd_sc_hd__and2_1)
+     2    0.01                           clkgen.delay_155ns_1.genblk1[4].dly_binary.bypass_in (net)
+                  0.12    0.00 200000.22 ^ clkgen.delay_155ns_1.genblk1[4].dly_binary.out_mux/S (sky130_fd_sc_hd__mux2_1)
+                  0.08    0.35 200000.56 v clkgen.delay_155ns_1.genblk1[4].dly_binary.out_mux/X (sky130_fd_sc_hd__mux2_1)
+     1    0.01                           clkgen.delay_155ns_1.genblk1[4].dly_binary.out (net)
+                  0.08    0.00 200000.56 v clkgen.clkdig_inverter/A (sky130_fd_sc_hd__inv_2)
+                  0.08    0.09 200000.66 ^ clkgen.clkdig_inverter/Y (sky130_fd_sc_hd__inv_2)
+     3    0.02                           clkgen.clk_dig_out (net)
+                  0.08    0.00 200000.66 ^ outbuf_1/A (sky130_fd_sc_hd__buf_4)
+                  0.12    0.16 200000.81 ^ outbuf_1/X (sky130_fd_sc_hd__buf_4)
+     1    0.03                           clk_dig_out (net)
+                  0.12    0.00 200000.81 ^ clk_dig_out (out)
+                               200000.81   data arrival time
 
                   0.00    0.00    0.00   clock __VIRTUAL_CLK__ (rise edge)
                           0.00    0.00   clock network delay (ideal)
@@ -440,16 +440,16 @@ Fanout     Cap    Slew   Delay    Time   Description
                                -199999.75   data required time
 -----------------------------------------------------------------------------
                                -199999.75   data required time
-                               -200000.84   data arrival time
+                               -200000.81   data arrival time
 -----------------------------------------------------------------------------
-                               400000.62   slack (MET)
+                               400000.56   slack (MET)
 
 
 
 ======================= Fastest Corner ===================================
 
-Startpoint: dlycontrol3[4] (input port clocked by __VIRTUAL_CLK__)
-Endpoint: clk_comp (output port clocked by __VIRTUAL_CLK__)
+Startpoint: dlycontrol3_in[4] (input port clocked by __VIRTUAL_CLK__)
+Endpoint: clk_comp_out (output port clocked by __VIRTUAL_CLK__)
 Path Group: __VIRTUAL_CLK__
 Path Type: min
 Corner: ff
@@ -459,19 +459,19 @@ Fanout     Cap    Slew   Delay    Time   Description
                   0.00    0.00    0.00   clock __VIRTUAL_CLK__ (rise edge)
                           0.00    0.00   clock network delay (ideal)
                        200000.00 200000.00 v input external delay
-                  0.02    0.01 200000.02 v dlycontrol3[4] (in)
-     2    0.01                           dlycontrol3[4] (net)
+                  0.02    0.01 200000.02 v dlycontrol3_in[4] (in)
+     2    0.01                           dlycontrol3_in[4] (net)
                   0.02    0.00 200000.02 v clkgen.delay_155ns_3.genblk1[4].bypass_enable/B (sky130_fd_sc_hd__and2_1)
                   0.04    0.10 200000.11 v clkgen.delay_155ns_3.genblk1[4].bypass_enable/X (sky130_fd_sc_hd__and2_1)
-     2    0.01                           clkgen.delay_155ns_3.genblk1[4].dly_binary.bypass (net)
+     2    0.01                           clkgen.delay_155ns_3.genblk1[4].dly_binary.bypass_in (net)
                   0.04    0.00 200000.11 v clkgen.delay_155ns_3.genblk1[4].dly_binary.out_mux/S (sky130_fd_sc_hd__mux2_1)
-                  0.08    0.16 200000.28 ^ clkgen.delay_155ns_3.genblk1[4].dly_binary.out_mux/X (sky130_fd_sc_hd__mux2_1)
-     2    0.01                           clkgen.clk_comp (net)
-                  0.08    0.00 200000.28 ^ outbuf_2/A (sky130_fd_sc_hd__buf_4)
-                  0.08    0.12 200000.39 ^ outbuf_2/X (sky130_fd_sc_hd__buf_4)
-     1    0.03                           clk_comp (net)
-                  0.08    0.00 200000.39 ^ clk_comp (out)
-                               200000.39   data arrival time
+                  0.07    0.15 200000.27 ^ clkgen.delay_155ns_3.genblk1[4].dly_binary.out_mux/X (sky130_fd_sc_hd__mux2_1)
+     1    0.01                           clkgen.clk_comp_out (net)
+                  0.07    0.00 200000.27 ^ outbuf_2/A (sky130_fd_sc_hd__buf_4)
+                  0.08    0.12 200000.38 ^ outbuf_2/X (sky130_fd_sc_hd__buf_4)
+     1    0.03                           clk_comp_out (net)
+                  0.08    0.00 200000.38 ^ clk_comp_out (out)
+                               200000.38   data arrival time
 
                   0.00    0.00    0.00   clock __VIRTUAL_CLK__ (rise edge)
                           0.00    0.00   clock network delay (ideal)
@@ -481,13 +481,13 @@ Fanout     Cap    Slew   Delay    Time   Description
                                -199999.75   data required time
 -----------------------------------------------------------------------------
                                -199999.75   data required time
-                               -200000.39   data arrival time
+                               -200000.38   data arrival time
 -----------------------------------------------------------------------------
                                400000.16   slack (MET)
 
 
-Startpoint: nsample_n (input port clocked by __VIRTUAL_CLK__)
-Endpoint: nsample_n_buf (output port clocked by __VIRTUAL_CLK__)
+Startpoint: nsample_n_in (input port clocked by __VIRTUAL_CLK__)
+Endpoint: nsample_n_out (output port clocked by __VIRTUAL_CLK__)
 Path Group: __VIRTUAL_CLK__
 Path Type: min
 Corner: ff
@@ -497,12 +497,12 @@ Fanout     Cap    Slew   Delay    Time   Description
                   0.00    0.00    0.00   clock __VIRTUAL_CLK__ (rise edge)
                           0.00    0.00   clock network delay (ideal)
                        200000.00 200000.00 ^ input external delay
-                  0.02    0.01 200000.02 ^ nsample_n (in)
-     2    0.00                           nsample_n (net)
+                  0.02    0.01 200000.02 ^ nsample_n_in (in)
+     2    0.00                           nsample_n_in (net)
                   0.02    0.00 200000.02 ^ outbuf_6/A (sky130_fd_sc_hd__buf_4)
                   0.08    0.10 200000.11 ^ outbuf_6/X (sky130_fd_sc_hd__buf_4)
-     1    0.03                           nsample_n_buf (net)
-                  0.08    0.00 200000.11 ^ nsample_n_buf (out)
+     1    0.03                           nsample_n_out (net)
+                  0.08    0.00 200000.11 ^ nsample_n_out (out)
                                200000.11   data arrival time
 
                   0.00    0.00    0.00   clock __VIRTUAL_CLK__ (rise edge)
@@ -518,8 +518,8 @@ Fanout     Cap    Slew   Delay    Time   Description
                                399999.84   slack (MET)
 
 
-Startpoint: nsample_p (input port clocked by __VIRTUAL_CLK__)
-Endpoint: nsample_p_buf (output port clocked by __VIRTUAL_CLK__)
+Startpoint: dlycontrol1_in[4] (input port clocked by __VIRTUAL_CLK__)
+Endpoint: clk_dig_out (output port clocked by __VIRTUAL_CLK__)
 Path Group: __VIRTUAL_CLK__
 Path Type: min
 Corner: ff
@@ -529,117 +529,21 @@ Fanout     Cap    Slew   Delay    Time   Description
                   0.00    0.00    0.00   clock __VIRTUAL_CLK__ (rise edge)
                           0.00    0.00   clock network delay (ideal)
                        200000.00 200000.00 ^ input external delay
-                  0.04    0.03 200000.03 ^ nsample_p (in)
-     2    0.01                           nsample_p (net)
-                  0.04    0.00 200000.03 ^ outbuf_5/A (sky130_fd_sc_hd__buf_4)
-                  0.08    0.10 200000.12 ^ outbuf_5/X (sky130_fd_sc_hd__buf_4)
-     1    0.03                           nsample_p_buf (net)
-                  0.08    0.00 200000.12 ^ nsample_p_buf (out)
-                               200000.12   data arrival time
-
-                  0.00    0.00    0.00   clock __VIRTUAL_CLK__ (rise edge)
-                          0.00    0.00   clock network delay (ideal)
-                          0.25    0.25   clock uncertainty
-                          0.00    0.25   clock reconvergence pessimism
-                       -200000.00 -199999.75   output external delay
-                               -199999.75   data required time
------------------------------------------------------------------------------
-                               -199999.75   data required time
-                               -200000.12   data arrival time
------------------------------------------------------------------------------
-                               399999.88   slack (MET)
-
-
-Startpoint: sample_n (input port clocked by __VIRTUAL_CLK__)
-Endpoint: sample_n_buf (output port clocked by __VIRTUAL_CLK__)
-Path Group: __VIRTUAL_CLK__
-Path Type: min
-Corner: ff
-
-Fanout     Cap    Slew   Delay    Time   Description
------------------------------------------------------------------------------
-                  0.00    0.00    0.00   clock __VIRTUAL_CLK__ (rise edge)
-                          0.00    0.00   clock network delay (ideal)
-                       200000.00 200000.00 ^ input external delay
-                  0.05    0.03 200000.03 ^ sample_n (in)
-     2    0.01                           sample_n (net)
-                  0.05    0.00 200000.03 ^ outbuf_4/A (sky130_fd_sc_hd__buf_4)
-                  0.08    0.10 200000.12 ^ outbuf_4/X (sky130_fd_sc_hd__buf_4)
-     1    0.03                           sample_n_buf (net)
-                  0.08    0.00 200000.12 ^ sample_n_buf (out)
-                               200000.12   data arrival time
-
-                  0.00    0.00    0.00   clock __VIRTUAL_CLK__ (rise edge)
-                          0.00    0.00   clock network delay (ideal)
-                          0.25    0.25   clock uncertainty
-                          0.00    0.25   clock reconvergence pessimism
-                       -200000.00 -199999.75   output external delay
-                               -199999.75   data required time
------------------------------------------------------------------------------
-                               -199999.75   data required time
-                               -200000.12   data arrival time
------------------------------------------------------------------------------
-                               399999.88   slack (MET)
-
-
-Startpoint: sample_p (input port clocked by __VIRTUAL_CLK__)
-Endpoint: sample_p_buf (output port clocked by __VIRTUAL_CLK__)
-Path Group: __VIRTUAL_CLK__
-Path Type: min
-Corner: ff
-
-Fanout     Cap    Slew   Delay    Time   Description
------------------------------------------------------------------------------
-                  0.00    0.00    0.00   clock __VIRTUAL_CLK__ (rise edge)
-                          0.00    0.00   clock network delay (ideal)
-                       200000.00 200000.00 ^ input external delay
-                  0.04    0.03 200000.03 ^ sample_p (in)
-     2    0.01                           sample_p (net)
-                  0.04    0.00 200000.03 ^ outbuf_3/A (sky130_fd_sc_hd__buf_4)
-                  0.08    0.10 200000.12 ^ outbuf_3/X (sky130_fd_sc_hd__buf_4)
-     1    0.03                           sample_p_buf (net)
-                  0.08    0.00 200000.12 ^ sample_p_buf (out)
-                               200000.12   data arrival time
-
-                  0.00    0.00    0.00   clock __VIRTUAL_CLK__ (rise edge)
-                          0.00    0.00   clock network delay (ideal)
-                          0.25    0.25   clock uncertainty
-                          0.00    0.25   clock reconvergence pessimism
-                       -200000.00 -199999.75   output external delay
-                               -199999.75   data required time
------------------------------------------------------------------------------
-                               -199999.75   data required time
-                               -200000.12   data arrival time
------------------------------------------------------------------------------
-                               399999.88   slack (MET)
-
-
-Startpoint: dlycontrol1[4] (input port clocked by __VIRTUAL_CLK__)
-Endpoint: clk_dig (output port clocked by __VIRTUAL_CLK__)
-Path Group: __VIRTUAL_CLK__
-Path Type: min
-Corner: ff
-
-Fanout     Cap    Slew   Delay    Time   Description
------------------------------------------------------------------------------
-                  0.00    0.00    0.00   clock __VIRTUAL_CLK__ (rise edge)
-                          0.00    0.00   clock network delay (ideal)
-                       200000.00 200000.00 ^ input external delay
-                  0.05    0.03 200000.03 ^ dlycontrol1[4] (in)
-     2    0.01                           dlycontrol1[4] (net)
+                  0.05    0.03 200000.03 ^ dlycontrol1_in[4] (in)
+     2    0.01                           dlycontrol1_in[4] (net)
                   0.05    0.00 200000.03 ^ clkgen.delay_155ns_1.genblk1[4].bypass_enable/B (sky130_fd_sc_hd__and2_1)
-                  0.14    0.15 200000.17 ^ clkgen.delay_155ns_1.genblk1[4].bypass_enable/X (sky130_fd_sc_hd__and2_1)
-     4    0.02                           clkgen.delay_155ns_1.genblk1[4].dly_binary.bypass (net)
-                  0.14    0.00 200000.17 ^ clkgen.delay_155ns_1.genblk1[4].dly_binary.out_mux/S (sky130_fd_sc_hd__mux2_1)
-                  0.05    0.19 200000.36 v clkgen.delay_155ns_1.genblk1[4].dly_binary.out_mux/X (sky130_fd_sc_hd__mux2_1)
-     1    0.01                           clkgen._ndecision_finish_delayed_ (net)
-                  0.05    0.00 200000.36 v clkgen.clkdig_inverter/A (sky130_fd_sc_hd__inv_2)
-                  0.05    0.06 200000.42 ^ clkgen.clkdig_inverter/Y (sky130_fd_sc_hd__inv_2)
-     3    0.01                           clkgen.clk_dig (net)
-                  0.05    0.00 200000.42 ^ outbuf_1/A (sky130_fd_sc_hd__buf_4)
+                  0.09    0.12 200000.14 ^ clkgen.delay_155ns_1.genblk1[4].bypass_enable/X (sky130_fd_sc_hd__and2_1)
+     2    0.01                           clkgen.delay_155ns_1.genblk1[4].dly_binary.bypass_in (net)
+                  0.09    0.00 200000.14 ^ clkgen.delay_155ns_1.genblk1[4].dly_binary.out_mux/S (sky130_fd_sc_hd__mux2_1)
+                  0.06    0.20 200000.34 v clkgen.delay_155ns_1.genblk1[4].dly_binary.out_mux/X (sky130_fd_sc_hd__mux2_1)
+     1    0.01                           clkgen.delay_155ns_1.genblk1[4].dly_binary.out (net)
+                  0.06    0.00 200000.34 v clkgen.clkdig_inverter/A (sky130_fd_sc_hd__inv_2)
+                  0.06    0.06 200000.41 ^ clkgen.clkdig_inverter/Y (sky130_fd_sc_hd__inv_2)
+     3    0.02                           clkgen.clk_dig_out (net)
+                  0.06    0.00 200000.41 ^ outbuf_1/A (sky130_fd_sc_hd__buf_4)
                   0.09    0.12 200000.53 ^ outbuf_1/X (sky130_fd_sc_hd__buf_4)
-     1    0.03                           clk_dig (net)
-                  0.09    0.00 200000.53 ^ clk_dig (out)
+     1    0.03                           clk_dig_out (net)
+                  0.09    0.00 200000.53 ^ clk_dig_out (out)
                                200000.53   data arrival time
 
                   0.00    0.00    0.00   clock __VIRTUAL_CLK__ (rise edge)
@@ -652,7 +556,103 @@ Fanout     Cap    Slew   Delay    Time   Description
                                -199999.75   data required time
                                -200000.53   data arrival time
 -----------------------------------------------------------------------------
-                               400000.28   slack (MET)
+                               400000.25   slack (MET)
+
+
+Startpoint: nsample_p_in (input port clocked by __VIRTUAL_CLK__)
+Endpoint: nsample_p_out (output port clocked by __VIRTUAL_CLK__)
+Path Group: __VIRTUAL_CLK__
+Path Type: min
+Corner: ff
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                  0.00    0.00    0.00   clock __VIRTUAL_CLK__ (rise edge)
+                          0.00    0.00   clock network delay (ideal)
+                       200000.00 200000.00 ^ input external delay
+                  0.04    0.03 200000.03 ^ nsample_p_in (in)
+     2    0.01                           nsample_p_in (net)
+                  0.04    0.00 200000.03 ^ outbuf_5/A (sky130_fd_sc_hd__buf_4)
+                  0.08    0.10 200000.12 ^ outbuf_5/X (sky130_fd_sc_hd__buf_4)
+     1    0.03                           nsample_p_out (net)
+                  0.08    0.00 200000.12 ^ nsample_p_out (out)
+                               200000.12   data arrival time
+
+                  0.00    0.00    0.00   clock __VIRTUAL_CLK__ (rise edge)
+                          0.00    0.00   clock network delay (ideal)
+                          0.25    0.25   clock uncertainty
+                          0.00    0.25   clock reconvergence pessimism
+                       -200000.00 -199999.75   output external delay
+                               -199999.75   data required time
+-----------------------------------------------------------------------------
+                               -199999.75   data required time
+                               -200000.12   data arrival time
+-----------------------------------------------------------------------------
+                               399999.88   slack (MET)
+
+
+Startpoint: sample_n_in (input port clocked by __VIRTUAL_CLK__)
+Endpoint: sample_n_out (output port clocked by __VIRTUAL_CLK__)
+Path Group: __VIRTUAL_CLK__
+Path Type: min
+Corner: ff
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                  0.00    0.00    0.00   clock __VIRTUAL_CLK__ (rise edge)
+                          0.00    0.00   clock network delay (ideal)
+                       200000.00 200000.00 ^ input external delay
+                  0.05    0.03 200000.03 ^ sample_n_in (in)
+     2    0.01                           sample_n_in (net)
+                  0.05    0.00 200000.03 ^ outbuf_4/A (sky130_fd_sc_hd__buf_4)
+                  0.08    0.10 200000.12 ^ outbuf_4/X (sky130_fd_sc_hd__buf_4)
+     1    0.03                           sample_n_out (net)
+                  0.08    0.00 200000.12 ^ sample_n_out (out)
+                               200000.12   data arrival time
+
+                  0.00    0.00    0.00   clock __VIRTUAL_CLK__ (rise edge)
+                          0.00    0.00   clock network delay (ideal)
+                          0.25    0.25   clock uncertainty
+                          0.00    0.25   clock reconvergence pessimism
+                       -200000.00 -199999.75   output external delay
+                               -199999.75   data required time
+-----------------------------------------------------------------------------
+                               -199999.75   data required time
+                               -200000.12   data arrival time
+-----------------------------------------------------------------------------
+                               399999.88   slack (MET)
+
+
+Startpoint: sample_p_in (input port clocked by __VIRTUAL_CLK__)
+Endpoint: sample_p_out (output port clocked by __VIRTUAL_CLK__)
+Path Group: __VIRTUAL_CLK__
+Path Type: min
+Corner: ff
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                  0.00    0.00    0.00   clock __VIRTUAL_CLK__ (rise edge)
+                          0.00    0.00   clock network delay (ideal)
+                       200000.00 200000.00 ^ input external delay
+                  0.05    0.03 200000.03 ^ sample_p_in (in)
+     2    0.01                           sample_p_in (net)
+                  0.05    0.00 200000.03 ^ outbuf_3/A (sky130_fd_sc_hd__buf_4)
+                  0.08    0.10 200000.12 ^ outbuf_3/X (sky130_fd_sc_hd__buf_4)
+     1    0.03                           sample_p_out (net)
+                  0.08    0.00 200000.12 ^ sample_p_out (out)
+                               200000.12   data arrival time
+
+                  0.00    0.00    0.00   clock __VIRTUAL_CLK__ (rise edge)
+                          0.00    0.00   clock network delay (ideal)
+                          0.25    0.25   clock uncertainty
+                          0.00    0.25   clock reconvergence pessimism
+                       -200000.00 -199999.75   output external delay
+                               -199999.75   data required time
+-----------------------------------------------------------------------------
+                               -199999.75   data required time
+                               -200000.12   data arrival time
+-----------------------------------------------------------------------------
+                               399999.88   slack (MET)
 
 
 min_report_end
@@ -664,8 +664,8 @@ report_checks -path_delay max (Setup)
 
 ======================= Slowest Corner ===================================
 
-Startpoint: enable_dlycontrol (input port clocked by __VIRTUAL_CLK__)
-Endpoint: clk_comp (output port clocked by __VIRTUAL_CLK__)
+Startpoint: enable_dlycontrol_in (input port clocked by __VIRTUAL_CLK__)
+Endpoint: clk_comp_out (output port clocked by __VIRTUAL_CLK__)
 Path Group: __VIRTUAL_CLK__
 Path Type: max
 Corner: ss
@@ -675,53 +675,53 @@ Fanout     Cap    Slew   Delay    Time   Description
                   0.00    0.00    0.00   clock __VIRTUAL_CLK__ (rise edge)
                           0.00    0.00   clock network delay (ideal)
                        200000.00 200000.00 ^ input external delay
-                  0.25    0.19 200000.19 ^ enable_dlycontrol (in)
-     8    0.03                           enable_dlycontrol (net)
-                  0.25    0.00 200000.19 ^ clkgen.delay_155ns_1.enablebuffer/A (sky130_fd_sc_hd__buf_4)
-                  0.08    0.31 200000.50 ^ clkgen.delay_155ns_1.enablebuffer/X (sky130_fd_sc_hd__buf_4)
-     5    0.01                           clkgen.delay_155ns_1._enable_dlycontrol_ (net)
-                  0.08    0.00 200000.50 ^ clkgen.delay_155ns_1.genblk1[0].bypass_enable/A (sky130_fd_sc_hd__and2_1)
-                  0.30    0.41 200000.91 ^ clkgen.delay_155ns_1.genblk1[0].bypass_enable/X (sky130_fd_sc_hd__and2_1)
-     4    0.02                           clkgen.delay_155ns_1.genblk1[0].dly_binary.bypass (net)
-                  0.30    0.00 200000.91 ^ clkgen.delay_155ns_1.genblk1[0].dly_binary.out_mux/S (sky130_fd_sc_hd__mux2_1)
-                  0.13    0.84 200001.75 v clkgen.delay_155ns_1.genblk1[0].dly_binary.out_mux/X (sky130_fd_sc_hd__mux2_1)
-     2    0.00                           clkgen.delay_155ns_1.genblk1[0].dly_binary.out (net)
-                  0.13    0.00 200001.75 v clkgen.delay_155ns_1.genblk1[1].dly_binary.out_mux/A1 (sky130_fd_sc_hd__mux2_1)
-                  0.13    0.73 200002.47 v clkgen.delay_155ns_1.genblk1[1].dly_binary.out_mux/X (sky130_fd_sc_hd__mux2_1)
+                  0.25    0.17 200000.17 ^ enable_dlycontrol_in (in)
+     8    0.03                           enable_dlycontrol_in (net)
+                  0.25    0.00 200000.17 ^ clkgen.delay_155ns_1.enablebuffer/A (sky130_fd_sc_hd__buf_4)
+                  0.08    0.31 200000.48 ^ clkgen.delay_155ns_1.enablebuffer/X (sky130_fd_sc_hd__buf_4)
+     5    0.01                           clkgen.delay_155ns_1.enable_dlycontrol_w (net)
+                  0.08    0.00 200000.48 ^ clkgen.delay_155ns_1.genblk1[0].bypass_enable/A (sky130_fd_sc_hd__and2_1)
+                  0.28    0.41 200000.89 ^ clkgen.delay_155ns_1.genblk1[0].bypass_enable/X (sky130_fd_sc_hd__and2_1)
+     4    0.02                           clkgen.delay_155ns_1.genblk1[0].dly_binary.bypass_in (net)
+                  0.28    0.00 200000.89 ^ clkgen.delay_155ns_1.genblk1[0].dly_binary.out_mux/S (sky130_fd_sc_hd__mux2_1)
+                  0.14    0.86 200001.75 v clkgen.delay_155ns_1.genblk1[0].dly_binary.out_mux/X (sky130_fd_sc_hd__mux2_1)
+     2    0.01                           clkgen.delay_155ns_1.genblk1[0].dly_binary.out (net)
+                  0.14    0.00 200001.75 v clkgen.delay_155ns_1.genblk1[1].dly_binary.out_mux/A1 (sky130_fd_sc_hd__mux2_1)
+                  0.13    0.74 200002.48 v clkgen.delay_155ns_1.genblk1[1].dly_binary.out_mux/X (sky130_fd_sc_hd__mux2_1)
      2    0.00                           clkgen.delay_155ns_1.genblk1[1].dly_binary.out (net)
-                  0.13    0.00 200002.47 v clkgen.delay_155ns_1.genblk1[2].dly_binary.out_mux/A1 (sky130_fd_sc_hd__mux2_1)
-                  0.18    0.80 200003.28 v clkgen.delay_155ns_1.genblk1[2].dly_binary.out_mux/X (sky130_fd_sc_hd__mux2_1)
+                  0.13    0.00 200002.48 v clkgen.delay_155ns_1.genblk1[2].dly_binary.out_mux/A1 (sky130_fd_sc_hd__mux2_1)
+                  0.16    0.77 200003.27 v clkgen.delay_155ns_1.genblk1[2].dly_binary.out_mux/X (sky130_fd_sc_hd__mux2_1)
      2    0.01                           clkgen.delay_155ns_1.genblk1[2].dly_binary.out (net)
-                  0.18    0.00 200003.28 v clkgen.delay_155ns_1.genblk1[3].dly_binary.out_mux/A1 (sky130_fd_sc_hd__mux2_1)
-                  0.18    0.83 200004.11 v clkgen.delay_155ns_1.genblk1[3].dly_binary.out_mux/X (sky130_fd_sc_hd__mux2_1)
+                  0.16    0.00 200003.27 v clkgen.delay_155ns_1.genblk1[3].dly_binary.out_mux/A1 (sky130_fd_sc_hd__mux2_1)
+                  0.16    0.80 200004.06 v clkgen.delay_155ns_1.genblk1[3].dly_binary.out_mux/X (sky130_fd_sc_hd__mux2_1)
      2    0.01                           clkgen.delay_155ns_1.genblk1[3].dly_binary.out (net)
-                  0.18    0.00 200004.11 v clkgen.delay_155ns_1.genblk1[4].dly_binary.out_mux/A1 (sky130_fd_sc_hd__mux2_1)
-                  0.14    0.77 200004.88 v clkgen.delay_155ns_1.genblk1[4].dly_binary.out_mux/X (sky130_fd_sc_hd__mux2_1)
-     1    0.01                           clkgen._ndecision_finish_delayed_ (net)
-                  0.14    0.00 200004.88 v clkgen.clkdig_inverter/A (sky130_fd_sc_hd__inv_2)
-                  0.12    0.16 200005.03 ^ clkgen.clkdig_inverter/Y (sky130_fd_sc_hd__inv_2)
-     3    0.01                           clkgen.clk_dig (net)
-                  0.12    0.00 200005.03 ^ clkgen.delay_155ns_2.genblk1[0].dly_binary.out_mux/A1 (sky130_fd_sc_hd__mux2_1)
-                  0.15    0.33 200005.38 ^ clkgen.delay_155ns_2.genblk1[0].dly_binary.out_mux/X (sky130_fd_sc_hd__mux2_1)
+                  0.16    0.00 200004.06 v clkgen.delay_155ns_1.genblk1[4].dly_binary.out_mux/A1 (sky130_fd_sc_hd__mux2_1)
+                  0.16    0.79 200004.84 v clkgen.delay_155ns_1.genblk1[4].dly_binary.out_mux/X (sky130_fd_sc_hd__mux2_1)
+     1    0.01                           clkgen.delay_155ns_1.genblk1[4].dly_binary.out (net)
+                  0.16    0.00 200004.84 v clkgen.clkdig_inverter/A (sky130_fd_sc_hd__inv_2)
+                  0.12    0.17 200005.02 ^ clkgen.clkdig_inverter/Y (sky130_fd_sc_hd__inv_2)
+     3    0.01                           clkgen.clk_dig_out (net)
+                  0.12    0.00 200005.02 ^ clkgen.delay_155ns_2.genblk1[0].dly_binary.out_mux/A1 (sky130_fd_sc_hd__mux2_1)
+                  0.11    0.29 200005.31 ^ clkgen.delay_155ns_2.genblk1[0].dly_binary.out_mux/X (sky130_fd_sc_hd__mux2_1)
      2    0.01                           clkgen.delay_155ns_2.genblk1[0].dly_binary.out (net)
-                  0.15    0.00 200005.38 ^ clkgen.delay_155ns_2.genblk1[1].dly_binary.out_mux/A1 (sky130_fd_sc_hd__mux2_1)
-                  0.10    0.31 200005.67 ^ clkgen.delay_155ns_2.genblk1[1].dly_binary.out_mux/X (sky130_fd_sc_hd__mux2_1)
+                  0.11    0.00 200005.31 ^ clkgen.delay_155ns_2.genblk1[1].dly_binary.out_mux/A1 (sky130_fd_sc_hd__mux2_1)
+                  0.10    0.28 200005.59 ^ clkgen.delay_155ns_2.genblk1[1].dly_binary.out_mux/X (sky130_fd_sc_hd__mux2_1)
      2    0.00                           clkgen.delay_155ns_2.genblk1[1].dly_binary.out (net)
-                  0.10    0.00 200005.67 ^ clkgen.delay_155ns_2.genblk1[2].dly_binary.out_mux/A1 (sky130_fd_sc_hd__mux2_1)
-                  0.12    0.29 200005.97 ^ clkgen.delay_155ns_2.genblk1[2].dly_binary.out_mux/X (sky130_fd_sc_hd__mux2_1)
+                  0.10    0.00 200005.59 ^ clkgen.delay_155ns_2.genblk1[2].dly_binary.out_mux/A1 (sky130_fd_sc_hd__mux2_1)
+                  0.12    0.29 200005.88 ^ clkgen.delay_155ns_2.genblk1[2].dly_binary.out_mux/X (sky130_fd_sc_hd__mux2_1)
      2    0.01                           clkgen.delay_155ns_2.genblk1[2].dly_binary.out (net)
-                  0.12    0.00 200005.97 ^ clkgen.delay_155ns_2.genblk1[3].dly_binary.out_mux/A1 (sky130_fd_sc_hd__mux2_1)
-                  0.12    0.31 200006.27 ^ clkgen.delay_155ns_2.genblk1[3].dly_binary.out_mux/X (sky130_fd_sc_hd__mux2_1)
+                  0.12    0.00 200005.88 ^ clkgen.delay_155ns_2.genblk1[3].dly_binary.out_mux/A1 (sky130_fd_sc_hd__mux2_1)
+                  0.12    0.31 200006.19 ^ clkgen.delay_155ns_2.genblk1[3].dly_binary.out_mux/X (sky130_fd_sc_hd__mux2_1)
      2    0.01                           clkgen.delay_155ns_2.genblk1[3].dly_binary.out (net)
-                  0.12    0.00 200006.27 ^ clkgen.delay_155ns_2.genblk1[4].dly_binary.out_mux/A1 (sky130_fd_sc_hd__mux2_1)
-                  0.10    0.29 200006.56 ^ clkgen.delay_155ns_2.genblk1[4].dly_binary.out_mux/X (sky130_fd_sc_hd__mux2_1)
-     1    0.00                           clkgen._clk_dig_delayed_ (net)
-                  0.10    0.00 200006.56 ^ clkgen.nor1/A (sky130_fd_sc_hd__nor2b_1)
-                  0.10    0.12 200006.69 v clkgen.nor1/Y (sky130_fd_sc_hd__nor2b_1)
-     2    0.01                           clkgen._net_1_ (net)
-                  0.10    0.00 200006.69 v clkgen.delay_155ns_3.genblk1[0].dly_binary.out_mux/A1 (sky130_fd_sc_hd__mux2_1)
+                  0.12    0.00 200006.19 ^ clkgen.delay_155ns_2.genblk1[4].dly_binary.out_mux/A1 (sky130_fd_sc_hd__mux2_1)
+                  0.15    0.33 200006.52 ^ clkgen.delay_155ns_2.genblk1[4].dly_binary.out_mux/X (sky130_fd_sc_hd__mux2_1)
+     1    0.01                           clkgen.clk_dig_delayed_w (net)
+                  0.15    0.00 200006.52 ^ clkgen.nor1/A (sky130_fd_sc_hd__nor2b_1)
+                  0.11    0.16 200006.69 v clkgen.nor1/Y (sky130_fd_sc_hd__nor2b_1)
+     2    0.01                           clkgen.delay_155ns_3.genblk1[0].dly_binary.in (net)
+                  0.11    0.00 200006.69 v clkgen.delay_155ns_3.genblk1[0].dly_binary.out_mux/A1 (sky130_fd_sc_hd__mux2_1)
                   0.13    0.73 200007.41 v clkgen.delay_155ns_3.genblk1[0].dly_binary.out_mux/X (sky130_fd_sc_hd__mux2_1)
-     2    0.01                           clkgen.delay_155ns_3.genblk1[0].dly_binary.out (net)
+     2    0.00                           clkgen.delay_155ns_3.genblk1[0].dly_binary.out (net)
                   0.13    0.00 200007.41 v clkgen.delay_155ns_3.genblk1[1].dly_binary.out_mux/A1 (sky130_fd_sc_hd__mux2_1)
                   0.15    0.77 200008.17 v clkgen.delay_155ns_3.genblk1[1].dly_binary.out_mux/X (sky130_fd_sc_hd__mux2_1)
      2    0.01                           clkgen.delay_155ns_3.genblk1[1].dly_binary.out (net)
@@ -732,13 +732,13 @@ Fanout     Cap    Slew   Delay    Time   Description
                   0.13    0.74 200009.66 v clkgen.delay_155ns_3.genblk1[3].dly_binary.out_mux/X (sky130_fd_sc_hd__mux2_1)
      2    0.00                           clkgen.delay_155ns_3.genblk1[3].dly_binary.out (net)
                   0.13    0.00 200009.66 v clkgen.delay_155ns_3.genblk1[4].dly_binary.out_mux/A1 (sky130_fd_sc_hd__mux2_1)
-                  0.20    0.83 200010.50 v clkgen.delay_155ns_3.genblk1[4].dly_binary.out_mux/X (sky130_fd_sc_hd__mux2_1)
-     2    0.01                           clkgen.clk_comp (net)
-                  0.20    0.00 200010.50 v outbuf_2/A (sky130_fd_sc_hd__buf_4)
-                  0.10    0.38 200010.88 v outbuf_2/X (sky130_fd_sc_hd__buf_4)
-     1    0.03                           clk_comp (net)
-                  0.10    0.00 200010.88 v clk_comp (out)
-                               200010.88   data arrival time
+                  0.18    0.80 200010.47 v clkgen.delay_155ns_3.genblk1[4].dly_binary.out_mux/X (sky130_fd_sc_hd__mux2_1)
+     1    0.01                           clkgen.clk_comp_out (net)
+                  0.18    0.00 200010.47 v outbuf_2/A (sky130_fd_sc_hd__buf_4)
+                  0.10    0.38 200010.84 v outbuf_2/X (sky130_fd_sc_hd__buf_4)
+     1    0.03                           clk_comp_out (net)
+                  0.10    0.00 200010.84 v clk_comp_out (out)
+                               200010.84   data arrival time
 
                   0.00 999999.94 999999.94   clock __VIRTUAL_CLK__ (rise edge)
                           0.00 999999.94   clock network delay (ideal)
@@ -748,13 +748,13 @@ Fanout     Cap    Slew   Delay    Time   Description
                                799999.69   data required time
 -----------------------------------------------------------------------------
                                799999.69   data required time
-                               -200010.88   data arrival time
+                               -200010.84   data arrival time
 -----------------------------------------------------------------------------
                                599988.88   slack (MET)
 
 
-Startpoint: enable_dlycontrol (input port clocked by __VIRTUAL_CLK__)
-Endpoint: clk_dig (output port clocked by __VIRTUAL_CLK__)
+Startpoint: enable_dlycontrol_in (input port clocked by __VIRTUAL_CLK__)
+Endpoint: clk_dig_out (output port clocked by __VIRTUAL_CLK__)
 Path Group: __VIRTUAL_CLK__
 Path Type: max
 Corner: ss
@@ -764,37 +764,37 @@ Fanout     Cap    Slew   Delay    Time   Description
                   0.00    0.00    0.00   clock __VIRTUAL_CLK__ (rise edge)
                           0.00    0.00   clock network delay (ideal)
                        200000.00 200000.00 ^ input external delay
-                  0.25    0.19 200000.19 ^ enable_dlycontrol (in)
-     8    0.03                           enable_dlycontrol (net)
-                  0.25    0.00 200000.19 ^ clkgen.delay_155ns_1.enablebuffer/A (sky130_fd_sc_hd__buf_4)
-                  0.08    0.31 200000.50 ^ clkgen.delay_155ns_1.enablebuffer/X (sky130_fd_sc_hd__buf_4)
-     5    0.01                           clkgen.delay_155ns_1._enable_dlycontrol_ (net)
-                  0.08    0.00 200000.50 ^ clkgen.delay_155ns_1.genblk1[0].bypass_enable/A (sky130_fd_sc_hd__and2_1)
-                  0.30    0.41 200000.91 ^ clkgen.delay_155ns_1.genblk1[0].bypass_enable/X (sky130_fd_sc_hd__and2_1)
-     4    0.02                           clkgen.delay_155ns_1.genblk1[0].dly_binary.bypass (net)
-                  0.30    0.00 200000.91 ^ clkgen.delay_155ns_1.genblk1[0].dly_binary.out_mux/S (sky130_fd_sc_hd__mux2_1)
-                  0.13    0.84 200001.75 v clkgen.delay_155ns_1.genblk1[0].dly_binary.out_mux/X (sky130_fd_sc_hd__mux2_1)
-     2    0.00                           clkgen.delay_155ns_1.genblk1[0].dly_binary.out (net)
-                  0.13    0.00 200001.75 v clkgen.delay_155ns_1.genblk1[1].dly_binary.out_mux/A1 (sky130_fd_sc_hd__mux2_1)
-                  0.13    0.73 200002.47 v clkgen.delay_155ns_1.genblk1[1].dly_binary.out_mux/X (sky130_fd_sc_hd__mux2_1)
+                  0.25    0.17 200000.17 ^ enable_dlycontrol_in (in)
+     8    0.03                           enable_dlycontrol_in (net)
+                  0.25    0.00 200000.17 ^ clkgen.delay_155ns_1.enablebuffer/A (sky130_fd_sc_hd__buf_4)
+                  0.08    0.31 200000.48 ^ clkgen.delay_155ns_1.enablebuffer/X (sky130_fd_sc_hd__buf_4)
+     5    0.01                           clkgen.delay_155ns_1.enable_dlycontrol_w (net)
+                  0.08    0.00 200000.48 ^ clkgen.delay_155ns_1.genblk1[0].bypass_enable/A (sky130_fd_sc_hd__and2_1)
+                  0.28    0.41 200000.89 ^ clkgen.delay_155ns_1.genblk1[0].bypass_enable/X (sky130_fd_sc_hd__and2_1)
+     4    0.02                           clkgen.delay_155ns_1.genblk1[0].dly_binary.bypass_in (net)
+                  0.28    0.00 200000.89 ^ clkgen.delay_155ns_1.genblk1[0].dly_binary.out_mux/S (sky130_fd_sc_hd__mux2_1)
+                  0.14    0.86 200001.75 v clkgen.delay_155ns_1.genblk1[0].dly_binary.out_mux/X (sky130_fd_sc_hd__mux2_1)
+     2    0.01                           clkgen.delay_155ns_1.genblk1[0].dly_binary.out (net)
+                  0.14    0.00 200001.75 v clkgen.delay_155ns_1.genblk1[1].dly_binary.out_mux/A1 (sky130_fd_sc_hd__mux2_1)
+                  0.13    0.74 200002.48 v clkgen.delay_155ns_1.genblk1[1].dly_binary.out_mux/X (sky130_fd_sc_hd__mux2_1)
      2    0.00                           clkgen.delay_155ns_1.genblk1[1].dly_binary.out (net)
-                  0.13    0.00 200002.47 v clkgen.delay_155ns_1.genblk1[2].dly_binary.out_mux/A1 (sky130_fd_sc_hd__mux2_1)
-                  0.18    0.80 200003.28 v clkgen.delay_155ns_1.genblk1[2].dly_binary.out_mux/X (sky130_fd_sc_hd__mux2_1)
+                  0.13    0.00 200002.48 v clkgen.delay_155ns_1.genblk1[2].dly_binary.out_mux/A1 (sky130_fd_sc_hd__mux2_1)
+                  0.16    0.77 200003.27 v clkgen.delay_155ns_1.genblk1[2].dly_binary.out_mux/X (sky130_fd_sc_hd__mux2_1)
      2    0.01                           clkgen.delay_155ns_1.genblk1[2].dly_binary.out (net)
-                  0.18    0.00 200003.28 v clkgen.delay_155ns_1.genblk1[3].dly_binary.out_mux/A1 (sky130_fd_sc_hd__mux2_1)
-                  0.18    0.83 200004.11 v clkgen.delay_155ns_1.genblk1[3].dly_binary.out_mux/X (sky130_fd_sc_hd__mux2_1)
+                  0.16    0.00 200003.27 v clkgen.delay_155ns_1.genblk1[3].dly_binary.out_mux/A1 (sky130_fd_sc_hd__mux2_1)
+                  0.16    0.80 200004.06 v clkgen.delay_155ns_1.genblk1[3].dly_binary.out_mux/X (sky130_fd_sc_hd__mux2_1)
      2    0.01                           clkgen.delay_155ns_1.genblk1[3].dly_binary.out (net)
-                  0.18    0.00 200004.11 v clkgen.delay_155ns_1.genblk1[4].dly_binary.out_mux/A1 (sky130_fd_sc_hd__mux2_1)
-                  0.14    0.77 200004.88 v clkgen.delay_155ns_1.genblk1[4].dly_binary.out_mux/X (sky130_fd_sc_hd__mux2_1)
-     1    0.01                           clkgen._ndecision_finish_delayed_ (net)
-                  0.14    0.00 200004.88 v clkgen.clkdig_inverter/A (sky130_fd_sc_hd__inv_2)
-                  0.12    0.16 200005.03 ^ clkgen.clkdig_inverter/Y (sky130_fd_sc_hd__inv_2)
-     3    0.01                           clkgen.clk_dig (net)
-                  0.12    0.00 200005.03 ^ outbuf_1/A (sky130_fd_sc_hd__buf_4)
-                  0.19    0.33 200005.38 ^ outbuf_1/X (sky130_fd_sc_hd__buf_4)
-     1    0.03                           clk_dig (net)
-                  0.19    0.00 200005.38 ^ clk_dig (out)
-                               200005.38   data arrival time
+                  0.16    0.00 200004.06 v clkgen.delay_155ns_1.genblk1[4].dly_binary.out_mux/A1 (sky130_fd_sc_hd__mux2_1)
+                  0.16    0.79 200004.84 v clkgen.delay_155ns_1.genblk1[4].dly_binary.out_mux/X (sky130_fd_sc_hd__mux2_1)
+     1    0.01                           clkgen.delay_155ns_1.genblk1[4].dly_binary.out (net)
+                  0.16    0.00 200004.84 v clkgen.clkdig_inverter/A (sky130_fd_sc_hd__inv_2)
+                  0.12    0.17 200005.02 ^ clkgen.clkdig_inverter/Y (sky130_fd_sc_hd__inv_2)
+     3    0.01                           clkgen.clk_dig_out (net)
+                  0.12    0.00 200005.02 ^ outbuf_1/A (sky130_fd_sc_hd__buf_4)
+                  0.19    0.33 200005.36 ^ outbuf_1/X (sky130_fd_sc_hd__buf_4)
+     1    0.03                           clk_dig_out (net)
+                  0.19    0.00 200005.36 ^ clk_dig_out (out)
+                               200005.36   data arrival time
 
                   0.00 999999.94 999999.94   clock __VIRTUAL_CLK__ (rise edge)
                           0.00 999999.94   clock network delay (ideal)
@@ -804,13 +804,13 @@ Fanout     Cap    Slew   Delay    Time   Description
                                799999.69   data required time
 -----------------------------------------------------------------------------
                                799999.69   data required time
-                               -200005.38   data arrival time
+                               -200005.36   data arrival time
 -----------------------------------------------------------------------------
                                599994.31   slack (MET)
 
 
-Startpoint: nsample_n (input port clocked by __VIRTUAL_CLK__)
-Endpoint: nsample_n_buf (output port clocked by __VIRTUAL_CLK__)
+Startpoint: nsample_n_in (input port clocked by __VIRTUAL_CLK__)
+Endpoint: nsample_n_out (output port clocked by __VIRTUAL_CLK__)
 Path Group: __VIRTUAL_CLK__
 Path Type: max
 Corner: ss
@@ -820,12 +820,12 @@ Fanout     Cap    Slew   Delay    Time   Description
                   0.00    0.00    0.00   clock __VIRTUAL_CLK__ (rise edge)
                           0.00    0.00   clock network delay (ideal)
                        200000.00 200000.00 ^ input external delay
-                  0.05    0.03 200000.03 ^ nsample_n (in)
-     2    0.00                           nsample_n (net)
+                  0.05    0.03 200000.03 ^ nsample_n_in (in)
+     2    0.00                           nsample_n_in (net)
                   0.05    0.00 200000.03 ^ outbuf_6/A (sky130_fd_sc_hd__buf_4)
                   0.17    0.29 200000.33 ^ outbuf_6/X (sky130_fd_sc_hd__buf_4)
-     1    0.03                           nsample_n_buf (net)
-                  0.17    0.00 200000.33 ^ nsample_n_buf (out)
+     1    0.03                           nsample_n_out (net)
+                  0.17    0.00 200000.33 ^ nsample_n_out (out)
                                200000.33   data arrival time
 
                   0.00 999999.94 999999.94   clock __VIRTUAL_CLK__ (rise edge)
@@ -841,8 +841,8 @@ Fanout     Cap    Slew   Delay    Time   Description
                                599999.38   slack (MET)
 
 
-Startpoint: nsample_p (input port clocked by __VIRTUAL_CLK__)
-Endpoint: nsample_p_buf (output port clocked by __VIRTUAL_CLK__)
+Startpoint: nsample_p_in (input port clocked by __VIRTUAL_CLK__)
+Endpoint: nsample_p_out (output port clocked by __VIRTUAL_CLK__)
 Path Group: __VIRTUAL_CLK__
 Path Type: max
 Corner: ss
@@ -852,12 +852,12 @@ Fanout     Cap    Slew   Delay    Time   Description
                   0.00    0.00    0.00   clock __VIRTUAL_CLK__ (rise edge)
                           0.00    0.00   clock network delay (ideal)
                        200000.00 200000.00 ^ input external delay
-                  0.09    0.06 200000.06 ^ nsample_p (in)
-     2    0.01                           nsample_p (net)
-                  0.09    0.00 200000.06 ^ outbuf_5/A (sky130_fd_sc_hd__buf_4)
+                  0.08    0.06 200000.06 ^ nsample_p_in (in)
+     2    0.01                           nsample_p_in (net)
+                  0.08    0.00 200000.06 ^ outbuf_5/A (sky130_fd_sc_hd__buf_4)
                   0.17    0.31 200000.36 ^ outbuf_5/X (sky130_fd_sc_hd__buf_4)
-     1    0.03                           nsample_p_buf (net)
-                  0.17    0.00 200000.36 ^ nsample_p_buf (out)
+     1    0.03                           nsample_p_out (net)
+                  0.17    0.00 200000.36 ^ nsample_p_out (out)
                                200000.36   data arrival time
 
                   0.00 999999.94 999999.94   clock __VIRTUAL_CLK__ (rise edge)
@@ -873,8 +873,8 @@ Fanout     Cap    Slew   Delay    Time   Description
                                599999.38   slack (MET)
 
 
-Startpoint: sample_n (input port clocked by __VIRTUAL_CLK__)
-Endpoint: sample_n_buf (output port clocked by __VIRTUAL_CLK__)
+Startpoint: sample_n_in (input port clocked by __VIRTUAL_CLK__)
+Endpoint: sample_n_out (output port clocked by __VIRTUAL_CLK__)
 Path Group: __VIRTUAL_CLK__
 Path Type: max
 Corner: ss
@@ -884,12 +884,44 @@ Fanout     Cap    Slew   Delay    Time   Description
                   0.00    0.00    0.00   clock __VIRTUAL_CLK__ (rise edge)
                           0.00    0.00   clock network delay (ideal)
                        200000.00 200000.00 ^ input external delay
-                  0.11    0.07 200000.08 ^ sample_n (in)
-     2    0.01                           sample_n (net)
-                  0.11    0.00 200000.08 ^ outbuf_4/A (sky130_fd_sc_hd__buf_4)
-                  0.17    0.32 200000.39 ^ outbuf_4/X (sky130_fd_sc_hd__buf_4)
-     1    0.03                           sample_n_buf (net)
-                  0.17    0.00 200000.39 ^ sample_n_buf (out)
+                  0.10    0.07 200000.08 ^ sample_n_in (in)
+     2    0.01                           sample_n_in (net)
+                  0.10    0.00 200000.08 ^ outbuf_4/A (sky130_fd_sc_hd__buf_4)
+                  0.16    0.31 200000.38 ^ outbuf_4/X (sky130_fd_sc_hd__buf_4)
+     1    0.03                           sample_n_out (net)
+                  0.16    0.00 200000.38 ^ sample_n_out (out)
+                               200000.38   data arrival time
+
+                  0.00 999999.94 999999.94   clock __VIRTUAL_CLK__ (rise edge)
+                          0.00 999999.94   clock network delay (ideal)
+                         -0.25 999999.75   clock uncertainty
+                          0.00 999999.75   clock reconvergence pessimism
+                       -200000.00 799999.69   output external delay
+                               799999.69   data required time
+-----------------------------------------------------------------------------
+                               799999.69   data required time
+                               -200000.38   data arrival time
+-----------------------------------------------------------------------------
+                               599999.38   slack (MET)
+
+
+Startpoint: sample_p_in (input port clocked by __VIRTUAL_CLK__)
+Endpoint: sample_p_out (output port clocked by __VIRTUAL_CLK__)
+Path Group: __VIRTUAL_CLK__
+Path Type: max
+Corner: ss
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                  0.00    0.00    0.00   clock __VIRTUAL_CLK__ (rise edge)
+                          0.00    0.00   clock network delay (ideal)
+                       200000.00 200000.00 ^ input external delay
+                  0.11    0.07 200000.08 ^ sample_p_in (in)
+     2    0.01                           sample_p_in (net)
+                  0.11    0.00 200000.08 ^ outbuf_3/A (sky130_fd_sc_hd__buf_4)
+                  0.17    0.32 200000.39 ^ outbuf_3/X (sky130_fd_sc_hd__buf_4)
+     1    0.03                           sample_p_out (net)
+                  0.17    0.00 200000.39 ^ sample_p_out (out)
                                200000.39   data arrival time
 
                   0.00 999999.94 999999.94   clock __VIRTUAL_CLK__ (rise edge)
@@ -905,43 +937,11 @@ Fanout     Cap    Slew   Delay    Time   Description
                                599999.38   slack (MET)
 
 
-Startpoint: sample_p (input port clocked by __VIRTUAL_CLK__)
-Endpoint: sample_p_buf (output port clocked by __VIRTUAL_CLK__)
-Path Group: __VIRTUAL_CLK__
-Path Type: max
-Corner: ss
-
-Fanout     Cap    Slew   Delay    Time   Description
------------------------------------------------------------------------------
-                  0.00    0.00    0.00   clock __VIRTUAL_CLK__ (rise edge)
-                          0.00    0.00   clock network delay (ideal)
-                       200000.00 200000.00 ^ input external delay
-                  0.09    0.06 200000.06 ^ sample_p (in)
-     2    0.01                           sample_p (net)
-                  0.09    0.00 200000.06 ^ outbuf_3/A (sky130_fd_sc_hd__buf_4)
-                  0.17    0.31 200000.36 ^ outbuf_3/X (sky130_fd_sc_hd__buf_4)
-     1    0.03                           sample_p_buf (net)
-                  0.17    0.00 200000.36 ^ sample_p_buf (out)
-                               200000.36   data arrival time
-
-                  0.00 999999.94 999999.94   clock __VIRTUAL_CLK__ (rise edge)
-                          0.00 999999.94   clock network delay (ideal)
-                         -0.25 999999.75   clock uncertainty
-                          0.00 999999.75   clock reconvergence pessimism
-                       -200000.00 799999.69   output external delay
-                               799999.69   data required time
------------------------------------------------------------------------------
-                               799999.69   data required time
-                               -200000.36   data arrival time
------------------------------------------------------------------------------
-                               599999.38   slack (MET)
-
-
 
 ======================= Typical Corner ===================================
 
-Startpoint: enable_dlycontrol (input port clocked by __VIRTUAL_CLK__)
-Endpoint: clk_comp (output port clocked by __VIRTUAL_CLK__)
+Startpoint: enable_dlycontrol_in (input port clocked by __VIRTUAL_CLK__)
+Endpoint: clk_comp_out (output port clocked by __VIRTUAL_CLK__)
 Path Group: __VIRTUAL_CLK__
 Path Type: max
 Corner: tt
@@ -951,70 +951,70 @@ Fanout     Cap    Slew   Delay    Time   Description
                   0.00    0.00    0.00   clock __VIRTUAL_CLK__ (rise edge)
                           0.00    0.00   clock network delay (ideal)
                        200000.00 200000.00 ^ input external delay
-                  0.16    0.12 200000.11 ^ enable_dlycontrol (in)
-     8    0.03                           enable_dlycontrol (net)
+                  0.16    0.12 200000.11 ^ enable_dlycontrol_in (in)
+     8    0.03                           enable_dlycontrol_in (net)
                   0.16    0.00 200000.11 ^ clkgen.delay_155ns_1.enablebuffer/A (sky130_fd_sc_hd__buf_4)
                   0.05    0.16 200000.28 ^ clkgen.delay_155ns_1.enablebuffer/X (sky130_fd_sc_hd__buf_4)
-     5    0.01                           clkgen.delay_155ns_1._enable_dlycontrol_ (net)
+     5    0.01                           clkgen.delay_155ns_1.enable_dlycontrol_w (net)
                   0.05    0.00 200000.28 ^ clkgen.delay_155ns_1.genblk1[0].bypass_enable/A (sky130_fd_sc_hd__and2_1)
-                  0.19    0.23 200000.52 ^ clkgen.delay_155ns_1.genblk1[0].bypass_enable/X (sky130_fd_sc_hd__and2_1)
-     4    0.02                           clkgen.delay_155ns_1.genblk1[0].dly_binary.bypass (net)
-                  0.19    0.00 200000.52 ^ clkgen.delay_155ns_1.genblk1[0].dly_binary.out_mux/S (sky130_fd_sc_hd__mux2_1)
-                  0.07    0.38 200000.89 v clkgen.delay_155ns_1.genblk1[0].dly_binary.out_mux/X (sky130_fd_sc_hd__mux2_1)
-     2    0.00                           clkgen.delay_155ns_1.genblk1[0].dly_binary.out (net)
-                  0.07    0.00 200000.89 v clkgen.delay_155ns_1.genblk1[1].dly_binary.out_mux/A1 (sky130_fd_sc_hd__mux2_1)
-                  0.06    0.32 200001.20 v clkgen.delay_155ns_1.genblk1[1].dly_binary.out_mux/X (sky130_fd_sc_hd__mux2_1)
+                  0.18    0.22 200000.50 ^ clkgen.delay_155ns_1.genblk1[0].bypass_enable/X (sky130_fd_sc_hd__and2_1)
+     4    0.02                           clkgen.delay_155ns_1.genblk1[0].dly_binary.bypass_in (net)
+                  0.18    0.00 200000.50 ^ clkgen.delay_155ns_1.genblk1[0].dly_binary.out_mux/S (sky130_fd_sc_hd__mux2_1)
+                  0.07    0.38 200000.88 v clkgen.delay_155ns_1.genblk1[0].dly_binary.out_mux/X (sky130_fd_sc_hd__mux2_1)
+     2    0.01                           clkgen.delay_155ns_1.genblk1[0].dly_binary.out (net)
+                  0.07    0.00 200000.88 v clkgen.delay_155ns_1.genblk1[1].dly_binary.out_mux/A1 (sky130_fd_sc_hd__mux2_1)
+                  0.06    0.32 200001.19 v clkgen.delay_155ns_1.genblk1[1].dly_binary.out_mux/X (sky130_fd_sc_hd__mux2_1)
      2    0.00                           clkgen.delay_155ns_1.genblk1[1].dly_binary.out (net)
-                  0.06    0.00 200001.20 v clkgen.delay_155ns_1.genblk1[2].dly_binary.out_mux/A1 (sky130_fd_sc_hd__mux2_1)
-                  0.09    0.36 200001.58 v clkgen.delay_155ns_1.genblk1[2].dly_binary.out_mux/X (sky130_fd_sc_hd__mux2_1)
+                  0.06    0.00 200001.19 v clkgen.delay_155ns_1.genblk1[2].dly_binary.out_mux/A1 (sky130_fd_sc_hd__mux2_1)
+                  0.08    0.35 200001.55 v clkgen.delay_155ns_1.genblk1[2].dly_binary.out_mux/X (sky130_fd_sc_hd__mux2_1)
      2    0.01                           clkgen.delay_155ns_1.genblk1[2].dly_binary.out (net)
-                  0.09    0.00 200001.58 v clkgen.delay_155ns_1.genblk1[3].dly_binary.out_mux/A1 (sky130_fd_sc_hd__mux2_1)
-                  0.09    0.36 200001.94 v clkgen.delay_155ns_1.genblk1[3].dly_binary.out_mux/X (sky130_fd_sc_hd__mux2_1)
+                  0.08    0.00 200001.55 v clkgen.delay_155ns_1.genblk1[3].dly_binary.out_mux/A1 (sky130_fd_sc_hd__mux2_1)
+                  0.08    0.35 200001.89 v clkgen.delay_155ns_1.genblk1[3].dly_binary.out_mux/X (sky130_fd_sc_hd__mux2_1)
      2    0.01                           clkgen.delay_155ns_1.genblk1[3].dly_binary.out (net)
-                  0.09    0.00 200001.94 v clkgen.delay_155ns_1.genblk1[4].dly_binary.out_mux/A1 (sky130_fd_sc_hd__mux2_1)
-                  0.07    0.33 200002.27 v clkgen.delay_155ns_1.genblk1[4].dly_binary.out_mux/X (sky130_fd_sc_hd__mux2_1)
-     1    0.01                           clkgen._ndecision_finish_delayed_ (net)
-                  0.07    0.00 200002.27 v clkgen.clkdig_inverter/A (sky130_fd_sc_hd__inv_2)
-                  0.07    0.09 200002.36 ^ clkgen.clkdig_inverter/Y (sky130_fd_sc_hd__inv_2)
-     3    0.01                           clkgen.clk_dig (net)
-                  0.07    0.00 200002.36 ^ clkgen.delay_155ns_2.genblk1[0].dly_binary.out_mux/A1 (sky130_fd_sc_hd__mux2_1)
-                  0.09    0.17 200002.53 ^ clkgen.delay_155ns_2.genblk1[0].dly_binary.out_mux/X (sky130_fd_sc_hd__mux2_1)
+                  0.08    0.00 200001.89 v clkgen.delay_155ns_1.genblk1[4].dly_binary.out_mux/A1 (sky130_fd_sc_hd__mux2_1)
+                  0.08    0.35 200002.23 v clkgen.delay_155ns_1.genblk1[4].dly_binary.out_mux/X (sky130_fd_sc_hd__mux2_1)
+     1    0.01                           clkgen.delay_155ns_1.genblk1[4].dly_binary.out (net)
+                  0.08    0.00 200002.23 v clkgen.clkdig_inverter/A (sky130_fd_sc_hd__inv_2)
+                  0.08    0.10 200002.34 ^ clkgen.clkdig_inverter/Y (sky130_fd_sc_hd__inv_2)
+     3    0.02                           clkgen.clk_dig_out (net)
+                  0.08    0.00 200002.34 ^ clkgen.delay_155ns_2.genblk1[0].dly_binary.out_mux/A1 (sky130_fd_sc_hd__mux2_1)
+                  0.06    0.15 200002.48 ^ clkgen.delay_155ns_2.genblk1[0].dly_binary.out_mux/X (sky130_fd_sc_hd__mux2_1)
      2    0.01                           clkgen.delay_155ns_2.genblk1[0].dly_binary.out (net)
-                  0.09    0.00 200002.53 ^ clkgen.delay_155ns_2.genblk1[1].dly_binary.out_mux/A1 (sky130_fd_sc_hd__mux2_1)
-                  0.06    0.15 200002.67 ^ clkgen.delay_155ns_2.genblk1[1].dly_binary.out_mux/X (sky130_fd_sc_hd__mux2_1)
+                  0.06    0.00 200002.48 ^ clkgen.delay_155ns_2.genblk1[1].dly_binary.out_mux/A1 (sky130_fd_sc_hd__mux2_1)
+                  0.06    0.15 200002.64 ^ clkgen.delay_155ns_2.genblk1[1].dly_binary.out_mux/X (sky130_fd_sc_hd__mux2_1)
      2    0.00                           clkgen.delay_155ns_2.genblk1[1].dly_binary.out (net)
-                  0.06    0.00 200002.67 ^ clkgen.delay_155ns_2.genblk1[2].dly_binary.out_mux/A1 (sky130_fd_sc_hd__mux2_1)
-                  0.07    0.15 200002.83 ^ clkgen.delay_155ns_2.genblk1[2].dly_binary.out_mux/X (sky130_fd_sc_hd__mux2_1)
+                  0.06    0.00 200002.64 ^ clkgen.delay_155ns_2.genblk1[2].dly_binary.out_mux/A1 (sky130_fd_sc_hd__mux2_1)
+                  0.07    0.15 200002.78 ^ clkgen.delay_155ns_2.genblk1[2].dly_binary.out_mux/X (sky130_fd_sc_hd__mux2_1)
      2    0.01                           clkgen.delay_155ns_2.genblk1[2].dly_binary.out (net)
-                  0.07    0.00 200002.83 ^ clkgen.delay_155ns_2.genblk1[3].dly_binary.out_mux/A1 (sky130_fd_sc_hd__mux2_1)
-                  0.07    0.16 200002.98 ^ clkgen.delay_155ns_2.genblk1[3].dly_binary.out_mux/X (sky130_fd_sc_hd__mux2_1)
+                  0.07    0.00 200002.78 ^ clkgen.delay_155ns_2.genblk1[3].dly_binary.out_mux/A1 (sky130_fd_sc_hd__mux2_1)
+                  0.07    0.16 200002.94 ^ clkgen.delay_155ns_2.genblk1[3].dly_binary.out_mux/X (sky130_fd_sc_hd__mux2_1)
      2    0.01                           clkgen.delay_155ns_2.genblk1[3].dly_binary.out (net)
-                  0.07    0.00 200002.98 ^ clkgen.delay_155ns_2.genblk1[4].dly_binary.out_mux/A1 (sky130_fd_sc_hd__mux2_1)
-                  0.06    0.15 200003.12 ^ clkgen.delay_155ns_2.genblk1[4].dly_binary.out_mux/X (sky130_fd_sc_hd__mux2_1)
-     1    0.00                           clkgen._clk_dig_delayed_ (net)
-                  0.06    0.00 200003.12 ^ clkgen.nor1/A (sky130_fd_sc_hd__nor2b_1)
-                  0.05    0.06 200003.19 v clkgen.nor1/Y (sky130_fd_sc_hd__nor2b_1)
-     2    0.01                           clkgen._net_1_ (net)
-                  0.05    0.00 200003.19 v clkgen.delay_155ns_3.genblk1[0].dly_binary.out_mux/A1 (sky130_fd_sc_hd__mux2_1)
-                  0.07    0.32 200003.50 v clkgen.delay_155ns_3.genblk1[0].dly_binary.out_mux/X (sky130_fd_sc_hd__mux2_1)
-     2    0.01                           clkgen.delay_155ns_3.genblk1[0].dly_binary.out (net)
-                  0.07    0.00 200003.50 v clkgen.delay_155ns_3.genblk1[1].dly_binary.out_mux/A1 (sky130_fd_sc_hd__mux2_1)
-                  0.08    0.33 200003.84 v clkgen.delay_155ns_3.genblk1[1].dly_binary.out_mux/X (sky130_fd_sc_hd__mux2_1)
+                  0.07    0.00 200002.94 ^ clkgen.delay_155ns_2.genblk1[4].dly_binary.out_mux/A1 (sky130_fd_sc_hd__mux2_1)
+                  0.09    0.17 200003.11 ^ clkgen.delay_155ns_2.genblk1[4].dly_binary.out_mux/X (sky130_fd_sc_hd__mux2_1)
+     1    0.01                           clkgen.clk_dig_delayed_w (net)
+                  0.09    0.00 200003.11 ^ clkgen.nor1/A (sky130_fd_sc_hd__nor2b_1)
+                  0.06    0.09 200003.20 v clkgen.nor1/Y (sky130_fd_sc_hd__nor2b_1)
+     2    0.01                           clkgen.delay_155ns_3.genblk1[0].dly_binary.in (net)
+                  0.06    0.00 200003.20 v clkgen.delay_155ns_3.genblk1[0].dly_binary.out_mux/A1 (sky130_fd_sc_hd__mux2_1)
+                  0.07    0.32 200003.52 v clkgen.delay_155ns_3.genblk1[0].dly_binary.out_mux/X (sky130_fd_sc_hd__mux2_1)
+     2    0.00                           clkgen.delay_155ns_3.genblk1[0].dly_binary.out (net)
+                  0.07    0.00 200003.52 v clkgen.delay_155ns_3.genblk1[1].dly_binary.out_mux/A1 (sky130_fd_sc_hd__mux2_1)
+                  0.08    0.33 200003.86 v clkgen.delay_155ns_3.genblk1[1].dly_binary.out_mux/X (sky130_fd_sc_hd__mux2_1)
      2    0.01                           clkgen.delay_155ns_3.genblk1[1].dly_binary.out (net)
-                  0.08    0.00 200003.84 v clkgen.delay_155ns_3.genblk1[2].dly_binary.out_mux/A1 (sky130_fd_sc_hd__mux2_1)
-                  0.07    0.33 200004.17 v clkgen.delay_155ns_3.genblk1[2].dly_binary.out_mux/X (sky130_fd_sc_hd__mux2_1)
+                  0.08    0.00 200003.86 v clkgen.delay_155ns_3.genblk1[2].dly_binary.out_mux/A1 (sky130_fd_sc_hd__mux2_1)
+                  0.07    0.33 200004.19 v clkgen.delay_155ns_3.genblk1[2].dly_binary.out_mux/X (sky130_fd_sc_hd__mux2_1)
      2    0.00                           clkgen.delay_155ns_3.genblk1[2].dly_binary.out (net)
-                  0.07    0.00 200004.17 v clkgen.delay_155ns_3.genblk1[3].dly_binary.out_mux/A1 (sky130_fd_sc_hd__mux2_1)
-                  0.07    0.32 200004.50 v clkgen.delay_155ns_3.genblk1[3].dly_binary.out_mux/X (sky130_fd_sc_hd__mux2_1)
+                  0.07    0.00 200004.19 v clkgen.delay_155ns_3.genblk1[3].dly_binary.out_mux/A1 (sky130_fd_sc_hd__mux2_1)
+                  0.07    0.32 200004.52 v clkgen.delay_155ns_3.genblk1[3].dly_binary.out_mux/X (sky130_fd_sc_hd__mux2_1)
      2    0.00                           clkgen.delay_155ns_3.genblk1[3].dly_binary.out (net)
-                  0.07    0.00 200004.50 v clkgen.delay_155ns_3.genblk1[4].dly_binary.out_mux/A1 (sky130_fd_sc_hd__mux2_1)
-                  0.10    0.36 200004.86 v clkgen.delay_155ns_3.genblk1[4].dly_binary.out_mux/X (sky130_fd_sc_hd__mux2_1)
-     2    0.01                           clkgen.clk_comp (net)
-                  0.10    0.00 200004.86 v outbuf_2/A (sky130_fd_sc_hd__buf_4)
-                  0.06    0.20 200005.06 v outbuf_2/X (sky130_fd_sc_hd__buf_4)
-     1    0.03                           clk_comp (net)
-                  0.06    0.00 200005.06 v clk_comp (out)
-                               200005.06   data arrival time
+                  0.07    0.00 200004.52 v clkgen.delay_155ns_3.genblk1[4].dly_binary.out_mux/A1 (sky130_fd_sc_hd__mux2_1)
+                  0.09    0.36 200004.88 v clkgen.delay_155ns_3.genblk1[4].dly_binary.out_mux/X (sky130_fd_sc_hd__mux2_1)
+     1    0.01                           clkgen.clk_comp_out (net)
+                  0.09    0.00 200004.88 v outbuf_2/A (sky130_fd_sc_hd__buf_4)
+                  0.06    0.20 200005.08 v outbuf_2/X (sky130_fd_sc_hd__buf_4)
+     1    0.03                           clk_comp_out (net)
+                  0.06    0.00 200005.08 v clk_comp_out (out)
+                               200005.08   data arrival time
 
                   0.00 999999.94 999999.94   clock __VIRTUAL_CLK__ (rise edge)
                           0.00 999999.94   clock network delay (ideal)
@@ -1024,13 +1024,13 @@ Fanout     Cap    Slew   Delay    Time   Description
                                799999.69   data required time
 -----------------------------------------------------------------------------
                                799999.69   data required time
-                               -200005.06   data arrival time
+                               -200005.08   data arrival time
 -----------------------------------------------------------------------------
                                599994.62   slack (MET)
 
 
-Startpoint: enable_dlycontrol (input port clocked by __VIRTUAL_CLK__)
-Endpoint: clk_dig (output port clocked by __VIRTUAL_CLK__)
+Startpoint: enable_dlycontrol_in (input port clocked by __VIRTUAL_CLK__)
+Endpoint: clk_dig_out (output port clocked by __VIRTUAL_CLK__)
 Path Group: __VIRTUAL_CLK__
 Path Type: max
 Corner: tt
@@ -1040,37 +1040,37 @@ Fanout     Cap    Slew   Delay    Time   Description
                   0.00    0.00    0.00   clock __VIRTUAL_CLK__ (rise edge)
                           0.00    0.00   clock network delay (ideal)
                        200000.00 200000.00 ^ input external delay
-                  0.16    0.12 200000.11 ^ enable_dlycontrol (in)
-     8    0.03                           enable_dlycontrol (net)
+                  0.16    0.12 200000.11 ^ enable_dlycontrol_in (in)
+     8    0.03                           enable_dlycontrol_in (net)
                   0.16    0.00 200000.11 ^ clkgen.delay_155ns_1.enablebuffer/A (sky130_fd_sc_hd__buf_4)
                   0.05    0.16 200000.28 ^ clkgen.delay_155ns_1.enablebuffer/X (sky130_fd_sc_hd__buf_4)
-     5    0.01                           clkgen.delay_155ns_1._enable_dlycontrol_ (net)
+     5    0.01                           clkgen.delay_155ns_1.enable_dlycontrol_w (net)
                   0.05    0.00 200000.28 ^ clkgen.delay_155ns_1.genblk1[0].bypass_enable/A (sky130_fd_sc_hd__and2_1)
-                  0.19    0.23 200000.52 ^ clkgen.delay_155ns_1.genblk1[0].bypass_enable/X (sky130_fd_sc_hd__and2_1)
-     4    0.02                           clkgen.delay_155ns_1.genblk1[0].dly_binary.bypass (net)
-                  0.19    0.00 200000.52 ^ clkgen.delay_155ns_1.genblk1[0].dly_binary.out_mux/S (sky130_fd_sc_hd__mux2_1)
-                  0.07    0.38 200000.89 v clkgen.delay_155ns_1.genblk1[0].dly_binary.out_mux/X (sky130_fd_sc_hd__mux2_1)
-     2    0.00                           clkgen.delay_155ns_1.genblk1[0].dly_binary.out (net)
-                  0.07    0.00 200000.89 v clkgen.delay_155ns_1.genblk1[1].dly_binary.out_mux/A1 (sky130_fd_sc_hd__mux2_1)
-                  0.06    0.32 200001.20 v clkgen.delay_155ns_1.genblk1[1].dly_binary.out_mux/X (sky130_fd_sc_hd__mux2_1)
+                  0.18    0.22 200000.50 ^ clkgen.delay_155ns_1.genblk1[0].bypass_enable/X (sky130_fd_sc_hd__and2_1)
+     4    0.02                           clkgen.delay_155ns_1.genblk1[0].dly_binary.bypass_in (net)
+                  0.18    0.00 200000.50 ^ clkgen.delay_155ns_1.genblk1[0].dly_binary.out_mux/S (sky130_fd_sc_hd__mux2_1)
+                  0.07    0.38 200000.88 v clkgen.delay_155ns_1.genblk1[0].dly_binary.out_mux/X (sky130_fd_sc_hd__mux2_1)
+     2    0.01                           clkgen.delay_155ns_1.genblk1[0].dly_binary.out (net)
+                  0.07    0.00 200000.88 v clkgen.delay_155ns_1.genblk1[1].dly_binary.out_mux/A1 (sky130_fd_sc_hd__mux2_1)
+                  0.06    0.32 200001.19 v clkgen.delay_155ns_1.genblk1[1].dly_binary.out_mux/X (sky130_fd_sc_hd__mux2_1)
      2    0.00                           clkgen.delay_155ns_1.genblk1[1].dly_binary.out (net)
-                  0.06    0.00 200001.20 v clkgen.delay_155ns_1.genblk1[2].dly_binary.out_mux/A1 (sky130_fd_sc_hd__mux2_1)
-                  0.09    0.36 200001.58 v clkgen.delay_155ns_1.genblk1[2].dly_binary.out_mux/X (sky130_fd_sc_hd__mux2_1)
+                  0.06    0.00 200001.19 v clkgen.delay_155ns_1.genblk1[2].dly_binary.out_mux/A1 (sky130_fd_sc_hd__mux2_1)
+                  0.08    0.35 200001.55 v clkgen.delay_155ns_1.genblk1[2].dly_binary.out_mux/X (sky130_fd_sc_hd__mux2_1)
      2    0.01                           clkgen.delay_155ns_1.genblk1[2].dly_binary.out (net)
-                  0.09    0.00 200001.58 v clkgen.delay_155ns_1.genblk1[3].dly_binary.out_mux/A1 (sky130_fd_sc_hd__mux2_1)
-                  0.09    0.36 200001.94 v clkgen.delay_155ns_1.genblk1[3].dly_binary.out_mux/X (sky130_fd_sc_hd__mux2_1)
+                  0.08    0.00 200001.55 v clkgen.delay_155ns_1.genblk1[3].dly_binary.out_mux/A1 (sky130_fd_sc_hd__mux2_1)
+                  0.08    0.35 200001.89 v clkgen.delay_155ns_1.genblk1[3].dly_binary.out_mux/X (sky130_fd_sc_hd__mux2_1)
      2    0.01                           clkgen.delay_155ns_1.genblk1[3].dly_binary.out (net)
-                  0.09    0.00 200001.94 v clkgen.delay_155ns_1.genblk1[4].dly_binary.out_mux/A1 (sky130_fd_sc_hd__mux2_1)
-                  0.07    0.33 200002.27 v clkgen.delay_155ns_1.genblk1[4].dly_binary.out_mux/X (sky130_fd_sc_hd__mux2_1)
-     1    0.01                           clkgen._ndecision_finish_delayed_ (net)
-                  0.07    0.00 200002.27 v clkgen.clkdig_inverter/A (sky130_fd_sc_hd__inv_2)
-                  0.07    0.09 200002.36 ^ clkgen.clkdig_inverter/Y (sky130_fd_sc_hd__inv_2)
-     3    0.01                           clkgen.clk_dig (net)
-                  0.07    0.00 200002.36 ^ outbuf_1/A (sky130_fd_sc_hd__buf_4)
-                  0.12    0.19 200002.55 ^ outbuf_1/X (sky130_fd_sc_hd__buf_4)
-     1    0.03                           clk_dig (net)
-                  0.12    0.00 200002.55 ^ clk_dig (out)
-                               200002.55   data arrival time
+                  0.08    0.00 200001.89 v clkgen.delay_155ns_1.genblk1[4].dly_binary.out_mux/A1 (sky130_fd_sc_hd__mux2_1)
+                  0.08    0.35 200002.23 v clkgen.delay_155ns_1.genblk1[4].dly_binary.out_mux/X (sky130_fd_sc_hd__mux2_1)
+     1    0.01                           clkgen.delay_155ns_1.genblk1[4].dly_binary.out (net)
+                  0.08    0.00 200002.23 v clkgen.clkdig_inverter/A (sky130_fd_sc_hd__inv_2)
+                  0.08    0.10 200002.34 ^ clkgen.clkdig_inverter/Y (sky130_fd_sc_hd__inv_2)
+     3    0.02                           clkgen.clk_dig_out (net)
+                  0.08    0.00 200002.34 ^ outbuf_1/A (sky130_fd_sc_hd__buf_4)
+                  0.12    0.19 200002.53 ^ outbuf_1/X (sky130_fd_sc_hd__buf_4)
+     1    0.03                           clk_dig_out (net)
+                  0.12    0.00 200002.53 ^ clk_dig_out (out)
+                               200002.53   data arrival time
 
                   0.00 999999.94 999999.94   clock __VIRTUAL_CLK__ (rise edge)
                           0.00 999999.94   clock network delay (ideal)
@@ -1080,13 +1080,13 @@ Fanout     Cap    Slew   Delay    Time   Description
                                799999.69   data required time
 -----------------------------------------------------------------------------
                                799999.69   data required time
-                               -200002.55   data arrival time
+                               -200002.53   data arrival time
 -----------------------------------------------------------------------------
-                               599997.12   slack (MET)
+                               599997.19   slack (MET)
 
 
-Startpoint: nsample_n (input port clocked by __VIRTUAL_CLK__)
-Endpoint: nsample_n_buf (output port clocked by __VIRTUAL_CLK__)
+Startpoint: nsample_n_in (input port clocked by __VIRTUAL_CLK__)
+Endpoint: nsample_n_out (output port clocked by __VIRTUAL_CLK__)
 Path Group: __VIRTUAL_CLK__
 Path Type: max
 Corner: tt
@@ -1096,12 +1096,12 @@ Fanout     Cap    Slew   Delay    Time   Description
                   0.00    0.00    0.00   clock __VIRTUAL_CLK__ (rise edge)
                           0.00    0.00   clock network delay (ideal)
                        200000.00 200000.00 ^ input external delay
-                  0.03    0.01 200000.02 ^ nsample_n (in)
-     2    0.00                           nsample_n (net)
+                  0.03    0.01 200000.02 ^ nsample_n_in (in)
+     2    0.00                           nsample_n_in (net)
                   0.03    0.00 200000.02 ^ outbuf_6/A (sky130_fd_sc_hd__buf_4)
                   0.11    0.16 200000.17 ^ outbuf_6/X (sky130_fd_sc_hd__buf_4)
-     1    0.03                           nsample_n_buf (net)
-                  0.11    0.00 200000.17 ^ nsample_n_buf (out)
+     1    0.03                           nsample_n_out (net)
+                  0.11    0.00 200000.17 ^ nsample_n_out (out)
                                200000.17   data arrival time
 
                   0.00 999999.94 999999.94   clock __VIRTUAL_CLK__ (rise edge)
@@ -1117,8 +1117,8 @@ Fanout     Cap    Slew   Delay    Time   Description
                                599999.50   slack (MET)
 
 
-Startpoint: nsample_p (input port clocked by __VIRTUAL_CLK__)
-Endpoint: nsample_p_buf (output port clocked by __VIRTUAL_CLK__)
+Startpoint: nsample_p_in (input port clocked by __VIRTUAL_CLK__)
+Endpoint: nsample_p_out (output port clocked by __VIRTUAL_CLK__)
 Path Group: __VIRTUAL_CLK__
 Path Type: max
 Corner: tt
@@ -1128,13 +1128,13 @@ Fanout     Cap    Slew   Delay    Time   Description
                   0.00    0.00    0.00   clock __VIRTUAL_CLK__ (rise edge)
                           0.00    0.00   clock network delay (ideal)
                        200000.00 200000.00 ^ input external delay
-                  0.06    0.04 200000.05 ^ nsample_p (in)
-     2    0.01                           nsample_p (net)
-                  0.06    0.00 200000.05 ^ outbuf_5/A (sky130_fd_sc_hd__buf_4)
-                  0.10    0.17 200000.22 ^ outbuf_5/X (sky130_fd_sc_hd__buf_4)
-     1    0.03                           nsample_p_buf (net)
-                  0.10    0.00 200000.22 ^ nsample_p_buf (out)
-                               200000.22   data arrival time
+                  0.05    0.03 200000.03 ^ nsample_p_in (in)
+     2    0.01                           nsample_p_in (net)
+                  0.05    0.00 200000.03 ^ outbuf_5/A (sky130_fd_sc_hd__buf_4)
+                  0.10    0.16 200000.19 ^ outbuf_5/X (sky130_fd_sc_hd__buf_4)
+     1    0.03                           nsample_p_out (net)
+                  0.10    0.00 200000.19 ^ nsample_p_out (out)
+                               200000.19   data arrival time
 
                   0.00 999999.94 999999.94   clock __VIRTUAL_CLK__ (rise edge)
                           0.00 999999.94   clock network delay (ideal)
@@ -1144,80 +1144,80 @@ Fanout     Cap    Slew   Delay    Time   Description
                                799999.69   data required time
 -----------------------------------------------------------------------------
                                799999.69   data required time
-                               -200000.22   data arrival time
------------------------------------------------------------------------------
-                               599999.44   slack (MET)
-
-
-Startpoint: sample_n (input port clocked by __VIRTUAL_CLK__)
-Endpoint: sample_n_buf (output port clocked by __VIRTUAL_CLK__)
-Path Group: __VIRTUAL_CLK__
-Path Type: max
-Corner: tt
-
-Fanout     Cap    Slew   Delay    Time   Description
------------------------------------------------------------------------------
-                  0.00    0.00    0.00   clock __VIRTUAL_CLK__ (rise edge)
-                          0.00    0.00   clock network delay (ideal)
-                       200000.00 200000.00 ^ input external delay
-                  0.07    0.04 200000.05 ^ sample_n (in)
-     2    0.01                           sample_n (net)
-                  0.07    0.00 200000.05 ^ outbuf_4/A (sky130_fd_sc_hd__buf_4)
-                  0.10    0.17 200000.22 ^ outbuf_4/X (sky130_fd_sc_hd__buf_4)
-     1    0.03                           sample_n_buf (net)
-                  0.10    0.00 200000.22 ^ sample_n_buf (out)
-                               200000.22   data arrival time
-
-                  0.00 999999.94 999999.94   clock __VIRTUAL_CLK__ (rise edge)
-                          0.00 999999.94   clock network delay (ideal)
-                         -0.25 999999.75   clock uncertainty
-                          0.00 999999.75   clock reconvergence pessimism
-                       -200000.00 799999.69   output external delay
-                               799999.69   data required time
------------------------------------------------------------------------------
-                               799999.69   data required time
-                               -200000.22   data arrival time
------------------------------------------------------------------------------
-                               599999.44   slack (MET)
-
-
-Startpoint: sample_p (input port clocked by __VIRTUAL_CLK__)
-Endpoint: sample_p_buf (output port clocked by __VIRTUAL_CLK__)
-Path Group: __VIRTUAL_CLK__
-Path Type: max
-Corner: tt
-
-Fanout     Cap    Slew   Delay    Time   Description
------------------------------------------------------------------------------
-                  0.00    0.00    0.00   clock __VIRTUAL_CLK__ (rise edge)
-                          0.00    0.00   clock network delay (ideal)
-                       200000.00 200000.00 ^ input external delay
-                  0.05    0.04 200000.05 ^ sample_p (in)
-     2    0.01                           sample_p (net)
-                  0.05    0.00 200000.05 ^ outbuf_3/A (sky130_fd_sc_hd__buf_4)
-                  0.10    0.16 200000.20 ^ outbuf_3/X (sky130_fd_sc_hd__buf_4)
-     1    0.03                           sample_p_buf (net)
-                  0.10    0.00 200000.20 ^ sample_p_buf (out)
-                               200000.20   data arrival time
-
-                  0.00 999999.94 999999.94   clock __VIRTUAL_CLK__ (rise edge)
-                          0.00 999999.94   clock network delay (ideal)
-                         -0.25 999999.75   clock uncertainty
-                          0.00 999999.75   clock reconvergence pessimism
-                       -200000.00 799999.69   output external delay
-                               799999.69   data required time
------------------------------------------------------------------------------
-                               799999.69   data required time
-                               -200000.20   data arrival time
+                               -200000.19   data arrival time
 -----------------------------------------------------------------------------
                                599999.50   slack (MET)
+
+
+Startpoint: sample_n_in (input port clocked by __VIRTUAL_CLK__)
+Endpoint: sample_n_out (output port clocked by __VIRTUAL_CLK__)
+Path Group: __VIRTUAL_CLK__
+Path Type: max
+Corner: tt
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                  0.00    0.00    0.00   clock __VIRTUAL_CLK__ (rise edge)
+                          0.00    0.00   clock network delay (ideal)
+                       200000.00 200000.00 ^ input external delay
+                  0.07    0.04 200000.05 ^ sample_n_in (in)
+     2    0.01                           sample_n_in (net)
+                  0.07    0.00 200000.05 ^ outbuf_4/A (sky130_fd_sc_hd__buf_4)
+                  0.10    0.17 200000.22 ^ outbuf_4/X (sky130_fd_sc_hd__buf_4)
+     1    0.03                           sample_n_out (net)
+                  0.10    0.00 200000.22 ^ sample_n_out (out)
+                               200000.22   data arrival time
+
+                  0.00 999999.94 999999.94   clock __VIRTUAL_CLK__ (rise edge)
+                          0.00 999999.94   clock network delay (ideal)
+                         -0.25 999999.75   clock uncertainty
+                          0.00 999999.75   clock reconvergence pessimism
+                       -200000.00 799999.69   output external delay
+                               799999.69   data required time
+-----------------------------------------------------------------------------
+                               799999.69   data required time
+                               -200000.22   data arrival time
+-----------------------------------------------------------------------------
+                               599999.44   slack (MET)
+
+
+Startpoint: sample_p_in (input port clocked by __VIRTUAL_CLK__)
+Endpoint: sample_p_out (output port clocked by __VIRTUAL_CLK__)
+Path Group: __VIRTUAL_CLK__
+Path Type: max
+Corner: tt
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                  0.00    0.00    0.00   clock __VIRTUAL_CLK__ (rise edge)
+                          0.00    0.00   clock network delay (ideal)
+                       200000.00 200000.00 ^ input external delay
+                  0.07    0.04 200000.05 ^ sample_p_in (in)
+     2    0.01                           sample_p_in (net)
+                  0.07    0.00 200000.05 ^ outbuf_3/A (sky130_fd_sc_hd__buf_4)
+                  0.10    0.17 200000.22 ^ outbuf_3/X (sky130_fd_sc_hd__buf_4)
+     1    0.03                           sample_p_out (net)
+                  0.10    0.00 200000.22 ^ sample_p_out (out)
+                               200000.22   data arrival time
+
+                  0.00 999999.94 999999.94   clock __VIRTUAL_CLK__ (rise edge)
+                          0.00 999999.94   clock network delay (ideal)
+                         -0.25 999999.75   clock uncertainty
+                          0.00 999999.75   clock reconvergence pessimism
+                       -200000.00 799999.69   output external delay
+                               799999.69   data required time
+-----------------------------------------------------------------------------
+                               799999.69   data required time
+                               -200000.22   data arrival time
+-----------------------------------------------------------------------------
+                               599999.44   slack (MET)
 
 
 
 ======================= Fastest Corner ===================================
 
-Startpoint: enable_dlycontrol (input port clocked by __VIRTUAL_CLK__)
-Endpoint: clk_comp (output port clocked by __VIRTUAL_CLK__)
+Startpoint: dlycontrol1_in[0] (input port clocked by __VIRTUAL_CLK__)
+Endpoint: clk_comp_out (output port clocked by __VIRTUAL_CLK__)
 Path Group: __VIRTUAL_CLK__
 Path Type: max
 Corner: ff
@@ -1227,102 +1227,67 @@ Fanout     Cap    Slew   Delay    Time   Description
                   0.00    0.00    0.00   clock __VIRTUAL_CLK__ (rise edge)
                           0.00    0.00   clock network delay (ideal)
                        200000.00 200000.00 ^ input external delay
-                  0.12    0.09 200000.09 ^ enable_dlycontrol (in)
-     8    0.03                           enable_dlycontrol (net)
-                  0.12    0.00 200000.09 ^ edgedetect.dly_315ns_1.enablebuffer/A (sky130_fd_sc_hd__buf_4)
-                  0.07    0.13 200000.22 ^ edgedetect.dly_315ns_1.enablebuffer/X (sky130_fd_sc_hd__buf_4)
-    12    0.03                           edgedetect.dly_315ns_1._enable_dlycontrol_ (net)
-                  0.07    0.01 200000.23 ^ edgedetect.dly_315ns_1.genblk1[2].bypass_enable/A (sky130_fd_sc_hd__and2_1)
-                  0.11    0.15 200000.38 ^ edgedetect.dly_315ns_1.genblk1[2].bypass_enable/X (sky130_fd_sc_hd__and2_1)
-     2    0.01                           edgedetect.dly_315ns_1.genblk1[2].dly_binary.bypass (net)
-                  0.11    0.00 200000.38 ^ edgedetect.dly_315ns_1.genblk1[2].dly_binary.out_mux/S (sky130_fd_sc_hd__mux2_1)
-                  0.07    0.23 200000.61 v edgedetect.dly_315ns_1.genblk1[2].dly_binary.out_mux/X (sky130_fd_sc_hd__mux2_1)
-     2    0.01                           edgedetect.dly_315ns_1.genblk1[2].dly_binary.out (net)
-                  0.07    0.00 200000.61 v edgedetect.dly_315ns_1.genblk1[3].dly_binary.out_mux/A1 (sky130_fd_sc_hd__mux2_1)
-                  0.07    0.20 200000.81 v edgedetect.dly_315ns_1.genblk1[3].dly_binary.out_mux/X (sky130_fd_sc_hd__mux2_1)
-     2    0.01                           edgedetect.dly_315ns_1.genblk1[3].dly_binary.out (net)
-                  0.07    0.00 200000.81 v edgedetect.dly_315ns_1.genblk1[4].dly_binary.out_mux/A1 (sky130_fd_sc_hd__mux2_1)
-                  0.05    0.19 200001.00 v edgedetect.dly_315ns_1.genblk1[4].dly_binary.out_mux/X (sky130_fd_sc_hd__mux2_1)
-     2    0.01                           edgedetect.dly_315ns_1.genblk1[4].dly_binary.out (net)
-                  0.05    0.00 200001.00 v edgedetect.dly_315ns_1.genblk1[5].dly_binary.out_mux/A1 (sky130_fd_sc_hd__mux2_1)
-                  0.06    0.19 200001.19 v edgedetect.dly_315ns_1.genblk1[5].dly_binary.out_mux/X (sky130_fd_sc_hd__mux2_1)
-     1    0.01                           edgedetect._start_conv_delayed_ (net)
-                  0.06    0.00 200001.19 v edgedetect.nor1/A (sky130_fd_sc_hd__nor2b_1)
-                  0.05    0.07 200001.27 ^ edgedetect.nor1/Y (sky130_fd_sc_hd__nor2b_1)
-     1    0.00                           edgedetect._start_conv_edge_ (net)
-                  0.05    0.00 200001.27 ^ edgedetect.or1/A (sky130_fd_sc_hd__or2_1)
-                  0.12    0.13 200001.39 ^ edgedetect.or1/X (sky130_fd_sc_hd__or2_1)
-     2    0.02                           clkgen.enable_loop (net)
-                  0.12    0.00 200001.39 ^ clkgen.nor1/B_N (sky130_fd_sc_hd__nor2b_1)
-                  0.12    0.15 200001.55 ^ clkgen.nor1/Y (sky130_fd_sc_hd__nor2b_1)
-     2    0.01                           clkgen._net_1_ (net)
-                  0.12    0.00 200001.55 ^ clkgen.delay_155ns_3.genblk1[0].dly_binary.out_mux/A1 (sky130_fd_sc_hd__mux2_1)
-                  0.05    0.12 200001.66 ^ clkgen.delay_155ns_3.genblk1[0].dly_binary.out_mux/X (sky130_fd_sc_hd__mux2_1)
-     2    0.01                           clkgen.delay_155ns_3.genblk1[0].dly_binary.out (net)
-                  0.05    0.00 200001.66 ^ clkgen.delay_155ns_3.genblk1[1].dly_binary.out_mux/A1 (sky130_fd_sc_hd__mux2_1)
-                  0.06    0.10 200001.77 ^ clkgen.delay_155ns_3.genblk1[1].dly_binary.out_mux/X (sky130_fd_sc_hd__mux2_1)
-     2    0.01                           clkgen.delay_155ns_3.genblk1[1].dly_binary.out (net)
-                  0.06    0.00 200001.77 ^ clkgen.delay_155ns_3.genblk1[2].dly_binary.out_mux/A1 (sky130_fd_sc_hd__mux2_1)
-                  0.04    0.10 200001.86 ^ clkgen.delay_155ns_3.genblk1[2].dly_binary.out_mux/X (sky130_fd_sc_hd__mux2_1)
-     2    0.01                           clkgen.delay_155ns_3.genblk1[2].dly_binary.out (net)
-                  0.04    0.00 200001.86 ^ clkgen.delay_155ns_3.genblk1[3].dly_binary.out_mux/A1 (sky130_fd_sc_hd__mux2_1)
-                  0.04    0.09 200001.95 ^ clkgen.delay_155ns_3.genblk1[3].dly_binary.out_mux/X (sky130_fd_sc_hd__mux2_1)
-     2    0.01                           clkgen.delay_155ns_3.genblk1[3].dly_binary.out (net)
-                  0.04    0.00 200001.95 ^ clkgen.delay_155ns_3.genblk1[4].dly_binary.out_mux/A1 (sky130_fd_sc_hd__mux2_1)
-                  0.08    0.13 200002.08 ^ clkgen.delay_155ns_3.genblk1[4].dly_binary.out_mux/X (sky130_fd_sc_hd__mux2_1)
-     2    0.01                           clkgen.clk_comp (net)
-                  0.08    0.00 200002.08 ^ outbuf_2/A (sky130_fd_sc_hd__buf_4)
-                  0.08    0.13 200002.22 ^ outbuf_2/X (sky130_fd_sc_hd__buf_4)
-     1    0.03                           clk_comp (net)
-                  0.08    0.00 200002.22 ^ clk_comp (out)
-                               200002.22   data arrival time
-
-                  0.00 999999.94 999999.94   clock __VIRTUAL_CLK__ (rise edge)
-                          0.00 999999.94   clock network delay (ideal)
-                         -0.25 999999.75   clock uncertainty
-                          0.00 999999.75   clock reconvergence pessimism
-                       -200000.00 799999.69   output external delay
-                               799999.69   data required time
------------------------------------------------------------------------------
-                               799999.69   data required time
-                               -200002.22   data arrival time
------------------------------------------------------------------------------
-                               599997.50   slack (MET)
-
-
-Startpoint: dlycontrol1[2] (input port clocked by __VIRTUAL_CLK__)
-Endpoint: clk_dig (output port clocked by __VIRTUAL_CLK__)
-Path Group: __VIRTUAL_CLK__
-Path Type: max
-Corner: ff
-
-Fanout     Cap    Slew   Delay    Time   Description
------------------------------------------------------------------------------
-                  0.00    0.00    0.00   clock __VIRTUAL_CLK__ (rise edge)
-                          0.00    0.00   clock network delay (ideal)
-                       200000.00 200000.00 ^ input external delay
-                  0.05    0.03 200000.03 ^ dlycontrol1[2] (in)
-     2    0.01                           dlycontrol1[2] (net)
-                  0.05    0.00 200000.03 ^ clkgen.delay_155ns_1.genblk1[2].bypass_enable/B (sky130_fd_sc_hd__and2_1)
-                  0.14    0.16 200000.19 ^ clkgen.delay_155ns_1.genblk1[2].bypass_enable/X (sky130_fd_sc_hd__and2_1)
-     4    0.02                           clkgen.delay_155ns_1.genblk1[2].dly_binary.bypass (net)
-                  0.14    0.00 200000.19 ^ clkgen.delay_155ns_1.genblk1[2].dly_binary.out_mux/S (sky130_fd_sc_hd__mux2_1)
-                  0.07    0.23 200000.42 v clkgen.delay_155ns_1.genblk1[2].dly_binary.out_mux/X (sky130_fd_sc_hd__mux2_1)
+                  0.04    0.03 200000.03 ^ dlycontrol1_in[0] (in)
+     2    0.01                           dlycontrol1_in[0] (net)
+                  0.04    0.00 200000.03 ^ clkgen.delay_155ns_1.genblk1[0].bypass_enable/B (sky130_fd_sc_hd__and2_1)
+                  0.13    0.16 200000.19 ^ clkgen.delay_155ns_1.genblk1[0].bypass_enable/X (sky130_fd_sc_hd__and2_1)
+     4    0.02                           clkgen.delay_155ns_1.genblk1[0].dly_binary.bypass_in (net)
+                  0.13    0.00 200000.19 ^ clkgen.delay_155ns_1.genblk1[0].dly_binary.out_mux/S (sky130_fd_sc_hd__mux2_1)
+                  0.05    0.22 200000.41 v clkgen.delay_155ns_1.genblk1[0].dly_binary.out_mux/X (sky130_fd_sc_hd__mux2_1)
+     2    0.01                           clkgen.delay_155ns_1.genblk1[0].dly_binary.out (net)
+                  0.05    0.00 200000.41 v clkgen.delay_155ns_1.genblk1[1].dly_binary.out_mux/A1 (sky130_fd_sc_hd__mux2_1)
+                  0.05    0.17 200000.58 v clkgen.delay_155ns_1.genblk1[1].dly_binary.out_mux/X (sky130_fd_sc_hd__mux2_1)
+     2    0.00                           clkgen.delay_155ns_1.genblk1[1].dly_binary.out (net)
+                  0.05    0.00 200000.58 v clkgen.delay_155ns_1.genblk1[2].dly_binary.out_mux/A1 (sky130_fd_sc_hd__mux2_1)
+                  0.06    0.19 200000.77 v clkgen.delay_155ns_1.genblk1[2].dly_binary.out_mux/X (sky130_fd_sc_hd__mux2_1)
      2    0.01                           clkgen.delay_155ns_1.genblk1[2].dly_binary.out (net)
-                  0.07    0.00 200000.42 v clkgen.delay_155ns_1.genblk1[3].dly_binary.out_mux/A1 (sky130_fd_sc_hd__mux2_1)
-                  0.07    0.20 200000.62 v clkgen.delay_155ns_1.genblk1[3].dly_binary.out_mux/X (sky130_fd_sc_hd__mux2_1)
+                  0.06    0.00 200000.77 v clkgen.delay_155ns_1.genblk1[3].dly_binary.out_mux/A1 (sky130_fd_sc_hd__mux2_1)
+                  0.06    0.19 200000.97 v clkgen.delay_155ns_1.genblk1[3].dly_binary.out_mux/X (sky130_fd_sc_hd__mux2_1)
      2    0.01                           clkgen.delay_155ns_1.genblk1[3].dly_binary.out (net)
-                  0.07    0.00 200000.62 v clkgen.delay_155ns_1.genblk1[4].dly_binary.out_mux/A1 (sky130_fd_sc_hd__mux2_1)
-                  0.05    0.17 200000.80 v clkgen.delay_155ns_1.genblk1[4].dly_binary.out_mux/X (sky130_fd_sc_hd__mux2_1)
-     1    0.01                           clkgen._ndecision_finish_delayed_ (net)
-                  0.05    0.00 200000.80 v clkgen.clkdig_inverter/A (sky130_fd_sc_hd__inv_2)
-                  0.05    0.07 200000.88 ^ clkgen.clkdig_inverter/Y (sky130_fd_sc_hd__inv_2)
-     3    0.01                           clkgen.clk_dig (net)
-                  0.05    0.00 200000.88 ^ outbuf_1/A (sky130_fd_sc_hd__buf_4)
-                  0.09    0.13 200001.00 ^ outbuf_1/X (sky130_fd_sc_hd__buf_4)
-     1    0.03                           clk_dig (net)
-                  0.09    0.00 200001.00 ^ clk_dig (out)
-                               200001.00   data arrival time
+                  0.06    0.00 200000.97 v clkgen.delay_155ns_1.genblk1[4].dly_binary.out_mux/A1 (sky130_fd_sc_hd__mux2_1)
+                  0.06    0.19 200001.16 v clkgen.delay_155ns_1.genblk1[4].dly_binary.out_mux/X (sky130_fd_sc_hd__mux2_1)
+     1    0.01                           clkgen.delay_155ns_1.genblk1[4].dly_binary.out (net)
+                  0.06    0.00 200001.16 v clkgen.clkdig_inverter/A (sky130_fd_sc_hd__inv_2)
+                  0.06    0.07 200001.22 ^ clkgen.clkdig_inverter/Y (sky130_fd_sc_hd__inv_2)
+     3    0.02                           clkgen.clk_dig_out (net)
+                  0.06    0.00 200001.22 ^ clkgen.delay_155ns_2.genblk1[0].dly_binary.out_mux/A1 (sky130_fd_sc_hd__mux2_1)
+                  0.05    0.10 200001.33 ^ clkgen.delay_155ns_2.genblk1[0].dly_binary.out_mux/X (sky130_fd_sc_hd__mux2_1)
+     2    0.01                           clkgen.delay_155ns_2.genblk1[0].dly_binary.out (net)
+                  0.05    0.00 200001.33 ^ clkgen.delay_155ns_2.genblk1[1].dly_binary.out_mux/A1 (sky130_fd_sc_hd__mux2_1)
+                  0.04    0.09 200001.41 ^ clkgen.delay_155ns_2.genblk1[1].dly_binary.out_mux/X (sky130_fd_sc_hd__mux2_1)
+     2    0.00                           clkgen.delay_155ns_2.genblk1[1].dly_binary.out (net)
+                  0.04    0.00 200001.41 ^ clkgen.delay_155ns_2.genblk1[2].dly_binary.out_mux/A1 (sky130_fd_sc_hd__mux2_1)
+                  0.05    0.10 200001.52 ^ clkgen.delay_155ns_2.genblk1[2].dly_binary.out_mux/X (sky130_fd_sc_hd__mux2_1)
+     2    0.01                           clkgen.delay_155ns_2.genblk1[2].dly_binary.out (net)
+                  0.05    0.00 200001.52 ^ clkgen.delay_155ns_2.genblk1[3].dly_binary.out_mux/A1 (sky130_fd_sc_hd__mux2_1)
+                  0.05    0.10 200001.61 ^ clkgen.delay_155ns_2.genblk1[3].dly_binary.out_mux/X (sky130_fd_sc_hd__mux2_1)
+     2    0.01                           clkgen.delay_155ns_2.genblk1[3].dly_binary.out (net)
+                  0.05    0.00 200001.61 ^ clkgen.delay_155ns_2.genblk1[4].dly_binary.out_mux/A1 (sky130_fd_sc_hd__mux2_1)
+                  0.07    0.12 200001.73 ^ clkgen.delay_155ns_2.genblk1[4].dly_binary.out_mux/X (sky130_fd_sc_hd__mux2_1)
+     1    0.01                           clkgen.clk_dig_delayed_w (net)
+                  0.07    0.00 200001.73 ^ clkgen.nor1/A (sky130_fd_sc_hd__nor2b_1)
+                  0.04    0.04 200001.78 v clkgen.nor1/Y (sky130_fd_sc_hd__nor2b_1)
+     2    0.01                           clkgen.delay_155ns_3.genblk1[0].dly_binary.in (net)
+                  0.04    0.00 200001.78 v clkgen.delay_155ns_3.genblk1[0].dly_binary.out_mux/A1 (sky130_fd_sc_hd__mux2_1)
+                  0.05    0.17 200001.95 v clkgen.delay_155ns_3.genblk1[0].dly_binary.out_mux/X (sky130_fd_sc_hd__mux2_1)
+     2    0.00                           clkgen.delay_155ns_3.genblk1[0].dly_binary.out (net)
+                  0.05    0.00 200001.95 v clkgen.delay_155ns_3.genblk1[1].dly_binary.out_mux/A1 (sky130_fd_sc_hd__mux2_1)
+                  0.05    0.17 200002.12 v clkgen.delay_155ns_3.genblk1[1].dly_binary.out_mux/X (sky130_fd_sc_hd__mux2_1)
+     2    0.01                           clkgen.delay_155ns_3.genblk1[1].dly_binary.out (net)
+                  0.05    0.00 200002.12 v clkgen.delay_155ns_3.genblk1[2].dly_binary.out_mux/A1 (sky130_fd_sc_hd__mux2_1)
+                  0.05    0.17 200002.30 v clkgen.delay_155ns_3.genblk1[2].dly_binary.out_mux/X (sky130_fd_sc_hd__mux2_1)
+     2    0.00                           clkgen.delay_155ns_3.genblk1[2].dly_binary.out (net)
+                  0.05    0.00 200002.30 v clkgen.delay_155ns_3.genblk1[3].dly_binary.out_mux/A1 (sky130_fd_sc_hd__mux2_1)
+                  0.05    0.17 200002.47 v clkgen.delay_155ns_3.genblk1[3].dly_binary.out_mux/X (sky130_fd_sc_hd__mux2_1)
+     2    0.01                           clkgen.delay_155ns_3.genblk1[3].dly_binary.out (net)
+                  0.05    0.00 200002.47 v clkgen.delay_155ns_3.genblk1[4].dly_binary.out_mux/A1 (sky130_fd_sc_hd__mux2_1)
+                  0.07    0.19 200002.66 v clkgen.delay_155ns_3.genblk1[4].dly_binary.out_mux/X (sky130_fd_sc_hd__mux2_1)
+     1    0.01                           clkgen.clk_comp_out (net)
+                  0.07    0.00 200002.66 v outbuf_2/A (sky130_fd_sc_hd__buf_4)
+                  0.04    0.13 200002.80 v outbuf_2/X (sky130_fd_sc_hd__buf_4)
+     1    0.03                           clk_comp_out (net)
+                  0.04    0.00 200002.80 v clk_comp_out (out)
+                               200002.80   data arrival time
 
                   0.00 999999.94 999999.94   clock __VIRTUAL_CLK__ (rise edge)
                           0.00 999999.94   clock network delay (ideal)
@@ -1332,13 +1297,13 @@ Fanout     Cap    Slew   Delay    Time   Description
                                799999.69   data required time
 -----------------------------------------------------------------------------
                                799999.69   data required time
-                               -200001.00   data arrival time
+                               -200002.80   data arrival time
 -----------------------------------------------------------------------------
-                               599998.69   slack (MET)
+                               599996.88   slack (MET)
 
 
-Startpoint: nsample_n (input port clocked by __VIRTUAL_CLK__)
-Endpoint: nsample_n_buf (output port clocked by __VIRTUAL_CLK__)
+Startpoint: dlycontrol1_in[0] (input port clocked by __VIRTUAL_CLK__)
+Endpoint: clk_dig_out (output port clocked by __VIRTUAL_CLK__)
 Path Group: __VIRTUAL_CLK__
 Path Type: max
 Corner: ff
@@ -1348,12 +1313,65 @@ Fanout     Cap    Slew   Delay    Time   Description
                   0.00    0.00    0.00   clock __VIRTUAL_CLK__ (rise edge)
                           0.00    0.00   clock network delay (ideal)
                        200000.00 200000.00 ^ input external delay
-                  0.02    0.01 200000.02 ^ nsample_n (in)
-     2    0.00                           nsample_n (net)
+                  0.04    0.03 200000.03 ^ dlycontrol1_in[0] (in)
+     2    0.01                           dlycontrol1_in[0] (net)
+                  0.04    0.00 200000.03 ^ clkgen.delay_155ns_1.genblk1[0].bypass_enable/B (sky130_fd_sc_hd__and2_1)
+                  0.13    0.16 200000.19 ^ clkgen.delay_155ns_1.genblk1[0].bypass_enable/X (sky130_fd_sc_hd__and2_1)
+     4    0.02                           clkgen.delay_155ns_1.genblk1[0].dly_binary.bypass_in (net)
+                  0.13    0.00 200000.19 ^ clkgen.delay_155ns_1.genblk1[0].dly_binary.out_mux/S (sky130_fd_sc_hd__mux2_1)
+                  0.05    0.22 200000.41 v clkgen.delay_155ns_1.genblk1[0].dly_binary.out_mux/X (sky130_fd_sc_hd__mux2_1)
+     2    0.01                           clkgen.delay_155ns_1.genblk1[0].dly_binary.out (net)
+                  0.05    0.00 200000.41 v clkgen.delay_155ns_1.genblk1[1].dly_binary.out_mux/A1 (sky130_fd_sc_hd__mux2_1)
+                  0.05    0.17 200000.58 v clkgen.delay_155ns_1.genblk1[1].dly_binary.out_mux/X (sky130_fd_sc_hd__mux2_1)
+     2    0.00                           clkgen.delay_155ns_1.genblk1[1].dly_binary.out (net)
+                  0.05    0.00 200000.58 v clkgen.delay_155ns_1.genblk1[2].dly_binary.out_mux/A1 (sky130_fd_sc_hd__mux2_1)
+                  0.06    0.19 200000.77 v clkgen.delay_155ns_1.genblk1[2].dly_binary.out_mux/X (sky130_fd_sc_hd__mux2_1)
+     2    0.01                           clkgen.delay_155ns_1.genblk1[2].dly_binary.out (net)
+                  0.06    0.00 200000.77 v clkgen.delay_155ns_1.genblk1[3].dly_binary.out_mux/A1 (sky130_fd_sc_hd__mux2_1)
+                  0.06    0.19 200000.97 v clkgen.delay_155ns_1.genblk1[3].dly_binary.out_mux/X (sky130_fd_sc_hd__mux2_1)
+     2    0.01                           clkgen.delay_155ns_1.genblk1[3].dly_binary.out (net)
+                  0.06    0.00 200000.97 v clkgen.delay_155ns_1.genblk1[4].dly_binary.out_mux/A1 (sky130_fd_sc_hd__mux2_1)
+                  0.06    0.19 200001.16 v clkgen.delay_155ns_1.genblk1[4].dly_binary.out_mux/X (sky130_fd_sc_hd__mux2_1)
+     1    0.01                           clkgen.delay_155ns_1.genblk1[4].dly_binary.out (net)
+                  0.06    0.00 200001.16 v clkgen.clkdig_inverter/A (sky130_fd_sc_hd__inv_2)
+                  0.06    0.07 200001.22 ^ clkgen.clkdig_inverter/Y (sky130_fd_sc_hd__inv_2)
+     3    0.02                           clkgen.clk_dig_out (net)
+                  0.06    0.00 200001.22 ^ outbuf_1/A (sky130_fd_sc_hd__buf_4)
+                  0.09    0.13 200001.36 ^ outbuf_1/X (sky130_fd_sc_hd__buf_4)
+     1    0.03                           clk_dig_out (net)
+                  0.09    0.00 200001.36 ^ clk_dig_out (out)
+                               200001.36   data arrival time
+
+                  0.00 999999.94 999999.94   clock __VIRTUAL_CLK__ (rise edge)
+                          0.00 999999.94   clock network delay (ideal)
+                         -0.25 999999.75   clock uncertainty
+                          0.00 999999.75   clock reconvergence pessimism
+                       -200000.00 799999.69   output external delay
+                               799999.69   data required time
+-----------------------------------------------------------------------------
+                               799999.69   data required time
+                               -200001.36   data arrival time
+-----------------------------------------------------------------------------
+                               599998.38   slack (MET)
+
+
+Startpoint: nsample_n_in (input port clocked by __VIRTUAL_CLK__)
+Endpoint: nsample_n_out (output port clocked by __VIRTUAL_CLK__)
+Path Group: __VIRTUAL_CLK__
+Path Type: max
+Corner: ff
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                  0.00    0.00    0.00   clock __VIRTUAL_CLK__ (rise edge)
+                          0.00    0.00   clock network delay (ideal)
+                       200000.00 200000.00 ^ input external delay
+                  0.02    0.01 200000.02 ^ nsample_n_in (in)
+     2    0.00                           nsample_n_in (net)
                   0.02    0.00 200000.02 ^ outbuf_6/A (sky130_fd_sc_hd__buf_4)
                   0.08    0.12 200000.12 ^ outbuf_6/X (sky130_fd_sc_hd__buf_4)
-     1    0.03                           nsample_n_buf (net)
-                  0.08    0.00 200000.12 ^ nsample_n_buf (out)
+     1    0.03                           nsample_n_out (net)
+                  0.08    0.00 200000.12 ^ nsample_n_out (out)
                                200000.12   data arrival time
 
                   0.00 999999.94 999999.94   clock __VIRTUAL_CLK__ (rise edge)
@@ -1369,8 +1387,8 @@ Fanout     Cap    Slew   Delay    Time   Description
                                599999.56   slack (MET)
 
 
-Startpoint: nsample_p (input port clocked by __VIRTUAL_CLK__)
-Endpoint: nsample_p_buf (output port clocked by __VIRTUAL_CLK__)
+Startpoint: nsample_p_in (input port clocked by __VIRTUAL_CLK__)
+Endpoint: nsample_p_out (output port clocked by __VIRTUAL_CLK__)
 Path Group: __VIRTUAL_CLK__
 Path Type: max
 Corner: ff
@@ -1380,12 +1398,12 @@ Fanout     Cap    Slew   Delay    Time   Description
                   0.00    0.00    0.00   clock __VIRTUAL_CLK__ (rise edge)
                           0.00    0.00   clock network delay (ideal)
                        200000.00 200000.00 ^ input external delay
-                  0.04    0.03 200000.03 ^ nsample_p (in)
-     2    0.01                           nsample_p (net)
+                  0.04    0.03 200000.03 ^ nsample_p_in (in)
+     2    0.01                           nsample_p_in (net)
                   0.04    0.00 200000.03 ^ outbuf_5/A (sky130_fd_sc_hd__buf_4)
                   0.08    0.12 200000.14 ^ outbuf_5/X (sky130_fd_sc_hd__buf_4)
-     1    0.03                           nsample_p_buf (net)
-                  0.08    0.00 200000.14 ^ nsample_p_buf (out)
+     1    0.03                           nsample_p_out (net)
+                  0.08    0.00 200000.14 ^ nsample_p_out (out)
                                200000.14   data arrival time
 
                   0.00 999999.94 999999.94   clock __VIRTUAL_CLK__ (rise edge)
@@ -1401,8 +1419,8 @@ Fanout     Cap    Slew   Delay    Time   Description
                                599999.56   slack (MET)
 
 
-Startpoint: sample_n (input port clocked by __VIRTUAL_CLK__)
-Endpoint: sample_n_buf (output port clocked by __VIRTUAL_CLK__)
+Startpoint: sample_n_in (input port clocked by __VIRTUAL_CLK__)
+Endpoint: sample_n_out (output port clocked by __VIRTUAL_CLK__)
 Path Group: __VIRTUAL_CLK__
 Path Type: max
 Corner: ff
@@ -1412,12 +1430,44 @@ Fanout     Cap    Slew   Delay    Time   Description
                   0.00    0.00    0.00   clock __VIRTUAL_CLK__ (rise edge)
                           0.00    0.00   clock network delay (ideal)
                        200000.00 200000.00 ^ input external delay
-                  0.05    0.04 200000.05 ^ sample_n (in)
-     2    0.01                           sample_n (net)
-                  0.05    0.00 200000.05 ^ outbuf_4/A (sky130_fd_sc_hd__buf_4)
-                  0.08    0.12 200000.16 ^ outbuf_4/X (sky130_fd_sc_hd__buf_4)
-     1    0.03                           sample_n_buf (net)
-                  0.08    0.00 200000.16 ^ sample_n_buf (out)
+                  0.05    0.03 200000.03 ^ sample_n_in (in)
+     2    0.01                           sample_n_in (net)
+                  0.05    0.00 200000.03 ^ outbuf_4/A (sky130_fd_sc_hd__buf_4)
+                  0.08    0.12 200000.14 ^ outbuf_4/X (sky130_fd_sc_hd__buf_4)
+     1    0.03                           sample_n_out (net)
+                  0.08    0.00 200000.14 ^ sample_n_out (out)
+                               200000.14   data arrival time
+
+                  0.00 999999.94 999999.94   clock __VIRTUAL_CLK__ (rise edge)
+                          0.00 999999.94   clock network delay (ideal)
+                         -0.25 999999.75   clock uncertainty
+                          0.00 999999.75   clock reconvergence pessimism
+                       -200000.00 799999.69   output external delay
+                               799999.69   data required time
+-----------------------------------------------------------------------------
+                               799999.69   data required time
+                               -200000.14   data arrival time
+-----------------------------------------------------------------------------
+                               599999.56   slack (MET)
+
+
+Startpoint: sample_p_in (input port clocked by __VIRTUAL_CLK__)
+Endpoint: sample_p_out (output port clocked by __VIRTUAL_CLK__)
+Path Group: __VIRTUAL_CLK__
+Path Type: max
+Corner: ff
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                  0.00    0.00    0.00   clock __VIRTUAL_CLK__ (rise edge)
+                          0.00    0.00   clock network delay (ideal)
+                       200000.00 200000.00 ^ input external delay
+                  0.05    0.04 200000.05 ^ sample_p_in (in)
+     2    0.01                           sample_p_in (net)
+                  0.05    0.00 200000.05 ^ outbuf_3/A (sky130_fd_sc_hd__buf_4)
+                  0.08    0.12 200000.16 ^ outbuf_3/X (sky130_fd_sc_hd__buf_4)
+     1    0.03                           sample_p_out (net)
+                  0.08    0.00 200000.16 ^ sample_p_out (out)
                                200000.16   data arrival time
 
                   0.00 999999.94 999999.94   clock __VIRTUAL_CLK__ (rise edge)
@@ -1433,38 +1483,6 @@ Fanout     Cap    Slew   Delay    Time   Description
                                599999.56   slack (MET)
 
 
-Startpoint: sample_p (input port clocked by __VIRTUAL_CLK__)
-Endpoint: sample_p_buf (output port clocked by __VIRTUAL_CLK__)
-Path Group: __VIRTUAL_CLK__
-Path Type: max
-Corner: ff
-
-Fanout     Cap    Slew   Delay    Time   Description
------------------------------------------------------------------------------
-                  0.00    0.00    0.00   clock __VIRTUAL_CLK__ (rise edge)
-                          0.00    0.00   clock network delay (ideal)
-                       200000.00 200000.00 ^ input external delay
-                  0.04    0.03 200000.03 ^ sample_p (in)
-     2    0.01                           sample_p (net)
-                  0.04    0.00 200000.03 ^ outbuf_3/A (sky130_fd_sc_hd__buf_4)
-                  0.08    0.12 200000.14 ^ outbuf_3/X (sky130_fd_sc_hd__buf_4)
-     1    0.03                           sample_p_buf (net)
-                  0.08    0.00 200000.14 ^ sample_p_buf (out)
-                               200000.14   data arrival time
-
-                  0.00 999999.94 999999.94   clock __VIRTUAL_CLK__ (rise edge)
-                          0.00 999999.94   clock network delay (ideal)
-                         -0.25 999999.75   clock uncertainty
-                          0.00 999999.75   clock reconvergence pessimism
-                       -200000.00 799999.69   output external delay
-                               799999.69   data required time
------------------------------------------------------------------------------
-                               799999.69   data required time
-                               -200000.14   data arrival time
------------------------------------------------------------------------------
-                               599999.56   slack (MET)
-
-
 max_report_end
 check_report
 
@@ -1474,8 +1492,8 @@ report_checks -unconstrained
 
 ======================= Slowest Corner ===================================
 
-Startpoint: enable_dlycontrol (input port clocked by __VIRTUAL_CLK__)
-Endpoint: clk_comp (output port clocked by __VIRTUAL_CLK__)
+Startpoint: enable_dlycontrol_in (input port clocked by __VIRTUAL_CLK__)
+Endpoint: clk_comp_out (output port clocked by __VIRTUAL_CLK__)
 Path Group: __VIRTUAL_CLK__
 Path Type: max
 Corner: ss
@@ -1485,53 +1503,53 @@ Fanout     Cap    Slew   Delay    Time   Description
                   0.00    0.00    0.00   clock __VIRTUAL_CLK__ (rise edge)
                           0.00    0.00   clock network delay (ideal)
                        200000.00 200000.00 ^ input external delay
-                  0.25    0.19 200000.19 ^ enable_dlycontrol (in)
-     8    0.03                           enable_dlycontrol (net)
-                  0.25    0.00 200000.19 ^ clkgen.delay_155ns_1.enablebuffer/A (sky130_fd_sc_hd__buf_4)
-                  0.08    0.31 200000.50 ^ clkgen.delay_155ns_1.enablebuffer/X (sky130_fd_sc_hd__buf_4)
-     5    0.01                           clkgen.delay_155ns_1._enable_dlycontrol_ (net)
-                  0.08    0.00 200000.50 ^ clkgen.delay_155ns_1.genblk1[0].bypass_enable/A (sky130_fd_sc_hd__and2_1)
-                  0.30    0.41 200000.91 ^ clkgen.delay_155ns_1.genblk1[0].bypass_enable/X (sky130_fd_sc_hd__and2_1)
-     4    0.02                           clkgen.delay_155ns_1.genblk1[0].dly_binary.bypass (net)
-                  0.30    0.00 200000.91 ^ clkgen.delay_155ns_1.genblk1[0].dly_binary.out_mux/S (sky130_fd_sc_hd__mux2_1)
-                  0.13    0.84 200001.75 v clkgen.delay_155ns_1.genblk1[0].dly_binary.out_mux/X (sky130_fd_sc_hd__mux2_1)
-     2    0.00                           clkgen.delay_155ns_1.genblk1[0].dly_binary.out (net)
-                  0.13    0.00 200001.75 v clkgen.delay_155ns_1.genblk1[1].dly_binary.out_mux/A1 (sky130_fd_sc_hd__mux2_1)
-                  0.13    0.73 200002.47 v clkgen.delay_155ns_1.genblk1[1].dly_binary.out_mux/X (sky130_fd_sc_hd__mux2_1)
+                  0.25    0.17 200000.17 ^ enable_dlycontrol_in (in)
+     8    0.03                           enable_dlycontrol_in (net)
+                  0.25    0.00 200000.17 ^ clkgen.delay_155ns_1.enablebuffer/A (sky130_fd_sc_hd__buf_4)
+                  0.08    0.31 200000.48 ^ clkgen.delay_155ns_1.enablebuffer/X (sky130_fd_sc_hd__buf_4)
+     5    0.01                           clkgen.delay_155ns_1.enable_dlycontrol_w (net)
+                  0.08    0.00 200000.48 ^ clkgen.delay_155ns_1.genblk1[0].bypass_enable/A (sky130_fd_sc_hd__and2_1)
+                  0.28    0.41 200000.89 ^ clkgen.delay_155ns_1.genblk1[0].bypass_enable/X (sky130_fd_sc_hd__and2_1)
+     4    0.02                           clkgen.delay_155ns_1.genblk1[0].dly_binary.bypass_in (net)
+                  0.28    0.00 200000.89 ^ clkgen.delay_155ns_1.genblk1[0].dly_binary.out_mux/S (sky130_fd_sc_hd__mux2_1)
+                  0.14    0.86 200001.75 v clkgen.delay_155ns_1.genblk1[0].dly_binary.out_mux/X (sky130_fd_sc_hd__mux2_1)
+     2    0.01                           clkgen.delay_155ns_1.genblk1[0].dly_binary.out (net)
+                  0.14    0.00 200001.75 v clkgen.delay_155ns_1.genblk1[1].dly_binary.out_mux/A1 (sky130_fd_sc_hd__mux2_1)
+                  0.13    0.74 200002.48 v clkgen.delay_155ns_1.genblk1[1].dly_binary.out_mux/X (sky130_fd_sc_hd__mux2_1)
      2    0.00                           clkgen.delay_155ns_1.genblk1[1].dly_binary.out (net)
-                  0.13    0.00 200002.47 v clkgen.delay_155ns_1.genblk1[2].dly_binary.out_mux/A1 (sky130_fd_sc_hd__mux2_1)
-                  0.18    0.80 200003.28 v clkgen.delay_155ns_1.genblk1[2].dly_binary.out_mux/X (sky130_fd_sc_hd__mux2_1)
+                  0.13    0.00 200002.48 v clkgen.delay_155ns_1.genblk1[2].dly_binary.out_mux/A1 (sky130_fd_sc_hd__mux2_1)
+                  0.16    0.77 200003.27 v clkgen.delay_155ns_1.genblk1[2].dly_binary.out_mux/X (sky130_fd_sc_hd__mux2_1)
      2    0.01                           clkgen.delay_155ns_1.genblk1[2].dly_binary.out (net)
-                  0.18    0.00 200003.28 v clkgen.delay_155ns_1.genblk1[3].dly_binary.out_mux/A1 (sky130_fd_sc_hd__mux2_1)
-                  0.18    0.83 200004.11 v clkgen.delay_155ns_1.genblk1[3].dly_binary.out_mux/X (sky130_fd_sc_hd__mux2_1)
+                  0.16    0.00 200003.27 v clkgen.delay_155ns_1.genblk1[3].dly_binary.out_mux/A1 (sky130_fd_sc_hd__mux2_1)
+                  0.16    0.80 200004.06 v clkgen.delay_155ns_1.genblk1[3].dly_binary.out_mux/X (sky130_fd_sc_hd__mux2_1)
      2    0.01                           clkgen.delay_155ns_1.genblk1[3].dly_binary.out (net)
-                  0.18    0.00 200004.11 v clkgen.delay_155ns_1.genblk1[4].dly_binary.out_mux/A1 (sky130_fd_sc_hd__mux2_1)
-                  0.14    0.77 200004.88 v clkgen.delay_155ns_1.genblk1[4].dly_binary.out_mux/X (sky130_fd_sc_hd__mux2_1)
-     1    0.01                           clkgen._ndecision_finish_delayed_ (net)
-                  0.14    0.00 200004.88 v clkgen.clkdig_inverter/A (sky130_fd_sc_hd__inv_2)
-                  0.12    0.16 200005.03 ^ clkgen.clkdig_inverter/Y (sky130_fd_sc_hd__inv_2)
-     3    0.01                           clkgen.clk_dig (net)
-                  0.12    0.00 200005.03 ^ clkgen.delay_155ns_2.genblk1[0].dly_binary.out_mux/A1 (sky130_fd_sc_hd__mux2_1)
-                  0.15    0.33 200005.38 ^ clkgen.delay_155ns_2.genblk1[0].dly_binary.out_mux/X (sky130_fd_sc_hd__mux2_1)
+                  0.16    0.00 200004.06 v clkgen.delay_155ns_1.genblk1[4].dly_binary.out_mux/A1 (sky130_fd_sc_hd__mux2_1)
+                  0.16    0.79 200004.84 v clkgen.delay_155ns_1.genblk1[4].dly_binary.out_mux/X (sky130_fd_sc_hd__mux2_1)
+     1    0.01                           clkgen.delay_155ns_1.genblk1[4].dly_binary.out (net)
+                  0.16    0.00 200004.84 v clkgen.clkdig_inverter/A (sky130_fd_sc_hd__inv_2)
+                  0.12    0.17 200005.02 ^ clkgen.clkdig_inverter/Y (sky130_fd_sc_hd__inv_2)
+     3    0.01                           clkgen.clk_dig_out (net)
+                  0.12    0.00 200005.02 ^ clkgen.delay_155ns_2.genblk1[0].dly_binary.out_mux/A1 (sky130_fd_sc_hd__mux2_1)
+                  0.11    0.29 200005.31 ^ clkgen.delay_155ns_2.genblk1[0].dly_binary.out_mux/X (sky130_fd_sc_hd__mux2_1)
      2    0.01                           clkgen.delay_155ns_2.genblk1[0].dly_binary.out (net)
-                  0.15    0.00 200005.38 ^ clkgen.delay_155ns_2.genblk1[1].dly_binary.out_mux/A1 (sky130_fd_sc_hd__mux2_1)
-                  0.10    0.31 200005.67 ^ clkgen.delay_155ns_2.genblk1[1].dly_binary.out_mux/X (sky130_fd_sc_hd__mux2_1)
+                  0.11    0.00 200005.31 ^ clkgen.delay_155ns_2.genblk1[1].dly_binary.out_mux/A1 (sky130_fd_sc_hd__mux2_1)
+                  0.10    0.28 200005.59 ^ clkgen.delay_155ns_2.genblk1[1].dly_binary.out_mux/X (sky130_fd_sc_hd__mux2_1)
      2    0.00                           clkgen.delay_155ns_2.genblk1[1].dly_binary.out (net)
-                  0.10    0.00 200005.67 ^ clkgen.delay_155ns_2.genblk1[2].dly_binary.out_mux/A1 (sky130_fd_sc_hd__mux2_1)
-                  0.12    0.29 200005.97 ^ clkgen.delay_155ns_2.genblk1[2].dly_binary.out_mux/X (sky130_fd_sc_hd__mux2_1)
+                  0.10    0.00 200005.59 ^ clkgen.delay_155ns_2.genblk1[2].dly_binary.out_mux/A1 (sky130_fd_sc_hd__mux2_1)
+                  0.12    0.29 200005.88 ^ clkgen.delay_155ns_2.genblk1[2].dly_binary.out_mux/X (sky130_fd_sc_hd__mux2_1)
      2    0.01                           clkgen.delay_155ns_2.genblk1[2].dly_binary.out (net)
-                  0.12    0.00 200005.97 ^ clkgen.delay_155ns_2.genblk1[3].dly_binary.out_mux/A1 (sky130_fd_sc_hd__mux2_1)
-                  0.12    0.31 200006.27 ^ clkgen.delay_155ns_2.genblk1[3].dly_binary.out_mux/X (sky130_fd_sc_hd__mux2_1)
+                  0.12    0.00 200005.88 ^ clkgen.delay_155ns_2.genblk1[3].dly_binary.out_mux/A1 (sky130_fd_sc_hd__mux2_1)
+                  0.12    0.31 200006.19 ^ clkgen.delay_155ns_2.genblk1[3].dly_binary.out_mux/X (sky130_fd_sc_hd__mux2_1)
      2    0.01                           clkgen.delay_155ns_2.genblk1[3].dly_binary.out (net)
-                  0.12    0.00 200006.27 ^ clkgen.delay_155ns_2.genblk1[4].dly_binary.out_mux/A1 (sky130_fd_sc_hd__mux2_1)
-                  0.10    0.29 200006.56 ^ clkgen.delay_155ns_2.genblk1[4].dly_binary.out_mux/X (sky130_fd_sc_hd__mux2_1)
-     1    0.00                           clkgen._clk_dig_delayed_ (net)
-                  0.10    0.00 200006.56 ^ clkgen.nor1/A (sky130_fd_sc_hd__nor2b_1)
-                  0.10    0.12 200006.69 v clkgen.nor1/Y (sky130_fd_sc_hd__nor2b_1)
-     2    0.01                           clkgen._net_1_ (net)
-                  0.10    0.00 200006.69 v clkgen.delay_155ns_3.genblk1[0].dly_binary.out_mux/A1 (sky130_fd_sc_hd__mux2_1)
+                  0.12    0.00 200006.19 ^ clkgen.delay_155ns_2.genblk1[4].dly_binary.out_mux/A1 (sky130_fd_sc_hd__mux2_1)
+                  0.15    0.33 200006.52 ^ clkgen.delay_155ns_2.genblk1[4].dly_binary.out_mux/X (sky130_fd_sc_hd__mux2_1)
+     1    0.01                           clkgen.clk_dig_delayed_w (net)
+                  0.15    0.00 200006.52 ^ clkgen.nor1/A (sky130_fd_sc_hd__nor2b_1)
+                  0.11    0.16 200006.69 v clkgen.nor1/Y (sky130_fd_sc_hd__nor2b_1)
+     2    0.01                           clkgen.delay_155ns_3.genblk1[0].dly_binary.in (net)
+                  0.11    0.00 200006.69 v clkgen.delay_155ns_3.genblk1[0].dly_binary.out_mux/A1 (sky130_fd_sc_hd__mux2_1)
                   0.13    0.73 200007.41 v clkgen.delay_155ns_3.genblk1[0].dly_binary.out_mux/X (sky130_fd_sc_hd__mux2_1)
-     2    0.01                           clkgen.delay_155ns_3.genblk1[0].dly_binary.out (net)
+     2    0.00                           clkgen.delay_155ns_3.genblk1[0].dly_binary.out (net)
                   0.13    0.00 200007.41 v clkgen.delay_155ns_3.genblk1[1].dly_binary.out_mux/A1 (sky130_fd_sc_hd__mux2_1)
                   0.15    0.77 200008.17 v clkgen.delay_155ns_3.genblk1[1].dly_binary.out_mux/X (sky130_fd_sc_hd__mux2_1)
      2    0.01                           clkgen.delay_155ns_3.genblk1[1].dly_binary.out (net)
@@ -1542,13 +1560,13 @@ Fanout     Cap    Slew   Delay    Time   Description
                   0.13    0.74 200009.66 v clkgen.delay_155ns_3.genblk1[3].dly_binary.out_mux/X (sky130_fd_sc_hd__mux2_1)
      2    0.00                           clkgen.delay_155ns_3.genblk1[3].dly_binary.out (net)
                   0.13    0.00 200009.66 v clkgen.delay_155ns_3.genblk1[4].dly_binary.out_mux/A1 (sky130_fd_sc_hd__mux2_1)
-                  0.20    0.83 200010.50 v clkgen.delay_155ns_3.genblk1[4].dly_binary.out_mux/X (sky130_fd_sc_hd__mux2_1)
-     2    0.01                           clkgen.clk_comp (net)
-                  0.20    0.00 200010.50 v outbuf_2/A (sky130_fd_sc_hd__buf_4)
-                  0.10    0.38 200010.88 v outbuf_2/X (sky130_fd_sc_hd__buf_4)
-     1    0.03                           clk_comp (net)
-                  0.10    0.00 200010.88 v clk_comp (out)
-                               200010.88   data arrival time
+                  0.18    0.80 200010.47 v clkgen.delay_155ns_3.genblk1[4].dly_binary.out_mux/X (sky130_fd_sc_hd__mux2_1)
+     1    0.01                           clkgen.clk_comp_out (net)
+                  0.18    0.00 200010.47 v outbuf_2/A (sky130_fd_sc_hd__buf_4)
+                  0.10    0.38 200010.84 v outbuf_2/X (sky130_fd_sc_hd__buf_4)
+     1    0.03                           clk_comp_out (net)
+                  0.10    0.00 200010.84 v clk_comp_out (out)
+                               200010.84   data arrival time
 
                   0.00 999999.94 999999.94   clock __VIRTUAL_CLK__ (rise edge)
                           0.00 999999.94   clock network delay (ideal)
@@ -1558,7 +1576,7 @@ Fanout     Cap    Slew   Delay    Time   Description
                                799999.69   data required time
 -----------------------------------------------------------------------------
                                799999.69   data required time
-                               -200010.88   data arrival time
+                               -200010.84   data arrival time
 -----------------------------------------------------------------------------
                                599988.88   slack (MET)
 
@@ -1566,8 +1584,8 @@ Fanout     Cap    Slew   Delay    Time   Description
 
 ======================= Typical Corner ===================================
 
-Startpoint: enable_dlycontrol (input port clocked by __VIRTUAL_CLK__)
-Endpoint: clk_comp (output port clocked by __VIRTUAL_CLK__)
+Startpoint: enable_dlycontrol_in (input port clocked by __VIRTUAL_CLK__)
+Endpoint: clk_comp_out (output port clocked by __VIRTUAL_CLK__)
 Path Group: __VIRTUAL_CLK__
 Path Type: max
 Corner: tt
@@ -1577,70 +1595,70 @@ Fanout     Cap    Slew   Delay    Time   Description
                   0.00    0.00    0.00   clock __VIRTUAL_CLK__ (rise edge)
                           0.00    0.00   clock network delay (ideal)
                        200000.00 200000.00 ^ input external delay
-                  0.16    0.12 200000.11 ^ enable_dlycontrol (in)
-     8    0.03                           enable_dlycontrol (net)
+                  0.16    0.12 200000.11 ^ enable_dlycontrol_in (in)
+     8    0.03                           enable_dlycontrol_in (net)
                   0.16    0.00 200000.11 ^ clkgen.delay_155ns_1.enablebuffer/A (sky130_fd_sc_hd__buf_4)
                   0.05    0.16 200000.28 ^ clkgen.delay_155ns_1.enablebuffer/X (sky130_fd_sc_hd__buf_4)
-     5    0.01                           clkgen.delay_155ns_1._enable_dlycontrol_ (net)
+     5    0.01                           clkgen.delay_155ns_1.enable_dlycontrol_w (net)
                   0.05    0.00 200000.28 ^ clkgen.delay_155ns_1.genblk1[0].bypass_enable/A (sky130_fd_sc_hd__and2_1)
-                  0.19    0.23 200000.52 ^ clkgen.delay_155ns_1.genblk1[0].bypass_enable/X (sky130_fd_sc_hd__and2_1)
-     4    0.02                           clkgen.delay_155ns_1.genblk1[0].dly_binary.bypass (net)
-                  0.19    0.00 200000.52 ^ clkgen.delay_155ns_1.genblk1[0].dly_binary.out_mux/S (sky130_fd_sc_hd__mux2_1)
-                  0.07    0.38 200000.89 v clkgen.delay_155ns_1.genblk1[0].dly_binary.out_mux/X (sky130_fd_sc_hd__mux2_1)
-     2    0.00                           clkgen.delay_155ns_1.genblk1[0].dly_binary.out (net)
-                  0.07    0.00 200000.89 v clkgen.delay_155ns_1.genblk1[1].dly_binary.out_mux/A1 (sky130_fd_sc_hd__mux2_1)
-                  0.06    0.32 200001.20 v clkgen.delay_155ns_1.genblk1[1].dly_binary.out_mux/X (sky130_fd_sc_hd__mux2_1)
+                  0.18    0.22 200000.50 ^ clkgen.delay_155ns_1.genblk1[0].bypass_enable/X (sky130_fd_sc_hd__and2_1)
+     4    0.02                           clkgen.delay_155ns_1.genblk1[0].dly_binary.bypass_in (net)
+                  0.18    0.00 200000.50 ^ clkgen.delay_155ns_1.genblk1[0].dly_binary.out_mux/S (sky130_fd_sc_hd__mux2_1)
+                  0.07    0.38 200000.88 v clkgen.delay_155ns_1.genblk1[0].dly_binary.out_mux/X (sky130_fd_sc_hd__mux2_1)
+     2    0.01                           clkgen.delay_155ns_1.genblk1[0].dly_binary.out (net)
+                  0.07    0.00 200000.88 v clkgen.delay_155ns_1.genblk1[1].dly_binary.out_mux/A1 (sky130_fd_sc_hd__mux2_1)
+                  0.06    0.32 200001.19 v clkgen.delay_155ns_1.genblk1[1].dly_binary.out_mux/X (sky130_fd_sc_hd__mux2_1)
      2    0.00                           clkgen.delay_155ns_1.genblk1[1].dly_binary.out (net)
-                  0.06    0.00 200001.20 v clkgen.delay_155ns_1.genblk1[2].dly_binary.out_mux/A1 (sky130_fd_sc_hd__mux2_1)
-                  0.09    0.36 200001.58 v clkgen.delay_155ns_1.genblk1[2].dly_binary.out_mux/X (sky130_fd_sc_hd__mux2_1)
+                  0.06    0.00 200001.19 v clkgen.delay_155ns_1.genblk1[2].dly_binary.out_mux/A1 (sky130_fd_sc_hd__mux2_1)
+                  0.08    0.35 200001.55 v clkgen.delay_155ns_1.genblk1[2].dly_binary.out_mux/X (sky130_fd_sc_hd__mux2_1)
      2    0.01                           clkgen.delay_155ns_1.genblk1[2].dly_binary.out (net)
-                  0.09    0.00 200001.58 v clkgen.delay_155ns_1.genblk1[3].dly_binary.out_mux/A1 (sky130_fd_sc_hd__mux2_1)
-                  0.09    0.36 200001.94 v clkgen.delay_155ns_1.genblk1[3].dly_binary.out_mux/X (sky130_fd_sc_hd__mux2_1)
+                  0.08    0.00 200001.55 v clkgen.delay_155ns_1.genblk1[3].dly_binary.out_mux/A1 (sky130_fd_sc_hd__mux2_1)
+                  0.08    0.35 200001.89 v clkgen.delay_155ns_1.genblk1[3].dly_binary.out_mux/X (sky130_fd_sc_hd__mux2_1)
      2    0.01                           clkgen.delay_155ns_1.genblk1[3].dly_binary.out (net)
-                  0.09    0.00 200001.94 v clkgen.delay_155ns_1.genblk1[4].dly_binary.out_mux/A1 (sky130_fd_sc_hd__mux2_1)
-                  0.07    0.33 200002.27 v clkgen.delay_155ns_1.genblk1[4].dly_binary.out_mux/X (sky130_fd_sc_hd__mux2_1)
-     1    0.01                           clkgen._ndecision_finish_delayed_ (net)
-                  0.07    0.00 200002.27 v clkgen.clkdig_inverter/A (sky130_fd_sc_hd__inv_2)
-                  0.07    0.09 200002.36 ^ clkgen.clkdig_inverter/Y (sky130_fd_sc_hd__inv_2)
-     3    0.01                           clkgen.clk_dig (net)
-                  0.07    0.00 200002.36 ^ clkgen.delay_155ns_2.genblk1[0].dly_binary.out_mux/A1 (sky130_fd_sc_hd__mux2_1)
-                  0.09    0.17 200002.53 ^ clkgen.delay_155ns_2.genblk1[0].dly_binary.out_mux/X (sky130_fd_sc_hd__mux2_1)
+                  0.08    0.00 200001.89 v clkgen.delay_155ns_1.genblk1[4].dly_binary.out_mux/A1 (sky130_fd_sc_hd__mux2_1)
+                  0.08    0.35 200002.23 v clkgen.delay_155ns_1.genblk1[4].dly_binary.out_mux/X (sky130_fd_sc_hd__mux2_1)
+     1    0.01                           clkgen.delay_155ns_1.genblk1[4].dly_binary.out (net)
+                  0.08    0.00 200002.23 v clkgen.clkdig_inverter/A (sky130_fd_sc_hd__inv_2)
+                  0.08    0.10 200002.34 ^ clkgen.clkdig_inverter/Y (sky130_fd_sc_hd__inv_2)
+     3    0.02                           clkgen.clk_dig_out (net)
+                  0.08    0.00 200002.34 ^ clkgen.delay_155ns_2.genblk1[0].dly_binary.out_mux/A1 (sky130_fd_sc_hd__mux2_1)
+                  0.06    0.15 200002.48 ^ clkgen.delay_155ns_2.genblk1[0].dly_binary.out_mux/X (sky130_fd_sc_hd__mux2_1)
      2    0.01                           clkgen.delay_155ns_2.genblk1[0].dly_binary.out (net)
-                  0.09    0.00 200002.53 ^ clkgen.delay_155ns_2.genblk1[1].dly_binary.out_mux/A1 (sky130_fd_sc_hd__mux2_1)
-                  0.06    0.15 200002.67 ^ clkgen.delay_155ns_2.genblk1[1].dly_binary.out_mux/X (sky130_fd_sc_hd__mux2_1)
+                  0.06    0.00 200002.48 ^ clkgen.delay_155ns_2.genblk1[1].dly_binary.out_mux/A1 (sky130_fd_sc_hd__mux2_1)
+                  0.06    0.15 200002.64 ^ clkgen.delay_155ns_2.genblk1[1].dly_binary.out_mux/X (sky130_fd_sc_hd__mux2_1)
      2    0.00                           clkgen.delay_155ns_2.genblk1[1].dly_binary.out (net)
-                  0.06    0.00 200002.67 ^ clkgen.delay_155ns_2.genblk1[2].dly_binary.out_mux/A1 (sky130_fd_sc_hd__mux2_1)
-                  0.07    0.15 200002.83 ^ clkgen.delay_155ns_2.genblk1[2].dly_binary.out_mux/X (sky130_fd_sc_hd__mux2_1)
+                  0.06    0.00 200002.64 ^ clkgen.delay_155ns_2.genblk1[2].dly_binary.out_mux/A1 (sky130_fd_sc_hd__mux2_1)
+                  0.07    0.15 200002.78 ^ clkgen.delay_155ns_2.genblk1[2].dly_binary.out_mux/X (sky130_fd_sc_hd__mux2_1)
      2    0.01                           clkgen.delay_155ns_2.genblk1[2].dly_binary.out (net)
-                  0.07    0.00 200002.83 ^ clkgen.delay_155ns_2.genblk1[3].dly_binary.out_mux/A1 (sky130_fd_sc_hd__mux2_1)
-                  0.07    0.16 200002.98 ^ clkgen.delay_155ns_2.genblk1[3].dly_binary.out_mux/X (sky130_fd_sc_hd__mux2_1)
+                  0.07    0.00 200002.78 ^ clkgen.delay_155ns_2.genblk1[3].dly_binary.out_mux/A1 (sky130_fd_sc_hd__mux2_1)
+                  0.07    0.16 200002.94 ^ clkgen.delay_155ns_2.genblk1[3].dly_binary.out_mux/X (sky130_fd_sc_hd__mux2_1)
      2    0.01                           clkgen.delay_155ns_2.genblk1[3].dly_binary.out (net)
-                  0.07    0.00 200002.98 ^ clkgen.delay_155ns_2.genblk1[4].dly_binary.out_mux/A1 (sky130_fd_sc_hd__mux2_1)
-                  0.06    0.15 200003.12 ^ clkgen.delay_155ns_2.genblk1[4].dly_binary.out_mux/X (sky130_fd_sc_hd__mux2_1)
-     1    0.00                           clkgen._clk_dig_delayed_ (net)
-                  0.06    0.00 200003.12 ^ clkgen.nor1/A (sky130_fd_sc_hd__nor2b_1)
-                  0.05    0.06 200003.19 v clkgen.nor1/Y (sky130_fd_sc_hd__nor2b_1)
-     2    0.01                           clkgen._net_1_ (net)
-                  0.05    0.00 200003.19 v clkgen.delay_155ns_3.genblk1[0].dly_binary.out_mux/A1 (sky130_fd_sc_hd__mux2_1)
-                  0.07    0.32 200003.50 v clkgen.delay_155ns_3.genblk1[0].dly_binary.out_mux/X (sky130_fd_sc_hd__mux2_1)
-     2    0.01                           clkgen.delay_155ns_3.genblk1[0].dly_binary.out (net)
-                  0.07    0.00 200003.50 v clkgen.delay_155ns_3.genblk1[1].dly_binary.out_mux/A1 (sky130_fd_sc_hd__mux2_1)
-                  0.08    0.33 200003.84 v clkgen.delay_155ns_3.genblk1[1].dly_binary.out_mux/X (sky130_fd_sc_hd__mux2_1)
+                  0.07    0.00 200002.94 ^ clkgen.delay_155ns_2.genblk1[4].dly_binary.out_mux/A1 (sky130_fd_sc_hd__mux2_1)
+                  0.09    0.17 200003.11 ^ clkgen.delay_155ns_2.genblk1[4].dly_binary.out_mux/X (sky130_fd_sc_hd__mux2_1)
+     1    0.01                           clkgen.clk_dig_delayed_w (net)
+                  0.09    0.00 200003.11 ^ clkgen.nor1/A (sky130_fd_sc_hd__nor2b_1)
+                  0.06    0.09 200003.20 v clkgen.nor1/Y (sky130_fd_sc_hd__nor2b_1)
+     2    0.01                           clkgen.delay_155ns_3.genblk1[0].dly_binary.in (net)
+                  0.06    0.00 200003.20 v clkgen.delay_155ns_3.genblk1[0].dly_binary.out_mux/A1 (sky130_fd_sc_hd__mux2_1)
+                  0.07    0.32 200003.52 v clkgen.delay_155ns_3.genblk1[0].dly_binary.out_mux/X (sky130_fd_sc_hd__mux2_1)
+     2    0.00                           clkgen.delay_155ns_3.genblk1[0].dly_binary.out (net)
+                  0.07    0.00 200003.52 v clkgen.delay_155ns_3.genblk1[1].dly_binary.out_mux/A1 (sky130_fd_sc_hd__mux2_1)
+                  0.08    0.33 200003.86 v clkgen.delay_155ns_3.genblk1[1].dly_binary.out_mux/X (sky130_fd_sc_hd__mux2_1)
      2    0.01                           clkgen.delay_155ns_3.genblk1[1].dly_binary.out (net)
-                  0.08    0.00 200003.84 v clkgen.delay_155ns_3.genblk1[2].dly_binary.out_mux/A1 (sky130_fd_sc_hd__mux2_1)
-                  0.07    0.33 200004.17 v clkgen.delay_155ns_3.genblk1[2].dly_binary.out_mux/X (sky130_fd_sc_hd__mux2_1)
+                  0.08    0.00 200003.86 v clkgen.delay_155ns_3.genblk1[2].dly_binary.out_mux/A1 (sky130_fd_sc_hd__mux2_1)
+                  0.07    0.33 200004.19 v clkgen.delay_155ns_3.genblk1[2].dly_binary.out_mux/X (sky130_fd_sc_hd__mux2_1)
      2    0.00                           clkgen.delay_155ns_3.genblk1[2].dly_binary.out (net)
-                  0.07    0.00 200004.17 v clkgen.delay_155ns_3.genblk1[3].dly_binary.out_mux/A1 (sky130_fd_sc_hd__mux2_1)
-                  0.07    0.32 200004.50 v clkgen.delay_155ns_3.genblk1[3].dly_binary.out_mux/X (sky130_fd_sc_hd__mux2_1)
+                  0.07    0.00 200004.19 v clkgen.delay_155ns_3.genblk1[3].dly_binary.out_mux/A1 (sky130_fd_sc_hd__mux2_1)
+                  0.07    0.32 200004.52 v clkgen.delay_155ns_3.genblk1[3].dly_binary.out_mux/X (sky130_fd_sc_hd__mux2_1)
      2    0.00                           clkgen.delay_155ns_3.genblk1[3].dly_binary.out (net)
-                  0.07    0.00 200004.50 v clkgen.delay_155ns_3.genblk1[4].dly_binary.out_mux/A1 (sky130_fd_sc_hd__mux2_1)
-                  0.10    0.36 200004.86 v clkgen.delay_155ns_3.genblk1[4].dly_binary.out_mux/X (sky130_fd_sc_hd__mux2_1)
-     2    0.01                           clkgen.clk_comp (net)
-                  0.10    0.00 200004.86 v outbuf_2/A (sky130_fd_sc_hd__buf_4)
-                  0.06    0.20 200005.06 v outbuf_2/X (sky130_fd_sc_hd__buf_4)
-     1    0.03                           clk_comp (net)
-                  0.06    0.00 200005.06 v clk_comp (out)
-                               200005.06   data arrival time
+                  0.07    0.00 200004.52 v clkgen.delay_155ns_3.genblk1[4].dly_binary.out_mux/A1 (sky130_fd_sc_hd__mux2_1)
+                  0.09    0.36 200004.88 v clkgen.delay_155ns_3.genblk1[4].dly_binary.out_mux/X (sky130_fd_sc_hd__mux2_1)
+     1    0.01                           clkgen.clk_comp_out (net)
+                  0.09    0.00 200004.88 v outbuf_2/A (sky130_fd_sc_hd__buf_4)
+                  0.06    0.20 200005.08 v outbuf_2/X (sky130_fd_sc_hd__buf_4)
+     1    0.03                           clk_comp_out (net)
+                  0.06    0.00 200005.08 v clk_comp_out (out)
+                               200005.08   data arrival time
 
                   0.00 999999.94 999999.94   clock __VIRTUAL_CLK__ (rise edge)
                           0.00 999999.94   clock network delay (ideal)
@@ -1650,7 +1668,7 @@ Fanout     Cap    Slew   Delay    Time   Description
                                799999.69   data required time
 -----------------------------------------------------------------------------
                                799999.69   data required time
-                               -200005.06   data arrival time
+                               -200005.08   data arrival time
 -----------------------------------------------------------------------------
                                599994.62   slack (MET)
 
@@ -1658,8 +1676,8 @@ Fanout     Cap    Slew   Delay    Time   Description
 
 ======================= Fastest Corner ===================================
 
-Startpoint: enable_dlycontrol (input port clocked by __VIRTUAL_CLK__)
-Endpoint: clk_comp (output port clocked by __VIRTUAL_CLK__)
+Startpoint: dlycontrol1_in[0] (input port clocked by __VIRTUAL_CLK__)
+Endpoint: clk_comp_out (output port clocked by __VIRTUAL_CLK__)
 Path Group: __VIRTUAL_CLK__
 Path Type: max
 Corner: ff
@@ -1669,55 +1687,67 @@ Fanout     Cap    Slew   Delay    Time   Description
                   0.00    0.00    0.00   clock __VIRTUAL_CLK__ (rise edge)
                           0.00    0.00   clock network delay (ideal)
                        200000.00 200000.00 ^ input external delay
-                  0.12    0.09 200000.09 ^ enable_dlycontrol (in)
-     8    0.03                           enable_dlycontrol (net)
-                  0.12    0.00 200000.09 ^ edgedetect.dly_315ns_1.enablebuffer/A (sky130_fd_sc_hd__buf_4)
-                  0.07    0.13 200000.22 ^ edgedetect.dly_315ns_1.enablebuffer/X (sky130_fd_sc_hd__buf_4)
-    12    0.03                           edgedetect.dly_315ns_1._enable_dlycontrol_ (net)
-                  0.07    0.01 200000.23 ^ edgedetect.dly_315ns_1.genblk1[2].bypass_enable/A (sky130_fd_sc_hd__and2_1)
-                  0.11    0.15 200000.38 ^ edgedetect.dly_315ns_1.genblk1[2].bypass_enable/X (sky130_fd_sc_hd__and2_1)
-     2    0.01                           edgedetect.dly_315ns_1.genblk1[2].dly_binary.bypass (net)
-                  0.11    0.00 200000.38 ^ edgedetect.dly_315ns_1.genblk1[2].dly_binary.out_mux/S (sky130_fd_sc_hd__mux2_1)
-                  0.07    0.23 200000.61 v edgedetect.dly_315ns_1.genblk1[2].dly_binary.out_mux/X (sky130_fd_sc_hd__mux2_1)
-     2    0.01                           edgedetect.dly_315ns_1.genblk1[2].dly_binary.out (net)
-                  0.07    0.00 200000.61 v edgedetect.dly_315ns_1.genblk1[3].dly_binary.out_mux/A1 (sky130_fd_sc_hd__mux2_1)
-                  0.07    0.20 200000.81 v edgedetect.dly_315ns_1.genblk1[3].dly_binary.out_mux/X (sky130_fd_sc_hd__mux2_1)
-     2    0.01                           edgedetect.dly_315ns_1.genblk1[3].dly_binary.out (net)
-                  0.07    0.00 200000.81 v edgedetect.dly_315ns_1.genblk1[4].dly_binary.out_mux/A1 (sky130_fd_sc_hd__mux2_1)
-                  0.05    0.19 200001.00 v edgedetect.dly_315ns_1.genblk1[4].dly_binary.out_mux/X (sky130_fd_sc_hd__mux2_1)
-     2    0.01                           edgedetect.dly_315ns_1.genblk1[4].dly_binary.out (net)
-                  0.05    0.00 200001.00 v edgedetect.dly_315ns_1.genblk1[5].dly_binary.out_mux/A1 (sky130_fd_sc_hd__mux2_1)
-                  0.06    0.19 200001.19 v edgedetect.dly_315ns_1.genblk1[5].dly_binary.out_mux/X (sky130_fd_sc_hd__mux2_1)
-     1    0.01                           edgedetect._start_conv_delayed_ (net)
-                  0.06    0.00 200001.19 v edgedetect.nor1/A (sky130_fd_sc_hd__nor2b_1)
-                  0.05    0.07 200001.27 ^ edgedetect.nor1/Y (sky130_fd_sc_hd__nor2b_1)
-     1    0.00                           edgedetect._start_conv_edge_ (net)
-                  0.05    0.00 200001.27 ^ edgedetect.or1/A (sky130_fd_sc_hd__or2_1)
-                  0.12    0.13 200001.39 ^ edgedetect.or1/X (sky130_fd_sc_hd__or2_1)
-     2    0.02                           clkgen.enable_loop (net)
-                  0.12    0.00 200001.39 ^ clkgen.nor1/B_N (sky130_fd_sc_hd__nor2b_1)
-                  0.12    0.15 200001.55 ^ clkgen.nor1/Y (sky130_fd_sc_hd__nor2b_1)
-     2    0.01                           clkgen._net_1_ (net)
-                  0.12    0.00 200001.55 ^ clkgen.delay_155ns_3.genblk1[0].dly_binary.out_mux/A1 (sky130_fd_sc_hd__mux2_1)
-                  0.05    0.12 200001.66 ^ clkgen.delay_155ns_3.genblk1[0].dly_binary.out_mux/X (sky130_fd_sc_hd__mux2_1)
-     2    0.01                           clkgen.delay_155ns_3.genblk1[0].dly_binary.out (net)
-                  0.05    0.00 200001.66 ^ clkgen.delay_155ns_3.genblk1[1].dly_binary.out_mux/A1 (sky130_fd_sc_hd__mux2_1)
-                  0.06    0.10 200001.77 ^ clkgen.delay_155ns_3.genblk1[1].dly_binary.out_mux/X (sky130_fd_sc_hd__mux2_1)
+                  0.04    0.03 200000.03 ^ dlycontrol1_in[0] (in)
+     2    0.01                           dlycontrol1_in[0] (net)
+                  0.04    0.00 200000.03 ^ clkgen.delay_155ns_1.genblk1[0].bypass_enable/B (sky130_fd_sc_hd__and2_1)
+                  0.13    0.16 200000.19 ^ clkgen.delay_155ns_1.genblk1[0].bypass_enable/X (sky130_fd_sc_hd__and2_1)
+     4    0.02                           clkgen.delay_155ns_1.genblk1[0].dly_binary.bypass_in (net)
+                  0.13    0.00 200000.19 ^ clkgen.delay_155ns_1.genblk1[0].dly_binary.out_mux/S (sky130_fd_sc_hd__mux2_1)
+                  0.05    0.22 200000.41 v clkgen.delay_155ns_1.genblk1[0].dly_binary.out_mux/X (sky130_fd_sc_hd__mux2_1)
+     2    0.01                           clkgen.delay_155ns_1.genblk1[0].dly_binary.out (net)
+                  0.05    0.00 200000.41 v clkgen.delay_155ns_1.genblk1[1].dly_binary.out_mux/A1 (sky130_fd_sc_hd__mux2_1)
+                  0.05    0.17 200000.58 v clkgen.delay_155ns_1.genblk1[1].dly_binary.out_mux/X (sky130_fd_sc_hd__mux2_1)
+     2    0.00                           clkgen.delay_155ns_1.genblk1[1].dly_binary.out (net)
+                  0.05    0.00 200000.58 v clkgen.delay_155ns_1.genblk1[2].dly_binary.out_mux/A1 (sky130_fd_sc_hd__mux2_1)
+                  0.06    0.19 200000.77 v clkgen.delay_155ns_1.genblk1[2].dly_binary.out_mux/X (sky130_fd_sc_hd__mux2_1)
+     2    0.01                           clkgen.delay_155ns_1.genblk1[2].dly_binary.out (net)
+                  0.06    0.00 200000.77 v clkgen.delay_155ns_1.genblk1[3].dly_binary.out_mux/A1 (sky130_fd_sc_hd__mux2_1)
+                  0.06    0.19 200000.97 v clkgen.delay_155ns_1.genblk1[3].dly_binary.out_mux/X (sky130_fd_sc_hd__mux2_1)
+     2    0.01                           clkgen.delay_155ns_1.genblk1[3].dly_binary.out (net)
+                  0.06    0.00 200000.97 v clkgen.delay_155ns_1.genblk1[4].dly_binary.out_mux/A1 (sky130_fd_sc_hd__mux2_1)
+                  0.06    0.19 200001.16 v clkgen.delay_155ns_1.genblk1[4].dly_binary.out_mux/X (sky130_fd_sc_hd__mux2_1)
+     1    0.01                           clkgen.delay_155ns_1.genblk1[4].dly_binary.out (net)
+                  0.06    0.00 200001.16 v clkgen.clkdig_inverter/A (sky130_fd_sc_hd__inv_2)
+                  0.06    0.07 200001.22 ^ clkgen.clkdig_inverter/Y (sky130_fd_sc_hd__inv_2)
+     3    0.02                           clkgen.clk_dig_out (net)
+                  0.06    0.00 200001.22 ^ clkgen.delay_155ns_2.genblk1[0].dly_binary.out_mux/A1 (sky130_fd_sc_hd__mux2_1)
+                  0.05    0.10 200001.33 ^ clkgen.delay_155ns_2.genblk1[0].dly_binary.out_mux/X (sky130_fd_sc_hd__mux2_1)
+     2    0.01                           clkgen.delay_155ns_2.genblk1[0].dly_binary.out (net)
+                  0.05    0.00 200001.33 ^ clkgen.delay_155ns_2.genblk1[1].dly_binary.out_mux/A1 (sky130_fd_sc_hd__mux2_1)
+                  0.04    0.09 200001.41 ^ clkgen.delay_155ns_2.genblk1[1].dly_binary.out_mux/X (sky130_fd_sc_hd__mux2_1)
+     2    0.00                           clkgen.delay_155ns_2.genblk1[1].dly_binary.out (net)
+                  0.04    0.00 200001.41 ^ clkgen.delay_155ns_2.genblk1[2].dly_binary.out_mux/A1 (sky130_fd_sc_hd__mux2_1)
+                  0.05    0.10 200001.52 ^ clkgen.delay_155ns_2.genblk1[2].dly_binary.out_mux/X (sky130_fd_sc_hd__mux2_1)
+     2    0.01                           clkgen.delay_155ns_2.genblk1[2].dly_binary.out (net)
+                  0.05    0.00 200001.52 ^ clkgen.delay_155ns_2.genblk1[3].dly_binary.out_mux/A1 (sky130_fd_sc_hd__mux2_1)
+                  0.05    0.10 200001.61 ^ clkgen.delay_155ns_2.genblk1[3].dly_binary.out_mux/X (sky130_fd_sc_hd__mux2_1)
+     2    0.01                           clkgen.delay_155ns_2.genblk1[3].dly_binary.out (net)
+                  0.05    0.00 200001.61 ^ clkgen.delay_155ns_2.genblk1[4].dly_binary.out_mux/A1 (sky130_fd_sc_hd__mux2_1)
+                  0.07    0.12 200001.73 ^ clkgen.delay_155ns_2.genblk1[4].dly_binary.out_mux/X (sky130_fd_sc_hd__mux2_1)
+     1    0.01                           clkgen.clk_dig_delayed_w (net)
+                  0.07    0.00 200001.73 ^ clkgen.nor1/A (sky130_fd_sc_hd__nor2b_1)
+                  0.04    0.04 200001.78 v clkgen.nor1/Y (sky130_fd_sc_hd__nor2b_1)
+     2    0.01                           clkgen.delay_155ns_3.genblk1[0].dly_binary.in (net)
+                  0.04    0.00 200001.78 v clkgen.delay_155ns_3.genblk1[0].dly_binary.out_mux/A1 (sky130_fd_sc_hd__mux2_1)
+                  0.05    0.17 200001.95 v clkgen.delay_155ns_3.genblk1[0].dly_binary.out_mux/X (sky130_fd_sc_hd__mux2_1)
+     2    0.00                           clkgen.delay_155ns_3.genblk1[0].dly_binary.out (net)
+                  0.05    0.00 200001.95 v clkgen.delay_155ns_3.genblk1[1].dly_binary.out_mux/A1 (sky130_fd_sc_hd__mux2_1)
+                  0.05    0.17 200002.12 v clkgen.delay_155ns_3.genblk1[1].dly_binary.out_mux/X (sky130_fd_sc_hd__mux2_1)
      2    0.01                           clkgen.delay_155ns_3.genblk1[1].dly_binary.out (net)
-                  0.06    0.00 200001.77 ^ clkgen.delay_155ns_3.genblk1[2].dly_binary.out_mux/A1 (sky130_fd_sc_hd__mux2_1)
-                  0.04    0.10 200001.86 ^ clkgen.delay_155ns_3.genblk1[2].dly_binary.out_mux/X (sky130_fd_sc_hd__mux2_1)
-     2    0.01                           clkgen.delay_155ns_3.genblk1[2].dly_binary.out (net)
-                  0.04    0.00 200001.86 ^ clkgen.delay_155ns_3.genblk1[3].dly_binary.out_mux/A1 (sky130_fd_sc_hd__mux2_1)
-                  0.04    0.09 200001.95 ^ clkgen.delay_155ns_3.genblk1[3].dly_binary.out_mux/X (sky130_fd_sc_hd__mux2_1)
+                  0.05    0.00 200002.12 v clkgen.delay_155ns_3.genblk1[2].dly_binary.out_mux/A1 (sky130_fd_sc_hd__mux2_1)
+                  0.05    0.17 200002.30 v clkgen.delay_155ns_3.genblk1[2].dly_binary.out_mux/X (sky130_fd_sc_hd__mux2_1)
+     2    0.00                           clkgen.delay_155ns_3.genblk1[2].dly_binary.out (net)
+                  0.05    0.00 200002.30 v clkgen.delay_155ns_3.genblk1[3].dly_binary.out_mux/A1 (sky130_fd_sc_hd__mux2_1)
+                  0.05    0.17 200002.47 v clkgen.delay_155ns_3.genblk1[3].dly_binary.out_mux/X (sky130_fd_sc_hd__mux2_1)
      2    0.01                           clkgen.delay_155ns_3.genblk1[3].dly_binary.out (net)
-                  0.04    0.00 200001.95 ^ clkgen.delay_155ns_3.genblk1[4].dly_binary.out_mux/A1 (sky130_fd_sc_hd__mux2_1)
-                  0.08    0.13 200002.08 ^ clkgen.delay_155ns_3.genblk1[4].dly_binary.out_mux/X (sky130_fd_sc_hd__mux2_1)
-     2    0.01                           clkgen.clk_comp (net)
-                  0.08    0.00 200002.08 ^ outbuf_2/A (sky130_fd_sc_hd__buf_4)
-                  0.08    0.13 200002.22 ^ outbuf_2/X (sky130_fd_sc_hd__buf_4)
-     1    0.03                           clk_comp (net)
-                  0.08    0.00 200002.22 ^ clk_comp (out)
-                               200002.22   data arrival time
+                  0.05    0.00 200002.47 v clkgen.delay_155ns_3.genblk1[4].dly_binary.out_mux/A1 (sky130_fd_sc_hd__mux2_1)
+                  0.07    0.19 200002.66 v clkgen.delay_155ns_3.genblk1[4].dly_binary.out_mux/X (sky130_fd_sc_hd__mux2_1)
+     1    0.01                           clkgen.clk_comp_out (net)
+                  0.07    0.00 200002.66 v outbuf_2/A (sky130_fd_sc_hd__buf_4)
+                  0.04    0.13 200002.80 v outbuf_2/X (sky130_fd_sc_hd__buf_4)
+     1    0.03                           clk_comp_out (net)
+                  0.04    0.00 200002.80 v clk_comp_out (out)
+                               200002.80   data arrival time
 
                   0.00 999999.94 999999.94   clock __VIRTUAL_CLK__ (rise edge)
                           0.00 999999.94   clock network delay (ideal)
@@ -1727,9 +1757,9 @@ Fanout     Cap    Slew   Delay    Time   Description
                                799999.69   data required time
 -----------------------------------------------------------------------------
                                799999.69   data required time
-                               -200002.22   data arrival time
+                               -200002.80   data arrival time
 -----------------------------------------------------------------------------
-                               599997.50   slack (MET)
+                               599996.88   slack (MET)
 
 
 
@@ -1809,11 +1839,11 @@ Group                  Internal  Switching    Leakage      Total
                           Power      Power      Power      Power (Watts)
 ----------------------------------------------------------------
 Sequential             0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
-Combinational          1.28e-10   1.65e-10   4.59e-07   4.60e-07 100.0%
+Combinational          1.28e-10   1.58e-10   4.59e-07   4.60e-07 100.0%
 Macro                  0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
 Pad                    0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
 ----------------------------------------------------------------
-Total                  1.28e-10   1.65e-10   4.59e-07   4.60e-07 100.0%
+Total                  1.28e-10   1.58e-10   4.59e-07   4.60e-07 100.0%
                            0.0%       0.0%      99.9%
 
 ======================= Typical Corner ===================================
@@ -1822,12 +1852,12 @@ Group                  Internal  Switching    Leakage      Total
                           Power      Power      Power      Power (Watts)
 ----------------------------------------------------------------
 Sequential             0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
-Combinational          1.55e-10   2.07e-10   1.91e-09   2.27e-09 100.0%
+Combinational          1.55e-10   1.97e-10   1.85e-09   2.20e-09 100.0%
 Macro                  0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
 Pad                    0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
 ----------------------------------------------------------------
-Total                  1.55e-10   2.07e-10   1.91e-09   2.27e-09 100.0%
-                           6.8%       9.1%      84.1%
+Total                  1.55e-10   1.97e-10   1.85e-09   2.20e-09 100.0%
+                           7.0%       8.9%      84.0%
 
 
 ======================= Fastest Corner =================================
@@ -1836,17 +1866,17 @@ Group                  Internal  Switching    Leakage      Total
                           Power      Power      Power      Power (Watts)
 ----------------------------------------------------------------
 Sequential             0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
-Combinational          1.73e-10   2.42e-10   2.04e-09   2.45e-09 100.0%
+Combinational          1.72e-10   2.31e-10   1.98e-09   2.38e-09 100.0%
 Macro                  0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
 Pad                    0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
 ----------------------------------------------------------------
-Total                  1.73e-10   2.42e-10   2.04e-09   2.45e-09 100.0%
-                           7.0%       9.9%      83.1%
+Total                  1.72e-10   2.31e-10   1.98e-09   2.38e-09 100.0%
+                           7.2%       9.7%      83.1%
 power_report_end
 area_report
 
 ===========================================================================
  report_design_area
 ============================================================================
-Design area 5846 u^2 69% utilization.
+Design area 5813 u^2 68% utilization.
 area_report_end

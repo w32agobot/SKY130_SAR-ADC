@@ -33,14 +33,14 @@ module adc_control_nonbinary_tb;
 	   .clk(clk),
 	   .nrst(nrst),
 	   .comparator_in(comparator_in),
-	   .avg_control(avg_control),
-	   .sample(sample),
-	   .nsample(nsample),
-	   .enable(enable),
-	   .conv_finished(conv_finished),
-	   .p_switch(p_switch),
-	   .n_switch(n_switch),
-	   .result(result)
+	   .avg_control_in(avg_control),
+	   .sample_out(sample),
+	   .nsample_out(nsample),
+	   .enable_out(enable),
+	   .conv_finished_out(conv_finished),
+	   .p_switch_out(p_switch),
+	   .n_switch_out(n_switch),
+	   .result_out(result)
 	   );	
 
    initial begin

@@ -2,8 +2,8 @@
 ===========================================================================
 report_checks -path_delay min (Hold)
 ============================================================================
-Startpoint: nsample_n (input port clocked by __VIRTUAL_CLK__)
-Endpoint: nsample_n_buf (output port clocked by __VIRTUAL_CLK__)
+Startpoint: nsample_n_in (input port clocked by __VIRTUAL_CLK__)
+Endpoint: nsample_n_out (output port clocked by __VIRTUAL_CLK__)
 Path Group: __VIRTUAL_CLK__
 Path Type: min
 
@@ -12,12 +12,12 @@ Fanout     Cap    Slew   Delay    Time   Description
                   0.00    0.00    0.00   clock __VIRTUAL_CLK__ (rise edge)
                           0.00    0.00   clock network delay (ideal)
                        200000.00 200000.00 ^ input external delay
-                  0.03    0.01 200000.02 ^ nsample_n (in)
-     2    0.00                           nsample_n (net)
+                  0.03    0.01 200000.02 ^ nsample_n_in (in)
+     2    0.00                           nsample_n_in (net)
                   0.03    0.00 200000.02 ^ outbuf_6/A (sky130_fd_sc_hd__buf_4)
                   0.11    0.15 200000.16 ^ outbuf_6/X (sky130_fd_sc_hd__buf_4)
-     1    0.03                           nsample_n_buf (net)
-                  0.11    0.00 200000.16 ^ nsample_n_buf (out)
+     1    0.03                           nsample_n_out (net)
+                  0.11    0.00 200000.16 ^ nsample_n_out (out)
                                200000.16   data arrival time
 
                   0.00    0.00    0.00   clock __VIRTUAL_CLK__ (rise edge)
@@ -33,8 +33,8 @@ Fanout     Cap    Slew   Delay    Time   Description
                                399999.91   slack (MET)
 
 
-Startpoint: nsample_p (input port clocked by __VIRTUAL_CLK__)
-Endpoint: nsample_p_buf (output port clocked by __VIRTUAL_CLK__)
+Startpoint: nsample_p_in (input port clocked by __VIRTUAL_CLK__)
+Endpoint: nsample_p_out (output port clocked by __VIRTUAL_CLK__)
 Path Group: __VIRTUAL_CLK__
 Path Type: min
 
@@ -43,12 +43,12 @@ Fanout     Cap    Slew   Delay    Time   Description
                   0.00    0.00    0.00   clock __VIRTUAL_CLK__ (rise edge)
                           0.00    0.00   clock network delay (ideal)
                        200000.00 200000.00 ^ input external delay
-                  0.06    0.03 200000.03 ^ nsample_p (in)
-     2    0.01                           nsample_p (net)
-                  0.06    0.00 200000.03 ^ outbuf_5/A (sky130_fd_sc_hd__buf_4)
+                  0.05    0.03 200000.03 ^ nsample_p_in (in)
+     2    0.01                           nsample_p_in (net)
+                  0.05    0.00 200000.03 ^ outbuf_5/A (sky130_fd_sc_hd__buf_4)
                   0.10    0.15 200000.17 ^ outbuf_5/X (sky130_fd_sc_hd__buf_4)
-     1    0.03                           nsample_p_buf (net)
-                  0.10    0.00 200000.17 ^ nsample_p_buf (out)
+     1    0.03                           nsample_p_out (net)
+                  0.10    0.00 200000.17 ^ nsample_p_out (out)
                                200000.17   data arrival time
 
                   0.00    0.00    0.00   clock __VIRTUAL_CLK__ (rise edge)
@@ -64,8 +64,8 @@ Fanout     Cap    Slew   Delay    Time   Description
                                399999.91   slack (MET)
 
 
-Startpoint: dlycontrol3[4] (input port clocked by __VIRTUAL_CLK__)
-Endpoint: clk_comp (output port clocked by __VIRTUAL_CLK__)
+Startpoint: dlycontrol3_in[4] (input port clocked by __VIRTUAL_CLK__)
+Endpoint: clk_comp_out (output port clocked by __VIRTUAL_CLK__)
 Path Group: __VIRTUAL_CLK__
 Path Type: min
 
@@ -74,19 +74,19 @@ Fanout     Cap    Slew   Delay    Time   Description
                   0.00    0.00    0.00   clock __VIRTUAL_CLK__ (rise edge)
                           0.00    0.00   clock network delay (ideal)
                        200000.00 200000.00 v input external delay
-                  0.03    0.01 200000.02 v dlycontrol3[4] (in)
-     2    0.01                           dlycontrol3[4] (net)
-                  0.03    0.00 200000.02 v clkgen.delay_155ns_3.genblk1[4].bypass_enable/B (sky130_fd_sc_hd__and2_1)
+                  0.02    0.01 200000.02 v dlycontrol3_in[4] (in)
+     2    0.01                           dlycontrol3_in[4] (net)
+                  0.02    0.00 200000.02 v clkgen.delay_155ns_3.genblk1[4].bypass_enable/B (sky130_fd_sc_hd__and2_1)
                   0.05    0.16 200000.17 v clkgen.delay_155ns_3.genblk1[4].bypass_enable/X (sky130_fd_sc_hd__and2_1)
-     2    0.01                           clkgen.delay_155ns_3.genblk1[4].dly_binary.bypass (net)
+     2    0.01                           clkgen.delay_155ns_3.genblk1[4].dly_binary.bypass_in (net)
                   0.05    0.00 200000.17 v clkgen.delay_155ns_3.genblk1[4].dly_binary.out_mux/S (sky130_fd_sc_hd__mux2_1)
-                  0.11    0.23 200000.41 ^ clkgen.delay_155ns_3.genblk1[4].dly_binary.out_mux/X (sky130_fd_sc_hd__mux2_1)
-     2    0.01                           clkgen.clk_comp (net)
-                  0.11    0.00 200000.41 ^ outbuf_2/A (sky130_fd_sc_hd__buf_4)
-                  0.10    0.17 200000.58 ^ outbuf_2/X (sky130_fd_sc_hd__buf_4)
-     1    0.03                           clk_comp (net)
-                  0.10    0.00 200000.58 ^ clk_comp (out)
-                               200000.58   data arrival time
+                  0.10    0.23 200000.41 ^ clkgen.delay_155ns_3.genblk1[4].dly_binary.out_mux/X (sky130_fd_sc_hd__mux2_1)
+     1    0.01                           clkgen.clk_comp_out (net)
+                  0.10    0.00 200000.41 ^ outbuf_2/A (sky130_fd_sc_hd__buf_4)
+                  0.10    0.16 200000.56 ^ outbuf_2/X (sky130_fd_sc_hd__buf_4)
+     1    0.03                           clk_comp_out (net)
+                  0.10    0.00 200000.56 ^ clk_comp_out (out)
+                               200000.56   data arrival time
 
                   0.00    0.00    0.00   clock __VIRTUAL_CLK__ (rise edge)
                           0.00    0.00   clock network delay (ideal)
@@ -96,13 +96,13 @@ Fanout     Cap    Slew   Delay    Time   Description
                                -199999.75   data required time
 -----------------------------------------------------------------------------
                                -199999.75   data required time
-                               -200000.58   data arrival time
+                               -200000.56   data arrival time
 -----------------------------------------------------------------------------
                                400000.31   slack (MET)
 
 
-Startpoint: sample_n (input port clocked by __VIRTUAL_CLK__)
-Endpoint: sample_n_buf (output port clocked by __VIRTUAL_CLK__)
+Startpoint: sample_n_in (input port clocked by __VIRTUAL_CLK__)
+Endpoint: sample_n_out (output port clocked by __VIRTUAL_CLK__)
 Path Group: __VIRTUAL_CLK__
 Path Type: min
 
@@ -111,12 +111,12 @@ Fanout     Cap    Slew   Delay    Time   Description
                   0.00    0.00    0.00   clock __VIRTUAL_CLK__ (rise edge)
                           0.00    0.00   clock network delay (ideal)
                        200000.00 200000.00 ^ input external delay
-                  0.07    0.04 200000.05 ^ sample_n (in)
-     2    0.01                           sample_n (net)
+                  0.07    0.04 200000.05 ^ sample_n_in (in)
+     2    0.01                           sample_n_in (net)
                   0.07    0.00 200000.05 ^ outbuf_4/A (sky130_fd_sc_hd__buf_4)
                   0.10    0.16 200000.20 ^ outbuf_4/X (sky130_fd_sc_hd__buf_4)
-     1    0.03                           sample_n_buf (net)
-                  0.10    0.00 200000.20 ^ sample_n_buf (out)
+     1    0.03                           sample_n_out (net)
+                  0.10    0.00 200000.20 ^ sample_n_out (out)
                                200000.20   data arrival time
 
                   0.00    0.00    0.00   clock __VIRTUAL_CLK__ (rise edge)
@@ -132,8 +132,8 @@ Fanout     Cap    Slew   Delay    Time   Description
                                399999.97   slack (MET)
 
 
-Startpoint: sample_p (input port clocked by __VIRTUAL_CLK__)
-Endpoint: sample_p_buf (output port clocked by __VIRTUAL_CLK__)
+Startpoint: sample_p_in (input port clocked by __VIRTUAL_CLK__)
+Endpoint: sample_p_out (output port clocked by __VIRTUAL_CLK__)
 Path Group: __VIRTUAL_CLK__
 Path Type: min
 
@@ -142,13 +142,13 @@ Fanout     Cap    Slew   Delay    Time   Description
                   0.00    0.00    0.00   clock __VIRTUAL_CLK__ (rise edge)
                           0.00    0.00   clock network delay (ideal)
                        200000.00 200000.00 ^ input external delay
-                  0.05    0.03 200000.03 ^ sample_p (in)
-     2    0.01                           sample_p (net)
-                  0.05    0.00 200000.03 ^ outbuf_3/A (sky130_fd_sc_hd__buf_4)
-                  0.10    0.15 200000.17 ^ outbuf_3/X (sky130_fd_sc_hd__buf_4)
-     1    0.03                           sample_p_buf (net)
-                  0.10    0.00 200000.17 ^ sample_p_buf (out)
-                               200000.17   data arrival time
+                  0.07    0.04 200000.05 ^ sample_p_in (in)
+     2    0.01                           sample_p_in (net)
+                  0.07    0.00 200000.05 ^ outbuf_3/A (sky130_fd_sc_hd__buf_4)
+                  0.10    0.16 200000.20 ^ outbuf_3/X (sky130_fd_sc_hd__buf_4)
+     1    0.03                           sample_p_out (net)
+                  0.10    0.00 200000.20 ^ sample_p_out (out)
+                               200000.20   data arrival time
 
                   0.00    0.00    0.00   clock __VIRTUAL_CLK__ (rise edge)
                           0.00    0.00   clock network delay (ideal)
@@ -158,8 +158,8 @@ Fanout     Cap    Slew   Delay    Time   Description
                                -199999.75   data required time
 -----------------------------------------------------------------------------
                                -199999.75   data required time
-                               -200000.17   data arrival time
+                               -200000.20   data arrival time
 -----------------------------------------------------------------------------
-                               399999.91   slack (MET)
+                               399999.97   slack (MET)
 
 
