@@ -161,6 +161,7 @@ module binary_delaycell #(parameter DLYCONTROL_BITWIDTH = 5)
 
     wire [DLYCONTROL_BITWIDTH:0] signal_w;
     wire enable_dlycontrol_w;
+    wire [DLYCONTROL_BITWIDTH-1:0] bypass_enable_w;
     wire [DLYCONTROL_BITWIDTH-1:0] bypass_w;
 
     sky130_fd_sc_hd__buf_4 enablebuffer (.A(enable_dlycontrol_in),.X(enable_dlycontrol_w));
@@ -169,7 +170,8 @@ module binary_delaycell #(parameter DLYCONTROL_BITWIDTH = 5)
     genvar i;
     generate
        for (i = 0; i < DLYCONTROL_BITWIDTH; i=i+1) begin
-            sky130_fd_sc_hd__and2_1 bypass_enable (.A(enable_dlycontrol_w),.B(dlycontrol_in[i]),.X(bypass_w[i])); // 2 input and, A inverted
+            sky130_fd_sc_hd__inv_2  control_invert (.A(dlycontrol_in[i]),.Y(bypass_enable_w[i]));
+            sky130_fd_sc_hd__and2_1 bypass_enable (.A(enable_dlycontrol_w),.B(bypass_enable_w[i]),.X(bypass_w[i])); // 2 input and, A inverted
             delaycell #(.N_TIMES_5NS(2**i)) dly_binary (
                 .in(signal_w[i]),
                 .bypass_in(bypass_w[i]),

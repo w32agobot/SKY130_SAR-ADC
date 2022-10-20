@@ -42,6 +42,11 @@ module adc_clkgen_with_edgedetect (VGND,
  wire \clkgen.clk_comp_out ;
  wire \clkgen.clk_dig_delayed_w ;
  wire \clkgen.clk_dig_out ;
+ wire \clkgen.delay_155ns_1.bypass_enable_w[0] ;
+ wire \clkgen.delay_155ns_1.bypass_enable_w[1] ;
+ wire \clkgen.delay_155ns_1.bypass_enable_w[2] ;
+ wire \clkgen.delay_155ns_1.bypass_enable_w[3] ;
+ wire \clkgen.delay_155ns_1.bypass_enable_w[4] ;
  wire \clkgen.delay_155ns_1.enable_dlycontrol_w ;
  wire \clkgen.delay_155ns_1.genblk1[0].dly_binary.bypass_in ;
  wire \clkgen.delay_155ns_1.genblk1[0].dly_binary.in ;
@@ -90,6 +95,11 @@ module adc_clkgen_with_edgedetect (VGND,
  wire \clkgen.delay_155ns_1.genblk1[4].dly_binary.signal_w[7] ;
  wire \clkgen.delay_155ns_1.genblk1[4].dly_binary.signal_w[8] ;
  wire \clkgen.delay_155ns_1.genblk1[4].dly_binary.signal_w[9] ;
+ wire \clkgen.delay_155ns_2.bypass_enable_w[0] ;
+ wire \clkgen.delay_155ns_2.bypass_enable_w[1] ;
+ wire \clkgen.delay_155ns_2.bypass_enable_w[2] ;
+ wire \clkgen.delay_155ns_2.bypass_enable_w[3] ;
+ wire \clkgen.delay_155ns_2.bypass_enable_w[4] ;
  wire \clkgen.delay_155ns_2.enable_dlycontrol_w ;
  wire \clkgen.delay_155ns_2.genblk1[0].dly_binary.bypass_in ;
  wire \clkgen.delay_155ns_2.genblk1[0].dly_binary.out ;
@@ -136,6 +146,11 @@ module adc_clkgen_with_edgedetect (VGND,
  wire \clkgen.delay_155ns_2.genblk1[4].dly_binary.signal_w[7] ;
  wire \clkgen.delay_155ns_2.genblk1[4].dly_binary.signal_w[8] ;
  wire \clkgen.delay_155ns_2.genblk1[4].dly_binary.signal_w[9] ;
+ wire \clkgen.delay_155ns_3.bypass_enable_w[0] ;
+ wire \clkgen.delay_155ns_3.bypass_enable_w[1] ;
+ wire \clkgen.delay_155ns_3.bypass_enable_w[2] ;
+ wire \clkgen.delay_155ns_3.bypass_enable_w[3] ;
+ wire \clkgen.delay_155ns_3.bypass_enable_w[4] ;
  wire \clkgen.delay_155ns_3.enable_dlycontrol_w ;
  wire \clkgen.delay_155ns_3.genblk1[0].dly_binary.bypass_in ;
  wire \clkgen.delay_155ns_3.genblk1[0].dly_binary.in ;
@@ -184,6 +199,12 @@ module adc_clkgen_with_edgedetect (VGND,
  wire \clkgen.delay_155ns_3.genblk1[4].dly_binary.signal_w[8] ;
  wire \clkgen.delay_155ns_3.genblk1[4].dly_binary.signal_w[9] ;
  wire \clkgen.enable_loop_in ;
+ wire \edgedetect.dly_315ns_1.bypass_enable_w[0] ;
+ wire \edgedetect.dly_315ns_1.bypass_enable_w[1] ;
+ wire \edgedetect.dly_315ns_1.bypass_enable_w[2] ;
+ wire \edgedetect.dly_315ns_1.bypass_enable_w[3] ;
+ wire \edgedetect.dly_315ns_1.bypass_enable_w[4] ;
+ wire \edgedetect.dly_315ns_1.bypass_enable_w[5] ;
  wire \edgedetect.dly_315ns_1.enable_dlycontrol_w ;
  wire \edgedetect.dly_315ns_1.genblk1[0].dly_binary.bypass_in ;
  wire \edgedetect.dly_315ns_1.genblk1[0].dly_binary.in ;
@@ -270,12 +291,17 @@ module adc_clkgen_with_edgedetect (VGND,
  wire \edgedetect.ena_in ;
  wire \edgedetect.start_conv_edge_w ;
 
+ sky130_fd_sc_hd__diode_2 \ANTENNA_clkgen.clkdig_inverter_A  (.DIODE(\clkgen.delay_155ns_1.genblk1[4].dly_binary.out ),
+    .VGND(VGND),
+    .VNB(VGND),
+    .VPB(VPWR),
+    .VPWR(VPWR));
  sky130_fd_sc_hd__diode_2 \ANTENNA_clkgen.delay_155ns_1.enablebuffer_A  (.DIODE(enable_dlycontrol_in),
     .VGND(VGND),
     .VNB(VGND),
     .VPB(VPWR),
     .VPWR(VPWR));
- sky130_fd_sc_hd__diode_2 \ANTENNA_clkgen.delay_155ns_1.genblk1[0].bypass_enable_B  (.DIODE(dlycontrol1_in[0]),
+ sky130_fd_sc_hd__diode_2 \ANTENNA_clkgen.delay_155ns_1.genblk1[0].control_invert_A  (.DIODE(dlycontrol1_in[0]),
     .VGND(VGND),
     .VNB(VGND),
     .VPB(VPWR),
@@ -290,22 +316,62 @@ module adc_clkgen_with_edgedetect (VGND,
     .VNB(VGND),
     .VPB(VPWR),
     .VPWR(VPWR));
- sky130_fd_sc_hd__diode_2 \ANTENNA_clkgen.delay_155ns_1.genblk1[1].bypass_enable_B  (.DIODE(dlycontrol1_in[1]),
+ sky130_fd_sc_hd__diode_2 \ANTENNA_clkgen.delay_155ns_1.genblk1[1].control_invert_A  (.DIODE(dlycontrol1_in[1]),
     .VGND(VGND),
     .VNB(VGND),
     .VPB(VPWR),
     .VPWR(VPWR));
- sky130_fd_sc_hd__diode_2 \ANTENNA_clkgen.delay_155ns_1.genblk1[2].bypass_enable_B  (.DIODE(dlycontrol1_in[2]),
+ sky130_fd_sc_hd__diode_2 \ANTENNA_clkgen.delay_155ns_1.genblk1[1].dly_binary.and_bypass_switch_A_N  (.DIODE(\clkgen.delay_155ns_1.genblk1[1].dly_binary.bypass_in ),
     .VGND(VGND),
     .VNB(VGND),
     .VPB(VPWR),
     .VPWR(VPWR));
- sky130_fd_sc_hd__diode_2 \ANTENNA_clkgen.delay_155ns_1.genblk1[3].bypass_enable_B  (.DIODE(dlycontrol1_in[3]),
+ sky130_fd_sc_hd__diode_2 \ANTENNA_clkgen.delay_155ns_1.genblk1[1].dly_binary.out_mux_S  (.DIODE(\clkgen.delay_155ns_1.genblk1[1].dly_binary.bypass_in ),
     .VGND(VGND),
     .VNB(VGND),
     .VPB(VPWR),
     .VPWR(VPWR));
- sky130_fd_sc_hd__diode_2 \ANTENNA_clkgen.delay_155ns_1.genblk1[4].bypass_enable_B  (.DIODE(dlycontrol1_in[4]),
+ sky130_fd_sc_hd__diode_2 \ANTENNA_clkgen.delay_155ns_1.genblk1[2].control_invert_A  (.DIODE(dlycontrol1_in[2]),
+    .VGND(VGND),
+    .VNB(VGND),
+    .VPB(VPWR),
+    .VPWR(VPWR));
+ sky130_fd_sc_hd__diode_2 \ANTENNA_clkgen.delay_155ns_1.genblk1[2].dly_binary.and_bypass_switch_A_N  (.DIODE(\clkgen.delay_155ns_1.genblk1[2].dly_binary.bypass_in ),
+    .VGND(VGND),
+    .VNB(VGND),
+    .VPB(VPWR),
+    .VPWR(VPWR));
+ sky130_fd_sc_hd__diode_2 \ANTENNA_clkgen.delay_155ns_1.genblk1[2].dly_binary.out_mux_S  (.DIODE(\clkgen.delay_155ns_1.genblk1[2].dly_binary.bypass_in ),
+    .VGND(VGND),
+    .VNB(VGND),
+    .VPB(VPWR),
+    .VPWR(VPWR));
+ sky130_fd_sc_hd__diode_2 \ANTENNA_clkgen.delay_155ns_1.genblk1[3].control_invert_A  (.DIODE(dlycontrol1_in[3]),
+    .VGND(VGND),
+    .VNB(VGND),
+    .VPB(VPWR),
+    .VPWR(VPWR));
+ sky130_fd_sc_hd__diode_2 \ANTENNA_clkgen.delay_155ns_1.genblk1[3].dly_binary.and_bypass_switch_A_N  (.DIODE(\clkgen.delay_155ns_1.genblk1[3].dly_binary.bypass_in ),
+    .VGND(VGND),
+    .VNB(VGND),
+    .VPB(VPWR),
+    .VPWR(VPWR));
+ sky130_fd_sc_hd__diode_2 \ANTENNA_clkgen.delay_155ns_1.genblk1[3].dly_binary.out_mux_S  (.DIODE(\clkgen.delay_155ns_1.genblk1[3].dly_binary.bypass_in ),
+    .VGND(VGND),
+    .VNB(VGND),
+    .VPB(VPWR),
+    .VPWR(VPWR));
+ sky130_fd_sc_hd__diode_2 \ANTENNA_clkgen.delay_155ns_1.genblk1[4].control_invert_A  (.DIODE(dlycontrol1_in[4]),
+    .VGND(VGND),
+    .VNB(VGND),
+    .VPB(VPWR),
+    .VPWR(VPWR));
+ sky130_fd_sc_hd__diode_2 \ANTENNA_clkgen.delay_155ns_1.genblk1[4].dly_binary.and_bypass_switch_A_N  (.DIODE(\clkgen.delay_155ns_1.genblk1[4].dly_binary.bypass_in ),
+    .VGND(VGND),
+    .VNB(VGND),
+    .VPB(VPWR),
+    .VPWR(VPWR));
+ sky130_fd_sc_hd__diode_2 \ANTENNA_clkgen.delay_155ns_1.genblk1[4].dly_binary.and_bypass_switch_B  (.DIODE(\clkgen.delay_155ns_1.genblk1[3].dly_binary.out ),
     .VGND(VGND),
     .VNB(VGND),
     .VPB(VPWR),
@@ -315,27 +381,47 @@ module adc_clkgen_with_edgedetect (VGND,
     .VNB(VGND),
     .VPB(VPWR),
     .VPWR(VPWR));
+ sky130_fd_sc_hd__diode_2 \ANTENNA_clkgen.delay_155ns_1.genblk1[4].dly_binary.out_mux_A1  (.DIODE(\clkgen.delay_155ns_1.genblk1[3].dly_binary.out ),
+    .VGND(VGND),
+    .VNB(VGND),
+    .VPB(VPWR),
+    .VPWR(VPWR));
+ sky130_fd_sc_hd__diode_2 \ANTENNA_clkgen.delay_155ns_1.genblk1[4].dly_binary.out_mux_S  (.DIODE(\clkgen.delay_155ns_1.genblk1[4].dly_binary.bypass_in ),
+    .VGND(VGND),
+    .VNB(VGND),
+    .VPB(VPWR),
+    .VPWR(VPWR));
  sky130_fd_sc_hd__diode_2 \ANTENNA_clkgen.delay_155ns_2.enablebuffer_A  (.DIODE(enable_dlycontrol_in),
     .VGND(VGND),
     .VNB(VGND),
     .VPB(VPWR),
     .VPWR(VPWR));
- sky130_fd_sc_hd__diode_2 \ANTENNA_clkgen.delay_155ns_2.genblk1[0].bypass_enable_A  (.DIODE(\clkgen.delay_155ns_2.enable_dlycontrol_w ),
+ sky130_fd_sc_hd__diode_2 \ANTENNA_clkgen.delay_155ns_2.genblk1[0].control_invert_A  (.DIODE(dlycontrol2_in[0]),
     .VGND(VGND),
     .VNB(VGND),
     .VPB(VPWR),
     .VPWR(VPWR));
- sky130_fd_sc_hd__diode_2 \ANTENNA_clkgen.delay_155ns_2.genblk1[0].bypass_enable_B  (.DIODE(dlycontrol2_in[0]),
+ sky130_fd_sc_hd__diode_2 \ANTENNA_clkgen.delay_155ns_2.genblk1[0].dly_binary.and_bypass_switch_A_N  (.DIODE(\clkgen.delay_155ns_2.genblk1[0].dly_binary.bypass_in ),
     .VGND(VGND),
     .VNB(VGND),
     .VPB(VPWR),
     .VPWR(VPWR));
- sky130_fd_sc_hd__diode_2 \ANTENNA_clkgen.delay_155ns_2.genblk1[1].bypass_enable_A  (.DIODE(\clkgen.delay_155ns_2.enable_dlycontrol_w ),
+ sky130_fd_sc_hd__diode_2 \ANTENNA_clkgen.delay_155ns_2.genblk1[0].dly_binary.and_bypass_switch_B  (.DIODE(\clkgen.clk_dig_out ),
     .VGND(VGND),
     .VNB(VGND),
     .VPB(VPWR),
     .VPWR(VPWR));
- sky130_fd_sc_hd__diode_2 \ANTENNA_clkgen.delay_155ns_2.genblk1[1].bypass_enable_B  (.DIODE(dlycontrol2_in[1]),
+ sky130_fd_sc_hd__diode_2 \ANTENNA_clkgen.delay_155ns_2.genblk1[0].dly_binary.out_mux_A1  (.DIODE(\clkgen.clk_dig_out ),
+    .VGND(VGND),
+    .VNB(VGND),
+    .VPB(VPWR),
+    .VPWR(VPWR));
+ sky130_fd_sc_hd__diode_2 \ANTENNA_clkgen.delay_155ns_2.genblk1[0].dly_binary.out_mux_S  (.DIODE(\clkgen.delay_155ns_2.genblk1[0].dly_binary.bypass_in ),
+    .VGND(VGND),
+    .VNB(VGND),
+    .VPB(VPWR),
+    .VPWR(VPWR));
+ sky130_fd_sc_hd__diode_2 \ANTENNA_clkgen.delay_155ns_2.genblk1[1].control_invert_A  (.DIODE(dlycontrol2_in[1]),
     .VGND(VGND),
     .VNB(VGND),
     .VPB(VPWR),
@@ -350,37 +436,52 @@ module adc_clkgen_with_edgedetect (VGND,
     .VNB(VGND),
     .VPB(VPWR),
     .VPWR(VPWR));
- sky130_fd_sc_hd__diode_2 \ANTENNA_clkgen.delay_155ns_2.genblk1[2].bypass_enable_A  (.DIODE(\clkgen.delay_155ns_2.enable_dlycontrol_w ),
+ sky130_fd_sc_hd__diode_2 \ANTENNA_clkgen.delay_155ns_2.genblk1[2].control_invert_A  (.DIODE(dlycontrol2_in[2]),
     .VGND(VGND),
     .VNB(VGND),
     .VPB(VPWR),
     .VPWR(VPWR));
- sky130_fd_sc_hd__diode_2 \ANTENNA_clkgen.delay_155ns_2.genblk1[2].bypass_enable_B  (.DIODE(dlycontrol2_in[2]),
+ sky130_fd_sc_hd__diode_2 \ANTENNA_clkgen.delay_155ns_2.genblk1[2].dly_binary.and_bypass_switch_A_N  (.DIODE(\clkgen.delay_155ns_2.genblk1[2].dly_binary.bypass_in ),
     .VGND(VGND),
     .VNB(VGND),
     .VPB(VPWR),
     .VPWR(VPWR));
- sky130_fd_sc_hd__diode_2 \ANTENNA_clkgen.delay_155ns_2.genblk1[3].bypass_enable_A  (.DIODE(\clkgen.delay_155ns_2.enable_dlycontrol_w ),
+ sky130_fd_sc_hd__diode_2 \ANTENNA_clkgen.delay_155ns_2.genblk1[2].dly_binary.out_mux_S  (.DIODE(\clkgen.delay_155ns_2.genblk1[2].dly_binary.bypass_in ),
     .VGND(VGND),
     .VNB(VGND),
     .VPB(VPWR),
     .VPWR(VPWR));
- sky130_fd_sc_hd__diode_2 \ANTENNA_clkgen.delay_155ns_2.genblk1[3].bypass_enable_B  (.DIODE(dlycontrol2_in[3]),
+ sky130_fd_sc_hd__diode_2 \ANTENNA_clkgen.delay_155ns_2.genblk1[3].control_invert_A  (.DIODE(dlycontrol2_in[3]),
     .VGND(VGND),
     .VNB(VGND),
     .VPB(VPWR),
     .VPWR(VPWR));
- sky130_fd_sc_hd__diode_2 \ANTENNA_clkgen.delay_155ns_2.genblk1[4].bypass_enable_A  (.DIODE(\clkgen.delay_155ns_2.enable_dlycontrol_w ),
+ sky130_fd_sc_hd__diode_2 \ANTENNA_clkgen.delay_155ns_2.genblk1[3].dly_binary.and_bypass_switch_A_N  (.DIODE(\clkgen.delay_155ns_2.genblk1[3].dly_binary.bypass_in ),
     .VGND(VGND),
     .VNB(VGND),
     .VPB(VPWR),
     .VPWR(VPWR));
- sky130_fd_sc_hd__diode_2 \ANTENNA_clkgen.delay_155ns_2.genblk1[4].bypass_enable_B  (.DIODE(dlycontrol2_in[4]),
+ sky130_fd_sc_hd__diode_2 \ANTENNA_clkgen.delay_155ns_2.genblk1[3].dly_binary.out_mux_S  (.DIODE(\clkgen.delay_155ns_2.genblk1[3].dly_binary.bypass_in ),
+    .VGND(VGND),
+    .VNB(VGND),
+    .VPB(VPWR),
+    .VPWR(VPWR));
+ sky130_fd_sc_hd__diode_2 \ANTENNA_clkgen.delay_155ns_2.genblk1[4].control_invert_A  (.DIODE(dlycontrol2_in[4]),
+    .VGND(VGND),
+    .VNB(VGND),
+    .VPB(VPWR),
+    .VPWR(VPWR));
+ sky130_fd_sc_hd__diode_2 \ANTENNA_clkgen.delay_155ns_2.genblk1[4].dly_binary.and_bypass_switch_A_N  (.DIODE(\clkgen.delay_155ns_2.genblk1[4].dly_binary.bypass_in ),
     .VGND(VGND),
     .VNB(VGND),
     .VPB(VPWR),
     .VPWR(VPWR));
  sky130_fd_sc_hd__diode_2 \ANTENNA_clkgen.delay_155ns_2.genblk1[4].dly_binary.out_mux_A0  (.DIODE(\clkgen.delay_155ns_2.genblk1[4].dly_binary.signal_w[16] ),
+    .VGND(VGND),
+    .VNB(VGND),
+    .VPB(VPWR),
+    .VPWR(VPWR));
+ sky130_fd_sc_hd__diode_2 \ANTENNA_clkgen.delay_155ns_2.genblk1[4].dly_binary.out_mux_S  (.DIODE(\clkgen.delay_155ns_2.genblk1[4].dly_binary.bypass_in ),
     .VGND(VGND),
     .VNB(VGND),
     .VPB(VPWR),
@@ -395,7 +496,7 @@ module adc_clkgen_with_edgedetect (VGND,
     .VNB(VGND),
     .VPB(VPWR),
     .VPWR(VPWR));
- sky130_fd_sc_hd__diode_2 \ANTENNA_clkgen.delay_155ns_3.genblk1[0].bypass_enable_B  (.DIODE(dlycontrol3_in[0]),
+ sky130_fd_sc_hd__diode_2 \ANTENNA_clkgen.delay_155ns_3.genblk1[0].control_invert_A  (.DIODE(dlycontrol3_in[0]),
     .VGND(VGND),
     .VNB(VGND),
     .VPB(VPWR),
@@ -405,7 +506,7 @@ module adc_clkgen_with_edgedetect (VGND,
     .VNB(VGND),
     .VPB(VPWR),
     .VPWR(VPWR));
- sky130_fd_sc_hd__diode_2 \ANTENNA_clkgen.delay_155ns_3.genblk1[1].bypass_enable_B  (.DIODE(dlycontrol3_in[1]),
+ sky130_fd_sc_hd__diode_2 \ANTENNA_clkgen.delay_155ns_3.genblk1[1].control_invert_A  (.DIODE(dlycontrol3_in[1]),
     .VGND(VGND),
     .VNB(VGND),
     .VPB(VPWR),
@@ -415,7 +516,12 @@ module adc_clkgen_with_edgedetect (VGND,
     .VNB(VGND),
     .VPB(VPWR),
     .VPWR(VPWR));
- sky130_fd_sc_hd__diode_2 \ANTENNA_clkgen.delay_155ns_3.genblk1[2].bypass_enable_B  (.DIODE(dlycontrol3_in[2]),
+ sky130_fd_sc_hd__diode_2 \ANTENNA_clkgen.delay_155ns_3.genblk1[2].bypass_enable_B  (.DIODE(\clkgen.delay_155ns_3.bypass_enable_w[2] ),
+    .VGND(VGND),
+    .VNB(VGND),
+    .VPB(VPWR),
+    .VPWR(VPWR));
+ sky130_fd_sc_hd__diode_2 \ANTENNA_clkgen.delay_155ns_3.genblk1[2].control_invert_A  (.DIODE(dlycontrol3_in[2]),
     .VGND(VGND),
     .VNB(VGND),
     .VPB(VPWR),
@@ -425,7 +531,7 @@ module adc_clkgen_with_edgedetect (VGND,
     .VNB(VGND),
     .VPB(VPWR),
     .VPWR(VPWR));
- sky130_fd_sc_hd__diode_2 \ANTENNA_clkgen.delay_155ns_3.genblk1[3].bypass_enable_B  (.DIODE(dlycontrol3_in[3]),
+ sky130_fd_sc_hd__diode_2 \ANTENNA_clkgen.delay_155ns_3.genblk1[3].control_invert_A  (.DIODE(dlycontrol3_in[3]),
     .VGND(VGND),
     .VNB(VGND),
     .VPB(VPWR),
@@ -435,7 +541,7 @@ module adc_clkgen_with_edgedetect (VGND,
     .VNB(VGND),
     .VPB(VPWR),
     .VPWR(VPWR));
- sky130_fd_sc_hd__diode_2 \ANTENNA_clkgen.delay_155ns_3.genblk1[4].bypass_enable_B  (.DIODE(dlycontrol3_in[4]),
+ sky130_fd_sc_hd__diode_2 \ANTENNA_clkgen.delay_155ns_3.genblk1[4].control_invert_A  (.DIODE(dlycontrol3_in[4]),
     .VGND(VGND),
     .VNB(VGND),
     .VPB(VPWR),
@@ -450,7 +556,17 @@ module adc_clkgen_with_edgedetect (VGND,
     .VNB(VGND),
     .VPB(VPWR),
     .VPWR(VPWR));
- sky130_fd_sc_hd__diode_2 \ANTENNA_edgedetect.dly_315ns_1.genblk1[0].bypass_enable_B  (.DIODE(dlycontrol4_in[0]),
+ sky130_fd_sc_hd__diode_2 \ANTENNA_edgedetect.dly_315ns_1.genblk1[0].control_invert_A  (.DIODE(dlycontrol4_in[0]),
+    .VGND(VGND),
+    .VNB(VGND),
+    .VPB(VPWR),
+    .VPWR(VPWR));
+ sky130_fd_sc_hd__diode_2 \ANTENNA_edgedetect.dly_315ns_1.genblk1[0].dly_binary.and_bypass_switch_B  (.DIODE(\edgedetect.dly_315ns_1.genblk1[0].dly_binary.in ),
+    .VGND(VGND),
+    .VNB(VGND),
+    .VPB(VPWR),
+    .VPWR(VPWR));
+ sky130_fd_sc_hd__diode_2 \ANTENNA_edgedetect.dly_315ns_1.genblk1[0].dly_binary.out_mux_A1  (.DIODE(\edgedetect.dly_315ns_1.genblk1[0].dly_binary.in ),
     .VGND(VGND),
     .VNB(VGND),
     .VPB(VPWR),
@@ -460,7 +576,17 @@ module adc_clkgen_with_edgedetect (VGND,
     .VNB(VGND),
     .VPB(VPWR),
     .VPWR(VPWR));
- sky130_fd_sc_hd__diode_2 \ANTENNA_edgedetect.dly_315ns_1.genblk1[1].bypass_enable_B  (.DIODE(dlycontrol4_in[1]),
+ sky130_fd_sc_hd__diode_2 \ANTENNA_edgedetect.dly_315ns_1.genblk1[1].control_invert_A  (.DIODE(dlycontrol4_in[1]),
+    .VGND(VGND),
+    .VNB(VGND),
+    .VPB(VPWR),
+    .VPWR(VPWR));
+ sky130_fd_sc_hd__diode_2 \ANTENNA_edgedetect.dly_315ns_1.genblk1[1].dly_binary.and_bypass_switch_A_N  (.DIODE(\edgedetect.dly_315ns_1.genblk1[1].dly_binary.bypass_in ),
+    .VGND(VGND),
+    .VNB(VGND),
+    .VPB(VPWR),
+    .VPWR(VPWR));
+ sky130_fd_sc_hd__diode_2 \ANTENNA_edgedetect.dly_315ns_1.genblk1[1].dly_binary.out_mux_S  (.DIODE(\edgedetect.dly_315ns_1.genblk1[1].dly_binary.bypass_in ),
     .VGND(VGND),
     .VNB(VGND),
     .VPB(VPWR),
@@ -470,17 +596,7 @@ module adc_clkgen_with_edgedetect (VGND,
     .VNB(VGND),
     .VPB(VPWR),
     .VPWR(VPWR));
- sky130_fd_sc_hd__diode_2 \ANTENNA_edgedetect.dly_315ns_1.genblk1[2].bypass_enable_B  (.DIODE(dlycontrol4_in[2]),
-    .VGND(VGND),
-    .VNB(VGND),
-    .VPB(VPWR),
-    .VPWR(VPWR));
- sky130_fd_sc_hd__diode_2 \ANTENNA_edgedetect.dly_315ns_1.genblk1[2].dly_binary.and_bypass_switch_A_N  (.DIODE(\edgedetect.dly_315ns_1.genblk1[2].dly_binary.bypass_in ),
-    .VGND(VGND),
-    .VNB(VGND),
-    .VPB(VPWR),
-    .VPWR(VPWR));
- sky130_fd_sc_hd__diode_2 \ANTENNA_edgedetect.dly_315ns_1.genblk1[2].dly_binary.out_mux_S  (.DIODE(\edgedetect.dly_315ns_1.genblk1[2].dly_binary.bypass_in ),
+ sky130_fd_sc_hd__diode_2 \ANTENNA_edgedetect.dly_315ns_1.genblk1[2].control_invert_A  (.DIODE(dlycontrol4_in[2]),
     .VGND(VGND),
     .VNB(VGND),
     .VPB(VPWR),
@@ -490,17 +606,12 @@ module adc_clkgen_with_edgedetect (VGND,
     .VNB(VGND),
     .VPB(VPWR),
     .VPWR(VPWR));
- sky130_fd_sc_hd__diode_2 \ANTENNA_edgedetect.dly_315ns_1.genblk1[3].bypass_enable_B  (.DIODE(dlycontrol4_in[3]),
+ sky130_fd_sc_hd__diode_2 \ANTENNA_edgedetect.dly_315ns_1.genblk1[3].control_invert_A  (.DIODE(dlycontrol4_in[3]),
     .VGND(VGND),
     .VNB(VGND),
     .VPB(VPWR),
     .VPWR(VPWR));
  sky130_fd_sc_hd__diode_2 \ANTENNA_edgedetect.dly_315ns_1.genblk1[3].dly_binary.and_bypass_switch_A_N  (.DIODE(\edgedetect.dly_315ns_1.genblk1[3].dly_binary.bypass_in ),
-    .VGND(VGND),
-    .VNB(VGND),
-    .VPB(VPWR),
-    .VPWR(VPWR));
- sky130_fd_sc_hd__diode_2 \ANTENNA_edgedetect.dly_315ns_1.genblk1[3].dly_binary.genblk1[1].delay_unit_in  (.DIODE(\edgedetect.dly_315ns_1.genblk1[3].dly_binary.signal_w[1] ),
     .VGND(VGND),
     .VNB(VGND),
     .VPB(VPWR),
@@ -515,17 +626,12 @@ module adc_clkgen_with_edgedetect (VGND,
     .VNB(VGND),
     .VPB(VPWR),
     .VPWR(VPWR));
- sky130_fd_sc_hd__diode_2 \ANTENNA_edgedetect.dly_315ns_1.genblk1[4].bypass_enable_B  (.DIODE(dlycontrol4_in[4]),
+ sky130_fd_sc_hd__diode_2 \ANTENNA_edgedetect.dly_315ns_1.genblk1[4].control_invert_A  (.DIODE(dlycontrol4_in[4]),
     .VGND(VGND),
     .VNB(VGND),
     .VPB(VPWR),
     .VPWR(VPWR));
  sky130_fd_sc_hd__diode_2 \ANTENNA_edgedetect.dly_315ns_1.genblk1[4].dly_binary.and_bypass_switch_A_N  (.DIODE(\edgedetect.dly_315ns_1.genblk1[4].dly_binary.bypass_in ),
-    .VGND(VGND),
-    .VNB(VGND),
-    .VPB(VPWR),
-    .VPWR(VPWR));
- sky130_fd_sc_hd__diode_2 \ANTENNA_edgedetect.dly_315ns_1.genblk1[4].dly_binary.out_mux_A0  (.DIODE(\edgedetect.dly_315ns_1.genblk1[4].dly_binary.signal_w[16] ),
     .VGND(VGND),
     .VNB(VGND),
     .VPB(VPWR),
@@ -540,7 +646,17 @@ module adc_clkgen_with_edgedetect (VGND,
     .VNB(VGND),
     .VPB(VPWR),
     .VPWR(VPWR));
- sky130_fd_sc_hd__diode_2 \ANTENNA_edgedetect.dly_315ns_1.genblk1[5].bypass_enable_B  (.DIODE(dlycontrol4_in[5]),
+ sky130_fd_sc_hd__diode_2 \ANTENNA_edgedetect.dly_315ns_1.genblk1[5].control_invert_A  (.DIODE(dlycontrol4_in[5]),
+    .VGND(VGND),
+    .VNB(VGND),
+    .VPB(VPWR),
+    .VPWR(VPWR));
+ sky130_fd_sc_hd__diode_2 \ANTENNA_edgedetect.dly_315ns_1.genblk1[5].dly_binary.out_mux_A0  (.DIODE(\edgedetect.dly_315ns_1.genblk1[5].dly_binary.signal_w[32] ),
+    .VGND(VGND),
+    .VNB(VGND),
+    .VPB(VPWR),
+    .VPWR(VPWR));
+ sky130_fd_sc_hd__diode_2 \ANTENNA_edgedetect.nor1_B_N  (.DIODE(\edgedetect.dly_315ns_1.genblk1[0].dly_binary.in ),
     .VGND(VGND),
     .VNB(VGND),
     .VPB(VPWR),
@@ -556,6 +672,11 @@ module adc_clkgen_with_edgedetect (VGND,
     .VPB(VPWR),
     .VPWR(VPWR));
  sky130_fd_sc_hd__diode_2 ANTENNA_inbuf_3_A (.DIODE(ndecision_finish_in),
+    .VGND(VGND),
+    .VNB(VGND),
+    .VPB(VPWR),
+    .VPWR(VPWR));
+ sky130_fd_sc_hd__diode_2 ANTENNA_outbuf_1_A (.DIODE(\clkgen.clk_dig_out ),
     .VGND(VGND),
     .VNB(VGND),
     .VPB(VPWR),
@@ -991,12 +1112,18 @@ module adc_clkgen_with_edgedetect (VGND,
     .VPWR(VPWR),
     .X(\clkgen.delay_155ns_1.enable_dlycontrol_w ));
  sky130_fd_sc_hd__and2_1 \clkgen.delay_155ns_1.genblk1[0].bypass_enable  (.A(\clkgen.delay_155ns_1.enable_dlycontrol_w ),
-    .B(dlycontrol1_in[0]),
+    .B(\clkgen.delay_155ns_1.bypass_enable_w[0] ),
     .VGND(VGND),
     .VNB(VGND),
     .VPB(VPWR),
     .VPWR(VPWR),
     .X(\clkgen.delay_155ns_1.genblk1[0].dly_binary.bypass_in ));
+ sky130_fd_sc_hd__inv_2 \clkgen.delay_155ns_1.genblk1[0].control_invert  (.A(dlycontrol1_in[0]),
+    .VGND(VGND),
+    .VNB(VGND),
+    .VPB(VPWR),
+    .VPWR(VPWR),
+    .Y(\clkgen.delay_155ns_1.bypass_enable_w[0] ));
  sky130_fd_sc_hd__and2b_1 \clkgen.delay_155ns_1.genblk1[0].dly_binary.and_bypass_switch  (.A_N(\clkgen.delay_155ns_1.genblk1[0].dly_binary.bypass_in ),
     .B(\clkgen.delay_155ns_1.genblk1[0].dly_binary.in ),
     .VGND(VGND),
@@ -1019,12 +1146,18 @@ module adc_clkgen_with_edgedetect (VGND,
     .VPWR(VPWR),
     .X(\clkgen.delay_155ns_1.genblk1[0].dly_binary.out ));
  sky130_fd_sc_hd__and2_1 \clkgen.delay_155ns_1.genblk1[1].bypass_enable  (.A(\clkgen.delay_155ns_1.enable_dlycontrol_w ),
-    .B(dlycontrol1_in[1]),
+    .B(\clkgen.delay_155ns_1.bypass_enable_w[1] ),
     .VGND(VGND),
     .VNB(VGND),
     .VPB(VPWR),
     .VPWR(VPWR),
     .X(\clkgen.delay_155ns_1.genblk1[1].dly_binary.bypass_in ));
+ sky130_fd_sc_hd__inv_2 \clkgen.delay_155ns_1.genblk1[1].control_invert  (.A(dlycontrol1_in[1]),
+    .VGND(VGND),
+    .VNB(VGND),
+    .VPB(VPWR),
+    .VPWR(VPWR),
+    .Y(\clkgen.delay_155ns_1.bypass_enable_w[1] ));
  sky130_fd_sc_hd__and2b_1 \clkgen.delay_155ns_1.genblk1[1].dly_binary.and_bypass_switch  (.A_N(\clkgen.delay_155ns_1.genblk1[1].dly_binary.bypass_in ),
     .B(\clkgen.delay_155ns_1.genblk1[0].dly_binary.out ),
     .VGND(VGND),
@@ -1053,12 +1186,18 @@ module adc_clkgen_with_edgedetect (VGND,
     .VPWR(VPWR),
     .X(\clkgen.delay_155ns_1.genblk1[1].dly_binary.out ));
  sky130_fd_sc_hd__and2_1 \clkgen.delay_155ns_1.genblk1[2].bypass_enable  (.A(\clkgen.delay_155ns_1.enable_dlycontrol_w ),
-    .B(dlycontrol1_in[2]),
+    .B(\clkgen.delay_155ns_1.bypass_enable_w[2] ),
     .VGND(VGND),
     .VNB(VGND),
     .VPB(VPWR),
     .VPWR(VPWR),
     .X(\clkgen.delay_155ns_1.genblk1[2].dly_binary.bypass_in ));
+ sky130_fd_sc_hd__inv_2 \clkgen.delay_155ns_1.genblk1[2].control_invert  (.A(dlycontrol1_in[2]),
+    .VGND(VGND),
+    .VNB(VGND),
+    .VPB(VPWR),
+    .VPWR(VPWR),
+    .Y(\clkgen.delay_155ns_1.bypass_enable_w[2] ));
  sky130_fd_sc_hd__and2b_1 \clkgen.delay_155ns_1.genblk1[2].dly_binary.and_bypass_switch  (.A_N(\clkgen.delay_155ns_1.genblk1[2].dly_binary.bypass_in ),
     .B(\clkgen.delay_155ns_1.genblk1[1].dly_binary.out ),
     .VGND(VGND),
@@ -1099,12 +1238,18 @@ module adc_clkgen_with_edgedetect (VGND,
     .VPWR(VPWR),
     .X(\clkgen.delay_155ns_1.genblk1[2].dly_binary.out ));
  sky130_fd_sc_hd__and2_1 \clkgen.delay_155ns_1.genblk1[3].bypass_enable  (.A(\clkgen.delay_155ns_1.enable_dlycontrol_w ),
-    .B(dlycontrol1_in[3]),
+    .B(\clkgen.delay_155ns_1.bypass_enable_w[3] ),
     .VGND(VGND),
     .VNB(VGND),
     .VPB(VPWR),
     .VPWR(VPWR),
     .X(\clkgen.delay_155ns_1.genblk1[3].dly_binary.bypass_in ));
+ sky130_fd_sc_hd__inv_2 \clkgen.delay_155ns_1.genblk1[3].control_invert  (.A(dlycontrol1_in[3]),
+    .VGND(VGND),
+    .VNB(VGND),
+    .VPB(VPWR),
+    .VPWR(VPWR),
+    .Y(\clkgen.delay_155ns_1.bypass_enable_w[3] ));
  sky130_fd_sc_hd__and2b_1 \clkgen.delay_155ns_1.genblk1[3].dly_binary.and_bypass_switch  (.A_N(\clkgen.delay_155ns_1.genblk1[3].dly_binary.bypass_in ),
     .B(\clkgen.delay_155ns_1.genblk1[2].dly_binary.out ),
     .VGND(VGND),
@@ -1169,12 +1314,18 @@ module adc_clkgen_with_edgedetect (VGND,
     .VPWR(VPWR),
     .X(\clkgen.delay_155ns_1.genblk1[3].dly_binary.out ));
  sky130_fd_sc_hd__and2_1 \clkgen.delay_155ns_1.genblk1[4].bypass_enable  (.A(\clkgen.delay_155ns_1.enable_dlycontrol_w ),
-    .B(dlycontrol1_in[4]),
+    .B(\clkgen.delay_155ns_1.bypass_enable_w[4] ),
     .VGND(VGND),
     .VNB(VGND),
     .VPB(VPWR),
     .VPWR(VPWR),
     .X(\clkgen.delay_155ns_1.genblk1[4].dly_binary.bypass_in ));
+ sky130_fd_sc_hd__inv_2 \clkgen.delay_155ns_1.genblk1[4].control_invert  (.A(dlycontrol1_in[4]),
+    .VGND(VGND),
+    .VNB(VGND),
+    .VPB(VPWR),
+    .VPWR(VPWR),
+    .Y(\clkgen.delay_155ns_1.bypass_enable_w[4] ));
  sky130_fd_sc_hd__and2b_1 \clkgen.delay_155ns_1.genblk1[4].dly_binary.and_bypass_switch  (.A_N(\clkgen.delay_155ns_1.genblk1[4].dly_binary.bypass_in ),
     .B(\clkgen.delay_155ns_1.genblk1[3].dly_binary.out ),
     .VGND(VGND),
@@ -1293,12 +1444,18 @@ module adc_clkgen_with_edgedetect (VGND,
     .VPWR(VPWR),
     .X(\clkgen.delay_155ns_2.enable_dlycontrol_w ));
  sky130_fd_sc_hd__and2_1 \clkgen.delay_155ns_2.genblk1[0].bypass_enable  (.A(\clkgen.delay_155ns_2.enable_dlycontrol_w ),
-    .B(dlycontrol2_in[0]),
+    .B(\clkgen.delay_155ns_2.bypass_enable_w[0] ),
     .VGND(VGND),
     .VNB(VGND),
     .VPB(VPWR),
     .VPWR(VPWR),
     .X(\clkgen.delay_155ns_2.genblk1[0].dly_binary.bypass_in ));
+ sky130_fd_sc_hd__inv_2 \clkgen.delay_155ns_2.genblk1[0].control_invert  (.A(dlycontrol2_in[0]),
+    .VGND(VGND),
+    .VNB(VGND),
+    .VPB(VPWR),
+    .VPWR(VPWR),
+    .Y(\clkgen.delay_155ns_2.bypass_enable_w[0] ));
  sky130_fd_sc_hd__and2b_1 \clkgen.delay_155ns_2.genblk1[0].dly_binary.and_bypass_switch  (.A_N(\clkgen.delay_155ns_2.genblk1[0].dly_binary.bypass_in ),
     .B(\clkgen.clk_dig_out ),
     .VGND(VGND),
@@ -1321,12 +1478,18 @@ module adc_clkgen_with_edgedetect (VGND,
     .VPWR(VPWR),
     .X(\clkgen.delay_155ns_2.genblk1[0].dly_binary.out ));
  sky130_fd_sc_hd__and2_1 \clkgen.delay_155ns_2.genblk1[1].bypass_enable  (.A(\clkgen.delay_155ns_2.enable_dlycontrol_w ),
-    .B(dlycontrol2_in[1]),
+    .B(\clkgen.delay_155ns_2.bypass_enable_w[1] ),
     .VGND(VGND),
     .VNB(VGND),
     .VPB(VPWR),
     .VPWR(VPWR),
     .X(\clkgen.delay_155ns_2.genblk1[1].dly_binary.bypass_in ));
+ sky130_fd_sc_hd__inv_2 \clkgen.delay_155ns_2.genblk1[1].control_invert  (.A(dlycontrol2_in[1]),
+    .VGND(VGND),
+    .VNB(VGND),
+    .VPB(VPWR),
+    .VPWR(VPWR),
+    .Y(\clkgen.delay_155ns_2.bypass_enable_w[1] ));
  sky130_fd_sc_hd__and2b_1 \clkgen.delay_155ns_2.genblk1[1].dly_binary.and_bypass_switch  (.A_N(\clkgen.delay_155ns_2.genblk1[1].dly_binary.bypass_in ),
     .B(\clkgen.delay_155ns_2.genblk1[0].dly_binary.out ),
     .VGND(VGND),
@@ -1355,12 +1518,18 @@ module adc_clkgen_with_edgedetect (VGND,
     .VPWR(VPWR),
     .X(\clkgen.delay_155ns_2.genblk1[1].dly_binary.out ));
  sky130_fd_sc_hd__and2_1 \clkgen.delay_155ns_2.genblk1[2].bypass_enable  (.A(\clkgen.delay_155ns_2.enable_dlycontrol_w ),
-    .B(dlycontrol2_in[2]),
+    .B(\clkgen.delay_155ns_2.bypass_enable_w[2] ),
     .VGND(VGND),
     .VNB(VGND),
     .VPB(VPWR),
     .VPWR(VPWR),
     .X(\clkgen.delay_155ns_2.genblk1[2].dly_binary.bypass_in ));
+ sky130_fd_sc_hd__inv_2 \clkgen.delay_155ns_2.genblk1[2].control_invert  (.A(dlycontrol2_in[2]),
+    .VGND(VGND),
+    .VNB(VGND),
+    .VPB(VPWR),
+    .VPWR(VPWR),
+    .Y(\clkgen.delay_155ns_2.bypass_enable_w[2] ));
  sky130_fd_sc_hd__and2b_1 \clkgen.delay_155ns_2.genblk1[2].dly_binary.and_bypass_switch  (.A_N(\clkgen.delay_155ns_2.genblk1[2].dly_binary.bypass_in ),
     .B(\clkgen.delay_155ns_2.genblk1[1].dly_binary.out ),
     .VGND(VGND),
@@ -1401,12 +1570,18 @@ module adc_clkgen_with_edgedetect (VGND,
     .VPWR(VPWR),
     .X(\clkgen.delay_155ns_2.genblk1[2].dly_binary.out ));
  sky130_fd_sc_hd__and2_1 \clkgen.delay_155ns_2.genblk1[3].bypass_enable  (.A(\clkgen.delay_155ns_2.enable_dlycontrol_w ),
-    .B(dlycontrol2_in[3]),
+    .B(\clkgen.delay_155ns_2.bypass_enable_w[3] ),
     .VGND(VGND),
     .VNB(VGND),
     .VPB(VPWR),
     .VPWR(VPWR),
     .X(\clkgen.delay_155ns_2.genblk1[3].dly_binary.bypass_in ));
+ sky130_fd_sc_hd__inv_2 \clkgen.delay_155ns_2.genblk1[3].control_invert  (.A(dlycontrol2_in[3]),
+    .VGND(VGND),
+    .VNB(VGND),
+    .VPB(VPWR),
+    .VPWR(VPWR),
+    .Y(\clkgen.delay_155ns_2.bypass_enable_w[3] ));
  sky130_fd_sc_hd__and2b_1 \clkgen.delay_155ns_2.genblk1[3].dly_binary.and_bypass_switch  (.A_N(\clkgen.delay_155ns_2.genblk1[3].dly_binary.bypass_in ),
     .B(\clkgen.delay_155ns_2.genblk1[2].dly_binary.out ),
     .VGND(VGND),
@@ -1471,12 +1646,18 @@ module adc_clkgen_with_edgedetect (VGND,
     .VPWR(VPWR),
     .X(\clkgen.delay_155ns_2.genblk1[3].dly_binary.out ));
  sky130_fd_sc_hd__and2_1 \clkgen.delay_155ns_2.genblk1[4].bypass_enable  (.A(\clkgen.delay_155ns_2.enable_dlycontrol_w ),
-    .B(dlycontrol2_in[4]),
+    .B(\clkgen.delay_155ns_2.bypass_enable_w[4] ),
     .VGND(VGND),
     .VNB(VGND),
     .VPB(VPWR),
     .VPWR(VPWR),
     .X(\clkgen.delay_155ns_2.genblk1[4].dly_binary.bypass_in ));
+ sky130_fd_sc_hd__inv_2 \clkgen.delay_155ns_2.genblk1[4].control_invert  (.A(dlycontrol2_in[4]),
+    .VGND(VGND),
+    .VNB(VGND),
+    .VPB(VPWR),
+    .VPWR(VPWR),
+    .Y(\clkgen.delay_155ns_2.bypass_enable_w[4] ));
  sky130_fd_sc_hd__and2b_1 \clkgen.delay_155ns_2.genblk1[4].dly_binary.and_bypass_switch  (.A_N(\clkgen.delay_155ns_2.genblk1[4].dly_binary.bypass_in ),
     .B(\clkgen.delay_155ns_2.genblk1[3].dly_binary.out ),
     .VGND(VGND),
@@ -1595,12 +1776,18 @@ module adc_clkgen_with_edgedetect (VGND,
     .VPWR(VPWR),
     .X(\clkgen.delay_155ns_3.enable_dlycontrol_w ));
  sky130_fd_sc_hd__and2_1 \clkgen.delay_155ns_3.genblk1[0].bypass_enable  (.A(\clkgen.delay_155ns_3.enable_dlycontrol_w ),
-    .B(dlycontrol3_in[0]),
+    .B(\clkgen.delay_155ns_3.bypass_enable_w[0] ),
     .VGND(VGND),
     .VNB(VGND),
     .VPB(VPWR),
     .VPWR(VPWR),
     .X(\clkgen.delay_155ns_3.genblk1[0].dly_binary.bypass_in ));
+ sky130_fd_sc_hd__inv_2 \clkgen.delay_155ns_3.genblk1[0].control_invert  (.A(dlycontrol3_in[0]),
+    .VGND(VGND),
+    .VNB(VGND),
+    .VPB(VPWR),
+    .VPWR(VPWR),
+    .Y(\clkgen.delay_155ns_3.bypass_enable_w[0] ));
  sky130_fd_sc_hd__and2b_1 \clkgen.delay_155ns_3.genblk1[0].dly_binary.and_bypass_switch  (.A_N(\clkgen.delay_155ns_3.genblk1[0].dly_binary.bypass_in ),
     .B(\clkgen.delay_155ns_3.genblk1[0].dly_binary.in ),
     .VGND(VGND),
@@ -1623,12 +1810,18 @@ module adc_clkgen_with_edgedetect (VGND,
     .VPWR(VPWR),
     .X(\clkgen.delay_155ns_3.genblk1[0].dly_binary.out ));
  sky130_fd_sc_hd__and2_1 \clkgen.delay_155ns_3.genblk1[1].bypass_enable  (.A(\clkgen.delay_155ns_3.enable_dlycontrol_w ),
-    .B(dlycontrol3_in[1]),
+    .B(\clkgen.delay_155ns_3.bypass_enable_w[1] ),
     .VGND(VGND),
     .VNB(VGND),
     .VPB(VPWR),
     .VPWR(VPWR),
     .X(\clkgen.delay_155ns_3.genblk1[1].dly_binary.bypass_in ));
+ sky130_fd_sc_hd__inv_2 \clkgen.delay_155ns_3.genblk1[1].control_invert  (.A(dlycontrol3_in[1]),
+    .VGND(VGND),
+    .VNB(VGND),
+    .VPB(VPWR),
+    .VPWR(VPWR),
+    .Y(\clkgen.delay_155ns_3.bypass_enable_w[1] ));
  sky130_fd_sc_hd__and2b_1 \clkgen.delay_155ns_3.genblk1[1].dly_binary.and_bypass_switch  (.A_N(\clkgen.delay_155ns_3.genblk1[1].dly_binary.bypass_in ),
     .B(\clkgen.delay_155ns_3.genblk1[0].dly_binary.out ),
     .VGND(VGND),
@@ -1657,12 +1850,18 @@ module adc_clkgen_with_edgedetect (VGND,
     .VPWR(VPWR),
     .X(\clkgen.delay_155ns_3.genblk1[1].dly_binary.out ));
  sky130_fd_sc_hd__and2_1 \clkgen.delay_155ns_3.genblk1[2].bypass_enable  (.A(\clkgen.delay_155ns_3.enable_dlycontrol_w ),
-    .B(dlycontrol3_in[2]),
+    .B(\clkgen.delay_155ns_3.bypass_enable_w[2] ),
     .VGND(VGND),
     .VNB(VGND),
     .VPB(VPWR),
     .VPWR(VPWR),
     .X(\clkgen.delay_155ns_3.genblk1[2].dly_binary.bypass_in ));
+ sky130_fd_sc_hd__inv_2 \clkgen.delay_155ns_3.genblk1[2].control_invert  (.A(dlycontrol3_in[2]),
+    .VGND(VGND),
+    .VNB(VGND),
+    .VPB(VPWR),
+    .VPWR(VPWR),
+    .Y(\clkgen.delay_155ns_3.bypass_enable_w[2] ));
  sky130_fd_sc_hd__and2b_1 \clkgen.delay_155ns_3.genblk1[2].dly_binary.and_bypass_switch  (.A_N(\clkgen.delay_155ns_3.genblk1[2].dly_binary.bypass_in ),
     .B(\clkgen.delay_155ns_3.genblk1[1].dly_binary.out ),
     .VGND(VGND),
@@ -1703,12 +1902,18 @@ module adc_clkgen_with_edgedetect (VGND,
     .VPWR(VPWR),
     .X(\clkgen.delay_155ns_3.genblk1[2].dly_binary.out ));
  sky130_fd_sc_hd__and2_1 \clkgen.delay_155ns_3.genblk1[3].bypass_enable  (.A(\clkgen.delay_155ns_3.enable_dlycontrol_w ),
-    .B(dlycontrol3_in[3]),
+    .B(\clkgen.delay_155ns_3.bypass_enable_w[3] ),
     .VGND(VGND),
     .VNB(VGND),
     .VPB(VPWR),
     .VPWR(VPWR),
     .X(\clkgen.delay_155ns_3.genblk1[3].dly_binary.bypass_in ));
+ sky130_fd_sc_hd__inv_2 \clkgen.delay_155ns_3.genblk1[3].control_invert  (.A(dlycontrol3_in[3]),
+    .VGND(VGND),
+    .VNB(VGND),
+    .VPB(VPWR),
+    .VPWR(VPWR),
+    .Y(\clkgen.delay_155ns_3.bypass_enable_w[3] ));
  sky130_fd_sc_hd__and2b_1 \clkgen.delay_155ns_3.genblk1[3].dly_binary.and_bypass_switch  (.A_N(\clkgen.delay_155ns_3.genblk1[3].dly_binary.bypass_in ),
     .B(\clkgen.delay_155ns_3.genblk1[2].dly_binary.out ),
     .VGND(VGND),
@@ -1773,12 +1978,18 @@ module adc_clkgen_with_edgedetect (VGND,
     .VPWR(VPWR),
     .X(\clkgen.delay_155ns_3.genblk1[3].dly_binary.out ));
  sky130_fd_sc_hd__and2_1 \clkgen.delay_155ns_3.genblk1[4].bypass_enable  (.A(\clkgen.delay_155ns_3.enable_dlycontrol_w ),
-    .B(dlycontrol3_in[4]),
+    .B(\clkgen.delay_155ns_3.bypass_enable_w[4] ),
     .VGND(VGND),
     .VNB(VGND),
     .VPB(VPWR),
     .VPWR(VPWR),
     .X(\clkgen.delay_155ns_3.genblk1[4].dly_binary.bypass_in ));
+ sky130_fd_sc_hd__inv_2 \clkgen.delay_155ns_3.genblk1[4].control_invert  (.A(dlycontrol3_in[4]),
+    .VGND(VGND),
+    .VNB(VGND),
+    .VPB(VPWR),
+    .VPWR(VPWR),
+    .Y(\clkgen.delay_155ns_3.bypass_enable_w[4] ));
  sky130_fd_sc_hd__and2b_1 \clkgen.delay_155ns_3.genblk1[4].dly_binary.and_bypass_switch  (.A_N(\clkgen.delay_155ns_3.genblk1[4].dly_binary.bypass_in ),
     .B(\clkgen.delay_155ns_3.genblk1[3].dly_binary.out ),
     .VGND(VGND),
@@ -1904,12 +2115,18 @@ module adc_clkgen_with_edgedetect (VGND,
     .VPWR(VPWR),
     .X(\edgedetect.dly_315ns_1.enable_dlycontrol_w ));
  sky130_fd_sc_hd__and2_1 \edgedetect.dly_315ns_1.genblk1[0].bypass_enable  (.A(\edgedetect.dly_315ns_1.enable_dlycontrol_w ),
-    .B(dlycontrol4_in[0]),
+    .B(\edgedetect.dly_315ns_1.bypass_enable_w[0] ),
     .VGND(VGND),
     .VNB(VGND),
     .VPB(VPWR),
     .VPWR(VPWR),
     .X(\edgedetect.dly_315ns_1.genblk1[0].dly_binary.bypass_in ));
+ sky130_fd_sc_hd__inv_2 \edgedetect.dly_315ns_1.genblk1[0].control_invert  (.A(dlycontrol4_in[0]),
+    .VGND(VGND),
+    .VNB(VGND),
+    .VPB(VPWR),
+    .VPWR(VPWR),
+    .Y(\edgedetect.dly_315ns_1.bypass_enable_w[0] ));
  sky130_fd_sc_hd__and2b_1 \edgedetect.dly_315ns_1.genblk1[0].dly_binary.and_bypass_switch  (.A_N(\edgedetect.dly_315ns_1.genblk1[0].dly_binary.bypass_in ),
     .B(\edgedetect.dly_315ns_1.genblk1[0].dly_binary.in ),
     .VGND(VGND),
@@ -1932,12 +2149,18 @@ module adc_clkgen_with_edgedetect (VGND,
     .VPWR(VPWR),
     .X(\edgedetect.dly_315ns_1.genblk1[0].dly_binary.out ));
  sky130_fd_sc_hd__and2_1 \edgedetect.dly_315ns_1.genblk1[1].bypass_enable  (.A(\edgedetect.dly_315ns_1.enable_dlycontrol_w ),
-    .B(dlycontrol4_in[1]),
+    .B(\edgedetect.dly_315ns_1.bypass_enable_w[1] ),
     .VGND(VGND),
     .VNB(VGND),
     .VPB(VPWR),
     .VPWR(VPWR),
     .X(\edgedetect.dly_315ns_1.genblk1[1].dly_binary.bypass_in ));
+ sky130_fd_sc_hd__inv_2 \edgedetect.dly_315ns_1.genblk1[1].control_invert  (.A(dlycontrol4_in[1]),
+    .VGND(VGND),
+    .VNB(VGND),
+    .VPB(VPWR),
+    .VPWR(VPWR),
+    .Y(\edgedetect.dly_315ns_1.bypass_enable_w[1] ));
  sky130_fd_sc_hd__and2b_1 \edgedetect.dly_315ns_1.genblk1[1].dly_binary.and_bypass_switch  (.A_N(\edgedetect.dly_315ns_1.genblk1[1].dly_binary.bypass_in ),
     .B(\edgedetect.dly_315ns_1.genblk1[0].dly_binary.out ),
     .VGND(VGND),
@@ -1966,12 +2189,18 @@ module adc_clkgen_with_edgedetect (VGND,
     .VPWR(VPWR),
     .X(\edgedetect.dly_315ns_1.genblk1[1].dly_binary.out ));
  sky130_fd_sc_hd__and2_1 \edgedetect.dly_315ns_1.genblk1[2].bypass_enable  (.A(\edgedetect.dly_315ns_1.enable_dlycontrol_w ),
-    .B(dlycontrol4_in[2]),
+    .B(\edgedetect.dly_315ns_1.bypass_enable_w[2] ),
     .VGND(VGND),
     .VNB(VGND),
     .VPB(VPWR),
     .VPWR(VPWR),
     .X(\edgedetect.dly_315ns_1.genblk1[2].dly_binary.bypass_in ));
+ sky130_fd_sc_hd__inv_2 \edgedetect.dly_315ns_1.genblk1[2].control_invert  (.A(dlycontrol4_in[2]),
+    .VGND(VGND),
+    .VNB(VGND),
+    .VPB(VPWR),
+    .VPWR(VPWR),
+    .Y(\edgedetect.dly_315ns_1.bypass_enable_w[2] ));
  sky130_fd_sc_hd__and2b_1 \edgedetect.dly_315ns_1.genblk1[2].dly_binary.and_bypass_switch  (.A_N(\edgedetect.dly_315ns_1.genblk1[2].dly_binary.bypass_in ),
     .B(\edgedetect.dly_315ns_1.genblk1[1].dly_binary.out ),
     .VGND(VGND),
@@ -2012,12 +2241,18 @@ module adc_clkgen_with_edgedetect (VGND,
     .VPWR(VPWR),
     .X(\edgedetect.dly_315ns_1.genblk1[2].dly_binary.out ));
  sky130_fd_sc_hd__and2_1 \edgedetect.dly_315ns_1.genblk1[3].bypass_enable  (.A(\edgedetect.dly_315ns_1.enable_dlycontrol_w ),
-    .B(dlycontrol4_in[3]),
+    .B(\edgedetect.dly_315ns_1.bypass_enable_w[3] ),
     .VGND(VGND),
     .VNB(VGND),
     .VPB(VPWR),
     .VPWR(VPWR),
     .X(\edgedetect.dly_315ns_1.genblk1[3].dly_binary.bypass_in ));
+ sky130_fd_sc_hd__inv_2 \edgedetect.dly_315ns_1.genblk1[3].control_invert  (.A(dlycontrol4_in[3]),
+    .VGND(VGND),
+    .VNB(VGND),
+    .VPB(VPWR),
+    .VPWR(VPWR),
+    .Y(\edgedetect.dly_315ns_1.bypass_enable_w[3] ));
  sky130_fd_sc_hd__and2b_1 \edgedetect.dly_315ns_1.genblk1[3].dly_binary.and_bypass_switch  (.A_N(\edgedetect.dly_315ns_1.genblk1[3].dly_binary.bypass_in ),
     .B(\edgedetect.dly_315ns_1.genblk1[2].dly_binary.out ),
     .VGND(VGND),
@@ -2082,12 +2317,18 @@ module adc_clkgen_with_edgedetect (VGND,
     .VPWR(VPWR),
     .X(\edgedetect.dly_315ns_1.genblk1[3].dly_binary.out ));
  sky130_fd_sc_hd__and2_1 \edgedetect.dly_315ns_1.genblk1[4].bypass_enable  (.A(\edgedetect.dly_315ns_1.enable_dlycontrol_w ),
-    .B(dlycontrol4_in[4]),
+    .B(\edgedetect.dly_315ns_1.bypass_enable_w[4] ),
     .VGND(VGND),
     .VNB(VGND),
     .VPB(VPWR),
     .VPWR(VPWR),
     .X(\edgedetect.dly_315ns_1.genblk1[4].dly_binary.bypass_in ));
+ sky130_fd_sc_hd__inv_2 \edgedetect.dly_315ns_1.genblk1[4].control_invert  (.A(dlycontrol4_in[4]),
+    .VGND(VGND),
+    .VNB(VGND),
+    .VPB(VPWR),
+    .VPWR(VPWR),
+    .Y(\edgedetect.dly_315ns_1.bypass_enable_w[4] ));
  sky130_fd_sc_hd__and2b_1 \edgedetect.dly_315ns_1.genblk1[4].dly_binary.and_bypass_switch  (.A_N(\edgedetect.dly_315ns_1.genblk1[4].dly_binary.bypass_in ),
     .B(\edgedetect.dly_315ns_1.genblk1[3].dly_binary.out ),
     .VGND(VGND),
@@ -2200,12 +2441,18 @@ module adc_clkgen_with_edgedetect (VGND,
     .VPWR(VPWR),
     .X(\edgedetect.dly_315ns_1.genblk1[4].dly_binary.out ));
  sky130_fd_sc_hd__and2_1 \edgedetect.dly_315ns_1.genblk1[5].bypass_enable  (.A(\edgedetect.dly_315ns_1.enable_dlycontrol_w ),
-    .B(dlycontrol4_in[5]),
+    .B(\edgedetect.dly_315ns_1.bypass_enable_w[5] ),
     .VGND(VGND),
     .VNB(VGND),
     .VPB(VPWR),
     .VPWR(VPWR),
     .X(\edgedetect.dly_315ns_1.genblk1[5].dly_binary.bypass_in ));
+ sky130_fd_sc_hd__inv_2 \edgedetect.dly_315ns_1.genblk1[5].control_invert  (.A(dlycontrol4_in[5]),
+    .VGND(VGND),
+    .VNB(VGND),
+    .VPB(VPWR),
+    .VPWR(VPWR),
+    .Y(\edgedetect.dly_315ns_1.bypass_enable_w[5] ));
  sky130_fd_sc_hd__and2b_1 \edgedetect.dly_315ns_1.genblk1[5].dly_binary.and_bypass_switch  (.A_N(\edgedetect.dly_315ns_1.genblk1[5].dly_binary.bypass_in ),
     .B(\edgedetect.dly_315ns_1.genblk1[4].dly_binary.out ),
     .VGND(VGND),

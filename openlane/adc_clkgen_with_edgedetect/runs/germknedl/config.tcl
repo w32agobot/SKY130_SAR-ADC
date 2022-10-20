@@ -246,7 +246,7 @@ set ::env(RUN_SIMPLE_CTS) {0}
 set ::env(RUN_SPEF_EXTRACTION) {1}
 set ::env(RUN_TAG) {germknedl}
 set ::env(SPEF_EXTRACTOR) {openrcx}
-set ::env(START_TIME) {2022.10.18_13.08.07}
+set ::env(START_TIME) {2022.10.18_14.37.18}
 set ::env(STA_REPORT_POWER) {1}
 set ::env(STD_CELL_GROUND_PINS) {VGND VNB}
 set ::env(STD_CELL_LIBRARY_CDL) {/foss/pdk/sky130A/libs.ref/sky130_fd_sc_hd/cdl/sky130_fd_sc_hd.cdl}
@@ -385,7 +385,7 @@ set ::env(CURRENT_SPEF) {/foss/designs/SKY130_SAR-ADC/openlane/adc_clkgen_with_e
 set ::env(CURRENT_STEP) {}
 set ::env(CVC_SCRIPTS_DIR) {/foss/pdk/sky130A/libs.tech/openlane/cvc}
 set ::env(DATA_WIRE_RC_LAYER) {met2}
-set ::env(DBUS_SESSION_BUS_ADDRESS) {unix:abstract=/tmp/dbus-zAyyyYCYD4,guid=4683b32c25a2d61707c79811634ea484}
+set ::env(DBUS_SESSION_BUS_ADDRESS) {unix:abstract=/tmp/dbus-qFy9Xcs6r6,guid=4fca230aeaaa3c496949a364634eb9dc}
 set ::env(DECAP_CELL) {sky130_ef_sc_hd__decap_12 sky130_fd_sc_hd__decap_8 sky130_fd_sc_hd__decap_6 sky130_fd_sc_hd__decap_4 sky130_fd_sc_hd__decap_3}
 set ::env(DEFAULT_MAX_TRAN) {0.75}
 set ::env(DEF_UNITS_PER_MICRON) {1000}
@@ -656,14 +656,14 @@ set ::env(SAVE_SDC) {/foss/designs/SKY130_SAR-ADC/openlane/adc_clkgen_with_edged
 set ::env(SAVE_SDF) {/foss/designs/SKY130_SAR-ADC/openlane/adc_clkgen_with_edgedetect/runs/germknedl/results/routing/adc_clkgen_with_edgedetect.sdf}
 set ::env(SAVE_SPEF) {/foss/designs/SKY130_SAR-ADC/openlane/adc_clkgen_with_edgedetect/runs/germknedl/results/routing/adc_clkgen_with_edgedetect.nom.spef}
 set ::env(SCRIPTS_DIR) {/foss/tools/openlane/2022.09/scripts}
-set ::env(SESSION_MANAGER) {local/unix:@/tmp/.ICE-unix/45,unix/unix:/tmp/.ICE-unix/45}
+set ::env(SESSION_MANAGER) {local/unix:@/tmp/.ICE-unix/48,unix/unix:/tmp/.ICE-unix/48}
 set ::env(SHLVL) {2}
 set ::env(SPEF_EXTRACTOR) {openrcx}
 set ::env(SPEF_PREFIX) {/foss/designs/SKY130_SAR-ADC/openlane/adc_clkgen_with_edgedetect/runs/germknedl/results/routing/adc_clkgen_with_edgedetect}
 set ::env(SSH_AGENT_PID) {115}
-set ::env(SSH_AUTH_SOCK) {/tmp/ssh-XXXXXX5gz2gf/agent.114}
+set ::env(SSH_AUTH_SOCK) {/tmp/ssh-XXXXXXKzK4SS/agent.114}
 set ::env(STARTUPDIR) {/dockerstartup}
-set ::env(START_TIME) {2022.10.18_13.08.07}
+set ::env(START_TIME) {2022.10.18_14.37.18}
 set ::env(STA_LEF) {/foss/designs/SKY130_SAR-ADC/openlane/adc_clkgen_with_edgedetect/runs/germknedl/tmp/merged.nom.lef}
 set ::env(STA_PRE_CTS) {0}
 set ::env(STA_REPORT_POWER) {1}
@@ -769,6 +769,6 @@ set ::env(synthesis_logs) {/foss/designs/SKY130_SAR-ADC/openlane/adc_clkgen_with
 set ::env(synthesis_reports) {/foss/designs/SKY130_SAR-ADC/openlane/adc_clkgen_with_edgedetect/runs/germknedl/reports/synthesis}
 set ::env(synthesis_results) {/foss/designs/SKY130_SAR-ADC/openlane/adc_clkgen_with_edgedetect/runs/germknedl/results/synthesis}
 set ::env(synthesis_tmpfiles) {/foss/designs/SKY130_SAR-ADC/openlane/adc_clkgen_with_edgedetect/runs/germknedl/tmp/synthesis}
-set ::env(timer_end) {1666098637}
-set ::env(timer_routed) {1666098570}
-set ::env(timer_start) {1666098486}
+set ::env(timer_end) {1666103968}
+set ::env(timer_routed) {1666103926}
+set ::env(timer_start) {1666103838}

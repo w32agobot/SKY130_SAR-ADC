@@ -8,6 +8,11 @@ module adc_clkgen_with_edgedetect(ena_in, start_conv_in, ndecision_finish_in, cl
   wire \clkgen.clk_comp_out ;
   wire \clkgen.clk_dig_delayed_w ;
   wire \clkgen.clk_dig_out ;
+  wire \clkgen.delay_155ns_1.bypass_enable_w[0] ;
+  wire \clkgen.delay_155ns_1.bypass_enable_w[1] ;
+  wire \clkgen.delay_155ns_1.bypass_enable_w[2] ;
+  wire \clkgen.delay_155ns_1.bypass_enable_w[3] ;
+  wire \clkgen.delay_155ns_1.bypass_enable_w[4] ;
   wire \clkgen.delay_155ns_1.enable_dlycontrol_w ;
   wire \clkgen.delay_155ns_1.genblk1[0].dly_binary.bypass_in ;
   wire \clkgen.delay_155ns_1.genblk1[0].dly_binary.in ;
@@ -56,6 +61,11 @@ module adc_clkgen_with_edgedetect(ena_in, start_conv_in, ndecision_finish_in, cl
   wire \clkgen.delay_155ns_1.genblk1[4].dly_binary.signal_w[7] ;
   wire \clkgen.delay_155ns_1.genblk1[4].dly_binary.signal_w[8] ;
   wire \clkgen.delay_155ns_1.genblk1[4].dly_binary.signal_w[9] ;
+  wire \clkgen.delay_155ns_2.bypass_enable_w[0] ;
+  wire \clkgen.delay_155ns_2.bypass_enable_w[1] ;
+  wire \clkgen.delay_155ns_2.bypass_enable_w[2] ;
+  wire \clkgen.delay_155ns_2.bypass_enable_w[3] ;
+  wire \clkgen.delay_155ns_2.bypass_enable_w[4] ;
   wire \clkgen.delay_155ns_2.enable_dlycontrol_w ;
   wire \clkgen.delay_155ns_2.genblk1[0].dly_binary.bypass_in ;
   wire \clkgen.delay_155ns_2.genblk1[0].dly_binary.out ;
@@ -102,6 +112,11 @@ module adc_clkgen_with_edgedetect(ena_in, start_conv_in, ndecision_finish_in, cl
   wire \clkgen.delay_155ns_2.genblk1[4].dly_binary.signal_w[7] ;
   wire \clkgen.delay_155ns_2.genblk1[4].dly_binary.signal_w[8] ;
   wire \clkgen.delay_155ns_2.genblk1[4].dly_binary.signal_w[9] ;
+  wire \clkgen.delay_155ns_3.bypass_enable_w[0] ;
+  wire \clkgen.delay_155ns_3.bypass_enable_w[1] ;
+  wire \clkgen.delay_155ns_3.bypass_enable_w[2] ;
+  wire \clkgen.delay_155ns_3.bypass_enable_w[3] ;
+  wire \clkgen.delay_155ns_3.bypass_enable_w[4] ;
   wire \clkgen.delay_155ns_3.enable_dlycontrol_w ;
   wire \clkgen.delay_155ns_3.genblk1[0].dly_binary.bypass_in ;
   wire \clkgen.delay_155ns_3.genblk1[0].dly_binary.in ;
@@ -158,6 +173,12 @@ module adc_clkgen_with_edgedetect(ena_in, start_conv_in, ndecision_finish_in, cl
   wire [4:0] dlycontrol3_in;
   input [5:0] dlycontrol4_in;
   wire [5:0] dlycontrol4_in;
+  wire \edgedetect.dly_315ns_1.bypass_enable_w[0] ;
+  wire \edgedetect.dly_315ns_1.bypass_enable_w[1] ;
+  wire \edgedetect.dly_315ns_1.bypass_enable_w[2] ;
+  wire \edgedetect.dly_315ns_1.bypass_enable_w[3] ;
+  wire \edgedetect.dly_315ns_1.bypass_enable_w[4] ;
+  wire \edgedetect.dly_315ns_1.bypass_enable_w[5] ;
   wire \edgedetect.dly_315ns_1.enable_dlycontrol_w ;
   wire \edgedetect.dly_315ns_1.genblk1[0].dly_binary.bypass_in ;
   wire \edgedetect.dly_315ns_1.genblk1[0].dly_binary.in ;
@@ -277,8 +298,12 @@ module adc_clkgen_with_edgedetect(ena_in, start_conv_in, ndecision_finish_in, cl
   );
   sky130_fd_sc_hd__and2_1 \clkgen.delay_155ns_1.genblk1[0].bypass_enable  (
     .A(\clkgen.delay_155ns_1.enable_dlycontrol_w ),
-    .B(dlycontrol1_in[0]),
+    .B(\clkgen.delay_155ns_1.bypass_enable_w[0] ),
     .X(\clkgen.delay_155ns_1.genblk1[0].dly_binary.bypass_in )
+  );
+  sky130_fd_sc_hd__inv_2 \clkgen.delay_155ns_1.genblk1[0].control_invert  (
+    .A(dlycontrol1_in[0]),
+    .Y(\clkgen.delay_155ns_1.bypass_enable_w[0] )
   );
   sky130_fd_sc_hd__and2b_1 \clkgen.delay_155ns_1.genblk1[0].dly_binary.and_bypass_switch  (
     .A_N(\clkgen.delay_155ns_1.genblk1[0].dly_binary.bypass_in ),
@@ -297,8 +322,12 @@ module adc_clkgen_with_edgedetect(ena_in, start_conv_in, ndecision_finish_in, cl
   );
   sky130_fd_sc_hd__and2_1 \clkgen.delay_155ns_1.genblk1[1].bypass_enable  (
     .A(\clkgen.delay_155ns_1.enable_dlycontrol_w ),
-    .B(dlycontrol1_in[1]),
+    .B(\clkgen.delay_155ns_1.bypass_enable_w[1] ),
     .X(\clkgen.delay_155ns_1.genblk1[1].dly_binary.bypass_in )
+  );
+  sky130_fd_sc_hd__inv_2 \clkgen.delay_155ns_1.genblk1[1].control_invert  (
+    .A(dlycontrol1_in[1]),
+    .Y(\clkgen.delay_155ns_1.bypass_enable_w[1] )
   );
   sky130_fd_sc_hd__and2b_1 \clkgen.delay_155ns_1.genblk1[1].dly_binary.and_bypass_switch  (
     .A_N(\clkgen.delay_155ns_1.genblk1[1].dly_binary.bypass_in ),
@@ -321,8 +350,12 @@ module adc_clkgen_with_edgedetect(ena_in, start_conv_in, ndecision_finish_in, cl
   );
   sky130_fd_sc_hd__and2_1 \clkgen.delay_155ns_1.genblk1[2].bypass_enable  (
     .A(\clkgen.delay_155ns_1.enable_dlycontrol_w ),
-    .B(dlycontrol1_in[2]),
+    .B(\clkgen.delay_155ns_1.bypass_enable_w[2] ),
     .X(\clkgen.delay_155ns_1.genblk1[2].dly_binary.bypass_in )
+  );
+  sky130_fd_sc_hd__inv_2 \clkgen.delay_155ns_1.genblk1[2].control_invert  (
+    .A(dlycontrol1_in[2]),
+    .Y(\clkgen.delay_155ns_1.bypass_enable_w[2] )
   );
   sky130_fd_sc_hd__and2b_1 \clkgen.delay_155ns_1.genblk1[2].dly_binary.and_bypass_switch  (
     .A_N(\clkgen.delay_155ns_1.genblk1[2].dly_binary.bypass_in ),
@@ -353,8 +386,12 @@ module adc_clkgen_with_edgedetect(ena_in, start_conv_in, ndecision_finish_in, cl
   );
   sky130_fd_sc_hd__and2_1 \clkgen.delay_155ns_1.genblk1[3].bypass_enable  (
     .A(\clkgen.delay_155ns_1.enable_dlycontrol_w ),
-    .B(dlycontrol1_in[3]),
+    .B(\clkgen.delay_155ns_1.bypass_enable_w[3] ),
     .X(\clkgen.delay_155ns_1.genblk1[3].dly_binary.bypass_in )
+  );
+  sky130_fd_sc_hd__inv_2 \clkgen.delay_155ns_1.genblk1[3].control_invert  (
+    .A(dlycontrol1_in[3]),
+    .Y(\clkgen.delay_155ns_1.bypass_enable_w[3] )
   );
   sky130_fd_sc_hd__and2b_1 \clkgen.delay_155ns_1.genblk1[3].dly_binary.and_bypass_switch  (
     .A_N(\clkgen.delay_155ns_1.genblk1[3].dly_binary.bypass_in ),
@@ -401,8 +438,12 @@ module adc_clkgen_with_edgedetect(ena_in, start_conv_in, ndecision_finish_in, cl
   );
   sky130_fd_sc_hd__and2_1 \clkgen.delay_155ns_1.genblk1[4].bypass_enable  (
     .A(\clkgen.delay_155ns_1.enable_dlycontrol_w ),
-    .B(dlycontrol1_in[4]),
+    .B(\clkgen.delay_155ns_1.bypass_enable_w[4] ),
     .X(\clkgen.delay_155ns_1.genblk1[4].dly_binary.bypass_in )
+  );
+  sky130_fd_sc_hd__inv_2 \clkgen.delay_155ns_1.genblk1[4].control_invert  (
+    .A(dlycontrol1_in[4]),
+    .Y(\clkgen.delay_155ns_1.bypass_enable_w[4] )
   );
   sky130_fd_sc_hd__and2b_1 \clkgen.delay_155ns_1.genblk1[4].dly_binary.and_bypass_switch  (
     .A_N(\clkgen.delay_155ns_1.genblk1[4].dly_binary.bypass_in ),
@@ -485,8 +526,12 @@ module adc_clkgen_with_edgedetect(ena_in, start_conv_in, ndecision_finish_in, cl
   );
   sky130_fd_sc_hd__and2_1 \clkgen.delay_155ns_2.genblk1[0].bypass_enable  (
     .A(\clkgen.delay_155ns_2.enable_dlycontrol_w ),
-    .B(dlycontrol2_in[0]),
+    .B(\clkgen.delay_155ns_2.bypass_enable_w[0] ),
     .X(\clkgen.delay_155ns_2.genblk1[0].dly_binary.bypass_in )
+  );
+  sky130_fd_sc_hd__inv_2 \clkgen.delay_155ns_2.genblk1[0].control_invert  (
+    .A(dlycontrol2_in[0]),
+    .Y(\clkgen.delay_155ns_2.bypass_enable_w[0] )
   );
   sky130_fd_sc_hd__and2b_1 \clkgen.delay_155ns_2.genblk1[0].dly_binary.and_bypass_switch  (
     .A_N(\clkgen.delay_155ns_2.genblk1[0].dly_binary.bypass_in ),
@@ -505,8 +550,12 @@ module adc_clkgen_with_edgedetect(ena_in, start_conv_in, ndecision_finish_in, cl
   );
   sky130_fd_sc_hd__and2_1 \clkgen.delay_155ns_2.genblk1[1].bypass_enable  (
     .A(\clkgen.delay_155ns_2.enable_dlycontrol_w ),
-    .B(dlycontrol2_in[1]),
+    .B(\clkgen.delay_155ns_2.bypass_enable_w[1] ),
     .X(\clkgen.delay_155ns_2.genblk1[1].dly_binary.bypass_in )
+  );
+  sky130_fd_sc_hd__inv_2 \clkgen.delay_155ns_2.genblk1[1].control_invert  (
+    .A(dlycontrol2_in[1]),
+    .Y(\clkgen.delay_155ns_2.bypass_enable_w[1] )
   );
   sky130_fd_sc_hd__and2b_1 \clkgen.delay_155ns_2.genblk1[1].dly_binary.and_bypass_switch  (
     .A_N(\clkgen.delay_155ns_2.genblk1[1].dly_binary.bypass_in ),
@@ -529,8 +578,12 @@ module adc_clkgen_with_edgedetect(ena_in, start_conv_in, ndecision_finish_in, cl
   );
   sky130_fd_sc_hd__and2_1 \clkgen.delay_155ns_2.genblk1[2].bypass_enable  (
     .A(\clkgen.delay_155ns_2.enable_dlycontrol_w ),
-    .B(dlycontrol2_in[2]),
+    .B(\clkgen.delay_155ns_2.bypass_enable_w[2] ),
     .X(\clkgen.delay_155ns_2.genblk1[2].dly_binary.bypass_in )
+  );
+  sky130_fd_sc_hd__inv_2 \clkgen.delay_155ns_2.genblk1[2].control_invert  (
+    .A(dlycontrol2_in[2]),
+    .Y(\clkgen.delay_155ns_2.bypass_enable_w[2] )
   );
   sky130_fd_sc_hd__and2b_1 \clkgen.delay_155ns_2.genblk1[2].dly_binary.and_bypass_switch  (
     .A_N(\clkgen.delay_155ns_2.genblk1[2].dly_binary.bypass_in ),
@@ -561,8 +614,12 @@ module adc_clkgen_with_edgedetect(ena_in, start_conv_in, ndecision_finish_in, cl
   );
   sky130_fd_sc_hd__and2_1 \clkgen.delay_155ns_2.genblk1[3].bypass_enable  (
     .A(\clkgen.delay_155ns_2.enable_dlycontrol_w ),
-    .B(dlycontrol2_in[3]),
+    .B(\clkgen.delay_155ns_2.bypass_enable_w[3] ),
     .X(\clkgen.delay_155ns_2.genblk1[3].dly_binary.bypass_in )
+  );
+  sky130_fd_sc_hd__inv_2 \clkgen.delay_155ns_2.genblk1[3].control_invert  (
+    .A(dlycontrol2_in[3]),
+    .Y(\clkgen.delay_155ns_2.bypass_enable_w[3] )
   );
   sky130_fd_sc_hd__and2b_1 \clkgen.delay_155ns_2.genblk1[3].dly_binary.and_bypass_switch  (
     .A_N(\clkgen.delay_155ns_2.genblk1[3].dly_binary.bypass_in ),
@@ -609,8 +666,12 @@ module adc_clkgen_with_edgedetect(ena_in, start_conv_in, ndecision_finish_in, cl
   );
   sky130_fd_sc_hd__and2_1 \clkgen.delay_155ns_2.genblk1[4].bypass_enable  (
     .A(\clkgen.delay_155ns_2.enable_dlycontrol_w ),
-    .B(dlycontrol2_in[4]),
+    .B(\clkgen.delay_155ns_2.bypass_enable_w[4] ),
     .X(\clkgen.delay_155ns_2.genblk1[4].dly_binary.bypass_in )
+  );
+  sky130_fd_sc_hd__inv_2 \clkgen.delay_155ns_2.genblk1[4].control_invert  (
+    .A(dlycontrol2_in[4]),
+    .Y(\clkgen.delay_155ns_2.bypass_enable_w[4] )
   );
   sky130_fd_sc_hd__and2b_1 \clkgen.delay_155ns_2.genblk1[4].dly_binary.and_bypass_switch  (
     .A_N(\clkgen.delay_155ns_2.genblk1[4].dly_binary.bypass_in ),
@@ -693,8 +754,12 @@ module adc_clkgen_with_edgedetect(ena_in, start_conv_in, ndecision_finish_in, cl
   );
   sky130_fd_sc_hd__and2_1 \clkgen.delay_155ns_3.genblk1[0].bypass_enable  (
     .A(\clkgen.delay_155ns_3.enable_dlycontrol_w ),
-    .B(dlycontrol3_in[0]),
+    .B(\clkgen.delay_155ns_3.bypass_enable_w[0] ),
     .X(\clkgen.delay_155ns_3.genblk1[0].dly_binary.bypass_in )
+  );
+  sky130_fd_sc_hd__inv_2 \clkgen.delay_155ns_3.genblk1[0].control_invert  (
+    .A(dlycontrol3_in[0]),
+    .Y(\clkgen.delay_155ns_3.bypass_enable_w[0] )
   );
   sky130_fd_sc_hd__and2b_1 \clkgen.delay_155ns_3.genblk1[0].dly_binary.and_bypass_switch  (
     .A_N(\clkgen.delay_155ns_3.genblk1[0].dly_binary.bypass_in ),
@@ -713,8 +778,12 @@ module adc_clkgen_with_edgedetect(ena_in, start_conv_in, ndecision_finish_in, cl
   );
   sky130_fd_sc_hd__and2_1 \clkgen.delay_155ns_3.genblk1[1].bypass_enable  (
     .A(\clkgen.delay_155ns_3.enable_dlycontrol_w ),
-    .B(dlycontrol3_in[1]),
+    .B(\clkgen.delay_155ns_3.bypass_enable_w[1] ),
     .X(\clkgen.delay_155ns_3.genblk1[1].dly_binary.bypass_in )
+  );
+  sky130_fd_sc_hd__inv_2 \clkgen.delay_155ns_3.genblk1[1].control_invert  (
+    .A(dlycontrol3_in[1]),
+    .Y(\clkgen.delay_155ns_3.bypass_enable_w[1] )
   );
   sky130_fd_sc_hd__and2b_1 \clkgen.delay_155ns_3.genblk1[1].dly_binary.and_bypass_switch  (
     .A_N(\clkgen.delay_155ns_3.genblk1[1].dly_binary.bypass_in ),
@@ -737,8 +806,12 @@ module adc_clkgen_with_edgedetect(ena_in, start_conv_in, ndecision_finish_in, cl
   );
   sky130_fd_sc_hd__and2_1 \clkgen.delay_155ns_3.genblk1[2].bypass_enable  (
     .A(\clkgen.delay_155ns_3.enable_dlycontrol_w ),
-    .B(dlycontrol3_in[2]),
+    .B(\clkgen.delay_155ns_3.bypass_enable_w[2] ),
     .X(\clkgen.delay_155ns_3.genblk1[2].dly_binary.bypass_in )
+  );
+  sky130_fd_sc_hd__inv_2 \clkgen.delay_155ns_3.genblk1[2].control_invert  (
+    .A(dlycontrol3_in[2]),
+    .Y(\clkgen.delay_155ns_3.bypass_enable_w[2] )
   );
   sky130_fd_sc_hd__and2b_1 \clkgen.delay_155ns_3.genblk1[2].dly_binary.and_bypass_switch  (
     .A_N(\clkgen.delay_155ns_3.genblk1[2].dly_binary.bypass_in ),
@@ -769,8 +842,12 @@ module adc_clkgen_with_edgedetect(ena_in, start_conv_in, ndecision_finish_in, cl
   );
   sky130_fd_sc_hd__and2_1 \clkgen.delay_155ns_3.genblk1[3].bypass_enable  (
     .A(\clkgen.delay_155ns_3.enable_dlycontrol_w ),
-    .B(dlycontrol3_in[3]),
+    .B(\clkgen.delay_155ns_3.bypass_enable_w[3] ),
     .X(\clkgen.delay_155ns_3.genblk1[3].dly_binary.bypass_in )
+  );
+  sky130_fd_sc_hd__inv_2 \clkgen.delay_155ns_3.genblk1[3].control_invert  (
+    .A(dlycontrol3_in[3]),
+    .Y(\clkgen.delay_155ns_3.bypass_enable_w[3] )
   );
   sky130_fd_sc_hd__and2b_1 \clkgen.delay_155ns_3.genblk1[3].dly_binary.and_bypass_switch  (
     .A_N(\clkgen.delay_155ns_3.genblk1[3].dly_binary.bypass_in ),
@@ -817,8 +894,12 @@ module adc_clkgen_with_edgedetect(ena_in, start_conv_in, ndecision_finish_in, cl
   );
   sky130_fd_sc_hd__and2_1 \clkgen.delay_155ns_3.genblk1[4].bypass_enable  (
     .A(\clkgen.delay_155ns_3.enable_dlycontrol_w ),
-    .B(dlycontrol3_in[4]),
+    .B(\clkgen.delay_155ns_3.bypass_enable_w[4] ),
     .X(\clkgen.delay_155ns_3.genblk1[4].dly_binary.bypass_in )
+  );
+  sky130_fd_sc_hd__inv_2 \clkgen.delay_155ns_3.genblk1[4].control_invert  (
+    .A(dlycontrol3_in[4]),
+    .Y(\clkgen.delay_155ns_3.bypass_enable_w[4] )
   );
   sky130_fd_sc_hd__and2b_1 \clkgen.delay_155ns_3.genblk1[4].dly_binary.and_bypass_switch  (
     .A_N(\clkgen.delay_155ns_3.genblk1[4].dly_binary.bypass_in ),
@@ -906,8 +987,12 @@ module adc_clkgen_with_edgedetect(ena_in, start_conv_in, ndecision_finish_in, cl
   );
   sky130_fd_sc_hd__and2_1 \edgedetect.dly_315ns_1.genblk1[0].bypass_enable  (
     .A(\edgedetect.dly_315ns_1.enable_dlycontrol_w ),
-    .B(dlycontrol4_in[0]),
+    .B(\edgedetect.dly_315ns_1.bypass_enable_w[0] ),
     .X(\edgedetect.dly_315ns_1.genblk1[0].dly_binary.bypass_in )
+  );
+  sky130_fd_sc_hd__inv_2 \edgedetect.dly_315ns_1.genblk1[0].control_invert  (
+    .A(dlycontrol4_in[0]),
+    .Y(\edgedetect.dly_315ns_1.bypass_enable_w[0] )
   );
   sky130_fd_sc_hd__and2b_1 \edgedetect.dly_315ns_1.genblk1[0].dly_binary.and_bypass_switch  (
     .A_N(\edgedetect.dly_315ns_1.genblk1[0].dly_binary.bypass_in ),
@@ -926,8 +1011,12 @@ module adc_clkgen_with_edgedetect(ena_in, start_conv_in, ndecision_finish_in, cl
   );
   sky130_fd_sc_hd__and2_1 \edgedetect.dly_315ns_1.genblk1[1].bypass_enable  (
     .A(\edgedetect.dly_315ns_1.enable_dlycontrol_w ),
-    .B(dlycontrol4_in[1]),
+    .B(\edgedetect.dly_315ns_1.bypass_enable_w[1] ),
     .X(\edgedetect.dly_315ns_1.genblk1[1].dly_binary.bypass_in )
+  );
+  sky130_fd_sc_hd__inv_2 \edgedetect.dly_315ns_1.genblk1[1].control_invert  (
+    .A(dlycontrol4_in[1]),
+    .Y(\edgedetect.dly_315ns_1.bypass_enable_w[1] )
   );
   sky130_fd_sc_hd__and2b_1 \edgedetect.dly_315ns_1.genblk1[1].dly_binary.and_bypass_switch  (
     .A_N(\edgedetect.dly_315ns_1.genblk1[1].dly_binary.bypass_in ),
@@ -950,8 +1039,12 @@ module adc_clkgen_with_edgedetect(ena_in, start_conv_in, ndecision_finish_in, cl
   );
   sky130_fd_sc_hd__and2_1 \edgedetect.dly_315ns_1.genblk1[2].bypass_enable  (
     .A(\edgedetect.dly_315ns_1.enable_dlycontrol_w ),
-    .B(dlycontrol4_in[2]),
+    .B(\edgedetect.dly_315ns_1.bypass_enable_w[2] ),
     .X(\edgedetect.dly_315ns_1.genblk1[2].dly_binary.bypass_in )
+  );
+  sky130_fd_sc_hd__inv_2 \edgedetect.dly_315ns_1.genblk1[2].control_invert  (
+    .A(dlycontrol4_in[2]),
+    .Y(\edgedetect.dly_315ns_1.bypass_enable_w[2] )
   );
   sky130_fd_sc_hd__and2b_1 \edgedetect.dly_315ns_1.genblk1[2].dly_binary.and_bypass_switch  (
     .A_N(\edgedetect.dly_315ns_1.genblk1[2].dly_binary.bypass_in ),
@@ -982,8 +1075,12 @@ module adc_clkgen_with_edgedetect(ena_in, start_conv_in, ndecision_finish_in, cl
   );
   sky130_fd_sc_hd__and2_1 \edgedetect.dly_315ns_1.genblk1[3].bypass_enable  (
     .A(\edgedetect.dly_315ns_1.enable_dlycontrol_w ),
-    .B(dlycontrol4_in[3]),
+    .B(\edgedetect.dly_315ns_1.bypass_enable_w[3] ),
     .X(\edgedetect.dly_315ns_1.genblk1[3].dly_binary.bypass_in )
+  );
+  sky130_fd_sc_hd__inv_2 \edgedetect.dly_315ns_1.genblk1[3].control_invert  (
+    .A(dlycontrol4_in[3]),
+    .Y(\edgedetect.dly_315ns_1.bypass_enable_w[3] )
   );
   sky130_fd_sc_hd__and2b_1 \edgedetect.dly_315ns_1.genblk1[3].dly_binary.and_bypass_switch  (
     .A_N(\edgedetect.dly_315ns_1.genblk1[3].dly_binary.bypass_in ),
@@ -1030,8 +1127,12 @@ module adc_clkgen_with_edgedetect(ena_in, start_conv_in, ndecision_finish_in, cl
   );
   sky130_fd_sc_hd__and2_1 \edgedetect.dly_315ns_1.genblk1[4].bypass_enable  (
     .A(\edgedetect.dly_315ns_1.enable_dlycontrol_w ),
-    .B(dlycontrol4_in[4]),
+    .B(\edgedetect.dly_315ns_1.bypass_enable_w[4] ),
     .X(\edgedetect.dly_315ns_1.genblk1[4].dly_binary.bypass_in )
+  );
+  sky130_fd_sc_hd__inv_2 \edgedetect.dly_315ns_1.genblk1[4].control_invert  (
+    .A(dlycontrol4_in[4]),
+    .Y(\edgedetect.dly_315ns_1.bypass_enable_w[4] )
   );
   sky130_fd_sc_hd__and2b_1 \edgedetect.dly_315ns_1.genblk1[4].dly_binary.and_bypass_switch  (
     .A_N(\edgedetect.dly_315ns_1.genblk1[4].dly_binary.bypass_in ),
@@ -1110,8 +1211,12 @@ module adc_clkgen_with_edgedetect(ena_in, start_conv_in, ndecision_finish_in, cl
   );
   sky130_fd_sc_hd__and2_1 \edgedetect.dly_315ns_1.genblk1[5].bypass_enable  (
     .A(\edgedetect.dly_315ns_1.enable_dlycontrol_w ),
-    .B(dlycontrol4_in[5]),
+    .B(\edgedetect.dly_315ns_1.bypass_enable_w[5] ),
     .X(\edgedetect.dly_315ns_1.genblk1[5].dly_binary.bypass_in )
+  );
+  sky130_fd_sc_hd__inv_2 \edgedetect.dly_315ns_1.genblk1[5].control_invert  (
+    .A(dlycontrol4_in[5]),
+    .Y(\edgedetect.dly_315ns_1.bypass_enable_w[5] )
   );
   sky130_fd_sc_hd__and2b_1 \edgedetect.dly_315ns_1.genblk1[5].dly_binary.and_bypass_switch  (
     .A_N(\edgedetect.dly_315ns_1.genblk1[5].dly_binary.bypass_in ),

@@ -31,8 +31,8 @@
   },
   {
    "name": [
-      "sky130_fd_sc_hd__decap_4",
-      "sky130_fd_sc_hd__decap_4"
+      "sky130_fd_sc_hd__inv_2",
+      "sky130_fd_sc_hd__inv_2"
    ],
    "devices": [
        [
@@ -44,8 +44,8 @@
        ]
    ],
    "nets": [
-    4,
-    4
+    6,
+    6
    ],
    "badnets": [
    ],
@@ -53,15 +53,19 @@
    ],
    "pins": [
       [
-        "VPB",
+        "VGND",
         "VNB",
         "VPWR",
-        "VGND"
+        "VPB",
+        "Y",
+        "A"
       ], [
-        "VPB",
+        "VGND",
         "VNB",
         "VPWR",
-        "VGND"
+        "VPB",
+        "Y",
+        "A"
       ]
    ]
   },
@@ -106,6 +110,78 @@
         "VPWR",
         "S",
         "VGND"
+      ]
+   ]
+  },
+  {
+   "name": [
+      "sky130_fd_sc_hd__decap_4",
+      "sky130_fd_sc_hd__decap_4"
+   ],
+   "devices": [
+       [
+         ["sky130_fd_pr__pfet_01v8_hvt", 1],
+         ["sky130_fd_pr__nfet_01v8", 1 ]
+       ], [
+         ["sky130_fd_pr__pfet_01v8_hvt", 1 ],
+         ["sky130_fd_pr__nfet_01v8", 1 ]
+       ]
+   ],
+   "nets": [
+    4,
+    4
+   ],
+   "badnets": [
+   ],
+   "badelements": [
+   ],
+   "pins": [
+      [
+        "VPB",
+        "VNB",
+        "VPWR",
+        "VGND"
+      ], [
+        "VPB",
+        "VNB",
+        "VPWR",
+        "VGND"
+      ]
+   ]
+  },
+  {
+   "name": [
+      "sky130_fd_sc_hd__diode_2",
+      "sky130_fd_sc_hd__diode_2"
+   ],
+   "devices": [
+       [
+         ["sky130_fd_pr__diode_pw2nd_05v5", 1 ]
+       ], [
+         ["sky130_fd_pr__diode_pw2nd_05v5", 1 ]
+       ]
+   ],
+   "nets": [
+    2,
+    2
+   ],
+   "badnets": [
+   ],
+   "badelements": [
+   ],
+   "pins": [
+      [
+        "VNB",
+        "DIODE",
+        "VGND",
+        "VPWR",
+        "VPB"
+      ], [
+        "VNB",
+        "DIODE",
+        "VGND",
+        "VPWR",
+        "VPB"
       ]
    ]
   },
@@ -285,57 +361,6 @@
    ]
   },
   {
-   "pins": [
-      [
-        "VGND",
-        "VPWR",
-        "VNB",
-        "VPB"
-      ], [
-        "VGND",
-        "VPWR",
-        "VNB",
-        "VPB"
-      ]
-   ]
-  },
-  {
-   "name": [
-      "sky130_fd_sc_hd__diode_2",
-      "sky130_fd_sc_hd__diode_2"
-   ],
-   "devices": [
-       [
-         ["sky130_fd_pr__diode_pw2nd_05v5", 1 ]
-       ], [
-         ["sky130_fd_pr__diode_pw2nd_05v5", 1 ]
-       ]
-   ],
-   "nets": [
-    2,
-    2
-   ],
-   "badnets": [
-   ],
-   "badelements": [
-   ],
-   "pins": [
-      [
-        "VNB",
-        "DIODE",
-        "VGND",
-        "VPWR",
-        "VPB"
-      ], [
-        "VNB",
-        "DIODE",
-        "VGND",
-        "VPWR",
-        "VPB"
-      ]
-   ]
-  },
-  {
    "name": [
       "sky130_fd_sc_hd__decap_8",
       "sky130_fd_sc_hd__decap_8"
@@ -368,6 +393,21 @@
         "VNB",
         "VPWR",
         "VGND"
+      ]
+   ]
+  },
+  {
+   "pins": [
+      [
+        "VGND",
+        "VPWR",
+        "VNB",
+        "VPB"
+      ], [
+        "VGND",
+        "VPWR",
+        "VNB",
+        "VPB"
       ]
    ]
   },
@@ -410,46 +450,6 @@
         "Y",
         "VGND",
         "VNB"
-      ]
-   ]
-  },
-  {
-   "name": [
-      "sky130_fd_sc_hd__inv_2",
-      "sky130_fd_sc_hd__inv_2"
-   ],
-   "devices": [
-       [
-         ["sky130_fd_pr__pfet_01v8_hvt", 1],
-         ["sky130_fd_pr__nfet_01v8", 1 ]
-       ], [
-         ["sky130_fd_pr__pfet_01v8_hvt", 1 ],
-         ["sky130_fd_pr__nfet_01v8", 1 ]
-       ]
-   ],
-   "nets": [
-    6,
-    6
-   ],
-   "badnets": [
-   ],
-   "badelements": [
-   ],
-   "pins": [
-      [
-        "VGND",
-        "VNB",
-        "VPWR",
-        "VPB",
-        "Y",
-        "A"
-      ], [
-        "VGND",
-        "VNB",
-        "VPWR",
-        "VPB",
-        "Y",
-        "A"
       ]
    ]
   },
@@ -582,42 +582,42 @@
    ],
    "devices": [
        [
-         ["sky130_fd_sc_hd__decap_4", 1],
+         ["sky130_fd_sc_hd__inv_2", 22],
          ["sky130_fd_sc_hd__mux2_1", 21],
+         ["sky130_fd_sc_hd__decap_4", 1],
+         ["sky130_fd_sc_hd__diode_2", 52],
          ["sky130_fd_sc_hd__decap_6", 1],
          ["sky130_fd_sc_hd__or2_1", 1],
          ["sky130_mm_sc_hd_dlyPoly5ns", 156],
          ["sky130_fd_sc_hd__decap_3", 1],
          ["sky130_fd_sc_hd__and2_1", 21],
-         ["sky130_ef_sc_hd__decap_12", 1],
-         ["sky130_fd_sc_hd__diode_2", 41],
          ["sky130_fd_sc_hd__decap_8", 1],
+         ["sky130_ef_sc_hd__decap_12", 1],
          ["sky130_fd_sc_hd__nor2b_1", 2],
-         ["sky130_fd_sc_hd__inv_2", 1],
          ["sky130_fd_sc_hd__and2b_1", 21],
          ["sky130_fd_sc_hd__buf_1", 3],
          ["sky130_fd_sc_hd__buf_4", 10 ]
        ], [
-         ["sky130_fd_sc_hd__decap_4", 1 ],
+         ["sky130_fd_sc_hd__inv_2", 22 ],
          ["sky130_fd_sc_hd__mux2_1", 21 ],
+         ["sky130_fd_sc_hd__decap_4", 1 ],
+         ["sky130_fd_sc_hd__diode_2", 52 ],
          ["sky130_fd_sc_hd__decap_6", 1 ],
          ["sky130_fd_sc_hd__or2_1", 1 ],
          ["sky130_mm_sc_hd_dlyPoly5ns", 156 ],
          ["sky130_fd_sc_hd__decap_3", 1 ],
          ["sky130_fd_sc_hd__and2_1", 21 ],
-         ["sky130_ef_sc_hd__decap_12", 1 ],
-         ["sky130_fd_sc_hd__diode_2", 41 ],
          ["sky130_fd_sc_hd__decap_8", 1 ],
+         ["sky130_ef_sc_hd__decap_12", 1 ],
          ["sky130_fd_sc_hd__nor2b_1", 2 ],
-         ["sky130_fd_sc_hd__inv_2", 1 ],
          ["sky130_fd_sc_hd__and2b_1", 21 ],
          ["sky130_fd_sc_hd__buf_1", 3 ],
          ["sky130_fd_sc_hd__buf_4", 10 ]
        ]
    ],
    "nets": [
-    267,
-    267
+    288,
+    288
    ],
    "badnets": [
    ],
@@ -626,80 +626,80 @@
    "pins": [
       [
         "clk_dig_out",
-        "nsample_n_out",
-        "nsample_p_out",
-        "sample_n_out",
         "sample_p_out",
+        "sample_n_out",
+        "nsample_p_out",
+        "nsample_n_out",
         "clk_comp_out",
         "enable_dlycontrol_in",
-        "dlycontrol1_in[0]",
-        "dlycontrol1_in[4]",
-        "dlycontrol1_in[1]",
-        "dlycontrol1_in[2]",
-        "dlycontrol1_in[3]",
-        "dlycontrol2_in[1]",
-        "dlycontrol2_in[0]",
-        "dlycontrol3_in[0]",
-        "dlycontrol3_in[1]",
+        "VGND",
+        "VPWR",
         "dlycontrol3_in[2]",
-        "dlycontrol3_in[3]",
-        "dlycontrol2_in[4]",
-        "dlycontrol3_in[4]",
-        "dlycontrol2_in[2]",
-        "dlycontrol2_in[3]",
-        "dlycontrol4_in[4]",
-        "dlycontrol4_in[2]",
-        "dlycontrol4_in[3]",
         "dlycontrol4_in[0]",
+        "dlycontrol4_in[2]",
         "dlycontrol4_in[5]",
+        "dlycontrol4_in[3]",
+        "dlycontrol4_in[4]",
         "dlycontrol4_in[1]",
+        "dlycontrol3_in[3]",
+        "dlycontrol3_in[1]",
+        "dlycontrol3_in[0]",
+        "dlycontrol3_in[4]",
+        "dlycontrol1_in[3]",
+        "dlycontrol1_in[4]",
+        "dlycontrol2_in[0]",
+        "dlycontrol2_in[2]",
+        "dlycontrol1_in[0]",
+        "dlycontrol2_in[3]",
+        "dlycontrol1_in[1]",
+        "dlycontrol2_in[1]",
+        "dlycontrol1_in[2]",
+        "dlycontrol2_in[4]",
         "ena_in",
         "start_conv_in",
         "ndecision_finish_in",
         "sample_p_in",
-        "nsample_p_in",
         "sample_n_in",
-        "nsample_n_in",
-        "VGND",
-        "VPWR"
+        "nsample_p_in",
+        "nsample_n_in"
       ], [
         "clk_dig_out",
-        "nsample_n_out",
-        "nsample_p_out",
-        "sample_n_out",
         "sample_p_out",
+        "sample_n_out",
+        "nsample_p_out",
+        "nsample_n_out",
         "clk_comp_out",
         "enable_dlycontrol_in",
-        "dlycontrol1_in[0]",
-        "dlycontrol1_in[4]",
-        "dlycontrol1_in[1]",
-        "dlycontrol1_in[2]",
-        "dlycontrol1_in[3]",
-        "dlycontrol2_in[1]",
-        "dlycontrol2_in[0]",
-        "dlycontrol3_in[0]",
-        "dlycontrol3_in[1]",
+        "VGND",
+        "VPWR",
         "dlycontrol3_in[2]",
-        "dlycontrol3_in[3]",
-        "dlycontrol2_in[4]",
-        "dlycontrol3_in[4]",
-        "dlycontrol2_in[2]",
-        "dlycontrol2_in[3]",
-        "dlycontrol4_in[4]",
-        "dlycontrol4_in[2]",
-        "dlycontrol4_in[3]",
         "dlycontrol4_in[0]",
+        "dlycontrol4_in[2]",
         "dlycontrol4_in[5]",
+        "dlycontrol4_in[3]",
+        "dlycontrol4_in[4]",
         "dlycontrol4_in[1]",
+        "dlycontrol3_in[3]",
+        "dlycontrol3_in[1]",
+        "dlycontrol3_in[0]",
+        "dlycontrol3_in[4]",
+        "dlycontrol1_in[3]",
+        "dlycontrol1_in[4]",
+        "dlycontrol2_in[0]",
+        "dlycontrol2_in[2]",
+        "dlycontrol1_in[0]",
+        "dlycontrol2_in[3]",
+        "dlycontrol1_in[1]",
+        "dlycontrol2_in[1]",
+        "dlycontrol1_in[2]",
+        "dlycontrol2_in[4]",
         "ena_in",
         "start_conv_in",
         "ndecision_finish_in",
         "sample_p_in",
-        "nsample_p_in",
         "sample_n_in",
-        "nsample_n_in",
-        "VGND",
-        "VPWR"
+        "nsample_p_in",
+        "nsample_n_in"
       ]
    ]
   }
