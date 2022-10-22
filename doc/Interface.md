@@ -5,14 +5,19 @@ Pin 18..33 : Config byte 2
 
 
 ## Config byte 1:  
-* Bit 0..3   : Average control of the LSB bits
+* Bit 0..2   : Average control of the LSB bits
   * `default`: 1 sample
   * `001`:     3 samples
   * `010`:     7 samples
   * `011`:     15 samples
   * `100`:     31 samples
-* Bit 4..9   : 
-  * DNC 
+* Bit 3..5   : OSR Control
+  * `default`: 1 sample
+  * `001`:     4 samples
+  * `010`:     16 samples
+  * `011`:     64 samples
+  * `100`:     256 samples  
+* Bit 6..9 : unused
 * Bit 10..15 : delay edge detect  
   * `Bit 0` : +  5ns Delay
   * `Bit 1` : + 10ns Delay

@@ -18,96 +18,134 @@
 
 //Top module ADC Control
 module adc_top(
-   input wire clk,
-   input wire rst,
-   input wire comparator_in,
-   output reg sample_matrix,
-   output wire nsample_matrix,
-   output reg sample,
-   output wire nsample,
-   output reg [globals.RESULT_OSR_BITS-1:0] result_osr,
-   output reg ena,
-   output reg conversion_finished_osr,
-   input wire [2:0] avg_control,
-   input wire iir_enable,
-   input wire osr_mode,
-   output reg[globals.MATRIX_COLS-1:0]  pcap_col_n,
-   output reg[globals.MATRIX_COLS-1:0]  pcap_colon_n,
-   output reg[globals.MATRIX_ROWS-1:0]  pcap_row_n,
-   output reg[globals.MATRIX_BINS-1:0]  pcap_bincap_n,
-   output reg[globals.MATRIX_COLS-1:0]  ncap_col_n,
-   output reg[globals.MATRIX_COLS-1:0]  ncap_colon_n,
-   output reg[globals.MATRIX_ROWS-1:0]  ncap_row_n,
-   output reg[globals.MATRIX_BINS-1:0]  ncap_bincap_n
+   input wire nrst,
+   input wire start_conversion_in,
+   input wire [15:0] config_1_in,
+   input wire [15:0] config_2_in,
+   output wire [15:0] result_out,
+   output wire conversion_finished_out
    );
 
-   //synchronous outputs
-   wire [globals.RESULT_OSR_BITS-1:0] next_result_osr;
-   wire next_conversion_finished_osr;
-   wire [globals.MATRIX_COLS-1:0] next_pcap_col_n, next_ncap_col_n;
-   wire [globals.MATRIX_COLS-1:0] next_pcap_colon_n,next_ncap_colon_n;
-   wire [globals.MATRIX_ROWS-1:0] next_pcap_row_n,next_ncap_row_n;
-   wire [globals.MATRIX_BINS-1:0] next_pcap_bincap_n,next_ncap_bincap_n;
-
-   // internal wires
-   wire conversion_finished;
-   wire [globals.MATRIX_BITS-1:0]  p_switch;
-   wire [globals.MATRIX_BITS-1:0]  n_switch;
-   wire [globals.MATRIX_BITS-1:0]  result;
 
 
-   // Clock and Reset Handling
-   always @(posedge clk, negedge rst) begin
-      if (rst == 1'b0) begin                    //reset ACTIVE LOW
-         conversion_finished_osr <= 1'b0;
-         result_osr    <= {globals.RESULT_OSR_BITS{1'b0}};
-         pcap_col_n    <= {globals.MATRIX_COLS{1'b1}};
-         pcap_colon_n  <= {globals.MATRIX_COLS{1'b1}};
-         pcap_row_n    <= {globals.MATRIX_ROWS{1'b1}};
-         pcap_bincap_n <= {globals.MATRIX_BINS{1'b1}};
-         ncap_col_n    <= {globals.MATRIX_COLS{1'b1}};
-         ncap_colon_n  <= {globals.MATRIX_COLS{1'b1}};
-         ncap_row_n    <= {globals.MATRIX_ROWS{1'b1}};
-         ncap_bincap_n <= {globals.MATRIX_BINS{1'b1}};
-      end 
-      else begin	
-         result_osr <= next_result_osr;
-         conversion_finished_osr <= next_conversion_finished_osr;
-         pcap_col_n    <= next_pcap_col_n;
-         pcap_colon_n  <= next_pcap_colon_n;
-         pcap_row_n    <= next_pcap_row_n;
-         pcap_bincap_n <= next_pcap_bincap_n;
-         ncap_col_n    <= next_ncap_col_n;
-         ncap_colon_n  <= next_ncap_colon_n;
-         ncap_row_n    <= next_ncap_row_n;
-         ncap_bincap_n <= next_ncap_bincap_n;
-      end
-   end
 
+   //Configuration byte 1 mapping
+   wire [2:0] avg_control_w = config_1_in[2:0];
+   wire [2:0] osr_mode_w = config_1_in[5:3];
+   wire [3:0] unused_w = config_1_in[9:6];
+   wire [5:0] delay_edgedetect_w = config_1_in[15:10];
+
+   //Configuration byte 2 mapping
+   wire [4:0] delay_1_w = config_2_in[4:0];
+   wire [4:0] delay_2_w = config_2_in[9:5];
+   wire [4:0] delay_3_w = config_2_in[14:10];
+   wire delaycontrol_en_w = config_2_in[15];
+
+   // Sample switch enable
+   assign sample_out  = sample_cnb;
+   assign nsample_out = nsample_cnb;
+
+   // Matrix sampling enable
+   // --- assign from loop block, TODO
    
-   /* Nonbinary Control Block
-      -----------------------------------
-      |                          p_switch|>12
-    1>|clk                       n_switch|>12
-    1>|rst                         sample|>1
-      |                           nsample|>1
-    1>|comparator_in               result|>12
-    3>|avg_ctrl                    enable|>1
-      |                     conv_finished|>1
-      |__________________________________|
-   */
-   adc_control_nonbinary nonbinarymodule (.clk(clk),
-                                          .rst(rst),
-                                          .comparator_in(comparator_in),
-                                          .avg_control(avg_control),
-                                          .sample(sample),
-                                          .nsample(nsample),
-                                          .enable(ena),
-                                          .conv_finished(conversion_finished),
-                                          .p_switch(p_switch),
-                                          .n_switch(n_switch),
-                                          .result(result));
-   assign sample_matrix = sample;
-   assign nsample_matrix = nsample;
+//*******************************************
+//      ADC Nonbinary Control-Block
+//*******************************************
+   output wire [11:0] result_cnb;
+   output wire [11:0] p_switch_cnb;
+   output wire [11:0] n_switch_cnb;
+   output wire conv_finished_cnb;
+   output wire nsample_cnb;
+   output wire sample_cnb;
+
+   adc_control_nonbinary cnb (
+      .clk(clk),
+      .nrst(nrst),
+      .comparator_in(comparator_in),
+      .avg_control_in(avg_control_w),
+      .sample_out(sample_cnb),
+      .nsample_out(nsample_cnb),
+      .enable_out(enable_loop_out),
+      .conv_finished_out(conv_finished_cnb),
+      .p_switch_out(p_switch_cnb),
+      .n_switch_out(n_switch_cnb),
+      .result_out(result_cnb)
+      );
+
+//*******************************************
+//           P/N-Matrix decoder
+//*******************************************
+   output wire [31:0] pdecoder_col_n_w;
+   output wire [15:0] pdecoder_row_n_w;
+   output wire [15:0] pdecoder_rowon_n_w;
+   output wire [2:0]  pdecoder_bincap_n_w;
+   output wire        pdecoder_c0p_n_w;
+   output wire [31:0] ndecoder_col_n_w;
+   output wire [15:0] ndecoder_row_n_w;
+   output wire [15:0] ndecoder_rowon_n_w;
+   output wire [2:0]  ndecoder_bincap_n_w;
+   output wire        ndecoder_c0n_n_w;
+
+adc_row_col_decoder pdc (
+   .data_in(p_switch_cnb),
+   .row_n_out(row_n_pdc),
+   .rowon_n_out(rowon_n_pdc),
+   .col_n_out(col_n_pdc),
+   .bincap_n_out(bincap_n_pdc),
+   .c0p_n_out(c0p_n_pdc),
+   .c0n_n_out()
+);
+
+adc_row_col_decoder ndc (
+   .data_in(n_switch_cnb),
+   .row_n_out(row_n_ndc),
+   .rowon_n_out(rowon_n_ndc),
+   .col_n_out(col_n_ndc),
+   .bincap_n_out(bincap_n_ndc),
+   .c0p_n_out(),
+   .c0n_n_out(c0n_n_ndc)
+);
+
+//*******************************************
+//           Oversampling 
+//*******************************************
+
+adc_osr osr (
+   .clk(clk),
+   .nrst(nrst),
+   .ena(conv_finished_cnb),
+   .data_in(result_cnb),
+   .data_out(result_osr),
+   .conversion_finished(conv_finished_osr)
+);
+
+
+//*******************************************
+//      Clock Coop with Edge-Detection
+//      **** HARDENED MACRO ****
+//*******************************************
+wire clk_dig_cle;
+
+adc_clkloop_with_edgedetect cle (
+   .ena_in(),
+   .ndecision_finish_in(),
+   .start_conv_in(),
+   .enable_dlycontrol_in(),
+   .dlycontrol1(),
+   .dlycontrol2(),
+   .dlycontrol3(),
+   .dlycontrol4(),
+   .clk_comp_out(),
+   .clk_dig_out(),
+   .sample_n_in(),
+   .sample_n_out(),
+   .nsample_n_in(),
+   .nsample_n_out(),
+   .sample_p_in(),
+   .sample_p_out(),
+   .nsample_p_in(),
+   .nsample_p_out()
+);
+
 
 endmodule

@@ -31,15 +31,15 @@ module adc_control_nonbinary_tb;
 
   adc_control_nonbinary testmodule (
 	   .clk(clk),
-	   .nrst(nrst),
+	   .rst_n(nrst),
 	   .comparator_in(comparator_in),
 	   .avg_control_in(avg_control),
 	   .sample_out(sample),
-	   .nsample_out(nsample),
+	   .sample_out_n(nsample),
 	   .enable_out(enable),
 	   .conv_finished_out(conv_finished),
-	   .p_switch_out(p_switch),
-	   .n_switch_out(n_switch),
+	   .pswitch_out(p_switch),
+	   .nswitch_out(n_switch),
 	   .result_out(result)
 	   );	
 
