@@ -293,14 +293,16 @@ C {devices/vdd.sym} 720 -780 0 0 {name=l1 lab=VDD}
 C {devices/gnd.sym} 720 -700 0 0 {name=l1 lab=GND}
 C {devices/vdd.sym} 1600 -1220 0 0 {name=l3 lab=VDD}
 C {devices/gnd.sym} 1600 -1020 0 0 {name=l3 lab=GND}
-C {devices/code_shown.sym} 920 -1430 0 0 {name=SPICE only_toplevel=false value=".include /foss/designs/SKY130_SAR-ADC/openlane/adc_clkgen_with_edgedetect/sim/adc_clkgen_with_edgedetect.spice
-.include /foss/pdk/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_fd_sc_hd.spice
+C {devices/code_shown.sym} 920 -1430 0 0 {name=SPICE only_toplevel=false value=".include /foss/pdk/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_fd_sc_hd.spice
 
 ****************
 * True mixed signal? (xspice) or analog? (spice)
 ****************
-*.include /foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/runs/vtoverilog/results/final/gds/adc_core_digital.spice
-.include /foss/designs/SKY130_SAR-ADC/synth2xspice/adc_core_digital/adc_core_digital.xspice
+*.include /foss/designs/SKY130_SAR-ADC/spice/adc_core_digital.spice
+.include /foss/designs/SKY130_SAR-ADC/spice/adc_core_digital.xspice
+
+*.include /foss/designs/SKY130_SAR-ADC/spice/adc_clkgen_with_edgedetect.spice
+.include /foss/designs/SKY130_SAR-ADC/spice/adc_clkgen_with_edgedetect.xspice
 
 
 
@@ -350,8 +352,9 @@ C {devices/code_shown.sym} 920 -1430 0 0 {name=SPICE only_toplevel=false value="
 .control
 set num_threads=8
 tran 1n 4u
-plot inp inn rst_n start_conv
+plot inp inn rst_n start_conv conv_finished
 plot start_conv x1.clk_dig x1.clk_comp
+plot x1.pctop x1.nctop
 .endc
 "}
 C {devices/lab_wire.sym} 1810 -1180 0 1 {name=l3 sig_type=std_logic lab=result[0..15]}
