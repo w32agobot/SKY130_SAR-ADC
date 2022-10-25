@@ -159,16 +159,16 @@ C {devices/title.sym} 170 -40 0 0 {name=l1 author="Manuel Moser"}
 C {devices/vsource.sym} 240 -820 0 0 {name=V1 value="(0 pulse(0 1.8 1p 1p 1p 1 2))"}
 C {devices/vdd.sym} 240 -860 0 0 {name=l2 lab=VDD}
 C {devices/gnd.sym} 240 -780 0 0 {name=l5 lab=GND}
-C {devices/vsource.sym} 1020 -480 0 0 {name=V2 value="0 pulse(0 1.8 15n 1p 1p 15n 30n)"}
+C {devices/vsource.sym} 1020 -480 0 0 {name=V2 value="0 pulse(0 1.8 15n 1p 1p 30n 60n)"}
 C {devices/gnd.sym} 1020 -440 0 0 {name=l8 lab=GND}
 C {devices/lab_wire.sym} 1490 -570 0 0 {name=l9 sig_type=std_logic lab=in}
 C {devices/code_shown.sym} 90 -720 0 0 {name=s1 only_toplevel=false value="*.include /foss/pdk/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_fd_sc_hd.spice
-.include sky130_mm_sc_hd_dlyPoly6ns_postlayout.spice
+.include /foss/designs/SKY130_SAR-ADC/xschem/sky130_mm_sc_hd_dlyPoly5ns_postlayout.spice
 .OPTIONS RELTOL=.001 TRTOL=1 ABSTOL=1e-16 CHGTOL=1.0e-16 DEFAD=1.0e-16
 .save all
 .control
-tran 100p 50n
-plot v(in) v(out) v(x1.cap_top) v(out_postlayout) 
+tran 100p 100n
+plot v(in) v(out) v(out_postlayout) 
 .endc"}
 C {sky130_fd_pr/corner.sym} 80 -880 0 0 {name=CORNER only_toplevel=false corner=ss}
 C {devices/vdd.sym} 410 -540 0 0 {name=l3 lab=VDD}
@@ -269,5 +269,5 @@ C {devices/gnd.sym} 1300 -330 0 0 {name=l16 lab=GND}
 C {devices/gnd.sym} 1400 -350 0 0 {name=l17 lab=GND}
 C {devices/vdd.sym} 1410 -800 0 0 {name=l18 lab=VDD}
 C {devices/vdd.sym} 1330 -830 0 0 {name=l19 lab=VDD}
-C {sky130_mm_sc_hd_dlyPoly6ns.sym} 420 -460 0 0 {name=x1}
-C {sky130_mm_sc_hd_dlyPoly6ns_postlayout.sym} 680 -460 0 0 {name=x2}
+C {sky130_mm_sc_hd_dlyPoly5ns.sym} 420 -460 0 0 {name=x1}
+C {sky130_mm_sc_hd_dlyPoly5ns_postlayout.sym} 680 -460 0 0 {name=x2}
