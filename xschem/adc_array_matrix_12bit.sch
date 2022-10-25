@@ -35538,11 +35538,11 @@ lab=VSS}
 N 8940 -4310 8940 -4300 {
 lab=VSS}
 N 5070 -930 5070 -920 {
-lab=en_n_bit[0]}
+lab=en_bit_n[0]}
 N 4550 -930 4550 -910 {
-lab=en_n_bit[1]}
+lab=en_bit_n[1]}
 N 4810 -930 4810 -910 {
-lab=en_n_bit[2]}
+lab=en_bit_n[2]}
 N 8780 -930 8780 -910 {
 lab=sw}
 N 8820 -930 8820 -910 {
@@ -35574,8 +35574,9 @@ lab=VSS}
 N 520 -460 570 -460 {
 lab=VSS}
 N 910 -930 910 -920 {
-lab=VSS}
-N 910 -920 910 -910 {}
+lab=en_C0_n}
+N 910 -920 910 -910 {
+lab=en_C0_n}
 C {devices/title.sym} 170 -40 0 0 {name=l1 author="Manuel Moser"}
 C {devices/iopin.sym} 240 -670 1 1 {name=p1 lab=VDD}
 C {devices/iopin.sym} 250 -290 3 1 {name=p2 lab=VSS}

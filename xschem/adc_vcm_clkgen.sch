@@ -240,6 +240,10 @@ N 620 -320 630 -320 {
 lab=#net9}
 N 1260 -540 1270 -540 {
 lab=phi1}
+N 120 -570 140 -570 {
+lab=VDD}
+N 120 -550 140 -550 {
+lab=VSS}
 C {devices/iopin.sym} 120 -570 2 0 {name=p1 lab=VDD}
 C {devices/iopin.sym} 120 -550 2 0 {name=p2 lab=VSS}
 C {devices/opin.sym} 1310 -320 0 0 {name=p9 lab=phi2_n}
@@ -265,3 +269,5 @@ C {sky130_stdcells/dlymetal6s6s_1.sym} 790 -480 0 0 {name=x9 VGND=VSS VNB=VSS VP
 C {sky130_stdcells/dlymetal6s6s_1.sym} 790 -320 0 0 {name=x14 VGND=VSS VNB=VSS VPB=VDD VPWR=VDD prefix=sky130_fd_sc_hd__ }
 C {sky130_stdcells/nand2_1.sym} 440 -480 0 0 {name=x15 VGND=VSS VNB=VSS VPB=VDD VPWR=VDD prefix=sky130_fd_sc_hd__ }
 C {sky130_stdcells/nand2_1.sym} 440 -320 0 0 {name=x16 VGND=VSS VNB=VSS VPB=VDD VPWR=VDD prefix=sky130_fd_sc_hd__ }
+C {devices/noconn.sym} 140 -570 0 1 {name=l1}
+C {devices/noconn.sym} 140 -550 0 1 {name=l2}

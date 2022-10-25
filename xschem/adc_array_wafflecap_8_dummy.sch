@@ -44,34 +44,20 @@ N 190 -250 250 -250 {
 lab=sample_n}
 N 190 -230 250 -230 {
 lab=sample}
-N 540 -320 540 -270 {
-lab=cbot}
-N 540 -430 540 -380 {
-lab=ctop_nc}
 N 540 -270 590 -270 {
 lab=cbot}
-N 540 -400 550 -400 {
-lab=ctop_nc}
 N 580 -430 590 -430 {
 lab=ctop}
 C {devices/iopin.sym} 190 -390 0 1 {name=p3 lab=vcom}
 C {devices/iopin.sym} 190 -440 0 1 {name=p7 lab=VDD}
-C {devices/capa.sym} 540 -350 0 0 {name=C3
-m=1
-value=4.77f
-footprint=1206
-device="ceramic capacitor"
-spice_ignore=true}
 C {devices/iopin.sym} 590 -430 2 1 {name=p9 lab=ctop}
 C {devices/iopin.sym} 190 -150 0 1 {name=p10 lab=VSS}
 C {devices/title.sym} 170 -40 0 0 {name=l1 author="Manuel Moser"}
 C {devices/lab_wire.sym} 590 -270 0 0 {name=l2 sig_type=std_logic lab=cbot}
-C {devices/lab_wire.sym} 540 -430 0 0 {name=l3 sig_type=std_logic lab=ctop_nc}
 C {devices/ipin.sym} 190 -310 0 0 {name=p1 lab=row_n}
 C {devices/ipin.sym} 190 -290 0 0 {name=p2 lab=col_n}
 C {devices/ipin.sym} 190 -270 0 0 {name=p4 lab=colon_n}
 C {devices/ipin.sym} 190 -250 0 0 {name=p5 lab=sample_n}
 C {devices/ipin.sym} 190 -230 0 0 {name=p6 lab=sample}
 C {devices/noconn.sym} 580 -430 0 0 {name=l4}
-C {devices/noconn.sym} 550 -400 2 0 {name=l5}
 C {adc_array_circuit_8.sym} 360 -270 0 0 {name=x1}

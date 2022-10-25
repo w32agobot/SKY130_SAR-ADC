@@ -61,7 +61,7 @@ m=1
 value=2.384f
 footprint=1206
 device="ceramic capacitor"
-spice_ignore=true}
+spice_ignore=false}
 C {devices/iopin.sym} 590 -430 2 1 {name=p9 lab=ctop}
 C {devices/iopin.sym} 190 -150 0 1 {name=p10 lab=VSS}
 C {devices/title.sym} 170 -40 0 0 {name=l1 author="Manuel Moser"}
