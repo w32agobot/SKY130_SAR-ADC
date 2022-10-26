@@ -1,0 +1,761 @@
+VERSION 5.8 ;
+DIVIDERCHAR "/" ;
+BUSBITCHARS "[]" ;
+DESIGN adc_clkgen_with_edgedetect ;
+UNITS DISTANCE MICRONS 1000 ;
+DIEAREA ( 0 0 ) ( 160000 64000 ) ;
+ROW ROW_0 unithd 5520 2720 N DO 323 BY 1 STEP 460 0 ;
+ROW ROW_1 unithd 5520 5440 FS DO 323 BY 1 STEP 460 0 ;
+ROW ROW_2 unithd 5520 8160 N DO 323 BY 1 STEP 460 0 ;
+ROW ROW_3 unithd 5520 10880 FS DO 323 BY 1 STEP 460 0 ;
+ROW ROW_4 unithd 5520 13600 N DO 323 BY 1 STEP 460 0 ;
+ROW ROW_5 unithd 5520 16320 FS DO 323 BY 1 STEP 460 0 ;
+ROW ROW_6 unithd 5520 19040 N DO 323 BY 1 STEP 460 0 ;
+ROW ROW_7 unithd 5520 21760 FS DO 323 BY 1 STEP 460 0 ;
+ROW ROW_8 unithd 5520 24480 N DO 323 BY 1 STEP 460 0 ;
+ROW ROW_9 unithd 5520 27200 FS DO 323 BY 1 STEP 460 0 ;
+ROW ROW_10 unithd 5520 29920 N DO 323 BY 1 STEP 460 0 ;
+ROW ROW_11 unithd 5520 32640 FS DO 323 BY 1 STEP 460 0 ;
+ROW ROW_12 unithd 5520 35360 N DO 323 BY 1 STEP 460 0 ;
+ROW ROW_13 unithd 5520 38080 FS DO 323 BY 1 STEP 460 0 ;
+ROW ROW_14 unithd 5520 40800 N DO 323 BY 1 STEP 460 0 ;
+ROW ROW_15 unithd 5520 43520 FS DO 323 BY 1 STEP 460 0 ;
+ROW ROW_16 unithd 5520 46240 N DO 323 BY 1 STEP 460 0 ;
+ROW ROW_17 unithd 5520 48960 FS DO 323 BY 1 STEP 460 0 ;
+ROW ROW_18 unithd 5520 51680 N DO 323 BY 1 STEP 460 0 ;
+ROW ROW_19 unithd 5520 54400 FS DO 323 BY 1 STEP 460 0 ;
+ROW ROW_20 unithd 5520 57120 N DO 323 BY 1 STEP 460 0 ;
+TRACKS X 230 DO 348 STEP 460 LAYER li1 ;
+TRACKS Y 170 DO 188 STEP 340 LAYER li1 ;
+TRACKS X 170 DO 471 STEP 340 LAYER met1 ;
+TRACKS Y 170 DO 188 STEP 340 LAYER met1 ;
+TRACKS X 230 DO 348 STEP 460 LAYER met2 ;
+TRACKS Y 230 DO 139 STEP 460 LAYER met2 ;
+TRACKS X 340 DO 235 STEP 680 LAYER met3 ;
+TRACKS Y 340 DO 94 STEP 680 LAYER met3 ;
+TRACKS X 460 DO 174 STEP 920 LAYER met4 ;
+TRACKS Y 460 DO 70 STEP 920 LAYER met4 ;
+TRACKS X 1700 DO 47 STEP 3400 LAYER met5 ;
+TRACKS Y 1700 DO 19 STEP 3400 LAYER met5 ;
+COMPONENTS 273 ;
+    - clkgen.clkdig_inverter sky130_fd_sc_hd__inv_2 ;
+    - clkgen.delay_155ns_1.enablebuffer sky130_fd_sc_hd__buf_4 ;
+    - clkgen.delay_155ns_1.genblk1\[0\].bypass_enable sky130_fd_sc_hd__and2_1 ;
+    - clkgen.delay_155ns_1.genblk1\[0\].control_invert sky130_fd_sc_hd__inv_2 ;
+    - clkgen.delay_155ns_1.genblk1\[0\].dly_binary.and_bypass_switch sky130_fd_sc_hd__and2b_1 ;
+    - clkgen.delay_155ns_1.genblk1\[0\].dly_binary.genblk1\[0\].delay_unit sky130_mm_sc_hd_dlyPoly5ns ;
+    - clkgen.delay_155ns_1.genblk1\[0\].dly_binary.out_mux sky130_fd_sc_hd__mux2_1 ;
+    - clkgen.delay_155ns_1.genblk1\[1\].bypass_enable sky130_fd_sc_hd__and2_1 ;
+    - clkgen.delay_155ns_1.genblk1\[1\].control_invert sky130_fd_sc_hd__inv_2 ;
+    - clkgen.delay_155ns_1.genblk1\[1\].dly_binary.and_bypass_switch sky130_fd_sc_hd__and2b_1 ;
+    - clkgen.delay_155ns_1.genblk1\[1\].dly_binary.genblk1\[0\].delay_unit sky130_mm_sc_hd_dlyPoly5ns ;
+    - clkgen.delay_155ns_1.genblk1\[1\].dly_binary.genblk1\[1\].delay_unit sky130_mm_sc_hd_dlyPoly5ns ;
+    - clkgen.delay_155ns_1.genblk1\[1\].dly_binary.out_mux sky130_fd_sc_hd__mux2_1 ;
+    - clkgen.delay_155ns_1.genblk1\[2\].bypass_enable sky130_fd_sc_hd__and2_1 ;
+    - clkgen.delay_155ns_1.genblk1\[2\].control_invert sky130_fd_sc_hd__inv_2 ;
+    - clkgen.delay_155ns_1.genblk1\[2\].dly_binary.and_bypass_switch sky130_fd_sc_hd__and2b_1 ;
+    - clkgen.delay_155ns_1.genblk1\[2\].dly_binary.genblk1\[0\].delay_unit sky130_mm_sc_hd_dlyPoly5ns ;
+    - clkgen.delay_155ns_1.genblk1\[2\].dly_binary.genblk1\[1\].delay_unit sky130_mm_sc_hd_dlyPoly5ns ;
+    - clkgen.delay_155ns_1.genblk1\[2\].dly_binary.genblk1\[2\].delay_unit sky130_mm_sc_hd_dlyPoly5ns ;
+    - clkgen.delay_155ns_1.genblk1\[2\].dly_binary.genblk1\[3\].delay_unit sky130_mm_sc_hd_dlyPoly5ns ;
+    - clkgen.delay_155ns_1.genblk1\[2\].dly_binary.out_mux sky130_fd_sc_hd__mux2_1 ;
+    - clkgen.delay_155ns_1.genblk1\[3\].bypass_enable sky130_fd_sc_hd__and2_1 ;
+    - clkgen.delay_155ns_1.genblk1\[3\].control_invert sky130_fd_sc_hd__inv_2 ;
+    - clkgen.delay_155ns_1.genblk1\[3\].dly_binary.and_bypass_switch sky130_fd_sc_hd__and2b_1 ;
+    - clkgen.delay_155ns_1.genblk1\[3\].dly_binary.genblk1\[0\].delay_unit sky130_mm_sc_hd_dlyPoly5ns ;
+    - clkgen.delay_155ns_1.genblk1\[3\].dly_binary.genblk1\[1\].delay_unit sky130_mm_sc_hd_dlyPoly5ns ;
+    - clkgen.delay_155ns_1.genblk1\[3\].dly_binary.genblk1\[2\].delay_unit sky130_mm_sc_hd_dlyPoly5ns ;
+    - clkgen.delay_155ns_1.genblk1\[3\].dly_binary.genblk1\[3\].delay_unit sky130_mm_sc_hd_dlyPoly5ns ;
+    - clkgen.delay_155ns_1.genblk1\[3\].dly_binary.genblk1\[4\].delay_unit sky130_mm_sc_hd_dlyPoly5ns ;
+    - clkgen.delay_155ns_1.genblk1\[3\].dly_binary.genblk1\[5\].delay_unit sky130_mm_sc_hd_dlyPoly5ns ;
+    - clkgen.delay_155ns_1.genblk1\[3\].dly_binary.genblk1\[6\].delay_unit sky130_mm_sc_hd_dlyPoly5ns ;
+    - clkgen.delay_155ns_1.genblk1\[3\].dly_binary.genblk1\[7\].delay_unit sky130_mm_sc_hd_dlyPoly5ns ;
+    - clkgen.delay_155ns_1.genblk1\[3\].dly_binary.out_mux sky130_fd_sc_hd__mux2_1 ;
+    - clkgen.delay_155ns_1.genblk1\[4\].bypass_enable sky130_fd_sc_hd__and2_1 ;
+    - clkgen.delay_155ns_1.genblk1\[4\].control_invert sky130_fd_sc_hd__inv_2 ;
+    - clkgen.delay_155ns_1.genblk1\[4\].dly_binary.and_bypass_switch sky130_fd_sc_hd__and2b_1 ;
+    - clkgen.delay_155ns_1.genblk1\[4\].dly_binary.genblk1\[0\].delay_unit sky130_mm_sc_hd_dlyPoly5ns ;
+    - clkgen.delay_155ns_1.genblk1\[4\].dly_binary.genblk1\[10\].delay_unit sky130_mm_sc_hd_dlyPoly5ns ;
+    - clkgen.delay_155ns_1.genblk1\[4\].dly_binary.genblk1\[11\].delay_unit sky130_mm_sc_hd_dlyPoly5ns ;
+    - clkgen.delay_155ns_1.genblk1\[4\].dly_binary.genblk1\[12\].delay_unit sky130_mm_sc_hd_dlyPoly5ns ;
+    - clkgen.delay_155ns_1.genblk1\[4\].dly_binary.genblk1\[13\].delay_unit sky130_mm_sc_hd_dlyPoly5ns ;
+    - clkgen.delay_155ns_1.genblk1\[4\].dly_binary.genblk1\[14\].delay_unit sky130_mm_sc_hd_dlyPoly5ns ;
+    - clkgen.delay_155ns_1.genblk1\[4\].dly_binary.genblk1\[15\].delay_unit sky130_mm_sc_hd_dlyPoly5ns ;
+    - clkgen.delay_155ns_1.genblk1\[4\].dly_binary.genblk1\[1\].delay_unit sky130_mm_sc_hd_dlyPoly5ns ;
+    - clkgen.delay_155ns_1.genblk1\[4\].dly_binary.genblk1\[2\].delay_unit sky130_mm_sc_hd_dlyPoly5ns ;
+    - clkgen.delay_155ns_1.genblk1\[4\].dly_binary.genblk1\[3\].delay_unit sky130_mm_sc_hd_dlyPoly5ns ;
+    - clkgen.delay_155ns_1.genblk1\[4\].dly_binary.genblk1\[4\].delay_unit sky130_mm_sc_hd_dlyPoly5ns ;
+    - clkgen.delay_155ns_1.genblk1\[4\].dly_binary.genblk1\[5\].delay_unit sky130_mm_sc_hd_dlyPoly5ns ;
+    - clkgen.delay_155ns_1.genblk1\[4\].dly_binary.genblk1\[6\].delay_unit sky130_mm_sc_hd_dlyPoly5ns ;
+    - clkgen.delay_155ns_1.genblk1\[4\].dly_binary.genblk1\[7\].delay_unit sky130_mm_sc_hd_dlyPoly5ns ;
+    - clkgen.delay_155ns_1.genblk1\[4\].dly_binary.genblk1\[8\].delay_unit sky130_mm_sc_hd_dlyPoly5ns ;
+    - clkgen.delay_155ns_1.genblk1\[4\].dly_binary.genblk1\[9\].delay_unit sky130_mm_sc_hd_dlyPoly5ns ;
+    - clkgen.delay_155ns_1.genblk1\[4\].dly_binary.out_mux sky130_fd_sc_hd__mux2_1 ;
+    - clkgen.delay_155ns_2.enablebuffer sky130_fd_sc_hd__buf_4 ;
+    - clkgen.delay_155ns_2.genblk1\[0\].bypass_enable sky130_fd_sc_hd__and2_1 ;
+    - clkgen.delay_155ns_2.genblk1\[0\].control_invert sky130_fd_sc_hd__inv_2 ;
+    - clkgen.delay_155ns_2.genblk1\[0\].dly_binary.and_bypass_switch sky130_fd_sc_hd__and2b_1 ;
+    - clkgen.delay_155ns_2.genblk1\[0\].dly_binary.genblk1\[0\].delay_unit sky130_mm_sc_hd_dlyPoly5ns ;
+    - clkgen.delay_155ns_2.genblk1\[0\].dly_binary.out_mux sky130_fd_sc_hd__mux2_1 ;
+    - clkgen.delay_155ns_2.genblk1\[1\].bypass_enable sky130_fd_sc_hd__and2_1 ;
+    - clkgen.delay_155ns_2.genblk1\[1\].control_invert sky130_fd_sc_hd__inv_2 ;
+    - clkgen.delay_155ns_2.genblk1\[1\].dly_binary.and_bypass_switch sky130_fd_sc_hd__and2b_1 ;
+    - clkgen.delay_155ns_2.genblk1\[1\].dly_binary.genblk1\[0\].delay_unit sky130_mm_sc_hd_dlyPoly5ns ;
+    - clkgen.delay_155ns_2.genblk1\[1\].dly_binary.genblk1\[1\].delay_unit sky130_mm_sc_hd_dlyPoly5ns ;
+    - clkgen.delay_155ns_2.genblk1\[1\].dly_binary.out_mux sky130_fd_sc_hd__mux2_1 ;
+    - clkgen.delay_155ns_2.genblk1\[2\].bypass_enable sky130_fd_sc_hd__and2_1 ;
+    - clkgen.delay_155ns_2.genblk1\[2\].control_invert sky130_fd_sc_hd__inv_2 ;
+    - clkgen.delay_155ns_2.genblk1\[2\].dly_binary.and_bypass_switch sky130_fd_sc_hd__and2b_1 ;
+    - clkgen.delay_155ns_2.genblk1\[2\].dly_binary.genblk1\[0\].delay_unit sky130_mm_sc_hd_dlyPoly5ns ;
+    - clkgen.delay_155ns_2.genblk1\[2\].dly_binary.genblk1\[1\].delay_unit sky130_mm_sc_hd_dlyPoly5ns ;
+    - clkgen.delay_155ns_2.genblk1\[2\].dly_binary.genblk1\[2\].delay_unit sky130_mm_sc_hd_dlyPoly5ns ;
+    - clkgen.delay_155ns_2.genblk1\[2\].dly_binary.genblk1\[3\].delay_unit sky130_mm_sc_hd_dlyPoly5ns ;
+    - clkgen.delay_155ns_2.genblk1\[2\].dly_binary.out_mux sky130_fd_sc_hd__mux2_1 ;
+    - clkgen.delay_155ns_2.genblk1\[3\].bypass_enable sky130_fd_sc_hd__and2_1 ;
+    - clkgen.delay_155ns_2.genblk1\[3\].control_invert sky130_fd_sc_hd__inv_2 ;
+    - clkgen.delay_155ns_2.genblk1\[3\].dly_binary.and_bypass_switch sky130_fd_sc_hd__and2b_1 ;
+    - clkgen.delay_155ns_2.genblk1\[3\].dly_binary.genblk1\[0\].delay_unit sky130_mm_sc_hd_dlyPoly5ns ;
+    - clkgen.delay_155ns_2.genblk1\[3\].dly_binary.genblk1\[1\].delay_unit sky130_mm_sc_hd_dlyPoly5ns ;
+    - clkgen.delay_155ns_2.genblk1\[3\].dly_binary.genblk1\[2\].delay_unit sky130_mm_sc_hd_dlyPoly5ns ;
+    - clkgen.delay_155ns_2.genblk1\[3\].dly_binary.genblk1\[3\].delay_unit sky130_mm_sc_hd_dlyPoly5ns ;
+    - clkgen.delay_155ns_2.genblk1\[3\].dly_binary.genblk1\[4\].delay_unit sky130_mm_sc_hd_dlyPoly5ns ;
+    - clkgen.delay_155ns_2.genblk1\[3\].dly_binary.genblk1\[5\].delay_unit sky130_mm_sc_hd_dlyPoly5ns ;
+    - clkgen.delay_155ns_2.genblk1\[3\].dly_binary.genblk1\[6\].delay_unit sky130_mm_sc_hd_dlyPoly5ns ;
+    - clkgen.delay_155ns_2.genblk1\[3\].dly_binary.genblk1\[7\].delay_unit sky130_mm_sc_hd_dlyPoly5ns ;
+    - clkgen.delay_155ns_2.genblk1\[3\].dly_binary.out_mux sky130_fd_sc_hd__mux2_1 ;
+    - clkgen.delay_155ns_2.genblk1\[4\].bypass_enable sky130_fd_sc_hd__and2_1 ;
+    - clkgen.delay_155ns_2.genblk1\[4\].control_invert sky130_fd_sc_hd__inv_2 ;
+    - clkgen.delay_155ns_2.genblk1\[4\].dly_binary.and_bypass_switch sky130_fd_sc_hd__and2b_1 ;
+    - clkgen.delay_155ns_2.genblk1\[4\].dly_binary.genblk1\[0\].delay_unit sky130_mm_sc_hd_dlyPoly5ns ;
+    - clkgen.delay_155ns_2.genblk1\[4\].dly_binary.genblk1\[10\].delay_unit sky130_mm_sc_hd_dlyPoly5ns ;
+    - clkgen.delay_155ns_2.genblk1\[4\].dly_binary.genblk1\[11\].delay_unit sky130_mm_sc_hd_dlyPoly5ns ;
+    - clkgen.delay_155ns_2.genblk1\[4\].dly_binary.genblk1\[12\].delay_unit sky130_mm_sc_hd_dlyPoly5ns ;
+    - clkgen.delay_155ns_2.genblk1\[4\].dly_binary.genblk1\[13\].delay_unit sky130_mm_sc_hd_dlyPoly5ns ;
+    - clkgen.delay_155ns_2.genblk1\[4\].dly_binary.genblk1\[14\].delay_unit sky130_mm_sc_hd_dlyPoly5ns ;
+    - clkgen.delay_155ns_2.genblk1\[4\].dly_binary.genblk1\[15\].delay_unit sky130_mm_sc_hd_dlyPoly5ns ;
+    - clkgen.delay_155ns_2.genblk1\[4\].dly_binary.genblk1\[1\].delay_unit sky130_mm_sc_hd_dlyPoly5ns ;
+    - clkgen.delay_155ns_2.genblk1\[4\].dly_binary.genblk1\[2\].delay_unit sky130_mm_sc_hd_dlyPoly5ns ;
+    - clkgen.delay_155ns_2.genblk1\[4\].dly_binary.genblk1\[3\].delay_unit sky130_mm_sc_hd_dlyPoly5ns ;
+    - clkgen.delay_155ns_2.genblk1\[4\].dly_binary.genblk1\[4\].delay_unit sky130_mm_sc_hd_dlyPoly5ns ;
+    - clkgen.delay_155ns_2.genblk1\[4\].dly_binary.genblk1\[5\].delay_unit sky130_mm_sc_hd_dlyPoly5ns ;
+    - clkgen.delay_155ns_2.genblk1\[4\].dly_binary.genblk1\[6\].delay_unit sky130_mm_sc_hd_dlyPoly5ns ;
+    - clkgen.delay_155ns_2.genblk1\[4\].dly_binary.genblk1\[7\].delay_unit sky130_mm_sc_hd_dlyPoly5ns ;
+    - clkgen.delay_155ns_2.genblk1\[4\].dly_binary.genblk1\[8\].delay_unit sky130_mm_sc_hd_dlyPoly5ns ;
+    - clkgen.delay_155ns_2.genblk1\[4\].dly_binary.genblk1\[9\].delay_unit sky130_mm_sc_hd_dlyPoly5ns ;
+    - clkgen.delay_155ns_2.genblk1\[4\].dly_binary.out_mux sky130_fd_sc_hd__mux2_1 ;
+    - clkgen.delay_155ns_3.enablebuffer sky130_fd_sc_hd__buf_4 ;
+    - clkgen.delay_155ns_3.genblk1\[0\].bypass_enable sky130_fd_sc_hd__and2_1 ;
+    - clkgen.delay_155ns_3.genblk1\[0\].control_invert sky130_fd_sc_hd__inv_2 ;
+    - clkgen.delay_155ns_3.genblk1\[0\].dly_binary.and_bypass_switch sky130_fd_sc_hd__and2b_1 ;
+    - clkgen.delay_155ns_3.genblk1\[0\].dly_binary.genblk1\[0\].delay_unit sky130_mm_sc_hd_dlyPoly5ns ;
+    - clkgen.delay_155ns_3.genblk1\[0\].dly_binary.out_mux sky130_fd_sc_hd__mux2_1 ;
+    - clkgen.delay_155ns_3.genblk1\[1\].bypass_enable sky130_fd_sc_hd__and2_1 ;
+    - clkgen.delay_155ns_3.genblk1\[1\].control_invert sky130_fd_sc_hd__inv_2 ;
+    - clkgen.delay_155ns_3.genblk1\[1\].dly_binary.and_bypass_switch sky130_fd_sc_hd__and2b_1 ;
+    - clkgen.delay_155ns_3.genblk1\[1\].dly_binary.genblk1\[0\].delay_unit sky130_mm_sc_hd_dlyPoly5ns ;
+    - clkgen.delay_155ns_3.genblk1\[1\].dly_binary.genblk1\[1\].delay_unit sky130_mm_sc_hd_dlyPoly5ns ;
+    - clkgen.delay_155ns_3.genblk1\[1\].dly_binary.out_mux sky130_fd_sc_hd__mux2_1 ;
+    - clkgen.delay_155ns_3.genblk1\[2\].bypass_enable sky130_fd_sc_hd__and2_1 ;
+    - clkgen.delay_155ns_3.genblk1\[2\].control_invert sky130_fd_sc_hd__inv_2 ;
+    - clkgen.delay_155ns_3.genblk1\[2\].dly_binary.and_bypass_switch sky130_fd_sc_hd__and2b_1 ;
+    - clkgen.delay_155ns_3.genblk1\[2\].dly_binary.genblk1\[0\].delay_unit sky130_mm_sc_hd_dlyPoly5ns ;
+    - clkgen.delay_155ns_3.genblk1\[2\].dly_binary.genblk1\[1\].delay_unit sky130_mm_sc_hd_dlyPoly5ns ;
+    - clkgen.delay_155ns_3.genblk1\[2\].dly_binary.genblk1\[2\].delay_unit sky130_mm_sc_hd_dlyPoly5ns ;
+    - clkgen.delay_155ns_3.genblk1\[2\].dly_binary.genblk1\[3\].delay_unit sky130_mm_sc_hd_dlyPoly5ns ;
+    - clkgen.delay_155ns_3.genblk1\[2\].dly_binary.out_mux sky130_fd_sc_hd__mux2_1 ;
+    - clkgen.delay_155ns_3.genblk1\[3\].bypass_enable sky130_fd_sc_hd__and2_1 ;
+    - clkgen.delay_155ns_3.genblk1\[3\].control_invert sky130_fd_sc_hd__inv_2 ;
+    - clkgen.delay_155ns_3.genblk1\[3\].dly_binary.and_bypass_switch sky130_fd_sc_hd__and2b_1 ;
+    - clkgen.delay_155ns_3.genblk1\[3\].dly_binary.genblk1\[0\].delay_unit sky130_mm_sc_hd_dlyPoly5ns ;
+    - clkgen.delay_155ns_3.genblk1\[3\].dly_binary.genblk1\[1\].delay_unit sky130_mm_sc_hd_dlyPoly5ns ;
+    - clkgen.delay_155ns_3.genblk1\[3\].dly_binary.genblk1\[2\].delay_unit sky130_mm_sc_hd_dlyPoly5ns ;
+    - clkgen.delay_155ns_3.genblk1\[3\].dly_binary.genblk1\[3\].delay_unit sky130_mm_sc_hd_dlyPoly5ns ;
+    - clkgen.delay_155ns_3.genblk1\[3\].dly_binary.genblk1\[4\].delay_unit sky130_mm_sc_hd_dlyPoly5ns ;
+    - clkgen.delay_155ns_3.genblk1\[3\].dly_binary.genblk1\[5\].delay_unit sky130_mm_sc_hd_dlyPoly5ns ;
+    - clkgen.delay_155ns_3.genblk1\[3\].dly_binary.genblk1\[6\].delay_unit sky130_mm_sc_hd_dlyPoly5ns ;
+    - clkgen.delay_155ns_3.genblk1\[3\].dly_binary.genblk1\[7\].delay_unit sky130_mm_sc_hd_dlyPoly5ns ;
+    - clkgen.delay_155ns_3.genblk1\[3\].dly_binary.out_mux sky130_fd_sc_hd__mux2_1 ;
+    - clkgen.delay_155ns_3.genblk1\[4\].bypass_enable sky130_fd_sc_hd__and2_1 ;
+    - clkgen.delay_155ns_3.genblk1\[4\].control_invert sky130_fd_sc_hd__inv_2 ;
+    - clkgen.delay_155ns_3.genblk1\[4\].dly_binary.and_bypass_switch sky130_fd_sc_hd__and2b_1 ;
+    - clkgen.delay_155ns_3.genblk1\[4\].dly_binary.genblk1\[0\].delay_unit sky130_mm_sc_hd_dlyPoly5ns ;
+    - clkgen.delay_155ns_3.genblk1\[4\].dly_binary.genblk1\[10\].delay_unit sky130_mm_sc_hd_dlyPoly5ns ;
+    - clkgen.delay_155ns_3.genblk1\[4\].dly_binary.genblk1\[11\].delay_unit sky130_mm_sc_hd_dlyPoly5ns ;
+    - clkgen.delay_155ns_3.genblk1\[4\].dly_binary.genblk1\[12\].delay_unit sky130_mm_sc_hd_dlyPoly5ns ;
+    - clkgen.delay_155ns_3.genblk1\[4\].dly_binary.genblk1\[13\].delay_unit sky130_mm_sc_hd_dlyPoly5ns ;
+    - clkgen.delay_155ns_3.genblk1\[4\].dly_binary.genblk1\[14\].delay_unit sky130_mm_sc_hd_dlyPoly5ns ;
+    - clkgen.delay_155ns_3.genblk1\[4\].dly_binary.genblk1\[15\].delay_unit sky130_mm_sc_hd_dlyPoly5ns ;
+    - clkgen.delay_155ns_3.genblk1\[4\].dly_binary.genblk1\[1\].delay_unit sky130_mm_sc_hd_dlyPoly5ns ;
+    - clkgen.delay_155ns_3.genblk1\[4\].dly_binary.genblk1\[2\].delay_unit sky130_mm_sc_hd_dlyPoly5ns ;
+    - clkgen.delay_155ns_3.genblk1\[4\].dly_binary.genblk1\[3\].delay_unit sky130_mm_sc_hd_dlyPoly5ns ;
+    - clkgen.delay_155ns_3.genblk1\[4\].dly_binary.genblk1\[4\].delay_unit sky130_mm_sc_hd_dlyPoly5ns ;
+    - clkgen.delay_155ns_3.genblk1\[4\].dly_binary.genblk1\[5\].delay_unit sky130_mm_sc_hd_dlyPoly5ns ;
+    - clkgen.delay_155ns_3.genblk1\[4\].dly_binary.genblk1\[6\].delay_unit sky130_mm_sc_hd_dlyPoly5ns ;
+    - clkgen.delay_155ns_3.genblk1\[4\].dly_binary.genblk1\[7\].delay_unit sky130_mm_sc_hd_dlyPoly5ns ;
+    - clkgen.delay_155ns_3.genblk1\[4\].dly_binary.genblk1\[8\].delay_unit sky130_mm_sc_hd_dlyPoly5ns ;
+    - clkgen.delay_155ns_3.genblk1\[4\].dly_binary.genblk1\[9\].delay_unit sky130_mm_sc_hd_dlyPoly5ns ;
+    - clkgen.delay_155ns_3.genblk1\[4\].dly_binary.out_mux sky130_fd_sc_hd__mux2_1 ;
+    - clkgen.nor1 sky130_fd_sc_hd__nor2b_1 ;
+    - edgedetect.dly_315ns_1.enablebuffer sky130_fd_sc_hd__buf_4 ;
+    - edgedetect.dly_315ns_1.genblk1\[0\].bypass_enable sky130_fd_sc_hd__and2_1 ;
+    - edgedetect.dly_315ns_1.genblk1\[0\].control_invert sky130_fd_sc_hd__inv_2 ;
+    - edgedetect.dly_315ns_1.genblk1\[0\].dly_binary.and_bypass_switch sky130_fd_sc_hd__and2b_1 ;
+    - edgedetect.dly_315ns_1.genblk1\[0\].dly_binary.genblk1\[0\].delay_unit sky130_mm_sc_hd_dlyPoly5ns ;
+    - edgedetect.dly_315ns_1.genblk1\[0\].dly_binary.out_mux sky130_fd_sc_hd__mux2_1 ;
+    - edgedetect.dly_315ns_1.genblk1\[1\].bypass_enable sky130_fd_sc_hd__and2_1 ;
+    - edgedetect.dly_315ns_1.genblk1\[1\].control_invert sky130_fd_sc_hd__inv_2 ;
+    - edgedetect.dly_315ns_1.genblk1\[1\].dly_binary.and_bypass_switch sky130_fd_sc_hd__and2b_1 ;
+    - edgedetect.dly_315ns_1.genblk1\[1\].dly_binary.genblk1\[0\].delay_unit sky130_mm_sc_hd_dlyPoly5ns ;
+    - edgedetect.dly_315ns_1.genblk1\[1\].dly_binary.genblk1\[1\].delay_unit sky130_mm_sc_hd_dlyPoly5ns ;
+    - edgedetect.dly_315ns_1.genblk1\[1\].dly_binary.out_mux sky130_fd_sc_hd__mux2_1 ;
+    - edgedetect.dly_315ns_1.genblk1\[2\].bypass_enable sky130_fd_sc_hd__and2_1 ;
+    - edgedetect.dly_315ns_1.genblk1\[2\].control_invert sky130_fd_sc_hd__inv_2 ;
+    - edgedetect.dly_315ns_1.genblk1\[2\].dly_binary.and_bypass_switch sky130_fd_sc_hd__and2b_1 ;
+    - edgedetect.dly_315ns_1.genblk1\[2\].dly_binary.genblk1\[0\].delay_unit sky130_mm_sc_hd_dlyPoly5ns ;
+    - edgedetect.dly_315ns_1.genblk1\[2\].dly_binary.genblk1\[1\].delay_unit sky130_mm_sc_hd_dlyPoly5ns ;
+    - edgedetect.dly_315ns_1.genblk1\[2\].dly_binary.genblk1\[2\].delay_unit sky130_mm_sc_hd_dlyPoly5ns ;
+    - edgedetect.dly_315ns_1.genblk1\[2\].dly_binary.genblk1\[3\].delay_unit sky130_mm_sc_hd_dlyPoly5ns ;
+    - edgedetect.dly_315ns_1.genblk1\[2\].dly_binary.out_mux sky130_fd_sc_hd__mux2_1 ;
+    - edgedetect.dly_315ns_1.genblk1\[3\].bypass_enable sky130_fd_sc_hd__and2_1 ;
+    - edgedetect.dly_315ns_1.genblk1\[3\].control_invert sky130_fd_sc_hd__inv_2 ;
+    - edgedetect.dly_315ns_1.genblk1\[3\].dly_binary.and_bypass_switch sky130_fd_sc_hd__and2b_1 ;
+    - edgedetect.dly_315ns_1.genblk1\[3\].dly_binary.genblk1\[0\].delay_unit sky130_mm_sc_hd_dlyPoly5ns ;
+    - edgedetect.dly_315ns_1.genblk1\[3\].dly_binary.genblk1\[1\].delay_unit sky130_mm_sc_hd_dlyPoly5ns ;
+    - edgedetect.dly_315ns_1.genblk1\[3\].dly_binary.genblk1\[2\].delay_unit sky130_mm_sc_hd_dlyPoly5ns ;
+    - edgedetect.dly_315ns_1.genblk1\[3\].dly_binary.genblk1\[3\].delay_unit sky130_mm_sc_hd_dlyPoly5ns ;
+    - edgedetect.dly_315ns_1.genblk1\[3\].dly_binary.genblk1\[4\].delay_unit sky130_mm_sc_hd_dlyPoly5ns ;
+    - edgedetect.dly_315ns_1.genblk1\[3\].dly_binary.genblk1\[5\].delay_unit sky130_mm_sc_hd_dlyPoly5ns ;
+    - edgedetect.dly_315ns_1.genblk1\[3\].dly_binary.genblk1\[6\].delay_unit sky130_mm_sc_hd_dlyPoly5ns ;
+    - edgedetect.dly_315ns_1.genblk1\[3\].dly_binary.genblk1\[7\].delay_unit sky130_mm_sc_hd_dlyPoly5ns ;
+    - edgedetect.dly_315ns_1.genblk1\[3\].dly_binary.out_mux sky130_fd_sc_hd__mux2_1 ;
+    - edgedetect.dly_315ns_1.genblk1\[4\].bypass_enable sky130_fd_sc_hd__and2_1 ;
+    - edgedetect.dly_315ns_1.genblk1\[4\].control_invert sky130_fd_sc_hd__inv_2 ;
+    - edgedetect.dly_315ns_1.genblk1\[4\].dly_binary.and_bypass_switch sky130_fd_sc_hd__and2b_1 ;
+    - edgedetect.dly_315ns_1.genblk1\[4\].dly_binary.genblk1\[0\].delay_unit sky130_mm_sc_hd_dlyPoly5ns ;
+    - edgedetect.dly_315ns_1.genblk1\[4\].dly_binary.genblk1\[10\].delay_unit sky130_mm_sc_hd_dlyPoly5ns ;
+    - edgedetect.dly_315ns_1.genblk1\[4\].dly_binary.genblk1\[11\].delay_unit sky130_mm_sc_hd_dlyPoly5ns ;
+    - edgedetect.dly_315ns_1.genblk1\[4\].dly_binary.genblk1\[12\].delay_unit sky130_mm_sc_hd_dlyPoly5ns ;
+    - edgedetect.dly_315ns_1.genblk1\[4\].dly_binary.genblk1\[13\].delay_unit sky130_mm_sc_hd_dlyPoly5ns ;
+    - edgedetect.dly_315ns_1.genblk1\[4\].dly_binary.genblk1\[14\].delay_unit sky130_mm_sc_hd_dlyPoly5ns ;
+    - edgedetect.dly_315ns_1.genblk1\[4\].dly_binary.genblk1\[15\].delay_unit sky130_mm_sc_hd_dlyPoly5ns ;
+    - edgedetect.dly_315ns_1.genblk1\[4\].dly_binary.genblk1\[1\].delay_unit sky130_mm_sc_hd_dlyPoly5ns ;
+    - edgedetect.dly_315ns_1.genblk1\[4\].dly_binary.genblk1\[2\].delay_unit sky130_mm_sc_hd_dlyPoly5ns ;
+    - edgedetect.dly_315ns_1.genblk1\[4\].dly_binary.genblk1\[3\].delay_unit sky130_mm_sc_hd_dlyPoly5ns ;
+    - edgedetect.dly_315ns_1.genblk1\[4\].dly_binary.genblk1\[4\].delay_unit sky130_mm_sc_hd_dlyPoly5ns ;
+    - edgedetect.dly_315ns_1.genblk1\[4\].dly_binary.genblk1\[5\].delay_unit sky130_mm_sc_hd_dlyPoly5ns ;
+    - edgedetect.dly_315ns_1.genblk1\[4\].dly_binary.genblk1\[6\].delay_unit sky130_mm_sc_hd_dlyPoly5ns ;
+    - edgedetect.dly_315ns_1.genblk1\[4\].dly_binary.genblk1\[7\].delay_unit sky130_mm_sc_hd_dlyPoly5ns ;
+    - edgedetect.dly_315ns_1.genblk1\[4\].dly_binary.genblk1\[8\].delay_unit sky130_mm_sc_hd_dlyPoly5ns ;
+    - edgedetect.dly_315ns_1.genblk1\[4\].dly_binary.genblk1\[9\].delay_unit sky130_mm_sc_hd_dlyPoly5ns ;
+    - edgedetect.dly_315ns_1.genblk1\[4\].dly_binary.out_mux sky130_fd_sc_hd__mux2_1 ;
+    - edgedetect.dly_315ns_1.genblk1\[5\].bypass_enable sky130_fd_sc_hd__and2_1 ;
+    - edgedetect.dly_315ns_1.genblk1\[5\].control_invert sky130_fd_sc_hd__inv_2 ;
+    - edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.and_bypass_switch sky130_fd_sc_hd__and2b_1 ;
+    - edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.genblk1\[0\].delay_unit sky130_mm_sc_hd_dlyPoly5ns ;
+    - edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.genblk1\[10\].delay_unit sky130_mm_sc_hd_dlyPoly5ns ;
+    - edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.genblk1\[11\].delay_unit sky130_mm_sc_hd_dlyPoly5ns ;
+    - edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.genblk1\[12\].delay_unit sky130_mm_sc_hd_dlyPoly5ns ;
+    - edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.genblk1\[13\].delay_unit sky130_mm_sc_hd_dlyPoly5ns ;
+    - edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.genblk1\[14\].delay_unit sky130_mm_sc_hd_dlyPoly5ns ;
+    - edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.genblk1\[15\].delay_unit sky130_mm_sc_hd_dlyPoly5ns ;
+    - edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.genblk1\[16\].delay_unit sky130_mm_sc_hd_dlyPoly5ns ;
+    - edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.genblk1\[17\].delay_unit sky130_mm_sc_hd_dlyPoly5ns ;
+    - edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.genblk1\[18\].delay_unit sky130_mm_sc_hd_dlyPoly5ns ;
+    - edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.genblk1\[19\].delay_unit sky130_mm_sc_hd_dlyPoly5ns ;
+    - edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.genblk1\[1\].delay_unit sky130_mm_sc_hd_dlyPoly5ns ;
+    - edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.genblk1\[20\].delay_unit sky130_mm_sc_hd_dlyPoly5ns ;
+    - edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.genblk1\[21\].delay_unit sky130_mm_sc_hd_dlyPoly5ns ;
+    - edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.genblk1\[22\].delay_unit sky130_mm_sc_hd_dlyPoly5ns ;
+    - edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.genblk1\[23\].delay_unit sky130_mm_sc_hd_dlyPoly5ns ;
+    - edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.genblk1\[24\].delay_unit sky130_mm_sc_hd_dlyPoly5ns ;
+    - edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.genblk1\[25\].delay_unit sky130_mm_sc_hd_dlyPoly5ns ;
+    - edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.genblk1\[26\].delay_unit sky130_mm_sc_hd_dlyPoly5ns ;
+    - edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.genblk1\[27\].delay_unit sky130_mm_sc_hd_dlyPoly5ns ;
+    - edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.genblk1\[28\].delay_unit sky130_mm_sc_hd_dlyPoly5ns ;
+    - edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.genblk1\[29\].delay_unit sky130_mm_sc_hd_dlyPoly5ns ;
+    - edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.genblk1\[2\].delay_unit sky130_mm_sc_hd_dlyPoly5ns ;
+    - edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.genblk1\[30\].delay_unit sky130_mm_sc_hd_dlyPoly5ns ;
+    - edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.genblk1\[31\].delay_unit sky130_mm_sc_hd_dlyPoly5ns ;
+    - edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.genblk1\[3\].delay_unit sky130_mm_sc_hd_dlyPoly5ns ;
+    - edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.genblk1\[4\].delay_unit sky130_mm_sc_hd_dlyPoly5ns ;
+    - edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.genblk1\[5\].delay_unit sky130_mm_sc_hd_dlyPoly5ns ;
+    - edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.genblk1\[6\].delay_unit sky130_mm_sc_hd_dlyPoly5ns ;
+    - edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.genblk1\[7\].delay_unit sky130_mm_sc_hd_dlyPoly5ns ;
+    - edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.genblk1\[8\].delay_unit sky130_mm_sc_hd_dlyPoly5ns ;
+    - edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.genblk1\[9\].delay_unit sky130_mm_sc_hd_dlyPoly5ns ;
+    - edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.out_mux sky130_fd_sc_hd__mux2_1 ;
+    - edgedetect.nor1 sky130_fd_sc_hd__nor2b_1 ;
+    - edgedetect.or1 sky130_fd_sc_hd__or2_1 ;
+    - inbuf_1 sky130_fd_sc_hd__buf_1 ;
+    - inbuf_2 sky130_fd_sc_hd__buf_1 ;
+    - inbuf_3 sky130_fd_sc_hd__buf_1 ;
+    - outbuf_1 sky130_fd_sc_hd__buf_4 ;
+    - outbuf_2 sky130_fd_sc_hd__buf_4 ;
+    - outbuf_3 sky130_fd_sc_hd__buf_4 ;
+    - outbuf_4 sky130_fd_sc_hd__buf_4 ;
+    - outbuf_5 sky130_fd_sc_hd__buf_4 ;
+    - outbuf_6 sky130_fd_sc_hd__buf_4 ;
+    - sampledly01 sky130_fd_sc_hd__dlymetal6s6s_1 ;
+    - sampledly02 sky130_fd_sc_hd__dlymetal6s6s_1 ;
+    - sampledly03 sky130_fd_sc_hd__dlymetal6s6s_1 ;
+    - sampledly04 sky130_fd_sc_hd__dlymetal6s6s_1 ;
+    - sampledly11 sky130_fd_sc_hd__dlymetal6s6s_1 ;
+    - sampledly12 sky130_fd_sc_hd__dlymetal6s6s_1 ;
+    - sampledly13 sky130_fd_sc_hd__dlymetal6s6s_1 ;
+    - sampledly14 sky130_fd_sc_hd__dlymetal6s6s_1 ;
+    - sampledly21 sky130_fd_sc_hd__dlymetal6s6s_1 ;
+    - sampledly22 sky130_fd_sc_hd__dlymetal6s6s_1 ;
+    - sampledly23 sky130_fd_sc_hd__dlymetal6s6s_1 ;
+    - sampledly24 sky130_fd_sc_hd__dlymetal6s6s_1 ;
+    - sampledly31 sky130_fd_sc_hd__dlymetal6s6s_1 ;
+    - sampledly32 sky130_fd_sc_hd__dlymetal6s6s_1 ;
+    - sampledly33 sky130_fd_sc_hd__dlymetal6s6s_1 ;
+    - sampledly34 sky130_fd_sc_hd__dlymetal6s6s_1 ;
+END COMPONENTS
+PINS 35 ;
+    - clk_comp_out + NET clk_comp_out + DIRECTION OUTPUT + USE SIGNAL
+      + PORT
+        + LAYER met3 ( -2000 -300 ) ( 2000 300 )
+        + PLACED ( 158000 15980 ) N ;
+    - clk_dig_out + NET clk_dig_out + DIRECTION OUTPUT + USE SIGNAL
+      + PORT
+        + LAYER met3 ( -2000 -300 ) ( 2000 300 )
+        + PLACED ( 2000 11220 ) N ;
+    - dlycontrol1_in[0] + NET dlycontrol1_in[0] + DIRECTION INPUT + USE SIGNAL
+      + PORT
+        + LAYER met3 ( -2000 -300 ) ( 2000 300 )
+        + PLACED ( 2000 15300 ) N ;
+    - dlycontrol1_in[1] + NET dlycontrol1_in[1] + DIRECTION INPUT + USE SIGNAL
+      + PORT
+        + LAYER met3 ( -2000 -300 ) ( 2000 300 )
+        + PLACED ( 2000 17340 ) N ;
+    - dlycontrol1_in[2] + NET dlycontrol1_in[2] + DIRECTION INPUT + USE SIGNAL
+      + PORT
+        + LAYER met3 ( -2000 -300 ) ( 2000 300 )
+        + PLACED ( 2000 19380 ) N ;
+    - dlycontrol1_in[3] + NET dlycontrol1_in[3] + DIRECTION INPUT + USE SIGNAL
+      + PORT
+        + LAYER met3 ( -2000 -300 ) ( 2000 300 )
+        + PLACED ( 2000 21420 ) N ;
+    - dlycontrol1_in[4] + NET dlycontrol1_in[4] + DIRECTION INPUT + USE SIGNAL
+      + PORT
+        + LAYER met3 ( -2000 -300 ) ( 2000 300 )
+        + PLACED ( 2000 23460 ) N ;
+    - dlycontrol2_in[0] + NET dlycontrol2_in[0] + DIRECTION INPUT + USE SIGNAL
+      + PORT
+        + LAYER met3 ( -2000 -300 ) ( 2000 300 )
+        + PLACED ( 2000 25500 ) N ;
+    - dlycontrol2_in[1] + NET dlycontrol2_in[1] + DIRECTION INPUT + USE SIGNAL
+      + PORT
+        + LAYER met3 ( -2000 -300 ) ( 2000 300 )
+        + PLACED ( 2000 27540 ) N ;
+    - dlycontrol2_in[2] + NET dlycontrol2_in[2] + DIRECTION INPUT + USE SIGNAL
+      + PORT
+        + LAYER met3 ( -2000 -300 ) ( 2000 300 )
+        + PLACED ( 2000 29580 ) N ;
+    - dlycontrol2_in[3] + NET dlycontrol2_in[3] + DIRECTION INPUT + USE SIGNAL
+      + PORT
+        + LAYER met3 ( -2000 -300 ) ( 2000 300 )
+        + PLACED ( 2000 31620 ) N ;
+    - dlycontrol2_in[4] + NET dlycontrol2_in[4] + DIRECTION INPUT + USE SIGNAL
+      + PORT
+        + LAYER met3 ( -2000 -300 ) ( 2000 300 )
+        + PLACED ( 2000 33660 ) N ;
+    - dlycontrol3_in[0] + NET dlycontrol3_in[0] + DIRECTION INPUT + USE SIGNAL
+      + PORT
+        + LAYER met3 ( -2000 -300 ) ( 2000 300 )
+        + PLACED ( 2000 35700 ) N ;
+    - dlycontrol3_in[1] + NET dlycontrol3_in[1] + DIRECTION INPUT + USE SIGNAL
+      + PORT
+        + LAYER met3 ( -2000 -300 ) ( 2000 300 )
+        + PLACED ( 2000 37740 ) N ;
+    - dlycontrol3_in[2] + NET dlycontrol3_in[2] + DIRECTION INPUT + USE SIGNAL
+      + PORT
+        + LAYER met3 ( -2000 -300 ) ( 2000 300 )
+        + PLACED ( 2000 39780 ) N ;
+    - dlycontrol3_in[3] + NET dlycontrol3_in[3] + DIRECTION INPUT + USE SIGNAL
+      + PORT
+        + LAYER met3 ( -2000 -300 ) ( 2000 300 )
+        + PLACED ( 2000 41820 ) N ;
+    - dlycontrol3_in[4] + NET dlycontrol3_in[4] + DIRECTION INPUT + USE SIGNAL
+      + PORT
+        + LAYER met3 ( -2000 -300 ) ( 2000 300 )
+        + PLACED ( 2000 43860 ) N ;
+    - dlycontrol4_in[0] + NET dlycontrol4_in[0] + DIRECTION INPUT + USE SIGNAL
+      + PORT
+        + LAYER met3 ( -2000 -300 ) ( 2000 300 )
+        + PLACED ( 2000 45900 ) N ;
+    - dlycontrol4_in[1] + NET dlycontrol4_in[1] + DIRECTION INPUT + USE SIGNAL
+      + PORT
+        + LAYER met3 ( -2000 -300 ) ( 2000 300 )
+        + PLACED ( 2000 47940 ) N ;
+    - dlycontrol4_in[2] + NET dlycontrol4_in[2] + DIRECTION INPUT + USE SIGNAL
+      + PORT
+        + LAYER met3 ( -2000 -300 ) ( 2000 300 )
+        + PLACED ( 2000 49980 ) N ;
+    - dlycontrol4_in[3] + NET dlycontrol4_in[3] + DIRECTION INPUT + USE SIGNAL
+      + PORT
+        + LAYER met3 ( -2000 -300 ) ( 2000 300 )
+        + PLACED ( 2000 52020 ) N ;
+    - dlycontrol4_in[4] + NET dlycontrol4_in[4] + DIRECTION INPUT + USE SIGNAL
+      + PORT
+        + LAYER met3 ( -2000 -300 ) ( 2000 300 )
+        + PLACED ( 2000 54060 ) N ;
+    - dlycontrol4_in[5] + NET dlycontrol4_in[5] + DIRECTION INPUT + USE SIGNAL
+      + PORT
+        + LAYER met3 ( -2000 -300 ) ( 2000 300 )
+        + PLACED ( 2000 56100 ) N ;
+    - ena_in + NET ena_in + DIRECTION INPUT + USE SIGNAL
+      + PORT
+        + LAYER met3 ( -2000 -300 ) ( 2000 300 )
+        + PLACED ( 2000 7140 ) N ;
+    - enable_dlycontrol_in + NET enable_dlycontrol_in + DIRECTION INPUT + USE SIGNAL
+      + PORT
+        + LAYER met3 ( -2000 -300 ) ( 2000 300 )
+        + PLACED ( 2000 13260 ) N ;
+    - ndecision_finish_in + NET ndecision_finish_in + DIRECTION INPUT + USE SIGNAL
+      + PORT
+        + LAYER met3 ( -2000 -300 ) ( 2000 300 )
+        + PLACED ( 158000 47940 ) N ;
+    - nsample_n_in + NET nsample_n_in + DIRECTION INPUT + USE SIGNAL
+      + PORT
+        + LAYER met2 ( -140 -2000 ) ( 140 2000 )
+        + PLACED ( 100050 2000 ) N ;
+    - nsample_n_out + NET nsample_n_out + DIRECTION OUTPUT + USE SIGNAL
+      + PORT
+        + LAYER met2 ( -140 -2000 ) ( 140 2000 )
+        + PLACED ( 140070 2000 ) N ;
+    - nsample_p_in + NET nsample_p_in + DIRECTION INPUT + USE SIGNAL
+      + PORT
+        + LAYER met2 ( -140 -2000 ) ( 140 2000 )
+        + PLACED ( 100050 62000 ) N ;
+    - nsample_p_out + NET nsample_p_out + DIRECTION OUTPUT + USE SIGNAL
+      + PORT
+        + LAYER met2 ( -140 -2000 ) ( 140 2000 )
+        + PLACED ( 140070 62000 ) N ;
+    - sample_n_in + NET sample_n_in + DIRECTION INPUT + USE SIGNAL
+      + PORT
+        + LAYER met2 ( -140 -2000 ) ( 140 2000 )
+        + PLACED ( 20010 2000 ) N ;
+    - sample_n_out + NET sample_n_out + DIRECTION OUTPUT + USE SIGNAL
+      + PORT
+        + LAYER met2 ( -140 -2000 ) ( 140 2000 )
+        + PLACED ( 60030 2000 ) N ;
+    - sample_p_in + NET sample_p_in + DIRECTION INPUT + USE SIGNAL
+      + PORT
+        + LAYER met2 ( -140 -2000 ) ( 140 2000 )
+        + PLACED ( 20010 62000 ) N ;
+    - sample_p_out + NET sample_p_out + DIRECTION OUTPUT + USE SIGNAL
+      + PORT
+        + LAYER met2 ( -140 -2000 ) ( 140 2000 )
+        + PLACED ( 60030 62000 ) N ;
+    - start_conv_in + NET start_conv_in + DIRECTION INPUT + USE SIGNAL
+      + PORT
+        + LAYER met3 ( -2000 -300 ) ( 2000 300 )
+        + PLACED ( 2000 9180 ) N ;
+END PINS
+NETS 302 ;
+    - clk_comp_out ( PIN clk_comp_out ) ( outbuf_2 X ) + USE SIGNAL ;
+    - clk_dig_out ( PIN clk_dig_out ) ( outbuf_1 X ) + USE SIGNAL ;
+    - clkgen.clk_comp_out ( outbuf_2 A ) ( clkgen.delay_155ns_3.genblk1\[4\].dly_binary.out_mux X ) + USE SIGNAL ;
+    - clkgen.clk_dig_delayed_w ( clkgen.nor1 A ) ( clkgen.delay_155ns_2.genblk1\[4\].dly_binary.out_mux X ) + USE SIGNAL ;
+    - clkgen.clk_dig_out ( outbuf_1 A ) ( clkgen.delay_155ns_2.genblk1\[0\].dly_binary.out_mux A1 ) ( clkgen.delay_155ns_2.genblk1\[0\].dly_binary.and_bypass_switch B ) ( clkgen.clkdig_inverter Y ) + USE SIGNAL ;
+    - clkgen.delay_155ns_1.bypass_enable_w\[0\] ( clkgen.delay_155ns_1.genblk1\[0\].control_invert Y ) ( clkgen.delay_155ns_1.genblk1\[0\].bypass_enable B ) + USE SIGNAL ;
+    - clkgen.delay_155ns_1.bypass_enable_w\[1\] ( clkgen.delay_155ns_1.genblk1\[1\].control_invert Y ) ( clkgen.delay_155ns_1.genblk1\[1\].bypass_enable B ) + USE SIGNAL ;
+    - clkgen.delay_155ns_1.bypass_enable_w\[2\] ( clkgen.delay_155ns_1.genblk1\[2\].control_invert Y ) ( clkgen.delay_155ns_1.genblk1\[2\].bypass_enable B ) + USE SIGNAL ;
+    - clkgen.delay_155ns_1.bypass_enable_w\[3\] ( clkgen.delay_155ns_1.genblk1\[3\].control_invert Y ) ( clkgen.delay_155ns_1.genblk1\[3\].bypass_enable B ) + USE SIGNAL ;
+    - clkgen.delay_155ns_1.bypass_enable_w\[4\] ( clkgen.delay_155ns_1.genblk1\[4\].control_invert Y ) ( clkgen.delay_155ns_1.genblk1\[4\].bypass_enable B ) + USE SIGNAL ;
+    - clkgen.delay_155ns_1.enable_dlycontrol_w ( clkgen.delay_155ns_1.genblk1\[4\].bypass_enable A ) ( clkgen.delay_155ns_1.genblk1\[3\].bypass_enable A ) ( clkgen.delay_155ns_1.genblk1\[2\].bypass_enable A ) ( clkgen.delay_155ns_1.genblk1\[1\].bypass_enable A ) ( clkgen.delay_155ns_1.genblk1\[0\].bypass_enable A ) ( clkgen.delay_155ns_1.enablebuffer X ) + USE SIGNAL ;
+    - clkgen.delay_155ns_1.genblk1\[0\].dly_binary.bypass_in ( clkgen.delay_155ns_1.genblk1\[0\].dly_binary.out_mux S ) ( clkgen.delay_155ns_1.genblk1\[0\].dly_binary.and_bypass_switch A_N ) ( clkgen.delay_155ns_1.genblk1\[0\].bypass_enable X ) + USE SIGNAL ;
+    - clkgen.delay_155ns_1.genblk1\[0\].dly_binary.in ( inbuf_3 X ) ( clkgen.delay_155ns_1.genblk1\[0\].dly_binary.out_mux A1 ) ( clkgen.delay_155ns_1.genblk1\[0\].dly_binary.and_bypass_switch B ) + USE SIGNAL ;
+    - clkgen.delay_155ns_1.genblk1\[0\].dly_binary.out ( clkgen.delay_155ns_1.genblk1\[1\].dly_binary.out_mux A1 ) ( clkgen.delay_155ns_1.genblk1\[1\].dly_binary.and_bypass_switch B ) ( clkgen.delay_155ns_1.genblk1\[0\].dly_binary.out_mux X ) + USE SIGNAL ;
+    - clkgen.delay_155ns_1.genblk1\[0\].dly_binary.signal_w\[0\] ( clkgen.delay_155ns_1.genblk1\[0\].dly_binary.genblk1\[0\].delay_unit in ) ( clkgen.delay_155ns_1.genblk1\[0\].dly_binary.and_bypass_switch X ) + USE SIGNAL ;
+    - clkgen.delay_155ns_1.genblk1\[0\].dly_binary.signal_w\[1\] ( clkgen.delay_155ns_1.genblk1\[0\].dly_binary.out_mux A0 ) ( clkgen.delay_155ns_1.genblk1\[0\].dly_binary.genblk1\[0\].delay_unit out ) + USE SIGNAL ;
+    - clkgen.delay_155ns_1.genblk1\[1\].dly_binary.bypass_in ( clkgen.delay_155ns_1.genblk1\[1\].dly_binary.out_mux S ) ( clkgen.delay_155ns_1.genblk1\[1\].dly_binary.and_bypass_switch A_N ) ( clkgen.delay_155ns_1.genblk1\[1\].bypass_enable X ) + USE SIGNAL ;
+    - clkgen.delay_155ns_1.genblk1\[1\].dly_binary.out ( clkgen.delay_155ns_1.genblk1\[2\].dly_binary.out_mux A1 ) ( clkgen.delay_155ns_1.genblk1\[2\].dly_binary.and_bypass_switch B ) ( clkgen.delay_155ns_1.genblk1\[1\].dly_binary.out_mux X ) + USE SIGNAL ;
+    - clkgen.delay_155ns_1.genblk1\[1\].dly_binary.signal_w\[0\] ( clkgen.delay_155ns_1.genblk1\[1\].dly_binary.genblk1\[0\].delay_unit in ) ( clkgen.delay_155ns_1.genblk1\[1\].dly_binary.and_bypass_switch X ) + USE SIGNAL ;
+    - clkgen.delay_155ns_1.genblk1\[1\].dly_binary.signal_w\[1\] ( clkgen.delay_155ns_1.genblk1\[1\].dly_binary.genblk1\[1\].delay_unit in ) ( clkgen.delay_155ns_1.genblk1\[1\].dly_binary.genblk1\[0\].delay_unit out ) + USE SIGNAL ;
+    - clkgen.delay_155ns_1.genblk1\[1\].dly_binary.signal_w\[2\] ( clkgen.delay_155ns_1.genblk1\[1\].dly_binary.out_mux A0 ) ( clkgen.delay_155ns_1.genblk1\[1\].dly_binary.genblk1\[1\].delay_unit out ) + USE SIGNAL ;
+    - clkgen.delay_155ns_1.genblk1\[2\].dly_binary.bypass_in ( clkgen.delay_155ns_1.genblk1\[2\].dly_binary.out_mux S ) ( clkgen.delay_155ns_1.genblk1\[2\].dly_binary.and_bypass_switch A_N ) ( clkgen.delay_155ns_1.genblk1\[2\].bypass_enable X ) + USE SIGNAL ;
+    - clkgen.delay_155ns_1.genblk1\[2\].dly_binary.out ( clkgen.delay_155ns_1.genblk1\[3\].dly_binary.out_mux A1 ) ( clkgen.delay_155ns_1.genblk1\[3\].dly_binary.and_bypass_switch B ) ( clkgen.delay_155ns_1.genblk1\[2\].dly_binary.out_mux X ) + USE SIGNAL ;
+    - clkgen.delay_155ns_1.genblk1\[2\].dly_binary.signal_w\[0\] ( clkgen.delay_155ns_1.genblk1\[2\].dly_binary.genblk1\[0\].delay_unit in ) ( clkgen.delay_155ns_1.genblk1\[2\].dly_binary.and_bypass_switch X ) + USE SIGNAL ;
+    - clkgen.delay_155ns_1.genblk1\[2\].dly_binary.signal_w\[1\] ( clkgen.delay_155ns_1.genblk1\[2\].dly_binary.genblk1\[1\].delay_unit in ) ( clkgen.delay_155ns_1.genblk1\[2\].dly_binary.genblk1\[0\].delay_unit out ) + USE SIGNAL ;
+    - clkgen.delay_155ns_1.genblk1\[2\].dly_binary.signal_w\[2\] ( clkgen.delay_155ns_1.genblk1\[2\].dly_binary.genblk1\[2\].delay_unit in ) ( clkgen.delay_155ns_1.genblk1\[2\].dly_binary.genblk1\[1\].delay_unit out ) + USE SIGNAL ;
+    - clkgen.delay_155ns_1.genblk1\[2\].dly_binary.signal_w\[3\] ( clkgen.delay_155ns_1.genblk1\[2\].dly_binary.genblk1\[3\].delay_unit in ) ( clkgen.delay_155ns_1.genblk1\[2\].dly_binary.genblk1\[2\].delay_unit out ) + USE SIGNAL ;
+    - clkgen.delay_155ns_1.genblk1\[2\].dly_binary.signal_w\[4\] ( clkgen.delay_155ns_1.genblk1\[2\].dly_binary.out_mux A0 ) ( clkgen.delay_155ns_1.genblk1\[2\].dly_binary.genblk1\[3\].delay_unit out ) + USE SIGNAL ;
+    - clkgen.delay_155ns_1.genblk1\[3\].dly_binary.bypass_in ( clkgen.delay_155ns_1.genblk1\[3\].dly_binary.out_mux S ) ( clkgen.delay_155ns_1.genblk1\[3\].dly_binary.and_bypass_switch A_N ) ( clkgen.delay_155ns_1.genblk1\[3\].bypass_enable X ) + USE SIGNAL ;
+    - clkgen.delay_155ns_1.genblk1\[3\].dly_binary.out ( clkgen.delay_155ns_1.genblk1\[4\].dly_binary.out_mux A1 ) ( clkgen.delay_155ns_1.genblk1\[4\].dly_binary.and_bypass_switch B ) ( clkgen.delay_155ns_1.genblk1\[3\].dly_binary.out_mux X ) + USE SIGNAL ;
+    - clkgen.delay_155ns_1.genblk1\[3\].dly_binary.signal_w\[0\] ( clkgen.delay_155ns_1.genblk1\[3\].dly_binary.genblk1\[0\].delay_unit in ) ( clkgen.delay_155ns_1.genblk1\[3\].dly_binary.and_bypass_switch X ) + USE SIGNAL ;
+    - clkgen.delay_155ns_1.genblk1\[3\].dly_binary.signal_w\[1\] ( clkgen.delay_155ns_1.genblk1\[3\].dly_binary.genblk1\[1\].delay_unit in ) ( clkgen.delay_155ns_1.genblk1\[3\].dly_binary.genblk1\[0\].delay_unit out ) + USE SIGNAL ;
+    - clkgen.delay_155ns_1.genblk1\[3\].dly_binary.signal_w\[2\] ( clkgen.delay_155ns_1.genblk1\[3\].dly_binary.genblk1\[2\].delay_unit in ) ( clkgen.delay_155ns_1.genblk1\[3\].dly_binary.genblk1\[1\].delay_unit out ) + USE SIGNAL ;
+    - clkgen.delay_155ns_1.genblk1\[3\].dly_binary.signal_w\[3\] ( clkgen.delay_155ns_1.genblk1\[3\].dly_binary.genblk1\[3\].delay_unit in ) ( clkgen.delay_155ns_1.genblk1\[3\].dly_binary.genblk1\[2\].delay_unit out ) + USE SIGNAL ;
+    - clkgen.delay_155ns_1.genblk1\[3\].dly_binary.signal_w\[4\] ( clkgen.delay_155ns_1.genblk1\[3\].dly_binary.genblk1\[4\].delay_unit in ) ( clkgen.delay_155ns_1.genblk1\[3\].dly_binary.genblk1\[3\].delay_unit out ) + USE SIGNAL ;
+    - clkgen.delay_155ns_1.genblk1\[3\].dly_binary.signal_w\[5\] ( clkgen.delay_155ns_1.genblk1\[3\].dly_binary.genblk1\[5\].delay_unit in ) ( clkgen.delay_155ns_1.genblk1\[3\].dly_binary.genblk1\[4\].delay_unit out ) + USE SIGNAL ;
+    - clkgen.delay_155ns_1.genblk1\[3\].dly_binary.signal_w\[6\] ( clkgen.delay_155ns_1.genblk1\[3\].dly_binary.genblk1\[6\].delay_unit in ) ( clkgen.delay_155ns_1.genblk1\[3\].dly_binary.genblk1\[5\].delay_unit out ) + USE SIGNAL ;
+    - clkgen.delay_155ns_1.genblk1\[3\].dly_binary.signal_w\[7\] ( clkgen.delay_155ns_1.genblk1\[3\].dly_binary.genblk1\[7\].delay_unit in ) ( clkgen.delay_155ns_1.genblk1\[3\].dly_binary.genblk1\[6\].delay_unit out ) + USE SIGNAL ;
+    - clkgen.delay_155ns_1.genblk1\[3\].dly_binary.signal_w\[8\] ( clkgen.delay_155ns_1.genblk1\[3\].dly_binary.out_mux A0 ) ( clkgen.delay_155ns_1.genblk1\[3\].dly_binary.genblk1\[7\].delay_unit out ) + USE SIGNAL ;
+    - clkgen.delay_155ns_1.genblk1\[4\].dly_binary.bypass_in ( clkgen.delay_155ns_1.genblk1\[4\].dly_binary.out_mux S ) ( clkgen.delay_155ns_1.genblk1\[4\].dly_binary.and_bypass_switch A_N ) ( clkgen.delay_155ns_1.genblk1\[4\].bypass_enable X ) + USE SIGNAL ;
+    - clkgen.delay_155ns_1.genblk1\[4\].dly_binary.out ( clkgen.delay_155ns_1.genblk1\[4\].dly_binary.out_mux X ) ( clkgen.clkdig_inverter A ) + USE SIGNAL ;
+    - clkgen.delay_155ns_1.genblk1\[4\].dly_binary.signal_w\[0\] ( clkgen.delay_155ns_1.genblk1\[4\].dly_binary.genblk1\[0\].delay_unit in ) ( clkgen.delay_155ns_1.genblk1\[4\].dly_binary.and_bypass_switch X ) + USE SIGNAL ;
+    - clkgen.delay_155ns_1.genblk1\[4\].dly_binary.signal_w\[10\] ( clkgen.delay_155ns_1.genblk1\[4\].dly_binary.genblk1\[9\].delay_unit out ) ( clkgen.delay_155ns_1.genblk1\[4\].dly_binary.genblk1\[10\].delay_unit in ) + USE SIGNAL ;
+    - clkgen.delay_155ns_1.genblk1\[4\].dly_binary.signal_w\[11\] ( clkgen.delay_155ns_1.genblk1\[4\].dly_binary.genblk1\[11\].delay_unit in ) ( clkgen.delay_155ns_1.genblk1\[4\].dly_binary.genblk1\[10\].delay_unit out ) + USE SIGNAL ;
+    - clkgen.delay_155ns_1.genblk1\[4\].dly_binary.signal_w\[12\] ( clkgen.delay_155ns_1.genblk1\[4\].dly_binary.genblk1\[12\].delay_unit in ) ( clkgen.delay_155ns_1.genblk1\[4\].dly_binary.genblk1\[11\].delay_unit out ) + USE SIGNAL ;
+    - clkgen.delay_155ns_1.genblk1\[4\].dly_binary.signal_w\[13\] ( clkgen.delay_155ns_1.genblk1\[4\].dly_binary.genblk1\[13\].delay_unit in ) ( clkgen.delay_155ns_1.genblk1\[4\].dly_binary.genblk1\[12\].delay_unit out ) + USE SIGNAL ;
+    - clkgen.delay_155ns_1.genblk1\[4\].dly_binary.signal_w\[14\] ( clkgen.delay_155ns_1.genblk1\[4\].dly_binary.genblk1\[14\].delay_unit in ) ( clkgen.delay_155ns_1.genblk1\[4\].dly_binary.genblk1\[13\].delay_unit out ) + USE SIGNAL ;
+    - clkgen.delay_155ns_1.genblk1\[4\].dly_binary.signal_w\[15\] ( clkgen.delay_155ns_1.genblk1\[4\].dly_binary.genblk1\[15\].delay_unit in ) ( clkgen.delay_155ns_1.genblk1\[4\].dly_binary.genblk1\[14\].delay_unit out ) + USE SIGNAL ;
+    - clkgen.delay_155ns_1.genblk1\[4\].dly_binary.signal_w\[16\] ( clkgen.delay_155ns_1.genblk1\[4\].dly_binary.out_mux A0 ) ( clkgen.delay_155ns_1.genblk1\[4\].dly_binary.genblk1\[15\].delay_unit out ) + USE SIGNAL ;
+    - clkgen.delay_155ns_1.genblk1\[4\].dly_binary.signal_w\[1\] ( clkgen.delay_155ns_1.genblk1\[4\].dly_binary.genblk1\[1\].delay_unit in ) ( clkgen.delay_155ns_1.genblk1\[4\].dly_binary.genblk1\[0\].delay_unit out ) + USE SIGNAL ;
+    - clkgen.delay_155ns_1.genblk1\[4\].dly_binary.signal_w\[2\] ( clkgen.delay_155ns_1.genblk1\[4\].dly_binary.genblk1\[2\].delay_unit in ) ( clkgen.delay_155ns_1.genblk1\[4\].dly_binary.genblk1\[1\].delay_unit out ) + USE SIGNAL ;
+    - clkgen.delay_155ns_1.genblk1\[4\].dly_binary.signal_w\[3\] ( clkgen.delay_155ns_1.genblk1\[4\].dly_binary.genblk1\[3\].delay_unit in ) ( clkgen.delay_155ns_1.genblk1\[4\].dly_binary.genblk1\[2\].delay_unit out ) + USE SIGNAL ;
+    - clkgen.delay_155ns_1.genblk1\[4\].dly_binary.signal_w\[4\] ( clkgen.delay_155ns_1.genblk1\[4\].dly_binary.genblk1\[4\].delay_unit in ) ( clkgen.delay_155ns_1.genblk1\[4\].dly_binary.genblk1\[3\].delay_unit out ) + USE SIGNAL ;
+    - clkgen.delay_155ns_1.genblk1\[4\].dly_binary.signal_w\[5\] ( clkgen.delay_155ns_1.genblk1\[4\].dly_binary.genblk1\[5\].delay_unit in ) ( clkgen.delay_155ns_1.genblk1\[4\].dly_binary.genblk1\[4\].delay_unit out ) + USE SIGNAL ;
+    - clkgen.delay_155ns_1.genblk1\[4\].dly_binary.signal_w\[6\] ( clkgen.delay_155ns_1.genblk1\[4\].dly_binary.genblk1\[6\].delay_unit in ) ( clkgen.delay_155ns_1.genblk1\[4\].dly_binary.genblk1\[5\].delay_unit out ) + USE SIGNAL ;
+    - clkgen.delay_155ns_1.genblk1\[4\].dly_binary.signal_w\[7\] ( clkgen.delay_155ns_1.genblk1\[4\].dly_binary.genblk1\[7\].delay_unit in ) ( clkgen.delay_155ns_1.genblk1\[4\].dly_binary.genblk1\[6\].delay_unit out ) + USE SIGNAL ;
+    - clkgen.delay_155ns_1.genblk1\[4\].dly_binary.signal_w\[8\] ( clkgen.delay_155ns_1.genblk1\[4\].dly_binary.genblk1\[8\].delay_unit in ) ( clkgen.delay_155ns_1.genblk1\[4\].dly_binary.genblk1\[7\].delay_unit out ) + USE SIGNAL ;
+    - clkgen.delay_155ns_1.genblk1\[4\].dly_binary.signal_w\[9\] ( clkgen.delay_155ns_1.genblk1\[4\].dly_binary.genblk1\[9\].delay_unit in ) ( clkgen.delay_155ns_1.genblk1\[4\].dly_binary.genblk1\[8\].delay_unit out ) + USE SIGNAL ;
+    - clkgen.delay_155ns_2.bypass_enable_w\[0\] ( clkgen.delay_155ns_2.genblk1\[0\].control_invert Y ) ( clkgen.delay_155ns_2.genblk1\[0\].bypass_enable B ) + USE SIGNAL ;
+    - clkgen.delay_155ns_2.bypass_enable_w\[1\] ( clkgen.delay_155ns_2.genblk1\[1\].control_invert Y ) ( clkgen.delay_155ns_2.genblk1\[1\].bypass_enable B ) + USE SIGNAL ;
+    - clkgen.delay_155ns_2.bypass_enable_w\[2\] ( clkgen.delay_155ns_2.genblk1\[2\].control_invert Y ) ( clkgen.delay_155ns_2.genblk1\[2\].bypass_enable B ) + USE SIGNAL ;
+    - clkgen.delay_155ns_2.bypass_enable_w\[3\] ( clkgen.delay_155ns_2.genblk1\[3\].control_invert Y ) ( clkgen.delay_155ns_2.genblk1\[3\].bypass_enable B ) + USE SIGNAL ;
+    - clkgen.delay_155ns_2.bypass_enable_w\[4\] ( clkgen.delay_155ns_2.genblk1\[4\].control_invert Y ) ( clkgen.delay_155ns_2.genblk1\[4\].bypass_enable B ) + USE SIGNAL ;
+    - clkgen.delay_155ns_2.enable_dlycontrol_w ( clkgen.delay_155ns_2.genblk1\[4\].bypass_enable A ) ( clkgen.delay_155ns_2.genblk1\[3\].bypass_enable A ) ( clkgen.delay_155ns_2.genblk1\[2\].bypass_enable A ) ( clkgen.delay_155ns_2.genblk1\[1\].bypass_enable A ) ( clkgen.delay_155ns_2.genblk1\[0\].bypass_enable A ) ( clkgen.delay_155ns_2.enablebuffer X ) + USE SIGNAL ;
+    - clkgen.delay_155ns_2.genblk1\[0\].dly_binary.bypass_in ( clkgen.delay_155ns_2.genblk1\[0\].dly_binary.out_mux S ) ( clkgen.delay_155ns_2.genblk1\[0\].dly_binary.and_bypass_switch A_N ) ( clkgen.delay_155ns_2.genblk1\[0\].bypass_enable X ) + USE SIGNAL ;
+    - clkgen.delay_155ns_2.genblk1\[0\].dly_binary.out ( clkgen.delay_155ns_2.genblk1\[1\].dly_binary.out_mux A1 ) ( clkgen.delay_155ns_2.genblk1\[1\].dly_binary.and_bypass_switch B ) ( clkgen.delay_155ns_2.genblk1\[0\].dly_binary.out_mux X ) + USE SIGNAL ;
+    - clkgen.delay_155ns_2.genblk1\[0\].dly_binary.signal_w\[0\] ( clkgen.delay_155ns_2.genblk1\[0\].dly_binary.genblk1\[0\].delay_unit in ) ( clkgen.delay_155ns_2.genblk1\[0\].dly_binary.and_bypass_switch X ) + USE SIGNAL ;
+    - clkgen.delay_155ns_2.genblk1\[0\].dly_binary.signal_w\[1\] ( clkgen.delay_155ns_2.genblk1\[0\].dly_binary.out_mux A0 ) ( clkgen.delay_155ns_2.genblk1\[0\].dly_binary.genblk1\[0\].delay_unit out ) + USE SIGNAL ;
+    - clkgen.delay_155ns_2.genblk1\[1\].dly_binary.bypass_in ( clkgen.delay_155ns_2.genblk1\[1\].dly_binary.out_mux S ) ( clkgen.delay_155ns_2.genblk1\[1\].dly_binary.and_bypass_switch A_N ) ( clkgen.delay_155ns_2.genblk1\[1\].bypass_enable X ) + USE SIGNAL ;
+    - clkgen.delay_155ns_2.genblk1\[1\].dly_binary.out ( clkgen.delay_155ns_2.genblk1\[2\].dly_binary.out_mux A1 ) ( clkgen.delay_155ns_2.genblk1\[2\].dly_binary.and_bypass_switch B ) ( clkgen.delay_155ns_2.genblk1\[1\].dly_binary.out_mux X ) + USE SIGNAL ;
+    - clkgen.delay_155ns_2.genblk1\[1\].dly_binary.signal_w\[0\] ( clkgen.delay_155ns_2.genblk1\[1\].dly_binary.genblk1\[0\].delay_unit in ) ( clkgen.delay_155ns_2.genblk1\[1\].dly_binary.and_bypass_switch X ) + USE SIGNAL ;
+    - clkgen.delay_155ns_2.genblk1\[1\].dly_binary.signal_w\[1\] ( clkgen.delay_155ns_2.genblk1\[1\].dly_binary.genblk1\[1\].delay_unit in ) ( clkgen.delay_155ns_2.genblk1\[1\].dly_binary.genblk1\[0\].delay_unit out ) + USE SIGNAL ;
+    - clkgen.delay_155ns_2.genblk1\[1\].dly_binary.signal_w\[2\] ( clkgen.delay_155ns_2.genblk1\[1\].dly_binary.out_mux A0 ) ( clkgen.delay_155ns_2.genblk1\[1\].dly_binary.genblk1\[1\].delay_unit out ) + USE SIGNAL ;
+    - clkgen.delay_155ns_2.genblk1\[2\].dly_binary.bypass_in ( clkgen.delay_155ns_2.genblk1\[2\].dly_binary.out_mux S ) ( clkgen.delay_155ns_2.genblk1\[2\].dly_binary.and_bypass_switch A_N ) ( clkgen.delay_155ns_2.genblk1\[2\].bypass_enable X ) + USE SIGNAL ;
+    - clkgen.delay_155ns_2.genblk1\[2\].dly_binary.out ( clkgen.delay_155ns_2.genblk1\[3\].dly_binary.out_mux A1 ) ( clkgen.delay_155ns_2.genblk1\[3\].dly_binary.and_bypass_switch B ) ( clkgen.delay_155ns_2.genblk1\[2\].dly_binary.out_mux X ) + USE SIGNAL ;
+    - clkgen.delay_155ns_2.genblk1\[2\].dly_binary.signal_w\[0\] ( clkgen.delay_155ns_2.genblk1\[2\].dly_binary.genblk1\[0\].delay_unit in ) ( clkgen.delay_155ns_2.genblk1\[2\].dly_binary.and_bypass_switch X ) + USE SIGNAL ;
+    - clkgen.delay_155ns_2.genblk1\[2\].dly_binary.signal_w\[1\] ( clkgen.delay_155ns_2.genblk1\[2\].dly_binary.genblk1\[1\].delay_unit in ) ( clkgen.delay_155ns_2.genblk1\[2\].dly_binary.genblk1\[0\].delay_unit out ) + USE SIGNAL ;
+    - clkgen.delay_155ns_2.genblk1\[2\].dly_binary.signal_w\[2\] ( clkgen.delay_155ns_2.genblk1\[2\].dly_binary.genblk1\[2\].delay_unit in ) ( clkgen.delay_155ns_2.genblk1\[2\].dly_binary.genblk1\[1\].delay_unit out ) + USE SIGNAL ;
+    - clkgen.delay_155ns_2.genblk1\[2\].dly_binary.signal_w\[3\] ( clkgen.delay_155ns_2.genblk1\[2\].dly_binary.genblk1\[3\].delay_unit in ) ( clkgen.delay_155ns_2.genblk1\[2\].dly_binary.genblk1\[2\].delay_unit out ) + USE SIGNAL ;
+    - clkgen.delay_155ns_2.genblk1\[2\].dly_binary.signal_w\[4\] ( clkgen.delay_155ns_2.genblk1\[2\].dly_binary.out_mux A0 ) ( clkgen.delay_155ns_2.genblk1\[2\].dly_binary.genblk1\[3\].delay_unit out ) + USE SIGNAL ;
+    - clkgen.delay_155ns_2.genblk1\[3\].dly_binary.bypass_in ( clkgen.delay_155ns_2.genblk1\[3\].dly_binary.out_mux S ) ( clkgen.delay_155ns_2.genblk1\[3\].dly_binary.and_bypass_switch A_N ) ( clkgen.delay_155ns_2.genblk1\[3\].bypass_enable X ) + USE SIGNAL ;
+    - clkgen.delay_155ns_2.genblk1\[3\].dly_binary.out ( clkgen.delay_155ns_2.genblk1\[4\].dly_binary.out_mux A1 ) ( clkgen.delay_155ns_2.genblk1\[4\].dly_binary.and_bypass_switch B ) ( clkgen.delay_155ns_2.genblk1\[3\].dly_binary.out_mux X ) + USE SIGNAL ;
+    - clkgen.delay_155ns_2.genblk1\[3\].dly_binary.signal_w\[0\] ( clkgen.delay_155ns_2.genblk1\[3\].dly_binary.genblk1\[0\].delay_unit in ) ( clkgen.delay_155ns_2.genblk1\[3\].dly_binary.and_bypass_switch X ) + USE SIGNAL ;
+    - clkgen.delay_155ns_2.genblk1\[3\].dly_binary.signal_w\[1\] ( clkgen.delay_155ns_2.genblk1\[3\].dly_binary.genblk1\[1\].delay_unit in ) ( clkgen.delay_155ns_2.genblk1\[3\].dly_binary.genblk1\[0\].delay_unit out ) + USE SIGNAL ;
+    - clkgen.delay_155ns_2.genblk1\[3\].dly_binary.signal_w\[2\] ( clkgen.delay_155ns_2.genblk1\[3\].dly_binary.genblk1\[2\].delay_unit in ) ( clkgen.delay_155ns_2.genblk1\[3\].dly_binary.genblk1\[1\].delay_unit out ) + USE SIGNAL ;
+    - clkgen.delay_155ns_2.genblk1\[3\].dly_binary.signal_w\[3\] ( clkgen.delay_155ns_2.genblk1\[3\].dly_binary.genblk1\[3\].delay_unit in ) ( clkgen.delay_155ns_2.genblk1\[3\].dly_binary.genblk1\[2\].delay_unit out ) + USE SIGNAL ;
+    - clkgen.delay_155ns_2.genblk1\[3\].dly_binary.signal_w\[4\] ( clkgen.delay_155ns_2.genblk1\[3\].dly_binary.genblk1\[4\].delay_unit in ) ( clkgen.delay_155ns_2.genblk1\[3\].dly_binary.genblk1\[3\].delay_unit out ) + USE SIGNAL ;
+    - clkgen.delay_155ns_2.genblk1\[3\].dly_binary.signal_w\[5\] ( clkgen.delay_155ns_2.genblk1\[3\].dly_binary.genblk1\[5\].delay_unit in ) ( clkgen.delay_155ns_2.genblk1\[3\].dly_binary.genblk1\[4\].delay_unit out ) + USE SIGNAL ;
+    - clkgen.delay_155ns_2.genblk1\[3\].dly_binary.signal_w\[6\] ( clkgen.delay_155ns_2.genblk1\[3\].dly_binary.genblk1\[6\].delay_unit in ) ( clkgen.delay_155ns_2.genblk1\[3\].dly_binary.genblk1\[5\].delay_unit out ) + USE SIGNAL ;
+    - clkgen.delay_155ns_2.genblk1\[3\].dly_binary.signal_w\[7\] ( clkgen.delay_155ns_2.genblk1\[3\].dly_binary.genblk1\[7\].delay_unit in ) ( clkgen.delay_155ns_2.genblk1\[3\].dly_binary.genblk1\[6\].delay_unit out ) + USE SIGNAL ;
+    - clkgen.delay_155ns_2.genblk1\[3\].dly_binary.signal_w\[8\] ( clkgen.delay_155ns_2.genblk1\[3\].dly_binary.out_mux A0 ) ( clkgen.delay_155ns_2.genblk1\[3\].dly_binary.genblk1\[7\].delay_unit out ) + USE SIGNAL ;
+    - clkgen.delay_155ns_2.genblk1\[4\].dly_binary.bypass_in ( clkgen.delay_155ns_2.genblk1\[4\].dly_binary.out_mux S ) ( clkgen.delay_155ns_2.genblk1\[4\].dly_binary.and_bypass_switch A_N ) ( clkgen.delay_155ns_2.genblk1\[4\].bypass_enable X ) + USE SIGNAL ;
+    - clkgen.delay_155ns_2.genblk1\[4\].dly_binary.signal_w\[0\] ( clkgen.delay_155ns_2.genblk1\[4\].dly_binary.genblk1\[0\].delay_unit in ) ( clkgen.delay_155ns_2.genblk1\[4\].dly_binary.and_bypass_switch X ) + USE SIGNAL ;
+    - clkgen.delay_155ns_2.genblk1\[4\].dly_binary.signal_w\[10\] ( clkgen.delay_155ns_2.genblk1\[4\].dly_binary.genblk1\[9\].delay_unit out ) ( clkgen.delay_155ns_2.genblk1\[4\].dly_binary.genblk1\[10\].delay_unit in ) + USE SIGNAL ;
+    - clkgen.delay_155ns_2.genblk1\[4\].dly_binary.signal_w\[11\] ( clkgen.delay_155ns_2.genblk1\[4\].dly_binary.genblk1\[11\].delay_unit in ) ( clkgen.delay_155ns_2.genblk1\[4\].dly_binary.genblk1\[10\].delay_unit out ) + USE SIGNAL ;
+    - clkgen.delay_155ns_2.genblk1\[4\].dly_binary.signal_w\[12\] ( clkgen.delay_155ns_2.genblk1\[4\].dly_binary.genblk1\[12\].delay_unit in ) ( clkgen.delay_155ns_2.genblk1\[4\].dly_binary.genblk1\[11\].delay_unit out ) + USE SIGNAL ;
+    - clkgen.delay_155ns_2.genblk1\[4\].dly_binary.signal_w\[13\] ( clkgen.delay_155ns_2.genblk1\[4\].dly_binary.genblk1\[13\].delay_unit in ) ( clkgen.delay_155ns_2.genblk1\[4\].dly_binary.genblk1\[12\].delay_unit out ) + USE SIGNAL ;
+    - clkgen.delay_155ns_2.genblk1\[4\].dly_binary.signal_w\[14\] ( clkgen.delay_155ns_2.genblk1\[4\].dly_binary.genblk1\[14\].delay_unit in ) ( clkgen.delay_155ns_2.genblk1\[4\].dly_binary.genblk1\[13\].delay_unit out ) + USE SIGNAL ;
+    - clkgen.delay_155ns_2.genblk1\[4\].dly_binary.signal_w\[15\] ( clkgen.delay_155ns_2.genblk1\[4\].dly_binary.genblk1\[15\].delay_unit in ) ( clkgen.delay_155ns_2.genblk1\[4\].dly_binary.genblk1\[14\].delay_unit out ) + USE SIGNAL ;
+    - clkgen.delay_155ns_2.genblk1\[4\].dly_binary.signal_w\[16\] ( clkgen.delay_155ns_2.genblk1\[4\].dly_binary.out_mux A0 ) ( clkgen.delay_155ns_2.genblk1\[4\].dly_binary.genblk1\[15\].delay_unit out ) + USE SIGNAL ;
+    - clkgen.delay_155ns_2.genblk1\[4\].dly_binary.signal_w\[1\] ( clkgen.delay_155ns_2.genblk1\[4\].dly_binary.genblk1\[1\].delay_unit in ) ( clkgen.delay_155ns_2.genblk1\[4\].dly_binary.genblk1\[0\].delay_unit out ) + USE SIGNAL ;
+    - clkgen.delay_155ns_2.genblk1\[4\].dly_binary.signal_w\[2\] ( clkgen.delay_155ns_2.genblk1\[4\].dly_binary.genblk1\[2\].delay_unit in ) ( clkgen.delay_155ns_2.genblk1\[4\].dly_binary.genblk1\[1\].delay_unit out ) + USE SIGNAL ;
+    - clkgen.delay_155ns_2.genblk1\[4\].dly_binary.signal_w\[3\] ( clkgen.delay_155ns_2.genblk1\[4\].dly_binary.genblk1\[3\].delay_unit in ) ( clkgen.delay_155ns_2.genblk1\[4\].dly_binary.genblk1\[2\].delay_unit out ) + USE SIGNAL ;
+    - clkgen.delay_155ns_2.genblk1\[4\].dly_binary.signal_w\[4\] ( clkgen.delay_155ns_2.genblk1\[4\].dly_binary.genblk1\[4\].delay_unit in ) ( clkgen.delay_155ns_2.genblk1\[4\].dly_binary.genblk1\[3\].delay_unit out ) + USE SIGNAL ;
+    - clkgen.delay_155ns_2.genblk1\[4\].dly_binary.signal_w\[5\] ( clkgen.delay_155ns_2.genblk1\[4\].dly_binary.genblk1\[5\].delay_unit in ) ( clkgen.delay_155ns_2.genblk1\[4\].dly_binary.genblk1\[4\].delay_unit out ) + USE SIGNAL ;
+    - clkgen.delay_155ns_2.genblk1\[4\].dly_binary.signal_w\[6\] ( clkgen.delay_155ns_2.genblk1\[4\].dly_binary.genblk1\[6\].delay_unit in ) ( clkgen.delay_155ns_2.genblk1\[4\].dly_binary.genblk1\[5\].delay_unit out ) + USE SIGNAL ;
+    - clkgen.delay_155ns_2.genblk1\[4\].dly_binary.signal_w\[7\] ( clkgen.delay_155ns_2.genblk1\[4\].dly_binary.genblk1\[7\].delay_unit in ) ( clkgen.delay_155ns_2.genblk1\[4\].dly_binary.genblk1\[6\].delay_unit out ) + USE SIGNAL ;
+    - clkgen.delay_155ns_2.genblk1\[4\].dly_binary.signal_w\[8\] ( clkgen.delay_155ns_2.genblk1\[4\].dly_binary.genblk1\[8\].delay_unit in ) ( clkgen.delay_155ns_2.genblk1\[4\].dly_binary.genblk1\[7\].delay_unit out ) + USE SIGNAL ;
+    - clkgen.delay_155ns_2.genblk1\[4\].dly_binary.signal_w\[9\] ( clkgen.delay_155ns_2.genblk1\[4\].dly_binary.genblk1\[9\].delay_unit in ) ( clkgen.delay_155ns_2.genblk1\[4\].dly_binary.genblk1\[8\].delay_unit out ) + USE SIGNAL ;
+    - clkgen.delay_155ns_3.bypass_enable_w\[0\] ( clkgen.delay_155ns_3.genblk1\[0\].control_invert Y ) ( clkgen.delay_155ns_3.genblk1\[0\].bypass_enable B ) + USE SIGNAL ;
+    - clkgen.delay_155ns_3.bypass_enable_w\[1\] ( clkgen.delay_155ns_3.genblk1\[1\].control_invert Y ) ( clkgen.delay_155ns_3.genblk1\[1\].bypass_enable B ) + USE SIGNAL ;
+    - clkgen.delay_155ns_3.bypass_enable_w\[2\] ( clkgen.delay_155ns_3.genblk1\[2\].control_invert Y ) ( clkgen.delay_155ns_3.genblk1\[2\].bypass_enable B ) + USE SIGNAL ;
+    - clkgen.delay_155ns_3.bypass_enable_w\[3\] ( clkgen.delay_155ns_3.genblk1\[3\].control_invert Y ) ( clkgen.delay_155ns_3.genblk1\[3\].bypass_enable B ) + USE SIGNAL ;
+    - clkgen.delay_155ns_3.bypass_enable_w\[4\] ( clkgen.delay_155ns_3.genblk1\[4\].control_invert Y ) ( clkgen.delay_155ns_3.genblk1\[4\].bypass_enable B ) + USE SIGNAL ;
+    - clkgen.delay_155ns_3.enable_dlycontrol_w ( clkgen.delay_155ns_3.genblk1\[4\].bypass_enable A ) ( clkgen.delay_155ns_3.genblk1\[3\].bypass_enable A ) ( clkgen.delay_155ns_3.genblk1\[2\].bypass_enable A ) ( clkgen.delay_155ns_3.genblk1\[1\].bypass_enable A ) ( clkgen.delay_155ns_3.genblk1\[0\].bypass_enable A ) ( clkgen.delay_155ns_3.enablebuffer X ) + USE SIGNAL ;
+    - clkgen.delay_155ns_3.genblk1\[0\].dly_binary.bypass_in ( clkgen.delay_155ns_3.genblk1\[0\].dly_binary.out_mux S ) ( clkgen.delay_155ns_3.genblk1\[0\].dly_binary.and_bypass_switch A_N ) ( clkgen.delay_155ns_3.genblk1\[0\].bypass_enable X ) + USE SIGNAL ;
+    - clkgen.delay_155ns_3.genblk1\[0\].dly_binary.in ( clkgen.nor1 Y ) ( clkgen.delay_155ns_3.genblk1\[0\].dly_binary.out_mux A1 ) ( clkgen.delay_155ns_3.genblk1\[0\].dly_binary.and_bypass_switch B ) + USE SIGNAL ;
+    - clkgen.delay_155ns_3.genblk1\[0\].dly_binary.out ( clkgen.delay_155ns_3.genblk1\[1\].dly_binary.out_mux A1 ) ( clkgen.delay_155ns_3.genblk1\[1\].dly_binary.and_bypass_switch B ) ( clkgen.delay_155ns_3.genblk1\[0\].dly_binary.out_mux X ) + USE SIGNAL ;
+    - clkgen.delay_155ns_3.genblk1\[0\].dly_binary.signal_w\[0\] ( clkgen.delay_155ns_3.genblk1\[0\].dly_binary.genblk1\[0\].delay_unit in ) ( clkgen.delay_155ns_3.genblk1\[0\].dly_binary.and_bypass_switch X ) + USE SIGNAL ;
+    - clkgen.delay_155ns_3.genblk1\[0\].dly_binary.signal_w\[1\] ( clkgen.delay_155ns_3.genblk1\[0\].dly_binary.out_mux A0 ) ( clkgen.delay_155ns_3.genblk1\[0\].dly_binary.genblk1\[0\].delay_unit out ) + USE SIGNAL ;
+    - clkgen.delay_155ns_3.genblk1\[1\].dly_binary.bypass_in ( clkgen.delay_155ns_3.genblk1\[1\].dly_binary.out_mux S ) ( clkgen.delay_155ns_3.genblk1\[1\].dly_binary.and_bypass_switch A_N ) ( clkgen.delay_155ns_3.genblk1\[1\].bypass_enable X ) + USE SIGNAL ;
+    - clkgen.delay_155ns_3.genblk1\[1\].dly_binary.out ( clkgen.delay_155ns_3.genblk1\[2\].dly_binary.out_mux A1 ) ( clkgen.delay_155ns_3.genblk1\[2\].dly_binary.and_bypass_switch B ) ( clkgen.delay_155ns_3.genblk1\[1\].dly_binary.out_mux X ) + USE SIGNAL ;
+    - clkgen.delay_155ns_3.genblk1\[1\].dly_binary.signal_w\[0\] ( clkgen.delay_155ns_3.genblk1\[1\].dly_binary.genblk1\[0\].delay_unit in ) ( clkgen.delay_155ns_3.genblk1\[1\].dly_binary.and_bypass_switch X ) + USE SIGNAL ;
+    - clkgen.delay_155ns_3.genblk1\[1\].dly_binary.signal_w\[1\] ( clkgen.delay_155ns_3.genblk1\[1\].dly_binary.genblk1\[1\].delay_unit in ) ( clkgen.delay_155ns_3.genblk1\[1\].dly_binary.genblk1\[0\].delay_unit out ) + USE SIGNAL ;
+    - clkgen.delay_155ns_3.genblk1\[1\].dly_binary.signal_w\[2\] ( clkgen.delay_155ns_3.genblk1\[1\].dly_binary.out_mux A0 ) ( clkgen.delay_155ns_3.genblk1\[1\].dly_binary.genblk1\[1\].delay_unit out ) + USE SIGNAL ;
+    - clkgen.delay_155ns_3.genblk1\[2\].dly_binary.bypass_in ( clkgen.delay_155ns_3.genblk1\[2\].dly_binary.out_mux S ) ( clkgen.delay_155ns_3.genblk1\[2\].dly_binary.and_bypass_switch A_N ) ( clkgen.delay_155ns_3.genblk1\[2\].bypass_enable X ) + USE SIGNAL ;
+    - clkgen.delay_155ns_3.genblk1\[2\].dly_binary.out ( clkgen.delay_155ns_3.genblk1\[3\].dly_binary.out_mux A1 ) ( clkgen.delay_155ns_3.genblk1\[3\].dly_binary.and_bypass_switch B ) ( clkgen.delay_155ns_3.genblk1\[2\].dly_binary.out_mux X ) + USE SIGNAL ;
+    - clkgen.delay_155ns_3.genblk1\[2\].dly_binary.signal_w\[0\] ( clkgen.delay_155ns_3.genblk1\[2\].dly_binary.genblk1\[0\].delay_unit in ) ( clkgen.delay_155ns_3.genblk1\[2\].dly_binary.and_bypass_switch X ) + USE SIGNAL ;
+    - clkgen.delay_155ns_3.genblk1\[2\].dly_binary.signal_w\[1\] ( clkgen.delay_155ns_3.genblk1\[2\].dly_binary.genblk1\[1\].delay_unit in ) ( clkgen.delay_155ns_3.genblk1\[2\].dly_binary.genblk1\[0\].delay_unit out ) + USE SIGNAL ;
+    - clkgen.delay_155ns_3.genblk1\[2\].dly_binary.signal_w\[2\] ( clkgen.delay_155ns_3.genblk1\[2\].dly_binary.genblk1\[2\].delay_unit in ) ( clkgen.delay_155ns_3.genblk1\[2\].dly_binary.genblk1\[1\].delay_unit out ) + USE SIGNAL ;
+    - clkgen.delay_155ns_3.genblk1\[2\].dly_binary.signal_w\[3\] ( clkgen.delay_155ns_3.genblk1\[2\].dly_binary.genblk1\[3\].delay_unit in ) ( clkgen.delay_155ns_3.genblk1\[2\].dly_binary.genblk1\[2\].delay_unit out ) + USE SIGNAL ;
+    - clkgen.delay_155ns_3.genblk1\[2\].dly_binary.signal_w\[4\] ( clkgen.delay_155ns_3.genblk1\[2\].dly_binary.out_mux A0 ) ( clkgen.delay_155ns_3.genblk1\[2\].dly_binary.genblk1\[3\].delay_unit out ) + USE SIGNAL ;
+    - clkgen.delay_155ns_3.genblk1\[3\].dly_binary.bypass_in ( clkgen.delay_155ns_3.genblk1\[3\].dly_binary.out_mux S ) ( clkgen.delay_155ns_3.genblk1\[3\].dly_binary.and_bypass_switch A_N ) ( clkgen.delay_155ns_3.genblk1\[3\].bypass_enable X ) + USE SIGNAL ;
+    - clkgen.delay_155ns_3.genblk1\[3\].dly_binary.out ( clkgen.delay_155ns_3.genblk1\[4\].dly_binary.out_mux A1 ) ( clkgen.delay_155ns_3.genblk1\[4\].dly_binary.and_bypass_switch B ) ( clkgen.delay_155ns_3.genblk1\[3\].dly_binary.out_mux X ) + USE SIGNAL ;
+    - clkgen.delay_155ns_3.genblk1\[3\].dly_binary.signal_w\[0\] ( clkgen.delay_155ns_3.genblk1\[3\].dly_binary.genblk1\[0\].delay_unit in ) ( clkgen.delay_155ns_3.genblk1\[3\].dly_binary.and_bypass_switch X ) + USE SIGNAL ;
+    - clkgen.delay_155ns_3.genblk1\[3\].dly_binary.signal_w\[1\] ( clkgen.delay_155ns_3.genblk1\[3\].dly_binary.genblk1\[1\].delay_unit in ) ( clkgen.delay_155ns_3.genblk1\[3\].dly_binary.genblk1\[0\].delay_unit out ) + USE SIGNAL ;
+    - clkgen.delay_155ns_3.genblk1\[3\].dly_binary.signal_w\[2\] ( clkgen.delay_155ns_3.genblk1\[3\].dly_binary.genblk1\[2\].delay_unit in ) ( clkgen.delay_155ns_3.genblk1\[3\].dly_binary.genblk1\[1\].delay_unit out ) + USE SIGNAL ;
+    - clkgen.delay_155ns_3.genblk1\[3\].dly_binary.signal_w\[3\] ( clkgen.delay_155ns_3.genblk1\[3\].dly_binary.genblk1\[3\].delay_unit in ) ( clkgen.delay_155ns_3.genblk1\[3\].dly_binary.genblk1\[2\].delay_unit out ) + USE SIGNAL ;
+    - clkgen.delay_155ns_3.genblk1\[3\].dly_binary.signal_w\[4\] ( clkgen.delay_155ns_3.genblk1\[3\].dly_binary.genblk1\[4\].delay_unit in ) ( clkgen.delay_155ns_3.genblk1\[3\].dly_binary.genblk1\[3\].delay_unit out ) + USE SIGNAL ;
+    - clkgen.delay_155ns_3.genblk1\[3\].dly_binary.signal_w\[5\] ( clkgen.delay_155ns_3.genblk1\[3\].dly_binary.genblk1\[5\].delay_unit in ) ( clkgen.delay_155ns_3.genblk1\[3\].dly_binary.genblk1\[4\].delay_unit out ) + USE SIGNAL ;
+    - clkgen.delay_155ns_3.genblk1\[3\].dly_binary.signal_w\[6\] ( clkgen.delay_155ns_3.genblk1\[3\].dly_binary.genblk1\[6\].delay_unit in ) ( clkgen.delay_155ns_3.genblk1\[3\].dly_binary.genblk1\[5\].delay_unit out ) + USE SIGNAL ;
+    - clkgen.delay_155ns_3.genblk1\[3\].dly_binary.signal_w\[7\] ( clkgen.delay_155ns_3.genblk1\[3\].dly_binary.genblk1\[7\].delay_unit in ) ( clkgen.delay_155ns_3.genblk1\[3\].dly_binary.genblk1\[6\].delay_unit out ) + USE SIGNAL ;
+    - clkgen.delay_155ns_3.genblk1\[3\].dly_binary.signal_w\[8\] ( clkgen.delay_155ns_3.genblk1\[3\].dly_binary.out_mux A0 ) ( clkgen.delay_155ns_3.genblk1\[3\].dly_binary.genblk1\[7\].delay_unit out ) + USE SIGNAL ;
+    - clkgen.delay_155ns_3.genblk1\[4\].dly_binary.bypass_in ( clkgen.delay_155ns_3.genblk1\[4\].dly_binary.out_mux S ) ( clkgen.delay_155ns_3.genblk1\[4\].dly_binary.and_bypass_switch A_N ) ( clkgen.delay_155ns_3.genblk1\[4\].bypass_enable X ) + USE SIGNAL ;
+    - clkgen.delay_155ns_3.genblk1\[4\].dly_binary.signal_w\[0\] ( clkgen.delay_155ns_3.genblk1\[4\].dly_binary.genblk1\[0\].delay_unit in ) ( clkgen.delay_155ns_3.genblk1\[4\].dly_binary.and_bypass_switch X ) + USE SIGNAL ;
+    - clkgen.delay_155ns_3.genblk1\[4\].dly_binary.signal_w\[10\] ( clkgen.delay_155ns_3.genblk1\[4\].dly_binary.genblk1\[9\].delay_unit out ) ( clkgen.delay_155ns_3.genblk1\[4\].dly_binary.genblk1\[10\].delay_unit in ) + USE SIGNAL ;
+    - clkgen.delay_155ns_3.genblk1\[4\].dly_binary.signal_w\[11\] ( clkgen.delay_155ns_3.genblk1\[4\].dly_binary.genblk1\[11\].delay_unit in ) ( clkgen.delay_155ns_3.genblk1\[4\].dly_binary.genblk1\[10\].delay_unit out ) + USE SIGNAL ;
+    - clkgen.delay_155ns_3.genblk1\[4\].dly_binary.signal_w\[12\] ( clkgen.delay_155ns_3.genblk1\[4\].dly_binary.genblk1\[12\].delay_unit in ) ( clkgen.delay_155ns_3.genblk1\[4\].dly_binary.genblk1\[11\].delay_unit out ) + USE SIGNAL ;
+    - clkgen.delay_155ns_3.genblk1\[4\].dly_binary.signal_w\[13\] ( clkgen.delay_155ns_3.genblk1\[4\].dly_binary.genblk1\[13\].delay_unit in ) ( clkgen.delay_155ns_3.genblk1\[4\].dly_binary.genblk1\[12\].delay_unit out ) + USE SIGNAL ;
+    - clkgen.delay_155ns_3.genblk1\[4\].dly_binary.signal_w\[14\] ( clkgen.delay_155ns_3.genblk1\[4\].dly_binary.genblk1\[14\].delay_unit in ) ( clkgen.delay_155ns_3.genblk1\[4\].dly_binary.genblk1\[13\].delay_unit out ) + USE SIGNAL ;
+    - clkgen.delay_155ns_3.genblk1\[4\].dly_binary.signal_w\[15\] ( clkgen.delay_155ns_3.genblk1\[4\].dly_binary.genblk1\[15\].delay_unit in ) ( clkgen.delay_155ns_3.genblk1\[4\].dly_binary.genblk1\[14\].delay_unit out ) + USE SIGNAL ;
+    - clkgen.delay_155ns_3.genblk1\[4\].dly_binary.signal_w\[16\] ( clkgen.delay_155ns_3.genblk1\[4\].dly_binary.out_mux A0 ) ( clkgen.delay_155ns_3.genblk1\[4\].dly_binary.genblk1\[15\].delay_unit out ) + USE SIGNAL ;
+    - clkgen.delay_155ns_3.genblk1\[4\].dly_binary.signal_w\[1\] ( clkgen.delay_155ns_3.genblk1\[4\].dly_binary.genblk1\[1\].delay_unit in ) ( clkgen.delay_155ns_3.genblk1\[4\].dly_binary.genblk1\[0\].delay_unit out ) + USE SIGNAL ;
+    - clkgen.delay_155ns_3.genblk1\[4\].dly_binary.signal_w\[2\] ( clkgen.delay_155ns_3.genblk1\[4\].dly_binary.genblk1\[2\].delay_unit in ) ( clkgen.delay_155ns_3.genblk1\[4\].dly_binary.genblk1\[1\].delay_unit out ) + USE SIGNAL ;
+    - clkgen.delay_155ns_3.genblk1\[4\].dly_binary.signal_w\[3\] ( clkgen.delay_155ns_3.genblk1\[4\].dly_binary.genblk1\[3\].delay_unit in ) ( clkgen.delay_155ns_3.genblk1\[4\].dly_binary.genblk1\[2\].delay_unit out ) + USE SIGNAL ;
+    - clkgen.delay_155ns_3.genblk1\[4\].dly_binary.signal_w\[4\] ( clkgen.delay_155ns_3.genblk1\[4\].dly_binary.genblk1\[4\].delay_unit in ) ( clkgen.delay_155ns_3.genblk1\[4\].dly_binary.genblk1\[3\].delay_unit out ) + USE SIGNAL ;
+    - clkgen.delay_155ns_3.genblk1\[4\].dly_binary.signal_w\[5\] ( clkgen.delay_155ns_3.genblk1\[4\].dly_binary.genblk1\[5\].delay_unit in ) ( clkgen.delay_155ns_3.genblk1\[4\].dly_binary.genblk1\[4\].delay_unit out ) + USE SIGNAL ;
+    - clkgen.delay_155ns_3.genblk1\[4\].dly_binary.signal_w\[6\] ( clkgen.delay_155ns_3.genblk1\[4\].dly_binary.genblk1\[6\].delay_unit in ) ( clkgen.delay_155ns_3.genblk1\[4\].dly_binary.genblk1\[5\].delay_unit out ) + USE SIGNAL ;
+    - clkgen.delay_155ns_3.genblk1\[4\].dly_binary.signal_w\[7\] ( clkgen.delay_155ns_3.genblk1\[4\].dly_binary.genblk1\[7\].delay_unit in ) ( clkgen.delay_155ns_3.genblk1\[4\].dly_binary.genblk1\[6\].delay_unit out ) + USE SIGNAL ;
+    - clkgen.delay_155ns_3.genblk1\[4\].dly_binary.signal_w\[8\] ( clkgen.delay_155ns_3.genblk1\[4\].dly_binary.genblk1\[8\].delay_unit in ) ( clkgen.delay_155ns_3.genblk1\[4\].dly_binary.genblk1\[7\].delay_unit out ) + USE SIGNAL ;
+    - clkgen.delay_155ns_3.genblk1\[4\].dly_binary.signal_w\[9\] ( clkgen.delay_155ns_3.genblk1\[4\].dly_binary.genblk1\[9\].delay_unit in ) ( clkgen.delay_155ns_3.genblk1\[4\].dly_binary.genblk1\[8\].delay_unit out ) + USE SIGNAL ;
+    - clkgen.enable_loop_in ( edgedetect.or1 X ) ( clkgen.nor1 B_N ) + USE SIGNAL ;
+    - dlycontrol1_in[0] ( PIN dlycontrol1_in[0] ) ( clkgen.delay_155ns_1.genblk1\[0\].control_invert A ) + USE SIGNAL ;
+    - dlycontrol1_in[1] ( PIN dlycontrol1_in[1] ) ( clkgen.delay_155ns_1.genblk1\[1\].control_invert A ) + USE SIGNAL ;
+    - dlycontrol1_in[2] ( PIN dlycontrol1_in[2] ) ( clkgen.delay_155ns_1.genblk1\[2\].control_invert A ) + USE SIGNAL ;
+    - dlycontrol1_in[3] ( PIN dlycontrol1_in[3] ) ( clkgen.delay_155ns_1.genblk1\[3\].control_invert A ) + USE SIGNAL ;
+    - dlycontrol1_in[4] ( PIN dlycontrol1_in[4] ) ( clkgen.delay_155ns_1.genblk1\[4\].control_invert A ) + USE SIGNAL ;
+    - dlycontrol2_in[0] ( PIN dlycontrol2_in[0] ) ( clkgen.delay_155ns_2.genblk1\[0\].control_invert A ) + USE SIGNAL ;
+    - dlycontrol2_in[1] ( PIN dlycontrol2_in[1] ) ( clkgen.delay_155ns_2.genblk1\[1\].control_invert A ) + USE SIGNAL ;
+    - dlycontrol2_in[2] ( PIN dlycontrol2_in[2] ) ( clkgen.delay_155ns_2.genblk1\[2\].control_invert A ) + USE SIGNAL ;
+    - dlycontrol2_in[3] ( PIN dlycontrol2_in[3] ) ( clkgen.delay_155ns_2.genblk1\[3\].control_invert A ) + USE SIGNAL ;
+    - dlycontrol2_in[4] ( PIN dlycontrol2_in[4] ) ( clkgen.delay_155ns_2.genblk1\[4\].control_invert A ) + USE SIGNAL ;
+    - dlycontrol3_in[0] ( PIN dlycontrol3_in[0] ) ( clkgen.delay_155ns_3.genblk1\[0\].control_invert A ) + USE SIGNAL ;
+    - dlycontrol3_in[1] ( PIN dlycontrol3_in[1] ) ( clkgen.delay_155ns_3.genblk1\[1\].control_invert A ) + USE SIGNAL ;
+    - dlycontrol3_in[2] ( PIN dlycontrol3_in[2] ) ( clkgen.delay_155ns_3.genblk1\[2\].control_invert A ) + USE SIGNAL ;
+    - dlycontrol3_in[3] ( PIN dlycontrol3_in[3] ) ( clkgen.delay_155ns_3.genblk1\[3\].control_invert A ) + USE SIGNAL ;
+    - dlycontrol3_in[4] ( PIN dlycontrol3_in[4] ) ( clkgen.delay_155ns_3.genblk1\[4\].control_invert A ) + USE SIGNAL ;
+    - dlycontrol4_in[0] ( PIN dlycontrol4_in[0] ) ( edgedetect.dly_315ns_1.genblk1\[0\].control_invert A ) + USE SIGNAL ;
+    - dlycontrol4_in[1] ( PIN dlycontrol4_in[1] ) ( edgedetect.dly_315ns_1.genblk1\[1\].control_invert A ) + USE SIGNAL ;
+    - dlycontrol4_in[2] ( PIN dlycontrol4_in[2] ) ( edgedetect.dly_315ns_1.genblk1\[2\].control_invert A ) + USE SIGNAL ;
+    - dlycontrol4_in[3] ( PIN dlycontrol4_in[3] ) ( edgedetect.dly_315ns_1.genblk1\[3\].control_invert A ) + USE SIGNAL ;
+    - dlycontrol4_in[4] ( PIN dlycontrol4_in[4] ) ( edgedetect.dly_315ns_1.genblk1\[4\].control_invert A ) + USE SIGNAL ;
+    - dlycontrol4_in[5] ( PIN dlycontrol4_in[5] ) ( edgedetect.dly_315ns_1.genblk1\[5\].control_invert A ) + USE SIGNAL ;
+    - edgedetect.dly_315ns_1.bypass_enable_w\[0\] ( edgedetect.dly_315ns_1.genblk1\[0\].control_invert Y ) ( edgedetect.dly_315ns_1.genblk1\[0\].bypass_enable B ) + USE SIGNAL ;
+    - edgedetect.dly_315ns_1.bypass_enable_w\[1\] ( edgedetect.dly_315ns_1.genblk1\[1\].control_invert Y ) ( edgedetect.dly_315ns_1.genblk1\[1\].bypass_enable B ) + USE SIGNAL ;
+    - edgedetect.dly_315ns_1.bypass_enable_w\[2\] ( edgedetect.dly_315ns_1.genblk1\[2\].control_invert Y ) ( edgedetect.dly_315ns_1.genblk1\[2\].bypass_enable B ) + USE SIGNAL ;
+    - edgedetect.dly_315ns_1.bypass_enable_w\[3\] ( edgedetect.dly_315ns_1.genblk1\[3\].control_invert Y ) ( edgedetect.dly_315ns_1.genblk1\[3\].bypass_enable B ) + USE SIGNAL ;
+    - edgedetect.dly_315ns_1.bypass_enable_w\[4\] ( edgedetect.dly_315ns_1.genblk1\[4\].control_invert Y ) ( edgedetect.dly_315ns_1.genblk1\[4\].bypass_enable B ) + USE SIGNAL ;
+    - edgedetect.dly_315ns_1.bypass_enable_w\[5\] ( edgedetect.dly_315ns_1.genblk1\[5\].control_invert Y ) ( edgedetect.dly_315ns_1.genblk1\[5\].bypass_enable B ) + USE SIGNAL ;
+    - edgedetect.dly_315ns_1.enable_dlycontrol_w ( edgedetect.dly_315ns_1.genblk1\[5\].bypass_enable A ) ( edgedetect.dly_315ns_1.genblk1\[4\].bypass_enable A ) ( edgedetect.dly_315ns_1.genblk1\[3\].bypass_enable A ) ( edgedetect.dly_315ns_1.genblk1\[2\].bypass_enable A ) ( edgedetect.dly_315ns_1.genblk1\[1\].bypass_enable A ) ( edgedetect.dly_315ns_1.genblk1\[0\].bypass_enable A ) ( edgedetect.dly_315ns_1.enablebuffer X ) + USE SIGNAL ;
+    - edgedetect.dly_315ns_1.genblk1\[0\].dly_binary.bypass_in ( edgedetect.dly_315ns_1.genblk1\[0\].dly_binary.out_mux S ) ( edgedetect.dly_315ns_1.genblk1\[0\].dly_binary.and_bypass_switch A_N ) ( edgedetect.dly_315ns_1.genblk1\[0\].bypass_enable X ) + USE SIGNAL ;
+    - edgedetect.dly_315ns_1.genblk1\[0\].dly_binary.in ( inbuf_2 X ) ( edgedetect.nor1 B_N ) ( edgedetect.dly_315ns_1.genblk1\[0\].dly_binary.out_mux A1 ) ( edgedetect.dly_315ns_1.genblk1\[0\].dly_binary.and_bypass_switch B ) + USE SIGNAL ;
+    - edgedetect.dly_315ns_1.genblk1\[0\].dly_binary.out ( edgedetect.dly_315ns_1.genblk1\[1\].dly_binary.out_mux A1 ) ( edgedetect.dly_315ns_1.genblk1\[1\].dly_binary.and_bypass_switch B ) ( edgedetect.dly_315ns_1.genblk1\[0\].dly_binary.out_mux X ) + USE SIGNAL ;
+    - edgedetect.dly_315ns_1.genblk1\[0\].dly_binary.signal_w\[0\] ( edgedetect.dly_315ns_1.genblk1\[0\].dly_binary.genblk1\[0\].delay_unit in ) ( edgedetect.dly_315ns_1.genblk1\[0\].dly_binary.and_bypass_switch X ) + USE SIGNAL ;
+    - edgedetect.dly_315ns_1.genblk1\[0\].dly_binary.signal_w\[1\] ( edgedetect.dly_315ns_1.genblk1\[0\].dly_binary.out_mux A0 ) ( edgedetect.dly_315ns_1.genblk1\[0\].dly_binary.genblk1\[0\].delay_unit out ) + USE SIGNAL ;
+    - edgedetect.dly_315ns_1.genblk1\[1\].dly_binary.bypass_in ( edgedetect.dly_315ns_1.genblk1\[1\].dly_binary.out_mux S ) ( edgedetect.dly_315ns_1.genblk1\[1\].dly_binary.and_bypass_switch A_N ) ( edgedetect.dly_315ns_1.genblk1\[1\].bypass_enable X ) + USE SIGNAL ;
+    - edgedetect.dly_315ns_1.genblk1\[1\].dly_binary.out ( edgedetect.dly_315ns_1.genblk1\[2\].dly_binary.out_mux A1 ) ( edgedetect.dly_315ns_1.genblk1\[2\].dly_binary.and_bypass_switch B ) ( edgedetect.dly_315ns_1.genblk1\[1\].dly_binary.out_mux X ) + USE SIGNAL ;
+    - edgedetect.dly_315ns_1.genblk1\[1\].dly_binary.signal_w\[0\] ( edgedetect.dly_315ns_1.genblk1\[1\].dly_binary.genblk1\[0\].delay_unit in ) ( edgedetect.dly_315ns_1.genblk1\[1\].dly_binary.and_bypass_switch X ) + USE SIGNAL ;
+    - edgedetect.dly_315ns_1.genblk1\[1\].dly_binary.signal_w\[1\] ( edgedetect.dly_315ns_1.genblk1\[1\].dly_binary.genblk1\[1\].delay_unit in ) ( edgedetect.dly_315ns_1.genblk1\[1\].dly_binary.genblk1\[0\].delay_unit out ) + USE SIGNAL ;
+    - edgedetect.dly_315ns_1.genblk1\[1\].dly_binary.signal_w\[2\] ( edgedetect.dly_315ns_1.genblk1\[1\].dly_binary.out_mux A0 ) ( edgedetect.dly_315ns_1.genblk1\[1\].dly_binary.genblk1\[1\].delay_unit out ) + USE SIGNAL ;
+    - edgedetect.dly_315ns_1.genblk1\[2\].dly_binary.bypass_in ( edgedetect.dly_315ns_1.genblk1\[2\].dly_binary.out_mux S ) ( edgedetect.dly_315ns_1.genblk1\[2\].dly_binary.and_bypass_switch A_N ) ( edgedetect.dly_315ns_1.genblk1\[2\].bypass_enable X ) + USE SIGNAL ;
+    - edgedetect.dly_315ns_1.genblk1\[2\].dly_binary.out ( edgedetect.dly_315ns_1.genblk1\[3\].dly_binary.out_mux A1 ) ( edgedetect.dly_315ns_1.genblk1\[3\].dly_binary.and_bypass_switch B ) ( edgedetect.dly_315ns_1.genblk1\[2\].dly_binary.out_mux X ) + USE SIGNAL ;
+    - edgedetect.dly_315ns_1.genblk1\[2\].dly_binary.signal_w\[0\] ( edgedetect.dly_315ns_1.genblk1\[2\].dly_binary.genblk1\[0\].delay_unit in ) ( edgedetect.dly_315ns_1.genblk1\[2\].dly_binary.and_bypass_switch X ) + USE SIGNAL ;
+    - edgedetect.dly_315ns_1.genblk1\[2\].dly_binary.signal_w\[1\] ( edgedetect.dly_315ns_1.genblk1\[2\].dly_binary.genblk1\[1\].delay_unit in ) ( edgedetect.dly_315ns_1.genblk1\[2\].dly_binary.genblk1\[0\].delay_unit out ) + USE SIGNAL ;
+    - edgedetect.dly_315ns_1.genblk1\[2\].dly_binary.signal_w\[2\] ( edgedetect.dly_315ns_1.genblk1\[2\].dly_binary.genblk1\[2\].delay_unit in ) ( edgedetect.dly_315ns_1.genblk1\[2\].dly_binary.genblk1\[1\].delay_unit out ) + USE SIGNAL ;
+    - edgedetect.dly_315ns_1.genblk1\[2\].dly_binary.signal_w\[3\] ( edgedetect.dly_315ns_1.genblk1\[2\].dly_binary.genblk1\[3\].delay_unit in ) ( edgedetect.dly_315ns_1.genblk1\[2\].dly_binary.genblk1\[2\].delay_unit out ) + USE SIGNAL ;
+    - edgedetect.dly_315ns_1.genblk1\[2\].dly_binary.signal_w\[4\] ( edgedetect.dly_315ns_1.genblk1\[2\].dly_binary.out_mux A0 ) ( edgedetect.dly_315ns_1.genblk1\[2\].dly_binary.genblk1\[3\].delay_unit out ) + USE SIGNAL ;
+    - edgedetect.dly_315ns_1.genblk1\[3\].dly_binary.bypass_in ( edgedetect.dly_315ns_1.genblk1\[3\].dly_binary.out_mux S ) ( edgedetect.dly_315ns_1.genblk1\[3\].dly_binary.and_bypass_switch A_N ) ( edgedetect.dly_315ns_1.genblk1\[3\].bypass_enable X ) + USE SIGNAL ;
+    - edgedetect.dly_315ns_1.genblk1\[3\].dly_binary.out ( edgedetect.dly_315ns_1.genblk1\[4\].dly_binary.out_mux A1 ) ( edgedetect.dly_315ns_1.genblk1\[4\].dly_binary.and_bypass_switch B ) ( edgedetect.dly_315ns_1.genblk1\[3\].dly_binary.out_mux X ) + USE SIGNAL ;
+    - edgedetect.dly_315ns_1.genblk1\[3\].dly_binary.signal_w\[0\] ( edgedetect.dly_315ns_1.genblk1\[3\].dly_binary.genblk1\[0\].delay_unit in ) ( edgedetect.dly_315ns_1.genblk1\[3\].dly_binary.and_bypass_switch X ) + USE SIGNAL ;
+    - edgedetect.dly_315ns_1.genblk1\[3\].dly_binary.signal_w\[1\] ( edgedetect.dly_315ns_1.genblk1\[3\].dly_binary.genblk1\[1\].delay_unit in ) ( edgedetect.dly_315ns_1.genblk1\[3\].dly_binary.genblk1\[0\].delay_unit out ) + USE SIGNAL ;
+    - edgedetect.dly_315ns_1.genblk1\[3\].dly_binary.signal_w\[2\] ( edgedetect.dly_315ns_1.genblk1\[3\].dly_binary.genblk1\[2\].delay_unit in ) ( edgedetect.dly_315ns_1.genblk1\[3\].dly_binary.genblk1\[1\].delay_unit out ) + USE SIGNAL ;
+    - edgedetect.dly_315ns_1.genblk1\[3\].dly_binary.signal_w\[3\] ( edgedetect.dly_315ns_1.genblk1\[3\].dly_binary.genblk1\[3\].delay_unit in ) ( edgedetect.dly_315ns_1.genblk1\[3\].dly_binary.genblk1\[2\].delay_unit out ) + USE SIGNAL ;
+    - edgedetect.dly_315ns_1.genblk1\[3\].dly_binary.signal_w\[4\] ( edgedetect.dly_315ns_1.genblk1\[3\].dly_binary.genblk1\[4\].delay_unit in ) ( edgedetect.dly_315ns_1.genblk1\[3\].dly_binary.genblk1\[3\].delay_unit out ) + USE SIGNAL ;
+    - edgedetect.dly_315ns_1.genblk1\[3\].dly_binary.signal_w\[5\] ( edgedetect.dly_315ns_1.genblk1\[3\].dly_binary.genblk1\[5\].delay_unit in ) ( edgedetect.dly_315ns_1.genblk1\[3\].dly_binary.genblk1\[4\].delay_unit out ) + USE SIGNAL ;
+    - edgedetect.dly_315ns_1.genblk1\[3\].dly_binary.signal_w\[6\] ( edgedetect.dly_315ns_1.genblk1\[3\].dly_binary.genblk1\[6\].delay_unit in ) ( edgedetect.dly_315ns_1.genblk1\[3\].dly_binary.genblk1\[5\].delay_unit out ) + USE SIGNAL ;
+    - edgedetect.dly_315ns_1.genblk1\[3\].dly_binary.signal_w\[7\] ( edgedetect.dly_315ns_1.genblk1\[3\].dly_binary.genblk1\[7\].delay_unit in ) ( edgedetect.dly_315ns_1.genblk1\[3\].dly_binary.genblk1\[6\].delay_unit out ) + USE SIGNAL ;
+    - edgedetect.dly_315ns_1.genblk1\[3\].dly_binary.signal_w\[8\] ( edgedetect.dly_315ns_1.genblk1\[3\].dly_binary.out_mux A0 ) ( edgedetect.dly_315ns_1.genblk1\[3\].dly_binary.genblk1\[7\].delay_unit out ) + USE SIGNAL ;
+    - edgedetect.dly_315ns_1.genblk1\[4\].dly_binary.bypass_in ( edgedetect.dly_315ns_1.genblk1\[4\].dly_binary.out_mux S ) ( edgedetect.dly_315ns_1.genblk1\[4\].dly_binary.and_bypass_switch A_N ) ( edgedetect.dly_315ns_1.genblk1\[4\].bypass_enable X ) + USE SIGNAL ;
+    - edgedetect.dly_315ns_1.genblk1\[4\].dly_binary.out ( edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.out_mux A1 ) ( edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.and_bypass_switch B ) ( edgedetect.dly_315ns_1.genblk1\[4\].dly_binary.out_mux X ) + USE SIGNAL ;
+    - edgedetect.dly_315ns_1.genblk1\[4\].dly_binary.signal_w\[0\] ( edgedetect.dly_315ns_1.genblk1\[4\].dly_binary.genblk1\[0\].delay_unit in ) ( edgedetect.dly_315ns_1.genblk1\[4\].dly_binary.and_bypass_switch X ) + USE SIGNAL ;
+    - edgedetect.dly_315ns_1.genblk1\[4\].dly_binary.signal_w\[10\] ( edgedetect.dly_315ns_1.genblk1\[4\].dly_binary.genblk1\[9\].delay_unit out ) ( edgedetect.dly_315ns_1.genblk1\[4\].dly_binary.genblk1\[10\].delay_unit in ) + USE SIGNAL ;
+    - edgedetect.dly_315ns_1.genblk1\[4\].dly_binary.signal_w\[11\] ( edgedetect.dly_315ns_1.genblk1\[4\].dly_binary.genblk1\[11\].delay_unit in ) ( edgedetect.dly_315ns_1.genblk1\[4\].dly_binary.genblk1\[10\].delay_unit out ) + USE SIGNAL ;
+    - edgedetect.dly_315ns_1.genblk1\[4\].dly_binary.signal_w\[12\] ( edgedetect.dly_315ns_1.genblk1\[4\].dly_binary.genblk1\[12\].delay_unit in ) ( edgedetect.dly_315ns_1.genblk1\[4\].dly_binary.genblk1\[11\].delay_unit out ) + USE SIGNAL ;
+    - edgedetect.dly_315ns_1.genblk1\[4\].dly_binary.signal_w\[13\] ( edgedetect.dly_315ns_1.genblk1\[4\].dly_binary.genblk1\[13\].delay_unit in ) ( edgedetect.dly_315ns_1.genblk1\[4\].dly_binary.genblk1\[12\].delay_unit out ) + USE SIGNAL ;
+    - edgedetect.dly_315ns_1.genblk1\[4\].dly_binary.signal_w\[14\] ( edgedetect.dly_315ns_1.genblk1\[4\].dly_binary.genblk1\[14\].delay_unit in ) ( edgedetect.dly_315ns_1.genblk1\[4\].dly_binary.genblk1\[13\].delay_unit out ) + USE SIGNAL ;
+    - edgedetect.dly_315ns_1.genblk1\[4\].dly_binary.signal_w\[15\] ( edgedetect.dly_315ns_1.genblk1\[4\].dly_binary.genblk1\[15\].delay_unit in ) ( edgedetect.dly_315ns_1.genblk1\[4\].dly_binary.genblk1\[14\].delay_unit out ) + USE SIGNAL ;
+    - edgedetect.dly_315ns_1.genblk1\[4\].dly_binary.signal_w\[16\] ( edgedetect.dly_315ns_1.genblk1\[4\].dly_binary.out_mux A0 ) ( edgedetect.dly_315ns_1.genblk1\[4\].dly_binary.genblk1\[15\].delay_unit out ) + USE SIGNAL ;
+    - edgedetect.dly_315ns_1.genblk1\[4\].dly_binary.signal_w\[1\] ( edgedetect.dly_315ns_1.genblk1\[4\].dly_binary.genblk1\[1\].delay_unit in ) ( edgedetect.dly_315ns_1.genblk1\[4\].dly_binary.genblk1\[0\].delay_unit out ) + USE SIGNAL ;
+    - edgedetect.dly_315ns_1.genblk1\[4\].dly_binary.signal_w\[2\] ( edgedetect.dly_315ns_1.genblk1\[4\].dly_binary.genblk1\[2\].delay_unit in ) ( edgedetect.dly_315ns_1.genblk1\[4\].dly_binary.genblk1\[1\].delay_unit out ) + USE SIGNAL ;
+    - edgedetect.dly_315ns_1.genblk1\[4\].dly_binary.signal_w\[3\] ( edgedetect.dly_315ns_1.genblk1\[4\].dly_binary.genblk1\[3\].delay_unit in ) ( edgedetect.dly_315ns_1.genblk1\[4\].dly_binary.genblk1\[2\].delay_unit out ) + USE SIGNAL ;
+    - edgedetect.dly_315ns_1.genblk1\[4\].dly_binary.signal_w\[4\] ( edgedetect.dly_315ns_1.genblk1\[4\].dly_binary.genblk1\[4\].delay_unit in ) ( edgedetect.dly_315ns_1.genblk1\[4\].dly_binary.genblk1\[3\].delay_unit out ) + USE SIGNAL ;
+    - edgedetect.dly_315ns_1.genblk1\[4\].dly_binary.signal_w\[5\] ( edgedetect.dly_315ns_1.genblk1\[4\].dly_binary.genblk1\[5\].delay_unit in ) ( edgedetect.dly_315ns_1.genblk1\[4\].dly_binary.genblk1\[4\].delay_unit out ) + USE SIGNAL ;
+    - edgedetect.dly_315ns_1.genblk1\[4\].dly_binary.signal_w\[6\] ( edgedetect.dly_315ns_1.genblk1\[4\].dly_binary.genblk1\[6\].delay_unit in ) ( edgedetect.dly_315ns_1.genblk1\[4\].dly_binary.genblk1\[5\].delay_unit out ) + USE SIGNAL ;
+    - edgedetect.dly_315ns_1.genblk1\[4\].dly_binary.signal_w\[7\] ( edgedetect.dly_315ns_1.genblk1\[4\].dly_binary.genblk1\[7\].delay_unit in ) ( edgedetect.dly_315ns_1.genblk1\[4\].dly_binary.genblk1\[6\].delay_unit out ) + USE SIGNAL ;
+    - edgedetect.dly_315ns_1.genblk1\[4\].dly_binary.signal_w\[8\] ( edgedetect.dly_315ns_1.genblk1\[4\].dly_binary.genblk1\[8\].delay_unit in ) ( edgedetect.dly_315ns_1.genblk1\[4\].dly_binary.genblk1\[7\].delay_unit out ) + USE SIGNAL ;
+    - edgedetect.dly_315ns_1.genblk1\[4\].dly_binary.signal_w\[9\] ( edgedetect.dly_315ns_1.genblk1\[4\].dly_binary.genblk1\[9\].delay_unit in ) ( edgedetect.dly_315ns_1.genblk1\[4\].dly_binary.genblk1\[8\].delay_unit out ) + USE SIGNAL ;
+    - edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.bypass_in ( edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.out_mux S ) ( edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.and_bypass_switch A_N ) ( edgedetect.dly_315ns_1.genblk1\[5\].bypass_enable X ) + USE SIGNAL ;
+    - edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.out ( edgedetect.nor1 A ) ( edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.out_mux X ) + USE SIGNAL ;
+    - edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.signal_w\[0\] ( edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.genblk1\[0\].delay_unit in ) ( edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.and_bypass_switch X ) + USE SIGNAL ;
+    - edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.signal_w\[10\] ( edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.genblk1\[9\].delay_unit out ) ( edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.genblk1\[10\].delay_unit in ) + USE SIGNAL ;
+    - edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.signal_w\[11\] ( edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.genblk1\[11\].delay_unit in ) ( edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.genblk1\[10\].delay_unit out ) + USE SIGNAL ;
+    - edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.signal_w\[12\] ( edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.genblk1\[12\].delay_unit in ) ( edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.genblk1\[11\].delay_unit out ) + USE SIGNAL ;
+    - edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.signal_w\[13\] ( edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.genblk1\[13\].delay_unit in ) ( edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.genblk1\[12\].delay_unit out ) + USE SIGNAL ;
+    - edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.signal_w\[14\] ( edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.genblk1\[14\].delay_unit in ) ( edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.genblk1\[13\].delay_unit out ) + USE SIGNAL ;
+    - edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.signal_w\[15\] ( edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.genblk1\[15\].delay_unit in ) ( edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.genblk1\[14\].delay_unit out ) + USE SIGNAL ;
+    - edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.signal_w\[16\] ( edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.genblk1\[16\].delay_unit in ) ( edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.genblk1\[15\].delay_unit out ) + USE SIGNAL ;
+    - edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.signal_w\[17\] ( edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.genblk1\[17\].delay_unit in ) ( edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.genblk1\[16\].delay_unit out ) + USE SIGNAL ;
+    - edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.signal_w\[18\] ( edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.genblk1\[18\].delay_unit in ) ( edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.genblk1\[17\].delay_unit out ) + USE SIGNAL ;
+    - edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.signal_w\[19\] ( edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.genblk1\[19\].delay_unit in ) ( edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.genblk1\[18\].delay_unit out ) + USE SIGNAL ;
+    - edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.signal_w\[1\] ( edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.genblk1\[1\].delay_unit in ) ( edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.genblk1\[0\].delay_unit out ) + USE SIGNAL ;
+    - edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.signal_w\[20\] ( edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.genblk1\[20\].delay_unit in ) ( edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.genblk1\[19\].delay_unit out ) + USE SIGNAL ;
+    - edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.signal_w\[21\] ( edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.genblk1\[21\].delay_unit in ) ( edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.genblk1\[20\].delay_unit out ) + USE SIGNAL ;
+    - edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.signal_w\[22\] ( edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.genblk1\[22\].delay_unit in ) ( edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.genblk1\[21\].delay_unit out ) + USE SIGNAL ;
+    - edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.signal_w\[23\] ( edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.genblk1\[23\].delay_unit in ) ( edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.genblk1\[22\].delay_unit out ) + USE SIGNAL ;
+    - edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.signal_w\[24\] ( edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.genblk1\[24\].delay_unit in ) ( edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.genblk1\[23\].delay_unit out ) + USE SIGNAL ;
+    - edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.signal_w\[25\] ( edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.genblk1\[25\].delay_unit in ) ( edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.genblk1\[24\].delay_unit out ) + USE SIGNAL ;
+    - edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.signal_w\[26\] ( edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.genblk1\[26\].delay_unit in ) ( edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.genblk1\[25\].delay_unit out ) + USE SIGNAL ;
+    - edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.signal_w\[27\] ( edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.genblk1\[27\].delay_unit in ) ( edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.genblk1\[26\].delay_unit out ) + USE SIGNAL ;
+    - edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.signal_w\[28\] ( edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.genblk1\[28\].delay_unit in ) ( edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.genblk1\[27\].delay_unit out ) + USE SIGNAL ;
+    - edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.signal_w\[29\] ( edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.genblk1\[29\].delay_unit in ) ( edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.genblk1\[28\].delay_unit out ) + USE SIGNAL ;
+    - edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.signal_w\[2\] ( edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.genblk1\[2\].delay_unit in ) ( edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.genblk1\[1\].delay_unit out ) + USE SIGNAL ;
+    - edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.signal_w\[30\] ( edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.genblk1\[30\].delay_unit in ) ( edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.genblk1\[29\].delay_unit out ) + USE SIGNAL ;
+    - edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.signal_w\[31\] ( edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.genblk1\[31\].delay_unit in ) ( edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.genblk1\[30\].delay_unit out ) + USE SIGNAL ;
+    - edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.signal_w\[32\] ( edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.out_mux A0 ) ( edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.genblk1\[31\].delay_unit out ) + USE SIGNAL ;
+    - edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.signal_w\[3\] ( edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.genblk1\[3\].delay_unit in ) ( edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.genblk1\[2\].delay_unit out ) + USE SIGNAL ;
+    - edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.signal_w\[4\] ( edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.genblk1\[4\].delay_unit in ) ( edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.genblk1\[3\].delay_unit out ) + USE SIGNAL ;
+    - edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.signal_w\[5\] ( edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.genblk1\[5\].delay_unit in ) ( edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.genblk1\[4\].delay_unit out ) + USE SIGNAL ;
+    - edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.signal_w\[6\] ( edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.genblk1\[6\].delay_unit in ) ( edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.genblk1\[5\].delay_unit out ) + USE SIGNAL ;
+    - edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.signal_w\[7\] ( edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.genblk1\[7\].delay_unit in ) ( edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.genblk1\[6\].delay_unit out ) + USE SIGNAL ;
+    - edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.signal_w\[8\] ( edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.genblk1\[8\].delay_unit in ) ( edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.genblk1\[7\].delay_unit out ) + USE SIGNAL ;
+    - edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.signal_w\[9\] ( edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.genblk1\[9\].delay_unit in ) ( edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.genblk1\[8\].delay_unit out ) + USE SIGNAL ;
+    - edgedetect.ena_in ( inbuf_1 X ) ( edgedetect.or1 B ) + USE SIGNAL ;
+    - edgedetect.start_conv_edge_w ( edgedetect.or1 A ) ( edgedetect.nor1 Y ) + USE SIGNAL ;
+    - ena_in ( PIN ena_in ) ( inbuf_1 A ) + USE SIGNAL ;
+    - enable_dlycontrol_in ( PIN enable_dlycontrol_in ) ( edgedetect.dly_315ns_1.enablebuffer A ) ( clkgen.delay_155ns_3.enablebuffer A ) ( clkgen.delay_155ns_2.enablebuffer A ) ( clkgen.delay_155ns_1.enablebuffer A ) + USE SIGNAL ;
+    - ndecision_finish_in ( PIN ndecision_finish_in ) ( inbuf_3 A ) + USE SIGNAL ;
+    - nsample_n_1 ( sampledly14 A ) ( sampledly04 X ) + USE SIGNAL ;
+    - nsample_n_2 ( sampledly24 A ) ( sampledly14 X ) + USE SIGNAL ;
+    - nsample_n_3 ( sampledly34 A ) ( sampledly24 X ) + USE SIGNAL ;
+    - nsample_n_4 ( sampledly34 X ) ( outbuf_6 A ) + USE SIGNAL ;
+    - nsample_n_in ( PIN nsample_n_in ) ( sampledly04 A ) + USE SIGNAL ;
+    - nsample_n_out ( PIN nsample_n_out ) ( outbuf_6 X ) + USE SIGNAL ;
+    - nsample_p_1 ( sampledly13 A ) ( sampledly03 X ) + USE SIGNAL ;
+    - nsample_p_2 ( sampledly23 A ) ( sampledly13 X ) + USE SIGNAL ;
+    - nsample_p_3 ( sampledly33 A ) ( sampledly23 X ) + USE SIGNAL ;
+    - nsample_p_4 ( sampledly33 X ) ( outbuf_5 A ) + USE SIGNAL ;
+    - nsample_p_in ( PIN nsample_p_in ) ( sampledly03 A ) + USE SIGNAL ;
+    - nsample_p_out ( PIN nsample_p_out ) ( outbuf_5 X ) + USE SIGNAL ;
+    - sample_n_1 ( sampledly12 A ) ( sampledly02 X ) + USE SIGNAL ;
+    - sample_n_2 ( sampledly22 A ) ( sampledly12 X ) + USE SIGNAL ;
+    - sample_n_3 ( sampledly32 A ) ( sampledly22 X ) + USE SIGNAL ;
+    - sample_n_4 ( sampledly32 X ) ( outbuf_4 A ) + USE SIGNAL ;
+    - sample_n_in ( PIN sample_n_in ) ( sampledly02 A ) + USE SIGNAL ;
+    - sample_n_out ( PIN sample_n_out ) ( outbuf_4 X ) + USE SIGNAL ;
+    - sample_p_1 ( sampledly11 A ) ( sampledly01 X ) + USE SIGNAL ;
+    - sample_p_2 ( sampledly21 A ) ( sampledly11 X ) + USE SIGNAL ;
+    - sample_p_3 ( sampledly31 A ) ( sampledly21 X ) + USE SIGNAL ;
+    - sample_p_4 ( sampledly31 X ) ( outbuf_3 A ) + USE SIGNAL ;
+    - sample_p_in ( PIN sample_p_in ) ( sampledly01 A ) + USE SIGNAL ;
+    - sample_p_out ( PIN sample_p_out ) ( outbuf_3 X ) + USE SIGNAL ;
+    - start_conv_in ( PIN start_conv_in ) ( inbuf_2 A ) + USE SIGNAL ;
+END NETS
+END DESIGN

@@ -16,9 +16,11 @@ The standard cells must have the port pins included in the Verilog-file. Use vlo
 The standard-cell representation in Verilog-code now needs to be converted to a SPICE netlist. Use the script vlog2Spice from qflow  
 * `./vlog2Spice foo.vp -l $PDKPATH/libs.ref/sky130_fd_sc_hd/spice/sky130_fd_sc_hd.spice -o foo.spice`
 ### Convert to Xspice 
-Use the script `spi2xspice` from qflow `python3 spi2xspice.py $PDKPATH/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib foo.spice foo.xspice`
+Use the script `spi2xspice` from qflow `python3 spi2xspice.py $PDKPATH/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib -io_time=500p -time=50p -idelay=5p -odelay=50p -cload=250f foo.spice foo.xspice`
 
 > Note: If `conb` standard cells are present (for example if one of the cell-outputs is tied to a constant value), then they need to be replaced with digital pullups and pulldowns. Reason: Missing data for `conb`, simulation will fail.
+
+> Warning: if the verilog code uses bus lines as `net[25:0]`, then the generated xschem file has pin orders alphabetically like `net0..net10:net19..net1..net20:net25..net2`
 
 ### Generate xschem-symbol 
 Create a symbol and with `q` set the type to `primitive`.

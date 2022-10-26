@@ -262,23 +262,23 @@ N 510 -340 510 -320 {
 lab=ndecision_finish}
 C {devices/title.sym} 170 -40 0 0 {name=l1 author="Manuel Moser"}
 C {devices/code.sym} 130 -360 0 0 {name=s1 only_toplevel=false value="
-.include /foss/designs/SKY130_SAR-ADC/openlane/adc_clkgen_with_edgedetect/validation/adc_clkgen_with_edgedetect.spice
+.include /foss/designs/SKY130_SAR-ADC/openlane/adc_clkgen_with_edgedetect/sim/adc_clkgen_with_edgedetect.spice
 *.OPTIONS RELTOL=.001 TRTOL=1 ABSTOL=1e-16 CHGTOL=1.0e-16 DEFAD=1.0e-16
 .save all
 .control
 .param enable_control=1.8
-.param bit0=1.8
+.param bit0=0
 .param bit1=0
-.param bit2=0
+.param bit2=1.8
 .param bit3=0
 .param bit4=0
-tran 100p 1200n
+tran 100p 2000n
 plot v(clk_comp) v(ndecision_finish) v(clk_dig)
 .endc"}
 C {adc_clkgen_with_edgedetect.sym} 680 -400 0 0 {name=x1}
 C {devices/gnd.sym} 680 -240 0 0 {name=l1 lab=GND}
 C {devices/vdd.sym} 680 -590 0 0 {name=l1 lab=VDD}
-C {devices/vsource.sym} 50 -500 0 0 {name=V1 value="0 pulse(0 1.8 2n 2n 2n 1 2)"}
+C {devices/vsource.sym} 50 -500 0 0 {name=V1 value=1.8}
 C {devices/gnd.sym} 50 -450 0 0 {name=l1 lab=GND}
 C {devices/vdd.sym} 50 -550 0 0 {name=l1 lab=VDD}
 C {devices/lab_wire.sym} 510 -410 0 0 {name=l1 sig_type=std_logic lab=ena}
@@ -296,9 +296,9 @@ C {devices/noconn.sym} 920 -340 0 1 {name=l3}
 C {devices/noconn.sym} 920 -320 0 1 {name=l4}
 C {devices/noconn.sym} 920 -300 0 1 {name=l5}
 C {devices/noconn.sym} 920 -280 0 1 {name=l6}
-C {devices/vsource.sym} 50 -670 0 0 {name=V2 value="0 pulse(0 1.8 1000n 1f 1f 1 2)"}
+C {devices/vsource.sym} 50 -670 0 0 {name=V2 value="0 pulse(0 1.8 1000n 250p 250p 1 2)"}
 C {devices/gnd.sym} 50 -620 0 0 {name=l7 lab=GND}
-C {devices/vsource.sym} 50 -830 0 0 {name=V3 value="0 pulse(0 1.8 1000n 1f 1f 1 2)"}
+C {devices/vsource.sym} 50 -830 0 0 {name=V3 value="0 pulse(0 1.8 1000n 250p 250p 1 2)"}
 C {devices/lab_wire.sym} 50 -710 1 0 {name=l7 sig_type=std_logic lab=ena}
 C {devices/lab_wire.sym} 50 -870 1 0 {name=l7 sig_type=std_logic lab=start_conv}
 C {devices/vsource.sym} 390 -1060 0 0 {name=V4 value=bit0}
