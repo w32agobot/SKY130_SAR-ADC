@@ -36,8 +36,8 @@ module adc_control_nonbinary_tb;
 	   .avg_control_in(avg_control),
 	   .sample_out(sample),
 	   .sample_out_n(nsample),
-	   .enable_out(enable),
-	   .conv_finished_out(conv_finished),
+	   .enable_loop_out(enable),
+	   .conv_finished_strobe_out(conv_finished),
 	   .pswitch_out(p_switch),
 	   .nswitch_out(n_switch),
 	   .result_out(result)
@@ -97,6 +97,8 @@ module adc_control_nonbinary_tb;
     #2 comparator_in = 0; //0002
     #2 comparator_in = 0;
     #2 comparator_in = 0;
+
+    #2 comparator_in = 0; // hold_data_for_osr clock gating
         
 
     // second value is d806
@@ -121,6 +123,8 @@ module adc_control_nonbinary_tb;
     #2 comparator_in = 0; //0004
     //averaging
     #2 comparator_in = 0; //0002
+
+    #2 comparator_in = 0; // hold_data_for_osr clock gating
     
     // third value is d13
     avg_control = 3'b000; //0x averaging
@@ -144,6 +148,9 @@ module adc_control_nonbinary_tb;
     #2 comparator_in = 1; //0004 +2
     //averaging
     #2 comparator_in = 1; //0002 +1
+
+
+    #2 comparator_in = 0; // hold_data_for_osr clock gating
 
     // fourth value is d489
     avg_control = 3'b010; //8x averaging
@@ -192,6 +199,7 @@ module adc_control_nonbinary_tb;
     #2 comparator_in = 1; 
     #2 comparator_in = 1; 
     
+    #2 comparator_in = 0; // hold_data_for_osr clock gating
 
     // fifth value is max value with max averaging d4095
     avg_control = 3'b100; //0x averaging
@@ -337,6 +345,7 @@ module adc_control_nonbinary_tb;
     #2 comparator_in = 1; 
 
 
+    #2 comparator_in = 0; // hold_data_for_osr clock gating
 
     //  sixth value zero without averaging
     avg_control = 3'b000; //0x averaging
@@ -360,6 +369,8 @@ module adc_control_nonbinary_tb;
     #2 comparator_in = 0; //0004
     //averaging
     #2 comparator_in = 0; //0002
+
+    #2 comparator_in = 0; // hold_data_for_osr clock gating
 
     #512 $finish;
    end

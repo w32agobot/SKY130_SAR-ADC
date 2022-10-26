@@ -12,6 +12,10 @@
 //   See the License for the specific language governing permissions and
 //   limitations under the License.
 `default_nettype none
+// no includes for openlane
+//`include "adc_control_nonbinary.v"
+//`include "adc_row_col_decoder.v"
+//`include "adc_osr.v"
 
 
 // Digital-Core of SAR-ADC

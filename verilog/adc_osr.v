@@ -48,25 +48,40 @@ module adc_osr (
    // Direct signals
    assign conversion_finished_strobe_out = conv_finished_r;
 
+
    //******************************************
-   //   Synchronous process and Reset Handling
+   //   Clock Gating
+   //******************************************
+   // Cave: Handle with care. 
+   // Normally, you should never gate a clock signal.
+   reg clk_gated;
+   always @(posedge clk, negedge rst_n) begin
+      if (rst_n == 1'b0) begin 
+         clk_gated <= 1'b0;
+         conv_finished_r   <=  1'b0;
+      end else begin
+         clk_gated <= clk & ena;
+         conv_finished_r <= next_conv_finished_w;
+      end
+   end
+
+   //******************************************
+   //   clock-gated process
    //******************************************
 
    //DFF with clock enable
-   always @(posedge clk, negedge rst_n) begin
+   always @(posedge clk_gated, negedge rst_n) begin
       if (rst_n == 1'b0) begin  
          result_r          <= 20'd0;
          osr_mode_r        <=  3'd0;
          sample_count_r    <=  9'd1;
          output_r          <=  16'd0;
-         conv_finished_r   <=  1'b0;
       end 
       else begin	
          result_r        <= next_result_w;
          osr_mode_r      <= next_osr_mode_w;
          sample_count_r  <= next_sample_count_w;
          output_r        <= next_output_w;
-         conv_finished_r <= next_conv_finished_w;
       end
    end 
   
@@ -82,22 +97,18 @@ module adc_osr (
    //*******************************
    //   Combinatoric signals
    //*******************************
-   assign next_result_w        = ~ena ? result_r :
-                                 is_first_sample ? {8'd0,data_in} : 
+   assign next_result_w        = is_first_sample ? {8'd0,data_in} : 
                                                    {8'd0,data_in} + result_r;
 
-   assign next_osr_mode_w      = ~ena ? osr_mode_r :
-                                 is_first_sample ? osr_mode_in : osr_mode_r;
-   assign next_sample_count_w  = ~ena ? sample_count_r :
-                                 is_last_sample ? 1 : sample_count_r + 1;
+   assign next_osr_mode_w      = is_first_sample ? osr_mode_in : osr_mode_r;
+   assign next_sample_count_w  = is_last_sample ? 1 : sample_count_r + 1;
 
     //***********************************************
     //   Output right-shifted result
     //***********************************************
     assign data_out = output_r;
     
-    assign next_output_w = ~ena ? output_r:
-                           bypass_oversampling    ? {next_result_w[11:0],4'b0} :
+    assign next_output_w = bypass_oversampling    ? {next_result_w[11:0],4'b0} :
                            ~is_last_sample        ? output_r                   :
                            (osr_mode_r == 3'b001) ? {next_result_w[13:1],3'b0} :
                            (osr_mode_r == 3'b010) ? {next_result_w[15:2],2'b0} :

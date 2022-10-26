@@ -15,7 +15,7 @@
 `include "adc_core_digital.v"
 `timescale 10us/1us
 
-module adc_control_nonbinary_tb;
+module adc_core_digital_tb;
    reg rst_n;
    reg [15:0] config_1_in;
    reg [15:0] config_2_in;
@@ -145,8 +145,12 @@ module adc_control_nonbinary_tb;
     #2 comparator_in = 0; //0002
     #2 comparator_in = 0;
     #2 comparator_in = 0;
+    //OSR hold data
+    #2 comparator_in = 0;  
     // FINISHED 1/4 conversions
     #2 comparator_in = 0; //0001 
+
+    
 
     
     #2 comparator_in = 1; //8000 +d2048
@@ -176,6 +180,8 @@ module adc_control_nonbinary_tb;
     #2 comparator_in = 0; //0002
     #2 comparator_in = 0;
     #2 comparator_in = 0;
+    //OSR hold data
+    #2 comparator_in = 0;  
     // FINISHED 2/4 conversions
     #2 comparator_in = 0; //0001 
     
@@ -206,6 +212,8 @@ module adc_control_nonbinary_tb;
     #2 comparator_in = 0; //0002
     #2 comparator_in = 0;
     #2 comparator_in = 0;
+    //OSR hold data
+    #2 comparator_in = 0;  
     // FINISHED 3/4 conversions
     #2 comparator_in = 0; //0001 
 
@@ -236,6 +244,8 @@ module adc_control_nonbinary_tb;
     #2 comparator_in = 0; //0002
     #2 comparator_in = 0;
     #2 comparator_in = 0;
+    //OSR hold data
+    #2 comparator_in = 0;  
     // FINISHED 4/4 conversions
     #2 comparator_in = 0; //0001 
 

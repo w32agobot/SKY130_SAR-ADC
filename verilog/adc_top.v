@@ -66,10 +66,10 @@ module adc_top(
       .sample_out(sample_cnb),
       .nsample_out(nsample_cnb),
       .enable_out(enable_loop_out),
-      .conv_finished_out(conv_finished_cnb),
       .p_switch_out(p_switch_cnb),
       .n_switch_out(n_switch_cnb),
-      .result_out(result_cnb)
+      .result_out(result_cnb),
+      .result_valid_strobe_out(conv_finished_cnb)
       );
 
 //*******************************************

@@ -1,0 +1,172 @@
+Wed Oct 26 09:27:52 UTC 2022 - Executing "openroad -python /foss/tools/openlane/2022.09/scripts/odbpy/lefutil.py get_metal_layers -o /foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/runs/leberkaskrapfen/tmp/layers.list /foss/pdk/sky130A/libs.ref/sky130_fd_sc_hd/techlef/sky130_fd_sc_hd__nom.tlef"
+
+Wed Oct 26 09:27:52 UTC 2022 - Executing "/foss/tools/openlane/2022.09/scripts/mergeLef.py -o /foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/runs/leberkaskrapfen/tmp/merged.nom.lef -i /foss/pdk/sky130A/libs.ref/sky130_fd_sc_hd/techlef/sky130_fd_sc_hd__nom.tlef {/foss/pdk/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef /foss/pdk/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_ef_sc_hd.lef} |& tee /dev/null"
+
+Wed Oct 26 09:27:52 UTC 2022 - Executing "/foss/tools/openlane/2022.09/scripts/mergeLef.py -o /foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/runs/leberkaskrapfen/tmp/merged.min.lef -i /foss/pdk/sky130A/libs.ref/sky130_fd_sc_hd/techlef/sky130_fd_sc_hd__min.tlef {/foss/pdk/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef /foss/pdk/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_ef_sc_hd.lef} |& tee /dev/null"
+
+Wed Oct 26 09:27:52 UTC 2022 - Executing "/foss/tools/openlane/2022.09/scripts/mergeLef.py -o /foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/runs/leberkaskrapfen/tmp/merged.max.lef -i /foss/pdk/sky130A/libs.ref/sky130_fd_sc_hd/techlef/sky130_fd_sc_hd__max.tlef {/foss/pdk/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef /foss/pdk/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_ef_sc_hd.lef} |& tee /dev/null"
+
+Wed Oct 26 09:27:52 UTC 2022 - Executing "openroad -python /foss/tools/openlane/2022.09/scripts/mergeLib.py --output /foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/runs/leberkaskrapfen/tmp/synthesis/merged.lib --name sky130A_merged /foss/pdk/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib"
+
+Wed Oct 26 09:27:53 UTC 2022 - Executing "openroad -python /foss/tools/openlane/2022.09/scripts/libtrim.py --cell-file /foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/runs/leberkaskrapfen/tmp/synthesis/trimmed.lib.exclude.list --output /foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/runs/leberkaskrapfen/tmp/synthesis/trimmed.lib /foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/runs/leberkaskrapfen/tmp/synthesis/merged.lib"
+
+Wed Oct 26 09:27:53 UTC 2022 - Executing "openroad -python /foss/tools/openlane/2022.09/scripts/new_tracks.py -i /foss/pdk/sky130A/libs.tech/openlane/sky130_fd_sc_hd/tracks.info -o /foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/runs/leberkaskrapfen/tmp/routing/config.tracks"
+
+Wed Oct 26 09:27:53 UTC 2022 - Executing "echo {openlane d375db931edfb03fc42859d590eb3ec799bc6c9e} > /foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/runs/leberkaskrapfen/OPENLANE_VERSION"
+
+Wed Oct 26 09:27:53 UTC 2022 - Executing "sed -E {s/^([[:space:]]+)pg_pin(.*)/\1pin\2\n\1    direction : "inout";/g} /foss/pdk/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib > /foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/runs/leberkaskrapfen/tmp/synthesis/1-sky130_fd_sc_hd__tt_025C_1v80.no_pg.lib"
+
+Wed Oct 26 09:27:53 UTC 2022 - Executing "sed -E {s/^([[:space:]]+)pg_pin(.*)/\1pin\2\n\1    direction : "inout";/g} /foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/runs/leberkaskrapfen/tmp/synthesis/trimmed.lib > /foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/runs/leberkaskrapfen/tmp/synthesis/1-trimmed.no_pg.lib"
+
+Wed Oct 26 09:27:53 UTC 2022 - Executing "yosys -c /foss/tools/openlane/2022.09/scripts/yosys/synth.tcl -l /foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/runs/leberkaskrapfen/logs/synthesis/1-synthesis.log |& tee /dev/null"
+
+Wed Oct 26 09:27:55 UTC 2022 - Executing "sed -i -e {s/\(set ::env(CURRENT_NETLIST)\).*/\1 \/foss\/designs\/SKY130_SAR-ADC\/openlane\/adc_core_digital\/runs\/leberkaskrapfen\/results\/synthesis\/adc_core_digital.v/} /foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/runs/leberkaskrapfen/config.tcl"
+
+Wed Oct 26 09:27:55 UTC 2022 - Executing "sed -i -e {s/\(set ::env(PREV_NETLIST)\).*/\1 0/} /foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/runs/leberkaskrapfen/config.tcl"
+
+Wed Oct 26 09:27:55 UTC 2022 - Executing "sed -i /defparam/d /foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/runs/leberkaskrapfen/results/synthesis/adc_core_digital.v"
+
+Wed Oct 26 09:27:55 UTC 2022 - Executing "openroad -exit /foss/tools/openlane/2022.09/scripts/openroad/sta.tcl |& tee /dev/null /foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/runs/leberkaskrapfen/logs/synthesis/2-sta.log"
+
+Wed Oct 26 09:27:56 UTC 2022 - Executing "openroad -exit /foss/tools/openlane/2022.09/scripts/openroad/floorplan.tcl |& tee /dev/null /foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/runs/leberkaskrapfen/logs/floorplan/3-initial_fp.log"
+
+Wed Oct 26 09:27:56 UTC 2022 - Executing "openroad -python /foss/tools/openlane/2022.09/scripts/odbpy/snap_to_grid.py --output /foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/runs/leberkaskrapfen/tmp/floorplan/3-minimized_pdn.txt --input-lef /foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/runs/leberkaskrapfen/tmp/merged.nom.lef 18.2275 18.02 36.455 36.04"
+
+Wed Oct 26 09:27:56 UTC 2022 - Executing "openroad -python /foss/tools/openlane/2022.09/scripts/odbpy/defutil.py extract_core_dims --output-data /foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/runs/leberkaskrapfen/tmp/dimensions.txt --input-lef /foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/runs/leberkaskrapfen/tmp/merged.nom.lef /foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/runs/leberkaskrapfen/tmp/floorplan/3-initial_fp.def"
+
+Wed Oct 26 09:27:56 UTC 2022 - Executing "openroad -exit /foss/tools/openlane/2022.09/scripts/openroad/ioplacer.tcl |& tee /dev/null /foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/runs/leberkaskrapfen/logs/floorplan/4-io.log"
+
+Wed Oct 26 09:27:57 UTC 2022 - Executing "openroad -exit /foss/tools/openlane/2022.09/scripts/openroad/tapcell.tcl |& tee /dev/null /foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/runs/leberkaskrapfen/logs/floorplan/5-tap.log"
+
+Wed Oct 26 09:27:57 UTC 2022 - Executing "openroad -exit /foss/tools/openlane/2022.09/scripts/openroad/pdn.tcl |& tee /dev/null /foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/runs/leberkaskrapfen/logs/floorplan/6-pdn.log"
+
+Wed Oct 26 09:27:57 UTC 2022 - Executing "openroad -exit /foss/tools/openlane/2022.09/scripts/openroad/gpl.tcl |& tee /dev/null /foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/runs/leberkaskrapfen/logs/placement/7-global.log"
+
+Wed Oct 26 09:28:00 UTC 2022 - Executing "openroad -exit /foss/tools/openlane/2022.09/scripts/openroad/resizer.tcl |& tee /dev/null /foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/runs/leberkaskrapfen/logs/placement/8-resizer.log"
+
+Wed Oct 26 09:28:00 UTC 2022 - Executing "openroad -exit /foss/tools/openlane/2022.09/scripts/openroad/write_verilog.tcl |& tee /dev/null /foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/runs/leberkaskrapfen/logs/placement/9-write_verilog.log"
+
+Wed Oct 26 09:28:01 UTC 2022 - Executing "sed -i -e {s/\(set ::env(CURRENT_NETLIST)\).*/\1 \/foss\/designs\/SKY130_SAR-ADC\/openlane\/adc_core_digital\/runs\/leberkaskrapfen\/results\/placement\/adc_core_digital.resized.v/} /foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/runs/leberkaskrapfen/config.tcl"
+
+Wed Oct 26 09:28:01 UTC 2022 - Executing "sed -i -e {s/\(set ::env(PREV_NETLIST)\).*/\1 \/foss\/designs\/SKY130_SAR-ADC\/openlane\/adc_core_digital\/runs\/leberkaskrapfen\/results\/synthesis\/adc_core_digital.v/} /foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/runs/leberkaskrapfen/config.tcl"
+
+Wed Oct 26 09:28:01 UTC 2022 - Executing "openroad -python /foss/tools/openlane/2022.09/scripts/odbpy/remove_buffers.py --output /foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/runs/leberkaskrapfen/tmp/placement/8-resizer.buffers_removed.def --input-lef /foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/runs/leberkaskrapfen/tmp/merged.nom.lef --match {^$} /foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/runs/leberkaskrapfen/tmp/placement/8-resizer.def |& tee /dev/null /foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/runs/leberkaskrapfen/logs/placement/10-remove_buffers.log"
+
+Wed Oct 26 09:28:01 UTC 2022 - Executing "openroad -exit /foss/tools/openlane/2022.09/scripts/openroad/dpl.tcl |& tee /dev/null /foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/runs/leberkaskrapfen/logs/placement/11-detailed.log"
+
+Wed Oct 26 09:28:01 UTC 2022 - Executing "openroad -python /foss/tools/openlane/2022.09/scripts/libtrim.py --cell-file /foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/runs/leberkaskrapfen/tmp/cts/cts.lib.exclude.list --output /foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/runs/leberkaskrapfen/tmp/cts/cts.lib /foss/pdk/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib"
+
+Wed Oct 26 09:28:01 UTC 2022 - Executing "openroad -exit /foss/tools/openlane/2022.09/scripts/openroad/cts.tcl |& tee /dev/null /foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/runs/leberkaskrapfen/logs/cts/12-cts.log"
+
+Wed Oct 26 09:28:22 UTC 2022 - Executing "openroad -exit /foss/tools/openlane/2022.09/scripts/openroad/write_verilog.tcl |& tee /dev/null /foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/runs/leberkaskrapfen/logs/cts/13-write_verilog.log"
+
+Wed Oct 26 09:28:23 UTC 2022 - Executing "sed -i -e {s/\(set ::env(CURRENT_NETLIST)\).*/\1 \/foss\/designs\/SKY130_SAR-ADC\/openlane\/adc_core_digital\/runs\/leberkaskrapfen\/results\/cts\/adc_core_digital.v/} /foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/runs/leberkaskrapfen/config.tcl"
+
+Wed Oct 26 09:28:23 UTC 2022 - Executing "sed -i -e {s/\(set ::env(PREV_NETLIST)\).*/\1 \/foss\/designs\/SKY130_SAR-ADC\/openlane\/adc_core_digital\/runs\/leberkaskrapfen\/results\/placement\/adc_core_digital.resized.v/} /foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/runs/leberkaskrapfen/config.tcl"
+
+Wed Oct 26 09:28:23 UTC 2022 - Executing "openroad -exit /foss/tools/openlane/2022.09/scripts/openroad/resizer_timing.tcl |& tee /dev/null /foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/runs/leberkaskrapfen/logs/cts/14-resizer.log"
+
+Wed Oct 26 09:28:24 UTC 2022 - Executing "openroad -exit /foss/tools/openlane/2022.09/scripts/openroad/write_verilog.tcl |& tee /dev/null /foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/runs/leberkaskrapfen/logs/cts/15-write_verilog.log"
+
+Wed Oct 26 09:28:24 UTC 2022 - Executing "sed -i -e {s/\(set ::env(CURRENT_NETLIST)\).*/\1 \/foss\/designs\/SKY130_SAR-ADC\/openlane\/adc_core_digital\/runs\/leberkaskrapfen\/results\/cts\/adc_core_digital.resized.v/} /foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/runs/leberkaskrapfen/config.tcl"
+
+Wed Oct 26 09:28:24 UTC 2022 - Executing "sed -i -e {s/\(set ::env(PREV_NETLIST)\).*/\1 \/foss\/designs\/SKY130_SAR-ADC\/openlane\/adc_core_digital\/runs\/leberkaskrapfen\/results\/cts\/adc_core_digital.v/} /foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/runs/leberkaskrapfen/config.tcl"
+
+Wed Oct 26 09:28:24 UTC 2022 - Executing "openroad -python /foss/tools/openlane/2022.09/scripts/odbpy/remove_buffers.py --output /foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/runs/leberkaskrapfen/tmp/cts/14-resizer_timing.buffers_removed.def --input-lef /foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/runs/leberkaskrapfen/tmp/merged.nom.lef --match {^$} /foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/runs/leberkaskrapfen/tmp/cts/14-resizer_timing.def |& tee /dev/null /foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/runs/leberkaskrapfen/logs/placement/16-remove_buffers.log"
+
+Wed Oct 26 09:28:24 UTC 2022 - Executing "openroad -exit /foss/tools/openlane/2022.09/scripts/openroad/resizer_routing_timing.tcl |& tee /dev/null /foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/runs/leberkaskrapfen/logs/routing/17-resizer.log"
+
+Wed Oct 26 09:28:25 UTC 2022 - Executing "openroad -exit /foss/tools/openlane/2022.09/scripts/openroad/write_verilog.tcl |& tee /dev/null /foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/runs/leberkaskrapfen/logs/routing/18-write_verilog.log"
+
+Wed Oct 26 09:28:25 UTC 2022 - Executing "sed -i -e {s/\(set ::env(CURRENT_NETLIST)\).*/\1 \/foss\/designs\/SKY130_SAR-ADC\/openlane\/adc_core_digital\/runs\/leberkaskrapfen\/results\/routing\/adc_core_digital.resized.v/} /foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/runs/leberkaskrapfen/config.tcl"
+
+Wed Oct 26 09:28:25 UTC 2022 - Executing "sed -i -e {s/\(set ::env(PREV_NETLIST)\).*/\1 \/foss\/designs\/SKY130_SAR-ADC\/openlane\/adc_core_digital\/runs\/leberkaskrapfen\/results\/cts\/adc_core_digital.resized.v/} /foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/runs/leberkaskrapfen/config.tcl"
+
+Wed Oct 26 09:28:25 UTC 2022 - Executing "openroad -python /foss/tools/openlane/2022.09/scripts/odbpy/remove_buffers.py --output /foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/runs/leberkaskrapfen/tmp/routing/17-resizer_timing.buffers_removed.def --input-lef /foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/runs/leberkaskrapfen/tmp/merged.nom.lef --match {^$} /foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/runs/leberkaskrapfen/tmp/routing/17-resizer_timing.def |& tee /dev/null /foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/runs/leberkaskrapfen/logs/placement/19-remove_buffers.log"
+
+Wed Oct 26 09:28:25 UTC 2022 - Executing "openroad -exit /foss/tools/openlane/2022.09/scripts/openroad/dpl.tcl |& tee /dev/null /foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/runs/leberkaskrapfen/logs/routing/20-diode_legalization.log"
+
+Wed Oct 26 09:28:26 UTC 2022 - Executing "openroad -exit /foss/tools/openlane/2022.09/scripts/openroad/groute.tcl |& tee /dev/null /foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/runs/leberkaskrapfen/logs/routing/21-global.log"
+
+Wed Oct 26 09:28:27 UTC 2022 - Executing "openroad -exit /foss/tools/openlane/2022.09/scripts/openroad/fill.tcl |& tee /dev/null /foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/runs/leberkaskrapfen/logs/routing/22-fill.log"
+
+Wed Oct 26 09:28:27 UTC 2022 - Executing "openroad -exit /foss/tools/openlane/2022.09/scripts/openroad/write_verilog.tcl |& tee /dev/null /foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/runs/leberkaskrapfen/logs/routing/23-write_verilog_global.log"
+
+Wed Oct 26 09:28:27 UTC 2022 - Executing "sed -i -e {s/\(set ::env(CURRENT_NETLIST)\).*/\1 \/foss\/designs\/SKY130_SAR-ADC\/openlane\/adc_core_digital\/runs\/leberkaskrapfen\/tmp\/routing\/22-global.v/} /foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/runs/leberkaskrapfen/config.tcl"
+
+Wed Oct 26 09:28:27 UTC 2022 - Executing "sed -i -e {s/\(set ::env(PREV_NETLIST)\).*/\1 \/foss\/designs\/SKY130_SAR-ADC\/openlane\/adc_core_digital\/runs\/leberkaskrapfen\/results\/routing\/adc_core_digital.resized.v/} /foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/runs/leberkaskrapfen/config.tcl"
+
+Wed Oct 26 09:28:27 UTC 2022 - Executing "openroad -exit /foss/tools/openlane/2022.09/scripts/openroad/droute.tcl |& tee /dev/null /foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/runs/leberkaskrapfen/logs/routing/24-detailed.log"
+
+Wed Oct 26 09:30:28 UTC 2022 - Executing "openroad -python /foss/tools/openlane/2022.09/scripts/drc_rosetta.py tr to_klayout -o /foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/runs/leberkaskrapfen/reports/routing/drt.klayout.xml --design-name adc_core_digital /foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/runs/leberkaskrapfen/reports/routing/drt.drc"
+
+Wed Oct 26 09:30:28 UTC 2022 - Executing "openroad -exit /foss/tools/openlane/2022.09/scripts/openroad/write_verilog.tcl |& tee /dev/null /foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/runs/leberkaskrapfen/logs/routing/25-write_verilog_detailed.log"
+
+Wed Oct 26 09:30:29 UTC 2022 - Executing "sed -i -e {s/\(set ::env(CURRENT_NETLIST)\).*/\1 \/foss\/designs\/SKY130_SAR-ADC\/openlane\/adc_core_digital\/runs\/leberkaskrapfen\/tmp\/routing\/24-detailed.v/} /foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/runs/leberkaskrapfen/config.tcl"
+
+Wed Oct 26 09:30:29 UTC 2022 - Executing "sed -i -e {s/\(set ::env(PREV_NETLIST)\).*/\1 \/foss\/designs\/SKY130_SAR-ADC\/openlane\/adc_core_digital\/runs\/leberkaskrapfen\/tmp\/routing\/22-global.v/} /foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/runs/leberkaskrapfen/config.tcl"
+
+Wed Oct 26 09:30:29 UTC 2022 - Executing "openroad -exit /foss/tools/openlane/2022.09/scripts/openroad/rcx.tcl |& tee /dev/null /foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/runs/leberkaskrapfen/logs/signoff/26-parasitics_extraction.min.log"
+
+Wed Oct 26 09:30:29 UTC 2022 - Executing "openroad -exit /foss/tools/openlane/2022.09/scripts/openroad/sta_multi_corner.tcl |& tee /dev/null /foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/runs/leberkaskrapfen/logs/signoff/27-parasitics_multi_corner_sta.min.log"
+
+Wed Oct 26 09:30:31 UTC 2022 - Executing "openroad -exit /foss/tools/openlane/2022.09/scripts/openroad/rcx.tcl |& tee /dev/null /foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/runs/leberkaskrapfen/logs/signoff/28-parasitics_extraction.max.log"
+
+Wed Oct 26 09:30:32 UTC 2022 - Executing "openroad -exit /foss/tools/openlane/2022.09/scripts/openroad/sta_multi_corner.tcl |& tee /dev/null /foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/runs/leberkaskrapfen/logs/signoff/29-parasitics_multi_corner_sta.max.log"
+
+Wed Oct 26 09:30:34 UTC 2022 - Executing "openroad -exit /foss/tools/openlane/2022.09/scripts/openroad/rcx.tcl |& tee /dev/null /foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/runs/leberkaskrapfen/logs/signoff/30-parasitics_extraction.nom.log"
+
+Wed Oct 26 09:30:35 UTC 2022 - Executing "openroad -exit /foss/tools/openlane/2022.09/scripts/openroad/sta.tcl |& tee /dev/null /foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/runs/leberkaskrapfen/logs/signoff/31-parasitics_sta.log"
+
+Wed Oct 26 09:30:35 UTC 2022 - Executing "openroad -exit /foss/tools/openlane/2022.09/scripts/openroad/sta_multi_corner.tcl |& tee /dev/null /foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/runs/leberkaskrapfen/logs/signoff/32-parasitics_multi_corner_sta.log"
+
+Wed Oct 26 09:30:37 UTC 2022 - Executing "openroad -exit /foss/tools/openlane/2022.09/scripts/openroad/irdrop.tcl |& tee /dev/null /foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/runs/leberkaskrapfen/logs/signoff/33-irdrop.log"
+
+Wed Oct 26 09:30:38 UTC 2022 - Executing "magic -noconsole -dnull -rcfile /foss/pdk/sky130A/libs.tech/magic/sky130A.magicrc < /foss/tools/openlane/2022.09/scripts/magic/mag_gds.tcl |& tee /dev/null /foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/runs/leberkaskrapfen/logs/signoff/34-gdsii.log"
+
+Wed Oct 26 09:30:38 UTC 2022 - Executing "magic -noconsole -dnull -rcfile /foss/pdk/sky130A/libs.tech/magic/sky130A.magicrc < /foss/tools/openlane/2022.09/scripts/magic/gds_pointers.tcl |& tee /dev/null /foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/runs/leberkaskrapfen/logs/signoff/34-gds_ptrs.log"
+
+Wed Oct 26 09:30:39 UTC 2022 - Executing "sed -i -n {/^<< properties >>/,/^<< end >>/p} /foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/runs/leberkaskrapfen/tmp/signoff/gds_ptrs.mag"
+
+Wed Oct 26 09:30:39 UTC 2022 - Executing "magic -noconsole -dnull -rcfile /foss/pdk/sky130A/libs.tech/magic/sky130A.magicrc < /foss/tools/openlane/2022.09/scripts/magic/lef.tcl |& tee /dev/null /foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/runs/leberkaskrapfen/logs/signoff/34-lef.log"
+
+Wed Oct 26 09:30:39 UTC 2022 - Executing "magic -noconsole -dnull -rcfile /foss/pdk/sky130A/libs.tech/magic/sky130A.magicrc < /foss/tools/openlane/2022.09/scripts/magic/maglef.tcl |& tee /dev/null /foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/runs/leberkaskrapfen/logs/signoff/34-maglef.log"
+
+Wed Oct 26 09:30:39 UTC 2022 - Executing "klayout -b -rm /foss/tools/openlane/2022.09/scripts/klayout/def2gds.py -rd out_gds=/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/runs/leberkaskrapfen/results/signoff/adc_core_digital.klayout.gds -rd tech_file=/foss/pdk/sky130A/libs.tech/klayout/tech/sky130A.lyt -rd design_name=adc_core_digital -rd in_def=/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/runs/leberkaskrapfen/results/routing/adc_core_digital.def -rd {in_gds=/foss/pdk/sky130A/libs.ref/sky130_fd_sc_hd/gds/sky130_fd_sc_hd.gds } -rd config_file= -rd seal_gds= -rd lef_file=/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/runs/leberkaskrapfen/tmp/merged.nom.lef |& tee /dev/null /foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/runs/leberkaskrapfen/logs/signoff/35-gdsii-klayout.log"
+
+Wed Oct 26 09:30:40 UTC 2022 - Executing "bash /foss/tools/openlane/2022.09/scripts/klayout/xor.sh /foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/runs/leberkaskrapfen/results/signoff/adc_core_digital.gds /foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/runs/leberkaskrapfen/results/signoff/adc_core_digital.klayout.gds adc_core_digital /foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/runs/leberkaskrapfen/reports/signoff/adc_core_digital.xor.gds |& tee /dev/null /foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/runs/leberkaskrapfen/logs/signoff/36-xor.log"
+
+Wed Oct 26 09:30:42 UTC 2022 - Executing "openroad -python /foss/tools/openlane/2022.09/scripts/parse_klayout_xor_log.py -l /foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/runs/leberkaskrapfen/logs/signoff/36-xor.log -o /foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/runs/leberkaskrapfen/reports/signoff/36-xor.rpt"
+
+Wed Oct 26 09:30:42 UTC 2022 - Executing "bash /foss/tools/openlane/2022.09/scripts/klayout/xor.sh /foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/runs/leberkaskrapfen/results/signoff/adc_core_digital.gds /foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/runs/leberkaskrapfen/results/signoff/adc_core_digital.klayout.gds adc_core_digital /foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/runs/leberkaskrapfen/reports/signoff/adc_core_digital.xor.xml |& tee /dev/null /foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/runs/leberkaskrapfen/logs/signoff/36-xor.log"
+
+Wed Oct 26 09:30:44 UTC 2022 - Executing "openroad -python /foss/tools/openlane/2022.09/scripts/parse_klayout_xor_log.py -l /foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/runs/leberkaskrapfen/logs/signoff/36-xor.log -o /foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/runs/leberkaskrapfen/reports/signoff/36-xor.rpt"
+
+Wed Oct 26 09:30:44 UTC 2022 - Executing "magic -noconsole -dnull -rcfile /foss/pdk/sky130A/libs.tech/magic/sky130A.magicrc < /foss/tools/openlane/2022.09/scripts/magic/extract_spice.tcl |& tee /dev/null /foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/runs/leberkaskrapfen/logs/signoff/37-gds.spice.log"
+
+Wed Oct 26 09:30:47 UTC 2022 - Executing "openroad -python /foss/tools/openlane/2022.09/scripts/odbpy/power_utils.py write_powered_def --input-lef /foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/runs/leberkaskrapfen/tmp/merged.nom.lef --power-port VPWR --ground-port VGND --powered-netlist {} --output /foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/runs/leberkaskrapfen/tmp/signoff/37-powered_def.def /foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/runs/leberkaskrapfen/results/routing/adc_core_digital.def |& tee /dev/null /foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/runs/leberkaskrapfen/logs/signoff/38-write_powered_def.log"
+
+Wed Oct 26 09:30:47 UTC 2022 - Executing "openroad -exit /foss/tools/openlane/2022.09/scripts/openroad/write_verilog.tcl |& tee /dev/null /dev/null"
+
+Wed Oct 26 09:30:47 UTC 2022 - Executing "sed -i -e {s/\(set ::env(CURRENT_NETLIST)\).*/\1 \/foss\/designs\/SKY130_SAR-ADC\/openlane\/adc_core_digital\/runs\/leberkaskrapfen\/tmp\/signoff\/37-powered_netlist.v/} /foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/runs/leberkaskrapfen/config.tcl"
+
+Wed Oct 26 09:30:47 UTC 2022 - Executing "sed -i -e {s/\(set ::env(PREV_NETLIST)\).*/\1 \/foss\/designs\/SKY130_SAR-ADC\/openlane\/adc_core_digital\/runs\/leberkaskrapfen\/tmp\/routing\/24-detailed.v/} /foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/runs/leberkaskrapfen/config.tcl"
+
+Wed Oct 26 09:30:47 UTC 2022 - Executing "netgen -batch source /foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/runs/leberkaskrapfen/tmp/signoff/40-setup_file.gds.lvs |& tee /dev/null /foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/runs/leberkaskrapfen/logs/signoff/40-gds.log"
+
+Wed Oct 26 09:30:48 UTC 2022 - Executing "magic -noconsole -dnull -rcfile /foss/pdk/sky130A/libs.tech/magic/sky130A.magicrc < /foss/tools/openlane/2022.09/scripts/magic/drc.tcl |& tee /dev/null /foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/runs/leberkaskrapfen/logs/signoff/41-drc.log"
+
+Wed Oct 26 09:30:52 UTC 2022 - Executing "openroad -python /foss/tools/openlane/2022.09/scripts/drc_rosetta.py magic to_tcl -o /foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/runs/leberkaskrapfen/reports/signoff/drc.tcl /foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/runs/leberkaskrapfen/reports/signoff/drc.rpt"
+
+Wed Oct 26 09:30:52 UTC 2022 - Executing "openroad -python /foss/tools/openlane/2022.09/scripts/drc_rosetta.py magic to_tr -o /foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/runs/leberkaskrapfen/reports/signoff/drc.tr /foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/runs/leberkaskrapfen/reports/signoff/drc.rpt"
+
+Wed Oct 26 09:30:52 UTC 2022 - Executing "openroad -python /foss/tools/openlane/2022.09/scripts/drc_rosetta.py tr to_klayout -o /foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/runs/leberkaskrapfen/reports/signoff/drc.klayout.xml --design-name adc_core_digital /foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/runs/leberkaskrapfen/reports/signoff/drc.tr"
+
+Wed Oct 26 09:30:52 UTC 2022 - Executing "openroad -python /foss/tools/openlane/2022.09/scripts/drc_rosetta.py magic to_rdb -o /foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/runs/leberkaskrapfen/reports/signoff/drc.rdb /foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/runs/leberkaskrapfen/reports/signoff/drc.rpt"
+
+Wed Oct 26 09:30:53 UTC 2022 - Executing "openroad -exit /foss/tools/openlane/2022.09/scripts/openroad/antenna_check.tcl |& tee /dev/null /foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/runs/leberkaskrapfen/logs/signoff/42-antenna.log"
+
+Wed Oct 26 09:30:53 UTC 2022 - Executing "openroad -python /foss/tools/openlane/2022.09/scripts/extract_antenna_violators.py --output /foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/runs/leberkaskrapfen/reports/signoff/42-antenna_violators.rpt /foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/runs/leberkaskrapfen/logs/signoff/42-antenna.log"
+
+Wed Oct 26 09:30:53 UTC 2022 - Executing "openroad -python /foss/tools/openlane/2022.09/scripts/generate_reports.py -d /foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital --design_name adc_core_digital --tag leberkaskrapfen --output_file /foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/runs/leberkaskrapfen/reports/metrics.csv --man_report /foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/runs/leberkaskrapfen/reports/manufacturability.rpt --run_path /foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/runs/leberkaskrapfen"
+

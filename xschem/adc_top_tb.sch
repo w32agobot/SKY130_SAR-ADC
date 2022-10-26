@@ -293,17 +293,18 @@ C {devices/vdd.sym} 720 -780 0 0 {name=l1 lab=VDD}
 C {devices/gnd.sym} 720 -700 0 0 {name=l1 lab=GND}
 C {devices/vdd.sym} 1600 -1220 0 0 {name=l3 lab=VDD}
 C {devices/gnd.sym} 1600 -1020 0 0 {name=l3 lab=GND}
-C {devices/code_shown.sym} 920 -1430 0 0 {name=SPICE only_toplevel=false value=".include /foss/pdk/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_fd_sc_hd.spice
-
+C {devices/code_shown.sym} 920 -1430 0 0 {name=SPICE only_toplevel=false value="
 ****************
 * True mixed signal? (xspice) or analog? (spice)
 ****************
 *.include /foss/designs/SKY130_SAR-ADC/spice/adc_core_digital.spice
 .include /foss/designs/SKY130_SAR-ADC/spice/adc_core_digital.xspice
 
-*.include /foss/designs/SKY130_SAR-ADC/spice/adc_clkgen_with_edgedetect.spice
-.include /foss/designs/SKY130_SAR-ADC/spice/adc_clkgen_with_edgedetect.xspice
+.include /foss/designs/SKY130_SAR-ADC/spice/adc_clkgen_with_edgedetect.spice
+*.include /foss/designs/SKY130_SAR-ADC/spice/adc_clkgen_with_edgedetect.xspice
 
+* mind the order: include AFTER XSPICE FILES
+*.include /foss/pdk/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_fd_sc_hd.spice
 
 
 ****************
@@ -311,7 +312,7 @@ C {devices/code_shown.sym} 920 -1430 0 0 {name=SPICE only_toplevel=false value="
 ****************
 .param fclk=32768
 .param treset=100n
-.param tstartconv=1u
+.param tstartconv=500n
 
 ****************
 * Delay Config
@@ -351,7 +352,7 @@ C {devices/code_shown.sym} 920 -1430 0 0 {name=SPICE only_toplevel=false value="
 .save all
 .control
 set num_threads=8
-tran 1n 4u
+tran 1n 2.7u
 plot inp inn rst_n start_conv conv_finished
 plot start_conv x1.clk_dig x1.clk_comp
 plot x1.pctop x1.nctop

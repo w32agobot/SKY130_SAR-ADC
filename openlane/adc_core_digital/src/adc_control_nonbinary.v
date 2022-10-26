@@ -35,7 +35,7 @@ module adc_control_nonbinary #(parameter MATRIX_BITS = 12, NONBINARY_REDUNDANCY 
    wire [4:0] next_average_counter_w;
    wire [4:0] next_average_sum_w;
    wire [2:0] next_sampled_avg_control_w;
-   wire [MATRIX_BITS+NONBINARY_REDUNDANCY:0] next_shift_register_w;
+   wire [MATRIX_BITS+NONBINARY_REDUNDANCY+1:0] next_shift_register_w;
    wire [MATRIX_BITS-1:0] next_data_register_w;
    
    // Average calculation of comparator_in at LSB-region
@@ -46,13 +46,41 @@ module adc_control_nonbinary #(parameter MATRIX_BITS = 12, NONBINARY_REDUNDANCY 
    wire averaged_comparator_in_w;
    
    // State-Machine Shift Register
-   reg [MATRIX_BITS+NONBINARY_REDUNDANCY:0] shift_register_r;
+   reg [MATRIX_BITS+NONBINARY_REDUNDANCY+1:0] shift_register_r;
    reg [MATRIX_BITS-1:0] data_register_r;
    wire [MATRIX_BITS-1:0] nonbinary_value_w;
    wire is_sampling_w       = shift_register_r[0];
-   wire lsb_region_w        = (shift_register_r[1] | shift_register_r[2] | shift_register_r[3] | shift_register_r[4]);
+   wire lsb_region_w        = (shift_register_r[2] | shift_register_r[3] | shift_register_r[4] | shift_register_r[5]);
    wire is_averaging_w      = (lsb_region_w && (average_counter_r < average_count_limit_w));
-   wire conversion_ending_w = ((shift_register_r[1]==1'b1)&~is_averaging_w);
+   wire conversion_ending_w = ((shift_register_r[2]==1'b1)&~is_averaging_w);
+
+  /* 
+  *************************************************
+  //wire hold_data_for_osr   = shift_register_r[1];
+  *************************************************
+
+    OSR uses clock-gating for low power, which can lead to unpredictable problems. 
+    
+    expected:
+    data_in     XXXXXXX__data__XXXXXXX
+    data_valid  _______/‾‾‾‾‾‾\_______
+    clk         _____________/‾‾‾‾‾‾‾‾ 
+
+    Possible problem:
+    
+    data_in     XXXXXXX__data__XXXXXXX
+    data_valid  _______/‾‾‾‾‾‾\_______
+    clk_gated   _________________/‾‾‾‾  (clock is delayed due to gating, data is invalid)
+
+    Solution: Data at OSR input is held for two clock cycles
+    data_in     XXXXXXX__data_______XXX
+    data_valid  _______/‾‾‾‾‾\_________
+    clk_gated   _______/‾‾\__/‾‾\__/‾‾\ 
+
+    To assure that clock gating is safe in this case, state shift_register_r[1]
+    is introduced to keep the result stable for 2 clock cycles.
+  */
+   
 
    // conversion finished set 0 after reset, 1 after conversion ended
    wire next_conv_finished_w = conversion_ending_w;
@@ -65,7 +93,7 @@ module adc_control_nonbinary #(parameter MATRIX_BITS = 12, NONBINARY_REDUNDANCY 
    always @(posedge clk, negedge rst_n) begin
       if (rst_n == 1'b0) begin  
          result_out            <= {MATRIX_BITS{1'b0}};
-         shift_register_r      <= {{(MATRIX_BITS+NONBINARY_REDUNDANCY){1'b0}},1'b1};     
+         shift_register_r      <= {{(MATRIX_BITS+NONBINARY_REDUNDANCY+1){1'b0}},1'b1};     
          sampled_avg_control_r <= 3'b000;   
          average_counter_r     <= 5'd1;
          average_sum_r         <= 5'd0;
@@ -97,7 +125,7 @@ module adc_control_nonbinary #(parameter MATRIX_BITS = 12, NONBINARY_REDUNDANCY 
 
    // shift register and data handling
    // save avg_control in a register to prevent changes of this value during conversion
-   assign next_shift_register_w      = is_averaging_w ? shift_register_r : {shift_register_r[0],shift_register_r[MATRIX_BITS+NONBINARY_REDUNDANCY:1]};
+   assign next_shift_register_w      = is_averaging_w ? shift_register_r : {shift_register_r[0],shift_register_r[MATRIX_BITS+NONBINARY_REDUNDANCY+1:1]};
    assign next_sampled_avg_control_w = is_sampling_w ? avg_control_in : sampled_avg_control_r;
    assign next_data_register_w       = is_sampling_w ? {MATRIX_BITS{1'b0}} :
                                        averaged_comparator_in_w ? data_register_r+nonbinary_value_w : 
@@ -123,22 +151,23 @@ module adc_control_nonbinary #(parameter MATRIX_BITS = 12, NONBINARY_REDUNDANCY 
    //   NONBINARY Lookup table
    //*******************************
    // calculated for 12 Bit Matrix + 3 redundant Bits
-    assign nonbinary_value_w = (shift_register_r==16'd2**15) ? 12'd2048 :
-                               (shift_register_r==16'd2**14) ? 12'd806 :
-                               (shift_register_r==16'd2**13) ? 12'd486 :
-                               (shift_register_r==16'd2**12) ? 12'd295 :
-                               (shift_register_r==16'd2**11) ? 12'd180 :
-                               (shift_register_r==16'd2**10) ? 12'd110 :
-                               (shift_register_r==16'd2**9 ) ? 12'd67 :
-                               (shift_register_r==16'd2**8 ) ? 12'd41 :
-                               (shift_register_r==16'd2**7 ) ? 12'd25 :
-                               (shift_register_r==16'd2**6 ) ? 12'd15 :
-                               (shift_register_r==16'd2**5 ) ? 12'd9 :
-                               (shift_register_r==16'd2**4 ) ? 12'd6 :
-                               (shift_register_r==16'd2**3 ) ? 12'd4 :
-                               (shift_register_r==16'd2**2 ) ? 12'd2 :
-                               (shift_register_r==16'd2**1 ) ? 12'd1 :
-                               (shift_register_r==16'd2**0 ) ? 12'd0 :
+    assign nonbinary_value_w = (shift_register_r==17'd2**16) ? 12'd2048 :
+                               (shift_register_r==17'd2**15) ? 12'd806 :
+                               (shift_register_r==17'd2**14) ? 12'd486 :
+                               (shift_register_r==17'd2**13) ? 12'd295 :
+                               (shift_register_r==17'd2**12) ? 12'd180 :
+                               (shift_register_r==17'd2**11) ? 12'd110 :
+                               (shift_register_r==17'd2**10 ) ? 12'd67 :
+                               (shift_register_r==17'd2**9 ) ? 12'd41 :
+                               (shift_register_r==17'd2**8 ) ? 12'd25 :
+                               (shift_register_r==17'd2**7 ) ? 12'd15 :
+                               (shift_register_r==17'd2**6 ) ? 12'd9 :
+                               (shift_register_r==17'd2**5 ) ? 12'd6 :
+                               (shift_register_r==17'd2**4 ) ? 12'd4 :
+                               (shift_register_r==17'd2**3 ) ? 12'd2 :
+                               (shift_register_r==17'd2**2 ) ? 12'd1 :
+                               (shift_register_r==17'd2**1 ) ? 12'd0 :
+                               (shift_register_r==17'd2**0 ) ? 12'd0 :
                                12'dX; // default signal for illegal state
 
     //*******************************
