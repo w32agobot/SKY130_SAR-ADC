@@ -259,13 +259,13 @@ Aedgedetect.dly_315ns_1.genblk1\_2\_.dly_binary.genblk1\_2\_.delay_unit [edgedet
 Aclkgen.delay_155ns_3.genblk1\_1\_.dly_binary.genblk1\_0\_.delay_unit [clkgen.delay_155ns_3.genblk1\_1\_.dly_binary.and_bypass_switch/X] clkgen.delay_155ns_3.genblk1\_1\_.dly_binary.genblk1\_1\_.delay_unit/in d_lut_sky130_mm_sc_hd_dlyPoly5ns
 Aclkgen.delay_155ns_1.genblk1\_2\_.dly_binary.genblk1\_3\_.delay_unit [clkgen.delay_155ns_1.genblk1\_2\_.dly_binary.genblk1\_3\_.delay_unit/in] clkgen.delay_155ns_1.genblk1\_2\_.dly_binary.out_mux/A0 d_lut_sky130_mm_sc_hd_dlyPoly5ns
 
-.model todig_1v8 adc_bridge(in_high=1.2 in_low=0.6 rise_delay=10n fall_delay=10n)
+.model todig_1v8 adc_bridge(in_high=1.2 in_low=0.6 rise_delay=500p fall_delay=500p)
 .model toana_1v8 dac_bridge(out_high=1.8 out_low=0)
 
-.model ddflop d_dff(ic=0 rise_delay=15p fall_delay=15p)
-.model dlatch d_dlatch(ic=0 rise_delay=15p fall_delay=15p)
-.model dzero d_pulldown(load=1p)
-.model done d_pullup(load=1p)
+.model ddflop d_dff(ic=0 rise_delay=50p fall_delay=50p)
+.model dlatch d_dlatch(ic=0 rise_delay=50p fall_delay=50p)
+.model dzero d_pulldown(load=250f)
+.model done d_pullup(load=250f)
 
 AA2D1 [a_VGND] [VGND] todig_1v8
 AA2D2 [a_VPWR] [VPWR] todig_1v8
@@ -309,36 +309,36 @@ AA2D31 [a_start_conv_in] [start_conv_in] todig_1v8
 
 
 * sky130_fd_sc_hd__inv_2 (!A)
-.model d_lut_sky130_fd_sc_hd__inv_2 d_lut (rise_delay=15p fall_delay=15p input_load=100f
+.model d_lut_sky130_fd_sc_hd__inv_2 d_lut (rise_delay=50p fall_delay=50p input_load=250f
 + table_values "10")
 * sky130_fd_sc_hd__decap_4 (no function)
 * sky130_fd_sc_hd__mux2_1 (A0&!S) | (A1&S)
-.model d_lut_sky130_fd_sc_hd__mux2_1 d_lut (rise_delay=15p fall_delay=15p input_load=100f
+.model d_lut_sky130_fd_sc_hd__mux2_1 d_lut (rise_delay=50p fall_delay=50p input_load=250f
 + table_values "01010011")
 * sky130_fd_sc_hd__diode_2 (no function)
 * sky130_fd_sc_hd__decap_6 (no function)
 * sky130_fd_sc_hd__or2_1 (A) | (B)
-.model d_lut_sky130_fd_sc_hd__or2_1 d_lut (rise_delay=15p fall_delay=15p input_load=100f
+.model d_lut_sky130_fd_sc_hd__or2_1 d_lut (rise_delay=50p fall_delay=50p input_load=250f
 + table_values "0111")
 * sky130_fd_sc_hd__decap_3 (no function)
 * sky130_mm_sc_hd_dlyPoly5ns (in)
-.model d_lut_sky130_mm_sc_hd_dlyPoly5ns d_lut (rise_delay=5n fall_delay=5n input_load=100f
+.model d_lut_sky130_mm_sc_hd_dlyPoly5ns d_lut (rise_delay=5000p fall_delay=5000p input_load=250f
 + table_values "01")
 * sky130_fd_sc_hd__and2_1 (A&B)
-.model d_lut_sky130_fd_sc_hd__and2_1 d_lut (rise_delay=15p fall_delay=15p input_load=100f
+.model d_lut_sky130_fd_sc_hd__and2_1 d_lut (rise_delay=50p fall_delay=50p input_load=250f
 + table_values "0001")
 * sky130_fd_sc_hd__decap_8 (no function)
 * sky130_ef_sc_hd__decap_12 (no function)
 * sky130_fd_sc_hd__nor2b_1 (!A&B_N)
-.model d_lut_sky130_fd_sc_hd__nor2b_1 d_lut (rise_delay=15p fall_delay=15p input_load=100f
+.model d_lut_sky130_fd_sc_hd__nor2b_1 d_lut (rise_delay=50p fall_delay=50p input_load=250f
 + table_values "0010")
 * sky130_fd_sc_hd__and2b_1 (!A_N&B)
-.model d_lut_sky130_fd_sc_hd__and2b_1 d_lut (rise_delay=15p fall_delay=15p input_load=100f
+.model d_lut_sky130_fd_sc_hd__and2b_1 d_lut (rise_delay=50p fall_delay=50p input_load=250f
 + table_values "0010")
 * sky130_fd_sc_hd__buf_1 (A)
-.model d_lut_sky130_fd_sc_hd__buf_1 d_lut (rise_delay=15p fall_delay=15p input_load=100f
+.model d_lut_sky130_fd_sc_hd__buf_1 d_lut (rise_delay=50p fall_delay=50p input_load=250f
 + table_values "01")
 * sky130_fd_sc_hd__buf_4 (A)
-.model d_lut_sky130_fd_sc_hd__buf_4 d_lut (rise_delay=15p fall_delay=15p input_load=100f
+.model d_lut_sky130_fd_sc_hd__buf_4 d_lut (rise_delay=50p fall_delay=50p input_load=250f
 + table_values "01")
 .end
