@@ -12,10 +12,6 @@
 //   See the License for the specific language governing permissions and
 //   limitations under the License.
 `default_nettype none
-// no includes for openlane
-//`include "adc_control_nonbinary.v"
-//`include "adc_row_col_decoder.v"
-//`include "adc_osr.v"
 
 
 // Digital-Core of SAR-ADC
@@ -111,9 +107,8 @@ adc_row_col_decoder ndc (
 //           Oversampling unit
 //*******************************************
 adc_osr osr (
-   .clk(clk_dig_in),
    .rst_n(rst_n),
-   .ena(conv_finished_cnb_n),
+   .data_valid_strobe(conv_finished_cnb_n),
    .osr_mode_in(osr_mode_w),
    .data_in(result_cnb),
    .data_out(result_out),

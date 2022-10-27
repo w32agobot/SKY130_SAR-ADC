@@ -22,9 +22,8 @@
 */
 
 module adc_osr (
-   input wire clk,
    input wire rst_n,
-   input wire ena,
+   input wire data_valid_strobe,
    input wire [2:0] osr_mode_in,
    input wire [11:0] data_in,
    output wire [15:0] data_out,
@@ -34,55 +33,44 @@ module adc_osr (
    // internal registers
    reg  [19:0] result_r;
    reg  [2:0]  osr_mode_r;
-   reg         conv_finished_r;
    reg  [8:0]  sample_count_r;
    reg  [15:0] output_r;
+   reg         data_valid_r;
 
    // combinatoric signals for next register values
    wire [19:0] next_result_w;
    wire [2:0]  next_osr_mode_w;
    wire [8:0]  next_sample_count_w;
    wire [15:0] next_output_w;
-   wire        next_conv_finished_w;
 
    // Direct signals
-   assign conversion_finished_strobe_out = conv_finished_r;
-
-
+   assign conversion_finished_strobe_out = data_valid_r & data_valid_strobe;
+   
    //******************************************
-   //   Clock Gating
+   //   data_valid_strobe as clock input
    //******************************************
-   // Handle with care. Normally, you should never gate a clock signal.
-   reg clk_gated;
-   always @(posedge clk, negedge rst_n) begin
-      if (rst_n == 1'b0) begin 
-         clk_gated <= 1'b0;
-         conv_finished_r   <=  1'b0;
-      end else begin
-         clk_gated <= clk & ena;
-         conv_finished_r <= next_conv_finished_w;
-      end
-   end
+   // Cave: Handle with care, normally you should 
+   // only use one clk-signal to guarantee synchronous 
+   // execution without problems
 
-   //******************************************
-   //   clock-gated process
-   //******************************************
-
-   //DFF with clock enable
-   always @(posedge clk_gated, negedge rst_n) begin
+   always @(posedge data_valid_strobe, negedge rst_n) begin
       if (rst_n == 1'b0) begin  
          result_r          <= 20'd0;
          osr_mode_r        <=  3'd0;
          sample_count_r    <=  9'd1;
          output_r          <=  16'd0;
+         data_valid_r      <=  1'b0;
       end 
       else begin	
          result_r        <= next_result_w;
          osr_mode_r      <= next_osr_mode_w;
          sample_count_r  <= next_sample_count_w;
          output_r        <= next_output_w;
+         data_valid_r    <= next_data_valid_w;
       end
    end 
+
+   wire next_data_valid_w = is_last_sample;
   
 
    //*******************************
@@ -91,7 +79,6 @@ module adc_osr (
    wire bypass_oversampling = ~(osr_mode_in[0] | osr_mode_in[1] | osr_mode_in==3'b100);
    wire is_first_sample = bypass_oversampling | (sample_count_r == 9'd1);
    wire is_last_sample  = bypass_oversampling | ((sample_count_r == osr_count_limit_w)&&(~is_first_sample));
-   assign next_conv_finished_w = is_last_sample & ena;
 
    //*******************************
    //   Combinatoric signals

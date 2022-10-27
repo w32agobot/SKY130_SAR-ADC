@@ -105,35 +105,31 @@ Removed 0 unused modules.
 Cleaned up 0 empty switches.
 
 8.2.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
-Marked 1 switch rules as full_case in process $proc$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_osr.v:72$90 in module adc_osr.
-Marked 1 switch rules as full_case in process $proc$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_osr.v:57$87 in module adc_osr.
-Marked 1 switch rules as full_case in process $proc$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:93$135 in module $paramod$8afb02d65be9a894aa0f8d4ca81b0b22ab95769f\adc_control_nonbinary.
+Marked 1 switch rules as full_case in process $proc$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_osr.v:56$91 in module adc_osr.
+Marked 1 switch rules as full_case in process $proc$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:92$138 in module $paramod$8afb02d65be9a894aa0f8d4ca81b0b22ab95769f\adc_control_nonbinary.
 Removed a total of 0 dead cases.
 
 8.2.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
-Removed 13 redundant assignments.
+Removed 12 redundant assignments.
 Promoted 0 assignments to connections.
 
 8.2.4. Executing PROC_INIT pass (extract init attributes).
 
 8.2.5. Executing PROC_ARST pass (detect async resets in processes).
-Found async reset \rst_n in `\adc_osr.$proc$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_osr.v:72$90'.
-Found async reset \rst_n in `\adc_osr.$proc$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_osr.v:57$87'.
-Found async reset \rst_n in `$paramod$8afb02d65be9a894aa0f8d4ca81b0b22ab95769f\adc_control_nonbinary.$proc$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:93$135'.
+Found async reset \rst_n in `\adc_osr.$proc$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_osr.v:56$91'.
+Found async reset \rst_n in `$paramod$8afb02d65be9a894aa0f8d4ca81b0b22ab95769f\adc_control_nonbinary.$proc$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:92$138'.
 
 8.2.6. Executing PROC_ROM pass (convert switches to ROMs).
 Converted 0 switches.
 
 8.2.7. Executing PROC_MUX pass (convert decision trees to multiplexers).
-Creating decoders for process `\adc_osr.$proc$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_osr.v:72$90'.
-     1/4: $0\output_r[15:0]
-     2/4: $0\sample_count_r[8:0]
-     3/4: $0\osr_mode_r[2:0]
-     4/4: $0\result_r[19:0]
-Creating decoders for process `\adc_osr.$proc$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_osr.v:57$87'.
-     1/2: $0\conv_finished_r[0:0]
-     2/2: $0\clk_gated[0:0]
-Creating decoders for process `$paramod$8afb02d65be9a894aa0f8d4ca81b0b22ab95769f\adc_control_nonbinary.$proc$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:93$135'.
+Creating decoders for process `\adc_osr.$proc$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_osr.v:56$91'.
+     1/5: $0\data_valid_r[0:0]
+     2/5: $0\output_r[15:0]
+     3/5: $0\sample_count_r[8:0]
+     4/5: $0\osr_mode_r[2:0]
+     5/5: $0\result_r[19:0]
+Creating decoders for process `$paramod$8afb02d65be9a894aa0f8d4ca81b0b22ab95769f\adc_control_nonbinary.$proc$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:92$138'.
      1/7: $0\conv_finished_r[0:0]
      2/7: $0\data_register_r[11:0]
      3/7: $0\average_sum_r[4:0]
@@ -145,47 +141,44 @@ Creating decoders for process `$paramod$8afb02d65be9a894aa0f8d4ca81b0b22ab95769f
 8.2.8. Executing PROC_DLATCH pass (convert process syncs to latches).
 
 8.2.9. Executing PROC_DFF pass (convert process syncs to FFs).
-Creating register for signal `\adc_osr.\result_r' using process `\adc_osr.$proc$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_osr.v:72$90'.
-  created $adff cell `$procdff$206' with positive edge clock and negative level reset.
-Creating register for signal `\adc_osr.\osr_mode_r' using process `\adc_osr.$proc$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_osr.v:72$90'.
-  created $adff cell `$procdff$207' with positive edge clock and negative level reset.
-Creating register for signal `\adc_osr.\sample_count_r' using process `\adc_osr.$proc$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_osr.v:72$90'.
-  created $adff cell `$procdff$208' with positive edge clock and negative level reset.
-Creating register for signal `\adc_osr.\output_r' using process `\adc_osr.$proc$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_osr.v:72$90'.
+Creating register for signal `\adc_osr.\result_r' using process `\adc_osr.$proc$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_osr.v:56$91'.
   created $adff cell `$procdff$209' with positive edge clock and negative level reset.
-Creating register for signal `\adc_osr.\conv_finished_r' using process `\adc_osr.$proc$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_osr.v:57$87'.
+Creating register for signal `\adc_osr.\osr_mode_r' using process `\adc_osr.$proc$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_osr.v:56$91'.
   created $adff cell `$procdff$210' with positive edge clock and negative level reset.
-Creating register for signal `\adc_osr.\clk_gated' using process `\adc_osr.$proc$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_osr.v:57$87'.
+Creating register for signal `\adc_osr.\sample_count_r' using process `\adc_osr.$proc$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_osr.v:56$91'.
   created $adff cell `$procdff$211' with positive edge clock and negative level reset.
-Creating register for signal `$paramod$8afb02d65be9a894aa0f8d4ca81b0b22ab95769f\adc_control_nonbinary.\result_out' using process `$paramod$8afb02d65be9a894aa0f8d4ca81b0b22ab95769f\adc_control_nonbinary.$proc$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:93$135'.
+Creating register for signal `\adc_osr.\output_r' using process `\adc_osr.$proc$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_osr.v:56$91'.
   created $adff cell `$procdff$212' with positive edge clock and negative level reset.
-Creating register for signal `$paramod$8afb02d65be9a894aa0f8d4ca81b0b22ab95769f\adc_control_nonbinary.\average_counter_r' using process `$paramod$8afb02d65be9a894aa0f8d4ca81b0b22ab95769f\adc_control_nonbinary.$proc$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:93$135'.
+Creating register for signal `\adc_osr.\data_valid_r' using process `\adc_osr.$proc$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_osr.v:56$91'.
   created $adff cell `$procdff$213' with positive edge clock and negative level reset.
-Creating register for signal `$paramod$8afb02d65be9a894aa0f8d4ca81b0b22ab95769f\adc_control_nonbinary.\average_sum_r' using process `$paramod$8afb02d65be9a894aa0f8d4ca81b0b22ab95769f\adc_control_nonbinary.$proc$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:93$135'.
+Creating register for signal `$paramod$8afb02d65be9a894aa0f8d4ca81b0b22ab95769f\adc_control_nonbinary.\result_out' using process `$paramod$8afb02d65be9a894aa0f8d4ca81b0b22ab95769f\adc_control_nonbinary.$proc$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:92$138'.
   created $adff cell `$procdff$214' with positive edge clock and negative level reset.
-Creating register for signal `$paramod$8afb02d65be9a894aa0f8d4ca81b0b22ab95769f\adc_control_nonbinary.\sampled_avg_control_r' using process `$paramod$8afb02d65be9a894aa0f8d4ca81b0b22ab95769f\adc_control_nonbinary.$proc$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:93$135'.
+Creating register for signal `$paramod$8afb02d65be9a894aa0f8d4ca81b0b22ab95769f\adc_control_nonbinary.\average_counter_r' using process `$paramod$8afb02d65be9a894aa0f8d4ca81b0b22ab95769f\adc_control_nonbinary.$proc$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:92$138'.
   created $adff cell `$procdff$215' with positive edge clock and negative level reset.
-Creating register for signal `$paramod$8afb02d65be9a894aa0f8d4ca81b0b22ab95769f\adc_control_nonbinary.\shift_register_r' using process `$paramod$8afb02d65be9a894aa0f8d4ca81b0b22ab95769f\adc_control_nonbinary.$proc$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:93$135'.
+Creating register for signal `$paramod$8afb02d65be9a894aa0f8d4ca81b0b22ab95769f\adc_control_nonbinary.\average_sum_r' using process `$paramod$8afb02d65be9a894aa0f8d4ca81b0b22ab95769f\adc_control_nonbinary.$proc$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:92$138'.
   created $adff cell `$procdff$216' with positive edge clock and negative level reset.
-Creating register for signal `$paramod$8afb02d65be9a894aa0f8d4ca81b0b22ab95769f\adc_control_nonbinary.\data_register_r' using process `$paramod$8afb02d65be9a894aa0f8d4ca81b0b22ab95769f\adc_control_nonbinary.$proc$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:93$135'.
+Creating register for signal `$paramod$8afb02d65be9a894aa0f8d4ca81b0b22ab95769f\adc_control_nonbinary.\sampled_avg_control_r' using process `$paramod$8afb02d65be9a894aa0f8d4ca81b0b22ab95769f\adc_control_nonbinary.$proc$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:92$138'.
   created $adff cell `$procdff$217' with positive edge clock and negative level reset.
-Creating register for signal `$paramod$8afb02d65be9a894aa0f8d4ca81b0b22ab95769f\adc_control_nonbinary.\conv_finished_r' using process `$paramod$8afb02d65be9a894aa0f8d4ca81b0b22ab95769f\adc_control_nonbinary.$proc$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:93$135'.
+Creating register for signal `$paramod$8afb02d65be9a894aa0f8d4ca81b0b22ab95769f\adc_control_nonbinary.\shift_register_r' using process `$paramod$8afb02d65be9a894aa0f8d4ca81b0b22ab95769f\adc_control_nonbinary.$proc$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:92$138'.
   created $adff cell `$procdff$218' with positive edge clock and negative level reset.
+Creating register for signal `$paramod$8afb02d65be9a894aa0f8d4ca81b0b22ab95769f\adc_control_nonbinary.\data_register_r' using process `$paramod$8afb02d65be9a894aa0f8d4ca81b0b22ab95769f\adc_control_nonbinary.$proc$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:92$138'.
+  created $adff cell `$procdff$219' with positive edge clock and negative level reset.
+Creating register for signal `$paramod$8afb02d65be9a894aa0f8d4ca81b0b22ab95769f\adc_control_nonbinary.\conv_finished_r' using process `$paramod$8afb02d65be9a894aa0f8d4ca81b0b22ab95769f\adc_control_nonbinary.$proc$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:92$138'.
+  created $adff cell `$procdff$220' with positive edge clock and negative level reset.
 
 8.2.10. Executing PROC_MEMWR pass (convert process memory writes to cells).
 
 8.2.11. Executing PROC_CLEAN pass (remove empty switches from decision trees).
-Removing empty process `adc_osr.$proc$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_osr.v:72$90'.
-Removing empty process `adc_osr.$proc$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_osr.v:57$87'.
-Removing empty process `$paramod$8afb02d65be9a894aa0f8d4ca81b0b22ab95769f\adc_control_nonbinary.$proc$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:93$135'.
+Removing empty process `adc_osr.$proc$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_osr.v:56$91'.
+Removing empty process `$paramod$8afb02d65be9a894aa0f8d4ca81b0b22ab95769f\adc_control_nonbinary.$proc$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:92$138'.
 Cleaned up 0 empty switches.
 
 8.2.12. Executing OPT_EXPR pass (perform const folding).
 Optimizing module adc_osr.
-<suppressed ~4 debug messages>
+<suppressed ~3 debug messages>
 Optimizing module adc_row_col_decoder.
 Optimizing module $paramod$8afb02d65be9a894aa0f8d4ca81b0b22ab95769f\adc_control_nonbinary.
-<suppressed ~4 debug messages>
+<suppressed ~5 debug messages>
 Optimizing module adc_core_digital.
 
 8.3. Executing FLATTEN pass (flatten design).
@@ -200,8 +193,8 @@ Optimizing module adc_core_digital.
 
 8.5. Executing OPT_CLEAN pass (remove unused cells and wires).
 Finding unused cells or wires in module \adc_core_digital..
-Removed 5 unused cells and 51 unused wires.
-<suppressed ~6 debug messages>
+Removed 4 unused cells and 51 unused wires.
+<suppressed ~5 debug messages>
 
 8.6. Executing CHECK pass (checking for obvious problems).
 Checking module adc_core_digital...
@@ -214,8 +207,8 @@ Optimizing module adc_core_digital.
 
 8.7.2. Executing OPT_MERGE pass (detect identical cells).
 Finding identical cells in module `\adc_core_digital'.
-<suppressed ~21 debug messages>
-Removed a total of 7 cells.
+<suppressed ~24 debug messages>
+Removed a total of 8 cells.
 
 8.7.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
 Running muxtree optimizer on module \adc_core_digital..
@@ -237,7 +230,7 @@ Removed a total of 0 cells.
 
 8.7.7. Executing OPT_CLEAN pass (remove unused cells and wires).
 Finding unused cells or wires in module \adc_core_digital..
-Removed 0 unused cells and 6 unused wires.
+Removed 0 unused cells and 7 unused wires.
 <suppressed ~1 debug messages>
 
 8.7.8. Executing OPT_EXPR pass (perform const folding).
@@ -316,11 +309,11 @@ Finding identical cells in module `\adc_core_digital'.
 Removed a total of 0 cells.
 
 8.9.6. Executing OPT_DFF pass (perform DFF optimizations).
-Adding EN signal on $flatten\osr.$procdff$209 ($adff) from module adc_core_digital (D = \osr.next_output_w, Q = \osr.output_r).
-Adding EN signal on $flatten\osr.$procdff$207 ($adff) from module adc_core_digital (D = \config_1_in [5:3], Q = \osr.osr_mode_r).
-Adding EN signal on $flatten\cnb.$procdff$216 ($adff) from module adc_core_digital (D = { \cnb.shift_register_r [0] \cnb.shift_register_r [16:1] }, Q = \cnb.shift_register_r).
-Adding EN signal on $flatten\cnb.$procdff$215 ($adff) from module adc_core_digital (D = \config_1_in [2:0], Q = \cnb.sampled_avg_control_r).
-Adding EN signal on $flatten\cnb.$procdff$212 ($adff) from module adc_core_digital (D = \cnb.next_data_register_w, Q = \cnb.result_out).
+Adding EN signal on $flatten\osr.$procdff$212 ($adff) from module adc_core_digital (D = \osr.next_output_w, Q = \osr.output_r).
+Adding EN signal on $flatten\osr.$procdff$210 ($adff) from module adc_core_digital (D = \config_1_in [5:3], Q = \osr.osr_mode_r).
+Adding EN signal on $flatten\cnb.$procdff$218 ($adff) from module adc_core_digital (D = { \cnb.shift_register_r [0] \cnb.shift_register_r [16:1] }, Q = \cnb.shift_register_r).
+Adding EN signal on $flatten\cnb.$procdff$217 ($adff) from module adc_core_digital (D = \config_1_in [2:0], Q = \cnb.sampled_avg_control_r).
+Adding EN signal on $flatten\cnb.$procdff$214 ($adff) from module adc_core_digital (D = \cnb.next_data_register_w, Q = \cnb.result_out).
 
 8.9.7. Executing OPT_CLEAN pass (remove unused cells and wires).
 Finding unused cells or wires in module \adc_core_digital..
@@ -359,115 +352,114 @@ Optimizing module adc_core_digital.
 8.9.16. Finished OPT passes. (There is nothing left to do.)
 
 8.10. Executing WREDUCE pass (reducing word size of cells).
-Removed top 1 bits (of 2) from port B of cell adc_core_digital.$auto$opt_dff.cc:195:make_patterns_logic$221 ($ne).
-Removed top 2 bits (of 3) from port B of cell adc_core_digital.$flatten\cnb.$eq$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:177$198 ($eq).
-Removed top 1 bits (of 3) from port B of cell adc_core_digital.$flatten\cnb.$eq$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:178$199 ($eq).
-Removed top 1 bits (of 3) from port B of cell adc_core_digital.$flatten\cnb.$eq$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:179$200 ($eq).
-Removed top 16 bits (of 17) from port B of cell adc_core_digital.$flatten\cnb.$eq$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:170$180 ($eq).
-Removed top 15 bits (of 17) from port B of cell adc_core_digital.$flatten\cnb.$eq$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:169$179 ($eq).
-Removed top 14 bits (of 17) from port B of cell adc_core_digital.$flatten\cnb.$eq$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:168$178 ($eq).
-Removed top 13 bits (of 17) from port B of cell adc_core_digital.$flatten\cnb.$eq$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:167$177 ($eq).
-Removed top 12 bits (of 17) from port B of cell adc_core_digital.$flatten\cnb.$eq$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:166$176 ($eq).
-Removed top 11 bits (of 17) from port B of cell adc_core_digital.$flatten\cnb.$eq$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:165$175 ($eq).
-Removed top 10 bits (of 17) from port B of cell adc_core_digital.$flatten\cnb.$eq$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:164$174 ($eq).
-Removed top 9 bits (of 17) from port B of cell adc_core_digital.$flatten\cnb.$eq$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:163$173 ($eq).
-Removed top 8 bits (of 17) from port B of cell adc_core_digital.$flatten\cnb.$eq$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:162$172 ($eq).
-Removed top 7 bits (of 17) from port B of cell adc_core_digital.$flatten\cnb.$eq$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:161$171 ($eq).
-Removed top 6 bits (of 17) from port B of cell adc_core_digital.$flatten\cnb.$eq$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:160$170 ($eq).
-Removed top 5 bits (of 17) from port B of cell adc_core_digital.$flatten\cnb.$eq$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:159$169 ($eq).
-Removed top 4 bits (of 17) from port B of cell adc_core_digital.$flatten\cnb.$eq$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:158$168 ($eq).
-Removed top 3 bits (of 17) from port B of cell adc_core_digital.$flatten\cnb.$eq$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:157$167 ($eq).
-Removed top 2 bits (of 17) from port B of cell adc_core_digital.$flatten\cnb.$eq$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:156$166 ($eq).
-Removed top 1 bits (of 17) from port B of cell adc_core_digital.$flatten\cnb.$eq$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:155$165 ($eq).
-Removed top 1 bits (of 5) from port B of cell adc_core_digital.$flatten\cnb.$eq$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:143$155 ($eq).
-Removed top 2 bits (of 5) from port B of cell adc_core_digital.$flatten\cnb.$eq$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:142$154 ($eq).
-Removed top 3 bits (of 5) from port B of cell adc_core_digital.$flatten\cnb.$eq$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:141$153 ($eq).
-Removed top 4 bits (of 5) from port B of cell adc_core_digital.$flatten\cnb.$add$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:138$150 ($add).
-Removed top 27 bits (of 32) from mux cell adc_core_digital.$flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:137$149 ($mux).
-Removed top 31 bits (of 32) from port B of cell adc_core_digital.$flatten\cnb.$add$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:137$147 ($add).
-Removed top 27 bits (of 32) from port Y of cell adc_core_digital.$flatten\cnb.$add$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:137$147 ($add).
-Removed top 1 bits (of 32) from port A of cell adc_core_digital.$flatten\pdc.$shr$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_row_col_decoder.v:49$83 ($shr).
-Removed top 31 bits (of 32) from port B of cell adc_core_digital.$flatten\pdc.$eq$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_row_col_decoder.v:40$81 ($eq).
-Removed top 28 bits (of 32) from port Y of cell adc_core_digital.$flatten\pdc.$mod$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_row_col_decoder.v:40$80 ($and).
-Removed top 1 bits (of 32) from port A of cell adc_core_digital.$flatten\ndc.$shr$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_row_col_decoder.v:49$83 ($shr).
-Removed top 31 bits (of 32) from port B of cell adc_core_digital.$flatten\ndc.$eq$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_row_col_decoder.v:40$81 ($eq).
-Removed top 28 bits (of 32) from port Y of cell adc_core_digital.$flatten\ndc.$mod$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_row_col_decoder.v:40$80 ($and).
-Removed top 1 bits (of 3) from port B of cell adc_core_digital.$flatten\osr.$eq$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_osr.v:114$111 ($eq).
-Removed top 1 bits (of 3) from port B of cell adc_core_digital.$flatten\osr.$eq$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_osr.v:113$110 ($eq).
-Removed top 2 bits (of 3) from port B of cell adc_core_digital.$flatten\osr.$eq$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_osr.v:112$109 ($eq).
-Removed top 23 bits (of 32) from mux cell adc_core_digital.$flatten\osr.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_osr.v:103$107 ($mux).
-Removed top 31 bits (of 32) from port B of cell adc_core_digital.$flatten\osr.$add$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_osr.v:103$106 ($add).
-Removed top 23 bits (of 32) from port Y of cell adc_core_digital.$flatten\osr.$add$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_osr.v:103$106 ($add).
-Removed top 8 bits (of 20) from port A of cell adc_core_digital.$flatten\osr.$add$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_osr.v:100$103 ($add).
-Removed top 8 bits (of 9) from port B of cell adc_core_digital.$flatten\osr.$eq$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_osr.v:92$96 ($eq).
-Removed top 27 bits (of 32) from wire adc_core_digital.$flatten\cnb.$add$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:137$147_Y.
-Removed top 28 bits (of 32) from wire adc_core_digital.$flatten\ndc.$mod$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_row_col_decoder.v:40$80_Y.
-Removed top 23 bits (of 32) from wire adc_core_digital.$flatten\osr.$add$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_osr.v:103$106_Y.
-Removed top 3 bits (of 16) from wire adc_core_digital.$flatten\osr.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_osr.v:111$117_Y.
+Removed top 2 bits (of 3) from port B of cell adc_core_digital.$flatten\cnb.$eq$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:176$201 ($eq).
+Removed top 1 bits (of 3) from port B of cell adc_core_digital.$flatten\cnb.$eq$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:177$202 ($eq).
+Removed top 1 bits (of 3) from port B of cell adc_core_digital.$flatten\cnb.$eq$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:178$203 ($eq).
+Removed top 1 bits (of 2) from port B of cell adc_core_digital.$auto$opt_dff.cc:195:make_patterns_logic$223 ($ne).
+Removed top 16 bits (of 17) from port B of cell adc_core_digital.$flatten\cnb.$eq$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:169$183 ($eq).
+Removed top 15 bits (of 17) from port B of cell adc_core_digital.$flatten\cnb.$eq$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:168$182 ($eq).
+Removed top 14 bits (of 17) from port B of cell adc_core_digital.$flatten\cnb.$eq$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:167$181 ($eq).
+Removed top 13 bits (of 17) from port B of cell adc_core_digital.$flatten\cnb.$eq$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:166$180 ($eq).
+Removed top 12 bits (of 17) from port B of cell adc_core_digital.$flatten\cnb.$eq$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:165$179 ($eq).
+Removed top 11 bits (of 17) from port B of cell adc_core_digital.$flatten\cnb.$eq$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:164$178 ($eq).
+Removed top 10 bits (of 17) from port B of cell adc_core_digital.$flatten\cnb.$eq$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:163$177 ($eq).
+Removed top 9 bits (of 17) from port B of cell adc_core_digital.$flatten\cnb.$eq$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:162$176 ($eq).
+Removed top 8 bits (of 17) from port B of cell adc_core_digital.$flatten\cnb.$eq$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:161$175 ($eq).
+Removed top 7 bits (of 17) from port B of cell adc_core_digital.$flatten\cnb.$eq$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:160$174 ($eq).
+Removed top 6 bits (of 17) from port B of cell adc_core_digital.$flatten\cnb.$eq$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:159$173 ($eq).
+Removed top 5 bits (of 17) from port B of cell adc_core_digital.$flatten\cnb.$eq$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:158$172 ($eq).
+Removed top 4 bits (of 17) from port B of cell adc_core_digital.$flatten\cnb.$eq$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:157$171 ($eq).
+Removed top 3 bits (of 17) from port B of cell adc_core_digital.$flatten\cnb.$eq$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:156$170 ($eq).
+Removed top 2 bits (of 17) from port B of cell adc_core_digital.$flatten\cnb.$eq$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:155$169 ($eq).
+Removed top 1 bits (of 17) from port B of cell adc_core_digital.$flatten\cnb.$eq$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:154$168 ($eq).
+Removed top 1 bits (of 5) from port B of cell adc_core_digital.$flatten\cnb.$eq$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:142$158 ($eq).
+Removed top 2 bits (of 5) from port B of cell adc_core_digital.$flatten\cnb.$eq$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:141$157 ($eq).
+Removed top 3 bits (of 5) from port B of cell adc_core_digital.$flatten\cnb.$eq$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:140$156 ($eq).
+Removed top 4 bits (of 5) from port B of cell adc_core_digital.$flatten\cnb.$add$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:137$153 ($add).
+Removed top 27 bits (of 32) from mux cell adc_core_digital.$flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:136$152 ($mux).
+Removed top 31 bits (of 32) from port B of cell adc_core_digital.$flatten\cnb.$add$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:136$150 ($add).
+Removed top 27 bits (of 32) from port Y of cell adc_core_digital.$flatten\cnb.$add$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:136$150 ($add).
+Removed top 1 bits (of 32) from port A of cell adc_core_digital.$flatten\pdc.$shr$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_row_col_decoder.v:49$86 ($shr).
+Removed top 31 bits (of 32) from port B of cell adc_core_digital.$flatten\pdc.$eq$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_row_col_decoder.v:40$84 ($eq).
+Removed top 28 bits (of 32) from port Y of cell adc_core_digital.$flatten\pdc.$mod$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_row_col_decoder.v:40$83 ($and).
+Removed top 1 bits (of 32) from port A of cell adc_core_digital.$flatten\ndc.$shr$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_row_col_decoder.v:49$86 ($shr).
+Removed top 31 bits (of 32) from port B of cell adc_core_digital.$flatten\ndc.$eq$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_row_col_decoder.v:40$84 ($eq).
+Removed top 28 bits (of 32) from port Y of cell adc_core_digital.$flatten\ndc.$mod$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_row_col_decoder.v:40$83 ($and).
+Removed top 2 bits (of 3) from port B of cell adc_core_digital.$flatten\osr.$eq$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_osr.v:113$119 ($eq).
+Removed top 1 bits (of 3) from port B of cell adc_core_digital.$flatten\osr.$eq$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_osr.v:101$111 ($eq).
+Removed top 1 bits (of 3) from port B of cell adc_core_digital.$flatten\osr.$eq$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_osr.v:100$110 ($eq).
+Removed top 23 bits (of 32) from mux cell adc_core_digital.$flatten\osr.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_osr.v:90$107 ($mux).
+Removed top 31 bits (of 32) from port B of cell adc_core_digital.$flatten\osr.$add$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_osr.v:90$106 ($add).
+Removed top 23 bits (of 32) from port Y of cell adc_core_digital.$flatten\osr.$add$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_osr.v:90$106 ($add).
+Removed top 8 bits (of 20) from port A of cell adc_core_digital.$flatten\osr.$add$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_osr.v:87$103 ($add).
+Removed top 8 bits (of 9) from port B of cell adc_core_digital.$flatten\osr.$eq$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_osr.v:80$97 ($eq).
+Removed top 27 bits (of 32) from wire adc_core_digital.$flatten\cnb.$add$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:136$150_Y.
+Removed top 28 bits (of 32) from wire adc_core_digital.$flatten\ndc.$mod$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_row_col_decoder.v:40$83_Y.
+Removed top 23 bits (of 32) from wire adc_core_digital.$flatten\osr.$add$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_osr.v:90$106_Y.
 
 8.11. Executing PEEPOPT pass (run peephole optimizers).
 
 8.12. Executing OPT_CLEAN pass (remove unused cells and wires).
 Finding unused cells or wires in module \adc_core_digital..
-Removed 0 unused cells and 6 unused wires.
+Removed 0 unused cells and 5 unused wires.
 <suppressed ~1 debug messages>
 
 8.13. Executing ALUMACC pass (create $alu and $macc cells).
 Extracting $alu and $macc cells in module adc_core_digital:
-  creating $macc model for $flatten\cnb.$add$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:123$139 ($add).
-  creating $macc model for $flatten\cnb.$add$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:137$147 ($add).
-  creating $macc model for $flatten\cnb.$add$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:138$150 ($add).
-  creating $macc model for $flatten\osr.$add$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_osr.v:100$103 ($add).
-  creating $macc model for $flatten\osr.$add$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_osr.v:103$106 ($add).
-  creating $alu model for $macc $flatten\osr.$add$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_osr.v:103$106.
-  creating $alu model for $macc $flatten\osr.$add$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_osr.v:100$103.
-  creating $alu model for $macc $flatten\cnb.$add$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:138$150.
-  creating $alu model for $macc $flatten\cnb.$add$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:137$147.
-  creating $alu model for $macc $flatten\cnb.$add$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:123$139.
+  creating $macc model for $flatten\cnb.$add$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:122$142 ($add).
+  creating $macc model for $flatten\cnb.$add$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:136$150 ($add).
+  creating $macc model for $flatten\cnb.$add$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:137$153 ($add).
+  creating $macc model for $flatten\osr.$add$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_osr.v:87$103 ($add).
+  creating $macc model for $flatten\osr.$add$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_osr.v:90$106 ($add).
+  creating $alu model for $macc $flatten\osr.$add$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_osr.v:90$106.
+  creating $alu model for $macc $flatten\osr.$add$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_osr.v:87$103.
+  creating $alu model for $macc $flatten\cnb.$add$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:137$153.
+  creating $alu model for $macc $flatten\cnb.$add$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:136$150.
+  creating $alu model for $macc $flatten\cnb.$add$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:122$142.
   creating $alu model for $flatten\cnb.$lt$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:54$130 ($lt): new $alu
-  creating $alu cell for $flatten\cnb.$lt$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:54$130: $auto$alumacc.cc:485:replace_alu$231
-  creating $alu cell for $flatten\cnb.$add$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:123$139: $auto$alumacc.cc:485:replace_alu$236
-  creating $alu cell for $flatten\cnb.$add$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:137$147: $auto$alumacc.cc:485:replace_alu$239
-  creating $alu cell for $flatten\cnb.$add$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:138$150: $auto$alumacc.cc:485:replace_alu$242
-  creating $alu cell for $flatten\osr.$add$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_osr.v:100$103: $auto$alumacc.cc:485:replace_alu$245
-  creating $alu cell for $flatten\osr.$add$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_osr.v:103$106: $auto$alumacc.cc:485:replace_alu$248
+  creating $alu cell for $flatten\cnb.$lt$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:54$130: $auto$alumacc.cc:485:replace_alu$232
+  creating $alu cell for $flatten\cnb.$add$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:122$142: $auto$alumacc.cc:485:replace_alu$237
+  creating $alu cell for $flatten\cnb.$add$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:136$150: $auto$alumacc.cc:485:replace_alu$240
+  creating $alu cell for $flatten\cnb.$add$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:137$153: $auto$alumacc.cc:485:replace_alu$243
+  creating $alu cell for $flatten\osr.$add$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_osr.v:87$103: $auto$alumacc.cc:485:replace_alu$246
+  creating $alu cell for $flatten\osr.$add$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_osr.v:90$106: $auto$alumacc.cc:485:replace_alu$249
   created 6 $alu and 0 $macc cells.
 
 8.14. Executing SHARE pass (SAT-based resource sharing).
 Found 4 cells in module adc_core_digital that may be considered for resource sharing.
-  Analyzing resource sharing options for $flatten\pdc.$shr$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_row_col_decoder.v:49$83 ($shr):
+  Analyzing resource sharing options for $flatten\pdc.$shr$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_row_col_decoder.v:49$86 ($shr):
     Found 1 activation_patterns using ctrl signal \pdc.row_is_odd.
-    Found 1 candidates: $flatten\ndc.$shr$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_row_col_decoder.v:49$83
-    Analyzing resource sharing with $flatten\ndc.$shr$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_row_col_decoder.v:49$83 ($shr):
+    Found 1 candidates: $flatten\ndc.$shr$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_row_col_decoder.v:49$86
+    Analyzing resource sharing with $flatten\ndc.$shr$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_row_col_decoder.v:49$86 ($shr):
       Found 1 activation_patterns using ctrl signal \ndc.row_is_odd.
-      Activation pattern for cell $flatten\pdc.$shr$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_row_col_decoder.v:49$83: \pdc.row_is_odd = 1'1
-      Activation pattern for cell $flatten\ndc.$shr$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_row_col_decoder.v:49$83: \ndc.row_is_odd = 1'1
+      Activation pattern for cell $flatten\pdc.$shr$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_row_col_decoder.v:49$86: \pdc.row_is_odd = 1'1
+      Activation pattern for cell $flatten\ndc.$shr$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_row_col_decoder.v:49$86: \ndc.row_is_odd = 1'1
       Size of SAT problem: 0 cells, 1781 variables, 4967 clauses
       According to the SAT solver this pair of cells can be shared.
-      Activation signal for $flatten\pdc.$shr$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_row_col_decoder.v:49$83: $auto$share.cc:977:make_cell_activation_logic$251
-      New cell: $auto$share.cc:667:make_supercell$258 ($shr)
-  Analyzing resource sharing options for $auto$share.cc:667:make_supercell$258 ($shr):
+      Activation signal for $flatten\pdc.$shr$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_row_col_decoder.v:49$86: $auto$share.cc:977:make_cell_activation_logic$252
+      New cell: $auto$share.cc:667:make_supercell$259 ($shr)
+  Analyzing resource sharing options for $auto$share.cc:667:make_supercell$259 ($shr):
     Found 2 activation_patterns using ctrl signal { \pdc.row_is_odd \ndc.row_is_odd }.
     No candidates found.
-  Analyzing resource sharing options for $flatten\pdc.$shl$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_row_col_decoder.v:50$84 ($shl):
+  Analyzing resource sharing options for $flatten\pdc.$shl$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_row_col_decoder.v:50$87 ($shl):
     Found 1 activation_patterns using ctrl signal \pdc.row_is_odd.
-    Found 1 candidates: $flatten\ndc.$shl$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_row_col_decoder.v:50$84
-    Analyzing resource sharing with $flatten\ndc.$shl$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_row_col_decoder.v:50$84 ($shl):
+    Found 1 candidates: $flatten\ndc.$shl$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_row_col_decoder.v:50$87
+    Analyzing resource sharing with $flatten\ndc.$shl$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_row_col_decoder.v:50$87 ($shl):
       Found 1 activation_patterns using ctrl signal \ndc.row_is_odd.
-      Activation pattern for cell $flatten\pdc.$shl$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_row_col_decoder.v:50$84: \pdc.row_is_odd = 1'0
-      Activation pattern for cell $flatten\ndc.$shl$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_row_col_decoder.v:50$84: \ndc.row_is_odd = 1'0
+      Activation pattern for cell $flatten\pdc.$shl$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_row_col_decoder.v:50$87: \pdc.row_is_odd = 1'0
+      Activation pattern for cell $flatten\ndc.$shl$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_row_col_decoder.v:50$87: \ndc.row_is_odd = 1'0
       Size of SAT problem: 0 cells, 1781 variables, 4967 clauses
       According to the SAT solver this pair of cells can be shared.
-      Activation signal for $flatten\pdc.$shl$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_row_col_decoder.v:50$84: $auto$share.cc:977:make_cell_activation_logic$261
-      New cell: $auto$share.cc:667:make_supercell$268 ($shl)
-  Analyzing resource sharing options for $auto$share.cc:667:make_supercell$268 ($shl):
+      Activation signal for $flatten\pdc.$shl$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_row_col_decoder.v:50$87: $auto$share.cc:977:make_cell_activation_logic$262
+      New cell: $auto$share.cc:667:make_supercell$269 ($shl)
+  Analyzing resource sharing options for $auto$share.cc:667:make_supercell$269 ($shl):
     Found 2 activation_patterns using ctrl signal { \pdc.row_is_odd \ndc.row_is_odd }.
     No candidates found.
 Removing 4 cells in module adc_core_digital:
-  Removing cell $flatten\ndc.$shl$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_row_col_decoder.v:50$84 ($shl).
-  Removing cell $flatten\pdc.$shl$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_row_col_decoder.v:50$84 ($shl).
-  Removing cell $flatten\ndc.$shr$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_row_col_decoder.v:49$83 ($shr).
-  Removing cell $flatten\pdc.$shr$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_row_col_decoder.v:49$83 ($shr).
+  Removing cell $flatten\ndc.$shl$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_row_col_decoder.v:50$87 ($shl).
+  Removing cell $flatten\pdc.$shl$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_row_col_decoder.v:50$87 ($shl).
+  Removing cell $flatten\ndc.$shr$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_row_col_decoder.v:49$86 ($shr).
+  Removing cell $flatten\pdc.$shr$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_row_col_decoder.v:49$86 ($shr).
 
 8.15. Executing OPT pass (performing simple optimizations).
 
@@ -605,111 +597,111 @@ Removed 0 multiplexer ports.
 
 8.20.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
   Optimizing cells in module \adc_core_digital.
-    Consolidated identical input bits for $mux cell $flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:168$183:
-      Old ports: A=12'000000000000, B=12'000000000001, Y=$flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:168$183_Y
-      New ports: A=1'0, B=1'1, Y=$flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:168$183_Y [0]
-      New connections: $flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:168$183_Y [11:1] = 11'00000000000
-    Consolidated identical input bits for $mux cell $flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:180$202:
-      Old ports: A=5'00001, B=5'11111, Y=$flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:180$202_Y
-      New ports: A=1'0, B=1'1, Y=$flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:180$202_Y [1]
-      New connections: { $flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:180$202_Y [4:2] $flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:180$202_Y [0] } = { $flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:180$202_Y [1] $flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:180$202_Y [1] $flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:180$202_Y [1] 1'1 }
-    Consolidated identical input bits for $mux cell $flatten\osr.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_osr.v:129$123:
-      Old ports: A=9'000000001, B=9'100000000, Y=$flatten\osr.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_osr.v:129$123_Y
-      New ports: A=2'01, B=2'10, Y={ $flatten\osr.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_osr.v:129$123_Y [8] $flatten\osr.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_osr.v:129$123_Y [0] }
-      New connections: $flatten\osr.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_osr.v:129$123_Y [7:1] = 7'0000000
+    Consolidated identical input bits for $mux cell $flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:167$186:
+      Old ports: A=12'000000000000, B=12'000000000001, Y=$flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:167$186_Y
+      New ports: A=1'0, B=1'1, Y=$flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:167$186_Y [0]
+      New connections: $flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:167$186_Y [11:1] = 11'00000000000
+    Consolidated identical input bits for $mux cell $flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:179$205:
+      Old ports: A=5'00001, B=5'11111, Y=$flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:179$205_Y
+      New ports: A=1'0, B=1'1, Y=$flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:179$205_Y [1]
+      New connections: { $flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:179$205_Y [4:2] $flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:179$205_Y [0] } = { $flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:179$205_Y [1] $flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:179$205_Y [1] $flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:179$205_Y [1] 1'1 }
+    Consolidated identical input bits for $mux cell $flatten\osr.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_osr.v:116$123:
+      Old ports: A=9'000000001, B=9'100000000, Y=$flatten\osr.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_osr.v:116$123_Y
+      New ports: A=2'01, B=2'10, Y={ $flatten\osr.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_osr.v:116$123_Y [8] $flatten\osr.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_osr.v:116$123_Y [0] }
+      New connections: $flatten\osr.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_osr.v:116$123_Y [7:1] = 7'0000000
   Optimizing cells in module \adc_core_digital.
-    Consolidated identical input bits for $mux cell $flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:167$184:
-      Old ports: A=$flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:168$183_Y, B=12'000000000010, Y=$flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:167$184_Y
-      New ports: A={ 1'0 $flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:168$183_Y [0] }, B=2'10, Y=$flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:167$184_Y [1:0]
-      New connections: $flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:167$184_Y [11:2] = 10'0000000000
-    Consolidated identical input bits for $mux cell $flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:179$203:
-      Old ports: A=$flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:180$202_Y, B=5'01111, Y=$flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:179$203_Y
-      New ports: A={ $flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:180$202_Y [1] $flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:180$202_Y [1] }, B=2'01, Y={ $flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:179$203_Y [4] $flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:179$203_Y [1] }
-      New connections: { $flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:179$203_Y [3:2] $flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:179$203_Y [0] } = { $flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:179$203_Y [1] $flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:179$203_Y [1] 1'1 }
-    Consolidated identical input bits for $mux cell $flatten\osr.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_osr.v:128$124:
-      Old ports: A=$flatten\osr.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_osr.v:129$123_Y, B=9'001000000, Y=$flatten\osr.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_osr.v:128$124_Y
-      New ports: A={ $flatten\osr.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_osr.v:129$123_Y [8] 1'0 $flatten\osr.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_osr.v:129$123_Y [0] }, B=3'010, Y={ $flatten\osr.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_osr.v:128$124_Y [8] $flatten\osr.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_osr.v:128$124_Y [6] $flatten\osr.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_osr.v:128$124_Y [0] }
-      New connections: { $flatten\osr.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_osr.v:128$124_Y [7] $flatten\osr.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_osr.v:128$124_Y [5:1] } = 6'000000
+    Consolidated identical input bits for $mux cell $flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:166$187:
+      Old ports: A=$flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:167$186_Y, B=12'000000000010, Y=$flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:166$187_Y
+      New ports: A={ 1'0 $flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:167$186_Y [0] }, B=2'10, Y=$flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:166$187_Y [1:0]
+      New connections: $flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:166$187_Y [11:2] = 10'0000000000
+    Consolidated identical input bits for $mux cell $flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:178$206:
+      Old ports: A=$flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:179$205_Y, B=5'01111, Y=$flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:178$206_Y
+      New ports: A={ $flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:179$205_Y [1] $flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:179$205_Y [1] }, B=2'01, Y={ $flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:178$206_Y [4] $flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:178$206_Y [1] }
+      New connections: { $flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:178$206_Y [3:2] $flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:178$206_Y [0] } = { $flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:178$206_Y [1] $flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:178$206_Y [1] 1'1 }
+    Consolidated identical input bits for $mux cell $flatten\osr.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_osr.v:115$124:
+      Old ports: A=$flatten\osr.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_osr.v:116$123_Y, B=9'001000000, Y=$flatten\osr.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_osr.v:115$124_Y
+      New ports: A={ $flatten\osr.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_osr.v:116$123_Y [8] 1'0 $flatten\osr.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_osr.v:116$123_Y [0] }, B=3'010, Y={ $flatten\osr.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_osr.v:115$124_Y [8] $flatten\osr.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_osr.v:115$124_Y [6] $flatten\osr.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_osr.v:115$124_Y [0] }
+      New connections: { $flatten\osr.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_osr.v:115$124_Y [7] $flatten\osr.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_osr.v:115$124_Y [5:1] } = 6'000000
   Optimizing cells in module \adc_core_digital.
-    Consolidated identical input bits for $mux cell $flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:166$185:
-      Old ports: A=$flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:167$184_Y, B=12'000000000100, Y=$flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:166$185_Y
-      New ports: A={ 1'0 $flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:167$184_Y [1:0] }, B=3'100, Y=$flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:166$185_Y [2:0]
-      New connections: $flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:166$185_Y [11:3] = 9'000000000
-    Consolidated identical input bits for $mux cell $flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:178$204:
-      Old ports: A=$flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:179$203_Y, B=5'00111, Y=$flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:178$204_Y
-      New ports: A={ $flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:179$203_Y [4] $flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:179$203_Y [1] $flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:179$203_Y [1] }, B=3'001, Y={ $flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:178$204_Y [4:3] $flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:178$204_Y [1] }
-      New connections: { $flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:178$204_Y [2] $flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:178$204_Y [0] } = { $flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:178$204_Y [1] 1'1 }
-    Consolidated identical input bits for $mux cell $flatten\osr.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_osr.v:127$125:
-      Old ports: A=$flatten\osr.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_osr.v:128$124_Y, B=9'000010000, Y=$flatten\osr.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_osr.v:127$125_Y
-      New ports: A={ $flatten\osr.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_osr.v:128$124_Y [8] $flatten\osr.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_osr.v:128$124_Y [6] 1'0 $flatten\osr.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_osr.v:128$124_Y [0] }, B=4'0010, Y={ $flatten\osr.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_osr.v:127$125_Y [8] $flatten\osr.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_osr.v:127$125_Y [6] $flatten\osr.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_osr.v:127$125_Y [4] $flatten\osr.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_osr.v:127$125_Y [0] }
-      New connections: { $flatten\osr.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_osr.v:127$125_Y [7] $flatten\osr.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_osr.v:127$125_Y [5] $flatten\osr.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_osr.v:127$125_Y [3:1] } = 5'00000
+    Consolidated identical input bits for $mux cell $flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:165$188:
+      Old ports: A=$flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:166$187_Y, B=12'000000000100, Y=$flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:165$188_Y
+      New ports: A={ 1'0 $flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:166$187_Y [1:0] }, B=3'100, Y=$flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:165$188_Y [2:0]
+      New connections: $flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:165$188_Y [11:3] = 9'000000000
+    Consolidated identical input bits for $mux cell $flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:177$207:
+      Old ports: A=$flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:178$206_Y, B=5'00111, Y=$flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:177$207_Y
+      New ports: A={ $flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:178$206_Y [4] $flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:178$206_Y [1] $flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:178$206_Y [1] }, B=3'001, Y={ $flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:177$207_Y [4:3] $flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:177$207_Y [1] }
+      New connections: { $flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:177$207_Y [2] $flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:177$207_Y [0] } = { $flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:177$207_Y [1] 1'1 }
+    Consolidated identical input bits for $mux cell $flatten\osr.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_osr.v:114$125:
+      Old ports: A=$flatten\osr.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_osr.v:115$124_Y, B=9'000010000, Y=$flatten\osr.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_osr.v:114$125_Y
+      New ports: A={ $flatten\osr.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_osr.v:115$124_Y [8] $flatten\osr.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_osr.v:115$124_Y [6] 1'0 $flatten\osr.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_osr.v:115$124_Y [0] }, B=4'0010, Y={ $flatten\osr.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_osr.v:114$125_Y [8] $flatten\osr.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_osr.v:114$125_Y [6] $flatten\osr.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_osr.v:114$125_Y [4] $flatten\osr.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_osr.v:114$125_Y [0] }
+      New connections: { $flatten\osr.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_osr.v:114$125_Y [7] $flatten\osr.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_osr.v:114$125_Y [5] $flatten\osr.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_osr.v:114$125_Y [3:1] } = 5'00000
   Optimizing cells in module \adc_core_digital.
-    Consolidated identical input bits for $mux cell $flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:165$186:
-      Old ports: A=$flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:166$185_Y, B=12'000000000110, Y=$flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:165$186_Y
-      New ports: A=$flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:166$185_Y [2:0], B=3'110, Y=$flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:165$186_Y [2:0]
-      New connections: $flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:165$186_Y [11:3] = 9'000000000
-    Consolidated identical input bits for $mux cell $flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:177$205:
-      Old ports: A=$flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:178$204_Y, B=5'00011, Y=\cnb.average_count_limit_w
-      New ports: A={ $flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:178$204_Y [4:3] $flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:178$204_Y [1] $flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:178$204_Y [1] }, B=4'0001, Y=\cnb.average_count_limit_w [4:1]
+    Consolidated identical input bits for $mux cell $flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:164$189:
+      Old ports: A=$flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:165$188_Y, B=12'000000000110, Y=$flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:164$189_Y
+      New ports: A=$flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:165$188_Y [2:0], B=3'110, Y=$flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:164$189_Y [2:0]
+      New connections: $flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:164$189_Y [11:3] = 9'000000000
+    Consolidated identical input bits for $mux cell $flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:176$208:
+      Old ports: A=$flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:177$207_Y, B=5'00011, Y=\cnb.average_count_limit_w
+      New ports: A={ $flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:177$207_Y [4:3] $flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:177$207_Y [1] $flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:177$207_Y [1] }, B=4'0001, Y=\cnb.average_count_limit_w [4:1]
       New connections: \cnb.average_count_limit_w [0] = 1'1
-    Consolidated identical input bits for $mux cell $flatten\osr.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_osr.v:126$126:
-      Old ports: A=$flatten\osr.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_osr.v:127$125_Y, B=9'000000100, Y=\osr.osr_count_limit_w
-      New ports: A={ $flatten\osr.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_osr.v:127$125_Y [8] $flatten\osr.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_osr.v:127$125_Y [6] $flatten\osr.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_osr.v:127$125_Y [4] 1'0 $flatten\osr.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_osr.v:127$125_Y [0] }, B=5'00010, Y={ \osr.osr_count_limit_w [8] \osr.osr_count_limit_w [6] \osr.osr_count_limit_w [4] \osr.osr_count_limit_w [2] \osr.osr_count_limit_w [0] }
+    Consolidated identical input bits for $mux cell $flatten\osr.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_osr.v:113$126:
+      Old ports: A=$flatten\osr.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_osr.v:114$125_Y, B=9'000000100, Y=\osr.osr_count_limit_w
+      New ports: A={ $flatten\osr.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_osr.v:114$125_Y [8] $flatten\osr.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_osr.v:114$125_Y [6] $flatten\osr.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_osr.v:114$125_Y [4] 1'0 $flatten\osr.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_osr.v:114$125_Y [0] }, B=5'00010, Y={ \osr.osr_count_limit_w [8] \osr.osr_count_limit_w [6] \osr.osr_count_limit_w [4] \osr.osr_count_limit_w [2] \osr.osr_count_limit_w [0] }
       New connections: { \osr.osr_count_limit_w [7] \osr.osr_count_limit_w [5] \osr.osr_count_limit_w [3] \osr.osr_count_limit_w [1] } = 4'0000
   Optimizing cells in module \adc_core_digital.
-    Consolidated identical input bits for $mux cell $flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:164$187:
-      Old ports: A=$flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:165$186_Y, B=12'000000001001, Y=$flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:164$187_Y
-      New ports: A={ 1'0 $flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:165$186_Y [2:0] }, B=4'1001, Y=$flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:164$187_Y [3:0]
-      New connections: $flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:164$187_Y [11:4] = 8'00000000
+    Consolidated identical input bits for $mux cell $flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:163$190:
+      Old ports: A=$flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:164$189_Y, B=12'000000001001, Y=$flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:163$190_Y
+      New ports: A={ 1'0 $flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:164$189_Y [2:0] }, B=4'1001, Y=$flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:163$190_Y [3:0]
+      New connections: $flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:163$190_Y [11:4] = 8'00000000
   Optimizing cells in module \adc_core_digital.
-    Consolidated identical input bits for $mux cell $flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:163$188:
-      Old ports: A=$flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:164$187_Y, B=12'000000001111, Y=$flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:163$188_Y
-      New ports: A=$flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:164$187_Y [3:0], B=4'1111, Y=$flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:163$188_Y [3:0]
-      New connections: $flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:163$188_Y [11:4] = 8'00000000
+    Consolidated identical input bits for $mux cell $flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:162$191:
+      Old ports: A=$flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:163$190_Y, B=12'000000001111, Y=$flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:162$191_Y
+      New ports: A=$flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:163$190_Y [3:0], B=4'1111, Y=$flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:162$191_Y [3:0]
+      New connections: $flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:162$191_Y [11:4] = 8'00000000
   Optimizing cells in module \adc_core_digital.
-    Consolidated identical input bits for $mux cell $flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:162$189:
-      Old ports: A=$flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:163$188_Y, B=12'000000011001, Y=$flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:162$189_Y
-      New ports: A={ 1'0 $flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:163$188_Y [3:0] }, B=5'11001, Y=$flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:162$189_Y [4:0]
-      New connections: $flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:162$189_Y [11:5] = 7'0000000
+    Consolidated identical input bits for $mux cell $flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:161$192:
+      Old ports: A=$flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:162$191_Y, B=12'000000011001, Y=$flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:161$192_Y
+      New ports: A={ 1'0 $flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:162$191_Y [3:0] }, B=5'11001, Y=$flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:161$192_Y [4:0]
+      New connections: $flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:161$192_Y [11:5] = 7'0000000
   Optimizing cells in module \adc_core_digital.
-    Consolidated identical input bits for $mux cell $flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:161$190:
-      Old ports: A=$flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:162$189_Y, B=12'000000101001, Y=$flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:161$190_Y
-      New ports: A={ 1'0 $flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:162$189_Y [4:0] }, B=6'101001, Y=$flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:161$190_Y [5:0]
-      New connections: $flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:161$190_Y [11:6] = 6'000000
+    Consolidated identical input bits for $mux cell $flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:160$193:
+      Old ports: A=$flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:161$192_Y, B=12'000000101001, Y=$flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:160$193_Y
+      New ports: A={ 1'0 $flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:161$192_Y [4:0] }, B=6'101001, Y=$flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:160$193_Y [5:0]
+      New connections: $flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:160$193_Y [11:6] = 6'000000
   Optimizing cells in module \adc_core_digital.
-    Consolidated identical input bits for $mux cell $flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:160$191:
-      Old ports: A=$flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:161$190_Y, B=12'000001000011, Y=$flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:160$191_Y
-      New ports: A={ 1'0 $flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:161$190_Y [5:0] }, B=7'1000011, Y=$flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:160$191_Y [6:0]
-      New connections: $flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:160$191_Y [11:7] = 5'00000
+    Consolidated identical input bits for $mux cell $flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:159$194:
+      Old ports: A=$flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:160$193_Y, B=12'000001000011, Y=$flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:159$194_Y
+      New ports: A={ 1'0 $flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:160$193_Y [5:0] }, B=7'1000011, Y=$flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:159$194_Y [6:0]
+      New connections: $flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:159$194_Y [11:7] = 5'00000
   Optimizing cells in module \adc_core_digital.
-    Consolidated identical input bits for $mux cell $flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:159$192:
-      Old ports: A=$flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:160$191_Y, B=12'000001101110, Y=$flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:159$192_Y
-      New ports: A=$flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:160$191_Y [6:0], B=7'1101110, Y=$flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:159$192_Y [6:0]
-      New connections: $flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:159$192_Y [11:7] = 5'00000
+    Consolidated identical input bits for $mux cell $flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:158$195:
+      Old ports: A=$flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:159$194_Y, B=12'000001101110, Y=$flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:158$195_Y
+      New ports: A=$flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:159$194_Y [6:0], B=7'1101110, Y=$flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:158$195_Y [6:0]
+      New connections: $flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:158$195_Y [11:7] = 5'00000
   Optimizing cells in module \adc_core_digital.
-    Consolidated identical input bits for $mux cell $flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:158$193:
-      Old ports: A=$flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:159$192_Y, B=12'000010110100, Y=$flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:158$193_Y
-      New ports: A={ 1'0 $flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:159$192_Y [6:0] }, B=8'10110100, Y=$flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:158$193_Y [7:0]
-      New connections: $flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:158$193_Y [11:8] = 4'0000
+    Consolidated identical input bits for $mux cell $flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:157$196:
+      Old ports: A=$flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:158$195_Y, B=12'000010110100, Y=$flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:157$196_Y
+      New ports: A={ 1'0 $flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:158$195_Y [6:0] }, B=8'10110100, Y=$flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:157$196_Y [7:0]
+      New connections: $flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:157$196_Y [11:8] = 4'0000
   Optimizing cells in module \adc_core_digital.
-    Consolidated identical input bits for $mux cell $flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:157$194:
-      Old ports: A=$flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:158$193_Y, B=12'000100100111, Y=$flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:157$194_Y
-      New ports: A={ 1'0 $flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:158$193_Y [7:0] }, B=9'100100111, Y=$flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:157$194_Y [8:0]
-      New connections: $flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:157$194_Y [11:9] = 3'000
+    Consolidated identical input bits for $mux cell $flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:156$197:
+      Old ports: A=$flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:157$196_Y, B=12'000100100111, Y=$flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:156$197_Y
+      New ports: A={ 1'0 $flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:157$196_Y [7:0] }, B=9'100100111, Y=$flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:156$197_Y [8:0]
+      New connections: $flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:156$197_Y [11:9] = 3'000
   Optimizing cells in module \adc_core_digital.
-    Consolidated identical input bits for $mux cell $flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:156$195:
-      Old ports: A=$flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:157$194_Y, B=12'000111100110, Y=$flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:156$195_Y
-      New ports: A=$flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:157$194_Y [8:0], B=9'111100110, Y=$flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:156$195_Y [8:0]
-      New connections: $flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:156$195_Y [11:9] = 3'000
+    Consolidated identical input bits for $mux cell $flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:155$198:
+      Old ports: A=$flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:156$197_Y, B=12'000111100110, Y=$flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:155$198_Y
+      New ports: A=$flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:156$197_Y [8:0], B=9'111100110, Y=$flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:155$198_Y [8:0]
+      New connections: $flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:155$198_Y [11:9] = 3'000
   Optimizing cells in module \adc_core_digital.
-    Consolidated identical input bits for $mux cell $flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:155$196:
-      Old ports: A=$flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:156$195_Y, B=12'001100100110, Y=$flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:155$196_Y
-      New ports: A={ 1'0 $flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:156$195_Y [8:0] }, B=10'1100100110, Y=$flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:155$196_Y [9:0]
-      New connections: $flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:155$196_Y [11:10] = 2'00
+    Consolidated identical input bits for $mux cell $flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:154$199:
+      Old ports: A=$flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:155$198_Y, B=12'001100100110, Y=$flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:154$199_Y
+      New ports: A={ 1'0 $flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:155$198_Y [8:0] }, B=10'1100100110, Y=$flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:154$199_Y [9:0]
+      New connections: $flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:154$199_Y [11:10] = 2'00
   Optimizing cells in module \adc_core_digital.
-    Consolidated identical input bits for $mux cell $flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:154$197:
-      Old ports: A=$flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:155$196_Y, B=12'100000000000, Y=\cnb.nonbinary_value_w
-      New ports: A={ 1'0 $flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:155$196_Y [9:0] }, B=11'10000000000, Y={ \cnb.nonbinary_value_w [11] \cnb.nonbinary_value_w [9:0] }
+    Consolidated identical input bits for $mux cell $flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:153$200:
+      Old ports: A=$flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:154$199_Y, B=12'100000000000, Y=\cnb.nonbinary_value_w
+      New ports: A={ 1'0 $flatten\cnb.$ternary$/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/src/adc_control_nonbinary.v:154$199_Y [9:0] }, B=11'10000000000, Y={ \cnb.nonbinary_value_w [11] \cnb.nonbinary_value_w [9:0] }
       New connections: \cnb.nonbinary_value_w [10] = 1'0
   Optimizing cells in module \adc_core_digital.
 Performed a total of 23 changes.
@@ -821,30 +813,30 @@ Successfully finished Verilog frontend.
 
 8.21.2. Continuing TECHMAP pass.
 Using extmapper simplemap for cells of type $mux.
-Using extmapper simplemap for cells of type $ne.
 Using extmapper simplemap for cells of type $adffe.
 Using extmapper simplemap for cells of type $eq.
 Using template $paramod$b18e16801adf491a64caa0542270798e5d4ac6b6\_90_alu for cells of type $alu.
 Using extmapper simplemap for cells of type $adff.
+Using extmapper simplemap for cells of type $ne.
 Using template $paramod$2407cc82e5cb694244124c65ef486a1415b4b030\_90_alu for cells of type $alu.
 Using template $paramod$672a140277c71df8314410f22acc08d55222c3c7\_90_alu for cells of type $alu.
 Using extmapper simplemap for cells of type $not.
+Using template $paramod$constmap:997cac949252598d6d0434ff0dda2162a4052de7$paramod$0ddbb34be80d837cf9fac692c1c9964d9998f784\_90_shift_ops_shr_shl_sshl_sshr for cells of type $shr.
 Using extmapper simplemap for cells of type $and.
 Using extmapper simplemap for cells of type $logic_and.
 Using template $paramod$ee3d784672cdb1cb32d9a801a3af776716f16b74\_90_alu for cells of type $alu.
 Using extmapper simplemap for cells of type $or.
 Using template $paramod$constmap:e41cd6eb79129ad1b525df6781cbb9eedc0ae2dc$paramod$b1f8e9a58fee383a65180922397f7058048191fe\_90_shift_ops_shr_shl_sshl_sshr for cells of type $shl.
 Using template $paramod$constmap:124b9c795ca6c09cd29e420de72743bb9a4a23ab$paramod$335cfd09f1afa8139c4aafcbbe5f361887b79c5e\_90_shift_ops_shr_shl_sshl_sshr for cells of type $shl.
-Using template $paramod$constmap:997cac949252598d6d0434ff0dda2162a4052de7$paramod$0ddbb34be80d837cf9fac692c1c9964d9998f784\_90_shift_ops_shr_shl_sshl_sshr for cells of type $shr.
 Using template $paramod$53700bbee849b2010ad0b60a61ccd204a10e24ca\_90_alu for cells of type $alu.
-Using extmapper simplemap for cells of type $xor.
-Using template $paramod\_90_lcu\WIDTH=32'00000000000000000000000000000101 for cells of type $lcu.
 Using extmapper simplemap for cells of type $pos.
+Using template $paramod\_90_lcu\WIDTH=32'00000000000000000000000000000101 for cells of type $lcu.
+Using extmapper simplemap for cells of type $xor.
 Using template $paramod\_90_lcu\WIDTH=32'00000000000000000000000000010100 for cells of type $lcu.
 Using template $paramod\_90_lcu\WIDTH=32'00000000000000000000000000001100 for cells of type $lcu.
 Using template $paramod\_90_lcu\WIDTH=32'00000000000000000000000000001001 for cells of type $lcu.
 No more expansions possible.
-<suppressed ~2253 debug messages>
+<suppressed ~2252 debug messages>
 
 8.22. Executing OPT pass (performing simple optimizations).
 
@@ -869,7 +861,7 @@ Removed 77 unused cells and 331 unused wires.
 8.23. Executing ABC pass (technology mapping using ABC).
 
 8.23.1. Extracting gate netlist of module `\adc_core_digital' to `<abc-temp-dir>/input.blif'..
-Extracted 890 gates and 984 wires to a netlist network with 92 inputs and 174 outputs.
+Extracted 890 gates and 984 wires to a netlist network with 92 inputs and 175 outputs.
 
 8.23.1.1. Executing ABC.
 Running ABC command: "<yosys-exe-dir>/yosys-abc" -s -f <abc-temp-dir>/abc.script 2>&1
@@ -884,7 +876,7 @@ ABC: + map
 ABC: + write_blif <abc-temp-dir>/output.blif 
 
 8.23.1.2. Re-integrating ABC results.
-ABC RESULTS:               NOT cells:       63
+ABC RESULTS:               NOT cells:       64
 ABC RESULTS:               MUX cells:      146
 ABC RESULTS:              XNOR cells:       24
 ABC RESULTS:               XOR cells:       72
@@ -894,9 +886,9 @@ ABC RESULTS:            ANDNOT cells:      232
 ABC RESULTS:              NAND cells:       35
 ABC RESULTS:             ORNOT cells:       45
 ABC RESULTS:                OR cells:      186
-ABC RESULTS:        internal signals:      718
+ABC RESULTS:        internal signals:      717
 ABC RESULTS:           input signals:       92
-ABC RESULTS:          output signals:      174
+ABC RESULTS:          output signals:      175
 Removing temp directory.
 
 8.24. Executing OPT pass (performing simple optimizations).
@@ -915,7 +907,7 @@ Removed a total of 12 cells.
 8.24.4. Executing OPT_CLEAN pass (remove unused cells and wires).
 Finding unused cells or wires in module \adc_core_digital..
 Removed 0 unused cells and 573 unused wires.
-<suppressed ~5 debug messages>
+<suppressed ~4 debug messages>
 
 8.24.5. Finished fast OPT passes.
 
@@ -932,8 +924,8 @@ Removed 0 unused modules.
 
 === adc_core_digital ===
 
-   Number of wires:                796
-   Number of wire bits:           1422
+   Number of wires:                795
+   Number of wire bits:           1421
    Number of public wires:         101
    Number of public wire bits:     727
    Number of memories:               0
@@ -945,12 +937,12 @@ Removed 0 unused modules.
      $_DFFE_PN0N_                   16
      $_DFFE_PN0P_                   34
      $_DFFE_PN1N_                    1
-     $_DFF_PN0_                     52
+     $_DFF_PN0_                     51
      $_DFF_PN1_                      2
      $_MUX_                        146
      $_NAND_                        34
      $_NOR_                         59
-     $_NOT_                         63
+     $_NOT_                         64
      $_ORNOT_                       45
      $_OR_                         183
      $_XNOR_                        24
@@ -966,10 +958,10 @@ Dumping module adc_core_digital to page 1.
 Warning: WIDTHLABEL \config_1_in [4] 1
 Warning: WIDTHLABEL \config_1_in [3] 1
 Warning: WIDTHLABEL \config_1_in [5] 1
-Warning: WIDTHLABEL \osr.osr_mode_r [0] 1
 Warning: WIDTHLABEL \osr.osr_mode_r [1] 1
 Warning: WIDTHLABEL \osr.osr_mode_r [0] 1
 Warning: WIDTHLABEL \osr.osr_mode_r [1] 1
+Warning: WIDTHLABEL \osr.osr_mode_r [0] 1
 Warning: WIDTHLABEL \osr.osr_mode_r [2] 1
 Warning: WIDTHLABEL \osr.osr_mode_r [1] 1
 Warning: WIDTHLABEL \osr.osr_mode_r [0] 1
@@ -997,8 +989,8 @@ Warning: WIDTHLABEL \osr.sample_count_r [4] 1
 Warning: WIDTHLABEL \osr.sample_count_r [5] 1
 Warning: WIDTHLABEL \osr.sample_count_r [6] 1
 Warning: WIDTHLABEL \osr.sample_count_r [7] 1
-Warning: WIDTHLABEL \cnb.shift_register_r [2] 1
 Warning: WIDTHLABEL \cnb.shift_register_r [3] 1
+Warning: WIDTHLABEL \cnb.shift_register_r [2] 1
 Warning: WIDTHLABEL \cnb.shift_register_r [4] 1
 Warning: WIDTHLABEL \cnb.shift_register_r [5] 1
 Warning: WIDTHLABEL \cnb.sampled_avg_control_r [0] 1
@@ -1412,6 +1404,7 @@ Warning: WIDTHLABEL \osr.next_sample_count_w [7] 1
 Warning: WIDTHLABEL \osr.sample_count_r [6] 1
 Warning: WIDTHLABEL \osr.sample_count_r [7] 1
 Warning: WIDTHLABEL \osr.next_sample_count_w [8] 1
+Warning: WIDTHLABEL \cnb.shift_register_r [1] 1
 Warning: WIDTHLABEL \cnb.shift_register_r [2] 1
 Warning: WIDTHLABEL \pmatrix_row_out_n [8] 1
 Warning: WIDTHLABEL \nmatrix_row_out_n [1] 1
@@ -1469,6 +1462,15 @@ Warning: WIDTHLABEL \nmatrix_row_out_n [8] 1
 Warning: WIDTHLABEL \pmatrix_row_out_n [14] 1
 Warning: WIDTHLABEL \pmatrix_row_out_n [8] 1
 Warning: WIDTHLABEL \pmatrix_row_out_n [15] 1
+Warning: WIDTHLABEL \config_1_in [0] 1
+Warning: WIDTHLABEL \cnb.shift_register_r [0] 1
+Warning: WIDTHLABEL \cnb.sampled_avg_control_r [0] 1
+Warning: WIDTHLABEL \config_1_in [1] 1
+Warning: WIDTHLABEL \cnb.shift_register_r [0] 1
+Warning: WIDTHLABEL \cnb.sampled_avg_control_r [1] 1
+Warning: WIDTHLABEL \config_1_in [2] 1
+Warning: WIDTHLABEL \cnb.shift_register_r [0] 1
+Warning: WIDTHLABEL \cnb.sampled_avg_control_r [2] 1
 Warning: WIDTHLABEL \cnb.next_data_register_w [0] 1
 Warning: WIDTHLABEL \cnb.data_register_r [0] 1
 Warning: WIDTHLABEL \cnb.next_data_register_w [1] 1
@@ -1667,15 +1669,6 @@ Warning: WIDTHLABEL \cnb.next_data_register_w [10] 1
 Warning: WIDTHLABEL \cnb.result_out [10] 1
 Warning: WIDTHLABEL \cnb.next_data_register_w [11] 1
 Warning: WIDTHLABEL \cnb.result_out [11] 1
-Warning: WIDTHLABEL \config_1_in [0] 1
-Warning: WIDTHLABEL \cnb.shift_register_r [0] 1
-Warning: WIDTHLABEL \cnb.sampled_avg_control_r [0] 1
-Warning: WIDTHLABEL \config_1_in [1] 1
-Warning: WIDTHLABEL \cnb.shift_register_r [0] 1
-Warning: WIDTHLABEL \cnb.sampled_avg_control_r [1] 1
-Warning: WIDTHLABEL \config_1_in [2] 1
-Warning: WIDTHLABEL \cnb.shift_register_r [0] 1
-Warning: WIDTHLABEL \cnb.sampled_avg_control_r [2] 1
 
 10. Executing SHARE pass (SAT-based resource sharing).
 
@@ -1714,8 +1707,8 @@ Optimizing module adc_core_digital.
 
 12. Executing OPT_CLEAN pass (remove unused cells and wires).
 Finding unused cells or wires in module \adc_core_digital..
-Removed 0 unused cells and 58 unused wires.
-<suppressed ~58 debug messages>
+Removed 0 unused cells and 57 unused wires.
+<suppressed ~57 debug messages>
 
 13. Printing statistics.
 
@@ -1723,8 +1716,8 @@ Removed 0 unused cells and 58 unused wires.
 
    Number of wires:                738
    Number of wire bits:           1047
-   Number of public wires:          43
-   Number of public wire bits:     352
+   Number of public wires:          44
+   Number of public wire bits:     353
    Number of memories:               0
    Number of memory bits:            0
    Number of processes:              0
@@ -1734,12 +1727,12 @@ Removed 0 unused cells and 58 unused wires.
      $_DFFE_PN0N_                   16
      $_DFFE_PN0P_                   34
      $_DFFE_PN1N_                    1
-     $_DFF_PN0_                     52
+     $_DFF_PN0_                     51
      $_DFF_PN1_                      2
      $_MUX_                        146
      $_NAND_                        34
      $_NOR_                         59
-     $_NOT_                         63
+     $_NOT_                         64
      $_ORNOT_                       45
      $_OR_                         183
      $_XNOR_                        24
@@ -1801,7 +1794,7 @@ No more expansions possible.
 
 18.1. Executing DFFLEGALIZE pass (convert FFs to types supported by the target).
 Mapping DFF cells in module `\adc_core_digital':
-  mapped 102 $_DFF_PN0_ cells to \sky130_fd_sc_hd__dfrtp_2 cells.
+  mapped 101 $_DFF_PN0_ cells to \sky130_fd_sc_hd__dfrtp_2 cells.
   mapped 3 $_DFF_PN1_ cells to \sky130_fd_sc_hd__dfstp_2 cells.
 
 19. Printing statistics.
@@ -1810,8 +1803,8 @@ Mapping DFF cells in module `\adc_core_digital':
 
    Number of wires:                789
    Number of wire bits:           1098
-   Number of public wires:          43
-   Number of public wire bits:     352
+   Number of public wires:          44
+   Number of public wire bits:     353
    Number of memories:               0
    Number of memory bits:            0
    Number of processes:              0
@@ -1821,26 +1814,26 @@ Mapping DFF cells in module `\adc_core_digital':
      $_MUX_                        197
      $_NAND_                        34
      $_NOR_                         59
-     $_NOT_                         63
+     $_NOT_                         64
      $_ORNOT_                       45
      $_OR_                         183
      $_XNOR_                        24
      $_XOR_                         66
-     sky130_fd_sc_hd__dfrtp_2      102
+     sky130_fd_sc_hd__dfrtp_2      101
      sky130_fd_sc_hd__dfstp_2        3
 
 [INFO]: USING STRATEGY DELAY 4
 
 20. Executing ABC pass (technology mapping using ABC).
 
-20.1. Extracting gate netlist of module `\adc_core_digital' to `/tmp/yosys-abc-ib4kUQ/input.blif'..
-Extracted 918 gates and 1029 wires to a netlist network with 111 inputs and 206 outputs.
+20.1. Extracting gate netlist of module `\adc_core_digital' to `/tmp/yosys-abc-VxUjC6/input.blif'..
+Extracted 919 gates and 1030 wires to a netlist network with 111 inputs and 206 outputs.
 
 20.1.1. Executing ABC.
-Running ABC command: "/foss/tools/yosys/6e907ac/bin/yosys-abc" -s -f /tmp/yosys-abc-ib4kUQ/abc.script 2>&1
-ABC: ABC command line: "source /tmp/yosys-abc-ib4kUQ/abc.script".
+Running ABC command: "/foss/tools/yosys/6e907ac/bin/yosys-abc" -s -f /tmp/yosys-abc-VxUjC6/abc.script 2>&1
+ABC: ABC command line: "source /tmp/yosys-abc-VxUjC6/abc.script".
 ABC: 
-ABC: + read_blif /tmp/yosys-abc-ib4kUQ/input.blif 
+ABC: + read_blif /tmp/yosys-abc-VxUjC6/input.blif 
 ABC: + read_lib -w /foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/runs/leberkaskrapfen/tmp/synthesis/trimmed.lib 
 ABC: Parsing finished successfully.  Parsing time =     0.03 sec
 ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfbbn_2".
@@ -1910,110 +1903,116 @@ ABC: + &put
 ABC: + buffer -c -N 10 
 ABC: + topo 
 ABC: + stime -c 
-ABC: WireLoad = "Small"  Gates =    882 ( 15.4 %)   Cap = 15.7 ff ( 13.5 %)   Area =     9276.40 ( 75.7 %)   Delay =  4746.45 ps  (  7.3 %)               
+ABC: WireLoad = "Small"  Gates =    911 ( 16.4 %)   Cap = 15.4 ff ( 12.6 %)   Area =     9547.91 ( 76.2 %)   Delay =  5056.89 ps  (  2.4 %)               
 ABC: + upsize -c 
 ABC: + dnsize -c 
 ABC: + 
 ABC: + stime -p 
-ABC: WireLoad = "none"  Gates =    882 ( 15.4 %)   Cap = 14.3 ff (  4.9 %)   Area =     7739.92 ( 83.8 %)   Delay =  3943.11 ps  ( 27.7 %)               
-ABC: Path  0 --      14 : 0    7 pi                       A =   0.00  Df =  89.5  -49.2 ps  S = 132.0 ps  Cin =  0.0 ff  Cout =  27.7 ff  Cmax =   0.0 ff  G =    0  
-ABC: Path  1 --     373 : 3    1 sky130_fd_sc_hd__or3_4   A =  11.26  Df = 421.9 -191.1 ps  S =  65.6 ps  Cin =  2.4 ff  Cout =   4.9 ff  Cmax = 531.9 ff  G =  196  
-ABC: Path  2 --     374 : 1   10 sky130_fd_sc_hd__buf_6   A =  11.26  Df = 561.1 -218.3 ps  S =  66.8 ps  Cin =  4.6 ff  Cout =  27.7 ff  Cmax = 785.5 ff  G =  569  
-ABC: Path  3 --     388 : 4    1 sky130_fd_sc_hd__or4_4   A =  11.26  Df =1068.9 -613.2 ps  S =  76.0 ps  Cin =  2.4 ff  Cout =   1.8 ff  Cmax = 534.7 ff  G =   72  
-ABC: Path  4 --     389 : 1   10 sky130_fd_sc_hd__buf_2   A =   5.00  Df =1239.4 -627.3 ps  S = 124.0 ps  Cin =  1.7 ff  Cout =  23.9 ff  Cmax = 315.9 ff  G = 1310  
-ABC: Path  5 --     448 : 4    3 sky130_fd_sc_hd__o22a_2  A =  10.01  Df =1489.8 -579.5 ps  S =  54.8 ps  Cin =  2.4 ff  Cout =   7.5 ff  Cmax = 304.9 ff  G =  302  
-ABC: Path  6 --     449 : 3    2 sky130_fd_sc_hd__and3_4  A =  11.26  Df =1669.3 -550.2 ps  S =  52.2 ps  Cin =  2.4 ff  Cout =   7.1 ff  Cmax = 532.8 ff  G =  279  
-ABC: Path  7 --     491 : 4    2 sky130_fd_sc_hd__or4_4   A =  11.26  Df =2198.3 -388.9 ps  S =  88.3 ps  Cin =  2.4 ff  Cout =   7.2 ff  Cmax = 534.7 ff  G =  282  
-ABC: Path  8 --     493 : 3    9 sky130_fd_sc_hd__o21a_4  A =  15.01  Df =2445.9 -420.8 ps  S = 115.3 ps  Cin =  4.6 ff  Cout =  33.5 ff  Cmax = 510.0 ff  G =  698  
-ABC: Path  9 --     536 : 3    2 sky130_fd_sc_hd__mux2_4  A =  15.01  Df =2754.6 -498.3 ps  S =  55.7 ps  Cin =  3.2 ff  Cout =   7.2 ff  Cmax = 536.5 ff  G =  210  
-ABC: Path 10 --     542 : 2    1 sky130_fd_sc_hd__or2_4   A =   8.76  Df =3000.8 -553.9 ps  S =  46.5 ps  Cin =  2.4 ff  Cout =   4.9 ff  Cmax = 514.5 ff  G =  193  
-ABC: Path 11 --     543 : 1    8 sky130_fd_sc_hd__buf_6   A =  11.26  Df =3130.8 -573.3 ps  S =  65.0 ps  Cin =  4.6 ff  Cout =  26.7 ff  Cmax = 785.5 ff  G =  551  
-ABC: Path 12 --     620 : 1   10 sky130_fd_sc_hd__buf_6   A =  11.26  Df =3253.0 -580.5 ps  S =  55.3 ps  Cin =  4.6 ff  Cout =  21.6 ff  Cmax = 785.5 ff  G =  441  
-ABC: Path 13 --     648 : 3    3 sky130_fd_sc_hd__or3_4   A =  11.26  Df =3654.5 -283.1 ps  S =  95.9 ps  Cin =  2.4 ff  Cout =  24.0 ff  Cmax = 531.9 ff  G =  969  
-ABC: Path 14 --     652 : 3    1 sky130_fd_sc_hd__a21oi_4 A =  16.27  Df =3943.1 -360.2 ps  S = 275.3 ps  Cin =  8.8 ff  Cout =  33.4 ff  Cmax = 221.6 ff  G =  379  
-ABC: Start-point = pi13 (\cnb.shift_register_r [2]).  End-point = po36 (\pmatrix_col_out_n [5]).
+ABC: WireLoad = "none"  Gates =    911 ( 16.4 %)   Cap = 14.1 ff (  4.8 %)   Area =     8002.68 ( 82.7 %)   Delay =  4041.63 ps  ( 27.4 %)               
+ABC: Path  0 --      19 : 0    8 pi                         A =   0.00  Df =  92.0  -49.9 ps  S = 135.6 ps  Cin =  0.0 ff  Cout =  28.5 ff  Cmax =   0.0 ff  G =    0  
+ABC: Path  1 --     412 : 4    7 sky130_fd_sc_hd__or4_4     A =  11.26  Df = 581.1 -291.7 ps  S = 101.9 ps  Cin =  2.4 ff  Cout =  14.0 ff  Cmax = 534.7 ff  G =  553  
+ABC: Path  2 --     427 : 4    2 sky130_fd_sc_hd__or4_4     A =  11.26  Df =1154.6 -724.9 ps  S = 100.9 ps  Cin =  2.4 ff  Cout =  14.1 ff  Cmax = 534.7 ff  G =  546  
+ABC: Path  3 --     428 : 1   10 sky130_fd_sc_hd__buf_6     A =  11.26  Df =1311.2 -758.1 ps  S =  69.7 ps  Cin =  4.6 ff  Cout =  29.3 ff  Cmax = 785.5 ff  G =  602  
+ABC: Path  4 --     429 : 4    1 sky130_fd_sc_hd__or4_4     A =  11.26  Df =1780.8-1061.7 ps  S =  83.3 ps  Cin =  2.4 ff  Cout =   4.4 ff  Cmax = 534.7 ff  G =  179  
+ABC: Path  5 --     430 : 5    3 sky130_fd_sc_hd__o2111ai_2 A =  15.01  Df =1877.5 -828.0 ps  S = 214.6 ps  Cin =  4.3 ff  Cout =   9.6 ff  Cmax = 129.1 ff  G =  210  
+ABC: Path  6 --     535 : 5    2 sky130_fd_sc_hd__a311o_2   A =  11.26  Df =2100.3 -429.6 ps  S =  65.9 ps  Cin =  2.3 ff  Cout =   7.1 ff  Cmax = 298.5 ff  G =  296  
+ABC: Path  7 --     546 : 3    5 sky130_fd_sc_hd__a21oi_2   A =   8.76  Df =2341.5 -154.8 ps  S = 257.7 ps  Cin =  4.6 ff  Cout =  19.3 ff  Cmax = 128.2 ff  G =  408  
+ABC: Path  8 --     644 : 5    2 sky130_fd_sc_hd__o41a_2    A =  12.51  Df =2674.1 -127.6 ps  S =  74.8 ps  Cin =  2.4 ff  Cout =   7.3 ff  Cmax = 305.8 ff  G =  289  
+ABC: Path  9 --     657 : 5    1 sky130_fd_sc_hd__o221a_2   A =  11.26  Df =2953.4 -217.2 ps  S =  55.3 ps  Cin =  2.3 ff  Cout =   5.2 ff  Cmax = 281.1 ff  G =  206  
+ABC: Path 10 --     661 : 4    3 sky130_fd_sc_hd__a211o_4   A =  17.52  Df =3293.8 -360.7 ps  S =  80.6 ps  Cin =  4.6 ff  Cout =  23.1 ff  Cmax = 559.4 ff  G =  473  
+ABC: Path 11 --     664 : 4    2 sky130_fd_sc_hd__o31ai_4   A =  21.27  Df =3685.1 -645.5 ps  S = 455.1 ps  Cin =  8.6 ff  Cout =  35.1 ff  Cmax = 144.7 ff  G =  407  
+ABC: Path 12 --    1227 : 3    1 sky130_fd_sc_hd__mux2_1    A =  11.26  Df =3884.2 -543.5 ps  S =  53.5 ps  Cin =  2.3 ff  Cout =   2.5 ff  Cmax = 173.0 ff  G =  105  
+ABC: Path 13 --    1228 : 1    1 sky130_fd_sc_hd__buf_4     A =   7.51  Df =4041.6 -529.7 ps  S = 102.7 ps  Cin =  2.4 ff  Cout =  33.4 ff  Cmax = 561.2 ff  G = 1393  
+ABC: Start-point = pi18 (\cnb.shift_register_r [5]).  End-point = po205 ($auto$rtlil.cc:2560:MuxGate$4534).
 ABC: + print_stats -m 
-ABC: netlist                       : i/o =  111/  206  lat =    0  nd =   882  edge =   2385  area =7740.69  delay =15.00  lev = 15
-ABC: + write_blif /tmp/yosys-abc-ib4kUQ/output.blif 
+ABC: netlist                       : i/o =  111/  206  lat =    0  nd =   911  edge =   2409  area =8003.59  delay =16.00  lev = 16
+ABC: + write_blif /tmp/yosys-abc-VxUjC6/output.blif 
 
 20.1.2. Re-integrating ABC results.
-ABC RESULTS:   sky130_fd_sc_hd__nor4_2 cells:        4
-ABC RESULTS:   sky130_fd_sc_hd__and3_4 cells:        1
-ABC RESULTS:   sky130_fd_sc_hd__o21a_4 cells:        1
-ABC RESULTS:   sky130_fd_sc_hd__mux2_4 cells:        1
-ABC RESULTS:   sky130_fd_sc_hd__a211oi_4 cells:        1
-ABC RESULTS:   sky130_fd_sc_hd__or4b_4 cells:        1
-ABC RESULTS:   sky130_fd_sc_hd__or3b_4 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__o2111ai_2 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__a21boi_2 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__a2111oi_4 cells:        1
 ABC RESULTS:   sky130_fd_sc_hd__o32ai_2 cells:        1
-ABC RESULTS:   sky130_fd_sc_hd__and2b_2 cells:        4
+ABC RESULTS:   sky130_fd_sc_hd__nor4b_2 cells:        2
 ABC RESULTS:   sky130_fd_sc_hd__nor3b_2 cells:        1
-ABC RESULTS:   sky130_fd_sc_hd__a221oi_4 cells:        1
-ABC RESULTS:   sky130_fd_sc_hd__o21bai_2 cells:        1
-ABC RESULTS:   sky130_fd_sc_hd__a21oi_4 cells:        2
-ABC RESULTS:   sky130_fd_sc_hd__o41a_2 cells:        3
-ABC RESULTS:   sky130_fd_sc_hd__nor2_4 cells:        2
-ABC RESULTS:   sky130_fd_sc_hd__a211o_4 cells:        1
-ABC RESULTS:   sky130_fd_sc_hd__a22o_4 cells:        1
-ABC RESULTS:   sky130_fd_sc_hd__a21boi_2 cells:        6
-ABC RESULTS:   sky130_fd_sc_hd__or2_4 cells:        2
-ABC RESULTS:   sky130_fd_sc_hd__buf_6 cells:        5
-ABC RESULTS:   sky130_fd_sc_hd__or4_2 cells:        7
-ABC RESULTS:   sky130_fd_sc_hd__a21bo_2 cells:        2
-ABC RESULTS:   sky130_fd_sc_hd__or2b_2 cells:        4
-ABC RESULTS:   sky130_fd_sc_hd__a221oi_2 cells:        1
-ABC RESULTS:   sky130_fd_sc_hd__nand4_2 cells:        2
-ABC RESULTS:   sky130_fd_sc_hd__nand3b_2 cells:        2
-ABC RESULTS:   sky130_fd_sc_hd__o211a_2 cells:       10
-ABC RESULTS:   sky130_fd_sc_hd__and3b_2 cells:        6
-ABC RESULTS:   sky130_fd_sc_hd__o32a_2 cells:        3
-ABC RESULTS:   sky130_fd_sc_hd__or3_4 cells:        4
-ABC RESULTS:   sky130_fd_sc_hd__xor2_2 cells:       15
-ABC RESULTS:   sky130_fd_sc_hd__nor4_4 cells:        1
-ABC RESULTS:   sky130_fd_sc_hd__nor3_2 cells:       11
-ABC RESULTS:   sky130_fd_sc_hd__a211oi_2 cells:        2
-ABC RESULTS:   sky130_fd_sc_hd__o22ai_2 cells:        8
-ABC RESULTS:   sky130_fd_sc_hd__a31oi_2 cells:        2
-ABC RESULTS:   sky130_fd_sc_hd__o31a_2 cells:       15
+ABC RESULTS:   sky130_fd_sc_hd__a2111oi_2 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__xnor2_4 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__or4b_2 cells:        5
+ABC RESULTS:   sky130_fd_sc_hd__and4bb_4 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__o21bai_2 cells:        2
+ABC RESULTS:   sky130_fd_sc_hd__a211oi_2 cells:        1
 ABC RESULTS:   sky130_fd_sc_hd__or4_4 cells:        9
-ABC RESULTS:   sky130_fd_sc_hd__buf_2 cells:       25
-ABC RESULTS:   sky130_fd_sc_hd__o2bb2a_2 cells:        1
-ABC RESULTS:   sky130_fd_sc_hd__o21ba_2 cells:        5
-ABC RESULTS:   sky130_fd_sc_hd__a21oi_2 cells:       28
-ABC RESULTS:   sky130_fd_sc_hd__inv_2 cells:       26
-ABC RESULTS:   sky130_fd_sc_hd__or4b_2 cells:        4
-ABC RESULTS:   sky130_fd_sc_hd__or3b_2 cells:       17
-ABC RESULTS:   sky130_fd_sc_hd__and4_2 cells:        5
-ABC RESULTS:   sky130_fd_sc_hd__o211ai_2 cells:        2
-ABC RESULTS:   sky130_fd_sc_hd__nand3_2 cells:        5
-ABC RESULTS:   sky130_fd_sc_hd__o2111a_2 cells:        6
-ABC RESULTS:   sky130_fd_sc_hd__o221a_2 cells:        5
-ABC RESULTS:   sky130_fd_sc_hd__a211o_2 cells:       10
-ABC RESULTS:   sky130_fd_sc_hd__a21o_2 cells:       30
-ABC RESULTS:   sky130_fd_sc_hd__and2_2 cells:       39
-ABC RESULTS:   sky130_fd_sc_hd__a31o_2 cells:       38
-ABC RESULTS:   sky130_fd_sc_hd__or3_2 cells:       18
-ABC RESULTS:   sky130_fd_sc_hd__xnor2_2 cells:       37
-ABC RESULTS:   sky130_fd_sc_hd__and3_2 cells:       30
-ABC RESULTS:   sky130_fd_sc_hd__and4b_2 cells:        4
-ABC RESULTS:   sky130_fd_sc_hd__a32o_2 cells:        3
-ABC RESULTS:   sky130_fd_sc_hd__o21a_2 cells:       23
-ABC RESULTS:   sky130_fd_sc_hd__o22a_2 cells:       20
-ABC RESULTS:   sky130_fd_sc_hd__a311o_2 cells:        4
-ABC RESULTS:   sky130_fd_sc_hd__a22oi_2 cells:        3
-ABC RESULTS:   sky130_fd_sc_hd__a221o_2 cells:        7
-ABC RESULTS:   sky130_fd_sc_hd__o21ai_2 cells:       33
-ABC RESULTS:   sky130_fd_sc_hd__mux2_1 cells:        1
-ABC RESULTS:   sky130_fd_sc_hd__buf_4 cells:        5
-ABC RESULTS:   sky130_fd_sc_hd__o31ai_4 cells:        2
-ABC RESULTS:   sky130_fd_sc_hd__nand2_2 cells:       49
-ABC RESULTS:   sky130_fd_sc_hd__o31ai_2 cells:        4
-ABC RESULTS:   sky130_fd_sc_hd__or2_2 cells:       36
+ABC RESULTS:   sky130_fd_sc_hd__nor4_2 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__a22oi_4 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__nor3_2 cells:        5
+ABC RESULTS:   sky130_fd_sc_hd__and4bb_2 cells:        2
+ABC RESULTS:   sky130_fd_sc_hd__o21ba_2 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__o41a_2 cells:        2
+ABC RESULTS:   sky130_fd_sc_hd__o2bb2a_4 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__a2bb2o_4 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__a211o_4 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__o31ai_4 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__nand4_2 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__or3b_4 cells:        2
+ABC RESULTS:   sky130_fd_sc_hd__nand3_2 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__and2_4 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__o221ai_4 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__and2b_2 cells:        6
+ABC RESULTS:   sky130_fd_sc_hd__a211oi_4 cells:        2
+ABC RESULTS:   sky130_fd_sc_hd__or2b_2 cells:        4
+ABC RESULTS:   sky130_fd_sc_hd__o211ai_2 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__or3_4 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__a21oi_4 cells:        2
+ABC RESULTS:   sky130_fd_sc_hd__a221oi_4 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__a311o_2 cells:        3
 ABC RESULTS:   sky130_fd_sc_hd__a2bb2o_2 cells:        3
-ABC RESULTS:   sky130_fd_sc_hd__nor2_2 cells:       58
-ABC RESULTS:   sky130_fd_sc_hd__a22o_2 cells:       29
-ABC RESULTS:   sky130_fd_sc_hd__mux2_2 cells:       48
-ABC RESULTS:   sky130_fd_sc_hd__buf_1 cells:       75
-ABC RESULTS:        internal signals:      712
+ABC RESULTS:   sky130_fd_sc_hd__a31oi_2 cells:        2
+ABC RESULTS:   sky130_fd_sc_hd__a41o_2 cells:        2
+ABC RESULTS:   sky130_fd_sc_hd__and4b_2 cells:        2
+ABC RESULTS:   sky130_fd_sc_hd__or4_2 cells:       17
+ABC RESULTS:   sky130_fd_sc_hd__and3b_2 cells:        2
+ABC RESULTS:   sky130_fd_sc_hd__nand3b_2 cells:        2
+ABC RESULTS:   sky130_fd_sc_hd__and4_2 cells:        5
+ABC RESULTS:   sky130_fd_sc_hd__xnor2_2 cells:       49
+ABC RESULTS:   sky130_fd_sc_hd__xor2_2 cells:       18
+ABC RESULTS:   sky130_fd_sc_hd__xor2_4 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__nand2_4 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__buf_6 cells:        4
+ABC RESULTS:   sky130_fd_sc_hd__inv_2 cells:       46
+ABC RESULTS:   sky130_fd_sc_hd__or2_4 cells:        3
+ABC RESULTS:   sky130_fd_sc_hd__buf_2 cells:       25
+ABC RESULTS:   sky130_fd_sc_hd__a21bo_2 cells:        6
+ABC RESULTS:   sky130_fd_sc_hd__or3b_2 cells:       11
+ABC RESULTS:   sky130_fd_sc_hd__a21oi_2 cells:       36
+ABC RESULTS:   sky130_fd_sc_hd__a32o_2 cells:        2
+ABC RESULTS:   sky130_fd_sc_hd__a21o_2 cells:       28
+ABC RESULTS:   sky130_fd_sc_hd__a221o_2 cells:       14
+ABC RESULTS:   sky130_fd_sc_hd__and3_2 cells:       26
+ABC RESULTS:   sky130_fd_sc_hd__o211a_2 cells:       15
+ABC RESULTS:   sky130_fd_sc_hd__o221a_2 cells:        8
+ABC RESULTS:   sky130_fd_sc_hd__a22o_2 cells:       18
+ABC RESULTS:   sky130_fd_sc_hd__a211o_2 cells:       13
+ABC RESULTS:   sky130_fd_sc_hd__a22oi_2 cells:        2
+ABC RESULTS:   sky130_fd_sc_hd__or3_2 cells:       25
+ABC RESULTS:   sky130_fd_sc_hd__nor2_2 cells:       71
+ABC RESULTS:   sky130_fd_sc_hd__or2_2 cells:       49
+ABC RESULTS:   sky130_fd_sc_hd__o2bb2a_2 cells:        4
+ABC RESULTS:   sky130_fd_sc_hd__o21a_2 cells:       19
+ABC RESULTS:   sky130_fd_sc_hd__a2111o_2 cells:        4
+ABC RESULTS:   sky130_fd_sc_hd__o32a_2 cells:        8
+ABC RESULTS:   sky130_fd_sc_hd__o311a_2 cells:        2
+ABC RESULTS:   sky130_fd_sc_hd__o31a_2 cells:       14
+ABC RESULTS:   sky130_fd_sc_hd__o21ai_2 cells:       31
+ABC RESULTS:   sky130_fd_sc_hd__o22a_2 cells:       13
+ABC RESULTS:   sky130_fd_sc_hd__and2_2 cells:       28
+ABC RESULTS:   sky130_fd_sc_hd__a31o_2 cells:       22
+ABC RESULTS:   sky130_fd_sc_hd__mux2_2 cells:       57
+ABC RESULTS:   sky130_fd_sc_hd__buf_1 cells:       69
+ABC RESULTS:   sky130_fd_sc_hd__nand2_2 cells:       57
+ABC RESULTS:   sky130_fd_sc_hd__o31ai_2 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__mux2_1 cells:        2
+ABC RESULTS:   sky130_fd_sc_hd__buf_4 cells:        5
+ABC RESULTS:        internal signals:      713
 ABC RESULTS:           input signals:      111
 ABC RESULTS:          output signals:      206
 Removing temp directory.
@@ -2026,43 +2025,43 @@ Removing temp directory.
 
 24. Executing OPT_CLEAN pass (remove unused cells and wires).
 Finding unused cells or wires in module \adc_core_digital..
-Removed 0 unused cells and 1036 unused wires.
-<suppressed ~20 debug messages>
+Removed 0 unused cells and 1037 unused wires.
+<suppressed ~21 debug messages>
 
 25. Executing INSBUF pass (insert buffer cells for connected wires).
-Added adc_core_digital.$auto$insbuf.cc:79:execute$5429: \nmatrix_row_out_n [1] -> \nmatrix_rowon_out_n [0]
-Added adc_core_digital.$auto$insbuf.cc:79:execute$5430: \nmatrix_row_out_n [2] -> \nmatrix_rowon_out_n [1]
-Added adc_core_digital.$auto$insbuf.cc:79:execute$5431: \nmatrix_row_out_n [3] -> \nmatrix_rowon_out_n [2]
-Added adc_core_digital.$auto$insbuf.cc:79:execute$5432: \nmatrix_row_out_n [4] -> \nmatrix_rowon_out_n [3]
-Added adc_core_digital.$auto$insbuf.cc:79:execute$5433: \nmatrix_row_out_n [5] -> \nmatrix_rowon_out_n [4]
-Added adc_core_digital.$auto$insbuf.cc:79:execute$5434: \nmatrix_row_out_n [6] -> \nmatrix_rowon_out_n [5]
-Added adc_core_digital.$auto$insbuf.cc:79:execute$5435: \nmatrix_row_out_n [7] -> \nmatrix_rowon_out_n [6]
-Added adc_core_digital.$auto$insbuf.cc:79:execute$5436: \nmatrix_row_out_n [8] -> \nmatrix_rowon_out_n [7]
-Added adc_core_digital.$auto$insbuf.cc:79:execute$5437: \nmatrix_row_out_n [9] -> \nmatrix_rowon_out_n [8]
-Added adc_core_digital.$auto$insbuf.cc:79:execute$5438: \nmatrix_row_out_n [10] -> \nmatrix_rowon_out_n [9]
-Added adc_core_digital.$auto$insbuf.cc:79:execute$5439: \nmatrix_row_out_n [11] -> \nmatrix_rowon_out_n [10]
-Added adc_core_digital.$auto$insbuf.cc:79:execute$5440: \nmatrix_row_out_n [12] -> \nmatrix_rowon_out_n [11]
-Added adc_core_digital.$auto$insbuf.cc:79:execute$5441: \nmatrix_row_out_n [13] -> \nmatrix_rowon_out_n [12]
-Added adc_core_digital.$auto$insbuf.cc:79:execute$5442: \nmatrix_row_out_n [14] -> \nmatrix_rowon_out_n [13]
-Added adc_core_digital.$auto$insbuf.cc:79:execute$5443: \nmatrix_row_out_n [15] -> \nmatrix_rowon_out_n [14]
-Added adc_core_digital.$auto$insbuf.cc:79:execute$5444: \pmatrix_row_out_n [1] -> \pmatrix_rowon_out_n [0]
-Added adc_core_digital.$auto$insbuf.cc:79:execute$5445: \pmatrix_row_out_n [2] -> \pmatrix_rowon_out_n [1]
-Added adc_core_digital.$auto$insbuf.cc:79:execute$5446: \pmatrix_row_out_n [3] -> \pmatrix_rowon_out_n [2]
-Added adc_core_digital.$auto$insbuf.cc:79:execute$5447: \pmatrix_row_out_n [4] -> \pmatrix_rowon_out_n [3]
-Added adc_core_digital.$auto$insbuf.cc:79:execute$5448: \pmatrix_row_out_n [5] -> \pmatrix_rowon_out_n [4]
-Added adc_core_digital.$auto$insbuf.cc:79:execute$5449: \pmatrix_row_out_n [6] -> \pmatrix_rowon_out_n [5]
-Added adc_core_digital.$auto$insbuf.cc:79:execute$5450: \pmatrix_row_out_n [7] -> \pmatrix_rowon_out_n [6]
-Added adc_core_digital.$auto$insbuf.cc:79:execute$5451: \pmatrix_row_out_n [8] -> \pmatrix_rowon_out_n [7]
-Added adc_core_digital.$auto$insbuf.cc:79:execute$5452: \pmatrix_row_out_n [9] -> \pmatrix_rowon_out_n [8]
-Added adc_core_digital.$auto$insbuf.cc:79:execute$5453: \pmatrix_row_out_n [10] -> \pmatrix_rowon_out_n [9]
-Added adc_core_digital.$auto$insbuf.cc:79:execute$5454: \pmatrix_row_out_n [11] -> \pmatrix_rowon_out_n [10]
-Added adc_core_digital.$auto$insbuf.cc:79:execute$5455: \pmatrix_row_out_n [12] -> \pmatrix_rowon_out_n [11]
-Added adc_core_digital.$auto$insbuf.cc:79:execute$5456: \pmatrix_row_out_n [13] -> \pmatrix_rowon_out_n [12]
-Added adc_core_digital.$auto$insbuf.cc:79:execute$5457: \pmatrix_row_out_n [14] -> \pmatrix_rowon_out_n [13]
-Added adc_core_digital.$auto$insbuf.cc:79:execute$5458: \pmatrix_row_out_n [15] -> \pmatrix_rowon_out_n [14]
-Added adc_core_digital.$auto$insbuf.cc:79:execute$5459: \enable_loop_out -> \sample_matrix_out_n
-Added adc_core_digital.$auto$insbuf.cc:79:execute$5460: \sample_matrix_out -> \sample_switch_out
-Added adc_core_digital.$auto$insbuf.cc:79:execute$5461: \enable_loop_out -> \sample_switch_out_n
+Added adc_core_digital.$auto$insbuf.cc:79:execute$5459: \nmatrix_row_out_n [1] -> \nmatrix_rowon_out_n [0]
+Added adc_core_digital.$auto$insbuf.cc:79:execute$5460: \nmatrix_row_out_n [2] -> \nmatrix_rowon_out_n [1]
+Added adc_core_digital.$auto$insbuf.cc:79:execute$5461: \nmatrix_row_out_n [3] -> \nmatrix_rowon_out_n [2]
+Added adc_core_digital.$auto$insbuf.cc:79:execute$5462: \nmatrix_row_out_n [4] -> \nmatrix_rowon_out_n [3]
+Added adc_core_digital.$auto$insbuf.cc:79:execute$5463: \nmatrix_row_out_n [5] -> \nmatrix_rowon_out_n [4]
+Added adc_core_digital.$auto$insbuf.cc:79:execute$5464: \nmatrix_row_out_n [6] -> \nmatrix_rowon_out_n [5]
+Added adc_core_digital.$auto$insbuf.cc:79:execute$5465: \nmatrix_row_out_n [7] -> \nmatrix_rowon_out_n [6]
+Added adc_core_digital.$auto$insbuf.cc:79:execute$5466: \nmatrix_row_out_n [8] -> \nmatrix_rowon_out_n [7]
+Added adc_core_digital.$auto$insbuf.cc:79:execute$5467: \nmatrix_row_out_n [9] -> \nmatrix_rowon_out_n [8]
+Added adc_core_digital.$auto$insbuf.cc:79:execute$5468: \nmatrix_row_out_n [10] -> \nmatrix_rowon_out_n [9]
+Added adc_core_digital.$auto$insbuf.cc:79:execute$5469: \nmatrix_row_out_n [11] -> \nmatrix_rowon_out_n [10]
+Added adc_core_digital.$auto$insbuf.cc:79:execute$5470: \nmatrix_row_out_n [12] -> \nmatrix_rowon_out_n [11]
+Added adc_core_digital.$auto$insbuf.cc:79:execute$5471: \nmatrix_row_out_n [13] -> \nmatrix_rowon_out_n [12]
+Added adc_core_digital.$auto$insbuf.cc:79:execute$5472: \nmatrix_row_out_n [14] -> \nmatrix_rowon_out_n [13]
+Added adc_core_digital.$auto$insbuf.cc:79:execute$5473: \nmatrix_row_out_n [15] -> \nmatrix_rowon_out_n [14]
+Added adc_core_digital.$auto$insbuf.cc:79:execute$5474: \pmatrix_row_out_n [1] -> \pmatrix_rowon_out_n [0]
+Added adc_core_digital.$auto$insbuf.cc:79:execute$5475: \pmatrix_row_out_n [2] -> \pmatrix_rowon_out_n [1]
+Added adc_core_digital.$auto$insbuf.cc:79:execute$5476: \pmatrix_row_out_n [3] -> \pmatrix_rowon_out_n [2]
+Added adc_core_digital.$auto$insbuf.cc:79:execute$5477: \pmatrix_row_out_n [4] -> \pmatrix_rowon_out_n [3]
+Added adc_core_digital.$auto$insbuf.cc:79:execute$5478: \pmatrix_row_out_n [5] -> \pmatrix_rowon_out_n [4]
+Added adc_core_digital.$auto$insbuf.cc:79:execute$5479: \pmatrix_row_out_n [6] -> \pmatrix_rowon_out_n [5]
+Added adc_core_digital.$auto$insbuf.cc:79:execute$5480: \pmatrix_row_out_n [7] -> \pmatrix_rowon_out_n [6]
+Added adc_core_digital.$auto$insbuf.cc:79:execute$5481: \pmatrix_row_out_n [8] -> \pmatrix_rowon_out_n [7]
+Added adc_core_digital.$auto$insbuf.cc:79:execute$5482: \pmatrix_row_out_n [9] -> \pmatrix_rowon_out_n [8]
+Added adc_core_digital.$auto$insbuf.cc:79:execute$5483: \pmatrix_row_out_n [10] -> \pmatrix_rowon_out_n [9]
+Added adc_core_digital.$auto$insbuf.cc:79:execute$5484: \pmatrix_row_out_n [11] -> \pmatrix_rowon_out_n [10]
+Added adc_core_digital.$auto$insbuf.cc:79:execute$5485: \pmatrix_row_out_n [12] -> \pmatrix_rowon_out_n [11]
+Added adc_core_digital.$auto$insbuf.cc:79:execute$5486: \pmatrix_row_out_n [13] -> \pmatrix_rowon_out_n [12]
+Added adc_core_digital.$auto$insbuf.cc:79:execute$5487: \pmatrix_row_out_n [14] -> \pmatrix_rowon_out_n [13]
+Added adc_core_digital.$auto$insbuf.cc:79:execute$5488: \pmatrix_row_out_n [15] -> \pmatrix_rowon_out_n [14]
+Added adc_core_digital.$auto$insbuf.cc:79:execute$5489: \enable_loop_out -> \sample_matrix_out_n
+Added adc_core_digital.$auto$insbuf.cc:79:execute$5490: \sample_matrix_out -> \sample_switch_out
+Added adc_core_digital.$auto$insbuf.cc:79:execute$5491: \enable_loop_out -> \sample_switch_out_n
 
 26. Executing CHECK pass (checking for obvious problems).
 Checking module adc_core_digital...
@@ -2230,95 +2229,102 @@ Found and reported 158 problems.
 
 === adc_core_digital ===
 
-   Number of wires:                890
-   Number of wire bits:           1061
+   Number of wires:                918
+   Number of wire bits:           1089
    Number of public wires:         162
    Number of public wire bits:     333
    Number of memories:               0
    Number of memory bits:            0
    Number of processes:              0
-   Number of cells:               1026
-     sky130_fd_sc_hd__a211o_2       10
+   Number of cells:               1054
+     sky130_fd_sc_hd__a2111o_2       4
+     sky130_fd_sc_hd__a2111oi_2      1
+     sky130_fd_sc_hd__a2111oi_4      1
+     sky130_fd_sc_hd__a211o_2       13
      sky130_fd_sc_hd__a211o_4        1
-     sky130_fd_sc_hd__a211oi_2       2
-     sky130_fd_sc_hd__a211oi_4       1
-     sky130_fd_sc_hd__a21bo_2        2
-     sky130_fd_sc_hd__a21boi_2       6
-     sky130_fd_sc_hd__a21o_2        30
-     sky130_fd_sc_hd__a21oi_2       28
+     sky130_fd_sc_hd__a211oi_2       1
+     sky130_fd_sc_hd__a211oi_4       2
+     sky130_fd_sc_hd__a21bo_2        6
+     sky130_fd_sc_hd__a21boi_2       1
+     sky130_fd_sc_hd__a21o_2        28
+     sky130_fd_sc_hd__a21oi_2       36
      sky130_fd_sc_hd__a21oi_4        2
-     sky130_fd_sc_hd__a221o_2        7
-     sky130_fd_sc_hd__a221oi_2       1
+     sky130_fd_sc_hd__a221o_2       14
      sky130_fd_sc_hd__a221oi_4       1
-     sky130_fd_sc_hd__a22o_2        29
-     sky130_fd_sc_hd__a22o_4         1
-     sky130_fd_sc_hd__a22oi_2        3
+     sky130_fd_sc_hd__a22o_2        18
+     sky130_fd_sc_hd__a22oi_2        2
+     sky130_fd_sc_hd__a22oi_4        1
      sky130_fd_sc_hd__a2bb2o_2       3
-     sky130_fd_sc_hd__a311o_2        4
-     sky130_fd_sc_hd__a31o_2        38
+     sky130_fd_sc_hd__a2bb2o_4       1
+     sky130_fd_sc_hd__a311o_2        3
+     sky130_fd_sc_hd__a31o_2        22
      sky130_fd_sc_hd__a31oi_2        2
-     sky130_fd_sc_hd__a32o_2         3
-     sky130_fd_sc_hd__and2_2        39
-     sky130_fd_sc_hd__and2b_2        4
-     sky130_fd_sc_hd__and3_2        30
-     sky130_fd_sc_hd__and3_4         1
-     sky130_fd_sc_hd__and3b_2        6
+     sky130_fd_sc_hd__a32o_2         2
+     sky130_fd_sc_hd__a41o_2         2
+     sky130_fd_sc_hd__and2_2        28
+     sky130_fd_sc_hd__and2_4         1
+     sky130_fd_sc_hd__and2b_2        6
+     sky130_fd_sc_hd__and3_2        26
+     sky130_fd_sc_hd__and3b_2        2
      sky130_fd_sc_hd__and4_2         5
-     sky130_fd_sc_hd__and4b_2        4
-     sky130_fd_sc_hd__buf_1         75
+     sky130_fd_sc_hd__and4b_2        2
+     sky130_fd_sc_hd__and4bb_2       2
+     sky130_fd_sc_hd__and4bb_4       1
+     sky130_fd_sc_hd__buf_1         69
      sky130_fd_sc_hd__buf_2         58
      sky130_fd_sc_hd__buf_4          5
-     sky130_fd_sc_hd__buf_6          5
+     sky130_fd_sc_hd__buf_6          4
      sky130_fd_sc_hd__conb_1         6
-     sky130_fd_sc_hd__dfrtp_2      102
+     sky130_fd_sc_hd__dfrtp_2      101
      sky130_fd_sc_hd__dfstp_2        3
-     sky130_fd_sc_hd__inv_2         26
-     sky130_fd_sc_hd__mux2_1         1
-     sky130_fd_sc_hd__mux2_2        48
-     sky130_fd_sc_hd__mux2_4         1
-     sky130_fd_sc_hd__nand2_2       49
-     sky130_fd_sc_hd__nand3_2        5
+     sky130_fd_sc_hd__inv_2         46
+     sky130_fd_sc_hd__mux2_1         2
+     sky130_fd_sc_hd__mux2_2        57
+     sky130_fd_sc_hd__nand2_2       57
+     sky130_fd_sc_hd__nand2_4        1
+     sky130_fd_sc_hd__nand3_2        1
      sky130_fd_sc_hd__nand3b_2       2
-     sky130_fd_sc_hd__nand4_2        2
-     sky130_fd_sc_hd__nor2_2        58
-     sky130_fd_sc_hd__nor2_4         2
-     sky130_fd_sc_hd__nor3_2        11
+     sky130_fd_sc_hd__nand4_2        1
+     sky130_fd_sc_hd__nor2_2        71
+     sky130_fd_sc_hd__nor3_2         5
      sky130_fd_sc_hd__nor3b_2        1
-     sky130_fd_sc_hd__nor4_2         4
-     sky130_fd_sc_hd__nor4_4         1
-     sky130_fd_sc_hd__o2111a_2       6
-     sky130_fd_sc_hd__o211a_2       10
-     sky130_fd_sc_hd__o211ai_2       2
-     sky130_fd_sc_hd__o21a_2        23
-     sky130_fd_sc_hd__o21a_4         1
-     sky130_fd_sc_hd__o21ai_2       33
-     sky130_fd_sc_hd__o21ba_2        5
-     sky130_fd_sc_hd__o21bai_2       1
-     sky130_fd_sc_hd__o221a_2        5
-     sky130_fd_sc_hd__o22a_2        20
-     sky130_fd_sc_hd__o22ai_2        8
-     sky130_fd_sc_hd__o2bb2a_2       1
-     sky130_fd_sc_hd__o31a_2        15
-     sky130_fd_sc_hd__o31ai_2        4
-     sky130_fd_sc_hd__o31ai_4        2
-     sky130_fd_sc_hd__o32a_2         3
+     sky130_fd_sc_hd__nor4_2         1
+     sky130_fd_sc_hd__nor4b_2        2
+     sky130_fd_sc_hd__o2111ai_2      1
+     sky130_fd_sc_hd__o211a_2       15
+     sky130_fd_sc_hd__o211ai_2       1
+     sky130_fd_sc_hd__o21a_2        19
+     sky130_fd_sc_hd__o21ai_2       31
+     sky130_fd_sc_hd__o21ba_2        1
+     sky130_fd_sc_hd__o21bai_2       2
+     sky130_fd_sc_hd__o221a_2        8
+     sky130_fd_sc_hd__o221ai_4       1
+     sky130_fd_sc_hd__o22a_2        13
+     sky130_fd_sc_hd__o2bb2a_2       4
+     sky130_fd_sc_hd__o2bb2a_4       1
+     sky130_fd_sc_hd__o311a_2        2
+     sky130_fd_sc_hd__o31a_2        14
+     sky130_fd_sc_hd__o31ai_2        1
+     sky130_fd_sc_hd__o31ai_4        1
+     sky130_fd_sc_hd__o32a_2         8
      sky130_fd_sc_hd__o32ai_2        1
-     sky130_fd_sc_hd__o41a_2         3
-     sky130_fd_sc_hd__or2_2         36
-     sky130_fd_sc_hd__or2_4          2
+     sky130_fd_sc_hd__o41a_2         2
+     sky130_fd_sc_hd__or2_2         49
+     sky130_fd_sc_hd__or2_4          3
      sky130_fd_sc_hd__or2b_2         4
-     sky130_fd_sc_hd__or3_2         18
-     sky130_fd_sc_hd__or3_4          4
-     sky130_fd_sc_hd__or3b_2        17
-     sky130_fd_sc_hd__or3b_4         1
-     sky130_fd_sc_hd__or4_2          7
+     sky130_fd_sc_hd__or3_2         25
+     sky130_fd_sc_hd__or3_4          1
+     sky130_fd_sc_hd__or3b_2        11
+     sky130_fd_sc_hd__or3b_4         2
+     sky130_fd_sc_hd__or4_2         17
      sky130_fd_sc_hd__or4_4          9
-     sky130_fd_sc_hd__or4b_2         4
-     sky130_fd_sc_hd__or4b_4         1
-     sky130_fd_sc_hd__xnor2_2       37
-     sky130_fd_sc_hd__xor2_2        15
+     sky130_fd_sc_hd__or4b_2         5
+     sky130_fd_sc_hd__xnor2_2       49
+     sky130_fd_sc_hd__xnor2_4        1
+     sky130_fd_sc_hd__xor2_2        18
+     sky130_fd_sc_hd__xor2_4         1
 
-   Chip area for module '\adc_core_digital': 10686.499200
+   Chip area for module '\adc_core_digital': 10922.976000
 
 28. Executing Verilog backend.
 
@@ -2327,7 +2333,7 @@ Found and reported 158 problems.
 28.2. Executing DEMUXMAP pass.
 Dumping module `\adc_core_digital'.
 
-Warnings: 433 unique messages, 871 total
-End of script. Logfile hash: 8eaa535f9e, CPU: user 0.66s system 0.00s, MEM: 31.14 MB peak
+Warnings: 433 unique messages, 872 total
+End of script. Logfile hash: d5beebc0b1, CPU: user 0.66s system 0.01s, MEM: 31.23 MB peak
 Yosys 0.20+70 (git sha1 6e907acf8, gcc 11.2.1 -fPIC -Os)
-Time spent: 67% 2x abc (1 sec), 5% 34x opt_expr (0 sec), ...
+Time spent: 69% 2x abc (1 sec), 5% 34x opt_expr (0 sec), ...

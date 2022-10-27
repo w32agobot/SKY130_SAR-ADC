@@ -52,38 +52,37 @@ module adc_control_nonbinary #(parameter MATRIX_BITS = 12, NONBINARY_REDUNDANCY 
    wire is_sampling_w       = shift_register_r[0];
    wire lsb_region_w        = (shift_register_r[2] | shift_register_r[3] | shift_register_r[4] | shift_register_r[5]);
    wire is_averaging_w      = (lsb_region_w && (average_counter_r < average_count_limit_w));
-   wire conversion_ending_w = ((shift_register_r[2]==1'b1)&~is_averaging_w);
+   wire result_ready_w = ((shift_register_r[2]==1'b1)&~is_averaging_w);
+   wire result_strobe_w = ((shift_register_r[1]==1'b1)&~is_averaging_w);
 
   /* 
   *************************************************
   //wire hold_data_for_osr   = shift_register_r[1];
   *************************************************
 
-    OSR uses clock-gating for low power, which can lead to unpredictable problems. 
+    OSR uses the data-valid strobe as clock-signal for low power, 
+    which can lead to unpredictable problems. 
     
     expected:
-    data_in     XXXXXXX__data___XXXXXX
-    data_valid  _______/‾‾‾‾‾‾\_______
-    clk         _______/‾‾\___/‾‾‾‾‾‾‾ 
+    data_in         XXXXX__data___XXXX
+    data_valid      _____/‾‾‾‾‾‾\_____
+    data_valid_clk  ____________/‾‾\__
 
     Possible problem:
-    
-    data_in     XXXXXXX__data___XXXXXX
-    data_valid  _______/‾‾‾‾‾‾\_______
-    clk_gated   _______/‾‾\______/‾‾‾‾  (clock is delayed due to gating)
+    data_in         XXXXX__data___XXXXXX
+    data_valid      _____/‾‾‾‾‾‾\_______
+    data_valid_clk  ______________/‾‾\__ Clock is delayed
 
     Solution: Data at OSR input is held for two clock cycles
-    data_in     XXXXXXX__data_______XXX
-    data_valid  _______/‾‾‾‾‾\_________
-    clk_gated   _______/‾‾\__/‾‾\__/‾‾\ 
+    data_in         XXXXX__data_________XXXXXX
+    data_valid      _____/‾‾‾‾‾‾\_______
+    data_valid_clk  ______________/‾‾\__ Clock can have delay
 
-    To assure that clock gating is safe in this case, state shift_register_r[1]
-    is introduced to keep the result stable for 2 clock cycles.
   */
    
 
    // conversion finished set 0 after reset, 1 after conversion ended
-   wire next_conv_finished_w = conversion_ending_w;
+   wire next_conv_finished_w = result_strobe_w;
    reg  conv_finished_r;
 
 
@@ -145,7 +144,7 @@ module adc_control_nonbinary #(parameter MATRIX_BITS = 12, NONBINARY_REDUNDANCY 
                                      comparator_in;
 
    // update the result at end of conversion
-   assign next_result_w = conversion_ending_w ? next_data_register_w : result_out;
+   assign next_result_w = result_ready_w ? next_data_register_w : result_out;
 
    //*******************************
    //   NONBINARY Lookup table

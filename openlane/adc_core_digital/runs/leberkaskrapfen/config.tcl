@@ -241,7 +241,7 @@ set ::env(RUN_SIMPLE_CTS) {0}
 set ::env(RUN_SPEF_EXTRACTION) {1}
 set ::env(RUN_TAG) {leberkaskrapfen}
 set ::env(SPEF_EXTRACTOR) {openrcx}
-set ::env(START_TIME) {2022.10.26_09.27.51}
+set ::env(START_TIME) {2022.10.26_21.49.23}
 set ::env(STA_REPORT_POWER) {1}
 set ::env(STD_CELL_GROUND_PINS) {VGND VNB}
 set ::env(STD_CELL_LIBRARY_CDL) {/foss/pdk/sky130A/libs.ref/sky130_fd_sc_hd/cdl/sky130_fd_sc_hd.cdl}
@@ -351,9 +351,9 @@ set ::env(CLOCK_TREE_SYNTH) {1}
 set ::env(CLOCK_WIRE_RC_LAYER) {met5}
 set ::env(COLORTERM) {truecolor}
 set ::env(CONFIGS) {general.tcl checkers.tcl synthesis.tcl floorplan.tcl cts.tcl placement.tcl routing.tcl extraction.tcl lvs.tcl}
-set ::env(CORE_AREA) {5.52 10.88 151.34 155.04}
-set ::env(CORE_HEIGHT) {144.16}
-set ::env(CORE_WIDTH) {145.82}
+set ::env(CORE_AREA) {5.52 10.88 153.18 157.76}
+set ::env(CORE_HEIGHT) {146.88}
+set ::env(CORE_WIDTH) {147.66}
 set ::env(CTS_CLK_BUFFER_LIST) {sky130_fd_sc_hd__clkbuf_8 sky130_fd_sc_hd__clkbuf_4 sky130_fd_sc_hd__clkbuf_2}
 set ::env(CTS_CLK_MAX_WIRE_LENGTH) {0}
 set ::env(CTS_CURRENT_DEF) {/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/runs/leberkaskrapfen/results/placement/adc_core_digital.def}
@@ -389,7 +389,7 @@ set ::env(DESIGN_DIR) {/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital}
 set ::env(DESIGN_IS_CORE) {0}
 set ::env(DESIGN_NAME) {adc_core_digital}
 set ::env(DETAILED_ROUTER) {tritonroute}
-set ::env(DIE_AREA) {0.0 0.0 157.235 167.955}
+set ::env(DIE_AREA) {0.0 0.0 158.845 169.565}
 set ::env(DIODE_CELL) {sky130_fd_sc_hd__diode_2}
 set ::env(DIODE_CELL_PIN) {DIODE}
 set ::env(DIODE_INSERTION_CURRENT_DEF) {/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/runs/leberkaskrapfen/results/routing/adc_core_digital.def}
@@ -438,9 +438,9 @@ set ::env(FP_PDN_CORE_RING_VWIDTH) {1.6}
 set ::env(FP_PDN_ENABLE_GLOBAL_CONNECTIONS) {1}
 set ::env(FP_PDN_ENABLE_MACROS_GRID) {1}
 set ::env(FP_PDN_ENABLE_RAILS) {1}
-set ::env(FP_PDN_HOFFSET) {18.020}
+set ::env(FP_PDN_HOFFSET) {18.360}
 set ::env(FP_PDN_HORIZONTAL_HALO) {10}
-set ::env(FP_PDN_HPITCH) {36.040}
+set ::env(FP_PDN_HPITCH) {36.720}
 set ::env(FP_PDN_HSPACING) {1.7}
 set ::env(FP_PDN_HWIDTH) {1.6}
 set ::env(FP_PDN_IRDROP) {1}
@@ -450,8 +450,8 @@ set ::env(FP_PDN_RAIL_OFFSET) {0}
 set ::env(FP_PDN_RAIL_WIDTH) {0.48}
 set ::env(FP_PDN_UPPER_LAYER) {met5}
 set ::env(FP_PDN_VERTICAL_HALO) {10}
-set ::env(FP_PDN_VOFFSET) {18.225}
-set ::env(FP_PDN_VPITCH) {36.455}
+set ::env(FP_PDN_VOFFSET) {18.455}
+set ::env(FP_PDN_VPITCH) {36.915}
 set ::env(FP_PDN_VSPACING) {1.7}
 set ::env(FP_PDN_VWIDTH) {1.6}
 set ::env(FP_SIZING) {relative}
@@ -491,7 +491,7 @@ set ::env(GRT_MACRO_EXTENSION) {0}
 set ::env(GRT_MAX_DIODE_INS_ITERS) {1}
 set ::env(GRT_OVERFLOW_ITERS) {50}
 set ::env(HOME) {/headless}
-set ::env(HOSTNAME) {225aec772831}
+set ::env(HOSTNAME) {fd7c5640a5fb}
 set ::env(INPUT_DEF) {/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/runs/leberkaskrapfen/tmp/signoff/37-powered_def.def}
 set ::env(IO_PCT) {0.2}
 set ::env(KLAYOUT_DRC_KLAYOUT_GDS) {0}
@@ -550,7 +550,7 @@ set ::env(NO_VNC_HOME) {/dockerstartup/noVNC}
 set ::env(NO_VNC_PORT) {80}
 set ::env(NSS_WRAPPER_GROUP) {/etc/group}
 set ::env(NSS_WRAPPER_PASSWD) {/tmp/passwd}
-set ::env(OLDPWD) {/foss/designs/SKY130_SAR-ADC}
+set ::env(OLDPWD) {/foss/designs/SKY130_SAR-ADC/verilog}
 set ::env(OPENLANE_ROOT) {/foss/tools/openlane/2022.09}
 set ::env(OPENLANE_VERBOSE) {0}
 set ::env(OPENLANE_VERSION) {d375db931edfb03fc42859d590eb3ec799bc6c9e}
@@ -654,7 +654,7 @@ set ::env(SHLVL) {1}
 set ::env(SPEF_EXTRACTOR) {openrcx}
 set ::env(SPEF_PREFIX) {/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/runs/leberkaskrapfen/results/routing/adc_core_digital}
 set ::env(STARTUPDIR) {/dockerstartup}
-set ::env(START_TIME) {2022.10.26_09.27.51}
+set ::env(START_TIME) {2022.10.26_21.49.23}
 set ::env(STA_LEF) {/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/runs/leberkaskrapfen/tmp/merged.nom.lef}
 set ::env(STA_PRE_CTS) {0}
 set ::env(STA_REPORT_POWER) {1}
@@ -720,7 +720,7 @@ set ::env(VNC_PW) {abc123}
 set ::env(VNC_RESOLUTION) {1680x1050}
 set ::env(VNC_VIEW_ONLY) {false}
 set ::env(VTE_VERSION) {6402}
-set ::env(WINDOWID) {123731971}
+set ::env(WINDOWID) {88080387}
 set ::env(WIRE_RC_LAYER) {met1}
 set ::env(XAUTHORITY) {/headless/.xauthority}
 set ::env(XDG_RUNTIME_DIR) {/tmp/runtime-default}
@@ -757,6 +757,6 @@ set ::env(synthesis_logs) {/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digita
 set ::env(synthesis_reports) {/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/runs/leberkaskrapfen/reports/synthesis}
 set ::env(synthesis_results) {/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/runs/leberkaskrapfen/results/synthesis}
 set ::env(synthesis_tmpfiles) {/foss/designs/SKY130_SAR-ADC/openlane/adc_core_digital/runs/leberkaskrapfen/tmp/synthesis}
-set ::env(timer_end) {1666776653}
-set ::env(timer_routed) {1666776629}
-set ::env(timer_start) {1666776471}
+set ::env(timer_end) {1666821154}
+set ::env(timer_routed) {1666821130}
+set ::env(timer_start) {1666820963}

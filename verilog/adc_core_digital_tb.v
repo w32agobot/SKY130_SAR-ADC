@@ -253,7 +253,41 @@ module adc_core_digital_tb;
     #16 // wait 
 
     #2 rst_n=0;
+    config_1_in = 16'b0000000000000000; //0 averages, 0 OSR
     #2 rst_n=1;
+
+
+    
+    // ************** TEST2 ***************
+    // 0x Averaging of LSB
+    // 0x OSR
+    // Values: d806
+    // Sum expected: 0x8060
+       comparator_in = 0; //0001 //idle
+    #2 comparator_in = 0; //8000  
+    #2 comparator_in = 1; //4000 +12'd806
+    #2 comparator_in = 0; //2000
+    #2 comparator_in = 0; //1000
+    #2 comparator_in = 0; //0800
+    #2 comparator_in = 0; //0400
+    #2 comparator_in = 0; //0200
+    #2 comparator_in = 0; //0100
+    #2 comparator_in = 0; //0080
+    #2 comparator_in = 0; //0040
+    #2 comparator_in = 0; //0020
+    //averaging
+    #2 comparator_in = 0; //0010
+    //averaging
+    #2 comparator_in = 0; //0008
+    //averaging
+    #2 comparator_in = 0; //0004
+    //averaging
+    #2 comparator_in = 0; //0002
+    //OSR hold data
+    #2 comparator_in = 0;  
+    // FINISHED conversions
+    #2 comparator_in = 0; //0001 
+
     
 
 
