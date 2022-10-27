@@ -1,6 +1,6 @@
 # Mixed Signal Simulation
 Two ways: True analog simulation, or mixed-signal with XSpice using analog-digital interfaces
-## Method A: Mixed-Signal Simulation with XSpice
+## Method A: True Mixed-Signal Simulation with XSpice in ngspice
 Can be done pre-layout and is faster than true-analog post-layout simulation. The standard cells from the `SPICE` file are replaced with timing data (recommendation `-io_time=500p -time=50p -idelay=5p -odelay=50p -cload=250f`).  
 
 If you have a `.SPICE` file with sky130-standardcells, then you can skip `vlog2verilog` and `vlog2Spice`. 
@@ -22,7 +22,7 @@ Use the script `spi2xspice.py` from qflow `python3 spi2xspice.py $PDKPATH/libs.r
 
 > Note: If `conb` standard cells are present, then they need to be replaced with digital pullups `<instance_name> <net_out> done` and pulldowns `<instance_name> <net_out> dzero`. Reason: Missing data for `conb`, simulation will fail.
 
-> Warning: if the verilog code uses bus lines as `net[25:0]`, then the gds-generated xschem file has pin orders alphabetically like `net0..net10:net19..net1..net20:net25..net2`
+> Warning: if the verilog code uses bus lines as `net[25:0]`, then the gds-generated xschem file has pin orders alphabetically like `net0..net10:net19..net1..net20:net25..net2` and they need to be corrected manually
 
 ### Generate xschem-symbol 
 Create a symbol and with `q` set the type to `primitive`.
