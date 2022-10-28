@@ -1,0 +1,1212 @@
+
+ /----------------------------------------------------------------------------\
+ |                                                                            |
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |                                                                            |
+ |  Copyright (C) 2012 - 2020  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |                                                                            |
+ |  Permission to use, copy, modify, and/or distribute this software for any  |
+ |  purpose with or without fee is hereby granted, provided that the above    |
+ |  copyright notice and this permission notice appear in all copies.         |
+ |                                                                            |
+ |  THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES  |
+ |  WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF          |
+ |  MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR   |
+ |  ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES    |
+ |  WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN     |
+ |  ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF   |
+ |  OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.            |
+ |                                                                            |
+ \----------------------------------------------------------------------------/
+
+ Yosys 0.20+70 (git sha1 6e907acf8, gcc 11.2.1 -fPIC -Os)
+
+[TCL: yosys -import] Command name collision: found pre-existing command `cd' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `eval' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `exec' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `read' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `trace' -> skip.
+Reading /foss/designs/SKY130_SAR-ADC/openlane/adc_clkgen_with_edgedetect/runs/wurscht/tmp/synthesis/1-sky130_fd_sc_hd__tt_025C_1v80.no_pg.lib as a blackbox
+
+1. Executing Liberty frontend.
+Imported 428 cell types from liberty file.
+
+2. Executing Liberty frontend.
+Imported 1 cell types from liberty file.
+
+3. Executing Verilog-2005 frontend: /foss/designs/SKY130_SAR-ADC/openlane/adc_clkgen_with_edgedetect/src/adc_clkgen_with_edgedetect.v
+Parsing SystemVerilog input from `/foss/designs/SKY130_SAR-ADC/openlane/adc_clkgen_with_edgedetect/src/adc_clkgen_with_edgedetect.v' to AST representation.
+Generating RTLIL representation for module `\adc_clkgen_with_edgedetect'.
+Generating RTLIL representation for module `\adc_clk_generation'.
+Generating RTLIL representation for module `\adc_edge_detect_circuit'.
+Generating RTLIL representation for module `\binary_delaycell'.
+Generating RTLIL representation for module `\delaycell'.
+Successfully finished Verilog frontend.
+
+4. Generating Graphviz representation of design.
+Writing dot description to `/foss/designs/SKY130_SAR-ADC/openlane/adc_clkgen_with_edgedetect/runs/wurscht/tmp/synthesis/hierarchy.dot'.
+Dumping module adc_clkgen_with_edgedetect to page 1.
+
+5. Executing HIERARCHY pass (managing design hierarchy).
+
+5.1. Analyzing design hierarchy..
+Top module:  \adc_clkgen_with_edgedetect
+Used module:     \adc_clk_generation
+Used module:         \binary_delaycell
+Used module:             \delaycell
+Used module:     \adc_edge_detect_circuit
+Parameter \DLYCONTROL_BITWIDTH = 6
+
+5.2. Executing AST frontend in derive mode using pre-parsed AST for module `\binary_delaycell'.
+Parameter \DLYCONTROL_BITWIDTH = 6
+Generating RTLIL representation for module `$paramod\binary_delaycell\DLYCONTROL_BITWIDTH=s32'00000000000000000000000000000110'.
+Parameter \DLYCONTROL_BITWIDTH = 5
+
+5.3. Executing AST frontend in derive mode using pre-parsed AST for module `\binary_delaycell'.
+Parameter \DLYCONTROL_BITWIDTH = 5
+Generating RTLIL representation for module `$paramod\binary_delaycell\DLYCONTROL_BITWIDTH=s32'00000000000000000000000000000101'.
+Parameter \DLYCONTROL_BITWIDTH = 5
+Found cached RTLIL representation for module `$paramod\binary_delaycell\DLYCONTROL_BITWIDTH=s32'00000000000000000000000000000101'.
+Parameter \DLYCONTROL_BITWIDTH = 5
+Found cached RTLIL representation for module `$paramod\binary_delaycell\DLYCONTROL_BITWIDTH=s32'00000000000000000000000000000101'.
+Parameter \N_TIMES_5NS = 16
+
+5.4. Executing AST frontend in derive mode using pre-parsed AST for module `\delaycell'.
+Parameter \N_TIMES_5NS = 16
+Generating RTLIL representation for module `$paramod\delaycell\N_TIMES_5NS=s32'00000000000000000000000000010000'.
+Parameter \N_TIMES_5NS = 8
+
+5.5. Executing AST frontend in derive mode using pre-parsed AST for module `\delaycell'.
+Parameter \N_TIMES_5NS = 8
+Generating RTLIL representation for module `$paramod\delaycell\N_TIMES_5NS=s32'00000000000000000000000000001000'.
+Parameter \N_TIMES_5NS = 4
+
+5.6. Executing AST frontend in derive mode using pre-parsed AST for module `\delaycell'.
+Parameter \N_TIMES_5NS = 4
+Generating RTLIL representation for module `$paramod\delaycell\N_TIMES_5NS=s32'00000000000000000000000000000100'.
+Parameter \N_TIMES_5NS = 2
+
+5.7. Executing AST frontend in derive mode using pre-parsed AST for module `\delaycell'.
+Parameter \N_TIMES_5NS = 2
+Generating RTLIL representation for module `$paramod\delaycell\N_TIMES_5NS=s32'00000000000000000000000000000010'.
+Parameter \N_TIMES_5NS = 1
+
+5.8. Executing AST frontend in derive mode using pre-parsed AST for module `\delaycell'.
+Parameter \N_TIMES_5NS = 1
+Generating RTLIL representation for module `$paramod\delaycell\N_TIMES_5NS=s32'00000000000000000000000000000001'.
+
+5.9. Analyzing design hierarchy..
+Top module:  \adc_clkgen_with_edgedetect
+Used module:     \adc_clk_generation
+Used module:         $paramod\binary_delaycell\DLYCONTROL_BITWIDTH=s32'00000000000000000000000000000101
+Used module:             \delaycell
+Used module:     \adc_edge_detect_circuit
+Used module:         $paramod\binary_delaycell\DLYCONTROL_BITWIDTH=s32'00000000000000000000000000000110
+Parameter \N_TIMES_5NS = 32
+
+5.10. Executing AST frontend in derive mode using pre-parsed AST for module `\delaycell'.
+Parameter \N_TIMES_5NS = 32
+Generating RTLIL representation for module `$paramod\delaycell\N_TIMES_5NS=s32'00000000000000000000000000100000'.
+Parameter \N_TIMES_5NS = 16
+Found cached RTLIL representation for module `$paramod\delaycell\N_TIMES_5NS=s32'00000000000000000000000000010000'.
+Parameter \N_TIMES_5NS = 8
+Found cached RTLIL representation for module `$paramod\delaycell\N_TIMES_5NS=s32'00000000000000000000000000001000'.
+Parameter \N_TIMES_5NS = 4
+Found cached RTLIL representation for module `$paramod\delaycell\N_TIMES_5NS=s32'00000000000000000000000000000100'.
+Parameter \N_TIMES_5NS = 2
+Found cached RTLIL representation for module `$paramod\delaycell\N_TIMES_5NS=s32'00000000000000000000000000000010'.
+Parameter \N_TIMES_5NS = 1
+Found cached RTLIL representation for module `$paramod\delaycell\N_TIMES_5NS=s32'00000000000000000000000000000001'.
+Parameter \N_TIMES_5NS = 16
+Found cached RTLIL representation for module `$paramod\delaycell\N_TIMES_5NS=s32'00000000000000000000000000010000'.
+Parameter \N_TIMES_5NS = 8
+Found cached RTLIL representation for module `$paramod\delaycell\N_TIMES_5NS=s32'00000000000000000000000000001000'.
+Parameter \N_TIMES_5NS = 4
+Found cached RTLIL representation for module `$paramod\delaycell\N_TIMES_5NS=s32'00000000000000000000000000000100'.
+Parameter \N_TIMES_5NS = 2
+Found cached RTLIL representation for module `$paramod\delaycell\N_TIMES_5NS=s32'00000000000000000000000000000010'.
+Parameter \N_TIMES_5NS = 1
+Found cached RTLIL representation for module `$paramod\delaycell\N_TIMES_5NS=s32'00000000000000000000000000000001'.
+
+5.11. Analyzing design hierarchy..
+Top module:  \adc_clkgen_with_edgedetect
+Used module:     \adc_clk_generation
+Used module:         $paramod\binary_delaycell\DLYCONTROL_BITWIDTH=s32'00000000000000000000000000000101
+Used module:             $paramod\delaycell\N_TIMES_5NS=s32'00000000000000000000000000010000
+Used module:             $paramod\delaycell\N_TIMES_5NS=s32'00000000000000000000000000001000
+Used module:             $paramod\delaycell\N_TIMES_5NS=s32'00000000000000000000000000000100
+Used module:             $paramod\delaycell\N_TIMES_5NS=s32'00000000000000000000000000000010
+Used module:             $paramod\delaycell\N_TIMES_5NS=s32'00000000000000000000000000000001
+Used module:     \adc_edge_detect_circuit
+Used module:         $paramod\binary_delaycell\DLYCONTROL_BITWIDTH=s32'00000000000000000000000000000110
+Used module:             $paramod\delaycell\N_TIMES_5NS=s32'00000000000000000000000000100000
+
+5.12. Analyzing design hierarchy..
+Top module:  \adc_clkgen_with_edgedetect
+Used module:     \adc_clk_generation
+Used module:         $paramod\binary_delaycell\DLYCONTROL_BITWIDTH=s32'00000000000000000000000000000101
+Used module:             $paramod\delaycell\N_TIMES_5NS=s32'00000000000000000000000000010000
+Used module:             $paramod\delaycell\N_TIMES_5NS=s32'00000000000000000000000000001000
+Used module:             $paramod\delaycell\N_TIMES_5NS=s32'00000000000000000000000000000100
+Used module:             $paramod\delaycell\N_TIMES_5NS=s32'00000000000000000000000000000010
+Used module:             $paramod\delaycell\N_TIMES_5NS=s32'00000000000000000000000000000001
+Used module:     \adc_edge_detect_circuit
+Used module:         $paramod\binary_delaycell\DLYCONTROL_BITWIDTH=s32'00000000000000000000000000000110
+Used module:             $paramod\delaycell\N_TIMES_5NS=s32'00000000000000000000000000100000
+Removing unused module `\delaycell'.
+Removing unused module `\binary_delaycell'.
+Removed 2 unused modules.
+
+6. Executing TRIBUF pass.
+
+7. Executing SYNTH pass.
+
+7.1. Executing HIERARCHY pass (managing design hierarchy).
+
+7.1.1. Analyzing design hierarchy..
+Top module:  \adc_clkgen_with_edgedetect
+Used module:     \adc_clk_generation
+Used module:         $paramod\binary_delaycell\DLYCONTROL_BITWIDTH=s32'00000000000000000000000000000101
+Used module:             $paramod\delaycell\N_TIMES_5NS=s32'00000000000000000000000000010000
+Used module:             $paramod\delaycell\N_TIMES_5NS=s32'00000000000000000000000000001000
+Used module:             $paramod\delaycell\N_TIMES_5NS=s32'00000000000000000000000000000100
+Used module:             $paramod\delaycell\N_TIMES_5NS=s32'00000000000000000000000000000010
+Used module:             $paramod\delaycell\N_TIMES_5NS=s32'00000000000000000000000000000001
+Used module:     \adc_edge_detect_circuit
+Used module:         $paramod\binary_delaycell\DLYCONTROL_BITWIDTH=s32'00000000000000000000000000000110
+Used module:             $paramod\delaycell\N_TIMES_5NS=s32'00000000000000000000000000100000
+
+7.1.2. Analyzing design hierarchy..
+Top module:  \adc_clkgen_with_edgedetect
+Used module:     \adc_clk_generation
+Used module:         $paramod\binary_delaycell\DLYCONTROL_BITWIDTH=s32'00000000000000000000000000000101
+Used module:             $paramod\delaycell\N_TIMES_5NS=s32'00000000000000000000000000010000
+Used module:             $paramod\delaycell\N_TIMES_5NS=s32'00000000000000000000000000001000
+Used module:             $paramod\delaycell\N_TIMES_5NS=s32'00000000000000000000000000000100
+Used module:             $paramod\delaycell\N_TIMES_5NS=s32'00000000000000000000000000000010
+Used module:             $paramod\delaycell\N_TIMES_5NS=s32'00000000000000000000000000000001
+Used module:     \adc_edge_detect_circuit
+Used module:         $paramod\binary_delaycell\DLYCONTROL_BITWIDTH=s32'00000000000000000000000000000110
+Used module:             $paramod\delaycell\N_TIMES_5NS=s32'00000000000000000000000000100000
+Removed 0 unused modules.
+
+7.2. Executing PROC pass (convert processes to netlists).
+
+7.2.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+7.2.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Removed a total of 0 dead cases.
+
+7.2.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+Removed 0 redundant assignments.
+Promoted 0 assignments to connections.
+
+7.2.4. Executing PROC_INIT pass (extract init attributes).
+
+7.2.5. Executing PROC_ARST pass (detect async resets in processes).
+
+7.2.6. Executing PROC_ROM pass (convert switches to ROMs).
+Converted 0 switches.
+
+7.2.7. Executing PROC_MUX pass (convert decision trees to multiplexers).
+
+7.2.8. Executing PROC_DLATCH pass (convert process syncs to latches).
+
+7.2.9. Executing PROC_DFF pass (convert process syncs to FFs).
+
+7.2.10. Executing PROC_MEMWR pass (convert process memory writes to cells).
+
+7.2.11. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+7.2.12. Executing OPT_EXPR pass (perform const folding).
+Optimizing module $paramod\delaycell\N_TIMES_5NS=s32'00000000000000000000000000000010.
+Optimizing module $paramod\delaycell\N_TIMES_5NS=s32'00000000000000000000000000000100.
+Optimizing module $paramod\delaycell\N_TIMES_5NS=s32'00000000000000000000000000001000.
+Optimizing module $paramod\delaycell\N_TIMES_5NS=s32'00000000000000000000000000010000.
+Optimizing module $paramod\binary_delaycell\DLYCONTROL_BITWIDTH=s32'00000000000000000000000000000101.
+Optimizing module $paramod\binary_delaycell\DLYCONTROL_BITWIDTH=s32'00000000000000000000000000000110.
+Optimizing module $paramod\delaycell\N_TIMES_5NS=s32'00000000000000000000000000100000.
+Optimizing module $paramod\delaycell\N_TIMES_5NS=s32'00000000000000000000000000000001.
+Optimizing module adc_edge_detect_circuit.
+Optimizing module adc_clk_generation.
+Optimizing module adc_clkgen_with_edgedetect.
+
+7.3. Executing FLATTEN pass (flatten design).
+Deleting now unused module $paramod\delaycell\N_TIMES_5NS=s32'00000000000000000000000000000010.
+Deleting now unused module $paramod\delaycell\N_TIMES_5NS=s32'00000000000000000000000000000100.
+Deleting now unused module $paramod\delaycell\N_TIMES_5NS=s32'00000000000000000000000000001000.
+Deleting now unused module $paramod\delaycell\N_TIMES_5NS=s32'00000000000000000000000000010000.
+Deleting now unused module $paramod\binary_delaycell\DLYCONTROL_BITWIDTH=s32'00000000000000000000000000000101.
+Deleting now unused module $paramod\binary_delaycell\DLYCONTROL_BITWIDTH=s32'00000000000000000000000000000110.
+Deleting now unused module $paramod\delaycell\N_TIMES_5NS=s32'00000000000000000000000000100000.
+Deleting now unused module $paramod\delaycell\N_TIMES_5NS=s32'00000000000000000000000000000001.
+Deleting now unused module adc_edge_detect_circuit.
+Deleting now unused module adc_clk_generation.
+<suppressed ~17 debug messages>
+
+7.4. Executing OPT_EXPR pass (perform const folding).
+Optimizing module adc_clkgen_with_edgedetect.
+
+7.5. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \adc_clkgen_with_edgedetect..
+
+7.6. Executing CHECK pass (checking for obvious problems).
+Checking module adc_clkgen_with_edgedetect...
+Found and reported 0 problems.
+
+7.7. Executing OPT pass (performing simple optimizations).
+
+7.7.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module adc_clkgen_with_edgedetect.
+
+7.7.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\adc_clkgen_with_edgedetect'.
+Removed a total of 0 cells.
+
+7.7.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \adc_clkgen_with_edgedetect..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+7.7.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \adc_clkgen_with_edgedetect.
+Performed a total of 0 changes.
+
+7.7.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\adc_clkgen_with_edgedetect'.
+Removed a total of 0 cells.
+
+7.7.6. Executing OPT_DFF pass (perform DFF optimizations).
+
+7.7.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \adc_clkgen_with_edgedetect..
+
+7.7.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module adc_clkgen_with_edgedetect.
+
+7.7.9. Finished OPT passes. (There is nothing left to do.)
+
+7.8. Executing FSM pass (extract and optimize FSM).
+
+7.8.1. Executing FSM_DETECT pass (finding FSMs in design).
+
+7.8.2. Executing FSM_EXTRACT pass (extracting FSM from design).
+
+7.8.3. Executing FSM_OPT pass (simple optimizations of FSMs).
+
+7.8.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \adc_clkgen_with_edgedetect..
+
+7.8.5. Executing FSM_OPT pass (simple optimizations of FSMs).
+
+7.8.6. Executing FSM_RECODE pass (re-assigning FSM state encoding).
+
+7.8.7. Executing FSM_INFO pass (dumping all available information on FSM cells).
+
+7.8.8. Executing FSM_MAP pass (mapping FSMs to basic logic).
+
+7.9. Executing OPT pass (performing simple optimizations).
+
+7.9.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module adc_clkgen_with_edgedetect.
+
+7.9.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\adc_clkgen_with_edgedetect'.
+Removed a total of 0 cells.
+
+7.9.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \adc_clkgen_with_edgedetect..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+7.9.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \adc_clkgen_with_edgedetect.
+Performed a total of 0 changes.
+
+7.9.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\adc_clkgen_with_edgedetect'.
+Removed a total of 0 cells.
+
+7.9.6. Executing OPT_DFF pass (perform DFF optimizations).
+
+7.9.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \adc_clkgen_with_edgedetect..
+
+7.9.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module adc_clkgen_with_edgedetect.
+
+7.9.9. Finished OPT passes. (There is nothing left to do.)
+
+7.10. Executing WREDUCE pass (reducing word size of cells).
+
+7.11. Executing PEEPOPT pass (run peephole optimizers).
+
+7.12. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \adc_clkgen_with_edgedetect..
+
+7.13. Executing ALUMACC pass (create $alu and $macc cells).
+Extracting $alu and $macc cells in module adc_clkgen_with_edgedetect:
+  created 0 $alu and 0 $macc cells.
+
+7.14. Executing SHARE pass (SAT-based resource sharing).
+
+7.15. Executing OPT pass (performing simple optimizations).
+
+7.15.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module adc_clkgen_with_edgedetect.
+
+7.15.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\adc_clkgen_with_edgedetect'.
+Removed a total of 0 cells.
+
+7.15.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \adc_clkgen_with_edgedetect..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+7.15.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \adc_clkgen_with_edgedetect.
+Performed a total of 0 changes.
+
+7.15.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\adc_clkgen_with_edgedetect'.
+Removed a total of 0 cells.
+
+7.15.6. Executing OPT_DFF pass (perform DFF optimizations).
+
+7.15.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \adc_clkgen_with_edgedetect..
+
+7.15.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module adc_clkgen_with_edgedetect.
+
+7.15.9. Finished OPT passes. (There is nothing left to do.)
+
+7.16. Executing MEMORY pass.
+
+7.16.1. Executing OPT_MEM pass (optimize memories).
+Performed a total of 0 transformations.
+
+7.16.2. Executing OPT_MEM_PRIORITY pass (removing unnecessary memory write priority relations).
+Performed a total of 0 transformations.
+
+7.16.3. Executing OPT_MEM_FEEDBACK pass (finding memory read-to-write feedback paths).
+
+7.16.4. Executing MEMORY_BMUX2ROM pass (converting muxes to ROMs).
+
+7.16.5. Executing MEMORY_DFF pass (merging $dff cells to $memrd).
+
+7.16.6. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \adc_clkgen_with_edgedetect..
+
+7.16.7. Executing MEMORY_SHARE pass (consolidating $memrd/$memwr cells).
+
+7.16.8. Executing OPT_MEM_WIDEN pass (optimize memories where all ports are wide).
+Performed a total of 0 transformations.
+
+7.16.9. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \adc_clkgen_with_edgedetect..
+
+7.16.10. Executing MEMORY_COLLECT pass (generating $mem cells).
+
+7.17. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \adc_clkgen_with_edgedetect..
+
+7.18. Executing OPT pass (performing simple optimizations).
+
+7.18.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module adc_clkgen_with_edgedetect.
+
+7.18.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\adc_clkgen_with_edgedetect'.
+Removed a total of 0 cells.
+
+7.18.3. Executing OPT_DFF pass (perform DFF optimizations).
+
+7.18.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \adc_clkgen_with_edgedetect..
+
+7.18.5. Finished fast OPT passes.
+
+7.19. Executing MEMORY_MAP pass (converting memories to logic and flip-flops).
+
+7.20. Executing OPT pass (performing simple optimizations).
+
+7.20.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module adc_clkgen_with_edgedetect.
+
+7.20.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\adc_clkgen_with_edgedetect'.
+Removed a total of 0 cells.
+
+7.20.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \adc_clkgen_with_edgedetect..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+7.20.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \adc_clkgen_with_edgedetect.
+Performed a total of 0 changes.
+
+7.20.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\adc_clkgen_with_edgedetect'.
+Removed a total of 0 cells.
+
+7.20.6. Executing OPT_SHARE pass.
+
+7.20.7. Executing OPT_DFF pass (perform DFF optimizations).
+
+7.20.8. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \adc_clkgen_with_edgedetect..
+
+7.20.9. Executing OPT_EXPR pass (perform const folding).
+Optimizing module adc_clkgen_with_edgedetect.
+
+7.20.10. Finished OPT passes. (There is nothing left to do.)
+
+7.21. Executing TECHMAP pass (map to technology primitives).
+
+7.21.1. Executing Verilog-2005 frontend: /foss/tools/yosys/6e907ac/bin/../share/yosys/techmap.v
+Parsing Verilog input from `/foss/tools/yosys/6e907ac/bin/../share/yosys/techmap.v' to AST representation.
+Generating RTLIL representation for module `\_90_simplemap_bool_ops'.
+Generating RTLIL representation for module `\_90_simplemap_reduce_ops'.
+Generating RTLIL representation for module `\_90_simplemap_logic_ops'.
+Generating RTLIL representation for module `\_90_simplemap_compare_ops'.
+Generating RTLIL representation for module `\_90_simplemap_various'.
+Generating RTLIL representation for module `\_90_simplemap_registers'.
+Generating RTLIL representation for module `\_90_shift_ops_shr_shl_sshl_sshr'.
+Generating RTLIL representation for module `\_90_shift_shiftx'.
+Generating RTLIL representation for module `\_90_fa'.
+Generating RTLIL representation for module `\_90_lcu'.
+Generating RTLIL representation for module `\_90_alu'.
+Generating RTLIL representation for module `\_90_macc'.
+Generating RTLIL representation for module `\_90_alumacc'.
+Generating RTLIL representation for module `\$__div_mod_u'.
+Generating RTLIL representation for module `\$__div_mod_trunc'.
+Generating RTLIL representation for module `\_90_div'.
+Generating RTLIL representation for module `\_90_mod'.
+Generating RTLIL representation for module `\$__div_mod_floor'.
+Generating RTLIL representation for module `\_90_divfloor'.
+Generating RTLIL representation for module `\_90_modfloor'.
+Generating RTLIL representation for module `\_90_pow'.
+Generating RTLIL representation for module `\_90_pmux'.
+Generating RTLIL representation for module `\_90_demux'.
+Generating RTLIL representation for module `\_90_lut'.
+Successfully finished Verilog frontend.
+
+7.21.2. Continuing TECHMAP pass.
+No more expansions possible.
+<suppressed ~71 debug messages>
+
+7.22. Executing OPT pass (performing simple optimizations).
+
+7.22.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module adc_clkgen_with_edgedetect.
+
+7.22.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\adc_clkgen_with_edgedetect'.
+Removed a total of 0 cells.
+
+7.22.3. Executing OPT_DFF pass (perform DFF optimizations).
+
+7.22.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \adc_clkgen_with_edgedetect..
+
+7.22.5. Finished fast OPT passes.
+
+7.23. Executing ABC pass (technology mapping using ABC).
+
+7.23.1. Extracting gate netlist of module `\adc_clkgen_with_edgedetect' to `<abc-temp-dir>/input.blif'..
+Extracted 0 gates and 0 wires to a netlist network with 0 inputs and 0 outputs.
+Don't call ABC as there is nothing to map.
+Removing temp directory.
+
+7.24. Executing OPT pass (performing simple optimizations).
+
+7.24.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module adc_clkgen_with_edgedetect.
+
+7.24.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\adc_clkgen_with_edgedetect'.
+Removed a total of 0 cells.
+
+7.24.3. Executing OPT_DFF pass (perform DFF optimizations).
+
+7.24.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \adc_clkgen_with_edgedetect..
+
+7.24.5. Finished fast OPT passes.
+
+7.25. Executing HIERARCHY pass (managing design hierarchy).
+
+7.25.1. Analyzing design hierarchy..
+Top module:  \adc_clkgen_with_edgedetect
+
+7.25.2. Analyzing design hierarchy..
+Top module:  \adc_clkgen_with_edgedetect
+Removed 0 unused modules.
+
+7.26. Printing statistics.
+
+=== adc_clkgen_with_edgedetect ===
+
+   Number of wires:                174
+   Number of wire bits:            436
+   Number of public wires:         174
+   Number of public wire bits:     436
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                273
+     sky130_fd_sc_hd__and2_1        21
+     sky130_fd_sc_hd__and2b_1       21
+     sky130_fd_sc_hd__buf_1          3
+     sky130_fd_sc_hd__buf_4         10
+     sky130_fd_sc_hd__dlymetal6s6s_1     16
+     sky130_fd_sc_hd__inv_2         22
+     sky130_fd_sc_hd__mux2_1        21
+     sky130_fd_sc_hd__nor2b_1        2
+     sky130_fd_sc_hd__or2_1          1
+     sky130_mm_sc_hd_dlyPoly5ns    156
+
+7.27. Executing CHECK pass (checking for obvious problems).
+Checking module adc_clkgen_with_edgedetect...
+Found and reported 0 problems.
+
+8. Generating Graphviz representation of design.
+Writing dot description to `/foss/designs/SKY130_SAR-ADC/openlane/adc_clkgen_with_edgedetect/runs/wurscht/tmp/synthesis/post_techmap.dot'.
+Dumping module adc_clkgen_with_edgedetect to page 1.
+Warning: WIDTHLABEL \clkgen.delay_155ns_1.bypass_enable_w [0] 1
+Warning: WIDTHLABEL \dlycontrol1_in [0] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_1.bypass_enable_w [0] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_1.genblk1[0].dly_binary.signal_w [0] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_1.genblk1[0].dly_binary.signal_w [0] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_1.genblk1[0].dly_binary.signal_w [1] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_1.genblk1[0].dly_binary.signal_w [1] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_1.bypass_enable_w [1] 1
+Warning: WIDTHLABEL \dlycontrol1_in [1] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_1.bypass_enable_w [1] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_1.genblk1[1].dly_binary.signal_w [0] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_1.genblk1[1].dly_binary.signal_w [0] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_1.genblk1[1].dly_binary.signal_w [1] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_1.genblk1[1].dly_binary.signal_w [1] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_1.genblk1[1].dly_binary.signal_w [2] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_1.genblk1[1].dly_binary.signal_w [2] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_1.bypass_enable_w [2] 1
+Warning: WIDTHLABEL \dlycontrol1_in [2] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_1.bypass_enable_w [2] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_1.genblk1[2].dly_binary.signal_w [0] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_1.genblk1[2].dly_binary.signal_w [0] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_1.genblk1[2].dly_binary.signal_w [1] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_1.genblk1[2].dly_binary.signal_w [1] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_1.genblk1[2].dly_binary.signal_w [2] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_1.genblk1[2].dly_binary.signal_w [2] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_1.genblk1[2].dly_binary.signal_w [3] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_1.genblk1[2].dly_binary.signal_w [3] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_1.genblk1[2].dly_binary.signal_w [4] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_1.genblk1[2].dly_binary.signal_w [4] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_1.bypass_enable_w [3] 1
+Warning: WIDTHLABEL \dlycontrol1_in [3] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_1.bypass_enable_w [3] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_1.genblk1[3].dly_binary.signal_w [0] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_1.genblk1[3].dly_binary.signal_w [0] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_1.genblk1[3].dly_binary.signal_w [1] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_1.genblk1[3].dly_binary.signal_w [1] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_1.genblk1[3].dly_binary.signal_w [2] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_1.genblk1[3].dly_binary.signal_w [2] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_1.genblk1[3].dly_binary.signal_w [3] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_1.genblk1[3].dly_binary.signal_w [3] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_1.genblk1[3].dly_binary.signal_w [4] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_1.genblk1[3].dly_binary.signal_w [4] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_1.genblk1[3].dly_binary.signal_w [5] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_1.genblk1[3].dly_binary.signal_w [5] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_1.genblk1[3].dly_binary.signal_w [6] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_1.genblk1[3].dly_binary.signal_w [6] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_1.genblk1[3].dly_binary.signal_w [7] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_1.genblk1[3].dly_binary.signal_w [7] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_1.genblk1[3].dly_binary.signal_w [8] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_1.genblk1[3].dly_binary.signal_w [8] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_1.bypass_enable_w [4] 1
+Warning: WIDTHLABEL \dlycontrol1_in [4] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_1.bypass_enable_w [4] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_1.genblk1[4].dly_binary.signal_w [0] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_1.genblk1[4].dly_binary.signal_w [0] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_1.genblk1[4].dly_binary.signal_w [1] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_1.genblk1[4].dly_binary.signal_w [10] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_1.genblk1[4].dly_binary.signal_w [11] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_1.genblk1[4].dly_binary.signal_w [11] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_1.genblk1[4].dly_binary.signal_w [12] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_1.genblk1[4].dly_binary.signal_w [12] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_1.genblk1[4].dly_binary.signal_w [13] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_1.genblk1[4].dly_binary.signal_w [13] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_1.genblk1[4].dly_binary.signal_w [14] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_1.genblk1[4].dly_binary.signal_w [14] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_1.genblk1[4].dly_binary.signal_w [15] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_1.genblk1[4].dly_binary.signal_w [15] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_1.genblk1[4].dly_binary.signal_w [16] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_1.genblk1[4].dly_binary.signal_w [1] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_1.genblk1[4].dly_binary.signal_w [2] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_1.genblk1[4].dly_binary.signal_w [2] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_1.genblk1[4].dly_binary.signal_w [3] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_1.genblk1[4].dly_binary.signal_w [3] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_1.genblk1[4].dly_binary.signal_w [4] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_1.genblk1[4].dly_binary.signal_w [4] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_1.genblk1[4].dly_binary.signal_w [5] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_1.genblk1[4].dly_binary.signal_w [5] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_1.genblk1[4].dly_binary.signal_w [6] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_1.genblk1[4].dly_binary.signal_w [6] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_1.genblk1[4].dly_binary.signal_w [7] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_1.genblk1[4].dly_binary.signal_w [7] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_1.genblk1[4].dly_binary.signal_w [8] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_1.genblk1[4].dly_binary.signal_w [8] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_1.genblk1[4].dly_binary.signal_w [9] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_1.genblk1[4].dly_binary.signal_w [9] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_1.genblk1[4].dly_binary.signal_w [10] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_1.genblk1[4].dly_binary.signal_w [16] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_2.bypass_enable_w [0] 1
+Warning: WIDTHLABEL \dlycontrol2_in [0] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_2.bypass_enable_w [0] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_2.genblk1[0].dly_binary.signal_w [0] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_2.genblk1[0].dly_binary.signal_w [0] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_2.genblk1[0].dly_binary.signal_w [1] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_2.genblk1[0].dly_binary.signal_w [1] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_2.bypass_enable_w [1] 1
+Warning: WIDTHLABEL \dlycontrol2_in [1] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_2.bypass_enable_w [1] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_2.genblk1[1].dly_binary.signal_w [0] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_2.genblk1[1].dly_binary.signal_w [0] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_2.genblk1[1].dly_binary.signal_w [1] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_2.genblk1[1].dly_binary.signal_w [1] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_2.genblk1[1].dly_binary.signal_w [2] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_2.genblk1[1].dly_binary.signal_w [2] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_2.bypass_enable_w [2] 1
+Warning: WIDTHLABEL \dlycontrol2_in [2] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_2.bypass_enable_w [2] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_2.genblk1[2].dly_binary.signal_w [0] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_2.genblk1[2].dly_binary.signal_w [0] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_2.genblk1[2].dly_binary.signal_w [1] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_2.genblk1[2].dly_binary.signal_w [1] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_2.genblk1[2].dly_binary.signal_w [2] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_2.genblk1[2].dly_binary.signal_w [2] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_2.genblk1[2].dly_binary.signal_w [3] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_2.genblk1[2].dly_binary.signal_w [3] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_2.genblk1[2].dly_binary.signal_w [4] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_2.genblk1[2].dly_binary.signal_w [4] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_2.bypass_enable_w [3] 1
+Warning: WIDTHLABEL \dlycontrol2_in [3] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_2.bypass_enable_w [3] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_2.genblk1[3].dly_binary.signal_w [0] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_2.genblk1[3].dly_binary.signal_w [0] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_2.genblk1[3].dly_binary.signal_w [1] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_2.genblk1[3].dly_binary.signal_w [1] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_2.genblk1[3].dly_binary.signal_w [2] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_2.genblk1[3].dly_binary.signal_w [2] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_2.genblk1[3].dly_binary.signal_w [3] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_2.genblk1[3].dly_binary.signal_w [3] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_2.genblk1[3].dly_binary.signal_w [4] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_2.genblk1[3].dly_binary.signal_w [4] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_2.genblk1[3].dly_binary.signal_w [5] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_2.genblk1[3].dly_binary.signal_w [5] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_2.genblk1[3].dly_binary.signal_w [6] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_2.genblk1[3].dly_binary.signal_w [6] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_2.genblk1[3].dly_binary.signal_w [7] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_2.genblk1[3].dly_binary.signal_w [7] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_2.genblk1[3].dly_binary.signal_w [8] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_2.genblk1[3].dly_binary.signal_w [8] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_2.bypass_enable_w [4] 1
+Warning: WIDTHLABEL \dlycontrol2_in [4] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_2.bypass_enable_w [4] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_2.genblk1[4].dly_binary.signal_w [0] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_2.genblk1[4].dly_binary.signal_w [0] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_2.genblk1[4].dly_binary.signal_w [1] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_2.genblk1[4].dly_binary.signal_w [10] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_2.genblk1[4].dly_binary.signal_w [11] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_2.genblk1[4].dly_binary.signal_w [11] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_2.genblk1[4].dly_binary.signal_w [12] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_2.genblk1[4].dly_binary.signal_w [12] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_2.genblk1[4].dly_binary.signal_w [13] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_2.genblk1[4].dly_binary.signal_w [13] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_2.genblk1[4].dly_binary.signal_w [14] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_2.genblk1[4].dly_binary.signal_w [14] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_2.genblk1[4].dly_binary.signal_w [15] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_2.genblk1[4].dly_binary.signal_w [15] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_2.genblk1[4].dly_binary.signal_w [16] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_2.genblk1[4].dly_binary.signal_w [1] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_2.genblk1[4].dly_binary.signal_w [2] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_2.genblk1[4].dly_binary.signal_w [2] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_2.genblk1[4].dly_binary.signal_w [3] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_2.genblk1[4].dly_binary.signal_w [3] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_2.genblk1[4].dly_binary.signal_w [4] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_2.genblk1[4].dly_binary.signal_w [4] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_2.genblk1[4].dly_binary.signal_w [5] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_2.genblk1[4].dly_binary.signal_w [5] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_2.genblk1[4].dly_binary.signal_w [6] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_2.genblk1[4].dly_binary.signal_w [6] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_2.genblk1[4].dly_binary.signal_w [7] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_2.genblk1[4].dly_binary.signal_w [7] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_2.genblk1[4].dly_binary.signal_w [8] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_2.genblk1[4].dly_binary.signal_w [8] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_2.genblk1[4].dly_binary.signal_w [9] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_2.genblk1[4].dly_binary.signal_w [9] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_2.genblk1[4].dly_binary.signal_w [10] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_2.genblk1[4].dly_binary.signal_w [16] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_3.bypass_enable_w [0] 1
+Warning: WIDTHLABEL \dlycontrol3_in [0] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_3.bypass_enable_w [0] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_3.genblk1[0].dly_binary.signal_w [0] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_3.genblk1[0].dly_binary.signal_w [0] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_3.genblk1[0].dly_binary.signal_w [1] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_3.genblk1[0].dly_binary.signal_w [1] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_3.bypass_enable_w [1] 1
+Warning: WIDTHLABEL \dlycontrol3_in [1] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_3.bypass_enable_w [1] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_3.genblk1[1].dly_binary.signal_w [0] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_3.genblk1[1].dly_binary.signal_w [0] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_3.genblk1[1].dly_binary.signal_w [1] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_3.genblk1[1].dly_binary.signal_w [1] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_3.genblk1[1].dly_binary.signal_w [2] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_3.genblk1[1].dly_binary.signal_w [2] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_3.bypass_enable_w [2] 1
+Warning: WIDTHLABEL \dlycontrol3_in [2] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_3.bypass_enable_w [2] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_3.genblk1[2].dly_binary.signal_w [0] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_3.genblk1[2].dly_binary.signal_w [0] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_3.genblk1[2].dly_binary.signal_w [1] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_3.genblk1[2].dly_binary.signal_w [1] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_3.genblk1[2].dly_binary.signal_w [2] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_3.genblk1[2].dly_binary.signal_w [2] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_3.genblk1[2].dly_binary.signal_w [3] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_3.genblk1[2].dly_binary.signal_w [3] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_3.genblk1[2].dly_binary.signal_w [4] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_3.genblk1[2].dly_binary.signal_w [4] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_3.bypass_enable_w [3] 1
+Warning: WIDTHLABEL \dlycontrol3_in [3] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_3.bypass_enable_w [3] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_3.genblk1[3].dly_binary.signal_w [0] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_3.genblk1[3].dly_binary.signal_w [0] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_3.genblk1[3].dly_binary.signal_w [1] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_3.genblk1[3].dly_binary.signal_w [1] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_3.genblk1[3].dly_binary.signal_w [2] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_3.genblk1[3].dly_binary.signal_w [2] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_3.genblk1[3].dly_binary.signal_w [3] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_3.genblk1[3].dly_binary.signal_w [3] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_3.genblk1[3].dly_binary.signal_w [4] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_3.genblk1[3].dly_binary.signal_w [4] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_3.genblk1[3].dly_binary.signal_w [5] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_3.genblk1[3].dly_binary.signal_w [5] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_3.genblk1[3].dly_binary.signal_w [6] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_3.genblk1[3].dly_binary.signal_w [6] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_3.genblk1[3].dly_binary.signal_w [7] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_3.genblk1[3].dly_binary.signal_w [7] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_3.genblk1[3].dly_binary.signal_w [8] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_3.genblk1[3].dly_binary.signal_w [8] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_3.bypass_enable_w [4] 1
+Warning: WIDTHLABEL \dlycontrol3_in [4] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_3.bypass_enable_w [4] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_3.genblk1[4].dly_binary.signal_w [0] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_3.genblk1[4].dly_binary.signal_w [0] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_3.genblk1[4].dly_binary.signal_w [1] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_3.genblk1[4].dly_binary.signal_w [10] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_3.genblk1[4].dly_binary.signal_w [11] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_3.genblk1[4].dly_binary.signal_w [11] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_3.genblk1[4].dly_binary.signal_w [12] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_3.genblk1[4].dly_binary.signal_w [12] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_3.genblk1[4].dly_binary.signal_w [13] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_3.genblk1[4].dly_binary.signal_w [13] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_3.genblk1[4].dly_binary.signal_w [14] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_3.genblk1[4].dly_binary.signal_w [14] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_3.genblk1[4].dly_binary.signal_w [15] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_3.genblk1[4].dly_binary.signal_w [15] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_3.genblk1[4].dly_binary.signal_w [16] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_3.genblk1[4].dly_binary.signal_w [1] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_3.genblk1[4].dly_binary.signal_w [2] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_3.genblk1[4].dly_binary.signal_w [2] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_3.genblk1[4].dly_binary.signal_w [3] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_3.genblk1[4].dly_binary.signal_w [3] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_3.genblk1[4].dly_binary.signal_w [4] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_3.genblk1[4].dly_binary.signal_w [4] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_3.genblk1[4].dly_binary.signal_w [5] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_3.genblk1[4].dly_binary.signal_w [5] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_3.genblk1[4].dly_binary.signal_w [6] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_3.genblk1[4].dly_binary.signal_w [6] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_3.genblk1[4].dly_binary.signal_w [7] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_3.genblk1[4].dly_binary.signal_w [7] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_3.genblk1[4].dly_binary.signal_w [8] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_3.genblk1[4].dly_binary.signal_w [8] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_3.genblk1[4].dly_binary.signal_w [9] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_3.genblk1[4].dly_binary.signal_w [9] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_3.genblk1[4].dly_binary.signal_w [10] 1
+Warning: WIDTHLABEL \clkgen.delay_155ns_3.genblk1[4].dly_binary.signal_w [16] 1
+Warning: WIDTHLABEL \edgedetect.dly_315ns_1.bypass_enable_w [0] 1
+Warning: WIDTHLABEL \dlycontrol4_in [0] 1
+Warning: WIDTHLABEL \edgedetect.dly_315ns_1.bypass_enable_w [0] 1
+Warning: WIDTHLABEL \edgedetect.dly_315ns_1.genblk1[0].dly_binary.signal_w [0] 1
+Warning: WIDTHLABEL \edgedetect.dly_315ns_1.genblk1[0].dly_binary.signal_w [0] 1
+Warning: WIDTHLABEL \edgedetect.dly_315ns_1.genblk1[0].dly_binary.signal_w [1] 1
+Warning: WIDTHLABEL \edgedetect.dly_315ns_1.genblk1[0].dly_binary.signal_w [1] 1
+Warning: WIDTHLABEL \edgedetect.dly_315ns_1.bypass_enable_w [1] 1
+Warning: WIDTHLABEL \dlycontrol4_in [1] 1
+Warning: WIDTHLABEL \edgedetect.dly_315ns_1.bypass_enable_w [1] 1
+Warning: WIDTHLABEL \edgedetect.dly_315ns_1.genblk1[1].dly_binary.signal_w [0] 1
+Warning: WIDTHLABEL \edgedetect.dly_315ns_1.genblk1[1].dly_binary.signal_w [0] 1
+Warning: WIDTHLABEL \edgedetect.dly_315ns_1.genblk1[1].dly_binary.signal_w [1] 1
+Warning: WIDTHLABEL \edgedetect.dly_315ns_1.genblk1[1].dly_binary.signal_w [1] 1
+Warning: WIDTHLABEL \edgedetect.dly_315ns_1.genblk1[1].dly_binary.signal_w [2] 1
+Warning: WIDTHLABEL \edgedetect.dly_315ns_1.genblk1[1].dly_binary.signal_w [2] 1
+Warning: WIDTHLABEL \edgedetect.dly_315ns_1.bypass_enable_w [2] 1
+Warning: WIDTHLABEL \dlycontrol4_in [2] 1
+Warning: WIDTHLABEL \edgedetect.dly_315ns_1.bypass_enable_w [2] 1
+Warning: WIDTHLABEL \edgedetect.dly_315ns_1.genblk1[2].dly_binary.signal_w [0] 1
+Warning: WIDTHLABEL \edgedetect.dly_315ns_1.genblk1[2].dly_binary.signal_w [0] 1
+Warning: WIDTHLABEL \edgedetect.dly_315ns_1.genblk1[2].dly_binary.signal_w [1] 1
+Warning: WIDTHLABEL \edgedetect.dly_315ns_1.genblk1[2].dly_binary.signal_w [1] 1
+Warning: WIDTHLABEL \edgedetect.dly_315ns_1.genblk1[2].dly_binary.signal_w [2] 1
+Warning: WIDTHLABEL \edgedetect.dly_315ns_1.genblk1[2].dly_binary.signal_w [2] 1
+Warning: WIDTHLABEL \edgedetect.dly_315ns_1.genblk1[2].dly_binary.signal_w [3] 1
+Warning: WIDTHLABEL \edgedetect.dly_315ns_1.genblk1[2].dly_binary.signal_w [3] 1
+Warning: WIDTHLABEL \edgedetect.dly_315ns_1.genblk1[2].dly_binary.signal_w [4] 1
+Warning: WIDTHLABEL \edgedetect.dly_315ns_1.genblk1[2].dly_binary.signal_w [4] 1
+Warning: WIDTHLABEL \edgedetect.dly_315ns_1.bypass_enable_w [3] 1
+Warning: WIDTHLABEL \dlycontrol4_in [3] 1
+Warning: WIDTHLABEL \edgedetect.dly_315ns_1.bypass_enable_w [3] 1
+Warning: WIDTHLABEL \edgedetect.dly_315ns_1.genblk1[3].dly_binary.signal_w [0] 1
+Warning: WIDTHLABEL \edgedetect.dly_315ns_1.genblk1[3].dly_binary.signal_w [0] 1
+Warning: WIDTHLABEL \edgedetect.dly_315ns_1.genblk1[3].dly_binary.signal_w [1] 1
+Warning: WIDTHLABEL \edgedetect.dly_315ns_1.genblk1[3].dly_binary.signal_w [1] 1
+Warning: WIDTHLABEL \edgedetect.dly_315ns_1.genblk1[3].dly_binary.signal_w [2] 1
+Warning: WIDTHLABEL \edgedetect.dly_315ns_1.genblk1[3].dly_binary.signal_w [2] 1
+Warning: WIDTHLABEL \edgedetect.dly_315ns_1.genblk1[3].dly_binary.signal_w [3] 1
+Warning: WIDTHLABEL \edgedetect.dly_315ns_1.genblk1[3].dly_binary.signal_w [3] 1
+Warning: WIDTHLABEL \edgedetect.dly_315ns_1.genblk1[3].dly_binary.signal_w [4] 1
+Warning: WIDTHLABEL \edgedetect.dly_315ns_1.genblk1[3].dly_binary.signal_w [4] 1
+Warning: WIDTHLABEL \edgedetect.dly_315ns_1.genblk1[3].dly_binary.signal_w [5] 1
+Warning: WIDTHLABEL \edgedetect.dly_315ns_1.genblk1[3].dly_binary.signal_w [5] 1
+Warning: WIDTHLABEL \edgedetect.dly_315ns_1.genblk1[3].dly_binary.signal_w [6] 1
+Warning: WIDTHLABEL \edgedetect.dly_315ns_1.genblk1[3].dly_binary.signal_w [6] 1
+Warning: WIDTHLABEL \edgedetect.dly_315ns_1.genblk1[3].dly_binary.signal_w [7] 1
+Warning: WIDTHLABEL \edgedetect.dly_315ns_1.genblk1[3].dly_binary.signal_w [7] 1
+Warning: WIDTHLABEL \edgedetect.dly_315ns_1.genblk1[3].dly_binary.signal_w [8] 1
+Warning: WIDTHLABEL \edgedetect.dly_315ns_1.genblk1[3].dly_binary.signal_w [8] 1
+Warning: WIDTHLABEL \edgedetect.dly_315ns_1.bypass_enable_w [4] 1
+Warning: WIDTHLABEL \dlycontrol4_in [4] 1
+Warning: WIDTHLABEL \edgedetect.dly_315ns_1.bypass_enable_w [4] 1
+Warning: WIDTHLABEL \edgedetect.dly_315ns_1.genblk1[4].dly_binary.signal_w [0] 1
+Warning: WIDTHLABEL \edgedetect.dly_315ns_1.genblk1[4].dly_binary.signal_w [0] 1
+Warning: WIDTHLABEL \edgedetect.dly_315ns_1.genblk1[4].dly_binary.signal_w [1] 1
+Warning: WIDTHLABEL \edgedetect.dly_315ns_1.genblk1[4].dly_binary.signal_w [10] 1
+Warning: WIDTHLABEL \edgedetect.dly_315ns_1.genblk1[4].dly_binary.signal_w [11] 1
+Warning: WIDTHLABEL \edgedetect.dly_315ns_1.genblk1[4].dly_binary.signal_w [11] 1
+Warning: WIDTHLABEL \edgedetect.dly_315ns_1.genblk1[4].dly_binary.signal_w [12] 1
+Warning: WIDTHLABEL \edgedetect.dly_315ns_1.genblk1[4].dly_binary.signal_w [12] 1
+Warning: WIDTHLABEL \edgedetect.dly_315ns_1.genblk1[4].dly_binary.signal_w [13] 1
+Warning: WIDTHLABEL \edgedetect.dly_315ns_1.genblk1[4].dly_binary.signal_w [13] 1
+Warning: WIDTHLABEL \edgedetect.dly_315ns_1.genblk1[4].dly_binary.signal_w [14] 1
+Warning: WIDTHLABEL \edgedetect.dly_315ns_1.genblk1[4].dly_binary.signal_w [14] 1
+Warning: WIDTHLABEL \edgedetect.dly_315ns_1.genblk1[4].dly_binary.signal_w [15] 1
+Warning: WIDTHLABEL \edgedetect.dly_315ns_1.genblk1[4].dly_binary.signal_w [15] 1
+Warning: WIDTHLABEL \edgedetect.dly_315ns_1.genblk1[4].dly_binary.signal_w [16] 1
+Warning: WIDTHLABEL \edgedetect.dly_315ns_1.genblk1[4].dly_binary.signal_w [1] 1
+Warning: WIDTHLABEL \edgedetect.dly_315ns_1.genblk1[4].dly_binary.signal_w [2] 1
+Warning: WIDTHLABEL \edgedetect.dly_315ns_1.genblk1[4].dly_binary.signal_w [2] 1
+Warning: WIDTHLABEL \edgedetect.dly_315ns_1.genblk1[4].dly_binary.signal_w [3] 1
+Warning: WIDTHLABEL \edgedetect.dly_315ns_1.genblk1[4].dly_binary.signal_w [3] 1
+Warning: WIDTHLABEL \edgedetect.dly_315ns_1.genblk1[4].dly_binary.signal_w [4] 1
+Warning: WIDTHLABEL \edgedetect.dly_315ns_1.genblk1[4].dly_binary.signal_w [4] 1
+Warning: WIDTHLABEL \edgedetect.dly_315ns_1.genblk1[4].dly_binary.signal_w [5] 1
+Warning: WIDTHLABEL \edgedetect.dly_315ns_1.genblk1[4].dly_binary.signal_w [5] 1
+Warning: WIDTHLABEL \edgedetect.dly_315ns_1.genblk1[4].dly_binary.signal_w [6] 1
+Warning: WIDTHLABEL \edgedetect.dly_315ns_1.genblk1[4].dly_binary.signal_w [6] 1
+Warning: WIDTHLABEL \edgedetect.dly_315ns_1.genblk1[4].dly_binary.signal_w [7] 1
+Warning: WIDTHLABEL \edgedetect.dly_315ns_1.genblk1[4].dly_binary.signal_w [7] 1
+Warning: WIDTHLABEL \edgedetect.dly_315ns_1.genblk1[4].dly_binary.signal_w [8] 1
+Warning: WIDTHLABEL \edgedetect.dly_315ns_1.genblk1[4].dly_binary.signal_w [8] 1
+Warning: WIDTHLABEL \edgedetect.dly_315ns_1.genblk1[4].dly_binary.signal_w [9] 1
+Warning: WIDTHLABEL \edgedetect.dly_315ns_1.genblk1[4].dly_binary.signal_w [9] 1
+Warning: WIDTHLABEL \edgedetect.dly_315ns_1.genblk1[4].dly_binary.signal_w [10] 1
+Warning: WIDTHLABEL \edgedetect.dly_315ns_1.genblk1[4].dly_binary.signal_w [16] 1
+Warning: WIDTHLABEL \edgedetect.dly_315ns_1.bypass_enable_w [5] 1
+Warning: WIDTHLABEL \dlycontrol4_in [5] 1
+Warning: WIDTHLABEL \edgedetect.dly_315ns_1.bypass_enable_w [5] 1
+Warning: WIDTHLABEL \edgedetect.dly_315ns_1.genblk1[5].dly_binary.signal_w [0] 1
+Warning: WIDTHLABEL \edgedetect.dly_315ns_1.genblk1[5].dly_binary.signal_w [0] 1
+Warning: WIDTHLABEL \edgedetect.dly_315ns_1.genblk1[5].dly_binary.signal_w [1] 1
+Warning: WIDTHLABEL \edgedetect.dly_315ns_1.genblk1[5].dly_binary.signal_w [10] 1
+Warning: WIDTHLABEL \edgedetect.dly_315ns_1.genblk1[5].dly_binary.signal_w [11] 1
+Warning: WIDTHLABEL \edgedetect.dly_315ns_1.genblk1[5].dly_binary.signal_w [11] 1
+Warning: WIDTHLABEL \edgedetect.dly_315ns_1.genblk1[5].dly_binary.signal_w [12] 1
+Warning: WIDTHLABEL \edgedetect.dly_315ns_1.genblk1[5].dly_binary.signal_w [12] 1
+Warning: WIDTHLABEL \edgedetect.dly_315ns_1.genblk1[5].dly_binary.signal_w [13] 1
+Warning: WIDTHLABEL \edgedetect.dly_315ns_1.genblk1[5].dly_binary.signal_w [13] 1
+Warning: WIDTHLABEL \edgedetect.dly_315ns_1.genblk1[5].dly_binary.signal_w [14] 1
+Warning: WIDTHLABEL \edgedetect.dly_315ns_1.genblk1[5].dly_binary.signal_w [14] 1
+Warning: WIDTHLABEL \edgedetect.dly_315ns_1.genblk1[5].dly_binary.signal_w [15] 1
+Warning: WIDTHLABEL \edgedetect.dly_315ns_1.genblk1[5].dly_binary.signal_w [15] 1
+Warning: WIDTHLABEL \edgedetect.dly_315ns_1.genblk1[5].dly_binary.signal_w [16] 1
+Warning: WIDTHLABEL \edgedetect.dly_315ns_1.genblk1[5].dly_binary.signal_w [16] 1
+Warning: WIDTHLABEL \edgedetect.dly_315ns_1.genblk1[5].dly_binary.signal_w [17] 1
+Warning: WIDTHLABEL \edgedetect.dly_315ns_1.genblk1[5].dly_binary.signal_w [17] 1
+Warning: WIDTHLABEL \edgedetect.dly_315ns_1.genblk1[5].dly_binary.signal_w [18] 1
+Warning: WIDTHLABEL \edgedetect.dly_315ns_1.genblk1[5].dly_binary.signal_w [18] 1
+Warning: WIDTHLABEL \edgedetect.dly_315ns_1.genblk1[5].dly_binary.signal_w [19] 1
+Warning: WIDTHLABEL \edgedetect.dly_315ns_1.genblk1[5].dly_binary.signal_w [19] 1
+Warning: WIDTHLABEL \edgedetect.dly_315ns_1.genblk1[5].dly_binary.signal_w [20] 1
+Warning: WIDTHLABEL \edgedetect.dly_315ns_1.genblk1[5].dly_binary.signal_w [1] 1
+Warning: WIDTHLABEL \edgedetect.dly_315ns_1.genblk1[5].dly_binary.signal_w [2] 1
+Warning: WIDTHLABEL \edgedetect.dly_315ns_1.genblk1[5].dly_binary.signal_w [20] 1
+Warning: WIDTHLABEL \edgedetect.dly_315ns_1.genblk1[5].dly_binary.signal_w [21] 1
+Warning: WIDTHLABEL \edgedetect.dly_315ns_1.genblk1[5].dly_binary.signal_w [21] 1
+Warning: WIDTHLABEL \edgedetect.dly_315ns_1.genblk1[5].dly_binary.signal_w [22] 1
+Warning: WIDTHLABEL \edgedetect.dly_315ns_1.genblk1[5].dly_binary.signal_w [22] 1
+Warning: WIDTHLABEL \edgedetect.dly_315ns_1.genblk1[5].dly_binary.signal_w [23] 1
+Warning: WIDTHLABEL \edgedetect.dly_315ns_1.genblk1[5].dly_binary.signal_w [23] 1
+Warning: WIDTHLABEL \edgedetect.dly_315ns_1.genblk1[5].dly_binary.signal_w [24] 1
+Warning: WIDTHLABEL \edgedetect.dly_315ns_1.genblk1[5].dly_binary.signal_w [24] 1
+Warning: WIDTHLABEL \edgedetect.dly_315ns_1.genblk1[5].dly_binary.signal_w [25] 1
+Warning: WIDTHLABEL \edgedetect.dly_315ns_1.genblk1[5].dly_binary.signal_w [25] 1
+Warning: WIDTHLABEL \edgedetect.dly_315ns_1.genblk1[5].dly_binary.signal_w [26] 1
+Warning: WIDTHLABEL \edgedetect.dly_315ns_1.genblk1[5].dly_binary.signal_w [26] 1
+Warning: WIDTHLABEL \edgedetect.dly_315ns_1.genblk1[5].dly_binary.signal_w [27] 1
+Warning: WIDTHLABEL \edgedetect.dly_315ns_1.genblk1[5].dly_binary.signal_w [27] 1
+Warning: WIDTHLABEL \edgedetect.dly_315ns_1.genblk1[5].dly_binary.signal_w [28] 1
+Warning: WIDTHLABEL \edgedetect.dly_315ns_1.genblk1[5].dly_binary.signal_w [28] 1
+Warning: WIDTHLABEL \edgedetect.dly_315ns_1.genblk1[5].dly_binary.signal_w [29] 1
+Warning: WIDTHLABEL \edgedetect.dly_315ns_1.genblk1[5].dly_binary.signal_w [29] 1
+Warning: WIDTHLABEL \edgedetect.dly_315ns_1.genblk1[5].dly_binary.signal_w [30] 1
+Warning: WIDTHLABEL \edgedetect.dly_315ns_1.genblk1[5].dly_binary.signal_w [2] 1
+Warning: WIDTHLABEL \edgedetect.dly_315ns_1.genblk1[5].dly_binary.signal_w [3] 1
+Warning: WIDTHLABEL \edgedetect.dly_315ns_1.genblk1[5].dly_binary.signal_w [30] 1
+Warning: WIDTHLABEL \edgedetect.dly_315ns_1.genblk1[5].dly_binary.signal_w [31] 1
+Warning: WIDTHLABEL \edgedetect.dly_315ns_1.genblk1[5].dly_binary.signal_w [31] 1
+Warning: WIDTHLABEL \edgedetect.dly_315ns_1.genblk1[5].dly_binary.signal_w [32] 1
+Warning: WIDTHLABEL \edgedetect.dly_315ns_1.genblk1[5].dly_binary.signal_w [3] 1
+Warning: WIDTHLABEL \edgedetect.dly_315ns_1.genblk1[5].dly_binary.signal_w [4] 1
+Warning: WIDTHLABEL \edgedetect.dly_315ns_1.genblk1[5].dly_binary.signal_w [4] 1
+Warning: WIDTHLABEL \edgedetect.dly_315ns_1.genblk1[5].dly_binary.signal_w [5] 1
+Warning: WIDTHLABEL \edgedetect.dly_315ns_1.genblk1[5].dly_binary.signal_w [5] 1
+Warning: WIDTHLABEL \edgedetect.dly_315ns_1.genblk1[5].dly_binary.signal_w [6] 1
+Warning: WIDTHLABEL \edgedetect.dly_315ns_1.genblk1[5].dly_binary.signal_w [6] 1
+Warning: WIDTHLABEL \edgedetect.dly_315ns_1.genblk1[5].dly_binary.signal_w [7] 1
+Warning: WIDTHLABEL \edgedetect.dly_315ns_1.genblk1[5].dly_binary.signal_w [7] 1
+Warning: WIDTHLABEL \edgedetect.dly_315ns_1.genblk1[5].dly_binary.signal_w [8] 1
+Warning: WIDTHLABEL \edgedetect.dly_315ns_1.genblk1[5].dly_binary.signal_w [8] 1
+Warning: WIDTHLABEL \edgedetect.dly_315ns_1.genblk1[5].dly_binary.signal_w [9] 1
+Warning: WIDTHLABEL \edgedetect.dly_315ns_1.genblk1[5].dly_binary.signal_w [9] 1
+Warning: WIDTHLABEL \edgedetect.dly_315ns_1.genblk1[5].dly_binary.signal_w [10] 1
+Warning: WIDTHLABEL \edgedetect.dly_315ns_1.genblk1[5].dly_binary.signal_w [32] 1
+
+9. Executing SHARE pass (SAT-based resource sharing).
+
+10. Executing OPT pass (performing simple optimizations).
+
+10.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module adc_clkgen_with_edgedetect.
+
+10.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\adc_clkgen_with_edgedetect'.
+Removed a total of 0 cells.
+
+10.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \adc_clkgen_with_edgedetect..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+10.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \adc_clkgen_with_edgedetect.
+Performed a total of 0 changes.
+
+10.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\adc_clkgen_with_edgedetect'.
+Removed a total of 0 cells.
+
+10.6. Executing OPT_DFF pass (perform DFF optimizations).
+
+10.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \adc_clkgen_with_edgedetect..
+
+10.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module adc_clkgen_with_edgedetect.
+
+10.9. Finished OPT passes. (There is nothing left to do.)
+
+11. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \adc_clkgen_with_edgedetect..
+Removed 0 unused cells and 62 unused wires.
+<suppressed ~62 debug messages>
+
+12. Printing statistics.
+
+=== adc_clkgen_with_edgedetect ===
+
+   Number of wires:                112
+   Number of wire bits:            302
+   Number of public wires:         112
+   Number of public wire bits:     302
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                273
+     sky130_fd_sc_hd__and2_1        21
+     sky130_fd_sc_hd__and2b_1       21
+     sky130_fd_sc_hd__buf_1          3
+     sky130_fd_sc_hd__buf_4         10
+     sky130_fd_sc_hd__dlymetal6s6s_1     16
+     sky130_fd_sc_hd__inv_2         22
+     sky130_fd_sc_hd__mux2_1        21
+     sky130_fd_sc_hd__nor2b_1        2
+     sky130_fd_sc_hd__or2_1          1
+     sky130_mm_sc_hd_dlyPoly5ns    156
+
+mapping tbuf
+
+13. Executing TECHMAP pass (map to technology primitives).
+
+13.1. Executing Verilog-2005 frontend: /foss/pdk/sky130A/libs.tech/openlane/sky130_fd_sc_hd/tribuff_map.v
+Parsing Verilog input from `/foss/pdk/sky130A/libs.tech/openlane/sky130_fd_sc_hd/tribuff_map.v' to AST representation.
+Generating RTLIL representation for module `\$_TBUF_'.
+Successfully finished Verilog frontend.
+
+13.2. Continuing TECHMAP pass.
+No more expansions possible.
+<suppressed ~3 debug messages>
+
+14. Executing SIMPLEMAP pass (map simple cells to gate primitives).
+
+15. Executing TECHMAP pass (map to technology primitives).
+
+15.1. Executing Verilog-2005 frontend: /foss/pdk/sky130A/libs.tech/openlane/sky130_fd_sc_hd/latch_map.v
+Parsing Verilog input from `/foss/pdk/sky130A/libs.tech/openlane/sky130_fd_sc_hd/latch_map.v' to AST representation.
+Generating RTLIL representation for module `\$_DLATCH_P_'.
+Generating RTLIL representation for module `\$_DLATCH_N_'.
+Successfully finished Verilog frontend.
+
+15.2. Continuing TECHMAP pass.
+No more expansions possible.
+<suppressed ~4 debug messages>
+
+16. Executing SIMPLEMAP pass (map simple cells to gate primitives).
+
+17. Executing DFFLIBMAP pass (mapping DFF cells to sequential cells from liberty file).
+  cell sky130_fd_sc_hd__dfxtp_2 (noninv, pins=3, area=21.27) is a direct match for cell type $_DFF_P_.
+  cell sky130_fd_sc_hd__dfrtp_2 (noninv, pins=4, area=26.28) is a direct match for cell type $_DFF_PN0_.
+  cell sky130_fd_sc_hd__dfstp_2 (noninv, pins=4, area=26.28) is a direct match for cell type $_DFF_PN1_.
+  cell sky130_fd_sc_hd__dfbbn_2 (noninv, pins=6, area=35.03) is a direct match for cell type $_DFFSR_NNN_.
+  final dff cell mappings:
+    unmapped dff cell: $_DFF_N_
+    \sky130_fd_sc_hd__dfxtp_2 _DFF_P_ (.CLK( C), .D( D), .Q( Q));
+    unmapped dff cell: $_DFF_NN0_
+    unmapped dff cell: $_DFF_NN1_
+    unmapped dff cell: $_DFF_NP0_
+    unmapped dff cell: $_DFF_NP1_
+    \sky130_fd_sc_hd__dfrtp_2 _DFF_PN0_ (.CLK( C), .D( D), .Q( Q), .RESET_B( R));
+    \sky130_fd_sc_hd__dfstp_2 _DFF_PN1_ (.CLK( C), .D( D), .Q( Q), .SET_B( R));
+    unmapped dff cell: $_DFF_PP0_
+    unmapped dff cell: $_DFF_PP1_
+    \sky130_fd_sc_hd__dfbbn_2 _DFFSR_NNN_ (.CLK_N( C), .D( D), .Q( Q), .Q_N(~Q), .RESET_B( R), .SET_B( S));
+    unmapped dff cell: $_DFFSR_NNP_
+    unmapped dff cell: $_DFFSR_NPN_
+    unmapped dff cell: $_DFFSR_NPP_
+    unmapped dff cell: $_DFFSR_PNN_
+    unmapped dff cell: $_DFFSR_PNP_
+    unmapped dff cell: $_DFFSR_PPN_
+    unmapped dff cell: $_DFFSR_PPP_
+
+17.1. Executing DFFLEGALIZE pass (convert FFs to types supported by the target).
+Mapping DFF cells in module `\adc_clkgen_with_edgedetect':
+
+18. Printing statistics.
+
+=== adc_clkgen_with_edgedetect ===
+
+   Number of wires:                112
+   Number of wire bits:            302
+   Number of public wires:         112
+   Number of public wire bits:     302
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                273
+     sky130_fd_sc_hd__and2_1        21
+     sky130_fd_sc_hd__and2b_1       21
+     sky130_fd_sc_hd__buf_1          3
+     sky130_fd_sc_hd__buf_4         10
+     sky130_fd_sc_hd__dlymetal6s6s_1     16
+     sky130_fd_sc_hd__inv_2         22
+     sky130_fd_sc_hd__mux2_1        21
+     sky130_fd_sc_hd__nor2b_1        2
+     sky130_fd_sc_hd__or2_1          1
+     sky130_mm_sc_hd_dlyPoly5ns    156
+
+[INFO]: USING STRATEGY DELAY 4
+
+19. Executing ABC pass (technology mapping using ABC).
+
+19.1. Extracting gate netlist of module `\adc_clkgen_with_edgedetect' to `/tmp/yosys-abc-LlehUV/input.blif'..
+Extracted 0 gates and 0 wires to a netlist network with 0 inputs and 0 outputs.
+Don't call ABC as there is nothing to map.
+Removing temp directory.
+
+20. Executing SETUNDEF pass (replace undef values with defined constants).
+
+21. Executing HILOMAP pass (mapping to constant drivers).
+
+22. Executing SPLITNETS pass (splitting up multi-bit signals).
+
+23. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \adc_clkgen_with_edgedetect..
+
+24. Executing INSBUF pass (insert buffer cells for connected wires).
+
+25. Executing CHECK pass (checking for obvious problems).
+Checking module adc_clkgen_with_edgedetect...
+Found and reported 0 problems.
+
+26. Printing statistics.
+
+=== adc_clkgen_with_edgedetect ===
+
+   Number of wires:                285
+   Number of wire bits:            302
+   Number of public wires:         285
+   Number of public wire bits:     302
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                273
+     sky130_fd_sc_hd__and2_1        21
+     sky130_fd_sc_hd__and2b_1       21
+     sky130_fd_sc_hd__buf_1          3
+     sky130_fd_sc_hd__buf_4         10
+     sky130_fd_sc_hd__dlymetal6s6s_1     16
+     sky130_fd_sc_hd__inv_2         22
+     sky130_fd_sc_hd__mux2_1        21
+     sky130_fd_sc_hd__nor2b_1        2
+     sky130_fd_sc_hd__or2_1          1
+     sky130_mm_sc_hd_dlyPoly5ns    156
+
+   Area for cell type \sky130_fd_sc_hd__and2_1 is unknown!
+   Area for cell type \sky130_fd_sc_hd__and2b_1 is unknown!
+   Area for cell type \sky130_fd_sc_hd__dlymetal6s6s_1 is unknown!
+   Area for cell type \sky130_fd_sc_hd__nor2b_1 is unknown!
+   Area for cell type \sky130_fd_sc_hd__or2_1 is unknown!
+   Area for cell type \sky130_mm_sc_hd_dlyPoly5ns is unknown!
+
+   Chip area for module '\adc_clkgen_with_edgedetect': 405.388800
+
+27. Executing Verilog backend.
+
+27.1. Executing BMUXMAP pass.
+
+27.2. Executing DEMUXMAP pass.
+Dumping module `\adc_clkgen_with_edgedetect'.
+
+Warnings: 219 unique messages, 417 total
+End of script. Logfile hash: 21b3f416f9, CPU: user 0.39s system 0.02s, MEM: 40.51 MB peak
+Yosys 0.20+70 (git sha1 6e907acf8, gcc 11.2.1 -fPIC -Os)
+Time spent: 30% 4x read_liberty (0 sec), 12% 4x stat (0 sec), ...

@@ -16,7 +16,7 @@
 
 //***************************************
 // Note: use RSZ_DONT_TOUCH_RX on 
-// inn, inp, ctop_matrix
+// inp_analog, inn_analog, ctop_pmatrix_analog, ctop_nmatrix_analog
 // Reason -> no buffers on analog nets
 //***************************************
 
@@ -108,7 +108,7 @@ adc_clkgen_with_edgedetect cgen (
    .sample_p_out(sample_pmatrix_cgen),
    .sample_n_out(sample_nmatrix_cgen),
    .nsample_p_out(sample_pmatrix_cgen_n),
-   .nsample_n_out(sample_nmatrix_cgen_n))
+   .nsample_n_out(sample_nmatrix_cgen_n)
    );
 
 wire clk_dig_cgen;    
@@ -120,14 +120,15 @@ wire sample_nmatrix_cgen, sample_nmatrix_cgen_n;
 //      Matrix P-side
 //      **** HARDENED MACRO ****
 //*******************************************
-adc_array_matrix_12bit_p pmat (
+(*keep*)
+adc_array_matrix_12bit pmat (
    .sample(sample_pmatrix_cgen),
-   .sample_n(sample_pmatrix_cgen_n);
-   .row_n(pmatrix_row_core_n);
-   .rowon_n(pmatrix_rowon_core_n);
-   .col_n(pmatrix_col_core_n);
-   .en_bit_n(pmatrix_bincap_core_n);
-   .en_C0_n(pmatrix_c0_core_n);
+   .sample_n(sample_pmatrix_cgen_n),
+   .row_n(pmatrix_row_core_n),
+   .rowon_n(pmatrix_rowon_core_n),
+   .col_n(pmatrix_col_core_n),
+   .en_bit_n(pmatrix_bincap_core_n),
+   .en_C0_n(pmatrix_c0_core_n),
    .sw(sample_switch_core), 
    .sw_n(sample_switch_core_n), 
    .analog_in(inp_analog), 
@@ -139,14 +140,15 @@ wire ctop_pmatrix_analog;
 //      Matrix N-side
 //      **** HARDENED MACRO ****
 //*******************************************
-adc_array_matrix_12bit_p nmat (
+(*keep*)
+adc_array_matrix_12bit nmat (
    .sample(sample_nmatrix_cgen),
-   .sample_n(sample_nmatrix_cgen_n);
-   .row_n(nmatrix_row_core_n);
-   .rowon_n(nmatrix_rowon_core_n);
-   .col_n(nmatrix_col_core_n);
-   .en_bit_n(nmatrix_bincap_core_n);
-   .en_C0_n(nmatrix_c0_core_n);
+   .sample_n(sample_nmatrix_cgen_n),
+   .row_n(nmatrix_row_core_n),
+   .rowon_n(nmatrix_rowon_core_n),
+   .col_n(nmatrix_col_core_n),
+   .en_bit_n(nmatrix_bincap_core_n),
+   .en_C0_n(nmatrix_c0_core_n),
    .sw(sample_switch_core), 
    .sw_n(sample_switch_core_n), 
    .analog_in(inn_analog), 
@@ -158,6 +160,7 @@ wire ctop_nmatrix_analog;
 //      Comparator latch
 //      **** HARDENED MACRO ****
 //*******************************************
+(*keep*)
 adc_comp_latch comp (
    .clk(clk_comp_cgen),
    .inp(ctop_pmatrix_analog),
@@ -175,9 +178,12 @@ adc_comp_latch comp (
 //      VCM generator
 //      **** HARDENED MACRO ****
 //*******************************************
+(*keep*)
 adc_vcm_generator vcm (
-   .clk(clk_vcm)
+   .clk(clk_vcm),
+   .vcm(_linting_connect_manually)
 );
+wire _linting_connect_manually;
 
 endmodule
 
@@ -187,7 +193,7 @@ endmodule
 //      MACRO BLACKBOX DEFINITIONS
 //*******************************************
 (* Blackbox *)
-module adc_array_matrix_12bit_p (sample,sample_n,row_n,rowon_n,col_n,en_bit_n,en_C0,n,sw,sw_n,analog_in,ctop);
+module adc_array_matrix_12bit (sample,sample_n,row_n,rowon_n,col_n,en_bit_n,en_C0_n,sw,sw_n,analog_in,ctop);
    input sample,sample_n;
    input [15:0] row_n;
    input [15:0] rowon_n;
@@ -195,28 +201,6 @@ module adc_array_matrix_12bit_p (sample,sample_n,row_n,rowon_n,col_n,en_bit_n,en
    input [2:0] en_bit_n;
    input en_C0_n;
    input sw, sw_n, analog_in,ctop;
-endmodule
-
-(* Blackbox *)
-module adc_array_matrix_12bit_n (sample,sample_n,row_n,rowon_n,col_n,en_bit_n,en_C0,n,sw,sw_n,analog_in,ctop);
-   input wire sample,sample_n;
-   input wire [15:0] row_n;
-   input wire [15:0] rowon_n;
-   input wire [31:0] col_n;
-   input wire [2:0] en_bit_n;
-   input wire en_C0_n;
-   input wire sw, sw_n, analog_in,ctop;
-endmodule
-
-(* Blackbox *)
-module adc_clkgen_with_edgedetect (sample,sample_n,row_n,rowon_n,col_n,en_bit_n,en_C0_n,sw,sw_n,analog_in,ctop);
-   input wire sample,sample_n;
-   input wire [15:0] row_n;
-   input wire [15:0] rowon_n;
-   input wire [31:0] col_n;
-   input wire [2:0] en_bit_n;
-   input wire en_C0_n;
-   input wire sw, sw_n, analog_in,ctop;
 endmodule
 
 (* Blackbox *)
@@ -249,6 +233,7 @@ module adc_comp_latch(clk,inp,inn,comp_trig,latch_qn,latch_q);
 endmodule
 
 (* Blackbox *)
-module adc_vcm_generator(clk);
+module adc_vcm_generator(clk,vcm);
     input wire  clk;
+    output wire  vcm;
 endmodule

@@ -1,0 +1,48 @@
+Fri Oct 28 16:30:28 UTC 2022 - Executing "openroad -python /foss/tools/openlane/2022.09/scripts/odbpy/lefutil.py get_metal_layers -o /foss/designs/SKY130_SAR-ADC/openlane/adc_clkgen_with_edgedetect/runs/wurscht/tmp/layers.list /foss/pdk/sky130A/libs.ref/sky130_fd_sc_hd/techlef/sky130_fd_sc_hd__nom.tlef"
+
+Fri Oct 28 16:30:28 UTC 2022 - Executing "/foss/tools/openlane/2022.09/scripts/mergeLef.py -o /foss/designs/SKY130_SAR-ADC/openlane/adc_clkgen_with_edgedetect/runs/wurscht/tmp/merged.nom.lef -i /foss/pdk/sky130A/libs.ref/sky130_fd_sc_hd/techlef/sky130_fd_sc_hd__nom.tlef {/foss/pdk/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef /foss/pdk/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_ef_sc_hd.lef} |& tee /dev/null"
+
+Fri Oct 28 16:30:28 UTC 2022 - Executing "/foss/tools/openlane/2022.09/scripts/mergeLef.py -o /foss/designs/SKY130_SAR-ADC/openlane/adc_clkgen_with_edgedetect/runs/wurscht/tmp/merged.nom.lef -i /foss/designs/SKY130_SAR-ADC/openlane/adc_clkgen_with_edgedetect/runs/wurscht/tmp/merged.nom.lef /foss/designs/SKY130_SAR-ADC/openlane/adc_clkgen_with_edgedetect/src/sky130_mm_sc_hd_dlyPoly5ns.lef |& tee /dev/null"
+
+Fri Oct 28 16:30:28 UTC 2022 - Executing "/foss/tools/openlane/2022.09/scripts/mergeLef.py -o /foss/designs/SKY130_SAR-ADC/openlane/adc_clkgen_with_edgedetect/runs/wurscht/tmp/merged.min.lef -i /foss/pdk/sky130A/libs.ref/sky130_fd_sc_hd/techlef/sky130_fd_sc_hd__min.tlef {/foss/pdk/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef /foss/pdk/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_ef_sc_hd.lef} |& tee /dev/null"
+
+Fri Oct 28 16:30:28 UTC 2022 - Executing "/foss/tools/openlane/2022.09/scripts/mergeLef.py -o /foss/designs/SKY130_SAR-ADC/openlane/adc_clkgen_with_edgedetect/runs/wurscht/tmp/merged.min.lef -i /foss/designs/SKY130_SAR-ADC/openlane/adc_clkgen_with_edgedetect/runs/wurscht/tmp/merged.min.lef /foss/designs/SKY130_SAR-ADC/openlane/adc_clkgen_with_edgedetect/src/sky130_mm_sc_hd_dlyPoly5ns.lef |& tee /dev/null"
+
+Fri Oct 28 16:30:28 UTC 2022 - Executing "/foss/tools/openlane/2022.09/scripts/mergeLef.py -o /foss/designs/SKY130_SAR-ADC/openlane/adc_clkgen_with_edgedetect/runs/wurscht/tmp/merged.max.lef -i /foss/pdk/sky130A/libs.ref/sky130_fd_sc_hd/techlef/sky130_fd_sc_hd__max.tlef {/foss/pdk/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef /foss/pdk/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_ef_sc_hd.lef} |& tee /dev/null"
+
+Fri Oct 28 16:30:28 UTC 2022 - Executing "/foss/tools/openlane/2022.09/scripts/mergeLef.py -o /foss/designs/SKY130_SAR-ADC/openlane/adc_clkgen_with_edgedetect/runs/wurscht/tmp/merged.max.lef -i /foss/designs/SKY130_SAR-ADC/openlane/adc_clkgen_with_edgedetect/runs/wurscht/tmp/merged.max.lef /foss/designs/SKY130_SAR-ADC/openlane/adc_clkgen_with_edgedetect/src/sky130_mm_sc_hd_dlyPoly5ns.lef |& tee /dev/null"
+
+Fri Oct 28 16:30:28 UTC 2022 - Executing "openroad -python /foss/tools/openlane/2022.09/scripts/mergeLib.py --output /foss/designs/SKY130_SAR-ADC/openlane/adc_clkgen_with_edgedetect/runs/wurscht/tmp/synthesis/merged.lib --name sky130A_merged /foss/pdk/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib"
+
+Fri Oct 28 16:30:29 UTC 2022 - Executing "openroad -python /foss/tools/openlane/2022.09/scripts/libtrim.py --cell-file /foss/designs/SKY130_SAR-ADC/openlane/adc_clkgen_with_edgedetect/runs/wurscht/tmp/synthesis/trimmed.lib.exclude.list --output /foss/designs/SKY130_SAR-ADC/openlane/adc_clkgen_with_edgedetect/runs/wurscht/tmp/synthesis/trimmed.lib /foss/designs/SKY130_SAR-ADC/openlane/adc_clkgen_with_edgedetect/runs/wurscht/tmp/synthesis/merged.lib"
+
+Fri Oct 28 16:30:29 UTC 2022 - Executing "openroad -python /foss/tools/openlane/2022.09/scripts/new_tracks.py -i /foss/pdk/sky130A/libs.tech/openlane/sky130_fd_sc_hd/tracks.info -o /foss/designs/SKY130_SAR-ADC/openlane/adc_clkgen_with_edgedetect/runs/wurscht/tmp/routing/config.tracks"
+
+Fri Oct 28 16:30:29 UTC 2022 - Executing "echo {openlane d375db931edfb03fc42859d590eb3ec799bc6c9e} > /foss/designs/SKY130_SAR-ADC/openlane/adc_clkgen_with_edgedetect/runs/wurscht/OPENLANE_VERSION"
+
+Fri Oct 28 16:30:29 UTC 2022 - Executing "sed -E {s/^([[:space:]]+)pg_pin(.*)/\1pin\2\n\1    direction : "inout";/g} /foss/pdk/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib > /foss/designs/SKY130_SAR-ADC/openlane/adc_clkgen_with_edgedetect/runs/wurscht/tmp/synthesis/1-sky130_fd_sc_hd__tt_025C_1v80.no_pg.lib"
+
+Fri Oct 28 16:30:29 UTC 2022 - Executing "sed -E {s/^([[:space:]]+)pg_pin(.*)/\1pin\2\n\1    direction : "inout";/g} /foss/designs/SKY130_SAR-ADC/openlane/adc_clkgen_with_edgedetect/runs/wurscht/tmp/synthesis/trimmed.lib > /foss/designs/SKY130_SAR-ADC/openlane/adc_clkgen_with_edgedetect/runs/wurscht/tmp/synthesis/1-trimmed.no_pg.lib"
+
+Fri Oct 28 16:30:29 UTC 2022 - Executing "yosys -c /foss/tools/openlane/2022.09/scripts/yosys/synth.tcl -l /foss/designs/SKY130_SAR-ADC/openlane/adc_clkgen_with_edgedetect/runs/wurscht/logs/synthesis/1-synthesis.log |& tee /dev/null"
+
+Fri Oct 28 16:30:29 UTC 2022 - Executing "sed -i -e {s/\(set ::env(CURRENT_NETLIST)\).*/\1 \/foss\/designs\/SKY130_SAR-ADC\/openlane\/adc_clkgen_with_edgedetect\/runs\/wurscht\/results\/synthesis\/adc_clkgen_with_edgedetect.v/} /foss/designs/SKY130_SAR-ADC/openlane/adc_clkgen_with_edgedetect/runs/wurscht/config.tcl"
+
+Fri Oct 28 16:30:29 UTC 2022 - Executing "sed -i -e {s/\(set ::env(PREV_NETLIST)\).*/\1 0/} /foss/designs/SKY130_SAR-ADC/openlane/adc_clkgen_with_edgedetect/runs/wurscht/config.tcl"
+
+Fri Oct 28 16:30:29 UTC 2022 - Executing "sed -i /defparam/d /foss/designs/SKY130_SAR-ADC/openlane/adc_clkgen_with_edgedetect/runs/wurscht/results/synthesis/adc_clkgen_with_edgedetect.v"
+
+Fri Oct 28 16:30:29 UTC 2022 - Executing "openroad -exit /foss/tools/openlane/2022.09/scripts/openroad/sta.tcl |& tee /dev/null /foss/designs/SKY130_SAR-ADC/openlane/adc_clkgen_with_edgedetect/runs/wurscht/logs/synthesis/2-sta.log"
+
+Fri Oct 28 16:30:30 UTC 2022 - Executing "openroad -exit /foss/tools/openlane/2022.09/scripts/openroad/floorplan.tcl |& tee /dev/null /foss/designs/SKY130_SAR-ADC/openlane/adc_clkgen_with_edgedetect/runs/wurscht/logs/floorplan/3-initial_fp.log"
+
+Fri Oct 28 16:30:30 UTC 2022 - Executing "openroad -python /foss/tools/openlane/2022.09/scripts/odbpy/defutil.py extract_core_dims --output-data /foss/designs/SKY130_SAR-ADC/openlane/adc_clkgen_with_edgedetect/runs/wurscht/tmp/dimensions.txt --input-lef /foss/designs/SKY130_SAR-ADC/openlane/adc_clkgen_with_edgedetect/runs/wurscht/tmp/merged.nom.lef /foss/designs/SKY130_SAR-ADC/openlane/adc_clkgen_with_edgedetect/runs/wurscht/tmp/floorplan/3-initial_fp.def"
+
+Fri Oct 28 16:30:30 UTC 2022 - Executing "openroad -python /foss/tools/openlane/2022.09/scripts/odbpy/io_place.py --output /foss/designs/SKY130_SAR-ADC/openlane/adc_clkgen_with_edgedetect/runs/wurscht/tmp/floorplan/4-io.def --input-lef /foss/designs/SKY130_SAR-ADC/openlane/adc_clkgen_with_edgedetect/runs/wurscht/tmp/merged.nom.lef --config /foss/designs/SKY130_SAR-ADC/openlane/adc_clkgen_with_edgedetect/pin_order.cfg --hor-layer met3 --ver-layer met2 --ver-width-mult 2 --hor-width-mult 2 --hor-extension -1 --ver-extension -1 --length 4 --unmatched-error /foss/designs/SKY130_SAR-ADC/openlane/adc_clkgen_with_edgedetect/runs/wurscht/tmp/floorplan/3-initial_fp.def |& tee /foss/designs/SKY130_SAR-ADC/openlane/adc_clkgen_with_edgedetect/runs/wurscht/logs/floorplan/4-place_io.log /dev/null"
+
+Fri Oct 28 16:30:31 UTC 2022 - Executing "openroad -exit /foss/tools/openlane/2022.09/scripts/openroad/gpl.tcl |& tee /dev/null /foss/designs/SKY130_SAR-ADC/openlane/adc_clkgen_with_edgedetect/runs/wurscht/logs/placement/5-global.log"
+
+Fri Oct 28 16:30:31 UTC 2022 - Executing "openroad -exit /foss/tools/openlane/2022.09/scripts/openroad/basic_mp.tcl |& tee /dev/null /foss/designs/SKY130_SAR-ADC/openlane/adc_clkgen_with_edgedetect/runs/wurscht/logs/placement/6-basic_mp.log"
+
+Fri Oct 28 16:30:32 UTC 2022 - Executing "openroad -python /foss/tools/openlane/2022.09/scripts/generate_reports.py -d /foss/designs/SKY130_SAR-ADC/openlane/adc_clkgen_with_edgedetect --design_name adc_clkgen_with_edgedetect --tag wurscht --output_file /foss/designs/SKY130_SAR-ADC/openlane/adc_clkgen_with_edgedetect/runs/wurscht/reports/metrics.csv --man_report /foss/designs/SKY130_SAR-ADC/openlane/adc_clkgen_with_edgedetect/runs/wurscht/reports/manufacturability.rpt --run_path /foss/designs/SKY130_SAR-ADC/openlane/adc_clkgen_with_edgedetect/runs/wurscht"
+
