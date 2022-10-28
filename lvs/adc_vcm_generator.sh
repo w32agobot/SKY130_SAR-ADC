@@ -1,1 +1,1 @@
-netgen -batch lvs "../mag/spice/adc_vcm_generator.spice adc_vcm_generator" "../xschem/spice/adc_vcm_generator.spice adc_vcm_generator" $PDKPATH/libs.tech/netgen/sky130A_setup.tcl adc_vcm_generator.out
+netgen -batch lvs "../spice/adc_vcm_generator.mag.lvs.spice adc_vcm_generator" "../spice/adc_vcm_generator.sch.spice adc_vcm_generator" $PDKPATH/libs.tech/netgen/sky130A_setup.tcl adc_vcm_generator.out

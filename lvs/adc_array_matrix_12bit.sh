@@ -1,1 +1,1 @@
-netgen -batch lvs   "../mag/spice/adc_array_matrix_12bit.spice     adc_array_matrix_12bit"                 "../xschem/spice/adc_array_matrix_12bit.spice    adc_array_matrix_12bit"    $PDKPATH/libs.tech/netgen/sky130A_setup.tcl adc_array_matrix_12bit.out
+netgen -batch lvs   "../spice/adc_array_matrix_12bit.mag.lvs.spice adc_array_matrix_12bit" "../spice/adc_array_matrix_12bit.sch.spice adc_array_matrix_12bit" $PDKPATH/libs.tech/netgen/sky130A_setup.tcl adc_array_matrix_12bit.out
