@@ -1,11 +1,11 @@
-* NGSPICE file created from adc_vcm_gen.ext - technology: sky130A
+* NGSPICE file created from adc_vcm_generator.ext - technology: sky130A
 
 .subckt sky130_fd_sc_hd__inv_1 A VGND VPWR Y VNB VPB
 X0 Y A VGND VNB sky130_fd_pr__nfet_01v8 ad=1.69e+11p pd=1.82e+06u as=1.69e+11p ps=1.82e+06u w=650000u l=150000u
 X1 Y A VPWR VPB sky130_fd_pr__pfet_01v8_hvt ad=2.6e+11p pd=2.52e+06u as=2.6e+11p ps=2.52e+06u w=1e+06u l=150000u
 .ends
 
-.subckt sky130_fd_pr__pfet_01v8_K25L97 a_n29_0# a_129_0# a_n129_n26# w_n224_n36# a_n187_0#
+.subckt pfet_01v8_w500_l500_nf2 a_n29_0# a_129_0# a_n129_n26# w_n224_n36# a_n187_0#
 + a_29_n26#
 X0 a_129_0# a_29_n26# a_n29_0# w_n224_n36# sky130_fd_pr__pfet_01v8 ad=1.45e+11p pd=1.58e+06u as=1.45e+11p ps=1.58e+06u w=500000u l=500000u
 X1 a_n29_0# a_n129_n26# a_n187_0# w_n224_n36# sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=1.45e+11p ps=1.58e+06u w=500000u l=500000u
@@ -39,15 +39,15 @@ X10 a_240_47# a_63_47# VPWR VPB sky130_fd_pr__pfet_01v8_hvt ad=2.6e+11p pd=2.52e
 X11 X a_629_47# VPWR VPB sky130_fd_pr__pfet_01v8_hvt ad=2.6e+11p pd=2.52e+06u as=0p ps=0u w=1e+06u l=150000u
 .ends
 
-.subckt sky130_fd_pr__nfet_01v8_8PFHMD a_n129_n76# a_n29_n50# a_n187_n50# a_29_n76#
-+ a_129_n50# VSUBS
-X0 a_129_n50# a_29_n76# a_n29_n50# VSUBS sky130_fd_pr__nfet_01v8 ad=1.45e+11p pd=1.58e+06u as=1.45e+11p ps=1.58e+06u w=500000u l=500000u
-X1 a_n29_n50# a_n129_n76# a_n187_n50# VSUBS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=1.45e+11p ps=1.58e+06u w=500000u l=500000u
-.ends
-
 .subckt adc_noise_decoup_cell1 nmoscap_top nmoscap_bot mimcap_top mimcap_bot pwell
 X0 mimcap_top mimcap_bot sky130_fd_pr__cap_mim_m3_1 l=1.72e+07u w=1.72e+07u
 X1 nmoscap_bot nmoscap_top nmoscap_bot pwell sky130_fd_pr__nfet_01v8 ad=2.296e+13p pd=6.84e+07u as=0p ps=0u w=1.64e+07u l=1.6e+07u
+.ends
+
+.subckt nfet_01v8_w500_l500_nf2 a_n129_n76# a_n29_n50# a_n187_n50# a_29_n76# a_129_n50#
++ VSUBS
+X0 a_129_n50# a_29_n76# a_n29_n50# VSUBS sky130_fd_pr__nfet_01v8 ad=1.45e+11p pd=1.58e+06u as=1.45e+11p ps=1.58e+06u w=500000u l=500000u
+X1 a_n29_n50# a_n129_n76# a_n187_n50# VSUBS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=1.45e+11p ps=1.58e+06u w=500000u l=500000u
 .ends
 
 .subckt sky130_fd_sc_hd__nand2_1 A B VGND VPWR Y VNB VPB
@@ -59,15 +59,15 @@ X3 Y B VPWR VPB sky130_fd_pr__pfet_01v8_hvt ad=0p pd=0u as=0p ps=0u w=1e+06u l=1
 
 .subckt adc_vcm_generator VDD VSS clk vcm
 Xsky130_fd_sc_hd__inv_1_4 clk VSS VDD sky130_fd_sc_hd__inv_1_4/Y VSS VDD sky130_fd_sc_hd__inv_1
-Xsky130_fd_pr__pfet_01v8_K25L97_0 mimtop2 vcm phi1_n VDD vcm phi1_n sky130_fd_pr__pfet_01v8_K25L97
-Xsky130_fd_pr__pfet_01v8_K25L97_1 mimtop1 vcm phi1_n VDD vcm phi1_n sky130_fd_pr__pfet_01v8_K25L97
-Xsky130_fd_pr__pfet_01v8_K25L97_2 mimtop2 adc_noise_decoup_cell1_3[6|5]/mimcap_bot
-+ phi2_n VDD adc_noise_decoup_cell1_3[6|5]/mimcap_bot phi2_n sky130_fd_pr__pfet_01v8_K25L97
-Xsky130_fd_pr__pfet_01v8_K25L97_3 VDD mimtop1 phi2_n VDD mimtop1 phi2_n sky130_fd_pr__pfet_01v8_K25L97
-Xsky130_fd_pr__pfet_01v8_K25L97_4 adc_noise_decoup_cell1_3[6|5]/mimcap_bot VSS phi1_n
-+ VDD VSS phi1_n sky130_fd_pr__pfet_01v8_K25L97
+Xpfet_01v8_w500_l500_nf2_0 mimtop2 vcm phi1_n VDD vcm phi1_n pfet_01v8_w500_l500_nf2
+Xpfet_01v8_w500_l500_nf2_1 mimtop1 vcm phi1_n VDD vcm phi1_n pfet_01v8_w500_l500_nf2
 Xsky130_fd_sc_hd__buf_4_0 sky130_fd_sc_hd__inv_1_2/A VSS VDD phi1 VSS VDD sky130_fd_sc_hd__buf_4
+Xpfet_01v8_w500_l500_nf2_2 mimtop2 adc_noise_decoup_cell1_3[6|5]/mimcap_bot phi2_n
++ VDD adc_noise_decoup_cell1_3[6|5]/mimcap_bot phi2_n pfet_01v8_w500_l500_nf2
 Xsky130_fd_sc_hd__buf_4_1 sky130_fd_sc_hd__inv_1_2/Y VSS VDD phi1_n VSS VDD sky130_fd_sc_hd__buf_4
+Xpfet_01v8_w500_l500_nf2_3 VDD mimtop1 phi2_n VDD mimtop1 phi2_n pfet_01v8_w500_l500_nf2
+Xpfet_01v8_w500_l500_nf2_4 adc_noise_decoup_cell1_3[6|5]/mimcap_bot VSS phi1_n VDD
++ VSS phi1_n pfet_01v8_w500_l500_nf2
 Xsky130_fd_sc_hd__buf_4_2 sky130_fd_sc_hd__inv_1_3/A VSS VDD phi2 VSS VDD sky130_fd_sc_hd__buf_4
 Xsky130_fd_sc_hd__buf_4_3 sky130_fd_sc_hd__inv_1_3/Y VSS VDD phi2_n VSS VDD sky130_fd_sc_hd__buf_4
 Xsky130_fd_sc_hd__dlymetal6s6s_1_0 sky130_fd_sc_hd__nand2_1_0/Y VSS VDD sky130_fd_sc_hd__dlymetal6s6s_1_2/A
@@ -78,12 +78,10 @@ Xsky130_fd_sc_hd__dlymetal6s6s_1_2 sky130_fd_sc_hd__dlymetal6s6s_1_2/A VSS VDD s
 + VSS VDD sky130_fd_sc_hd__dlymetal6s6s_1
 Xsky130_fd_sc_hd__dlymetal6s6s_1_3 sky130_fd_sc_hd__dlymetal6s6s_1_3/A VSS VDD sky130_fd_sc_hd__inv_1_0/A
 + VSS VDD sky130_fd_sc_hd__dlymetal6s6s_1
-Xsky130_fd_pr__nfet_01v8_8PFHMD_0 phi1 mimtop2 vcm phi1 vcm VSS sky130_fd_pr__nfet_01v8_8PFHMD
 Xsky130_fd_sc_hd__dlymetal6s6s_1_4 sky130_fd_sc_hd__dlymetal6s6s_1_4/A VSS VDD sky130_fd_sc_hd__dlymetal6s6s_1_5/A
 + VSS VDD sky130_fd_sc_hd__dlymetal6s6s_1
 Xsky130_fd_sc_hd__dlymetal6s6s_1_5 sky130_fd_sc_hd__dlymetal6s6s_1_5/A VSS VDD sky130_fd_sc_hd__inv_1_1/A
 + VSS VDD sky130_fd_sc_hd__dlymetal6s6s_1
-Xsky130_fd_pr__nfet_01v8_8PFHMD_1 phi1 mimtop1 vcm phi1 vcm VSS sky130_fd_pr__nfet_01v8_8PFHMD
 Xadc_noise_decoup_cell1_0[0] VDD VSS VDD VSS VSS adc_noise_decoup_cell1
 Xadc_noise_decoup_cell1_0[1] VDD VSS VDD VSS VSS adc_noise_decoup_cell1
 Xadc_noise_decoup_cell1_0[2] VDD VSS VDD VSS VSS adc_noise_decoup_cell1
@@ -130,8 +128,6 @@ Xadc_noise_decoup_cell1_1[3|5] vcm VSS mimtop2 VSS VSS adc_noise_decoup_cell1
 Xadc_noise_decoup_cell1_1[4|5] vcm VSS mimtop2 VSS VSS adc_noise_decoup_cell1
 Xadc_noise_decoup_cell1_1[5|5] vcm VSS mimtop2 VSS VSS adc_noise_decoup_cell1
 Xadc_noise_decoup_cell1_1[6|5] vcm VSS mimtop2 VSS VSS adc_noise_decoup_cell1
-Xsky130_fd_pr__nfet_01v8_8PFHMD_2 phi2 mimtop2 adc_noise_decoup_cell1_3[6|5]/mimcap_bot
-+ phi2 adc_noise_decoup_cell1_3[6|5]/mimcap_bot VSS sky130_fd_pr__nfet_01v8_8PFHMD
 Xadc_noise_decoup_cell1_3[0|0] vcm VSS mimtop1 adc_noise_decoup_cell1_3[6|5]/mimcap_bot
 + VSS adc_noise_decoup_cell1
 Xadc_noise_decoup_cell1_3[1|0] vcm VSS mimtop1 adc_noise_decoup_cell1_3[6|5]/mimcap_bot
@@ -216,13 +212,17 @@ Xadc_noise_decoup_cell1_3[5|5] vcm VSS mimtop1 adc_noise_decoup_cell1_3[6|5]/mim
 + VSS adc_noise_decoup_cell1
 Xadc_noise_decoup_cell1_3[6|5] vcm VSS mimtop1 adc_noise_decoup_cell1_3[6|5]/mimcap_bot
 + VSS adc_noise_decoup_cell1
-Xsky130_fd_pr__nfet_01v8_8PFHMD_3 phi2 VDD mimtop1 phi2 mimtop1 VSS sky130_fd_pr__nfet_01v8_8PFHMD
-Xsky130_fd_pr__nfet_01v8_8PFHMD_4 phi1 adc_noise_decoup_cell1_3[6|5]/mimcap_bot VSS
-+ phi1 VSS VSS sky130_fd_pr__nfet_01v8_8PFHMD
+Xnfet_01v8_w500_l500_nf2_0 phi1 mimtop2 vcm phi1 vcm VSS nfet_01v8_w500_l500_nf2
+Xnfet_01v8_w500_l500_nf2_1 phi1 mimtop1 vcm phi1 vcm VSS nfet_01v8_w500_l500_nf2
 Xsky130_fd_sc_hd__nand2_1_0 clk sky130_fd_sc_hd__inv_1_3/Y VSS VDD sky130_fd_sc_hd__nand2_1_0/Y
 + VSS VDD sky130_fd_sc_hd__nand2_1
+Xnfet_01v8_w500_l500_nf2_2 phi2 mimtop2 adc_noise_decoup_cell1_3[6|5]/mimcap_bot phi2
++ adc_noise_decoup_cell1_3[6|5]/mimcap_bot VSS nfet_01v8_w500_l500_nf2
+Xnfet_01v8_w500_l500_nf2_3 phi2 VDD mimtop1 phi2 mimtop1 VSS nfet_01v8_w500_l500_nf2
 Xsky130_fd_sc_hd__nand2_1_1 sky130_fd_sc_hd__inv_1_2/Y sky130_fd_sc_hd__inv_1_4/Y
 + VSS VDD sky130_fd_sc_hd__nand2_1_1/Y VSS VDD sky130_fd_sc_hd__nand2_1
+Xnfet_01v8_w500_l500_nf2_4 phi1 adc_noise_decoup_cell1_3[6|5]/mimcap_bot VSS phi1
++ VSS VSS nfet_01v8_w500_l500_nf2
 Xsky130_fd_sc_hd__inv_1_0 sky130_fd_sc_hd__inv_1_0/A VSS VDD sky130_fd_sc_hd__inv_1_2/A
 + VSS VDD sky130_fd_sc_hd__inv_1
 Xsky130_fd_sc_hd__inv_1_1 sky130_fd_sc_hd__inv_1_1/A VSS VDD sky130_fd_sc_hd__inv_1_3/A
