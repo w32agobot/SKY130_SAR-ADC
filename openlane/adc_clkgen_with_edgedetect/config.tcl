@@ -20,7 +20,7 @@ set ::env(DESIGN_NAME) adc_clkgen_with_edgedetect
 # Floorplanning
  set ::env(FP_SIZING) "absolute"
 # set ::env(DIE_AREA) "0 0 184 84"
- set ::env(DIE_AREA) "0 0 160 64"
+ set ::env(DIE_AREA) "0 0 171 60"
  set ::env(BOTTOM_MARGIN_MULT) 1
  set ::env(TOP_MARGIN_MULT) 1
  set ::env(LEFT_MARGIN_MULT) 12
