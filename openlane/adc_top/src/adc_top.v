@@ -182,9 +182,21 @@ adc_vcm_generator vcm (
    .clk(clk_vcm)
 );
 
+// OBS workaround to prevent PDN in this area
+(*keep*)
+emptybox_50_35 emptybox1();
+(*keep*)
+emptybox_50_35 emptybox2();
+(*keep*)
+emptybox_10_30 emptybox3();
+
 endmodule
 
-
+(* Blackbox *)
+module emptybox_50_35();
+endmodule
+module emptybox_10_30();
+endmodule
 
 //*******************************************
 //      MACRO BLACKBOX DEFINITIONS
