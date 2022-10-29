@@ -1,14 +1,14 @@
 ** sch_path: /foss/designs/SKY130_SAR-ADC/xschem/adc_array_matrix_12bit.sch
-.subckt adc_array_matrix_12bit VDD VSS vcm sample sample_n row_n[15] row_n[14] row_n[13] row_n[12]
-+ row_n[11] row_n[10] row_n[9] row_n[8] row_n[7] row_n[6] row_n[5] row_n[4] row_n[3] row_n[2] row_n[1] row_n[0]
-+ rowon_n[15] rowon_n[14] rowon_n[13] rowon_n[12] rowon_n[11] rowon_n[10] rowon_n[9] rowon_n[8] rowon_n[7]
-+ rowon_n[6] rowon_n[5] rowon_n[4] rowon_n[3] rowon_n[2] rowon_n[1] rowon_n[0] col_n[31] col_n[30] col_n[29]
-+ col_n[28] col_n[27] col_n[26] col_n[25] col_n[24] col_n[23] col_n[22] col_n[21] col_n[20] col_n[19] col_n[18]
-+ col_n[17] col_n[16] col_n[15] col_n[14] col_n[13] col_n[12] col_n[11] col_n[10] col_n[9] col_n[8] col_n[7]
-+ col_n[6] col_n[5] col_n[4] col_n[3] col_n[2] col_n[1] col_n[0] en_bit_n[2] en_bit_n[1] en_bit_n[0] en_C0_n
-+ sw sw_n analog_in ctop
-*.PININFO VDD:B VSS:B vcm:B sample:I sample_n:I row_n[15:0]:I rowon_n[15:0]:I col_n[31:0]:I
-*+ en_bit_n[2:0]:I en_C0_n:I sw:I sw_n:I analog_in:I ctop:B
+.subckt adc_array_matrix_12bit VPWR VGND vcm sample sample_n row_n[0] row_n[1] row_n[2] row_n[3]
++ row_n[4] row_n[5] row_n[6] row_n[7] row_n[8] row_n[9] row_n[10] row_n[11] row_n[12] row_n[13] row_n[14]
++ row_n[15] rowon_n[0] rowon_n[1] rowon_n[2] rowon_n[3] rowon_n[4] rowon_n[5] rowon_n[6] rowon_n[7] rowon_n[8]
++ rowon_n[9] rowon_n[10] rowon_n[11] rowon_n[12] rowon_n[13] rowon_n[14] rowon_n[15] col_n[0] col_n[1] col_n[2]
++ col_n[3] col_n[4] col_n[5] col_n[6] col_n[7] col_n[8] col_n[9] col_n[10] col_n[11] col_n[12] col_n[13]
++ col_n[14] col_n[15] col_n[16] col_n[17] col_n[18] col_n[19] col_n[20] col_n[21] col_n[22] col_n[23] col_n[24]
++ col_n[25] col_n[26] col_n[27] col_n[28] col_n[29] col_n[30] col_n[31] en_bit_n[0] en_bit_n[1] en_bit_n[2]
++ en_C0_n sw sw_n analog_in ctop
+*.PININFO VPWR:B VGND:B vcm:B sample:I sample_n:I row_n[0:15]:I rowon_n[0:15]:I col_n[0:31]:I
+*+ en_bit_n[0:2]:I en_C0_n:I sw:I sw_n:I analog_in:I ctop:B
 x2 VDD ctop vcm row_n[0] rowon_n[0] net2 net1 VSS col_n[1] adc_array_wafflecap_8_8
 x3 VDD ctop vcm row_n[0] rowon_n[0] net2 net1 VSS col_n[2] adc_array_wafflecap_8_8
 x4 VDD ctop vcm row_n[0] rowon_n[0] net2 net1 VSS col_n[3] adc_array_wafflecap_8_8
@@ -649,6 +649,7 @@ x521 VDD ctop vcm VSS VSS VDD VSS VSS col_n[1] en_C0_n adc_array_wafflecap_8_1
 ** sch_path: /foss/designs/SKY130_SAR-ADC/xschem/adc_array_wafflecap_8_8.sch
 .subckt adc_array_wafflecap_8_8 VDD ctop vcom col_n colon_n sample_n sample VSS row_n
 *.PININFO vcom:B VDD:B ctop:B VSS:B row_n:I col_n:I colon_n:I sample_n:I sample:I
+C1 ctop cbot 4.77f m=1
 x1 VDD row_n cbot col_n colon_n sample_n vcom sample VSS adc_array_circuit_8
 .ends
 
@@ -660,6 +661,7 @@ x1 VDD row_n cbot col_n colon_n sample_n vcom sample VSS adc_array_circuit_8
 + sample_n_o sample_o
 *.PININFO sample_n_i:I sample_i:I vcom:B VDD:B ctop:B VSS:B sample_n_o:O sample_o:O row_n:I col_n:I
 *+ colon_n:I
+C3 ctop vcom 4.77f m=1
 x1 VDD row_n col_n colon_n sample_n_i vcom sample_i VSS sample_n_o sample_o adc_array_circuit_drv
 .ends
 
@@ -678,6 +680,7 @@ x1 VDD row_n cbot col_n colon_n sample_n vcom sample VSS adc_array_circuit_8
 ** sch_path: /foss/designs/SKY130_SAR-ADC/xschem/adc_array_wafflecap_8_4.sch
 .subckt adc_array_wafflecap_8_4 VDD ctop vcom col_n colon_n sample_n sample VSS row_n en_n
 *.PININFO vcom:B VDD:B ctop:B VSS:B en_n:I row_n:I col_n:I colon_n:I sample_n:I sample:I
+C3 ctop cbot 2.384f m=1
 x1 VDD row_n cbot col_n colon_n sample_n vcom sample VSS en_n adc_array_circuit_4
 .ends
 
@@ -687,6 +690,7 @@ x1 VDD row_n cbot col_n colon_n sample_n vcom sample VSS en_n adc_array_circuit_
 ** sch_path: /foss/designs/SKY130_SAR-ADC/xschem/adc_array_wafflecap_8_2.sch
 .subckt adc_array_wafflecap_8_2 VDD ctop vcom col_n colon_n sample_n sample VSS row_n en_n
 *.PININFO vcom:B VDD:B ctop:B VSS:B en_n:I row_n:I col_n:I colon_n:I sample_n:I sample:I
+C3 ctop cbot 1.194f m=1
 x1 VDD row_n cbot col_n colon_n sample_n vcom sample VSS en_n adc_array_circuit_2
 .ends
 
@@ -696,6 +700,7 @@ x1 VDD row_n cbot col_n colon_n sample_n vcom sample VSS en_n adc_array_circuit_
 ** sch_path: /foss/designs/SKY130_SAR-ADC/xschem/adc_array_wafflecap_8_1.sch
 .subckt adc_array_wafflecap_8_1 VDD ctop vcom col_n colon_n sample_n sample VSS row_n en_n
 *.PININFO vcom:B VDD:B ctop:B VSS:B en_n:I row_n:I col_n:I colon_n:I sample_n:I sample:I
+C3 ctop cbot 0.78f m=1
 x1 VDD row_n cbot col_n colon_n sample_n vcom sample VSS en_n adc_array_circuit_1
 .ends
 

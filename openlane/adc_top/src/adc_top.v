@@ -29,7 +29,7 @@ module adc_top(
    input wire [15:0] config_1_in,    
    input wire [15:0] config_2_in,    
    output wire [15:0] result_out,    
-   output wire conversion_finished_out
+   output wire conversion_finished_out 
    );
 
 //Configuration byte 1 mapping   
@@ -37,6 +37,11 @@ module adc_top(
 // config_1_in[5:3] = Oversampling control
 // config_1_in[9:6] = unused
 wire [5:0] delay_edgedetect_w = config_1_in[15:10];
+
+//_linting
+(*keep*)
+wire _linting_unused_input_pins = config_1_in[6] | config_1_in[7] | config_1_in[8] | config_1_in[9];
+
 //Configuration byte 2 mapping
 wire [4:0] delay_1_w = config_2_in[4:0];
 wire [4:0] delay_2_w = config_2_in[9:5];
@@ -182,20 +187,6 @@ adc_vcm_generator vcm (
    .clk(clk_vcm)
 );
 
-// OBS workaround to prevent PDN in this area
-(*keep*)
-emptybox_50_35 emptybox1();
-(*keep*)
-emptybox_50_35 emptybox2();
-(*keep*)
-emptybox_10_30 emptybox3();
-
-endmodule
-
-(* Blackbox *)
-module emptybox_50_35();
-endmodule
-module emptybox_10_30();
 endmodule
 
 //*******************************************

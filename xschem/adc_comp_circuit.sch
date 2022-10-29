@@ -23,21 +23,21 @@ lab=on}
 N 380 -530 380 -480 {
 lab=op}
 N 230 -560 240 -560 {
-lab=VDD}
+lab=VPWR}
 N 230 -600 230 -560 {
-lab=VDD}
+lab=VPWR}
 N 230 -600 240 -600 {
-lab=VDD}
+lab=VPWR}
 N 380 -560 390 -560 {
-lab=VDD}
+lab=VPWR}
 N 390 -600 390 -560 {
-lab=VDD}
+lab=VPWR}
 N 380 -600 390 -600 {
-lab=VDD}
+lab=VPWR}
 N 380 -600 380 -590 {
-lab=VDD}
+lab=VPWR}
 N 240 -600 240 -590 {
-lab=VDD}
+lab=VPWR}
 N 290 -560 340 -560 {
 lab=clk}
 N 240 -450 380 -450 {
@@ -65,13 +65,13 @@ lab=#net1}
 N 140 -200 300 -200 {
 lab=VSS}
 N 140 -640 240 -640 {
-lab=VDD}
+lab=VPWR}
 N 240 -640 240 -600 {
-lab=VDD}
+lab=VPWR}
 N 240 -640 380 -640 {
-lab=VDD}
+lab=VPWR}
 N 380 -640 380 -600 {
-lab=VDD}
+lab=VPWR}
 N 140 -450 200 -450 {
 lab=inp}
 N 140 -400 420 -400 {
@@ -89,33 +89,33 @@ lab=clk}
 N 170 -510 170 -330 {
 lab=clk}
 N 990 -560 1000 -560 {
-lab=VDD}
+lab=VPWR}
 N 990 -600 990 -560 {
-lab=VDD}
+lab=VPWR}
 N 990 -600 1000 -600 {
-lab=VDD}
+lab=VPWR}
 N 1140 -560 1150 -560 {
-lab=VDD}
+lab=VPWR}
 N 1150 -600 1150 -560 {
-lab=VDD}
+lab=VPWR}
 N 1140 -600 1150 -600 {
-lab=VDD}
+lab=VPWR}
 N 1140 -600 1140 -590 {
-lab=VDD}
+lab=VPWR}
 N 1000 -600 1000 -590 {
-lab=VDD}
+lab=VPWR}
 N 140 -640 1000 -640 {
-lab=VDD}
+lab=VPWR}
 N 1000 -640 1000 -600 {
-lab=VDD}
+lab=VPWR}
 N 1000 -640 1140 -640 {
-lab=VDD}
+lab=VPWR}
 N 1140 -640 1140 -600 {
-lab=VDD}
+lab=VPWR}
 N 1000 -450 1140 -450 {
-lab=VDD}
+lab=VPWR}
 N 1070 -640 1070 -450 {
-lab=VDD}
+lab=VPWR}
 N 1140 -530 1140 -480 {
 lab=#net2}
 N 1000 -530 1000 -480 {
@@ -231,11 +231,11 @@ lab=VSS}
 N 1390 -200 1400 -200 {
 lab=VSS}
 N 1350 -630 1350 -490 {
-lab=VDD}
+lab=VPWR}
 N 1350 -640 1350 -630 {
-lab=VDD}
+lab=VPWR}
 N 1140 -640 1350 -640 {
-lab=VDD}
+lab=VPWR}
 N 930 -300 930 -200 {
 lab=VSS}
 N 1220 -300 1220 -200 {
@@ -253,11 +253,11 @@ lab=bp}
 N 1470 -370 1490 -370 {
 lab=outn}
 N 1350 -570 1420 -570 {
-lab=VDD}
+lab=VPWR}
 N 1350 -420 1420 -420 {
-lab=VDD}
+lab=VPWR}
 N 1350 -490 1350 -420 {
-lab=VDD}
+lab=VPWR}
 N 1420 -470 1480 -470 {
 lab=VSS}
 N 1480 -470 1480 -200 {
@@ -311,8 +311,8 @@ lab=VSS}
 N 780 -400 790 -400 {
 lab=VSS}
 C {devices/title.sym} 210 -60 0 0 {name=l1 author="Manuel Moser"}
-C {devices/iopin.sym} 140 -640 0 1 {name=p1 lab=VDD}
-C {devices/iopin.sym} 140 -200 0 1 {name=p2 lab=VSS}
+C {devices/iopin.sym} 140 -640 0 1 {name=p1 lab=VPWR}
+C {devices/iopin.sym} 140 -200 0 1 {name=p2 lab=VGND}
 C {devices/ipin.sym} 140 -510 0 0 {name=p5 lab=clk}
 C {devices/ipin.sym} 140 -250 0 0 {name=p6 lab=nclk}
 C {devices/ipin.sym} 140 -450 0 0 {name=p3 lab=inp}

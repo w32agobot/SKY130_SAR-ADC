@@ -7,7 +7,7 @@ MACRO adc_array_matrix_12bit
   FOREIGN adc_array_matrix_12bit ;
   ORIGIN 0.000 0.000 ;
   SIZE 214.050 BY 120.840 ;
-  PIN VDD
+  PIN VPWR
     DIRECTION INOUT ;
     USE POWER ;
     PORT
@@ -22,10 +22,10 @@ MACRO adc_array_matrix_12bit
       LAYER met4 ;
         RECT 2.850 0.210 4.920 120.830 ;
     END
-  END VDD
-  PIN VSS
+  END VPWR
+  PIN VGND
     DIRECTION INOUT ;
-    USE POWER ;
+    USE GROUND ;
     PORT
       LAYER met4 ;
         RECT 211.980 0.840 214.050 120.840 ;
@@ -38,7 +38,7 @@ MACRO adc_array_matrix_12bit
       LAYER met4 ;
         RECT 5.230 0.210 7.300 120.830 ;
     END
-  END VSS
+  END VGND
   PIN vcm
     DIRECTION INPUT ;
     USE SIGNAL ;
