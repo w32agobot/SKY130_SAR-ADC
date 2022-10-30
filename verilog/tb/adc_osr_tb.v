@@ -16,18 +16,16 @@
 `include "adc_osr.v"
 
 module adc_osr_tb;
-    reg clk;
     reg rst_n;
-    reg ena;
+    reg data_valid_strobe;
     reg [2:0] osr_mode;
     reg [11:0] data;
     wire [15:0] result;
     wire conversion_finished;
 
 adc_osr osr_dut (
-   .clk(clk),
+   .data_valid_strobe(data_valid_strobe),
    .rst_n(rst_n),
-   .ena(ena),
    .osr_mode_in(osr_mode),
    .data_in(data),
    .data_out(result),
@@ -39,9 +37,8 @@ adc_osr osr_dut (
    initial begin
    	$dumpfile("dump.vcd");
    	$dumpvars(0,
-   		clk,
+   		data_valid_strobe,
    		rst_n,
-   		ena,
    		osr_mode,
    		data,
    		result,
@@ -52,9 +49,8 @@ adc_osr osr_dut (
    integer i;
 
    initial begin
-    clk=0;
+    data_valid_strobe=0;
     rst_n = 1;
-    ena = 0;
     osr_mode = 3'b000;
     data=0;
 
@@ -62,33 +58,25 @@ adc_osr osr_dut (
     rst_n=0; #4;
     rst_n=1; #2;
     data = 12'h111; #2;
-    ena=1; #2 ena=0; #2;
     data = 12'h222; #2;
-    ena=1; #2 ena=0; #2;
     osr_mode = 3'b001;
     
     // 4 samples, result is h0018
     for (i = 0; i < 4 ; i = i + 1 ) begin 
         data = 12'h000 + i; #2;
-        ena=1; #2; 
-        ena=0; #2;
     end
     
     // 16 samples, result is h890
-    rst_n = 0; #2 rst_n = 1; #2 ;
+    rst_n = 0; #2 rst_n = 1; 
     osr_mode = 3'b010;  
     for (i = 0; i < 16 ; i = i + 1 ) begin 
         data = 12'h890; #2;
-        ena=1; #2; 
-        ena=0; #2; 
     end
 
     // 16 samples, result is h8978
     osr_mode = 3'b010;   
     for (i = 0; i < 16 ; i = i + 1 ) begin 
         data = 12'h890+i; #2;
-        ena=1; #2; 
-        ena=0; #2; 
     end
 
 
@@ -96,20 +84,16 @@ adc_osr osr_dut (
     osr_mode = 3'b011;   
     for (i = 0; i < 64 ; i = i + 1 ) begin 
         data = 12'h000+i; #2;
-        ena=1; #2; 
-        ena=0; #2; 
     end
 
     // 256 samples, result is h07F8
     osr_mode = 3'b100;   
     for (i = 0; i < 256 ; i = i + 1 ) begin 
         data = 12'h000+i; #2;
-        ena=1; #2; 
-        ena=0; #2; 
     end
+
     osr_mode = 3'b000; 
     data = 12'h123; #2;
-    ena=1; #2; ena=0; #2;
 
 
     
@@ -118,7 +102,7 @@ adc_osr osr_dut (
 
    initial begin
     forever begin
-        #1 clk = ~clk;
+        #1 data_valid_strobe = ~data_valid_strobe;
     end
    end
 

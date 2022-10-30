@@ -12,7 +12,7 @@
 //   See the License for the specific language governing permissions and
 //   limitations under the License.
 
-`include "adc_core_digital.v"
+`include "../rtl/adc_core_digital.v"
 `timescale 10us/1us
 
 module adc_core_digital_tb;
@@ -261,8 +261,8 @@ module adc_core_digital_tb;
     // ************** TEST2 ***************
     // 0x Averaging of LSB
     // 0x OSR
-    // Values: d806
-    // Sum expected: 0x8060
+    // Values: d806 0x326
+    // Sum expected: 0x3260
        comparator_in = 0; //0001 //idle
     #2 comparator_in = 0; //8000  
     #2 comparator_in = 1; //4000 +12'd806

@@ -12,7 +12,7 @@
 //   See the License for the specific language governing permissions and
 //   limitations under the License.
 
-`include "adc_control_nonbinary.v"
+`include "../rtl/adc_control_nonbinary.v"
 `timescale 10us/1us
 
 module adc_control_nonbinary_tb;
