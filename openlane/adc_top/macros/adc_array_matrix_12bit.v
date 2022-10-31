@@ -11,7 +11,8 @@ module adc_array_matrix_12bit (
    input [31:0] col_n,
    input [2:0] en_bit_n,
    input en_C0_n,
-   input sw, sw_n, analog_in,ctop);
+   input sw, sw_n, analog_in,
+   output ctop);
 endmodule
 
 

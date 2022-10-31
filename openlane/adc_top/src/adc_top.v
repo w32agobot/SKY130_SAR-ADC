@@ -14,9 +14,8 @@
 `default_nettype none
 
 //***************************************
-// Note: use RSZ_DONT_TOUCH_RX on 
-// inp_analog, inn_analog, ctop_pmatrix_analog, ctop_nmatrix_analog
-// Reason -> no buffers on analog nets
+// Note: use RSZ_DONT_TOUCH_RX
+// Reason -> no buffers on analog input nets
 //***************************************
 
 //Top module ADC Control
@@ -33,7 +32,8 @@ module adc_top(
    input wire [15:0] config_1_in,    
    input wire [15:0] config_2_in,    
    output wire [15:0] result_out,    
-   output wire conversion_finished_out 
+   output wire conversion_finished_out ,
+   output wire [15:0] dummypin
    );
 
 //Configuration byte 1 mapping   
@@ -41,6 +41,9 @@ module adc_top(
 // config_1_in[5:3] = Oversampling control
 // config_1_in[9:6] = unused
 wire [5:0] delay_edgedetect_w = config_1_in[15:10];
+
+// Dummy output-pins workaround, for better pin-placement of analog pins
+assign dummypin = 16'd0;
 
 //_linting
 (*keep*)
@@ -55,6 +58,7 @@ wire delaycontrol_en_w = config_2_in[15];
 //*******************************************
 //      Digital Core
 //*******************************************
+(*keep*)
 adc_core_digital core(
    .rst_n(rst_n),
    .config_1_in(config_1_in),
@@ -89,15 +93,14 @@ wire [31:0] pmatrix_col_core_n, nmatrix_col_core_n;
 wire [15:0] pmatrix_row_core_n, nmatrix_row_core_n;
 wire [15:0] pmatrix_rowon_core_n, nmatrix_rowon_core_n;
 wire [2:0]  pmatrix_bincap_core_n, nmatrix_bincap_core_n;
-wire [2:0]  pmatrix_c0_core_n, nmatrix_c0_core_n;
+wire        pmatrix_c0_core_n, nmatrix_c0_core_n;
 wire ena_loop_core;
 
 //*******************************************
 //      Clock Loop with Edge-Detection
 //      **** HARDENED MACRO ****
 //*******************************************
-
-
+(*keep*)
 adc_clkgen_with_edgedetect cgen (
    `ifdef USE_POWER_PINS
       .VPWR(VPWR),	// User area 1.8V supply

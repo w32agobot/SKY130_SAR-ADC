@@ -89,7 +89,7 @@ wire [31:0] pmatrix_col_core_n, nmatrix_col_core_n;
 wire [15:0] pmatrix_row_core_n, nmatrix_row_core_n;
 wire [15:0] pmatrix_rowon_core_n, nmatrix_rowon_core_n;
 wire [2:0]  pmatrix_bincap_core_n, nmatrix_bincap_core_n;
-wire [2:0]  pmatrix_c0_core_n, nmatrix_c0_core_n;
+wire        pmatrix_c0_core_n, nmatrix_c0_core_n;
 wire ena_loop_core;
 
 //*******************************************

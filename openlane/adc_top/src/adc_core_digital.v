@@ -66,7 +66,7 @@ wire conv_finished_cnb_n;
 wire sample_cnb_n;
 wire sample_cnb;
 
-adc_control_nonbinary #(.MATRIX_BITS(12),.NONBINARY_REDUNDANCY(3)) cnb (
+adc_control_nonbinary cnb (
    .clk(clk_dig_in),
    .rst_n(rst_n),
    .comparator_in(comparator_in),

@@ -7,7 +7,7 @@ module adc_comp_latch(
    input wire clk,
    input wire inp,
    input wire inn,
-   input wire comp_trig,
+   output wire comp_trig,
    output wire latch_qn,
    output wire latch_q
    );
