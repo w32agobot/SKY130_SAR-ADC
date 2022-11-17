@@ -5,14 +5,14 @@ Can be done pre-layout and is faster than true-analog post-layout simulation. Th
 
 There are several different steps to perform depending on which information your files include.
 
-If you have raw verilog-code, which looks something like:
+If you have raw verilog-code then you have to first synthesize your file, see `Synthesize Verilog files`.
+Raw verilog looks something like:
 ```verilog
   assign en_pupd = enable & (~(sign^data));
   assign en_vref = enable & (sign^data);
 ```
-then you have to first synthesize your file, see `Synthesize Verilog files`.
 
-If your verilog-file is already synthesized and contains only standard-cells but without powered pins, it looks like this:
+If your verilog-file is already synthesized and contains only standard-cells but without powered pins, then you start with `vlog2verilog`. Standardcells in a verilog-file without power pins look like:
 ```verilog
     sky130_fd_sc_hd__inv_2 _192_ (
     .A(\counter_r[3] ),
@@ -24,9 +24,9 @@ If your verilog-file is already synthesized and contains only standard-cells but
     .X(_045_)
   );
 ```
-then you start with `vlog2verilog`.
 
-If your verilog-file is already synthesized and contains **powered** standard-cells, which looks like the following construct:
+
+If your verilog-file is already synthesized and contains **powered** standard-cells, then start with `vlog2Spice`. Mind the `.VPWR` `.VGND` `.VNB` `.VPB` ports.
 ```verilog
  sky130_fd_sc_hd__dlymetal6s2s_1 fanout38 (.A(net1),
     .VGND(VGND),
@@ -41,9 +41,13 @@ If your verilog-file is already synthesized and contains **powered** standard-ce
     .VPWR(VPWR),
     .X(clknet_0_clk));
 ```
-then start with `vlog2Spice`.
+
 
 If you already have a `.spice` file with sky130-standardcells, then you can skip `vlog2verilog` and `vlog2Spice`. Directly go to `spi2xspice.py`. 
+```spice
+X_170_ _062_ \current_dac_bit_r[1]\ _128_ _069_ VGND VGND VPWR VPWR _028_ sky130_fd_sc_hd__o211a_1
+X_171_ compare_end_w _068_ VGND VGND VPWR VPWR _129_ sky130_fd_sc_hd__nor2_1
+```
 
 ### Synthesize Verilog files with Openlane (or Yosys) 
 Convert a RTL verilog-file to a gate-level verilog-file with Standard-cells. In OpenLane, run:
