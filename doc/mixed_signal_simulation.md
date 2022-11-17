@@ -24,6 +24,8 @@ Use the script `spi2xspice.py` from qflow `python3 spi2xspice.py $PDKPATH/libs.r
 
 > Warning: if the verilog code uses bus lines as `net[25:0]`, then the gds-generated xschem file has pin orders alphabetically like `net0..net10:net19..net1..net20:net25..net2` and they need to be corrected manually
 
+> Input signals should not have a slow transition time. If your XSPICE-outputs change to $V_{DD}/2$, then check your input signals, maybe there is a clock transition while an input-signal is not clearly high or low.
+
 ### Generate xschem-symbol 
 Create a symbol and with `q` set the type to `primitive`.
 
