@@ -30,7 +30,7 @@ Use the script `spi2xspice.py` from qflow `python3 spi2xspice.py $PDKPATH/libs.r
 Create a symbol and with `q` set the type to `primitive`.
 
 ### Testbench
-`.include` the generated `.xspice` file (absolute-path, otherwise ngspice won't find the file)
+`.include` the generated `.xspice` file 
 
 ## True analog simulation
 This is the post-layout-simulation
