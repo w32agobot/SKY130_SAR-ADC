@@ -88,3 +88,6 @@ This is the post-layout-simulation
   * In the tcl console: `extract`, `ext2spice lvs`, `ext2spice`, maybe with `ext2spice cthresh 0`
   * Generate a symbol for xschem with the same pin order as in the `.spice`-file, set pin-numbers with Shift-s in the symbol. With `q`, set the type to `primitive`.
   * In the testbench, include the generated `.spice` file (absolute-path, otherwise ngspice won't find the file)
+
+## Bussing
+For bussing the syntax D[1..3] is one of the possible syntaxes, and it expands to D1,D2,D3, However if you use D[1:3] it expands to D[1],D[2],D[3]. If you are also using XSPICE primitives, in this case you can add a netlist_options.sym component to instruct xschem to replace [ and ] with two different characters
