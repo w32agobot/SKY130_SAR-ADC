@@ -14,16 +14,15 @@
 `default_nettype none
 
 //***************************************
-// Note: use RSZ_DONT_TOUCH_RX on 
-// inp_analog, inn_analog, ctop_pmatrix_analog, ctop_nmatrix_analog
-// Reason -> no buffers on analog nets
+// Note: use RSZ_DONT_TOUCH_RX
+// Reason -> no buffers on analog input nets
 //***************************************
 
 //Top module ADC Control
 module adc_top(
    `ifdef USE_POWER_PINS
-      inout VPWR,	// User area 1.8V supply
-      inout VGND,	// User area ground
+      inout VDD,	// User area 1.8V supply
+      inout VSS,	// User area ground
    `endif
    input wire clk_vcm, // 32.768Hz VCM generation clock
    input wire rst_n,   // reset
@@ -33,7 +32,8 @@ module adc_top(
    input wire [15:0] config_1_in,    
    input wire [15:0] config_2_in,    
    output wire [15:0] result_out,    
-   output wire conversion_finished_out 
+   output wire conversion_finished_out ,
+   output wire [15:0] dummypin
    );
 
 //Configuration byte 1 mapping   
@@ -41,6 +41,9 @@ module adc_top(
 // config_1_in[5:3] = Oversampling control
 // config_1_in[9:6] = unused
 wire [5:0] delay_edgedetect_w = config_1_in[15:10];
+
+// Dummy output-pins workaround, for better pin-placement of analog pins
+assign dummypin = 16'd0;
 
 //_linting
 (*keep*)
@@ -55,6 +58,7 @@ wire delaycontrol_en_w = config_2_in[15];
 //*******************************************
 //      Digital Core
 //*******************************************
+(*keep*)
 adc_core_digital core(
    .rst_n(rst_n),
    .config_1_in(config_1_in),
@@ -96,12 +100,11 @@ wire ena_loop_core;
 //      Clock Loop with Edge-Detection
 //      **** HARDENED MACRO ****
 //*******************************************
-
-
+(*keep*)
 adc_clkgen_with_edgedetect cgen (
    `ifdef USE_POWER_PINS
-      .VPWR(VPWR),	// User area 1.8V supply
-      .VGND(VGND),	// User area ground
+      .VDD(VDD),	// User area 1.8V supply
+      .VSS(VSS),	// User area ground
    `endif
    .ena_in(ena_loop_core),
    .start_conv_in(start_conversion_in),
@@ -135,8 +138,8 @@ wire sample_nmatrix_cgen, sample_nmatrix_cgen_n;
 (*keep*)
 adc_array_matrix_12bit pmat (
    `ifdef USE_POWER_PINS
-      .VPWR(VPWR),	// User area 1.8V supply
-      .VGND(VGND),	// User area ground
+      .VDD(VDD),	// User area 1.8V supply
+      .VSS(VSS),	// User area ground
    `endif
    .sample(sample_pmatrix_cgen),
    .sample_n(sample_pmatrix_cgen_n),
@@ -159,8 +162,8 @@ wire ctop_pmatrix_analog;
 (*keep*)
 adc_array_matrix_12bit nmat (
    `ifdef USE_POWER_PINS
-      .VPWR(VPWR),	// User area 1.8V supply
-      .VGND(VGND),	// User area ground
+      .VDD(VDD),	// User area 1.8V supply
+      .VSS(VSS),	// User area ground
    `endif
    .sample(sample_nmatrix_cgen),
    .sample_n(sample_nmatrix_cgen_n),
@@ -183,8 +186,8 @@ wire ctop_nmatrix_analog;
 (*keep*)
 adc_comp_latch comp (
    `ifdef USE_POWER_PINS
-      .VPWR(VPWR),	// User area 1.8V supply
-      .VGND(VGND),	// User area ground
+      .VDD(VDD),	// User area 1.8V supply
+      .VSS(VSS),	// User area ground
    `endif
    .clk(clk_comp_cgen),
    .inp(ctop_pmatrix_analog),
@@ -204,80 +207,11 @@ adc_comp_latch comp (
 (*keep*)
 adc_vcm_generator vcm (
    `ifdef USE_POWER_PINS
-      .VPWR(VPWR),	// User area 1.8V supply
-      .VGND(VGND),	// User area ground
+      .VDD(VDD),	// User area 1.8V supply
+      .VSS(VSS),	// User area ground
    `endif
    .clk(clk_vcm)
 );
 endmodule
 
-//*******************************************
-//      MACRO BLACKBOX DEFINITIONS
-//*******************************************
-(* Blackbox *)
-module adc_array_matrix_12bit (
-   `ifdef USE_POWER_PINS
-      inout VPWR,	// User area 1.8V supply
-      inout VGND,	// User area ground
-   `endif
-   input sample,sample_n,
-   input [15:0] row_n,
-   input [15:0] rowon_n,
-   input [31:0] col_n,
-   input [2:0] en_bit_n,
-   input en_C0_n,
-   input sw, sw_n, analog_in,ctop);
-endmodule
 
-(* Blackbox *)
-module adc_clkgen_with_edgedetect(
-   `ifdef USE_POWER_PINS
-      inout VPWR,	// User area 1.8V supply
-      inout VGND,	// User area ground
-   `endif
-   input wire ena_in,             // enable signal from the digital clock core. 0 halts the self-clocked loop
-   input wire start_conv_in,         // triggers a conversion once with edge-detection
-   input wire ndecision_finish_in,   // comparator signalizes finished conversion
-   output wire clk_dig_out,           // digital clock
-   output wire clk_comp_out,          // comparator clock
-   input wire enable_dlycontrol_in,  // 0 = max delays, 1 = configurable delays
-   input wire [4:0] dlycontrol1_in,  // delay 1 of 3 in loop. Delay = 5ns*dlycontrol1
-   input wire [4:0] dlycontrol2_in,  // delay 2 of 3 in loop. Delay = 5ns*dlycontrol2
-   input wire [4:0] dlycontrol3_in,  // delay 3 of 3 in loop. Delay = 5ns*dlycontrol3
-   input wire [5:0] dlycontrol4_in,  // edge detect pulse width. Delay = 5ns*dlycontrol4
-   // additional buffers for sample matrix
-   input wire sample_p_in,           
-   input wire sample_n_in,
-   input wire nsample_p_in,
-   input wire nsample_n_in,
-   output wire sample_p_out,
-   output wire sample_n_out,
-   output wire nsample_p_out,
-   output wire nsample_n_out
-   );
-endmodule
-
-(* Blackbox *)
-module adc_comp_latch(
-   `ifdef USE_POWER_PINS
-      inout VPWR,	// User area 1.8V supply
-      inout VGND,	// User area ground
-   `endif
-   input wire clk,
-   input wire inp,
-   input wire inn,
-   input wire comp_trig,
-   output wire latch_qn,
-   output wire latch_q
-   );
-endmodule
-
-(* Blackbox *)
-module adc_vcm_generator(
-   `ifdef USE_POWER_PINS
-      inout VPWR,	// User area 1.8V supply
-      inout VGND,	// User area ground
-   `endif
-   input wire clk
-   );
-endmodule
