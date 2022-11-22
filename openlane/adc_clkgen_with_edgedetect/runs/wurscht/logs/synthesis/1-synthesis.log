@@ -19,7 +19,7 @@
  |                                                                            |
  \----------------------------------------------------------------------------/
 
- Yosys 0.20+70 (git sha1 6e907acf8, gcc 11.2.1 -fPIC -Os)
+ Yosys 0.23+21 (git sha1 e56c68996, clang 10.0.0-4ubuntu1 -fPIC -Os)
 
 [TCL: yosys -import] Command name collision: found pre-existing command `cd' -> skip.
 [TCL: yosys -import] Command name collision: found pre-existing command `eval' -> skip.
@@ -472,8 +472,8 @@ Optimizing module adc_clkgen_with_edgedetect.
 
 7.21. Executing TECHMAP pass (map to technology primitives).
 
-7.21.1. Executing Verilog-2005 frontend: /foss/tools/yosys/6e907ac/bin/../share/yosys/techmap.v
-Parsing Verilog input from `/foss/tools/yosys/6e907ac/bin/../share/yosys/techmap.v' to AST representation.
+7.21.1. Executing Verilog-2005 frontend: /foss/tools/yosys/b64141f/bin/../share/yosys/techmap.v
+Parsing Verilog input from `/foss/tools/yosys/b64141f/bin/../share/yosys/techmap.v' to AST representation.
 Generating RTLIL representation for module `\_90_simplemap_bool_ops'.
 Generating RTLIL representation for module `\_90_simplemap_reduce_ops'.
 Generating RTLIL representation for module `\_90_simplemap_logic_ops'.
@@ -1067,8 +1067,8 @@ mapping tbuf
 
 13. Executing TECHMAP pass (map to technology primitives).
 
-13.1. Executing Verilog-2005 frontend: /foss/pdk/sky130A/libs.tech/openlane/sky130_fd_sc_hd/tribuff_map.v
-Parsing Verilog input from `/foss/pdk/sky130A/libs.tech/openlane/sky130_fd_sc_hd/tribuff_map.v' to AST representation.
+13.1. Executing Verilog-2005 frontend: /foss/pdks/share/pdk/sky130A/libs.tech/openlane/sky130_fd_sc_hd/tribuff_map.v
+Parsing Verilog input from `/foss/pdks/share/pdk/sky130A/libs.tech/openlane/sky130_fd_sc_hd/tribuff_map.v' to AST representation.
 Generating RTLIL representation for module `\$_TBUF_'.
 Successfully finished Verilog frontend.
 
@@ -1080,8 +1080,8 @@ No more expansions possible.
 
 15. Executing TECHMAP pass (map to technology primitives).
 
-15.1. Executing Verilog-2005 frontend: /foss/pdk/sky130A/libs.tech/openlane/sky130_fd_sc_hd/latch_map.v
-Parsing Verilog input from `/foss/pdk/sky130A/libs.tech/openlane/sky130_fd_sc_hd/latch_map.v' to AST representation.
+15.1. Executing Verilog-2005 frontend: /foss/pdks/share/pdk/sky130A/libs.tech/openlane/sky130_fd_sc_hd/latch_map.v
+Parsing Verilog input from `/foss/pdks/share/pdk/sky130A/libs.tech/openlane/sky130_fd_sc_hd/latch_map.v' to AST representation.
 Generating RTLIL representation for module `\$_DLATCH_P_'.
 Generating RTLIL representation for module `\$_DLATCH_N_'.
 Successfully finished Verilog frontend.
@@ -1147,7 +1147,7 @@ Mapping DFF cells in module `\adc_clkgen_with_edgedetect':
 
 19. Executing ABC pass (technology mapping using ABC).
 
-19.1. Extracting gate netlist of module `\adc_clkgen_with_edgedetect' to `/tmp/yosys-abc-On8T4v/input.blif'..
+19.1. Extracting gate netlist of module `\adc_clkgen_with_edgedetect' to `/tmp/yosys-abc-fQRhSm/input.blif'..
 Extracted 0 gates and 0 wires to a netlist network with 0 inputs and 0 outputs.
 Don't call ABC as there is nothing to map.
 Removing temp directory.
@@ -1207,6 +1207,6 @@ Found and reported 0 problems.
 Dumping module `\adc_clkgen_with_edgedetect'.
 
 Warnings: 219 unique messages, 417 total
-End of script. Logfile hash: 06b1bfabd1, CPU: user 1.65s system 0.08s, MEM: 41.17 MB peak
-Yosys 0.20+70 (git sha1 6e907acf8, gcc 11.2.1 -fPIC -Os)
-Time spent: 33% 4x read_liberty (0 sec), 15% 4x stat (0 sec), ...
+End of script. Logfile hash: 5ce3b046c0, CPU: user 0.56s system 0.02s, MEM: 39.89 MB peak
+Yosys 0.23+21 (git sha1 e56c68996, clang 10.0.0-4ubuntu1 -fPIC -Os)
+Time spent: 30% 4x read_liberty (0 sec), 14% 4x stat (0 sec), ...

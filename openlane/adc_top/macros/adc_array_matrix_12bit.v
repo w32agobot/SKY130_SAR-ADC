@@ -1,8 +1,8 @@
 (* Blackbox *)
 module adc_array_matrix_12bit (
    `ifdef USE_POWER_PINS
-      inout VPWR,	// User area 1.8V supply
-      inout VGND,	// User area ground
+      inout VDD,	// User area 1.8V supply
+      inout VSS,	// User area ground
    `endif
    input vcm,
    input sample,sample_n,

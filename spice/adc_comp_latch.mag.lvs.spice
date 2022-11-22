@@ -87,12 +87,12 @@ X34 VPWR clk on VPWR sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=500000u l
 X35 VPWR clk on VPWR sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=500000u l=150000u
 .ends
 
-.subckt adc_comp_latch VPWR VGND clk inp inn comp_trig latch_qn latch_q
-Xadc_inverter_0 adc_inverter_1/in VPWR VGND clk adc_inverter
-Xadc_inverter_1 adc_inverter_1/out VPWR VGND adc_inverter_1/in adc_inverter
-Xadc_nor_0 adc_nor_0/B comp_trig adc_nor_0/A VPWR VGND adc_nor
-Xadc_nor_latch_0 adc_nor_0/A latch_qn latch_q adc_nor_0/B VPWR VGND adc_nor_latch
+.subckt adc_comp_latch VDD VSS clk inp inn comp_trig latch_qn latch_q
+Xadc_inverter_0 adc_inverter_1/in VDD VSS clk adc_inverter
+Xadc_inverter_1 adc_inverter_1/out VDD VSS adc_inverter_1/in adc_inverter
+Xadc_nor_0 adc_nor_0/B comp_trig adc_nor_0/A VDD VSS adc_nor
+Xadc_nor_latch_0 adc_nor_0/A latch_qn latch_q adc_nor_0/B VDD VSS adc_nor_latch
 Xadc_comp_circuit_0 inp inn adc_nor_0/A adc_nor_0/B adc_inverter_1/out adc_inverter_1/in
-+ VGND VPWR adc_comp_circuit
++ VSS VDD adc_comp_circuit
 .ends
 

@@ -1,10 +1,10 @@
-timestamp 1666976664
+timestamp 1669145107
 version 8.3
 tech sky130A
 style ngspice()
 scale 1000 1 500000
 resistclasses 4400000 2200000 950000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12800 125 125 47 47 29 5
-parameters sky130_fd_pr__diode_pw2nd_05v5 a=area p=pj
+parameters sky130_fd_pr__diode_pw2nd_05v5 a=area*1e+12 p=pj*1e+06
 port "VGND" 2 29 -17 63 17 m1
 port "VPWR" 3 29 527 63 561 m1
 port "DIODE" 1 29 85 63 119 li
@@ -27,4 +27,4 @@ node "VPWR" 0 0 29 527 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 node "DIODE" 0 0 121 85 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 node "VPB" 0 0 29 527 nw 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 substrate "VNB" 0 0 29 -17 pw 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-device ndiode sky130_fd_pr__diode_pw2nd_05v5 31 39 32 40 a=17388 p=528 "VNB" "DIODE" 544 0 "VNB" 200 0
+device ndiode sky130_fd_pr__diode_pw2nd_05v5 31 39 32 40 a=17388 p=528 "VNB" "DIODE" 544 0 "VNB" 0 0

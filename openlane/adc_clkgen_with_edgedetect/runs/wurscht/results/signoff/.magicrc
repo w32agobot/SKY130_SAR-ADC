@@ -21,7 +21,7 @@ ext2spice scale off
 # Allow override of PDK path from environment variable PDK_ROOT
 # "file nativename" guards against a local PDK_ROOT with "~" in the name
 if {[catch {set PDK_ROOT [file nativename $env(PDK_ROOT)]}]} {
-    set PDK_ROOT /foss/pdk
+    set PDK_ROOT /usr/local/pdk/volare/sky130/build/3af133706e554a740cfe60f21e773d9eaa41838c
 }
 
 # loading technology
@@ -85,5 +85,3 @@ if {[file isdir ${PDK_ROOT}/sky130A/libs.ref/${MAGTYPE}]} {
 catch {magic::query_mylib_ip}
 # add path to local IP from user design space.  Defined in the PDK script.
 catch {magic::query_my_projects}
-# Custom bindkeys for IIC
-source /foss/tools/iic-osic/iic-magic-bindkeys

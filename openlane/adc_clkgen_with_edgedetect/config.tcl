@@ -32,17 +32,17 @@ set ::env(DESIGN_NAME) adc_clkgen_with_edgedetect
 
 # Power distribution network settings
  set ::env(FP_PDN_HOFFSET) 12
- set ::env(FP_PDN_VOFFSET) 12
- set ::env(FP_PDN_HPITCH) 12
- set ::env(FP_PDN_VPITCH) 24
+ set ::env(FP_PDN_VOFFSET) 22
+ set ::env(FP_PDN_HPITCH) 24
+ set ::env(FP_PDN_VPITCH) 44
  set ::env(FP_PIN_ORDER_CFG) $::env(DESIGN_DIR)/pin_order.cfg
 
 # PDN on Macro Level or Core Level
  set ::env(DESIGN_IS_CORE) 0
  set ::env(FP_PDN_CORE_RING) 0
  set ::env(RT_MAX_LAYER) {met4}
- set ::env(VDD_NETS) [list {VPWR} {VPB}]
- set ::env(GND_NETS) [list {VGND} {VNB}]
+ set ::env(VDD_NETS) "VDD"
+ set ::env(GND_NETS) "VSS"
 
 # Placement
  set ::env(PL_BASIC_PLACEMENT) 0

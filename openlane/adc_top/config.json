@@ -1,7 +1,5 @@
 {
     "PDK": "sky130A",
-    "PDKPATH": "/foss/pdks/sky130A",
-    "PDK_ROOT": "/foss/pdks",
     "STD_CELL_LIBRARY": "sky130_fd_sc_hd",
     "DESIGN_NAME": "adc_top",
     "VERILOG_FILES": "dir::src/*.v",
@@ -27,13 +25,12 @@
     "FP_PDN_HORIZONTAL_HALO": 4,
     "FP_PDN_VERTICAL_HALO": 4,
     "GRT_ADJUSTMENT": 0.1,
-    "GRT_OBS": ["met1 297 10 397 169, met2 297 10 397 169, met3 297 10 397 169, met4 297 10 397 169, met1 297 228 397 389, met2 297 228 397 389, met3 297 228 397 389, met4 297 228 397 389"],
     "DIODE_INSERTION_STRATEGY": 4,
     "DESIGN_IS_CORE": 1,
     "FP_PDN_CORE_RING": 0,
     "RT_MAX_LAYER": "met4",
-    "VDD_NETS": ["VPWR"],
-    "GND_NETS": ["VGND"],
+    "VDD_NETS": ["VDD"],
+    "GND_NETS": ["VSS"],
     "SYNTH_USE_PG_PINS_DEFINES": "USE_POWER_PINS",
     "PL_BASIC_PLACEMENT": 0,
     "PL_TARGET_DENSITY": 0.40,
@@ -41,6 +38,6 @@
     "PL_TIME_DRIVEN": 0,
     "GRT_ALLOW_CONGESTION": 0,
     "ROUTING_CORES": 12,
-    "MAGIC_EXT_USE_GDS": 0,
-    "FP_PDN_MACRO_HOOKS": ["vcm VPWR VGND VPWR VGND, pmat VPWR VGND VPWR VGND, nmat VPWR VGND VPWR VGND, comp VPWR VGND VPWR VGND, cgen VPWR VGND VPWR VGND "]
+    "MAGIC_EXT_USE_GDS": 1,
+    "FP_PDN_MACRO_HOOKS": ["vcm VDD VSS VDD VSS, pmat VDD VSS VDD VSS, nmat VDD VSS VDD VSS, comp VDD VSS VDD VSS, cgen VDD VSS VDD VSS "]
 }

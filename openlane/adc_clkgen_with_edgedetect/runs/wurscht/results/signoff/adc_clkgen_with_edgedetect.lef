@@ -7,16 +7,12 @@ MACRO adc_clkgen_with_edgedetect
   FOREIGN adc_clkgen_with_edgedetect ;
   ORIGIN 0.000 0.000 ;
   SIZE 171.000 BY 60.000 ;
-  PIN VGND
+  PIN VDD
     DIRECTION INOUT ;
-    USE GROUND ;
+    USE POWER ;
     PORT
       LAYER met4 ;
-        RECT 22.720 2.480 24.320 57.360 ;
-    END
-    PORT
-      LAYER met4 ;
-        RECT 46.720 2.480 48.320 57.360 ;
+        RECT 26.720 2.480 28.320 57.360 ;
     END
     PORT
       LAYER met4 ;
@@ -24,49 +20,29 @@ MACRO adc_clkgen_with_edgedetect
     END
     PORT
       LAYER met4 ;
-        RECT 94.720 2.480 96.320 57.360 ;
+        RECT 114.720 2.480 116.320 57.360 ;
     END
     PORT
       LAYER met4 ;
-        RECT 118.720 2.480 120.320 57.360 ;
+        RECT 158.720 2.480 160.320 57.360 ;
     END
-    PORT
-      LAYER met4 ;
-        RECT 142.720 2.480 144.320 57.360 ;
-    END
-  END VGND
-  PIN VPWR
+  END VDD
+  PIN VSS
     DIRECTION INOUT ;
-    USE POWER ;
+    USE GROUND ;
     PORT
       LAYER met4 ;
-        RECT 16.720 2.480 18.320 57.360 ;
+        RECT 48.720 2.480 50.320 57.360 ;
     END
     PORT
       LAYER met4 ;
-        RECT 40.720 2.480 42.320 57.360 ;
-    END
-    PORT
-      LAYER met4 ;
-        RECT 64.720 2.480 66.320 57.360 ;
-    END
-    PORT
-      LAYER met4 ;
-        RECT 88.720 2.480 90.320 57.360 ;
-    END
-    PORT
-      LAYER met4 ;
-        RECT 112.720 2.480 114.320 57.360 ;
+        RECT 92.720 2.480 94.320 57.360 ;
     END
     PORT
       LAYER met4 ;
         RECT 136.720 2.480 138.320 57.360 ;
     END
-    PORT
-      LAYER met4 ;
-        RECT 160.720 2.480 162.320 57.360 ;
-    END
-  END VPWR
+  END VSS
   PIN clk_comp_out
     DIRECTION OUTPUT TRISTATE ;
     USE SIGNAL ;
@@ -351,21 +327,21 @@ MACRO adc_clkgen_with_edgedetect
       LAYER li1 ;
         RECT 5.520 2.635 165.140 57.205 ;
       LAYER met1 ;
-        RECT 5.520 0.040 165.140 59.800 ;
+        RECT 5.520 0.380 165.140 59.800 ;
       LAYER met2 ;
-        RECT 8.840 55.720 20.970 59.830 ;
+        RECT 7.910 55.720 20.970 59.830 ;
         RECT 21.810 55.720 63.750 59.830 ;
         RECT 64.590 55.720 106.530 59.830 ;
         RECT 107.370 55.720 149.310 59.830 ;
-        RECT 150.150 55.720 162.290 59.830 ;
-        RECT 8.840 4.280 162.290 55.720 ;
-        RECT 8.840 0.010 20.970 4.280 ;
-        RECT 21.810 0.010 63.750 4.280 ;
-        RECT 64.590 0.010 106.530 4.280 ;
-        RECT 107.370 0.010 149.310 4.280 ;
-        RECT 150.150 0.010 162.290 4.280 ;
+        RECT 150.150 55.720 161.360 59.830 ;
+        RECT 7.910 4.280 161.360 55.720 ;
+        RECT 7.910 0.350 20.970 4.280 ;
+        RECT 21.810 0.350 63.750 4.280 ;
+        RECT 64.590 0.350 106.530 4.280 ;
+        RECT 107.370 0.350 149.310 4.280 ;
+        RECT 150.150 0.350 161.360 4.280 ;
       LAYER met3 ;
-        RECT 4.000 54.760 167.000 58.985 ;
+        RECT 4.000 54.760 167.000 59.665 ;
         RECT 4.400 53.360 167.000 54.760 ;
         RECT 4.000 52.720 167.000 53.360 ;
         RECT 4.400 51.320 167.000 52.720 ;
@@ -419,15 +395,9 @@ MACRO adc_clkgen_with_edgedetect
         RECT 4.400 6.440 167.000 7.840 ;
         RECT 4.000 5.800 167.000 6.440 ;
         RECT 4.400 4.400 167.000 5.800 ;
-        RECT 4.000 0.175 167.000 4.400 ;
+        RECT 4.000 2.215 167.000 4.400 ;
       LAYER met4 ;
-        RECT 19.615 2.080 22.320 48.105 ;
-        RECT 24.720 2.080 40.320 48.105 ;
-        RECT 42.720 2.080 46.320 48.105 ;
-        RECT 48.720 2.080 64.320 48.105 ;
-        RECT 66.720 2.080 70.320 48.105 ;
-        RECT 72.720 2.080 74.225 48.105 ;
-        RECT 19.615 1.535 74.225 2.080 ;
+        RECT 16.855 10.375 17.185 23.625 ;
   END
 END adc_clkgen_with_edgedetect
 END LIBRARY

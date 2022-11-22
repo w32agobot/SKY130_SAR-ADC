@@ -21,8 +21,8 @@
 //Top module ADC Control
 module adc_top(
    `ifdef USE_POWER_PINS
-      inout VPWR,	// User area 1.8V supply
-      inout VGND,	// User area ground
+      inout VDD,	// User area 1.8V supply
+      inout VSS,	// User area ground
    `endif
    input wire clk_vcm, // 32.768Hz VCM generation clock
    input wire rst_n,   // reset
@@ -103,8 +103,8 @@ wire ena_loop_core;
 (*keep*)
 adc_clkgen_with_edgedetect cgen (
    `ifdef USE_POWER_PINS
-      .VPWR(VPWR),	// User area 1.8V supply
-      .VGND(VGND),	// User area ground
+      .VDD(VDD),	// User area 1.8V supply
+      .VSS(VSS),	// User area ground
    `endif
    .ena_in(ena_loop_core),
    .start_conv_in(start_conversion_in),
@@ -138,8 +138,8 @@ wire sample_nmatrix_cgen, sample_nmatrix_cgen_n;
 (*keep*)
 adc_array_matrix_12bit pmat (
    `ifdef USE_POWER_PINS
-      .VPWR(VPWR),	// User area 1.8V supply
-      .VGND(VGND),	// User area ground
+      .VDD(VDD),	// User area 1.8V supply
+      .VSS(VSS),	// User area ground
    `endif
    .sample(sample_pmatrix_cgen),
    .sample_n(sample_pmatrix_cgen_n),
@@ -162,8 +162,8 @@ wire ctop_pmatrix_analog;
 (*keep*)
 adc_array_matrix_12bit nmat (
    `ifdef USE_POWER_PINS
-      .VPWR(VPWR),	// User area 1.8V supply
-      .VGND(VGND),	// User area ground
+      .VDD(VDD),	// User area 1.8V supply
+      .VSS(VSS),	// User area ground
    `endif
    .sample(sample_nmatrix_cgen),
    .sample_n(sample_nmatrix_cgen_n),
@@ -186,8 +186,8 @@ wire ctop_nmatrix_analog;
 (*keep*)
 adc_comp_latch comp (
    `ifdef USE_POWER_PINS
-      .VPWR(VPWR),	// User area 1.8V supply
-      .VGND(VGND),	// User area ground
+      .VDD(VDD),	// User area 1.8V supply
+      .VSS(VSS),	// User area ground
    `endif
    .clk(clk_comp_cgen),
    .inp(ctop_pmatrix_analog),
@@ -207,8 +207,8 @@ adc_comp_latch comp (
 (*keep*)
 adc_vcm_generator vcm (
    `ifdef USE_POWER_PINS
-      .VPWR(VPWR),	// User area 1.8V supply
-      .VGND(VGND),	// User area ground
+      .VDD(VDD),	// User area 1.8V supply
+      .VSS(VSS),	// User area ground
    `endif
    .clk(clk_vcm)
 );

@@ -7,7 +7,7 @@ MACRO adc_vcm_generator
   FOREIGN adc_vcm_generator ;
   ORIGIN 0.000 0.000 ;
   SIZE 111.850 BY 380.000 ;
-  PIN VPWR
+  PIN VDD
     DIRECTION INOUT ;
     USE POWER ;
     PORT
@@ -1504,8 +1504,8 @@ MACRO adc_vcm_generator
         RECT 89.435 162.660 95.835 164.110 ;
         RECT 107.510 0.000 109.510 380.000 ;
     END
-  END VPWR
-  PIN VGND
+  END VDD
+  PIN VSS
     DIRECTION INOUT ;
     USE GROUND ;
     PORT
@@ -43384,7 +43384,7 @@ MACRO adc_vcm_generator
         RECT 80.330 0.000 89.130 1.050 ;
         RECT 100.330 0.000 107.140 1.050 ;
     END
-  END VGND
+  END VSS
   PIN clk
     DIRECTION INPUT ;
     USE SIGNAL ;

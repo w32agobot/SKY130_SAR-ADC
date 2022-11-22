@@ -1,8 +1,8 @@
 (* Blackbox *)
 module adc_clkgen_with_edgedetect(
    `ifdef USE_POWER_PINS
-      inout VPWR,	// User area 1.8V supply
-      inout VGND,	// User area ground
+      inout VDD,	// User area 1.8V supply
+      inout VSS,	// User area ground
    `endif
    input wire ena_in,             // enable signal from the digital clock core. 0 halts the self-clocked loop
    input wire start_conv_in,         // triggers a conversion once with edge-detection
