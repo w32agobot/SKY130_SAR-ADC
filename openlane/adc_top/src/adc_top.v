@@ -130,7 +130,8 @@ wire clk_dig_cgen;
 wire clk_comp_cgen;  
 wire sample_pmatrix_cgen, sample_pmatrix_cgen_n;
 wire sample_nmatrix_cgen, sample_nmatrix_cgen_n;
-  
+
+
 //*******************************************
 //      Matrix P-side
 //      **** HARDENED MACRO ****
@@ -141,6 +142,7 @@ adc_array_matrix_12bit pmat (
       .VDD(VDD),	// User area 1.8V supply
       .VSS(VSS),	// User area ground
    `endif
+   .vcm(),
    .sample(sample_pmatrix_cgen),
    .sample_n(sample_pmatrix_cgen_n),
    .row_n(pmatrix_row_core_n),
@@ -165,6 +167,7 @@ adc_array_matrix_12bit nmat (
       .VDD(VDD),	// User area 1.8V supply
       .VSS(VSS),	// User area ground
    `endif
+   .vcm(),
    .sample(sample_nmatrix_cgen),
    .sample_n(sample_nmatrix_cgen_n),
    .row_n(nmatrix_row_core_n),
@@ -210,6 +213,7 @@ adc_vcm_generator vcm (
       .VDD(VDD),	// User area 1.8V supply
       .VSS(VSS),	// User area ground
    `endif
+   .vcm(),
    .clk(clk_vcm)
 );
 endmodule
