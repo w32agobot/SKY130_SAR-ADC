@@ -289,6 +289,8 @@ N 550 -1090 550 -1080 {
 lab=nc[0..3]}
 N 450 -1020 450 -1000 {
 lab=GND}
+N 870 -840 930 -840 {
+lab=#net1 bus=true}
 C {devices/title.sym} 170 -40 0 0 {name=l1 author="Manuel Moser"}
 C {devices/vsource.sym} 450 -1050 0 0 {name=V_VDD_1 value=1.8}
 C {devices/vdd.sym} 450 -1090 0 0 {name=l1 lab=VDD}
@@ -296,28 +298,14 @@ C {devices/gnd.sym} 450 -1000 0 0 {name=l1 lab=GND}
 C {devices/vdd.sym} 720 -920 0 0 {name=l3 lab=VDD}
 C {devices/gnd.sym} 720 -720 0 0 {name=l3 lab=GND}
 C {devices/code_shown.sym} 30 -1480 0 0 {name=SPICE only_toplevel=false value="
-****************
-* True mixed signal? (xspice) or analog? (spice)
-****************
 .options method=gear
-*.include /foss/designs/SKY130_SAR-ADC/openlane/spice/adc_core_digital.spice
-*.include /foss/designs/SKY130_SAR-ADC/verilog/xspice/adc_core_digital.xspice
-
-*.include /foss/designs/SKY130_SAR-ADC/openlane/spice/adc_clkgen_with_edgedetect.spice
-*.include /foss/designs/SKY130_SAR-ADC/verilog/xspice/adc_clkgen_with_edgedetect.xspice
-
 .include ../../spice/adc_top.gds.postlayout.spice
-
-* mind the order: include AFTER XSPICE FILES
-*.include /foss/pdk/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_fd_sc_hd.spice
-
+.include /foss/pdks/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_fd_sc_hd.spice
 
 ****************
 * Misc
 ****************
 .param fclk=32768
-.param treset=100n
-.param tstartconv=500n
 .param vdiff=200m
 
 ****************
@@ -358,7 +346,7 @@ C {devices/code_shown.sym} 30 -1480 0 0 {name=SPICE only_toplevel=false value="
 .save all
 .control
 set num_threads=11
-tran 250p 3.2u
+tran 50n 650u
 plot inp inn rst_n start_conv conv_finished
 plot start_conv x1.clk_dig x1.clk_comp 
 plot x1.pctop x1.nctop x1.comparator_result
@@ -394,8 +382,8 @@ C {devices/gnd.sym} 1840 -320 0 0 {name=l3 lab=GND}
 C {devices/lab_wire.sym} 930 -860 0 1 {name=l3 sig_type=std_logic lab=conv_finished}
 C {devices/lab_wire.sym} 340 -780 0 1 {name=l3 sig_type=std_logic lab=inp}
 C {devices/lab_wire.sym} 460 -780 0 0 {name=l3 sig_type=std_logic lab=inn}
-C {devices/vsource.sym} 1840 -480 0 0 {name=V1 value="0 pulse(0 1.8 \{treset\} 1n 1n 1 2)"}
-C {devices/vsource.sym} 1840 -600 0 0 {name=V31 value="0 pulse(0 1.8 \{tstartconv\} 1n 1n 400n 1.4u)"}
+C {devices/vsource.sym} 1840 -480 0 0 {name=V1 value="pwl 0 0 600025n 0 600026n 1.8"}
+C {devices/vsource.sym} 1840 -600 0 0 {name=V31 value="pwl 0 0 610025n 0 610026n 1.8 610125n 1.8 610126n 0"}
 C {devices/gnd.sym} 1840 -560 0 0 {name=l3 lab=GND}
 C {devices/gnd.sym} 1840 -440 0 0 {name=l3 lab=GND}
 C {devices/lab_wire.sym} 1880 -630 0 1 {name=l3 sig_type=std_logic lab=start_conv}
@@ -472,3 +460,4 @@ C {devices/gnd.sym} 550 -1000 0 0 {name=l3 lab=GND}
 C {devices/lab_wire.sym} 570 -1090 0 1 {name=l3 sig_type=std_logic lab=nc[0..3]}
 C {devices/vsource.sym} 550 -1050 0 0 {name=V30 value=0}
 C {adc_top_postlayout.sym} 720 -820 0 0 {name=x1}
+C {devices/noconn.sym} 930 -840 0 1 {name=l28[0..15]}

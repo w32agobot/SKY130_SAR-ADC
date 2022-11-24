@@ -10,9 +10,9 @@ V_VCM_3 vcm inn {vdiff/2}
 .save i(v_vcm_3)
 V_VCM clk_vcm GND 0 pulse(0 1.8 {0.5/fclk} 1n 1n {0.5/fclk} {1/fclk})
 .save i(v_vcm)
-V1 rst_n GND 0 pulse(0 1.8 {treset} 1n 1n 1 2)
+V1 rst_n GND pwl 0 0 600025n 0 600026n 1.8
 .save i(v1)
-V31 start_conv GND 0 pulse(0 1.8 {tstartconv} 1n 1n 400n 1.4u)
+V31 start_conv GND pwl 0 0 610025n 0 610026n 1.8 610125n 1.8 610126n 0
 .save i(v31)
 V4 dlyctrl1_4 GND bit4
 .save i(v4)
@@ -82,28 +82,14 @@ x1 result0 result1 result2 result3 result4 result5 result6 result7 result8 resul
 **** begin user architecture code
 
 
-****************
-* True mixed signal? (xspice) or analog? (spice)
-****************
 .options method=gear
-*.include /foss/designs/SKY130_SAR-ADC/openlane/spice/adc_core_digital.spice
-*.include /foss/designs/SKY130_SAR-ADC/verilog/xspice/adc_core_digital.xspice
-
-*.include /foss/designs/SKY130_SAR-ADC/openlane/spice/adc_clkgen_with_edgedetect.spice
-*.include /foss/designs/SKY130_SAR-ADC/verilog/xspice/adc_clkgen_with_edgedetect.xspice
-
 .include ../../spice/adc_top.gds.postlayout.spice
-
-* mind the order: include AFTER XSPICE FILES
-*.include /foss/pdk/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_fd_sc_hd.spice
-
+.include /foss/pdks/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_fd_sc_hd.spice
 
 ****************
 * Misc
 ****************
 .param fclk=32768
-.param treset=100n
-.param tstartconv=500n
 .param vdiff=200m
 
 ****************
@@ -144,7 +130,7 @@ x1 result0 result1 result2 result3 result4 result5 result6 result7 result8 resul
 .save all
 .control
 set num_threads=11
-tran 250p 3.2u
+tran 50n 650u
 plot inp inn rst_n start_conv conv_finished
 plot start_conv x1.clk_dig x1.clk_comp
 plot x1.pctop x1.nctop x1.comparator_result
@@ -163,7 +149,7 @@ print
 
 
 ** opencircuitdesign pdks install
-.lib /foss/pdks/share/pdk/sky130A/libs.tech/ngspice/sky130.lib.spice tt
+.lib /foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice tt
 
 
 **** end user architecture code

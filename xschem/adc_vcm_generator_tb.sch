@@ -47,7 +47,7 @@ N 730 -350 730 -340 {
 lab=GND}
 C {devices/title.sym} 170 -40 0 0 {name=l1 author="Manuel Moser"}
 C {devices/code_shown.sym} 190 -780 0 0 {name=SPICE only_toplevel=false value="*.options reltol=1e-3 vabstol=1e-6 iabstol=1e-12
-.include /foss/pdk/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_fd_sc_hd.spice
+.include /foss/pdks/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_fd_sc_hd.spice
 .param fclk=32768
 .ic v(vcm)=0
 .tran \{1/fclk/20\} \{25*1/fclk\}
