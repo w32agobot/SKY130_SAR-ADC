@@ -1,11 +1,11 @@
 ** sch_path: /foss/designs/SKY130_SAR-ADC/xschem/adc_comp_latch.sch
-.subckt adc_comp_latch VPWR VGND clk inp inn comp_trig latch_qn latch_q
-*.PININFO VPWR:B VGND:B clk:I inp:I inn:I comp_trig:O latch_qn:O latch_q:O
-x4 VPWR VGND clk net1 adc_inverter
-x5 VPWR VGND net1 net4 adc_inverter
-x1 VPWR VGND net4 net1 inp inn net2 net3 adc_comp_circuit
-x3 net2 net3 VPWR comp_trig VGND adc_nor
-x2 net2 latch_qn VPWR latch_q VGND net3 adc_nor_latch
+.subckt adc_comp_latch VDD VSS clk inp inn comp_trig latch_qn latch_q
+*.PININFO VDD:B VSS:B clk:I inp:I inn:I comp_trig:O latch_qn:O latch_q:O
+x4 VDD VSS clk net1 adc_inverter
+x5 VDD VSS net1 net4 adc_inverter
+x1 VDD VSS net4 net1 inp inn net2 net3 adc_comp_circuit
+x3 net2 net3 VDD comp_trig VSS adc_nor
+x2 net2 latch_qn VDD latch_q VSS net3 adc_nor_latch
 .ends
 
 * expanding   symbol:  adc_inverter.sym # of pins=4

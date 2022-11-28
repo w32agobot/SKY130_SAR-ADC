@@ -45,25 +45,25 @@ lab=#net4}
 N 500 -450 560 -450 {
 lab=#net1}
 N 270 -530 270 -520 {
-lab=VPWR}
+lab=VDD}
 N 270 -480 270 -470 {
-lab=VGND}
-N 440 -530 440 -520 {
-lab=VPWR}
-N 440 -480 440 -470 {
 lab=#net5}
+N 440 -530 440 -520 {
+lab=VDD}
+N 440 -480 440 -470 {
+lab=VSS}
 N 620 -480 620 -470 {
-lab=VPWR}
+lab=VDD}
 N 620 -330 620 -320 {
-lab=#net6}
+lab=VSS}
 N 910 -450 910 -440 {
-lab=VPWR}
+lab=VDD}
 N 910 -340 910 -330 {
-lab=#net7}
+lab=VSS}
 N 870 -620 870 -610 {
-lab=VPWR}
+lab=VDD}
 N 870 -530 870 -520 {
-lab=#net8}
+lab=VSS}
 N 810 -560 830 -560 {
 lab=#net2}
 N 810 -560 810 -400 {
@@ -87,36 +87,36 @@ lab=latch_qn}
 N 980 -380 1040 -380 {
 lab=latch_q}
 N 270 -470 270 -460 {
-lab=VGND}
+lab=#net5}
 N 270 -540 270 -530 {
-lab=VPWR}
+lab=VDD}
 N 440 -540 440 -530 {
-lab=VPWR}
+lab=VDD}
 N 620 -490 620 -480 {
-lab=VPWR}
+lab=VDD}
 N 870 -630 870 -620 {
-lab=VPWR}
+lab=VDD}
 C {devices/title.sym} 150 -40 0 0 {name=l1 author="Manuel Moser"}
-C {devices/iopin.sym} 200 -720 0 1 {name=p1 lab=VPWR}
-C {devices/iopin.sym} 200 -640 0 1 {name=p2 lab=VGND}
+C {devices/iopin.sym} 200 -720 0 1 {name=p1 lab=VDD}
+C {devices/iopin.sym} 200 -640 0 1 {name=p2 lab=VSS}
 C {devices/ipin.sym} 200 -500 0 0 {name=p3 lab=clk}
 C {devices/ipin.sym} 200 -410 0 0 {name=p4 lab=inp}
 C {devices/ipin.sym} 200 -370 0 0 {name=p5 lab=inn}
 C {devices/opin.sym} 1040 -570 0 0 {name=p6 lab=comp_trig}
 C {devices/opin.sym} 1040 -400 0 0 {name=p7 lab=latch_qn}
 C {devices/opin.sym} 1040 -380 0 0 {name=p8 lab=latch_q}
-C {devices/lab_wire.sym} 270 -460 3 0 {name=l7 sig_type=std_logic lab=VGND}
-C {devices/lab_wire.sym} 270 -540 0 0 {name=l2 sig_type=std_logic lab=VPWR}
 C {adc_inverter.sym} 270 -500 0 0 {name=x4}
 C {adc_inverter.sym} 440 -500 0 0 {name=x5}
 C {adc_comp_circuit.sym} 620 -390 0 0 {name=x1}
 C {adc_nor.sym} 870 -570 0 0 {name=x3}
 C {adc_nor_latch.sym} 910 -390 0 0 {name=x2}
-C {devices/lab_wire.sym} 440 -540 0 0 {name=l2 sig_type=std_logic lab=VPWR}
-C {devices/lab_wire.sym} 620 -490 0 0 {name=l2 sig_type=std_logic lab=VPWR}
-C {devices/lab_wire.sym} 870 -630 0 0 {name=l2 sig_type=std_logic lab=VPWR}
-C {devices/lab_wire.sym} 910 -450 0 0 {name=l2 sig_type=std_logic lab=VPWR}
-C {devices/lab_wire.sym} 440 -470 3 0 {name=l7 sig_type=std_logic lab=VGND}
-C {devices/lab_wire.sym} 620 -320 3 0 {name=l7 sig_type=std_logic lab=VGND}
-C {devices/lab_wire.sym} 910 -330 3 0 {name=l7 sig_type=std_logic lab=VGND}
-C {devices/lab_wire.sym} 870 -520 3 0 {name=l7 sig_type=std_logic lab=VGND}
+C {devices/lab_wire.sym} 620 -490 0 0 {name=l3 sig_type=std_logic lab=VDD}
+C {devices/lab_wire.sym} 870 -520 3 0 {name=l7 sig_type=std_logic lab=VSS}
+C {devices/lab_wire.sym} 440 -540 0 0 {name=l4 sig_type=std_logic lab=VDD}
+C {devices/lab_wire.sym} 270 -540 0 0 {name=l5 sig_type=std_logic lab=VDD}
+C {devices/lab_wire.sym} 870 -630 0 0 {name=l6 sig_type=std_logic lab=VDD}
+C {devices/lab_wire.sym} 910 -450 0 0 {name=l2 sig_type=std_logic lab=VDD}
+C {devices/lab_wire.sym} 910 -330 3 0 {name=l8 sig_type=std_logic lab=VSS}
+C {devices/lab_wire.sym} 620 -320 3 0 {name=l9 sig_type=std_logic lab=VSS}
+C {devices/lab_wire.sym} 440 -470 3 0 {name=l10 sig_type=std_logic lab=VSS}
+C {devices/lab_wire.sym} 270 -460 3 0 {name=l11 sig_type=std_logic lab=VSS}

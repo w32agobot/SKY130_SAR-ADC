@@ -35578,8 +35578,8 @@ lab=en_C0_n}
 N 910 -920 910 -910 {
 lab=en_C0_n}
 C {devices/title.sym} 170 -40 0 0 {name=l1 author="Manuel Moser"}
-C {devices/iopin.sym} 240 -670 1 1 {name=p1 lab=VPWR}
-C {devices/iopin.sym} 250 -290 3 1 {name=p2 lab=VGND}
+C {devices/iopin.sym} 240 -670 1 1 {name=p1 lab=VDD}
+C {devices/iopin.sym} 250 -290 3 1 {name=p2 lab=VSS}
 C {devices/iopin.sym} 260 -670 1 1 {name=p9 lab=vcm}
 C {devices/ipin.sym} 200 -590 0 0 {name=p3 lab=sample}
 C {devices/ipin.sym} 200 -570 0 0 {name=p4 lab=sample_n}

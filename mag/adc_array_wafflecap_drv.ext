@@ -1,0 +1,94 @@
+timestamp 1664895328
+version 8.3
+tech sky130A
+style ngspice()
+scale 1000 1 500000
+resistclasses 4400000 2200000 950000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12800 125 125 47 47 29 5
+parameters sky130_fd_pr__nfet_01v8 l=l w=w a1=as p1=ps a2=ad p2=pd
+parameters sky130_fd_pr__pfet_01v8 l=l w=w a1=as p1=ps a2=ad p2=pd
+port "ctop" 1 184 934 244 934 m4
+port "col_n" 4 0 430 0 458 m1
+port "colon_n" 3 0 512 0 540 m1
+port "vcom" 5 0 220 0 248 m1
+port "row_n" 7 854 0 970 0 li
+port "sample_n_o" 14 1004 740 1004 770 m1
+port "sample_o" 15 1004 374 1004 402 m1
+port "sample_i" 12 0 374 0 402 m1
+port "sample_n_i" 13 0 740 0 770 m1
+port "VDD" 2 0 798 0 854 m1
+port "VSS" 6 0 136 0 192 m1
+node "ctop" 4 295.555 184 934 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 80000 3200 260480 8256 0 0 0 0
+node "m2_460_460#" 0 3.5183 460 460 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 7056 336 0 0 0 0 0 0 0 0
+node "col_n" 5 58.2302 0 430 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 29984 2168 0 0 0 0 0 0 0 0 0 0
+node "colon_n" 4 38.5603 0 512 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 28112 2064 0 0 0 0 0 0 0 0 0 0
+node "vcom" 122 3083.2 0 220 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 114456 2236 72032 3564 838656 4608 433024 11648 0 0 0 0 0 0
+node "row_n" 161 806.228 854 0 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3564 240 0 0 128896 2268 56096 1928 0 0 0 0 0 0 0 0 0 0
+node "sample_n_o" 805 107.503 1004 740 m1 0 0 0 0 0 0 0 0 5544 300 10560 452 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 15572 984 17444 1104 0 0 0 0 0 0 0 0 0 0
+node "sample_o" 806 143.861 1004 374 m1 0 0 0 0 0 0 0 0 5544 300 10560 452 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 15572 984 25972 1784 0 0 0 0 0 0 0 0 0 0
+node "sample_i" 1894 424.246 0 374 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 42152 2616 0 0 5520 332 12856 916 0 0 0 0 0 0 0 0 0 0
+node "sample_n_i" 1821 310.654 0 740 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 39340 2480 0 0 3456 264 9208 644 0 0 0 0 0 0 0 0 0 0
+node "VDD" 7893 1375.68 0 798 m1 0 0 0 0 375496 2756 0 0 23184 1100 39680 1776 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 55280 3056 71408 2764 0 0 0 0 0 0 0 0 0 0
+substrate "VSS" 0 0 0 136 m1 0 0 0 0 0 0 0 0 20832 1168 20740 1288 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 42364 2560 56224 2120 0 0 0 0 0 0 0 0 0 0
+cap "sample_n_i" "VDD" 324.179
+cap "VDD" "sample_i" 87.5133
+cap "col_n" "row_n" 14.2583
+cap "vcom" "row_n" 466.487
+cap "VDD" "sample_o" 106.993
+cap "VDD" "colon_n" 227.24
+cap "sample_n_i" "sample_n_o" 7.47956
+cap "m2_460_460#" "ctop" 3.58122
+cap "sample_n_o" "sample_i" 13.7486
+cap "sample_n_i" "sample_i" 33.6325
+cap "sample_n_o" "sample_o" 16.2788
+cap "sample_n_o" "colon_n" 72.8175
+cap "col_n" "m2_460_460#" 7.08054
+cap "sample_n_i" "sample_o" 5.91794
+cap "vcom" "m2_460_460#" 161.194
+cap "sample_n_i" "colon_n" 15.9238
+cap "sample_o" "sample_i" 131.489
+cap "sample_i" "colon_n" 4.8976
+cap "VDD" "ctop" 135.763
+cap "sample_o" "colon_n" 4.78173
+cap "m2_460_460#" "row_n" 0.235856
+cap "VDD" "col_n" 4.15727
+cap "VDD" "vcom" 760.198
+cap "sample_n_o" "ctop" 19.8547
+cap "sample_n_i" "ctop" 22.6207
+cap "ctop" "sample_i" 26.3518
+cap "sample_n_o" "col_n" 4.82523
+cap "sample_n_o" "vcom" 121.163
+cap "VDD" "row_n" 297.038
+cap "ctop" "sample_o" 21.8254
+cap "sample_n_i" "col_n" 4.49507
+cap "ctop" "colon_n" 9.86803
+cap "sample_n_i" "vcom" 238.043
+cap "col_n" "sample_i" 223.986
+cap "vcom" "sample_i" 220.5
+cap "col_n" "sample_o" 269.368
+cap "vcom" "sample_o" 422.821
+cap "col_n" "colon_n" 715
+cap "vcom" "colon_n" 208.986
+cap "sample_n_o" "row_n" 190.336
+cap "sample_n_i" "row_n" 4.35544
+cap "VDD" "m2_460_460#" 1.99305
+cap "row_n" "sample_i" 8.25797
+cap "row_n" "sample_o" 132.163
+cap "row_n" "colon_n" 125.47
+cap "col_n" "ctop" 11.063
+cap "sample_n_o" "m2_460_460#" 0.270938
+cap "vcom" "ctop" 2941.13
+cap "sample_n_i" "m2_460_460#" 0.175945
+cap "m2_460_460#" "sample_i" 0.664725
+cap "vcom" "col_n" 119.497
+cap "m2_460_460#" "sample_o" 0.512105
+cap "m2_460_460#" "colon_n" 8.45573
+cap "ctop" "row_n" 64.3174
+cap "VDD" "sample_n_o" 335.081
+device msubckt sky130_fd_pr__nfet_01v8 712 254 713 255 l=30 w=84 "VSS" "sample_i" 60 0 "sample_n_o" 84 0 "VSS" 84 0
+device msubckt sky130_fd_pr__nfet_01v8 616 254 617 255 l=30 w=84 "VSS" "sample_i" 60 0 "VSS" 84 0 "sample_n_o" 84 0
+device msubckt sky130_fd_pr__nfet_01v8 328 252 329 253 l=30 w=84 "VSS" "sample_n_i" 60 0 "sample_o" 84 0 "VSS" 84 0
+device msubckt sky130_fd_pr__nfet_01v8 232 252 233 253 l=30 w=84 "VSS" "sample_n_i" 60 0 "VSS" 84 0 "sample_o" 84 0
+device msubckt sky130_fd_pr__pfet_01v8 712 544 713 545 l=30 w=160 "VDD" "sample_i" 60 0 "sample_n_o" 160 0 "VDD" 160 0
+device msubckt sky130_fd_pr__pfet_01v8 616 544 617 545 l=30 w=160 "VDD" "sample_i" 60 0 "VDD" 160 0 "sample_n_o" 160 0
+device msubckt sky130_fd_pr__pfet_01v8 328 542 329 543 l=30 w=160 "VDD" "sample_n_i" 60 0 "sample_o" 160 0 "VDD" 160 0
+device msubckt sky130_fd_pr__pfet_01v8 232 542 233 543 l=30 w=160 "VDD" "sample_n_i" 60 0 "VDD" 160 0 "sample_o" 160 0

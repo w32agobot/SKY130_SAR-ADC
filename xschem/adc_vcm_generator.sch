@@ -27,7 +27,7 @@ lab=clk}
 N 540 -640 540 -610 {
 lab=VSS}
 N 540 -770 540 -740 {
-lab=VPWR}
+lab=VDD}
 N 660 -720 700 -720 {
 lab=phi1}
 N 660 -700 700 -700 {
@@ -47,13 +47,13 @@ lab=VSS}
 N 1090 -340 1090 -320 {
 lab=VSS}
 N 1090 -980 1090 -960 {
-lab=VPWR}
+lab=VDD}
 N 1020 -890 1040 -890 {
 lab=phi2}
 N 1140 -890 1160 -890 {
 lab=phi2_n}
 N 1140 -980 1140 -940 {
-lab=VPWR}
+lab=VDD}
 N 1140 -840 1140 -810 {
 lab=VSS}
 N 1300 -860 1300 -840 {
@@ -123,25 +123,25 @@ lab=VSS}
 N 880 -320 880 -290 {
 lab=VSS}
 N 330 -1010 1090 -1010 {
-lab=VPWR}
+lab=VDD}
 N 1090 -1010 1090 -980 {
-lab=VPWR}
+lab=VDD}
 N 1090 -1010 1140 -1010 {
-lab=VPWR}
+lab=VDD}
 N 1140 -1010 1140 -980 {
-lab=VPWR}
+lab=VDD}
 N 540 -1010 540 -770 {
-lab=VPWR}
+lab=VDD}
 N 540 -610 540 -290 {
 lab=VSS}
 N 310 -690 460 -690 {
 lab=clk}
 N 610 -930 610 -910 {
-lab=VPWR}
+lab=VDD}
 N 610 -930 710 -930 {
-lab=VPWR}
+lab=VDD}
 N 710 -930 710 -910 {
-lab=VPWR}
+lab=VDD}
 N 610 -850 610 -830 {
 lab=VSS}
 N 610 -830 710 -830 {
@@ -149,7 +149,7 @@ lab=VSS}
 N 710 -850 710 -830 {
 lab=VSS}
 N 660 -1010 660 -930 {
-lab=VPWR}
+lab=VDD}
 N 660 -800 670 -800 {
 lab=VSS}
 N 660 -830 660 -800 {
@@ -161,8 +161,8 @@ C {devices/lab_wire.sym} 700 -720 0 1 {name=l7 sig_type=std_logic lab=phi1}
 C {devices/lab_wire.sym} 700 -700 0 1 {name=l7 sig_type=std_logic lab=phi1_n}
 C {devices/lab_wire.sym} 700 -680 0 1 {name=l7 sig_type=std_logic lab=phi2}
 C {devices/lab_wire.sym} 700 -660 0 1 {name=l7 sig_type=std_logic lab=phi2_n}
-C {devices/iopin.sym} 330 -1010 0 1 {name=p1 lab=VPWR}
-C {devices/iopin.sym} 350 -290 0 1 {name=p1 lab=VGND}
+C {devices/iopin.sym} 330 -1010 0 1 {name=p2 lab=VDD}
+C {devices/iopin.sym} 350 -290 0 1 {name=p3 lab=VSS}
 C {devices/lab_wire.sym} 1020 -890 0 0 {name=l1 sig_type=std_logic lab=phi2}
 C {devices/lab_wire.sym} 1160 -890 0 1 {name=l1 sig_type=std_logic lab=phi2_n}
 C {devices/ipin.sym} 310 -690 0 0 {name=p1 lab=clk}
@@ -190,16 +190,16 @@ C {devices/lab_wire.sym} 1150 -580 0 1 {name=l1 sig_type=std_logic lab=phi2_n}
 C {devices/lab_wire.sym} 1030 -580 0 0 {name=l1 sig_type=std_logic lab=phi2}
 C {devices/lab_wire.sym} 980 -770 0 0 {name=l1 sig_type=std_logic lab=vcm}
 C {devices/lab_wire.sym} 980 -460 0 0 {name=l1 sig_type=std_logic lab=vcm}
-C {devices/code_shown.sym} 210 -1170 0 0 {name=HD_LIBRARY_ONLY_TOPLEVEL only_toplevel=true value="*.include /foss/pdk/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_fd_sc_hd.spice"}
+C {devices/code_shown.sym} 210 -1170 0 0 {name=HD_LIBRARY_ONLY_TOPLEVEL only_toplevel=true value=".include /foss/pdks/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_fd_sc_hd.spice"}
 C {devices/lab_wire.sym} 1220 -790 0 0 {name=l1 sig_type=std_logic lab=mimtop1}
 C {devices/lab_wire.sym} 1230 -480 0 0 {name=l1 sig_type=std_logic lab=mimtop2}
 C {devices/lab_wire.sym} 900 -660 0 0 {name=l1 sig_type=std_logic lab=mimbot1}
 C {devices/lab_wire.sym} 670 -800 0 1 {name=l1 sig_type=std_logic lab=VSS}
 C {adc_vcm_clkgen.sym} 490 -690 0 0 {name=X1}
-C {adc_noise_decoup_cell1.sym} 660 -860 0 0 {name=x_decap_[1..4]}
+C {adc_noise_decoup_cell1.sym} 660 -860 0 0 {name=x_decap_[1..3]}
 C {adc_vcm_switch.sym} 1090 -890 0 0 {name=X2}
-C {adc_noise_decoup_cell1.sym} 1040 -720 0 0 {name=x_cap1_[1..42]}
-C {adc_noise_decoup_cell1.sym} 1040 -410 0 0 {name=x_cap2_[1..42]}
+C {adc_noise_decoup_cell1.sym} 1040 -720 0 0 {name=x_cap1_[1..40]}
+C {adc_noise_decoup_cell1.sym} 1040 -410 0 0 {name=x_cap2_[1..40]}
 C {adc_vcm_switch.sym} 880 -570 0 0 {name=X4}
 C {adc_vcm_switch.sym} 1090 -580 0 0 {name=X3}
 C {adc_vcm_switch.sym} 1360 -480 3 0 {name=X6}

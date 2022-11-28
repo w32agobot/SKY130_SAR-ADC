@@ -1,12 +1,11 @@
 ** sch_path: /foss/designs/SKY130_SAR-ADC/xschem/adc_vcm_generator.sch
-.subckt adc_vcm_generator VPWR VGND clk vcm
-*.PININFO VPWR:B VGND:B clk:I vcm:B
-X1 clk VPWR VGND phi1_n phi1 phi2 phi2_n adc_vcm_clkgen
-x_decap_1 VPWR VSS VPWR VSS VSS adc_noise_decoup_cell1
-x_decap_2 VPWR VSS VPWR VSS VSS adc_noise_decoup_cell1
-x_decap_3 VPWR VSS VPWR VSS VSS adc_noise_decoup_cell1
-x_decap_4 VPWR VSS VPWR VSS VSS adc_noise_decoup_cell1
-X2 phi2_n VPWR phi2 mimtop1 VPWR VSS adc_vcm_switch
+.subckt adc_vcm_generator VDD VSS clk vcm
+*.PININFO VDD:B VSS:B clk:I vcm:B
+X1 clk VDD VSS phi1_n phi1 phi2 phi2_n adc_vcm_clkgen
+x_decap_1 VDD VSS VDD VSS VSS adc_noise_decoup_cell1
+x_decap_2 VDD VSS VDD VSS VSS adc_noise_decoup_cell1
+x_decap_3 VDD VSS VDD VSS VSS adc_noise_decoup_cell1
+X2 phi2_n VDD phi2 mimtop1 VDD VSS adc_vcm_switch
 x_cap1_1 mimtop1 mimbot1 vcm VSS VSS adc_noise_decoup_cell1
 x_cap1_2 mimtop1 mimbot1 vcm VSS VSS adc_noise_decoup_cell1
 x_cap1_3 mimtop1 mimbot1 vcm VSS VSS adc_noise_decoup_cell1
@@ -47,57 +46,53 @@ x_cap1_37 mimtop1 mimbot1 vcm VSS VSS adc_noise_decoup_cell1
 x_cap1_38 mimtop1 mimbot1 vcm VSS VSS adc_noise_decoup_cell1
 x_cap1_39 mimtop1 mimbot1 vcm VSS VSS adc_noise_decoup_cell1
 x_cap1_40 mimtop1 mimbot1 vcm VSS VSS adc_noise_decoup_cell1
-x_cap1_41 mimtop1 mimbot1 vcm VSS VSS adc_noise_decoup_cell1
-x_cap1_42 mimtop1 mimbot1 vcm VSS VSS adc_noise_decoup_cell1
-x_cap2_1 mimtop2 VGND vcm VSS VSS adc_noise_decoup_cell1
-x_cap2_2 mimtop2 VGND vcm VSS VSS adc_noise_decoup_cell1
-x_cap2_3 mimtop2 VGND vcm VSS VSS adc_noise_decoup_cell1
-x_cap2_4 mimtop2 VGND vcm VSS VSS adc_noise_decoup_cell1
-x_cap2_5 mimtop2 VGND vcm VSS VSS adc_noise_decoup_cell1
-x_cap2_6 mimtop2 VGND vcm VSS VSS adc_noise_decoup_cell1
-x_cap2_7 mimtop2 VGND vcm VSS VSS adc_noise_decoup_cell1
-x_cap2_8 mimtop2 VGND vcm VSS VSS adc_noise_decoup_cell1
-x_cap2_9 mimtop2 VGND vcm VSS VSS adc_noise_decoup_cell1
-x_cap2_10 mimtop2 VGND vcm VSS VSS adc_noise_decoup_cell1
-x_cap2_11 mimtop2 VGND vcm VSS VSS adc_noise_decoup_cell1
-x_cap2_12 mimtop2 VGND vcm VSS VSS adc_noise_decoup_cell1
-x_cap2_13 mimtop2 VGND vcm VSS VSS adc_noise_decoup_cell1
-x_cap2_14 mimtop2 VGND vcm VSS VSS adc_noise_decoup_cell1
-x_cap2_15 mimtop2 VGND vcm VSS VSS adc_noise_decoup_cell1
-x_cap2_16 mimtop2 VGND vcm VSS VSS adc_noise_decoup_cell1
-x_cap2_17 mimtop2 VGND vcm VSS VSS adc_noise_decoup_cell1
-x_cap2_18 mimtop2 VGND vcm VSS VSS adc_noise_decoup_cell1
-x_cap2_19 mimtop2 VGND vcm VSS VSS adc_noise_decoup_cell1
-x_cap2_20 mimtop2 VGND vcm VSS VSS adc_noise_decoup_cell1
-x_cap2_21 mimtop2 VGND vcm VSS VSS adc_noise_decoup_cell1
-x_cap2_22 mimtop2 VGND vcm VSS VSS adc_noise_decoup_cell1
-x_cap2_23 mimtop2 VGND vcm VSS VSS adc_noise_decoup_cell1
-x_cap2_24 mimtop2 VGND vcm VSS VSS adc_noise_decoup_cell1
-x_cap2_25 mimtop2 VGND vcm VSS VSS adc_noise_decoup_cell1
-x_cap2_26 mimtop2 VGND vcm VSS VSS adc_noise_decoup_cell1
-x_cap2_27 mimtop2 VGND vcm VSS VSS adc_noise_decoup_cell1
-x_cap2_28 mimtop2 VGND vcm VSS VSS adc_noise_decoup_cell1
-x_cap2_29 mimtop2 VGND vcm VSS VSS adc_noise_decoup_cell1
-x_cap2_30 mimtop2 VGND vcm VSS VSS adc_noise_decoup_cell1
-x_cap2_31 mimtop2 VGND vcm VSS VSS adc_noise_decoup_cell1
-x_cap2_32 mimtop2 VGND vcm VSS VSS adc_noise_decoup_cell1
-x_cap2_33 mimtop2 VGND vcm VSS VSS adc_noise_decoup_cell1
-x_cap2_34 mimtop2 VGND vcm VSS VSS adc_noise_decoup_cell1
-x_cap2_35 mimtop2 VGND vcm VSS VSS adc_noise_decoup_cell1
-x_cap2_36 mimtop2 VGND vcm VSS VSS adc_noise_decoup_cell1
-x_cap2_37 mimtop2 VGND vcm VSS VSS adc_noise_decoup_cell1
-x_cap2_38 mimtop2 VGND vcm VSS VSS adc_noise_decoup_cell1
-x_cap2_39 mimtop2 VGND vcm VSS VSS adc_noise_decoup_cell1
-x_cap2_40 mimtop2 VGND vcm VSS VSS adc_noise_decoup_cell1
-x_cap2_41 mimtop2 VGND vcm VSS VSS adc_noise_decoup_cell1
-x_cap2_42 mimtop2 VGND vcm VSS VSS adc_noise_decoup_cell1
-X4 phi1_n mimbot1 phi1 VGND VDD VSS adc_vcm_switch
+x_cap2_1 mimtop2 VSS vcm VSS VSS adc_noise_decoup_cell1
+x_cap2_2 mimtop2 VSS vcm VSS VSS adc_noise_decoup_cell1
+x_cap2_3 mimtop2 VSS vcm VSS VSS adc_noise_decoup_cell1
+x_cap2_4 mimtop2 VSS vcm VSS VSS adc_noise_decoup_cell1
+x_cap2_5 mimtop2 VSS vcm VSS VSS adc_noise_decoup_cell1
+x_cap2_6 mimtop2 VSS vcm VSS VSS adc_noise_decoup_cell1
+x_cap2_7 mimtop2 VSS vcm VSS VSS adc_noise_decoup_cell1
+x_cap2_8 mimtop2 VSS vcm VSS VSS adc_noise_decoup_cell1
+x_cap2_9 mimtop2 VSS vcm VSS VSS adc_noise_decoup_cell1
+x_cap2_10 mimtop2 VSS vcm VSS VSS adc_noise_decoup_cell1
+x_cap2_11 mimtop2 VSS vcm VSS VSS adc_noise_decoup_cell1
+x_cap2_12 mimtop2 VSS vcm VSS VSS adc_noise_decoup_cell1
+x_cap2_13 mimtop2 VSS vcm VSS VSS adc_noise_decoup_cell1
+x_cap2_14 mimtop2 VSS vcm VSS VSS adc_noise_decoup_cell1
+x_cap2_15 mimtop2 VSS vcm VSS VSS adc_noise_decoup_cell1
+x_cap2_16 mimtop2 VSS vcm VSS VSS adc_noise_decoup_cell1
+x_cap2_17 mimtop2 VSS vcm VSS VSS adc_noise_decoup_cell1
+x_cap2_18 mimtop2 VSS vcm VSS VSS adc_noise_decoup_cell1
+x_cap2_19 mimtop2 VSS vcm VSS VSS adc_noise_decoup_cell1
+x_cap2_20 mimtop2 VSS vcm VSS VSS adc_noise_decoup_cell1
+x_cap2_21 mimtop2 VSS vcm VSS VSS adc_noise_decoup_cell1
+x_cap2_22 mimtop2 VSS vcm VSS VSS adc_noise_decoup_cell1
+x_cap2_23 mimtop2 VSS vcm VSS VSS adc_noise_decoup_cell1
+x_cap2_24 mimtop2 VSS vcm VSS VSS adc_noise_decoup_cell1
+x_cap2_25 mimtop2 VSS vcm VSS VSS adc_noise_decoup_cell1
+x_cap2_26 mimtop2 VSS vcm VSS VSS adc_noise_decoup_cell1
+x_cap2_27 mimtop2 VSS vcm VSS VSS adc_noise_decoup_cell1
+x_cap2_28 mimtop2 VSS vcm VSS VSS adc_noise_decoup_cell1
+x_cap2_29 mimtop2 VSS vcm VSS VSS adc_noise_decoup_cell1
+x_cap2_30 mimtop2 VSS vcm VSS VSS adc_noise_decoup_cell1
+x_cap2_31 mimtop2 VSS vcm VSS VSS adc_noise_decoup_cell1
+x_cap2_32 mimtop2 VSS vcm VSS VSS adc_noise_decoup_cell1
+x_cap2_33 mimtop2 VSS vcm VSS VSS adc_noise_decoup_cell1
+x_cap2_34 mimtop2 VSS vcm VSS VSS adc_noise_decoup_cell1
+x_cap2_35 mimtop2 VSS vcm VSS VSS adc_noise_decoup_cell1
+x_cap2_36 mimtop2 VSS vcm VSS VSS adc_noise_decoup_cell1
+x_cap2_37 mimtop2 VSS vcm VSS VSS adc_noise_decoup_cell1
+x_cap2_38 mimtop2 VSS vcm VSS VSS adc_noise_decoup_cell1
+x_cap2_39 mimtop2 VSS vcm VSS VSS adc_noise_decoup_cell1
+x_cap2_40 mimtop2 VSS vcm VSS VSS adc_noise_decoup_cell1
+X4 phi1_n mimbot1 phi1 VSS VDD VSS adc_vcm_switch
 X3 phi2_n mimbot1 phi2 mimtop2 VDD VSS adc_vcm_switch
 X6 phi1_n mimtop2 phi1 vcm VDD VSS adc_vcm_switch
 X5 phi1_n mimtop1 phi1 vcm VDD VSS adc_vcm_switch
 **** begin user architecture code
 
-*.include /foss/pdk/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_fd_sc_hd.spice
+.include /foss/pdks/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_fd_sc_hd.spice
 
 **** end user architecture code
 .ends
