@@ -4926,18 +4926,15 @@ X38 Y D1 a_27_47# VNB sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=650000u 
 X39 VGND A1 a_803_47# VNB sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=650000u l=150000u
 .ends
 
-.subckt adc_top VDD VSS clk_vcm config_1_in[0] config_1_in[10] config_1_in[11] config_1_in[12]
-+ config_1_in[13] config_1_in[14] config_1_in[15] config_1_in[1] config_1_in[2] config_1_in[3]
-+ config_1_in[4] config_1_in[5] config_1_in[6] config_1_in[7] config_1_in[8] config_1_in[9]
-+ config_2_in[0] config_2_in[10] config_2_in[11] config_2_in[12] config_2_in[13] config_2_in[14]
-+ config_2_in[15] config_2_in[1] config_2_in[2] config_2_in[3] config_2_in[4] config_2_in[5]
-+ config_2_in[6] config_2_in[7] config_2_in[8] config_2_in[9] conversion_finished_out
-+ dummypin[0] dummypin[10] dummypin[11] dummypin[12] dummypin[13] dummypin[14] dummypin[15]
-+ dummypin[1] dummypin[2] dummypin[3] dummypin[4] dummypin[5] dummypin[6] dummypin[7]
-+ dummypin[8] dummypin[9] inn_analog inp_analog result_out[0] result_out[10] result_out[11]
-+ result_out[12] result_out[13] result_out[14] result_out[15] result_out[1] result_out[2]
-+ result_out[3] result_out[4] result_out[5] result_out[6] result_out[7] result_out[8]
-+ result_out[9] rst_n start_conversion_in
+.subckt adc_top result_out[0] result_out[1] result_out[2] result_out[3] result_out[4] result_out[5] result_out[6] result_out[7] result_out[8] result_out[9]
++ result_out[10] result_out[11] result_out[12] result_out[13] result_out[14] result_out[15] VDD VSS conversion_finished_out rst_n start_conversion_in clk_vcm
++ inp_analog inn_analog
++ config_1_in[0] config_1_in[1] config_1_in[2] config_1_in[3] config_1_in[4] config_1_in[5] config_1_in[6] config_1_in[7] config_1_in[8] config_1_in[9]
++ config_1_in[10] config_1_in[11] config_1_in[12] config_1_in[13] config_1_in[14] config_1_in[15] 
++ config_2_in[0] config_2_in[1] config_2_in[2] config_2_in[3] config_2_in[4] config_2_in[5] config_2_in[6] config_2_in[7] config_2_in[8] config_2_in[9] 
++ config_2_in[10] config_2_in[11] config_2_in[12] config_2_in[13] config_2_in[14] config_2_in[15] 
++ dummypin[0] dummypin[10] dummypin[11] dummypin[12] dummypin[13] dummypin[14] dummypin[15] dummypin[1] dummypin[2] dummypin[3] dummypin[4] dummypin[5] 
++ dummypin[6] dummypin[7] dummypin[8] dummypin[9]  
 XANTENNA__1725__RESET_B net63 VSS VDD VDD VSS sky130_fd_sc_hd__diode_2
 XFILLER_50_431 VDD VSS VSS VDD sky130_fd_sc_hd__decap_6
 XFILLER_139_9 VSS VDD VSS VDD sky130_ef_sc_hd__decap_12
