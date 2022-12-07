@@ -1,77 +1,31 @@
 ** sch_path: /foss/designs/SKY130_SAR-ADC/xschem/adc_top_postlayout_tb.sch
 **.subckt adc_top_postlayout_tb
-V_VDD_1 VDD GND 1.8
-.save i(v_vdd_1)
-V_VCM_2 vcm GND 0.9
-.save i(v_vcm_2)
-V_VCM_1 inp vcm {vdiff/2}
-.save i(v_vcm_1)
-V_VCM_3 vcm inn {vdiff/2}
-.save i(v_vcm_3)
+V_VDD_1 VDD GND pwl 0 0 {boot} 1.8
+V_VCM_2 vcm GND pwl 0 0 {boot} 0.9
+V_VCM_1 inp vcm pwl 0 0 {boot} {vdiff/2}
+V_VCM_3 vcm inn pwl 0 0 {boot} {vdiff/2}
 V_VCM clk_vcm GND 0 pulse(0 1.8 {0.5/fclk} 1n 1n {0.5/fclk} {1/fclk})
-.save i(v_vcm)
 V1 rst_n GND pwl 0 0 600025n 0 600026n 1.8
-.save i(v1)
-V31 start_conv GND pwl 0 0 610025n 0 610026n 1.8 610125n 1.8 610126n 0
-.save i(v31)
-V4 dlyctrl1_4 GND bit4
-.save i(v4)
-V5 dlyctrl1_3 GND bit3
-.save i(v5)
-V6 dlyctrl1_2 GND bit2
-.save i(v6)
-V7 dlyctrl1_1 GND bit1
-.save i(v7)
-V8 dlyctrl1_0 GND bit0
-.save i(v8)
-V2 avg_mode2 GND avg2
-.save i(v2)
-V3 avg_mode1 GND avg1
-.save i(v3)
-V25 avg_mode0 GND avg0
-.save i(v25)
-V9 dlyctrl2_4 GND bit4
-.save i(v9)
-V10 dlyctrl2_3 GND bit3
-.save i(v10)
-V11 dlyctrl2_2 GND bit2
-.save i(v11)
-V12 dlyctrl2_1 GND bit1
-.save i(v12)
-V13 dlyctrl2_0 GND bit0
-.save i(v13)
-V14 dlyctrl3_4 GND bit4
-.save i(v14)
-V15 dlyctrl3_3 GND bit3
-.save i(v15)
-V16 dlyctrl3_2 GND bit2
-.save i(v16)
-V17 dlyctrl3_1 GND bit1
-.save i(v17)
-V18 dlyctrl3_0 GND bit0
-.save i(v18)
-V19 dlyctrl4_5 GND ed_bit5
-.save i(v19)
-V20 dlyctrl4_4 GND ed_bit4
-.save i(v20)
-V21 dlyctrl4_3 GND ed_bit3
-.save i(v21)
-V22 dlyctrl4_2 GND ed_bit2
-.save i(v22)
-V23 dlyctrl4_1 GND ed_bit1
-.save i(v23)
-V24 dlyctrl4_0 GND ed_bit0
-.save i(v24)
-V26 en_dly_contr GND dlyctrl
-.save i(v26)
-V27 osr_mode2 GND osr2
-.save i(v27)
-V28 osr_mode1 GND osr1
-.save i(v28)
-V29 osr_mode0 GND osr0
-.save i(v29)
+V31 start_conv GND pwl 0 0 610025n 0 610026n 1.8 610525n 1.8 610526n 0
+V4 dlyctrl1_4 GND pwl 0 0 {boot} {bit4}
+V5 dlyctrl1_3 GND pwl 0 0 {boot} {bit3}
+V6 dlyctrl1_2 GND pwl 0 0 {boot} {bit2}
+V7 dlyctrl1_1 GND pwl 0 0 {boot} {bit1}
+V8 dlyctrl1_0 GND pwl 0 0 {boot} {bit0}
+V2 avg_mode2 GND pwl 0 0 {boot} {avg2}
+V3 avg_mode1 GND pwl 0 0 {boot} {avg1}
+V25 avg_mode0 GND pwl 0 0 {boot} {avg0}
+V19 dlyctrl4_5 GND pwl 0 0 {boot} {ed_bit5}
+V20 dlyctrl4_4 GND pwl 0 0 {boot} {ed_bit4}
+V21 dlyctrl4_3 GND pwl 0 0 {boot} {ed_bit3}
+V22 dlyctrl4_2 GND pwl 0 0 {boot} {ed_bit2}
+V23 dlyctrl4_1 GND pwl 0 0 {boot} {ed_bit1}
+V24 dlyctrl4_0 GND pwl 0 0 {boot} {ed_bit0}
+V26 en_dly_contr GND pwl 0 0 {boot} {dlyctrl}
+V27 osr_mode2 GND pwl 0 0 {boot} {osr2}
+V28 osr_mode1 GND pwl 0 0 {boot} {osr1}
+V29 osr_mode0 GND pwl 0 0 {boot} {osr0}
 V30 nc0 GND 0
-.save i(v30)
 x1 result0 result1 result2 result3 result4 result5 result6 result7 result8 result9 result10 result11
 + result12 result13 result14 result15 VDD GND conv_finished rst_n start_conv clk_vcm inp inn avg_mode0
 + avg_mode1 avg_mode2 osr_mode0 osr_mode1 osr_mode2 nc0 nc1 nc2 nc3 dlyctrl4_0 dlyctrl4_1 dlyctrl4_2 dlyctrl4_3
@@ -79,18 +33,44 @@ x1 result0 result1 result2 result3 result4 result5 result6 result7 result8 resul
 + dlyctrl2_3 dlyctrl2_4 dlyctrl3_0 dlyctrl3_1 dlyctrl3_2 dlyctrl3_3 dlyctrl3_4 en_dly_contr net1[15] net1[14]
 + net1[13] net1[12] net1[11] net1[10] net1[9] net1[8] net1[7] net1[6] net1[5] net1[4] net1[3] net1[2] net1[1]
 + net1[0] adc_top_postlayout
+V9 dlyctrl2_4 GND pwl 0 0 {boot} {bit4}
+V10 dlyctrl2_3 GND pwl 0 0 {boot} {bit3}
+V11 dlyctrl2_2 GND pwl 0 0 {boot} {bit2}
+V12 dlyctrl2_1 GND pwl 0 0 {boot} {bit1}
+V13 dlyctrl2_0 GND pwl 0 0 {boot} {bit0}
+V14 dlyctrl3_4 GND pwl 0 0 {boot} {bit4}
+V15 dlyctrl3_3 GND pwl 0 0 {boot} {bit3}
+V16 dlyctrl3_2 GND pwl 0 0 {boot} {bit2}
+V17 dlyctrl3_1 GND pwl 0 0 {boot} {bit1}
+V18 dlyctrl3_0 GND pwl 0 0 {boot} {bit0}
+V32 GND 0 0
 **** begin user architecture code
 
+** opencircuitdesign pdks install
+.lib /foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice tt
 
-.options method=gear
-.include ../../spice/adc_top.gds.postlayout.spice
-.include /foss/pdks/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_fd_sc_hd.spice
+
+
+
+
+
+* xyce commands
+*.include /foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__diode_pw2nd_05v5.model.spice
+.include ../../spice/adc_top.gds.C.noD.merge.postlayout.spice
+*.include ../../spice/adc_top.gds.RC.postlayout.spice
+*.include /foss/pdks/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_fd_sc_hd.spice
+
+*.PREPROCESS ADDRESISTORS ONETERMINAL 10G
+*.PREPROCESS ADDRESISTORS NODCPATH 10G
+.OPTIONS TIMEINT METHOD=GEAR
+*.OPTIONS TIMEINT ABSTOL=1e-12
 
 ****************
 * Misc
 ****************
 .param fclk=32768
 .param vdiff=200m
+.param boot=10p
 
 ****************
 * Delay Config
@@ -126,30 +106,32 @@ x1 result0 result1 result2 result3 result4 result5 result6 result7 result8 resul
 .param osr1 = 0
 .param osr2 = 0
 
+****************
+* XYCE Simulation Control
+****************
+.tran 1n 900u
+.print tran format=raw file=adc_top_postlayout_tb.raw         v(x1:ctopp) v(x1:ctopn) v(x1:vcm) v(x1:clk_ena)
++ v(x1:decision_finish) v(x1:comp_latch) v(VDD) v(rst_n) v(start_conv) v(clk_vcm) v(inp) v(inn) v(conv_finished)
++ v(x1:clk_dig) v(x1:clk_comp) v(result*) v(dlyctrl*) v(avg_mode*) v(osr_mode*) v(en_dly_contr) i(v_vdd_1)
++ {((v(result0)*0.125+v(result1)*0.25+v(result2)*0.5+v(result3)+v(result4)*2+v(result5)*4+v(result6)*8+v(result7)*16+v(result8)*32++v(result9)*64+v(result10)*128+v(result11)*256+v(result12)*512+v(result13)*1024+v(result14)*2048+v(result15)*4096)/4096-1.8)}
+.print tran format=std file=adc_top_postlayout_tb.ascii       v(x1:ctopp) v(x1:ctopn) v(x1:vcm) v(x1:clk_ena)
++ v(x1:decision_finish) v(x1:comp_latch) v(VDD) v(rst_n) v(start_conv) v(clk_vcm) v(inp) v(inn) v(conv_finished)
++ v(x1:clk_dig) v(x1:clk_comp) v(result*) v(dlyctrl*) v(avg_mode*) v(osr_mode*) v(en_dly_contr) i(v_vdd_1)
++ {((v(result0)*0.125+v(result1)*0.25+v(result2)*0.5+v(result3)+v(result4)*2+v(result5)*4+v(result6)*8+v(result7)*16+v(result8)*32++v(result9)*64+v(result10)*128+v(result11)*256+v(result12)*512+v(result13)*1024+v(result14)*2048+v(result15)*4096)/4096-1.8)}
+.print tran format=csv file=adc_top_postlayout_tb.csv         v(x1:ctopp) v(x1:ctopn) v(x1:vcm) v(x1:clk_ena)
++ v(x1:decision_finish) v(x1:comp_latch) v(VDD) v(rst_n) v(start_conv) v(clk_vcm) v(inp) v(inn) v(conv_finished)
++ v(x1:clk_dig) v(x1:clk_comp) v(result*) v(dlyctrl*) v(avg_mode*) v(osr_mode*) v(en_dly_contr) i(v_vdd_1)
++ {((v(result0)*0.125+v(result1)*0.25+v(result2)*0.5+v(result3)+v(result4)*2+v(result5)*4+v(result6)*8+v(result7)*16+v(result8)*32++v(result9)*64+v(result10)*128+v(result11)*256+v(result12)*512+v(result13)*1024+v(result14)*2048+v(result15)*4096)/4096-1.8)}
+.print tran format=gnuplot file=adc_top_postlayout_tb.gnu.dat v(x1:ctopp) v(x1:ctopn) v(x1:vcm) v(x1:clk_ena)
++ v(x1:decision_finish) v(x1:comp_latch) v(VDD) v(rst_n) v(start_conv) v(clk_vcm) v(inp) v(inn) v(conv_finished)
++ v(x1:clk_dig) v(x1:clk_comp) v(result*) v(dlyctrl*) v(avg_mode*) v(osr_mode*) v(en_dly_contr) i(v_vdd_1)
++ {((v(result0)*0.125+v(result1)*0.25+v(result2)*0.5+v(result3)+v(result4)*2+v(result5)*4+v(result6)*8+v(result7)*16+v(result8)*32++v(result9)*64+v(result10)*128+v(result11)*256+v(result12)*512+v(result13)*1024+v(result14)*2048+v(result15)*4096)/4096-1.8)}
 
-.save all
-.control
-set num_threads=11
-tran 50n 650u
-plot inp inn rst_n start_conv conv_finished
-plot start_conv x1.clk_dig x1.clk_comp
-plot x1.pctop x1.nctop x1.comparator_result
-plot x1.pctop-x1.nctop
-
-let k = length(time) - 1
-
-* Print the result vector at the end of tran
-print result15[k] result14[k] result13[k] result12[k] result11[k] result10[k] result9[k] result8[k]
-+ result7[k] result6[k] result5[k] result4[k] result3[k] result2[k] result1[k] result0[k]
-* Print the result diff-voltage at the end of tran
-print
-+ ((result15[k]*2048+result14[k]*1024+result13[k]*512+result12[k]*256+result11[k]*128+result10[k]*64+result9[k]*32+result8[k]*16+result7[k]*8+result6[k]*4+result5[k]*2+result4[k]*1+result3[k]*0.5+result2[k]*0.25+result1[k]*0.125+result0[k]*0.0625)-2048*1.8)/2048
-.endc
 
 
 
-** opencircuitdesign pdks install
-.lib /foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice tt
+
+
 
 
 **** end user architecture code
