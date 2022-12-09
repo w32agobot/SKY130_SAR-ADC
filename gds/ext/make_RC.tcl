@@ -33,7 +33,6 @@ extresist tolerance 10
 extresist 
 ext2spice lvs 
 ext2spice cthresh 0.01
-ext2spice merge conservative
 ext2spice extresist on
 ext2spice resistor tee on
 ext2spice

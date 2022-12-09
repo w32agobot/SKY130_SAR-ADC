@@ -53,7 +53,6 @@ V32 GND 0 0
 
 
 
-
 * xyce commands
 *.include /foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__diode_pw2nd_05v5.model.spice
 .include ../../spice/adc_top.gds.C.noD.merge.postlayout.spice
@@ -62,7 +61,8 @@ V32 GND 0 0
 
 *.PREPROCESS ADDRESISTORS ONETERMINAL 10G
 *.PREPROCESS ADDRESISTORS NODCPATH 10G
-.OPTIONS TIMEINT METHOD=GEAR
+
+*.OPTIONS TIMEINT METHOD=GEAR
 *.OPTIONS TIMEINT ABSTOL=1e-12
 
 ****************
@@ -70,7 +70,7 @@ V32 GND 0 0
 ****************
 .param fclk=32768
 .param vdiff=200m
-.param boot=10p
+.param boot=100n
 
 ****************
 * Delay Config
@@ -109,6 +109,7 @@ V32 GND 0 0
 ****************
 * XYCE Simulation Control
 ****************
+
 .tran 1n 900u
 .print tran format=raw file=adc_top_postlayout_tb.raw         v(x1:ctopp) v(x1:ctopn) v(x1:vcm) v(x1:clk_ena)
 + v(x1:decision_finish) v(x1:comp_latch) v(VDD) v(rst_n) v(start_conv) v(clk_vcm) v(inp) v(inn) v(conv_finished)
@@ -127,6 +128,7 @@ V32 GND 0 0
 + v(x1:clk_dig) v(x1:clk_comp) v(result*) v(dlyctrl*) v(avg_mode*) v(osr_mode*) v(en_dly_contr) i(v_vdd_1)
 + {((v(result0)*0.125+v(result1)*0.25+v(result2)*0.5+v(result3)+v(result4)*2+v(result5)*4+v(result6)*8+v(result7)*16+v(result8)*32++v(result9)*64+v(result10)*128+v(result11)*256+v(result12)*512+v(result13)*1024+v(result14)*2048+v(result15)*4096)/4096-1.8)}
 
+.SAVE TYPE=IC FILE=mycircuit.ic
 
 
 

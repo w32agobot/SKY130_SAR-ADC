@@ -26,9 +26,10 @@ label comp_latch
 select top cell
 extract do local 
 extract warn no fets
+extract unique
 extract all
 ext2spice lvs 
 ext2spice cthresh 0.3
-ext2spice merge conservative
+ext2spice merge aggressive
 ext2spice
 
