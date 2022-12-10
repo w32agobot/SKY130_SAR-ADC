@@ -14,7 +14,7 @@ L 4 640 -470 640 -90 {}
 L 4 40 -90 640 -90 {}
 L 4 40 -470 40 -90 {}
 L 4 40 -470 60 -470 {}
-B 2 1720 -1290 3120 -880 {flags=graph
+B 2 1720 -1290 3120 -880 {flags=graph,unlocked
 y1=0
 y2=2
 ypos1=0
@@ -42,8 +42,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=1.00267e-05
-x2=0.000895108
+x1=0.000609696
+x2=0.00061159
 divx=5
 subdivx=1
 node="x1.ctopp
@@ -64,18 +64,25 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=1.00267e-05
-x2=0.000895108
+x1=0.000609696
+x2=0.00061159
 divx=5
 subdivx=1
 node="x1.clk_dig
-x1.clk_comp"
-color="6 8"
+x1.clk_comp
+x1.decision_finish
+x1.comp_latch
+x1.clk_ena
+start_conv
+rst_n
+conv_finished
+RESULT,result15,result14,result13,result12,result11,result10,result9,result8,result7,result6,result5,result4,result3,result2,result1,result0"
+color="6 8 9 9 9 9 9 9 9"
 dataset=-1
 unitx=1
 logx=0
 logy=0
-}
+digital=1}
 T {   Copyright 2022 Manuel Moser
 
    Licensed under the Apache License, Version 2.0 (the "License");
@@ -609,7 +616,7 @@ C {devices/launcher.sym} 1500 -1220 0 0 {name=h2
 descr="Load/unload
 TRAN waveforms" 
 tclcommand="
-xschem raw_read $netlist_dir/adc_top_postlayout.raw tran
+xschem raw_read $netlist_dir/adc_top_postlayout_tb.raw tran
 "
 }
 C {devices/launcher.sym} 1500 -1270 0 0 {name=h1
