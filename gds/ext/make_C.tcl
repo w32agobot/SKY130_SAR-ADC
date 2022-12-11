@@ -38,6 +38,6 @@ extract warn no fets
 extract all
 ext2spice lvs 
 ext2spice cthresh 0.1
-ext2spice merge aggressive
+ext2spice merge conservative
 ext2spice
 
