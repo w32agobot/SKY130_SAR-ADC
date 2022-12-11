@@ -5,8 +5,6 @@ flatten adc_top_flat
 load adc_top_flat
 cellname delete adc_top
 cellname rename adc_top_flat adc_top
-box 866 1573 83782 78688
-erase label
 box 48760 53350 48760 53350
 label ctopp
 port make
