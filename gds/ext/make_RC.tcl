@@ -9,22 +9,31 @@ box 866 1573 83782 78688
 erase label
 box 48760 53350 48760 53350
 label ctopp
+port make
 box 48760 26210 48760 26210
 label ctopn
+port make
 box 51371 62589 51371 62589
 label vcm
+port make
 box 10294 35398 10294 35398
 label clk_dig
+port make
 box 48222 39380 48222 39380
 label clk_comp
+port make
 box 10489 34642 10489 34642
 label clk_ena
+port make
 box 44000 42568 44000 42568
-label decision_finish
+label ndecision_finish
+port make
 box 55214 40204 55214 40204
 label comp_latch
+port make
 select top cell
 extract do local 
+extract unique
 extract warn no fets
 extract all
 ext2sim labels on 
