@@ -28,8 +28,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=1.00267e-05
-x2=0.000895108
+x1=1.18467e-07
+x2=2.17284e-06
 divx=5
 subdivx=1
 node="clk_vcm
@@ -48,8 +48,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=0.000609696
-x2=0.00061159
+x1=1.18467e-07
+x2=2.17284e-06
 divx=5
 subdivx=1
 node="x1.ctopp
@@ -70,8 +70,8 @@ ypos2=1.9
 divy=5
 subdivy=1
 unity=1
-x1=0.000609696
-x2=0.00061159
+x1=1.18467e-07
+x2=2.17284e-06
 divx=5
 subdivx=1
 node="x1.clk_dig
@@ -131,6 +131,7 @@ T {linting} 750 -200 0 0 0.2 0.2 {}
 T {XYCE NEEDS NET '0'} 930 -90 0 0 0.2 0.2 {}
 T {Force VCM voltage.
 No VCM gen} 1260 -260 0 0 0.3 0.3 {}
+T {mpirun -np 12 --oversubscribe Xyce adc_top_postlayout_tb_conv.spice} 1730 -1330 0 0 0.4 0.4 {}
 N 1030 -210 1030 -200 {
 lab=VDD}
 N 1480 -990 1540 -990 {

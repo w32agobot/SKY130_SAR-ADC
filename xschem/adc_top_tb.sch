@@ -448,7 +448,7 @@ value="
 
 .save all
 .control
-set num_threads=11
+set num_threads=12
 tran 250p 3.2u
 plot inp inn rst_n start_conv conv_finished
 plot start_conv x1.clk_dig x1.clk_comp 

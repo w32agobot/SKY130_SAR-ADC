@@ -30648,45 +30648,29 @@ lab=VDD}
 N 440 -1170 440 -1150 {
 lab=VDD}
 N 320 -1070 330 -1080 {
-lab=VSS}
+lab=row_n[0]}
 N 330 -1080 530 -1080 {
-lab=VSS}
+lab=row_n[0]}
 N 530 -1080 540 -1070 {
-lab=VSS}
+lab=row_n[0]}
 N 320 -1050 330 -1060 {
-lab=VSS}
+lab=row_n[0]}
 N 330 -1060 530 -1060 {
-lab=VSS}
+lab=row_n[0]}
 N 530 -1060 540 -1050 {
-lab=VSS}
-N 320 -1030 330 -1040 {
-lab=VSS}
-N 330 -1040 530 -1040 {
-lab=VSS}
-N 530 -1040 540 -1030 {
-lab=VSS}
-N 320 -1010 330 -1020 {
-lab=VDD}
-N 330 -1020 530 -1020 {
-lab=VDD}
-N 530 -1020 540 -1010 {
-lab=VDD}
+lab=row_n[0]}
 N 540 -1010 560 -1010 {
-lab=VDD}
+lab=#net33}
 N 540 -1030 560 -1030 {
-lab=VSS}
+lab=#net34}
 N 540 -1050 560 -1050 {
-lab=VSS}
+lab=row_n[0]}
 N 540 -1070 560 -1070 {
-lab=VSS}
+lab=row_n[0]}
 N 300 -1070 320 -1070 {
-lab=VSS}
+lab=row_n[0]}
 N 300 -1050 320 -1050 {
-lab=VSS}
-N 300 -1030 320 -1030 {
-lab=VSS}
-N 300 -1010 320 -1010 {
-lab=VDD}
+lab=row_n[0]}
 N 360 -930 360 -920 {
 lab=VSS}
 N 380 -1170 380 -1150 {
@@ -30702,45 +30686,45 @@ lab=col_n[0]}
 N 700 -1170 700 -1150 {
 lab=col_n[0]}
 N 580 -1070 590 -1080 {
-lab=VSS}
+lab=row_n[0]}
 N 590 -1080 790 -1080 {
-lab=VSS}
+lab=row_n[0]}
 N 790 -1080 800 -1070 {
-lab=VSS}
+lab=row_n[0]}
 N 580 -1050 590 -1060 {
-lab=VSS}
+lab=row_n[0]}
 N 590 -1060 790 -1060 {
-lab=VSS}
+lab=row_n[0]}
 N 790 -1060 800 -1050 {
-lab=VSS}
+lab=row_n[0]}
 N 580 -1030 590 -1040 {
-lab=VSS}
+lab=#net34}
 N 590 -1040 790 -1040 {
-lab=VSS}
+lab=#net34}
 N 790 -1040 800 -1030 {
-lab=VSS}
+lab=#net34}
 N 580 -1010 590 -1020 {
-lab=VDD}
+lab=#net33}
 N 590 -1020 790 -1020 {
-lab=VDD}
+lab=#net33}
 N 790 -1020 800 -1010 {
-lab=VDD}
+lab=#net33}
 N 800 -1010 820 -1010 {
-lab=VDD}
+lab=#net33}
 N 800 -1030 820 -1030 {
-lab=VSS}
+lab=#net34}
 N 800 -1050 820 -1050 {
-lab=VSS}
+lab=row_n[0]}
 N 800 -1070 820 -1070 {
-lab=VSS}
+lab=row_n[0]}
 N 560 -1070 580 -1070 {
-lab=VSS}
+lab=row_n[0]}
 N 560 -1050 580 -1050 {
-lab=VSS}
+lab=row_n[0]}
 N 560 -1030 580 -1030 {
-lab=VSS}
+lab=#net34}
 N 560 -1010 580 -1010 {
-lab=VDD}
+lab=#net33}
 N 620 -930 620 -920 {
 lab=VSS}
 N 640 -1170 640 -1150 {
@@ -30762,45 +30746,45 @@ lab=col_n[1]}
 N 960 -1170 960 -1150 {
 lab=col_n[1]}
 N 840 -1070 850 -1080 {
-lab=VSS}
+lab=row_n[0]}
 N 850 -1080 1050 -1080 {
-lab=VSS}
+lab=row_n[0]}
 N 1050 -1080 1060 -1070 {
-lab=VSS}
+lab=row_n[0]}
 N 840 -1050 850 -1060 {
-lab=VSS}
+lab=row_n[0]}
 N 850 -1060 1050 -1060 {
-lab=VSS}
+lab=row_n[0]}
 N 1050 -1060 1060 -1050 {
-lab=VSS}
+lab=row_n[0]}
 N 840 -1030 850 -1040 {
-lab=VSS}
+lab=#net34}
 N 850 -1040 1050 -1040 {
-lab=VSS}
+lab=#net34}
 N 1050 -1040 1060 -1030 {
-lab=VSS}
+lab=#net34}
 N 840 -1010 850 -1020 {
-lab=VDD}
+lab=#net33}
 N 850 -1020 1050 -1020 {
-lab=VDD}
+lab=#net33}
 N 1050 -1020 1060 -1010 {
-lab=VDD}
+lab=#net33}
 N 1060 -1010 1080 -1010 {
-lab=VDD}
+lab=#net33}
 N 1060 -1030 1080 -1030 {
-lab=VSS}
+lab=#net34}
 N 1060 -1050 1080 -1050 {
-lab=VSS}
+lab=row_n[0]}
 N 1060 -1070 1080 -1070 {
-lab=VSS}
+lab=row_n[0]}
 N 820 -1070 840 -1070 {
-lab=VSS}
+lab=row_n[0]}
 N 820 -1050 840 -1050 {
-lab=VSS}
+lab=row_n[0]}
 N 820 -1030 840 -1030 {
-lab=VSS}
+lab=#net34}
 N 820 -1010 840 -1010 {
-lab=VDD}
+lab=#net33}
 N 880 -930 880 -920 {
 lab=VSS}
 N 900 -1170 900 -1150 {
@@ -30818,45 +30802,45 @@ lab=col_n[2]}
 N 1220 -1170 1220 -1150 {
 lab=col_n[2]}
 N 1100 -1070 1110 -1080 {
-lab=VSS}
+lab=row_n[0]}
 N 1110 -1080 1310 -1080 {
-lab=VSS}
+lab=row_n[0]}
 N 1310 -1080 1320 -1070 {
-lab=VSS}
+lab=row_n[0]}
 N 1100 -1050 1110 -1060 {
-lab=VSS}
+lab=row_n[0]}
 N 1110 -1060 1310 -1060 {
-lab=VSS}
+lab=row_n[0]}
 N 1310 -1060 1320 -1050 {
-lab=VSS}
+lab=row_n[0]}
 N 1100 -1030 1110 -1040 {
-lab=VSS}
+lab=#net34}
 N 1110 -1040 1310 -1040 {
-lab=VSS}
+lab=#net34}
 N 1310 -1040 1320 -1030 {
-lab=VSS}
+lab=#net34}
 N 1100 -1010 1110 -1020 {
-lab=VDD}
+lab=#net33}
 N 1110 -1020 1310 -1020 {
-lab=VDD}
+lab=#net33}
 N 1310 -1020 1320 -1010 {
-lab=VDD}
+lab=#net33}
 N 1320 -1010 1340 -1010 {
-lab=VDD}
+lab=#net33}
 N 1320 -1030 1340 -1030 {
-lab=VSS}
+lab=#net34}
 N 1320 -1050 1340 -1050 {
-lab=VSS}
+lab=row_n[0]}
 N 1320 -1070 1340 -1070 {
-lab=VSS}
+lab=row_n[0]}
 N 1080 -1070 1100 -1070 {
-lab=VSS}
+lab=row_n[0]}
 N 1080 -1050 1100 -1050 {
-lab=VSS}
+lab=row_n[0]}
 N 1080 -1030 1100 -1030 {
-lab=VSS}
+lab=#net34}
 N 1080 -1010 1100 -1010 {
-lab=VDD}
+lab=#net33}
 N 1140 -930 1140 -920 {
 lab=VSS}
 N 1160 -1170 1160 -1150 {
@@ -30878,45 +30862,45 @@ lab=col_n[3]}
 N 1480 -1170 1480 -1150 {
 lab=col_n[3]}
 N 1360 -1070 1370 -1080 {
-lab=VSS}
+lab=row_n[0]}
 N 1370 -1080 1570 -1080 {
-lab=VSS}
+lab=row_n[0]}
 N 1570 -1080 1580 -1070 {
-lab=VSS}
+lab=row_n[0]}
 N 1360 -1050 1370 -1060 {
-lab=VSS}
+lab=row_n[0]}
 N 1370 -1060 1570 -1060 {
-lab=VSS}
+lab=row_n[0]}
 N 1570 -1060 1580 -1050 {
-lab=VSS}
+lab=row_n[0]}
 N 1360 -1030 1370 -1040 {
-lab=VSS}
+lab=#net34}
 N 1370 -1040 1570 -1040 {
-lab=VSS}
+lab=#net34}
 N 1570 -1040 1580 -1030 {
-lab=VSS}
+lab=#net34}
 N 1360 -1010 1370 -1020 {
-lab=VDD}
+lab=#net33}
 N 1370 -1020 1570 -1020 {
-lab=VDD}
+lab=#net33}
 N 1570 -1020 1580 -1010 {
-lab=VDD}
+lab=#net33}
 N 1580 -1010 1600 -1010 {
-lab=VDD}
+lab=#net33}
 N 1580 -1030 1600 -1030 {
-lab=VSS}
+lab=#net34}
 N 1580 -1050 1600 -1050 {
-lab=VSS}
+lab=row_n[0]}
 N 1580 -1070 1600 -1070 {
-lab=VSS}
+lab=row_n[0]}
 N 1340 -1070 1360 -1070 {
-lab=VSS}
+lab=row_n[0]}
 N 1340 -1050 1360 -1050 {
-lab=VSS}
+lab=row_n[0]}
 N 1340 -1030 1360 -1030 {
-lab=VSS}
+lab=#net34}
 N 1340 -1010 1360 -1010 {
-lab=VDD}
+lab=#net33}
 N 1400 -930 1400 -920 {
 lab=VSS}
 N 1420 -1170 1420 -1150 {
@@ -30934,45 +30918,45 @@ lab=col_n[4]}
 N 1740 -1170 1740 -1150 {
 lab=col_n[4]}
 N 1620 -1070 1630 -1080 {
-lab=VSS}
+lab=row_n[0]}
 N 1630 -1080 1830 -1080 {
-lab=VSS}
+lab=row_n[0]}
 N 1830 -1080 1840 -1070 {
-lab=VSS}
+lab=row_n[0]}
 N 1620 -1050 1630 -1060 {
-lab=VSS}
+lab=row_n[0]}
 N 1630 -1060 1830 -1060 {
-lab=VSS}
+lab=row_n[0]}
 N 1830 -1060 1840 -1050 {
-lab=VSS}
+lab=row_n[0]}
 N 1620 -1030 1630 -1040 {
-lab=VSS}
+lab=#net34}
 N 1630 -1040 1830 -1040 {
-lab=VSS}
+lab=#net34}
 N 1830 -1040 1840 -1030 {
-lab=VSS}
+lab=#net34}
 N 1620 -1010 1630 -1020 {
-lab=VDD}
+lab=#net33}
 N 1630 -1020 1830 -1020 {
-lab=VDD}
+lab=#net33}
 N 1830 -1020 1840 -1010 {
-lab=VDD}
+lab=#net33}
 N 1840 -1010 1860 -1010 {
-lab=VDD}
+lab=#net33}
 N 1840 -1030 1860 -1030 {
-lab=VSS}
+lab=#net34}
 N 1840 -1050 1860 -1050 {
-lab=VSS}
+lab=row_n[0]}
 N 1840 -1070 1860 -1070 {
-lab=VSS}
+lab=row_n[0]}
 N 1600 -1070 1620 -1070 {
-lab=VSS}
+lab=row_n[0]}
 N 1600 -1050 1620 -1050 {
-lab=VSS}
+lab=row_n[0]}
 N 1600 -1030 1620 -1030 {
-lab=VSS}
+lab=#net34}
 N 1600 -1010 1620 -1010 {
-lab=VDD}
+lab=#net33}
 N 1660 -930 1660 -920 {
 lab=VSS}
 N 1680 -1170 1680 -1150 {
@@ -30994,45 +30978,45 @@ lab=col_n[5]}
 N 2000 -1170 2000 -1150 {
 lab=col_n[5]}
 N 1880 -1070 1890 -1080 {
-lab=VSS}
+lab=row_n[0]}
 N 1890 -1080 2090 -1080 {
-lab=VSS}
+lab=row_n[0]}
 N 2090 -1080 2100 -1070 {
-lab=VSS}
+lab=row_n[0]}
 N 1880 -1050 1890 -1060 {
-lab=VSS}
+lab=row_n[0]}
 N 1890 -1060 2090 -1060 {
-lab=VSS}
+lab=row_n[0]}
 N 2090 -1060 2100 -1050 {
-lab=VSS}
+lab=row_n[0]}
 N 1880 -1030 1890 -1040 {
-lab=VSS}
+lab=#net34}
 N 1890 -1040 2090 -1040 {
-lab=VSS}
+lab=#net34}
 N 2090 -1040 2100 -1030 {
-lab=VSS}
+lab=#net34}
 N 1880 -1010 1890 -1020 {
-lab=VDD}
+lab=#net33}
 N 1890 -1020 2090 -1020 {
-lab=VDD}
+lab=#net33}
 N 2090 -1020 2100 -1010 {
-lab=VDD}
+lab=#net33}
 N 2100 -1010 2120 -1010 {
-lab=VDD}
+lab=#net33}
 N 2100 -1030 2120 -1030 {
-lab=VSS}
+lab=#net34}
 N 2100 -1050 2120 -1050 {
-lab=VSS}
+lab=row_n[0]}
 N 2100 -1070 2120 -1070 {
-lab=VSS}
+lab=row_n[0]}
 N 1860 -1070 1880 -1070 {
-lab=VSS}
+lab=row_n[0]}
 N 1860 -1050 1880 -1050 {
-lab=VSS}
+lab=row_n[0]}
 N 1860 -1030 1880 -1030 {
-lab=VSS}
+lab=#net34}
 N 1860 -1010 1880 -1010 {
-lab=VDD}
+lab=#net33}
 N 1920 -930 1920 -920 {
 lab=VSS}
 N 1940 -1170 1940 -1150 {
@@ -31050,45 +31034,45 @@ lab=col_n[6]}
 N 2260 -1170 2260 -1150 {
 lab=col_n[6]}
 N 2140 -1070 2150 -1080 {
-lab=VSS}
+lab=row_n[0]}
 N 2150 -1080 2350 -1080 {
-lab=VSS}
+lab=row_n[0]}
 N 2350 -1080 2360 -1070 {
-lab=VSS}
+lab=row_n[0]}
 N 2140 -1050 2150 -1060 {
-lab=VSS}
+lab=row_n[0]}
 N 2150 -1060 2350 -1060 {
-lab=VSS}
+lab=row_n[0]}
 N 2350 -1060 2360 -1050 {
-lab=VSS}
+lab=row_n[0]}
 N 2140 -1030 2150 -1040 {
-lab=VSS}
+lab=#net34}
 N 2150 -1040 2350 -1040 {
-lab=VSS}
+lab=#net34}
 N 2350 -1040 2360 -1030 {
-lab=VSS}
+lab=#net34}
 N 2140 -1010 2150 -1020 {
-lab=VDD}
+lab=#net33}
 N 2150 -1020 2350 -1020 {
-lab=VDD}
+lab=#net33}
 N 2350 -1020 2360 -1010 {
-lab=VDD}
+lab=#net33}
 N 2360 -1010 2380 -1010 {
-lab=VDD}
+lab=#net33}
 N 2360 -1030 2380 -1030 {
-lab=VSS}
+lab=#net34}
 N 2360 -1050 2380 -1050 {
-lab=VSS}
+lab=row_n[0]}
 N 2360 -1070 2380 -1070 {
-lab=VSS}
+lab=row_n[0]}
 N 2120 -1070 2140 -1070 {
-lab=VSS}
+lab=row_n[0]}
 N 2120 -1050 2140 -1050 {
-lab=VSS}
+lab=row_n[0]}
 N 2120 -1030 2140 -1030 {
-lab=VSS}
+lab=#net34}
 N 2120 -1010 2140 -1010 {
-lab=VDD}
+lab=#net33}
 N 2180 -930 2180 -920 {
 lab=VSS}
 N 2200 -1170 2200 -1150 {
@@ -31110,45 +31094,45 @@ lab=col_n[7]}
 N 2520 -1170 2520 -1150 {
 lab=col_n[7]}
 N 2400 -1070 2410 -1080 {
-lab=VSS}
+lab=row_n[0]}
 N 2410 -1080 2610 -1080 {
-lab=VSS}
+lab=row_n[0]}
 N 2610 -1080 2620 -1070 {
-lab=VSS}
+lab=row_n[0]}
 N 2400 -1050 2410 -1060 {
-lab=VSS}
+lab=row_n[0]}
 N 2410 -1060 2610 -1060 {
-lab=VSS}
+lab=row_n[0]}
 N 2610 -1060 2620 -1050 {
-lab=VSS}
+lab=row_n[0]}
 N 2400 -1030 2410 -1040 {
-lab=VSS}
+lab=#net34}
 N 2410 -1040 2610 -1040 {
-lab=VSS}
+lab=#net34}
 N 2610 -1040 2620 -1030 {
-lab=VSS}
+lab=#net34}
 N 2400 -1010 2410 -1020 {
-lab=VDD}
+lab=#net33}
 N 2410 -1020 2610 -1020 {
-lab=VDD}
+lab=#net33}
 N 2610 -1020 2620 -1010 {
-lab=VDD}
+lab=#net33}
 N 2620 -1010 2640 -1010 {
-lab=VDD}
+lab=#net33}
 N 2620 -1030 2640 -1030 {
-lab=VSS}
+lab=#net34}
 N 2620 -1050 2640 -1050 {
-lab=VSS}
+lab=row_n[0]}
 N 2620 -1070 2640 -1070 {
-lab=VSS}
+lab=row_n[0]}
 N 2380 -1070 2400 -1070 {
-lab=VSS}
+lab=row_n[0]}
 N 2380 -1050 2400 -1050 {
-lab=VSS}
+lab=row_n[0]}
 N 2380 -1030 2400 -1030 {
-lab=VSS}
+lab=#net34}
 N 2380 -1010 2400 -1010 {
-lab=VDD}
+lab=#net33}
 N 2440 -930 2440 -920 {
 lab=VSS}
 N 2460 -1170 2460 -1150 {
@@ -31166,45 +31150,45 @@ lab=col_n[8]}
 N 2780 -1170 2780 -1150 {
 lab=col_n[8]}
 N 2660 -1070 2670 -1080 {
-lab=VSS}
+lab=row_n[0]}
 N 2670 -1080 2870 -1080 {
-lab=VSS}
+lab=row_n[0]}
 N 2870 -1080 2880 -1070 {
-lab=VSS}
+lab=row_n[0]}
 N 2660 -1050 2670 -1060 {
-lab=VSS}
+lab=row_n[0]}
 N 2670 -1060 2870 -1060 {
-lab=VSS}
+lab=row_n[0]}
 N 2870 -1060 2880 -1050 {
-lab=VSS}
+lab=row_n[0]}
 N 2660 -1030 2670 -1040 {
-lab=VSS}
+lab=#net34}
 N 2670 -1040 2870 -1040 {
-lab=VSS}
+lab=#net34}
 N 2870 -1040 2880 -1030 {
-lab=VSS}
+lab=#net34}
 N 2660 -1010 2670 -1020 {
-lab=VDD}
+lab=#net33}
 N 2670 -1020 2870 -1020 {
-lab=VDD}
+lab=#net33}
 N 2870 -1020 2880 -1010 {
-lab=VDD}
+lab=#net33}
 N 2880 -1010 2900 -1010 {
-lab=VDD}
+lab=#net33}
 N 2880 -1030 2900 -1030 {
-lab=VSS}
+lab=#net34}
 N 2880 -1050 2900 -1050 {
-lab=VSS}
+lab=row_n[0]}
 N 2880 -1070 2900 -1070 {
-lab=VSS}
+lab=row_n[0]}
 N 2640 -1070 2660 -1070 {
-lab=VSS}
+lab=row_n[0]}
 N 2640 -1050 2660 -1050 {
-lab=VSS}
+lab=row_n[0]}
 N 2640 -1030 2660 -1030 {
-lab=VSS}
+lab=#net34}
 N 2640 -1010 2660 -1010 {
-lab=VDD}
+lab=#net33}
 N 2700 -930 2700 -920 {
 lab=VSS}
 N 2720 -1170 2720 -1150 {
@@ -31226,45 +31210,45 @@ lab=col_n[9]}
 N 3040 -1170 3040 -1150 {
 lab=col_n[9]}
 N 2920 -1070 2930 -1080 {
-lab=VSS}
+lab=row_n[0]}
 N 2930 -1080 3130 -1080 {
-lab=VSS}
+lab=row_n[0]}
 N 3130 -1080 3140 -1070 {
-lab=VSS}
+lab=row_n[0]}
 N 2920 -1050 2930 -1060 {
-lab=VSS}
+lab=row_n[0]}
 N 2930 -1060 3130 -1060 {
-lab=VSS}
+lab=row_n[0]}
 N 3130 -1060 3140 -1050 {
-lab=VSS}
+lab=row_n[0]}
 N 2920 -1030 2930 -1040 {
-lab=VSS}
+lab=#net34}
 N 2930 -1040 3130 -1040 {
-lab=VSS}
+lab=#net34}
 N 3130 -1040 3140 -1030 {
-lab=VSS}
+lab=#net34}
 N 2920 -1010 2930 -1020 {
-lab=VDD}
+lab=#net33}
 N 2930 -1020 3130 -1020 {
-lab=VDD}
+lab=#net33}
 N 3130 -1020 3140 -1010 {
-lab=VDD}
+lab=#net33}
 N 3140 -1010 3160 -1010 {
-lab=VDD}
+lab=#net33}
 N 3140 -1030 3160 -1030 {
-lab=VSS}
+lab=#net34}
 N 3140 -1050 3160 -1050 {
-lab=VSS}
+lab=row_n[0]}
 N 3140 -1070 3160 -1070 {
-lab=VSS}
+lab=row_n[0]}
 N 2900 -1070 2920 -1070 {
-lab=VSS}
+lab=row_n[0]}
 N 2900 -1050 2920 -1050 {
-lab=VSS}
+lab=row_n[0]}
 N 2900 -1030 2920 -1030 {
-lab=VSS}
+lab=#net34}
 N 2900 -1010 2920 -1010 {
-lab=VDD}
+lab=#net33}
 N 2960 -930 2960 -920 {
 lab=VSS}
 N 2980 -1170 2980 -1150 {
@@ -31282,45 +31266,45 @@ lab=col_n[10]}
 N 3300 -1170 3300 -1150 {
 lab=col_n[10]}
 N 3180 -1070 3190 -1080 {
-lab=VSS}
+lab=row_n[0]}
 N 3190 -1080 3390 -1080 {
-lab=VSS}
+lab=row_n[0]}
 N 3390 -1080 3400 -1070 {
-lab=VSS}
+lab=row_n[0]}
 N 3180 -1050 3190 -1060 {
-lab=VSS}
+lab=row_n[0]}
 N 3190 -1060 3390 -1060 {
-lab=VSS}
+lab=row_n[0]}
 N 3390 -1060 3400 -1050 {
-lab=VSS}
+lab=row_n[0]}
 N 3180 -1030 3190 -1040 {
-lab=VSS}
+lab=#net34}
 N 3190 -1040 3390 -1040 {
-lab=VSS}
+lab=#net34}
 N 3390 -1040 3400 -1030 {
-lab=VSS}
+lab=#net34}
 N 3180 -1010 3190 -1020 {
-lab=VDD}
+lab=#net33}
 N 3190 -1020 3390 -1020 {
-lab=VDD}
+lab=#net33}
 N 3390 -1020 3400 -1010 {
-lab=VDD}
+lab=#net33}
 N 3400 -1010 3420 -1010 {
-lab=VDD}
+lab=#net33}
 N 3400 -1030 3420 -1030 {
-lab=VSS}
+lab=#net34}
 N 3400 -1050 3420 -1050 {
-lab=VSS}
+lab=row_n[0]}
 N 3400 -1070 3420 -1070 {
-lab=VSS}
+lab=row_n[0]}
 N 3160 -1070 3180 -1070 {
-lab=VSS}
+lab=row_n[0]}
 N 3160 -1050 3180 -1050 {
-lab=VSS}
+lab=row_n[0]}
 N 3160 -1030 3180 -1030 {
-lab=VSS}
+lab=#net34}
 N 3160 -1010 3180 -1010 {
-lab=VDD}
+lab=#net33}
 N 3220 -930 3220 -920 {
 lab=VSS}
 N 3240 -1170 3240 -1150 {
@@ -31342,45 +31326,45 @@ lab=col_n[11]}
 N 3560 -1170 3560 -1150 {
 lab=col_n[11]}
 N 3440 -1070 3450 -1080 {
-lab=VSS}
+lab=row_n[0]}
 N 3450 -1080 3650 -1080 {
-lab=VSS}
+lab=row_n[0]}
 N 3650 -1080 3660 -1070 {
-lab=VSS}
+lab=row_n[0]}
 N 3440 -1050 3450 -1060 {
-lab=VSS}
+lab=row_n[0]}
 N 3450 -1060 3650 -1060 {
-lab=VSS}
+lab=row_n[0]}
 N 3650 -1060 3660 -1050 {
-lab=VSS}
+lab=row_n[0]}
 N 3440 -1030 3450 -1040 {
-lab=VSS}
+lab=#net34}
 N 3450 -1040 3650 -1040 {
-lab=VSS}
+lab=#net34}
 N 3650 -1040 3660 -1030 {
-lab=VSS}
+lab=#net34}
 N 3440 -1010 3450 -1020 {
-lab=VDD}
+lab=#net33}
 N 3450 -1020 3650 -1020 {
-lab=VDD}
+lab=#net33}
 N 3650 -1020 3660 -1010 {
-lab=VDD}
+lab=#net33}
 N 3660 -1010 3680 -1010 {
-lab=VDD}
+lab=#net33}
 N 3660 -1030 3680 -1030 {
-lab=VSS}
+lab=#net34}
 N 3660 -1050 3680 -1050 {
-lab=VSS}
+lab=row_n[0]}
 N 3660 -1070 3680 -1070 {
-lab=VSS}
+lab=row_n[0]}
 N 3420 -1070 3440 -1070 {
-lab=VSS}
+lab=row_n[0]}
 N 3420 -1050 3440 -1050 {
-lab=VSS}
+lab=row_n[0]}
 N 3420 -1030 3440 -1030 {
-lab=VSS}
+lab=#net34}
 N 3420 -1010 3440 -1010 {
-lab=VDD}
+lab=#net33}
 N 3480 -930 3480 -920 {
 lab=VSS}
 N 3500 -1170 3500 -1150 {
@@ -31398,45 +31382,45 @@ lab=col_n[12]}
 N 3820 -1170 3820 -1150 {
 lab=col_n[12]}
 N 3700 -1070 3710 -1080 {
-lab=VSS}
+lab=row_n[0]}
 N 3710 -1080 3910 -1080 {
-lab=VSS}
+lab=row_n[0]}
 N 3910 -1080 3920 -1070 {
-lab=VSS}
+lab=row_n[0]}
 N 3700 -1050 3710 -1060 {
-lab=VSS}
+lab=row_n[0]}
 N 3710 -1060 3910 -1060 {
-lab=VSS}
+lab=row_n[0]}
 N 3910 -1060 3920 -1050 {
-lab=VSS}
+lab=row_n[0]}
 N 3700 -1030 3710 -1040 {
-lab=VSS}
+lab=#net34}
 N 3710 -1040 3910 -1040 {
-lab=VSS}
+lab=#net34}
 N 3910 -1040 3920 -1030 {
-lab=VSS}
+lab=#net34}
 N 3700 -1010 3710 -1020 {
-lab=VDD}
+lab=#net33}
 N 3710 -1020 3910 -1020 {
-lab=VDD}
+lab=#net33}
 N 3910 -1020 3920 -1010 {
-lab=VDD}
+lab=#net33}
 N 3920 -1010 3940 -1010 {
-lab=VDD}
+lab=#net33}
 N 3920 -1030 3940 -1030 {
-lab=VSS}
+lab=#net34}
 N 3920 -1050 3940 -1050 {
-lab=VSS}
+lab=row_n[0]}
 N 3920 -1070 3940 -1070 {
-lab=VSS}
+lab=row_n[0]}
 N 3680 -1070 3700 -1070 {
-lab=VSS}
+lab=row_n[0]}
 N 3680 -1050 3700 -1050 {
-lab=VSS}
+lab=row_n[0]}
 N 3680 -1030 3700 -1030 {
-lab=VSS}
+lab=#net34}
 N 3680 -1010 3700 -1010 {
-lab=VDD}
+lab=#net33}
 N 3740 -930 3740 -920 {
 lab=VSS}
 N 3760 -1170 3760 -1150 {
@@ -31458,45 +31442,45 @@ lab=col_n[13]}
 N 4080 -1170 4080 -1150 {
 lab=col_n[13]}
 N 3960 -1070 3970 -1080 {
-lab=VSS}
+lab=row_n[0]}
 N 3970 -1080 4170 -1080 {
-lab=VSS}
+lab=row_n[0]}
 N 4170 -1080 4180 -1070 {
-lab=VSS}
+lab=row_n[0]}
 N 3960 -1050 3970 -1060 {
-lab=VSS}
+lab=row_n[0]}
 N 3970 -1060 4170 -1060 {
-lab=VSS}
+lab=row_n[0]}
 N 4170 -1060 4180 -1050 {
-lab=VSS}
+lab=row_n[0]}
 N 3960 -1030 3970 -1040 {
-lab=VSS}
+lab=#net34}
 N 3970 -1040 4170 -1040 {
-lab=VSS}
+lab=#net34}
 N 4170 -1040 4180 -1030 {
-lab=VSS}
+lab=#net34}
 N 3960 -1010 3970 -1020 {
-lab=VDD}
+lab=#net33}
 N 3970 -1020 4170 -1020 {
-lab=VDD}
+lab=#net33}
 N 4170 -1020 4180 -1010 {
-lab=VDD}
+lab=#net33}
 N 4180 -1010 4200 -1010 {
-lab=VDD}
+lab=#net33}
 N 4180 -1030 4200 -1030 {
-lab=VSS}
+lab=#net34}
 N 4180 -1050 4200 -1050 {
-lab=VSS}
+lab=row_n[0]}
 N 4180 -1070 4200 -1070 {
-lab=VSS}
+lab=row_n[0]}
 N 3940 -1070 3960 -1070 {
-lab=VSS}
+lab=row_n[0]}
 N 3940 -1050 3960 -1050 {
-lab=VSS}
+lab=row_n[0]}
 N 3940 -1030 3960 -1030 {
-lab=VSS}
+lab=#net34}
 N 3940 -1010 3960 -1010 {
-lab=VDD}
+lab=#net33}
 N 4000 -930 4000 -920 {
 lab=VSS}
 N 4020 -1170 4020 -1150 {
@@ -31514,45 +31498,45 @@ lab=col_n[14]}
 N 4340 -1170 4340 -1150 {
 lab=col_n[14]}
 N 4220 -1070 4230 -1080 {
-lab=VSS}
+lab=row_n[0]}
 N 4230 -1080 4430 -1080 {
-lab=VSS}
+lab=row_n[0]}
 N 4430 -1080 4440 -1070 {
-lab=VSS}
+lab=row_n[0]}
 N 4220 -1050 4230 -1060 {
-lab=VSS}
+lab=row_n[0]}
 N 4230 -1060 4430 -1060 {
-lab=VSS}
+lab=row_n[0]}
 N 4430 -1060 4440 -1050 {
-lab=VSS}
+lab=row_n[0]}
 N 4220 -1030 4230 -1040 {
-lab=VSS}
+lab=#net34}
 N 4230 -1040 4430 -1040 {
-lab=VSS}
+lab=#net34}
 N 4430 -1040 4440 -1030 {
-lab=VSS}
+lab=#net34}
 N 4220 -1010 4230 -1020 {
-lab=VDD}
+lab=#net33}
 N 4230 -1020 4430 -1020 {
-lab=VDD}
+lab=#net33}
 N 4430 -1020 4440 -1010 {
-lab=VDD}
+lab=#net33}
 N 4440 -1010 4460 -1010 {
-lab=VDD}
+lab=#net33}
 N 4440 -1030 4460 -1030 {
-lab=VSS}
+lab=#net34}
 N 4440 -1050 4460 -1050 {
-lab=VSS}
+lab=row_n[0]}
 N 4440 -1070 4460 -1070 {
-lab=VSS}
+lab=row_n[0]}
 N 4200 -1070 4220 -1070 {
-lab=VSS}
+lab=row_n[0]}
 N 4200 -1050 4220 -1050 {
-lab=VSS}
+lab=row_n[0]}
 N 4200 -1030 4220 -1030 {
-lab=VSS}
+lab=#net34}
 N 4200 -1010 4220 -1010 {
-lab=VDD}
+lab=#net33}
 N 4260 -930 4260 -920 {
 lab=VSS}
 N 4280 -1170 4280 -1150 {
@@ -31574,45 +31558,45 @@ lab=col_n[15]}
 N 4600 -1170 4600 -1150 {
 lab=col_n[15]}
 N 4480 -1070 4490 -1080 {
-lab=VSS}
+lab=row_n[0]}
 N 4490 -1080 4690 -1080 {
-lab=VSS}
+lab=row_n[0]}
 N 4690 -1080 4700 -1070 {
-lab=VSS}
+lab=row_n[0]}
 N 4480 -1050 4490 -1060 {
-lab=VSS}
+lab=row_n[0]}
 N 4490 -1060 4690 -1060 {
-lab=VSS}
+lab=row_n[0]}
 N 4690 -1060 4700 -1050 {
-lab=VSS}
+lab=row_n[0]}
 N 4480 -1030 4490 -1040 {
-lab=VSS}
+lab=#net34}
 N 4490 -1040 4690 -1040 {
-lab=VSS}
+lab=#net34}
 N 4690 -1040 4700 -1030 {
-lab=VSS}
+lab=#net34}
 N 4480 -1010 4490 -1020 {
-lab=VDD}
+lab=#net33}
 N 4490 -1020 4690 -1020 {
-lab=VDD}
+lab=#net33}
 N 4690 -1020 4700 -1010 {
-lab=VDD}
+lab=#net33}
 N 4700 -1010 4720 -1010 {
-lab=VDD}
+lab=#net33}
 N 4700 -1030 4720 -1030 {
-lab=VSS}
+lab=#net34}
 N 4700 -1050 4720 -1050 {
-lab=VSS}
+lab=row_n[0]}
 N 4700 -1070 4720 -1070 {
-lab=VSS}
+lab=row_n[0]}
 N 4460 -1070 4480 -1070 {
-lab=VSS}
+lab=row_n[0]}
 N 4460 -1050 4480 -1050 {
-lab=VSS}
+lab=row_n[0]}
 N 4460 -1030 4480 -1030 {
-lab=VSS}
+lab=#net34}
 N 4460 -1010 4480 -1010 {
-lab=VDD}
+lab=#net33}
 N 4520 -930 4520 -920 {
 lab=VSS}
 N 4540 -1170 4540 -1150 {
@@ -31630,45 +31614,45 @@ lab=col_n[16]}
 N 4860 -1170 4860 -1150 {
 lab=col_n[16]}
 N 4740 -1070 4750 -1080 {
-lab=VSS}
+lab=row_n[0]}
 N 4750 -1080 4950 -1080 {
-lab=VSS}
+lab=row_n[0]}
 N 4950 -1080 4960 -1070 {
-lab=VSS}
+lab=row_n[0]}
 N 4740 -1050 4750 -1060 {
-lab=VSS}
+lab=row_n[0]}
 N 4750 -1060 4950 -1060 {
-lab=VSS}
+lab=row_n[0]}
 N 4950 -1060 4960 -1050 {
-lab=VSS}
+lab=row_n[0]}
 N 4740 -1030 4750 -1040 {
-lab=VSS}
+lab=#net34}
 N 4750 -1040 4950 -1040 {
-lab=VSS}
+lab=#net34}
 N 4950 -1040 4960 -1030 {
-lab=VSS}
+lab=#net34}
 N 4740 -1010 4750 -1020 {
-lab=VDD}
+lab=#net33}
 N 4750 -1020 4950 -1020 {
-lab=VDD}
+lab=#net33}
 N 4950 -1020 4960 -1010 {
-lab=VDD}
+lab=#net33}
 N 4960 -1010 4980 -1010 {
-lab=VDD}
+lab=#net33}
 N 4960 -1030 4980 -1030 {
-lab=VSS}
+lab=#net34}
 N 4960 -1050 4980 -1050 {
-lab=VSS}
+lab=row_n[0]}
 N 4960 -1070 4980 -1070 {
-lab=VSS}
+lab=row_n[0]}
 N 4720 -1070 4740 -1070 {
-lab=VSS}
+lab=row_n[0]}
 N 4720 -1050 4740 -1050 {
-lab=VSS}
+lab=row_n[0]}
 N 4720 -1030 4740 -1030 {
-lab=VSS}
+lab=#net34}
 N 4720 -1010 4740 -1010 {
-lab=VDD}
+lab=#net33}
 N 4780 -930 4780 -920 {
 lab=VSS}
 N 4800 -1170 4800 -1150 {
@@ -31690,45 +31674,45 @@ lab=col_n[17]}
 N 5120 -1170 5120 -1150 {
 lab=col_n[17]}
 N 5000 -1070 5010 -1080 {
-lab=VSS}
+lab=row_n[0]}
 N 5010 -1080 5210 -1080 {
-lab=VSS}
+lab=row_n[0]}
 N 5210 -1080 5220 -1070 {
-lab=VSS}
+lab=row_n[0]}
 N 5000 -1050 5010 -1060 {
-lab=VSS}
+lab=row_n[0]}
 N 5010 -1060 5210 -1060 {
-lab=VSS}
+lab=row_n[0]}
 N 5210 -1060 5220 -1050 {
-lab=VSS}
+lab=row_n[0]}
 N 5000 -1030 5010 -1040 {
-lab=VSS}
+lab=#net34}
 N 5010 -1040 5210 -1040 {
-lab=VSS}
+lab=#net34}
 N 5210 -1040 5220 -1030 {
-lab=VSS}
+lab=#net34}
 N 5000 -1010 5010 -1020 {
-lab=VDD}
+lab=#net33}
 N 5010 -1020 5210 -1020 {
-lab=VDD}
+lab=#net33}
 N 5210 -1020 5220 -1010 {
-lab=VDD}
+lab=#net33}
 N 5220 -1010 5240 -1010 {
-lab=VDD}
+lab=#net33}
 N 5220 -1030 5240 -1030 {
-lab=VSS}
+lab=#net34}
 N 5220 -1050 5240 -1050 {
-lab=VSS}
+lab=row_n[0]}
 N 5220 -1070 5240 -1070 {
-lab=VSS}
+lab=row_n[0]}
 N 4980 -1070 5000 -1070 {
-lab=VSS}
+lab=row_n[0]}
 N 4980 -1050 5000 -1050 {
-lab=VSS}
+lab=row_n[0]}
 N 4980 -1030 5000 -1030 {
-lab=VSS}
+lab=#net34}
 N 4980 -1010 5000 -1010 {
-lab=VDD}
+lab=#net33}
 N 5040 -930 5040 -920 {
 lab=VSS}
 N 5060 -1170 5060 -1150 {
@@ -31746,45 +31730,45 @@ lab=col_n[18]}
 N 5380 -1170 5380 -1150 {
 lab=col_n[18]}
 N 5260 -1070 5270 -1080 {
-lab=VSS}
+lab=row_n[0]}
 N 5270 -1080 5470 -1080 {
-lab=VSS}
+lab=row_n[0]}
 N 5470 -1080 5480 -1070 {
-lab=VSS}
+lab=row_n[0]}
 N 5260 -1050 5270 -1060 {
-lab=VSS}
+lab=row_n[0]}
 N 5270 -1060 5470 -1060 {
-lab=VSS}
+lab=row_n[0]}
 N 5470 -1060 5480 -1050 {
-lab=VSS}
+lab=row_n[0]}
 N 5260 -1030 5270 -1040 {
-lab=VSS}
+lab=#net34}
 N 5270 -1040 5470 -1040 {
-lab=VSS}
+lab=#net34}
 N 5470 -1040 5480 -1030 {
-lab=VSS}
+lab=#net34}
 N 5260 -1010 5270 -1020 {
-lab=VDD}
+lab=#net33}
 N 5270 -1020 5470 -1020 {
-lab=VDD}
+lab=#net33}
 N 5470 -1020 5480 -1010 {
-lab=VDD}
+lab=#net33}
 N 5480 -1010 5500 -1010 {
-lab=VDD}
+lab=#net33}
 N 5480 -1030 5500 -1030 {
-lab=VSS}
+lab=#net34}
 N 5480 -1050 5500 -1050 {
-lab=VSS}
+lab=row_n[0]}
 N 5480 -1070 5500 -1070 {
-lab=VSS}
+lab=row_n[0]}
 N 5240 -1070 5260 -1070 {
-lab=VSS}
+lab=row_n[0]}
 N 5240 -1050 5260 -1050 {
-lab=VSS}
+lab=row_n[0]}
 N 5240 -1030 5260 -1030 {
-lab=VSS}
+lab=#net34}
 N 5240 -1010 5260 -1010 {
-lab=VDD}
+lab=#net33}
 N 5300 -930 5300 -920 {
 lab=VSS}
 N 5320 -1170 5320 -1150 {
@@ -31806,45 +31790,45 @@ lab=col_n[19]}
 N 5640 -1170 5640 -1150 {
 lab=col_n[19]}
 N 5520 -1070 5530 -1080 {
-lab=VSS}
+lab=row_n[0]}
 N 5530 -1080 5730 -1080 {
-lab=VSS}
+lab=row_n[0]}
 N 5730 -1080 5740 -1070 {
-lab=VSS}
+lab=row_n[0]}
 N 5520 -1050 5530 -1060 {
-lab=VSS}
+lab=row_n[0]}
 N 5530 -1060 5730 -1060 {
-lab=VSS}
+lab=row_n[0]}
 N 5730 -1060 5740 -1050 {
-lab=VSS}
+lab=row_n[0]}
 N 5520 -1030 5530 -1040 {
-lab=VSS}
+lab=#net34}
 N 5530 -1040 5730 -1040 {
-lab=VSS}
+lab=#net34}
 N 5730 -1040 5740 -1030 {
-lab=VSS}
+lab=#net34}
 N 5520 -1010 5530 -1020 {
-lab=VDD}
+lab=#net33}
 N 5530 -1020 5730 -1020 {
-lab=VDD}
+lab=#net33}
 N 5730 -1020 5740 -1010 {
-lab=VDD}
+lab=#net33}
 N 5740 -1010 5760 -1010 {
-lab=VDD}
+lab=#net33}
 N 5740 -1030 5760 -1030 {
-lab=VSS}
+lab=#net34}
 N 5740 -1050 5760 -1050 {
-lab=VSS}
+lab=row_n[0]}
 N 5740 -1070 5760 -1070 {
-lab=VSS}
+lab=row_n[0]}
 N 5500 -1070 5520 -1070 {
-lab=VSS}
+lab=row_n[0]}
 N 5500 -1050 5520 -1050 {
-lab=VSS}
+lab=row_n[0]}
 N 5500 -1030 5520 -1030 {
-lab=VSS}
+lab=#net34}
 N 5500 -1010 5520 -1010 {
-lab=VDD}
+lab=#net33}
 N 5560 -930 5560 -920 {
 lab=VSS}
 N 5580 -1170 5580 -1150 {
@@ -31862,45 +31846,45 @@ lab=col_n[20]}
 N 5900 -1170 5900 -1150 {
 lab=col_n[20]}
 N 5780 -1070 5790 -1080 {
-lab=VSS}
+lab=row_n[0]}
 N 5790 -1080 5990 -1080 {
-lab=VSS}
+lab=row_n[0]}
 N 5990 -1080 6000 -1070 {
-lab=VSS}
+lab=row_n[0]}
 N 5780 -1050 5790 -1060 {
-lab=VSS}
+lab=row_n[0]}
 N 5790 -1060 5990 -1060 {
-lab=VSS}
+lab=row_n[0]}
 N 5990 -1060 6000 -1050 {
-lab=VSS}
+lab=row_n[0]}
 N 5780 -1030 5790 -1040 {
-lab=VSS}
+lab=#net34}
 N 5790 -1040 5990 -1040 {
-lab=VSS}
+lab=#net34}
 N 5990 -1040 6000 -1030 {
-lab=VSS}
+lab=#net34}
 N 5780 -1010 5790 -1020 {
-lab=VDD}
+lab=#net33}
 N 5790 -1020 5990 -1020 {
-lab=VDD}
+lab=#net33}
 N 5990 -1020 6000 -1010 {
-lab=VDD}
+lab=#net33}
 N 6000 -1010 6020 -1010 {
-lab=VDD}
+lab=#net33}
 N 6000 -1030 6020 -1030 {
-lab=VSS}
+lab=#net34}
 N 6000 -1050 6020 -1050 {
-lab=VSS}
+lab=row_n[0]}
 N 6000 -1070 6020 -1070 {
-lab=VSS}
+lab=row_n[0]}
 N 5760 -1070 5780 -1070 {
-lab=VSS}
+lab=row_n[0]}
 N 5760 -1050 5780 -1050 {
-lab=VSS}
+lab=row_n[0]}
 N 5760 -1030 5780 -1030 {
-lab=VSS}
+lab=#net34}
 N 5760 -1010 5780 -1010 {
-lab=VDD}
+lab=#net33}
 N 5820 -930 5820 -920 {
 lab=VSS}
 N 5840 -1170 5840 -1150 {
@@ -31922,45 +31906,45 @@ lab=col_n[21]}
 N 6160 -1170 6160 -1150 {
 lab=col_n[21]}
 N 6040 -1070 6050 -1080 {
-lab=VSS}
+lab=row_n[0]}
 N 6050 -1080 6250 -1080 {
-lab=VSS}
+lab=row_n[0]}
 N 6250 -1080 6260 -1070 {
-lab=VSS}
+lab=row_n[0]}
 N 6040 -1050 6050 -1060 {
-lab=VSS}
+lab=row_n[0]}
 N 6050 -1060 6250 -1060 {
-lab=VSS}
+lab=row_n[0]}
 N 6250 -1060 6260 -1050 {
-lab=VSS}
+lab=row_n[0]}
 N 6040 -1030 6050 -1040 {
-lab=VSS}
+lab=#net34}
 N 6050 -1040 6250 -1040 {
-lab=VSS}
+lab=#net34}
 N 6250 -1040 6260 -1030 {
-lab=VSS}
+lab=#net34}
 N 6040 -1010 6050 -1020 {
-lab=VDD}
+lab=#net33}
 N 6050 -1020 6250 -1020 {
-lab=VDD}
+lab=#net33}
 N 6250 -1020 6260 -1010 {
-lab=VDD}
+lab=#net33}
 N 6260 -1010 6280 -1010 {
-lab=VDD}
+lab=#net33}
 N 6260 -1030 6280 -1030 {
-lab=VSS}
+lab=#net34}
 N 6260 -1050 6280 -1050 {
-lab=VSS}
+lab=row_n[0]}
 N 6260 -1070 6280 -1070 {
-lab=VSS}
+lab=row_n[0]}
 N 6020 -1070 6040 -1070 {
-lab=VSS}
+lab=row_n[0]}
 N 6020 -1050 6040 -1050 {
-lab=VSS}
+lab=row_n[0]}
 N 6020 -1030 6040 -1030 {
-lab=VSS}
+lab=#net34}
 N 6020 -1010 6040 -1010 {
-lab=VDD}
+lab=#net33}
 N 6080 -930 6080 -920 {
 lab=VSS}
 N 6100 -1170 6100 -1150 {
@@ -31978,45 +31962,45 @@ lab=col_n[22]}
 N 6420 -1170 6420 -1150 {
 lab=col_n[22]}
 N 6300 -1070 6310 -1080 {
-lab=VSS}
+lab=row_n[0]}
 N 6310 -1080 6510 -1080 {
-lab=VSS}
+lab=row_n[0]}
 N 6510 -1080 6520 -1070 {
-lab=VSS}
+lab=row_n[0]}
 N 6300 -1050 6310 -1060 {
-lab=VSS}
+lab=row_n[0]}
 N 6310 -1060 6510 -1060 {
-lab=VSS}
+lab=row_n[0]}
 N 6510 -1060 6520 -1050 {
-lab=VSS}
+lab=row_n[0]}
 N 6300 -1030 6310 -1040 {
-lab=VSS}
+lab=#net34}
 N 6310 -1040 6510 -1040 {
-lab=VSS}
+lab=#net34}
 N 6510 -1040 6520 -1030 {
-lab=VSS}
+lab=#net34}
 N 6300 -1010 6310 -1020 {
-lab=VDD}
+lab=#net33}
 N 6310 -1020 6510 -1020 {
-lab=VDD}
+lab=#net33}
 N 6510 -1020 6520 -1010 {
-lab=VDD}
+lab=#net33}
 N 6520 -1010 6540 -1010 {
-lab=VDD}
+lab=#net33}
 N 6520 -1030 6540 -1030 {
-lab=VSS}
+lab=#net34}
 N 6520 -1050 6540 -1050 {
-lab=VSS}
+lab=row_n[0]}
 N 6520 -1070 6540 -1070 {
-lab=VSS}
+lab=row_n[0]}
 N 6280 -1070 6300 -1070 {
-lab=VSS}
+lab=row_n[0]}
 N 6280 -1050 6300 -1050 {
-lab=VSS}
+lab=row_n[0]}
 N 6280 -1030 6300 -1030 {
-lab=VSS}
+lab=#net34}
 N 6280 -1010 6300 -1010 {
-lab=VDD}
+lab=#net33}
 N 6340 -930 6340 -920 {
 lab=VSS}
 N 6360 -1170 6360 -1150 {
@@ -32038,45 +32022,45 @@ lab=col_n[23]}
 N 6680 -1170 6680 -1150 {
 lab=col_n[23]}
 N 6560 -1070 6570 -1080 {
-lab=VSS}
+lab=row_n[0]}
 N 6570 -1080 6770 -1080 {
-lab=VSS}
+lab=row_n[0]}
 N 6770 -1080 6780 -1070 {
-lab=VSS}
+lab=row_n[0]}
 N 6560 -1050 6570 -1060 {
-lab=VSS}
+lab=row_n[0]}
 N 6570 -1060 6770 -1060 {
-lab=VSS}
+lab=row_n[0]}
 N 6770 -1060 6780 -1050 {
-lab=VSS}
+lab=row_n[0]}
 N 6560 -1030 6570 -1040 {
-lab=VSS}
+lab=#net34}
 N 6570 -1040 6770 -1040 {
-lab=VSS}
+lab=#net34}
 N 6770 -1040 6780 -1030 {
-lab=VSS}
+lab=#net34}
 N 6560 -1010 6570 -1020 {
-lab=VDD}
+lab=#net33}
 N 6570 -1020 6770 -1020 {
-lab=VDD}
+lab=#net33}
 N 6770 -1020 6780 -1010 {
-lab=VDD}
+lab=#net33}
 N 6780 -1010 6800 -1010 {
-lab=VDD}
+lab=#net33}
 N 6780 -1030 6800 -1030 {
-lab=VSS}
+lab=#net34}
 N 6780 -1050 6800 -1050 {
-lab=VSS}
+lab=row_n[0]}
 N 6780 -1070 6800 -1070 {
-lab=VSS}
+lab=row_n[0]}
 N 6540 -1070 6560 -1070 {
-lab=VSS}
+lab=row_n[0]}
 N 6540 -1050 6560 -1050 {
-lab=VSS}
+lab=row_n[0]}
 N 6540 -1030 6560 -1030 {
-lab=VSS}
+lab=#net34}
 N 6540 -1010 6560 -1010 {
-lab=VDD}
+lab=#net33}
 N 6600 -930 6600 -920 {
 lab=VSS}
 N 6620 -1170 6620 -1150 {
@@ -32094,45 +32078,45 @@ lab=col_n[24]}
 N 6940 -1170 6940 -1150 {
 lab=col_n[24]}
 N 6820 -1070 6830 -1080 {
-lab=VSS}
+lab=row_n[0]}
 N 6830 -1080 7030 -1080 {
-lab=VSS}
+lab=row_n[0]}
 N 7030 -1080 7040 -1070 {
-lab=VSS}
+lab=row_n[0]}
 N 6820 -1050 6830 -1060 {
-lab=VSS}
+lab=row_n[0]}
 N 6830 -1060 7030 -1060 {
-lab=VSS}
+lab=row_n[0]}
 N 7030 -1060 7040 -1050 {
-lab=VSS}
+lab=row_n[0]}
 N 6820 -1030 6830 -1040 {
-lab=VSS}
+lab=#net34}
 N 6830 -1040 7030 -1040 {
-lab=VSS}
+lab=#net34}
 N 7030 -1040 7040 -1030 {
-lab=VSS}
+lab=#net34}
 N 6820 -1010 6830 -1020 {
-lab=VDD}
+lab=#net33}
 N 6830 -1020 7030 -1020 {
-lab=VDD}
+lab=#net33}
 N 7030 -1020 7040 -1010 {
-lab=VDD}
+lab=#net33}
 N 7040 -1010 7060 -1010 {
-lab=VDD}
+lab=#net33}
 N 7040 -1030 7060 -1030 {
-lab=VSS}
+lab=#net34}
 N 7040 -1050 7060 -1050 {
-lab=VSS}
+lab=row_n[0]}
 N 7040 -1070 7060 -1070 {
-lab=VSS}
+lab=row_n[0]}
 N 6800 -1070 6820 -1070 {
-lab=VSS}
+lab=row_n[0]}
 N 6800 -1050 6820 -1050 {
-lab=VSS}
+lab=row_n[0]}
 N 6800 -1030 6820 -1030 {
-lab=VSS}
+lab=#net34}
 N 6800 -1010 6820 -1010 {
-lab=VDD}
+lab=#net33}
 N 6860 -930 6860 -920 {
 lab=VSS}
 N 6880 -1170 6880 -1150 {
@@ -32154,45 +32138,45 @@ lab=col_n[25]}
 N 7200 -1170 7200 -1150 {
 lab=col_n[25]}
 N 7080 -1070 7090 -1080 {
-lab=VSS}
+lab=row_n[0]}
 N 7090 -1080 7290 -1080 {
-lab=VSS}
+lab=row_n[0]}
 N 7290 -1080 7300 -1070 {
-lab=VSS}
+lab=row_n[0]}
 N 7080 -1050 7090 -1060 {
-lab=VSS}
+lab=row_n[0]}
 N 7090 -1060 7290 -1060 {
-lab=VSS}
+lab=row_n[0]}
 N 7290 -1060 7300 -1050 {
-lab=VSS}
+lab=row_n[0]}
 N 7080 -1030 7090 -1040 {
-lab=VSS}
+lab=#net34}
 N 7090 -1040 7290 -1040 {
-lab=VSS}
+lab=#net34}
 N 7290 -1040 7300 -1030 {
-lab=VSS}
+lab=#net34}
 N 7080 -1010 7090 -1020 {
-lab=VDD}
+lab=#net33}
 N 7090 -1020 7290 -1020 {
-lab=VDD}
+lab=#net33}
 N 7290 -1020 7300 -1010 {
-lab=VDD}
+lab=#net33}
 N 7300 -1010 7320 -1010 {
-lab=VDD}
+lab=#net33}
 N 7300 -1030 7320 -1030 {
-lab=VSS}
+lab=#net34}
 N 7300 -1050 7320 -1050 {
-lab=VSS}
+lab=row_n[0]}
 N 7300 -1070 7320 -1070 {
-lab=VSS}
+lab=row_n[0]}
 N 7060 -1070 7080 -1070 {
-lab=VSS}
+lab=row_n[0]}
 N 7060 -1050 7080 -1050 {
-lab=VSS}
+lab=row_n[0]}
 N 7060 -1030 7080 -1030 {
-lab=VSS}
+lab=#net34}
 N 7060 -1010 7080 -1010 {
-lab=VDD}
+lab=#net33}
 N 7120 -930 7120 -920 {
 lab=VSS}
 N 7140 -1170 7140 -1150 {
@@ -32210,45 +32194,45 @@ lab=col_n[26]}
 N 7460 -1170 7460 -1150 {
 lab=col_n[26]}
 N 7340 -1070 7350 -1080 {
-lab=VSS}
+lab=row_n[0]}
 N 7350 -1080 7550 -1080 {
-lab=VSS}
+lab=row_n[0]}
 N 7550 -1080 7560 -1070 {
-lab=VSS}
+lab=row_n[0]}
 N 7340 -1050 7350 -1060 {
-lab=VSS}
+lab=row_n[0]}
 N 7350 -1060 7550 -1060 {
-lab=VSS}
+lab=row_n[0]}
 N 7550 -1060 7560 -1050 {
-lab=VSS}
+lab=row_n[0]}
 N 7340 -1030 7350 -1040 {
-lab=VSS}
+lab=#net34}
 N 7350 -1040 7550 -1040 {
-lab=VSS}
+lab=#net34}
 N 7550 -1040 7560 -1030 {
-lab=VSS}
+lab=#net34}
 N 7340 -1010 7350 -1020 {
-lab=VDD}
+lab=#net33}
 N 7350 -1020 7550 -1020 {
-lab=VDD}
+lab=#net33}
 N 7550 -1020 7560 -1010 {
-lab=VDD}
+lab=#net33}
 N 7560 -1010 7580 -1010 {
-lab=VDD}
+lab=#net33}
 N 7560 -1030 7580 -1030 {
-lab=VSS}
+lab=#net34}
 N 7560 -1050 7580 -1050 {
-lab=VSS}
+lab=row_n[0]}
 N 7560 -1070 7580 -1070 {
-lab=VSS}
+lab=row_n[0]}
 N 7320 -1070 7340 -1070 {
-lab=VSS}
+lab=row_n[0]}
 N 7320 -1050 7340 -1050 {
-lab=VSS}
+lab=row_n[0]}
 N 7320 -1030 7340 -1030 {
-lab=VSS}
+lab=#net34}
 N 7320 -1010 7340 -1010 {
-lab=VDD}
+lab=#net33}
 N 7380 -930 7380 -920 {
 lab=VSS}
 N 7400 -1170 7400 -1150 {
@@ -32270,45 +32254,45 @@ lab=col_n[27]}
 N 7720 -1170 7720 -1150 {
 lab=col_n[27]}
 N 7600 -1070 7610 -1080 {
-lab=VSS}
+lab=row_n[0]}
 N 7610 -1080 7810 -1080 {
-lab=VSS}
+lab=row_n[0]}
 N 7810 -1080 7820 -1070 {
-lab=VSS}
+lab=row_n[0]}
 N 7600 -1050 7610 -1060 {
-lab=VSS}
+lab=row_n[0]}
 N 7610 -1060 7810 -1060 {
-lab=VSS}
+lab=row_n[0]}
 N 7810 -1060 7820 -1050 {
-lab=VSS}
+lab=row_n[0]}
 N 7600 -1030 7610 -1040 {
-lab=VSS}
+lab=#net34}
 N 7610 -1040 7810 -1040 {
-lab=VSS}
+lab=#net34}
 N 7810 -1040 7820 -1030 {
-lab=VSS}
+lab=#net34}
 N 7600 -1010 7610 -1020 {
-lab=VDD}
+lab=#net33}
 N 7610 -1020 7810 -1020 {
-lab=VDD}
+lab=#net33}
 N 7810 -1020 7820 -1010 {
-lab=VDD}
+lab=#net33}
 N 7820 -1010 7840 -1010 {
-lab=VDD}
+lab=#net33}
 N 7820 -1030 7840 -1030 {
-lab=VSS}
+lab=#net34}
 N 7820 -1050 7840 -1050 {
-lab=VSS}
+lab=row_n[0]}
 N 7820 -1070 7840 -1070 {
-lab=VSS}
+lab=row_n[0]}
 N 7580 -1070 7600 -1070 {
-lab=VSS}
+lab=row_n[0]}
 N 7580 -1050 7600 -1050 {
-lab=VSS}
+lab=row_n[0]}
 N 7580 -1030 7600 -1030 {
-lab=VSS}
+lab=#net34}
 N 7580 -1010 7600 -1010 {
-lab=VDD}
+lab=#net33}
 N 7640 -930 7640 -920 {
 lab=VSS}
 N 7660 -1170 7660 -1150 {
@@ -32326,45 +32310,45 @@ lab=col_n[28]}
 N 7980 -1170 7980 -1150 {
 lab=col_n[28]}
 N 7860 -1070 7870 -1080 {
-lab=VSS}
+lab=row_n[0]}
 N 7870 -1080 8070 -1080 {
-lab=VSS}
+lab=row_n[0]}
 N 8070 -1080 8080 -1070 {
-lab=VSS}
+lab=row_n[0]}
 N 7860 -1050 7870 -1060 {
-lab=VSS}
+lab=row_n[0]}
 N 7870 -1060 8070 -1060 {
-lab=VSS}
+lab=row_n[0]}
 N 8070 -1060 8080 -1050 {
-lab=VSS}
+lab=row_n[0]}
 N 7860 -1030 7870 -1040 {
-lab=VSS}
+lab=#net34}
 N 7870 -1040 8070 -1040 {
-lab=VSS}
+lab=#net34}
 N 8070 -1040 8080 -1030 {
-lab=VSS}
+lab=#net34}
 N 7860 -1010 7870 -1020 {
-lab=VDD}
+lab=#net33}
 N 7870 -1020 8070 -1020 {
-lab=VDD}
+lab=#net33}
 N 8070 -1020 8080 -1010 {
-lab=VDD}
+lab=#net33}
 N 8080 -1010 8100 -1010 {
-lab=VDD}
+lab=#net33}
 N 8080 -1030 8100 -1030 {
-lab=VSS}
+lab=#net34}
 N 8080 -1050 8100 -1050 {
-lab=VSS}
+lab=row_n[0]}
 N 8080 -1070 8100 -1070 {
-lab=VSS}
+lab=row_n[0]}
 N 7840 -1070 7860 -1070 {
-lab=VSS}
+lab=row_n[0]}
 N 7840 -1050 7860 -1050 {
-lab=VSS}
+lab=row_n[0]}
 N 7840 -1030 7860 -1030 {
-lab=VSS}
+lab=#net34}
 N 7840 -1010 7860 -1010 {
-lab=VDD}
+lab=#net33}
 N 7900 -930 7900 -920 {
 lab=VSS}
 N 7920 -1170 7920 -1150 {
@@ -32386,45 +32370,45 @@ lab=col_n[29]}
 N 8240 -1170 8240 -1150 {
 lab=col_n[29]}
 N 8120 -1070 8130 -1080 {
-lab=VSS}
+lab=row_n[0]}
 N 8130 -1080 8330 -1080 {
-lab=VSS}
+lab=row_n[0]}
 N 8330 -1080 8340 -1070 {
-lab=VSS}
+lab=row_n[0]}
 N 8120 -1050 8130 -1060 {
-lab=VSS}
+lab=row_n[0]}
 N 8130 -1060 8330 -1060 {
-lab=VSS}
+lab=row_n[0]}
 N 8330 -1060 8340 -1050 {
-lab=VSS}
+lab=row_n[0]}
 N 8120 -1030 8130 -1040 {
-lab=VSS}
+lab=#net34}
 N 8130 -1040 8330 -1040 {
-lab=VSS}
+lab=#net34}
 N 8330 -1040 8340 -1030 {
-lab=VSS}
+lab=#net34}
 N 8120 -1010 8130 -1020 {
-lab=VDD}
+lab=#net33}
 N 8130 -1020 8330 -1020 {
-lab=VDD}
+lab=#net33}
 N 8330 -1020 8340 -1010 {
-lab=VDD}
+lab=#net33}
 N 8340 -1010 8360 -1010 {
-lab=VDD}
+lab=#net33}
 N 8340 -1030 8360 -1030 {
-lab=VSS}
+lab=#net34}
 N 8340 -1050 8360 -1050 {
-lab=VSS}
+lab=row_n[0]}
 N 8340 -1070 8360 -1070 {
-lab=VSS}
+lab=row_n[0]}
 N 8100 -1070 8120 -1070 {
-lab=VSS}
+lab=row_n[0]}
 N 8100 -1050 8120 -1050 {
-lab=VSS}
+lab=row_n[0]}
 N 8100 -1030 8120 -1030 {
-lab=VSS}
+lab=#net34}
 N 8100 -1010 8120 -1010 {
-lab=VDD}
+lab=#net33}
 N 8160 -930 8160 -920 {
 lab=VSS}
 N 8180 -1170 8180 -1150 {
@@ -32442,45 +32426,45 @@ lab=col_n[30]}
 N 8500 -1170 8500 -1150 {
 lab=col_n[30]}
 N 8380 -1070 8390 -1080 {
-lab=VSS}
+lab=row_n[0]}
 N 8390 -1080 8590 -1080 {
-lab=VSS}
+lab=row_n[0]}
 N 8590 -1080 8600 -1070 {
-lab=VSS}
+lab=row_n[0]}
 N 8380 -1050 8390 -1060 {
-lab=VSS}
+lab=row_n[0]}
 N 8390 -1060 8590 -1060 {
-lab=VSS}
+lab=row_n[0]}
 N 8590 -1060 8600 -1050 {
-lab=VSS}
+lab=row_n[0]}
 N 8380 -1030 8390 -1040 {
-lab=VSS}
+lab=#net34}
 N 8390 -1040 8590 -1040 {
-lab=VSS}
+lab=#net34}
 N 8590 -1040 8600 -1030 {
-lab=VSS}
+lab=#net34}
 N 8380 -1010 8390 -1020 {
-lab=VDD}
+lab=#net33}
 N 8390 -1020 8590 -1020 {
-lab=VDD}
+lab=#net33}
 N 8590 -1020 8600 -1010 {
-lab=VDD}
+lab=#net33}
 N 8600 -1010 8620 -1010 {
-lab=VDD}
+lab=#net33}
 N 8600 -1030 8620 -1030 {
-lab=VSS}
+lab=#net34}
 N 8600 -1050 8620 -1050 {
-lab=VSS}
+lab=row_n[0]}
 N 8600 -1070 8620 -1070 {
-lab=VSS}
+lab=row_n[0]}
 N 8360 -1070 8380 -1070 {
-lab=VSS}
+lab=row_n[0]}
 N 8360 -1050 8380 -1050 {
-lab=VSS}
+lab=row_n[0]}
 N 8360 -1030 8380 -1030 {
-lab=VSS}
+lab=#net34}
 N 8360 -1010 8380 -1010 {
-lab=VDD}
+lab=#net33}
 N 8420 -930 8420 -920 {
 lab=VSS}
 N 8440 -1170 8440 -1150 {
@@ -32502,45 +32486,45 @@ lab=col_n[31]}
 N 8760 -1170 8760 -1150 {
 lab=col_n[31]}
 N 8640 -1070 8650 -1080 {
-lab=VSS}
+lab=row_n[0]}
 N 8650 -1080 8850 -1080 {
-lab=VSS}
+lab=row_n[0]}
 N 8850 -1080 8860 -1070 {
-lab=VSS}
+lab=row_n[0]}
 N 8640 -1050 8650 -1060 {
-lab=VSS}
+lab=row_n[0]}
 N 8650 -1060 8850 -1060 {
-lab=VSS}
+lab=row_n[0]}
 N 8850 -1060 8860 -1050 {
-lab=VSS}
+lab=row_n[0]}
 N 8640 -1030 8650 -1040 {
-lab=VSS}
+lab=#net34}
 N 8650 -1040 8850 -1040 {
-lab=VSS}
+lab=#net34}
 N 8850 -1040 8860 -1030 {
-lab=VSS}
+lab=#net34}
 N 8640 -1010 8650 -1020 {
-lab=VDD}
+lab=#net33}
 N 8650 -1020 8850 -1020 {
-lab=VDD}
+lab=#net33}
 N 8850 -1020 8860 -1010 {
-lab=VDD}
+lab=#net33}
 N 8860 -1010 8880 -1010 {
-lab=VDD}
+lab=#net33}
 N 8860 -1030 8880 -1030 {
-lab=VSS}
+lab=#net34}
 N 8860 -1050 8880 -1050 {
-lab=VSS}
+lab=row_n[0]}
 N 8860 -1070 8880 -1070 {
-lab=VSS}
+lab=row_n[0]}
 N 8620 -1070 8640 -1070 {
-lab=VSS}
+lab=row_n[0]}
 N 8620 -1050 8640 -1050 {
-lab=VSS}
+lab=row_n[0]}
 N 8620 -1030 8640 -1030 {
-lab=VSS}
+lab=#net34}
 N 8620 -1010 8640 -1010 {
-lab=VDD}
+lab=#net33}
 N 8680 -930 8680 -920 {
 lab=VSS}
 N 8700 -1170 8700 -1150 {
@@ -32560,45 +32544,45 @@ lab=VDD}
 N 9020 -1170 9020 -1150 {
 lab=VDD}
 N 8900 -1070 8910 -1080 {
-lab=VSS}
+lab=row_n[0]}
 N 8910 -1080 9110 -1080 {
-lab=VSS}
+lab=row_n[0]}
 N 9110 -1080 9120 -1070 {
-lab=VSS}
+lab=row_n[0]}
 N 8900 -1050 8910 -1060 {
-lab=VSS}
+lab=row_n[0]}
 N 8910 -1060 9110 -1060 {
-lab=VSS}
+lab=row_n[0]}
 N 9110 -1060 9120 -1050 {
-lab=VSS}
+lab=row_n[0]}
 N 8900 -1030 8910 -1040 {
-lab=VSS}
+lab=#net34}
 N 8910 -1040 9110 -1040 {
-lab=VSS}
+lab=#net34}
 N 9110 -1040 9120 -1030 {
-lab=VSS}
+lab=#net34}
 N 8900 -1010 8910 -1020 {
-lab=VDD}
+lab=#net33}
 N 8910 -1020 9110 -1020 {
-lab=VDD}
+lab=#net33}
 N 9110 -1020 9120 -1010 {
-lab=VDD}
+lab=#net33}
 N 9120 -1010 9140 -1010 {
-lab=VDD}
+lab=#net33}
 N 9120 -1030 9140 -1030 {
-lab=VSS}
+lab=#net34}
 N 9120 -1050 9140 -1050 {
-lab=VSS}
+lab=row_n[0]}
 N 9120 -1070 9140 -1070 {
-lab=VSS}
+lab=row_n[0]}
 N 8880 -1070 8900 -1070 {
-lab=VSS}
+lab=row_n[0]}
 N 8880 -1050 8900 -1050 {
-lab=VSS}
+lab=row_n[0]}
 N 8880 -1030 8900 -1030 {
-lab=VSS}
+lab=#net34}
 N 8880 -1010 8900 -1010 {
-lab=VDD}
+lab=#net33}
 N 8940 -930 8940 -920 {
 lab=VSS}
 N 8960 -1170 8960 -1150 {
@@ -32618,45 +32602,29 @@ lab=VDD}
 N 440 -5590 440 -5570 {
 lab=VDD}
 N 320 -5490 330 -5500 {
-lab=VDD}
+lab=rowon_n[15]}
 N 330 -5500 530 -5500 {
-lab=VDD}
+lab=rowon_n[15]}
 N 530 -5500 540 -5490 {
-lab=VDD}
+lab=rowon_n[15]}
 N 320 -5470 330 -5480 {
-lab=VDD}
+lab=rowon_n[15]}
 N 330 -5480 530 -5480 {
-lab=VDD}
+lab=rowon_n[15]}
 N 530 -5480 540 -5470 {
-lab=VDD}
-N 320 -5450 330 -5460 {
-lab=VSS}
-N 330 -5460 530 -5460 {
-lab=VSS}
-N 530 -5460 540 -5450 {
-lab=VSS}
-N 320 -5430 330 -5440 {
-lab=VDD}
-N 330 -5440 530 -5440 {
-lab=VDD}
-N 530 -5440 540 -5430 {
-lab=VDD}
+lab=rowon_n[15]}
 N 540 -5430 560 -5430 {
-lab=VDD}
+lab=#net35}
 N 540 -5450 560 -5450 {
-lab=VSS}
+lab=#net36}
 N 540 -5470 560 -5470 {
-lab=VDD}
+lab=rowon_n[15]}
 N 540 -5490 560 -5490 {
-lab=VDD}
-N 300 -5490 320 -5490 {
-lab=VDD}
-N 300 -5470 320 -5470 {
-lab=VDD}
+lab=rowon_n[15]}
 N 300 -5450 320 -5450 {
-lab=VSS}
+lab=sample}
 N 300 -5430 320 -5430 {
-lab=VDD}
+lab=sample_n}
 N 360 -5350 360 -5340 {
 lab=VSS}
 N 380 -5590 380 -5570 {
@@ -32674,45 +32642,45 @@ lab=col_n[0]}
 N 700 -5590 700 -5570 {
 lab=col_n[0]}
 N 580 -5490 590 -5500 {
-lab=VDD}
+lab=rowon_n[15]}
 N 590 -5500 790 -5500 {
-lab=VDD}
+lab=rowon_n[15]}
 N 790 -5500 800 -5490 {
-lab=VDD}
+lab=rowon_n[15]}
 N 580 -5470 590 -5480 {
-lab=VDD}
+lab=rowon_n[15]}
 N 590 -5480 790 -5480 {
-lab=VDD}
+lab=rowon_n[15]}
 N 790 -5480 800 -5470 {
-lab=VDD}
+lab=rowon_n[15]}
 N 580 -5450 590 -5460 {
-lab=VSS}
+lab=#net36}
 N 590 -5460 790 -5460 {
-lab=VSS}
+lab=#net36}
 N 790 -5460 800 -5450 {
-lab=VSS}
+lab=#net36}
 N 580 -5430 590 -5440 {
-lab=VDD}
+lab=#net35}
 N 590 -5440 790 -5440 {
-lab=VDD}
+lab=#net35}
 N 790 -5440 800 -5430 {
-lab=VDD}
+lab=#net35}
 N 800 -5430 820 -5430 {
-lab=VDD}
+lab=#net35}
 N 800 -5450 820 -5450 {
-lab=VSS}
+lab=#net36}
 N 800 -5470 820 -5470 {
-lab=VDD}
+lab=rowon_n[15]}
 N 800 -5490 820 -5490 {
-lab=VDD}
+lab=rowon_n[15]}
 N 560 -5490 580 -5490 {
-lab=VDD}
+lab=rowon_n[15]}
 N 560 -5470 580 -5470 {
-lab=VDD}
+lab=rowon_n[15]}
 N 560 -5450 580 -5450 {
-lab=VSS}
+lab=#net36}
 N 560 -5430 580 -5430 {
-lab=VDD}
+lab=#net35}
 N 620 -5350 620 -5340 {
 lab=VSS}
 N 640 -5590 640 -5570 {
@@ -32734,45 +32702,45 @@ lab=col_n[1]}
 N 960 -5590 960 -5570 {
 lab=col_n[1]}
 N 840 -5490 850 -5500 {
-lab=VDD}
+lab=rowon_n[15]}
 N 850 -5500 1050 -5500 {
-lab=VDD}
+lab=rowon_n[15]}
 N 1050 -5500 1060 -5490 {
-lab=VDD}
+lab=rowon_n[15]}
 N 840 -5470 850 -5480 {
-lab=VDD}
+lab=rowon_n[15]}
 N 850 -5480 1050 -5480 {
-lab=VDD}
+lab=rowon_n[15]}
 N 1050 -5480 1060 -5470 {
-lab=VDD}
+lab=rowon_n[15]}
 N 840 -5450 850 -5460 {
-lab=VSS}
+lab=#net36}
 N 850 -5460 1050 -5460 {
-lab=VSS}
+lab=#net36}
 N 1050 -5460 1060 -5450 {
-lab=VSS}
+lab=#net36}
 N 840 -5430 850 -5440 {
-lab=VDD}
+lab=#net35}
 N 850 -5440 1050 -5440 {
-lab=VDD}
+lab=#net35}
 N 1050 -5440 1060 -5430 {
-lab=VDD}
+lab=#net35}
 N 1060 -5430 1080 -5430 {
-lab=VDD}
+lab=#net35}
 N 1060 -5450 1080 -5450 {
-lab=VSS}
+lab=#net36}
 N 1060 -5470 1080 -5470 {
-lab=VDD}
+lab=rowon_n[15]}
 N 1060 -5490 1080 -5490 {
-lab=VDD}
+lab=rowon_n[15]}
 N 820 -5490 840 -5490 {
-lab=VDD}
+lab=rowon_n[15]}
 N 820 -5470 840 -5470 {
-lab=VDD}
+lab=rowon_n[15]}
 N 820 -5450 840 -5450 {
-lab=VSS}
+lab=#net36}
 N 820 -5430 840 -5430 {
-lab=VDD}
+lab=#net35}
 N 880 -5350 880 -5340 {
 lab=VSS}
 N 900 -5590 900 -5570 {
@@ -32790,45 +32758,45 @@ lab=col_n[2]}
 N 1220 -5590 1220 -5570 {
 lab=col_n[2]}
 N 1100 -5490 1110 -5500 {
-lab=VDD}
+lab=rowon_n[15]}
 N 1110 -5500 1310 -5500 {
-lab=VDD}
+lab=rowon_n[15]}
 N 1310 -5500 1320 -5490 {
-lab=VDD}
+lab=rowon_n[15]}
 N 1100 -5470 1110 -5480 {
-lab=VDD}
+lab=rowon_n[15]}
 N 1110 -5480 1310 -5480 {
-lab=VDD}
+lab=rowon_n[15]}
 N 1310 -5480 1320 -5470 {
-lab=VDD}
+lab=rowon_n[15]}
 N 1100 -5450 1110 -5460 {
-lab=VSS}
+lab=#net36}
 N 1110 -5460 1310 -5460 {
-lab=VSS}
+lab=#net36}
 N 1310 -5460 1320 -5450 {
-lab=VSS}
+lab=#net36}
 N 1100 -5430 1110 -5440 {
-lab=VDD}
+lab=#net35}
 N 1110 -5440 1310 -5440 {
-lab=VDD}
+lab=#net35}
 N 1310 -5440 1320 -5430 {
-lab=VDD}
+lab=#net35}
 N 1320 -5430 1340 -5430 {
-lab=VDD}
+lab=#net35}
 N 1320 -5450 1340 -5450 {
-lab=VSS}
+lab=#net36}
 N 1320 -5470 1340 -5470 {
-lab=VDD}
+lab=rowon_n[15]}
 N 1320 -5490 1340 -5490 {
-lab=VDD}
+lab=rowon_n[15]}
 N 1080 -5490 1100 -5490 {
-lab=VDD}
+lab=rowon_n[15]}
 N 1080 -5470 1100 -5470 {
-lab=VDD}
+lab=rowon_n[15]}
 N 1080 -5450 1100 -5450 {
-lab=VSS}
+lab=#net36}
 N 1080 -5430 1100 -5430 {
-lab=VDD}
+lab=#net35}
 N 1140 -5350 1140 -5340 {
 lab=VSS}
 N 1160 -5590 1160 -5570 {
@@ -32850,45 +32818,45 @@ lab=col_n[3]}
 N 1480 -5590 1480 -5570 {
 lab=col_n[3]}
 N 1360 -5490 1370 -5500 {
-lab=VDD}
+lab=rowon_n[15]}
 N 1370 -5500 1570 -5500 {
-lab=VDD}
+lab=rowon_n[15]}
 N 1570 -5500 1580 -5490 {
-lab=VDD}
+lab=rowon_n[15]}
 N 1360 -5470 1370 -5480 {
-lab=VDD}
+lab=rowon_n[15]}
 N 1370 -5480 1570 -5480 {
-lab=VDD}
+lab=rowon_n[15]}
 N 1570 -5480 1580 -5470 {
-lab=VDD}
+lab=rowon_n[15]}
 N 1360 -5450 1370 -5460 {
-lab=VSS}
+lab=#net36}
 N 1370 -5460 1570 -5460 {
-lab=VSS}
+lab=#net36}
 N 1570 -5460 1580 -5450 {
-lab=VSS}
+lab=#net36}
 N 1360 -5430 1370 -5440 {
-lab=VDD}
+lab=#net35}
 N 1370 -5440 1570 -5440 {
-lab=VDD}
+lab=#net35}
 N 1570 -5440 1580 -5430 {
-lab=VDD}
+lab=#net35}
 N 1580 -5430 1600 -5430 {
-lab=VDD}
+lab=#net35}
 N 1580 -5450 1600 -5450 {
-lab=VSS}
+lab=#net36}
 N 1580 -5470 1600 -5470 {
-lab=VDD}
+lab=rowon_n[15]}
 N 1580 -5490 1600 -5490 {
-lab=VDD}
+lab=rowon_n[15]}
 N 1340 -5490 1360 -5490 {
-lab=VDD}
+lab=rowon_n[15]}
 N 1340 -5470 1360 -5470 {
-lab=VDD}
+lab=rowon_n[15]}
 N 1340 -5450 1360 -5450 {
-lab=VSS}
+lab=#net36}
 N 1340 -5430 1360 -5430 {
-lab=VDD}
+lab=#net35}
 N 1400 -5350 1400 -5340 {
 lab=VSS}
 N 1420 -5590 1420 -5570 {
@@ -32906,45 +32874,45 @@ lab=col_n[4]}
 N 1740 -5590 1740 -5570 {
 lab=col_n[4]}
 N 1620 -5490 1630 -5500 {
-lab=VDD}
+lab=rowon_n[15]}
 N 1630 -5500 1830 -5500 {
-lab=VDD}
+lab=rowon_n[15]}
 N 1830 -5500 1840 -5490 {
-lab=VDD}
+lab=rowon_n[15]}
 N 1620 -5470 1630 -5480 {
-lab=VDD}
+lab=rowon_n[15]}
 N 1630 -5480 1830 -5480 {
-lab=VDD}
+lab=rowon_n[15]}
 N 1830 -5480 1840 -5470 {
-lab=VDD}
+lab=rowon_n[15]}
 N 1620 -5450 1630 -5460 {
-lab=VSS}
+lab=#net36}
 N 1630 -5460 1830 -5460 {
-lab=VSS}
+lab=#net36}
 N 1830 -5460 1840 -5450 {
-lab=VSS}
+lab=#net36}
 N 1620 -5430 1630 -5440 {
-lab=VDD}
+lab=#net35}
 N 1630 -5440 1830 -5440 {
-lab=VDD}
+lab=#net35}
 N 1830 -5440 1840 -5430 {
-lab=VDD}
+lab=#net35}
 N 1840 -5430 1860 -5430 {
-lab=VDD}
+lab=#net35}
 N 1840 -5450 1860 -5450 {
-lab=VSS}
+lab=#net36}
 N 1840 -5470 1860 -5470 {
-lab=VDD}
+lab=rowon_n[15]}
 N 1840 -5490 1860 -5490 {
-lab=VDD}
+lab=rowon_n[15]}
 N 1600 -5490 1620 -5490 {
-lab=VDD}
+lab=rowon_n[15]}
 N 1600 -5470 1620 -5470 {
-lab=VDD}
+lab=rowon_n[15]}
 N 1600 -5450 1620 -5450 {
-lab=VSS}
+lab=#net36}
 N 1600 -5430 1620 -5430 {
-lab=VDD}
+lab=#net35}
 N 1660 -5350 1660 -5340 {
 lab=VSS}
 N 1680 -5590 1680 -5570 {
@@ -32966,45 +32934,45 @@ lab=col_n[5]}
 N 2000 -5590 2000 -5570 {
 lab=col_n[5]}
 N 1880 -5490 1890 -5500 {
-lab=VDD}
+lab=rowon_n[15]}
 N 1890 -5500 2090 -5500 {
-lab=VDD}
+lab=rowon_n[15]}
 N 2090 -5500 2100 -5490 {
-lab=VDD}
+lab=rowon_n[15]}
 N 1880 -5470 1890 -5480 {
-lab=VDD}
+lab=rowon_n[15]}
 N 1890 -5480 2090 -5480 {
-lab=VDD}
+lab=rowon_n[15]}
 N 2090 -5480 2100 -5470 {
-lab=VDD}
+lab=rowon_n[15]}
 N 1880 -5450 1890 -5460 {
-lab=VSS}
+lab=#net36}
 N 1890 -5460 2090 -5460 {
-lab=VSS}
+lab=#net36}
 N 2090 -5460 2100 -5450 {
-lab=VSS}
+lab=#net36}
 N 1880 -5430 1890 -5440 {
-lab=VDD}
+lab=#net35}
 N 1890 -5440 2090 -5440 {
-lab=VDD}
+lab=#net35}
 N 2090 -5440 2100 -5430 {
-lab=VDD}
+lab=#net35}
 N 2100 -5430 2120 -5430 {
-lab=VDD}
+lab=#net35}
 N 2100 -5450 2120 -5450 {
-lab=VSS}
+lab=#net36}
 N 2100 -5470 2120 -5470 {
-lab=VDD}
+lab=rowon_n[15]}
 N 2100 -5490 2120 -5490 {
-lab=VDD}
+lab=rowon_n[15]}
 N 1860 -5490 1880 -5490 {
-lab=VDD}
+lab=rowon_n[15]}
 N 1860 -5470 1880 -5470 {
-lab=VDD}
+lab=rowon_n[15]}
 N 1860 -5450 1880 -5450 {
-lab=VSS}
+lab=#net36}
 N 1860 -5430 1880 -5430 {
-lab=VDD}
+lab=#net35}
 N 1920 -5350 1920 -5340 {
 lab=VSS}
 N 1940 -5590 1940 -5570 {
@@ -33022,45 +32990,45 @@ lab=col_n[6]}
 N 2260 -5590 2260 -5570 {
 lab=col_n[6]}
 N 2140 -5490 2150 -5500 {
-lab=VDD}
+lab=rowon_n[15]}
 N 2150 -5500 2350 -5500 {
-lab=VDD}
+lab=rowon_n[15]}
 N 2350 -5500 2360 -5490 {
-lab=VDD}
+lab=rowon_n[15]}
 N 2140 -5470 2150 -5480 {
-lab=VDD}
+lab=rowon_n[15]}
 N 2150 -5480 2350 -5480 {
-lab=VDD}
+lab=rowon_n[15]}
 N 2350 -5480 2360 -5470 {
-lab=VDD}
+lab=rowon_n[15]}
 N 2140 -5450 2150 -5460 {
-lab=VSS}
+lab=#net36}
 N 2150 -5460 2350 -5460 {
-lab=VSS}
+lab=#net36}
 N 2350 -5460 2360 -5450 {
-lab=VSS}
+lab=#net36}
 N 2140 -5430 2150 -5440 {
-lab=VDD}
+lab=#net35}
 N 2150 -5440 2350 -5440 {
-lab=VDD}
+lab=#net35}
 N 2350 -5440 2360 -5430 {
-lab=VDD}
+lab=#net35}
 N 2360 -5430 2380 -5430 {
-lab=VDD}
+lab=#net35}
 N 2360 -5450 2380 -5450 {
-lab=VSS}
+lab=#net36}
 N 2360 -5470 2380 -5470 {
-lab=VDD}
+lab=rowon_n[15]}
 N 2360 -5490 2380 -5490 {
-lab=VDD}
+lab=rowon_n[15]}
 N 2120 -5490 2140 -5490 {
-lab=VDD}
+lab=rowon_n[15]}
 N 2120 -5470 2140 -5470 {
-lab=VDD}
+lab=rowon_n[15]}
 N 2120 -5450 2140 -5450 {
-lab=VSS}
+lab=#net36}
 N 2120 -5430 2140 -5430 {
-lab=VDD}
+lab=#net35}
 N 2180 -5350 2180 -5340 {
 lab=VSS}
 N 2200 -5590 2200 -5570 {
@@ -33082,45 +33050,45 @@ lab=col_n[7]}
 N 2520 -5590 2520 -5570 {
 lab=col_n[7]}
 N 2400 -5490 2410 -5500 {
-lab=VDD}
+lab=rowon_n[15]}
 N 2410 -5500 2610 -5500 {
-lab=VDD}
+lab=rowon_n[15]}
 N 2610 -5500 2620 -5490 {
-lab=VDD}
+lab=rowon_n[15]}
 N 2400 -5470 2410 -5480 {
-lab=VDD}
+lab=rowon_n[15]}
 N 2410 -5480 2610 -5480 {
-lab=VDD}
+lab=rowon_n[15]}
 N 2610 -5480 2620 -5470 {
-lab=VDD}
+lab=rowon_n[15]}
 N 2400 -5450 2410 -5460 {
-lab=VSS}
+lab=#net36}
 N 2410 -5460 2610 -5460 {
-lab=VSS}
+lab=#net36}
 N 2610 -5460 2620 -5450 {
-lab=VSS}
+lab=#net36}
 N 2400 -5430 2410 -5440 {
-lab=VDD}
+lab=#net35}
 N 2410 -5440 2610 -5440 {
-lab=VDD}
+lab=#net35}
 N 2610 -5440 2620 -5430 {
-lab=VDD}
+lab=#net35}
 N 2620 -5430 2640 -5430 {
-lab=VDD}
+lab=#net35}
 N 2620 -5450 2640 -5450 {
-lab=VSS}
+lab=#net36}
 N 2620 -5470 2640 -5470 {
-lab=VDD}
+lab=rowon_n[15]}
 N 2620 -5490 2640 -5490 {
-lab=VDD}
+lab=rowon_n[15]}
 N 2380 -5490 2400 -5490 {
-lab=VDD}
+lab=rowon_n[15]}
 N 2380 -5470 2400 -5470 {
-lab=VDD}
+lab=rowon_n[15]}
 N 2380 -5450 2400 -5450 {
-lab=VSS}
+lab=#net36}
 N 2380 -5430 2400 -5430 {
-lab=VDD}
+lab=#net35}
 N 2440 -5350 2440 -5340 {
 lab=VSS}
 N 2460 -5590 2460 -5570 {
@@ -33138,45 +33106,45 @@ lab=col_n[8]}
 N 2780 -5590 2780 -5570 {
 lab=col_n[8]}
 N 2660 -5490 2670 -5500 {
-lab=VDD}
+lab=rowon_n[15]}
 N 2670 -5500 2870 -5500 {
-lab=VDD}
+lab=rowon_n[15]}
 N 2870 -5500 2880 -5490 {
-lab=VDD}
+lab=rowon_n[15]}
 N 2660 -5470 2670 -5480 {
-lab=VDD}
+lab=rowon_n[15]}
 N 2670 -5480 2870 -5480 {
-lab=VDD}
+lab=rowon_n[15]}
 N 2870 -5480 2880 -5470 {
-lab=VDD}
+lab=rowon_n[15]}
 N 2660 -5450 2670 -5460 {
-lab=VSS}
+lab=#net36}
 N 2670 -5460 2870 -5460 {
-lab=VSS}
+lab=#net36}
 N 2870 -5460 2880 -5450 {
-lab=VSS}
+lab=#net36}
 N 2660 -5430 2670 -5440 {
-lab=VDD}
+lab=#net35}
 N 2670 -5440 2870 -5440 {
-lab=VDD}
+lab=#net35}
 N 2870 -5440 2880 -5430 {
-lab=VDD}
+lab=#net35}
 N 2880 -5430 2900 -5430 {
-lab=VDD}
+lab=#net35}
 N 2880 -5450 2900 -5450 {
-lab=VSS}
+lab=#net36}
 N 2880 -5470 2900 -5470 {
-lab=VDD}
+lab=rowon_n[15]}
 N 2880 -5490 2900 -5490 {
-lab=VDD}
+lab=rowon_n[15]}
 N 2640 -5490 2660 -5490 {
-lab=VDD}
+lab=rowon_n[15]}
 N 2640 -5470 2660 -5470 {
-lab=VDD}
+lab=rowon_n[15]}
 N 2640 -5450 2660 -5450 {
-lab=VSS}
+lab=#net36}
 N 2640 -5430 2660 -5430 {
-lab=VDD}
+lab=#net35}
 N 2700 -5350 2700 -5340 {
 lab=VSS}
 N 2720 -5590 2720 -5570 {
@@ -33198,45 +33166,45 @@ lab=col_n[9]}
 N 3040 -5590 3040 -5570 {
 lab=col_n[9]}
 N 2920 -5490 2930 -5500 {
-lab=VDD}
+lab=rowon_n[15]}
 N 2930 -5500 3130 -5500 {
-lab=VDD}
+lab=rowon_n[15]}
 N 3130 -5500 3140 -5490 {
-lab=VDD}
+lab=rowon_n[15]}
 N 2920 -5470 2930 -5480 {
-lab=VDD}
+lab=rowon_n[15]}
 N 2930 -5480 3130 -5480 {
-lab=VDD}
+lab=rowon_n[15]}
 N 3130 -5480 3140 -5470 {
-lab=VDD}
+lab=rowon_n[15]}
 N 2920 -5450 2930 -5460 {
-lab=VSS}
+lab=#net36}
 N 2930 -5460 3130 -5460 {
-lab=VSS}
+lab=#net36}
 N 3130 -5460 3140 -5450 {
-lab=VSS}
+lab=#net36}
 N 2920 -5430 2930 -5440 {
-lab=VDD}
+lab=#net35}
 N 2930 -5440 3130 -5440 {
-lab=VDD}
+lab=#net35}
 N 3130 -5440 3140 -5430 {
-lab=VDD}
+lab=#net35}
 N 3140 -5430 3160 -5430 {
-lab=VDD}
+lab=#net35}
 N 3140 -5450 3160 -5450 {
-lab=VSS}
+lab=#net36}
 N 3140 -5470 3160 -5470 {
-lab=VDD}
+lab=rowon_n[15]}
 N 3140 -5490 3160 -5490 {
-lab=VDD}
+lab=rowon_n[15]}
 N 2900 -5490 2920 -5490 {
-lab=VDD}
+lab=rowon_n[15]}
 N 2900 -5470 2920 -5470 {
-lab=VDD}
+lab=rowon_n[15]}
 N 2900 -5450 2920 -5450 {
-lab=VSS}
+lab=#net36}
 N 2900 -5430 2920 -5430 {
-lab=VDD}
+lab=#net35}
 N 2960 -5350 2960 -5340 {
 lab=VSS}
 N 2980 -5590 2980 -5570 {
@@ -33254,45 +33222,45 @@ lab=col_n[10]}
 N 3300 -5590 3300 -5570 {
 lab=col_n[10]}
 N 3180 -5490 3190 -5500 {
-lab=VDD}
+lab=rowon_n[15]}
 N 3190 -5500 3390 -5500 {
-lab=VDD}
+lab=rowon_n[15]}
 N 3390 -5500 3400 -5490 {
-lab=VDD}
+lab=rowon_n[15]}
 N 3180 -5470 3190 -5480 {
-lab=VDD}
+lab=rowon_n[15]}
 N 3190 -5480 3390 -5480 {
-lab=VDD}
+lab=rowon_n[15]}
 N 3390 -5480 3400 -5470 {
-lab=VDD}
+lab=rowon_n[15]}
 N 3180 -5450 3190 -5460 {
-lab=VSS}
+lab=#net36}
 N 3190 -5460 3390 -5460 {
-lab=VSS}
+lab=#net36}
 N 3390 -5460 3400 -5450 {
-lab=VSS}
+lab=#net36}
 N 3180 -5430 3190 -5440 {
-lab=VDD}
+lab=#net35}
 N 3190 -5440 3390 -5440 {
-lab=VDD}
+lab=#net35}
 N 3390 -5440 3400 -5430 {
-lab=VDD}
+lab=#net35}
 N 3400 -5430 3420 -5430 {
-lab=VDD}
+lab=#net35}
 N 3400 -5450 3420 -5450 {
-lab=VSS}
+lab=#net36}
 N 3400 -5470 3420 -5470 {
-lab=VDD}
+lab=rowon_n[15]}
 N 3400 -5490 3420 -5490 {
-lab=VDD}
+lab=rowon_n[15]}
 N 3160 -5490 3180 -5490 {
-lab=VDD}
+lab=rowon_n[15]}
 N 3160 -5470 3180 -5470 {
-lab=VDD}
+lab=rowon_n[15]}
 N 3160 -5450 3180 -5450 {
-lab=VSS}
+lab=#net36}
 N 3160 -5430 3180 -5430 {
-lab=VDD}
+lab=#net35}
 N 3220 -5350 3220 -5340 {
 lab=VSS}
 N 3240 -5590 3240 -5570 {
@@ -33314,45 +33282,45 @@ lab=col_n[11]}
 N 3560 -5590 3560 -5570 {
 lab=col_n[11]}
 N 3440 -5490 3450 -5500 {
-lab=VDD}
+lab=rowon_n[15]}
 N 3450 -5500 3650 -5500 {
-lab=VDD}
+lab=rowon_n[15]}
 N 3650 -5500 3660 -5490 {
-lab=VDD}
+lab=rowon_n[15]}
 N 3440 -5470 3450 -5480 {
-lab=VDD}
+lab=rowon_n[15]}
 N 3450 -5480 3650 -5480 {
-lab=VDD}
+lab=rowon_n[15]}
 N 3650 -5480 3660 -5470 {
-lab=VDD}
+lab=rowon_n[15]}
 N 3440 -5450 3450 -5460 {
-lab=VSS}
+lab=#net36}
 N 3450 -5460 3650 -5460 {
-lab=VSS}
+lab=#net36}
 N 3650 -5460 3660 -5450 {
-lab=VSS}
+lab=#net36}
 N 3440 -5430 3450 -5440 {
-lab=VDD}
+lab=#net35}
 N 3450 -5440 3650 -5440 {
-lab=VDD}
+lab=#net35}
 N 3650 -5440 3660 -5430 {
-lab=VDD}
+lab=#net35}
 N 3660 -5430 3680 -5430 {
-lab=VDD}
+lab=#net35}
 N 3660 -5450 3680 -5450 {
-lab=VSS}
+lab=#net36}
 N 3660 -5470 3680 -5470 {
-lab=VDD}
+lab=rowon_n[15]}
 N 3660 -5490 3680 -5490 {
-lab=VDD}
+lab=rowon_n[15]}
 N 3420 -5490 3440 -5490 {
-lab=VDD}
+lab=rowon_n[15]}
 N 3420 -5470 3440 -5470 {
-lab=VDD}
+lab=rowon_n[15]}
 N 3420 -5450 3440 -5450 {
-lab=VSS}
+lab=#net36}
 N 3420 -5430 3440 -5430 {
-lab=VDD}
+lab=#net35}
 N 3480 -5350 3480 -5340 {
 lab=VSS}
 N 3500 -5590 3500 -5570 {
@@ -33370,45 +33338,45 @@ lab=col_n[12]}
 N 3820 -5590 3820 -5570 {
 lab=col_n[12]}
 N 3700 -5490 3710 -5500 {
-lab=VDD}
+lab=rowon_n[15]}
 N 3710 -5500 3910 -5500 {
-lab=VDD}
+lab=rowon_n[15]}
 N 3910 -5500 3920 -5490 {
-lab=VDD}
+lab=rowon_n[15]}
 N 3700 -5470 3710 -5480 {
-lab=VDD}
+lab=rowon_n[15]}
 N 3710 -5480 3910 -5480 {
-lab=VDD}
+lab=rowon_n[15]}
 N 3910 -5480 3920 -5470 {
-lab=VDD}
+lab=rowon_n[15]}
 N 3700 -5450 3710 -5460 {
-lab=VSS}
+lab=#net36}
 N 3710 -5460 3910 -5460 {
-lab=VSS}
+lab=#net36}
 N 3910 -5460 3920 -5450 {
-lab=VSS}
+lab=#net36}
 N 3700 -5430 3710 -5440 {
-lab=VDD}
+lab=#net35}
 N 3710 -5440 3910 -5440 {
-lab=VDD}
+lab=#net35}
 N 3910 -5440 3920 -5430 {
-lab=VDD}
+lab=#net35}
 N 3920 -5430 3940 -5430 {
-lab=VDD}
+lab=#net35}
 N 3920 -5450 3940 -5450 {
-lab=VSS}
+lab=#net36}
 N 3920 -5470 3940 -5470 {
-lab=VDD}
+lab=rowon_n[15]}
 N 3920 -5490 3940 -5490 {
-lab=VDD}
+lab=rowon_n[15]}
 N 3680 -5490 3700 -5490 {
-lab=VDD}
+lab=rowon_n[15]}
 N 3680 -5470 3700 -5470 {
-lab=VDD}
+lab=rowon_n[15]}
 N 3680 -5450 3700 -5450 {
-lab=VSS}
+lab=#net36}
 N 3680 -5430 3700 -5430 {
-lab=VDD}
+lab=#net35}
 N 3740 -5350 3740 -5340 {
 lab=VSS}
 N 3760 -5590 3760 -5570 {
@@ -33430,45 +33398,45 @@ lab=col_n[13]}
 N 4080 -5590 4080 -5570 {
 lab=col_n[13]}
 N 3960 -5490 3970 -5500 {
-lab=VDD}
+lab=rowon_n[15]}
 N 3970 -5500 4170 -5500 {
-lab=VDD}
+lab=rowon_n[15]}
 N 4170 -5500 4180 -5490 {
-lab=VDD}
+lab=rowon_n[15]}
 N 3960 -5470 3970 -5480 {
-lab=VDD}
+lab=rowon_n[15]}
 N 3970 -5480 4170 -5480 {
-lab=VDD}
+lab=rowon_n[15]}
 N 4170 -5480 4180 -5470 {
-lab=VDD}
+lab=rowon_n[15]}
 N 3960 -5450 3970 -5460 {
-lab=VSS}
+lab=#net36}
 N 3970 -5460 4170 -5460 {
-lab=VSS}
+lab=#net36}
 N 4170 -5460 4180 -5450 {
-lab=VSS}
+lab=#net36}
 N 3960 -5430 3970 -5440 {
-lab=VDD}
+lab=#net35}
 N 3970 -5440 4170 -5440 {
-lab=VDD}
+lab=#net35}
 N 4170 -5440 4180 -5430 {
-lab=VDD}
+lab=#net35}
 N 4180 -5430 4200 -5430 {
-lab=VDD}
+lab=#net35}
 N 4180 -5450 4200 -5450 {
-lab=VSS}
+lab=#net36}
 N 4180 -5470 4200 -5470 {
-lab=VDD}
+lab=rowon_n[15]}
 N 4180 -5490 4200 -5490 {
-lab=VDD}
+lab=rowon_n[15]}
 N 3940 -5490 3960 -5490 {
-lab=VDD}
+lab=rowon_n[15]}
 N 3940 -5470 3960 -5470 {
-lab=VDD}
+lab=rowon_n[15]}
 N 3940 -5450 3960 -5450 {
-lab=VSS}
+lab=#net36}
 N 3940 -5430 3960 -5430 {
-lab=VDD}
+lab=#net35}
 N 4000 -5350 4000 -5340 {
 lab=VSS}
 N 4020 -5590 4020 -5570 {
@@ -33486,45 +33454,45 @@ lab=col_n[14]}
 N 4340 -5590 4340 -5570 {
 lab=col_n[14]}
 N 4220 -5490 4230 -5500 {
-lab=VDD}
+lab=rowon_n[15]}
 N 4230 -5500 4430 -5500 {
-lab=VDD}
+lab=rowon_n[15]}
 N 4430 -5500 4440 -5490 {
-lab=VDD}
+lab=rowon_n[15]}
 N 4220 -5470 4230 -5480 {
-lab=VDD}
+lab=rowon_n[15]}
 N 4230 -5480 4430 -5480 {
-lab=VDD}
+lab=rowon_n[15]}
 N 4430 -5480 4440 -5470 {
-lab=VDD}
+lab=rowon_n[15]}
 N 4220 -5450 4230 -5460 {
-lab=VSS}
+lab=#net36}
 N 4230 -5460 4430 -5460 {
-lab=VSS}
+lab=#net36}
 N 4430 -5460 4440 -5450 {
-lab=VSS}
+lab=#net36}
 N 4220 -5430 4230 -5440 {
-lab=VDD}
+lab=#net35}
 N 4230 -5440 4430 -5440 {
-lab=VDD}
+lab=#net35}
 N 4430 -5440 4440 -5430 {
-lab=VDD}
+lab=#net35}
 N 4440 -5430 4460 -5430 {
-lab=VDD}
+lab=#net35}
 N 4440 -5450 4460 -5450 {
-lab=VSS}
+lab=#net36}
 N 4440 -5470 4460 -5470 {
-lab=VDD}
+lab=rowon_n[15]}
 N 4440 -5490 4460 -5490 {
-lab=VDD}
+lab=rowon_n[15]}
 N 4200 -5490 4220 -5490 {
-lab=VDD}
+lab=rowon_n[15]}
 N 4200 -5470 4220 -5470 {
-lab=VDD}
+lab=rowon_n[15]}
 N 4200 -5450 4220 -5450 {
-lab=VSS}
+lab=#net36}
 N 4200 -5430 4220 -5430 {
-lab=VDD}
+lab=#net35}
 N 4260 -5350 4260 -5340 {
 lab=VSS}
 N 4280 -5590 4280 -5570 {
@@ -33546,45 +33514,45 @@ lab=col_n[15]}
 N 4600 -5590 4600 -5570 {
 lab=col_n[15]}
 N 4480 -5490 4490 -5500 {
-lab=VDD}
+lab=rowon_n[15]}
 N 4490 -5500 4690 -5500 {
-lab=VDD}
+lab=rowon_n[15]}
 N 4690 -5500 4700 -5490 {
-lab=VDD}
+lab=rowon_n[15]}
 N 4480 -5470 4490 -5480 {
-lab=VDD}
+lab=rowon_n[15]}
 N 4490 -5480 4690 -5480 {
-lab=VDD}
+lab=rowon_n[15]}
 N 4690 -5480 4700 -5470 {
-lab=VDD}
+lab=rowon_n[15]}
 N 4480 -5450 4490 -5460 {
-lab=VSS}
+lab=#net36}
 N 4490 -5460 4690 -5460 {
-lab=VSS}
+lab=#net36}
 N 4690 -5460 4700 -5450 {
-lab=VSS}
+lab=#net36}
 N 4480 -5430 4490 -5440 {
-lab=VDD}
+lab=#net35}
 N 4490 -5440 4690 -5440 {
-lab=VDD}
+lab=#net35}
 N 4690 -5440 4700 -5430 {
-lab=VDD}
+lab=#net35}
 N 4700 -5430 4720 -5430 {
-lab=VDD}
+lab=#net35}
 N 4700 -5450 4720 -5450 {
-lab=VSS}
+lab=#net36}
 N 4700 -5470 4720 -5470 {
-lab=VDD}
+lab=rowon_n[15]}
 N 4700 -5490 4720 -5490 {
-lab=VDD}
+lab=rowon_n[15]}
 N 4460 -5490 4480 -5490 {
-lab=VDD}
+lab=rowon_n[15]}
 N 4460 -5470 4480 -5470 {
-lab=VDD}
+lab=rowon_n[15]}
 N 4460 -5450 4480 -5450 {
-lab=VSS}
+lab=#net36}
 N 4460 -5430 4480 -5430 {
-lab=VDD}
+lab=#net35}
 N 4520 -5350 4520 -5340 {
 lab=VSS}
 N 4540 -5590 4540 -5570 {
@@ -33602,45 +33570,45 @@ lab=col_n[16]}
 N 4860 -5590 4860 -5570 {
 lab=col_n[16]}
 N 4740 -5490 4750 -5500 {
-lab=VDD}
+lab=rowon_n[15]}
 N 4750 -5500 4950 -5500 {
-lab=VDD}
+lab=rowon_n[15]}
 N 4950 -5500 4960 -5490 {
-lab=VDD}
+lab=rowon_n[15]}
 N 4740 -5470 4750 -5480 {
-lab=VDD}
+lab=rowon_n[15]}
 N 4750 -5480 4950 -5480 {
-lab=VDD}
+lab=rowon_n[15]}
 N 4950 -5480 4960 -5470 {
-lab=VDD}
+lab=rowon_n[15]}
 N 4740 -5450 4750 -5460 {
-lab=VSS}
+lab=#net36}
 N 4750 -5460 4950 -5460 {
-lab=VSS}
+lab=#net36}
 N 4950 -5460 4960 -5450 {
-lab=VSS}
+lab=#net36}
 N 4740 -5430 4750 -5440 {
-lab=VDD}
+lab=#net35}
 N 4750 -5440 4950 -5440 {
-lab=VDD}
+lab=#net35}
 N 4950 -5440 4960 -5430 {
-lab=VDD}
+lab=#net35}
 N 4960 -5430 4980 -5430 {
-lab=VDD}
+lab=#net35}
 N 4960 -5450 4980 -5450 {
-lab=VSS}
+lab=#net36}
 N 4960 -5470 4980 -5470 {
-lab=VDD}
+lab=rowon_n[15]}
 N 4960 -5490 4980 -5490 {
-lab=VDD}
+lab=rowon_n[15]}
 N 4720 -5490 4740 -5490 {
-lab=VDD}
+lab=rowon_n[15]}
 N 4720 -5470 4740 -5470 {
-lab=VDD}
+lab=rowon_n[15]}
 N 4720 -5450 4740 -5450 {
-lab=VSS}
+lab=#net36}
 N 4720 -5430 4740 -5430 {
-lab=VDD}
+lab=#net35}
 N 4780 -5350 4780 -5340 {
 lab=VSS}
 N 4800 -5590 4800 -5570 {
@@ -33662,45 +33630,45 @@ lab=col_n[17]}
 N 5120 -5590 5120 -5570 {
 lab=col_n[17]}
 N 5000 -5490 5010 -5500 {
-lab=VDD}
+lab=rowon_n[15]}
 N 5010 -5500 5210 -5500 {
-lab=VDD}
+lab=rowon_n[15]}
 N 5210 -5500 5220 -5490 {
-lab=VDD}
+lab=rowon_n[15]}
 N 5000 -5470 5010 -5480 {
-lab=VDD}
+lab=rowon_n[15]}
 N 5010 -5480 5210 -5480 {
-lab=VDD}
+lab=rowon_n[15]}
 N 5210 -5480 5220 -5470 {
-lab=VDD}
+lab=rowon_n[15]}
 N 5000 -5450 5010 -5460 {
-lab=VSS}
+lab=#net36}
 N 5010 -5460 5210 -5460 {
-lab=VSS}
+lab=#net36}
 N 5210 -5460 5220 -5450 {
-lab=VSS}
+lab=#net36}
 N 5000 -5430 5010 -5440 {
-lab=VDD}
+lab=#net35}
 N 5010 -5440 5210 -5440 {
-lab=VDD}
+lab=#net35}
 N 5210 -5440 5220 -5430 {
-lab=VDD}
+lab=#net35}
 N 5220 -5430 5240 -5430 {
-lab=VDD}
+lab=#net35}
 N 5220 -5450 5240 -5450 {
-lab=VSS}
+lab=#net36}
 N 5220 -5470 5240 -5470 {
-lab=VDD}
+lab=rowon_n[15]}
 N 5220 -5490 5240 -5490 {
-lab=VDD}
+lab=rowon_n[15]}
 N 4980 -5490 5000 -5490 {
-lab=VDD}
+lab=rowon_n[15]}
 N 4980 -5470 5000 -5470 {
-lab=VDD}
+lab=rowon_n[15]}
 N 4980 -5450 5000 -5450 {
-lab=VSS}
+lab=#net36}
 N 4980 -5430 5000 -5430 {
-lab=VDD}
+lab=#net35}
 N 5040 -5350 5040 -5340 {
 lab=VSS}
 N 5060 -5590 5060 -5570 {
@@ -33718,45 +33686,45 @@ lab=col_n[18]}
 N 5380 -5590 5380 -5570 {
 lab=col_n[18]}
 N 5260 -5490 5270 -5500 {
-lab=VDD}
+lab=rowon_n[15]}
 N 5270 -5500 5470 -5500 {
-lab=VDD}
+lab=rowon_n[15]}
 N 5470 -5500 5480 -5490 {
-lab=VDD}
+lab=rowon_n[15]}
 N 5260 -5470 5270 -5480 {
-lab=VDD}
+lab=rowon_n[15]}
 N 5270 -5480 5470 -5480 {
-lab=VDD}
+lab=rowon_n[15]}
 N 5470 -5480 5480 -5470 {
-lab=VDD}
+lab=rowon_n[15]}
 N 5260 -5450 5270 -5460 {
-lab=VSS}
+lab=#net36}
 N 5270 -5460 5470 -5460 {
-lab=VSS}
+lab=#net36}
 N 5470 -5460 5480 -5450 {
-lab=VSS}
+lab=#net36}
 N 5260 -5430 5270 -5440 {
-lab=VDD}
+lab=#net35}
 N 5270 -5440 5470 -5440 {
-lab=VDD}
+lab=#net35}
 N 5470 -5440 5480 -5430 {
-lab=VDD}
+lab=#net35}
 N 5480 -5430 5500 -5430 {
-lab=VDD}
+lab=#net35}
 N 5480 -5450 5500 -5450 {
-lab=VSS}
+lab=#net36}
 N 5480 -5470 5500 -5470 {
-lab=VDD}
+lab=rowon_n[15]}
 N 5480 -5490 5500 -5490 {
-lab=VDD}
+lab=rowon_n[15]}
 N 5240 -5490 5260 -5490 {
-lab=VDD}
+lab=rowon_n[15]}
 N 5240 -5470 5260 -5470 {
-lab=VDD}
+lab=rowon_n[15]}
 N 5240 -5450 5260 -5450 {
-lab=VSS}
+lab=#net36}
 N 5240 -5430 5260 -5430 {
-lab=VDD}
+lab=#net35}
 N 5300 -5350 5300 -5340 {
 lab=VSS}
 N 5320 -5590 5320 -5570 {
@@ -33778,45 +33746,45 @@ lab=col_n[19]}
 N 5640 -5590 5640 -5570 {
 lab=col_n[19]}
 N 5520 -5490 5530 -5500 {
-lab=VDD}
+lab=rowon_n[15]}
 N 5530 -5500 5730 -5500 {
-lab=VDD}
+lab=rowon_n[15]}
 N 5730 -5500 5740 -5490 {
-lab=VDD}
+lab=rowon_n[15]}
 N 5520 -5470 5530 -5480 {
-lab=VDD}
+lab=rowon_n[15]}
 N 5530 -5480 5730 -5480 {
-lab=VDD}
+lab=rowon_n[15]}
 N 5730 -5480 5740 -5470 {
-lab=VDD}
+lab=rowon_n[15]}
 N 5520 -5450 5530 -5460 {
-lab=VSS}
+lab=#net36}
 N 5530 -5460 5730 -5460 {
-lab=VSS}
+lab=#net36}
 N 5730 -5460 5740 -5450 {
-lab=VSS}
+lab=#net36}
 N 5520 -5430 5530 -5440 {
-lab=VDD}
+lab=#net35}
 N 5530 -5440 5730 -5440 {
-lab=VDD}
+lab=#net35}
 N 5730 -5440 5740 -5430 {
-lab=VDD}
+lab=#net35}
 N 5740 -5430 5760 -5430 {
-lab=VDD}
+lab=#net35}
 N 5740 -5450 5760 -5450 {
-lab=VSS}
+lab=#net36}
 N 5740 -5470 5760 -5470 {
-lab=VDD}
+lab=rowon_n[15]}
 N 5740 -5490 5760 -5490 {
-lab=VDD}
+lab=rowon_n[15]}
 N 5500 -5490 5520 -5490 {
-lab=VDD}
+lab=rowon_n[15]}
 N 5500 -5470 5520 -5470 {
-lab=VDD}
+lab=rowon_n[15]}
 N 5500 -5450 5520 -5450 {
-lab=VSS}
+lab=#net36}
 N 5500 -5430 5520 -5430 {
-lab=VDD}
+lab=#net35}
 N 5560 -5350 5560 -5340 {
 lab=VSS}
 N 5580 -5590 5580 -5570 {
@@ -33834,45 +33802,45 @@ lab=col_n[20]}
 N 5900 -5590 5900 -5570 {
 lab=col_n[20]}
 N 5780 -5490 5790 -5500 {
-lab=VDD}
+lab=rowon_n[15]}
 N 5790 -5500 5990 -5500 {
-lab=VDD}
+lab=rowon_n[15]}
 N 5990 -5500 6000 -5490 {
-lab=VDD}
+lab=rowon_n[15]}
 N 5780 -5470 5790 -5480 {
-lab=VDD}
+lab=rowon_n[15]}
 N 5790 -5480 5990 -5480 {
-lab=VDD}
+lab=rowon_n[15]}
 N 5990 -5480 6000 -5470 {
-lab=VDD}
+lab=rowon_n[15]}
 N 5780 -5450 5790 -5460 {
-lab=VSS}
+lab=#net36}
 N 5790 -5460 5990 -5460 {
-lab=VSS}
+lab=#net36}
 N 5990 -5460 6000 -5450 {
-lab=VSS}
+lab=#net36}
 N 5780 -5430 5790 -5440 {
-lab=VDD}
+lab=#net35}
 N 5790 -5440 5990 -5440 {
-lab=VDD}
+lab=#net35}
 N 5990 -5440 6000 -5430 {
-lab=VDD}
+lab=#net35}
 N 6000 -5430 6020 -5430 {
-lab=VDD}
+lab=#net35}
 N 6000 -5450 6020 -5450 {
-lab=VSS}
+lab=#net36}
 N 6000 -5470 6020 -5470 {
-lab=VDD}
+lab=rowon_n[15]}
 N 6000 -5490 6020 -5490 {
-lab=VDD}
+lab=rowon_n[15]}
 N 5760 -5490 5780 -5490 {
-lab=VDD}
+lab=rowon_n[15]}
 N 5760 -5470 5780 -5470 {
-lab=VDD}
+lab=rowon_n[15]}
 N 5760 -5450 5780 -5450 {
-lab=VSS}
+lab=#net36}
 N 5760 -5430 5780 -5430 {
-lab=VDD}
+lab=#net35}
 N 5820 -5350 5820 -5340 {
 lab=VSS}
 N 5840 -5590 5840 -5570 {
@@ -33894,45 +33862,45 @@ lab=col_n[21]}
 N 6160 -5590 6160 -5570 {
 lab=col_n[21]}
 N 6040 -5490 6050 -5500 {
-lab=VDD}
+lab=rowon_n[15]}
 N 6050 -5500 6250 -5500 {
-lab=VDD}
+lab=rowon_n[15]}
 N 6250 -5500 6260 -5490 {
-lab=VDD}
+lab=rowon_n[15]}
 N 6040 -5470 6050 -5480 {
-lab=VDD}
+lab=rowon_n[15]}
 N 6050 -5480 6250 -5480 {
-lab=VDD}
+lab=rowon_n[15]}
 N 6250 -5480 6260 -5470 {
-lab=VDD}
+lab=rowon_n[15]}
 N 6040 -5450 6050 -5460 {
-lab=VSS}
+lab=#net36}
 N 6050 -5460 6250 -5460 {
-lab=VSS}
+lab=#net36}
 N 6250 -5460 6260 -5450 {
-lab=VSS}
+lab=#net36}
 N 6040 -5430 6050 -5440 {
-lab=VDD}
+lab=#net35}
 N 6050 -5440 6250 -5440 {
-lab=VDD}
+lab=#net35}
 N 6250 -5440 6260 -5430 {
-lab=VDD}
+lab=#net35}
 N 6260 -5430 6280 -5430 {
-lab=VDD}
+lab=#net35}
 N 6260 -5450 6280 -5450 {
-lab=VSS}
+lab=#net36}
 N 6260 -5470 6280 -5470 {
-lab=VDD}
+lab=rowon_n[15]}
 N 6260 -5490 6280 -5490 {
-lab=VDD}
+lab=rowon_n[15]}
 N 6020 -5490 6040 -5490 {
-lab=VDD}
+lab=rowon_n[15]}
 N 6020 -5470 6040 -5470 {
-lab=VDD}
+lab=rowon_n[15]}
 N 6020 -5450 6040 -5450 {
-lab=VSS}
+lab=#net36}
 N 6020 -5430 6040 -5430 {
-lab=VDD}
+lab=#net35}
 N 6080 -5350 6080 -5340 {
 lab=VSS}
 N 6100 -5590 6100 -5570 {
@@ -33950,45 +33918,45 @@ lab=col_n[22]}
 N 6420 -5590 6420 -5570 {
 lab=col_n[22]}
 N 6300 -5490 6310 -5500 {
-lab=VDD}
+lab=rowon_n[15]}
 N 6310 -5500 6510 -5500 {
-lab=VDD}
+lab=rowon_n[15]}
 N 6510 -5500 6520 -5490 {
-lab=VDD}
+lab=rowon_n[15]}
 N 6300 -5470 6310 -5480 {
-lab=VDD}
+lab=rowon_n[15]}
 N 6310 -5480 6510 -5480 {
-lab=VDD}
+lab=rowon_n[15]}
 N 6510 -5480 6520 -5470 {
-lab=VDD}
+lab=rowon_n[15]}
 N 6300 -5450 6310 -5460 {
-lab=VSS}
+lab=#net36}
 N 6310 -5460 6510 -5460 {
-lab=VSS}
+lab=#net36}
 N 6510 -5460 6520 -5450 {
-lab=VSS}
+lab=#net36}
 N 6300 -5430 6310 -5440 {
-lab=VDD}
+lab=#net35}
 N 6310 -5440 6510 -5440 {
-lab=VDD}
+lab=#net35}
 N 6510 -5440 6520 -5430 {
-lab=VDD}
+lab=#net35}
 N 6520 -5430 6540 -5430 {
-lab=VDD}
+lab=#net35}
 N 6520 -5450 6540 -5450 {
-lab=VSS}
+lab=#net36}
 N 6520 -5470 6540 -5470 {
-lab=VDD}
+lab=rowon_n[15]}
 N 6520 -5490 6540 -5490 {
-lab=VDD}
+lab=rowon_n[15]}
 N 6280 -5490 6300 -5490 {
-lab=VDD}
+lab=rowon_n[15]}
 N 6280 -5470 6300 -5470 {
-lab=VDD}
+lab=rowon_n[15]}
 N 6280 -5450 6300 -5450 {
-lab=VSS}
+lab=#net36}
 N 6280 -5430 6300 -5430 {
-lab=VDD}
+lab=#net35}
 N 6340 -5350 6340 -5340 {
 lab=VSS}
 N 6360 -5590 6360 -5570 {
@@ -34010,45 +33978,45 @@ lab=col_n[23]}
 N 6680 -5590 6680 -5570 {
 lab=col_n[23]}
 N 6560 -5490 6570 -5500 {
-lab=VDD}
+lab=rowon_n[15]}
 N 6570 -5500 6770 -5500 {
-lab=VDD}
+lab=rowon_n[15]}
 N 6770 -5500 6780 -5490 {
-lab=VDD}
+lab=rowon_n[15]}
 N 6560 -5470 6570 -5480 {
-lab=VDD}
+lab=rowon_n[15]}
 N 6570 -5480 6770 -5480 {
-lab=VDD}
+lab=rowon_n[15]}
 N 6770 -5480 6780 -5470 {
-lab=VDD}
+lab=rowon_n[15]}
 N 6560 -5450 6570 -5460 {
-lab=VSS}
+lab=#net36}
 N 6570 -5460 6770 -5460 {
-lab=VSS}
+lab=#net36}
 N 6770 -5460 6780 -5450 {
-lab=VSS}
+lab=#net36}
 N 6560 -5430 6570 -5440 {
-lab=VDD}
+lab=#net35}
 N 6570 -5440 6770 -5440 {
-lab=VDD}
+lab=#net35}
 N 6770 -5440 6780 -5430 {
-lab=VDD}
+lab=#net35}
 N 6780 -5430 6800 -5430 {
-lab=VDD}
+lab=#net35}
 N 6780 -5450 6800 -5450 {
-lab=VSS}
+lab=#net36}
 N 6780 -5470 6800 -5470 {
-lab=VDD}
+lab=rowon_n[15]}
 N 6780 -5490 6800 -5490 {
-lab=VDD}
+lab=rowon_n[15]}
 N 6540 -5490 6560 -5490 {
-lab=VDD}
+lab=rowon_n[15]}
 N 6540 -5470 6560 -5470 {
-lab=VDD}
+lab=rowon_n[15]}
 N 6540 -5450 6560 -5450 {
-lab=VSS}
+lab=#net36}
 N 6540 -5430 6560 -5430 {
-lab=VDD}
+lab=#net35}
 N 6600 -5350 6600 -5340 {
 lab=VSS}
 N 6620 -5590 6620 -5570 {
@@ -34066,45 +34034,45 @@ lab=col_n[24]}
 N 6940 -5590 6940 -5570 {
 lab=col_n[24]}
 N 6820 -5490 6830 -5500 {
-lab=VDD}
+lab=rowon_n[15]}
 N 6830 -5500 7030 -5500 {
-lab=VDD}
+lab=rowon_n[15]}
 N 7030 -5500 7040 -5490 {
-lab=VDD}
+lab=rowon_n[15]}
 N 6820 -5470 6830 -5480 {
-lab=VDD}
+lab=rowon_n[15]}
 N 6830 -5480 7030 -5480 {
-lab=VDD}
+lab=rowon_n[15]}
 N 7030 -5480 7040 -5470 {
-lab=VDD}
+lab=rowon_n[15]}
 N 6820 -5450 6830 -5460 {
-lab=VSS}
+lab=#net36}
 N 6830 -5460 7030 -5460 {
-lab=VSS}
+lab=#net36}
 N 7030 -5460 7040 -5450 {
-lab=VSS}
+lab=#net36}
 N 6820 -5430 6830 -5440 {
-lab=VDD}
+lab=#net35}
 N 6830 -5440 7030 -5440 {
-lab=VDD}
+lab=#net35}
 N 7030 -5440 7040 -5430 {
-lab=VDD}
+lab=#net35}
 N 7040 -5430 7060 -5430 {
-lab=VDD}
+lab=#net35}
 N 7040 -5450 7060 -5450 {
-lab=VSS}
+lab=#net36}
 N 7040 -5470 7060 -5470 {
-lab=VDD}
+lab=rowon_n[15]}
 N 7040 -5490 7060 -5490 {
-lab=VDD}
+lab=rowon_n[15]}
 N 6800 -5490 6820 -5490 {
-lab=VDD}
+lab=rowon_n[15]}
 N 6800 -5470 6820 -5470 {
-lab=VDD}
+lab=rowon_n[15]}
 N 6800 -5450 6820 -5450 {
-lab=VSS}
+lab=#net36}
 N 6800 -5430 6820 -5430 {
-lab=VDD}
+lab=#net35}
 N 6860 -5350 6860 -5340 {
 lab=VSS}
 N 6880 -5590 6880 -5570 {
@@ -34126,45 +34094,45 @@ lab=col_n[25]}
 N 7200 -5590 7200 -5570 {
 lab=col_n[25]}
 N 7080 -5490 7090 -5500 {
-lab=VDD}
+lab=rowon_n[15]}
 N 7090 -5500 7290 -5500 {
-lab=VDD}
+lab=rowon_n[15]}
 N 7290 -5500 7300 -5490 {
-lab=VDD}
+lab=rowon_n[15]}
 N 7080 -5470 7090 -5480 {
-lab=VDD}
+lab=rowon_n[15]}
 N 7090 -5480 7290 -5480 {
-lab=VDD}
+lab=rowon_n[15]}
 N 7290 -5480 7300 -5470 {
-lab=VDD}
+lab=rowon_n[15]}
 N 7080 -5450 7090 -5460 {
-lab=VSS}
+lab=#net36}
 N 7090 -5460 7290 -5460 {
-lab=VSS}
+lab=#net36}
 N 7290 -5460 7300 -5450 {
-lab=VSS}
+lab=#net36}
 N 7080 -5430 7090 -5440 {
-lab=VDD}
+lab=#net35}
 N 7090 -5440 7290 -5440 {
-lab=VDD}
+lab=#net35}
 N 7290 -5440 7300 -5430 {
-lab=VDD}
+lab=#net35}
 N 7300 -5430 7320 -5430 {
-lab=VDD}
+lab=#net35}
 N 7300 -5450 7320 -5450 {
-lab=VSS}
+lab=#net36}
 N 7300 -5470 7320 -5470 {
-lab=VDD}
+lab=rowon_n[15]}
 N 7300 -5490 7320 -5490 {
-lab=VDD}
+lab=rowon_n[15]}
 N 7060 -5490 7080 -5490 {
-lab=VDD}
+lab=rowon_n[15]}
 N 7060 -5470 7080 -5470 {
-lab=VDD}
+lab=rowon_n[15]}
 N 7060 -5450 7080 -5450 {
-lab=VSS}
+lab=#net36}
 N 7060 -5430 7080 -5430 {
-lab=VDD}
+lab=#net35}
 N 7120 -5350 7120 -5340 {
 lab=VSS}
 N 7140 -5590 7140 -5570 {
@@ -34182,45 +34150,45 @@ lab=col_n[26]}
 N 7460 -5590 7460 -5570 {
 lab=col_n[26]}
 N 7340 -5490 7350 -5500 {
-lab=VDD}
+lab=rowon_n[15]}
 N 7350 -5500 7550 -5500 {
-lab=VDD}
+lab=rowon_n[15]}
 N 7550 -5500 7560 -5490 {
-lab=VDD}
+lab=rowon_n[15]}
 N 7340 -5470 7350 -5480 {
-lab=VDD}
+lab=rowon_n[15]}
 N 7350 -5480 7550 -5480 {
-lab=VDD}
+lab=rowon_n[15]}
 N 7550 -5480 7560 -5470 {
-lab=VDD}
+lab=rowon_n[15]}
 N 7340 -5450 7350 -5460 {
-lab=VSS}
+lab=#net36}
 N 7350 -5460 7550 -5460 {
-lab=VSS}
+lab=#net36}
 N 7550 -5460 7560 -5450 {
-lab=VSS}
+lab=#net36}
 N 7340 -5430 7350 -5440 {
-lab=VDD}
+lab=#net35}
 N 7350 -5440 7550 -5440 {
-lab=VDD}
+lab=#net35}
 N 7550 -5440 7560 -5430 {
-lab=VDD}
+lab=#net35}
 N 7560 -5430 7580 -5430 {
-lab=VDD}
+lab=#net35}
 N 7560 -5450 7580 -5450 {
-lab=VSS}
+lab=#net36}
 N 7560 -5470 7580 -5470 {
-lab=VDD}
+lab=rowon_n[15]}
 N 7560 -5490 7580 -5490 {
-lab=VDD}
+lab=rowon_n[15]}
 N 7320 -5490 7340 -5490 {
-lab=VDD}
+lab=rowon_n[15]}
 N 7320 -5470 7340 -5470 {
-lab=VDD}
+lab=rowon_n[15]}
 N 7320 -5450 7340 -5450 {
-lab=VSS}
+lab=#net36}
 N 7320 -5430 7340 -5430 {
-lab=VDD}
+lab=#net35}
 N 7380 -5350 7380 -5340 {
 lab=VSS}
 N 7400 -5590 7400 -5570 {
@@ -34242,45 +34210,45 @@ lab=col_n[27]}
 N 7720 -5590 7720 -5570 {
 lab=col_n[27]}
 N 7600 -5490 7610 -5500 {
-lab=VDD}
+lab=rowon_n[15]}
 N 7610 -5500 7810 -5500 {
-lab=VDD}
+lab=rowon_n[15]}
 N 7810 -5500 7820 -5490 {
-lab=VDD}
+lab=rowon_n[15]}
 N 7600 -5470 7610 -5480 {
-lab=VDD}
+lab=rowon_n[15]}
 N 7610 -5480 7810 -5480 {
-lab=VDD}
+lab=rowon_n[15]}
 N 7810 -5480 7820 -5470 {
-lab=VDD}
+lab=rowon_n[15]}
 N 7600 -5450 7610 -5460 {
-lab=VSS}
+lab=#net36}
 N 7610 -5460 7810 -5460 {
-lab=VSS}
+lab=#net36}
 N 7810 -5460 7820 -5450 {
-lab=VSS}
+lab=#net36}
 N 7600 -5430 7610 -5440 {
-lab=VDD}
+lab=#net35}
 N 7610 -5440 7810 -5440 {
-lab=VDD}
+lab=#net35}
 N 7810 -5440 7820 -5430 {
-lab=VDD}
+lab=#net35}
 N 7820 -5430 7840 -5430 {
-lab=VDD}
+lab=#net35}
 N 7820 -5450 7840 -5450 {
-lab=VSS}
+lab=#net36}
 N 7820 -5470 7840 -5470 {
-lab=VDD}
+lab=rowon_n[15]}
 N 7820 -5490 7840 -5490 {
-lab=VDD}
+lab=rowon_n[15]}
 N 7580 -5490 7600 -5490 {
-lab=VDD}
+lab=rowon_n[15]}
 N 7580 -5470 7600 -5470 {
-lab=VDD}
+lab=rowon_n[15]}
 N 7580 -5450 7600 -5450 {
-lab=VSS}
+lab=#net36}
 N 7580 -5430 7600 -5430 {
-lab=VDD}
+lab=#net35}
 N 7640 -5350 7640 -5340 {
 lab=VSS}
 N 7660 -5590 7660 -5570 {
@@ -34298,45 +34266,45 @@ lab=col_n[28]}
 N 7980 -5590 7980 -5570 {
 lab=col_n[28]}
 N 7860 -5490 7870 -5500 {
-lab=VDD}
+lab=rowon_n[15]}
 N 7870 -5500 8070 -5500 {
-lab=VDD}
+lab=rowon_n[15]}
 N 8070 -5500 8080 -5490 {
-lab=VDD}
+lab=rowon_n[15]}
 N 7860 -5470 7870 -5480 {
-lab=VDD}
+lab=rowon_n[15]}
 N 7870 -5480 8070 -5480 {
-lab=VDD}
+lab=rowon_n[15]}
 N 8070 -5480 8080 -5470 {
-lab=VDD}
+lab=rowon_n[15]}
 N 7860 -5450 7870 -5460 {
-lab=VSS}
+lab=#net36}
 N 7870 -5460 8070 -5460 {
-lab=VSS}
+lab=#net36}
 N 8070 -5460 8080 -5450 {
-lab=VSS}
+lab=#net36}
 N 7860 -5430 7870 -5440 {
-lab=VDD}
+lab=#net35}
 N 7870 -5440 8070 -5440 {
-lab=VDD}
+lab=#net35}
 N 8070 -5440 8080 -5430 {
-lab=VDD}
+lab=#net35}
 N 8080 -5430 8100 -5430 {
-lab=VDD}
+lab=#net35}
 N 8080 -5450 8100 -5450 {
-lab=VSS}
+lab=#net36}
 N 8080 -5470 8100 -5470 {
-lab=VDD}
+lab=rowon_n[15]}
 N 8080 -5490 8100 -5490 {
-lab=VDD}
+lab=rowon_n[15]}
 N 7840 -5490 7860 -5490 {
-lab=VDD}
+lab=rowon_n[15]}
 N 7840 -5470 7860 -5470 {
-lab=VDD}
+lab=rowon_n[15]}
 N 7840 -5450 7860 -5450 {
-lab=VSS}
+lab=#net36}
 N 7840 -5430 7860 -5430 {
-lab=VDD}
+lab=#net35}
 N 7900 -5350 7900 -5340 {
 lab=VSS}
 N 7920 -5590 7920 -5570 {
@@ -34358,45 +34326,45 @@ lab=col_n[29]}
 N 8240 -5590 8240 -5570 {
 lab=col_n[29]}
 N 8120 -5490 8130 -5500 {
-lab=VDD}
+lab=rowon_n[15]}
 N 8130 -5500 8330 -5500 {
-lab=VDD}
+lab=rowon_n[15]}
 N 8330 -5500 8340 -5490 {
-lab=VDD}
+lab=rowon_n[15]}
 N 8120 -5470 8130 -5480 {
-lab=VDD}
+lab=rowon_n[15]}
 N 8130 -5480 8330 -5480 {
-lab=VDD}
+lab=rowon_n[15]}
 N 8330 -5480 8340 -5470 {
-lab=VDD}
+lab=rowon_n[15]}
 N 8120 -5450 8130 -5460 {
-lab=VSS}
+lab=#net36}
 N 8130 -5460 8330 -5460 {
-lab=VSS}
+lab=#net36}
 N 8330 -5460 8340 -5450 {
-lab=VSS}
+lab=#net36}
 N 8120 -5430 8130 -5440 {
-lab=VDD}
+lab=#net35}
 N 8130 -5440 8330 -5440 {
-lab=VDD}
+lab=#net35}
 N 8330 -5440 8340 -5430 {
-lab=VDD}
+lab=#net35}
 N 8340 -5430 8360 -5430 {
-lab=VDD}
+lab=#net35}
 N 8340 -5450 8360 -5450 {
-lab=VSS}
+lab=#net36}
 N 8340 -5470 8360 -5470 {
-lab=VDD}
+lab=rowon_n[15]}
 N 8340 -5490 8360 -5490 {
-lab=VDD}
+lab=rowon_n[15]}
 N 8100 -5490 8120 -5490 {
-lab=VDD}
+lab=rowon_n[15]}
 N 8100 -5470 8120 -5470 {
-lab=VDD}
+lab=rowon_n[15]}
 N 8100 -5450 8120 -5450 {
-lab=VSS}
+lab=#net36}
 N 8100 -5430 8120 -5430 {
-lab=VDD}
+lab=#net35}
 N 8160 -5350 8160 -5340 {
 lab=VSS}
 N 8180 -5590 8180 -5570 {
@@ -34414,45 +34382,45 @@ lab=col_n[30]}
 N 8500 -5590 8500 -5570 {
 lab=col_n[30]}
 N 8380 -5490 8390 -5500 {
-lab=VDD}
+lab=rowon_n[15]}
 N 8390 -5500 8590 -5500 {
-lab=VDD}
+lab=rowon_n[15]}
 N 8590 -5500 8600 -5490 {
-lab=VDD}
+lab=rowon_n[15]}
 N 8380 -5470 8390 -5480 {
-lab=VDD}
+lab=rowon_n[15]}
 N 8390 -5480 8590 -5480 {
-lab=VDD}
+lab=rowon_n[15]}
 N 8590 -5480 8600 -5470 {
-lab=VDD}
+lab=rowon_n[15]}
 N 8380 -5450 8390 -5460 {
-lab=VSS}
+lab=#net36}
 N 8390 -5460 8590 -5460 {
-lab=VSS}
+lab=#net36}
 N 8590 -5460 8600 -5450 {
-lab=VSS}
+lab=#net36}
 N 8380 -5430 8390 -5440 {
-lab=VDD}
+lab=#net35}
 N 8390 -5440 8590 -5440 {
-lab=VDD}
+lab=#net35}
 N 8590 -5440 8600 -5430 {
-lab=VDD}
+lab=#net35}
 N 8600 -5430 8620 -5430 {
-lab=VDD}
+lab=#net35}
 N 8600 -5450 8620 -5450 {
-lab=VSS}
+lab=#net36}
 N 8600 -5470 8620 -5470 {
-lab=VDD}
+lab=rowon_n[15]}
 N 8600 -5490 8620 -5490 {
-lab=VDD}
+lab=rowon_n[15]}
 N 8360 -5490 8380 -5490 {
-lab=VDD}
+lab=rowon_n[15]}
 N 8360 -5470 8380 -5470 {
-lab=VDD}
+lab=rowon_n[15]}
 N 8360 -5450 8380 -5450 {
-lab=VSS}
+lab=#net36}
 N 8360 -5430 8380 -5430 {
-lab=VDD}
+lab=#net35}
 N 8420 -5350 8420 -5340 {
 lab=VSS}
 N 8440 -5590 8440 -5570 {
@@ -34474,45 +34442,45 @@ lab=col_n[31]}
 N 8760 -5590 8760 -5570 {
 lab=col_n[31]}
 N 8640 -5490 8650 -5500 {
-lab=VDD}
+lab=rowon_n[15]}
 N 8650 -5500 8850 -5500 {
-lab=VDD}
+lab=rowon_n[15]}
 N 8850 -5500 8860 -5490 {
-lab=VDD}
+lab=rowon_n[15]}
 N 8640 -5470 8650 -5480 {
-lab=VDD}
+lab=rowon_n[15]}
 N 8650 -5480 8850 -5480 {
-lab=VDD}
+lab=rowon_n[15]}
 N 8850 -5480 8860 -5470 {
-lab=VDD}
+lab=rowon_n[15]}
 N 8640 -5450 8650 -5460 {
-lab=VSS}
+lab=#net36}
 N 8650 -5460 8850 -5460 {
-lab=VSS}
+lab=#net36}
 N 8850 -5460 8860 -5450 {
-lab=VSS}
+lab=#net36}
 N 8640 -5430 8650 -5440 {
-lab=VDD}
+lab=#net35}
 N 8650 -5440 8850 -5440 {
-lab=VDD}
+lab=#net35}
 N 8850 -5440 8860 -5430 {
-lab=VDD}
+lab=#net35}
 N 8860 -5430 8880 -5430 {
-lab=VDD}
+lab=#net35}
 N 8860 -5450 8880 -5450 {
-lab=VSS}
+lab=#net36}
 N 8860 -5470 8880 -5470 {
-lab=VDD}
+lab=rowon_n[15]}
 N 8860 -5490 8880 -5490 {
-lab=VDD}
+lab=rowon_n[15]}
 N 8620 -5490 8640 -5490 {
-lab=VDD}
+lab=rowon_n[15]}
 N 8620 -5470 8640 -5470 {
-lab=VDD}
+lab=rowon_n[15]}
 N 8620 -5450 8640 -5450 {
-lab=VSS}
+lab=#net36}
 N 8620 -5430 8640 -5430 {
-lab=VDD}
+lab=#net35}
 N 8680 -5350 8680 -5340 {
 lab=VSS}
 N 8700 -5590 8700 -5570 {
@@ -34532,45 +34500,45 @@ lab=VDD}
 N 9020 -5590 9020 -5570 {
 lab=VDD}
 N 8900 -5490 8910 -5500 {
-lab=VDD}
+lab=rowon_n[15]}
 N 8910 -5500 9110 -5500 {
-lab=VDD}
+lab=rowon_n[15]}
 N 9110 -5500 9120 -5490 {
-lab=VDD}
+lab=rowon_n[15]}
 N 8900 -5470 8910 -5480 {
-lab=VDD}
+lab=rowon_n[15]}
 N 8910 -5480 9110 -5480 {
-lab=VDD}
+lab=rowon_n[15]}
 N 9110 -5480 9120 -5470 {
-lab=VDD}
+lab=rowon_n[15]}
 N 8900 -5450 8910 -5460 {
-lab=VSS}
+lab=#net36}
 N 8910 -5460 9110 -5460 {
-lab=VSS}
+lab=#net36}
 N 9110 -5460 9120 -5450 {
-lab=VSS}
+lab=#net36}
 N 8900 -5430 8910 -5440 {
-lab=VDD}
+lab=#net35}
 N 8910 -5440 9110 -5440 {
-lab=VDD}
+lab=#net35}
 N 9110 -5440 9120 -5430 {
-lab=VDD}
+lab=#net35}
 N 9120 -5430 9140 -5430 {
-lab=VDD}
+lab=#net35}
 N 9120 -5450 9140 -5450 {
-lab=VSS}
+lab=#net36}
 N 9120 -5470 9140 -5470 {
-lab=VDD}
+lab=rowon_n[15]}
 N 9120 -5490 9140 -5490 {
-lab=VDD}
+lab=rowon_n[15]}
 N 8880 -5490 8900 -5490 {
-lab=VDD}
+lab=rowon_n[15]}
 N 8880 -5470 8900 -5470 {
-lab=VDD}
+lab=rowon_n[15]}
 N 8880 -5450 8900 -5450 {
-lab=VSS}
+lab=#net36}
 N 8880 -5430 8900 -5430 {
-lab=VDD}
+lab=#net35}
 N 8940 -5350 8940 -5340 {
 lab=VSS}
 N 8960 -5590 8960 -5570 {
@@ -35577,6 +35545,26 @@ N 910 -930 910 -920 {
 lab=en_C0_n}
 N 910 -920 910 -910 {
 lab=en_C0_n}
+N 300 -1010 320 -1010 {
+lab=sample_n}
+N 300 -1030 320 -1030 {
+lab=sample}
+N 300 -1070 300 -1050 {
+lab=row_n[0]}
+N 300 -1120 300 -1070 {
+lab=row_n[0]}
+N 300 -1120 310 -1120 {
+lab=row_n[0]}
+N 310 -1330 310 -1120 {
+lab=row_n[0]}
+N 310 -5490 320 -5490 {
+lab=rowon_n[15]}
+N 310 -5490 310 -5470 {
+lab=rowon_n[15]}
+N 310 -5470 320 -5470 {
+lab=rowon_n[15]}
+N 310 -5470 310 -5210 {
+lab=rowon_n[15]}
 C {devices/title.sym} 170 -40 0 0 {name=l1 author="Manuel Moser"}
 C {devices/iopin.sym} 240 -670 1 1 {name=p1 lab=VDD}
 C {devices/iopin.sym} 250 -290 3 1 {name=p2 lab=VSS}
@@ -38290,7 +38278,6 @@ C {devices/lab_wire.sym} 300 -5170 0 0 {name=l4230 sig_type=std_logic lab=sample
 C {devices/lab_wire.sym} 300 -5230 0 0 {name=l4231 sig_type=std_logic lab=row_n[15]}
 C {devices/lab_wire.sym} 300 -5210 0 0 {name=l4232 sig_type=std_logic lab=rowon_n[15]}
 C {devices/lab_wire.sym} 300 -5190 0 0 {name=l4233 sig_type=std_logic lab=sample}
-C {adc_array_wafflecap_8_dummy.sym} 430 -1040 0 0 {name=x1057}
 C {devices/lab_wire.sym} 360 -920 0 0 {name=l4354 sig_type=std_logic lab=VSS}
 C {devices/lab_wire.sym} 360 -1160 2 1 {name=l4355 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 380 -1170 1 1 {name=l4356 sig_type=std_logic lab=vcm}
@@ -38484,7 +38471,6 @@ C {devices/lab_wire.sym} 8940 -1160 2 1 {name=l4520 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 8960 -1170 1 1 {name=l4521 sig_type=std_logic lab=vcm}
 C {devices/lab_wire.sym} 9020 -910 3 0 {name=l4522 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 9000 -1170 3 0 {name=l4523 sig_type=std_logic lab=ctop}
-C {adc_array_wafflecap_8_dummy.sym} 430 -5460 0 0 {name=x1091}
 C {devices/lab_wire.sym} 360 -5340 0 0 {name=l4524 sig_type=std_logic lab=VSS}
 C {devices/lab_wire.sym} 360 -5580 2 1 {name=l4525 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 380 -5590 1 1 {name=l4526 sig_type=std_logic lab=vcm}
@@ -38718,12 +38704,6 @@ C {adc_array_wafflecap_8_dummy.sym} 9010 -5200 0 0 {name=x1140}
 C {devices/lab_wire.sym} 8940 -5320 2 1 {name=l4705 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 8960 -5330 1 1 {name=l4706 sig_type=std_logic lab=vcm}
 C {devices/lab_wire.sym} 9000 -5330 3 0 {name=l4707 sig_type=std_logic lab=ctop}
-C {devices/lab_wire.sym} 300 -1010 0 0 {name=l4758 sig_type=std_logic lab=VDD}
-C {devices/lab_wire.sym} 300 -1030 0 0 {name=l4759 sig_type=std_logic lab=VSS}
-C {devices/lab_wire.sym} 300 -5490 0 0 {name=l4760 sig_type=std_logic lab=VDD}
-C {devices/lab_wire.sym} 300 -5470 0 0 {name=l4761 sig_type=std_logic lab=VDD}
-C {devices/lab_wire.sym} 300 -5430 0 0 {name=l4762 sig_type=std_logic lab=VDD}
-C {devices/lab_wire.sym} 300 -5450 0 0 {name=l4763 sig_type=std_logic lab=VSS}
 C {devices/lab_wire.sym} 440 -920 0 0 {name=l4358 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 8940 -1180 0 0 {name=l4764 sig_type=std_logic lab=VSS}
 C {devices/lab_wire.sym} 8940 -1440 0 0 {name=l4765 sig_type=std_logic lab=VSS}
@@ -38751,8 +38731,6 @@ C {adc_array_wafflecap_8_dummy.sym} 7450 -1040 0 0 {name=x516}
 C {adc_array_wafflecap_8_4.sym} 4850 -1040 0 0 {name=x517}
 C {adc_array_wafflecap_8_2.sym} 4590 -1040 0 0 {name=x518}
 C {adc_array_wafflecap_8_1.sym} 5110 -1040 0 0 {name=x519}
-C {devices/lab_wire.sym} 300 -1050 0 0 {name=l2050 sig_type=std_logic lab=VSS}
-C {devices/lab_wire.sym} 300 -1070 0 0 {name=l2051 sig_type=std_logic lab=VSS}
 C {adc_array_wafflecap_8_gate.sym} 8750 -1040 0 0 {name=x520}
 C {devices/lab_wire.sym} 8780 -910 3 0 {name=l2052 sig_type=std_logic lab=sw}
 C {devices/lab_wire.sym} 8800 -910 3 0 {name=l2053 sig_type=std_logic lab=analog_in}
@@ -38768,3 +38746,9 @@ C {adc_array_wafflecap_8_dummy.sym} 690 -1300 0 0 {name=x1}
 C {adc_array_wafflecap_8_1.sym} 950 -1040 0 0 {name=x521}
 C {devices/lab_wire.sym} 910 -910 3 0 {name=l4367 sig_type=std_logic lab=en_C0_n}
 C {devices/lab_wire.sym} 3740 -1180 0 0 {name=l53 sig_type=std_logic lab=VSS}
+C {adc_array_wafflecap_8_drv.sym} 430 -1040 0 0 {name=x522}
+C {devices/lab_wire.sym} 300 -1010 0 0 {name=l2057 sig_type=std_logic lab=sample_n}
+C {devices/lab_wire.sym} 300 -1030 0 0 {name=l2058 sig_type=std_logic lab=sample}
+C {adc_array_wafflecap_8_drv.sym} 430 -5460 0 0 {name=x523}
+C {devices/lab_wire.sym} 300 -5430 0 0 {name=l2050 sig_type=std_logic lab=sample_n}
+C {devices/lab_wire.sym} 300 -5450 0 0 {name=l2051 sig_type=std_logic lab=sample}

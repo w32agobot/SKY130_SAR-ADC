@@ -13,13 +13,13 @@ port make
 box 48760 26210 48760 26210
 label ctopn
 port make
-box 51371 62589 51371 62589
+box 51359  57851 51359 57851
 label vcm
 port make
 box 10294 35398 10294 35398
 label clk_dig
 port make
-box 48222 39380 48222 39380
+box 48240 39392 48240 39392
 label clk_comp
 port make
 box 10489 34642 10489 34642
