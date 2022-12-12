@@ -1,34 +1,16 @@
-** sch_path:
-*+ /foss/designs/SKY130_SAR-ADC/xschem/sky130_mm_sc_hd_dlyPoly6ns/sky130_mm_sc_hd_dlyPoly6ns.sch
-.subckt sky130_mm_sc_hd_dlyPoly5ns VPWR VGND in out VPB VNB
-*.PININFO VPWR:B VGND:B in:I out:O VPB:B VNB:B
-XM2 cap_top in VGND VNB sky130_fd_pr__nfet_01v8 L=3.83 W=0.42 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
-+ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
-+ sa=0 sb=0 sd=0 mult=1 m=1
-XM3 net2 cap_top VGND VNB sky130_fd_pr__nfet_01v8 L=0.15 W=0.42 nf=1 ad='int((nf+1)/2) * W/nf * 0.29'
-+ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
-+ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
-XM4 out cap_top net2 VNB sky130_fd_pr__nfet_01v8 L=0.15 W=0.42 nf=1 ad='int((nf+1)/2) * W/nf * 0.29'
-+ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
-+ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
-XM5 out cap_top net1 VPB sky130_fd_pr__pfet_01v8 L=0.15 W=0.8 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
-+ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
-+ sa=0 sb=0 sd=0 mult=1 m=1
-XM6 net1 cap_top VPWR VPB sky130_fd_pr__pfet_01v8 L=0.15 W=0.8 nf=1 ad='int((nf+1)/2) * W/nf * 0.29'
-+ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
-+ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
-XM7 VPWR out net2 VNB sky130_fd_pr__nfet_01v8 L=0.15 W=0.84 nf=2 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
-+ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
-+ sa=0 sb=0 sd=0 mult=1 m=1
-XM8 VGND out net1 VPB sky130_fd_pr__pfet_01v8 L=0.15 W=1.6 nf=2 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
-+ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
-+ sa=0 sb=0 sd=0 mult=1 m=1
-XM9 cap_top in VPWR VPB sky130_fd_pr__pfet_01v8_lvt L=3.83 W=0.8 nf=1 ad='int((nf+1)/2) * W/nf * 0.29'
-+ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
-+ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
-XM1 VGND cap_top VGND VNB sky130_fd_pr__nfet_01v8 L=2.25 W=1.375 nf=1 ad='int((nf+1)/2) * W/nf * 0.29'
-+ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
-+ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
-C1 cap_top VGND 2.50f m=1
+* NGSPICE file created from sky130_mm_sc_hd_dlyPoly5ns.ext - technology: sky130A
+
+.subckt sky130_mm_sc_hd_dlyPoly5ns VPWR in out VGND VPB VNB
+X0 a_1691_329# out VGND VPB sky130_fd_pr__pfet_01v8_hvt ad=7.52e+11p pd=6.68e+06u as=2.64e+11p ps=2.26e+06u w=800000u l=150000u
+X1 a_1691_329# mid VPWR VPB sky130_fd_pr__pfet_01v8_hvt ad=0p pd=0u as=4.72e+11p ps=4.38e+06u w=800000u l=150000u
+X2 out mid a_1691_329# VPB sky130_fd_pr__pfet_01v8_hvt ad=2.4e+11p pd=2.2e+06u as=0p ps=0u w=800000u l=150000u
+X3 VGND out a_1691_329# VPB sky130_fd_pr__pfet_01v8_hvt ad=0p pd=0u as=0p ps=0u w=800000u l=150000u
+X4 VGND mid VGND VNB sky130_fd_pr__nfet_01v8 ad=1.0453e+12p pd=9.52e+06u as=0p ps=0u w=1.375e+06u l=2.045e+06u
+X5 a_1632_71# mid VGND VNB sky130_fd_pr__nfet_01v8 ad=3.99e+11p pd=4.42e+06u as=0p ps=0u w=420000u l=150000u
+X6 VPWR out a_1632_71# VNB sky130_fd_pr__nfet_01v8 ad=1.386e+11p pd=1.5e+06u as=0p ps=0u w=420000u l=150000u
+X7 a_1632_71# out VPWR VNB sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=420000u l=150000u
+X8 out mid a_1632_71# VNB sky130_fd_pr__nfet_01v8 ad=1.218e+11p pd=1.42e+06u as=0p ps=0u w=420000u l=150000u
+X9 mid in VPWR VPB sky130_fd_pr__pfet_01v8_hvt ad=2.32e+11p pd=2.18e+06u as=0p ps=0u w=800000u l=1.42e+06u
+X10 mid in VGND VNB sky130_fd_pr__nfet_01v8 ad=1.218e+11p pd=1.42e+06u as=0p ps=0u w=420000u l=3.69e+06u
 .ends
-.end
+

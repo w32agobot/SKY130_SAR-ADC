@@ -1,20 +1,20 @@
 * NGSPICE file created from adc_clkgen_with_edgedetect.ext - technology: sky130A
 
-.subckt sky130_ef_sc_hd__decap_12 VGND VPWR VNB VPB
-X0 VPWR VGND VPWR VPB sky130_fd_pr__pfet_01v8_hvt ad=4.524e+11p pd=4.52e+06u as=0p ps=0u w=870000u l=4.73e+06u
-X1 VGND VPWR VGND VNB sky130_fd_pr__nfet_01v8 ad=2.86e+11p pd=3.24e+06u as=0p ps=0u w=550000u l=4.73e+06u
-.ends
-
-.subckt sky130_fd_sc_hd__decap_4 VGND VPWR VNB VPB
-X0 VPWR VGND VPWR VPB sky130_fd_pr__pfet_01v8_hvt ad=4.524e+11p pd=4.52e+06u as=0p ps=0u w=870000u l=1.05e+06u
-X1 VGND VPWR VGND VNB sky130_fd_pr__nfet_01v8 ad=2.86e+11p pd=3.24e+06u as=0p ps=0u w=550000u l=1.05e+06u
-.ends
-
 .subckt sky130_fd_sc_hd__inv_2 A Y VPWR VGND VNB VPB
 X0 Y A VPWR VPB sky130_fd_pr__pfet_01v8_hvt ad=2.7e+11p pd=2.54e+06u as=5.2e+11p ps=5.04e+06u w=1e+06u l=150000u
 X1 VGND A Y VNB sky130_fd_pr__nfet_01v8 ad=3.38e+11p pd=3.64e+06u as=1.755e+11p ps=1.84e+06u w=650000u l=150000u
 X2 Y A VGND VNB sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=650000u l=150000u
 X3 VPWR A Y VPB sky130_fd_pr__pfet_01v8_hvt ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+.ends
+
+.subckt sky130_fd_sc_hd__decap_3 VPWR VGND VNB VPB
+X0 VPWR VGND VPWR VPB sky130_fd_pr__pfet_01v8_hvt ad=4.524e+11p pd=4.52e+06u as=0p ps=0u w=870000u l=590000u
+X1 VGND VPWR VGND VNB sky130_fd_pr__nfet_01v8 ad=2.86e+11p pd=3.24e+06u as=0p ps=0u w=550000u l=590000u
+.ends
+
+.subckt sky130_fd_sc_hd__decap_4 VGND VPWR VNB VPB
+X0 VPWR VGND VPWR VPB sky130_fd_pr__pfet_01v8_hvt ad=4.524e+11p pd=4.52e+06u as=0p ps=0u w=870000u l=1.05e+06u
+X1 VGND VPWR VGND VNB sky130_fd_pr__nfet_01v8 ad=2.86e+11p pd=3.24e+06u as=0p ps=0u w=550000u l=1.05e+06u
 .ends
 
 .subckt sky130_fd_sc_hd__mux2_1 VGND VPWR S A1 A0 X VNB VPB
@@ -32,6 +32,11 @@ X10 VPWR a_76_199# X VPB sky130_fd_pr__pfet_01v8_hvt ad=0p pd=0u as=2.6e+11p ps=
 X11 VGND a_76_199# X VNB sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=1.69e+11p ps=1.82e+06u w=650000u l=150000u
 .ends
 
+.subckt sky130_fd_sc_hd__decap_6 VPWR VGND VNB VPB
+X0 VPWR VGND VPWR VPB sky130_fd_pr__pfet_01v8_hvt ad=4.524e+11p pd=4.52e+06u as=0p ps=0u w=870000u l=1.97e+06u
+X1 VGND VPWR VGND VNB sky130_fd_pr__nfet_01v8 ad=2.86e+11p pd=3.24e+06u as=0p ps=0u w=550000u l=1.97e+06u
+.ends
+
 .subckt sky130_fd_sc_hd__diode_2 DIODE VGND VPWR VPB VNB
 D0 VNB DIODE sky130_fd_pr__diode_pw2nd_05v5 pj=2.64e+06 area=4.347e+11
 .ends
@@ -45,18 +50,18 @@ X4 X a_68_297# VPWR VPB sky130_fd_pr__pfet_01v8_hvt ad=3.4e+11p pd=2.68e+06u as=
 X5 a_150_297# B a_68_297# VPB sky130_fd_pr__pfet_01v8_hvt ad=0p pd=0u as=1.092e+11p ps=1.36e+06u w=420000u l=150000u
 .ends
 
-.subckt sky130_mm_sc_hd_dlyPoly5ns VNB VPB out VPWR VGND in
-X0 a_851_95# in VGND VNB sky130_fd_pr__nfet_01v8 ad=1.218e+11p pd=1.42e+06u as=1.0453e+12p ps=9.52e+06u w=420000u l=3.83e+06u
-X1 a_1724_71# a_851_95# VGND VNB sky130_fd_pr__nfet_01v8 ad=3.99e+11p pd=4.42e+06u as=0p ps=0u w=420000u l=150000u
-X2 VPWR out a_1724_71# VNB sky130_fd_pr__nfet_01v8 ad=1.386e+11p pd=1.5e+06u as=0p ps=0u w=420000u l=150000u
-X3 VGND out a_1783_329# VPB sky130_fd_pr__pfet_01v8 ad=2.64e+11p pd=2.26e+06u as=7.52e+11p ps=6.68e+06u w=800000u l=150000u
-X4 a_1783_329# out VGND VPB sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=800000u l=150000u
-X5 a_1724_71# out VPWR VNB sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=420000u l=150000u
-X6 VGND a_851_95# VGND VNB sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.375e+06u l=2.25e+06u
-X7 a_1783_329# a_851_95# VPWR VPB sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=4.72e+11p ps=4.38e+06u w=800000u l=150000u
-X8 out a_851_95# a_1783_329# VPB sky130_fd_pr__pfet_01v8 ad=2.4e+11p pd=2.2e+06u as=0p ps=0u w=800000u l=150000u
-X9 a_851_95# in VPWR VPB sky130_fd_pr__pfet_01v8_lvt ad=2.32e+11p pd=2.18e+06u as=0p ps=0u w=800000u l=3.83e+06u
-X10 out a_851_95# a_1724_71# VNB sky130_fd_pr__nfet_01v8 ad=1.218e+11p pd=1.42e+06u as=0p ps=0u w=420000u l=150000u
+.subckt sky130_mm_sc_hd_dlyPoly5ns VPWR VGND in out VNB VPB
+X0 a_1691_329# out VGND VPB sky130_fd_pr__pfet_01v8_hvt ad=7.52e+11p pd=6.68e+06u as=2.64e+11p ps=2.26e+06u w=800000u l=150000u
+X1 a_1691_329# mid VPWR VPB sky130_fd_pr__pfet_01v8_hvt ad=0p pd=0u as=4.72e+11p ps=4.38e+06u w=800000u l=150000u
+X2 out mid a_1691_329# VPB sky130_fd_pr__pfet_01v8_hvt ad=2.4e+11p pd=2.2e+06u as=0p ps=0u w=800000u l=150000u
+X3 VGND out a_1691_329# VPB sky130_fd_pr__pfet_01v8_hvt ad=0p pd=0u as=0p ps=0u w=800000u l=150000u
+X4 VGND mid VGND VNB sky130_fd_pr__nfet_01v8 ad=1.0453e+12p pd=9.52e+06u as=0p ps=0u w=1.375e+06u l=2.045e+06u
+X5 a_1632_71# mid VGND VNB sky130_fd_pr__nfet_01v8 ad=3.99e+11p pd=4.42e+06u as=0p ps=0u w=420000u l=150000u
+X6 VPWR out a_1632_71# VNB sky130_fd_pr__nfet_01v8 ad=1.386e+11p pd=1.5e+06u as=0p ps=0u w=420000u l=150000u
+X7 a_1632_71# out VPWR VNB sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=420000u l=150000u
+X8 out mid a_1632_71# VNB sky130_fd_pr__nfet_01v8 ad=1.218e+11p pd=1.42e+06u as=0p ps=0u w=420000u l=150000u
+X9 mid in VPWR VPB sky130_fd_pr__pfet_01v8_hvt ad=2.32e+11p pd=2.18e+06u as=0p ps=0u w=800000u l=1.42e+06u
+X10 mid in VGND VNB sky130_fd_pr__nfet_01v8 ad=1.218e+11p pd=1.42e+06u as=0p ps=0u w=420000u l=3.69e+06u
 .ends
 
 .subckt sky130_fd_sc_hd__and2_1 VPWR VGND X B A VNB VPB
@@ -68,14 +73,9 @@ X4 X a_59_75# VGND VNB sky130_fd_pr__nfet_01v8 ad=1.82e+11p pd=1.86e+06u as=0p p
 X5 a_145_75# A a_59_75# VNB sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=1.176e+11p ps=1.4e+06u w=420000u l=150000u
 .ends
 
-.subckt sky130_fd_sc_hd__decap_3 VPWR VGND VNB VPB
-X0 VPWR VGND VPWR VPB sky130_fd_pr__pfet_01v8_hvt ad=4.524e+11p pd=4.52e+06u as=0p ps=0u w=870000u l=590000u
-X1 VGND VPWR VGND VNB sky130_fd_pr__nfet_01v8 ad=2.86e+11p pd=3.24e+06u as=0p ps=0u w=550000u l=590000u
-.ends
-
-.subckt sky130_fd_sc_hd__decap_6 VPWR VGND VNB VPB
-X0 VPWR VGND VPWR VPB sky130_fd_pr__pfet_01v8_hvt ad=4.524e+11p pd=4.52e+06u as=0p ps=0u w=870000u l=1.97e+06u
-X1 VGND VPWR VGND VNB sky130_fd_pr__nfet_01v8 ad=2.86e+11p pd=3.24e+06u as=0p ps=0u w=550000u l=1.97e+06u
+.subckt sky130_ef_sc_hd__decap_12 VGND VPWR VNB VPB
+X0 VPWR VGND VPWR VPB sky130_fd_pr__pfet_01v8_hvt ad=4.524e+11p pd=4.52e+06u as=0p ps=0u w=870000u l=4.73e+06u
+X1 VGND VPWR VGND VNB sky130_fd_pr__nfet_01v8 ad=2.86e+11p pd=3.24e+06u as=0p ps=0u w=550000u l=4.73e+06u
 .ends
 
 .subckt sky130_fd_sc_hd__nor2b_1 B_N Y A VGND VPWR VNB VPB
@@ -145,241 +145,228 @@ X9 VGND A a_27_47# VNB sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=1.69e+11p ps=1.82e
 + dlycontrol4_in[1] dlycontrol4_in[2] dlycontrol4_in[3] dlycontrol4_in[4] dlycontrol4_in[5]
 + ena_in enable_dlycontrol_in ndecision_finish_in nsample_n_in nsample_n_out nsample_p_in
 + nsample_p_out sample_n_in sample_n_out sample_p_in sample_p_out start_conv_in
-XFILLER_10_328 VSS VDD VSS VDD sky130_ef_sc_hd__decap_12
-XFILLER_13_133 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
 Xclkgen.delay_155ns_2.genblk1\[0\].control_invert dlycontrol2_in[0] clkgen.delay_155ns_2.bypass_enable_w\[0\]
 + VDD VSS VSS VDD sky130_fd_sc_hd__inv_2
-XFILLER_2_302 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
+XFILLER_18_214 VDD VSS VSS VDD sky130_fd_sc_hd__decap_3
+XFILLER_10_125 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
 Xclkgen.delay_155ns_2.genblk1\[0\].dly_binary.out_mux VSS VDD clkgen.delay_155ns_2.genblk1\[0\].dly_binary.bypass_in
 + clkgen.clk_dig_out clkgen.delay_155ns_2.genblk1\[0\].dly_binary.signal_w\[1\] clkgen.delay_155ns_2.genblk1\[0\].dly_binary.out
 + VSS VDD sky130_fd_sc_hd__mux2_1
+XFILLER_17_291 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
 Xclkgen.delay_155ns_2.genblk1\[2\].dly_binary.out_mux VSS VDD clkgen.delay_155ns_2.genblk1\[2\].dly_binary.bypass_in
 + clkgen.delay_155ns_2.genblk1\[1\].dly_binary.out clkgen.delay_155ns_2.genblk1\[2\].dly_binary.signal_w\[4\]
 + clkgen.delay_155ns_2.genblk1\[2\].dly_binary.out VSS VDD sky130_fd_sc_hd__mux2_1
+XFILLER_14_272 VDD VSS VSS VDD sky130_fd_sc_hd__decap_6
 Xclkgen.delay_155ns_2.genblk1\[4\].dly_binary.out_mux VSS VDD clkgen.delay_155ns_2.genblk1\[4\].dly_binary.bypass_in
 + clkgen.delay_155ns_2.genblk1\[3\].dly_binary.out clkgen.delay_155ns_2.genblk1\[4\].dly_binary.signal_w\[16\]
 + clkgen.clk_dig_delayed_w VSS VDD sky130_fd_sc_hd__mux2_1
 XANTENNA_clkgen.delay_155ns_1.genblk1\[2\].control_invert_A dlycontrol1_in[2] VSS
 + VDD VDD VSS sky130_fd_sc_hd__diode_2
+XFILLER_2_143 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
 Xedgedetect.or1 edgedetect.start_conv_edge_w clkgen.enable_loop_in edgedetect.ena_in
 + VSS VDD VSS VDD sky130_fd_sc_hd__or2_1
-Xclkgen.delay_155ns_3.genblk1\[0\].dly_binary.genblk1\[0\].delay_unit VSS VDD clkgen.delay_155ns_3.genblk1\[0\].dly_binary.signal_w\[1\]
-+ VDD VSS clkgen.delay_155ns_3.genblk1\[0\].dly_binary.signal_w\[0\] sky130_mm_sc_hd_dlyPoly5ns
+XFILLER_11_275 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
+XFILLER_11_242 VDD VSS VSS VDD sky130_fd_sc_hd__decap_6
+XFILLER_16_334 VDD VSS VSS VDD sky130_fd_sc_hd__decap_6
+Xclkgen.delay_155ns_3.genblk1\[0\].dly_binary.genblk1\[0\].delay_unit VDD VSS clkgen.delay_155ns_3.genblk1\[0\].dly_binary.signal_w\[0\]
++ clkgen.delay_155ns_3.genblk1\[0\].dly_binary.signal_w\[1\] VSS VDD sky130_mm_sc_hd_dlyPoly5ns
+XFILLER_4_205 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
 Xedgedetect.dly_315ns_1.genblk1\[1\].bypass_enable VDD VSS edgedetect.dly_315ns_1.genblk1\[1\].dly_binary.bypass_in
 + edgedetect.dly_315ns_1.bypass_enable_w\[1\] edgedetect.dly_315ns_1.enable_dlycontrol_w
 + VSS VDD sky130_fd_sc_hd__and2_1
-XFILLER_13_3 VDD VSS VSS VDD sky130_fd_sc_hd__decap_3
-XFILLER_3_282 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
-XFILLER_16_164 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
+XFILLER_13_3 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
+XFILLER_6_56 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
+XFILLER_1_208 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
+XFILLER_0_241 VDD VSS VSS VDD sky130_fd_sc_hd__decap_6
 XANTENNA_clkgen.delay_155ns_2.genblk1\[1\].control_invert_A dlycontrol2_in[1] VSS
 + VDD VDD VSS sky130_fd_sc_hd__diode_2
-Xclkgen.delay_155ns_1.genblk1\[4\].dly_binary.genblk1\[14\].delay_unit VSS VDD clkgen.delay_155ns_1.genblk1\[4\].dly_binary.signal_w\[15\]
-+ VDD VSS clkgen.delay_155ns_1.genblk1\[4\].dly_binary.signal_w\[14\] sky130_mm_sc_hd_dlyPoly5ns
-XFILLER_3_57 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
+Xclkgen.delay_155ns_1.genblk1\[4\].dly_binary.genblk1\[14\].delay_unit VDD VSS clkgen.delay_155ns_1.genblk1\[4\].dly_binary.signal_w\[14\]
++ clkgen.delay_155ns_1.genblk1\[4\].dly_binary.signal_w\[15\] VSS VDD sky130_mm_sc_hd_dlyPoly5ns
+XFILLER_13_156 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
 XANTENNA_clkgen.delay_155ns_2.genblk1\[1\].dly_binary.and_bypass_switch_A_N clkgen.delay_155ns_2.genblk1\[1\].dly_binary.bypass_in
 + VSS VDD VDD VSS sky130_fd_sc_hd__diode_2
-XFILLER_5_300 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
-XFILLER_5_311 VDD VSS VSS VDD sky130_fd_sc_hd__decap_6
+XFILLER_5_311 VSS VDD VSS VDD sky130_ef_sc_hd__decap_12
 Xclkgen.delay_155ns_1.genblk1\[2\].bypass_enable VDD VSS clkgen.delay_155ns_1.genblk1\[2\].dly_binary.bypass_in
 + clkgen.delay_155ns_1.bypass_enable_w\[2\] clkgen.delay_155ns_1.enable_dlycontrol_w
 + VSS VDD sky130_fd_sc_hd__and2_1
 Xclkgen.delay_155ns_2.genblk1\[3\].bypass_enable VDD VSS clkgen.delay_155ns_2.genblk1\[3\].dly_binary.bypass_in
 + clkgen.delay_155ns_2.bypass_enable_w\[3\] clkgen.delay_155ns_2.enable_dlycontrol_w
 + VSS VDD sky130_fd_sc_hd__and2_1
-XFILLER_2_314 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
 Xclkgen.delay_155ns_3.genblk1\[4\].bypass_enable VDD VSS clkgen.delay_155ns_3.genblk1\[4\].dly_binary.bypass_in
 + clkgen.delay_155ns_3.bypass_enable_w\[4\] clkgen.delay_155ns_3.enable_dlycontrol_w
 + VSS VDD sky130_fd_sc_hd__and2_1
 XANTENNA_clkgen.delay_155ns_3.genblk1\[0\].control_invert_A dlycontrol3_in[0] VSS
 + VDD VDD VSS sky130_fd_sc_hd__diode_2
-Xedgedetect.dly_315ns_1.genblk1\[5\].dly_binary.genblk1\[3\].delay_unit VSS VDD edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.signal_w\[4\]
-+ VDD VSS edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.signal_w\[3\] sky130_mm_sc_hd_dlyPoly5ns
-XANTENNA_clkgen.delay_155ns_3.genblk1\[4\].bypass_enable_A clkgen.delay_155ns_3.enable_dlycontrol_w
-+ VSS VDD VDD VSS sky130_fd_sc_hd__diode_2
+Xedgedetect.dly_315ns_1.genblk1\[5\].dly_binary.genblk1\[3\].delay_unit VDD VSS edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.signal_w\[3\]
++ edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.signal_w\[4\] VSS VDD sky130_mm_sc_hd_dlyPoly5ns
+XFILLER_0_58 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
 XANTENNA_sampledly04_A nsample_n_in VSS VDD VDD VSS sky130_fd_sc_hd__diode_2
-XFILLER_18_32 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
-XFILLER_11_276 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
-XFILLER_11_243 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
-XFILLER_19_321 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
-Xclkgen.delay_155ns_3.genblk1\[4\].dly_binary.genblk1\[1\].delay_unit VSS VDD clkgen.delay_155ns_3.genblk1\[4\].dly_binary.signal_w\[2\]
-+ VDD VSS clkgen.delay_155ns_3.genblk1\[4\].dly_binary.signal_w\[1\] sky130_mm_sc_hd_dlyPoly5ns
-XFILLER_4_206 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
+XFILLER_18_32 VDD VSS VSS VDD sky130_fd_sc_hd__decap_6
+XFILLER_11_287 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
+XFILLER_19_321 VSS VDD VSS VDD sky130_ef_sc_hd__decap_12
+Xclkgen.delay_155ns_3.genblk1\[4\].dly_binary.genblk1\[1\].delay_unit VDD VSS clkgen.delay_155ns_3.genblk1\[4\].dly_binary.signal_w\[1\]
++ clkgen.delay_155ns_3.genblk1\[4\].dly_binary.signal_w\[2\] VSS VDD sky130_mm_sc_hd_dlyPoly5ns
 Xedgedetect.dly_315ns_1.genblk1\[1\].control_invert dlycontrol4_in[1] edgedetect.dly_315ns_1.bypass_enable_w\[1\]
 + VDD VSS VSS VDD sky130_fd_sc_hd__inv_2
-XFILLER_3_294 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
-XFILLER_13_338 VDD VSS VSS VDD sky130_fd_sc_hd__decap_6
-XFILLER_0_275 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
-Xedgedetect.dly_315ns_1.genblk1\[5\].dly_binary.genblk1\[8\].delay_unit VSS VDD edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.signal_w\[9\]
-+ VDD VSS edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.signal_w\[8\] sky130_mm_sc_hd_dlyPoly5ns
-XFILLER_9_139 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
-XFILLER_8_194 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
-XANTENNA_clkgen.delay_155ns_1.genblk1\[4\].dly_binary.and_bypass_switch_A_N clkgen.delay_155ns_1.genblk1\[4\].dly_binary.bypass_in
-+ VSS VDD VDD VSS sky130_fd_sc_hd__diode_2
-Xclkgen.delay_155ns_2.genblk1\[4\].dly_binary.genblk1\[12\].delay_unit VSS VDD clkgen.delay_155ns_2.genblk1\[4\].dly_binary.signal_w\[13\]
-+ VDD VSS clkgen.delay_155ns_2.genblk1\[4\].dly_binary.signal_w\[12\] sky130_mm_sc_hd_dlyPoly5ns
-Xclkgen.delay_155ns_3.genblk1\[4\].dly_binary.genblk1\[6\].delay_unit VSS VDD clkgen.delay_155ns_3.genblk1\[4\].dly_binary.signal_w\[7\]
-+ VDD VSS clkgen.delay_155ns_3.genblk1\[4\].dly_binary.signal_w\[6\] sky130_mm_sc_hd_dlyPoly5ns
-XFILLER_14_274 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
-XFILLER_0_15 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
-XFILLER_3_3 VDD VSS VSS VDD sky130_fd_sc_hd__decap_3
+XFILLER_13_305 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
+XFILLER_10_319 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
+Xedgedetect.dly_315ns_1.genblk1\[5\].dly_binary.genblk1\[8\].delay_unit VDD VSS edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.signal_w\[8\]
++ edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.signal_w\[9\] VSS VDD sky130_mm_sc_hd_dlyPoly5ns
+XFILLER_5_323 VDD VSS VSS VDD sky130_fd_sc_hd__decap_6
+XFILLER_2_304 VSS VDD VSS VDD sky130_ef_sc_hd__decap_12
+Xclkgen.delay_155ns_2.genblk1\[4\].dly_binary.genblk1\[12\].delay_unit VDD VSS clkgen.delay_155ns_2.genblk1\[4\].dly_binary.signal_w\[12\]
++ clkgen.delay_155ns_2.genblk1\[4\].dly_binary.signal_w\[13\] VSS VDD sky130_mm_sc_hd_dlyPoly5ns
+Xclkgen.delay_155ns_3.genblk1\[4\].dly_binary.genblk1\[6\].delay_unit VDD VSS clkgen.delay_155ns_3.genblk1\[4\].dly_binary.signal_w\[6\]
++ clkgen.delay_155ns_3.genblk1\[4\].dly_binary.signal_w\[7\] VSS VDD sky130_mm_sc_hd_dlyPoly5ns
+XFILLER_5_153 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
+XFILLER_3_3 VDD VSS VSS VDD sky130_fd_sc_hd__decap_6
 Xedgedetect.nor1 edgedetect.dly_315ns_1.genblk1\[0\].dly_binary.in edgedetect.start_conv_edge_w
 + edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.out VSS VDD VSS VDD sky130_fd_sc_hd__nor2b_1
-Xclkgen.delay_155ns_2.genblk1\[4\].dly_binary.genblk1\[0\].delay_unit VSS VDD clkgen.delay_155ns_2.genblk1\[4\].dly_binary.signal_w\[1\]
-+ VDD VSS clkgen.delay_155ns_2.genblk1\[4\].dly_binary.signal_w\[0\] sky130_mm_sc_hd_dlyPoly5ns
-XFILLER_11_288 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
-XFILLER_19_333 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
-XFILLER_16_336 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
+Xclkgen.delay_155ns_2.genblk1\[4\].dly_binary.genblk1\[0\].delay_unit VDD VSS clkgen.delay_155ns_2.genblk1\[4\].dly_binary.signal_w\[0\]
++ clkgen.delay_155ns_2.genblk1\[4\].dly_binary.signal_w\[1\] VSS VDD sky130_mm_sc_hd_dlyPoly5ns
+XFILLER_11_299 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
+XFILLER_19_333 VDD VSS VSS VDD sky130_fd_sc_hd__decap_8
 Xclkgen.delay_155ns_3.genblk1\[1\].control_invert dlycontrol3_in[1] clkgen.delay_155ns_3.bypass_enable_w\[1\]
 + VDD VSS VSS VDD sky130_fd_sc_hd__inv_2
-XFILLER_13_306 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
-Xedgedetect.dly_315ns_1.genblk1\[4\].dly_binary.genblk1\[3\].delay_unit VSS VDD edgedetect.dly_315ns_1.genblk1\[4\].dly_binary.signal_w\[4\]
-+ VDD VSS edgedetect.dly_315ns_1.genblk1\[4\].dly_binary.signal_w\[3\] sky130_mm_sc_hd_dlyPoly5ns
-Xclkgen.delay_155ns_2.genblk1\[4\].dly_binary.genblk1\[5\].delay_unit VSS VDD clkgen.delay_155ns_2.genblk1\[4\].dly_binary.signal_w\[6\]
-+ VDD VSS clkgen.delay_155ns_2.genblk1\[4\].dly_binary.signal_w\[5\] sky130_mm_sc_hd_dlyPoly5ns
-XFILLER_3_15 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
-Xclkgen.delay_155ns_3.genblk1\[3\].dly_binary.genblk1\[1\].delay_unit VSS VDD clkgen.delay_155ns_3.genblk1\[3\].dly_binary.signal_w\[2\]
-+ VDD VSS clkgen.delay_155ns_3.genblk1\[3\].dly_binary.signal_w\[1\] sky130_mm_sc_hd_dlyPoly5ns
-XFILLER_2_124 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
-Xedgedetect.dly_315ns_1.genblk1\[5\].dly_binary.genblk1\[10\].delay_unit VSS VDD edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.signal_w\[11\]
-+ VDD VSS edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.signal_w\[10\] sky130_mm_sc_hd_dlyPoly5ns
-Xclkgen.delay_155ns_3.genblk1\[4\].dly_binary.genblk1\[10\].delay_unit VSS VDD clkgen.delay_155ns_3.genblk1\[4\].dly_binary.signal_w\[11\]
-+ VDD VSS clkgen.delay_155ns_3.genblk1\[4\].dly_binary.signal_w\[10\] sky130_mm_sc_hd_dlyPoly5ns
+XFILLER_0_276 VDD VSS VSS VDD sky130_fd_sc_hd__decap_3
+Xedgedetect.dly_315ns_1.genblk1\[4\].dly_binary.genblk1\[3\].delay_unit VDD VSS edgedetect.dly_315ns_1.genblk1\[4\].dly_binary.signal_w\[3\]
++ edgedetect.dly_315ns_1.genblk1\[4\].dly_binary.signal_w\[4\] VSS VDD sky130_mm_sc_hd_dlyPoly5ns
+XFILLER_13_125 VDD VSS VSS VDD sky130_fd_sc_hd__decap_6
+Xclkgen.delay_155ns_2.genblk1\[4\].dly_binary.genblk1\[5\].delay_unit VDD VSS clkgen.delay_155ns_2.genblk1\[4\].dly_binary.signal_w\[5\]
++ clkgen.delay_155ns_2.genblk1\[4\].dly_binary.signal_w\[6\] VSS VDD sky130_mm_sc_hd_dlyPoly5ns
+XFILLER_8_173 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
+XFILLER_5_335 VDD VSS VSS VDD sky130_fd_sc_hd__decap_8
+XFILLER_2_316 VSS VDD VSS VDD sky130_ef_sc_hd__decap_12
+Xclkgen.delay_155ns_3.genblk1\[3\].dly_binary.genblk1\[1\].delay_unit VDD VSS clkgen.delay_155ns_3.genblk1\[3\].dly_binary.signal_w\[1\]
++ clkgen.delay_155ns_3.genblk1\[3\].dly_binary.signal_w\[2\] VSS VDD sky130_mm_sc_hd_dlyPoly5ns
+Xedgedetect.dly_315ns_1.genblk1\[5\].dly_binary.genblk1\[10\].delay_unit VDD VSS edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.signal_w\[10\]
++ edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.signal_w\[11\] VSS VDD sky130_mm_sc_hd_dlyPoly5ns
 XFILLER_7_216 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
-Xedgedetect.dly_315ns_1.genblk1\[4\].dly_binary.genblk1\[8\].delay_unit VSS VDD edgedetect.dly_315ns_1.genblk1\[4\].dly_binary.signal_w\[9\]
-+ VDD VSS edgedetect.dly_315ns_1.genblk1\[4\].dly_binary.signal_w\[8\] sky130_mm_sc_hd_dlyPoly5ns
-XANTENNA_edgedetect.dly_315ns_1.genblk1\[5\].bypass_enable_A edgedetect.dly_315ns_1.enable_dlycontrol_w
-+ VSS VDD VDD VSS sky130_fd_sc_hd__diode_2
-XFILLER_6_59 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
-Xedgedetect.dly_315ns_1.genblk1\[4\].dly_binary.genblk1\[11\].delay_unit VSS VDD edgedetect.dly_315ns_1.genblk1\[4\].dly_binary.signal_w\[12\]
-+ VDD VSS edgedetect.dly_315ns_1.genblk1\[4\].dly_binary.signal_w\[11\] sky130_mm_sc_hd_dlyPoly5ns
-Xclkgen.delay_155ns_3.genblk1\[3\].dly_binary.genblk1\[6\].delay_unit VSS VDD clkgen.delay_155ns_3.genblk1\[3\].dly_binary.signal_w\[7\]
-+ VDD VSS clkgen.delay_155ns_3.genblk1\[3\].dly_binary.signal_w\[6\] sky130_mm_sc_hd_dlyPoly5ns
-XFILLER_11_3 VDD VSS VSS VDD sky130_fd_sc_hd__decap_3
-XFILLER_8_311 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
-Xclkgen.delay_155ns_1.genblk1\[4\].dly_binary.genblk1\[4\].delay_unit VSS VDD clkgen.delay_155ns_1.genblk1\[4\].dly_binary.signal_w\[5\]
-+ VDD VSS clkgen.delay_155ns_1.genblk1\[4\].dly_binary.signal_w\[4\] sky130_mm_sc_hd_dlyPoly5ns
+Xclkgen.delay_155ns_3.genblk1\[4\].dly_binary.genblk1\[10\].delay_unit VDD VSS clkgen.delay_155ns_3.genblk1\[4\].dly_binary.signal_w\[10\]
++ clkgen.delay_155ns_3.genblk1\[4\].dly_binary.signal_w\[11\] VSS VDD sky130_mm_sc_hd_dlyPoly5ns
+Xedgedetect.dly_315ns_1.genblk1\[4\].dly_binary.genblk1\[8\].delay_unit VDD VSS edgedetect.dly_315ns_1.genblk1\[4\].dly_binary.signal_w\[8\]
++ edgedetect.dly_315ns_1.genblk1\[4\].dly_binary.signal_w\[9\] VSS VDD sky130_mm_sc_hd_dlyPoly5ns
+XFILLER_3_241 VDD VSS VSS VDD sky130_fd_sc_hd__decap_6
+Xedgedetect.dly_315ns_1.genblk1\[4\].dly_binary.genblk1\[11\].delay_unit VDD VSS edgedetect.dly_315ns_1.genblk1\[4\].dly_binary.signal_w\[11\]
++ edgedetect.dly_315ns_1.genblk1\[4\].dly_binary.signal_w\[12\] VSS VDD sky130_mm_sc_hd_dlyPoly5ns
+XFILLER_15_57 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
+Xclkgen.delay_155ns_3.genblk1\[3\].dly_binary.genblk1\[6\].delay_unit VDD VSS clkgen.delay_155ns_3.genblk1\[3\].dly_binary.signal_w\[6\]
++ clkgen.delay_155ns_3.genblk1\[3\].dly_binary.signal_w\[7\] VSS VDD sky130_mm_sc_hd_dlyPoly5ns
+XFILLER_0_222 VDD VSS VSS VDD sky130_fd_sc_hd__decap_8
+XFILLER_11_3 VDD VSS VSS VDD sky130_fd_sc_hd__decap_6
+Xclkgen.delay_155ns_1.genblk1\[4\].dly_binary.genblk1\[4\].delay_unit VDD VSS clkgen.delay_155ns_1.genblk1\[4\].dly_binary.signal_w\[4\]
++ clkgen.delay_155ns_1.genblk1\[4\].dly_binary.signal_w\[5\] VSS VDD sky130_mm_sc_hd_dlyPoly5ns
 XANTENNA_edgedetect.dly_315ns_1.genblk1\[3\].dly_binary.and_bypass_switch_A_N edgedetect.dly_315ns_1.genblk1\[3\].dly_binary.bypass_in
 + VSS VDD VDD VSS sky130_fd_sc_hd__diode_2
-Xclkgen.delay_155ns_2.genblk1\[3\].dly_binary.genblk1\[0\].delay_unit VSS VDD clkgen.delay_155ns_2.genblk1\[3\].dly_binary.signal_w\[1\]
-+ VDD VSS clkgen.delay_155ns_2.genblk1\[3\].dly_binary.signal_w\[0\] sky130_mm_sc_hd_dlyPoly5ns
-XFILLER_12_181 VDD VSS VSS VDD sky130_fd_sc_hd__decap_8
-Xedgedetect.dly_315ns_1.genblk1\[5\].dly_binary.genblk1\[15\].delay_unit VSS VDD edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.signal_w\[16\]
-+ VDD VSS edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.signal_w\[15\] sky130_mm_sc_hd_dlyPoly5ns
-XFILLER_5_155 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
-Xclkgen.delay_155ns_3.genblk1\[4\].dly_binary.genblk1\[15\].delay_unit VSS VDD clkgen.delay_155ns_3.genblk1\[4\].dly_binary.signal_w\[16\]
-+ VDD VSS clkgen.delay_155ns_3.genblk1\[4\].dly_binary.signal_w\[15\] sky130_mm_sc_hd_dlyPoly5ns
-XFILLER_17_295 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
-XFILLER_9_59 VDD VSS VSS VDD sky130_fd_sc_hd__decap_3
+Xclkgen.delay_155ns_2.genblk1\[3\].dly_binary.genblk1\[0\].delay_unit VDD VSS clkgen.delay_155ns_2.genblk1\[3\].dly_binary.signal_w\[0\]
++ clkgen.delay_155ns_2.genblk1\[3\].dly_binary.signal_w\[1\] VSS VDD sky130_mm_sc_hd_dlyPoly5ns
+XFILLER_18_207 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
+Xedgedetect.dly_315ns_1.genblk1\[5\].dly_binary.genblk1\[15\].delay_unit VDD VSS edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.signal_w\[15\]
++ edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.signal_w\[16\] VSS VDD sky130_mm_sc_hd_dlyPoly5ns
+XFILLER_12_58 VDD VSS VSS VDD sky130_fd_sc_hd__decap_8
+Xclkgen.delay_155ns_3.genblk1\[4\].dly_binary.genblk1\[15\].delay_unit VDD VSS clkgen.delay_155ns_3.genblk1\[4\].dly_binary.signal_w\[15\]
++ clkgen.delay_155ns_3.genblk1\[4\].dly_binary.signal_w\[16\] VSS VDD sky130_mm_sc_hd_dlyPoly5ns
+XFILLER_2_328 VSS VDD VSS VDD sky130_ef_sc_hd__decap_12
+XFILLER_17_284 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
 Xclkgen.nor1 clkgen.enable_loop_in clkgen.delay_155ns_3.genblk1\[0\].dly_binary.in
 + clkgen.clk_dig_delayed_w VSS VDD VSS VDD sky130_fd_sc_hd__nor2b_1
+XFILLER_11_235 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
 XANTENNA_sampledly02_A sample_n_in VSS VDD VDD VSS sky130_fd_sc_hd__diode_2
-Xclkgen.delay_155ns_1.genblk1\[4\].dly_binary.genblk1\[9\].delay_unit VSS VDD clkgen.delay_155ns_1.genblk1\[4\].dly_binary.signal_w\[10\]
-+ VDD VSS clkgen.delay_155ns_1.genblk1\[4\].dly_binary.signal_w\[9\] sky130_mm_sc_hd_dlyPoly5ns
-Xedgedetect.dly_315ns_1.genblk1\[3\].dly_binary.genblk1\[3\].delay_unit VSS VDD edgedetect.dly_315ns_1.genblk1\[3\].dly_binary.signal_w\[4\]
-+ VDD VSS edgedetect.dly_315ns_1.genblk1\[3\].dly_binary.signal_w\[3\] sky130_mm_sc_hd_dlyPoly5ns
-XFILLER_10_290 VDD VSS VSS VDD sky130_fd_sc_hd__decap_6
-XFILLER_1_93 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
-Xclkgen.delay_155ns_2.genblk1\[3\].dly_binary.genblk1\[5\].delay_unit VSS VDD clkgen.delay_155ns_2.genblk1\[3\].dly_binary.signal_w\[6\]
-+ VDD VSS clkgen.delay_155ns_2.genblk1\[3\].dly_binary.signal_w\[5\] sky130_mm_sc_hd_dlyPoly5ns
-XFILLER_6_16 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
-XFILLER_19_187 VDD VSS VSS VDD sky130_fd_sc_hd__decap_3
-Xclkgen.delay_155ns_3.genblk1\[2\].dly_binary.genblk1\[1\].delay_unit VSS VDD clkgen.delay_155ns_3.genblk1\[2\].dly_binary.signal_w\[2\]
-+ VDD VSS clkgen.delay_155ns_3.genblk1\[2\].dly_binary.signal_w\[1\] sky130_mm_sc_hd_dlyPoly5ns
+Xclkgen.delay_155ns_1.genblk1\[4\].dly_binary.genblk1\[9\].delay_unit VDD VSS clkgen.delay_155ns_1.genblk1\[4\].dly_binary.signal_w\[9\]
++ clkgen.delay_155ns_1.genblk1\[4\].dly_binary.signal_w\[10\] VSS VDD sky130_mm_sc_hd_dlyPoly5ns
+Xedgedetect.dly_315ns_1.genblk1\[3\].dly_binary.genblk1\[3\].delay_unit VDD VSS edgedetect.dly_315ns_1.genblk1\[3\].dly_binary.signal_w\[3\]
++ edgedetect.dly_315ns_1.genblk1\[3\].dly_binary.signal_w\[4\] VSS VDD sky130_mm_sc_hd_dlyPoly5ns
+XFILLER_10_290 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
+XFILLER_6_272 VDD VSS VSS VDD sky130_fd_sc_hd__decap_6
+Xclkgen.delay_155ns_2.genblk1\[3\].dly_binary.genblk1\[5\].delay_unit VDD VSS clkgen.delay_155ns_2.genblk1\[3\].dly_binary.signal_w\[5\]
++ clkgen.delay_155ns_2.genblk1\[3\].dly_binary.signal_w\[6\] VSS VDD sky130_mm_sc_hd_dlyPoly5ns
+XFILLER_19_187 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
+XFILLER_3_275 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
+Xclkgen.delay_155ns_3.genblk1\[2\].dly_binary.genblk1\[1\].delay_unit VDD VSS clkgen.delay_155ns_3.genblk1\[2\].dly_binary.signal_w\[1\]
++ clkgen.delay_155ns_3.genblk1\[2\].dly_binary.signal_w\[2\] VSS VDD sky130_mm_sc_hd_dlyPoly5ns
+XFILLER_0_212 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
 Xclkgen.delay_155ns_1.genblk1\[2\].control_invert dlycontrol1_in[2] clkgen.delay_155ns_1.bypass_enable_w\[2\]
 + VDD VSS VSS VDD sky130_fd_sc_hd__inv_2
-XFILLER_16_124 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
-Xedgedetect.dly_315ns_1.genblk1\[5\].dly_binary.genblk1\[22\].delay_unit VSS VDD edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.signal_w\[23\]
-+ VDD VSS edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.signal_w\[22\] sky130_mm_sc_hd_dlyPoly5ns
-XFILLER_8_323 VSS VDD VSS VDD sky130_ef_sc_hd__decap_12
-XFILLER_0_245 VDD VSS VSS VDD sky130_fd_sc_hd__decap_3
-XFILLER_0_223 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
-XFILLER_3_28 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
+Xedgedetect.dly_315ns_1.genblk1\[5\].dly_binary.genblk1\[22\].delay_unit VDD VSS edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.signal_w\[22\]
++ edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.signal_w\[23\] VSS VDD sky130_mm_sc_hd_dlyPoly5ns
+XFILLER_12_171 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
 XFILLER_8_164 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
-XFILLER_18_208 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
-XFILLER_12_59 VDD VSS VSS VDD sky130_fd_sc_hd__decap_6
+XFILLER_8_120 VDD VSS VSS VDD sky130_fd_sc_hd__decap_8
 XANTENNA_edgedetect.dly_315ns_1.enablebuffer_A enable_dlycontrol_in VSS VDD VDD VSS
 + sky130_fd_sc_hd__diode_2
+XFILLER_5_112 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
+XFILLER_14_244 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
 XFILLER_14_211 VDD VSS VSS VDD sky130_fd_sc_hd__decap_6
-Xedgedetect.dly_315ns_1.genblk1\[5\].dly_binary.genblk1\[27\].delay_unit VSS VDD edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.signal_w\[28\]
-+ VDD VSS edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.signal_w\[27\] sky130_mm_sc_hd_dlyPoly5ns
-XANTENNA_inbuf_3_A ndecision_finish_in VSS VDD VDD VSS sky130_fd_sc_hd__diode_2
-XFILLER_11_236 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
-XFILLER_1_3 VDD VSS VSS VDD sky130_fd_sc_hd__decap_3
-Xclkgen.delay_155ns_1.genblk1\[3\].dly_binary.genblk1\[4\].delay_unit VSS VDD clkgen.delay_155ns_1.genblk1\[3\].dly_binary.signal_w\[5\]
-+ VDD VSS clkgen.delay_155ns_1.genblk1\[3\].dly_binary.signal_w\[4\] sky130_mm_sc_hd_dlyPoly5ns
-XANTENNA_clkgen.delay_155ns_2.enablebuffer_A enable_dlycontrol_in VSS VDD VDD VSS
-+ sky130_fd_sc_hd__diode_2
+XFILLER_2_115 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
+Xedgedetect.dly_315ns_1.genblk1\[5\].dly_binary.genblk1\[27\].delay_unit VDD VSS edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.signal_w\[27\]
++ edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.signal_w\[28\] VSS VDD sky130_mm_sc_hd_dlyPoly5ns
+Xclkgen.delay_155ns_1.genblk1\[3\].dly_binary.genblk1\[4\].delay_unit VDD VSS clkgen.delay_155ns_1.genblk1\[3\].dly_binary.signal_w\[4\]
++ clkgen.delay_155ns_1.genblk1\[3\].dly_binary.signal_w\[5\] VSS VDD sky130_mm_sc_hd_dlyPoly5ns
+XFILLER_1_3 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
 XANTENNA_clkgen.delay_155ns_1.genblk1\[1\].control_invert_A dlycontrol1_in[1] VSS
 + VDD VDD VSS sky130_fd_sc_hd__diode_2
-Xclkgen.delay_155ns_2.genblk1\[2\].dly_binary.genblk1\[0\].delay_unit VSS VDD clkgen.delay_155ns_2.genblk1\[2\].dly_binary.signal_w\[1\]
-+ VDD VSS clkgen.delay_155ns_2.genblk1\[2\].dly_binary.signal_w\[0\] sky130_mm_sc_hd_dlyPoly5ns
-XFILLER_10_70 VDD VSS VSS VDD sky130_fd_sc_hd__decap_8
+XANTENNA_clkgen.delay_155ns_2.enablebuffer_A enable_dlycontrol_in VSS VDD VDD VSS
++ sky130_fd_sc_hd__diode_2
+XANTENNA_inbuf_3_A ndecision_finish_in VSS VDD VDD VSS sky130_fd_sc_hd__diode_2
+XFILLER_1_94 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
+XFILLER_16_306 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
+Xclkgen.delay_155ns_2.genblk1\[2\].dly_binary.genblk1\[0\].delay_unit VDD VSS clkgen.delay_155ns_2.genblk1\[2\].dly_binary.signal_w\[0\]
++ clkgen.delay_155ns_2.genblk1\[2\].dly_binary.signal_w\[1\] VSS VDD sky130_mm_sc_hd_dlyPoly5ns
+XFILLER_19_90 VDD VSS VSS VDD sky130_fd_sc_hd__decap_3
 Xclkgen.clkdig_inverter clkgen.delay_155ns_1.genblk1\[4\].dly_binary.out clkgen.clk_dig_out
 + VDD VSS VSS VDD sky130_fd_sc_hd__inv_2
-XFILLER_3_243 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
-XFILLER_3_276 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
-XFILLER_12_320 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
-XFILLER_8_335 VDD VSS VSS VDD sky130_fd_sc_hd__decap_6
-XFILLER_15_180 VDD VSS VSS VDD sky130_fd_sc_hd__decap_6
+XFILLER_15_15 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
+XFILLER_16_125 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
 XANTENNA_clkgen.delay_155ns_2.genblk1\[0\].control_invert_A dlycontrol2_in[0] VSS
 + VDD VDD VSS sky130_fd_sc_hd__diode_2
 XPHY_0 VDD VSS VSS VDD sky130_fd_sc_hd__decap_3
 XFILLER_7_93 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
-XFILLER_12_172 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
-XFILLER_8_121 VDD VSS VSS VDD sky130_fd_sc_hd__decap_6
+XFILLER_3_18 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
 XFILLER_12_16 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
-XFILLER_2_308 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
-XFILLER_17_231 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
-Xedgedetect.dly_315ns_1.genblk1\[2\].dly_binary.genblk1\[3\].delay_unit VSS VDD edgedetect.dly_315ns_1.genblk1\[2\].dly_binary.signal_w\[4\]
-+ VDD VSS edgedetect.dly_315ns_1.genblk1\[2\].dly_binary.signal_w\[3\] sky130_mm_sc_hd_dlyPoly5ns
-XFILLER_14_245 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
-Xclkgen.delay_155ns_3.genblk1\[1\].dly_binary.genblk1\[1\].delay_unit VSS VDD clkgen.delay_155ns_3.genblk1\[1\].dly_binary.signal_w\[2\]
-+ VDD VSS clkgen.delay_155ns_3.genblk1\[1\].dly_binary.signal_w\[1\] sky130_mm_sc_hd_dlyPoly5ns
-XFILLER_18_15 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
+XFILLER_17_297 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
+Xedgedetect.dly_315ns_1.genblk1\[2\].dly_binary.genblk1\[3\].delay_unit VDD VSS edgedetect.dly_315ns_1.genblk1\[2\].dly_binary.signal_w\[3\]
++ edgedetect.dly_315ns_1.genblk1\[2\].dly_binary.signal_w\[4\] VSS VDD sky130_mm_sc_hd_dlyPoly5ns
+XFILLER_5_146 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
+XFILLER_4_94 VDD VSS VSS VDD sky130_fd_sc_hd__decap_6
+Xclkgen.delay_155ns_3.genblk1\[1\].dly_binary.genblk1\[1\].delay_unit VDD VSS clkgen.delay_155ns_3.genblk1\[1\].dly_binary.signal_w\[1\]
++ clkgen.delay_155ns_3.genblk1\[1\].dly_binary.signal_w\[2\] VSS VDD sky130_mm_sc_hd_dlyPoly5ns
 XFILLER_19_315 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
-XFILLER_6_274 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
-XFILLER_19_156 VDD VSS VSS VDD sky130_fd_sc_hd__decap_3
-XFILLER_16_307 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
-XFILLER_3_288 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
-XANTENNA_clkgen.delay_155ns_1.genblk1\[4\].dly_binary.out_mux_S clkgen.delay_155ns_1.genblk1\[4\].dly_binary.bypass_in
-+ VSS VDD VDD VSS sky130_fd_sc_hd__diode_2
-XFILLER_12_332 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
-XFILLER_0_214 VDD VSS VSS VDD sky130_fd_sc_hd__decap_3
+XFILLER_3_222 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
+XFILLER_15_181 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
 Xedgedetect.dly_315ns_1.genblk1\[0\].dly_binary.out_mux VSS VDD edgedetect.dly_315ns_1.genblk1\[0\].dly_binary.bypass_in
 + edgedetect.dly_315ns_1.genblk1\[0\].dly_binary.in edgedetect.dly_315ns_1.genblk1\[0\].dly_binary.signal_w\[1\]
 + edgedetect.dly_315ns_1.genblk1\[0\].dly_binary.out VSS VDD sky130_fd_sc_hd__mux2_1
 XPHY_1 VDD VSS VSS VDD sky130_fd_sc_hd__decap_3
-XFILLER_7_50 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
-XANTENNA_edgedetect.dly_315ns_1.genblk1\[0\].bypass_enable_A edgedetect.dly_315ns_1.enable_dlycontrol_w
-+ VSS VDD VDD VSS sky130_fd_sc_hd__diode_2
 Xedgedetect.dly_315ns_1.genblk1\[2\].dly_binary.out_mux VSS VDD edgedetect.dly_315ns_1.genblk1\[2\].dly_binary.bypass_in
 + edgedetect.dly_315ns_1.genblk1\[1\].dly_binary.out edgedetect.dly_315ns_1.genblk1\[2\].dly_binary.signal_w\[4\]
 + edgedetect.dly_315ns_1.genblk1\[2\].dly_binary.out VSS VDD sky130_fd_sc_hd__mux2_1
 Xedgedetect.dly_315ns_1.genblk1\[0\].dly_binary.and_bypass_switch edgedetect.dly_315ns_1.genblk1\[0\].dly_binary.signal_w\[0\]
 + edgedetect.dly_315ns_1.genblk1\[0\].dly_binary.bypass_in edgedetect.dly_315ns_1.genblk1\[0\].dly_binary.in
 + VSS VDD VSS VDD sky130_fd_sc_hd__and2b_1
-XFILLER_5_306 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
 Xinbuf_1 VSS VDD edgedetect.ena_in ena_in VSS VDD sky130_fd_sc_hd__buf_1
 Xedgedetect.dly_315ns_1.genblk1\[4\].dly_binary.out_mux VSS VDD edgedetect.dly_315ns_1.genblk1\[4\].dly_binary.bypass_in
 + edgedetect.dly_315ns_1.genblk1\[3\].dly_binary.out edgedetect.dly_315ns_1.genblk1\[4\].dly_binary.signal_w\[16\]
 + edgedetect.dly_315ns_1.genblk1\[4\].dly_binary.out VSS VDD sky130_fd_sc_hd__mux2_1
-XFILLER_5_125 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
+XFILLER_5_136 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
 Xsampledly31 VDD VSS sample_p_3 sample_p_4 VSS VDD sky130_fd_sc_hd__dlymetal6s6s_1
-XFILLER_4_62 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
-Xclkgen.delay_155ns_2.genblk1\[1\].dly_binary.genblk1\[0\].delay_unit VSS VDD clkgen.delay_155ns_2.genblk1\[1\].dly_binary.signal_w\[1\]
-+ VDD VSS clkgen.delay_155ns_2.genblk1\[1\].dly_binary.signal_w\[0\] sky130_mm_sc_hd_dlyPoly5ns
-XFILLER_14_202 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
-XFILLER_13_93 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
-XFILLER_11_227 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
-XFILLER_19_327 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
-Xclkgen.delay_155ns_2.genblk1\[3\].control_invert dlycontrol2_in[3] clkgen.delay_155ns_2.bypass_enable_w\[3\]
-+ VDD VSS VSS VDD sky130_fd_sc_hd__inv_2
+Xclkgen.delay_155ns_2.genblk1\[1\].dly_binary.genblk1\[0\].delay_unit VDD VSS clkgen.delay_155ns_2.genblk1\[1\].dly_binary.signal_w\[0\]
++ clkgen.delay_155ns_2.genblk1\[1\].dly_binary.signal_w\[1\] VSS VDD sky130_mm_sc_hd_dlyPoly5ns
+XFILLER_2_106 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
+XFILLER_1_194 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
 Xedgedetect.dly_315ns_1.genblk1\[2\].bypass_enable VDD VSS edgedetect.dly_315ns_1.genblk1\[2\].dly_binary.bypass_in
 + edgedetect.dly_315ns_1.bypass_enable_w\[2\] edgedetect.dly_315ns_1.enable_dlycontrol_w
 + VSS VDD sky130_fd_sc_hd__and2_1
-XFILLER_1_63 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
-Xclkgen.delay_155ns_1.genblk1\[4\].dly_binary.genblk1\[10\].delay_unit VSS VDD clkgen.delay_155ns_1.genblk1\[4\].dly_binary.signal_w\[11\]
-+ VDD VSS clkgen.delay_155ns_1.genblk1\[4\].dly_binary.signal_w\[10\] sky130_mm_sc_hd_dlyPoly5ns
+Xclkgen.delay_155ns_2.genblk1\[3\].control_invert dlycontrol2_in[3] clkgen.delay_155ns_2.bypass_enable_w\[3\]
++ VDD VSS VSS VDD sky130_fd_sc_hd__inv_2
+XANTENNA_clkgen.delay_155ns_3.genblk1\[4\].dly_binary.out_mux_A0 clkgen.delay_155ns_3.genblk1\[4\].dly_binary.signal_w\[16\]
++ VSS VDD VDD VSS sky130_fd_sc_hd__diode_2
+XFILLER_1_63 VDD VSS VSS VDD sky130_fd_sc_hd__decap_6
+Xclkgen.delay_155ns_1.genblk1\[4\].dly_binary.genblk1\[10\].delay_unit VDD VSS clkgen.delay_155ns_1.genblk1\[4\].dly_binary.signal_w\[10\]
++ clkgen.delay_155ns_1.genblk1\[4\].dly_binary.signal_w\[11\] VSS VDD sky130_mm_sc_hd_dlyPoly5ns
+XANTENNA_clkgen.delay_155ns_2.genblk1\[4\].dly_binary.and_bypass_switch_A_N clkgen.delay_155ns_2.genblk1\[4\].dly_binary.bypass_in
++ VSS VDD VDD VSS sky130_fd_sc_hd__diode_2
+XFILLER_10_94 VDD VSS VSS VDD sky130_fd_sc_hd__decap_6
+XFILLER_15_171 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
 XPHY_2 VDD VSS VSS VDD sky130_fd_sc_hd__decap_3
 Xclkgen.delay_155ns_1.genblk1\[3\].bypass_enable VDD VSS clkgen.delay_155ns_1.genblk1\[3\].dly_binary.bypass_in
 + clkgen.delay_155ns_1.bypass_enable_w\[3\] clkgen.delay_155ns_1.enable_dlycontrol_w
@@ -387,666 +374,649 @@ Xclkgen.delay_155ns_1.genblk1\[3\].bypass_enable VDD VSS clkgen.delay_155ns_1.ge
 Xclkgen.delay_155ns_2.genblk1\[4\].bypass_enable VDD VSS clkgen.delay_155ns_2.genblk1\[4\].dly_binary.bypass_in
 + clkgen.delay_155ns_2.bypass_enable_w\[4\] clkgen.delay_155ns_2.enable_dlycontrol_w
 + VSS VDD sky130_fd_sc_hd__and2_1
-XFILLER_12_163 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
 Xinbuf_2 VSS VDD edgedetect.dly_315ns_1.genblk1\[0\].dly_binary.in start_conv_in VSS
 + VDD sky130_fd_sc_hd__buf_1
-XANTENNA_clkgen.delay_155ns_1.genblk1\[2\].dly_binary.out_mux_S clkgen.delay_155ns_1.genblk1\[2\].dly_binary.bypass_in
-+ VSS VDD VDD VSS sky130_fd_sc_hd__diode_2
-Xclkgen.delay_155ns_1.genblk1\[4\].dly_binary.genblk1\[15\].delay_unit VSS VDD clkgen.delay_155ns_1.genblk1\[4\].dly_binary.signal_w\[16\]
-+ VDD VSS clkgen.delay_155ns_1.genblk1\[4\].dly_binary.signal_w\[15\] sky130_mm_sc_hd_dlyPoly5ns
-XFILLER_17_288 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
-XFILLER_17_222 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
+XFILLER_5_307 VDD VSS VSS VDD sky130_fd_sc_hd__decap_3
+Xclkgen.delay_155ns_1.genblk1\[4\].dly_binary.genblk1\[15\].delay_unit VDD VSS clkgen.delay_155ns_1.genblk1\[4\].dly_binary.signal_w\[15\]
++ clkgen.delay_155ns_1.genblk1\[4\].dly_binary.signal_w\[16\] VSS VDD sky130_mm_sc_hd_dlyPoly5ns
 Xsampledly21 VDD VSS sample_p_2 sample_p_3 VSS VDD sky130_fd_sc_hd__dlymetal6s6s_1
 Xsampledly32 VDD VSS sample_n_3 sample_n_4 VSS VDD sky130_fd_sc_hd__dlymetal6s6s_1
+XFILLER_4_63 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
 Xclkgen.delay_155ns_1.genblk1\[0\].dly_binary.out_mux VSS VDD clkgen.delay_155ns_1.genblk1\[0\].dly_binary.bypass_in
 + clkgen.delay_155ns_1.genblk1\[0\].dly_binary.in clkgen.delay_155ns_1.genblk1\[0\].dly_binary.signal_w\[1\]
 + clkgen.delay_155ns_1.genblk1\[0\].dly_binary.out VSS VDD sky130_fd_sc_hd__mux2_1
+XFILLER_13_94 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
+XFILLER_9_19 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
+XFILLER_11_228 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
 Xclkgen.delay_155ns_1.genblk1\[2\].dly_binary.out_mux VSS VDD clkgen.delay_155ns_1.genblk1\[2\].dly_binary.bypass_in
 + clkgen.delay_155ns_1.genblk1\[1\].dly_binary.out clkgen.delay_155ns_1.genblk1\[2\].dly_binary.signal_w\[4\]
 + clkgen.delay_155ns_1.genblk1\[2\].dly_binary.out VSS VDD sky130_fd_sc_hd__mux2_1
 XFILLER_19_306 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
+XFILLER_6_210 VDD VSS VSS VDD sky130_fd_sc_hd__decap_6
 Xclkgen.delay_155ns_1.genblk1\[4\].dly_binary.out_mux VSS VDD clkgen.delay_155ns_1.genblk1\[4\].dly_binary.bypass_in
 + clkgen.delay_155ns_1.genblk1\[3\].dly_binary.out clkgen.delay_155ns_1.genblk1\[4\].dly_binary.signal_w\[16\]
 + clkgen.delay_155ns_1.genblk1\[4\].dly_binary.out VSS VDD sky130_fd_sc_hd__mux2_1
-XFILLER_1_31 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
 Xedgedetect.dly_315ns_1.genblk1\[1\].dly_binary.and_bypass_switch edgedetect.dly_315ns_1.genblk1\[1\].dly_binary.signal_w\[0\]
 + edgedetect.dly_315ns_1.genblk1\[1\].dly_binary.bypass_in edgedetect.dly_315ns_1.genblk1\[0\].dly_binary.out
 + VSS VDD VSS VDD sky130_fd_sc_hd__and2b_1
-Xedgedetect.dly_315ns_1.genblk1\[5\].dly_binary.genblk1\[4\].delay_unit VSS VDD edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.signal_w\[5\]
-+ VDD VSS edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.signal_w\[4\] sky130_mm_sc_hd_dlyPoly5ns
+Xedgedetect.dly_315ns_1.genblk1\[5\].dly_binary.genblk1\[4\].delay_unit VDD VSS edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.signal_w\[4\]
++ edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.signal_w\[5\] VSS VDD sky130_mm_sc_hd_dlyPoly5ns
 XANTENNA_inbuf_1_A ena_in VSS VDD VDD VSS sky130_fd_sc_hd__diode_2
-XFILLER_19_125 VDD VSS VSS VDD sky130_fd_sc_hd__decap_3
-XFILLER_2_290 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
-XFILLER_0_238 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
-Xclkgen.delay_155ns_2.genblk1\[0\].dly_binary.genblk1\[0\].delay_unit VSS VDD clkgen.delay_155ns_2.genblk1\[0\].dly_binary.signal_w\[1\]
-+ VDD VSS clkgen.delay_155ns_2.genblk1\[0\].dly_binary.signal_w\[0\] sky130_mm_sc_hd_dlyPoly5ns
-Xclkgen.delay_155ns_3.genblk1\[4\].dly_binary.genblk1\[2\].delay_unit VSS VDD clkgen.delay_155ns_3.genblk1\[4\].dly_binary.signal_w\[3\]
-+ VDD VSS clkgen.delay_155ns_3.genblk1\[4\].dly_binary.signal_w\[2\] sky130_mm_sc_hd_dlyPoly5ns
+XFILLER_3_235 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
+XFILLER_19_125 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
+XFILLER_15_29 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
+Xclkgen.delay_155ns_3.genblk1\[4\].dly_binary.genblk1\[2\].delay_unit VDD VSS clkgen.delay_155ns_3.genblk1\[4\].dly_binary.signal_w\[2\]
++ clkgen.delay_155ns_3.genblk1\[4\].dly_binary.signal_w\[3\] VSS VDD sky130_mm_sc_hd_dlyPoly5ns
+Xclkgen.delay_155ns_2.genblk1\[0\].dly_binary.genblk1\[0\].delay_unit VDD VSS clkgen.delay_155ns_2.genblk1\[0\].dly_binary.signal_w\[0\]
++ clkgen.delay_155ns_2.genblk1\[0\].dly_binary.signal_w\[1\] VSS VDD sky130_mm_sc_hd_dlyPoly5ns
 XPHY_3 VDD VSS VSS VDD sky130_fd_sc_hd__decap_3
-XFILLER_7_63 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
-XFILLER_16_94 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
+XFILLER_7_63 VDD VSS VSS VDD sky130_fd_sc_hd__decap_6
+XFILLER_16_94 VDD VSS VSS VDD sky130_fd_sc_hd__decap_6
 Xinbuf_3 VSS VDD clkgen.delay_155ns_1.genblk1\[0\].dly_binary.in ndecision_finish_in
 + VSS VDD sky130_fd_sc_hd__buf_1
+XFILLER_12_164 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
+XFILLER_4_330 VDD VSS VSS VDD sky130_fd_sc_hd__decap_8
 XANTENNA_edgedetect.dly_315ns_1.genblk1\[5\].control_invert_A dlycontrol4_in[5] VSS
 + VDD VDD VSS sky130_fd_sc_hd__diode_2
 Xsampledly33 VDD VSS nsample_p_3 nsample_p_4 VSS VDD sky130_fd_sc_hd__dlymetal6s6s_1
-Xsampledly11 VDD VSS sample_p_1 sample_p_2 VSS VDD sky130_fd_sc_hd__dlymetal6s6s_1
 Xedgedetect.dly_315ns_1.genblk1\[4\].control_invert dlycontrol4_in[4] edgedetect.dly_315ns_1.bypass_enable_w\[4\]
 + VDD VSS VSS VDD sky130_fd_sc_hd__inv_2
+XFILLER_17_256 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
+XFILLER_17_223 VDD VSS VSS VDD sky130_fd_sc_hd__decap_6
+Xsampledly11 VDD VSS sample_p_1 sample_p_2 VSS VDD sky130_fd_sc_hd__dlymetal6s6s_1
+XFILLER_1_311 VSS VDD VSS VDD sky130_ef_sc_hd__decap_12
 Xsampledly22 VDD VSS sample_n_2 sample_n_3 VSS VDD sky130_fd_sc_hd__dlymetal6s6s_1
-XANTENNA_clkgen.delay_155ns_1.genblk1\[0\].dly_binary.out_mux_S clkgen.delay_155ns_1.genblk1\[0\].dly_binary.bypass_in
-+ VSS VDD VDD VSS sky130_fd_sc_hd__diode_2
-Xedgedetect.dly_315ns_1.genblk1\[5\].dly_binary.genblk1\[9\].delay_unit VSS VDD edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.signal_w\[10\]
-+ VDD VSS edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.signal_w\[9\] sky130_mm_sc_hd_dlyPoly5ns
+Xedgedetect.dly_315ns_1.genblk1\[5\].dly_binary.genblk1\[9\].delay_unit VDD VSS edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.signal_w\[9\]
++ edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.signal_w\[10\] VSS VDD sky130_mm_sc_hd_dlyPoly5ns
 XANTENNA_clkgen.delay_155ns_2.genblk1\[0\].dly_binary.and_bypass_switch_B clkgen.clk_dig_out
 + VSS VDD VDD VSS sky130_fd_sc_hd__diode_2
-XFILLER_11_218 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
-Xclkgen.delay_155ns_2.genblk1\[4\].dly_binary.genblk1\[13\].delay_unit VSS VDD clkgen.delay_155ns_2.genblk1\[4\].dly_binary.signal_w\[14\]
-+ VDD VSS clkgen.delay_155ns_2.genblk1\[4\].dly_binary.signal_w\[13\] sky130_mm_sc_hd_dlyPoly5ns
-Xclkgen.delay_155ns_3.genblk1\[4\].dly_binary.genblk1\[7\].delay_unit VSS VDD clkgen.delay_155ns_3.genblk1\[4\].dly_binary.signal_w\[8\]
-+ VDD VSS clkgen.delay_155ns_3.genblk1\[4\].dly_binary.signal_w\[7\] sky130_mm_sc_hd_dlyPoly5ns
+XFILLER_13_281 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
+Xclkgen.delay_155ns_2.genblk1\[4\].dly_binary.genblk1\[13\].delay_unit VDD VSS clkgen.delay_155ns_2.genblk1\[4\].dly_binary.signal_w\[13\]
++ clkgen.delay_155ns_2.genblk1\[4\].dly_binary.signal_w\[14\] VSS VDD sky130_mm_sc_hd_dlyPoly5ns
+Xclkgen.delay_155ns_3.genblk1\[4\].dly_binary.genblk1\[7\].delay_unit VDD VSS clkgen.delay_155ns_3.genblk1\[4\].dly_binary.signal_w\[7\]
++ clkgen.delay_155ns_3.genblk1\[4\].dly_binary.signal_w\[8\] VSS VDD sky130_mm_sc_hd_dlyPoly5ns
 XFILLER_10_284 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
-XFILLER_6_211 VDD VSS VSS VDD sky130_fd_sc_hd__decap_6
-XANTENNA_clkgen.delay_155ns_1.genblk1\[2\].dly_binary.and_bypass_switch_A_N clkgen.delay_155ns_1.genblk1\[2\].dly_binary.bypass_in
-+ VSS VDD VDD VSS sky130_fd_sc_hd__diode_2
-XFILLER_19_94 VDD VSS VSS VDD sky130_fd_sc_hd__decap_3
-XFILLER_10_41 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
-Xclkgen.delay_155ns_2.genblk1\[4\].dly_binary.genblk1\[1\].delay_unit VSS VDD clkgen.delay_155ns_2.genblk1\[4\].dly_binary.signal_w\[2\]
-+ VDD VSS clkgen.delay_155ns_2.genblk1\[4\].dly_binary.signal_w\[1\] sky130_mm_sc_hd_dlyPoly5ns
-XFILLER_3_236 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
+XFILLER_6_244 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
+XFILLER_1_32 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
+XFILLER_19_94 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
+Xclkgen.delay_155ns_2.genblk1\[4\].dly_binary.genblk1\[1\].delay_unit VDD VSS clkgen.delay_155ns_2.genblk1\[4\].dly_binary.signal_w\[1\]
++ clkgen.delay_155ns_2.genblk1\[4\].dly_binary.signal_w\[2\] VSS VDD sky130_mm_sc_hd_dlyPoly5ns
 Xclkgen.delay_155ns_3.genblk1\[0\].bypass_enable VDD VSS clkgen.delay_155ns_3.genblk1\[0\].dly_binary.bypass_in
 + clkgen.delay_155ns_3.bypass_enable_w\[0\] clkgen.delay_155ns_3.enable_dlycontrol_w
 + VSS VDD sky130_fd_sc_hd__and2_1
+XFILLER_0_206 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
+XFILLER_2_280 VSS VDD VSS VDD sky130_ef_sc_hd__decap_12
 XFILLER_12_302 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
-XANTENNA_clkgen.delay_155ns_3.genblk1\[2\].bypass_enable_A clkgen.delay_155ns_3.enable_dlycontrol_w
-+ VSS VDD VDD VSS sky130_fd_sc_hd__diode_2
-XFILLER_8_317 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
 Xclkgen.delay_155ns_3.genblk1\[1\].dly_binary.out_mux VSS VDD clkgen.delay_155ns_3.genblk1\[1\].dly_binary.bypass_in
 + clkgen.delay_155ns_3.genblk1\[0\].dly_binary.out clkgen.delay_155ns_3.genblk1\[1\].dly_binary.signal_w\[2\]
 + clkgen.delay_155ns_3.genblk1\[1\].dly_binary.out VSS VDD sky130_fd_sc_hd__mux2_1
 XPHY_4 VDD VSS VSS VDD sky130_fd_sc_hd__decap_3
-XFILLER_16_62 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
+XFILLER_12_143 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
 Xclkgen.delay_155ns_3.genblk1\[3\].dly_binary.out_mux VSS VDD clkgen.delay_155ns_3.genblk1\[3\].dly_binary.bypass_in
 + clkgen.delay_155ns_3.genblk1\[2\].dly_binary.out clkgen.delay_155ns_3.genblk1\[3\].dly_binary.signal_w\[8\]
 + clkgen.delay_155ns_3.genblk1\[3\].dly_binary.out VSS VDD sky130_fd_sc_hd__mux2_1
-XFILLER_17_279 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
+XFILLER_1_301 VDD VSS VSS VDD sky130_fd_sc_hd__decap_8
+XFILLER_1_323 VSS VDD VSS VDD sky130_ef_sc_hd__decap_12
 Xsampledly23 VDD VSS nsample_p_2 nsample_p_3 VSS VDD sky130_fd_sc_hd__dlymetal6s6s_1
-Xedgedetect.dly_315ns_1.genblk1\[4\].dly_binary.genblk1\[4\].delay_unit VSS VDD edgedetect.dly_315ns_1.genblk1\[4\].dly_binary.signal_w\[5\]
-+ VDD VSS edgedetect.dly_315ns_1.genblk1\[4\].dly_binary.signal_w\[4\] sky130_mm_sc_hd_dlyPoly5ns
+Xedgedetect.dly_315ns_1.genblk1\[4\].dly_binary.genblk1\[4\].delay_unit VDD VSS edgedetect.dly_315ns_1.genblk1\[4\].dly_binary.signal_w\[4\]
++ edgedetect.dly_315ns_1.genblk1\[4\].dly_binary.signal_w\[5\] VSS VDD sky130_mm_sc_hd_dlyPoly5ns
 Xsampledly01 VDD VSS sample_p_in sample_p_1 VSS VDD sky130_fd_sc_hd__dlymetal6s6s_1
+Xsampledly34 VDD VSS nsample_n_3 nsample_n_4 VSS VDD sky130_fd_sc_hd__dlymetal6s6s_1
+XFILLER_4_32 VDD VSS VSS VDD sky130_fd_sc_hd__decap_6
+Xsampledly12 VDD VSS sample_n_1 sample_n_2 VSS VDD sky130_fd_sc_hd__dlymetal6s6s_1
 Xclkgen.delay_155ns_3.genblk1\[4\].control_invert dlycontrol3_in[4] clkgen.delay_155ns_3.bypass_enable_w\[4\]
 + VDD VSS VSS VDD sky130_fd_sc_hd__inv_2
-Xsampledly34 VDD VSS nsample_n_3 nsample_n_4 VSS VDD sky130_fd_sc_hd__dlymetal6s6s_1
-Xsampledly12 VDD VSS sample_n_1 sample_n_2 VSS VDD sky130_fd_sc_hd__dlymetal6s6s_1
-XFILLER_4_32 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
-XFILLER_4_150 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
-XFILLER_13_63 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
-Xclkgen.delay_155ns_2.genblk1\[4\].dly_binary.genblk1\[6\].delay_unit VSS VDD clkgen.delay_155ns_2.genblk1\[4\].dly_binary.signal_w\[7\]
-+ VDD VSS clkgen.delay_155ns_2.genblk1\[4\].dly_binary.signal_w\[6\] sky130_mm_sc_hd_dlyPoly5ns
+XFILLER_13_63 VDD VSS VSS VDD sky130_fd_sc_hd__decap_6
+Xclkgen.delay_155ns_2.genblk1\[4\].dly_binary.genblk1\[6\].delay_unit VDD VSS clkgen.delay_155ns_2.genblk1\[4\].dly_binary.signal_w\[6\]
++ clkgen.delay_155ns_2.genblk1\[4\].dly_binary.signal_w\[7\] VSS VDD sky130_mm_sc_hd_dlyPoly5ns
 Xedgedetect.dly_315ns_1.genblk1\[2\].dly_binary.and_bypass_switch edgedetect.dly_315ns_1.genblk1\[2\].dly_binary.signal_w\[0\]
 + edgedetect.dly_315ns_1.genblk1\[2\].dly_binary.bypass_in edgedetect.dly_315ns_1.genblk1\[1\].dly_binary.out
 + VSS VDD VSS VDD sky130_fd_sc_hd__and2b_1
-XFILLER_13_282 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
-Xclkgen.delay_155ns_3.genblk1\[3\].dly_binary.genblk1\[2\].delay_unit VSS VDD clkgen.delay_155ns_3.genblk1\[3\].dly_binary.signal_w\[3\]
-+ VDD VSS clkgen.delay_155ns_3.genblk1\[3\].dly_binary.signal_w\[2\] sky130_mm_sc_hd_dlyPoly5ns
-XFILLER_6_245 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
+XFILLER_13_293 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
+XFILLER_9_275 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
+XFILLER_9_220 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
+XFILLER_1_175 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
+XANTENNA_clkgen.delay_155ns_2.genblk1\[4\].dly_binary.out_mux_S clkgen.delay_155ns_2.genblk1\[4\].dly_binary.bypass_in
++ VSS VDD VDD VSS sky130_fd_sc_hd__diode_2
+XFILLER_11_219 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
+Xclkgen.delay_155ns_3.genblk1\[3\].dly_binary.genblk1\[2\].delay_unit VDD VSS clkgen.delay_155ns_3.genblk1\[3\].dly_binary.signal_w\[2\]
++ clkgen.delay_155ns_3.genblk1\[3\].dly_binary.signal_w\[3\] VSS VDD sky130_mm_sc_hd_dlyPoly5ns
 XFILLER_6_201 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
-Xclkgen.delay_155ns_1.genblk1\[4\].dly_binary.genblk1\[0\].delay_unit VSS VDD clkgen.delay_155ns_1.genblk1\[4\].dly_binary.signal_w\[1\]
-+ VDD VSS clkgen.delay_155ns_1.genblk1\[4\].dly_binary.signal_w\[0\] sky130_mm_sc_hd_dlyPoly5ns
 XANTENNA_clkgen.delay_155ns_1.genblk1\[0\].control_invert_A dlycontrol1_in[0] VSS
 + VDD VDD VSS sky130_fd_sc_hd__diode_2
-XFILLER_18_3 VDD VSS VSS VDD sky130_fd_sc_hd__decap_3
-XFILLER_12_314 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
-Xedgedetect.dly_315ns_1.genblk1\[5\].dly_binary.genblk1\[11\].delay_unit VSS VDD edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.signal_w\[12\]
-+ VDD VSS edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.signal_w\[11\] sky130_mm_sc_hd_dlyPoly5ns
-Xclkgen.delay_155ns_3.genblk1\[4\].dly_binary.genblk1\[11\].delay_unit VSS VDD clkgen.delay_155ns_3.genblk1\[4\].dly_binary.signal_w\[12\]
-+ VDD VSS clkgen.delay_155ns_3.genblk1\[4\].dly_binary.signal_w\[11\] sky130_mm_sc_hd_dlyPoly5ns
-Xedgedetect.dly_315ns_1.genblk1\[4\].dly_binary.genblk1\[9\].delay_unit VSS VDD edgedetect.dly_315ns_1.genblk1\[4\].dly_binary.signal_w\[10\]
-+ VDD VSS edgedetect.dly_315ns_1.genblk1\[4\].dly_binary.signal_w\[9\] sky130_mm_sc_hd_dlyPoly5ns
+Xclkgen.delay_155ns_1.genblk1\[4\].dly_binary.genblk1\[0\].delay_unit VDD VSS clkgen.delay_155ns_1.genblk1\[4\].dly_binary.signal_w\[0\]
++ clkgen.delay_155ns_1.genblk1\[4\].dly_binary.signal_w\[1\] VSS VDD sky130_mm_sc_hd_dlyPoly5ns
+XFILLER_3_215 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
+XFILLER_2_270 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
+XFILLER_2_292 VSS VDD VSS VDD sky130_ef_sc_hd__decap_12
+Xedgedetect.dly_315ns_1.genblk1\[5\].dly_binary.genblk1\[11\].delay_unit VDD VSS edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.signal_w\[11\]
++ edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.signal_w\[12\] VSS VDD sky130_mm_sc_hd_dlyPoly5ns
+XFILLER_8_307 VDD VSS VSS VDD sky130_fd_sc_hd__decap_8
+Xclkgen.delay_155ns_3.genblk1\[4\].dly_binary.genblk1\[11\].delay_unit VDD VSS clkgen.delay_155ns_3.genblk1\[4\].dly_binary.signal_w\[11\]
++ clkgen.delay_155ns_3.genblk1\[4\].dly_binary.signal_w\[12\] VSS VDD sky130_mm_sc_hd_dlyPoly5ns
+Xedgedetect.dly_315ns_1.genblk1\[4\].dly_binary.genblk1\[9\].delay_unit VDD VSS edgedetect.dly_315ns_1.genblk1\[4\].dly_binary.signal_w\[9\]
++ edgedetect.dly_315ns_1.genblk1\[4\].dly_binary.signal_w\[10\] VSS VDD sky130_mm_sc_hd_dlyPoly5ns
 XPHY_5 VDD VSS VSS VDD sky130_fd_sc_hd__decap_3
-XFILLER_7_21 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
-Xclkgen.delay_155ns_3.genblk1\[3\].dly_binary.genblk1\[7\].delay_unit VSS VDD clkgen.delay_155ns_3.genblk1\[3\].dly_binary.signal_w\[8\]
-+ VDD VSS clkgen.delay_155ns_3.genblk1\[3\].dly_binary.signal_w\[7\] sky130_mm_sc_hd_dlyPoly5ns
-Xedgedetect.dly_315ns_1.genblk1\[4\].dly_binary.genblk1\[12\].delay_unit VSS VDD edgedetect.dly_315ns_1.genblk1\[4\].dly_binary.signal_w\[13\]
-+ VDD VSS edgedetect.dly_315ns_1.genblk1\[4\].dly_binary.signal_w\[12\] sky130_mm_sc_hd_dlyPoly5ns
-Xclkgen.delay_155ns_1.genblk1\[4\].dly_binary.genblk1\[5\].delay_unit VSS VDD clkgen.delay_155ns_1.genblk1\[4\].dly_binary.signal_w\[6\]
-+ VDD VSS clkgen.delay_155ns_1.genblk1\[4\].dly_binary.signal_w\[5\] sky130_mm_sc_hd_dlyPoly5ns
+XFILLER_7_32 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
+XFILLER_16_63 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
+XFILLER_12_199 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
+Xclkgen.delay_155ns_3.genblk1\[3\].dly_binary.genblk1\[7\].delay_unit VDD VSS clkgen.delay_155ns_3.genblk1\[3\].dly_binary.signal_w\[7\]
++ clkgen.delay_155ns_3.genblk1\[3\].dly_binary.signal_w\[8\] VSS VDD sky130_mm_sc_hd_dlyPoly5ns
+Xedgedetect.dly_315ns_1.genblk1\[4\].dly_binary.genblk1\[12\].delay_unit VDD VSS edgedetect.dly_315ns_1.genblk1\[4\].dly_binary.signal_w\[12\]
++ edgedetect.dly_315ns_1.genblk1\[4\].dly_binary.signal_w\[13\] VSS VDD sky130_mm_sc_hd_dlyPoly5ns
+XFILLER_1_335 VDD VSS VSS VDD sky130_fd_sc_hd__decap_8
+Xclkgen.delay_155ns_1.genblk1\[4\].dly_binary.genblk1\[5\].delay_unit VDD VSS clkgen.delay_155ns_1.genblk1\[4\].dly_binary.signal_w\[5\]
++ clkgen.delay_155ns_1.genblk1\[4\].dly_binary.signal_w\[6\] VSS VDD sky130_mm_sc_hd_dlyPoly5ns
 Xsampledly13 VDD VSS nsample_p_1 nsample_p_2 VSS VDD sky130_fd_sc_hd__dlymetal6s6s_1
 Xsampledly24 VDD VSS nsample_n_2 nsample_n_3 VSS VDD sky130_fd_sc_hd__dlymetal6s6s_1
 Xsampledly02 VDD VSS sample_n_in sample_n_1 VSS VDD sky130_fd_sc_hd__dlymetal6s6s_1
-XFILLER_13_31 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
-Xclkgen.delay_155ns_2.genblk1\[3\].dly_binary.genblk1\[1\].delay_unit VSS VDD clkgen.delay_155ns_2.genblk1\[3\].dly_binary.signal_w\[2\]
-+ VDD VSS clkgen.delay_155ns_2.genblk1\[3\].dly_binary.signal_w\[1\] sky130_mm_sc_hd_dlyPoly5ns
-XFILLER_13_294 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
-XFILLER_9_276 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
+Xclkgen.delay_155ns_2.genblk1\[3\].dly_binary.genblk1\[1\].delay_unit VDD VSS clkgen.delay_155ns_2.genblk1\[3\].dly_binary.signal_w\[1\]
++ clkgen.delay_155ns_2.genblk1\[3\].dly_binary.signal_w\[2\] VSS VDD sky130_mm_sc_hd_dlyPoly5ns
 XFILLER_9_243 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
-Xedgedetect.dly_315ns_1.genblk1\[5\].dly_binary.genblk1\[16\].delay_unit VSS VDD edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.signal_w\[17\]
-+ VDD VSS edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.signal_w\[16\] sky130_mm_sc_hd_dlyPoly5ns
+XFILLER_1_143 VDD VSS VSS VDD sky130_fd_sc_hd__decap_8
+Xedgedetect.dly_315ns_1.genblk1\[5\].dly_binary.genblk1\[16\].delay_unit VDD VSS edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.signal_w\[16\]
++ edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.signal_w\[17\] VSS VDD sky130_mm_sc_hd_dlyPoly5ns
 XANTENNA_edgedetect.dly_315ns_1.genblk1\[1\].dly_binary.and_bypass_switch_A_N edgedetect.dly_315ns_1.genblk1\[1\].dly_binary.bypass_in
 + VSS VDD VDD VSS sky130_fd_sc_hd__diode_2
-XFILLER_18_331 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
 XFILLER_19_63 VDD VSS VSS VDD sky130_fd_sc_hd__decap_3
 XFILLER_10_87 VDD VSS VSS VDD sky130_fd_sc_hd__decap_6
-XFILLER_10_32 VDD VSS VSS VDD sky130_fd_sc_hd__decap_3
-XFILLER_3_227 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
-XFILLER_12_326 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
 Xclkgen.delay_155ns_1.genblk1\[0\].control_invert dlycontrol1_in[0] clkgen.delay_155ns_1.bypass_enable_w\[0\]
 + VDD VSS VSS VDD sky130_fd_sc_hd__inv_2
-Xedgedetect.dly_315ns_1.genblk1\[3\].dly_binary.genblk1\[4\].delay_unit VSS VDD edgedetect.dly_315ns_1.genblk1\[3\].dly_binary.signal_w\[5\]
-+ VDD VSS edgedetect.dly_315ns_1.genblk1\[3\].dly_binary.signal_w\[4\] sky130_mm_sc_hd_dlyPoly5ns
+Xedgedetect.dly_315ns_1.genblk1\[3\].dly_binary.genblk1\[4\].delay_unit VDD VSS edgedetect.dly_315ns_1.genblk1\[3\].dly_binary.signal_w\[4\]
++ edgedetect.dly_315ns_1.genblk1\[3\].dly_binary.signal_w\[5\] VSS VDD sky130_mm_sc_hd_dlyPoly5ns
 XPHY_6 VDD VSS VSS VDD sky130_fd_sc_hd__decap_3
-XFILLER_7_11 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
-Xclkgen.delay_155ns_2.genblk1\[3\].dly_binary.genblk1\[6\].delay_unit VSS VDD clkgen.delay_155ns_2.genblk1\[3\].dly_binary.signal_w\[7\]
-+ VDD VSS clkgen.delay_155ns_2.genblk1\[3\].dly_binary.signal_w\[6\] sky130_mm_sc_hd_dlyPoly5ns
-Xclkgen.delay_155ns_3.genblk1\[2\].dly_binary.genblk1\[2\].delay_unit VSS VDD clkgen.delay_155ns_3.genblk1\[2\].dly_binary.signal_w\[3\]
-+ VDD VSS clkgen.delay_155ns_3.genblk1\[2\].dly_binary.signal_w\[2\] sky130_mm_sc_hd_dlyPoly5ns
-XANTENNA_edgedetect.dly_315ns_1.genblk1\[3\].bypass_enable_A edgedetect.dly_315ns_1.enable_dlycontrol_w
-+ VSS VDD VDD VSS sky130_fd_sc_hd__diode_2
-Xedgedetect.dly_315ns_1.genblk1\[5\].dly_binary.genblk1\[23\].delay_unit VSS VDD edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.signal_w\[24\]
-+ VDD VSS edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.signal_w\[23\] sky130_mm_sc_hd_dlyPoly5ns
+Xclkgen.delay_155ns_2.genblk1\[3\].dly_binary.genblk1\[6\].delay_unit VDD VSS clkgen.delay_155ns_2.genblk1\[3\].dly_binary.signal_w\[6\]
++ clkgen.delay_155ns_2.genblk1\[3\].dly_binary.signal_w\[7\] VSS VDD sky130_mm_sc_hd_dlyPoly5ns
+Xclkgen.delay_155ns_3.genblk1\[2\].dly_binary.genblk1\[2\].delay_unit VDD VSS clkgen.delay_155ns_3.genblk1\[2\].dly_binary.signal_w\[2\]
++ clkgen.delay_155ns_3.genblk1\[2\].dly_binary.signal_w\[3\] VSS VDD sky130_mm_sc_hd_dlyPoly5ns
 Xedgedetect.dly_315ns_1.genblk1\[3\].dly_binary.and_bypass_switch edgedetect.dly_315ns_1.genblk1\[3\].dly_binary.signal_w\[0\]
 + edgedetect.dly_315ns_1.genblk1\[3\].dly_binary.bypass_in edgedetect.dly_315ns_1.genblk1\[2\].dly_binary.out
 + VSS VDD VSS VDD sky130_fd_sc_hd__and2b_1
-XFILLER_1_303 VDD VSS VSS VDD sky130_fd_sc_hd__decap_6
+Xedgedetect.dly_315ns_1.genblk1\[5\].dly_binary.genblk1\[23\].delay_unit VDD VSS edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.signal_w\[23\]
++ edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.signal_w\[24\] VSS VDD sky130_mm_sc_hd_dlyPoly5ns
 Xsampledly03 VDD VSS nsample_p_in nsample_p_1 VSS VDD sky130_fd_sc_hd__dlymetal6s6s_1
 Xsampledly14 VDD VSS nsample_n_1 nsample_n_2 VSS VDD sky130_fd_sc_hd__dlymetal6s6s_1
-Xclkgen.delay_155ns_1.genblk1\[3\].dly_binary.genblk1\[0\].delay_unit VSS VDD clkgen.delay_155ns_1.genblk1\[3\].dly_binary.signal_w\[1\]
-+ VDD VSS clkgen.delay_155ns_1.genblk1\[3\].dly_binary.signal_w\[0\] sky130_mm_sc_hd_dlyPoly5ns
-XFILLER_4_174 VDD VSS VSS VDD sky130_fd_sc_hd__decap_6
-XFILLER_8_3 VDD VSS VSS VDD sky130_fd_sc_hd__decap_6
-XFILLER_1_155 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
+Xclkgen.delay_155ns_1.genblk1\[3\].dly_binary.genblk1\[0\].delay_unit VDD VSS clkgen.delay_155ns_1.genblk1\[3\].dly_binary.signal_w\[0\]
++ clkgen.delay_155ns_1.genblk1\[3\].dly_binary.signal_w\[1\] VSS VDD sky130_mm_sc_hd_dlyPoly5ns
+XFILLER_4_196 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
+XFILLER_13_32 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
+XFILLER_8_3 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
+XFILLER_1_133 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
+XFILLER_10_210 VDD VSS VSS VDD sky130_fd_sc_hd__decap_6
+XFILLER_18_310 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
 XANTENNA_edgedetect.dly_315ns_1.genblk1\[4\].dly_binary.out_mux_S edgedetect.dly_315ns_1.genblk1\[4\].dly_binary.bypass_in
 + VSS VDD VDD VSS sky130_fd_sc_hd__diode_2
-XFILLER_2_272 VDD VSS VSS VDD sky130_fd_sc_hd__decap_6
-XFILLER_18_173 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
-Xedgedetect.dly_315ns_1.genblk1\[5\].dly_binary.genblk1\[28\].delay_unit VSS VDD edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.signal_w\[29\]
-+ VDD VSS edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.signal_w\[28\] sky130_mm_sc_hd_dlyPoly5ns
-Xclkgen.delay_155ns_1.genblk1\[3\].dly_binary.genblk1\[5\].delay_unit VSS VDD clkgen.delay_155ns_1.genblk1\[3\].dly_binary.signal_w\[6\]
-+ VDD VSS clkgen.delay_155ns_1.genblk1\[3\].dly_binary.signal_w\[5\] sky130_mm_sc_hd_dlyPoly5ns
-Xedgedetect.dly_315ns_1.genblk1\[5\].dly_binary.genblk1\[30\].delay_unit VSS VDD edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.signal_w\[31\]
-+ VDD VSS edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.signal_w\[30\] sky130_mm_sc_hd_dlyPoly5ns
+XFILLER_10_77 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
+Xedgedetect.dly_315ns_1.genblk1\[5\].dly_binary.genblk1\[28\].delay_unit VDD VSS edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.signal_w\[28\]
++ edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.signal_w\[29\] VSS VDD sky130_mm_sc_hd_dlyPoly5ns
+Xclkgen.delay_155ns_1.genblk1\[3\].dly_binary.genblk1\[5\].delay_unit VDD VSS clkgen.delay_155ns_1.genblk1\[3\].dly_binary.signal_w\[5\]
++ clkgen.delay_155ns_1.genblk1\[3\].dly_binary.signal_w\[6\] VSS VDD sky130_mm_sc_hd_dlyPoly5ns
+XFILLER_15_143 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
+Xedgedetect.dly_315ns_1.genblk1\[5\].dly_binary.genblk1\[30\].delay_unit VDD VSS edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.signal_w\[30\]
++ edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.signal_w\[31\] VSS VDD sky130_mm_sc_hd_dlyPoly5ns
 XFILLER_12_338 VDD VSS VSS VDD sky130_fd_sc_hd__decap_3
-XPHY_7 VDD VSS VSS VDD sky130_fd_sc_hd__decap_3
 XANTENNA_clkgen.delay_155ns_2.genblk1\[0\].dly_binary.out_mux_S clkgen.delay_155ns_2.genblk1\[0\].dly_binary.bypass_in
 + VSS VDD VDD VSS sky130_fd_sc_hd__diode_2
-Xclkgen.delay_155ns_2.genblk1\[2\].dly_binary.genblk1\[1\].delay_unit VSS VDD clkgen.delay_155ns_2.genblk1\[2\].dly_binary.signal_w\[2\]
-+ VDD VSS clkgen.delay_155ns_2.genblk1\[2\].dly_binary.signal_w\[1\] sky130_mm_sc_hd_dlyPoly5ns
-XFILLER_16_32 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
-XFILLER_12_124 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
-XFILLER_1_315 VSS VDD VSS VDD sky130_ef_sc_hd__decap_12
-XFILLER_17_249 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
+XPHY_7 VDD VSS VSS VDD sky130_fd_sc_hd__decap_3
+Xclkgen.delay_155ns_2.genblk1\[2\].dly_binary.genblk1\[1\].delay_unit VDD VSS clkgen.delay_155ns_2.genblk1\[2\].dly_binary.signal_w\[1\]
++ clkgen.delay_155ns_2.genblk1\[2\].dly_binary.signal_w\[2\] VSS VDD sky130_mm_sc_hd_dlyPoly5ns
+XFILLER_16_32 VDD VSS VSS VDD sky130_fd_sc_hd__decap_6
+XFILLER_12_102 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
 Xsampledly04 VDD VSS nsample_n_in nsample_n_1 VSS VDD sky130_fd_sc_hd__dlymetal6s6s_1
-XFILLER_4_164 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
-XFILLER_3_218 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
+XFILLER_4_164 VDD VSS VSS VDD sky130_fd_sc_hd__decap_8
+XFILLER_10_244 VDD VSS VSS VDD sky130_fd_sc_hd__decap_8
+XFILLER_18_322 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
+XFILLER_3_229 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
 XFILLER_5_281 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
-XFILLER_19_32 VDD VSS VSS VDD sky130_fd_sc_hd__decap_3
-XFILLER_2_284 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
+XFILLER_19_32 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
+XFILLER_2_240 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
+XFILLER_18_174 VDD VSS VSS VDD sky130_fd_sc_hd__decap_8
+XFILLER_18_152 VDD VSS VSS VDD sky130_fd_sc_hd__decap_3
 Xedgedetect.dly_315ns_1.enablebuffer VDD VSS edgedetect.dly_315ns_1.enable_dlycontrol_w
 + enable_dlycontrol_in VSS VDD sky130_fd_sc_hd__buf_4
 XANTENNA_edgedetect.dly_315ns_1.genblk1\[2\].dly_binary.out_mux_S edgedetect.dly_315ns_1.genblk1\[2\].dly_binary.bypass_in
 + VSS VDD VDD VSS sky130_fd_sc_hd__diode_2
-Xclkgen.delay_155ns_1.genblk1\[2\].dly_binary.genblk1\[0\].delay_unit VSS VDD clkgen.delay_155ns_1.genblk1\[2\].dly_binary.signal_w\[1\]
-+ VDD VSS clkgen.delay_155ns_1.genblk1\[2\].dly_binary.signal_w\[0\] sky130_mm_sc_hd_dlyPoly5ns
+Xclkgen.delay_155ns_1.genblk1\[2\].dly_binary.genblk1\[0\].delay_unit VDD VSS clkgen.delay_155ns_1.genblk1\[2\].dly_binary.signal_w\[0\]
++ clkgen.delay_155ns_1.genblk1\[2\].dly_binary.signal_w\[1\] VSS VDD sky130_mm_sc_hd_dlyPoly5ns
 Xedgedetect.dly_315ns_1.genblk1\[4\].dly_binary.and_bypass_switch edgedetect.dly_315ns_1.genblk1\[4\].dly_binary.signal_w\[0\]
 + edgedetect.dly_315ns_1.genblk1\[4\].dly_binary.bypass_in edgedetect.dly_315ns_1.genblk1\[3\].dly_binary.out
 + VSS VDD VSS VDD sky130_fd_sc_hd__and2b_1
-XFILLER_16_3 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
+XFILLER_16_3 VDD VSS VSS VDD sky130_fd_sc_hd__decap_3
+XFILLER_15_133 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
 XPHY_8 VDD VSS VSS VDD sky130_fd_sc_hd__decap_3
-XFILLER_4_335 VDD VSS VSS VDD sky130_fd_sc_hd__decap_6
+XFILLER_11_191 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
 XANTENNA_edgedetect.dly_315ns_1.genblk1\[4\].control_invert_A dlycontrol4_in[4] VSS
 + VDD VDD VSS sky130_fd_sc_hd__diode_2
-XFILLER_1_327 VSS VDD VSS VDD sky130_ef_sc_hd__decap_12
-XFILLER_4_121 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
+XFILLER_17_239 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
+XFILLER_16_272 VDD VSS VSS VDD sky130_fd_sc_hd__decap_6
 Xclkgen.delay_155ns_1.enablebuffer VDD VSS clkgen.delay_155ns_1.enable_dlycontrol_w
 + enable_dlycontrol_in VSS VDD sky130_fd_sc_hd__buf_4
 Xedgedetect.dly_315ns_1.genblk1\[3\].bypass_enable VDD VSS edgedetect.dly_315ns_1.genblk1\[3\].dly_binary.bypass_in
 + edgedetect.dly_315ns_1.bypass_enable_w\[3\] edgedetect.dly_315ns_1.enable_dlycontrol_w
 + VSS VDD sky130_fd_sc_hd__and2_1
-XFILLER_10_245 VDD VSS VSS VDD sky130_fd_sc_hd__decap_6
-XFILLER_10_212 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
+XFILLER_13_275 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
+XFILLER_10_201 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
+Xclkgen.delay_155ns_2.genblk1\[1\].dly_binary.genblk1\[1\].delay_unit VDD VSS clkgen.delay_155ns_2.genblk1\[1\].dly_binary.signal_w\[1\]
++ clkgen.delay_155ns_2.genblk1\[1\].dly_binary.signal_w\[2\] VSS VDD sky130_mm_sc_hd_dlyPoly5ns
 Xclkgen.delay_155ns_2.genblk1\[1\].control_invert dlycontrol2_in[1] clkgen.delay_155ns_2.bypass_enable_w\[1\]
 + VDD VSS VSS VDD sky130_fd_sc_hd__inv_2
-Xclkgen.delay_155ns_2.genblk1\[1\].dly_binary.genblk1\[1\].delay_unit VSS VDD clkgen.delay_155ns_2.genblk1\[1\].dly_binary.signal_w\[2\]
-+ VDD VSS clkgen.delay_155ns_2.genblk1\[1\].dly_binary.signal_w\[1\] sky130_mm_sc_hd_dlyPoly5ns
+XFILLER_5_293 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
+XFILLER_15_337 VDD VSS VSS VDD sky130_fd_sc_hd__decap_6
 XFILLER_18_164 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
 Xclkgen.delay_155ns_1.genblk1\[4\].bypass_enable VDD VSS clkgen.delay_155ns_1.genblk1\[4\].dly_binary.bypass_in
 + clkgen.delay_155ns_1.bypass_enable_w\[4\] clkgen.delay_155ns_1.enable_dlycontrol_w
 + VSS VDD sky130_fd_sc_hd__and2_1
-XFILLER_2_296 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
+XFILLER_2_252 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
 Xclkgen.delay_155ns_3.genblk1\[0\].dly_binary.and_bypass_switch clkgen.delay_155ns_3.genblk1\[0\].dly_binary.signal_w\[0\]
 + clkgen.delay_155ns_3.genblk1\[0\].dly_binary.bypass_in clkgen.delay_155ns_3.genblk1\[0\].dly_binary.in
 + VSS VDD VSS VDD sky130_fd_sc_hd__and2b_1
-Xclkgen.delay_155ns_1.genblk1\[4\].dly_binary.genblk1\[11\].delay_unit VSS VDD clkgen.delay_155ns_1.genblk1\[4\].dly_binary.signal_w\[12\]
-+ VDD VSS clkgen.delay_155ns_1.genblk1\[4\].dly_binary.signal_w\[11\] sky130_mm_sc_hd_dlyPoly5ns
 XPHY_9 VDD VSS VSS VDD sky130_fd_sc_hd__decap_3
+Xclkgen.delay_155ns_1.genblk1\[4\].dly_binary.genblk1\[11\].delay_unit VDD VSS clkgen.delay_155ns_1.genblk1\[4\].dly_binary.signal_w\[11\]
++ clkgen.delay_155ns_1.genblk1\[4\].dly_binary.signal_w\[12\] VSS VDD sky130_mm_sc_hd_dlyPoly5ns
 XANTENNA_edgedetect.dly_315ns_1.genblk1\[0\].dly_binary.out_mux_S edgedetect.dly_315ns_1.genblk1\[0\].dly_binary.bypass_in
 + VSS VDD VDD VSS sky130_fd_sc_hd__diode_2
-XANTENNA_clkgen.delay_155ns_1.genblk1\[4\].dly_binary.out_mux_A0 clkgen.delay_155ns_1.genblk1\[4\].dly_binary.signal_w\[16\]
-+ VSS VDD VDD VSS sky130_fd_sc_hd__diode_2
-XFILLER_4_303 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
+XFILLER_12_115 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
 XANTENNA_clkgen.delay_155ns_1.enablebuffer_A enable_dlycontrol_in VSS VDD VDD VSS
 + sky130_fd_sc_hd__diode_2
-XFILLER_19_292 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
-XFILLER_1_339 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
-Xedgedetect.dly_315ns_1.genblk1\[5\].dly_binary.genblk1\[0\].delay_unit VSS VDD edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.signal_w\[1\]
-+ VDD VSS edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.signal_w\[0\] sky130_mm_sc_hd_dlyPoly5ns
-XFILLER_1_125 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
-XFILLER_13_276 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
-XFILLER_13_243 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
-XFILLER_9_214 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
-XFILLER_8_280 VDD VSS VSS VDD sky130_fd_sc_hd__decap_6
-Xclkgen.delay_155ns_1.genblk1\[1\].dly_binary.genblk1\[0\].delay_unit VSS VDD clkgen.delay_155ns_1.genblk1\[1\].dly_binary.signal_w\[1\]
-+ VDD VSS clkgen.delay_155ns_1.genblk1\[1\].dly_binary.signal_w\[0\] sky130_mm_sc_hd_dlyPoly5ns
-XFILLER_18_313 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
-XFILLER_6_3 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
-XFILLER_5_294 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
-XFILLER_15_338 VDD VSS VSS VDD sky130_fd_sc_hd__decap_6
-XFILLER_15_305 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
+XANTENNA_clkgen.delay_155ns_1.genblk1\[4\].dly_binary.out_mux_A0 clkgen.delay_155ns_1.genblk1\[4\].dly_binary.signal_w\[16\]
++ VSS VDD VDD VSS sky130_fd_sc_hd__diode_2
+XFILLER_19_292 VDD VSS VSS VDD sky130_fd_sc_hd__decap_8
+Xedgedetect.dly_315ns_1.genblk1\[5\].dly_binary.genblk1\[0\].delay_unit VDD VSS edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.signal_w\[0\]
++ edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.signal_w\[1\] VSS VDD sky130_mm_sc_hd_dlyPoly5ns
+XFILLER_13_287 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
+XFILLER_9_236 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
+XFILLER_8_280 VDD VSS VSS VDD sky130_fd_sc_hd__decap_3
+Xclkgen.delay_155ns_1.genblk1\[1\].dly_binary.genblk1\[0\].delay_unit VDD VSS clkgen.delay_155ns_1.genblk1\[1\].dly_binary.signal_w\[0\]
++ clkgen.delay_155ns_1.genblk1\[1\].dly_binary.signal_w\[1\] VSS VDD sky130_mm_sc_hd_dlyPoly5ns
 Xedgedetect.dly_315ns_1.genblk1\[5\].dly_binary.and_bypass_switch edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.signal_w\[0\]
 + edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.bypass_in edgedetect.dly_315ns_1.genblk1\[4\].dly_binary.out
 + VSS VDD VSS VDD sky130_fd_sc_hd__and2b_1
-XFILLER_12_308 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
-XFILLER_11_90 VDD VSS VSS VDD sky130_fd_sc_hd__decap_6
-Xedgedetect.dly_315ns_1.genblk1\[5\].dly_binary.genblk1\[5\].delay_unit VSS VDD edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.signal_w\[6\]
-+ VDD VSS edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.signal_w\[5\] sky130_mm_sc_hd_dlyPoly5ns
-XFILLER_4_315 VSS VDD VSS VDD sky130_ef_sc_hd__decap_12
+XFILLER_10_36 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
+XFILLER_2_264 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
+XFILLER_12_308 VDD VSS VSS VDD sky130_fd_sc_hd__decap_6
+Xedgedetect.dly_315ns_1.genblk1\[5\].dly_binary.genblk1\[5\].delay_unit VDD VSS edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.signal_w\[5\]
++ edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.signal_w\[6\] VSS VDD sky130_mm_sc_hd_dlyPoly5ns
 Xedgedetect.dly_315ns_1.genblk1\[2\].control_invert dlycontrol4_in[2] edgedetect.dly_315ns_1.bypass_enable_w\[2\]
 + VDD VSS VSS VDD sky130_fd_sc_hd__inv_2
-Xclkgen.delay_155ns_3.genblk1\[4\].dly_binary.genblk1\[3\].delay_unit VSS VDD clkgen.delay_155ns_3.genblk1\[4\].dly_binary.signal_w\[4\]
-+ VDD VSS clkgen.delay_155ns_3.genblk1\[4\].dly_binary.signal_w\[3\] sky130_mm_sc_hd_dlyPoly5ns
-XFILLER_16_274 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
+Xclkgen.delay_155ns_3.genblk1\[4\].dly_binary.genblk1\[3\].delay_unit VDD VSS clkgen.delay_155ns_3.genblk1\[4\].dly_binary.signal_w\[3\]
++ clkgen.delay_155ns_3.genblk1\[4\].dly_binary.signal_w\[4\] VSS VDD sky130_mm_sc_hd_dlyPoly5ns
 XFILLER_4_16 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
-XFILLER_13_288 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
-XFILLER_10_203 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
-XFILLER_18_325 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
+XFILLER_13_299 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
+XFILLER_0_192 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
 Xclkgen.delay_155ns_2.genblk1\[0\].bypass_enable VDD VSS clkgen.delay_155ns_2.genblk1\[0\].dly_binary.bypass_in
 + clkgen.delay_155ns_2.bypass_enable_w\[0\] clkgen.delay_155ns_2.enable_dlycontrol_w
++ VSS VDD sky130_fd_sc_hd__and2_1
+Xclkgen.delay_155ns_3.genblk1\[1\].bypass_enable VDD VSS clkgen.delay_155ns_3.genblk1\[1\].dly_binary.bypass_in
++ clkgen.delay_155ns_3.bypass_enable_w\[1\] clkgen.delay_155ns_3.enable_dlycontrol_w
 + VSS VDD sky130_fd_sc_hd__and2_1
 Xclkgen.delay_155ns_3.genblk1\[1\].dly_binary.and_bypass_switch clkgen.delay_155ns_3.genblk1\[1\].dly_binary.signal_w\[0\]
 + clkgen.delay_155ns_3.genblk1\[1\].dly_binary.bypass_in clkgen.delay_155ns_3.genblk1\[0\].dly_binary.out
 + VSS VDD VSS VDD sky130_fd_sc_hd__and2b_1
-Xclkgen.delay_155ns_3.genblk1\[1\].bypass_enable VDD VSS clkgen.delay_155ns_3.genblk1\[1\].dly_binary.bypass_in
-+ clkgen.delay_155ns_3.bypass_enable_w\[1\] clkgen.delay_155ns_3.enable_dlycontrol_w
-+ VSS VDD sky130_fd_sc_hd__and2_1
-Xclkgen.delay_155ns_3.genblk1\[4\].dly_binary.genblk1\[8\].delay_unit VSS VDD clkgen.delay_155ns_3.genblk1\[4\].dly_binary.signal_w\[9\]
-+ VDD VSS clkgen.delay_155ns_3.genblk1\[4\].dly_binary.signal_w\[8\] sky130_mm_sc_hd_dlyPoly5ns
+XFILLER_2_276 VDD VSS VSS VDD sky130_fd_sc_hd__decap_3
+Xclkgen.delay_155ns_3.genblk1\[4\].dly_binary.genblk1\[8\].delay_unit VDD VSS clkgen.delay_155ns_3.genblk1\[4\].dly_binary.signal_w\[8\]
++ clkgen.delay_155ns_3.genblk1\[4\].dly_binary.signal_w\[9\] VSS VDD sky130_mm_sc_hd_dlyPoly5ns
 XANTENNA_clkgen.delay_155ns_3.genblk1\[4\].control_invert_A dlycontrol3_in[4] VSS
 + VDD VDD VSS sky130_fd_sc_hd__diode_2
-XFILLER_15_147 VDD VSS VSS VDD sky130_fd_sc_hd__decap_8
-Xclkgen.delay_155ns_2.genblk1\[4\].dly_binary.genblk1\[14\].delay_unit VSS VDD clkgen.delay_155ns_2.genblk1\[4\].dly_binary.signal_w\[15\]
-+ VDD VSS clkgen.delay_155ns_2.genblk1\[4\].dly_binary.signal_w\[14\] sky130_mm_sc_hd_dlyPoly5ns
+Xclkgen.delay_155ns_2.genblk1\[4\].dly_binary.genblk1\[14\].delay_unit VDD VSS clkgen.delay_155ns_2.genblk1\[4\].dly_binary.signal_w\[14\]
++ clkgen.delay_155ns_2.genblk1\[4\].dly_binary.signal_w\[15\] VSS VDD sky130_mm_sc_hd_dlyPoly5ns
 Xclkgen.delay_155ns_2.genblk1\[0\].dly_binary.and_bypass_switch clkgen.delay_155ns_2.genblk1\[0\].dly_binary.signal_w\[0\]
 + clkgen.delay_155ns_2.genblk1\[0\].dly_binary.bypass_in clkgen.clk_dig_out VSS VDD
 + VSS VDD sky130_fd_sc_hd__and2b_1
-Xedgedetect.dly_315ns_1.genblk1\[4\].dly_binary.genblk1\[0\].delay_unit VSS VDD edgedetect.dly_315ns_1.genblk1\[4\].dly_binary.signal_w\[1\]
-+ VDD VSS edgedetect.dly_315ns_1.genblk1\[4\].dly_binary.signal_w\[0\] sky130_mm_sc_hd_dlyPoly5ns
-Xclkgen.delay_155ns_2.genblk1\[4\].dly_binary.genblk1\[2\].delay_unit VSS VDD clkgen.delay_155ns_2.genblk1\[4\].dly_binary.signal_w\[3\]
-+ VDD VSS clkgen.delay_155ns_2.genblk1\[4\].dly_binary.signal_w\[2\] sky130_mm_sc_hd_dlyPoly5ns
-XFILLER_14_3 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
+Xedgedetect.dly_315ns_1.genblk1\[4\].dly_binary.genblk1\[0\].delay_unit VDD VSS edgedetect.dly_315ns_1.genblk1\[4\].dly_binary.signal_w\[0\]
++ edgedetect.dly_315ns_1.genblk1\[4\].dly_binary.signal_w\[1\] VSS VDD sky130_mm_sc_hd_dlyPoly5ns
+Xclkgen.delay_155ns_2.genblk1\[4\].dly_binary.genblk1\[2\].delay_unit VDD VSS clkgen.delay_155ns_2.genblk1\[4\].dly_binary.signal_w\[2\]
++ clkgen.delay_155ns_2.genblk1\[4\].dly_binary.signal_w\[3\] VSS VDD sky130_mm_sc_hd_dlyPoly5ns
+XFILLER_4_338 VDD VSS VSS VDD sky130_fd_sc_hd__decap_3
+XFILLER_11_183 VDD VSS VSS VDD sky130_fd_sc_hd__decap_3
 XFILLER_7_187 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
-XFILLER_7_154 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
-Xclkgen.delay_155ns_1.genblk1\[0\].dly_binary.genblk1\[0\].delay_unit VSS VDD clkgen.delay_155ns_1.genblk1\[0\].dly_binary.signal_w\[1\]
-+ VDD VSS clkgen.delay_155ns_1.genblk1\[0\].dly_binary.signal_w\[0\] sky130_mm_sc_hd_dlyPoly5ns
-XANTENNA_clkgen.delay_155ns_1.genblk1\[0\].dly_binary.and_bypass_switch_A_N clkgen.delay_155ns_1.genblk1\[0\].dly_binary.bypass_in
-+ VSS VDD VDD VSS sky130_fd_sc_hd__diode_2
+Xclkgen.delay_155ns_1.genblk1\[0\].dly_binary.genblk1\[0\].delay_unit VDD VSS clkgen.delay_155ns_1.genblk1\[0\].dly_binary.signal_w\[0\]
++ clkgen.delay_155ns_1.genblk1\[0\].dly_binary.signal_w\[1\] VSS VDD sky130_mm_sc_hd_dlyPoly5ns
+XFILLER_19_261 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
 Xclkgen.delay_155ns_3.genblk1\[2\].control_invert dlycontrol3_in[2] clkgen.delay_155ns_3.bypass_enable_w\[2\]
 + VDD VSS VSS VDD sky130_fd_sc_hd__inv_2
-XFILLER_5_93 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
-XFILLER_18_337 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
-Xedgedetect.dly_315ns_1.genblk1\[4\].dly_binary.genblk1\[5\].delay_unit VSS VDD edgedetect.dly_315ns_1.genblk1\[4\].dly_binary.signal_w\[6\]
-+ VDD VSS edgedetect.dly_315ns_1.genblk1\[4\].dly_binary.signal_w\[5\] sky130_mm_sc_hd_dlyPoly5ns
+XFILLER_13_245 VDD VSS VSS VDD sky130_fd_sc_hd__decap_3
+XFILLER_0_182 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
+XFILLER_18_304 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
+Xedgedetect.dly_315ns_1.genblk1\[4\].dly_binary.genblk1\[5\].delay_unit VDD VSS edgedetect.dly_315ns_1.genblk1\[4\].dly_binary.signal_w\[5\]
++ edgedetect.dly_315ns_1.genblk1\[4\].dly_binary.signal_w\[6\] VSS VDD sky130_mm_sc_hd_dlyPoly5ns
+XFILLER_5_241 VDD VSS VSS VDD sky130_fd_sc_hd__decap_6
+XFILLER_10_49 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
 XFILLER_10_16 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
-Xclkgen.delay_155ns_2.genblk1\[4\].dly_binary.genblk1\[7\].delay_unit VSS VDD clkgen.delay_155ns_2.genblk1\[4\].dly_binary.signal_w\[8\]
-+ VDD VSS clkgen.delay_155ns_2.genblk1\[4\].dly_binary.signal_w\[7\] sky130_mm_sc_hd_dlyPoly5ns
-XFILLER_2_266 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
-Xclkgen.delay_155ns_3.genblk1\[3\].dly_binary.genblk1\[3\].delay_unit VSS VDD clkgen.delay_155ns_3.genblk1\[3\].dly_binary.signal_w\[4\]
-+ VDD VSS clkgen.delay_155ns_3.genblk1\[3\].dly_binary.signal_w\[3\] sky130_mm_sc_hd_dlyPoly5ns
-XFILLER_2_94 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
-XFILLER_15_137 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
-XFILLER_11_321 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
-Xclkgen.delay_155ns_1.genblk1\[4\].dly_binary.genblk1\[1\].delay_unit VSS VDD clkgen.delay_155ns_1.genblk1\[4\].dly_binary.signal_w\[2\]
-+ VDD VSS clkgen.delay_155ns_1.genblk1\[4\].dly_binary.signal_w\[1\] sky130_mm_sc_hd_dlyPoly5ns
-Xedgedetect.dly_315ns_1.genblk1\[5\].dly_binary.genblk1\[12\].delay_unit VSS VDD edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.signal_w\[13\]
-+ VDD VSS edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.signal_w\[12\] sky130_mm_sc_hd_dlyPoly5ns
-XFILLER_8_82 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
+Xclkgen.delay_155ns_2.genblk1\[4\].dly_binary.genblk1\[7\].delay_unit VDD VSS clkgen.delay_155ns_2.genblk1\[4\].dly_binary.signal_w\[7\]
++ clkgen.delay_155ns_2.genblk1\[4\].dly_binary.signal_w\[8\] VSS VDD sky130_mm_sc_hd_dlyPoly5ns
+XFILLER_2_222 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
+Xclkgen.delay_155ns_3.genblk1\[3\].dly_binary.genblk1\[3\].delay_unit VDD VSS clkgen.delay_155ns_3.genblk1\[3\].dly_binary.signal_w\[3\]
++ clkgen.delay_155ns_3.genblk1\[3\].dly_binary.signal_w\[4\] VSS VDD sky130_mm_sc_hd_dlyPoly5ns
+XFILLER_7_303 VDD VSS VSS VDD sky130_fd_sc_hd__decap_6
+Xclkgen.delay_155ns_1.genblk1\[4\].dly_binary.genblk1\[1\].delay_unit VDD VSS clkgen.delay_155ns_1.genblk1\[4\].dly_binary.signal_w\[1\]
++ clkgen.delay_155ns_1.genblk1\[4\].dly_binary.signal_w\[2\] VSS VDD sky130_mm_sc_hd_dlyPoly5ns
+XFILLER_16_15 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
+XFILLER_4_306 VSS VDD VSS VDD sky130_ef_sc_hd__decap_12
+XFILLER_7_155 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
+Xedgedetect.dly_315ns_1.genblk1\[5\].dly_binary.genblk1\[12\].delay_unit VDD VSS edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.signal_w\[12\]
++ edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.signal_w\[13\] VSS VDD sky130_mm_sc_hd_dlyPoly5ns
 Xclkgen.delay_155ns_2.genblk1\[1\].dly_binary.out_mux VSS VDD clkgen.delay_155ns_2.genblk1\[1\].dly_binary.bypass_in
 + clkgen.delay_155ns_2.genblk1\[0\].dly_binary.out clkgen.delay_155ns_2.genblk1\[1\].dly_binary.signal_w\[2\]
 + clkgen.delay_155ns_2.genblk1\[1\].dly_binary.out VSS VDD sky130_fd_sc_hd__mux2_1
-Xclkgen.delay_155ns_3.genblk1\[4\].dly_binary.genblk1\[12\].delay_unit VSS VDD clkgen.delay_155ns_3.genblk1\[4\].dly_binary.signal_w\[13\]
-+ VDD VSS clkgen.delay_155ns_3.genblk1\[4\].dly_binary.signal_w\[12\] sky130_mm_sc_hd_dlyPoly5ns
+Xclkgen.delay_155ns_3.genblk1\[4\].dly_binary.genblk1\[12\].delay_unit VDD VSS clkgen.delay_155ns_3.genblk1\[4\].dly_binary.signal_w\[12\]
++ clkgen.delay_155ns_3.genblk1\[4\].dly_binary.signal_w\[13\] VSS VDD sky130_mm_sc_hd_dlyPoly5ns
+XFILLER_4_125 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
 XANTENNA_edgedetect.dly_315ns_1.genblk1\[4\].dly_binary.and_bypass_switch_A_N edgedetect.dly_315ns_1.genblk1\[4\].dly_binary.bypass_in
 + VSS VDD VDD VSS sky130_fd_sc_hd__diode_2
+XFILLER_16_210 VDD VSS VSS VDD sky130_fd_sc_hd__decap_6
 Xclkgen.delay_155ns_2.genblk1\[3\].dly_binary.out_mux VSS VDD clkgen.delay_155ns_2.genblk1\[3\].dly_binary.bypass_in
 + clkgen.delay_155ns_2.genblk1\[2\].dly_binary.out clkgen.delay_155ns_2.genblk1\[3\].dly_binary.signal_w\[8\]
 + clkgen.delay_155ns_2.genblk1\[3\].dly_binary.out VSS VDD sky130_fd_sc_hd__mux2_1
-XANTENNA_clkgen.delay_155ns_3.genblk1\[0\].bypass_enable_A clkgen.delay_155ns_3.enable_dlycontrol_w
-+ VSS VDD VDD VSS sky130_fd_sc_hd__diode_2
 Xclkgen.delay_155ns_3.genblk1\[2\].dly_binary.and_bypass_switch clkgen.delay_155ns_3.genblk1\[2\].dly_binary.signal_w\[0\]
 + clkgen.delay_155ns_3.genblk1\[2\].dly_binary.bypass_in clkgen.delay_155ns_3.genblk1\[1\].dly_binary.out
 + VSS VDD VSS VDD sky130_fd_sc_hd__and2b_1
-XFILLER_0_183 VDD VSS VSS VDD sky130_fd_sc_hd__decap_3
-Xedgedetect.dly_315ns_1.genblk1\[4\].dly_binary.genblk1\[13\].delay_unit VSS VDD edgedetect.dly_315ns_1.genblk1\[4\].dly_binary.signal_w\[14\]
-+ VDD VSS edgedetect.dly_315ns_1.genblk1\[4\].dly_binary.signal_w\[13\] sky130_mm_sc_hd_dlyPoly5ns
+Xedgedetect.dly_315ns_1.genblk1\[4\].dly_binary.genblk1\[13\].delay_unit VDD VSS edgedetect.dly_315ns_1.genblk1\[4\].dly_binary.signal_w\[13\]
++ edgedetect.dly_315ns_1.genblk1\[4\].dly_binary.signal_w\[14\] VSS VDD sky130_mm_sc_hd_dlyPoly5ns
 XFILLER_12_290 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
-Xedgedetect.dly_315ns_1.genblk1\[3\].dly_binary.genblk1\[0\].delay_unit VSS VDD edgedetect.dly_315ns_1.genblk1\[3\].dly_binary.signal_w\[1\]
-+ VDD VSS edgedetect.dly_315ns_1.genblk1\[3\].dly_binary.signal_w\[0\] sky130_mm_sc_hd_dlyPoly5ns
+XFILLER_8_272 VDD VSS VSS VDD sky130_fd_sc_hd__decap_6
+XFILLER_18_316 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
+Xedgedetect.dly_315ns_1.genblk1\[3\].dly_binary.genblk1\[0\].delay_unit VDD VSS edgedetect.dly_315ns_1.genblk1\[3\].dly_binary.signal_w\[0\]
++ edgedetect.dly_315ns_1.genblk1\[3\].dly_binary.signal_w\[1\] VSS VDD sky130_mm_sc_hd_dlyPoly5ns
+Xclkgen.delay_155ns_1.genblk1\[4\].dly_binary.genblk1\[6\].delay_unit VDD VSS clkgen.delay_155ns_1.genblk1\[4\].dly_binary.signal_w\[6\]
++ clkgen.delay_155ns_1.genblk1\[4\].dly_binary.signal_w\[7\] VSS VDD sky130_mm_sc_hd_dlyPoly5ns
 Xclkgen.delay_155ns_2.genblk1\[1\].dly_binary.and_bypass_switch clkgen.delay_155ns_2.genblk1\[1\].dly_binary.signal_w\[0\]
 + clkgen.delay_155ns_2.genblk1\[1\].dly_binary.bypass_in clkgen.delay_155ns_2.genblk1\[0\].dly_binary.out
 + VSS VDD VSS VDD sky130_fd_sc_hd__and2b_1
-Xclkgen.delay_155ns_1.genblk1\[4\].dly_binary.genblk1\[6\].delay_unit VSS VDD clkgen.delay_155ns_1.genblk1\[4\].dly_binary.signal_w\[7\]
-+ VDD VSS clkgen.delay_155ns_1.genblk1\[4\].dly_binary.signal_w\[6\] sky130_mm_sc_hd_dlyPoly5ns
-Xclkgen.delay_155ns_2.genblk1\[3\].dly_binary.genblk1\[2\].delay_unit VSS VDD clkgen.delay_155ns_2.genblk1\[3\].dly_binary.signal_w\[3\]
-+ VDD VSS clkgen.delay_155ns_2.genblk1\[3\].dly_binary.signal_w\[2\] sky130_mm_sc_hd_dlyPoly5ns
-XFILLER_19_15 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
-XFILLER_2_234 VDD VSS VSS VDD sky130_fd_sc_hd__decap_6
+Xclkgen.delay_155ns_2.genblk1\[3\].dly_binary.genblk1\[2\].delay_unit VDD VSS clkgen.delay_155ns_2.genblk1\[3\].dly_binary.signal_w\[2\]
++ clkgen.delay_155ns_2.genblk1\[3\].dly_binary.signal_w\[3\] VSS VDD sky130_mm_sc_hd_dlyPoly5ns
+XFILLER_5_275 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
+XFILLER_2_234 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
 XFILLER_4_3 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
-XFILLER_18_179 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
 XFILLER_18_124 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
-Xedgedetect.dly_315ns_1.genblk1\[5\].dly_binary.genblk1\[17\].delay_unit VSS VDD edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.signal_w\[18\]
-+ VDD VSS edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.signal_w\[17\] sky130_mm_sc_hd_dlyPoly5ns
-XFILLER_2_62 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
+Xedgedetect.dly_315ns_1.genblk1\[5\].dly_binary.genblk1\[17\].delay_unit VDD VSS edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.signal_w\[17\]
++ edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.signal_w\[18\] VSS VDD sky130_mm_sc_hd_dlyPoly5ns
 Xclkgen.delay_155ns_1.genblk1\[0\].dly_binary.and_bypass_switch clkgen.delay_155ns_1.genblk1\[0\].dly_binary.signal_w\[0\]
 + clkgen.delay_155ns_1.genblk1\[0\].dly_binary.bypass_in clkgen.delay_155ns_1.genblk1\[0\].dly_binary.in
 + VSS VDD VSS VDD sky130_fd_sc_hd__and2b_1
-XFILLER_11_333 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
-XFILLER_11_300 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
-XFILLER_16_16 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
-XFILLER_14_193 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
-Xedgedetect.dly_315ns_1.genblk1\[3\].dly_binary.genblk1\[5\].delay_unit VSS VDD edgedetect.dly_315ns_1.genblk1\[3\].dly_binary.signal_w\[6\]
-+ VDD VSS edgedetect.dly_315ns_1.genblk1\[3\].dly_binary.signal_w\[5\] sky130_mm_sc_hd_dlyPoly5ns
-XFILLER_0_321 VSS VDD VSS VDD sky130_ef_sc_hd__decap_12
-Xclkgen.delay_155ns_2.genblk1\[3\].dly_binary.genblk1\[7\].delay_unit VSS VDD clkgen.delay_155ns_2.genblk1\[3\].dly_binary.signal_w\[8\]
-+ VDD VSS clkgen.delay_155ns_2.genblk1\[3\].dly_binary.signal_w\[7\] sky130_mm_sc_hd_dlyPoly5ns
+XFILLER_11_311 VDD VSS VSS VDD sky130_fd_sc_hd__decap_6
+XFILLER_7_337 VDD VSS VSS VDD sky130_fd_sc_hd__decap_6
+XFILLER_14_182 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
+XFILLER_4_318 VSS VDD VSS VDD sky130_ef_sc_hd__decap_12
+Xedgedetect.dly_315ns_1.genblk1\[3\].dly_binary.genblk1\[5\].delay_unit VDD VSS edgedetect.dly_315ns_1.genblk1\[3\].dly_binary.signal_w\[5\]
++ edgedetect.dly_315ns_1.genblk1\[3\].dly_binary.signal_w\[6\] VSS VDD sky130_mm_sc_hd_dlyPoly5ns
+XFILLER_16_244 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
+Xclkgen.delay_155ns_2.genblk1\[3\].dly_binary.genblk1\[7\].delay_unit VDD VSS clkgen.delay_155ns_2.genblk1\[3\].dly_binary.signal_w\[7\]
++ clkgen.delay_155ns_2.genblk1\[3\].dly_binary.signal_w\[8\] VSS VDD sky130_mm_sc_hd_dlyPoly5ns
 XANTENNA_edgedetect.dly_315ns_1.genblk1\[3\].control_invert_A dlycontrol4_in[3] VSS
 + VDD VDD VSS sky130_fd_sc_hd__diode_2
 Xclkgen.delay_155ns_1.genblk1\[3\].control_invert dlycontrol1_in[3] clkgen.delay_155ns_1.bypass_enable_w\[3\]
 + VDD VSS VSS VDD sky130_fd_sc_hd__inv_2
-XFILLER_13_214 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
-Xclkgen.delay_155ns_3.genblk1\[2\].dly_binary.genblk1\[3\].delay_unit VSS VDD clkgen.delay_155ns_3.genblk1\[2\].dly_binary.signal_w\[4\]
-+ VDD VSS clkgen.delay_155ns_3.genblk1\[2\].dly_binary.signal_w\[3\] sky130_mm_sc_hd_dlyPoly5ns
-Xedgedetect.dly_315ns_1.genblk1\[5\].dly_binary.genblk1\[24\].delay_unit VSS VDD edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.signal_w\[25\]
-+ VDD VSS edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.signal_w\[24\] sky130_mm_sc_hd_dlyPoly5ns
-Xclkgen.delay_155ns_1.genblk1\[3\].dly_binary.genblk1\[1\].delay_unit VSS VDD clkgen.delay_155ns_1.genblk1\[3\].dly_binary.signal_w\[2\]
-+ VDD VSS clkgen.delay_155ns_1.genblk1\[3\].dly_binary.signal_w\[1\] sky130_mm_sc_hd_dlyPoly5ns
-XFILLER_5_243 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
-XFILLER_7_338 VDD VSS VSS VDD sky130_fd_sc_hd__decap_6
-XFILLER_7_305 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
-Xedgedetect.dly_315ns_1.genblk1\[5\].dly_binary.genblk1\[29\].delay_unit VSS VDD edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.signal_w\[30\]
-+ VDD VSS edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.signal_w\[29\] sky130_mm_sc_hd_dlyPoly5ns
-XFILLER_8_40 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
-XFILLER_3_341 VDD VSS VSS VDD sky130_fd_sc_hd__decap_3
-Xedgedetect.dly_315ns_1.genblk1\[2\].dly_binary.genblk1\[0\].delay_unit VSS VDD edgedetect.dly_315ns_1.genblk1\[2\].dly_binary.signal_w\[1\]
-+ VDD VSS edgedetect.dly_315ns_1.genblk1\[2\].dly_binary.signal_w\[0\] sky130_mm_sc_hd_dlyPoly5ns
+XANTENNA_edgedetect.nor1_A edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.out VSS
++ VDD VDD VSS sky130_fd_sc_hd__diode_2
+Xclkgen.delay_155ns_3.genblk1\[2\].dly_binary.genblk1\[3\].delay_unit VDD VSS clkgen.delay_155ns_3.genblk1\[2\].dly_binary.signal_w\[3\]
++ clkgen.delay_155ns_3.genblk1\[2\].dly_binary.signal_w\[4\] VSS VDD sky130_mm_sc_hd_dlyPoly5ns
+XFILLER_9_229 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
+XFILLER_0_173 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
+Xedgedetect.dly_315ns_1.genblk1\[5\].dly_binary.genblk1\[24\].delay_unit VDD VSS edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.signal_w\[24\]
++ edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.signal_w\[25\] VSS VDD sky130_mm_sc_hd_dlyPoly5ns
+XFILLER_5_84 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
+XFILLER_18_328 VSS VDD VSS VDD sky130_ef_sc_hd__decap_12
+Xclkgen.delay_155ns_1.genblk1\[3\].dly_binary.genblk1\[1\].delay_unit VDD VSS clkgen.delay_155ns_1.genblk1\[3\].dly_binary.signal_w\[1\]
++ clkgen.delay_155ns_1.genblk1\[3\].dly_binary.signal_w\[2\] VSS VDD sky130_mm_sc_hd_dlyPoly5ns
+XFILLER_5_287 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
+XFILLER_2_202 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
+XFILLER_2_246 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
+XFILLER_19_275 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
+Xedgedetect.dly_315ns_1.genblk1\[5\].dly_binary.genblk1\[29\].delay_unit VDD VSS edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.signal_w\[29\]
++ edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.signal_w\[30\] VSS VDD sky130_mm_sc_hd_dlyPoly5ns
+Xedgedetect.dly_315ns_1.genblk1\[2\].dly_binary.genblk1\[0\].delay_unit VDD VSS edgedetect.dly_315ns_1.genblk1\[2\].dly_binary.signal_w\[0\]
++ edgedetect.dly_315ns_1.genblk1\[2\].dly_binary.signal_w\[1\] VSS VDD sky130_mm_sc_hd_dlyPoly5ns
 Xclkgen.delay_155ns_3.genblk1\[3\].dly_binary.and_bypass_switch clkgen.delay_155ns_3.genblk1\[3\].dly_binary.signal_w\[0\]
 + clkgen.delay_155ns_3.genblk1\[3\].dly_binary.bypass_in clkgen.delay_155ns_3.genblk1\[2\].dly_binary.out
 + VSS VDD VSS VDD sky130_fd_sc_hd__and2b_1
-Xclkgen.delay_155ns_1.genblk1\[3\].dly_binary.genblk1\[6\].delay_unit VSS VDD clkgen.delay_155ns_1.genblk1\[3\].dly_binary.signal_w\[7\]
-+ VDD VSS clkgen.delay_155ns_1.genblk1\[3\].dly_binary.signal_w\[6\] sky130_mm_sc_hd_dlyPoly5ns
+Xclkgen.delay_155ns_1.genblk1\[3\].dly_binary.genblk1\[6\].delay_unit VDD VSS clkgen.delay_155ns_1.genblk1\[3\].dly_binary.signal_w\[6\]
++ clkgen.delay_155ns_1.genblk1\[3\].dly_binary.signal_w\[7\] VSS VDD sky130_mm_sc_hd_dlyPoly5ns
 XFILLER_17_71 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
-XFILLER_16_245 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
-Xedgedetect.dly_315ns_1.genblk1\[5\].dly_binary.genblk1\[31\].delay_unit VSS VDD edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.signal_w\[32\]
-+ VDD VSS edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.signal_w\[31\] sky130_mm_sc_hd_dlyPoly5ns
-XFILLER_0_333 VDD VSS VSS VDD sky130_fd_sc_hd__decap_8
-Xclkgen.delay_155ns_2.genblk1\[2\].dly_binary.genblk1\[2\].delay_unit VSS VDD clkgen.delay_155ns_2.genblk1\[2\].dly_binary.signal_w\[3\]
-+ VDD VSS clkgen.delay_155ns_2.genblk1\[2\].dly_binary.signal_w\[2\] sky130_mm_sc_hd_dlyPoly5ns
-XFILLER_12_3 VDD VSS VSS VDD sky130_fd_sc_hd__decap_6
+Xedgedetect.dly_315ns_1.genblk1\[5\].dly_binary.genblk1\[31\].delay_unit VDD VSS edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.signal_w\[31\]
++ edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.signal_w\[32\] VSS VDD sky130_mm_sc_hd_dlyPoly5ns
+XFILLER_0_311 VSS VDD VSS VDD sky130_ef_sc_hd__decap_12
+Xclkgen.delay_155ns_2.genblk1\[2\].dly_binary.genblk1\[2\].delay_unit VDD VSS clkgen.delay_155ns_2.genblk1\[2\].dly_binary.signal_w\[2\]
++ clkgen.delay_155ns_2.genblk1\[2\].dly_binary.signal_w\[3\] VSS VDD sky130_mm_sc_hd_dlyPoly5ns
+XFILLER_12_3 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
 Xclkgen.delay_155ns_2.genblk1\[2\].dly_binary.and_bypass_switch clkgen.delay_155ns_2.genblk1\[2\].dly_binary.signal_w\[0\]
 + clkgen.delay_155ns_2.genblk1\[2\].dly_binary.bypass_in clkgen.delay_155ns_2.genblk1\[1\].dly_binary.out
 + VSS VDD VSS VDD sky130_fd_sc_hd__and2b_1
-XFILLER_8_274 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
-XFILLER_5_63 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
-XFILLER_18_307 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
 Xclkgen.delay_155ns_1.genblk1\[1\].dly_binary.and_bypass_switch clkgen.delay_155ns_1.genblk1\[1\].dly_binary.signal_w\[0\]
 + clkgen.delay_155ns_1.genblk1\[1\].dly_binary.bypass_in clkgen.delay_155ns_1.genblk1\[0\].dly_binary.out
 + VSS VDD VSS VDD sky130_fd_sc_hd__and2b_1
-XFILLER_14_94 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
-XFILLER_5_288 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
-XANTENNA_edgedetect.dly_315ns_1.genblk1\[1\].bypass_enable_A edgedetect.dly_315ns_1.enable_dlycontrol_w
-+ VSS VDD VDD VSS sky130_fd_sc_hd__diode_2
-XFILLER_14_310 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
-XFILLER_2_214 VDD VSS VSS VDD sky130_fd_sc_hd__decap_3
-XFILLER_2_225 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
-XFILLER_17_192 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
-XFILLER_1_291 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
+XFILLER_5_299 VDD VSS VSS VDD sky130_fd_sc_hd__decap_8
+XFILLER_2_258 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
 XANTENNA_sampledly03_A nsample_p_in VSS VDD VDD VSS sky130_fd_sc_hd__diode_2
-XFILLER_4_309 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
-XFILLER_19_276 VDD VSS VSS VDD sky130_fd_sc_hd__decap_3
-XFILLER_11_187 VDD VSS VSS VDD sky130_fd_sc_hd__decap_6
-XFILLER_11_154 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
-XFILLER_7_125 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
-Xclkgen.delay_155ns_1.genblk1\[2\].dly_binary.genblk1\[1\].delay_unit VSS VDD clkgen.delay_155ns_1.genblk1\[2\].dly_binary.signal_w\[2\]
-+ VDD VSS clkgen.delay_155ns_1.genblk1\[2\].dly_binary.signal_w\[1\] sky130_mm_sc_hd_dlyPoly5ns
+XFILLER_7_125 VDD VSS VSS VDD sky130_fd_sc_hd__decap_6
+Xclkgen.delay_155ns_1.genblk1\[2\].dly_binary.genblk1\[1\].delay_unit VDD VSS clkgen.delay_155ns_1.genblk1\[2\].dly_binary.signal_w\[1\]
++ clkgen.delay_155ns_1.genblk1\[2\].dly_binary.signal_w\[2\] VSS VDD sky130_mm_sc_hd_dlyPoly5ns
 Xedgedetect.dly_315ns_1.genblk1\[4\].bypass_enable VDD VSS edgedetect.dly_315ns_1.genblk1\[4\].dly_binary.bypass_in
 + edgedetect.dly_315ns_1.bypass_enable_w\[4\] edgedetect.dly_315ns_1.enable_dlycontrol_w
 + VSS VDD sky130_fd_sc_hd__and2_1
-XFILLER_12_260 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
-XFILLER_5_31 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
+XFILLER_0_323 VSS VDD VSS VDD sky130_ef_sc_hd__decap_12
+XFILLER_0_164 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
+XFILLER_5_75 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
 XANTENNA_clkgen.delay_155ns_2.genblk1\[4\].control_invert_A dlycontrol2_in[4] VSS
 + VDD VDD VSS sky130_fd_sc_hd__diode_2
-XFILLER_18_319 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
-XFILLER_14_84 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
 Xclkgen.delay_155ns_2.enablebuffer VDD VSS clkgen.delay_155ns_2.enable_dlycontrol_w
 + enable_dlycontrol_in VSS VDD sky130_fd_sc_hd__buf_4
-Xedgedetect.dly_315ns_1.genblk1\[1\].dly_binary.genblk1\[0\].delay_unit VSS VDD edgedetect.dly_315ns_1.genblk1\[1\].dly_binary.signal_w\[1\]
-+ VDD VSS edgedetect.dly_315ns_1.genblk1\[1\].dly_binary.signal_w\[0\] sky130_mm_sc_hd_dlyPoly5ns
-XFILLER_2_32 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
+Xedgedetect.dly_315ns_1.genblk1\[1\].dly_binary.genblk1\[0\].delay_unit VDD VSS edgedetect.dly_315ns_1.genblk1\[1\].dly_binary.signal_w\[0\]
++ edgedetect.dly_315ns_1.genblk1\[1\].dly_binary.signal_w\[1\] VSS VDD sky130_mm_sc_hd_dlyPoly5ns
 Xclkgen.delay_155ns_3.genblk1\[4\].dly_binary.and_bypass_switch clkgen.delay_155ns_3.genblk1\[4\].dly_binary.signal_w\[0\]
 + clkgen.delay_155ns_3.genblk1\[4\].dly_binary.bypass_in clkgen.delay_155ns_3.genblk1\[3\].dly_binary.out
 + VSS VDD VSS VDD sky130_fd_sc_hd__and2b_1
-XANTENNA_clkgen.delay_155ns_3.genblk1\[3\].control_invert_A dlycontrol3_in[3] VSS
-+ VDD VDD VSS sky130_fd_sc_hd__diode_2
 XANTENNA_edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.out_mux_A0 edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.signal_w\[32\]
 + VSS VDD VDD VSS sky130_fd_sc_hd__diode_2
-XFILLER_2_3 VDD VSS VSS VDD sky130_fd_sc_hd__decap_6
+XANTENNA_clkgen.delay_155ns_3.genblk1\[3\].control_invert_A dlycontrol3_in[3] VSS
++ VDD VDD VSS sky130_fd_sc_hd__diode_2
 Xclkgen.delay_155ns_2.genblk1\[4\].control_invert dlycontrol2_in[4] clkgen.delay_155ns_2.bypass_enable_w\[4\]
 + VDD VSS VSS VDD sky130_fd_sc_hd__inv_2
+XFILLER_11_155 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
 Xclkgen.delay_155ns_2.genblk1\[3\].dly_binary.and_bypass_switch clkgen.delay_155ns_2.genblk1\[3\].dly_binary.signal_w\[0\]
 + clkgen.delay_155ns_2.genblk1\[3\].dly_binary.bypass_in clkgen.delay_155ns_2.genblk1\[2\].dly_binary.out
 + VSS VDD VSS VDD sky130_fd_sc_hd__and2b_1
-XFILLER_3_321 VSS VDD VSS VDD sky130_ef_sc_hd__decap_12
-XFILLER_8_53 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
+XFILLER_8_86 VDD VSS VSS VDD sky130_fd_sc_hd__decap_6
+XFILLER_0_335 VDD VSS VSS VDD sky130_fd_sc_hd__decap_6
 Xclkgen.delay_155ns_1.genblk1\[2\].dly_binary.and_bypass_switch clkgen.delay_155ns_1.genblk1\[2\].dly_binary.signal_w\[0\]
 + clkgen.delay_155ns_1.genblk1\[2\].dly_binary.bypass_in clkgen.delay_155ns_1.genblk1\[1\].dly_binary.out
 + VSS VDD VSS VDD sky130_fd_sc_hd__and2b_1
-Xclkgen.delay_155ns_1.genblk1\[4\].dly_binary.genblk1\[12\].delay_unit VSS VDD clkgen.delay_155ns_1.genblk1\[4\].dly_binary.signal_w\[13\]
-+ VDD VSS clkgen.delay_155ns_1.genblk1\[4\].dly_binary.signal_w\[12\] sky130_mm_sc_hd_dlyPoly5ns
-Xedgedetect.dly_315ns_1.genblk1\[5\].dly_binary.genblk1\[1\].delay_unit VSS VDD edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.signal_w\[2\]
-+ VDD VSS edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.signal_w\[1\] sky130_mm_sc_hd_dlyPoly5ns
+Xclkgen.delay_155ns_1.genblk1\[4\].dly_binary.genblk1\[12\].delay_unit VDD VSS clkgen.delay_155ns_1.genblk1\[4\].dly_binary.signal_w\[12\]
++ clkgen.delay_155ns_1.genblk1\[4\].dly_binary.signal_w\[13\] VSS VDD sky130_mm_sc_hd_dlyPoly5ns
+XFILLER_3_151 VDD VSS VSS VDD sky130_fd_sc_hd__decap_8
+XFILLER_13_217 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
+XFILLER_12_261 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
+XFILLER_8_210 VDD VSS VSS VDD sky130_fd_sc_hd__decap_6
+XFILLER_0_143 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
+XFILLER_0_121 VDD VSS VSS VDD sky130_fd_sc_hd__decap_3
+XFILLER_5_32 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
+XFILLER_14_63 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
+XFILLER_5_213 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
+Xedgedetect.dly_315ns_1.genblk1\[5\].dly_binary.genblk1\[1\].delay_unit VDD VSS edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.signal_w\[1\]
++ edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.signal_w\[2\] VSS VDD sky130_mm_sc_hd_dlyPoly5ns
 XANTENNA_clkgen.delay_155ns_2.genblk1\[0\].dly_binary.and_bypass_switch_A_N clkgen.delay_155ns_2.genblk1\[0\].dly_binary.bypass_in
 + VSS VDD VDD VSS sky130_fd_sc_hd__diode_2
-XFILLER_2_205 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
-Xclkgen.delay_155ns_1.genblk1\[1\].dly_binary.genblk1\[1\].delay_unit VSS VDD clkgen.delay_155ns_1.genblk1\[1\].dly_binary.signal_w\[2\]
-+ VDD VSS clkgen.delay_155ns_1.genblk1\[1\].dly_binary.signal_w\[1\] sky130_mm_sc_hd_dlyPoly5ns
-XFILLER_11_315 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
-XANTENNA_clkgen.clkdig_inverter_A clkgen.delay_155ns_1.genblk1\[4\].dly_binary.out
-+ VSS VDD VDD VSS sky130_fd_sc_hd__diode_2
-XFILLER_14_164 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
-XFILLER_11_31 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
-XFILLER_3_300 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
-XFILLER_3_333 VDD VSS VSS VDD sky130_fd_sc_hd__decap_8
-XFILLER_6_171 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
+XFILLER_17_194 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
+XFILLER_14_334 VDD VSS VSS VDD sky130_fd_sc_hd__decap_6
+XFILLER_1_271 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
+Xclkgen.delay_155ns_1.genblk1\[1\].dly_binary.genblk1\[1\].delay_unit VDD VSS clkgen.delay_155ns_1.genblk1\[1\].dly_binary.signal_w\[1\]
++ clkgen.delay_155ns_1.genblk1\[1\].dly_binary.signal_w\[2\] VSS VDD sky130_mm_sc_hd_dlyPoly5ns
+XFILLER_3_311 VSS VDD VSS VDD sky130_ef_sc_hd__decap_12
 Xedgedetect.dly_315ns_1.genblk1\[0\].control_invert dlycontrol4_in[0] edgedetect.dly_315ns_1.bypass_enable_w\[0\]
 + VDD VSS VSS VDD sky130_fd_sc_hd__inv_2
-XFILLER_17_85 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
-XFILLER_17_30 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
-Xedgedetect.dly_315ns_1.genblk1\[5\].dly_binary.genblk1\[6\].delay_unit VSS VDD edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.signal_w\[7\]
-+ VDD VSS edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.signal_w\[6\] sky130_mm_sc_hd_dlyPoly5ns
+Xedgedetect.dly_315ns_1.genblk1\[5\].dly_binary.genblk1\[6\].delay_unit VDD VSS edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.signal_w\[6\]
++ edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.signal_w\[7\] VSS VDD sky130_mm_sc_hd_dlyPoly5ns
 Xclkgen.delay_155ns_1.genblk1\[0\].bypass_enable VDD VSS clkgen.delay_155ns_1.genblk1\[0\].dly_binary.bypass_in
 + clkgen.delay_155ns_1.bypass_enable_w\[0\] clkgen.delay_155ns_1.enable_dlycontrol_w
 + VSS VDD sky130_fd_sc_hd__and2_1
-Xedgedetect.dly_315ns_1.genblk1\[0\].dly_binary.genblk1\[0\].delay_unit VSS VDD edgedetect.dly_315ns_1.genblk1\[0\].dly_binary.signal_w\[1\]
-+ VDD VSS edgedetect.dly_315ns_1.genblk1\[0\].dly_binary.signal_w\[0\] sky130_mm_sc_hd_dlyPoly5ns
+Xedgedetect.dly_315ns_1.genblk1\[0\].dly_binary.genblk1\[0\].delay_unit VDD VSS edgedetect.dly_315ns_1.genblk1\[0\].dly_binary.signal_w\[0\]
++ edgedetect.dly_315ns_1.genblk1\[0\].dly_binary.signal_w\[1\] VSS VDD sky130_mm_sc_hd_dlyPoly5ns
 Xclkgen.delay_155ns_2.genblk1\[1\].bypass_enable VDD VSS clkgen.delay_155ns_2.genblk1\[1\].dly_binary.bypass_in
 + clkgen.delay_155ns_2.bypass_enable_w\[1\] clkgen.delay_155ns_2.enable_dlycontrol_w
 + VSS VDD sky130_fd_sc_hd__and2_1
+XFILLER_0_199 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
+XFILLER_0_133 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
 XFILLER_12_284 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
+XFILLER_12_273 VDD VSS VSS VDD sky130_fd_sc_hd__decap_6
 Xclkgen.delay_155ns_3.genblk1\[2\].bypass_enable VDD VSS clkgen.delay_155ns_3.genblk1\[2\].dly_binary.bypass_in
 + clkgen.delay_155ns_3.bypass_enable_w\[2\] clkgen.delay_155ns_3.enable_dlycontrol_w
 + VSS VDD sky130_fd_sc_hd__and2_1
-XFILLER_10_3 VDD VSS VSS VDD sky130_fd_sc_hd__decap_6
-Xclkgen.delay_155ns_3.genblk1\[4\].dly_binary.genblk1\[4\].delay_unit VSS VDD clkgen.delay_155ns_3.genblk1\[4\].dly_binary.signal_w\[5\]
-+ VDD VSS clkgen.delay_155ns_3.genblk1\[4\].dly_binary.signal_w\[4\] sky130_mm_sc_hd_dlyPoly5ns
-XFILLER_14_42 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
-Xclkgen.delay_155ns_2.genblk1\[4\].dly_binary.genblk1\[10\].delay_unit VSS VDD clkgen.delay_155ns_2.genblk1\[4\].dly_binary.signal_w\[11\]
-+ VDD VSS clkgen.delay_155ns_2.genblk1\[4\].dly_binary.signal_w\[10\] sky130_mm_sc_hd_dlyPoly5ns
-XFILLER_5_214 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
-XANTENNA_clkgen.delay_155ns_3.genblk1\[3\].bypass_enable_A clkgen.delay_155ns_3.enable_dlycontrol_w
-+ VSS VDD VDD VSS sky130_fd_sc_hd__diode_2
-XFILLER_4_291 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
+XFILLER_10_3 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
+XFILLER_8_244 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
+Xclkgen.delay_155ns_3.genblk1\[4\].dly_binary.genblk1\[4\].delay_unit VDD VSS clkgen.delay_155ns_3.genblk1\[4\].dly_binary.signal_w\[4\]
++ clkgen.delay_155ns_3.genblk1\[4\].dly_binary.signal_w\[5\] VSS VDD sky130_mm_sc_hd_dlyPoly5ns
+Xclkgen.delay_155ns_2.genblk1\[4\].dly_binary.genblk1\[10\].delay_unit VDD VSS clkgen.delay_155ns_2.genblk1\[4\].dly_binary.signal_w\[10\]
++ clkgen.delay_155ns_2.genblk1\[4\].dly_binary.signal_w\[11\] VSS VDD sky130_mm_sc_hd_dlyPoly5ns
 Xedgedetect.dly_315ns_1.genblk1\[5\].control_invert dlycontrol4_in[5] edgedetect.dly_315ns_1.bypass_enable_w\[5\]
 + VDD VSS VSS VDD sky130_fd_sc_hd__inv_2
+XFILLER_2_228 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
 XPHY_30 VDD VSS VSS VDD sky130_fd_sc_hd__decap_3
-XFILLER_1_261 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
+XFILLER_17_151 VDD VSS VSS VDD sky130_fd_sc_hd__decap_8
 Xclkgen.delay_155ns_2.genblk1\[4\].dly_binary.and_bypass_switch clkgen.delay_155ns_2.genblk1\[4\].dly_binary.signal_w\[0\]
 + clkgen.delay_155ns_2.genblk1\[4\].dly_binary.bypass_in clkgen.delay_155ns_2.genblk1\[3\].dly_binary.out
 + VSS VDD VSS VDD sky130_fd_sc_hd__and2b_1
-XFILLER_11_327 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
+XFILLER_11_305 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
+XFILLER_11_32 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
 XANTENNA_clkgen.delay_155ns_1.genblk1\[3\].dly_binary.and_bypass_switch_A_N clkgen.delay_155ns_1.genblk1\[3\].dly_binary.bypass_in
 + VSS VDD VDD VSS sky130_fd_sc_hd__diode_2
 Xclkgen.delay_155ns_1.genblk1\[3\].dly_binary.and_bypass_switch clkgen.delay_155ns_1.genblk1\[3\].dly_binary.signal_w\[0\]
 + clkgen.delay_155ns_1.genblk1\[3\].dly_binary.bypass_in clkgen.delay_155ns_1.genblk1\[2\].dly_binary.out
 + VSS VDD VSS VDD sky130_fd_sc_hd__and2b_1
 XANTENNA_sampledly01_A sample_p_in VSS VDD VDD VSS sky130_fd_sc_hd__diode_2
-Xclkgen.delay_155ns_3.genblk1\[4\].dly_binary.genblk1\[9\].delay_unit VSS VDD clkgen.delay_155ns_3.genblk1\[4\].dly_binary.signal_w\[10\]
-+ VDD VSS clkgen.delay_155ns_3.genblk1\[4\].dly_binary.signal_w\[9\] sky130_mm_sc_hd_dlyPoly5ns
-Xclkgen.delay_155ns_2.genblk1\[4\].dly_binary.genblk1\[15\].delay_unit VSS VDD clkgen.delay_155ns_2.genblk1\[4\].dly_binary.signal_w\[16\]
-+ VDD VSS clkgen.delay_155ns_2.genblk1\[4\].dly_binary.signal_w\[15\] sky130_mm_sc_hd_dlyPoly5ns
-XFILLER_0_315 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
+Xclkgen.delay_155ns_3.genblk1\[4\].dly_binary.genblk1\[9\].delay_unit VDD VSS clkgen.delay_155ns_3.genblk1\[4\].dly_binary.signal_w\[9\]
++ clkgen.delay_155ns_3.genblk1\[4\].dly_binary.signal_w\[10\] VSS VDD sky130_mm_sc_hd_dlyPoly5ns
+XFILLER_3_323 VSS VDD VSS VDD sky130_ef_sc_hd__decap_12
+Xclkgen.delay_155ns_2.genblk1\[4\].dly_binary.genblk1\[15\].delay_unit VDD VSS clkgen.delay_155ns_2.genblk1\[4\].dly_binary.signal_w\[15\]
++ clkgen.delay_155ns_2.genblk1\[4\].dly_binary.signal_w\[16\] VSS VDD sky130_mm_sc_hd_dlyPoly5ns
+Xedgedetect.dly_315ns_1.genblk1\[4\].dly_binary.genblk1\[1\].delay_unit VDD VSS edgedetect.dly_315ns_1.genblk1\[4\].dly_binary.signal_w\[1\]
++ edgedetect.dly_315ns_1.genblk1\[4\].dly_binary.signal_w\[2\] VSS VDD sky130_mm_sc_hd_dlyPoly5ns
+XFILLER_17_86 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
 Xclkgen.delay_155ns_3.genblk1\[0\].control_invert dlycontrol3_in[0] clkgen.delay_155ns_3.bypass_enable_w\[0\]
 + VDD VSS VSS VDD sky130_fd_sc_hd__inv_2
-Xedgedetect.dly_315ns_1.genblk1\[4\].dly_binary.genblk1\[1\].delay_unit VSS VDD edgedetect.dly_315ns_1.genblk1\[4\].dly_binary.signal_w\[2\]
-+ VDD VSS edgedetect.dly_315ns_1.genblk1\[4\].dly_binary.signal_w\[1\] sky130_mm_sc_hd_dlyPoly5ns
-Xclkgen.delay_155ns_2.genblk1\[4\].dly_binary.genblk1\[3\].delay_unit VSS VDD clkgen.delay_155ns_2.genblk1\[4\].dly_binary.signal_w\[4\]
-+ VDD VSS clkgen.delay_155ns_2.genblk1\[4\].dly_binary.signal_w\[3\] sky130_mm_sc_hd_dlyPoly5ns
+Xclkgen.delay_155ns_2.genblk1\[4\].dly_binary.genblk1\[3\].delay_unit VDD VSS clkgen.delay_155ns_2.genblk1\[4\].dly_binary.signal_w\[3\]
++ clkgen.delay_155ns_2.genblk1\[4\].dly_binary.signal_w\[4\] VSS VDD sky130_mm_sc_hd_dlyPoly5ns
+XFILLER_12_296 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
 XANTENNA_edgedetect.dly_315ns_1.genblk1\[2\].control_invert_A dlycontrol4_in[2] VSS
 + VDD VDD VSS sky130_fd_sc_hd__diode_2
-XFILLER_12_296 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
-XFILLER_12_274 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
-XFILLER_8_245 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
-XFILLER_8_212 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
-XFILLER_14_32 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
-XFILLER_17_311 VDD VSS VSS VDD sky130_fd_sc_hd__decap_6
+XFILLER_8_201 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
+XFILLER_14_32 VDD VSS VSS VDD sky130_fd_sc_hd__decap_6
 XPHY_31 VDD VSS VSS VDD sky130_fd_sc_hd__decap_3
 XPHY_20 VDD VSS VSS VDD sky130_fd_sc_hd__decap_3
-XFILLER_1_273 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
-Xedgedetect.dly_315ns_1.genblk1\[4\].dly_binary.genblk1\[6\].delay_unit VSS VDD edgedetect.dly_315ns_1.genblk1\[4\].dly_binary.signal_w\[7\]
-+ VDD VSS edgedetect.dly_315ns_1.genblk1\[4\].dly_binary.signal_w\[6\] sky130_mm_sc_hd_dlyPoly5ns
+Xedgedetect.dly_315ns_1.genblk1\[4\].dly_binary.genblk1\[6\].delay_unit VDD VSS edgedetect.dly_315ns_1.genblk1\[4\].dly_binary.signal_w\[6\]
++ edgedetect.dly_315ns_1.genblk1\[4\].dly_binary.signal_w\[7\] VSS VDD sky130_mm_sc_hd_dlyPoly5ns
 Xedgedetect.dly_315ns_1.genblk1\[1\].dly_binary.out_mux VSS VDD edgedetect.dly_315ns_1.genblk1\[1\].dly_binary.bypass_in
 + edgedetect.dly_315ns_1.genblk1\[0\].dly_binary.out edgedetect.dly_315ns_1.genblk1\[1\].dly_binary.signal_w\[2\]
 + edgedetect.dly_315ns_1.genblk1\[1\].dly_binary.out VSS VDD sky130_fd_sc_hd__mux2_1
-XFILLER_11_339 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
-XFILLER_11_306 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
-Xclkgen.delay_155ns_2.genblk1\[4\].dly_binary.genblk1\[8\].delay_unit VSS VDD clkgen.delay_155ns_2.genblk1\[4\].dly_binary.signal_w\[9\]
-+ VDD VSS clkgen.delay_155ns_2.genblk1\[4\].dly_binary.signal_w\[8\] sky130_mm_sc_hd_dlyPoly5ns
+XFILLER_14_144 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
+Xclkgen.delay_155ns_2.genblk1\[4\].dly_binary.genblk1\[8\].delay_unit VDD VSS clkgen.delay_155ns_2.genblk1\[4\].dly_binary.signal_w\[8\]
++ clkgen.delay_155ns_2.genblk1\[4\].dly_binary.signal_w\[9\] VSS VDD sky130_mm_sc_hd_dlyPoly5ns
 Xedgedetect.dly_315ns_1.genblk1\[3\].dly_binary.out_mux VSS VDD edgedetect.dly_315ns_1.genblk1\[3\].dly_binary.bypass_in
 + edgedetect.dly_315ns_1.genblk1\[2\].dly_binary.out edgedetect.dly_315ns_1.genblk1\[3\].dly_binary.signal_w\[8\]
 + edgedetect.dly_315ns_1.genblk1\[3\].dly_binary.out VSS VDD sky130_fd_sc_hd__mux2_1
+XFILLER_9_192 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
+XFILLER_9_181 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
+XANTENNA_inbuf_2_A start_conv_in VSS VDD VDD VSS sky130_fd_sc_hd__diode_2
 Xedgedetect.dly_315ns_1.genblk1\[5\].dly_binary.out_mux VSS VDD edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.bypass_in
 + edgedetect.dly_315ns_1.genblk1\[4\].dly_binary.out edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.signal_w\[32\]
 + edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.out VSS VDD sky130_fd_sc_hd__mux2_1
-Xclkgen.delay_155ns_3.genblk1\[3\].dly_binary.genblk1\[4\].delay_unit VSS VDD clkgen.delay_155ns_3.genblk1\[3\].dly_binary.signal_w\[5\]
-+ VDD VSS clkgen.delay_155ns_3.genblk1\[3\].dly_binary.signal_w\[4\] sky130_mm_sc_hd_dlyPoly5ns
-XFILLER_11_125 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
-XANTENNA_inbuf_2_A start_conv_in VSS VDD VDD VSS sky130_fd_sc_hd__diode_2
-XFILLER_6_151 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
-Xclkgen.delay_155ns_1.genblk1\[4\].dly_binary.genblk1\[2\].delay_unit VSS VDD clkgen.delay_155ns_1.genblk1\[4\].dly_binary.signal_w\[3\]
-+ VDD VSS clkgen.delay_155ns_1.genblk1\[4\].dly_binary.signal_w\[2\] sky130_mm_sc_hd_dlyPoly5ns
-XANTENNA_clkgen.delay_155ns_1.genblk1\[3\].dly_binary.out_mux_A1 clkgen.delay_155ns_1.genblk1\[2\].dly_binary.out
-+ VSS VDD VDD VSS sky130_fd_sc_hd__diode_2
-XFILLER_3_187 VDD VSS VSS VDD sky130_fd_sc_hd__decap_6
+Xclkgen.delay_155ns_3.genblk1\[3\].dly_binary.genblk1\[4\].delay_unit VDD VSS clkgen.delay_155ns_3.genblk1\[3\].dly_binary.signal_w\[4\]
++ clkgen.delay_155ns_3.genblk1\[3\].dly_binary.signal_w\[5\] VSS VDD sky130_mm_sc_hd_dlyPoly5ns
+XFILLER_11_125 VDD VSS VSS VDD sky130_fd_sc_hd__decap_6
+XFILLER_3_335 VDD VSS VSS VDD sky130_fd_sc_hd__decap_8
+XFILLER_6_173 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
+XFILLER_17_32 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
+Xclkgen.delay_155ns_1.genblk1\[4\].dly_binary.genblk1\[2\].delay_unit VDD VSS clkgen.delay_155ns_1.genblk1\[4\].dly_binary.signal_w\[2\]
++ clkgen.delay_155ns_1.genblk1\[4\].dly_binary.signal_w\[3\] VSS VDD sky130_mm_sc_hd_dlyPoly5ns
+XFILLER_3_187 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
+XFILLER_0_90 VDD VSS VSS VDD sky130_fd_sc_hd__decap_3
 XANTENNA_clkgen.delay_155ns_1.genblk1\[3\].dly_binary.out_mux_S clkgen.delay_155ns_1.genblk1\[3\].dly_binary.bypass_in
 + VSS VDD VDD VSS sky130_fd_sc_hd__diode_2
-Xedgedetect.dly_315ns_1.genblk1\[5\].dly_binary.genblk1\[13\].delay_unit VSS VDD edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.signal_w\[14\]
-+ VDD VSS edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.signal_w\[13\] sky130_mm_sc_hd_dlyPoly5ns
-XFILLER_12_253 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
-Xclkgen.delay_155ns_3.genblk1\[4\].dly_binary.genblk1\[13\].delay_unit VSS VDD clkgen.delay_155ns_3.genblk1\[4\].dly_binary.signal_w\[14\]
-+ VDD VSS clkgen.delay_155ns_3.genblk1\[4\].dly_binary.signal_w\[13\] sky130_mm_sc_hd_dlyPoly5ns
-XFILLER_14_55 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
-XFILLER_5_249 VDD VSS VSS VDD sky130_fd_sc_hd__decap_6
+Xedgedetect.dly_315ns_1.genblk1\[5\].dly_binary.genblk1\[13\].delay_unit VDD VSS edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.signal_w\[13\]
++ edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.signal_w\[14\] VSS VDD sky130_mm_sc_hd_dlyPoly5ns
+Xclkgen.delay_155ns_3.genblk1\[4\].dly_binary.genblk1\[13\].delay_unit VDD VSS clkgen.delay_155ns_3.genblk1\[4\].dly_binary.signal_w\[13\]
++ clkgen.delay_155ns_3.genblk1\[4\].dly_binary.signal_w\[14\] VSS VDD sky130_mm_sc_hd_dlyPoly5ns
 XPHY_32 VDD VSS VSS VDD sky130_fd_sc_hd__decap_3
 XPHY_21 VDD VSS VSS VDD sky130_fd_sc_hd__decap_3
 Xclkgen.delay_155ns_1.genblk1\[4\].dly_binary.and_bypass_switch clkgen.delay_155ns_1.genblk1\[4\].dly_binary.signal_w\[0\]
 + clkgen.delay_155ns_1.genblk1\[4\].dly_binary.bypass_in clkgen.delay_155ns_1.genblk1\[3\].dly_binary.out
 + VSS VDD VSS VDD sky130_fd_sc_hd__and2b_1
 XPHY_10 VDD VSS VSS VDD sky130_fd_sc_hd__decap_3
-Xedgedetect.dly_315ns_1.genblk1\[4\].dly_binary.genblk1\[14\].delay_unit VSS VDD edgedetect.dly_315ns_1.genblk1\[4\].dly_binary.signal_w\[15\]
-+ VDD VSS edgedetect.dly_315ns_1.genblk1\[4\].dly_binary.signal_w\[14\] sky130_mm_sc_hd_dlyPoly5ns
+Xedgedetect.dly_315ns_1.genblk1\[4\].dly_binary.genblk1\[14\].delay_unit VDD VSS edgedetect.dly_315ns_1.genblk1\[4\].dly_binary.signal_w\[14\]
++ edgedetect.dly_315ns_1.genblk1\[4\].dly_binary.signal_w\[15\] VSS VDD sky130_mm_sc_hd_dlyPoly5ns
 XANTENNA_edgedetect.dly_315ns_1.genblk1\[2\].dly_binary.and_bypass_switch_A_N edgedetect.dly_315ns_1.genblk1\[2\].dly_binary.bypass_in
 + VSS VDD VDD VSS sky130_fd_sc_hd__diode_2
-XFILLER_1_285 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
-XFILLER_1_230 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
-Xedgedetect.dly_315ns_1.genblk1\[3\].dly_binary.genblk1\[1\].delay_unit VSS VDD edgedetect.dly_315ns_1.genblk1\[3\].dly_binary.signal_w\[2\]
-+ VDD VSS edgedetect.dly_315ns_1.genblk1\[3\].dly_binary.signal_w\[1\] sky130_mm_sc_hd_dlyPoly5ns
+XFILLER_2_58 VDD VSS VSS VDD sky130_fd_sc_hd__decap_8
+Xedgedetect.dly_315ns_1.genblk1\[3\].dly_binary.genblk1\[1\].delay_unit VDD VSS edgedetect.dly_315ns_1.genblk1\[3\].dly_binary.signal_w\[1\]
++ edgedetect.dly_315ns_1.genblk1\[3\].dly_binary.signal_w\[2\] VSS VDD sky130_mm_sc_hd_dlyPoly5ns
+XFILLER_11_89 VDD VSS VSS VDD sky130_fd_sc_hd__decap_6
 Xoutbuf_1 VDD VSS clk_dig_out clkgen.clk_dig_out VSS VDD sky130_fd_sc_hd__buf_4
-Xclkgen.delay_155ns_1.genblk1\[4\].dly_binary.genblk1\[7\].delay_unit VSS VDD clkgen.delay_155ns_1.genblk1\[4\].dly_binary.signal_w\[8\]
-+ VDD VSS clkgen.delay_155ns_1.genblk1\[4\].dly_binary.signal_w\[7\] sky130_mm_sc_hd_dlyPoly5ns
-XANTENNA_edgedetect.dly_315ns_1.genblk1\[4\].bypass_enable_A edgedetect.dly_315ns_1.enable_dlycontrol_w
-+ VSS VDD VDD VSS sky130_fd_sc_hd__diode_2
-Xclkgen.delay_155ns_2.genblk1\[3\].dly_binary.genblk1\[3\].delay_unit VSS VDD clkgen.delay_155ns_2.genblk1\[3\].dly_binary.signal_w\[4\]
-+ VDD VSS clkgen.delay_155ns_2.genblk1\[3\].dly_binary.signal_w\[3\] sky130_mm_sc_hd_dlyPoly5ns
-Xedgedetect.dly_315ns_1.genblk1\[5\].dly_binary.genblk1\[18\].delay_unit VSS VDD edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.signal_w\[19\]
-+ VDD VSS edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.signal_w\[18\] sky130_mm_sc_hd_dlyPoly5ns
-XFILLER_18_292 VDD VSS VSS VDD sky130_fd_sc_hd__decap_8
+Xclkgen.delay_155ns_1.genblk1\[4\].dly_binary.genblk1\[7\].delay_unit VDD VSS clkgen.delay_155ns_1.genblk1\[4\].dly_binary.signal_w\[7\]
++ clkgen.delay_155ns_1.genblk1\[4\].dly_binary.signal_w\[8\] VSS VDD sky130_mm_sc_hd_dlyPoly5ns
+XFILLER_14_134 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
+Xclkgen.delay_155ns_2.genblk1\[3\].dly_binary.genblk1\[3\].delay_unit VDD VSS clkgen.delay_155ns_2.genblk1\[3\].dly_binary.signal_w\[3\]
++ clkgen.delay_155ns_2.genblk1\[3\].dly_binary.signal_w\[4\] VSS VDD sky130_mm_sc_hd_dlyPoly5ns
+Xedgedetect.dly_315ns_1.genblk1\[5\].dly_binary.genblk1\[18\].delay_unit VDD VSS edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.signal_w\[18\]
++ edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.signal_w\[19\] VSS VDD sky130_mm_sc_hd_dlyPoly5ns
+XFILLER_3_303 VDD VSS VSS VDD sky130_fd_sc_hd__decap_6
+XFILLER_18_292 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
 XANTENNA_clkgen.delay_155ns_1.genblk1\[4\].control_invert_A dlycontrol1_in[4] VSS
 + VDD VDD VSS sky130_fd_sc_hd__diode_2
-Xedgedetect.dly_315ns_1.genblk1\[5\].dly_binary.genblk1\[20\].delay_unit VSS VDD edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.signal_w\[21\]
-+ VDD VSS edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.signal_w\[20\] sky130_mm_sc_hd_dlyPoly5ns
-XFILLER_0_306 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
+Xedgedetect.dly_315ns_1.genblk1\[5\].dly_binary.genblk1\[20\].delay_unit VDD VSS edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.signal_w\[20\]
++ edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.signal_w\[21\] VSS VDD sky130_mm_sc_hd_dlyPoly5ns
+XFILLER_15_240 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
 Xclkgen.delay_155ns_1.genblk1\[1\].control_invert dlycontrol1_in[1] clkgen.delay_155ns_1.bypass_enable_w\[1\]
 + VDD VSS VSS VDD sky130_fd_sc_hd__inv_2
 Xclkgen.delay_155ns_1.genblk1\[1\].dly_binary.out_mux VSS VDD clkgen.delay_155ns_1.genblk1\[1\].dly_binary.bypass_in
 + clkgen.delay_155ns_1.genblk1\[0\].dly_binary.out clkgen.delay_155ns_1.genblk1\[1\].dly_binary.signal_w\[2\]
 + clkgen.delay_155ns_1.genblk1\[1\].dly_binary.out VSS VDD sky130_fd_sc_hd__mux2_1
-XFILLER_8_203 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
-XFILLER_0_125 VDD VSS VSS VDD sky130_fd_sc_hd__decap_3
-Xedgedetect.dly_315ns_1.genblk1\[3\].dly_binary.genblk1\[6\].delay_unit VSS VDD edgedetect.dly_315ns_1.genblk1\[3\].dly_binary.signal_w\[7\]
-+ VDD VSS edgedetect.dly_315ns_1.genblk1\[3\].dly_binary.signal_w\[6\] sky130_mm_sc_hd_dlyPoly5ns
+Xedgedetect.dly_315ns_1.genblk1\[3\].dly_binary.genblk1\[6\].delay_unit VDD VSS edgedetect.dly_315ns_1.genblk1\[3\].dly_binary.signal_w\[6\]
++ edgedetect.dly_315ns_1.genblk1\[3\].dly_binary.signal_w\[7\] VSS VDD sky130_mm_sc_hd_dlyPoly5ns
 Xclkgen.delay_155ns_1.genblk1\[3\].dly_binary.out_mux VSS VDD clkgen.delay_155ns_1.genblk1\[3\].dly_binary.bypass_in
 + clkgen.delay_155ns_1.genblk1\[2\].dly_binary.out clkgen.delay_155ns_1.genblk1\[3\].dly_binary.signal_w\[8\]
 + clkgen.delay_155ns_1.genblk1\[3\].dly_binary.out VSS VDD sky130_fd_sc_hd__mux2_1
-XFILLER_17_302 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
 XANTENNA_clkgen.delay_155ns_2.genblk1\[3\].control_invert_A dlycontrol2_in[3] VSS
 + VDD VDD VSS sky130_fd_sc_hd__diode_2
-XANTENNA_clkgen.delay_155ns_1.genblk1\[1\].dly_binary.out_mux_S clkgen.delay_155ns_1.genblk1\[1\].dly_binary.bypass_in
+XANTENNA_edgedetect.dly_315ns_1.genblk1\[4\].dly_binary.and_bypass_switch_B edgedetect.dly_315ns_1.genblk1\[3\].dly_binary.out
 + VSS VDD VDD VSS sky130_fd_sc_hd__diode_2
+XFILLER_4_272 VDD VSS VSS VDD sky130_fd_sc_hd__decap_6
 XPHY_33 VDD VSS VSS VDD sky130_fd_sc_hd__decap_3
 XPHY_22 VDD VSS VSS VDD sky130_fd_sc_hd__decap_3
+XFILLER_2_209 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
 XPHY_11 VDD VSS VSS VDD sky130_fd_sc_hd__decap_3
 XFILLER_17_121 VDD VSS VSS VDD sky130_fd_sc_hd__decap_3
-XFILLER_1_297 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
-Xedgedetect.dly_315ns_1.genblk1\[5\].dly_binary.genblk1\[25\].delay_unit VSS VDD edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.signal_w\[26\]
-+ VDD VSS edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.signal_w\[25\] sky130_mm_sc_hd_dlyPoly5ns
-Xclkgen.delay_155ns_1.genblk1\[3\].dly_binary.genblk1\[2\].delay_unit VSS VDD clkgen.delay_155ns_1.genblk1\[3\].dly_binary.signal_w\[3\]
-+ VDD VSS clkgen.delay_155ns_1.genblk1\[3\].dly_binary.signal_w\[2\] sky130_mm_sc_hd_dlyPoly5ns
+XFILLER_1_253 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
+Xedgedetect.dly_315ns_1.genblk1\[5\].dly_binary.genblk1\[25\].delay_unit VDD VSS edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.signal_w\[25\]
++ edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.signal_w\[26\] VSS VDD sky130_mm_sc_hd_dlyPoly5ns
+Xclkgen.delay_155ns_1.genblk1\[3\].dly_binary.genblk1\[2\].delay_unit VDD VSS clkgen.delay_155ns_1.genblk1\[3\].dly_binary.signal_w\[2\]
++ clkgen.delay_155ns_1.genblk1\[3\].dly_binary.signal_w\[3\] VSS VDD sky130_mm_sc_hd_dlyPoly5ns
 Xoutbuf_2 VDD VSS clk_comp_out clkgen.clk_comp_out VSS VDD sky130_fd_sc_hd__buf_4
-XFILLER_14_124 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
-XFILLER_9_183 VDD VSS VSS VDD sky130_fd_sc_hd__decap_3
+XFILLER_6_334 VDD VSS VSS VDD sky130_fd_sc_hd__decap_6
 XANTENNA_clkgen.delay_155ns_3.genblk1\[2\].control_invert_A dlycontrol3_in[2] VSS
 + VDD VDD VSS sky130_fd_sc_hd__diode_2
-XFILLER_3_315 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
-XFILLER_19_3 VDD VSS VSS VDD sky130_fd_sc_hd__decap_6
+XFILLER_8_58 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
 XFILLER_6_164 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
-XFILLER_3_178 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
-Xedgedetect.dly_315ns_1.genblk1\[2\].dly_binary.genblk1\[1\].delay_unit VSS VDD edgedetect.dly_315ns_1.genblk1\[2\].dly_binary.signal_w\[2\]
-+ VDD VSS edgedetect.dly_315ns_1.genblk1\[2\].dly_binary.signal_w\[1\] sky130_mm_sc_hd_dlyPoly5ns
-Xclkgen.delay_155ns_1.genblk1\[3\].dly_binary.genblk1\[7\].delay_unit VSS VDD clkgen.delay_155ns_1.genblk1\[3\].dly_binary.signal_w\[8\]
-+ VDD VSS clkgen.delay_155ns_1.genblk1\[3\].dly_binary.signal_w\[7\] sky130_mm_sc_hd_dlyPoly5ns
-Xclkgen.delay_155ns_2.genblk1\[2\].dly_binary.genblk1\[3\].delay_unit VSS VDD clkgen.delay_155ns_2.genblk1\[2\].dly_binary.signal_w\[4\]
-+ VDD VSS clkgen.delay_155ns_2.genblk1\[2\].dly_binary.signal_w\[3\] sky130_mm_sc_hd_dlyPoly5ns
+XFILLER_0_307 VDD VSS VSS VDD sky130_fd_sc_hd__decap_3
+XFILLER_12_255 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
+Xedgedetect.dly_315ns_1.genblk1\[2\].dly_binary.genblk1\[1\].delay_unit VDD VSS edgedetect.dly_315ns_1.genblk1\[2\].dly_binary.signal_w\[1\]
++ edgedetect.dly_315ns_1.genblk1\[2\].dly_binary.signal_w\[2\] VSS VDD sky130_mm_sc_hd_dlyPoly5ns
+Xclkgen.delay_155ns_1.genblk1\[3\].dly_binary.genblk1\[7\].delay_unit VDD VSS clkgen.delay_155ns_1.genblk1\[3\].dly_binary.signal_w\[7\]
++ clkgen.delay_155ns_1.genblk1\[3\].dly_binary.signal_w\[8\] VSS VDD sky130_mm_sc_hd_dlyPoly5ns
+XFILLER_17_303 VDD VSS VSS VDD sky130_fd_sc_hd__decap_6
+Xclkgen.delay_155ns_2.genblk1\[2\].dly_binary.genblk1\[3\].delay_unit VDD VSS clkgen.delay_155ns_2.genblk1\[2\].dly_binary.signal_w\[3\]
++ clkgen.delay_155ns_2.genblk1\[2\].dly_binary.signal_w\[4\] VSS VDD sky130_mm_sc_hd_dlyPoly5ns
 XPHY_12 VDD VSS VSS VDD sky130_fd_sc_hd__decap_3
-XFILLER_17_155 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
 XPHY_34 VDD VSS VSS VDD sky130_fd_sc_hd__decap_3
+XFILLER_14_306 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
 XPHY_23 VDD VSS VSS VDD sky130_fd_sc_hd__decap_3
-XFILLER_1_254 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
-XFILLER_2_16 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
+XFILLER_1_221 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
+XFILLER_1_265 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
 Xoutbuf_3 VDD VSS sample_p_out sample_p_4 VSS VDD sky130_fd_sc_hd__buf_4
 Xclkgen.delay_155ns_3.genblk1\[0\].dly_binary.out_mux VSS VDD clkgen.delay_155ns_3.genblk1\[0\].dly_binary.bypass_in
 + clkgen.delay_155ns_3.genblk1\[0\].dly_binary.in clkgen.delay_155ns_3.genblk1\[0\].dly_binary.signal_w\[1\]
 + clkgen.delay_155ns_3.genblk1\[0\].dly_binary.out VSS VDD sky130_fd_sc_hd__mux2_1
-XFILLER_13_180 VDD VSS VSS VDD sky130_fd_sc_hd__decap_6
 Xclkgen.delay_155ns_3.genblk1\[2\].dly_binary.out_mux VSS VDD clkgen.delay_155ns_3.genblk1\[2\].dly_binary.bypass_in
 + clkgen.delay_155ns_3.genblk1\[1\].dly_binary.out clkgen.delay_155ns_3.genblk1\[2\].dly_binary.signal_w\[4\]
 + clkgen.delay_155ns_3.genblk1\[2\].dly_binary.out VSS VDD sky130_fd_sc_hd__mux2_1
+XFILLER_9_151 VDD VSS VSS VDD sky130_fd_sc_hd__decap_6
 XANTENNA_outbuf_1_A clkgen.clk_dig_out VSS VDD VDD VSS sky130_fd_sc_hd__diode_2
 Xedgedetect.dly_315ns_1.genblk1\[5\].bypass_enable VDD VSS edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.bypass_in
 + edgedetect.dly_315ns_1.bypass_enable_w\[5\] edgedetect.dly_315ns_1.enable_dlycontrol_w
@@ -1054,220 +1024,216 @@ Xedgedetect.dly_315ns_1.genblk1\[5\].bypass_enable VDD VSS edgedetect.dly_315ns_
 Xclkgen.delay_155ns_3.genblk1\[4\].dly_binary.out_mux VSS VDD clkgen.delay_155ns_3.genblk1\[4\].dly_binary.bypass_in
 + clkgen.delay_155ns_3.genblk1\[3\].dly_binary.out clkgen.delay_155ns_3.genblk1\[4\].dly_binary.signal_w\[16\]
 + clkgen.clk_comp_out VSS VDD sky130_fd_sc_hd__mux2_1
-XFILLER_16_209 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
+XFILLER_18_272 VDD VSS VSS VDD sky130_fd_sc_hd__decap_6
+XFILLER_15_275 VDD VSS VSS VDD sky130_fd_sc_hd__decap_8
+XFILLER_15_231 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
 XFILLER_12_267 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
-Xclkgen.delay_155ns_1.genblk1\[2\].dly_binary.genblk1\[2\].delay_unit VSS VDD clkgen.delay_155ns_1.genblk1\[2\].dly_binary.signal_w\[3\]
-+ VDD VSS clkgen.delay_155ns_1.genblk1\[2\].dly_binary.signal_w\[2\] sky130_mm_sc_hd_dlyPoly5ns
-XFILLER_4_274 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
-XFILLER_4_285 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
+Xclkgen.delay_155ns_1.genblk1\[2\].dly_binary.genblk1\[2\].delay_unit VDD VSS clkgen.delay_155ns_1.genblk1\[2\].dly_binary.signal_w\[2\]
++ clkgen.delay_155ns_1.genblk1\[2\].dly_binary.signal_w\[3\] VSS VDD sky130_mm_sc_hd_dlyPoly5ns
+XFILLER_17_337 VDD VSS VSS VDD sky130_fd_sc_hd__decap_6
 XPHY_35 VDD VSS VSS VDD sky130_fd_sc_hd__decap_3
 XPHY_24 VDD VSS VSS VDD sky130_fd_sc_hd__decap_3
+XFILLER_9_3 VDD VSS VSS VDD sky130_fd_sc_hd__decap_3
 XPHY_13 VDD VSS VSS VDD sky130_fd_sc_hd__decap_3
-XFILLER_1_244 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
+XFILLER_1_233 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
+XFILLER_1_277 VSS VDD VSS VDD sky130_ef_sc_hd__decap_12
 Xoutbuf_4 VDD VSS sample_n_out sample_n_4 VSS VDD sky130_fd_sc_hd__buf_4
 Xclkgen.delay_155ns_3.enablebuffer VDD VSS clkgen.delay_155ns_3.enable_dlycontrol_w
 + enable_dlycontrol_in VSS VDD sky130_fd_sc_hd__buf_4
-XFILLER_6_336 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
-XFILLER_3_71 VDD VSS VSS VDD sky130_fd_sc_hd__decap_6
 Xclkgen.delay_155ns_2.genblk1\[2\].control_invert dlycontrol2_in[2] clkgen.delay_155ns_2.bypass_enable_w\[2\]
 + VDD VSS VSS VDD sky130_fd_sc_hd__inv_2
-XFILLER_19_218 VDD VSS VSS VDD sky130_fd_sc_hd__decap_3
-Xedgedetect.dly_315ns_1.genblk1\[1\].dly_binary.genblk1\[1\].delay_unit VSS VDD edgedetect.dly_315ns_1.genblk1\[1\].dly_binary.signal_w\[2\]
-+ VDD VSS edgedetect.dly_315ns_1.genblk1\[1\].dly_binary.signal_w\[1\] sky130_mm_sc_hd_dlyPoly5ns
+XFILLER_19_218 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
+Xedgedetect.dly_315ns_1.genblk1\[1\].dly_binary.genblk1\[1\].delay_unit VDD VSS edgedetect.dly_315ns_1.genblk1\[1\].dly_binary.signal_w\[1\]
++ edgedetect.dly_315ns_1.genblk1\[1\].dly_binary.signal_w\[2\] VSS VDD sky130_mm_sc_hd_dlyPoly5ns
+XFILLER_10_173 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
 XFILLER_8_16 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
-XFILLER_3_306 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
 XANTENNA_clkgen.delay_155ns_2.genblk1\[4\].dly_binary.out_mux_A0 clkgen.delay_155ns_2.genblk1\[4\].dly_binary.signal_w\[16\]
 + VSS VDD VDD VSS sky130_fd_sc_hd__diode_2
-XFILLER_3_147 VDD VSS VSS VDD sky130_fd_sc_hd__decap_6
-XFILLER_15_276 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
 XFILLER_0_94 VDD VSS VSS VDD sky130_fd_sc_hd__decap_3
-XFILLER_12_246 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
 XANTENNA_edgedetect.dly_315ns_1.genblk1\[1\].control_invert_A dlycontrol4_in[1] VSS
 + VDD VDD VSS sky130_fd_sc_hd__diode_2
-Xclkgen.delay_155ns_1.genblk1\[4\].dly_binary.genblk1\[13\].delay_unit VSS VDD clkgen.delay_155ns_1.genblk1\[4\].dly_binary.signal_w\[14\]
-+ VDD VSS clkgen.delay_155ns_1.genblk1\[4\].dly_binary.signal_w\[13\] sky130_mm_sc_hd_dlyPoly5ns
-XFILLER_4_297 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
+Xclkgen.delay_155ns_1.genblk1\[4\].dly_binary.genblk1\[13\].delay_unit VDD VSS clkgen.delay_155ns_1.genblk1\[4\].dly_binary.signal_w\[13\]
++ clkgen.delay_155ns_1.genblk1\[4\].dly_binary.signal_w\[14\] VSS VDD sky130_mm_sc_hd_dlyPoly5ns
 XPHY_36 VDD VSS VSS VDD sky130_fd_sc_hd__decap_3
 XPHY_25 VDD VSS VSS VDD sky130_fd_sc_hd__decap_3
-XFILLER_1_267 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
-XFILLER_1_223 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
+XFILLER_1_245 VDD VSS VSS VDD sky130_fd_sc_hd__decap_3
+XFILLER_1_201 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
 XPHY_14 VDD VSS VSS VDD sky130_fd_sc_hd__decap_3
 Xedgedetect.dly_315ns_1.genblk1\[0\].bypass_enable VDD VSS edgedetect.dly_315ns_1.genblk1\[0\].dly_binary.bypass_in
 + edgedetect.dly_315ns_1.bypass_enable_w\[0\] edgedetect.dly_315ns_1.enable_dlycontrol_w
 + VSS VDD sky130_fd_sc_hd__and2_1
+XFILLER_1_289 VSS VDD VSS VDD sky130_ef_sc_hd__decap_12
 Xoutbuf_5 VDD VSS nsample_p_out nsample_p_4 VSS VDD sky130_fd_sc_hd__buf_4
-Xedgedetect.dly_315ns_1.genblk1\[5\].dly_binary.genblk1\[2\].delay_unit VSS VDD edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.signal_w\[3\]
-+ VDD VSS edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.signal_w\[2\] sky130_mm_sc_hd_dlyPoly5ns
 XANTENNA_edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.out_mux_S edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.bypass_in
 + VSS VDD VDD VSS sky130_fd_sc_hd__diode_2
-XFILLER_10_322 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
-XFILLER_13_171 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
-XFILLER_18_274 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
-XFILLER_10_174 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
-Xclkgen.delay_155ns_3.genblk1\[4\].dly_binary.genblk1\[0\].delay_unit VSS VDD clkgen.delay_155ns_3.genblk1\[4\].dly_binary.signal_w\[1\]
-+ VDD VSS clkgen.delay_155ns_3.genblk1\[4\].dly_binary.signal_w\[0\] sky130_mm_sc_hd_dlyPoly5ns
+Xedgedetect.dly_315ns_1.genblk1\[5\].dly_binary.genblk1\[2\].delay_unit VDD VSS edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.signal_w\[2\]
++ edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.signal_w\[3\] VSS VDD sky130_mm_sc_hd_dlyPoly5ns
+XFILLER_11_119 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
+XFILLER_3_94 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
+XFILLER_18_285 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
 Xclkgen.delay_155ns_1.genblk1\[1\].bypass_enable VDD VSS clkgen.delay_155ns_1.genblk1\[1\].dly_binary.bypass_in
 + clkgen.delay_155ns_1.bypass_enable_w\[1\] clkgen.delay_155ns_1.enable_dlycontrol_w
 + VSS VDD sky130_fd_sc_hd__and2_1
-XFILLER_17_59 VDD VSS VSS VDD sky130_fd_sc_hd__decap_3
+Xclkgen.delay_155ns_3.genblk1\[4\].dly_binary.genblk1\[0\].delay_unit VDD VSS clkgen.delay_155ns_3.genblk1\[4\].dly_binary.signal_w\[0\]
++ clkgen.delay_155ns_3.genblk1\[4\].dly_binary.signal_w\[1\] VSS VDD sky130_mm_sc_hd_dlyPoly5ns
 Xclkgen.delay_155ns_2.genblk1\[2\].bypass_enable VDD VSS clkgen.delay_155ns_2.genblk1\[2\].dly_binary.bypass_in
 + clkgen.delay_155ns_2.bypass_enable_w\[2\] clkgen.delay_155ns_2.enable_dlycontrol_w
 + VSS VDD sky130_fd_sc_hd__and2_1
-XFILLER_3_137 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
 XANTENNA_clkgen.delay_155ns_2.genblk1\[1\].dly_binary.out_mux_S clkgen.delay_155ns_2.genblk1\[1\].dly_binary.bypass_in
 + VSS VDD VDD VSS sky130_fd_sc_hd__diode_2
+XFILLER_15_222 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
+XFILLER_17_3 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
 Xclkgen.delay_155ns_3.genblk1\[3\].bypass_enable VDD VSS clkgen.delay_155ns_3.genblk1\[3\].dly_binary.bypass_in
 + clkgen.delay_155ns_3.bypass_enable_w\[3\] clkgen.delay_155ns_3.enable_dlycontrol_w
 + VSS VDD sky130_fd_sc_hd__and2_1
-XFILLER_9_93 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
-Xedgedetect.dly_315ns_1.genblk1\[5\].dly_binary.genblk1\[7\].delay_unit VSS VDD edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.signal_w\[8\]
-+ VDD VSS edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.signal_w\[7\] sky130_mm_sc_hd_dlyPoly5ns
-XFILLER_14_16 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
+XFILLER_0_107 VDD VSS VSS VDD sky130_fd_sc_hd__decap_8
+XFILLER_12_225 VDD VSS VSS VDD sky130_fd_sc_hd__decap_6
+Xedgedetect.dly_315ns_1.genblk1\[5\].dly_binary.genblk1\[7\].delay_unit VDD VSS edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.signal_w\[7\]
++ edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.signal_w\[8\] VSS VDD sky130_mm_sc_hd_dlyPoly5ns
 Xedgedetect.dly_315ns_1.genblk1\[3\].control_invert dlycontrol4_in[3] edgedetect.dly_315ns_1.bypass_enable_w\[3\]
 + VDD VSS VSS VDD sky130_fd_sc_hd__inv_2
 XPHY_37 VDD VSS VSS VDD sky130_fd_sc_hd__decap_3
 XPHY_26 VDD VSS VSS VDD sky130_fd_sc_hd__decap_3
 XPHY_15 VDD VSS VSS VDD sky130_fd_sc_hd__decap_3
-XFILLER_17_125 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
+XFILLER_6_94 VDD VSS VSS VDD sky130_fd_sc_hd__decap_6
 XFILLER_17_114 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
-Xclkgen.delay_155ns_3.genblk1\[4\].dly_binary.genblk1\[5\].delay_unit VSS VDD clkgen.delay_155ns_3.genblk1\[4\].dly_binary.signal_w\[6\]
-+ VDD VSS clkgen.delay_155ns_3.genblk1\[4\].dly_binary.signal_w\[5\] sky130_mm_sc_hd_dlyPoly5ns
-XFILLER_1_279 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
-XFILLER_16_180 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
-Xclkgen.delay_155ns_2.genblk1\[4\].dly_binary.genblk1\[11\].delay_unit VSS VDD clkgen.delay_155ns_2.genblk1\[4\].dly_binary.signal_w\[12\]
-+ VDD VSS clkgen.delay_155ns_2.genblk1\[4\].dly_binary.signal_w\[11\] sky130_mm_sc_hd_dlyPoly5ns
+Xclkgen.delay_155ns_3.genblk1\[4\].dly_binary.genblk1\[5\].delay_unit VDD VSS clkgen.delay_155ns_3.genblk1\[4\].dly_binary.signal_w\[5\]
++ clkgen.delay_155ns_3.genblk1\[4\].dly_binary.signal_w\[6\] VSS VDD sky130_mm_sc_hd_dlyPoly5ns
+Xclkgen.delay_155ns_2.genblk1\[4\].dly_binary.genblk1\[11\].delay_unit VDD VSS clkgen.delay_155ns_2.genblk1\[4\].dly_binary.signal_w\[11\]
++ clkgen.delay_155ns_2.genblk1\[4\].dly_binary.signal_w\[12\] VSS VDD sky130_mm_sc_hd_dlyPoly5ns
 Xoutbuf_6 VDD VSS nsample_n_out nsample_n_4 VSS VDD sky130_fd_sc_hd__buf_4
-XFILLER_9_176 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
+XFILLER_14_106 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
 XFILLER_10_164 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
 XANTENNA_edgedetect.dly_315ns_1.genblk1\[3\].dly_binary.out_mux_S edgedetect.dly_315ns_1.genblk1\[3\].dly_binary.bypass_in
 + VSS VDD VDD VSS sky130_fd_sc_hd__diode_2
+XANTENNA_edgedetect.dly_315ns_1.genblk1\[4\].dly_binary.out_mux_A0 edgedetect.dly_315ns_1.genblk1\[4\].dly_binary.signal_w\[16\]
++ VSS VDD VDD VSS sky130_fd_sc_hd__diode_2
 XANTENNA_clkgen.delay_155ns_1.genblk1\[3\].control_invert_A dlycontrol1_in[3] VSS
 + VDD VDD VSS sky130_fd_sc_hd__diode_2
-XFILLER_3_116 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
+XFILLER_9_94 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
 XFILLER_0_63 VDD VSS VSS VDD sky130_fd_sc_hd__decap_3
-XANTENNA_clkgen.delay_155ns_1.genblk1\[1\].dly_binary.and_bypass_switch_A_N clkgen.delay_155ns_1.genblk1\[1\].dly_binary.bypass_in
-+ VSS VDD VDD VSS sky130_fd_sc_hd__diode_2
+XFILLER_5_19 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
+XFILLER_11_281 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
 XANTENNA_clkgen.delay_155ns_2.genblk1\[0\].dly_binary.out_mux_A1 clkgen.clk_dig_out
 + VSS VDD VDD VSS sky130_fd_sc_hd__diode_2
-Xedgedetect.dly_315ns_1.genblk1\[4\].dly_binary.genblk1\[2\].delay_unit VSS VDD edgedetect.dly_315ns_1.genblk1\[4\].dly_binary.signal_w\[3\]
-+ VDD VSS edgedetect.dly_315ns_1.genblk1\[4\].dly_binary.signal_w\[2\] sky130_mm_sc_hd_dlyPoly5ns
+Xedgedetect.dly_315ns_1.genblk1\[4\].dly_binary.genblk1\[2\].delay_unit VDD VSS edgedetect.dly_315ns_1.genblk1\[4\].dly_binary.signal_w\[2\]
++ edgedetect.dly_315ns_1.genblk1\[4\].dly_binary.signal_w\[3\] VSS VDD sky130_mm_sc_hd_dlyPoly5ns
+XFILLER_4_244 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
 XPHY_38 VDD VSS VSS VDD sky130_fd_sc_hd__decap_3
 XPHY_27 VDD VSS VSS VDD sky130_fd_sc_hd__decap_3
-Xclkgen.delay_155ns_2.genblk1\[4\].dly_binary.genblk1\[4\].delay_unit VSS VDD clkgen.delay_155ns_2.genblk1\[4\].dly_binary.signal_w\[5\]
-+ VDD VSS clkgen.delay_155ns_2.genblk1\[4\].dly_binary.signal_w\[4\] sky130_mm_sc_hd_dlyPoly5ns
-XPHY_16 VDD VSS VSS VDD sky130_fd_sc_hd__decap_3
 XANTENNA_clkgen.delay_155ns_2.genblk1\[2\].control_invert_A dlycontrol2_in[2] VSS
 + VDD VDD VSS sky130_fd_sc_hd__diode_2
+Xclkgen.delay_155ns_2.genblk1\[4\].dly_binary.genblk1\[4\].delay_unit VDD VSS clkgen.delay_155ns_2.genblk1\[4\].dly_binary.signal_w\[4\]
++ clkgen.delay_155ns_2.genblk1\[4\].dly_binary.signal_w\[5\] VSS VDD sky130_mm_sc_hd_dlyPoly5ns
+XPHY_16 VDD VSS VSS VDD sky130_fd_sc_hd__decap_3
+XFILLER_6_84 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
+Xclkgen.delay_155ns_3.genblk1\[3\].dly_binary.genblk1\[0\].delay_unit VDD VSS clkgen.delay_155ns_3.genblk1\[3\].dly_binary.signal_w\[0\]
++ clkgen.delay_155ns_3.genblk1\[3\].dly_binary.signal_w\[1\] VSS VDD sky130_mm_sc_hd_dlyPoly5ns
+XFILLER_9_303 VDD VSS VSS VDD sky130_fd_sc_hd__decap_6
 Xclkgen.delay_155ns_3.genblk1\[3\].control_invert dlycontrol3_in[3] clkgen.delay_155ns_3.bypass_enable_w\[3\]
 + VDD VSS VSS VDD sky130_fd_sc_hd__inv_2
-XFILLER_15_93 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
-Xclkgen.delay_155ns_3.genblk1\[3\].dly_binary.genblk1\[0\].delay_unit VSS VDD clkgen.delay_155ns_3.genblk1\[3\].dly_binary.signal_w\[1\]
-+ VDD VSS clkgen.delay_155ns_3.genblk1\[3\].dly_binary.signal_w\[0\] sky130_mm_sc_hd_dlyPoly5ns
-XFILLER_1_214 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
+XFILLER_0_280 VDD VSS VSS VDD sky130_fd_sc_hd__decap_3
+XFILLER_6_306 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
 XANTENNA_clkgen.delay_155ns_3.enablebuffer_A enable_dlycontrol_in VSS VDD VDD VSS
 + sky130_fd_sc_hd__diode_2
+XFILLER_7_3 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
+XFILLER_3_63 VDD VSS VSS VDD sky130_fd_sc_hd__decap_6
 XANTENNA_clkgen.delay_155ns_3.genblk1\[1\].control_invert_A dlycontrol3_in[1] VSS
 + VDD VDD VSS sky130_fd_sc_hd__diode_2
-XANTENNA_clkgen.delay_155ns_3.genblk1\[1\].bypass_enable_A clkgen.delay_155ns_3.enable_dlycontrol_w
+XFILLER_6_125 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
+XFILLER_18_298 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
+Xedgedetect.dly_315ns_1.genblk1\[4\].dly_binary.genblk1\[7\].delay_unit VDD VSS edgedetect.dly_315ns_1.genblk1\[4\].dly_binary.signal_w\[7\]
++ edgedetect.dly_315ns_1.genblk1\[4\].dly_binary.signal_w\[8\] VSS VDD sky130_mm_sc_hd_dlyPoly5ns
+XFILLER_15_213 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
+XANTENNA_edgedetect.dly_315ns_1.genblk1\[4\].dly_binary.out_mux_A1 edgedetect.dly_315ns_1.genblk1\[3\].dly_binary.out
 + VSS VDD VDD VSS sky130_fd_sc_hd__diode_2
-XFILLER_12_94 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
-XFILLER_10_121 VDD VSS VSS VDD sky130_fd_sc_hd__decap_6
-XFILLER_2_320 VSS VDD VSS VDD sky130_ef_sc_hd__decap_12
-Xedgedetect.dly_315ns_1.genblk1\[4\].dly_binary.genblk1\[7\].delay_unit VSS VDD edgedetect.dly_315ns_1.genblk1\[4\].dly_binary.signal_w\[8\]
-+ VDD VSS edgedetect.dly_315ns_1.genblk1\[4\].dly_binary.signal_w\[7\] sky130_mm_sc_hd_dlyPoly5ns
-Xclkgen.delay_155ns_2.genblk1\[4\].dly_binary.genblk1\[9\].delay_unit VSS VDD clkgen.delay_155ns_2.genblk1\[4\].dly_binary.signal_w\[10\]
-+ VDD VSS clkgen.delay_155ns_2.genblk1\[4\].dly_binary.signal_w\[9\] sky130_mm_sc_hd_dlyPoly5ns
+Xclkgen.delay_155ns_2.genblk1\[4\].dly_binary.genblk1\[9\].delay_unit VDD VSS clkgen.delay_155ns_2.genblk1\[4\].dly_binary.signal_w\[9\]
++ clkgen.delay_155ns_2.genblk1\[4\].dly_binary.signal_w\[10\] VSS VDD sky130_mm_sc_hd_dlyPoly5ns
 XANTENNA_edgedetect.dly_315ns_1.genblk1\[1\].dly_binary.out_mux_S edgedetect.dly_315ns_1.genblk1\[1\].dly_binary.bypass_in
 + VSS VDD VDD VSS sky130_fd_sc_hd__diode_2
-Xclkgen.delay_155ns_3.genblk1\[3\].dly_binary.genblk1\[5\].delay_unit VSS VDD clkgen.delay_155ns_3.genblk1\[3\].dly_binary.signal_w\[6\]
-+ VDD VSS clkgen.delay_155ns_3.genblk1\[3\].dly_binary.signal_w\[5\] sky130_mm_sc_hd_dlyPoly5ns
-Xedgedetect.dly_315ns_1.genblk1\[4\].dly_binary.genblk1\[10\].delay_unit VSS VDD edgedetect.dly_315ns_1.genblk1\[4\].dly_binary.signal_w\[11\]
-+ VDD VSS edgedetect.dly_315ns_1.genblk1\[4\].dly_binary.signal_w\[10\] sky130_mm_sc_hd_dlyPoly5ns
+Xclkgen.delay_155ns_3.genblk1\[3\].dly_binary.genblk1\[5\].delay_unit VDD VSS clkgen.delay_155ns_3.genblk1\[3\].dly_binary.signal_w\[5\]
++ clkgen.delay_155ns_3.genblk1\[3\].dly_binary.signal_w\[6\] VSS VDD sky130_mm_sc_hd_dlyPoly5ns
+Xedgedetect.dly_315ns_1.genblk1\[4\].dly_binary.genblk1\[10\].delay_unit VDD VSS edgedetect.dly_315ns_1.genblk1\[4\].dly_binary.signal_w\[10\]
++ edgedetect.dly_315ns_1.genblk1\[4\].dly_binary.signal_w\[11\] VSS VDD sky130_mm_sc_hd_dlyPoly5ns
 XANTENNA_edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.and_bypass_switch_A_N edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.bypass_in
 + VSS VDD VDD VSS sky130_fd_sc_hd__diode_2
-XFILLER_11_282 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
-XANTENNA_clkgen.delay_155ns_1.genblk1\[3\].dly_binary.and_bypass_switch_B clkgen.delay_155ns_1.genblk1\[2\].dly_binary.out
-+ VSS VDD VDD VSS sky130_fd_sc_hd__diode_2
-Xclkgen.delay_155ns_1.genblk1\[4\].dly_binary.genblk1\[3\].delay_unit VSS VDD clkgen.delay_155ns_1.genblk1\[4\].dly_binary.signal_w\[4\]
-+ VDD VSS clkgen.delay_155ns_1.genblk1\[4\].dly_binary.signal_w\[3\] sky130_mm_sc_hd_dlyPoly5ns
-XFILLER_4_245 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
+XFILLER_11_293 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
+XFILLER_7_275 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
+Xclkgen.delay_155ns_1.genblk1\[4\].dly_binary.genblk1\[3\].delay_unit VDD VSS clkgen.delay_155ns_1.genblk1\[4\].dly_binary.signal_w\[3\]
++ clkgen.delay_155ns_1.genblk1\[4\].dly_binary.signal_w\[4\] VSS VDD sky130_mm_sc_hd_dlyPoly5ns
 XPHY_28 VDD VSS VSS VDD sky130_fd_sc_hd__decap_3
 XPHY_17 VDD VSS VSS VDD sky130_fd_sc_hd__decap_3
 XPHY_39 VDD VSS VSS VDD sky130_fd_sc_hd__decap_3
-XFILLER_13_300 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
-XFILLER_1_237 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
-Xedgedetect.dly_315ns_1.genblk1\[5\].dly_binary.genblk1\[14\].delay_unit VSS VDD edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.signal_w\[15\]
-+ VDD VSS edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.signal_w\[14\] sky130_mm_sc_hd_dlyPoly5ns
-Xclkgen.delay_155ns_3.genblk1\[4\].dly_binary.genblk1\[14\].delay_unit VSS VDD clkgen.delay_155ns_3.genblk1\[4\].dly_binary.signal_w\[15\]
-+ VDD VSS clkgen.delay_155ns_3.genblk1\[4\].dly_binary.signal_w\[14\] sky130_mm_sc_hd_dlyPoly5ns
-XFILLER_0_292 VDD VSS VSS VDD sky130_fd_sc_hd__decap_8
-XFILLER_6_307 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
-Xedgedetect.dly_315ns_1.genblk1\[4\].dly_binary.genblk1\[15\].delay_unit VSS VDD edgedetect.dly_315ns_1.genblk1\[4\].dly_binary.signal_w\[16\]
-+ VDD VSS edgedetect.dly_315ns_1.genblk1\[4\].dly_binary.signal_w\[15\] sky130_mm_sc_hd_dlyPoly5ns
-XFILLER_2_332 VDD VSS VSS VDD sky130_fd_sc_hd__decap_8
-Xedgedetect.dly_315ns_1.genblk1\[3\].dly_binary.genblk1\[2\].delay_unit VSS VDD edgedetect.dly_315ns_1.genblk1\[3\].dly_binary.signal_w\[3\]
-+ VDD VSS edgedetect.dly_315ns_1.genblk1\[3\].dly_binary.signal_w\[2\] sky130_mm_sc_hd_dlyPoly5ns
-Xclkgen.delay_155ns_1.genblk1\[4\].dly_binary.genblk1\[8\].delay_unit VSS VDD clkgen.delay_155ns_1.genblk1\[4\].dly_binary.signal_w\[9\]
-+ VDD VSS clkgen.delay_155ns_1.genblk1\[4\].dly_binary.signal_w\[8\] sky130_mm_sc_hd_dlyPoly5ns
-XFILLER_15_214 VDD VSS VSS VDD sky130_fd_sc_hd__decap_6
-XFILLER_9_30 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
+XFILLER_13_311 VDD VSS VSS VDD sky130_fd_sc_hd__decap_6
+XFILLER_1_215 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
+XFILLER_1_259 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
+XFILLER_16_182 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
+Xedgedetect.dly_315ns_1.genblk1\[5\].dly_binary.genblk1\[14\].delay_unit VDD VSS edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.signal_w\[14\]
++ edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.signal_w\[15\] VSS VDD sky130_mm_sc_hd_dlyPoly5ns
+XFILLER_15_94 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
+XFILLER_9_337 VDD VSS VSS VDD sky130_fd_sc_hd__decap_6
+Xclkgen.delay_155ns_3.genblk1\[4\].dly_binary.genblk1\[14\].delay_unit VDD VSS clkgen.delay_155ns_3.genblk1\[4\].dly_binary.signal_w\[14\]
++ clkgen.delay_155ns_3.genblk1\[4\].dly_binary.signal_w\[15\] VSS VDD sky130_mm_sc_hd_dlyPoly5ns
+XFILLER_11_19 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
+XFILLER_10_325 VSS VDD VSS VDD sky130_ef_sc_hd__decap_12
+Xedgedetect.dly_315ns_1.genblk1\[4\].dly_binary.genblk1\[15\].delay_unit VDD VSS edgedetect.dly_315ns_1.genblk1\[4\].dly_binary.signal_w\[15\]
++ edgedetect.dly_315ns_1.genblk1\[4\].dly_binary.signal_w\[16\] VSS VDD sky130_mm_sc_hd_dlyPoly5ns
+XFILLER_18_244 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
+Xedgedetect.dly_315ns_1.genblk1\[3\].dly_binary.genblk1\[2\].delay_unit VDD VSS edgedetect.dly_315ns_1.genblk1\[3\].dly_binary.signal_w\[2\]
++ edgedetect.dly_315ns_1.genblk1\[3\].dly_binary.signal_w\[3\] VSS VDD sky130_mm_sc_hd_dlyPoly5ns
+Xclkgen.delay_155ns_1.genblk1\[4\].dly_binary.genblk1\[8\].delay_unit VDD VSS clkgen.delay_155ns_1.genblk1\[4\].dly_binary.signal_w\[8\]
++ clkgen.delay_155ns_1.genblk1\[4\].dly_binary.signal_w\[9\] VSS VDD sky130_mm_sc_hd_dlyPoly5ns
 XANTENNA_edgedetect.dly_315ns_1.genblk1\[0\].dly_binary.and_bypass_switch_A_N edgedetect.dly_315ns_1.genblk1\[0\].dly_binary.bypass_in
 + VSS VDD VDD VSS sky130_fd_sc_hd__diode_2
-XFILLER_0_32 VDD VSS VSS VDD sky130_fd_sc_hd__decap_3
-XFILLER_2_195 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
-Xclkgen.delay_155ns_2.genblk1\[3\].dly_binary.genblk1\[4\].delay_unit VSS VDD clkgen.delay_155ns_2.genblk1\[3\].dly_binary.signal_w\[5\]
-+ VDD VSS clkgen.delay_155ns_2.genblk1\[3\].dly_binary.signal_w\[4\] sky130_mm_sc_hd_dlyPoly5ns
-XFILLER_14_280 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
-Xclkgen.delay_155ns_3.genblk1\[2\].dly_binary.genblk1\[0\].delay_unit VSS VDD clkgen.delay_155ns_3.genblk1\[2\].dly_binary.signal_w\[1\]
-+ VDD VSS clkgen.delay_155ns_3.genblk1\[2\].dly_binary.signal_w\[0\] sky130_mm_sc_hd_dlyPoly5ns
-XFILLER_9_63 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
-XFILLER_18_94 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
-Xedgedetect.dly_315ns_1.genblk1\[5\].dly_binary.genblk1\[19\].delay_unit VSS VDD edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.signal_w\[20\]
-+ VDD VSS edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.signal_w\[19\] sky130_mm_sc_hd_dlyPoly5ns
-XFILLER_11_294 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
-Xedgedetect.dly_315ns_1.genblk1\[5\].dly_binary.genblk1\[21\].delay_unit VSS VDD edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.signal_w\[22\]
-+ VDD VSS edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.signal_w\[21\] sky130_mm_sc_hd_dlyPoly5ns
+Xclkgen.delay_155ns_2.genblk1\[3\].dly_binary.genblk1\[4\].delay_unit VDD VSS clkgen.delay_155ns_2.genblk1\[3\].dly_binary.signal_w\[4\]
++ clkgen.delay_155ns_2.genblk1\[3\].dly_binary.signal_w\[5\] VSS VDD sky130_mm_sc_hd_dlyPoly5ns
+Xclkgen.delay_155ns_3.genblk1\[2\].dly_binary.genblk1\[0\].delay_unit VDD VSS clkgen.delay_155ns_3.genblk1\[2\].dly_binary.signal_w\[0\]
++ clkgen.delay_155ns_3.genblk1\[2\].dly_binary.signal_w\[1\] VSS VDD sky130_mm_sc_hd_dlyPoly5ns
+XFILLER_9_63 VDD VSS VSS VDD sky130_fd_sc_hd__decap_6
+XFILLER_18_94 VDD VSS VSS VDD sky130_fd_sc_hd__decap_6
+Xedgedetect.dly_315ns_1.genblk1\[5\].dly_binary.genblk1\[19\].delay_unit VDD VSS edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.signal_w\[19\]
++ edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.signal_w\[20\] VSS VDD sky130_mm_sc_hd_dlyPoly5ns
+Xedgedetect.dly_315ns_1.genblk1\[5\].dly_binary.genblk1\[21\].delay_unit VDD VSS edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.signal_w\[21\]
++ edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.signal_w\[22\] VSS VDD sky130_mm_sc_hd_dlyPoly5ns
 XFILLER_15_3 VDD VSS VSS VDD sky130_fd_sc_hd__decap_3
-XFILLER_7_276 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
 XPHY_29 VDD VSS VSS VDD sky130_fd_sc_hd__decap_3
 XPHY_18 VDD VSS VSS VDD sky130_fd_sc_hd__decap_3
-Xedgedetect.dly_315ns_1.genblk1\[3\].dly_binary.genblk1\[7\].delay_unit VSS VDD edgedetect.dly_315ns_1.genblk1\[3\].dly_binary.signal_w\[8\]
-+ VDD VSS edgedetect.dly_315ns_1.genblk1\[3\].dly_binary.signal_w\[7\] sky130_mm_sc_hd_dlyPoly5ns
-XFILLER_9_338 VDD VSS VSS VDD sky130_fd_sc_hd__decap_6
-XFILLER_9_305 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
+XFILLER_1_227 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
+Xedgedetect.dly_315ns_1.genblk1\[3\].dly_binary.genblk1\[7\].delay_unit VDD VSS edgedetect.dly_315ns_1.genblk1\[3\].dly_binary.signal_w\[7\]
++ edgedetect.dly_315ns_1.genblk1\[3\].dly_binary.signal_w\[8\] VSS VDD sky130_mm_sc_hd_dlyPoly5ns
+XFILLER_0_293 VDD VSS VSS VDD sky130_fd_sc_hd__decap_8
 Xclkgen.delay_155ns_1.genblk1\[4\].control_invert dlycontrol1_in[4] clkgen.delay_155ns_1.bypass_enable_w\[4\]
 + VDD VSS VSS VDD sky130_fd_sc_hd__inv_2
-XFILLER_13_142 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
-XFILLER_9_146 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
-XFILLER_3_87 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
-XFILLER_6_138 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
-XFILLER_6_105 VDD VSS VSS VDD sky130_fd_sc_hd__decap_8
-XFILLER_18_245 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
-Xedgedetect.dly_315ns_1.genblk1\[5\].dly_binary.genblk1\[26\].delay_unit VSS VDD edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.signal_w\[27\]
-+ VDD VSS edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.signal_w\[26\] sky130_mm_sc_hd_dlyPoly5ns
-Xclkgen.delay_155ns_1.genblk1\[3\].dly_binary.genblk1\[3\].delay_unit VSS VDD clkgen.delay_155ns_1.genblk1\[3\].dly_binary.signal_w\[4\]
-+ VDD VSS clkgen.delay_155ns_1.genblk1\[3\].dly_binary.signal_w\[3\] sky130_mm_sc_hd_dlyPoly5ns
-XFILLER_18_62 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
-XFILLER_12_218 VDD VSS VSS VDD sky130_fd_sc_hd__decap_3
-XANTENNA_edgedetect.dly_315ns_1.genblk1\[2\].bypass_enable_A edgedetect.dly_315ns_1.enable_dlycontrol_w
-+ VSS VDD VDD VSS sky130_fd_sc_hd__diode_2
+XFILLER_10_337 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
+XFILLER_3_32 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
+Xedgedetect.dly_315ns_1.genblk1\[5\].dly_binary.genblk1\[26\].delay_unit VDD VSS edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.signal_w\[26\]
++ edgedetect.dly_315ns_1.genblk1\[5\].dly_binary.signal_w\[27\] VSS VDD sky130_mm_sc_hd_dlyPoly5ns
+Xclkgen.delay_155ns_1.genblk1\[3\].dly_binary.genblk1\[3\].delay_unit VDD VSS clkgen.delay_155ns_1.genblk1\[3\].dly_binary.signal_w\[3\]
++ clkgen.delay_155ns_1.genblk1\[3\].dly_binary.signal_w\[4\] VSS VDD sky130_mm_sc_hd_dlyPoly5ns
+XFILLER_5_182 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
+XFILLER_2_174 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
+XFILLER_7_244 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
+XFILLER_4_214 VDD VSS VSS VDD sky130_fd_sc_hd__decap_3
 XANTENNA_edgedetect.dly_315ns_1.genblk1\[0\].control_invert_A dlycontrol4_in[0] VSS
 + VDD VDD VSS sky130_fd_sc_hd__diode_2
+XFILLER_6_43 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
 XPHY_19 VDD VSS VSS VDD sky130_fd_sc_hd__decap_3
-Xedgedetect.dly_315ns_1.genblk1\[2\].dly_binary.genblk1\[2\].delay_unit VSS VDD edgedetect.dly_315ns_1.genblk1\[2\].dly_binary.signal_w\[3\]
-+ VDD VSS edgedetect.dly_315ns_1.genblk1\[2\].dly_binary.signal_w\[2\] sky130_mm_sc_hd_dlyPoly5ns
-XFILLER_15_63 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
+XFILLER_9_9 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
+XFILLER_1_239 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
+XFILLER_15_63 VDD VSS VSS VDD sky130_fd_sc_hd__decap_6
+Xedgedetect.dly_315ns_1.genblk1\[2\].dly_binary.genblk1\[2\].delay_unit VDD VSS edgedetect.dly_315ns_1.genblk1\[2\].dly_binary.signal_w\[2\]
++ edgedetect.dly_315ns_1.genblk1\[2\].dly_binary.signal_w\[3\] VSS VDD sky130_mm_sc_hd_dlyPoly5ns
 XFILLER_0_261 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
-XFILLER_16_173 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
-Xclkgen.delay_155ns_3.genblk1\[1\].dly_binary.genblk1\[0\].delay_unit VSS VDD clkgen.delay_155ns_3.genblk1\[1\].dly_binary.signal_w\[1\]
-+ VDD VSS clkgen.delay_155ns_3.genblk1\[1\].dly_binary.signal_w\[0\] sky130_mm_sc_hd_dlyPoly5ns
-XFILLER_9_125 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
-XFILLER_5_3 VDD VSS VSS VDD sky130_fd_sc_hd__decap_3
-XFILLER_2_164 VDD VSS VSS VDD sky130_fd_sc_hd__decap_6
-XFILLER_7_245 VDD VSS VSS VDD sky130_fd_sc_hd__decap_3
-XFILLER_6_88 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
-XFILLER_15_31 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
-Xclkgen.delay_155ns_1.genblk1\[2\].dly_binary.genblk1\[3\].delay_unit VSS VDD clkgen.delay_155ns_1.genblk1\[2\].dly_binary.signal_w\[4\]
-+ VDD VSS clkgen.delay_155ns_1.genblk1\[2\].dly_binary.signal_w\[3\] sky130_mm_sc_hd_dlyPoly5ns
+XFILLER_13_187 VDD VSS VSS VDD sky130_fd_sc_hd__decap_6
+Xclkgen.delay_155ns_3.genblk1\[1\].dly_binary.genblk1\[0\].delay_unit VDD VSS clkgen.delay_155ns_3.genblk1\[1\].dly_binary.signal_w\[0\]
++ clkgen.delay_155ns_3.genblk1\[1\].dly_binary.signal_w\[1\] VSS VDD sky130_mm_sc_hd_dlyPoly5ns
+XFILLER_5_3 VDD VSS VSS VDD sky130_fd_sc_hd__decap_6
+XFILLER_2_164 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
+XFILLER_9_32 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
+XFILLER_18_63 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
+XFILLER_12_208 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
+XFILLER_19_182 VSS VDD VSS VDD sky130_fd_sc_hd__decap_4
+Xclkgen.delay_155ns_1.genblk1\[2\].dly_binary.genblk1\[3\].delay_unit VDD VSS clkgen.delay_155ns_1.genblk1\[2\].dly_binary.signal_w\[3\]
++ clkgen.delay_155ns_1.genblk1\[2\].dly_binary.signal_w\[4\] VSS VDD sky130_mm_sc_hd_dlyPoly5ns
 .ends
 

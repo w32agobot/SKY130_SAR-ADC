@@ -19,8 +19,8 @@ T {   Copyright 2022 Manuel Moser
    See the License for the specific language governing permissions and
    limitations under the License.} 0 -240 0 0 0.2 0.2 {}
 T {TEMP=25    ss  tt  ff 
-rise-delay 6.1 5.2 4.6 ns 
-fall-delay 6.7 5.5 4.7 ns} 280 -340 0 0 0.4 0.4 {}
+rise-delay 4.7 4.0 3.4 ns 
+fall-delay 5.5 4.6 3.9 ns} 280 -340 0 0 0.4 0.4 {}
 T {schmitt-trigger inverter
 as testbench source} 1030 -900 0 0 0.4 0.4 {}
 N 240 -790 240 -780 {
@@ -163,7 +163,7 @@ C {devices/vsource.sym} 1020 -480 0 0 {name=V2 value="0 pulse(0 1.8 15n 1p 1p 30
 C {devices/gnd.sym} 1020 -440 0 0 {name=l8 lab=GND}
 C {devices/lab_wire.sym} 1490 -570 0 0 {name=l9 sig_type=std_logic lab=in}
 C {devices/code_shown.sym} 90 -720 0 0 {name=s1 only_toplevel=false value="*.include /foss/pdk/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_fd_sc_hd.spice
-.include /foss/designs/SKY130_SAR-ADC/xschem/sky130_mm_sc_hd_dlyPoly5ns_postlayout.spice
+.include ../sky130_mm_sc_hd_dlyPoly5ns_postlayout.spice
 .OPTIONS RELTOL=.001 TRTOL=1 ABSTOL=1e-16 CHGTOL=1.0e-16 DEFAD=1.0e-16
 .save all
 .control

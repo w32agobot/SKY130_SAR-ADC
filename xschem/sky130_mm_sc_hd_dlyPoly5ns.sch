@@ -174,7 +174,7 @@ N 860 -420 860 -350 {
 lab=VGND}
 C {devices/title.sym} 170 -40 0 0 {name=l1 author="Manuel Moser"}
 C {sky130_fd_pr/nfet_01v8.sym} 520 -510 0 0 {name=M2
-L=3.83
+L=3.69
 W=0.42
 nf=1 
 mult=1
@@ -229,7 +229,7 @@ as="'int((nf+2)/2) * W/nf * 0.29'"
 ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
 nrd="'0.29 / W'" nrs="'0.29 / W'"
 sa=0 sb=0 sd=0
-model=pfet_01v8
+model=pfet_01v8_hvt
 spiceprefix=X
 }
 C {sky130_fd_pr/pfet_01v8.sym} 1020 -730 0 0 {name=M6
@@ -243,7 +243,7 @@ as="'int((nf+2)/2) * W/nf * 0.29'"
 ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
 nrd="'0.29 / W'" nrs="'0.29 / W'"
 sa=0 sb=0 sd=0
-model=pfet_01v8
+model=pfet_01v8_hvt
 spiceprefix=X
 }
 C {sky130_fd_pr/nfet_01v8.sym} 1170 -480 1 0 {name=M7
@@ -271,28 +271,15 @@ as="'int((nf+2)/2) * W/nf * 0.29'"
 ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
 nrd="'0.29 / W'" nrs="'0.29 / W'"
 sa=0 sb=0 sd=0
-model=pfet_01v8
+model=pfet_01v8_hvt
 spiceprefix=X
 }
 C {devices/opin.sym} 1300 -570 0 0 {name=p4 lab=out}
 C {devices/lab_wire.sym} 750 -570 0 0 {name=l2 sig_type=std_logic lab=cap_top}
-C {sky130_fd_pr/pfet_01v8_lvt.sym} 520 -630 0 0 {name=M9
-L=3.83
-W=0.8
-mult=1
-ad="'int((nf+1)/2) * W/nf * 0.29'" 
-pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
-as="'int((nf+2)/2) * W/nf * 0.29'" 
-ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
-nrd="'0.29 / W'" nrs="'0.29 / W'"
-sa=0 sb=0 sd=0
-model=pfet_01v8_lvt
-spiceprefix=X
-}
 C {devices/iopin.sym} 220 -830 0 1 {name=p5 lab=VPB}
 C {devices/iopin.sym} 220 -330 0 1 {name=p6 lab=VNB}
 C {sky130_fd_pr/nfet_01v8.sym} 730 -490 1 0 {name=M1
-L=2.25
+L=2.045
 W=1.375
 nf=1 
 mult=1
@@ -307,7 +294,21 @@ spiceprefix=X
 }
 C {devices/capa.sym} 860 -450 0 0 {name=C1
 m=1
-value=2.50f
+value=2.10f
 footprint=1206
 device="ceramic capacitor"
 lvsignore=TRUE}
+C {sky130_fd_pr/pfet_01v8.sym} 520 -630 0 0 {name=M9
+L=1.5
+W=0.8
+nf=1
+mult=1
+ad="'int((nf+1)/2) * W/nf * 0.29'" 
+pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
+as="'int((nf+2)/2) * W/nf * 0.29'" 
+ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
+nrd="'0.29 / W'" nrs="'0.29 / W'"
+sa=0 sb=0 sd=0
+model=pfet_01v8_hvt
+spiceprefix=X
+}
