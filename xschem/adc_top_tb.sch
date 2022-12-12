@@ -5,15 +5,57 @@ K {}
 V {}
 S {}
 E {}
-L 4 1160 -1280 2000 -1280 {}
-L 4 2000 -1280 2000 -700 {}
-L 4 1160 -700 2000 -700 {}
-L 4 1160 -1280 1160 -700 {}
-L 4 1180 -660 1760 -660 {}
-L 4 1760 -660 1760 -280 {}
-L 4 1160 -280 1760 -280 {}
-L 4 1160 -660 1160 -280 {}
-L 4 1160 -660 1180 -660 {}
+L 4 40 -1120 880 -1120 {}
+L 4 880 -1120 880 -540 {}
+L 4 40 -540 880 -540 {}
+L 4 40 -1120 40 -540 {}
+L 4 60 -500 640 -500 {}
+L 4 640 -500 640 -120 {}
+L 4 40 -120 640 -120 {}
+L 4 40 -500 40 -120 {}
+L 4 40 -500 60 -500 {}
+B 2 1180 -1320 1980 -920 {flags=graph
+y1=0
+y2=2
+ypos1=0
+ypos2=2
+divy=5
+subdivy=1
+unity=1
+x1=1.75784e-06
+x2=3.36845e-06
+divx=5
+subdivx=1
+node="x1.pctop
+x1.nctop
+x1.comparator_result"
+color="6 7 9"
+dataset=-1
+unitx=1
+logx=0
+logy=0
+}
+B 2 1180 -900 1980 -500 {flags=graph
+y1=0
+y2=2
+ypos1=0
+ypos2=2
+divy=5
+subdivy=1
+unity=1
+x1=1.75784e-06
+x2=3.36845e-06
+divx=5
+subdivx=1
+node="x1.clk_dig
+x1.clk_comp
+start_conv"
+color="12 8 7"
+dataset=-1
+unitx=1
+logx=0
+logy=0
+}
 T {   Copyright 2022 Manuel Moser
 
    Licensed under the Apache License, Version 2.0 (the "License");
@@ -26,278 +68,278 @@ T {   Copyright 2022 Manuel Moser
    distributed under the License is distributed on an "AS IS" BASIS,
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
-   limitations under the License.} 520 -560 0 0 0.2 0.2 {}
-T {DELAY1} 1290 -1220 0 0 0.4 0.4 {}
+   limitations under the License.} 40 -1300 0 0 0.2 0.2 {}
+T {DELAY1} 170 -1060 0 0 0.4 0.4 {}
 T {
-80ns  40ns  20ns  10ns  5ns} 1300 -1030 0 0 0.4 0.4 {}
-T {DELAY2} 1610 -1220 0 0 0.4 0.4 {}
-T {DELAY3} 1300 -950 0 0 0.4 0.4 {}
-T {DELAY4} 1620 -950 0 0 0.4 0.4 {}
+80ns  40ns  20ns  10ns  5ns} 180 -870 0 0 0.4 0.4 {}
+T {DELAY2} 490 -1060 0 0 0.4 0.4 {}
+T {DELAY3} 180 -790 0 0 0.4 0.4 {}
+T {DELAY4} 500 -790 0 0 0.4 0.4 {}
 T {
-160ns  80ns  40ns  20ns  10ns  5ns} 1630 -760 0 0 0.4 0.4 {}
-T {DELAY SETTINGS OF SELF-CLOCKED LOOP} 1170 -1280 0 0 0.7 0.7 {}
-T {Averaging Config} 1180 -650 0 0 0.4 0.4 {}
+160ns  80ns  40ns  20ns  10ns  5ns} 510 -600 0 0 0.4 0.4 {}
+T {DELAY SETTINGS OF SELF-CLOCKED LOOP} 50 -1120 0 0 0.7 0.7 {}
+T {Averaging Config} 60 -490 0 0 0.4 0.4 {}
 T {default: 1 sample
 001: 3 samples
 010: 7 samples
 011: 15 samples
-100: 31 samples} 1200 -420 0 0 0.4 0.4 {}
-T {OSR Config} 1520 -650 0 0 0.4 0.4 {}
+100: 31 samples} 80 -260 0 0 0.4 0.4 {}
+T {OSR Config} 400 -490 0 0 0.4 0.4 {}
 T {default: 1 sample
 001: 4 samples
 010: 16 samples
 011: 64 samples
-100: 256 samples} 1550 -420 0 0 0.4 0.4 {}
+100: 256 samples} 430 -260 0 0 0.4 0.4 {}
 T {
-80ns  40ns  20ns  10ns  5ns} 1620 -1030 0 0 0.4 0.4 {}
+80ns  40ns  20ns  10ns  5ns} 500 -870 0 0 0.4 0.4 {}
 T {
-80ns  40ns  20ns  10ns  5ns} 1310 -760 0 0 0.4 0.4 {}
-T {linting} 580 -1090 0 0 0.2 0.2 {}
-N 450 -1090 450 -1080 {
+80ns  40ns  20ns  10ns  5ns} 190 -600 0 0 0.4 0.4 {}
+T {linting} 1200 -250 0 0 0.2 0.2 {}
+N 1070 -250 1070 -240 {
 lab=VDD}
-N 870 -880 930 -880 {
+N 1820 -440 1880 -440 {
 lab=result[0..15]  bus=true}
-N 870 -860 930 -860 {
+N 1820 -420 1880 -420 {
 lab=conv_finished}
-N 720 -920 720 -910 {
+N 1670 -480 1670 -470 {
 lab=VDD}
-N 720 -730 720 -720 {
+N 1670 -290 1670 -280 {
 lab=GND}
-N 540 -880 570 -880 {
+N 1490 -440 1520 -440 {
 lab=rst_n}
-N 560 -820 570 -820 {
+N 1510 -380 1520 -380 {
 lab=inp}
-N 560 -800 570 -800 {
+N 1510 -360 1520 -360 {
 lab=inn}
-N 540 -780 570 -780 {
+N 1490 -340 1520 -340 {
 lab=avg_mode[0..2],osr_mode[0..2],nc[0..3],dlyctrl4_[0..5]}
-N 540 -760 570 -760 {
+N 1490 -320 1520 -320 {
 lab=dlyctrl1_[0..4],dlyctrl2_[0..4],dlyctrl3_[0..4],en_dly_contr}
-N 400 -650 400 -640 {
+N 1350 -210 1350 -200 {
 lab=vcm}
-N 400 -580 400 -570 {
+N 1350 -140 1350 -130 {
 lab=GND}
-N 340 -700 340 -680 {
+N 1290 -260 1290 -240 {
 lab=vcm}
-N 340 -680 460 -680 {
+N 1290 -240 1410 -240 {
 lab=vcm}
-N 460 -700 460 -680 {
+N 1410 -260 1410 -240 {
 lab=vcm}
-N 400 -680 400 -650 {
+N 1350 -240 1350 -210 {
 lab=vcm}
-N 340 -780 340 -760 {
+N 1290 -340 1290 -320 {
 lab=inp}
-N 460 -800 460 -760 {
+N 1410 -360 1410 -320 {
 lab=inn}
-N 460 -800 560 -800 {
+N 1410 -360 1510 -360 {
 lab=inn}
-N 340 -820 560 -820 {
+N 1290 -380 1510 -380 {
 lab=inp}
-N 340 -820 340 -780 {
+N 1290 -380 1290 -340 {
 lab=inp}
-N 1840 -630 1880 -630 {
+N 720 -470 760 -470 {
 lab=start_conv}
-N 1840 -510 1880 -510 {
+N 720 -350 760 -350 {
 lab=rst_n}
-N 540 -860 570 -860 {
+N 1490 -420 1520 -420 {
 lab=start_conv}
-N 1840 -330 1840 -320 {
+N 720 -170 720 -160 {
 lab=GND}
-N 1840 -450 1840 -440 {
+N 720 -290 720 -280 {
 lab=GND}
-N 1840 -570 1840 -560 {
+N 720 -410 720 -400 {
 lab=GND}
-N 1840 -400 1840 -390 {
+N 720 -240 720 -230 {
 lab=clk_vcm}
-N 1840 -400 1880 -400 {
+N 720 -240 760 -240 {
 lab=clk_vcm}
-N 540 -840 570 -840 {
+N 1490 -400 1520 -400 {
 lab=clk_vcm}
-N 540 -760 540 -660 {
+N 1490 -320 1490 -220 {
 lab=dlyctrl1_[0..4],dlyctrl2_[0..4],dlyctrl3_[0..4],en_dly_contr}
-N 540 -640 590 -640 {
+N 1490 -200 1540 -200 {
 lab=dlyctrl1_[0..4],dlyctrl2_[0..4],dlyctrl3_[0..4],en_dly_contr}
-N 510 -780 540 -780 {
+N 1460 -340 1490 -340 {
 lab=avg_mode[0..2],osr_mode[0..2],nc[0..3],dlyctrl4_[0..5]}
-N 510 -780 510 -600 {
+N 1460 -340 1460 -160 {
 lab=avg_mode[0..2],osr_mode[0..2],nc[0..3],dlyctrl4_[0..5]}
-N 510 -600 590 -600 {
+N 1460 -160 1540 -160 {
 lab=avg_mode[0..2],osr_mode[0..2],nc[0..3],dlyctrl4_[0..5]}
-N 540 -660 540 -640 {
+N 1490 -220 1490 -200 {
 lab=dlyctrl1_[0..4],dlyctrl2_[0..4],dlyctrl3_[0..4],en_dly_contr}
-N 1310 -1050 1310 -1030 {
+N 190 -890 190 -870 {
 lab=GND}
-N 1310 -1040 1370 -1040 {
+N 190 -880 250 -880 {
 lab=GND}
-N 1370 -1050 1370 -1040 {
+N 250 -890 250 -880 {
 lab=GND}
-N 1310 -1120 1310 -1110 {
+N 190 -960 190 -950 {
 lab=dlyctrl1_4}
-N 1370 -1120 1370 -1110 {
+N 250 -960 250 -950 {
 lab=dlyctrl1_3}
-N 1430 -1040 1490 -1040 {
+N 310 -880 370 -880 {
 lab=GND}
-N 1490 -1050 1490 -1040 {
+N 370 -890 370 -880 {
 lab=GND}
-N 1430 -1120 1430 -1110 {
+N 310 -960 310 -950 {
 lab=dlyctrl1_2}
-N 1490 -1120 1490 -1110 {
+N 370 -960 370 -950 {
 lab=dlyctrl1_1}
-N 1550 -1050 1550 -1040 {
+N 430 -890 430 -880 {
 lab=GND}
-N 1550 -1120 1550 -1110 {
+N 430 -960 430 -950 {
 lab=dlyctrl1_0}
-N 1370 -1040 1430 -1040 {
+N 250 -880 310 -880 {
 lab=GND}
-N 1430 -1050 1430 -1040 {
+N 310 -890 310 -880 {
 lab=GND}
-N 1490 -1040 1550 -1040 {
+N 370 -880 430 -880 {
 lab=GND}
-N 1630 -1050 1630 -1030 {
+N 510 -890 510 -870 {
 lab=GND}
-N 1630 -1040 1690 -1040 {
+N 510 -880 570 -880 {
 lab=GND}
-N 1690 -1050 1690 -1040 {
+N 570 -890 570 -880 {
 lab=GND}
-N 1630 -1120 1630 -1110 {
+N 510 -960 510 -950 {
 lab=dlyctrl2_4}
-N 1690 -1120 1690 -1110 {
+N 570 -960 570 -950 {
 lab=dlyctrl2_3}
-N 1750 -1040 1810 -1040 {
+N 630 -880 690 -880 {
 lab=GND}
-N 1810 -1050 1810 -1040 {
+N 690 -890 690 -880 {
 lab=GND}
-N 1750 -1120 1750 -1110 {
+N 630 -960 630 -950 {
 lab=dlyctrl2_2}
-N 1810 -1120 1810 -1110 {
+N 690 -960 690 -950 {
 lab=dlyctrl2_1}
-N 1870 -1050 1870 -1040 {
+N 750 -890 750 -880 {
 lab=GND}
-N 1870 -1120 1870 -1110 {
+N 750 -960 750 -950 {
 lab=dlyctrl2_0}
-N 1690 -1040 1750 -1040 {
+N 570 -880 630 -880 {
 lab=GND}
-N 1750 -1050 1750 -1040 {
+N 630 -890 630 -880 {
 lab=GND}
-N 1810 -1040 1870 -1040 {
+N 690 -880 750 -880 {
 lab=GND}
-N 1320 -780 1320 -760 {
+N 200 -620 200 -600 {
 lab=GND}
-N 1320 -770 1380 -770 {
+N 200 -610 260 -610 {
 lab=GND}
-N 1380 -780 1380 -770 {
+N 260 -620 260 -610 {
 lab=GND}
-N 1320 -850 1320 -840 {
+N 200 -690 200 -680 {
 lab=dlyctrl3_4}
-N 1380 -850 1380 -840 {
+N 260 -690 260 -680 {
 lab=dlyctrl3_3}
-N 1440 -770 1500 -770 {
+N 320 -610 380 -610 {
 lab=GND}
-N 1500 -780 1500 -770 {
+N 380 -620 380 -610 {
 lab=GND}
-N 1440 -850 1440 -840 {
+N 320 -690 320 -680 {
 lab=dlyctrl3_2}
-N 1500 -850 1500 -840 {
+N 380 -690 380 -680 {
 lab=dlyctrl3_1}
-N 1560 -780 1560 -770 {
+N 440 -620 440 -610 {
 lab=GND}
-N 1560 -850 1560 -840 {
+N 440 -690 440 -680 {
 lab=dlyctrl3_0}
-N 1380 -770 1440 -770 {
+N 260 -610 320 -610 {
 lab=GND}
-N 1440 -780 1440 -770 {
+N 320 -620 320 -610 {
 lab=GND}
-N 1500 -770 1560 -770 {
+N 380 -610 440 -610 {
 lab=GND}
-N 1640 -780 1640 -760 {
+N 520 -620 520 -600 {
 lab=GND}
-N 1640 -770 1700 -770 {
+N 520 -610 580 -610 {
 lab=GND}
-N 1700 -780 1700 -770 {
+N 580 -620 580 -610 {
 lab=GND}
-N 1640 -850 1640 -840 {
+N 520 -690 520 -680 {
 lab=dlyctrl4_5}
-N 1700 -850 1700 -840 {
+N 580 -690 580 -680 {
 lab=dlyctrl4_4}
-N 1760 -770 1820 -770 {
+N 640 -610 700 -610 {
 lab=GND}
-N 1820 -780 1820 -770 {
+N 700 -620 700 -610 {
 lab=GND}
-N 1760 -850 1760 -840 {
+N 640 -690 640 -680 {
 lab=dlyctrl4_3}
-N 1820 -850 1820 -840 {
+N 700 -690 700 -680 {
 lab=dlyctrl4_2}
-N 1880 -780 1880 -770 {
+N 760 -620 760 -610 {
 lab=GND}
-N 1880 -850 1880 -840 {
+N 760 -690 760 -680 {
 lab=dlyctrl4_1}
-N 1700 -770 1760 -770 {
+N 580 -610 640 -610 {
 lab=GND}
-N 1760 -780 1760 -770 {
+N 640 -620 640 -610 {
 lab=GND}
-N 1820 -770 1880 -770 {
+N 700 -610 760 -610 {
 lab=GND}
-N 1940 -780 1940 -770 {
+N 820 -620 820 -610 {
 lab=GND}
-N 1940 -850 1940 -840 {
+N 820 -690 820 -680 {
 lab=dlyctrl4_0}
-N 1880 -770 1940 -770 {
+N 760 -610 820 -610 {
 lab=GND}
-N 1210 -470 1210 -450 {
+N 90 -310 90 -290 {
 lab=GND}
-N 1210 -460 1270 -460 {
+N 90 -300 150 -300 {
 lab=GND}
-N 1270 -470 1270 -460 {
+N 150 -310 150 -300 {
 lab=GND}
-N 1210 -540 1210 -530 {
+N 90 -380 90 -370 {
 lab=avg_mode2}
-N 1270 -540 1270 -530 {
+N 150 -380 150 -370 {
 lab=avg_mode1}
-N 1330 -540 1330 -530 {
+N 210 -380 210 -370 {
 lab=avg_mode0}
-N 1270 -460 1330 -460 {
+N 150 -300 210 -300 {
 lab=GND}
-N 1330 -470 1330 -460 {
+N 210 -310 210 -300 {
 lab=GND}
-N 1200 -1120 1200 -1110 {
+N 80 -960 80 -950 {
 lab=en_dly_contr}
-N 1200 -1050 1200 -1040 {
+N 80 -890 80 -880 {
 lab=GND}
-N 1200 -1040 1310 -1040 {
+N 80 -880 190 -880 {
 lab=GND}
-N 1560 -470 1560 -450 {
+N 440 -310 440 -290 {
 lab=GND}
-N 1560 -460 1620 -460 {
+N 440 -300 500 -300 {
 lab=GND}
-N 1620 -470 1620 -460 {
+N 500 -310 500 -300 {
 lab=GND}
-N 1560 -540 1560 -530 {
+N 440 -380 440 -370 {
 lab=osr_mode2}
-N 1620 -540 1620 -530 {
+N 500 -380 500 -370 {
 lab=osr_mode1}
-N 1680 -540 1680 -530 {
+N 560 -380 560 -370 {
 lab=osr_mode0}
-N 1620 -460 1680 -460 {
+N 500 -300 560 -300 {
 lab=GND}
-N 1680 -470 1680 -460 {
+N 560 -310 560 -300 {
 lab=GND}
-N 550 -1020 550 -1000 {
+N 1170 -180 1170 -160 {
 lab=GND}
-N 550 -1090 570 -1090 {
+N 1170 -250 1190 -250 {
 lab=nc[0..3]}
-N 550 -1090 550 -1080 {
+N 1170 -250 1170 -240 {
 lab=nc[0..3]}
-N 450 -1020 450 -1000 {
+N 1070 -180 1070 -160 {
 lab=GND}
 C {devices/title.sym} 170 -40 0 0 {name=l1 author="Manuel Moser"}
-C {adc_top.sym} 720 -820 0 0 {name=x1}
-C {devices/vsource.sym} 450 -1050 0 0 {name=V_VDD_1 value=1.8}
-C {devices/vdd.sym} 450 -1090 0 0 {name=l1 lab=VDD}
-C {devices/gnd.sym} 450 -1000 0 0 {name=l1 lab=GND}
-C {devices/vdd.sym} 720 -920 0 0 {name=l3 lab=VDD}
-C {devices/gnd.sym} 720 -720 0 0 {name=l3 lab=GND}
-C {devices/lab_wire.sym} 930 -880 0 1 {name=l3 sig_type=std_logic lab=result[0..15]}
-C {devices/code.sym} 290 -1090 0 0 {name=TT_MODELS
+C {adc_top.sym} 1670 -380 0 0 {name=x1}
+C {devices/vsource.sym} 1070 -210 0 0 {name=V_VDD_1 value=1.8}
+C {devices/vdd.sym} 1070 -250 0 0 {name=l1 lab=VDD}
+C {devices/gnd.sym} 1070 -160 0 0 {name=l1 lab=GND}
+C {devices/vdd.sym} 1670 -480 0 0 {name=l3 lab=VDD}
+C {devices/gnd.sym} 1670 -280 0 0 {name=l3 lab=GND}
+C {devices/lab_wire.sym} 1880 -440 0 1 {name=l3 sig_type=std_logic lab=result[0..15]}
+C {devices/code.sym} 730 -1250 0 0 {name=TT_MODELS
 only_toplevel=true
 format="tcleval( @value )"
 value="
@@ -306,86 +348,86 @@ value="
 
 "
 spice_ignore=false}
-C {devices/vsource.sym} 400 -610 0 0 {name=V_VCM_2 value=0.9}
-C {devices/gnd.sym} 400 -570 0 0 {name=l3 lab=GND}
-C {devices/lab_pin.sym} 400 -650 0 0 {name=l4 sig_type=std_logic lab=vcm}
-C {devices/noconn.sym} 930 -880 0 1 {name=l1[0..15]}
-C {devices/noconn.sym} 930 -860 0 1 {name=l2}
-C {devices/vsource.sym} 340 -730 0 0 {name=V_VCM_1 value=\{vdiff/2\}}
-C {devices/vsource.sym} 460 -730 2 1 {name=V_VCM_3 value=\{vdiff/2\}}
-C {devices/vsource.sym} 1840 -360 0 0 {name=V_VCM value="0 pulse(0 1.8 \{0.5/fclk\} 1n 1n \{0.5/fclk\} \{1/fclk\})"}
-C {devices/gnd.sym} 1840 -320 0 0 {name=l3 lab=GND}
-C {devices/lab_wire.sym} 930 -860 0 1 {name=l3 sig_type=std_logic lab=conv_finished}
-C {devices/lab_wire.sym} 340 -780 0 1 {name=l3 sig_type=std_logic lab=inp}
-C {devices/lab_wire.sym} 460 -780 0 0 {name=l3 sig_type=std_logic lab=inn}
-C {devices/vsource.sym} 1840 -480 0 0 {name=V1 value="0 pulse(0 1.8 \{treset\} 1n 1n 1 2)"}
-C {devices/vsource.sym} 1840 -600 0 0 {name=V31 value="0 pulse(0 1.8 \{tstartconv\} 1n 1n 400n 1.4u)"}
-C {devices/gnd.sym} 1840 -560 0 0 {name=l3 lab=GND}
-C {devices/gnd.sym} 1840 -440 0 0 {name=l3 lab=GND}
-C {devices/lab_wire.sym} 1880 -630 0 1 {name=l3 sig_type=std_logic lab=start_conv}
-C {devices/lab_wire.sym} 1880 -510 0 1 {name=l3 sig_type=std_logic lab=rst_n}
-C {devices/lab_wire.sym} 540 -880 0 0 {name=l3 sig_type=std_logic lab=rst_n}
-C {devices/lab_wire.sym} 540 -860 0 0 {name=l3 sig_type=std_logic lab=start_conv}
-C {devices/lab_wire.sym} 1880 -400 0 1 {name=l3 sig_type=std_logic lab=clk_vcm}
-C {devices/lab_wire.sym} 540 -840 0 0 {name=l3 sig_type=std_logic lab=clk_vcm}
-C {devices/lab_wire.sym} 590 -600 0 1 {name=l3 sig_type=std_logic lab=avg_mode[0..2],osr_mode[0..2],nc[0..3],dlyctrl4_[0..5]}
-C {devices/lab_wire.sym} 590 -640 0 1 {name=l3 sig_type=std_logic lab=dlyctrl1_[0..4],dlyctrl2_[0..4],dlyctrl3_[0..4],en_dly_contr}
-C {devices/vsource.sym} 1310 -1080 0 0 {name=V4 value=\{bit4\}}
-C {devices/gnd.sym} 1310 -1030 0 0 {name=l7 lab=GND}
-C {devices/vsource.sym} 1370 -1080 0 0 {name=V5 value=\{bit3\}}
-C {devices/lab_wire.sym} 1310 -1120 1 0 {name=l3 sig_type=std_logic lab=dlyctrl1_4}
-C {devices/lab_wire.sym} 1370 -1120 1 0 {name=l4 sig_type=std_logic lab=dlyctrl1_3}
-C {devices/vsource.sym} 1430 -1080 0 0 {name=V6 value=\{bit2\}}
-C {devices/vsource.sym} 1490 -1080 0 0 {name=V7 value=\{bit1\}}
-C {devices/lab_wire.sym} 1430 -1120 1 0 {name=l5 sig_type=std_logic lab=dlyctrl1_2}
-C {devices/lab_wire.sym} 1490 -1120 1 0 {name=l8 sig_type=std_logic lab=dlyctrl1_1}
-C {devices/vsource.sym} 1550 -1080 0 0 {name=V8 value=\{bit0\}}
-C {devices/lab_wire.sym} 1550 -1120 1 0 {name=l6 sig_type=std_logic lab=dlyctrl1_0}
-C {devices/gnd.sym} 1630 -1030 0 0 {name=l9 lab=GND}
-C {devices/lab_wire.sym} 1630 -1120 1 0 {name=l10 sig_type=std_logic lab=dlyctrl2_4}
-C {devices/lab_wire.sym} 1690 -1120 1 0 {name=l11 sig_type=std_logic lab=dlyctrl2_3}
-C {devices/lab_wire.sym} 1750 -1120 1 0 {name=l12 sig_type=std_logic lab=dlyctrl2_2}
-C {devices/lab_wire.sym} 1810 -1120 1 0 {name=l13 sig_type=std_logic lab=dlyctrl2_1}
-C {devices/lab_wire.sym} 1870 -1120 1 0 {name=l14 sig_type=std_logic lab=dlyctrl2_0}
-C {devices/gnd.sym} 1320 -760 0 0 {name=l15 lab=GND}
-C {devices/lab_wire.sym} 1320 -850 1 0 {name=l16 sig_type=std_logic lab=dlyctrl3_4}
-C {devices/lab_wire.sym} 1380 -850 1 0 {name=l17 sig_type=std_logic lab=dlyctrl3_3}
-C {devices/lab_wire.sym} 1440 -850 1 0 {name=l18 sig_type=std_logic lab=dlyctrl3_2}
-C {devices/lab_wire.sym} 1500 -850 1 0 {name=l19 sig_type=std_logic lab=dlyctrl3_1}
-C {devices/lab_wire.sym} 1560 -850 1 0 {name=l20 sig_type=std_logic lab=dlyctrl3_0}
-C {devices/gnd.sym} 1640 -760 0 0 {name=l21 lab=GND}
-C {devices/lab_wire.sym} 1640 -850 1 0 {name=l22 sig_type=std_logic lab=dlyctrl4_5}
-C {devices/lab_wire.sym} 1700 -850 1 0 {name=l23 sig_type=std_logic lab=dlyctrl4_4}
-C {devices/lab_wire.sym} 1760 -850 1 0 {name=l24 sig_type=std_logic lab=dlyctrl4_3}
-C {devices/lab_wire.sym} 1820 -850 1 0 {name=l25 sig_type=std_logic lab=dlyctrl4_2}
-C {devices/lab_wire.sym} 1880 -850 1 0 {name=l26 sig_type=std_logic lab=dlyctrl4_1}
-C {devices/lab_wire.sym} 1940 -850 1 0 {name=l27 sig_type=std_logic lab=dlyctrl4_0}
-C {devices/vsource.sym} 1210 -500 0 0 {name=V2 value=\{avg2\}}
-C {devices/gnd.sym} 1210 -450 0 0 {name=l7 lab=GND}
-C {devices/vsource.sym} 1270 -500 0 0 {name=V3 value=\{avg1\}}
-C {devices/lab_wire.sym} 1210 -540 1 0 {name=l3 sig_type=std_logic lab=avg_mode2}
-C {devices/lab_wire.sym} 1270 -540 1 0 {name=l4 sig_type=std_logic lab=avg_mode1}
-C {devices/vsource.sym} 1330 -500 0 0 {name=V25 value=\{avg0\}}
-C {devices/lab_wire.sym} 1330 -540 1 0 {name=l5 sig_type=std_logic lab=avg_mode0}
-C {devices/vsource.sym} 1640 -810 0 0 {name=V19 value=\{ed_bit5\}}
-C {devices/vsource.sym} 1700 -810 0 0 {name=V20 value=\{ed_bit4\}}
-C {devices/vsource.sym} 1760 -810 0 0 {name=V21 value=\{ed_bit3\}}
-C {devices/vsource.sym} 1820 -810 0 0 {name=V22 value=\{ed_bit2\}}
-C {devices/vsource.sym} 1880 -810 0 0 {name=V23 value=\{ed_bit1\}}
-C {devices/vsource.sym} 1940 -810 0 0 {name=V24 value=\{ed_bit0\}}
-C {devices/vsource.sym} 1200 -1080 0 0 {name=V26 value=\{dlyctrl\}}
-C {devices/lab_wire.sym} 1200 -1120 1 0 {name=l3 sig_type=std_logic lab=en_dly_contr}
-C {devices/vsource.sym} 1560 -500 0 0 {name=V27 value=\{osr2\}}
-C {devices/gnd.sym} 1560 -450 0 0 {name=l7 lab=GND}
-C {devices/vsource.sym} 1620 -500 0 0 {name=V28 value=\{osr1\}}
-C {devices/lab_wire.sym} 1560 -540 1 0 {name=l3 sig_type=std_logic lab=osr_mode2}
-C {devices/lab_wire.sym} 1620 -540 1 0 {name=l4 sig_type=std_logic lab=osr_mode1}
-C {devices/vsource.sym} 1680 -500 0 0 {name=V29 value=\{osr0\}}
-C {devices/lab_wire.sym} 1680 -540 1 0 {name=l5 sig_type=std_logic lab=osr_mode0}
-C {devices/gnd.sym} 550 -1000 0 0 {name=l3 lab=GND}
-C {devices/lab_wire.sym} 570 -1090 0 1 {name=l3 sig_type=std_logic lab=nc[0..3]}
-C {devices/vsource.sym} 550 -1050 0 0 {name=V30 value=0}
-C {devices/simulator_commands.sym} 270 -1250 0 0 {name=COMMANDS
+C {devices/vsource.sym} 1350 -170 0 0 {name=V_VCM_2 value=0.9}
+C {devices/gnd.sym} 1350 -130 0 0 {name=l3 lab=GND}
+C {devices/lab_pin.sym} 1350 -210 0 0 {name=l4 sig_type=std_logic lab=vcm}
+C {devices/noconn.sym} 1880 -440 0 1 {name=l1[0..15]}
+C {devices/noconn.sym} 1880 -420 0 1 {name=l2}
+C {devices/vsource.sym} 1290 -290 0 0 {name=V_VCM_1 value=\{vdiff/2\}}
+C {devices/vsource.sym} 1410 -290 2 1 {name=V_VCM_3 value=\{vdiff/2\}}
+C {devices/vsource.sym} 720 -200 0 0 {name=V_VCM value="0 pulse(0 1.8 \{0.5/fclk\} 1n 1n \{0.5/fclk\} \{1/fclk\})"}
+C {devices/gnd.sym} 720 -160 0 0 {name=l3 lab=GND}
+C {devices/lab_wire.sym} 1880 -420 0 1 {name=l3 sig_type=std_logic lab=conv_finished}
+C {devices/lab_wire.sym} 1290 -340 0 1 {name=l3 sig_type=std_logic lab=inp}
+C {devices/lab_wire.sym} 1410 -340 0 0 {name=l3 sig_type=std_logic lab=inn}
+C {devices/vsource.sym} 720 -320 0 0 {name=V1 value="0 pulse(0 1.8 \{treset\} 1n 1n 1 2)"}
+C {devices/vsource.sym} 720 -440 0 0 {name=V31 value="0 pulse(0 1.8 \{tstartconv\} 1n 1n 400n 1.4u)"}
+C {devices/gnd.sym} 720 -400 0 0 {name=l3 lab=GND}
+C {devices/gnd.sym} 720 -280 0 0 {name=l3 lab=GND}
+C {devices/lab_wire.sym} 760 -470 0 1 {name=l3 sig_type=std_logic lab=start_conv}
+C {devices/lab_wire.sym} 760 -350 0 1 {name=l3 sig_type=std_logic lab=rst_n}
+C {devices/lab_wire.sym} 1490 -440 0 0 {name=l3 sig_type=std_logic lab=rst_n}
+C {devices/lab_wire.sym} 1490 -420 0 0 {name=l3 sig_type=std_logic lab=start_conv}
+C {devices/lab_wire.sym} 760 -240 0 1 {name=l3 sig_type=std_logic lab=clk_vcm}
+C {devices/lab_wire.sym} 1490 -400 0 0 {name=l3 sig_type=std_logic lab=clk_vcm}
+C {devices/lab_wire.sym} 1540 -160 0 1 {name=l3 sig_type=std_logic lab=avg_mode[0..2],osr_mode[0..2],nc[0..3],dlyctrl4_[0..5]}
+C {devices/lab_wire.sym} 1540 -200 0 1 {name=l3 sig_type=std_logic lab=dlyctrl1_[0..4],dlyctrl2_[0..4],dlyctrl3_[0..4],en_dly_contr}
+C {devices/vsource.sym} 190 -920 0 0 {name=V4 value=\{bit4\}}
+C {devices/gnd.sym} 190 -870 0 0 {name=l7 lab=GND}
+C {devices/vsource.sym} 250 -920 0 0 {name=V5 value=\{bit3\}}
+C {devices/lab_wire.sym} 190 -960 1 0 {name=l3 sig_type=std_logic lab=dlyctrl1_4}
+C {devices/lab_wire.sym} 250 -960 1 0 {name=l4 sig_type=std_logic lab=dlyctrl1_3}
+C {devices/vsource.sym} 310 -920 0 0 {name=V6 value=\{bit2\}}
+C {devices/vsource.sym} 370 -920 0 0 {name=V7 value=\{bit1\}}
+C {devices/lab_wire.sym} 310 -960 1 0 {name=l5 sig_type=std_logic lab=dlyctrl1_2}
+C {devices/lab_wire.sym} 370 -960 1 0 {name=l8 sig_type=std_logic lab=dlyctrl1_1}
+C {devices/vsource.sym} 430 -920 0 0 {name=V8 value=\{bit0\}}
+C {devices/lab_wire.sym} 430 -960 1 0 {name=l6 sig_type=std_logic lab=dlyctrl1_0}
+C {devices/gnd.sym} 510 -870 0 0 {name=l9 lab=GND}
+C {devices/lab_wire.sym} 510 -960 1 0 {name=l10 sig_type=std_logic lab=dlyctrl2_4}
+C {devices/lab_wire.sym} 570 -960 1 0 {name=l11 sig_type=std_logic lab=dlyctrl2_3}
+C {devices/lab_wire.sym} 630 -960 1 0 {name=l12 sig_type=std_logic lab=dlyctrl2_2}
+C {devices/lab_wire.sym} 690 -960 1 0 {name=l13 sig_type=std_logic lab=dlyctrl2_1}
+C {devices/lab_wire.sym} 750 -960 1 0 {name=l14 sig_type=std_logic lab=dlyctrl2_0}
+C {devices/gnd.sym} 200 -600 0 0 {name=l15 lab=GND}
+C {devices/lab_wire.sym} 200 -690 1 0 {name=l16 sig_type=std_logic lab=dlyctrl3_4}
+C {devices/lab_wire.sym} 260 -690 1 0 {name=l17 sig_type=std_logic lab=dlyctrl3_3}
+C {devices/lab_wire.sym} 320 -690 1 0 {name=l18 sig_type=std_logic lab=dlyctrl3_2}
+C {devices/lab_wire.sym} 380 -690 1 0 {name=l19 sig_type=std_logic lab=dlyctrl3_1}
+C {devices/lab_wire.sym} 440 -690 1 0 {name=l20 sig_type=std_logic lab=dlyctrl3_0}
+C {devices/gnd.sym} 520 -600 0 0 {name=l21 lab=GND}
+C {devices/lab_wire.sym} 520 -690 1 0 {name=l22 sig_type=std_logic lab=dlyctrl4_5}
+C {devices/lab_wire.sym} 580 -690 1 0 {name=l23 sig_type=std_logic lab=dlyctrl4_4}
+C {devices/lab_wire.sym} 640 -690 1 0 {name=l24 sig_type=std_logic lab=dlyctrl4_3}
+C {devices/lab_wire.sym} 700 -690 1 0 {name=l25 sig_type=std_logic lab=dlyctrl4_2}
+C {devices/lab_wire.sym} 760 -690 1 0 {name=l26 sig_type=std_logic lab=dlyctrl4_1}
+C {devices/lab_wire.sym} 820 -690 1 0 {name=l27 sig_type=std_logic lab=dlyctrl4_0}
+C {devices/vsource.sym} 90 -340 0 0 {name=V2 value=\{avg2\}}
+C {devices/gnd.sym} 90 -290 0 0 {name=l7 lab=GND}
+C {devices/vsource.sym} 150 -340 0 0 {name=V3 value=\{avg1\}}
+C {devices/lab_wire.sym} 90 -380 1 0 {name=l3 sig_type=std_logic lab=avg_mode2}
+C {devices/lab_wire.sym} 150 -380 1 0 {name=l4 sig_type=std_logic lab=avg_mode1}
+C {devices/vsource.sym} 210 -340 0 0 {name=V25 value=\{avg0\}}
+C {devices/lab_wire.sym} 210 -380 1 0 {name=l5 sig_type=std_logic lab=avg_mode0}
+C {devices/vsource.sym} 520 -650 0 0 {name=V19 value=\{ed_bit5\}}
+C {devices/vsource.sym} 580 -650 0 0 {name=V20 value=\{ed_bit4\}}
+C {devices/vsource.sym} 640 -650 0 0 {name=V21 value=\{ed_bit3\}}
+C {devices/vsource.sym} 700 -650 0 0 {name=V22 value=\{ed_bit2\}}
+C {devices/vsource.sym} 760 -650 0 0 {name=V23 value=\{ed_bit1\}}
+C {devices/vsource.sym} 820 -650 0 0 {name=V24 value=\{ed_bit0\}}
+C {devices/vsource.sym} 80 -920 0 0 {name=V26 value=\{dlyctrl\}}
+C {devices/lab_wire.sym} 80 -960 1 0 {name=l3 sig_type=std_logic lab=en_dly_contr}
+C {devices/vsource.sym} 440 -340 0 0 {name=V27 value=\{osr2\}}
+C {devices/gnd.sym} 440 -290 0 0 {name=l7 lab=GND}
+C {devices/vsource.sym} 500 -340 0 0 {name=V28 value=\{osr1\}}
+C {devices/lab_wire.sym} 440 -380 1 0 {name=l3 sig_type=std_logic lab=osr_mode2}
+C {devices/lab_wire.sym} 500 -380 1 0 {name=l4 sig_type=std_logic lab=osr_mode1}
+C {devices/vsource.sym} 560 -340 0 0 {name=V29 value=\{osr0\}}
+C {devices/lab_wire.sym} 560 -380 1 0 {name=l5 sig_type=std_logic lab=osr_mode0}
+C {devices/gnd.sym} 1170 -160 0 0 {name=l3 lab=GND}
+C {devices/lab_wire.sym} 1190 -250 0 1 {name=l3 sig_type=std_logic lab=nc[0..3]}
+C {devices/vsource.sym} 1170 -210 0 0 {name=V30 value=0}
+C {devices/simulator_commands.sym} 490 -1250 0 0 {name=COMMANDS
 simulator=ngspice
 only_toplevel=false 
 value="
@@ -450,6 +492,7 @@ value="
 .control
 set num_threads=12
 tran 250p 3.2u
+
 plot inp inn rst_n start_conv conv_finished
 plot start_conv x1.clk_dig x1.clk_comp 
 plot x1.pctop x1.nctop x1.comparator_result
@@ -460,10 +503,13 @@ let k = length(time) - 1
 * Print the result vector at the end of tran
 print result15[k] result14[k] result13[k] result12[k] result11[k] result10[k] result9[k] result8[k] result7[k] result6[k] result5[k] result4[k] result3[k] result2[k] result1[k] result0[k]
 * Print the result diff-voltage at the end of tran
-print ((result15[k]*2048+result14[k]*1024+result13[k]*512+result12[k]*256+result11[k]*128+result10[k]*64+result9[k]*32+result8[k]*16+result7[k]*8+result6[k]*4+result5[k]*2+result4[k]*1+result3[k]*0.5+result2[k]*0.25+result1[k]*0.125+result0[k]*0.0625)-2048*1.8)/2048
+print (((result15[k]*2048+result14[k]*1024+result13[k]*512+result12[k]*256+result11[k]*128+result10[k]*64+result9[k]*32+result8[k]*16+result7[k]*8+result6[k]*4+result5[k]*2+result4[k]*1+result3[k]*0.5+result2[k]*0.25+result1[k]*0.125+result0[k]*0.0625)-2048*1.8)/2048)
+
+set wr_vecnames
+write adc_top_tb.raw inp inn rst_n start_conv conv_finished start_conv x1.clk_dig x1.clk_comp x1.pctop x1.nctop x1.comparator_result 
 .endc
 "}
-C {devices/simulator_commands.sym} 390 -1250 0 0 {name=COMMANDS1
+C {devices/simulator_commands.sym} 610 -1250 0 0 {name=COMMANDS1
 simulator=xyce
 only_toplevel=false 
 value="
@@ -528,13 +574,20 @@ value="
 .print tran format=raw file=adc_top_tb.raw  v(xrst_n) v(start_conv) v(clk_vcm) v(result*) v(conv_finished) \{((v(result0)*0.0625+v(result1)*0.125+v(result2)*0.25+v(result3)*0.5+v(result4)+v(result5)*2+v(result6)*4+v(result7)*8+v(result8)*16+v(result9)*32+v(result10)*64+v(result11)*128+v(result12)*256+v(result13)*512+v(result14)*1024+v(result15)*2048)-2048*1.8)/2048\} 
 
 "}
-C {devices/vsource.sym} 1630 -1080 0 0 {name=V9 value=\{bit4\}}
-C {devices/vsource.sym} 1690 -1080 0 0 {name=V10 value=\{bit3\}}
-C {devices/vsource.sym} 1750 -1080 0 0 {name=V11 value=\{bit2\}}
-C {devices/vsource.sym} 1810 -1080 0 0 {name=V12 value=\{bit1\}}
-C {devices/vsource.sym} 1870 -1080 0 0 {name=V13 value=\{bit0\}}
-C {devices/vsource.sym} 1320 -810 0 0 {name=V14 value=\{bit4\}}
-C {devices/vsource.sym} 1380 -810 0 0 {name=V15 value=\{bit3\}}
-C {devices/vsource.sym} 1440 -810 0 0 {name=V16 value=\{bit2\}}
-C {devices/vsource.sym} 1500 -810 0 0 {name=V17 value=\{bit1\}}
-C {devices/vsource.sym} 1560 -810 0 0 {name=V18 value=\{bit0\}}
+C {devices/vsource.sym} 510 -920 0 0 {name=V9 value=\{bit4\}}
+C {devices/vsource.sym} 570 -920 0 0 {name=V10 value=\{bit3\}}
+C {devices/vsource.sym} 630 -920 0 0 {name=V11 value=\{bit2\}}
+C {devices/vsource.sym} 690 -920 0 0 {name=V12 value=\{bit1\}}
+C {devices/vsource.sym} 750 -920 0 0 {name=V13 value=\{bit0\}}
+C {devices/vsource.sym} 200 -650 0 0 {name=V14 value=\{bit4\}}
+C {devices/vsource.sym} 260 -650 0 0 {name=V15 value=\{bit3\}}
+C {devices/vsource.sym} 320 -650 0 0 {name=V16 value=\{bit2\}}
+C {devices/vsource.sym} 380 -650 0 0 {name=V17 value=\{bit1\}}
+C {devices/vsource.sym} 440 -650 0 0 {name=V18 value=\{bit0\}}
+C {devices/launcher.sym} 960 -1150 0 0 {name=h2 
+descr="Load/unload
+TRAN waveforms" 
+tclcommand="
+xschem raw_read $netlist_dir/adc_top_tb.raw tran
+"
+}
