@@ -52,8 +52,8 @@ assign row_out_n = (16'hFFFE<<row_intermediate_w);
 assign rowon_out_n = {1'b1,row_out_n[15:1]};	
 
 // LSB capacitor C0 is always enabled or disabled
-assign c0p_out_n = 1'b1;
-assign c0n_out_n = 1'b0;
+assign c0p_out_n = 1'b0;
+assign c0n_out_n = 1'b1;
 
 endmodule
 
