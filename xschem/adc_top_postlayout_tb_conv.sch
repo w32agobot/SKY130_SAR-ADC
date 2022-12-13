@@ -20,7 +20,7 @@ L 4 1520 -260 1520 -60 {}
 L 4 1520 -280 1520 -260 {}
 L 4 1240 -280 1520 -280 {}
 L 4 1240 -280 1240 -260 {}
-B 2 1720 -1290 3120 -880 {flags=graph,unlocked
+B 2 1720 -1400 3390 -990 {flags=graph,unlocked
 y1=0
 y2=2
 ypos1=0
@@ -28,8 +28,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=-1.89689e-07
-x2=1.86468e-06
+x1=-8.69706e-08
+x2=1.9674e-06
 divx=5
 subdivx=1
 node="clk_vcm
@@ -40,7 +40,7 @@ unitx=1
 logx=0
 logy=0
 }
-B 2 1720 -870 3120 -470 {flags=graph
+B 2 1720 -980 3390 -580 {flags=graph
 y1=0
 y2=2
 ypos1=0
@@ -48,8 +48,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=-1.89689e-07
-x2=1.86468e-06
+x1=3.34986e-07
+x2=9.9719e-07
 divx=5
 subdivx=1
 node="x1.ctopp
@@ -62,16 +62,16 @@ unitx=1
 logx=0
 logy=0
 }
-B 2 1720 -450 3120 -50 {flags=graph
+B 2 1720 -520 3390 -50 {flags=graph
 y1=0
 y2=2
-ypos1=0.1
-ypos2=2.1
+ypos1=0.2
+ypos2=2.2
 divy=5
 subdivy=1
 unity=1
-x1=-1.89689e-07
-x2=1.86468e-06
+x1=3.34986e-07
+x2=9.9719e-07
 divx=5
 subdivx=1
 node="x1.clk_dig
@@ -82,8 +82,16 @@ x1.clk_ena
 start_conv
 rst_n
 conv_finished
-RESULT,result15,result14,result13,result12,result11,result10,result9,result8,result7,result6,result5,result4,result3,result2,result1,result0"
-color="6 8 9 9 9 9 9 9 9"
+RESULT,result15,result14,result13,result12,result11,result10,result9,result8,result7,result6,result5,result4,result3,result2,result1,result0
+PMAT_ROW_N,x1.pmat.rowon_n[14],x1.pmat.rowon_n[13],x1.pmat.rowon_n[12],x1.pmat.rowon_n[11],x1.pmat.rowon_n[10],x1.pmat.rowon_n[9],x1.pmat.rowon_n[8],x1.pmat.rowon_n[7],x1.pmat.rowon_n[6],x1.pmat.rowon_n[5],x1.pmat.rowon_n[4],x1.pmat.rowon_n[3],x1.pmat.rowon_n[2],x1.pmat.rowon_n[1],x1.pmat.rowon_n[0],x1.pmat.row_n[0]
+PMAT_ROWON_N,x1.pmat.rowon_n[15],x1.pmat.rowon_n[14],x1.pmat.rowon_n[13],x1.pmat.rowon_n[12],x1.pmat.rowon_n[11],x1.pmat.rowon_n[10],x1.pmat.rowon_n[9],x1.pmat.rowon_n[8],x1.pmat.rowon_n[7],x1.pmat.rowon_n[6],x1.pmat.rowon_n[5],x1.pmat.rowon_n[4],x1.pmat.rowon_n[3],x1.pmat.rowon_n[2],x1.pmat.rowon_n[1],x1.pmat.rowon_n[0]
+PMAT_COL_N,x1.pmat.col_n[31],x1.pmat.col_n[30],x1.pmat.col_n[29],x1.pmat.col_n[28],x1.pmat.col_n[27],x1.pmat.col_n[26],x1.pmat.col_n[25],x1.pmat.col_n[24],x1.pmat.col_n[23],x1.pmat.col_n[22],x1.pmat.col_n[21],x1.pmat.col_n[20],x1.pmat.col_n[19],x1.pmat.col_n[18],x1.pmat.col_n[17],x1.pmat.col_n[16],x1.pmat.col_n[15],x1.pmat.col_n[14],x1.pmat.col_n[13],x1.pmat.col_n[12],x1.pmat.col_n[11],x1.pmat.col_n[10],x1.pmat.col_n[9],x1.pmat.col_n[8],x1.pmat.col_n[7],x1.pmat.col_n[6],x1.pmat.col_n[5],x1.pmat.col_n[4],x1.pmat.col_n[3],x1.pmat.col_n[2],x1.pmat.col_n[1],x1.pmat.col_n[0]
+PMAT_en_bit_n,x1.pmat.en_bit_n[2],x1.pmat.en_bit_n[1],x1.pmat.en_bit_n[0]
+NMAT_ROW_N,x1.nmat.rowon_n[14],x1.nmat.rowon_n[13],x1.nmat.rowon_n[12],x1.nmat.rowon_n[11],x1.nmat.rowon_n[10],x1.nmat.rowon_n[9],x1.nmat.rowon_n[8],x1.nmat.rowon_n[7],x1.nmat.rowon_n[6],x1.nmat.rowon_n[5],x1.nmat.rowon_n[4],x1.nmat.rowon_n[3],x1.nmat.rowon_n[2],x1.nmat.rowon_n[1],x1.nmat.rowon_n[0],x1.nmat,row_n[0]
+NMAT_ROWON_N,x1.nmat.rowon_n[15],x1.nmat.rowon_n[14],x1.nmat.rowon_n[13],x1.nmat.rowon_n[12],x1.nmat.rowon_n[11],x1.nmat.rowon_n[10],x1.nmat.rowon_n[9],x1.nmat.rowon_n[8],x1.nmat.rowon_n[7],x1.nmat.rowon_n[6],x1.nmat.rowon_n[5],x1.nmat.rowon_n[4],x1.nmat.rowon_n[3],x1.nmat.rowon_n[2],x1.nmat.rowon_n[1],x1.nmat.rowon_n[0]
+NMAT_COL_N,x1.nmat.col_n[31],x1.nmat.col_n[30],x1.nmat.col_n[29],x1.nmat.col_n[28],x1.nmat.col_n[27],x1.nmat.col_n[26],x1.nmat.col_n[25],x1.nmat.col_n[24],x1.nmat.col_n[23],x1.nmat.col_n[22],x1.nmat.col_n[21],x1.nmat.col_n[20],x1.nmat.col_n[19],x1.nmat.col_n[18],x1.nmat.col_n[17],x1.nmat.col_n[16],x1.nmat.col_n[15],x1.nmat.col_n[14],x1.nmat.col_n[13],x1.nmat.col_n[12],x1.nmat.col_n[11],x1.nmat.col_n[10],x1.nmat.col_n[9],x1.nmat.col_n[8],x1.nmat.col_n[7],x1.nmat.col_n[6],x1.nmat.col_n[5],x1.nmat.col_n[4],x1.nmat.col_n[3],x1.nmat.col_n[2],x1.nmat.col_n[1],x1.nmat.col_n[0]
+NMAT_en_bit_n,x1.nmat.en_bit_n[2],x1.nmat.en_bit_n[1],x1.nmat.en_bit_n[0]"
+color="6 8 9 9 9 9 9 9 9 6 6 6 6 7 7 7 7"
 dataset=-1
 unitx=1
 logx=0
@@ -131,7 +139,7 @@ T {linting} 750 -200 0 0 0.2 0.2 {}
 T {XYCE NEEDS NET '0'} 930 -90 0 0 0.2 0.2 {}
 T {Force VCM voltage.
 No VCM gen} 1260 -260 0 0 0.3 0.3 {}
-T {mpirun -np 12 --oversubscribe Xyce adc_top_postlayout_tb_conv.spice} 1730 -1330 0 0 0.4 0.4 {}
+T {mpirun -np 12 --oversubscribe Xyce adc_top_postlayout_tb_conv.spice} 1730 -1440 0 0 0.4 0.4 {}
 N 1030 -210 1030 -200 {
 lab=VDD}
 N 1480 -990 1540 -990 {
@@ -558,13 +566,14 @@ value="
 * XYCE Simulation Control
 ****************
 
-.OPTIONS TIMEINT BREAKPOINTS=610us,611us,612us
+.OPTIONS TIMEINT reltol=1.0e-3 abstol=1e-9
+
 .tran 1n 3u
 
-.print tran format=raw file=adc_top_postlayout_tb_conv.raw         v(x1:ctopp) v(x1:ctopn) v(x1:vcm) v(x1:clk_ena) v(x1:ndecision_finish) v(x1:comp_latch) v(VDD) v(rst_n) v(start_conv) v(clk_vcm) v(inp) v(inn) v(conv_finished) v(x1:clk_dig) v(x1:clk_comp) v(result*) v(dlyctrl*) v(avg_mode*) v(osr_mode*) v(en_dly_contr) i(v_vdd_1) \{((v(result0)*0.0625+v(result1)*0.125+v(result2)*0.25+v(result3)*0.5+v(result4)+v(result5)*2+v(result6)*4+v(result7)*8+v(result8)*16+v(result9)*32+v(result10)*64+v(result11)*128+v(result12)*256+v(result13)*512+v(result14)*1024+v(result15)*2048)-2048*1.8)/2048\} v(x1:pmat.row_n*) v(x1:pmat.rowon_n*) v(x1:pmat.col_n*) v(x1:pmat.en_bit_n*) v(x1:nmat.row_n*) v(x1:nmat.rowon_n*) v(x1:nmat.col_n*) v(x1:nmat.en_bit_n*) 
-.print tran format=std file=adc_top_postlayout_tb_conv.ascii       v(x1:ctopp) v(x1:ctopn) v(x1:vcm) v(x1:clk_ena) v(x1:ndecision_finish) v(x1:comp_latch) v(VDD) v(rst_n) v(start_conv) v(clk_vcm) v(inp) v(inn) v(conv_finished) v(x1:clk_dig) v(x1:clk_comp) v(result*) v(dlyctrl*) v(avg_mode*) v(osr_mode*) v(en_dly_contr) i(v_vdd_1) \{((v(result0)*0.0625+v(result1)*0.125+v(result2)*0.25+v(result3)*0.5+v(result4)+v(result5)*2+v(result6)*4+v(result7)*8+v(result8)*16+v(result9)*32+v(result10)*64+v(result11)*128+v(result12)*256+v(result13)*512+v(result14)*1024+v(result15)*2048)-2048*1.8)/2048\} v(x1:pmat.row_n*) v(x1:pmat.rowon_n*) v(x1:pmat.col_n*) v(x1:pmat.en_bit_n*) v(x1:nmat.row_n*) v(x1:nmat.rowon_n*) v(x1:nmat.col_n*) v(x1:nmat.en_bit_n*)
-.print tran format=csv file=adc_top_postlayout_tb_conv.csv         v(x1:ctopp) v(x1:ctopn) v(x1:vcm) v(x1:clk_ena) v(x1:ndecision_finish) v(x1:comp_latch) v(VDD) v(rst_n) v(start_conv) v(clk_vcm) v(inp) v(inn) v(conv_finished) v(x1:clk_dig) v(x1:clk_comp) v(result*) v(dlyctrl*) v(avg_mode*) v(osr_mode*) v(en_dly_contr) i(v_vdd_1) \{((v(result0)*0.0625+v(result1)*0.125+v(result2)*0.25+v(result3)*0.5+v(result4)+v(result5)*2+v(result6)*4+v(result7)*8+v(result8)*16+v(result9)*32+v(result10)*64+v(result11)*128+v(result12)*256+v(result13)*512+v(result14)*1024+v(result15)*2048)-2048*1.8)/2048\} v(x1:pmat.row_n*) v(x1:pmat.rowon_n*) v(x1:pmat.col_n*) v(x1:pmat.en_bit_n*) v(x1:nmat.row_n*) v(x1:nmat.rowon_n*) v(x1:nmat.col_n*) v(x1:nmat.en_bit_n*) 
-.print tran format=gnuplot file=adc_top_postlayout_tb_conv.gnu.dat v(x1:ctopp) v(x1:ctopn) v(x1:vcm) v(x1:clk_ena) v(x1:ndecision_finish) v(x1:comp_latch) v(VDD) v(rst_n) v(start_conv) v(clk_vcm) v(inp) v(inn) v(conv_finished) v(x1:clk_dig) v(x1:clk_comp) v(result*) v(dlyctrl*) v(avg_mode*) v(osr_mode*) v(en_dly_contr) i(v_vdd_1) \{((v(result0)*0.0625+v(result1)*0.125+v(result2)*0.25+v(result3)*0.5+v(result4)+v(result5)*2+v(result6)*4+v(result7)*8+v(result8)*16+v(result9)*32+v(result10)*64+v(result11)*128+v(result12)*256+v(result13)*512+v(result14)*1024+v(result15)*2048)-2048*1.8)/2048\} v(x1:pmat.row_n*) v(x1:pmat.rowon_n*) v(x1:pmat.col_n*) v(x1:pmat.en_bit_n*) v(x1:nmat.row_n*) v(x1:nmat.rowon_n*) v(x1:nmat.col_n*) v(x1:nmat.en_bit_n*) 
+.print tran format=raw file=adc_top_postlayout_tb_conv.raw         v(x1:ctopp) v(x1:ctopn) v(x1:vcm) v(x1:clk_ena) v(x1:ndecision_finish) v(x1:comp_latch) v(VDD) v(rst_n) v(start_conv) v(clk_vcm) v(inp) v(inn) v(conv_finished) v(x1:clk_dig) v(x1:clk_comp) v(result*) v(dlyctrl*) v(avg_mode*) v(osr_mode*) v(en_dly_contr) i(v_vdd_1) \{((v(result0)*0.0625+v(result1)*0.125+v(result2)*0.25+v(result3)*0.5+v(result4)+v(result5)*2+v(result6)*4+v(result7)*8+v(result8)*16+v(result9)*32+v(result10)*64+v(result11)*128+v(result12)*256+v(result13)*512+v(result14)*1024+v(result15)*2048)-2048*1.8)/2048\} v(x1:pmat.row_*) v(x1:pmat.rowon_*) v(x1:pmat.col_n*) v(x1:pmat.en_bit_n*) v(x1:nmat.row_*) v(x1:nmat.rowon_*) v(x1:nmat.col_*) v(x1:nmat.en_bit_n*) 
+.print tran format=std file=adc_top_postlayout_tb_conv.ascii       v(x1:ctopp) v(x1:ctopn) v(x1:vcm) v(x1:clk_ena) v(x1:ndecision_finish) v(x1:comp_latch) v(VDD) v(rst_n) v(start_conv) v(clk_vcm) v(inp) v(inn) v(conv_finished) v(x1:clk_dig) v(x1:clk_comp) v(result*) v(dlyctrl*) v(avg_mode*) v(osr_mode*) v(en_dly_contr) i(v_vdd_1) \{((v(result0)*0.0625+v(result1)*0.125+v(result2)*0.25+v(result3)*0.5+v(result4)+v(result5)*2+v(result6)*4+v(result7)*8+v(result8)*16+v(result9)*32+v(result10)*64+v(result11)*128+v(result12)*256+v(result13)*512+v(result14)*1024+v(result15)*2048)-2048*1.8)/2048\} v(x1:pmat.row_*) v(x1:pmat.rowon_*) v(x1:pmat.col_n*) v(x1:pmat.en_bit_n*) v(x1:nmat.row_*) v(x1:nmat.rowon_*) v(x1:nmat.col_*) v(x1:nmat.en_bit_n*)
+.print tran format=csv file=adc_top_postlayout_tb_conv.csv         v(x1:ctopp) v(x1:ctopn) v(x1:vcm) v(x1:clk_ena) v(x1:ndecision_finish) v(x1:comp_latch) v(VDD) v(rst_n) v(start_conv) v(clk_vcm) v(inp) v(inn) v(conv_finished) v(x1:clk_dig) v(x1:clk_comp) v(result*) v(dlyctrl*) v(avg_mode*) v(osr_mode*) v(en_dly_contr) i(v_vdd_1) \{((v(result0)*0.0625+v(result1)*0.125+v(result2)*0.25+v(result3)*0.5+v(result4)+v(result5)*2+v(result6)*4+v(result7)*8+v(result8)*16+v(result9)*32+v(result10)*64+v(result11)*128+v(result12)*256+v(result13)*512+v(result14)*1024+v(result15)*2048)-2048*1.8)/2048\} v(x1:pmat.row_*) v(x1:pmat.rowon_*) v(x1:pmat.col_n*) v(x1:pmat.en_bit_n*) v(x1:nmat.row_*) v(x1:nmat.rowon_*) v(x1:nmat.col_*) v(x1:nmat.en_bit_n*) 
+.print tran format=gnuplot file=adc_top_postlayout_tb_conv.gnu.dat v(x1:ctopp) v(x1:ctopn) v(x1:vcm) v(x1:clk_ena) v(x1:ndecision_finish) v(x1:comp_latch) v(VDD) v(rst_n) v(start_conv) v(clk_vcm) v(inp) v(inn) v(conv_finished) v(x1:clk_dig) v(x1:clk_comp) v(result*) v(dlyctrl*) v(avg_mode*) v(osr_mode*) v(en_dly_contr) i(v_vdd_1) \{((v(result0)*0.0625+v(result1)*0.125+v(result2)*0.25+v(result3)*0.5+v(result4)+v(result5)*2+v(result6)*4+v(result7)*8+v(result8)*16+v(result9)*32+v(result10)*64+v(result11)*128+v(result12)*256+v(result13)*512+v(result14)*1024+v(result15)*2048)-2048*1.8)/2048\} v(x1:pmat.row_*) v(x1:pmat.rowon_*) v(x1:pmat.col_n*) v(x1:pmat.en_bit_n*) v(x1:nmat.row_*) v(x1:nmat.rowon_*) v(x1:nmat.col_*) v(x1:nmat.en_bit_n*) 
 
 
 "
