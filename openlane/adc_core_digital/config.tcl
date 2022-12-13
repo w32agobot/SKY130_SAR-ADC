@@ -24,8 +24,8 @@ set ::env(DESIGN_NAME) adc_core_digital
  set ::env(DESIGN_IS_CORE) 0
  set ::env(FP_PDN_CORE_RING) 0
  set ::env(RT_MAX_LAYER) {met4}
- set ::env(VDD_NETS) [list {VPWR} {VPB}]
- set ::env(GND_NETS) [list {VGND} {VNB}]
+ set ::env(VDD_NETS) {VPWR}
+ set ::env(GND_NETS) {VGND}
 
 # Placement
  set ::env(PL_BASIC_PLACEMENT) 0
