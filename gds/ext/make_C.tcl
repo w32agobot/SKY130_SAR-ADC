@@ -29,7 +29,7 @@ port make
 box 10294 35398 10294 35398
 label clk_dig
 port make
-box 48240 39392 48240 39392
+box 48286 39406 48286 39406
 label clk_comp
 port make
 box 10489 34642 10489 34642
