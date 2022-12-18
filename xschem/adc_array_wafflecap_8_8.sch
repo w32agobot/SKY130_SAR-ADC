@@ -35,11 +35,11 @@ lab=VDD}
 N 190 -500 340 -500 {
 lab=vcom}
 N 190 -420 250 -420 {
-lab=row_n}
-N 190 -400 250 -400 {
 lab=col_n}
+N 190 -400 250 -400 {
+lab=row_n}
 N 190 -380 250 -380 {
-lab=colon_n}
+lab=rowon_n}
 N 190 -360 250 -360 {
 lab=sample_n}
 N 190 -340 250 -340 {
@@ -52,18 +52,20 @@ N 540 -540 590 -540 {
 lab=ctop}
 N 540 -380 590 -380 {
 lab=cbot}
-N 360 -310 360 -200 {
-lab=VSS}
 N 180 -340 190 -340 {
 lab=sample}
 N 180 -360 190 -360 {
 lab=sample_n}
 N 180 -380 190 -380 {
-lab=colon_n}
+lab=rowon_n}
 N 180 -400 190 -400 {
-lab=col_n}
-N 180 -420 190 -420 {
 lab=row_n}
+N 180 -420 190 -420 {
+lab=col_n}
+N 360 -270 360 -200 {
+lab=VSS}
+N 180 -320 250 -320 {}
+N 180 -300 250 -300 {}
 C {devices/iopin.sym} 190 -500 0 1 {name=p3 lab=vcom}
 C {devices/iopin.sym} 190 -550 0 1 {name=p7 lab=VDD}
 C {devices/capa.sym} 540 -460 0 0 {name=C1
@@ -76,9 +78,11 @@ C {devices/iopin.sym} 590 -540 2 1 {name=p9 lab=ctop}
 C {devices/iopin.sym} 190 -150 0 1 {name=p10 lab=VSS}
 C {devices/title.sym} 170 -40 0 0 {name=l1 author="Manuel Moser"}
 C {devices/lab_wire.sym} 590 -380 0 0 {name=l2 sig_type=std_logic lab=cbot}
-C {devices/ipin.sym} 180 -420 0 0 {name=p1 lab=row_n}
-C {devices/ipin.sym} 180 -400 0 0 {name=p2 lab=col_n}
-C {devices/ipin.sym} 180 -380 0 0 {name=p4 lab=colon_n}
+C {devices/ipin.sym} 180 -400 0 0 {name=p1 lab=row_n}
+C {devices/ipin.sym} 180 -420 0 0 {name=p2 lab=col_n}
+C {devices/ipin.sym} 180 -380 0 0 {name=p4 lab=rowon_n}
 C {devices/ipin.sym} 180 -360 0 0 {name=p5 lab=sample_n}
 C {devices/ipin.sym} 180 -340 0 0 {name=p6 lab=sample}
 C {adc_array_circuit_8.sym} 360 -380 0 0 {name=x1}
+C {devices/ipin.sym} 180 -320 0 0 {name=p8 lab=rowoff_n}
+C {devices/ipin.sym} 180 -300 0 0 {name=p11 lab=col}

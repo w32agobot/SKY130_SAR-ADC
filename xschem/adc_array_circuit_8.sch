@@ -1,4 +1,5 @@
-v {xschem version=3.0.0 file_version=1.2 }
+v {xschem version=3.1.0 file_version=1.2
+}
 G {}
 K {}
 V {}
@@ -38,6 +39,16 @@ T {   Copyright 2022 Manuel Moser
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.} 60 -360 0 0 0.2 0.2 {}
+T {CTOP differential parasitics-compensation.
+col and rowoff_n have no logical function, they are physical structures to keep
+the number of HIGH and LOW signals constant under the ADC-capacitors.
+
+column: 
+differential mode, input either 01 or 10
+
+row: (row, rowon, rowoff) 
+Always 2 signals high, 1 signal low.
+Input 110, 101 or 011} 1000 -720 0 0 0.4 0.4 {}
 N 440 -470 470 -470 {
 lab=vdrv}
 N 440 -680 470 -680 {
@@ -155,27 +166,27 @@ lab=VSS}
 N 780 -510 780 -480 {
 lab=VSS}
 N 900 -780 900 -320 {
-lab=row_n}
+lab=col_n}
 N 830 -670 940 -670 {
-lab=colon_n}
+lab=rowon_n}
 N 830 -510 940 -510 {
-lab=colon_n}
+lab=rowon_n}
 N 690 -730 900 -730 {
-lab=row_n}
+lab=col_n}
 N 690 -630 920 -630 {
-lab=col_n}
-N 830 -320 900 -320 {
 lab=row_n}
+N 830 -320 900 -320 {
+lab=col_n}
 N 690 -380 920 -380 {
-lab=col_n}
+lab=row_n}
 N 920 -780 920 -630 {
-lab=col_n}
+lab=row_n}
 N 920 -630 920 -380 {
-lab=col_n}
+lab=row_n}
 N 940 -780 940 -670 {
-lab=colon_n}
+lab=rowon_n}
 N 940 -670 940 -510 {
-lab=colon_n}
+lab=rowon_n}
 N 130 -950 720 -950 {
 lab=VDD}
 N 720 -950 720 -790 {
@@ -206,6 +217,8 @@ N 340 -570 360 -570 {
 lab=Cbot}
 N 340 -780 340 -570 {
 lab=Cbot}
+N 1020 -780 1020 -760 {}
+N 1000 -780 1000 -760 {}
 C {sky130_fd_pr/nfet_01v8.sym} 270 -450 3 0 {name=M1
 L=0.15
 W=0.42
@@ -353,9 +366,9 @@ sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
 }
-C {devices/ipin.sym} 900 -780 1 0 {name=p4 lab=row_n}
-C {devices/ipin.sym} 920 -780 1 0 {name=p5 lab=col_n}
-C {devices/ipin.sym} 940 -780 1 0 {name=p6 lab=colon_n}
+C {devices/ipin.sym} 900 -780 1 0 {name=p4 lab=col_n}
+C {devices/ipin.sym} 920 -780 1 0 {name=p5 lab=row_n}
+C {devices/ipin.sym} 940 -780 1 0 {name=p6 lab=rowon_n}
 C {devices/iopin.sym} 130 -950 0 1 {name=p7 lab=VDD}
 C {devices/iopin.sym} 130 -170 0 1 {name=p8 lab=VSS}
 C {devices/iopin.sym} 130 -780 0 1 {name=p9 lab=Cbot}
@@ -363,3 +376,7 @@ C {devices/lab_wire.sym} 650 -670 0 1 {name=l15 sig_type=std_logic lab=vint1}
 C {devices/lab_wire.sym} 790 -430 0 1 {name=l16 sig_type=std_logic lab=vint2}
 C {devices/lab_wire.sym} 550 -570 0 1 {name=l17 sig_type=std_logic lab=vdrv}
 C {devices/title.sym} 160 -40 0 0 {name=l13 author="Manuel Moser"}
+C {devices/ipin.sym} 1000 -780 1 0 {name=p10 lab=col}
+C {devices/ipin.sym} 1020 -780 1 0 {name=p11 lab=rowoff_n}
+C {devices/noconn.sym} 1000 -760 3 0 {name=l5}
+C {devices/noconn.sym} 1020 -760 3 0 {name=l6}
