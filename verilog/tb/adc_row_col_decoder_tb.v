@@ -19,13 +19,23 @@ module adc_row_col_decoder_tb;
     reg[11:0] data;
     wire[15:0] row_n;
     wire[15:0] rowon_n;
+    wire[15:0] rowoff_n;
     wire[31:0] col_n;
+    wire[31:0] col;
     wire[2:0]  bincap_n;
     wire       c0p_n;
     wire       c0n_n;
 
   adc_row_col_decoder decoder (
-    .data_in(data),.row_out_n(row_n),.rowon_out_n(rowon_n),.col_out_n(col_n),.bincap_out_n(bincap_n),.c0p_out_n(c0p_n),.c0n_out_n(c0n_n)
+    .data_in(data),
+    .row_out_n(row_n),
+    .rowon_out_n(rowon_n),
+    .rowoff_out_n(rowoff_n),
+    .col_out_n(col_n),
+    .col_out(col),
+    .bincap_out_n(bincap_n),
+    .c0p_out_n(c0p_n),
+    .c0n_out_n(c0n_n)
     );
 
    initial begin
@@ -34,7 +44,9 @@ module adc_row_col_decoder_tb;
    		data,
    		row_n,
    		rowon_n,
+   		rowoff_n,
    		col_n,
+   		col,
    		bincap_n,
    		c0p_n,
    		c0n_n,

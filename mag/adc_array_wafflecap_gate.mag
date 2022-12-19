@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1671363782
+timestamp 1671464254
 << nwell >>
 rect 111 880 1004 1004
 rect 0 506 1004 880
@@ -164,14 +164,13 @@ rect 483 661 517 677
 rect 585 956 619 972
 rect 415 600 585 627
 rect 687 956 721 972
-rect 856 970 970 1004
 rect 687 661 721 677
 rect 789 930 823 946
 rect 619 600 789 627
-rect 857 924 970 970
-rect 857 888 868 924
+rect 910 924 970 1004
+rect 910 888 922 924
 rect 958 888 970 924
-rect 857 882 970 888
+rect 910 882 970 888
 rect 907 847 958 848
 rect 907 760 958 776
 rect 178 584 823 600
@@ -220,7 +219,7 @@ rect 854 0 970 51
 rect 46 888 136 924
 rect 483 889 517 927
 rect 687 888 721 926
-rect 868 888 958 924
+rect 922 888 958 924
 rect 907 832 958 847
 rect 907 804 958 832
 rect 879 631 958 667
@@ -249,8 +248,7 @@ rect 517 889 687 926
 rect 324 888 687 889
 rect 721 888 733 926
 rect 324 882 733 888
-rect 856 924 879 963
-rect 856 888 868 924
+rect 856 888 879 963
 rect 961 888 970 963
 rect 856 882 970 888
 rect 0 847 1004 854
@@ -316,7 +314,8 @@ rect 854 0 970 55
 << via1 >>
 rect 272 882 324 934
 rect 879 924 961 963
-rect 879 888 958 924
+rect 879 888 922 924
+rect 922 888 958 924
 rect 958 888 961 924
 rect 876 667 958 707
 rect 876 632 879 667
@@ -607,22 +606,43 @@ rect 972 972 1004 1004
 rect 0 0 32 32
 rect 972 0 1004 32
 << labels >>
-rlabel metal1 0 740 0 770 7 sample_n
-port 2 w
-rlabel metal1 0 512 0 540 7 rowon_n
-port 3 w
-rlabel metal1 0 430 0 458 7 row_n
-port 4 w
-rlabel metal1 0 220 0 248 7 vcom
-port 6 w
-rlabel metal1 0 136 0 192 7 VSS
+flabel metal1 0 798 167 854 0 FreeSans 160 0 0 0 VDD
+port 1 w power bidirectional
+flabel metal1 837 798 1004 854 0 FreeSans 160 0 0 0 VDD
+port 1 e power bidirectional
+flabel metal1 0 136 1004 192 0 FreeSans 320 0 0 0 VSS
+port 2 nsew ground bidirectional
+flabel metal1 0 220 1004 258 0 FreeSans 320 0 0 0 vcom
+port 3 nsew
+flabel metal4 472 874 532 934 1 FreeSans 160 0 0 0 ctop
+port 4 n
+flabel metal1 34 0 148 108 5 FreeSans 320 0 0 0 col
+port 5 s
+flabel metal1 34 882 148 1004 1 FreeSans 320 0 0 0 col
+port 5 n
+flabel space 856 0 970 108 1 FreeSans 320 0 0 0 col_n
+port 6 s
+flabel space 856 882 970 1004 1 FreeSans 320 0 0 0 col_n
+port 6 n
+flabel metal1 0 430 128 458 0 FreeSans 160 0 0 0 row_n
 port 7 w
-rlabel locali 854 0 970 0 5 col_n
-port 8 s
-rlabel metal1 0 798 0 854 7 VDD
-port 13 w
-rlabel space 0 366 0 394 7 sample
-port 5 w
+flabel metal1 846 430 1004 458 0 FreeSans 160 0 0 0 row_n
+port 7 e
+flabel metal1 0 512 134 540 0 FreeSans 160 0 0 0 rowon_n
+port 8 w
+flabel metal1 849 512 1004 540 0 FreeSans 160 0 0 0 rowon_n
+port 8 e
+flabel metal1 0 374 71 402 0 FreeSans 160 0 0 0 sample
+port 9 w
+flabel metal1 846 374 1004 402 0 FreeSans 160 0 0 0 sample
+port 9 e
+flabel metal1 0 740 1004 770 0 FreeSans 160 0 0 0 sample_n
+port 10 nsew
+flabel metal1 0 568 77 596 7 FreeSans 160 0 0 0 off_n
+port 11 w
+flabel metal1 848 568 1004 596 3 FreeSans 160 0 0 0 off_n
+port 11 e
+rlabel metal2 500 972 500 972 1 cbot
 flabel metal1 277 0 317 22 0 FreeSans 64 0 0 0 analog_in
 port 16 nsew
 flabel metal2 726 0 765 23 0 FreeSans 80 0 0 0 sw_n
