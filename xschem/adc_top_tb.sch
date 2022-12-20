@@ -22,8 +22,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=1.75784e-06
-x2=3.36845e-06
+x1=3.35004e-07
+x2=1.6235e-06
 divx=5
 subdivx=1
 node="x1.pctop
@@ -43,19 +43,21 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=1.75784e-06
-x2=3.36845e-06
+x1=3.35004e-07
+x2=1.6235e-06
 divx=5
 subdivx=1
 node="x1.clk_dig
 x1.clk_comp
-start_conv"
-color="12 8 7"
+start_conv
+conv_finished
+result,result15,result14,result13,result12,resul11,result10,result9,result8,result7,result6,result5,result4,result3,result2,result1,result0"
+color="9 9 9 9 9"
 dataset=-1
 unitx=1
 logx=0
 logy=0
-}
+digital=1}
 T {   Copyright 2022 Manuel Moser
 
    Licensed under the Apache License, Version 2.0 (the "License");
@@ -97,51 +99,51 @@ T {
 T {linting} 1200 -250 0 0 0.2 0.2 {}
 N 1070 -250 1070 -240 {
 lab=VDD}
-N 1820 -440 1880 -440 {
+N 1830 -400 1890 -400 {
 lab=result[0..15]  bus=true}
-N 1820 -420 1880 -420 {
+N 1830 -380 1890 -380 {
 lab=conv_finished}
-N 1670 -480 1670 -470 {
+N 1680 -440 1680 -430 {
 lab=VDD}
-N 1670 -290 1670 -280 {
+N 1680 -250 1680 -240 {
 lab=GND}
-N 1490 -440 1520 -440 {
+N 1500 -400 1530 -400 {
 lab=rst_n}
-N 1510 -380 1520 -380 {
+N 1520 -340 1530 -340 {
 lab=inp}
-N 1510 -360 1520 -360 {
+N 1520 -320 1530 -320 {
 lab=inn}
-N 1490 -340 1520 -340 {
+N 1500 -300 1530 -300 {
 lab=avg_mode[0..2],osr_mode[0..2],nc[0..3],dlyctrl4_[0..5]}
-N 1490 -320 1520 -320 {
+N 1500 -280 1530 -280 {
 lab=dlyctrl1_[0..4],dlyctrl2_[0..4],dlyctrl3_[0..4],en_dly_contr}
-N 1350 -210 1350 -200 {
+N 1360 -170 1360 -160 {
 lab=vcm}
-N 1350 -140 1350 -130 {
+N 1360 -100 1360 -90 {
 lab=GND}
-N 1290 -260 1290 -240 {
+N 1300 -220 1300 -200 {
 lab=vcm}
-N 1290 -240 1410 -240 {
+N 1300 -200 1420 -200 {
 lab=vcm}
-N 1410 -260 1410 -240 {
+N 1420 -220 1420 -200 {
 lab=vcm}
-N 1350 -240 1350 -210 {
+N 1360 -200 1360 -170 {
 lab=vcm}
-N 1290 -340 1290 -320 {
+N 1300 -300 1300 -280 {
 lab=inp}
-N 1410 -360 1410 -320 {
+N 1420 -320 1420 -280 {
 lab=inn}
-N 1410 -360 1510 -360 {
+N 1420 -320 1520 -320 {
 lab=inn}
-N 1290 -380 1510 -380 {
+N 1300 -340 1520 -340 {
 lab=inp}
-N 1290 -380 1290 -340 {
+N 1300 -340 1300 -300 {
 lab=inp}
 N 720 -470 760 -470 {
 lab=start_conv}
 N 720 -350 760 -350 {
 lab=rst_n}
-N 1490 -420 1520 -420 {
+N 1500 -380 1530 -380 {
 lab=start_conv}
 N 720 -170 720 -160 {
 lab=GND}
@@ -153,19 +155,19 @@ N 720 -240 720 -230 {
 lab=clk_vcm}
 N 720 -240 760 -240 {
 lab=clk_vcm}
-N 1490 -400 1520 -400 {
+N 1500 -360 1530 -360 {
 lab=clk_vcm}
-N 1490 -320 1490 -220 {
+N 1500 -280 1500 -180 {
 lab=dlyctrl1_[0..4],dlyctrl2_[0..4],dlyctrl3_[0..4],en_dly_contr}
-N 1490 -200 1540 -200 {
+N 1500 -160 1550 -160 {
 lab=dlyctrl1_[0..4],dlyctrl2_[0..4],dlyctrl3_[0..4],en_dly_contr}
-N 1460 -340 1490 -340 {
+N 1470 -300 1500 -300 {
 lab=avg_mode[0..2],osr_mode[0..2],nc[0..3],dlyctrl4_[0..5]}
-N 1460 -340 1460 -160 {
+N 1470 -300 1470 -120 {
 lab=avg_mode[0..2],osr_mode[0..2],nc[0..3],dlyctrl4_[0..5]}
-N 1460 -160 1540 -160 {
+N 1470 -120 1550 -120 {
 lab=avg_mode[0..2],osr_mode[0..2],nc[0..3],dlyctrl4_[0..5]}
-N 1490 -220 1490 -200 {
+N 1500 -180 1500 -160 {
 lab=dlyctrl1_[0..4],dlyctrl2_[0..4],dlyctrl3_[0..4],en_dly_contr}
 N 190 -890 190 -870 {
 lab=GND}
@@ -332,13 +334,13 @@ lab=nc[0..3]}
 N 1070 -180 1070 -160 {
 lab=GND}
 C {devices/title.sym} 170 -40 0 0 {name=l1 author="Manuel Moser"}
-C {adc_top.sym} 1670 -380 0 0 {name=x1}
+C {adc_top.sym} 1680 -340 0 0 {name=x1}
 C {devices/vsource.sym} 1070 -210 0 0 {name=V_VDD_1 value=1.8}
 C {devices/vdd.sym} 1070 -250 0 0 {name=l1 lab=VDD}
 C {devices/gnd.sym} 1070 -160 0 0 {name=l1 lab=GND}
-C {devices/vdd.sym} 1670 -480 0 0 {name=l3 lab=VDD}
-C {devices/gnd.sym} 1670 -280 0 0 {name=l3 lab=GND}
-C {devices/lab_wire.sym} 1880 -440 0 1 {name=l3 sig_type=std_logic lab=result[0..15]}
+C {devices/vdd.sym} 1680 -440 0 0 {name=l3 lab=VDD}
+C {devices/gnd.sym} 1680 -240 0 0 {name=l3 lab=GND}
+C {devices/lab_wire.sym} 1890 -400 0 1 {name=l3 sig_type=std_logic lab=result[0..15]}
 C {devices/code.sym} 730 -1250 0 0 {name=TT_MODELS
 only_toplevel=true
 format="tcleval( @value )"
@@ -348,30 +350,30 @@ value="
 
 "
 spice_ignore=false}
-C {devices/vsource.sym} 1350 -170 0 0 {name=V_VCM_2 value=0.9}
-C {devices/gnd.sym} 1350 -130 0 0 {name=l3 lab=GND}
-C {devices/lab_pin.sym} 1350 -210 0 0 {name=l4 sig_type=std_logic lab=vcm}
-C {devices/noconn.sym} 1880 -440 0 1 {name=l1[0..15]}
-C {devices/noconn.sym} 1880 -420 0 1 {name=l2}
-C {devices/vsource.sym} 1290 -290 0 0 {name=V_VCM_1 value=\{vdiff/2\}}
-C {devices/vsource.sym} 1410 -290 2 1 {name=V_VCM_3 value=\{vdiff/2\}}
+C {devices/vsource.sym} 1360 -130 0 0 {name=V_VCM_2 value=0.9}
+C {devices/gnd.sym} 1360 -90 0 0 {name=l3 lab=GND}
+C {devices/lab_pin.sym} 1360 -170 0 0 {name=l4 sig_type=std_logic lab=vcm}
+C {devices/noconn.sym} 1890 -400 0 1 {name=l1[0..15]}
+C {devices/noconn.sym} 1890 -380 0 1 {name=l2}
+C {devices/vsource.sym} 1300 -250 0 0 {name=V_VCM_1 value=\{vdiff/2\}}
+C {devices/vsource.sym} 1420 -250 2 1 {name=V_VCM_3 value=\{vdiff/2\}}
 C {devices/vsource.sym} 720 -200 0 0 {name=V_VCM value="0 pulse(0 1.8 \{0.5/fclk\} 1n 1n \{0.5/fclk\} \{1/fclk\})"}
 C {devices/gnd.sym} 720 -160 0 0 {name=l3 lab=GND}
-C {devices/lab_wire.sym} 1880 -420 0 1 {name=l3 sig_type=std_logic lab=conv_finished}
-C {devices/lab_wire.sym} 1290 -340 0 1 {name=l3 sig_type=std_logic lab=inp}
-C {devices/lab_wire.sym} 1410 -340 0 0 {name=l3 sig_type=std_logic lab=inn}
+C {devices/lab_wire.sym} 1890 -380 0 1 {name=l3 sig_type=std_logic lab=conv_finished}
+C {devices/lab_wire.sym} 1300 -300 0 1 {name=l3 sig_type=std_logic lab=inp}
+C {devices/lab_wire.sym} 1420 -300 0 0 {name=l3 sig_type=std_logic lab=inn}
 C {devices/vsource.sym} 720 -320 0 0 {name=V1 value="0 pulse(0 1.8 \{treset\} 1n 1n 1 2)"}
 C {devices/vsource.sym} 720 -440 0 0 {name=V31 value="0 pulse(0 1.8 \{tstartconv\} 1n 1n 400n 1.4u)"}
 C {devices/gnd.sym} 720 -400 0 0 {name=l3 lab=GND}
 C {devices/gnd.sym} 720 -280 0 0 {name=l3 lab=GND}
 C {devices/lab_wire.sym} 760 -470 0 1 {name=l3 sig_type=std_logic lab=start_conv}
 C {devices/lab_wire.sym} 760 -350 0 1 {name=l3 sig_type=std_logic lab=rst_n}
-C {devices/lab_wire.sym} 1490 -440 0 0 {name=l3 sig_type=std_logic lab=rst_n}
-C {devices/lab_wire.sym} 1490 -420 0 0 {name=l3 sig_type=std_logic lab=start_conv}
+C {devices/lab_wire.sym} 1500 -400 0 0 {name=l3 sig_type=std_logic lab=rst_n}
+C {devices/lab_wire.sym} 1500 -380 0 0 {name=l3 sig_type=std_logic lab=start_conv}
 C {devices/lab_wire.sym} 760 -240 0 1 {name=l3 sig_type=std_logic lab=clk_vcm}
-C {devices/lab_wire.sym} 1490 -400 0 0 {name=l3 sig_type=std_logic lab=clk_vcm}
-C {devices/lab_wire.sym} 1540 -160 0 1 {name=l3 sig_type=std_logic lab=avg_mode[0..2],osr_mode[0..2],nc[0..3],dlyctrl4_[0..5]}
-C {devices/lab_wire.sym} 1540 -200 0 1 {name=l3 sig_type=std_logic lab=dlyctrl1_[0..4],dlyctrl2_[0..4],dlyctrl3_[0..4],en_dly_contr}
+C {devices/lab_wire.sym} 1500 -360 0 0 {name=l3 sig_type=std_logic lab=clk_vcm}
+C {devices/lab_wire.sym} 1550 -120 0 1 {name=l3 sig_type=std_logic lab=avg_mode[0..2],osr_mode[0..2],nc[0..3],dlyctrl4_[0..5]}
+C {devices/lab_wire.sym} 1550 -160 0 1 {name=l3 sig_type=std_logic lab=dlyctrl1_[0..4],dlyctrl2_[0..4],dlyctrl3_[0..4],en_dly_contr}
 C {devices/vsource.sym} 190 -920 0 0 {name=V4 value=\{bit4\}}
 C {devices/gnd.sym} 190 -870 0 0 {name=l7 lab=GND}
 C {devices/vsource.sym} 250 -920 0 0 {name=V5 value=\{bit3\}}
@@ -506,7 +508,7 @@ print result15[k] result14[k] result13[k] result12[k] result11[k] result10[k] re
 print (((result15[k]*2048+result14[k]*1024+result13[k]*512+result12[k]*256+result11[k]*128+result10[k]*64+result9[k]*32+result8[k]*16+result7[k]*8+result6[k]*4+result5[k]*2+result4[k]*1+result3[k]*0.5+result2[k]*0.25+result1[k]*0.125+result0[k]*0.0625)-2048*1.8)/2048)
 
 set wr_vecnames
-write adc_top_tb.raw inp inn rst_n start_conv conv_finished start_conv x1.clk_dig x1.clk_comp x1.pctop x1.nctop x1.comparator_result 
+write adc_top_tb.raw inp inn rst_n start_conv conv_finished start_conv x1.clk_dig x1.clk_comp x1.pctop x1.nctop x1.comparator_result result0 result1 result2 result3 result4 result5 result6 result7 result8 result9 result10 result11 result12 result13 result14 result15
 .endc
 "}
 C {devices/simulator_commands.sym} 610 -1250 0 0 {name=COMMANDS1
