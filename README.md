@@ -17,9 +17,9 @@ This repository is related to the Master Thesis `Design of a Non-Binary Charge-R
 * Switched capacitor voltage generator integrated
 * $12 bit$ capacitor DAC
   * Unit-capacitor with $C^{1}=0.36 fF$
-  * Binary coded DAC-cells with 1x1, 1x2 and 1x4 unit-capacitors $C^{1}$+$C^{2}$+$C^{4}$ for LSB bits
+  * Binary coded DAC-cells with 1x1, 1x2 and 1x4 unit-capacitors $C^{1}$ + $C^{2}$ + $C^{4}$ for LSB bits
   * Thermo-coded DAC-cells with 1x8 unit-capacitors $C^{8}=2.9fF$
-  * 3 bit LSB binary cells $C^{1}$+$C^{2}$+$C^{4}$ and 9 bit MSB thermometer-coded cells $C^{8}_{1..512}$
+  * 3 bit LSB binary cells $C^{1}$ + $C^{2}$ + $C^{4}$ and 9 bit MSB thermometer-coded cells $C^{8}_{1..512}$
   * Sum of $1.49pF$ per DAC matrix
 * Area of only $442 \mu m \cdot 402\mu m = 178.000 \mu m^2$
 * 100% open source, licensed with [Apache 2.0](LICENSE)
@@ -29,7 +29,7 @@ This repository is related to the Master Thesis `Design of a Non-Binary Charge-R
 
 
 # Top-Level Interface
-The configuration bytes `config_1_in` and `config_2_in` set the number of active delay cells in the self-clocked loop, they are described in [doc/interface.md](doc/interface.md). `rst_n` will reset the circuit active-low. After reset de-assertion the circuit waits for the trigger signal `start_conversion_in`, an edge-detect-circuit makes sure only one conversion is triggered. The conversion is done when `conversion_finished_out` changes to `HIGH`. Input `clk_vcm` is the clock for the switched-capacitor voltage generator.
+The configuration bytes `config_1_in` and `config_2_in` set the number of active delay cells in the self-clocked loop, they are described in [doc/interface.md](doc/Interface.md). `rst_n` will reset the circuit active-low. After reset de-assertion the circuit waits for the trigger signal `start_conversion_in`, an edge-detect-circuit makes sure only one conversion is triggered. The conversion is done when `conversion_finished_out` changes to `HIGH`. Input `clk_vcm` is the clock for the switched-capacitor voltage generator.
 
 ```verilog
 //Top module ADC Control
