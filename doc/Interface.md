@@ -1,9 +1,3 @@
-Pin 1 : VDD  
-Pin 2 : VSS  
-Pin 3..17 : Config byte 1  
-Pin 18..33 : Config byte 2  
-
-
 ## Config byte 1:  
 * Bit 0..2   : Average control of the LSB bits
   * `default`: 1 sample
