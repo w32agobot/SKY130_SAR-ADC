@@ -13,10 +13,15 @@
 //   limitations under the License.
 `default_nettype none
 
-//***************************************
-// Note: use RSZ_DONT_TOUCH_RX
-// Reason -> no buffers on analog input nets
-//***************************************
+//!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+// NOTE: use RSZ_DONT_TOUCH_RX
+// Reason -> no buffers on analog nets
+// 
+// NOTE 2: MANUALLY CONENCT VCM AFTER OPENLANE FLOW
+//
+// NOTE 3: MANUALLY CONNECT DIGITAL CLOCK AFTER OPENLANE FLOW
+//
+//!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 //Top module ADC Control
 module adc_top(
@@ -33,7 +38,8 @@ module adc_top(
    input wire [15:0] config_2_in,    
    output wire [15:0] result_out,    
    output wire conversion_finished_out ,
-   output wire [15:0] dummypin
+   output wire [15:0] dummypin, 
+   input wire clk_dig_dummy
    );
 
 //Configuration byte 1 mapping   
@@ -68,7 +74,7 @@ adc_core_digital core(
    // Connections to Comparator-Latch
    .comparator_in(result_comp),
    // Connections to Clockloop-Generator with Edgedetect
-   .clk_dig_in(clk_dig_cgen),
+   .clk_dig_in(clk_dig_dummy),
    .enable_loop_out(ena_loop_core),
    // Connections to Cap-Matrix
    .sample_matrix_out(sample_matrix_core),

@@ -31,7 +31,7 @@ port make
 box 9800 35496 9800 35496
 label clk_dig
 port make
-box 43459 36818 43459 36818
+box 50807 39378 50807 39378
 label clk_comp
 port make
 box 9800 34680 9800 34680
@@ -52,5 +52,5 @@ ext2spice short resistor
 ext2spice lvs 
 ext2spice cthresh 0.1
 ext2spice merge conservative
-ext2spice
+ext2spice -F
 
