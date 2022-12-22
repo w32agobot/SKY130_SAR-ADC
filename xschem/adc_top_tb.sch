@@ -531,7 +531,7 @@ value="
 * Misc
 ****************
 .param fclk=32768
-.param treset=100n
+.param treset=150n
 .param tstartconv=500n
 .param vdiff=200m
 
@@ -571,7 +571,7 @@ value="
 
 
 .OPTIONS TIMEINT BREAKPOINTS=610us,611us,612us
-.tran 250p 3.2u
+.tran 1n 3.2u
 
 .print tran format=raw file=adc_top_tb.raw  v(xrst_n) v(start_conv) v(clk_vcm) v(result*) v(conv_finished) \{((v(result0)*0.0625+v(result1)*0.125+v(result2)*0.25+v(result3)*0.5+v(result4)+v(result5)*2+v(result6)*4+v(result7)*8+v(result8)*16+v(result9)*32+v(result10)*64+v(result11)*128+v(result12)*256+v(result13)*512+v(result14)*1024+v(result15)*2048)-2048*1.8)/2048\} 
 
