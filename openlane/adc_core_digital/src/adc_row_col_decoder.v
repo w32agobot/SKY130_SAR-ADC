@@ -24,7 +24,9 @@ module adc_row_col_decoder(
     input  wire[11:0] data_in,
     output wire[15:0] row_out_n,
     output wire[15:0] rowon_out_n,
+    output wire[15:0] rowoff_out_n,
     output wire[31:0] col_out_n,
+    output wire[31:0] col_out,
     output wire[2:0]  bincap_out_n,
     output wire       c0p_out_n,
     output wire       c0n_out_n
@@ -46,10 +48,14 @@ wire row_is_odd = row_intermediate_w%2==1;
 //		odd row:  direction is right-to-left
 // *********************************************
 assign bincap_out_n = ~bincap_w;
+
 assign col_out_n = row_is_odd ? (32'h7FFFFFFF>>col_intermediate_w) : 
                                 (32'hFFFFFFFE<<col_intermediate_w) ;
-assign row_out_n = (16'hFFFE<<row_intermediate_w);
-assign rowon_out_n = {1'b1,row_out_n[15:1]};	
+assign col_out = ~col_out_n;                            
+                                
+assign row_out_n = ~(16'h0001<<row_intermediate_w);
+assign rowon_out_n = (16'hFFFF<<row_intermediate_w);
+assign rowoff_out_n = ~(row_out_n&rowon_out_n);
 
 // LSB capacitor C0 is always enabled or disabled
 assign c0p_out_n = 1'b0;

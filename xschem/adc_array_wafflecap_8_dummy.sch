@@ -18,46 +18,52 @@ T {   Copyright 2022 Manuel Moser
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.} 760 -230 0 0 0.2 0.2 {}
-N 490 -270 540 -270 {
+N 490 -350 540 -350 {
 lab=cbot}
-N 360 -200 360 -150 {
-lab=VSS}
-N 380 -390 380 -340 {
+N 380 -470 380 -420 {
 lab=VDD}
-N 340 -390 340 -340 {
+N 340 -470 340 -420 {
 lab=vcom}
-N 380 -440 380 -390 {
+N 380 -520 380 -470 {
 lab=VDD}
-N 190 -150 360 -150 {
+N 190 -230 360 -230 {
 lab=VSS}
-N 190 -440 380 -440 {
+N 190 -520 380 -520 {
 lab=VDD}
-N 190 -390 340 -390 {
+N 190 -470 340 -470 {
 lab=vcom}
-N 190 -310 250 -310 {
-lab=row_n}
-N 190 -290 250 -290 {
+N 190 -390 250 -390 {
 lab=col_n}
-N 190 -270 250 -270 {
-lab=colon_n}
-N 190 -250 250 -250 {
+N 190 -370 250 -370 {
+lab=row_n}
+N 190 -350 250 -350 {
+lab=rowon_n}
+N 190 -330 250 -330 {
 lab=sample_n}
-N 190 -230 250 -230 {
+N 190 -310 250 -310 {
 lab=sample}
-N 540 -270 590 -270 {
+N 540 -350 590 -350 {
 lab=cbot}
-N 580 -430 590 -430 {
+N 580 -510 590 -510 {
 lab=ctop}
-C {devices/iopin.sym} 190 -390 0 1 {name=p3 lab=vcom}
-C {devices/iopin.sym} 190 -440 0 1 {name=p7 lab=VDD}
-C {devices/iopin.sym} 590 -430 2 1 {name=p9 lab=ctop}
-C {devices/iopin.sym} 190 -150 0 1 {name=p10 lab=VSS}
+N 360 -240 360 -230 {
+lab=VSS}
+N 190 -270 250 -270 {
+lab=col}
+N 190 -290 250 -290 {
+lab=rowoff_n}
+C {devices/iopin.sym} 190 -470 0 1 {name=p3 lab=vcom}
+C {devices/iopin.sym} 190 -520 0 1 {name=p7 lab=VDD}
+C {devices/iopin.sym} 590 -510 2 1 {name=p9 lab=ctop}
+C {devices/iopin.sym} 190 -230 0 1 {name=p10 lab=VSS}
 C {devices/title.sym} 170 -40 0 0 {name=l1 author="Manuel Moser"}
-C {devices/lab_wire.sym} 590 -270 0 0 {name=l2 sig_type=std_logic lab=cbot}
-C {devices/ipin.sym} 190 -310 0 0 {name=p1 lab=row_n}
-C {devices/ipin.sym} 190 -290 0 0 {name=p2 lab=col_n}
-C {devices/ipin.sym} 190 -270 0 0 {name=p4 lab=colon_n}
-C {devices/ipin.sym} 190 -250 0 0 {name=p5 lab=sample_n}
-C {devices/ipin.sym} 190 -230 0 0 {name=p6 lab=sample}
-C {devices/noconn.sym} 580 -430 0 0 {name=l4}
-C {adc_array_circuit_8.sym} 360 -270 0 0 {name=x1}
+C {devices/lab_wire.sym} 590 -350 0 0 {name=l2 sig_type=std_logic lab=cbot}
+C {devices/ipin.sym} 190 -370 0 0 {name=p1 lab=row_n}
+C {devices/ipin.sym} 190 -390 0 0 {name=p2 lab=col_n}
+C {devices/ipin.sym} 190 -350 0 0 {name=p4 lab=rowon_n}
+C {devices/ipin.sym} 190 -330 0 0 {name=p5 lab=sample_n}
+C {devices/ipin.sym} 190 -310 0 0 {name=p6 lab=sample}
+C {devices/noconn.sym} 580 -510 0 0 {name=l4}
+C {adc_array_circuit_8.sym} 360 -350 0 0 {name=x1}
+C {devices/ipin.sym} 190 -290 0 0 {name=p8 lab=rowoff_n}
+C {devices/ipin.sym} 190 -270 0 0 {name=p11 lab=col}

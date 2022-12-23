@@ -14,7 +14,9 @@ set ::env(DESIGN_NAME) adc_core_digital
  set ::env(VERILOG_FILES) [glob $::env(DESIGN_DIR)/src/*.v]
 
 # Floorplanning
-
+ set ::env(FP_SIZING) "absolute"
+# set ::env(DIE_AREA) "0 0 184 84"
+ set ::env(DIE_AREA) "0 0 300 300"
  # -synth_explore report: AREA 4 leads to best area
  set ::env(SYNTH_STRATEGY) "DELAY 4"
 

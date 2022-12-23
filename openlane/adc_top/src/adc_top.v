@@ -13,10 +13,15 @@
 //   limitations under the License.
 `default_nettype none
 
-//***************************************
-// Note: use RSZ_DONT_TOUCH_RX
-// Reason -> no buffers on analog input nets
-//***************************************
+//!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+// NOTE: use RSZ_DONT_TOUCH_RX
+// Reason -> no buffers on analog nets
+// 
+// NOTE 2: MANUALLY CONENCT VCM AFTER OPENLANE FLOW
+//
+// NOTE 3: MANUALLY CONNECT DIGITAL CLOCK AFTER OPENLANE FLOW
+//
+//!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 //Top module ADC Control
 module adc_top(
@@ -33,7 +38,8 @@ module adc_top(
    input wire [15:0] config_2_in,    
    output wire [15:0] result_out,    
    output wire conversion_finished_out ,
-   output wire [15:0] dummypin
+   output wire [15:0] dummypin, 
+   input wire clk_dig_dummy
    );
 
 //Configuration byte 1 mapping   
@@ -68,7 +74,7 @@ adc_core_digital core(
    // Connections to Comparator-Latch
    .comparator_in(result_comp),
    // Connections to Clockloop-Generator with Edgedetect
-   .clk_dig_in(clk_dig_cgen),
+   .clk_dig_in(clk_dig_dummy),
    .enable_loop_out(ena_loop_core),
    // Connections to Cap-Matrix
    .sample_matrix_out(sample_matrix_core),
@@ -76,13 +82,17 @@ adc_core_digital core(
    .sample_switch_out(sample_switch_core),
    .sample_switch_out_n(sample_switch_core_n),
    .pmatrix_col_out_n(pmatrix_col_core_n),
+   .pmatrix_col_out(pmatrix_col_core),
    .pmatrix_row_out_n(pmatrix_row_core_n),
    .pmatrix_rowon_out_n(pmatrix_rowon_core_n),
+   .pmatrix_rowoff_out_n(pmatrix_rowoff_core_n),
    .pmatrix_bincap_out_n(pmatrix_bincap_core_n),
    .pmatrix_c0_out_n(pmatrix_c0_core_n),
    .nmatrix_col_out_n(nmatrix_col_core_n),
+   .nmatrix_col_out(nmatrix_col_core),
    .nmatrix_row_out_n(nmatrix_row_core_n),
    .nmatrix_rowon_out_n(nmatrix_rowon_core_n),
+   .nmatrix_rowoff_out_n(nmatrix_rowoff_core_n),
    .nmatrix_bincap_out_n(nmatrix_bincap_core_n),
    .nmatrix_c0_out_n(nmatrix_c0_core_n)
 );
@@ -90,8 +100,10 @@ adc_core_digital core(
 wire sample_matrix_core, sample_matrix_core_n;
 wire sample_switch_core, sample_switch_core_n;
 wire [31:0] pmatrix_col_core_n, nmatrix_col_core_n;
+wire [31:0] pmatrix_col_core, nmatrix_col_core;
 wire [15:0] pmatrix_row_core_n, nmatrix_row_core_n;
 wire [15:0] pmatrix_rowon_core_n, nmatrix_rowon_core_n;
+wire [15:0] pmatrix_rowoff_core_n, nmatrix_rowoff_core_n;
 wire [2:0]  pmatrix_bincap_core_n, nmatrix_bincap_core_n;
 wire        pmatrix_c0_core_n, nmatrix_c0_core_n;
 wire ena_loop_core;
@@ -130,8 +142,7 @@ wire clk_dig_cgen;
 wire clk_comp_cgen;  
 wire sample_pmatrix_cgen, sample_pmatrix_cgen_n;
 wire sample_nmatrix_cgen, sample_nmatrix_cgen_n;
-
-
+  
 //*******************************************
 //      Matrix P-side
 //      **** HARDENED MACRO ****
@@ -142,12 +153,13 @@ adc_array_matrix_12bit pmat (
       .VDD(VDD),	// User area 1.8V supply
       .VSS(VSS),	// User area ground
    `endif
-   .vcm(),
    .sample(sample_pmatrix_cgen),
    .sample_n(sample_pmatrix_cgen_n),
    .row_n(pmatrix_row_core_n),
    .rowon_n(pmatrix_rowon_core_n),
+   .rowoff_n(pmatrix_rowoff_core_n),
    .col_n(pmatrix_col_core_n),
+   .col(pmatrix_col_core),
    .en_bit_n(pmatrix_bincap_core_n),
    .en_C0_n(pmatrix_c0_core_n),
    .sw(sample_switch_core), 
@@ -167,12 +179,13 @@ adc_array_matrix_12bit nmat (
       .VDD(VDD),	// User area 1.8V supply
       .VSS(VSS),	// User area ground
    `endif
-   .vcm(),
    .sample(sample_nmatrix_cgen),
    .sample_n(sample_nmatrix_cgen_n),
    .row_n(nmatrix_row_core_n),
    .rowon_n(nmatrix_rowon_core_n),
+   .rowoff_n(nmatrix_rowoff_core_n),
    .col_n(nmatrix_col_core_n),
+   .col(nmatrix_col_core),
    .en_bit_n(nmatrix_bincap_core_n),
    .en_C0_n(nmatrix_c0_core_n),
    .sw(sample_switch_core), 
@@ -213,7 +226,6 @@ adc_vcm_generator vcm (
       .VDD(VDD),	// User area 1.8V supply
       .VSS(VSS),	// User area ground
    `endif
-   .vcm(),
    .clk(clk_vcm)
 );
 endmodule

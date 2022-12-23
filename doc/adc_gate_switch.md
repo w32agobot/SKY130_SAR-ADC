@@ -41,17 +41,17 @@ Während der Hold-Phase soll sich der gesampelte Kondensator-Spannungswert vom S
 Worst Case: 
 * Bei langsamen Corner (`ss`, $T=-20 ^\circ C$, $V_{cm}=700mV$ ) benötigt das Comparator-Latch $\Delta t = 20 ns$ für eine Entscheidung, allerdings ist der Leakage-Current im  schnellen `ff`-Corner wichtiger. 
 * Der Delay-Loop führt bei maximalem Delay-Setting zu ($\Delta t = 600 ns$) Periodendauer je Messwert. 
-* Bei Averaging von 4 LSB-Bits mit je 31 Samples sind $12+4 \cdot 31=136$ Cycles für eine vollständige Umwandlung nötig. 
+* Bei Averaging von 4 LSB-Bits mit je 31 Samples sind $13+4 \cdot 31=137$ Cycles für eine vollständige Umwandlung nötig. 
 * Die erlaubte Spannungsänderung während der Hold-Phase ist $LSB=440uV$
 * OSR ist hier nicht berücksichtigt, da nach einer erfolgten Wandlung neu gesampled wird.
 
 Die maximale Hold-Zeit in der die Spannung am Kondensator stabil bleiben soll: 
 
-$$T_{hold} = 136 cycles \cdot 600 ns/cycle=81.6 \mu s$$ 
+$$T_{hold} = 137 cycles \cdot 600 ns/cycle=82.2 \mu s$$ 
 
 Die zugehörige Sample-Rate (ohne Oversampling) ist:
 
-$$Samplerate = 1/T_{hold}=12254/s$$
+$$Samplerate = 1/T_{hold}=12165/s$$
 
 Die Spannung am Kondensator darf sich worst-case nach $\Delta t = 81.6 \mu s$ um $\Delta U_C < 1 LSB$ ändern.Der erlaubte Leakage-Current errechnet sich nun aus der Strom/Spannungsbeziehung für Kapazitäten:
 
@@ -60,13 +60,13 @@ $I_{leakage} = C \frac{\Delta U_c}{\Delta t} < C \frac{LSB}{\Delta t}=2.44 pF \f
 Die Oversampling-Rate ist hier nicht zu berücksichtigen, weil nach $T_{hold}$ neu gesampled wird.
 
 ## Mögliche Sample-Rate im Worst-Case Corner
-Angenommen im Delay-Loop ist die Summe der Delays auf sehr schnelle $T_{delays} = 10 ns$ eingestellt, und die Comparator-Entscheidungszeit beträgt $T_{decision} = 20ns$ bei $V_{cm}=700mV$, dann ist die Clock-Periodendauer $T_{loop}=2\cdot 10ns+20ns=40ns$. Bei 16 States für eine Wandlung (kein Average, kein OSR) ergibt das eine Samplerate von
+Angenommen im Delay-Loop ist die Summe der Delays auf sehr schnelle $T_{delays} = 10 ns$ eingestellt, und die Comparator-Entscheidungszeit beträgt $T_{decision} = 20ns$ bei $V_{cm}=700mV$, dann ist die Clock-Periodendauer $T_{loop}=2\cdot 10ns+20ns=40ns$. Bei 17 States für eine Wandlung (kein Average, kein OSR) ergibt das eine Samplerate von
 
-$$Samplerate = 1/(16 \cdot 40ns)=1.56MSamples/s$$ 
+$$Samplerate = 1/(17 \cdot 40ns)=1.47MSamples/s$$ 
 
 ## Mögliche Sample-Rate im Best-Case Corner
 Hier liegt die Comparator-Entscheidungszeit bei  $T_{decision} = 2.2ns$.
-$$Samplerate = 1/(16 \cdot 22.2ns)=2.84MSamples/s$$ 
+$$Samplerate = 1/(17 \cdot 22.2ns)=2.65MSamples/s$$ 
 
 # Switch Topologieauswahl bei Fast-Corner
 Spezifikationen können hier nicht eingehalten werden, die Leakage Current wird zu hoch wenn man in einen okay'ishen On-Resistance-Bereich kommt, egal welche Topologie gewählt wird.

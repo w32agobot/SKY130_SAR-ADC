@@ -37,8 +37,18 @@ T {   Copyright 2022 Manuel Moser
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.} 60 -360 0 0 0.2 0.2 {}
+T {CTOP differential parasitics-compensation.
+col and rowoff_n have no logical function, they are physical structures to keep
+the number of HIGH and LOW signals constant under the ADC-capacitors.
+
+column: 
+differential mode, input either 01 or 10
+
+row: (row, rowon, rowoff) 
+Always 2 signals high, 1 signal low.
+Input 110, 101 or 011} 200 -940 0 0 0.4 0.4 {}
 N 140 -800 150 -800 {
-lab=colon_n}
+lab=rowon_n}
 N 140 -780 150 -780 {
 lab=col_n}
 N 140 -760 150 -760 {
@@ -67,16 +77,24 @@ N 310 -630 490 -630 {
 lab=VSS}
 N 490 -630 490 -600 {
 lab=VSS}
-N 160 -670 440 -670 {}
-N 440 -670 440 -600 {}
-N 160 -460 440 -460 {}
-N 440 -500 440 -460 {}
+N 160 -670 440 -670 {
+lab=sw_n}
+N 440 -670 440 -600 {
+lab=sw_n}
+N 160 -460 440 -460 {
+lab=sw}
+N 440 -500 440 -460 {
+lab=sw}
+N 140 -720 150 -720 {
+lab=col}
+N 140 -700 150 -700 {
+lab=rowoff_n}
 C {devices/ipin.sym} 160 -460 0 0 {name=p1 lab=sw}
 C {devices/ipin.sym} 160 -670 0 0 {name=p2 lab=sw_n}
 C {devices/iopin.sym} 140 -740 0 1 {name=p3 lab=vcom}
 C {devices/ipin.sym} 140 -760 0 0 {name=p4 lab=row_n}
 C {devices/ipin.sym} 140 -780 0 0 {name=p5 lab=col_n}
-C {devices/ipin.sym} 140 -800 0 0 {name=p6 lab=colon_n}
+C {devices/ipin.sym} 140 -800 0 0 {name=p6 lab=rowon_n}
 C {devices/iopin.sym} 160 -600 0 1 {name=p7 lab=VDD}
 C {devices/iopin.sym} 160 -630 0 1 {name=p8 lab=VSS}
 C {devices/title.sym} 160 -40 0 0 {name=l13 author="Manuel Moser"}
@@ -91,3 +109,7 @@ C {devices/noconn.sym} 150 -840 2 0 {name=l6}
 C {devices/iopin.sym} 160 -550 0 1 {name=p17 lab=in}
 C {devices/iopin.sym} 590 -550 0 0 {name=p18 lab=out}
 C {adc_gate_switch.sym} 440 -550 3 0 {name=X1}
+C {devices/ipin.sym} 140 -720 0 0 {name=p9 lab=col}
+C {devices/noconn.sym} 150 -720 2 0 {name=l7}
+C {devices/ipin.sym} 140 -700 0 0 {name=p10 lab=rowoff_n}
+C {devices/noconn.sym} 150 -700 2 0 {name=l8}

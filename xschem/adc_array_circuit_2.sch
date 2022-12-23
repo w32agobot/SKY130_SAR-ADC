@@ -1,4 +1,5 @@
-v {xschem version=3.0.0 file_version=1.2 }
+v {xschem version=3.1.0 file_version=1.2
+}
 G {}
 K {}
 V {}
@@ -38,6 +39,16 @@ T {   Copyright 2022 Manuel Moser
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.} 60 -360 0 0 0.2 0.2 {}
+T {CTOP differential parasitics-compensation.
+col and rowoff_n have no logical function, they are physical structures to keep
+the number of HIGH and LOW signals constant under the ADC-capacitors.
+
+column: 
+differential mode, input either 01 or 10
+
+row: (row, rowon, rowoff) 
+Always 2 signals high, 1 signal low.
+Input 110, 101 or 011} 1000 -880 0 0 0.4 0.4 {}
 N 440 -470 470 -470 {
 lab=vdrv}
 N 440 -680 470 -680 {
@@ -199,11 +210,15 @@ lab=en_n}
 N 830 -320 960 -320 {
 lab=en_n}
 N 940 -780 940 -770 {
-lab=colon_n}
+lab=rowon_n}
 N 920 -780 920 -770 {
-lab=col_n}
-N 900 -780 900 -770 {
 lab=row_n}
+N 900 -780 900 -770 {
+lab=rowoff_n}
+N 880 -780 880 -770 {
+lab=col_n}
+N 860 -780 860 -770 {
+lab=col}
 C {sky130_fd_pr/nfet_01v8.sym} 270 -450 3 0 {name=M1
 L=0.15
 W=0.42
@@ -351,9 +366,9 @@ sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
 }
-C {devices/ipin.sym} 900 -780 1 0 {name=p4 lab=row_n}
-C {devices/ipin.sym} 920 -780 1 0 {name=p5 lab=col_n}
-C {devices/ipin.sym} 940 -780 1 0 {name=p6 lab=colon_n}
+C {devices/ipin.sym} 900 -780 1 0 {name=p4 lab=rowoff_n}
+C {devices/ipin.sym} 920 -780 1 0 {name=p5 lab=row_n}
+C {devices/ipin.sym} 940 -780 1 0 {name=p6 lab=rowon_n}
 C {devices/iopin.sym} 130 -950 0 1 {name=p7 lab=VDD}
 C {devices/iopin.sym} 130 -170 0 1 {name=p8 lab=VSS}
 C {devices/iopin.sym} 130 -780 0 1 {name=p9 lab=Cbot}
@@ -365,3 +380,7 @@ C {devices/ipin.sym} 960 -780 1 0 {name=p10 lab=en_n}
 C {devices/noconn.sym} 900 -770 3 0 {name=l5}
 C {devices/noconn.sym} 920 -770 3 0 {name=l6}
 C {devices/noconn.sym} 940 -770 3 0 {name=l7}
+C {devices/ipin.sym} 860 -780 1 0 {name=p11 lab=col}
+C {devices/ipin.sym} 880 -780 1 0 {name=p12 lab=col_n}
+C {devices/noconn.sym} 860 -770 3 0 {name=l8}
+C {devices/noconn.sym} 880 -770 3 0 {name=l9}

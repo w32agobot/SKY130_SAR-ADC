@@ -32,13 +32,17 @@ module adc_core_digital(
    output wire sample_switch_out,
    output wire sample_switch_out_n,
    output wire [31:0] pmatrix_col_out_n,
+   output wire [31:0] pmatrix_col_out,
    output wire [15:0] pmatrix_row_out_n,
    output wire [15:0] pmatrix_rowon_out_n,
+   output wire [15:0] pmatrix_rowoff_out_n,
    output wire [2:0]  pmatrix_bincap_out_n,
    output wire        pmatrix_c0_out_n,
    output wire [31:0] nmatrix_col_out_n,
+   output wire [31:0] nmatrix_col_out,
    output wire [15:0] nmatrix_row_out_n,
    output wire [15:0] nmatrix_rowon_out_n,
+   output wire [15:0] nmatrix_rowoff_out_n,
    output wire [2:0]  nmatrix_bincap_out_n,
    output wire        nmatrix_c0_out_n
 );
@@ -66,7 +70,7 @@ wire conv_finished_cnb_n;
 wire sample_cnb_n;
 wire sample_cnb;
 
-adc_control_nonbinary #(.MATRIX_BITS(12),.NONBINARY_REDUNDANCY(3)) cnb (
+adc_control_nonbinary cnb (
    .clk(clk_dig_in),
    .rst_n(rst_n),
    .comparator_in(comparator_in),
@@ -87,7 +91,9 @@ adc_row_col_decoder pdc (
    .data_in(pswitch_cnb),
    .row_out_n(pmatrix_row_out_n),
    .rowon_out_n(pmatrix_rowon_out_n),
+   .rowoff_out_n(pmatrix_rowoff_out_n),
    .col_out_n(pmatrix_col_out_n),
+   .col_out(pmatrix_col_out),
    .bincap_out_n(pmatrix_bincap_out_n),
    .c0p_out_n(pmatrix_c0_out_n),
    .c0n_out_n(_unused_ok_pin1)
@@ -97,7 +103,9 @@ adc_row_col_decoder ndc (
    .data_in(nswitch_cnb),
    .row_out_n(nmatrix_row_out_n),
    .rowon_out_n(nmatrix_rowon_out_n),
+   .rowoff_out_n(nmatrix_rowoff_out_n),
    .col_out_n(nmatrix_col_out_n),
+   .col_out(nmatrix_col_out),
    .bincap_out_n(nmatrix_bincap_out_n),
    .c0p_out_n(_unused_ok_pin2),
    .c0n_out_n(nmatrix_c0_out_n)

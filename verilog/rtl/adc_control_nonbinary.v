@@ -166,7 +166,7 @@ module adc_control_nonbinary #(parameter MATRIX_BITS = 12, NONBINARY_REDUNDANCY 
                                (shift_register_r==17'd2**3 ) ? 12'd2 :
                                (shift_register_r==17'd2**2 ) ? 12'd1 :
                                (shift_register_r==17'd2**1 ) ? 12'd0 :
-                               (shift_register_r==17'd2**0 ) ? 12'd0 :
+                               (shift_register_r==17'd2**0 ) ? 12'd2048 :
                                12'dX; // default signal for illegal state
 
     //*******************************
