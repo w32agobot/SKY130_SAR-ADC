@@ -11,13 +11,16 @@ set ::env(DESIGN_NAME) adc_core_digital
  set ::env(CLOCK_PERIOD) 20
 
 # Files
- set ::env(VERILOG_FILES) [glob $::env(DESIGN_DIR)/src/*.v]
+  set ::env(VERILOG_FILES) "\
+    $::env(DESIGN_DIR)/../../verilog/rtl/adc_control_nonbinary.v \
+    $::env(DESIGN_DIR)/../../verilog/rtl/adc_core_digital.v \
+    $::env(DESIGN_DIR)/../../verilog/rtl/adc_osr.v \
+    $::env(DESIGN_DIR)/../../verilog/rtl/adc_row_col_decoder.v "
+    
 
 # Floorplanning
  set ::env(FP_SIZING) "absolute"
-# set ::env(DIE_AREA) "0 0 184 84"
  set ::env(DIE_AREA) "0 0 300 300"
- # -synth_explore report: AREA 4 leads to best area
  set ::env(SYNTH_STRATEGY) "DELAY 4"
 
 # Power distribution network settings

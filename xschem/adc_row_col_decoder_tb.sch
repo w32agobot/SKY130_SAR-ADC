@@ -206,6 +206,14 @@ N 1250 -770 1270 -770 {
 lab=col[0..31]}
 N 1420 -740 1420 -720 {
 lab=GND}
+N 600 -680 650 -680 {
+lab=#net1}
+N 600 -660 650 -660 {
+lab=#net1}
+N 600 -680 600 -660 {
+lab=#net1}
+N 600 -660 600 -630 {
+lab=#net1}
 C {devices/simulator_commands.sym} 10 -130 0 0 {name=COMMANDS
 simulator=xyce
 only_toplevel=false 
@@ -366,3 +374,4 @@ C {devices/launcher.sym} 1890 -860 0 0 {name=h5
 descr="load waves" 
 tclcommand="xschem raw_read $netlist_dir/adc_row_col_decoder_tb.raw tran"
 }
+C {devices/gnd.sym} 600 -630 0 0 {name=l29 lab=GND}

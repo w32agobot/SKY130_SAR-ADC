@@ -37,18 +37,10 @@ N 1410 -560 1440 -560 {
 lab=nmatrix_row_n_[0..15] bus=true}
 N 1410 -540 1440 -540 {
 lab=nmatrix_rowon_n_[0..15] bus=true}
-N 750 -940 780 -940 {
+N 750 -920 780 -920 {
 lab=ena}
 N 750 -960 780 -960 {
 lab=conv_finished}
-N 750 -890 780 -890 {
-lab=sample_matrix}
-N 750 -870 780 -870 {
-lab=sample_matrix_n}
-N 750 -850 780 -850 {
-lab=sample_switch}
-N 750 -830 780 -830 {
-lab=sample_switch_n}
 N 1410 -990 1440 -990 {
 lab=nsample_p}
 N 1410 -870 1440 -870 {
@@ -125,7 +117,7 @@ N 410 -1350 610 -1350 {
 lab=clk_vcm}
 N 1780 -680 1790 -680 {
 lab=pctop}
-N 780 -940 880 -940 {
+N 780 -920 880 -920 {
 lab=ena}
 N 880 -1260 880 -940 {
 lab=ena}
@@ -331,6 +323,18 @@ N 1060 -480 1060 -380 {
 lab=nmatrix_col_[0..31] bus=true}
 N 1060 -380 1440 -380 {
 lab=nmatrix_col_[0..31] bus=true}
+N 880 -940 880 -920 {
+lab=ena}
+N 750 -940 780 -940 {
+lab=conv_finished_osr}
+N 750 -880 780 -880 {}
+N 780 -890 780 -880 {}
+N 750 -860 780 -860 {}
+N 780 -870 780 -860 {}
+N 750 -840 780 -840 {}
+N 780 -850 780 -840 {}
+N 750 -820 780 -820 {}
+N 780 -830 780 -820 {}
 C {devices/title.sym} 170 -40 0 0 {name=l1 author="Manuel Moser"}
 C {devices/iopin.sym} 350 -1440 0 1 {name=p1 lab=VDD}
 C {devices/iopin.sym} 350 -1420 0 1 {name=p1 lab=VSS}
@@ -349,7 +353,7 @@ C {devices/lab_wire.sym} 780 -560 0 1 {name=l2 sig_type=std_logic lab=nmatrix_ro
 C {devices/lab_wire.sym} 780 -540 0 1 {name=l3 sig_type=std_logic lab=nmatrix_rowon_n_[0..15]}
 C {devices/lab_wire.sym} 780 -440 0 1 {name=l4 sig_type=std_logic lab=nmatrix_c0_n}
 C {devices/lab_wire.sym} 780 -460 0 1 {name=l5 sig_type=std_logic lab=nmatrix_bincap_n_[0..2]}
-C {devices/lab_wire.sym} 780 -940 0 1 {name=l1 sig_type=std_logic lab=ena}
+C {devices/lab_wire.sym} 780 -920 0 1 {name=l1 sig_type=std_logic lab=ena}
 C {devices/lab_wire.sym} 780 -960 0 1 {name=l1 sig_type=std_logic lab=conv_finished}
 C {devices/lab_wire.sym} 780 -890 0 1 {name=l1 sig_type=std_logic lab=sample_matrix}
 C {devices/lab_wire.sym} 780 -870 0 1 {name=l1 sig_type=std_logic lab=sample_matrix_n}
@@ -407,3 +411,5 @@ C {devices/lab_wire.sym} 770 -700 0 1 {name=l6 sig_type=std_logic lab=pmatrix_ro
 C {devices/lab_wire.sym} 770 -660 0 1 {name=l7 sig_type=std_logic lab=pmatrix_col_[0..31]}
 C {devices/lab_wire.sym} 780 -520 0 1 {name=l8 sig_type=std_logic lab=nmatrix_rowoff_n_[0..15]}
 C {devices/lab_wire.sym} 780 -480 0 1 {name=l9 sig_type=std_logic lab=nmatrix_col_[0..31]}
+C {devices/lab_wire.sym} 780 -940 0 1 {name=l10 sig_type=std_logic lab=conv_finished_osr}
+C {devices/opin.sym} 390 -1400 0 0 {name=p2 lab=conv_finished_osr}

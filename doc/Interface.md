@@ -11,7 +11,13 @@
   * `010`:     16 samples
   * `011`:     64 samples
   * `100`:     256 samples  
-* Bit 6..9 : unused
+* Bit 6 : Row decoder mode
+  * `0`: progress down-to-up
+  * `1`: progress middle-to-side
+* Bit 7 : Column decoder mode
+  * `0`: progress side-to-side (even: L to R, odd: R to L)
+  * `1`: progress middle-to-side
+* Bit 8..9 : unused
 * Bit 10..15 : delay edge detect  
   * `Bit 0` : +  5ns Delay
   * `Bit 1` : + 10ns Delay

@@ -29,7 +29,7 @@ adc_osr osr_dut (
    .osr_mode_in(osr_mode),
    .data_in(data),
    .data_out(result),
-   .conversion_finished_strobe_out(conversion_finished)
+   .conversion_finished_osr_out(conversion_finished)
    );
 
 

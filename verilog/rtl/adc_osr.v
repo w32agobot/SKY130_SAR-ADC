@@ -27,7 +27,7 @@ module adc_osr (
    input wire [2:0] osr_mode_in,
    input wire [11:0] data_in,
    output wire [15:0] data_out,
-   output wire conversion_finished_strobe_out
+   output wire conversion_finished_osr_out
    );
 
    // internal registers
@@ -44,7 +44,7 @@ module adc_osr (
    wire [15:0] next_output_w;
 
    // Direct signals
-   assign conversion_finished_strobe_out = data_valid_r & data_valid_strobe;
+   assign conversion_finished_osr_out = data_valid_r & data_valid_strobe;
    
    //******************************************
    //   data_valid_strobe as clock input
