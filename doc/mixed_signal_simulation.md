@@ -1,7 +1,38 @@
 # Mixed Signal Simulation
 Two ways: True analog simulation, or mixed-signal with XSpice using analog-digital interfaces
-## Method A: True Mixed-Signal Simulation with XSpice in ngspice
+## Method A: True Mixed-Signal Simulation with xspice in ngspice
 Can be done pre-layout and is faster than true-analog post-layout simulation. The standard cells from the `SPICE` file are replaced with timing data (recommendation `-io_time=500p -time=50p -idelay=5p -odelay=50p -cload=250f`).  
+
+### "Quick" start
+* Set up an OpenLane project with the RTL `.v`
+* Use `/openlane/designs/<yourdesign>/runs/<run>/results/final/synthesis/<yourdesign>.v` for the following steps
+* Run `vlog2Verilog <yourdesign>.v -o <yourdesign>.vp -l $PDKPATH/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef -v "VPWR,VPB" -g "VGND,VNB"`
+* Modify the resulting file `<yourdesign>.vp`
+  * Search for `conb` instances
+  * `conb` has port `.HI()` and `.LO()`, add the missing ports
+  * Otherwise there will be an error message `Port missing`
+* Run `vlog2Spice <yourdesign>.vp -l $PDKPATH/libs.ref/sky130_fd_sc_hd/spice/sky130_fd_sc_hd.spice -o <yourdesign>.spice`
+* Run `python3 spi2xspice.py $PDKPATH/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib -io_time=500p -time=50p -idelay=5p -odelay=50p -cload=250f <yourdesign>.spice <yourdesign>.xspice`
+* Modify the resulting file `<yourdesign>.xspice`
+  * Search for `conb` instances
+    * Example:  
+    `A_799_ [] [c0n_out_n _noconnect_1_] d_genlut_sky130_fd_sc_hd__conb_1`  
+    `A_800_ [] [_noconnect_2_ c0p_out_n] d_genlut_sky130_fd_sc_hd__conb_1`
+  * replace them with `done` (digital one) and `dzero` (digital zero) instances
+    * Example:  
+    `A_799_ c0n_out_n done`  
+    `A_800_ c0p_out_n dzero`
+  * Check `toana_1v8` and `todig_1v8` instances, sometimes they are not correct
+    * Example:  
+    `AD2A20 [col_out_14_] [a_col_out_14_] toana_1v8`  
+    `AA2D4 [a_col_out_15_] [col_out_15_] todig_1v8`  
+    Here you see an output signal has been confused `a_col_out_15_`, it is falsely defined as input `todig_1v8`. Change to  
+    `AD2D4x [col_out_15_] [a_col_out_15_] toana_1v8`
+* Check if the spice-model port-order matches the order from your simulation
+
+
+
+### Detailed description
 
 There are several different steps to perform depending on which information your files include.
 

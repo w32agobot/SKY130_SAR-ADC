@@ -207,13 +207,13 @@ lab=col[0..31]}
 N 1420 -740 1420 -720 {
 lab=GND}
 N 600 -680 650 -680 {
-lab=#net1}
+lab=GND}
 N 600 -660 650 -660 {
-lab=#net1}
-N 600 -680 600 -660 {
-lab=#net1}
+lab=GND}
 N 600 -660 600 -630 {
-lab=#net1}
+lab=GND}
+N 600 -680 600 -660 {
+lab=GND}
 C {devices/simulator_commands.sym} 10 -130 0 0 {name=COMMANDS
 simulator=xyce
 only_toplevel=false 
@@ -258,7 +258,7 @@ C {devices/simulator_commands.sym} 250 -130 0 0 {name=COMMANDS1
 simulator=ngspice
 only_toplevel=false 
 value="
-.include ../../spice/adc_row_col_decoder.xspice
+.include ../../spice/adc_row_col_decoder.v.xspice
 .include ../../spice/adc_array_matrix_12bit.mag.C.postlayout.spice
 .save ctop_ideal ctop_postlayout
 .ic v(ctop_ideal)=0 v(ctop_postlayout)=0

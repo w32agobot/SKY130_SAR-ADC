@@ -494,14 +494,14 @@ value="
 ***************
 * ROW COL mode
 ***************
-.param rowmode = 0
-.param colmode = 0
+.param rowmode = 1.8
+.param colmode = 1.8
 
 
 .save all
 .control
 set num_threads=12
-tran 250p 3.2u
+tran 250p 1.6u
 
 plot inp inn rst_n start_conv conv_finished
 plot start_conv x1.clk_dig x1.clk_comp 
