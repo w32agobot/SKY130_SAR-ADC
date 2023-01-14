@@ -116,11 +116,11 @@ Netlists match uniquely.
 Subcircuit pins:
 Circuit 1: adc_nor                         |Circuit 2: adc_nor                         
 -------------------------------------------|-------------------------------------------
-Q                                          |q                                          
-VSS                                        |VSS                                        
 VDD                                        |VDD                                        
-B                                          |b                                          
-A                                          |a                                          
+q                                          |q                                          
+VSS                                        |VSS                                        
+a                                          |a                                          
+b                                          |b                                          
 ---------------------------------------------------------------------------------------
 Cell pin lists are equivalent.
 Device classes adc_nor and adc_nor are equivalent.
@@ -153,8 +153,8 @@ Making another compare attempt.
 Subcircuit summary:
 Circuit 1: adc_nor_latch                   |Circuit 2: adc_nor_latch                   
 -------------------------------------------|-------------------------------------------
-sky130_fd_pr__nfet_01v8 (4)                |sky130_fd_pr__nfet_01v8 (4)                
 sky130_fd_pr__pfet_01v8 (8)                |sky130_fd_pr__pfet_01v8 (8)                
+sky130_fd_pr__nfet_01v8 (4)                |sky130_fd_pr__nfet_01v8 (4)                
 Number of devices: 12                      |Number of devices: 12                      
 Number of nets: 10                         |Number of nets: 10                         
 ---------------------------------------------------------------------------------------
@@ -165,26 +165,27 @@ Netlists match uniquely.
 Subcircuit pins:
 Circuit 1: adc_nor_latch                   |Circuit 2: adc_nor_latch                   
 -------------------------------------------|-------------------------------------------
-VDD                                        |VDD                                        
-Q                                          |q                                          
-QN                                         |qn                                         
-R                                          |r                                          
-S                                          |s                                          
 VSS                                        |VSS                                        
+s                                          |s                                          
+r                                          |r                                          
+VDD                                        |VDD                                        
+q                                          |q                                          
+qn                                         |qn                                         
 ---------------------------------------------------------------------------------------
 Cell pin lists are equivalent.
 Device classes adc_nor_latch and adc_nor_latch are equivalent.
 
-Class adc_comp_circuit (0):  Merged 23 parallel devices.
+Class adc_comp_circuit (0):  Merged 26 parallel devices.
+Class adc_comp_circuit (1):  Merged 3 parallel devices.
 Subcircuit summary:
 Circuit 1: adc_comp_circuit                |Circuit 2: adc_comp_circuit                
 -------------------------------------------|-------------------------------------------
 adc_noise_decoup_cell2 (2)                 |adc_noise_decoup_cell2 (2)                 
 adc_comp_buffer (2)                        |adc_comp_buffer (2)                        
-sky130_fd_pr__pfet_01v8 (16->6)            |sky130_fd_pr__pfet_01v8 (6)                
-sky130_fd_pr__nfet_01v8 (12->5)            |sky130_fd_pr__nfet_01v8 (5)                
-sky130_fd_pr__nfet_01v8_lvt (8->2)         |sky130_fd_pr__nfet_01v8_lvt (2)            
-Number of devices: 17                      |Number of devices: 17                      
+sky130_fd_pr__pfet_01v8 (22->11)           |sky130_fd_pr__pfet_01v8 (12->11)           
+sky130_fd_pr__nfet_01v8 (16->7)            |sky130_fd_pr__nfet_01v8 (9->7)             
+sky130_fd_pr__nfet_01v8_lvt (10->4)        |sky130_fd_pr__nfet_01v8_lvt (4)            
+Number of devices: 26                      |Number of devices: 26                      
 Number of nets: 15                         |Number of nets: 15                         
 ---------------------------------------------------------------------------------------
 Resolving symmetries by property value.
@@ -194,16 +195,16 @@ Netlists match uniquely.
 Subcircuit pins:
 Circuit 1: adc_comp_circuit                |Circuit 2: adc_comp_circuit                
 -------------------------------------------|-------------------------------------------
-clk                                        |clk                                        
-nclk                                       |nclk                                       
+a_470_n1001#                               |inp **Mismatch**                           
+a_30_n1001#                                |inn **Mismatch**                           
+a_1607_n1292#                              |nclk **Mismatch**                          
 VPWR                                       |VPWR                                       
-inn                                        |inn                                        
-inp                                        |inp                                        
-outn                                       |outn                                       
-outp                                       |outp                                       
+adc_comp_buffer_1/out                      |outp **Mismatch**                          
+adc_comp_buffer_0/out                      |outn **Mismatch**                          
+a_12_n446#                                 |clk **Mismatch**                           
 VGND                                       |VGND                                       
 ---------------------------------------------------------------------------------------
-Cell pin lists are equivalent.
+Cell pin lists for adc_comp_circuit and adc_comp_circuit altered to match.
 Device classes adc_comp_circuit and adc_comp_circuit are equivalent.
 
 Subcircuit summary:

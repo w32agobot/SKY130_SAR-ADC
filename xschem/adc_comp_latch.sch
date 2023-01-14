@@ -29,25 +29,25 @@ lab=#net1}
 N 330 -500 340 -500 {
 lab=#net1}
 N 750 -400 840 -400 {
-lab=#net2}
+lab=VDD}
 N 750 -410 750 -400 {
-lab=#net2}
+lab=VDD}
 N 720 -410 750 -410 {
-lab=#net2}
+lab=VDD}
 N 720 -370 750 -370 {
-lab=#net3}
+lab=#net2}
 N 750 -380 750 -370 {
-lab=#net3}
+lab=#net2}
 N 750 -380 840 -380 {
-lab=#net3}
+lab=#net2}
 N 500 -470 560 -470 {
-lab=#net4}
+lab=#net3}
 N 500 -450 560 -450 {
 lab=#net1}
 N 270 -530 270 -520 {
 lab=VDD}
 N 270 -480 270 -470 {
-lab=#net5}
+lab=VSS}
 N 440 -530 440 -520 {
 lab=VDD}
 N 440 -480 440 -470 {
@@ -65,15 +65,15 @@ lab=VDD}
 N 870 -530 870 -520 {
 lab=VSS}
 N 810 -560 830 -560 {
-lab=#net2}
+lab=VDD}
 N 810 -560 810 -400 {
-lab=#net2}
+lab=VDD}
 N 780 -580 830 -580 {
-lab=#net3}
+lab=#net2}
 N 780 -580 780 -380 {
-lab=#net3}
+lab=#net2}
 N 500 -500 500 -470 {
-lab=#net4}
+lab=#net3}
 N 200 -410 560 -410 {
 lab=inp}
 N 200 -500 220 -500 {
@@ -87,7 +87,7 @@ lab=latch_qn}
 N 980 -380 1040 -380 {
 lab=latch_q}
 N 270 -470 270 -460 {
-lab=#net5}
+lab=VSS}
 N 270 -540 270 -530 {
 lab=VDD}
 N 440 -540 440 -530 {
@@ -120,3 +120,5 @@ C {devices/lab_wire.sym} 910 -330 3 0 {name=l8 sig_type=std_logic lab=VSS}
 C {devices/lab_wire.sym} 620 -320 3 0 {name=l9 sig_type=std_logic lab=VSS}
 C {devices/lab_wire.sym} 440 -470 3 0 {name=l10 sig_type=std_logic lab=VSS}
 C {devices/lab_wire.sym} 270 -460 3 0 {name=l11 sig_type=std_logic lab=VSS}
+C {devices/lab_wire.sym} 730 -410 0 1 {name=l12 sig_type=std_logic lab=comp_outp}
+C {devices/lab_wire.sym} 730 -370 2 0 {name=l13 sig_type=std_logic lab=comp_outn}
