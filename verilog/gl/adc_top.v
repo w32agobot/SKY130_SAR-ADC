@@ -37,7 +37,8 @@ module adc_top(
    input wire [15:0] config_1_in,    
    input wire [15:0] config_2_in,    
    output wire [15:0] result_out,    
-   output wire conversion_finished_out ,
+   output wire conversion_finished_out,
+   output wire conversion_finished_osr_out,
    output wire [15:0] dummypin, 
    input wire clk_dig_dummy
    );
@@ -71,6 +72,7 @@ adc_core_digital core(
    .config_2_in(config_2_in),
    .result_out(result_out),
    .conv_finished_out(conversion_finished_out),
+   .conv_finished_out(conversion_finished_osr_out),
    // Connections to Comparator-Latch
    .comparator_in(result_comp),
    // Connections to Clockloop-Generator with Edgedetect
