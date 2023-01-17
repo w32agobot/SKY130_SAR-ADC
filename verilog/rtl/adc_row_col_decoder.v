@@ -50,7 +50,7 @@ wire[2:0] bincap_w = data_in[2:0];
 wire[4:0] col_intermediate_w = data_in[7:3];
 wire[3:0] row_intermediate_w = data_in[11:8];
 
-wire row_direction_RL = row_intermediate_w[0] ^ row_mode ; // romode  = 0 .. even/odd row is left to right
+wire row_direction_RL = row_intermediate_w[0] ; // romode  = 0 .. even/odd row is left to right
                                                            // rowmode = 1 .. lower half rows are left to right
 
 // *********************************************
@@ -81,6 +81,11 @@ assign row_out_n = row_mode ? row_midtoside_n : row_bottotop_n ;
 assign rowon_out_n = row_mode ? rowon_midtoside_n : rowon_bottotop_n ;
 
 
+
+// status
+wire is_first_row = ~row_out_n[0];
+
+
 // *********************************************
 //   Column Decoder
 //
@@ -90,19 +95,27 @@ assign rowon_out_n = row_mode ? rowon_midtoside_n : rowon_bottotop_n ;
 //   Col Mode 1: Direction from middle to side MSB[8 6 4 2 1 3 5 7]LSB
 // *********************************************
 
-
-/// Column: determine even row odd row vectors
-/// Calculate if column starts with 011..111 or 111...111
-/// because of the unsymmetric first row in the matrix
+// Shift register
 wire[32:0] col_shift  = (33'h1FFFFFFFE)<<col_intermediate_w;
-wire[32:0] col_shift_inv  = (33'h0FFFFFFFF)>>col_intermediate_w;
-wire[31:0] col_even_n = row_out_n[0]==1'b0 & col_mode==1'b1 ? col_shift[32:1] :
-                        row_out_n[0]==1'b0 & col_mode==1'b0 ? col_shift[31:0] :
-                        row_mode == 1'b1 ? col_shift[32:1] :
-                                           col_shift[31:0];
+wire[32:0] col_shift_inv;
+generate
+  for (i=0;i<33;i=i+1) begin
+    assign col_shift_inv[i] = col_shift[32-i];
+  end
+endgenerate
 
-wire[31:0] col_odd_n  = (row_mode==1'b1) ? col_shift_inv[31:0] :
-                                           col_shift_inv[32:1];
+//-COLUMN START VALUE OF SHIFT REGISTER because cell {0,0} is a Dummy-
+// row  col  | first row   other rows
+// 0    0    | 10..00      10..00 
+// 0    1    | 00..00      10..00
+// 1    0    | 00..00      00..00
+// 1    1    | 00..00      00..00
+
+wire zeroes = row_mode == 1'b1 | (row_mode==1'b0 & col_mode==1'b1 & is_first_row );
+
+wire[31:0] col_even_n = zeroes ? col_shift[32:1] : col_shift[31:0];
+wire[31:0] col_odd_n  = zeroes ? col_shift_inv[31:0] :
+                                 col_shift_inv[32:1] ;
 
 /// Column-Side-to-Side mode
 wire[31:0] col_sidetoside_n = row_direction_RL ? col_odd_n : col_even_n;
