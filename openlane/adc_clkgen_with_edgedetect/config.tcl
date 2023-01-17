@@ -19,7 +19,6 @@ set ::env(DESIGN_NAME) adc_clkgen_with_edgedetect
 
 # Floorplanning
  set ::env(FP_SIZING) "absolute"
-# set ::env(DIE_AREA) "0 0 184 84"
  set ::env(DIE_AREA) "0 0 171 60"
  set ::env(BOTTOM_MARGIN_MULT) 1
  set ::env(TOP_MARGIN_MULT) 1
@@ -31,16 +30,18 @@ set ::env(DESIGN_NAME) adc_clkgen_with_edgedetect
  set ::env(SYNTH_MAX_FANOUT) 12
 
 # Power distribution network settings
- set ::env(FP_PDN_HOFFSET) 12
- set ::env(FP_PDN_VOFFSET) 22
- set ::env(FP_PDN_HPITCH) 24
- set ::env(FP_PDN_VPITCH) 44
+ set ::env(FP_PDN_HOFFSET) 20
+ set ::env(FP_PDN_HPITCH) 20
+ set ::env(FP_PDN_VOFFSET) 50
+ set ::env(FP_PDN_VPITCH) 50
  set ::env(FP_PIN_ORDER_CFG) $::env(DESIGN_DIR)/pin_order.cfg
 
 # PDN on Macro Level or Core Level
- set ::env(DESIGN_IS_CORE) 0
+ set ::env(DESIGN_IS_CORE) 1
  set ::env(FP_PDN_CORE_RING) 0
- set ::env(RT_MAX_LAYER) {met4}
+ set ::env(RT_MAX_LAYER) {met3}
+ set ::env(FP_PDN_LOWER_LAYER) {met2}
+ set ::env(FP_PDN_UPPER_LAYER) {met3}
  set ::env(VDD_NETS) "VDD"
  set ::env(GND_NETS) "VSS"
 
@@ -49,8 +50,6 @@ set ::env(DESIGN_NAME) adc_clkgen_with_edgedetect
  set ::env(PL_TARGET_DENSITY) {0.85}
  set ::env(PL_RESIZER_TIMING_OPTIMIZATIONS) {0}
  set ::env(PL_RESIZER_DESIGN_OPTIMIZATIONS) {0}
-# set ::env(PL_ROUTABILITY_DRIVEN) {1}
-# set ::env(PL_TIME_DRIVEN) {1}
  set ::env(DIODE_INSERTION_STRATEGY) 4
 
 # needed for Customcell DlyPoly6ns
