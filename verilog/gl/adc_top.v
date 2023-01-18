@@ -72,7 +72,7 @@ adc_core_digital core(
    .config_2_in(config_2_in),
    .result_out(result_out),
    .conv_finished_out(conversion_finished_out),
-   .conv_finished_out(conversion_finished_osr_out),
+   .conv_finished_osr_out(conversion_finished_osr_out),
    // Connections to Comparator-Latch
    .comparator_in(result_comp),
    // Connections to Clockloop-Generator with Edgedetect

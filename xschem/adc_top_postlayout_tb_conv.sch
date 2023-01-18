@@ -20,6 +20,9 @@ L 4 1520 -260 1520 -60 {}
 L 4 1520 -280 1520 -260 {}
 L 4 1240 -280 1520 -280 {}
 L 4 1240 -280 1240 -260 {}
+L 4 1240 -540 1240 -280 {}
+L 4 1240 -540 1520 -540 {}
+L 4 1520 -540 1520 -280 {}
 B 2 1720 -1400 3390 -990 {flags=graph,unlocked
 y1=0
 y2=2
@@ -48,8 +51,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=-3.21174e-07
-x2=4.10346e-06
+x1=8.7409e-08
+x2=1.82725e-06
 divx=5
 subdivx=1
 node="x1.ctopp
@@ -65,13 +68,13 @@ logy=0
 B 2 1720 -520 3390 -50 {flags=graph
 y1=0
 y2=2
-ypos1=0.5
-ypos2=2.5
+ypos1=-0.0626168
+ypos2=2.36231
 divy=5
 subdivy=1
 unity=1
-x1=-3.21174e-07
-x2=4.10346e-06
+x1=8.7409e-08
+x2=1.82725e-06
 divx=5
 subdivx=1
 node="x1.clk_dig
@@ -82,16 +85,9 @@ x1.clk_ena
 start_conv
 rst_n
 conv_finished
-RESULT,result15,result14,result13,result12,result11,result10,result9,result8,result7,result6,result5,result4,result3,result2,result1,result0
-PMAT_ROW_N,x1.pmat.rowon_n[14],x1.pmat.rowon_n[13],x1.pmat.rowon_n[12],x1.pmat.rowon_n[11],x1.pmat.rowon_n[10],x1.pmat.rowon_n[9],x1.pmat.rowon_n[8],x1.pmat.rowon_n[7],x1.pmat.rowon_n[6],x1.pmat.rowon_n[5],x1.pmat.rowon_n[4],x1.pmat.rowon_n[3],x1.pmat.rowon_n[2],x1.pmat.rowon_n[1],x1.pmat.rowon_n[0],x1.pmat.row_n[0]
-PMAT_ROWON_N,x1.pmat.rowon_n[15],x1.pmat.rowon_n[14],x1.pmat.rowon_n[13],x1.pmat.rowon_n[12],x1.pmat.rowon_n[11],x1.pmat.rowon_n[10],x1.pmat.rowon_n[9],x1.pmat.rowon_n[8],x1.pmat.rowon_n[7],x1.pmat.rowon_n[6],x1.pmat.rowon_n[5],x1.pmat.rowon_n[4],x1.pmat.rowon_n[3],x1.pmat.rowon_n[2],x1.pmat.rowon_n[1],x1.pmat.rowon_n[0]
-PMAT_COL_N,x1.pmat.col_n[31],x1.pmat.col_n[30],x1.pmat.col_n[29],x1.pmat.col_n[28],x1.pmat.col_n[27],x1.pmat.col_n[26],x1.pmat.col_n[25],x1.pmat.col_n[24],x1.pmat.col_n[23],x1.pmat.col_n[22],x1.pmat.col_n[21],x1.pmat.col_n[20],x1.pmat.col_n[19],x1.pmat.col_n[18],x1.pmat.col_n[17],x1.pmat.col_n[16],x1.pmat.col_n[15],x1.pmat.col_n[14],x1.pmat.col_n[13],x1.pmat.col_n[12],x1.pmat.col_n[11],x1.pmat.col_n[10],x1.pmat.col_n[9],x1.pmat.col_n[8],x1.pmat.col_n[7],x1.pmat.col_n[6],x1.pmat.col_n[5],x1.pmat.col_n[4],x1.pmat.col_n[3],x1.pmat.col_n[2],x1.pmat.col_n[1],x1.pmat.col_n[0]
-PMAT_en_bit_n,x1.pmat.en_bit_n[2],x1.pmat.en_bit_n[1],x1.pmat.en_bit_n[0]
-NMAT_ROW_N,x1.nmat.rowon_n[14],x1.nmat.rowon_n[13],x1.nmat.rowon_n[12],x1.nmat.rowon_n[11],x1.nmat.rowon_n[10],x1.nmat.rowon_n[9],x1.nmat.rowon_n[8],x1.nmat.rowon_n[7],x1.nmat.rowon_n[6],x1.nmat.rowon_n[5],x1.nmat.rowon_n[4],x1.nmat.rowon_n[3],x1.nmat.rowon_n[2],x1.nmat.rowon_n[1],x1.nmat.rowon_n[0],x1.nmat.row_n[0]
-NMAT_ROWON_N,x1.nmat.rowon_n[15],x1.nmat.rowon_n[14],x1.nmat.rowon_n[13],x1.nmat.rowon_n[12],x1.nmat.rowon_n[11],x1.nmat.rowon_n[10],x1.nmat.rowon_n[9],x1.nmat.rowon_n[8],x1.nmat.rowon_n[7],x1.nmat.rowon_n[6],x1.nmat.rowon_n[5],x1.nmat.rowon_n[4],x1.nmat.rowon_n[3],x1.nmat.rowon_n[2],x1.nmat.rowon_n[1],x1.nmat.rowon_n[0]
-NMAT_COL_N,x1.nmat.col_n[31],x1.nmat.col_n[30],x1.nmat.col_n[29],x1.nmat.col_n[28],x1.nmat.col_n[27],x1.nmat.col_n[26],x1.nmat.col_n[25],x1.nmat.col_n[24],x1.nmat.col_n[23],x1.nmat.col_n[22],x1.nmat.col_n[21],x1.nmat.col_n[20],x1.nmat.col_n[19],x1.nmat.col_n[18],x1.nmat.col_n[17],x1.nmat.col_n[16],x1.nmat.col_n[15],x1.nmat.col_n[14],x1.nmat.col_n[13],x1.nmat.col_n[12],x1.nmat.col_n[11],x1.nmat.col_n[10],x1.nmat.col_n[9],x1.nmat.col_n[8],x1.nmat.col_n[7],x1.nmat.col_n[6],x1.nmat.col_n[5],x1.nmat.col_n[4],x1.nmat.col_n[3],x1.nmat.col_n[2],x1.nmat.col_n[1],x1.nmat.col_n[0]
-NMAT_en_bit_n,x1.nmat.en_bit_n[2],x1.nmat.en_bit_n[1],x1.nmat.en_bit_n[0]"
-color="6 8 9 9 9 9 9 9 9 6 6 6 6 7 7 7 7"
+conv_finished_osr
+RESULT,result15,result14,result13,result12,result11,result10,result9,result8,result7,result6,result5,result4,result3,result2,result1,result0"
+color="6 8 9 9 9 9 9 9 9 6"
 dataset=-1
 unitx=1
 logx=0
@@ -140,6 +136,9 @@ T {XYCE NEEDS NET '0'} 930 -90 0 0 0.2 0.2 {}
 T {Force VCM voltage.
 No VCM gen} 1260 -260 0 0 0.3 0.3 {}
 T {mpirun -np 12 --oversubscribe Xyce adc_top_postlayout_tb_conv.spice} 1730 -1440 0 0 0.4 0.4 {}
+T {row/col
+0=sequential
+1=symmetrical} 1350 -500 0 0 0.4 0.4 {}
 N 1030 -210 1030 -200 {
 lab=VDD}
 N 1480 -990 1540 -990 {
@@ -157,7 +156,7 @@ lab=inp}
 N 1170 -910 1180 -910 {
 lab=inn}
 N 1150 -890 1180 -890 {
-lab=avg_mode[0..2],osr_mode[0..2],nc[0..3],dlyctrl4_[0..5]}
+lab=avg_mode[0..2],osr_mode[0..2],row_mode,col_mode,nc[0..1],dlyctrl4_[0..5]}
 N 1150 -870 1180 -870 {
 lab=dlyctrl1_[0..4],dlyctrl2_[0..4],dlyctrl3_[0..4],en_dly_contr}
 N 1010 -760 1010 -750 {
@@ -205,11 +204,11 @@ lab=dlyctrl1_[0..4],dlyctrl2_[0..4],dlyctrl3_[0..4],en_dly_contr}
 N 1150 -660 1200 -660 {
 lab=dlyctrl1_[0..4],dlyctrl2_[0..4],dlyctrl3_[0..4],en_dly_contr}
 N 1120 -890 1150 -890 {
-lab=avg_mode[0..2],osr_mode[0..2],nc[0..3],dlyctrl4_[0..5]}
+lab=avg_mode[0..2],osr_mode[0..2],row_mode,col_mode,nc[0..1],dlyctrl4_[0..5]}
 N 1120 -890 1120 -620 {
-lab=avg_mode[0..2],osr_mode[0..2],nc[0..3],dlyctrl4_[0..5]}
+lab=avg_mode[0..2],osr_mode[0..2],row_mode,col_mode,nc[0..1],dlyctrl4_[0..5]}
 N 1120 -620 1200 -620 {
-lab=avg_mode[0..2],osr_mode[0..2],nc[0..3],dlyctrl4_[0..5]}
+lab=avg_mode[0..2],osr_mode[0..2],row_mode,col_mode,nc[0..1],dlyctrl4_[0..5]}
 N 1150 -680 1150 -660 {
 lab=dlyctrl1_[0..4],dlyctrl2_[0..4],dlyctrl3_[0..4],en_dly_contr}
 N 190 -860 190 -840 {
@@ -371,9 +370,9 @@ lab=GND}
 N 720 -130 720 -110 {
 lab=GND}
 N 720 -200 740 -200 {
-lab=nc[0..3]}
+lab=nc[0..1]}
 N 720 -200 720 -190 {
-lab=nc[0..3]}
+lab=nc[0..1]}
 N 1030 -140 1030 -120 {
 lab=GND}
 N 1480 -950 1540 -950 {
@@ -408,6 +407,18 @@ N 990 -220 990 -130 {
 lab=GND}
 N 990 -130 1030 -130 {
 lab=GND}
+N 1480 -930 1540 -930 {
+lab=conv_finished_osr}
+N 1260 -360 1260 -340 {
+lab=GND}
+N 1260 -350 1320 -350 {
+lab=GND}
+N 1320 -360 1320 -350 {
+lab=GND}
+N 1260 -430 1260 -420 {
+lab=row_mode}
+N 1320 -430 1320 -420 {
+lab=col_mode}
 C {devices/title.sym} 170 -40 0 0 {name=l1 author="Manuel Moser"}
 C {devices/vsource.sym} 1030 -170 0 0 {name=V_VDD_1 value="pwl 0 0 \{boot\} 1.8"}
 C {devices/vdd.sym} 1030 -210 0 0 {name=l1 lab=VDD}
@@ -446,7 +457,7 @@ C {devices/lab_wire.sym} 1150 -990 0 0 {name=l3 sig_type=std_logic lab=rst_n}
 C {devices/lab_wire.sym} 1150 -970 0 0 {name=l3 sig_type=std_logic lab=start_conv}
 C {devices/lab_wire.sym} 1440 -190 0 1 {name=l3 sig_type=std_logic lab=clk_vcm}
 C {devices/lab_wire.sym} 1150 -950 0 0 {name=l3 sig_type=std_logic lab=clk_vcm}
-C {devices/lab_wire.sym} 1200 -620 0 1 {name=l3 sig_type=std_logic lab=avg_mode[0..2],osr_mode[0..2],nc[0..3],dlyctrl4_[0..5]}
+C {devices/lab_wire.sym} 1200 -620 0 1 {name=l52 sig_type=std_logic lab=avg_mode[0..2],osr_mode[0..2],row_mode,col_mode,nc[0..1],dlyctrl4_[0..5]}
 C {devices/lab_wire.sym} 1200 -660 0 1 {name=l3 sig_type=std_logic lab=dlyctrl1_[0..4],dlyctrl2_[0..4],dlyctrl3_[0..4],en_dly_contr}
 C {devices/vsource.sym} 190 -890 0 0 {name=V4 value="pwl 0 0 \{boot\} \{bit4\}"}
 C {devices/gnd.sym} 190 -840 0 0 {name=l7 lab=GND}
@@ -501,7 +512,7 @@ C {devices/lab_wire.sym} 500 -350 1 0 {name=l4 sig_type=std_logic lab=osr_mode1}
 C {devices/vsource.sym} 560 -310 0 0 {name=V29 value="pwl 0 0 \{boot\} \{osr0\}"}
 C {devices/lab_wire.sym} 560 -350 1 0 {name=l5 sig_type=std_logic lab=osr_mode0}
 C {devices/gnd.sym} 720 -110 0 0 {name=l3 lab=GND}
-C {devices/lab_wire.sym} 740 -200 0 1 {name=l3 sig_type=std_logic lab=nc[0..3]}
+C {devices/lab_wire.sym} 740 -200 0 1 {name=l3 sig_type=std_logic lab=nc[0..1]}
 C {devices/vsource.sym} 720 -160 0 0 {name=V30 value=0}
 C {adc_top_postlayout.sym} 1330 -930 0 0 {name=x1}
 C {devices/noconn.sym} 1540 -950 0 1 {name=l28[0..15]}
@@ -558,17 +569,28 @@ value="
 .param osr2 = 0
 
 ****************
+* Row Column
+* sequential or symmetric
+****************
+.param rowmode = 0
+.param colmode = 0
+
+****************
 * XYCE Simulation Control
 ****************
 
 *.OPTIONS TIMEINT reltol=1.0e-3 abstol=1e-6
 
+*For problems to 100k unknowns its likely that parallel load serial solve is faster
+.options linsol type=klu
+
+
 .tran 1n 3u
 
-.print tran format=raw file=adc_top_postlayout_tb_conv.raw         v(x1:ctopp) v(x1:ctopn) v(x1:vcm) v(x1:clk_ena) v(x1:ndecision_finish) v(x1:comp_latch) v(VDD) v(rst_n) v(start_conv) v(clk_vcm) v(inp) v(inn) v(conv_finished) v(x1:clk_dig) v(x1:clk_comp) v(result*) v(dlyctrl*) v(avg_mode*) v(osr_mode*) v(en_dly_contr) i(v_vdd_1) \{((v(result0)*0.0625+v(result1)*0.125+v(result2)*0.25+v(result3)*0.5+v(result4)+v(result5)*2+v(result6)*4+v(result7)*8+v(result8)*16+v(result9)*32+v(result10)*64+v(result11)*128+v(result12)*256+v(result13)*512+v(result14)*1024+v(result15)*2048)-2048*1.8)/2048\} v(x1:pmat.row*) v(x1:pmat.col*) v(x1:pmat.en_bit_n*) v(x1:nmat.row*) v(x1:nmat.col*) v(x1:nmat.en_bit_n*) 
-.print tran format=std file=adc_top_postlayout_tb_conv.ascii       v(x1:ctopp) v(x1:ctopn) v(x1:vcm) v(x1:clk_ena) v(x1:ndecision_finish) v(x1:comp_latch) v(VDD) v(rst_n) v(start_conv) v(clk_vcm) v(inp) v(inn) v(conv_finished) v(x1:clk_dig) v(x1:clk_comp) v(result*) v(dlyctrl*) v(avg_mode*) v(osr_mode*) v(en_dly_contr) i(v_vdd_1) \{((v(result0)*0.0625+v(result1)*0.125+v(result2)*0.25+v(result3)*0.5+v(result4)+v(result5)*2+v(result6)*4+v(result7)*8+v(result8)*16+v(result9)*32+v(result10)*64+v(result11)*128+v(result12)*256+v(result13)*512+v(result14)*1024+v(result15)*2048)-2048*1.8)/2048\} v(x1:pmat.row*) v(x1:pmat.col*) v(x1:pmat.en_bit_n*) v(x1:nmat.row*) v(x1:nmat.col*) v(x1:nmat.en_bit_n*)
-.print tran format=csv file=adc_top_postlayout_tb_conv.csv         v(x1:ctopp) v(x1:ctopn) v(x1:vcm) v(x1:clk_ena) v(x1:ndecision_finish) v(x1:comp_latch) v(VDD) v(rst_n) v(start_conv) v(clk_vcm) v(inp) v(inn) v(conv_finished) v(x1:clk_dig) v(x1:clk_comp) v(result*) v(dlyctrl*) v(avg_mode*) v(osr_mode*) v(en_dly_contr) i(v_vdd_1) \{((v(result0)*0.0625+v(result1)*0.125+v(result2)*0.25+v(result3)*0.5+v(result4)+v(result5)*2+v(result6)*4+v(result7)*8+v(result8)*16+v(result9)*32+v(result10)*64+v(result11)*128+v(result12)*256+v(result13)*512+v(result14)*1024+v(result15)*2048)-2048*1.8)/2048\} v(x1:pmat.row*) v(x1:pmat.col*) v(x1:pmat.en_bit_n*) v(x1:nmat.row*) v(x1:nmat.col*) v(x1:nmat.en_bit_n*) 
-.print tran format=gnuplot file=adc_top_postlayout_tb_conv.gnu.dat v(x1:ctopp) v(x1:ctopn) v(x1:vcm) v(x1:clk_ena) v(x1:ndecision_finish) v(x1:comp_latch) v(VDD) v(rst_n) v(start_conv) v(clk_vcm) v(inp) v(inn) v(conv_finished) v(x1:clk_dig) v(x1:clk_comp) v(result*) v(dlyctrl*) v(avg_mode*) v(osr_mode*) v(en_dly_contr) i(v_vdd_1) \{((v(result0)*0.0625+v(result1)*0.125+v(result2)*0.25+v(result3)*0.5+v(result4)+v(result5)*2+v(result6)*4+v(result7)*8+v(result8)*16+v(result9)*32+v(result10)*64+v(result11)*128+v(result12)*256+v(result13)*512+v(result14)*1024+v(result15)*2048)-2048*1.8)/2048\} v(x1:pmat.row*) v(x1:pmat.col*) v(x1:pmat.en_bit_n*) v(x1:nmat.row*) v(x1:nmat.col*) v(x1:nmat.en_bit_n*) 
+.print tran format=raw file=adc_top_postlayout_tb_conv.raw         v(x1:ctopp) v(x1:ctopn) v(x1:vcm) v(x1:clk_ena) v(x1:ndecision_finish) v(x1:comp_latch) v(VDD) v(rst_n) v(start_conv) v(clk_vcm) v(inp) v(inn) v(conv_finished) v(conv_finished_osr) v(x1:clk_dig) v(x1:clk_comp) v(result*) v(dlyctrl*) v(avg_mode*) v(osr_mode*) v(en_dly_contr) i(v_vdd_1) \{((v(result0)*0.0625+v(result1)*0.125+v(result2)*0.25+v(result3)*0.5+v(result4)+v(result5)*2+v(result6)*4+v(result7)*8+v(result8)*16+v(result9)*32+v(result10)*64+v(result11)*128+v(result12)*256+v(result13)*512+v(result14)*1024+v(result15)*2048)-2048*1.8)/2048\} 
+.print tran format=std file=adc_top_postlayout_tb_conv.ascii       v(x1:ctopp) v(x1:ctopn) v(x1:vcm) v(x1:clk_ena) v(x1:ndecision_finish) v(x1:comp_latch) v(VDD) v(rst_n) v(start_conv) v(clk_vcm) v(inp) v(inn) v(conv_finished) v(conv_finished_osr) v(x1:clk_dig) v(x1:clk_comp) v(result*) v(dlyctrl*) v(avg_mode*) v(osr_mode*) v(en_dly_contr) i(v_vdd_1) \{((v(result0)*0.0625+v(result1)*0.125+v(result2)*0.25+v(result3)*0.5+v(result4)+v(result5)*2+v(result6)*4+v(result7)*8+v(result8)*16+v(result9)*32+v(result10)*64+v(result11)*128+v(result12)*256+v(result13)*512+v(result14)*1024+v(result15)*2048)-2048*1.8)/2048\}
+.print tran format=csv file=adc_top_postlayout_tb_conv.csv         v(x1:ctopp) v(x1:ctopn) v(x1:vcm) v(x1:clk_ena) v(x1:ndecision_finish) v(x1:comp_latch) v(VDD) v(rst_n) v(start_conv) v(clk_vcm) v(inp) v(inn) v(conv_finished) v(conv_finished_osr) v(x1:clk_dig) v(x1:clk_comp) v(result*) v(dlyctrl*) v(avg_mode*) v(osr_mode*) v(en_dly_contr) i(v_vdd_1) \{((v(result0)*0.0625+v(result1)*0.125+v(result2)*0.25+v(result3)*0.5+v(result4)+v(result5)*2+v(result6)*4+v(result7)*8+v(result8)*16+v(result9)*32+v(result10)*64+v(result11)*128+v(result12)*256+v(result13)*512+v(result14)*1024+v(result15)*2048)-2048*1.8)/2048\} 
+.print tran format=gnuplot file=adc_top_postlayout_tb_conv.gnu.dat v(x1:ctopp) v(x1:ctopn) v(x1:vcm) v(x1:clk_ena) v(x1:ndecision_finish) v(x1:comp_latch) v(VDD) v(rst_n) v(start_conv) v(clk_vcm) v(inp) v(inn) v(conv_finished) v(conv_finished_osr) v(x1:clk_dig) v(x1:clk_comp) v(result*) v(dlyctrl*) v(avg_mode*) v(osr_mode*) v(en_dly_contr) i(v_vdd_1) \{((v(result0)*0.0625+v(result1)*0.125+v(result2)*0.25+v(result3)*0.5+v(result4)+v(result5)*2+v(result6)*4+v(result7)*8+v(result8)*16+v(result9)*32+v(result10)*64+v(result11)*128+v(result12)*256+v(result13)*512+v(result14)*1024+v(result15)*2048)-2048*1.8)/2048\} 
 
 
 "
@@ -622,6 +644,13 @@ value="
 .param osr1 = 0
 .param osr2 = 0
 
+
+****************
+* Row Column
+* sequential or symmetric
+****************
+.param rowmode = 0
+.param colmode = 0
 
 .save all
 .control
@@ -677,3 +706,10 @@ C {devices/noconn.sym} 1540 -750 0 1 {name=l45}
 C {devices/vsource.sym} 1260 -150 0 0 {name=V_VCM_4 value="pwl 0 0 \{boot\} 0.9"}
 C {devices/gnd.sym} 1260 -110 0 0 {name=l46 lab=GND}
 C {devices/lab_pin.sym} 1260 -190 0 1 {name=l47 sig_type=std_logic lab=vcm}
+C {devices/noconn.sym} 1540 -930 0 1 {name=l40}
+C {devices/lab_wire.sym} 1540 -930 0 1 {name=l48 sig_type=std_logic lab=conv_finished_osr}
+C {devices/vsource.sym} 1260 -390 0 0 {name=V33 value="pwl 0 0 \{boot\} \{rowmode\}"}
+C {devices/gnd.sym} 1260 -340 0 0 {name=l49 lab=GND}
+C {devices/vsource.sym} 1320 -390 0 0 {name=V34 value="pwl 0 0 \{boot\} \{colmode\}"}
+C {devices/lab_wire.sym} 1260 -430 1 0 {name=l50 sig_type=std_logic lab=row_mode}
+C {devices/lab_wire.sym} 1320 -430 1 0 {name=l51 sig_type=std_logic lab=col_mode}
