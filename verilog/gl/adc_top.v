@@ -157,10 +157,10 @@ adc_array_matrix_12bit pmat (
    `endif
    .sample(sample_pmatrix_cgen),
    .sample_n(sample_pmatrix_cgen_n),
-   .row_n(pmatrix_row_core_n),
-   .rowon_n(pmatrix_rowon_core_n),
+   .row_n(pmatrix_row_core_n_buffered),
+   .rowon_n(pmatrix_rowon_core_n_buffered),
    .rowoff_n(pmatrix_rowoff_core_n),
-   .col_n(pmatrix_col_core_n),
+   .col_n(pmatrix_col_core_n_buffered),
    .col(pmatrix_col_core),
    .en_bit_n(pmatrix_bincap_core_n),
    .en_C0_n(pmatrix_c0_core_n),
@@ -183,10 +183,10 @@ adc_array_matrix_12bit nmat (
    `endif
    .sample(sample_nmatrix_cgen),
    .sample_n(sample_nmatrix_cgen_n),
-   .row_n(nmatrix_row_core_n),
-   .rowon_n(nmatrix_rowon_core_n),
+   .row_n(nmatrix_row_core_n_buffered),
+   .rowon_n(nmatrix_rowon_core_n_buffered),
    .rowoff_n(nmatrix_rowoff_core_n),
-   .col_n(nmatrix_col_core_n),
+   .col_n(nmatrix_col_core_n_buffered),
    .col(nmatrix_col_core),
    .en_bit_n(nmatrix_bincap_core_n),
    .en_C0_n(nmatrix_c0_core_n),
@@ -196,6 +196,34 @@ adc_array_matrix_12bit nmat (
    .ctop(ctop_nmatrix_analog)
    );
 wire ctop_nmatrix_analog; 
+
+
+//*******************************************
+//      Matrix Buffering
+//      **** HARDENED MACRO ****
+//*******************************************
+genvar i;
+wire [31:0] nmatrix_col_core_n_buffered;
+wire [31:0] pmatrix_col_core_n_buffered;
+generate
+  for (i=0;i<32;i=i+1) begin
+    sky130_fd_sc_hd__buf_8 buf_n_coln (.A(nmatrix_col_core_n[i]),.X(nmatrix_col_core_n_buffered[i]));
+    sky130_fd_sc_hd__buf_8 buf_p_coln (.A(pmatrix_col_core_n[i]),.X(pmatrix_col_core_n_buffered[i]));
+  end
+endgenerate
+
+wire [15:0] nmatrix_row_core_n_buffered;
+wire [15:0] nmatrix_rowon_core_n_buffered;
+wire [15:0] pmatrix_row_core_n_buffered;
+wire [15:0] pmatrix_rowon_core_n_buffered;
+generate
+  for (i=0;i<16;i=i+1) begin
+    sky130_fd_sc_hd__buf_4 buf_n_rown (.A(nmatrix_row_core_n[i]),.X(nmatrix_row_core_n_buffered[i]));
+    sky130_fd_sc_hd__buf_4 buf_n_rowonn (.A(nmatrix_rowon_core_n[i]),.X(nmatrix_rowon_core_n_buffered[i]));
+    sky130_fd_sc_hd__buf_4 buf_p_rown (.A(pmatrix_row_core_n[i]),.X(pmatrix_row_core_n_buffered[i]));
+    sky130_fd_sc_hd__buf_4 buf_p_rowonn (.A(pmatrix_rowon_core_n[i]),.X(pmatrix_rowon_core_n_buffered[i]));
+  end
+endgenerate
 
 //*******************************************
 //      Comparator latch
