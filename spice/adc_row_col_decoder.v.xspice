@@ -1,467 +1,548 @@
 * XSpice netlist created from SPICE and liberty sources by spi2xspice.py
-*SPICE netlist created from verilog structural netlist module adc_row_col_decoder by vlog2Spice (qflow)
+* NGSPICE file created from adc_row_col_decoder.ext - technology: sky130A
 .subckt adc_row_col_decoder a_VPWR a_VGND a_bincap_out_n_0_ a_bincap_out_n_1_ a_bincap_out_n_2_ a_c0n_out_n a_c0p_out_n a_col_out_n_0_ a_col_out_n_1_ a_col_out_n_2_ a_col_out_n_3_ a_col_out_n_4_ a_col_out_n_5_ a_col_out_n_6_ a_col_out_n_7_ a_col_out_n_8_ a_col_out_n_9_ a_col_out_n_10_ a_col_out_n_11_ a_col_out_n_12_ a_col_out_n_13_ a_col_out_n_14_ a_col_out_n_15_ a_col_out_n_16_ a_col_out_n_17_ a_col_out_n_18_ a_col_out_n_19_ a_col_out_n_20_ a_col_out_n_21_ a_col_out_n_22_ a_col_out_n_23_ a_col_out_n_24_ a_col_out_n_25_ a_col_out_n_26_ a_col_out_n_27_ a_col_out_n_28_ a_col_out_n_29_ a_col_out_n_30_ a_col_out_n_31_ a_data_in_0_ a_data_in_1_ a_data_in_2_ a_data_in_3_ a_data_in_4_ a_data_in_5_ a_data_in_6_ a_data_in_7_ a_data_in_8_ a_data_in_9_ a_data_in_10_ a_data_in_11_ a_row_out_n_0_ a_row_out_n_1_ a_row_out_n_2_ a_row_out_n_3_ a_row_out_n_4_ a_row_out_n_5_ a_row_out_n_6_ a_row_out_n_7_ a_row_out_n_8_ a_row_out_n_9_ a_row_out_n_10_ a_row_out_n_11_ a_row_out_n_12_ a_row_out_n_13_ a_row_out_n_14_ a_row_out_n_15_ a_rowon_out_n_0_ a_rowon_out_n_1_ a_rowon_out_n_2_ a_rowon_out_n_3_ a_rowon_out_n_4_ a_rowon_out_n_5_ a_rowon_out_n_6_ a_rowon_out_n_7_ a_rowon_out_n_8_ a_rowon_out_n_9_ a_rowon_out_n_10_ a_rowon_out_n_11_ a_rowon_out_n_12_ a_rowon_out_n_13_ a_rowon_out_n_14_ a_rowon_out_n_15_ a_rowoff_out_n_0_ a_rowoff_out_n_1_ a_rowoff_out_n_2_ a_rowoff_out_n_3_ a_rowoff_out_n_4_ a_rowoff_out_n_5_ a_rowoff_out_n_6_ a_rowoff_out_n_7_ a_rowoff_out_n_8_ a_rowoff_out_n_9_ a_rowoff_out_n_10_ a_rowoff_out_n_11_ a_rowoff_out_n_12_ a_rowoff_out_n_13_ a_rowoff_out_n_14_ a_rowoff_out_n_15_ a_col_out_0_ a_col_out_1_ a_col_out_2_ a_col_out_3_ a_col_out_4_ a_col_out_5_ a_col_out_6_ a_col_out_7_ a_col_out_8_ a_col_out_9_ a_col_out_10_ a_col_out_11_ a_col_out_12_ a_col_out_13_ a_col_out_14_ a_col_out_15_ a_col_out_16_ a_col_out_17_ a_col_out_18_ a_col_out_19_ a_col_out_20_ a_col_out_21_ a_col_out_22_ a_col_out_23_ a_col_out_24_ a_col_out_25_ a_col_out_26_ a_col_out_27_ a_col_out_28_ a_col_out_29_ a_col_out_30_ a_col_out_31_ a_row_mode a_col_mode
-A_342_ [data_in_9_ data_in_8_ data_in_10_ data_in_11_] _000_ d_lut_sky130_fd_sc_hd__and4_2
-A_343_ [_000_] _001_ d_lut_sky130_fd_sc_hd__buf_2
-A_344_ [data_in_8_] _002_ d_lut_sky130_fd_sc_hd__buf_6
-A_345_ [data_in_10_] _003_ d_lut_sky130_fd_sc_hd__buf_4
-A_346_ [data_in_9_ _002_ _003_ data_in_11_] _004_ d_lut_sky130_fd_sc_hd__nor4_4
-A_347_ [row_mode] _005_ d_lut_sky130_fd_sc_hd__inv_2
-A_348_ [_001_ _004_ _005_] _006_ d_lut_sky130_fd_sc_hd__mux2_4
-A_349_ [_006_] _007_ d_lut_sky130_fd_sc_hd__buf_6
-A_350_ [_007_] row_out_n_0_ d_lut_sky130_fd_sc_hd__inv_6
-A_351_ [col_mode] _008_ d_lut_sky130_fd_sc_hd__buf_1
-A_352_ [_008_] _009_ d_lut_sky130_fd_sc_hd__buf_1
-A_353_ [_009_] _010_ d_lut_sky130_fd_sc_hd__buf_1
-A_354_ [row_mode] _011_ d_lut_sky130_fd_sc_hd__buf_2
-A_355_ [_002_ _011_] _012_ d_lut_sky130_fd_sc_hd__nand2b_2
-A_356_ [_002_] _013_ d_lut_sky130_fd_sc_hd__buf_2
-A_357_ [_011_ _013_] _014_ d_lut_sky130_fd_sc_hd__nand2b_2
-A_358_ [data_in_7_] _015_ d_lut_sky130_fd_sc_hd__buf_1
-A_359_ [data_in_3_] _016_ d_lut_sky130_fd_sc_hd__buf_1
-A_360_ [data_in_4_] _017_ d_lut_sky130_fd_sc_hd__buf_1
-A_361_ [data_in_5_] _018_ d_lut_sky130_fd_sc_hd__buf_2
-A_362_ [_016_ _017_ _018_ data_in_6_] _019_ d_lut_sky130_fd_sc_hd__and4_2
-A_363_ [_015_ _019_] _020_ d_lut_sky130_fd_sc_hd__and2_2
-A_364_ [_011_ _004_] _021_ d_lut_sky130_fd_sc_hd__nor2_2
-A_365_ [_021_] _022_ d_lut_sky130_fd_sc_hd__buf_6
-A_366_ [col_mode row_mode] _023_ d_lut_sky130_fd_sc_hd__and2b_2
-A_367_ [col_mode row_mode] _024_ d_lut_sky130_fd_sc_hd__nor2_2
-A_368_ [_001_ _023_ _024_ _004_] _025_ d_lut_sky130_fd_sc_hd__a22o_2
-A_369_ [_025_] _026_ d_lut_sky130_fd_sc_hd__buf_2
-A_370_ [_022_ _026_ _020_] _027_ d_lut_sky130_fd_sc_hd__o21ai_2
-A_371_ [data_in_3_ data_in_4_ _018_] _028_ d_lut_sky130_fd_sc_hd__or3_2
-A_372_ [_022_ _025_ _028_] _029_ d_lut_sky130_fd_sc_hd__or3_4
-A_373_ [data_in_7_ data_in_6_] _030_ d_lut_sky130_fd_sc_hd__or2_2
-A_374_ [_009_ _027_ _029_ _030_] _031_ d_lut_sky130_fd_sc_hd__o2bb2a_2
-A_375_ [_010_ _012_ _014_ _020_ _031_] col_out_n_0_ d_lut_sky130_fd_sc_hd__o221ai_2
-A_376_ [data_in_7_] _032_ d_lut_sky130_fd_sc_hd__buf_1
-A_377_ [data_in_6_] _033_ d_lut_sky130_fd_sc_hd__buf_1
-A_378_ [_032_ _033_] _034_ d_lut_sky130_fd_sc_hd__nor2_2
-A_379_ [_011_ _002_] _035_ d_lut_sky130_fd_sc_hd__xor2_2
-A_380_ [_008_ _035_] _036_ d_lut_sky130_fd_sc_hd__nor2_2
-A_381_ [_036_] _037_ d_lut_sky130_fd_sc_hd__buf_1
-A_382_ [_018_] _038_ d_lut_sky130_fd_sc_hd__buf_2
-A_383_ [data_in_3_ _017_] _039_ d_lut_sky130_fd_sc_hd__or2_2
-A_384_ [_039_] _040_ d_lut_sky130_fd_sc_hd__buf_1
-A_385_ [_038_ _040_] _041_ d_lut_sky130_fd_sc_hd__nor2_2
-A_386_ [row_mode data_in_3_] _042_ d_lut_sky130_fd_sc_hd__nor2b_2
-A_387_ [data_in_4_ _018_] _043_ d_lut_sky130_fd_sc_hd__or2_2
-A_388_ [_042_ _043_] _044_ d_lut_sky130_fd_sc_hd__nor2_2
-A_389_ [_041_ _044_ row_out_n_0_] _045_ d_lut_sky130_fd_sc_hd__mux2_4
-A_390_ [_038_] _046_ d_lut_sky130_fd_sc_hd__buf_1
-A_391_ [_046_] _047_ d_lut_sky130_fd_sc_hd__buf_1
-A_392_ [data_in_7_ data_in_6_] _048_ d_lut_sky130_fd_sc_hd__and2_2
-A_393_ [_048_] _049_ d_lut_sky130_fd_sc_hd__buf_1
-A_394_ [_016_ _011_] _050_ d_lut_sky130_fd_sc_hd__nand2b_2
-A_395_ [_017_ _050_] _051_ d_lut_sky130_fd_sc_hd__and2_2
-A_396_ [col_mode] _052_ d_lut_sky130_fd_sc_hd__inv_2
-A_397_ [_052_] _053_ d_lut_sky130_fd_sc_hd__buf_1
-A_398_ [_053_ _035_] _054_ d_lut_sky130_fd_sc_hd__nand2_2
-A_399_ [_047_ _049_ _051_ _054_] _055_ d_lut_sky130_fd_sc_hd__a31oi_2
-A_400_ [_046_ _048_] _056_ d_lut_sky130_fd_sc_hd__nand2_2
-A_401_ [_017_] _057_ d_lut_sky130_fd_sc_hd__buf_1
-A_402_ [_057_] _058_ d_lut_sky130_fd_sc_hd__buf_1
-A_403_ [_001_ _023_ _024_ _004_] _059_ d_lut_sky130_fd_sc_hd__a22oi_2
-A_404_ [_058_ _059_ _042_ row_out_n_0_] _060_ d_lut_sky130_fd_sc_hd__a22oi_2
-A_405_ [_056_ _060_ _009_] _061_ d_lut_sky130_fd_sc_hd__o21a_2
-A_406_ [_034_ _037_ _045_ _055_ _061_] col_out_n_1_ d_lut_sky130_fd_sc_hd__a311o_2
-A_407_ [_035_] _062_ d_lut_sky130_fd_sc_hd__buf_2
-A_408_ [data_in_7_ _018_ data_in_6_] _063_ d_lut_sky130_fd_sc_hd__or3_2
-A_409_ [_063_] _064_ d_lut_sky130_fd_sc_hd__buf_1
-A_410_ [_057_ _050_ _064_] _065_ d_lut_sky130_fd_sc_hd__a21oi_2
-A_411_ [data_in_9_ _002_ _003_ data_in_11_] _066_ d_lut_sky130_fd_sc_hd__nand4_2
-A_412_ [col_mode row_mode] _067_ d_lut_sky130_fd_sc_hd__nand2_2
-A_413_ [row_mode col_mode] _068_ d_lut_sky130_fd_sc_hd__or2b_2
-A_414_ [data_in_9_ _002_ _003_ data_in_11_] _069_ d_lut_sky130_fd_sc_hd__or4_4
-A_415_ [_066_ _067_ _068_ _069_] _070_ d_lut_sky130_fd_sc_hd__o22a_2
-A_416_ [_016_ _017_] _071_ d_lut_sky130_fd_sc_hd__and2_2
-A_417_ [_071_ _064_] _072_ d_lut_sky130_fd_sc_hd__nor2_2
-A_418_ [_007_ _065_ _070_ _072_] _073_ d_lut_sky130_fd_sc_hd__o22ai_2
-A_419_ [_058_ _064_ _026_] _074_ d_lut_sky130_fd_sc_hd__o21a_2
-A_420_ [_062_ _073_ _074_] _075_ d_lut_sky130_fd_sc_hd__or3_2
-A_421_ [_053_] _076_ d_lut_sky130_fd_sc_hd__buf_1
-A_422_ [_017_ _042_] _077_ d_lut_sky130_fd_sc_hd__or2_2
-A_423_ [_011_ _002_] _078_ d_lut_sky130_fd_sc_hd__xnor2_2
-A_424_ [_078_] _079_ d_lut_sky130_fd_sc_hd__buf_1
-A_425_ [_046_ _048_ _077_ _079_] _080_ d_lut_sky130_fd_sc_hd__a31o_2
-A_426_ [_076_ _080_] _081_ d_lut_sky130_fd_sc_hd__and2_2
-A_427_ [_008_] _082_ d_lut_sky130_fd_sc_hd__buf_1
-A_428_ [row_mode data_in_4_ data_in_3_] _083_ d_lut_sky130_fd_sc_hd__and3b_2
-A_429_ [_069_ _083_] _084_ d_lut_sky130_fd_sc_hd__and2_2
-A_430_ [_046_ _084_] _085_ d_lut_sky130_fd_sc_hd__or2_2
-A_431_ [_082_ _049_ _085_] _086_ d_lut_sky130_fd_sc_hd__and3_2
-A_432_ [_075_ _081_ _086_] col_out_n_2_ d_lut_sky130_fd_sc_hd__a21oi_4
-A_433_ [_032_ _033_] _087_ d_lut_sky130_fd_sc_hd__nand2_2
-A_434_ [_044_ _087_] _088_ d_lut_sky130_fd_sc_hd__or2_2
-A_435_ [_043_ _049_ _070_] _089_ d_lut_sky130_fd_sc_hd__a21oi_2
-A_436_ [_005_] _090_ d_lut_sky130_fd_sc_hd__buf_1
-A_437_ [_090_ _026_ _064_ _012_] _091_ d_lut_sky130_fd_sc_hd__o31a_2
-A_438_ [_071_ _064_] _092_ d_lut_sky130_fd_sc_hd__or2_2
-A_439_ [_069_ _025_ _064_ _092_ _014_] _093_ d_lut_sky130_fd_sc_hd__o311a_2
-A_440_ [_002_ _011_] _094_ d_lut_sky130_fd_sc_hd__and2b_2
-A_441_ [_040_ _094_ _014_] _095_ d_lut_sky130_fd_sc_hd__a21bo_2
-A_442_ [_046_ _048_ _095_ _008_] _096_ d_lut_sky130_fd_sc_hd__a31o_2
-A_443_ [_091_ _093_ _096_] _097_ d_lut_sky130_fd_sc_hd__a21oi_2
-A_444_ [_010_ row_out_n_0_ _088_ _089_ _097_] col_out_n_3_ d_lut_sky130_fd_sc_hd__a311o_2
-A_445_ [_008_] _098_ d_lut_sky130_fd_sc_hd__buf_1
-A_446_ [_098_] _099_ d_lut_sky130_fd_sc_hd__buf_1
-A_447_ [_018_ _083_] _100_ d_lut_sky130_fd_sc_hd__and2_2
-A_448_ [_032_ row_out_n_0_ _100_ _048_] _101_ d_lut_sky130_fd_sc_hd__a31o_2
-A_449_ [_079_] _102_ d_lut_sky130_fd_sc_hd__buf_1
-A_450_ [_030_ _040_ _008_] _103_ d_lut_sky130_fd_sc_hd__o21a_2
-A_451_ [_016_ _017_ _011_] _104_ d_lut_sky130_fd_sc_hd__or3b_2
-A_452_ [_038_ _104_ _030_] _105_ d_lut_sky130_fd_sc_hd__a21o_2
-A_453_ [row_out_n_0_ _103_ _105_] _106_ d_lut_sky130_fd_sc_hd__o21ai_2
-A_454_ [_026_ _064_] _107_ d_lut_sky130_fd_sc_hd__nand2_2
-A_455_ [_102_ _106_ _107_] _108_ d_lut_sky130_fd_sc_hd__and3_2
-A_456_ [_047_ _083_ _049_] _109_ d_lut_sky130_fd_sc_hd__o21ai_2
-A_457_ [_062_ _109_ _082_] _110_ d_lut_sky130_fd_sc_hd__a21o_2
-A_458_ [_099_ _101_ _108_ _110_] col_out_n_4_ d_lut_sky130_fd_sc_hd__o2bb2a_2
-A_459_ [_009_] _111_ d_lut_sky130_fd_sc_hd__buf_1
-A_460_ [_015_] _112_ d_lut_sky130_fd_sc_hd__buf_1
-A_461_ [_069_ _042_ _017_] _113_ d_lut_sky130_fd_sc_hd__a21o_2
-A_462_ [_033_] _114_ d_lut_sky130_fd_sc_hd__buf_1
-A_463_ [_046_ _113_ _114_] _115_ d_lut_sky130_fd_sc_hd__a21o_2
-A_464_ [_112_ _115_] _116_ d_lut_sky130_fd_sc_hd__nand2_2
-A_465_ [_016_ _026_ _113_] _117_ d_lut_sky130_fd_sc_hd__a21o_2
-A_466_ [_034_ _036_] _118_ d_lut_sky130_fd_sc_hd__nand2_2
-A_467_ [_047_ _117_ _118_] _119_ d_lut_sky130_fd_sc_hd__a21oi_2
-A_468_ [_057_ _050_ _038_] _120_ d_lut_sky130_fd_sc_hd__a21o_2
-A_469_ [_049_ _120_ _054_] _121_ d_lut_sky130_fd_sc_hd__a21oi_2
-A_470_ [_111_ _116_ _119_ _121_] col_out_n_5_ d_lut_sky130_fd_sc_hd__a211o_2
-A_471_ [_044_ _087_] _122_ d_lut_sky130_fd_sc_hd__nor2_2
-A_472_ [_032_] _123_ d_lut_sky130_fd_sc_hd__buf_1
-A_473_ [_011_] _124_ d_lut_sky130_fd_sc_hd__buf_2
-A_474_ [_124_ _066_] rowoff_out_n_0_ d_lut_sky130_fd_sc_hd__nand2_2
-A_475_ [_018_ data_in_6_] _125_ d_lut_sky130_fd_sc_hd__or2_2
-A_476_ [_125_] _126_ d_lut_sky130_fd_sc_hd__buf_1
-A_477_ [rowoff_out_n_0_ _071_ _126_] _127_ d_lut_sky130_fd_sc_hd__a21o_2
-A_478_ [_123_ _070_ _127_] _128_ d_lut_sky130_fd_sc_hd__and3_2
-A_479_ [_123_ _007_ _126_ _053_] _129_ d_lut_sky130_fd_sc_hd__a31o_2
-A_480_ [_001_ _050_] _130_ d_lut_sky130_fd_sc_hd__or2_2
-A_481_ [_058_ _047_ _130_ _118_] _131_ d_lut_sky130_fd_sc_hd__a31o_2
-A_482_ [_054_ _122_ _128_ _129_ _131_] col_out_n_6_ d_lut_sky130_fd_sc_hd__o221ai_2
-A_483_ [_007_ _044_ _070_ _033_] _132_ d_lut_sky130_fd_sc_hd__a2bb2o_4
-A_484_ [_032_ _025_] _133_ d_lut_sky130_fd_sc_hd__nand2_2
-A_485_ [_015_ _132_ _133_ _041_] _134_ d_lut_sky130_fd_sc_hd__o2bb2a_2
-A_486_ [_058_ _126_ _007_ _112_] _135_ d_lut_sky130_fd_sc_hd__o211ai_2
-A_487_ [_033_] _136_ d_lut_sky130_fd_sc_hd__buf_1
-A_488_ [_002_] _137_ d_lut_sky130_fd_sc_hd__inv_2
-A_489_ [_016_ _057_ _018_] _138_ d_lut_sky130_fd_sc_hd__and3_2
-A_490_ [_114_ _138_ _137_] _139_ d_lut_sky130_fd_sc_hd__o21a_2
-A_491_ [_123_] _140_ d_lut_sky130_fd_sc_hd__buf_1
-A_492_ [_090_] _141_ d_lut_sky130_fd_sc_hd__buf_1
-A_493_ [_136_ _137_ _139_ _140_ _141_] _142_ d_lut_sky130_fd_sc_hd__o221ai_2
-A_494_ [_028_ _048_] _143_ d_lut_sky130_fd_sc_hd__and2_2
-A_495_ [_124_] _144_ d_lut_sky130_fd_sc_hd__buf_2
-A_496_ [_013_] _145_ d_lut_sky130_fd_sc_hd__buf_1
-A_497_ [_124_ _145_ _030_ _008_] _146_ d_lut_sky130_fd_sc_hd__a31o_2
-A_498_ [_144_ _001_ _138_ _146_] _147_ d_lut_sky130_fd_sc_hd__a31o_2
-A_499_ [_094_ _143_ _147_] _148_ d_lut_sky130_fd_sc_hd__a21oi_2
-A_500_ [_111_ _134_ _135_ _142_ _148_] col_out_n_7_ d_lut_sky130_fd_sc_hd__a32o_2
-A_501_ [_136_ _029_] _149_ d_lut_sky130_fd_sc_hd__and2_2
-A_502_ [_014_ _138_ _012_] _150_ d_lut_sky130_fd_sc_hd__o21a_2
-A_503_ [_136_ _150_ _112_] _151_ d_lut_sky130_fd_sc_hd__o21a_2
-A_504_ [_098_ _151_] _152_ d_lut_sky130_fd_sc_hd__nor2_2
-A_505_ [_022_ _019_ _140_] _153_ d_lut_sky130_fd_sc_hd__a21oi_2
-A_506_ [_037_ _149_ _152_ _153_] col_out_n_8_ d_lut_sky130_fd_sc_hd__o2bb2a_4
-A_507_ [_033_ _028_ _032_] _154_ d_lut_sky130_fd_sc_hd__a21o_2
-A_508_ [_042_ _043_ data_in_6_] _155_ d_lut_sky130_fd_sc_hd__o21a_2
-A_509_ [data_in_7_ _043_] _156_ d_lut_sky130_fd_sc_hd__or2_2
-A_510_ [_032_ _155_ _156_ row_out_n_0_ _059_] _157_ d_lut_sky130_fd_sc_hd__o221a_4
-A_511_ [_026_ _154_ _157_ _062_] _158_ d_lut_sky130_fd_sc_hd__a211o_4
-A_512_ [_058_ _046_ _050_ _114_] _159_ d_lut_sky130_fd_sc_hd__a31o_2
-A_513_ [_112_ _159_ _102_] _160_ d_lut_sky130_fd_sc_hd__a21oi_2
-A_514_ [_098_ _160_] _161_ d_lut_sky130_fd_sc_hd__nor2_2
-A_515_ [data_in_5_ data_in_6_] _162_ d_lut_sky130_fd_sc_hd__and2_2
-A_516_ [_162_] _163_ d_lut_sky130_fd_sc_hd__buf_1
-A_517_ [_163_ _113_ _032_] _164_ d_lut_sky130_fd_sc_hd__a21o_2
-A_518_ [_158_ _161_ _164_ _111_] col_out_n_9_ d_lut_sky130_fd_sc_hd__a22oi_4
-A_519_ [_136_ _085_ _140_] _165_ d_lut_sky130_fd_sc_hd__a21oi_2
-A_520_ [_016_ _013_ _057_] _166_ d_lut_sky130_fd_sc_hd__a21o_2
-A_521_ [_038_ _166_ _079_ _114_] _167_ d_lut_sky130_fd_sc_hd__a211o_2
-A_522_ [_001_ _050_ _057_] _168_ d_lut_sky130_fd_sc_hd__o21a_2
-A_523_ [_038_ _168_ _079_ _114_] _169_ d_lut_sky130_fd_sc_hd__o211a_2
-A_524_ [_112_ _167_ _169_ _009_] _170_ d_lut_sky130_fd_sc_hd__a211o_2
-A_525_ [_099_ _165_ _170_] col_out_n_10_ d_lut_sky130_fd_sc_hd__a21bo_2
-A_526_ [_090_ _069_ _052_] _171_ d_lut_sky130_fd_sc_hd__a21o_2
-A_527_ [rowoff_out_n_0_ _171_ _071_ _046_] _172_ d_lut_sky130_fd_sc_hd__a31o_2
-A_528_ [_136_ _102_ _172_] _173_ d_lut_sky130_fd_sc_hd__and3_2
-A_529_ [_040_ _012_ _079_ _046_] _174_ d_lut_sky130_fd_sc_hd__o22a_2
-A_530_ [_136_ _174_ _140_] _175_ d_lut_sky130_fd_sc_hd__o21ai_2
-A_531_ [_076_ _175_] _176_ d_lut_sky130_fd_sc_hd__nand2_2
-A_532_ [_076_ _157_ _173_ _176_] col_out_n_11_ d_lut_sky130_fd_sc_hd__o22ai_2
-A_533_ [_022_ _138_ _030_] _177_ d_lut_sky130_fd_sc_hd__a21oi_2
-A_534_ [_071_ _014_ _012_] _178_ d_lut_sky130_fd_sc_hd__o21a_2
-A_535_ [_126_ _178_ _015_] _179_ d_lut_sky130_fd_sc_hd__o21a_2
-A_536_ [_022_ _025_ _040_ _163_ _079_] _180_ d_lut_sky130_fd_sc_hd__o311a_2
-A_537_ [_008_ _179_ _180_] _181_ d_lut_sky130_fd_sc_hd__or3_2
-A_538_ [_099_ _177_ _181_] col_out_n_12_ d_lut_sky130_fd_sc_hd__a21bo_4
-A_539_ [_051_ _126_ _123_ _062_] _182_ d_lut_sky130_fd_sc_hd__o211a_2
-A_540_ [_040_ _163_ _032_ _059_] _183_ d_lut_sky130_fd_sc_hd__a211o_2
-A_541_ [_026_ _164_ _183_ _102_] _184_ d_lut_sky130_fd_sc_hd__o211a_2
-A_542_ [_082_ _034_] _185_ d_lut_sky130_fd_sc_hd__nand2_2
-A_543_ [_060_ _047_] _186_ d_lut_sky130_fd_sc_hd__and2b_2
-A_544_ [_082_ _182_ _184_ _185_ _186_] col_out_n_13_ d_lut_sky130_fd_sc_hd__o32ai_4
-A_545_ [_032_ _019_ _066_ _124_] _187_ d_lut_sky130_fd_sc_hd__o211a_2
-A_546_ [_017_ _163_ _002_ data_in_7_] _188_ d_lut_sky130_fd_sc_hd__a211o_2
-A_547_ [data_in_3_ col_mode] _189_ d_lut_sky130_fd_sc_hd__or2b_2
-A_548_ [_017_ _163_ _189_ data_in_7_] _190_ d_lut_sky130_fd_sc_hd__a31o_2
-A_549_ [_022_ _188_ _190_ _007_ _094_] _191_ d_lut_sky130_fd_sc_hd__a221o_2
-A_550_ [_187_ _191_] _192_ d_lut_sky130_fd_sc_hd__or2_2
-A_551_ [_033_ _042_ _043_ _015_] _193_ d_lut_sky130_fd_sc_hd__o31a_2
-A_552_ [_102_ _193_] _194_ d_lut_sky130_fd_sc_hd__or2_2
-A_553_ [_064_ _084_ _098_] _195_ d_lut_sky130_fd_sc_hd__o21a_2
-A_554_ [_076_ _192_ _194_ _195_] col_out_n_14_ d_lut_sky130_fd_sc_hd__a31oi_4
-A_555_ [_022_ _026_ _019_ _102_] _196_ d_lut_sky130_fd_sc_hd__o211a_2
-A_556_ [_040_ _012_ _126_ _123_] _197_ d_lut_sky130_fd_sc_hd__o31a_2
-A_557_ [_053_ _064_ _113_] _198_ d_lut_sky130_fd_sc_hd__or3_2
-A_558_ [_082_ _196_ _197_ _198_] col_out_15_ d_lut_sky130_fd_sc_hd__o31a_2
-A_559_ [col_out_15_] col_out_n_15_ d_lut_sky130_fd_sc_hd__inv_2
-A_560_ [_030_ _029_] _199_ d_lut_sky130_fd_sc_hd__or2_2
-A_561_ [_114_ _029_ _062_] _200_ d_lut_sky130_fd_sc_hd__or3_4
-A_562_ [_141_ _145_ _019_ _015_] _201_ d_lut_sky130_fd_sc_hd__a31o_2
-A_563_ [_076_ _201_] _202_ d_lut_sky130_fd_sc_hd__and2_2
-A_564_ [_111_ _199_ _200_ _202_] col_out_n_16_ d_lut_sky130_fd_sc_hd__a22oi_4
-A_565_ [_041_ _133_ _132_ _015_] _203_ d_lut_sky130_fd_sc_hd__a2bb2o_4
-A_566_ [_058_ _163_ _050_ _123_] _204_ d_lut_sky130_fd_sc_hd__a31o_2
-A_567_ [_008_ _079_] _205_ d_lut_sky130_fd_sc_hd__nor2_2
-A_568_ [_009_ _073_] _206_ d_lut_sky130_fd_sc_hd__and2_2
-A_569_ [_037_ _203_ _204_ _205_ _206_] col_out_n_17_ d_lut_sky130_fd_sc_hd__a221oi_4
-A_570_ [_005_ _069_ _016_] _207_ d_lut_sky130_fd_sc_hd__a21o_2
-A_571_ [_057_ _207_] _208_ d_lut_sky130_fd_sc_hd__and2_2
-A_572_ [_126_ _208_ _112_ _059_] _209_ d_lut_sky130_fd_sc_hd__o211ai_2
-A_573_ [_163_ _077_ _054_ _015_] _210_ d_lut_sky130_fd_sc_hd__a211o_2
-A_574_ [_082_ _106_ _210_] _211_ d_lut_sky130_fd_sc_hd__a21bo_2
-A_575_ [_037_ _135_ _209_ _211_] col_out_n_18_ d_lut_sky130_fd_sc_hd__a31o_2
-A_576_ [_053_ _078_] _212_ d_lut_sky130_fd_sc_hd__nand2_2
-A_577_ [_058_ _047_ _207_] _213_ d_lut_sky130_fd_sc_hd__and3_2
-A_578_ [_163_ _104_ _054_ _140_] _214_ d_lut_sky130_fd_sc_hd__a211o_2
-A_579_ [_212_ _128_ _185_ _213_ _214_] col_out_n_19_ d_lut_sky130_fd_sc_hd__o221ai_2
-A_580_ [data_in_6_ _021_ _025_ _039_] _215_ d_lut_sky130_fd_sc_hd__or4_4
-A_581_ [_015_ _126_ _215_] _216_ d_lut_sky130_fd_sc_hd__and3_4
-A_582_ [_038_ _083_ _114_] _217_ d_lut_sky130_fd_sc_hd__o21a_2
-A_583_ [_123_ _217_ _062_] _218_ d_lut_sky130_fd_sc_hd__o21a_2
-A_584_ [_053_ _112_] _219_ d_lut_sky130_fd_sc_hd__or2_2
-A_585_ [_082_ _216_ _218_ _219_ _149_] col_out_n_20_ d_lut_sky130_fd_sc_hd__o32ai_4
-A_586_ [_046_ _040_ _136_] _220_ d_lut_sky130_fd_sc_hd__a21oi_2
-A_587_ [_114_ _120_ _123_] _221_ d_lut_sky130_fd_sc_hd__a21oi_2
-A_588_ [_133_ _220_ _221_ _102_] _222_ d_lut_sky130_fd_sc_hd__o22a_2
-A_589_ [_098_ _136_] _223_ d_lut_sky130_fd_sc_hd__nand2_2
-A_590_ [_047_ _208_] _224_ d_lut_sky130_fd_sc_hd__nor2_2
-A_591_ [_057_ _042_ _018_] _225_ d_lut_sky130_fd_sc_hd__o21a_2
-A_592_ [_009_ _136_ _225_ _059_ _140_] _226_ d_lut_sky130_fd_sc_hd__o311ai_2
-A_593_ [_010_ _222_ _223_ _224_ _226_] col_out_n_21_ d_lut_sky130_fd_sc_hd__o221a_2
-A_594_ [_058_ _038_ _207_ _114_] _227_ d_lut_sky130_fd_sc_hd__a31o_2
-A_595_ [_057_ _018_ _033_] _228_ d_lut_sky130_fd_sc_hd__a21o_2
-A_596_ [_015_ _007_ _228_ _212_] _229_ d_lut_sky130_fd_sc_hd__a31o_2
-A_597_ [_112_ _059_ _227_ _229_] _230_ d_lut_sky130_fd_sc_hd__a31o_2
-A_598_ [_016_ data_in_6_ _011_] _231_ d_lut_sky130_fd_sc_hd__a21o_2
-A_599_ [_124_ _013_] _232_ d_lut_sky130_fd_sc_hd__nor2_2
-A_600_ [_033_ _043_ _231_ _013_ _232_] _233_ d_lut_sky130_fd_sc_hd__a221o_2
-A_601_ [_008_ _038_ _033_] _234_ d_lut_sky130_fd_sc_hd__and3_2
-A_602_ [_022_ _040_] _235_ d_lut_sky130_fd_sc_hd__or2_2
-A_603_ [_053_ _233_ _234_ _235_ _123_] _236_ d_lut_sky130_fd_sc_hd__a221o_2
-A_604_ [_230_ _236_] col_out_n_22_ d_lut_sky130_fd_sc_hd__nand2_2
-A_605_ [_123_ _026_ _138_ _101_ _062_] _237_ d_lut_sky130_fd_sc_hd__a311oi_2
-A_606_ [_028_ _012_ _079_ _114_] _238_ d_lut_sky130_fd_sc_hd__o22a_2
-A_607_ [_112_ _238_] _239_ d_lut_sky130_fd_sc_hd__nor2_2
-A_608_ [_058_ _163_ _207_ _140_] _240_ d_lut_sky130_fd_sc_hd__a31o_2
-A_609_ [_111_ _240_] _241_ d_lut_sky130_fd_sc_hd__nand2_2
-A_610_ [_010_ _237_ _239_ _241_] col_out_n_23_ d_lut_sky130_fd_sc_hd__o31a_2
-A_611_ [_029_ _049_] _242_ d_lut_sky130_fd_sc_hd__nand2_2
-A_612_ [_126_ _235_ _112_] _243_ d_lut_sky130_fd_sc_hd__o21ai_2
-A_613_ [_100_ _205_ _034_] _244_ d_lut_sky130_fd_sc_hd__and3b_2
-A_614_ [_037_ _242_ _243_ _098_ _244_] col_out_n_24_ d_lut_sky130_fd_sc_hd__a221o_2
-A_615_ [_001_ _023_ _024_ _004_ _043_] _245_ d_lut_sky130_fd_sc_hd__a221o_2
-A_616_ [_143_ _245_ _141_ _137_] _246_ d_lut_sky130_fd_sc_hd__a211o_2
-A_617_ [_058_ _038_ _050_ _030_] _247_ d_lut_sky130_fd_sc_hd__a31o_2
-A_618_ [_144_ _145_ _143_ _247_ _102_] _248_ d_lut_sky130_fd_sc_hd__o32a_2
-A_619_ [_246_ _248_ _010_] _249_ d_lut_sky130_fd_sc_hd__a21oi_2
-A_620_ [_099_ _209_ _249_] col_out_n_25_ d_lut_sky130_fd_sc_hd__a21o_2
-A_621_ [_030_ _225_ _035_ _053_] _250_ d_lut_sky130_fd_sc_hd__o211a_2
-A_622_ [_053_ _047_ _049_ _250_] _251_ d_lut_sky130_fd_sc_hd__a31o_2
-A_623_ [_057_ _189_] _252_ d_lut_sky130_fd_sc_hd__and2_2
-A_624_ [_051_ _252_ _007_] _253_ d_lut_sky130_fd_sc_hd__mux2_2
-A_625_ [_053_ _049_ _253_] _254_ d_lut_sky130_fd_sc_hd__and3_2
-A_626_ [_098_ _216_ _251_ _254_] col_out_n_26_ d_lut_sky130_fd_sc_hd__a211oi_4
-A_627_ [_136_ _172_ _227_ _009_] _255_ d_lut_sky130_fd_sc_hd__a22o_2
-A_628_ [_205_ _105_] _256_ d_lut_sky130_fd_sc_hd__and2_2
-A_629_ [_140_ _255_ _256_] col_out_n_27_ d_lut_sky130_fd_sc_hd__a21oi_2
-A_630_ [_022_ _026_ _040_ _048_ _047_] _257_ d_lut_sky130_fd_sc_hd__o311a_2
-A_631_ [_079_ _064_ _083_] _258_ d_lut_sky130_fd_sc_hd__or3_2
-A_632_ [_062_ _257_ _258_] _259_ d_lut_sky130_fd_sc_hd__o21ai_2
-A_633_ [_029_ _049_ _076_] _260_ d_lut_sky130_fd_sc_hd__a21oi_2
-A_634_ [_076_ _259_ _260_] col_out_n_28_ d_lut_sky130_fd_sc_hd__a21o_2
-A_635_ [_056_ _065_ _062_] _261_ d_lut_sky130_fd_sc_hd__mux2_2
-A_636_ [_098_ _261_] _262_ d_lut_sky130_fd_sc_hd__nor2_2
-A_637_ [_047_ _253_ _049_ _082_] _263_ d_lut_sky130_fd_sc_hd__o211a_2
-A_638_ [_016_ _007_ _212_ _113_] _264_ d_lut_sky130_fd_sc_hd__a211o_2
-A_639_ [_262_ _263_ _264_] col_out_n_29_ d_lut_sky130_fd_sc_hd__o21ai_2
-A_640_ [_056_ _070_ _168_] _265_ d_lut_sky130_fd_sc_hd__nand3b_2
-A_641_ [_034_ _062_ _044_ _009_] _266_ d_lut_sky130_fd_sc_hd__a31o_2
-A_642_ [_102_ _265_ _266_] _267_ d_lut_sky130_fd_sc_hd__a21oi_2
-A_643_ [_111_ _257_ _267_] col_out_n_30_ d_lut_sky130_fd_sc_hd__a21oi_2
-A_644_ [_140_ _007_ _019_] _268_ d_lut_sky130_fd_sc_hd__nand3_2
-A_645_ [_265_ _268_] _269_ d_lut_sky130_fd_sc_hd__nand2_2
-A_646_ [_034_ _041_ _094_ _009_] _270_ d_lut_sky130_fd_sc_hd__a31o_2
-A_647_ [_027_ _102_] _271_ d_lut_sky130_fd_sc_hd__and2_2
-A_648_ [_111_ _269_ _270_ _271_] col_out_n_31_ d_lut_sky130_fd_sc_hd__o2bb2a_2
-A_649_ [data_in_9_] _272_ d_lut_sky130_fd_sc_hd__buf_1
-A_650_ [_272_] _273_ d_lut_sky130_fd_sc_hd__buf_1
-A_651_ [_003_ data_in_11_] _274_ d_lut_sky130_fd_sc_hd__nand2_2
-A_652_ [_003_ data_in_11_] _275_ d_lut_sky130_fd_sc_hd__or2_2
-A_653_ [_274_ _275_ _090_] _276_ d_lut_sky130_fd_sc_hd__mux2_2
-A_654_ [_273_ _137_ _276_] _277_ d_lut_sky130_fd_sc_hd__or3_2
-A_655_ [_277_] row_out_n_1_ d_lut_sky130_fd_sc_hd__buf_1
-A_656_ [_003_] _278_ d_lut_sky130_fd_sc_hd__buf_1
-A_657_ [_278_] _279_ d_lut_sky130_fd_sc_hd__buf_1
-A_658_ [_013_ data_in_11_] _280_ d_lut_sky130_fd_sc_hd__nand2_2
-A_659_ [_013_ data_in_11_] _281_ d_lut_sky130_fd_sc_hd__or2_2
-A_660_ [_280_ _281_ _090_] _282_ d_lut_sky130_fd_sc_hd__mux2_2
-A_661_ [_279_ _282_ _273_] _283_ d_lut_sky130_fd_sc_hd__or3b_2
-A_662_ [_283_] row_out_n_2_ d_lut_sky130_fd_sc_hd__buf_2
-A_663_ [data_in_11_] _284_ d_lut_sky130_fd_sc_hd__buf_1
-A_664_ [_090_ _272_ _284_] _285_ d_lut_sky130_fd_sc_hd__or3b_2
-A_665_ [_144_ _284_ _272_] _286_ d_lut_sky130_fd_sc_hd__or3b_2
-A_666_ [_137_ _003_] _287_ d_lut_sky130_fd_sc_hd__or2_2
-A_667_ [_285_ _286_ _287_] row_out_n_3_ d_lut_sky130_fd_sc_hd__a21o_2
-A_668_ [_284_] _288_ d_lut_sky130_fd_sc_hd__buf_2
-A_669_ [data_in_9_ _013_] _289_ d_lut_sky130_fd_sc_hd__nand2_2
-A_670_ [data_in_9_ _013_] _290_ d_lut_sky130_fd_sc_hd__or2_2
-A_671_ [_289_ _290_ _090_] _291_ d_lut_sky130_fd_sc_hd__mux2_2
-A_672_ [_288_ _291_ _278_] _292_ d_lut_sky130_fd_sc_hd__or3b_2
-A_673_ [_292_] row_out_n_4_ d_lut_sky130_fd_sc_hd__buf_2
-A_674_ [_137_ _003_] _293_ d_lut_sky130_fd_sc_hd__nand2_2
-A_675_ [_287_ _293_ _090_] _294_ d_lut_sky130_fd_sc_hd__mux2_2
-A_676_ [_288_ _294_ _272_] _295_ d_lut_sky130_fd_sc_hd__or3b_2
-A_677_ [_295_] row_out_n_6_ d_lut_sky130_fd_sc_hd__buf_1
-A_678_ [_288_] _296_ d_lut_sky130_fd_sc_hd__buf_1
-A_679_ [data_in_9_ _003_] _297_ d_lut_sky130_fd_sc_hd__or2_2
-A_680_ [_272_ _278_] _298_ d_lut_sky130_fd_sc_hd__nand2_2
-A_681_ [_297_ _298_ _090_] _299_ d_lut_sky130_fd_sc_hd__mux2_2
-A_682_ [_137_ _296_ _299_] _300_ d_lut_sky130_fd_sc_hd__or3_2
-A_683_ [_300_] row_out_n_7_ d_lut_sky130_fd_sc_hd__buf_1
-A_684_ [_278_ _290_] _301_ d_lut_sky130_fd_sc_hd__or2_2
-A_685_ [_144_] _302_ d_lut_sky130_fd_sc_hd__buf_2
-A_686_ [_302_ _296_] _303_ d_lut_sky130_fd_sc_hd__xnor2_2
-A_687_ [_301_ _303_] _304_ d_lut_sky130_fd_sc_hd__or2_2
-A_688_ [_304_] row_out_n_8_ d_lut_sky130_fd_sc_hd__buf_1
-A_689_ [_005_ _013_ data_in_11_ data_in_9_] _305_ d_lut_sky130_fd_sc_hd__or4b_2
-A_690_ [_124_ _272_ _280_ _305_] _306_ d_lut_sky130_fd_sc_hd__o31a_2
-A_691_ [_279_ _306_] _307_ d_lut_sky130_fd_sc_hd__or2_2
-A_692_ [_307_] row_out_n_9_ d_lut_sky130_fd_sc_hd__buf_2
-A_693_ [_124_ _278_ _284_ _272_] _308_ d_lut_sky130_fd_sc_hd__or4bb_2
-A_694_ [_090_ data_in_9_ _284_ _003_] _309_ d_lut_sky130_fd_sc_hd__or4b_2
-A_695_ [_308_ _309_ _145_] row_out_n_10_ d_lut_sky130_fd_sc_hd__a21o_2
-A_696_ [_287_ _141_ _284_] _310_ d_lut_sky130_fd_sc_hd__and3b_2
-A_697_ [_141_ _288_ _293_] _311_ d_lut_sky130_fd_sc_hd__nor3_2
-A_698_ [_310_ _311_ _273_] row_out_n_11_ d_lut_sky130_fd_sc_hd__o21ai_2
-A_699_ [_124_ _278_] _312_ d_lut_sky130_fd_sc_hd__xnor2_2
-A_700_ [_312_ _290_ _284_] _313_ d_lut_sky130_fd_sc_hd__or3b_2
-A_701_ [_313_] row_out_n_12_ d_lut_sky130_fd_sc_hd__buf_1
-A_702_ [_145_ _279_] _314_ d_lut_sky130_fd_sc_hd__nor2_2
-A_703_ [_124_ _272_ _145_ _278_] _315_ d_lut_sky130_fd_sc_hd__and4bb_2
-A_704_ [_144_ _273_ _314_ _315_] _316_ d_lut_sky130_fd_sc_hd__a31o_2
-A_705_ [_296_ _316_] row_out_n_13_ d_lut_sky130_fd_sc_hd__nand2_2
-A_706_ [_124_ _272_] _317_ d_lut_sky130_fd_sc_hd__xnor2_2
-A_707_ [_317_ _293_ _284_] _318_ d_lut_sky130_fd_sc_hd__or3b_2
-A_708_ [_318_] row_out_n_14_ d_lut_sky130_fd_sc_hd__buf_1
-A_709_ [_079_ _298_ _284_] _319_ d_lut_sky130_fd_sc_hd__or3b_2
-A_710_ [_319_] row_out_n_15_ d_lut_sky130_fd_sc_hd__buf_1
-A_711_ [_022_] rowon_out_n_0_ d_lut_sky130_fd_sc_hd__inv_2
-A_712_ [_302_ _274_] _320_ d_lut_sky130_fd_sc_hd__nand2_2
-A_713_ [_279_ _288_] _321_ d_lut_sky130_fd_sc_hd__nor2_2
-A_714_ [_273_ _320_ _321_ _302_] rowon_out_n_1_ d_lut_sky130_fd_sc_hd__o2bb2a_2
-A_715_ [_302_ _274_ _289_ _321_] rowon_out_n_2_ d_lut_sky130_fd_sc_hd__a22o_2
-A_716_ [_288_ _297_] _322_ d_lut_sky130_fd_sc_hd__nand2_2
-A_717_ [_302_ _322_ _321_] rowon_out_n_3_ d_lut_sky130_fd_sc_hd__a21o_2
-A_718_ [_279_ _290_] _323_ d_lut_sky130_fd_sc_hd__nand2_2
-A_719_ [_144_ _323_ _288_] _324_ d_lut_sky130_fd_sc_hd__o21ba_2
-A_720_ [_324_] rowon_out_n_4_ d_lut_sky130_fd_sc_hd__buf_1
-A_721_ [_141_ _289_] _325_ d_lut_sky130_fd_sc_hd__nand2_2
-A_722_ [_279_ _325_ _296_] rowon_out_n_6_ d_lut_sky130_fd_sc_hd__a21oi_2
-A_723_ [_302_ _297_ _296_] rowon_out_n_7_ d_lut_sky130_fd_sc_hd__a21oi_2
-A_724_ [_141_ _004_] _326_ d_lut_sky130_fd_sc_hd__nor2_2
-A_725_ [_296_ _301_ _326_] rowon_out_n_8_ d_lut_sky130_fd_sc_hd__a21oi_2
-A_726_ [_289_ _321_ _322_ _141_] rowon_out_n_9_ d_lut_sky130_fd_sc_hd__a22o_2
-A_727_ [_145_ _278_ _288_] _327_ d_lut_sky130_fd_sc_hd__o21a_2
-A_728_ [_144_ _278_ _281_] _328_ d_lut_sky130_fd_sc_hd__o21a_2
-A_729_ [_144_ _327_ _328_ _273_ _275_] rowon_out_n_10_ d_lut_sky130_fd_sc_hd__o221ai_2
-A_730_ [_273_ _145_ _279_ _288_] _329_ d_lut_sky130_fd_sc_hd__a31o_2
-A_731_ [_302_ _329_ _274_] rowon_out_n_11_ d_lut_sky130_fd_sc_hd__a21boi_2
-A_732_ [_144_ _301_] _330_ d_lut_sky130_fd_sc_hd__nand2_2
-A_733_ [_323_ _330_ _288_] _331_ d_lut_sky130_fd_sc_hd__a21bo_2
-A_734_ [_331_] rowon_out_n_12_ d_lut_sky130_fd_sc_hd__buf_2
-A_735_ [_273_ _145_ _279_] _332_ d_lut_sky130_fd_sc_hd__a21oi_2
-A_736_ [_141_ _332_ _298_] _333_ d_lut_sky130_fd_sc_hd__o21ai_2
-A_737_ [_296_ _333_] rowon_out_n_13_ d_lut_sky130_fd_sc_hd__nand2_2
-A_738_ [_302_ _290_] _334_ d_lut_sky130_fd_sc_hd__nand2_2
-A_739_ [_289_ _334_ _274_] rowon_out_n_14_ d_lut_sky130_fd_sc_hd__a21o_2
-A_740_ [_302_ _001_] rowon_out_n_15_ d_lut_sky130_fd_sc_hd__nand2_2
-A_741_ [_010_ _012_ _014_ _020_ _031_] col_out_0_ d_lut_sky130_fd_sc_hd__o221a_2
-A_742_ [_034_ _037_ _045_ _055_ _061_] col_out_1_ d_lut_sky130_fd_sc_hd__a311oi_4
-A_743_ [_075_ _081_ _086_] col_out_2_ d_lut_sky130_fd_sc_hd__a21o_2
-A_744_ [_082_ row_out_n_0_ _088_ _089_ _097_] col_out_3_ d_lut_sky130_fd_sc_hd__a311oi_2
-A_745_ [_108_ _110_ _099_ _101_] col_out_4_ d_lut_sky130_fd_sc_hd__a2bb2o_2
-A_746_ [_098_ _116_ _119_ _121_] col_out_5_ d_lut_sky130_fd_sc_hd__a211oi_2
-A_747_ [_054_ _122_ _128_ _129_ _131_] col_out_6_ d_lut_sky130_fd_sc_hd__o221a_2
-A_748_ [_010_ _134_ _135_ _142_ _148_] col_out_7_ d_lut_sky130_fd_sc_hd__a32oi_2
-A_749_ [_152_ _153_ _037_ _149_] col_out_8_ d_lut_sky130_fd_sc_hd__a2bb2o_2
-A_750_ [_158_ _161_ _164_ _099_] col_out_9_ d_lut_sky130_fd_sc_hd__a22o_4
-A_751_ [_099_ _165_ _170_] col_out_10_ d_lut_sky130_fd_sc_hd__a21boi_2
-A_752_ [_076_ _157_ _173_ _176_] col_out_11_ d_lut_sky130_fd_sc_hd__o22a_2
-A_753_ [_099_ _177_ _181_] col_out_12_ d_lut_sky130_fd_sc_hd__a21boi_2
-A_754_ [_010_ _182_ _184_ _185_ _186_] col_out_13_ d_lut_sky130_fd_sc_hd__o32a_4
-A_755_ [_076_ _192_ _194_ _195_] col_out_14_ d_lut_sky130_fd_sc_hd__a31o_2
-A_756_ [_111_ _199_ _200_ _202_] col_out_16_ d_lut_sky130_fd_sc_hd__a22o_4
-A_757_ [_037_ _203_ _204_ _205_ _206_] col_out_17_ d_lut_sky130_fd_sc_hd__a221o_2
-A_758_ [_037_ _135_ _209_ _211_] col_out_18_ d_lut_sky130_fd_sc_hd__a31oi_2
-A_759_ [_212_ _128_ _185_ _213_ _214_] col_out_19_ d_lut_sky130_fd_sc_hd__o221a_2
-A_760_ [_010_ _216_ _218_ _219_ _149_] col_out_20_ d_lut_sky130_fd_sc_hd__o32a_4
-A_761_ [_010_ _222_ _223_ _224_ _226_] col_out_21_ d_lut_sky130_fd_sc_hd__o221ai_2
-A_762_ [_230_ _236_] _335_ d_lut_sky130_fd_sc_hd__and2_2
-A_763_ [_335_] col_out_22_ d_lut_sky130_fd_sc_hd__buf_2
-A_764_ [_082_ _237_ _239_ _241_] col_out_23_ d_lut_sky130_fd_sc_hd__o31ai_2
-A_765_ [_037_ _242_ _243_ _098_ _244_] col_out_24_ d_lut_sky130_fd_sc_hd__a221oi_2
-A_766_ [_111_ _209_ _249_] col_out_25_ d_lut_sky130_fd_sc_hd__a21oi_2
-A_767_ [_111_ _216_ _251_ _254_] col_out_26_ d_lut_sky130_fd_sc_hd__a211o_2
-A_768_ [_140_ _255_ _256_] col_out_27_ d_lut_sky130_fd_sc_hd__a21o_2
-A_769_ [_076_ _259_ _260_] col_out_28_ d_lut_sky130_fd_sc_hd__a21oi_2
-A_770_ [_262_ _263_ _264_] col_out_29_ d_lut_sky130_fd_sc_hd__o21a_2
-A_771_ [_099_ _257_ _267_] col_out_30_ d_lut_sky130_fd_sc_hd__a21o_2
-A_772_ [_271_ _270_ _269_ _099_] col_out_31_ d_lut_sky130_fd_sc_hd__a2bb2o_2
-A_773_ [data_in_0_] bincap_out_n_0_ d_lut_sky130_fd_sc_hd__inv_2
-A_774_ [data_in_1_] bincap_out_n_1_ d_lut_sky130_fd_sc_hd__inv_2
-A_775_ [data_in_2_] bincap_out_n_2_ d_lut_sky130_fd_sc_hd__inv_2
-A_776_ [row_out_n_1_ rowon_out_n_1_] rowoff_out_n_1_ d_lut_sky130_fd_sc_hd__nand2_2
-A_777_ [row_out_n_2_ rowon_out_n_2_] rowoff_out_n_2_ d_lut_sky130_fd_sc_hd__nand2_2
-A_778_ [row_out_n_3_ rowon_out_n_3_] rowoff_out_n_3_ d_lut_sky130_fd_sc_hd__nand2_2
-A_779_ [row_out_n_4_ rowon_out_n_4_] rowoff_out_n_4_ d_lut_sky130_fd_sc_hd__nand2_2
-A_780_ [_273_ _279_ _296_] rowon_out_n_5_ d_lut_sky130_fd_sc_hd__a21oi_2
-A_781_ [_272_ _137_ _284_ _278_] _336_ d_lut_sky130_fd_sc_hd__or4b_2
-A_782_ [_336_] row_out_n_5_ d_lut_sky130_fd_sc_hd__buf_1
-A_783_ [rowon_out_n_5_ row_out_n_5_] rowoff_out_n_5_ d_lut_sky130_fd_sc_hd__nand2_2
-A_784_ [row_out_n_6_ rowon_out_n_6_] rowoff_out_n_6_ d_lut_sky130_fd_sc_hd__nand2_2
-A_785_ [_141_ _314_] _337_ d_lut_sky130_fd_sc_hd__nor2_2
-A_786_ [_145_ _279_ _144_] _338_ d_lut_sky130_fd_sc_hd__a21o_2
-A_787_ [_273_ _337_ _338_] _339_ d_lut_sky130_fd_sc_hd__o21a_2
-A_788_ [_296_ _339_] _340_ d_lut_sky130_fd_sc_hd__or2_2
-A_789_ [_340_] rowoff_out_n_7_ d_lut_sky130_fd_sc_hd__buf_1
-A_790_ [_302_ _296_] _341_ d_lut_sky130_fd_sc_hd__or2_2
-A_791_ [_341_] rowoff_out_n_8_ d_lut_sky130_fd_sc_hd__buf_1
-A_792_ [row_out_n_9_ rowon_out_n_9_] rowoff_out_n_9_ d_lut_sky130_fd_sc_hd__nand2_2
-A_793_ [row_out_n_10_ rowon_out_n_10_] rowoff_out_n_10_ d_lut_sky130_fd_sc_hd__nand2_2
-A_794_ [row_out_n_11_ rowon_out_n_11_] rowoff_out_n_11_ d_lut_sky130_fd_sc_hd__nand2_2
-A_795_ [row_out_n_12_ rowon_out_n_12_] rowoff_out_n_12_ d_lut_sky130_fd_sc_hd__nand2_2
-A_796_ [row_out_n_13_ rowon_out_n_13_] rowoff_out_n_13_ d_lut_sky130_fd_sc_hd__nand2_2
-A_797_ [row_out_n_14_ rowon_out_n_14_] rowoff_out_n_14_ d_lut_sky130_fd_sc_hd__nand2_2
-A_798_ [rowon_out_n_15_ row_out_n_15_] rowoff_out_n_15_ d_lut_sky130_fd_sc_hd__nand2_2
-
-
-A_799_ c0n_out_n done
-A_800_ c0p_out_n dzero
+A_501_ [_114_] _167_ d_lut_sky130_fd_sc_hd__buf_2
+A_432_ [net7 net8] _104_ d_lut_sky130_fd_sc_hd__and2_2
+A_363_ [_053_] net85 d_lut_sky130_fd_sc_hd__clkbuf_2
+A_415_ [net1] _088_ d_lut_sky130_fd_sc_hd__inv_2
+A_346_ [_041_] net95 d_lut_sky130_fd_sc_hd__dlymetal6s2s_1
+A_329_ [_005_ _021_ _025_] _028_ d_lut_sky130_fd_sc_hd__or3_1
+A_680_ [_169_ _178_ _180_] net49 d_lut_sky130_fd_sc_hd__o21a_1
+A_663_ [_294_] net112 d_lut_sky130_fd_sc_hd__clkbuf_1
+A_594_ [_133_ _208_ _246_] _247_ d_lut_sky130_fd_sc_hd__o21ai_1
+Aoutput31 [net31] col_out_21_ d_lut_sky130_fd_sc_hd__buf_2
+Aoutput20 [net20] col_out_11_ d_lut_sky130_fd_sc_hd__buf_2
+Aoutput42 [net42] col_out_31_ d_lut_sky130_fd_sc_hd__buf_2
+Aoutput75 [net75] col_out_n_3_ d_lut_sky130_fd_sc_hd__buf_2
+Aoutput64 [net64] col_out_n_22_ d_lut_sky130_fd_sc_hd__buf_2
+Aoutput53 [net53] col_out_n_12_ d_lut_sky130_fd_sc_hd__buf_2
+Aoutput86 [net86] row_out_n_13_ d_lut_sky130_fd_sc_hd__buf_2
+Aoutput97 [net97] row_out_n_9_ d_lut_sky130_fd_sc_hd__buf_2
+A_646_ [_117_ _279_ _289_ _155_] net71 d_lut_sky130_fd_sc_hd__a22oi_4
+A_577_ [_231_ _232_ _147_] _233_ d_lut_sky130_fd_sc_hd__a21o_1
+A_500_ [_116_ _165_ _090_] _166_ d_lut_sky130_fd_sc_hd__o21a_1
+A_431_ [_023_ _089_] _103_ d_lut_sky130_fd_sc_hd__nand2_4
+A_362_ [_019_ _031_ _052_] _053_ d_lut_sky130_fd_sc_hd__or3_1
+A_629_ [_104_ _105_ _161_] _277_ d_lut_sky130_fd_sc_hd__or3_1
+A_414_ [_086_] _087_ d_lut_sky130_fd_sc_hd__clkbuf_2
+A_345_ [_021_ _015_ _040_] _041_ d_lut_sky130_fd_sc_hd__or3_1
+A_328_ [_008_ _019_ _013_] _027_ d_lut_sky130_fd_sc_hd__or3_1
+A_662_ [_007_ _037_] _294_ d_lut_sky130_fd_sc_hd__or2_1
+A_593_ [_049_ _174_ _226_] _246_ d_lut_sky130_fd_sc_hd__a21oi_1
+Aoutput32 [net32] col_out_22_ d_lut_sky130_fd_sc_hd__buf_2
+Aoutput21 [net21] col_out_12_ d_lut_sky130_fd_sc_hd__buf_2
+Aoutput43 [net43] col_out_3_ d_lut_sky130_fd_sc_hd__buf_2
+Aoutput65 [net65] col_out_n_23_ d_lut_sky130_fd_sc_hd__buf_2
+Aoutput76 [net76] col_out_n_4_ d_lut_sky130_fd_sc_hd__buf_2
+Aoutput54 [net54] col_out_n_13_ d_lut_sky130_fd_sc_hd__buf_2
+Aoutput87 [net87] row_out_n_14_ d_lut_sky130_fd_sc_hd__buf_2
+Aoutput98 [net98] rowoff_out_n_0_ d_lut_sky130_fd_sc_hd__buf_2
+A_645_ [_007_ _286_ _288_] _289_ d_lut_sky130_fd_sc_hd__a21o_1
+A_576_ [_068_ _215_ _205_ _009_] _232_ d_lut_sky130_fd_sc_hd__a211o_1
+A_430_ [_081_ _101_] _102_ d_lut_sky130_fd_sc_hd__or2_2
+A_361_ [_006_ _033_] _052_ d_lut_sky130_fd_sc_hd__xnor2_1
+A_628_ [_010_ _270_ _271_ _275_] _276_ d_lut_sky130_fd_sc_hd__a31o_1
+A_559_ [_136_ _109_ _094_ _149_] _218_ d_lut_sky130_fd_sc_hd__nor4_1
+A_413_ [_002_ _075_] _086_ d_lut_sky130_fd_sc_hd__or2_1
+A_344_ [_038_ _039_ _008_] _040_ d_lut_sky130_fd_sc_hd__mux2_1
+A_327_ [_020_ _024_ _025_ _026_] net90 d_lut_sky130_fd_sc_hd__a211o_1
+A_661_ [net95 net127] net111 d_lut_sky130_fd_sc_hd__nand2_1
+A_592_ [_079_ _164_ _138_] _245_ d_lut_sky130_fd_sc_hd__o21a_1
+Aoutput33 [net33] col_out_23_ d_lut_sky130_fd_sc_hd__buf_2
+Aoutput22 [net22] col_out_13_ d_lut_sky130_fd_sc_hd__buf_2
+Aoutput66 [net66] col_out_n_24_ d_lut_sky130_fd_sc_hd__buf_2
+Aoutput44 [net44] col_out_4_ d_lut_sky130_fd_sc_hd__buf_2
+Aoutput55 [net55] col_out_n_14_ d_lut_sky130_fd_sc_hd__buf_2
+Aoutput88 [net88] row_out_n_15_ d_lut_sky130_fd_sc_hd__buf_2
+Aoutput99 [net99] rowoff_out_n_10_ d_lut_sky130_fd_sc_hd__buf_2
+Aoutput77 [net77] col_out_n_5_ d_lut_sky130_fd_sc_hd__buf_2
+A_644_ [_048_ _198_ _287_ _199_ _009_] _288_ d_lut_sky130_fd_sc_hd__o221a_1
+A_575_ [_048_ _179_ _221_ _199_ _006_] _231_ d_lut_sky130_fd_sc_hd__a221o_1
+A_360_ [_050_ _051_ _025_] net84 d_lut_sky130_fd_sc_hd__a21o_2
+A_627_ [_093_ _272_ _273_ _274_ _006_] _275_ d_lut_sky130_fd_sc_hd__o41a_1
+A_558_ [_029_ _179_] _217_ d_lut_sky130_fd_sc_hd__nand2_1
+A_489_ [_125_ _111_ _119_ _126_] _156_ d_lut_sky130_fd_sc_hd__a31o_1
+A_412_ [_079_ _084_] _085_ d_lut_sky130_fd_sc_hd__or2_1
+A_343_ [net13 _000_] _039_ d_lut_sky130_fd_sc_hd__nand2_1
+Aadc_row_col_decoder_130 c0p_out_n dzero
+A_326_ [_000_] _026_ d_lut_sky130_fd_sc_hd__clkbuf_4
+A_309_ [_011_] _012_ d_lut_sky130_fd_sc_hd__buf_6
+A_660_ [net94 net126] net110 d_lut_sky130_fd_sc_hd__nand2_2
+A_591_ [_147_ _133_] _244_ d_lut_sky130_fd_sc_hd__nand2_1
+Aoutput23 [net23] col_out_14_ d_lut_sky130_fd_sc_hd__buf_2
+Aoutput34 [net34] col_out_24_ d_lut_sky130_fd_sc_hd__buf_2
+Aoutput56 [net56] col_out_n_15_ d_lut_sky130_fd_sc_hd__buf_2
+Aoutput67 [net67] col_out_n_25_ d_lut_sky130_fd_sc_hd__buf_2
+Aoutput45 [net45] col_out_5_ d_lut_sky130_fd_sc_hd__buf_2
+Aoutput78 [net78] col_out_n_6_ d_lut_sky130_fd_sc_hd__buf_2
+Aoutput89 [net89] row_out_n_1_ d_lut_sky130_fd_sc_hd__buf_2
+A_643_ [_136_ _108_ _149_ _022_] _287_ d_lut_sky130_fd_sc_hd__o31a_1
+A_574_ [_104_ _105_] _230_ d_lut_sky130_fd_sc_hd__or2_2
+A_626_ [_002_ _108_ _082_ _095_] _274_ d_lut_sky130_fd_sc_hd__and4_1
+A_557_ [_029_ _215_ _205_ _010_] _216_ d_lut_sky130_fd_sc_hd__a211oi_1
+A_488_ [_090_] _155_ d_lut_sky130_fd_sc_hd__buf_4
+A_411_ [_081_ _083_] _084_ d_lut_sky130_fd_sc_hd__or2_1
+A_342_ [net13 _000_] _038_ d_lut_sky130_fd_sc_hd__or2_2
+A_609_ [_133_ _259_ _226_] _260_ d_lut_sky130_fd_sc_hd__a21o_1
+Aadc_row_col_decoder_131 c0n_out_n done
+A_325_ [net13] _025_ d_lut_sky130_fd_sc_hd__clkinv_2
+A_308_ [net4 net13 net12 net3] _011_ d_lut_sky130_fd_sc_hd__or4_1
+A_590_ [_239_ _241_ _242_ _243_] net60 d_lut_sky130_fd_sc_hd__a211oi_4
+Aoutput24 [net24] col_out_15_ d_lut_sky130_fd_sc_hd__buf_2
+Aoutput46 [net46] col_out_6_ d_lut_sky130_fd_sc_hd__buf_2
+Aoutput57 [net57] col_out_n_16_ d_lut_sky130_fd_sc_hd__buf_2
+Aoutput35 [net35] col_out_25_ d_lut_sky130_fd_sc_hd__buf_2
+Aoutput68 [net68] col_out_n_26_ d_lut_sky130_fd_sc_hd__buf_2
+Aoutput79 [net79] col_out_n_7_ d_lut_sky130_fd_sc_hd__buf_2
+A_642_ [_048_ _201_ _285_ _199_] _286_ d_lut_sky130_fd_sc_hd__a22o_1
+A_573_ [_229_] net57 d_lut_sky130_fd_sc_hd__clkbuf_1
+A_625_ [_091_ _136_ _022_] _273_ d_lut_sky130_fd_sc_hd__o21a_1
+A_556_ [_115_ _109_ _094_ _149_ _114_] _215_ d_lut_sky130_fd_sc_hd__a41o_1
+A_487_ [_090_ _151_ _153_ _135_ _154_] net77 d_lut_sky130_fd_sc_hd__a32oi_4
+A_410_ [_082_ net8] _083_ d_lut_sky130_fd_sc_hd__or2_1
+A_341_ [_035_ _036_ _037_ _025_] net94 d_lut_sky130_fd_sc_hd__a211o_2
+A_608_ [_125_ _111_ _137_] _259_ d_lut_sky130_fd_sc_hd__o21ai_1
+A_539_ [_048_ _197_ _198_ _199_] _200_ d_lut_sky130_fd_sc_hd__o2bb2a_1
+A_324_ [_005_ _021_ _023_] _024_ d_lut_sky130_fd_sc_hd__or3_1
+A_307_ [_009_] _010_ d_lut_sky130_fd_sc_hd__clkbuf_4
+Aoutput25 [net25] col_out_16_ d_lut_sky130_fd_sc_hd__buf_2
+Aoutput58 [net58] col_out_n_17_ d_lut_sky130_fd_sc_hd__buf_2
+Aoutput36 [net36] col_out_26_ d_lut_sky130_fd_sc_hd__buf_2
+Aoutput47 [net47] col_out_7_ d_lut_sky130_fd_sc_hd__buf_2
+Aoutput69 [net69] col_out_n_27_ d_lut_sky130_fd_sc_hd__buf_2
+A_641_ [_115_ _109_ _149_ _022_] _285_ d_lut_sky130_fd_sc_hd__a31o_1
+A_572_ [_225_ _227_ _228_] _229_ d_lut_sky130_fd_sc_hd__or3b_1
+A_624_ [_091_ net10 net8] _272_ d_lut_sky130_fd_sc_hd__and3_1
+A_555_ [_081_ _113_] _214_ d_lut_sky130_fd_sc_hd__or2_1
+A_486_ [_110_ _101_ _138_] _154_ d_lut_sky130_fd_sc_hd__a21o_1
+A_340_ [_021_] _037_ d_lut_sky130_fd_sc_hd__clkbuf_4
+A_607_ [_167_ _257_ _068_] _258_ d_lut_sky130_fd_sc_hd__a21oi_1
+A_538_ [_114_] _199_ d_lut_sky130_fd_sc_hd__buf_2
+A_469_ [_137_] _138_ d_lut_sky130_fd_sc_hd__buf_2
+A_323_ [_022_] _023_ d_lut_sky130_fd_sc_hd__clkbuf_4
+A_306_ [_008_] _009_ d_lut_sky130_fd_sc_hd__buf_2
+Aoutput15 [net15] bincap_out_n_0_ d_lut_sky130_fd_sc_hd__buf_2
+Aoutput37 [net37] col_out_27_ d_lut_sky130_fd_sc_hd__buf_2
+Aoutput48 [net48] col_out_8_ d_lut_sky130_fd_sc_hd__buf_2
+Aoutput26 [net26] col_out_17_ d_lut_sky130_fd_sc_hd__buf_2
+Aoutput59 [net59] col_out_n_18_ d_lut_sky130_fd_sc_hd__buf_2
+A_640_ [_117_ _267_ _283_ _284_] net70 d_lut_sky130_fd_sc_hd__o2bb2a_1
+A_571_ [_023_ _115_ _139_ _075_ _199_] _228_ d_lut_sky130_fd_sc_hd__a311o_1
+A_623_ [_023_ _145_ _081_] _271_ d_lut_sky130_fd_sc_hd__o21a_1
+A_554_ [_079_ _206_ _209_ _213_] net54 d_lut_sky130_fd_sc_hd__a31oi_4
+A_485_ [_145_ _152_ _029_] _153_ d_lut_sky130_fd_sc_hd__a21o_1
+A_606_ [_109_ _149_ _137_] _257_ d_lut_sky130_fd_sc_hd__a21o_1
+A_537_ [_094_ _095_ _136_ _108_] _198_ d_lut_sky130_fd_sc_hd__o211a_1
+A_468_ [_136_] _137_ d_lut_sky130_fd_sc_hd__buf_2
+A_399_ [_003_ _073_ _001_] net119 d_lut_sky130_fd_sc_hd__a21o_1
+A_322_ [_002_] _022_ d_lut_sky130_fd_sc_hd__buf_2
+A_305_ [_004_] _008_ d_lut_sky130_fd_sc_hd__clkinv_2
+Aoutput27 [net27] col_out_18_ d_lut_sky130_fd_sc_hd__buf_2
+Aoutput16 [net16] bincap_out_n_1_ d_lut_sky130_fd_sc_hd__buf_2
+Aoutput38 [net38] col_out_28_ d_lut_sky130_fd_sc_hd__buf_2
+Aoutput49 [net49] col_out_9_ d_lut_sky130_fd_sc_hd__buf_2
+A_570_ [_226_ _194_ _218_] _227_ d_lut_sky130_fd_sc_hd__and3b_1
+A_699_ [_239_ _234_ _282_] net37 d_lut_sky130_fd_sc_hd__a21oi_2
+A_622_ [_022_ _109_ _083_ _126_ _111_] _270_ d_lut_sky130_fd_sc_hd__o32a_1
+A_553_ [_127_ _211_ _212_ _184_] _213_ d_lut_sky130_fd_sc_hd__o211a_1
+A_484_ [_111_ _119_ _125_] _152_ d_lut_sky130_fd_sc_hd__a21o_1
+A_605_ [_137_ _164_ _167_] _256_ d_lut_sky130_fd_sc_hd__a21oi_1
+A_536_ [_115_ _125_ _114_] _197_ d_lut_sky130_fd_sc_hd__o21ai_1
+A_467_ [net10] _136_ d_lut_sky130_fd_sc_hd__buf_2
+A_398_ [_006_ _031_] _073_ d_lut_sky130_fd_sc_hd__nand2_1
+A_321_ [net4] _021_ d_lut_sky130_fd_sc_hd__clkbuf_2
+A_519_ [_175_ _181_ _125_] _182_ d_lut_sky130_fd_sc_hd__a21o_1
+A_304_ [_001_ _003_ _007_] net98 d_lut_sky130_fd_sc_hd__o21ai_4
+Aoutput17 [net17] bincap_out_n_2_ d_lut_sky130_fd_sc_hd__buf_2
+Aoutput28 [net28] col_out_19_ d_lut_sky130_fd_sc_hd__buf_2
+Aoutput39 [net39] col_out_29_ d_lut_sky130_fd_sc_hd__buf_2
+A_698_ [_239_ _278_ _268_ _279_ _280_] net36 d_lut_sky130_fd_sc_hd__a221o_2
+A_621_ [_239_ _266_ _267_ _268_ _269_] net66 d_lut_sky130_fd_sc_hd__a221oi_2
+A_552_ [_015_ _179_ _201_ _199_ _076_] _212_ d_lut_sky130_fd_sc_hd__a221o_1
+A_483_ [_110_ _150_ _127_ _068_] _151_ d_lut_sky130_fd_sc_hd__a211o_1
+A_604_ [_253_ _254_ _255_] net63 d_lut_sky130_fd_sc_hd__nand3b_2
+A_535_ [_147_ _192_ _193_ _170_ _196_] net52 d_lut_sky130_fd_sc_hd__a221oi_4
+A_466_ [_134_] _135_ d_lut_sky130_fd_sc_hd__buf_4
+A_397_ [_039_ _072_ _019_] net118 d_lut_sky130_fd_sc_hd__a21o_1
+A_320_ [_009_ _019_ _014_] _020_ d_lut_sky130_fd_sc_hd__or3_1
+A_518_ [_091_ _095_] _181_ d_lut_sky130_fd_sc_hd__or2_1
+A_449_ [_111_ _119_ _081_] _120_ d_lut_sky130_fd_sc_hd__a21oi_1
+A_303_ [_006_] _007_ d_lut_sky130_fd_sc_hd__buf_4
+Aoutput29 [net29] col_out_1_ d_lut_sky130_fd_sc_hd__buf_2
+Aoutput18 [net18] col_out_0_ d_lut_sky130_fd_sc_hd__buf_2
+A_697_ [_155_ _276_ _277_ _135_] net35 d_lut_sky130_fd_sc_hd__a22o_1
+A_620_ [_079_ _221_ _135_] _269_ d_lut_sky130_fd_sc_hd__o21a_1
+A_551_ [_210_] _211_ d_lut_sky130_fd_sc_hd__inv_2
+A_482_ [_149_ _099_] _150_ d_lut_sky130_fd_sc_hd__or2_1
+A_603_ [_199_ _105_ _249_] _255_ d_lut_sky130_fd_sc_hd__or3_1
+A_534_ [_194_ _195_] _196_ d_lut_sky130_fd_sc_hd__nor2_1
+A_465_ [_089_ _133_] _134_ d_lut_sky130_fd_sc_hd__nor2_1
+A_396_ [_007_ _062_] _072_ d_lut_sky130_fd_sc_hd__nand2_1
+A_517_ [_077_ _178_ _180_] net81 d_lut_sky130_fd_sc_hd__o21ai_2
+A_448_ [_082_ _004_] _119_ d_lut_sky130_fd_sc_hd__or2b_1
+A_379_ [_021_ _026_] _064_ d_lut_sky130_fd_sc_hd__nor2_1
+A_302_ [_005_] _006_ d_lut_sky130_fd_sc_hd__clkbuf_4
+Aoutput19 [net19] col_out_10_ d_lut_sky130_fd_sc_hd__buf_2
+A_696_ [_239_ _266_ _267_ _268_ _269_] net34 d_lut_sky130_fd_sc_hd__a221o_1
+A_550_ [_109_ _149_] _210_ d_lut_sky130_fd_sc_hd__nand2_1
+A_481_ [net8] _149_ d_lut_sky130_fd_sc_hd__buf_2
+A_679_ [_103_ _140_ _173_] net48 d_lut_sky130_fd_sc_hd__o21a_1
+A_602_ [_110_ _101_ _087_ _137_] _254_ d_lut_sky130_fd_sc_hd__a211o_1
+A_533_ [_110_ _142_ _138_] _195_ d_lut_sky130_fd_sc_hd__a21oi_1
+A_464_ [_114_] _133_ d_lut_sky130_fd_sc_hd__clkinv_2
+A_395_ [_037_ _071_] net117 d_lut_sky130_fd_sc_hd__nand2_2
+A_516_ [_174_ _130_ _179_ _090_] _180_ d_lut_sky130_fd_sc_hd__a211o_1
+A_447_ [_110_ _113_ _117_] _118_ d_lut_sky130_fd_sc_hd__o21a_1
+A_378_ [_037_ _038_] _063_ d_lut_sky130_fd_sc_hd__nand2_1
+A_301_ [_004_] _005_ d_lut_sky130_fd_sc_hd__buf_2
+A_695_ [_077_ _240_ _230_ _135_ _265_] net33 d_lut_sky130_fd_sc_hd__a311o_2
+A_480_ [_135_ _140_ _144_ _148_] net76 d_lut_sky130_fd_sc_hd__a22oi_4
+A_678_ [_163_ _166_ _168_ _077_] net47 d_lut_sky130_fd_sc_hd__a22oi_4
+A_601_ [_138_ _087_ _167_] _253_ d_lut_sky130_fd_sc_hd__a21oi_1
+A_532_ [_022_ _114_] _194_ d_lut_sky130_fd_sc_hd__nand2_1
+A_463_ [_077_ _124_ _129_ _132_] net75 d_lut_sky130_fd_sc_hd__o31a_1
+A_394_ [_026_ _031_ _070_] _071_ d_lut_sky130_fd_sc_hd__a21o_1
+A_515_ [_136_ _108_ _095_ _091_] _179_ d_lut_sky130_fd_sc_hd__a31o_1
+A_446_ [_089_ _116_] _117_ d_lut_sky130_fd_sc_hd__nor2_4
+A_377_ [_037_ _062_ _001_ _007_] net122 d_lut_sky130_fd_sc_hd__a2bb2o_2
+A_300_ [net14] _004_ d_lut_sky130_fd_sc_hd__clkbuf_4
+A_429_ [_012_ _099_ _100_ _094_ _095_] _101_ d_lut_sky130_fd_sc_hd__a221o_4
+Ainput1 [col_mode] net1 d_lut_sky130_fd_sc_hd__clkbuf_2
+A_694_ [_169_ _241_ _263_] net32 d_lut_sky130_fd_sc_hd__a21bo_2
+A_677_ [_155_ _158_ _160_ _162_] net46 d_lut_sky130_fd_sc_hd__a31o_2
+A_600_ [_244_ _245_ _247_ _252_] net62 d_lut_sky130_fd_sc_hd__o211ai_2
+A_531_ [_174_ _190_] _193_ d_lut_sky130_fd_sc_hd__or2_1
+A_462_ [_130_ _131_ _117_] _132_ d_lut_sky130_fd_sc_hd__o21ai_2
+A_393_ [_013_ _023_ _033_ _006_] _070_ d_lut_sky130_fd_sc_hd__o31a_1
+A_514_ [_174_ _101_ _176_ _177_ _127_] _178_ d_lut_sky130_fd_sc_hd__o2111a_1
+A_445_ [_114_ _115_] _116_ d_lut_sky130_fd_sc_hd__nand2_2
+A_376_ [_013_ _048_ _033_] _062_ d_lut_sky130_fd_sc_hd__a21o_1
+A_428_ [_004_ _075_] _100_ d_lut_sky130_fd_sc_hd__nor2_1
+A_359_ [_043_ _023_ _033_] _051_ d_lut_sky130_fd_sc_hd__or3b_1
+Ainput2 [data_in_0_] net2 d_lut_sky130_fd_sc_hd__clkbuf_1
+A_693_ [_295_] net31 d_lut_sky130_fd_sc_hd__clkbuf_1
+A_676_ [_155_ _151_ _153_ _135_ _154_] net45 d_lut_sky130_fd_sc_hd__a32o_2
+A_530_ [_137_ _101_ _174_] _192_ d_lut_sky130_fd_sc_hd__a21o_1
+A_461_ [_125_ _111_] _131_ d_lut_sky130_fd_sc_hd__or2_1
+A_392_ [_007_ _069_ _001_] net116 d_lut_sky130_fd_sc_hd__a21boi_2
+A_659_ [net125 net93] net109 d_lut_sky130_fd_sc_hd__nand2_1
+A_513_ [_091_ _002_] _177_ d_lut_sky130_fd_sc_hd__or2b_1
+A_444_ [net10] _115_ d_lut_sky130_fd_sc_hd__buf_2
+A_375_ [_061_] net121 d_lut_sky130_fd_sc_hd__clkbuf_2
+A_427_ [net14 _082_] _099_ d_lut_sky130_fd_sc_hd__and2b_1
+A_358_ [_015_ _033_ _042_] _050_ d_lut_sky130_fd_sc_hd__or3_1
+Ainput3 [data_in_10_] net3 d_lut_sky130_fd_sc_hd__buf_2
+A_692_ [_253_ _254_ _255_] _295_ d_lut_sky130_fd_sc_hd__and3b_2
+A_675_ [_135_ _140_ _144_ _148_] net44 d_lut_sky130_fd_sc_hd__a22o_1
+A_460_ [_012_ _099_] _130_ d_lut_sky130_fd_sc_hd__and2_1
+A_391_ [_013_ _068_ _026_ _021_] _069_ d_lut_sky130_fd_sc_hd__a31o_1
+A_658_ [_293_] net93 d_lut_sky130_fd_sc_hd__buf_2
+A_589_ [_096_ _161_ _170_ _167_] _243_ d_lut_sky130_fd_sc_hd__o211a_1
+A_512_ [_110_ _111_ _119_ _175_] _176_ d_lut_sky130_fd_sc_hd__a31o_1
+A_443_ [_091_] _114_ d_lut_sky130_fd_sc_hd__buf_2
+A_374_ [_006_ _039_ _060_] _061_ d_lut_sky130_fd_sc_hd__a21bo_1
+A_426_ [_077_ _085_ _087_ _098_] net50 d_lut_sky130_fd_sc_hd__a2bb2o_1
+A_357_ [_046_ _047_ _049_] net83 d_lut_sky130_fd_sc_hd__a21o_2
+Ainput4 [data_in_11_] net4 d_lut_sky130_fd_sc_hd__buf_4
+A_409_ [net7] _082_ d_lut_sky130_fd_sc_hd__clkbuf_2
+A_691_ [_244_ _245_ _247_ _252_] net30 d_lut_sky130_fd_sc_hd__o211a_1
+A_674_ [_147_ _124_ _129_ _132_] net43 d_lut_sky130_fd_sc_hd__o31ai_4
+A_390_ [_023_] _068_ d_lut_sky130_fd_sc_hd__buf_2
+A_657_ [_021_ _013_ _015_ _033_] _293_ d_lut_sky130_fd_sc_hd__or4b_1
+A_588_ [_076_ _156_ _157_] _242_ d_lut_sky130_fd_sc_hd__and3_1
+A_511_ [net10 _002_] _175_ d_lut_sky130_fd_sc_hd__or2b_1
+A_442_ [_075_ _078_ _112_] _113_ d_lut_sky130_fd_sc_hd__a21oi_2
+A_373_ [_009_ _038_ _021_] _060_ d_lut_sky130_fd_sc_hd__a21o_1
+A_425_ [_090_ _012_ _097_] _098_ d_lut_sky130_fd_sc_hd__o21ai_1
+A_356_ [_048_] _049_ d_lut_sky130_fd_sc_hd__buf_4
+Ainput5 [data_in_1_] net5 d_lut_sky130_fd_sc_hd__clkbuf_2
+A_408_ [_080_] _081_ d_lut_sky130_fd_sc_hd__clkbuf_4
+A_339_ [_005_ _022_ _000_] _036_ d_lut_sky130_fd_sc_hd__or3b_1
+A_690_ [_239_ _241_ _242_ _243_] net28 d_lut_sky130_fd_sc_hd__a211o_1
+A_673_ [_049_ _093_ _101_ _118_ _121_] net40 d_lut_sky130_fd_sc_hd__a311o_2
+A_656_ [_292_] net125 d_lut_sky130_fd_sc_hd__clkbuf_2
+A_587_ [_240_ _079_ _198_ _199_] _241_ d_lut_sky130_fd_sc_hd__a211o_2
+A_510_ [_136_ _108_ _114_] _174_ d_lut_sky130_fd_sc_hd__a21o_2
+A_441_ [_005_ _094_ _111_] _112_ d_lut_sky130_fd_sc_hd__nand3b_1
+A_372_ [_059_] net88 d_lut_sky130_fd_sc_hd__buf_2
+A_639_ [_049_ _128_ _112_ _076_] _284_ d_lut_sky130_fd_sc_hd__a31o_1
+A_424_ [_093_ _096_] _097_ d_lut_sky130_fd_sc_hd__and2_1
+A_355_ [_022_] _048_ d_lut_sky130_fd_sc_hd__buf_2
+Ainput6 [data_in_2_] net6 d_lut_sky130_fd_sc_hd__clkbuf_1
+A_407_ [net11 net10 net9] _080_ d_lut_sky130_fd_sc_hd__or3_1
+A_338_ [_008_ _014_ _000_] _035_ d_lut_sky130_fd_sc_hd__or3_1
+A_672_ [_049_ _102_ _103_ _106_ _107_] net29 d_lut_sky130_fd_sc_hd__o221a_2
+A_655_ [_019_ _039_] _292_ d_lut_sky130_fd_sc_hd__and2_1
+A_586_ [_115_ _109_] _240_ d_lut_sky130_fd_sc_hd__and2_1
+A_440_ [_095_] _111_ d_lut_sky130_fd_sc_hd__clkbuf_4
+A_371_ [_025_ _001_ _058_] _059_ d_lut_sky130_fd_sc_hd__or3_1
+A_638_ [_029_ _122_ _123_] _283_ d_lut_sky130_fd_sc_hd__and3_1
+A_569_ [_075_ _004_] _226_ d_lut_sky130_fd_sc_hd__or2b_1
+A_423_ [_004_ _094_ _095_] _096_ d_lut_sky130_fd_sc_hd__and3b_1
+A_354_ [_025_ _033_ _042_] _047_ d_lut_sky130_fd_sc_hd__or3_1
+Ainput7 [data_in_3_] net7 d_lut_sky130_fd_sc_hd__clkbuf_2
+A_406_ [_075_ _078_ _004_] _079_ d_lut_sky130_fd_sc_hd__a21oi_4
+A_337_ [_034_] net92 d_lut_sky130_fd_sc_hd__clkbuf_2
+Ainput10 [data_in_6_] net10 d_lut_sky130_fd_sc_hd__buf_2
+A_671_ [_087_ _098_ _169_ _085_] net18 d_lut_sky130_fd_sc_hd__o2bb2a_1
+A_654_ [net92 net124] net108 d_lut_sky130_fd_sc_hd__nand2_1
+A_585_ [_015_ _076_] _239_ d_lut_sky130_fd_sc_hd__nor2_8
+A_370_ [_005_ _023_] _058_ d_lut_sky130_fd_sc_hd__xnor2_1
+A_706_ [net6] net17 d_lut_sky130_fd_sc_hd__inv_2
+A_637_ [_239_ _234_ _282_] net69 d_lut_sky130_fd_sc_hd__a21o_2
+A_568_ [_089_ _079_ _084_] _225_ d_lut_sky130_fd_sc_hd__nor3_1
+A_499_ [_068_ _164_ _009_] _165_ d_lut_sky130_fd_sc_hd__a21oi_1
+A_422_ [net8] _095_ d_lut_sky130_fd_sc_hd__buf_2
+A_353_ [_043_ _013_ _033_] _046_ d_lut_sky130_fd_sc_hd__or3b_1
+Ainput8 [data_in_4_] net8 d_lut_sky130_fd_sc_hd__clkbuf_4
+A_405_ [net4 net13 _002_ net3] _078_ d_lut_sky130_fd_sc_hd__nor4_4
+A_336_ [_021_ _032_ _033_] _034_ d_lut_sky130_fd_sc_hd__or3b_1
+Aoutput120 [net120] rowon_out_n_15_ d_lut_sky130_fd_sc_hd__buf_2
+Ainput11 [data_in_7_] net11 d_lut_sky130_fd_sc_hd__clkbuf_2
+A_319_ [net4] _019_ d_lut_sky130_fd_sc_hd__inv_2
+A_670_ [net88 net120] net104 d_lut_sky130_fd_sc_hd__nand2_2
+A_653_ [net91 net123] net107 d_lut_sky130_fd_sc_hd__nand2_1
+A_584_ [_155_ _234_ _236_ _238_] net59 d_lut_sky130_fd_sc_hd__o22a_2
+A_705_ [net5] net16 d_lut_sky130_fd_sc_hd__inv_2
+A_636_ [_076_ _133_ _170_ _146_ _281_] _282_ d_lut_sky130_fd_sc_hd__a221o_1
+A_567_ [_077_ _223_ _224_] net56 d_lut_sky130_fd_sc_hd__o21ai_4
+A_498_ [_108_ _094_ _095_] _164_ d_lut_sky130_fd_sc_hd__or3_1
+A_421_ [_082_] _094_ d_lut_sky130_fd_sc_hd__buf_2
+A_352_ [_044_ _045_ _026_] net97 d_lut_sky130_fd_sc_hd__a21o_2
+Ainput9 [data_in_5_] net9 d_lut_sky130_fd_sc_hd__buf_2
+A_619_ [_116_ _087_] _268_ d_lut_sky130_fd_sc_hd__nor2_2
+A_404_ [_076_] _077_ d_lut_sky130_fd_sc_hd__buf_4
+A_335_ [_000_] _033_ d_lut_sky130_fd_sc_hd__buf_2
+Aoutput110 [net110] rowoff_out_n_6_ d_lut_sky130_fd_sc_hd__buf_2
+Aoutput121 [net121] rowon_out_n_1_ d_lut_sky130_fd_sc_hd__buf_2
+Ainput12 [data_in_8_] net12 d_lut_sky130_fd_sc_hd__buf_2
+A_318_ [_018_] net89 d_lut_sky130_fd_sc_hd__dlymetal6s2s_1
+A_652_ [net90 net122] net106 d_lut_sky130_fd_sc_hd__nand2_1
+A_583_ [_155_ _237_] _238_ d_lut_sky130_fd_sc_hd__nand2_1
+A_704_ [net2] net15 d_lut_sky130_fd_sc_hd__inv_2
+A_635_ [_005_ _078_ _210_ _261_ _076_] _281_ d_lut_sky130_fd_sc_hd__o311a_1
+A_566_ [_089_ _081_ _101_] _224_ d_lut_sky130_fd_sc_hd__or3_2
+A_497_ [_127_ _139_ _029_] _163_ d_lut_sky130_fd_sc_hd__o21ai_2
+A_420_ [_092_] _093_ d_lut_sky130_fd_sc_hd__buf_2
+A_351_ [_025_ _023_ _043_] _045_ d_lut_sky130_fd_sc_hd__or3_1
+A_618_ [_079_ _164_] _267_ d_lut_sky130_fd_sc_hd__or2_1
+A_549_ [_207_ _208_ _133_] _209_ d_lut_sky130_fd_sc_hd__o21ai_2
+A_403_ [_075_] _076_ d_lut_sky130_fd_sc_hd__buf_4
+A_334_ [_003_ _031_ _008_] _032_ d_lut_sky130_fd_sc_hd__mux2_1
+Aoutput100 [net100] rowoff_out_n_11_ d_lut_sky130_fd_sc_hd__buf_2
+Aoutput122 [net122] rowon_out_n_2_ d_lut_sky130_fd_sc_hd__buf_2
+Aoutput111 [net111] rowoff_out_n_7_ d_lut_sky130_fd_sc_hd__buf_2
+A_317_ [_013_ _015_ _017_] _018_ d_lut_sky130_fd_sc_hd__or3_1
+Ainput13 [data_in_9_] net13 d_lut_sky130_fd_sc_hd__buf_4
+A_651_ [net89 net121] net105 d_lut_sky130_fd_sc_hd__nand2_1
+A_582_ [_068_ _179_ _201_ _167_ _010_] _237_ d_lut_sky130_fd_sc_hd__a221o_1
+A_703_ [_169_ _106_ _291_] net42 d_lut_sky130_fd_sc_hd__a21o_1
+A_634_ [_239_ _278_ _268_ _279_ _280_] net68 d_lut_sky130_fd_sc_hd__a221oi_4
+A_565_ [_029_ _138_ _139_ _222_] _223_ d_lut_sky130_fd_sc_hd__a31o_1
+A_496_ [_155_ _158_ _160_ _162_] net78 d_lut_sky130_fd_sc_hd__a31oi_2
+A_350_ [_013_ _015_ _042_] _044_ d_lut_sky130_fd_sc_hd__or3_1
+A_617_ [_127_ _139_] _266_ d_lut_sky130_fd_sc_hd__or2_1
+A_548_ [_110_ _083_ _137_] _208_ d_lut_sky130_fd_sc_hd__a21oi_1
+A_479_ [_049_ _146_ _147_] _148_ d_lut_sky130_fd_sc_hd__a21oi_2
+A_402_ [net1] _075_ d_lut_sky130_fd_sc_hd__buf_4
+A_333_ [_030_] _031_ d_lut_sky130_fd_sc_hd__buf_2
+Aoutput101 [net101] rowoff_out_n_12_ d_lut_sky130_fd_sc_hd__buf_2
+Aoutput112 [net112] rowoff_out_n_8_ d_lut_sky130_fd_sc_hd__buf_2
+Aoutput123 [net123] rowon_out_n_3_ d_lut_sky130_fd_sc_hd__buf_2
+A_316_ [_009_ _001_ _016_] _017_ d_lut_sky130_fd_sc_hd__o21a_1
+Ainput14 [row_mode] net14 d_lut_sky130_fd_sc_hd__buf_2
+A_650_ [_077_ _106_ _291_] net74 d_lut_sky130_fd_sc_hd__a21oi_1
+A_581_ [_007_ _235_] _236_ d_lut_sky130_fd_sc_hd__nor2_1
+A_702_ [_102_ _239_ _106_ _170_ _290_] net41 d_lut_sky130_fd_sc_hd__a221o_1
+A_633_ [_138_ _143_ _134_] _280_ d_lut_sky130_fd_sc_hd__o21a_1
+A_564_ [_009_ _015_ _221_ _167_] _222_ d_lut_sky130_fd_sc_hd__o31a_1
+A_495_ [_113_ _161_ _135_] _162_ d_lut_sky130_fd_sc_hd__o21a_1
+A_616_ [_147_ _240_ _230_ _135_ _265_] net65 d_lut_sky130_fd_sc_hd__a311oi_4
+A_547_ [_076_ _198_] _207_ d_lut_sky130_fd_sc_hd__nor2_1
+A_478_ [_076_] _147_ d_lut_sky130_fd_sc_hd__clkbuf_8
+A_401_ [_074_] net120 d_lut_sky130_fd_sc_hd__clkbuf_2
+A_332_ [net13 _002_] _030_ d_lut_sky130_fd_sc_hd__or2_1
+Aoutput102 [net102] rowoff_out_n_13_ d_lut_sky130_fd_sc_hd__buf_2
+Aoutput113 [net113] rowoff_out_n_9_ d_lut_sky130_fd_sc_hd__buf_2
+Aoutput124 [net124] rowon_out_n_4_ d_lut_sky130_fd_sc_hd__buf_2
+A_315_ [_004_ net4 _000_] _016_ d_lut_sky130_fd_sc_hd__or3_1
+A_580_ [_167_ _198_ _205_ _068_] _235_ d_lut_sky130_fd_sc_hd__o22a_1
+A_701_ [_117_ _279_ _289_ _155_] net39 d_lut_sky130_fd_sc_hd__a22o_1
+A_632_ [_125_ _104_ _105_] _279_ d_lut_sky130_fd_sc_hd__or3_4
+A_563_ [net10 net9 _082_ net8] _221_ d_lut_sky130_fd_sc_hd__or4_2
+A_494_ [_115_ _109_] _161_ d_lut_sky130_fd_sc_hd__or2_1
+A_615_ [_048_ _137_ _139_ _264_ _089_] _265_ d_lut_sky130_fd_sc_hd__o311a_1
+A_546_ [_103_ _205_] _206_ d_lut_sky130_fd_sc_hd__or2_1
+A_477_ [_110_ _096_ _145_] _146_ d_lut_sky130_fd_sc_hd__o21ai_1
+A_400_ [_009_ _001_ _003_] _074_ d_lut_sky130_fd_sc_hd__or3_1
+A_331_ [_027_ _028_ _029_ _026_] net91 d_lut_sky130_fd_sc_hd__a211o_4
+A_529_ [_077_ _185_ _189_ _191_] net51 d_lut_sky130_fd_sc_hd__o31a_2
+Aoutput103 [net103] rowoff_out_n_14_ d_lut_sky130_fd_sc_hd__buf_2
+Aoutput114 [net114] rowon_out_n_0_ d_lut_sky130_fd_sc_hd__buf_2
+Aoutput125 [net125] rowon_out_n_5_ d_lut_sky130_fd_sc_hd__buf_2
+A_314_ [_014_] _015_ d_lut_sky130_fd_sc_hd__clkbuf_4
+A_700_ [_283_ _284_ _117_ _267_] net38 d_lut_sky130_fd_sc_hd__a2bb2o_1
+A_631_ [_110_ _150_ _127_] _278_ d_lut_sky130_fd_sc_hd__a21o_1
+A_562_ [_169_ _214_ _216_ _220_] net55 d_lut_sky130_fd_sc_hd__o2bb2a_1
+A_493_ [_049_ _159_] _160_ d_lut_sky130_fd_sc_hd__nand2_1
+A_614_ [_023_ _137_ _171_ _199_] _264_ d_lut_sky130_fd_sc_hd__a31o_1
+A_545_ [_136_ _108_ _149_ _114_] _205_ d_lut_sky130_fd_sc_hd__o31a_1
+A_476_ [_091_ _136_] _145_ d_lut_sky130_fd_sc_hd__and2_1
+A_330_ [_015_] _029_ d_lut_sky130_fd_sc_hd__clkbuf_4
+A_528_ [_174_ _190_ _077_] _191_ d_lut_sky130_fd_sc_hd__o21ai_2
+A_459_ [_029_ _128_ _112_] _129_ d_lut_sky130_fd_sc_hd__and3_1
+Aoutput104 [net104] rowoff_out_n_15_ d_lut_sky130_fd_sc_hd__buf_2
+Aoutput115 [net115] rowon_out_n_10_ d_lut_sky130_fd_sc_hd__buf_2
+Aoutput126 [net126] rowon_out_n_6_ d_lut_sky130_fd_sc_hd__buf_2
+A_313_ [_002_] _014_ d_lut_sky130_fd_sc_hd__inv_2
+A_630_ [_155_ _276_ _277_ _135_] net67 d_lut_sky130_fd_sc_hd__a22oi_2
+A_561_ [_010_ _217_ _219_ _076_] _220_ d_lut_sky130_fd_sc_hd__a31o_1
+A_492_ [_099_ _131_ _145_] _159_ d_lut_sky130_fd_sc_hd__o21ai_1
+A_613_ [_169_ _241_ _263_] net64 d_lut_sky130_fd_sc_hd__a21boi_4
+A_544_ [_077_ _203_ _204_] net53 d_lut_sky130_fd_sc_hd__o21ai_2
+A_475_ [_068_ _127_ _143_] _144_ d_lut_sky130_fd_sc_hd__or3_1
+A_527_ [_089_ _012_ _104_ _115_ _008_] _190_ d_lut_sky130_fd_sc_hd__o2111a_1
+A_458_ [_125_ _127_] _128_ d_lut_sky130_fd_sc_hd__nor2_1
+A_389_ [_025_ _066_ _067_ _010_ _064_] net115 d_lut_sky130_fd_sc_hd__a221o_4
+Aoutput116 [net116] rowon_out_n_11_ d_lut_sky130_fd_sc_hd__buf_2
+Aoutput105 [net105] rowoff_out_n_1_ d_lut_sky130_fd_sc_hd__buf_2
+Aoutput127 [net127] rowon_out_n_7_ d_lut_sky130_fd_sc_hd__buf_2
+A_312_ [net13] _013_ d_lut_sky130_fd_sc_hd__buf_2
+A_560_ [_194_ _218_] _219_ d_lut_sky130_fd_sc_hd__or2_1
+A_491_ [_156_ _157_ _068_] _158_ d_lut_sky130_fd_sc_hd__a21o_1
+A_689_ [_155_ _234_ _236_ _238_] net27 d_lut_sky130_fd_sc_hd__o22ai_4
+A_612_ [_251_ _256_ _258_ _260_ _262_] _263_ d_lut_sky130_fd_sc_hd__o32a_1
+A_543_ [_089_ _127_ _139_] _204_ d_lut_sky130_fd_sc_hd__or3_1
+A_474_ [_012_ _141_ _142_ _125_] _143_ d_lut_sky130_fd_sc_hd__o211a_1
+A_526_ [_110_ _186_ _188_ _079_] _189_ d_lut_sky130_fd_sc_hd__a211oi_2
+A_457_ [_126_] _127_ d_lut_sky130_fd_sc_hd__clkbuf_4
+A_388_ [_048_ _026_ _037_] _067_ d_lut_sky130_fd_sc_hd__o21ai_1
+Aoutput106 [net106] rowoff_out_n_2_ d_lut_sky130_fd_sc_hd__buf_2
+Aoutput117 [net117] rowon_out_n_12_ d_lut_sky130_fd_sc_hd__buf_2
+Aoutput128 [net128] rowon_out_n_8_ d_lut_sky130_fd_sc_hd__buf_2
+A_311_ [net98 net114] net82 d_lut_sky130_fd_sc_hd__nand2_1
+A_509_ [_103_ _140_ _173_] net80 d_lut_sky130_fd_sc_hd__o21ai_4
+A_490_ [_088_ _082_ _012_ _126_] _157_ d_lut_sky130_fd_sc_hd__or4_1
+A_688_ [_090_ _081_ _230_ _233_] net26 d_lut_sky130_fd_sc_hd__o31a_2
+A_611_ [_133_ _261_ _029_] _262_ d_lut_sky130_fd_sc_hd__o21a_1
+A_542_ [_010_ _200_ _202_] _203_ d_lut_sky130_fd_sc_hd__o21a_1
+A_473_ [_082_ net8 net14] _142_ d_lut_sky130_fd_sc_hd__or3b_1
+A_525_ [_014_ _115_ _104_ _187_ _145_] _188_ d_lut_sky130_fd_sc_hd__a311o_1
+A_456_ [_091_ net10] _126_ d_lut_sky130_fd_sc_hd__or2_1
+A_387_ [_021_ _048_ _033_ _006_] _066_ d_lut_sky130_fd_sc_hd__o22ai_1
+Aoutput107 [net107] rowoff_out_n_3_ d_lut_sky130_fd_sc_hd__buf_2
+Aoutput118 [net118] rowon_out_n_13_ d_lut_sky130_fd_sc_hd__buf_2
+Aoutput129 [net129] rowon_out_n_9_ d_lut_sky130_fd_sc_hd__buf_2
+A_310_ [_010_ _012_] net114 d_lut_sky130_fd_sc_hd__nand2_2
+A_508_ [_147_ _138_ _139_ _172_] _173_ d_lut_sky130_fd_sc_hd__a31o_1
+A_439_ [_109_] _110_ d_lut_sky130_fd_sc_hd__clkbuf_4
+A_687_ [_225_ _227_ _228_] net25 d_lut_sky130_fd_sc_hd__nor3b_2
+A_610_ [_125_ _094_ _149_ _137_] _261_ d_lut_sky130_fd_sc_hd__a31oi_1
+A_541_ [_015_ _174_ _201_ _199_ _006_] _202_ d_lut_sky130_fd_sc_hd__a221o_1
+A_472_ [_082_ net8 net1] _141_ d_lut_sky130_fd_sc_hd__or3b_1
+A_524_ [_002_ _091_] _187_ d_lut_sky130_fd_sc_hd__and2b_1
+A_455_ [_108_] _125_ d_lut_sky130_fd_sc_hd__buf_2
+A_386_ [_037_ _062_ _063_ _010_] net129 d_lut_sky130_fd_sc_hd__a2bb2o_2
+Aoutput119 [net119] rowon_out_n_14_ d_lut_sky130_fd_sc_hd__buf_2
+Aoutput108 [net108] rowoff_out_n_4_ d_lut_sky130_fd_sc_hd__buf_2
+Aoutput90 [net90] row_out_n_2_ d_lut_sky130_fd_sc_hd__buf_2
+A_507_ [_138_ _170_ _171_ _167_] _172_ d_lut_sky130_fd_sc_hd__a31o_1
+A_438_ [_108_] _109_ d_lut_sky130_fd_sc_hd__buf_2
+A_369_ [_057_] net87 d_lut_sky130_fd_sc_hd__clkbuf_2
+A_686_ [_169_ _223_ _224_] net24 d_lut_sky130_fd_sc_hd__o21a_2
+A_540_ [_094_ _095_ _136_ _108_] _201_ d_lut_sky130_fd_sc_hd__a211o_1
+A_471_ [_138_ _139_] _140_ d_lut_sky130_fd_sc_hd__or2_2
+A_669_ [net87 net119] net103 d_lut_sky130_fd_sc_hd__nand2_1
+A_523_ [_014_ _115_ _111_ _114_] _186_ d_lut_sky130_fd_sc_hd__a22o_1
+A_454_ [_068_ _122_ _123_] _124_ d_lut_sky130_fd_sc_hd__and3_1
+A_385_ [_007_ _065_ _012_] net128 d_lut_sky130_fd_sc_hd__o21ai_4
+Aoutput109 [net109] rowoff_out_n_5_ d_lut_sky130_fd_sc_hd__buf_2
+Aoutput91 [net91] row_out_n_3_ d_lut_sky130_fd_sc_hd__buf_2
+Aoutput80 [net80] col_out_n_8_ d_lut_sky130_fd_sc_hd__buf_2
+A_506_ [net9 _082_ net8 net14] _171_ d_lut_sky130_fd_sc_hd__or4b_1
+A_437_ [net9] _108_ d_lut_sky130_fd_sc_hd__buf_2
+A_368_ [_048_ _001_ _056_] _057_ d_lut_sky130_fd_sc_hd__or3_1
+A_299_ [net13 _002_] _003_ d_lut_sky130_fd_sc_hd__nand2_2
+A_685_ [_216_ _220_ _169_ _214_] net23 d_lut_sky130_fd_sc_hd__a2bb2o_1
+A_470_ [_088_ _011_ _104_ net9 _008_] _139_ d_lut_sky130_fd_sc_hd__o2111a_2
+A_668_ [net86 net118] net102 d_lut_sky130_fd_sc_hd__nand2_1
+A_599_ [_248_ _250_ _251_] _252_ d_lut_sky130_fd_sc_hd__a21o_1
+A_522_ [_182_ _183_ _184_] _185_ d_lut_sky130_fd_sc_hd__a21oi_2
+A_453_ [_089_ _012_ _093_ _009_] _123_ d_lut_sky130_fd_sc_hd__o211ai_2
+A_384_ [_026_ _031_ _037_] _065_ d_lut_sky130_fd_sc_hd__o21a_1
+Aoutput70 [net70] col_out_n_28_ d_lut_sky130_fd_sc_hd__buf_2
+Aoutput92 [net92] row_out_n_4_ d_lut_sky130_fd_sc_hd__buf_2
+Aoutput81 [net81] col_out_n_9_ d_lut_sky130_fd_sc_hd__buf_2
+A_505_ [_022_ _075_] _170_ d_lut_sky130_fd_sc_hd__nor2_4
+A_436_ [_049_ _102_ _103_ _106_ _107_] net61 d_lut_sky130_fd_sc_hd__o221ai_4
+A_367_ [_005_ _013_] _056_ d_lut_sky130_fd_sc_hd__xnor2_1
+A_298_ [net12] _002_ d_lut_sky130_fd_sc_hd__buf_2
+A_419_ [_091_ net10 net9] _092_ d_lut_sky130_fd_sc_hd__and3_1
+A_684_ [_079_ _206_ _209_ _213_] net22 d_lut_sky130_fd_sc_hd__a31o_1
+A_667_ [net85 net117] net101 d_lut_sky130_fd_sc_hd__nand2_1
+A_598_ [_005_ _075_] _251_ d_lut_sky130_fd_sc_hd__or2_1
+A_521_ [_075_ _078_ _006_] _184_ d_lut_sky130_fd_sc_hd__a21o_1
+A_452_ [_083_ _093_] _122_ d_lut_sky130_fd_sc_hd__nand2_1
+A_383_ [_007_ _038_ _037_] net127 d_lut_sky130_fd_sc_hd__a21oi_4
+Aoutput60 [net60] col_out_n_19_ d_lut_sky130_fd_sc_hd__buf_2
+Aoutput82 [net82] row_out_n_0_ d_lut_sky130_fd_sc_hd__buf_2
+Aoutput71 [net71] col_out_n_29_ d_lut_sky130_fd_sc_hd__buf_2
+Aoutput93 [net93] row_out_n_5_ d_lut_sky130_fd_sc_hd__buf_2
+A_504_ [_163_ _166_ _168_ _169_] net79 d_lut_sky130_fd_sc_hd__a22o_2
+A_435_ [_093_ _101_ _090_] _107_ d_lut_sky130_fd_sc_hd__a21o_1
+A_366_ [_054_ _055_ _019_] net86 d_lut_sky130_fd_sc_hd__a21o_2
+A_297_ [net4 _000_] _001_ d_lut_sky130_fd_sc_hd__nand2_4
+A_418_ [net11] _091_ d_lut_sky130_fd_sc_hd__clkbuf_2
+A_349_ [_042_ _043_ _026_ _031_] net96 d_lut_sky130_fd_sc_hd__a211o_2
+A_683_ [_169_ _203_ _204_] net21 d_lut_sky130_fd_sc_hd__o21a_1
+A_666_ [net84 net116] net100 d_lut_sky130_fd_sc_hd__nand2_1
+A_597_ [_138_ _249_ _167_] _250_ d_lut_sky130_fd_sc_hd__a21o_1
+A_520_ [_083_ _175_ _177_ _126_] _183_ d_lut_sky130_fd_sc_hd__o211a_1
+A_451_ [_049_ _093_ _101_ _118_ _121_] net72 d_lut_sky130_fd_sc_hd__a311oi_4
+A_382_ [_010_ _019_ _003_ _064_] net126 d_lut_sky130_fd_sc_hd__a31o_2
+Aoutput61 [net61] col_out_n_1_ d_lut_sky130_fd_sc_hd__buf_2
+Aoutput50 [net50] col_out_n_0_ d_lut_sky130_fd_sc_hd__buf_2
+Aoutput83 [net83] row_out_n_10_ d_lut_sky130_fd_sc_hd__buf_2
+Aoutput94 [net94] row_out_n_6_ d_lut_sky130_fd_sc_hd__buf_2
+Aoutput72 [net72] col_out_n_2_ d_lut_sky130_fd_sc_hd__buf_2
+A_649_ [_079_ _084_ _097_ _049_ _090_] _291_ d_lut_sky130_fd_sc_hd__o221a_1
+A_503_ [_147_] _169_ d_lut_sky130_fd_sc_hd__clkbuf_4
+A_434_ [_104_ _105_ _093_] _106_ d_lut_sky130_fd_sc_hd__o21a_2
+A_365_ [_008_ _025_ _022_ _000_] _055_ d_lut_sky130_fd_sc_hd__or4_1
+A_296_ [net3] _000_ d_lut_sky130_fd_sc_hd__buf_2
+A_417_ [_089_] _090_ d_lut_sky130_fd_sc_hd__buf_4
+A_348_ [net4 _004_] _043_ d_lut_sky130_fd_sc_hd__or2b_1
+A_682_ [_147_ _192_ _193_ _170_ _196_] net20 d_lut_sky130_fd_sc_hd__a221o_2
+A_665_ [net83 net115] net99 d_lut_sky130_fd_sc_hd__nand2_1
+A_596_ [_094_ _149_ _109_] _249_ d_lut_sky130_fd_sc_hd__a21o_1
+A_450_ [_087_ _120_] _121_ d_lut_sky130_fd_sc_hd__nor2_1
+A_381_ [_010_ _026_ _031_ _037_] net124 d_lut_sky130_fd_sc_hd__a31oi_4
+Aoutput40 [net40] col_out_2_ d_lut_sky130_fd_sc_hd__buf_2
+Aoutput51 [net51] col_out_n_10_ d_lut_sky130_fd_sc_hd__buf_2
+Aoutput84 [net84] row_out_n_11_ d_lut_sky130_fd_sc_hd__buf_2
+Aoutput73 [net73] col_out_n_30_ d_lut_sky130_fd_sc_hd__buf_2
+Aoutput62 [net62] col_out_n_20_ d_lut_sky130_fd_sc_hd__buf_2
+Aoutput95 [net95] row_out_n_7_ d_lut_sky130_fd_sc_hd__buf_2
+A_648_ [_102_ _239_ _106_ _170_ _290_] net73 d_lut_sky130_fd_sc_hd__a221oi_4
+A_579_ [_127_ _143_] _234_ d_lut_sky130_fd_sc_hd__nor2_2
+A_502_ [_111_ _130_ _161_ _167_] _168_ d_lut_sky130_fd_sc_hd__o31ai_2
+A_433_ [_088_ _012_ _095_ _008_] _105_ d_lut_sky130_fd_sc_hd__o211a_1
+A_364_ [_005_ _013_ _014_ _000_] _054_ d_lut_sky130_fd_sc_hd__or4b_1
+A_416_ [_088_] _089_ d_lut_sky130_fd_sc_hd__buf_4
+A_347_ [_004_ net4] _042_ d_lut_sky130_fd_sc_hd__or2b_1
+A_681_ [_147_ _185_ _189_ _191_] net19 d_lut_sky130_fd_sc_hd__o31ai_4
+A_664_ [net97 net129] net113 d_lut_sky130_fd_sc_hd__nand2_1
+A_595_ [_029_ _197_] _248_ d_lut_sky130_fd_sc_hd__nand2_1
+A_380_ [_007_ _063_ _064_] net123 d_lut_sky130_fd_sc_hd__a21o_2
+Aoutput52 [net52] col_out_n_11_ d_lut_sky130_fd_sc_hd__buf_2
+Aoutput30 [net30] col_out_20_ d_lut_sky130_fd_sc_hd__buf_2
+Aoutput41 [net41] col_out_30_ d_lut_sky130_fd_sc_hd__buf_2
+Aoutput85 [net85] row_out_n_12_ d_lut_sky130_fd_sc_hd__buf_2
+Aoutput63 [net63] col_out_n_21_ d_lut_sky130_fd_sc_hd__buf_2
+Aoutput74 [net74] col_out_n_31_ d_lut_sky130_fd_sc_hd__buf_2
+Aoutput96 [net96] row_out_n_8_ d_lut_sky130_fd_sc_hd__buf_2
+A_647_ [_122_ _123_ _090_] _290_ d_lut_sky130_fd_sc_hd__a21oi_2
+A_578_ [_090_ _081_ _230_ _233_] net58 d_lut_sky130_fd_sc_hd__o31ai_4
 
 .model todig_1v8 adc_bridge(in_high=1.2 in_low=0.6 rise_delay=500p fall_delay=500p)
 .model toana_1v8 dac_bridge(out_high=1.8 out_low=0)
@@ -471,8 +552,8 @@ A_800_ c0p_out_n dzero
 .model dzero d_pulldown(load=250f)
 .model done d_pullup(load=250f)
 
-AA2D1 [a_VPWR] [VPWR] todig_1v8
-AA2D2 [a_VGND] [VGND] todig_1v8
+AA2D1 [a_VGND] [VGND] todig_1v8
+AA2D2 [a_VPWR] [VPWR] todig_1v8
 AD2A1 [bincap_out_n_0_] [a_bincap_out_n_0_] toana_1v8
 AD2A2 [bincap_out_n_1_] [a_bincap_out_n_1_] toana_1v8
 AD2A3 [bincap_out_n_2_] [a_bincap_out_n_2_] toana_1v8
@@ -480,374 +561,448 @@ AD2A4 [c0n_out_n] [a_c0n_out_n] toana_1v8
 AD2A5 [c0p_out_n] [a_c0p_out_n] toana_1v8
 AA2D3 [a_col_mode] [col_mode] todig_1v8
 AD2A6 [col_out_0_] [a_col_out_0_] toana_1v8
-AD2A7 [col_out_1_] [a_col_out_1_] toana_1v8
-AD2A8 [col_out_2_] [a_col_out_2_] toana_1v8
-AD2A9 [col_out_3_] [a_col_out_3_] toana_1v8
-AD2A10 [col_out_4_] [a_col_out_4_] toana_1v8
-AD2A11 [col_out_5_] [a_col_out_5_] toana_1v8
-AD2A12 [col_out_6_] [a_col_out_6_] toana_1v8
-AD2A13 [col_out_7_] [a_col_out_7_] toana_1v8
-AD2A14 [col_out_8_] [a_col_out_8_] toana_1v8
-AD2A15 [col_out_9_] [a_col_out_9_] toana_1v8
-AD2A16 [col_out_10_] [a_col_out_10_] toana_1v8
-AD2A17 [col_out_11_] [a_col_out_11_] toana_1v8
-AD2A18 [col_out_12_] [a_col_out_12_] toana_1v8
-AD2A19 [col_out_13_] [a_col_out_13_] toana_1v8
-AD2A20 [col_out_14_] [a_col_out_14_] toana_1v8
-AD2D4x [col_out_15_] [a_col_out_15_] toana_1v8
-AD2A21 [col_out_16_] [a_col_out_16_] toana_1v8
-AD2A22 [col_out_17_] [a_col_out_17_] toana_1v8
-AD2A23 [col_out_18_] [a_col_out_18_] toana_1v8
-AD2A24 [col_out_19_] [a_col_out_19_] toana_1v8
-AD2A25 [col_out_20_] [a_col_out_20_] toana_1v8
-AD2A26 [col_out_21_] [a_col_out_21_] toana_1v8
-AD2A27 [col_out_22_] [a_col_out_22_] toana_1v8
-AD2A28 [col_out_23_] [a_col_out_23_] toana_1v8
-AD2A29 [col_out_24_] [a_col_out_24_] toana_1v8
-AD2A30 [col_out_25_] [a_col_out_25_] toana_1v8
-AD2A31 [col_out_26_] [a_col_out_26_] toana_1v8
-AD2A32 [col_out_27_] [a_col_out_27_] toana_1v8
-AD2A33 [col_out_28_] [a_col_out_28_] toana_1v8
-AD2A34 [col_out_29_] [a_col_out_29_] toana_1v8
-AD2A35 [col_out_30_] [a_col_out_30_] toana_1v8
-AD2A36 [col_out_31_] [a_col_out_31_] toana_1v8
-AD2A37 [col_out_n_0_] [a_col_out_n_0_] toana_1v8
-AD2A38 [col_out_n_1_] [a_col_out_n_1_] toana_1v8
-AD2A39 [col_out_n_2_] [a_col_out_n_2_] toana_1v8
-AD2A40 [col_out_n_3_] [a_col_out_n_3_] toana_1v8
-AD2A41 [col_out_n_4_] [a_col_out_n_4_] toana_1v8
-AD2A42 [col_out_n_5_] [a_col_out_n_5_] toana_1v8
-AD2A43 [col_out_n_6_] [a_col_out_n_6_] toana_1v8
-AD2A44 [col_out_n_7_] [a_col_out_n_7_] toana_1v8
-AD2A45 [col_out_n_8_] [a_col_out_n_8_] toana_1v8
-AD2A46 [col_out_n_9_] [a_col_out_n_9_] toana_1v8
-AD2A47 [col_out_n_10_] [a_col_out_n_10_] toana_1v8
-AD2A48 [col_out_n_11_] [a_col_out_n_11_] toana_1v8
-AD2A49 [col_out_n_12_] [a_col_out_n_12_] toana_1v8
-AD2A50 [col_out_n_13_] [a_col_out_n_13_] toana_1v8
-AD2A51 [col_out_n_14_] [a_col_out_n_14_] toana_1v8
-AD2A52 [col_out_n_15_] [a_col_out_n_15_] toana_1v8
-AD2A53 [col_out_n_16_] [a_col_out_n_16_] toana_1v8
-AD2A54 [col_out_n_17_] [a_col_out_n_17_] toana_1v8
-AD2A55 [col_out_n_18_] [a_col_out_n_18_] toana_1v8
-AD2A56 [col_out_n_19_] [a_col_out_n_19_] toana_1v8
-AD2A57 [col_out_n_20_] [a_col_out_n_20_] toana_1v8
-AD2A58 [col_out_n_21_] [a_col_out_n_21_] toana_1v8
-AD2A59 [col_out_n_22_] [a_col_out_n_22_] toana_1v8
-AD2A60 [col_out_n_23_] [a_col_out_n_23_] toana_1v8
-AD2A61 [col_out_n_24_] [a_col_out_n_24_] toana_1v8
-AD2A62 [col_out_n_25_] [a_col_out_n_25_] toana_1v8
-AD2A63 [col_out_n_26_] [a_col_out_n_26_] toana_1v8
-AD2A64 [col_out_n_27_] [a_col_out_n_27_] toana_1v8
-AD2A65 [col_out_n_28_] [a_col_out_n_28_] toana_1v8
-AD2A66 [col_out_n_29_] [a_col_out_n_29_] toana_1v8
-AD2A67 [col_out_n_30_] [a_col_out_n_30_] toana_1v8
-AD2A68 [col_out_n_31_] [a_col_out_n_31_] toana_1v8
-AA2D5 [a_data_in_0_] [data_in_0_] todig_1v8
-AA2D6 [a_data_in_1_] [data_in_1_] todig_1v8
-AA2D7 [a_data_in_2_] [data_in_2_] todig_1v8
-AA2D8 [a_data_in_3_] [data_in_3_] todig_1v8
-AA2D9 [a_data_in_4_] [data_in_4_] todig_1v8
-AA2D10 [a_data_in_5_] [data_in_5_] todig_1v8
-AA2D11 [a_data_in_6_] [data_in_6_] todig_1v8
-AA2D12 [a_data_in_7_] [data_in_7_] todig_1v8
-AA2D13 [a_data_in_8_] [data_in_8_] todig_1v8
-AA2D14 [a_data_in_9_] [data_in_9_] todig_1v8
-AA2D15 [a_data_in_10_] [data_in_10_] todig_1v8
-AA2D16 [a_data_in_11_] [data_in_11_] todig_1v8
-AA2D17 [a_row_mode] [row_mode] todig_1v8
-AD2A69 [row_out_n_7_] [a_row_out_n_7_] toana_1v8
-AD2A70 [row_out_n_8_] [a_row_out_n_8_] toana_1v8
-AD2A71 [rowoff_out_n_1_] [a_rowoff_out_n_1_] toana_1v8
-AD2A72 [rowoff_out_n_2_] [a_rowoff_out_n_2_] toana_1v8
-AD2A73 [rowoff_out_n_3_] [a_rowoff_out_n_3_] toana_1v8
-AD2A74 [rowoff_out_n_4_] [a_rowoff_out_n_4_] toana_1v8
-AD2A75 [rowoff_out_n_5_] [a_rowoff_out_n_5_] toana_1v8
-AD2A76 [rowoff_out_n_6_] [a_rowoff_out_n_6_] toana_1v8
-AD2A77 [rowoff_out_n_7_] [a_rowoff_out_n_7_] toana_1v8
-AD2A78 [rowoff_out_n_8_] [a_rowoff_out_n_8_] toana_1v8
-AD2A79 [rowoff_out_n_9_] [a_rowoff_out_n_9_] toana_1v8
-AD2A80 [rowoff_out_n_10_] [a_rowoff_out_n_10_] toana_1v8
-AD2A81 [rowoff_out_n_11_] [a_rowoff_out_n_11_] toana_1v8
-AD2A82 [rowoff_out_n_12_] [a_rowoff_out_n_12_] toana_1v8
-AD2A83 [rowoff_out_n_13_] [a_rowoff_out_n_13_] toana_1v8
-AD2A84 [rowoff_out_n_14_] [a_rowoff_out_n_14_] toana_1v8
-AD2A85 [rowoff_out_n_15_] [a_rowoff_out_n_15_] toana_1v8
-AD2A86 [rowon_out_n_0_] [a_rowon_out_n_0_] toana_1v8
-AD2A87 [rowon_out_n_7_] [a_rowon_out_n_7_] toana_1v8
-AD2A88 [rowon_out_n_8_] [a_rowon_out_n_8_] toana_1v8
-
-
-AA2D18x [row_out_n_0_] [a_row_out_n_0_] toana_1v8
-AA2D19x [row_out_n_1_] [a_row_out_n_1_] toana_1v8
-AA2D20x [row_out_n_2_] [a_row_out_n_2_] toana_1v8
-AA2D21x [row_out_n_3_] [a_row_out_n_3_] toana_1v8
-AA2D22x [row_out_n_4_] [a_row_out_n_4_] toana_1v8
-AA2D23x [row_out_n_5_] [a_row_out_n_5_] toana_1v8
-AA2D24x [row_out_n_6_] [a_row_out_n_6_] toana_1v8
-AA2D25x [row_out_n_9_] [a_row_out_n_9_] toana_1v8
-AA2D26x [row_out_n_10_] [a_row_out_n_10_] toana_1v8
-AA2D27x [row_out_n_11_] [a_row_out_n_11_] toana_1v8
-AA2D28x [row_out_n_12_] [a_row_out_n_12_] toana_1v8
-AA2D29x [row_out_n_13_] [a_row_out_n_13_] toana_1v8
-AA2D30x [row_out_n_14_] [a_row_out_n_14_] toana_1v8
-AA2D31x [row_out_n_15_] [a_row_out_n_15_] toana_1v8
-AA2D32x [rowoff_out_n_0_] [a_rowoff_out_n_0_] toana_1v8
-AA2D33x [rowon_out_n_1_] [a_rowon_out_n_1_] toana_1v8
-AA2D34x [rowon_out_n_2_] [a_rowon_out_n_2_] toana_1v8
-AA2D35x [rowon_out_n_3_] [a_rowon_out_n_3_] toana_1v8
-AA2D36x [rowon_out_n_4_] [a_rowon_out_n_4_] toana_1v8
-AA2D37x [rowon_out_n_5_] [a_rowon_out_n_5_] toana_1v8
-AA2D38x [rowon_out_n_6_] [a_rowon_out_n_6_] toana_1v8
-AA2D39x [rowon_out_n_9_] [a_rowon_out_n_9_] toana_1v8
-AA2D40x [rowon_out_n_10_] [a_rowon_out_n_10_] toana_1v8
-AA2D41x [rowon_out_n_11_] [a_rowon_out_n_11_] toana_1v8
-AA2D42x [rowon_out_n_12_] [a_rowon_out_n_12_] toana_1v8
-AA2D43x [rowon_out_n_13_] [a_rowon_out_n_13_] toana_1v8
-AA2D44x [rowon_out_n_14_] [a_rowon_out_n_14_] toana_1v8
-AA2D45x [rowon_out_n_15_] [a_rowon_out_n_15_] toana_1v8
+AD2A7 [col_out_10_] [a_col_out_10_] toana_1v8
+AD2A8 [col_out_11_] [a_col_out_11_] toana_1v8
+AD2A9 [col_out_12_] [a_col_out_12_] toana_1v8
+AD2A10 [col_out_13_] [a_col_out_13_] toana_1v8
+AD2A11 [col_out_14_] [a_col_out_14_] toana_1v8
+AD2A12 [col_out_15_] [a_col_out_15_] toana_1v8
+AD2A13 [col_out_16_] [a_col_out_16_] toana_1v8
+AD2A14 [col_out_17_] [a_col_out_17_] toana_1v8
+AD2A15 [col_out_18_] [a_col_out_18_] toana_1v8
+AD2A16 [col_out_19_] [a_col_out_19_] toana_1v8
+AD2A17 [col_out_1_] [a_col_out_1_] toana_1v8
+AD2A18 [col_out_20_] [a_col_out_20_] toana_1v8
+AD2A19 [col_out_21_] [a_col_out_21_] toana_1v8
+AD2A20 [col_out_22_] [a_col_out_22_] toana_1v8
+AD2A21 [col_out_23_] [a_col_out_23_] toana_1v8
+AD2A22 [col_out_24_] [a_col_out_24_] toana_1v8
+AD2A23 [col_out_25_] [a_col_out_25_] toana_1v8
+AD2A24 [col_out_26_] [a_col_out_26_] toana_1v8
+AD2A25 [col_out_27_] [a_col_out_27_] toana_1v8
+AD2A26 [col_out_28_] [a_col_out_28_] toana_1v8
+AD2A27 [col_out_29_] [a_col_out_29_] toana_1v8
+AD2A28 [col_out_2_] [a_col_out_2_] toana_1v8
+AD2A29 [col_out_30_] [a_col_out_30_] toana_1v8
+AD2A30 [col_out_31_] [a_col_out_31_] toana_1v8
+AD2A31 [col_out_3_] [a_col_out_3_] toana_1v8
+AD2A32 [col_out_4_] [a_col_out_4_] toana_1v8
+AD2A33 [col_out_5_] [a_col_out_5_] toana_1v8
+AD2A34 [col_out_6_] [a_col_out_6_] toana_1v8
+AD2A35 [col_out_7_] [a_col_out_7_] toana_1v8
+AD2A36 [col_out_8_] [a_col_out_8_] toana_1v8
+AD2A37 [col_out_9_] [a_col_out_9_] toana_1v8
+AD2A38 [col_out_n_0_] [a_col_out_n_0_] toana_1v8
+AD2A39 [col_out_n_10_] [a_col_out_n_10_] toana_1v8
+AD2A40 [col_out_n_11_] [a_col_out_n_11_] toana_1v8
+AD2A41 [col_out_n_12_] [a_col_out_n_12_] toana_1v8
+AD2A42 [col_out_n_13_] [a_col_out_n_13_] toana_1v8
+AD2A43 [col_out_n_14_] [a_col_out_n_14_] toana_1v8
+AD2A44 [col_out_n_15_] [a_col_out_n_15_] toana_1v8
+AD2A45 [col_out_n_16_] [a_col_out_n_16_] toana_1v8
+AD2A46 [col_out_n_17_] [a_col_out_n_17_] toana_1v8
+AD2A47 [col_out_n_18_] [a_col_out_n_18_] toana_1v8
+AD2A48 [col_out_n_19_] [a_col_out_n_19_] toana_1v8
+AD2A49 [col_out_n_1_] [a_col_out_n_1_] toana_1v8
+AD2A50 [col_out_n_20_] [a_col_out_n_20_] toana_1v8
+AD2A51 [col_out_n_21_] [a_col_out_n_21_] toana_1v8
+AD2A52 [col_out_n_22_] [a_col_out_n_22_] toana_1v8
+AD2A53 [col_out_n_23_] [a_col_out_n_23_] toana_1v8
+AD2A54 [col_out_n_24_] [a_col_out_n_24_] toana_1v8
+AD2A55 [col_out_n_25_] [a_col_out_n_25_] toana_1v8
+AD2A56 [col_out_n_26_] [a_col_out_n_26_] toana_1v8
+AD2A57 [col_out_n_27_] [a_col_out_n_27_] toana_1v8
+AD2A58 [col_out_n_28_] [a_col_out_n_28_] toana_1v8
+AD2A59 [col_out_n_29_] [a_col_out_n_29_] toana_1v8
+AD2A60 [col_out_n_2_] [a_col_out_n_2_] toana_1v8
+AD2A61 [col_out_n_30_] [a_col_out_n_30_] toana_1v8
+AD2A62 [col_out_n_31_] [a_col_out_n_31_] toana_1v8
+AD2A63 [col_out_n_3_] [a_col_out_n_3_] toana_1v8
+AD2A64 [col_out_n_4_] [a_col_out_n_4_] toana_1v8
+AD2A65 [col_out_n_5_] [a_col_out_n_5_] toana_1v8
+AD2A66 [col_out_n_6_] [a_col_out_n_6_] toana_1v8
+AD2A67 [col_out_n_7_] [a_col_out_n_7_] toana_1v8
+AD2A68 [col_out_n_8_] [a_col_out_n_8_] toana_1v8
+AD2A69 [col_out_n_9_] [a_col_out_n_9_] toana_1v8
+AA2D4 [a_data_in_0_] [data_in_0_] todig_1v8
+AA2D5 [a_data_in_10_] [data_in_10_] todig_1v8
+AA2D6 [a_data_in_11_] [data_in_11_] todig_1v8
+AA2D7 [a_data_in_1_] [data_in_1_] todig_1v8
+AA2D8 [a_data_in_2_] [data_in_2_] todig_1v8
+AA2D9 [a_data_in_3_] [data_in_3_] todig_1v8
+AA2D10 [a_data_in_4_] [data_in_4_] todig_1v8
+AA2D11 [a_data_in_5_] [data_in_5_] todig_1v8
+AA2D12 [a_data_in_6_] [data_in_6_] todig_1v8
+AA2D13 [a_data_in_7_] [data_in_7_] todig_1v8
+AA2D14 [a_data_in_8_] [data_in_8_] todig_1v8
+AA2D15 [a_data_in_9_] [data_in_9_] todig_1v8
+AA2D16 [a_row_mode] [row_mode] todig_1v8
+AD2A70 [row_out_n_0_] [a_row_out_n_0_] toana_1v8
+AD2A71 [row_out_n_10_] [a_row_out_n_10_] toana_1v8
+AD2A72 [row_out_n_11_] [a_row_out_n_11_] toana_1v8
+AD2A73 [row_out_n_12_] [a_row_out_n_12_] toana_1v8
+AD2A74 [row_out_n_13_] [a_row_out_n_13_] toana_1v8
+AD2A75 [row_out_n_14_] [a_row_out_n_14_] toana_1v8
+AD2A76 [row_out_n_15_] [a_row_out_n_15_] toana_1v8
+AD2A77 [row_out_n_1_] [a_row_out_n_1_] toana_1v8
+AD2A78 [row_out_n_2_] [a_row_out_n_2_] toana_1v8
+AD2A79 [row_out_n_3_] [a_row_out_n_3_] toana_1v8
+AD2A80 [row_out_n_4_] [a_row_out_n_4_] toana_1v8
+AD2A81 [row_out_n_5_] [a_row_out_n_5_] toana_1v8
+AD2A82 [row_out_n_6_] [a_row_out_n_6_] toana_1v8
+AD2A83 [row_out_n_7_] [a_row_out_n_7_] toana_1v8
+AD2A84 [row_out_n_8_] [a_row_out_n_8_] toana_1v8
+AD2A85 [row_out_n_9_] [a_row_out_n_9_] toana_1v8
+AD2A86 [rowoff_out_n_0_] [a_rowoff_out_n_0_] toana_1v8
+AD2A87 [rowoff_out_n_10_] [a_rowoff_out_n_10_] toana_1v8
+AD2A88 [rowoff_out_n_11_] [a_rowoff_out_n_11_] toana_1v8
+AD2A89 [rowoff_out_n_12_] [a_rowoff_out_n_12_] toana_1v8
+AD2A90 [rowoff_out_n_13_] [a_rowoff_out_n_13_] toana_1v8
+AD2A91 [rowoff_out_n_14_] [a_rowoff_out_n_14_] toana_1v8
+AD2A92 [rowoff_out_n_15_] [a_rowoff_out_n_15_] toana_1v8
+AD2A93 [rowoff_out_n_1_] [a_rowoff_out_n_1_] toana_1v8
+AD2A94 [rowoff_out_n_2_] [a_rowoff_out_n_2_] toana_1v8
+AD2A95 [rowoff_out_n_3_] [a_rowoff_out_n_3_] toana_1v8
+AD2A96 [rowoff_out_n_4_] [a_rowoff_out_n_4_] toana_1v8
+AD2A97 [rowoff_out_n_5_] [a_rowoff_out_n_5_] toana_1v8
+AD2A98 [rowoff_out_n_6_] [a_rowoff_out_n_6_] toana_1v8
+AD2A99 [rowoff_out_n_7_] [a_rowoff_out_n_7_] toana_1v8
+AD2A100 [rowoff_out_n_8_] [a_rowoff_out_n_8_] toana_1v8
+AD2A101 [rowoff_out_n_9_] [a_rowoff_out_n_9_] toana_1v8
+AD2A102 [rowon_out_n_0_] [a_rowon_out_n_0_] toana_1v8
+AD2A103 [rowon_out_n_10_] [a_rowon_out_n_10_] toana_1v8
+AD2A104 [rowon_out_n_11_] [a_rowon_out_n_11_] toana_1v8
+AD2A105 [rowon_out_n_12_] [a_rowon_out_n_12_] toana_1v8
+AD2A106 [rowon_out_n_13_] [a_rowon_out_n_13_] toana_1v8
+AD2A107 [rowon_out_n_14_] [a_rowon_out_n_14_] toana_1v8
+AD2A108 [rowon_out_n_15_] [a_rowon_out_n_15_] toana_1v8
+AD2A109 [rowon_out_n_1_] [a_rowon_out_n_1_] toana_1v8
+AD2A110 [rowon_out_n_2_] [a_rowon_out_n_2_] toana_1v8
+AD2A111 [rowon_out_n_3_] [a_rowon_out_n_3_] toana_1v8
+AD2A112 [rowon_out_n_4_] [a_rowon_out_n_4_] toana_1v8
+AD2A113 [rowon_out_n_5_] [a_rowon_out_n_5_] toana_1v8
+AD2A114 [rowon_out_n_6_] [a_rowon_out_n_6_] toana_1v8
+AD2A115 [rowon_out_n_7_] [a_rowon_out_n_7_] toana_1v8
+AD2A116 [rowon_out_n_8_] [a_rowon_out_n_8_] toana_1v8
+AD2A117 [rowon_out_n_9_] [a_rowon_out_n_9_] toana_1v8
 
 .ends
 
-* sky130_fd_sc_hd__and4_2 (A&B&C&D)
-.model d_lut_sky130_fd_sc_hd__and4_2 d_lut (rise_delay=50p fall_delay=50p input_load=250f
-+ table_values "0000000000000001")
+
+* sky130_fd_sc_hd__decap_6 (no function)
+* sky130_ef_sc_hd__decap_12 (no function)
 * sky130_fd_sc_hd__buf_2 (A)
 .model d_lut_sky130_fd_sc_hd__buf_2 d_lut (rise_delay=50p fall_delay=50p input_load=250f
++ table_values "01")
+* sky130_fd_sc_hd__and2_2 (A&B)
+.model d_lut_sky130_fd_sc_hd__and2_2 d_lut (rise_delay=50p fall_delay=50p input_load=250f
++ table_values "0001")
+* sky130_fd_sc_hd__clkbuf_2 (A)
+.model d_lut_sky130_fd_sc_hd__clkbuf_2 d_lut (rise_delay=50p fall_delay=50p input_load=250f
++ table_values "01")
+* sky130_fd_sc_hd__inv_2 (!A)
+.model d_lut_sky130_fd_sc_hd__inv_2 d_lut (rise_delay=50p fall_delay=50p input_load=250f
++ table_values "10")
+* sky130_fd_sc_hd__dlymetal6s2s_1 (A)
+.model d_lut_sky130_fd_sc_hd__dlymetal6s2s_1 d_lut (rise_delay=50p fall_delay=50p input_load=250f
++ table_values "01")
+* sky130_fd_sc_hd__decap_3 (no function)
+* sky130_fd_sc_hd__decap_8 (no function)
+* sky130_fd_sc_hd__decap_4 (no function)
+* sky130_fd_sc_hd__or3_1 (A) | (B) | (C)
+.model d_lut_sky130_fd_sc_hd__or3_1 d_lut (rise_delay=50p fall_delay=50p input_load=250f
++ table_values "01111111")
+* sky130_fd_sc_hd__o21a_1 (A1&B1) | (A2&B1)
+.model d_lut_sky130_fd_sc_hd__o21a_1 d_lut (rise_delay=50p fall_delay=50p input_load=250f
++ table_values "00000111")
+* sky130_fd_sc_hd__clkbuf_1 (A)
+.model d_lut_sky130_fd_sc_hd__clkbuf_1 d_lut (rise_delay=50p fall_delay=50p input_load=250f
++ table_values "01")
+* sky130_fd_sc_hd__o21ai_1 (!A1&!A2) | (!B1)
+.model d_lut_sky130_fd_sc_hd__o21ai_1 d_lut (rise_delay=50p fall_delay=50p input_load=250f
++ table_values "11111000")
+* sky130_fd_sc_hd__diode_2 (no function)
+* sky130_fd_sc_hd__a22oi_4 (!A1&!B1) | (!A1&!B2) | (!A2&!B1) | (!A2&!B2)
+.model d_lut_sky130_fd_sc_hd__a22oi_4 d_lut (rise_delay=50p fall_delay=50p input_load=250f
++ table_values "1110111011100000")
+* sky130_fd_sc_hd__a21o_1 (A1&A2) | (B1)
+.model d_lut_sky130_fd_sc_hd__a21o_1 d_lut (rise_delay=50p fall_delay=50p input_load=250f
++ table_values "00011111")
+* sky130_fd_sc_hd__nand2_4 (!A) | (!B)
+.model d_lut_sky130_fd_sc_hd__nand2_4 d_lut (rise_delay=50p fall_delay=50p input_load=250f
++ table_values "1110")
+* sky130_fd_sc_hd__or2_1 (A) | (B)
+.model d_lut_sky130_fd_sc_hd__or2_1 d_lut (rise_delay=50p fall_delay=50p input_load=250f
++ table_values "0111")
+* sky130_fd_sc_hd__a21oi_1 (!A1&!B1) | (!A2&!B1)
+.model d_lut_sky130_fd_sc_hd__a21oi_1 d_lut (rise_delay=50p fall_delay=50p input_load=250f
++ table_values "11100000")
+* sky130_fd_sc_hd__a211o_1 (A1&A2) | (B1) | (C1)
+.model d_lut_sky130_fd_sc_hd__a211o_1 d_lut (rise_delay=50p fall_delay=50p input_load=250f
++ table_values "0001111111111111")
+* sky130_fd_sc_hd__or2_2 (A) | (B)
+.model d_lut_sky130_fd_sc_hd__or2_2 d_lut (rise_delay=50p fall_delay=50p input_load=250f
++ table_values "0111")
+* sky130_fd_sc_hd__xnor2_1 (!A&!B) | (A&B)
+.model d_lut_sky130_fd_sc_hd__xnor2_1 d_lut (rise_delay=50p fall_delay=50p input_load=250f
++ table_values "1001")
+* sky130_fd_sc_hd__a31o_1 (A1&A2&A3) | (B1)
+.model d_lut_sky130_fd_sc_hd__a31o_1 d_lut (rise_delay=50p fall_delay=50p input_load=250f
++ table_values "0000000111111111")
+* sky130_fd_sc_hd__nor4_1 (!A&!B&!C&!D)
+.model d_lut_sky130_fd_sc_hd__nor4_1 d_lut (rise_delay=50p fall_delay=50p input_load=250f
++ table_values "1000000000000000")
+* sky130_fd_sc_hd__mux2_1 (A0&!S) | (A1&S)
+.model d_lut_sky130_fd_sc_hd__mux2_1 d_lut (rise_delay=50p fall_delay=50p input_load=250f
++ table_values "01010011")
+* sky130_fd_sc_hd__nand2_1 (!A) | (!B)
+.model d_lut_sky130_fd_sc_hd__nand2_1 d_lut (rise_delay=50p fall_delay=50p input_load=250f
++ table_values "1110")
+* sky130_fd_sc_hd__o221a_1 (A1&B1&C1) | (A2&B1&C1) | (A1&B2&C1) | (A2&B2&C1)
+.model d_lut_sky130_fd_sc_hd__o221a_1 d_lut (rise_delay=50p fall_delay=50p input_load=250f
++ table_values "00000000000000000000011101110111")
+* sky130_fd_sc_hd__a221o_1 (B1&B2) | (A1&A2) | (C1)
+.model d_lut_sky130_fd_sc_hd__a221o_1 d_lut (rise_delay=50p fall_delay=50p input_load=250f
++ table_values "00010001000111111111111111111111")
+* sky130_fd_sc_hd__a21o_2 (A1&A2) | (B1)
+.model d_lut_sky130_fd_sc_hd__a21o_2 d_lut (rise_delay=50p fall_delay=50p input_load=250f
++ table_values "00011111")
+* sky130_fd_sc_hd__o41a_1 (A1&B1) | (A2&B1) | (A3&B1) | (A4&B1)
+.model d_lut_sky130_fd_sc_hd__o41a_1 d_lut (rise_delay=50p fall_delay=50p input_load=250f
++ table_values "00000000000000000111111111111111")
+* sky130_fd_sc_hd__conb_1 1
+* sky130_fd_sc_hd__clkbuf_4 (A)
+.model d_lut_sky130_fd_sc_hd__clkbuf_4 d_lut (rise_delay=50p fall_delay=50p input_load=250f
 + table_values "01")
 * sky130_fd_sc_hd__buf_6 (A)
 .model d_lut_sky130_fd_sc_hd__buf_6 d_lut (rise_delay=50p fall_delay=50p input_load=250f
 + table_values "01")
-* sky130_fd_sc_hd__buf_4 (A)
-.model d_lut_sky130_fd_sc_hd__buf_4 d_lut (rise_delay=50p fall_delay=50p input_load=250f
-+ table_values "01")
-* sky130_fd_sc_hd__nor4_4 (!A&!B&!C&!D)
-.model d_lut_sky130_fd_sc_hd__nor4_4 d_lut (rise_delay=50p fall_delay=50p input_load=250f
-+ table_values "1000000000000000")
-* sky130_fd_sc_hd__inv_2 (!A)
-.model d_lut_sky130_fd_sc_hd__inv_2 d_lut (rise_delay=50p fall_delay=50p input_load=250f
-+ table_values "10")
-* sky130_fd_sc_hd__mux2_4 (A0&!S) | (A1&S)
-.model d_lut_sky130_fd_sc_hd__mux2_4 d_lut (rise_delay=50p fall_delay=50p input_load=250f
-+ table_values "01010011")
-* sky130_fd_sc_hd__inv_6 (!A)
-.model d_lut_sky130_fd_sc_hd__inv_6 d_lut (rise_delay=50p fall_delay=50p input_load=250f
-+ table_values "10")
-* sky130_fd_sc_hd__buf_1 (A)
-.model d_lut_sky130_fd_sc_hd__buf_1 d_lut (rise_delay=50p fall_delay=50p input_load=250f
-+ table_values "01")
-* sky130_fd_sc_hd__nand2b_2 (A_N) | (!B)
-.model d_lut_sky130_fd_sc_hd__nand2b_2 d_lut (rise_delay=50p fall_delay=50p input_load=250f
-+ table_values "1101")
-* sky130_fd_sc_hd__and2_2 (A&B)
-.model d_lut_sky130_fd_sc_hd__and2_2 d_lut (rise_delay=50p fall_delay=50p input_load=250f
-+ table_values "0001")
-* sky130_fd_sc_hd__nor2_2 (!A&!B)
-.model d_lut_sky130_fd_sc_hd__nor2_2 d_lut (rise_delay=50p fall_delay=50p input_load=250f
-+ table_values "1000")
-* sky130_fd_sc_hd__and2b_2 (!A_N&B)
-.model d_lut_sky130_fd_sc_hd__and2b_2 d_lut (rise_delay=50p fall_delay=50p input_load=250f
-+ table_values "0010")
-* sky130_fd_sc_hd__a22o_2 (B1&B2) | (A1&A2)
-.model d_lut_sky130_fd_sc_hd__a22o_2 d_lut (rise_delay=50p fall_delay=50p input_load=250f
-+ table_values "0001000100011111")
-* sky130_fd_sc_hd__o21ai_2 (!A1&!A2) | (!B1)
-.model d_lut_sky130_fd_sc_hd__o21ai_2 d_lut (rise_delay=50p fall_delay=50p input_load=250f
-+ table_values "11111000")
-* sky130_fd_sc_hd__or3_2 (A) | (B) | (C)
-.model d_lut_sky130_fd_sc_hd__or3_2 d_lut (rise_delay=50p fall_delay=50p input_load=250f
-+ table_values "01111111")
-* sky130_fd_sc_hd__or3_4 (A) | (B) | (C)
-.model d_lut_sky130_fd_sc_hd__or3_4 d_lut (rise_delay=50p fall_delay=50p input_load=250f
-+ table_values "01111111")
-* sky130_fd_sc_hd__or2_2 (A) | (B)
-.model d_lut_sky130_fd_sc_hd__or2_2 d_lut (rise_delay=50p fall_delay=50p input_load=250f
-+ table_values "0111")
-* sky130_fd_sc_hd__o2bb2a_2 (!A1_N&B1) | (!A2_N&B1) | (!A1_N&B2) | (!A2_N&B2)
-.model d_lut_sky130_fd_sc_hd__o2bb2a_2 d_lut (rise_delay=50p fall_delay=50p input_load=250f
-+ table_values "0000111011101110")
-* sky130_fd_sc_hd__o221ai_2 (!B1&!B2) | (!A1&!A2) | (!C1)
-.model d_lut_sky130_fd_sc_hd__o221ai_2 d_lut (rise_delay=50p fall_delay=50p input_load=250f
-+ table_values "11111111111111111111100010001000")
-* sky130_fd_sc_hd__xor2_2 (A&!B) | (!A&B)
-.model d_lut_sky130_fd_sc_hd__xor2_2 d_lut (rise_delay=50p fall_delay=50p input_load=250f
-+ table_values "0110")
-* sky130_fd_sc_hd__nor2b_2 (!A&B_N)
-.model d_lut_sky130_fd_sc_hd__nor2b_2 d_lut (rise_delay=50p fall_delay=50p input_load=250f
-+ table_values "0010")
 * sky130_fd_sc_hd__nand2_2 (!A) | (!B)
 .model d_lut_sky130_fd_sc_hd__nand2_2 d_lut (rise_delay=50p fall_delay=50p input_load=250f
 + table_values "1110")
-* sky130_fd_sc_hd__a31oi_2 (!A1&!B1) | (!A2&!B1) | (!A3&!B1)
-.model d_lut_sky130_fd_sc_hd__a31oi_2 d_lut (rise_delay=50p fall_delay=50p input_load=250f
-+ table_values "1111111000000000")
-* sky130_fd_sc_hd__a22oi_2 (!A1&!B1) | (!A1&!B2) | (!A2&!B1) | (!A2&!B2)
-.model d_lut_sky130_fd_sc_hd__a22oi_2 d_lut (rise_delay=50p fall_delay=50p input_load=250f
-+ table_values "1110111011100000")
-* sky130_fd_sc_hd__o21a_2 (A1&B1) | (A2&B1)
-.model d_lut_sky130_fd_sc_hd__o21a_2 d_lut (rise_delay=50p fall_delay=50p input_load=250f
-+ table_values "00000111")
-* sky130_fd_sc_hd__a311o_2 (A1&A2&A3) | (B1) | (C1)
-.model d_lut_sky130_fd_sc_hd__a311o_2 d_lut (rise_delay=50p fall_delay=50p input_load=250f
-+ table_values "00000001111111111111111111111111")
-* sky130_fd_sc_hd__a21oi_2 (!A1&!B1) | (!A2&!B1)
-.model d_lut_sky130_fd_sc_hd__a21oi_2 d_lut (rise_delay=50p fall_delay=50p input_load=250f
-+ table_values "11100000")
-* sky130_fd_sc_hd__nand4_2 (!A) | (!B) | (!C) | (!D)
-.model d_lut_sky130_fd_sc_hd__nand4_2 d_lut (rise_delay=50p fall_delay=50p input_load=250f
-+ table_values "1111111111111110")
-* sky130_fd_sc_hd__or2b_2 (A) | (!B_N)
-.model d_lut_sky130_fd_sc_hd__or2b_2 d_lut (rise_delay=50p fall_delay=50p input_load=250f
-+ table_values "1101")
-* sky130_fd_sc_hd__or4_4 (A) | (B) | (C) | (D)
-.model d_lut_sky130_fd_sc_hd__or4_4 d_lut (rise_delay=50p fall_delay=50p input_load=250f
-+ table_values "0111111111111111")
-* sky130_fd_sc_hd__o22a_2 (A1&B1) | (A2&B1) | (A1&B2) | (A2&B2)
-.model d_lut_sky130_fd_sc_hd__o22a_2 d_lut (rise_delay=50p fall_delay=50p input_load=250f
-+ table_values "0000011101110111")
-* sky130_fd_sc_hd__o22ai_2 (!B1&!B2) | (!A1&!A2)
-.model d_lut_sky130_fd_sc_hd__o22ai_2 d_lut (rise_delay=50p fall_delay=50p input_load=250f
-+ table_values "1111100010001000")
-* sky130_fd_sc_hd__xnor2_2 (!A&!B) | (A&B)
-.model d_lut_sky130_fd_sc_hd__xnor2_2 d_lut (rise_delay=50p fall_delay=50p input_load=250f
-+ table_values "1001")
-* sky130_fd_sc_hd__a31o_2 (A1&A2&A3) | (B1)
-.model d_lut_sky130_fd_sc_hd__a31o_2 d_lut (rise_delay=50p fall_delay=50p input_load=250f
-+ table_values "0000000111111111")
-* sky130_fd_sc_hd__and3b_2 (!A_N&B&C)
-.model d_lut_sky130_fd_sc_hd__and3b_2 d_lut (rise_delay=50p fall_delay=50p input_load=250f
-+ table_values "00000010")
-* sky130_fd_sc_hd__and3_2 (A&B&C)
-.model d_lut_sky130_fd_sc_hd__and3_2 d_lut (rise_delay=50p fall_delay=50p input_load=250f
-+ table_values "00000001")
-* sky130_fd_sc_hd__a21oi_4 (!A1&!B1) | (!A2&!B1)
-.model d_lut_sky130_fd_sc_hd__a21oi_4 d_lut (rise_delay=50p fall_delay=50p input_load=250f
-+ table_values "11100000")
-* sky130_fd_sc_hd__o31a_2 (A1&B1) | (A2&B1) | (A3&B1)
-.model d_lut_sky130_fd_sc_hd__o31a_2 d_lut (rise_delay=50p fall_delay=50p input_load=250f
+* sky130_fd_sc_hd__o31a_1 (A1&B1) | (A2&B1) | (A3&B1)
+.model d_lut_sky130_fd_sc_hd__o31a_1 d_lut (rise_delay=50p fall_delay=50p input_load=250f
 + table_values "0000000001111111")
-* sky130_fd_sc_hd__o311a_2 (A1&B1&C1) | (A2&B1&C1) | (A3&B1&C1)
-.model d_lut_sky130_fd_sc_hd__o311a_2 d_lut (rise_delay=50p fall_delay=50p input_load=250f
-+ table_values "00000000000000000000000001111111")
-* sky130_fd_sc_hd__a21bo_2 (A1&A2) | (!B1_N)
-.model d_lut_sky130_fd_sc_hd__a21bo_2 d_lut (rise_delay=50p fall_delay=50p input_load=250f
-+ table_values "11110001")
-* sky130_fd_sc_hd__or3b_2 (A) | (B) | (!C_N)
-.model d_lut_sky130_fd_sc_hd__or3b_2 d_lut (rise_delay=50p fall_delay=50p input_load=250f
-+ table_values "11110111")
-* sky130_fd_sc_hd__a21o_2 (A1&A2) | (B1)
-.model d_lut_sky130_fd_sc_hd__a21o_2 d_lut (rise_delay=50p fall_delay=50p input_load=250f
-+ table_values "00011111")
-* sky130_fd_sc_hd__a211o_2 (A1&A2) | (B1) | (C1)
-.model d_lut_sky130_fd_sc_hd__a211o_2 d_lut (rise_delay=50p fall_delay=50p input_load=250f
-+ table_values "0001111111111111")
-* sky130_fd_sc_hd__a2bb2o_4 (B1&B2) | (!A1_N&!A2_N)
-.model d_lut_sky130_fd_sc_hd__a2bb2o_4 d_lut (rise_delay=50p fall_delay=50p input_load=250f
-+ table_values "1000100010001111")
-* sky130_fd_sc_hd__o211ai_2 (!A1&!A2) | (!B1) | (!C1)
-.model d_lut_sky130_fd_sc_hd__o211ai_2 d_lut (rise_delay=50p fall_delay=50p input_load=250f
-+ table_values "1111111111111000")
-* sky130_fd_sc_hd__a32o_2 (A1&A2&A3) | (B1&B2)
-.model d_lut_sky130_fd_sc_hd__a32o_2 d_lut (rise_delay=50p fall_delay=50p input_load=250f
-+ table_values "00000001000000010000000111111111")
-* sky130_fd_sc_hd__o2bb2a_4 (!A1_N&B1) | (!A2_N&B1) | (!A1_N&B2) | (!A2_N&B2)
-.model d_lut_sky130_fd_sc_hd__o2bb2a_4 d_lut (rise_delay=50p fall_delay=50p input_load=250f
-+ table_values "0000111011101110")
-* sky130_fd_sc_hd__o221a_4 (A1&B1&C1) | (A2&B1&C1) | (A1&B2&C1) | (A2&B2&C1)
-.model d_lut_sky130_fd_sc_hd__o221a_4 d_lut (rise_delay=50p fall_delay=50p input_load=250f
-+ table_values "00000000000000000000011101110111")
-* sky130_fd_sc_hd__a211o_4 (A1&A2) | (B1) | (C1)
-.model d_lut_sky130_fd_sc_hd__a211o_4 d_lut (rise_delay=50p fall_delay=50p input_load=250f
-+ table_values "0001111111111111")
-* sky130_fd_sc_hd__a22oi_4 (!A1&!B1) | (!A1&!B2) | (!A2&!B1) | (!A2&!B2)
-.model d_lut_sky130_fd_sc_hd__a22oi_4 d_lut (rise_delay=50p fall_delay=50p input_load=250f
-+ table_values "1110111011100000")
-* sky130_fd_sc_hd__o211a_2 (A1&B1&C1) | (A2&B1&C1)
-.model d_lut_sky130_fd_sc_hd__o211a_2 d_lut (rise_delay=50p fall_delay=50p input_load=250f
-+ table_values "0000000000000111")
-* sky130_fd_sc_hd__a21bo_4 (A1&A2) | (!B1_N)
-.model d_lut_sky130_fd_sc_hd__a21bo_4 d_lut (rise_delay=50p fall_delay=50p input_load=250f
-+ table_values "11110001")
-* sky130_fd_sc_hd__o32ai_4 (!A1&!A2&!A3) | (!B1&!B2)
-.model d_lut_sky130_fd_sc_hd__o32ai_4 d_lut (rise_delay=50p fall_delay=50p input_load=250f
-+ table_values "11111111100000001000000010000000")
-* sky130_fd_sc_hd__a221o_2 (B1&B2) | (A1&A2) | (C1)
-.model d_lut_sky130_fd_sc_hd__a221o_2 d_lut (rise_delay=50p fall_delay=50p input_load=250f
-+ table_values "00010001000111111111111111111111")
-* sky130_fd_sc_hd__a31oi_4 (!A1&!B1) | (!A2&!B1) | (!A3&!B1)
-.model d_lut_sky130_fd_sc_hd__a31oi_4 d_lut (rise_delay=50p fall_delay=50p input_load=250f
-+ table_values "1111111000000000")
-* sky130_fd_sc_hd__a221oi_4 (!A1&!B1&!C1) | (!A1&!B2&!C1) | (!A2&!B1&!C1) | (!A2&!B2&!C1)
-.model d_lut_sky130_fd_sc_hd__a221oi_4 d_lut (rise_delay=50p fall_delay=50p input_load=250f
-+ table_values "11101110111000000000000000000000")
-* sky130_fd_sc_hd__and3_4 (A&B&C)
-.model d_lut_sky130_fd_sc_hd__and3_4 d_lut (rise_delay=50p fall_delay=50p input_load=250f
-+ table_values "00000001")
-* sky130_fd_sc_hd__o311ai_2 (!A1&!A2&!A3) | (!B1) | (!C1)
-.model d_lut_sky130_fd_sc_hd__o311ai_2 d_lut (rise_delay=50p fall_delay=50p input_load=250f
-+ table_values "11111111111111111111111110000000")
-* sky130_fd_sc_hd__o221a_2 (A1&B1&C1) | (A2&B1&C1) | (A1&B2&C1) | (A2&B2&C1)
-.model d_lut_sky130_fd_sc_hd__o221a_2 d_lut (rise_delay=50p fall_delay=50p input_load=250f
-+ table_values "00000000000000000000011101110111")
-* sky130_fd_sc_hd__a311oi_2 (!A1&!B1&!C1) | (!A2&!B1&!C1) | (!A3&!B1&!C1)
-.model d_lut_sky130_fd_sc_hd__a311oi_2 d_lut (rise_delay=50p fall_delay=50p input_load=250f
-+ table_values "11111110000000000000000000000000")
-* sky130_fd_sc_hd__o32a_2 (A1&B1) | (A1&B2) | (A2&B1) | (A3&B1) | (A2&B2) | (A3&B2)
-.model d_lut_sky130_fd_sc_hd__o32a_2 d_lut (rise_delay=50p fall_delay=50p input_load=250f
-+ table_values "00000000011111110111111101111111")
-* sky130_fd_sc_hd__mux2_2 (A0&!S) | (A1&S)
-.model d_lut_sky130_fd_sc_hd__mux2_2 d_lut (rise_delay=50p fall_delay=50p input_load=250f
-+ table_values "01010011")
+* sky130_fd_sc_hd__and4_1 (A&B&C&D)
+.model d_lut_sky130_fd_sc_hd__and4_1 d_lut (rise_delay=50p fall_delay=50p input_load=250f
++ table_values "0000000000000001")
+* sky130_fd_sc_hd__a211oi_1 (!A1&!B1&!C1) | (!A2&!B1&!C1)
+.model d_lut_sky130_fd_sc_hd__a211oi_1 d_lut (rise_delay=50p fall_delay=50p input_load=250f
++ table_values "1110000000000000")
+* sky130_fd_sc_hd__buf_4 (A)
+.model d_lut_sky130_fd_sc_hd__buf_4 d_lut (rise_delay=50p fall_delay=50p input_load=250f
++ table_values "01")
+* sky130_fd_sc_hd__clkinv_2 (!A)
+.model d_lut_sky130_fd_sc_hd__clkinv_2 d_lut (rise_delay=50p fall_delay=50p input_load=250f
++ table_values "10")
+* sky130_fd_sc_hd__or4_1 (A) | (B) | (C) | (D)
+.model d_lut_sky130_fd_sc_hd__or4_1 d_lut (rise_delay=50p fall_delay=50p input_load=250f
++ table_values "0111111111111111")
 * sky130_fd_sc_hd__a211oi_4 (!A1&!B1&!C1) | (!A2&!B1&!C1)
 .model d_lut_sky130_fd_sc_hd__a211oi_4 d_lut (rise_delay=50p fall_delay=50p input_load=250f
 + table_values "1110000000000000")
-* sky130_fd_sc_hd__nand3b_2 (A_N) | (!B) | (!C)
-.model d_lut_sky130_fd_sc_hd__nand3b_2 d_lut (rise_delay=50p fall_delay=50p input_load=250f
-+ table_values "11111101")
-* sky130_fd_sc_hd__nand3_2 (!A) | (!B) | (!C)
-.model d_lut_sky130_fd_sc_hd__nand3_2 d_lut (rise_delay=50p fall_delay=50p input_load=250f
-+ table_values "11111110")
-* sky130_fd_sc_hd__or4b_2 (A) | (B) | (C) | (!D_N)
-.model d_lut_sky130_fd_sc_hd__or4b_2 d_lut (rise_delay=50p fall_delay=50p input_load=250f
-+ table_values "1111111101111111")
-* sky130_fd_sc_hd__or4bb_2 (A) | (B) | (!C_N) | (!D_N)
-.model d_lut_sky130_fd_sc_hd__or4bb_2 d_lut (rise_delay=50p fall_delay=50p input_load=250f
-+ table_values "1111111111110111")
-* sky130_fd_sc_hd__nor3_2 (!A&!B&!C)
-.model d_lut_sky130_fd_sc_hd__nor3_2 d_lut (rise_delay=50p fall_delay=50p input_load=250f
-+ table_values "10000000")
-* sky130_fd_sc_hd__and4bb_2 (!A_N&!B_N&C&D)
-.model d_lut_sky130_fd_sc_hd__and4bb_2 d_lut (rise_delay=50p fall_delay=50p input_load=250f
-+ table_values "0000000000001000")
-* sky130_fd_sc_hd__o21ba_2 (A1&!B1_N) | (A2&!B1_N)
-.model d_lut_sky130_fd_sc_hd__o21ba_2 d_lut (rise_delay=50p fall_delay=50p input_load=250f
-+ table_values "01110000")
-* sky130_fd_sc_hd__a21boi_2 (!A1&B1_N) | (!A2&B1_N)
-.model d_lut_sky130_fd_sc_hd__a21boi_2 d_lut (rise_delay=50p fall_delay=50p input_load=250f
-+ table_values "00001110")
-* sky130_fd_sc_hd__a311oi_4 (!A1&!B1&!C1) | (!A2&!B1&!C1) | (!A3&!B1&!C1)
-.model d_lut_sky130_fd_sc_hd__a311oi_4 d_lut (rise_delay=50p fall_delay=50p input_load=250f
-+ table_values "11111110000000000000000000000000")
-* sky130_fd_sc_hd__a2bb2o_2 (B1&B2) | (!A1_N&!A2_N)
-.model d_lut_sky130_fd_sc_hd__a2bb2o_2 d_lut (rise_delay=50p fall_delay=50p input_load=250f
-+ table_values "1000100010001111")
-* sky130_fd_sc_hd__a211oi_2 (!A1&!B1&!C1) | (!A2&!B1&!C1)
-.model d_lut_sky130_fd_sc_hd__a211oi_2 d_lut (rise_delay=50p fall_delay=50p input_load=250f
-+ table_values "1110000000000000")
-* sky130_fd_sc_hd__a32oi_2 (!A1&!B1) | (!A1&!B2) | (!A2&!B1) | (!A3&!B1) | (!A2&!B2) | (!A3&!B2)
-.model d_lut_sky130_fd_sc_hd__a32oi_2 d_lut (rise_delay=50p fall_delay=50p input_load=250f
-+ table_values "11111110111111101111111000000000")
-* sky130_fd_sc_hd__a22o_4 (B1&B2) | (A1&A2)
-.model d_lut_sky130_fd_sc_hd__a22o_4 d_lut (rise_delay=50p fall_delay=50p input_load=250f
+* sky130_fd_sc_hd__a22o_1 (B1&B2) | (A1&A2)
+.model d_lut_sky130_fd_sc_hd__a22o_1 d_lut (rise_delay=50p fall_delay=50p input_load=250f
 + table_values "0001000100011111")
-* sky130_fd_sc_hd__o32a_4 (A1&B1) | (A1&B2) | (A2&B1) | (A3&B1) | (A2&B2) | (A3&B2)
-.model d_lut_sky130_fd_sc_hd__o32a_4 d_lut (rise_delay=50p fall_delay=50p input_load=250f
+* sky130_fd_sc_hd__a41o_1 (A1&A2&A3&A4) | (B1)
+.model d_lut_sky130_fd_sc_hd__a41o_1 d_lut (rise_delay=50p fall_delay=50p input_load=250f
++ table_values "00000000000000011111111111111111")
+* sky130_fd_sc_hd__a32oi_4 (!A1&!B1) | (!A1&!B2) | (!A2&!B1) | (!A3&!B1) | (!A2&!B2) | (!A3&!B2)
+.model d_lut_sky130_fd_sc_hd__a32oi_4 d_lut (rise_delay=50p fall_delay=50p input_load=250f
++ table_values "11111110111111101111111000000000")
+* sky130_fd_sc_hd__a211o_2 (A1&A2) | (B1) | (C1)
+.model d_lut_sky130_fd_sc_hd__a211o_2 d_lut (rise_delay=50p fall_delay=50p input_load=250f
++ table_values "0001111111111111")
+* sky130_fd_sc_hd__o2bb2a_1 (!A1_N&B1) | (!A2_N&B1) | (!A1_N&B2) | (!A2_N&B2)
+.model d_lut_sky130_fd_sc_hd__o2bb2a_1 d_lut (rise_delay=50p fall_delay=50p input_load=250f
++ table_values "0000111011101110")
+* sky130_fd_sc_hd__or3b_1 (A) | (B) | (!C_N)
+.model d_lut_sky130_fd_sc_hd__or3b_1 d_lut (rise_delay=50p fall_delay=50p input_load=250f
++ table_values "11110111")
+* sky130_fd_sc_hd__and3_1 (A&B&C)
+.model d_lut_sky130_fd_sc_hd__and3_1 d_lut (rise_delay=50p fall_delay=50p input_load=250f
++ table_values "00000001")
+* sky130_fd_sc_hd__a311o_1 (A1&A2&A3) | (B1) | (C1)
+.model d_lut_sky130_fd_sc_hd__a311o_1 d_lut (rise_delay=50p fall_delay=50p input_load=250f
++ table_values "00000001111111111111111111111111")
+* sky130_fd_sc_hd__a31oi_4 (!A1&!B1) | (!A2&!B1) | (!A3&!B1)
+.model d_lut_sky130_fd_sc_hd__a31oi_4 d_lut (rise_delay=50p fall_delay=50p input_load=250f
++ table_values "1111111000000000")
+* sky130_fd_sc_hd__o211a_1 (A1&B1&C1) | (A2&B1&C1)
+.model d_lut_sky130_fd_sc_hd__o211a_1 d_lut (rise_delay=50p fall_delay=50p input_load=250f
++ table_values "0000000000000111")
+* sky130_fd_sc_hd__and3b_1 (!A_N&B&C)
+.model d_lut_sky130_fd_sc_hd__and3b_1 d_lut (rise_delay=50p fall_delay=50p input_load=250f
++ table_values "00000010")
+* sky130_fd_sc_hd__a21oi_2 (!A1&!B1) | (!A2&!B1)
+.model d_lut_sky130_fd_sc_hd__a21oi_2 d_lut (rise_delay=50p fall_delay=50p input_load=250f
++ table_values "11100000")
+* sky130_fd_sc_hd__o32a_1 (A1&B1) | (A1&B2) | (A2&B1) | (A3&B1) | (A2&B2) | (A3&B2)
+.model d_lut_sky130_fd_sc_hd__o32a_1 d_lut (rise_delay=50p fall_delay=50p input_load=250f
 + table_values "00000000011111110111111101111111")
-* sky130_fd_sc_hd__o31ai_2 (!A1&!A2&!A3) | (!B1)
-.model d_lut_sky130_fd_sc_hd__o31ai_2 d_lut (rise_delay=50p fall_delay=50p input_load=250f
-+ table_values "1111111110000000")
+* sky130_fd_sc_hd__o21ai_4 (!A1&!A2) | (!B1)
+.model d_lut_sky130_fd_sc_hd__o21ai_4 d_lut (rise_delay=50p fall_delay=50p input_load=250f
++ table_values "11111000")
+* sky130_fd_sc_hd__a221o_2 (B1&B2) | (A1&A2) | (C1)
+.model d_lut_sky130_fd_sc_hd__a221o_2 d_lut (rise_delay=50p fall_delay=50p input_load=250f
++ table_values "00010001000111111111111111111111")
 * sky130_fd_sc_hd__a221oi_2 (!A1&!B1&!C1) | (!A1&!B2&!C1) | (!A2&!B1&!C1) | (!A2&!B2&!C1)
 .model d_lut_sky130_fd_sc_hd__a221oi_2 d_lut (rise_delay=50p fall_delay=50p input_load=250f
 + table_values "11101110111000000000000000000000")
-* sky130_fd_sc_hd__conb_1 1
+* sky130_fd_sc_hd__nand3b_2 (A_N) | (!B) | (!C)
+.model d_lut_sky130_fd_sc_hd__nand3b_2 d_lut (rise_delay=50p fall_delay=50p input_load=250f
++ table_values "11111101")
+* sky130_fd_sc_hd__a221oi_4 (!A1&!B1&!C1) | (!A1&!B2&!C1) | (!A2&!B1&!C1) | (!A2&!B2&!C1)
+.model d_lut_sky130_fd_sc_hd__a221oi_4 d_lut (rise_delay=50p fall_delay=50p input_load=250f
++ table_values "11101110111000000000000000000000")
+* sky130_fd_sc_hd__nor2_1 (!A&!B)
+.model d_lut_sky130_fd_sc_hd__nor2_1 d_lut (rise_delay=50p fall_delay=50p input_load=250f
++ table_values "1000")
+* sky130_fd_sc_hd__o21ai_2 (!A1&!A2) | (!B1)
+.model d_lut_sky130_fd_sc_hd__o21ai_2 d_lut (rise_delay=50p fall_delay=50p input_load=250f
++ table_values "11111000")
+* sky130_fd_sc_hd__or2b_1 (A) | (!B_N)
+.model d_lut_sky130_fd_sc_hd__or2b_1 d_lut (rise_delay=50p fall_delay=50p input_load=250f
++ table_values "1101")
+* sky130_fd_sc_hd__a311o_2 (A1&A2&A3) | (B1) | (C1)
+.model d_lut_sky130_fd_sc_hd__a311o_2 d_lut (rise_delay=50p fall_delay=50p input_load=250f
++ table_values "00000001111111111111111111111111")
+* sky130_fd_sc_hd__nor2_4 (!A&!B)
+.model d_lut_sky130_fd_sc_hd__nor2_4 d_lut (rise_delay=50p fall_delay=50p input_load=250f
++ table_values "1000")
+* sky130_fd_sc_hd__a2bb2o_2 (B1&B2) | (!A1_N&!A2_N)
+.model d_lut_sky130_fd_sc_hd__a2bb2o_2 d_lut (rise_delay=50p fall_delay=50p input_load=250f
++ table_values "1000100010001111")
+* sky130_fd_sc_hd__a221o_4 (B1&B2) | (A1&A2) | (C1)
+.model d_lut_sky130_fd_sc_hd__a221o_4 d_lut (rise_delay=50p fall_delay=50p input_load=250f
++ table_values "00010001000111111111111111111111")
+* sky130_fd_sc_hd__a21bo_2 (A1&A2) | (!B1_N)
+.model d_lut_sky130_fd_sc_hd__a21bo_2 d_lut (rise_delay=50p fall_delay=50p input_load=250f
++ table_values "11110001")
+* sky130_fd_sc_hd__a31o_2 (A1&A2&A3) | (B1)
+.model d_lut_sky130_fd_sc_hd__a31o_2 d_lut (rise_delay=50p fall_delay=50p input_load=250f
++ table_values "0000000111111111")
+* sky130_fd_sc_hd__o211ai_2 (!A1&!A2) | (!B1) | (!C1)
+.model d_lut_sky130_fd_sc_hd__o211ai_2 d_lut (rise_delay=50p fall_delay=50p input_load=250f
++ table_values "1111111111111000")
+* sky130_fd_sc_hd__o2111a_1 (A1&B1&C1&D1) | (A2&B1&C1&D1)
+.model d_lut_sky130_fd_sc_hd__o2111a_1 d_lut (rise_delay=50p fall_delay=50p input_load=250f
++ table_values "00000000000000000000000000000111")
+* sky130_fd_sc_hd__a32o_2 (A1&A2&A3) | (B1&B2)
+.model d_lut_sky130_fd_sc_hd__a32o_2 d_lut (rise_delay=50p fall_delay=50p input_load=250f
++ table_values "00000001000000010000000111111111")
+* sky130_fd_sc_hd__a21boi_2 (!A1&B1_N) | (!A2&B1_N)
+.model d_lut_sky130_fd_sc_hd__a21boi_2 d_lut (rise_delay=50p fall_delay=50p input_load=250f
++ table_values "00001110")
+* sky130_fd_sc_hd__and2b_1 (!A_N&B)
+.model d_lut_sky130_fd_sc_hd__and2b_1 d_lut (rise_delay=50p fall_delay=50p input_load=250f
++ table_values "0010")
+* sky130_fd_sc_hd__and3b_2 (!A_N&B&C)
+.model d_lut_sky130_fd_sc_hd__and3b_2 d_lut (rise_delay=50p fall_delay=50p input_load=250f
++ table_values "00000010")
+* sky130_fd_sc_hd__and2_1 (A&B)
+.model d_lut_sky130_fd_sc_hd__and2_1 d_lut (rise_delay=50p fall_delay=50p input_load=250f
++ table_values "0001")
+* sky130_fd_sc_hd__a21bo_1 (A1&A2) | (!B1_N)
+.model d_lut_sky130_fd_sc_hd__a21bo_1 d_lut (rise_delay=50p fall_delay=50p input_load=250f
++ table_values "11110001")
+* sky130_fd_sc_hd__a2bb2o_1 (B1&B2) | (!A1_N&!A2_N)
+.model d_lut_sky130_fd_sc_hd__a2bb2o_1 d_lut (rise_delay=50p fall_delay=50p input_load=250f
++ table_values "1000100010001111")
+* sky130_fd_sc_hd__o31ai_4 (!A1&!A2&!A3) | (!B1)
+.model d_lut_sky130_fd_sc_hd__o31ai_4 d_lut (rise_delay=50p fall_delay=50p input_load=250f
++ table_values "1111111110000000")
+* sky130_fd_sc_hd__or4b_1 (A) | (B) | (C) | (!D_N)
+.model d_lut_sky130_fd_sc_hd__or4b_1 d_lut (rise_delay=50p fall_delay=50p input_load=250f
++ table_values "1111111101111111")
+* sky130_fd_sc_hd__nand3b_1 (A_N) | (!B) | (!C)
+.model d_lut_sky130_fd_sc_hd__nand3b_1 d_lut (rise_delay=50p fall_delay=50p input_load=250f
++ table_values "11111101")
+* sky130_fd_sc_hd__o221a_2 (A1&B1&C1) | (A2&B1&C1) | (A1&B2&C1) | (A2&B2&C1)
+.model d_lut_sky130_fd_sc_hd__o221a_2 d_lut (rise_delay=50p fall_delay=50p input_load=250f
++ table_values "00000000000000000000011101110111")
+* sky130_fd_sc_hd__a21oi_4 (!A1&!B1) | (!A2&!B1)
+.model d_lut_sky130_fd_sc_hd__a21oi_4 d_lut (rise_delay=50p fall_delay=50p input_load=250f
++ table_values "11100000")
+* sky130_fd_sc_hd__nor2_8 (!A&!B)
+.model d_lut_sky130_fd_sc_hd__nor2_8 d_lut (rise_delay=50p fall_delay=50p input_load=250f
++ table_values "1000")
+* sky130_fd_sc_hd__nor3_1 (!A&!B&!C)
+.model d_lut_sky130_fd_sc_hd__nor3_1 d_lut (rise_delay=50p fall_delay=50p input_load=250f
++ table_values "10000000")
+* sky130_fd_sc_hd__nor4_4 (!A&!B&!C&!D)
+.model d_lut_sky130_fd_sc_hd__nor4_4 d_lut (rise_delay=50p fall_delay=50p input_load=250f
++ table_values "1000000000000000")
+* sky130_fd_sc_hd__o22a_2 (A1&B1) | (A2&B1) | (A1&B2) | (A2&B2)
+.model d_lut_sky130_fd_sc_hd__o22a_2 d_lut (rise_delay=50p fall_delay=50p input_load=250f
++ table_values "0000011101110111")
+* sky130_fd_sc_hd__nor2_2 (!A&!B)
+.model d_lut_sky130_fd_sc_hd__nor2_2 d_lut (rise_delay=50p fall_delay=50p input_load=250f
++ table_values "1000")
+* sky130_fd_sc_hd__o311a_1 (A1&B1&C1) | (A2&B1&C1) | (A3&B1&C1)
+.model d_lut_sky130_fd_sc_hd__o311a_1 d_lut (rise_delay=50p fall_delay=50p input_load=250f
++ table_values "00000000000000000000000001111111")
+* sky130_fd_sc_hd__or3_2 (A) | (B) | (C)
+.model d_lut_sky130_fd_sc_hd__or3_2 d_lut (rise_delay=50p fall_delay=50p input_load=250f
++ table_values "01111111")
+* sky130_fd_sc_hd__a31oi_2 (!A1&!B1) | (!A2&!B1) | (!A3&!B1)
+.model d_lut_sky130_fd_sc_hd__a31oi_2 d_lut (rise_delay=50p fall_delay=50p input_load=250f
++ table_values "1111111000000000")
+* sky130_fd_sc_hd__a311oi_4 (!A1&!B1&!C1) | (!A2&!B1&!C1) | (!A3&!B1&!C1)
+.model d_lut_sky130_fd_sc_hd__a311oi_4 d_lut (rise_delay=50p fall_delay=50p input_load=250f
++ table_values "11111110000000000000000000000000")
+* sky130_fd_sc_hd__clkbuf_8 (A)
+.model d_lut_sky130_fd_sc_hd__clkbuf_8 d_lut (rise_delay=50p fall_delay=50p input_load=250f
++ table_values "01")
+* sky130_fd_sc_hd__o22a_1 (A1&B1) | (A2&B1) | (A1&B2) | (A2&B2)
+.model d_lut_sky130_fd_sc_hd__o22a_1 d_lut (rise_delay=50p fall_delay=50p input_load=250f
++ table_values "0000011101110111")
+* sky130_fd_sc_hd__or3_4 (A) | (B) | (C)
+.model d_lut_sky130_fd_sc_hd__or3_4 d_lut (rise_delay=50p fall_delay=50p input_load=250f
++ table_values "01111111")
+* sky130_fd_sc_hd__or4_2 (A) | (B) | (C) | (D)
+.model d_lut_sky130_fd_sc_hd__or4_2 d_lut (rise_delay=50p fall_delay=50p input_load=250f
++ table_values "0111111111111111")
+* sky130_fd_sc_hd__a211o_4 (A1&A2) | (B1) | (C1)
+.model d_lut_sky130_fd_sc_hd__a211o_4 d_lut (rise_delay=50p fall_delay=50p input_load=250f
++ table_values "0001111111111111")
+* sky130_fd_sc_hd__o31a_2 (A1&B1) | (A2&B1) | (A3&B1)
+.model d_lut_sky130_fd_sc_hd__o31a_2 d_lut (rise_delay=50p fall_delay=50p input_load=250f
++ table_values "0000000001111111")
+* sky130_fd_sc_hd__a22oi_2 (!A1&!B1) | (!A1&!B2) | (!A2&!B1) | (!A2&!B2)
+.model d_lut_sky130_fd_sc_hd__a22oi_2 d_lut (rise_delay=50p fall_delay=50p input_load=250f
++ table_values "1110111011100000")
+* sky130_fd_sc_hd__a21boi_4 (!A1&B1_N) | (!A2&B1_N)
+.model d_lut_sky130_fd_sc_hd__a21boi_4 d_lut (rise_delay=50p fall_delay=50p input_load=250f
++ table_values "00001110")
+* sky130_fd_sc_hd__o22ai_4 (!B1&!B2) | (!A1&!A2)
+.model d_lut_sky130_fd_sc_hd__o22ai_4 d_lut (rise_delay=50p fall_delay=50p input_load=250f
++ table_values "1111100010001000")
+* sky130_fd_sc_hd__a211oi_2 (!A1&!B1&!C1) | (!A2&!B1&!C1)
+.model d_lut_sky130_fd_sc_hd__a211oi_2 d_lut (rise_delay=50p fall_delay=50p input_load=250f
++ table_values "1110000000000000")
+* sky130_fd_sc_hd__o22ai_1 (!B1&!B2) | (!A1&!A2)
+.model d_lut_sky130_fd_sc_hd__o22ai_1 d_lut (rise_delay=50p fall_delay=50p input_load=250f
++ table_values "1111100010001000")
+* sky130_fd_sc_hd__nor3b_2 (!A&!B&C_N)
+.model d_lut_sky130_fd_sc_hd__nor3b_2 d_lut (rise_delay=50p fall_delay=50p input_load=250f
++ table_values "00001000")
+* sky130_fd_sc_hd__a31oi_1 (!A1&!B1) | (!A2&!B1) | (!A3&!B1)
+.model d_lut_sky130_fd_sc_hd__a31oi_1 d_lut (rise_delay=50p fall_delay=50p input_load=250f
++ table_values "1111111000000000")
+* sky130_fd_sc_hd__o21a_2 (A1&B1) | (A2&B1)
+.model d_lut_sky130_fd_sc_hd__o21a_2 d_lut (rise_delay=50p fall_delay=50p input_load=250f
++ table_values "00000111")
+* sky130_fd_sc_hd__o2111a_2 (A1&B1&C1&D1) | (A2&B1&C1&D1)
+.model d_lut_sky130_fd_sc_hd__o2111a_2 d_lut (rise_delay=50p fall_delay=50p input_load=250f
++ table_values "00000000000000000000000000000111")
+* sky130_fd_sc_hd__o221ai_4 (!B1&!B2) | (!A1&!A2) | (!C1)
+.model d_lut_sky130_fd_sc_hd__o221ai_4 d_lut (rise_delay=50p fall_delay=50p input_load=250f
++ table_values "11111111111111111111100010001000")
+* sky130_fd_sc_hd__a22o_2 (B1&B2) | (A1&A2)
+.model d_lut_sky130_fd_sc_hd__a22o_2 d_lut (rise_delay=50p fall_delay=50p input_load=250f
++ table_values "0001000100011111")
+* sky130_fd_sc_hd__o31ai_2 (!A1&!A2&!A3) | (!B1)
+.model d_lut_sky130_fd_sc_hd__o31ai_2 d_lut (rise_delay=50p fall_delay=50p input_load=250f
++ table_values "1111111110000000")
 .end

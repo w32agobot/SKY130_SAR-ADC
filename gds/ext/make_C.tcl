@@ -5,7 +5,7 @@ flatten -dotoplabels adc_top_flat
 load adc_top_flat
 cellname delete adc_top
 cellname rename adc_top_flat adc_top
-box 906 1957 85495 78634
+box 680 1166 85576 79398
 erase label
 box 50560 54060 50560 54060
 label ctopp
@@ -19,7 +19,7 @@ port make
 box 16203 35996 16203 35996
 label clk_dig
 port make
-box 48900 37084 48900 37084
+box 48943 37084 48943 37084
 label clk_comp
 port make
 box 16028 35060 16028 35060
@@ -41,4 +41,3 @@ ext2spice lvs
 ext2spice cthresh 0.1
 ext2spice merge conservative
 ext2spice -F
-

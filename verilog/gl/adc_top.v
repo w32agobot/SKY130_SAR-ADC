@@ -110,6 +110,7 @@ wire [2:0]  pmatrix_bincap_core_n, nmatrix_bincap_core_n;
 wire        pmatrix_c0_core_n, nmatrix_c0_core_n;
 wire ena_loop_core;
 
+
 //*******************************************
 //      Clock Loop with Edge-Detection
 //      **** HARDENED MACRO ****
@@ -164,12 +165,16 @@ adc_array_matrix_12bit pmat (
    .col(pmatrix_col_core),
    .en_bit_n(pmatrix_bincap_core_n),
    .en_C0_n(pmatrix_c0_core_n),
-   .sw(sample_switch_core), 
-   .sw_n(sample_switch_core_n), 
+   .sw(pmat_sample_switch_buffered), 
+   .sw_n(pmat_sample_switch_n_buffered), 
    .analog_in(inp_analog), 
    .ctop(ctop_pmatrix_analog)
    );
 wire ctop_pmatrix_analog; 
+//Buffering, switch signal must be fast
+wire pmat_sample_switch_buffered, pmat_sample_switch_n_buffered;
+sky130_fd_sc_hd__buf_8 pmat_sample_buf (.A(sample_switch_core),.X(pmat_sample_switch_buffered));
+sky130_fd_sc_hd__buf_8 pmat_sample_buf_n (.A(sample_switch_core_n),.X(pmat_sample_switch_n_buffered));
 
 //*******************************************
 //      Matrix N-side
@@ -190,12 +195,16 @@ adc_array_matrix_12bit nmat (
    .col(nmatrix_col_core),
    .en_bit_n(nmatrix_bincap_core_n),
    .en_C0_n(nmatrix_c0_core_n),
-   .sw(sample_switch_core), 
-   .sw_n(sample_switch_core_n), 
+   .sw(nmat_sample_switch_buffered), 
+   .sw_n(nmat_sample_switch_n_buffered), 
    .analog_in(inn_analog), 
    .ctop(ctop_nmatrix_analog)
    );
 wire ctop_nmatrix_analog; 
+//Buffering, switch signal must be fast
+wire nmat_sample_switch_buffered, nmat_sample_switch_n_buffered;
+sky130_fd_sc_hd__buf_8 nmat_sample_buf (.A(sample_switch_core),.X(nmat_sample_switch_buffered));
+sky130_fd_sc_hd__buf_8 nmat_sample_buf_n (.A(sample_switch_core_n),.X(nmat_sample_switch_n_buffered));
 
 
 //*******************************************
