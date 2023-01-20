@@ -44,22 +44,21 @@ logx=0
 logy=0
 }
 B 2 1720 -980 3390 -580 {flags=graph
-y1=0.760212
-y2=1.05708
+y1=0.669374
+y2=1.15124
 ypos1=0
 ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=8.7409e-08
-x2=1.82725e-06
+x1=1.08731e-07
+x2=1.77898e-06
 divx=5
 subdivx=1
 node="x1.ctopp
 x1.ctopn
-x1.comp_latch
 conv_finished"
-color="4 7 12 9"
+color="4 7 12"
 dataset=-1
 unitx=1
 logx=0
@@ -73,8 +72,8 @@ ypos2=2.36231
 divy=5
 subdivy=1
 unity=1
-x1=8.7409e-08
-x2=1.82725e-06
+x1=1.08731e-07
+x2=1.77898e-06
 divx=5
 subdivx=1
 node="x1.clk_dig
@@ -135,7 +134,7 @@ T {linting} 750 -200 0 0 0.2 0.2 {}
 T {XYCE NEEDS NET '0'} 930 -90 0 0 0.2 0.2 {}
 T {Force VCM voltage.
 No VCM gen} 1260 -260 0 0 0.3 0.3 {}
-T {mpirun -np 12 --oversubscribe Xyce adc_top_postlayout_tb_conv.spice} 1730 -1440 0 0 0.4 0.4 {}
+T {mpirun -np 12 --use-hwtread-cpus Xyce adc_top_postlayout_tb_conv.spice} 1730 -1440 0 0 0.4 0.4 {}
 T {row/col
 0=sequential
 1=symmetrical} 1350 -500 0 0 0.4 0.4 {}
