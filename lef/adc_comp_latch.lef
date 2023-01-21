@@ -14,10 +14,6 @@ MACRO adc_comp_latch
       LAYER met4 ;
         RECT 38.730 50.000 40.330 77.980 ;
     END
-    PORT
-      LAYER met4 ;
-        RECT 8.240 50.000 9.840 77.980 ;
-    END
   END VDD
   PIN VSS
     DIRECTION INOUT ;
@@ -26,79 +22,76 @@ MACRO adc_comp_latch
       LAYER met4 ;
         RECT 36.780 50.000 38.380 77.980 ;
     END
-    PORT
-      LAYER met4 ;
-        RECT 10.220 50.000 11.820 77.980 ;
-    END
   END VSS
   PIN clk
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
-      LAYER met1 ;
-        RECT 8.010 61.890 13.390 62.030 ;
+      LAYER met3 ;
+        RECT 11.185 61.810 11.835 62.110 ;
     END
   END clk
   PIN inp
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
-      LAYER met1 ;
-        RECT 8.010 65.410 18.920 65.550 ;
+      LAYER met3 ;
+        RECT 11.185 67.770 17.800 68.070 ;
     END
   END inp
   PIN inn
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
-      LAYER met1 ;
-        RECT 8.010 65.130 16.960 65.270 ;
+      LAYER met3 ;
+        RECT 11.185 67.170 17.170 67.470 ;
     END
   END inn
   PIN comp_trig
     DIRECTION OUTPUT ;
     USE SIGNAL ;
     PORT
-      LAYER met1 ;
-        RECT 34.520 62.590 40.330 62.730 ;
+      LAYER met3 ;
+        RECT 34.860 64.165 40.330 64.465 ;
     END
   END comp_trig
   PIN latch_qn
     DIRECTION OUTPUT ;
     USE SIGNAL ;
     PORT
-      LAYER met1 ;
-        RECT 35.320 65.540 40.330 65.680 ;
+      LAYER met3 ;
+        RECT 37.260 65.960 40.330 66.260 ;
     END
   END latch_qn
   PIN latch_q
     DIRECTION OUTPUT ;
     USE SIGNAL ;
     PORT
-      LAYER met1 ;
-        RECT 34.000 65.880 40.330 66.020 ;
+      LAYER met3 ;
+        RECT 36.745 65.325 40.330 65.625 ;
     END
   END latch_q
   OBS
       LAYER li1 ;
-        RECT 12.150 50.000 36.540 77.980 ;
+        RECT 11.975 50.000 38.015 77.980 ;
       LAYER met1 ;
-        RECT 8.010 66.300 40.330 76.890 ;
-        RECT 8.010 65.830 33.720 66.300 ;
-        RECT 19.200 65.600 33.720 65.830 ;
-        RECT 19.200 65.260 35.040 65.600 ;
-        RECT 19.200 65.130 40.330 65.260 ;
-        RECT 17.240 64.850 40.330 65.130 ;
-        RECT 8.010 63.010 40.330 64.850 ;
-        RECT 8.010 62.310 34.240 63.010 ;
-        RECT 13.670 61.610 40.330 62.310 ;
-        RECT 8.010 51.040 40.330 61.610 ;
+        RECT 11.910 51.040 40.330 76.890 ;
       LAYER met2 ;
-        RECT 8.240 51.040 40.330 76.890 ;
+        RECT 11.790 51.040 40.330 76.890 ;
       LAYER met3 ;
-        RECT 8.240 51.040 40.330 76.890 ;
+        RECT 11.785 68.470 40.330 76.890 ;
+        RECT 18.200 67.370 40.330 68.470 ;
+        RECT 17.570 66.770 40.330 67.370 ;
+        RECT 11.785 66.660 40.330 66.770 ;
+        RECT 11.785 66.025 36.860 66.660 ;
+        RECT 11.785 64.925 36.345 66.025 ;
+        RECT 11.785 64.865 40.330 64.925 ;
+        RECT 11.785 63.765 34.460 64.865 ;
+        RECT 11.785 62.510 40.330 63.765 ;
+        RECT 12.235 61.410 40.330 62.510 ;
+        RECT 11.785 51.040 40.330 61.410 ;
       LAYER met4 ;
-        RECT 12.220 51.040 35.030 76.890 ;
+        RECT 12.010 51.040 36.380 76.890 ;
   END
 END adc_comp_latch
 END LIBRARY

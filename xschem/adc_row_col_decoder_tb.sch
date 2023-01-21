@@ -5,16 +5,16 @@ K {}
 V {}
 S {}
 E {}
-B 2 1830 -830 2630 -430 {flags=graph
-y1=-0.0321666
-y2=0.59352
+B 2 1830 -1020 2630 -620 {flags=graph
+y1=-0.135975
+y2=1.9302
 ypos1=0
 ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=-2.45879e-05
-x2=0.000288003
+x1=0.000726028
+x2=0.00194411
 divx=5
 subdivx=1
 node="ctop_ideal
@@ -25,6 +25,30 @@ unitx=1
 logx=0
 logy=0
 }
+B 2 1830 -600 2630 -200 {flags=graph
+y1=-0.0321666
+y2=0.59352
+ypos1=-0.100182
+ypos2=0.398012
+divy=5
+subdivy=1
+unity=1
+x1=0.000726028
+x2=0.00194411
+divx=5
+subdivx=1
+
+
+dataset=-1
+unitx=1
+logx=0
+logy=0
+color="4 4 4 4"
+node="bin,bin_n2,bin_n1,bin_n0
+col,col_n31,col_n30,col_n29,col_n28,col_n27,col_n26,col_n25,col_n24,col_n23,col_n22,col_n21,col_n20,col_n19,col_n18,col_n17,col_n16,col_n15,col_n14,col_n13,col_n12,col_n11,col_n10,col_n9,col_n8,col_n7,col_n6,col_n5,col_n4,col_n3,col_n2,col_n1,col_n0
+row,row_n15,row_n14,row_n13,row_n12,row_n11,row_n10,row_n9,row_n8,row_n7,row_n6,row_n5,row_n4,row_n3,row_n2,row_n1,row_n0
+rowon,rowon_n15,rowon_n14,rowon_n13,rowon_n12,rowon_n11,rowon_n10,rowon_n9,rowon_n8,rowon_n7,rowon_n6,rowon_n5,rowon_n4,rowon_n3,rowon_n2,rowon_n1,rowon_n0"
+digital=1}
 T {   Copyright 2022 Manuel Moser
 
    Licensed under the Apache License, Version 2.0 (the "License");
@@ -206,29 +230,39 @@ N 1250 -770 1270 -770 {
 lab=col[0..31]}
 N 1420 -740 1420 -720 {
 lab=GND}
+N 600 -680 650 -680 {
+lab=rowmode}
+N 600 -660 650 -660 {
+lab=colmode}
+N 760 -1090 760 -1080 {
+lab=rowmode}
+N 760 -1020 760 -1000 {
+lab=GND}
+N 760 -1100 760 -1090 {
+lab=rowmode}
+N 860 -1090 860 -1080 {
+lab=colmode}
+N 860 -1020 860 -1000 {
+lab=GND}
+N 860 -1100 860 -1090 {
+lab=colmode}
 C {devices/simulator_commands.sym} 10 -130 0 0 {name=COMMANDS
 simulator=xyce
 only_toplevel=false 
 value="
 * xyce commands
-.include ../adc_row_col_decoder.xspice
-
-*.PREPROCESS ADDRESISTORS ONETERMINAL 10G
-*.PREPROCESS ADDRESISTORS NODCPATH 10G
-
-*.OPTIONS TIMEINT METHOD=GEAR
-*.OPTIONS TIMEINT ABSTOL=1e-12
+.include ../../spice/adc_row_col_decoder.gds.spice
+.include ../../spice/adc_array_matrix_12bit.mag.C.postlayout.spice
 
 ****************
 * XYCE Simulation Control
 ****************
+.tran 1u 2048u uic
 
-.tran 1u 4096u
-
-.print tran format=raw file=adc_row_col_decoder_tb.raw          v(data*) v(ctop)
-.print tran format=std file=adc_row_col_decoder_tb.ascii        v(data*) v(ctop)
-.print tran format=csv file=adc_row_col_decoder_tb.csv          v(data*) v(ctop)
-.print tran format=gnuplot file=adc_row_col_decoder_tb.gnu.dat  v(data*) v(ctop)
+.print tran format=raw file=adc_row_col_decoder_tb.raw          v(data*) v(ctop_ideal) v(ctop_postlayout)
+.print tran format=std file=adc_row_col_decoder_tb.ascii        v(data*) v(ctop_ideal) v(ctop_postlayout)
+.print tran format=csv file=adc_row_col_decoder_tb.csv          v(data*) v(ctop_ideal) v(ctop_postlayout)
+.print tran format=gnuplot file=adc_row_col_decoder_tb.gnu.dat  v(data*) v(ctop_ideal) v(ctop_postlayout)
 "
 }
 C {devices/code.sym} 130 -130 0 0 {name=TT_MODELS
@@ -250,9 +284,15 @@ C {devices/simulator_commands.sym} 250 -130 0 0 {name=COMMANDS1
 simulator=ngspice
 only_toplevel=false 
 value="
-.include ../../spice/adc_row_col_decoder.xspice
+.include ../../spice/adc_row_col_decoder.v.xspice
 .include ../../spice/adc_array_matrix_12bit.mag.C.postlayout.spice
 .save ctop_ideal ctop_postlayout
+.save row_n0 row_n1 row_n2 row_n3 row_n4 row_n5 row_n6 row_n7 row_n8 row_n9 row_n10 row_n11 row_n12 row_n13 row_n14 row_n15 
+.save rowon_n0 rowon_n1 rowon_n2 rowon_n3 rowon_n4 rowon_n5 rowon_n6 rowon_n7 rowon_n8 rowon_n9 rowon_n10 rowon_n11 rowon_n12 rowon_n13 rowon_n14 rowon_n15 
+.save col_n0 col_n1 col_n2 col_n3 col_n4 col_n5 col_n6 col_n7 col_n8 col_n9 col_n10 col_n11 col_n12 col_n13 col_n14 col_n15 
+.save col_n16 col_n17 col_n18 col_n19 col_n20 col_n21 col_n22 col_n23 col_n24 col_n25 col_n26 col_n27 col_n28 col_n29 col_n30 col_n31 
+.save bin_n0 bin_n1 bin_n2 vC0 sw nsw ain ctop_postlayout 
+
 .ic v(ctop_ideal)=0 v(ctop_postlayout)=0
 .tran 1u 2048u uic
 .control
@@ -362,7 +402,15 @@ C {devices/lab_wire.sym} 1250 -790 0 0 {name=p51 sig_type=std_logic lab=rowoff_n
 C {devices/lab_wire.sym} 1250 -770 0 0 {name=p54 sig_type=std_logic lab=col[0..31]}
 C {devices/noconn.sym} 1600 -840 0 1 {name=l3}
 C {devices/noconn.sym} 1600 -340 0 1 {name=l16}
-C {devices/launcher.sym} 1890 -860 0 0 {name=h5
+C {devices/launcher.sym} 1890 -1050 0 0 {name=h5
 descr="load waves" 
 tclcommand="xschem raw_read $netlist_dir/adc_row_col_decoder_tb.raw tran"
 }
+C {devices/vsource.sym} 760 -1050 0 0 {name=V_VDD_2 value=1.8}
+C {devices/gnd.sym} 760 -1000 0 0 {name=l31 lab=GND}
+C {devices/vsource.sym} 860 -1050 0 0 {name=V_VDD_21 value=1.8}
+C {devices/gnd.sym} 860 -1000 0 0 {name=l32 lab=GND}
+C {devices/lab_wire.sym} 760 -1100 0 1 {name=p55 sig_type=std_logic lab=rowmode}
+C {devices/lab_wire.sym} 860 -1100 0 1 {name=p56 sig_type=std_logic lab=colmode}
+C {devices/lab_wire.sym} 600 -680 0 0 {name=p57 sig_type=std_logic lab=rowmode}
+C {devices/lab_wire.sym} 600 -660 0 0 {name=p58 sig_type=std_logic lab=colmode}

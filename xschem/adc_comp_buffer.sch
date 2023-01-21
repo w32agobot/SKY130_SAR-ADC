@@ -147,3 +147,4 @@ sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
 }
+C {devices/lab_wire.sym} 440 -440 2 0 {name=p5 sig_type=std_logic lab=buf_mid}

@@ -12,11 +12,13 @@
 //   See the License for the specific language governing permissions and
 //   limitations under the License.
 
-`include "../rtl/adc_row_col_decoder.v"
+`include "adc_row_col_decoder.v"
 `timescale 10us/1us
 
 module adc_row_col_decoder_tb;
     reg[11:0] data;
+    reg       row_mode;
+    reg       col_mode;
     wire[15:0] row_n;
     wire[15:0] rowon_n;
     wire[15:0] rowoff_n;
@@ -28,6 +30,8 @@ module adc_row_col_decoder_tb;
 
   adc_row_col_decoder decoder (
     .data_in(data),
+   .row_mode(row_mode),
+   .col_mode(col_mode),
     .row_out_n(row_n),
     .rowon_out_n(rowon_n),
     .rowoff_out_n(rowoff_n),
@@ -42,6 +46,8 @@ module adc_row_col_decoder_tb;
    	$dumpfile("dump.vcd");
    	$dumpvars(0,
    		data,
+         row_mode,
+         col_mode,
    		row_n,
    		rowon_n,
    		rowoff_n,
@@ -57,6 +63,8 @@ module adc_row_col_decoder_tb;
 
    initial begin
     data=0;
+    row_mode = 1;
+    col_mode = 1;
    	for(i=1;i<4096;i=i+1) begin
        #1 data=data+1;
     end

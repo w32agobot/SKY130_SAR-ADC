@@ -5,28 +5,42 @@ flatten adc_top_flat
 load adc_top_flat
 cellname delete adc_top
 cellname rename adc_top_flat adc_top
-box 48760 53350 48760 53350
+box 1029 2089 15616 78409
+erase label
+box 14475 46531 48720 53603
+erase label
+box 14475 26866 48720 33550
+erase label
+box 82057 1955 85460 78624
+erase label
+box 17833 54897 52150 73083
+erase label
+box 17833 7143 52150 25329
+erase label
+box 16587 34623 48600 45616
+erase label
+box 50560 54060 50560 54060
 label ctopp
 port make
-box 48760 26210 48760 26210
+box 50500 25799 50500 25799
 label ctopn
 port make
-box 51359  57851 51359 57851
+box 53242 26168 53242 26168
 label vcm
 port make
-box 10294 35398 10294 35398
+box 16300 35996 16300 35996
 label clk_dig
 port make
-box 48240 39392 48240 39392
+box 48900 37084 48900 37084
 label clk_comp
 port make
-box 10489 34642 10489 34642
+box 16300 35180 16300 35180
 label clk_ena
 port make
-box 44000 42568 44000 42568
+box 49700 43068 49700 43068
 label ndecision_finish
 port make
-box 55214 40204 55214 40204
+box 56901 40125 56901 40125
 label comp_latch
 port make
 select top cell
@@ -42,4 +56,4 @@ ext2spice lvs
 ext2spice cthresh 0.01
 ext2spice extresist on
 ext2spice resistor tee on
-ext2spice
+ext2spice -F

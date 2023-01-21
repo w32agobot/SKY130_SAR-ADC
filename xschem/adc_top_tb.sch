@@ -114,7 +114,7 @@ lab=inp}
 N 1520 -320 1530 -320 {
 lab=inn}
 N 1500 -300 1530 -300 {
-lab=avg_mode[0..2],osr_mode[0..2],nc[0..3],dlyctrl4_[0..5]}
+lab=avg_mode[0..2],osr_mode[0..2],row_mode,col_mode,nc[0..1],dlyctrl4_[0..5]}
 N 1500 -280 1530 -280 {
 lab=dlyctrl1_[0..4],dlyctrl2_[0..4],dlyctrl3_[0..4],en_dly_contr}
 N 1360 -170 1360 -160 {
@@ -162,11 +162,11 @@ lab=dlyctrl1_[0..4],dlyctrl2_[0..4],dlyctrl3_[0..4],en_dly_contr}
 N 1500 -160 1550 -160 {
 lab=dlyctrl1_[0..4],dlyctrl2_[0..4],dlyctrl3_[0..4],en_dly_contr}
 N 1470 -300 1500 -300 {
-lab=avg_mode[0..2],osr_mode[0..2],nc[0..3],dlyctrl4_[0..5]}
+lab=avg_mode[0..2],osr_mode[0..2],row_mode,col_mode,nc[0..1],dlyctrl4_[0..5]}
 N 1470 -300 1470 -120 {
-lab=avg_mode[0..2],osr_mode[0..2],nc[0..3],dlyctrl4_[0..5]}
+lab=avg_mode[0..2],osr_mode[0..2],row_mode,col_mode,nc[0..1],dlyctrl4_[0..5]}
 N 1470 -120 1550 -120 {
-lab=avg_mode[0..2],osr_mode[0..2],nc[0..3],dlyctrl4_[0..5]}
+lab=avg_mode[0..2],osr_mode[0..2],row_mode,col_mode,nc[0..1],dlyctrl4_[0..5]}
 N 1500 -180 1500 -160 {
 lab=dlyctrl1_[0..4],dlyctrl2_[0..4],dlyctrl3_[0..4],en_dly_contr}
 N 190 -890 190 -870 {
@@ -328,11 +328,13 @@ lab=GND}
 N 1170 -180 1170 -160 {
 lab=GND}
 N 1170 -250 1190 -250 {
-lab=nc[0..3]}
+lab=nc[0..1]}
 N 1170 -250 1170 -240 {
-lab=nc[0..3]}
+lab=nc[0..1]}
 N 1070 -180 1070 -160 {
 lab=GND}
+N 1830 -360 1890 -360 {
+lab=conv_finished_osr}
 C {devices/title.sym} 170 -40 0 0 {name=l1 author="Manuel Moser"}
 C {adc_top.sym} 1680 -340 0 0 {name=x1}
 C {devices/vsource.sym} 1070 -210 0 0 {name=V_VDD_1 value=1.8}
@@ -372,7 +374,7 @@ C {devices/lab_wire.sym} 1500 -400 0 0 {name=l3 sig_type=std_logic lab=rst_n}
 C {devices/lab_wire.sym} 1500 -380 0 0 {name=l3 sig_type=std_logic lab=start_conv}
 C {devices/lab_wire.sym} 760 -240 0 1 {name=l3 sig_type=std_logic lab=clk_vcm}
 C {devices/lab_wire.sym} 1500 -360 0 0 {name=l3 sig_type=std_logic lab=clk_vcm}
-C {devices/lab_wire.sym} 1550 -120 0 1 {name=l3 sig_type=std_logic lab=avg_mode[0..2],osr_mode[0..2],nc[0..3],dlyctrl4_[0..5]}
+C {devices/lab_wire.sym} 1550 -120 0 1 {name=l30 sig_type=std_logic lab=avg_mode[0..2],osr_mode[0..2],row_mode,col_mode,nc[0..1],dlyctrl4_[0..5]}
 C {devices/lab_wire.sym} 1550 -160 0 1 {name=l3 sig_type=std_logic lab=dlyctrl1_[0..4],dlyctrl2_[0..4],dlyctrl3_[0..4],en_dly_contr}
 C {devices/vsource.sym} 190 -920 0 0 {name=V4 value=\{bit4\}}
 C {devices/gnd.sym} 190 -870 0 0 {name=l7 lab=GND}
@@ -427,7 +429,7 @@ C {devices/lab_wire.sym} 500 -380 1 0 {name=l4 sig_type=std_logic lab=osr_mode1}
 C {devices/vsource.sym} 560 -340 0 0 {name=V29 value=\{osr0\}}
 C {devices/lab_wire.sym} 560 -380 1 0 {name=l5 sig_type=std_logic lab=osr_mode0}
 C {devices/gnd.sym} 1170 -160 0 0 {name=l3 lab=GND}
-C {devices/lab_wire.sym} 1190 -250 0 1 {name=l3 sig_type=std_logic lab=nc[0..3]}
+C {devices/lab_wire.sym} 1190 -250 0 1 {name=l3 sig_type=std_logic lab=nc[0..1]}
 C {devices/vsource.sym} 1170 -210 0 0 {name=V30 value=0}
 C {devices/simulator_commands.sym} 490 -1250 0 0 {name=COMMANDS
 simulator=ngspice
@@ -489,11 +491,17 @@ value="
 .param osr1 = 0
 .param osr2 = 0
 
+***************
+* ROW COL mode
+***************
+.param rowmode = 1.8
+.param colmode = 1.8
+
 
 .save all
 .control
 set num_threads=12
-tran 250p 3.2u
+tran 250p 1.6u
 
 plot inp inn rst_n start_conv conv_finished
 plot start_conv x1.clk_dig x1.clk_comp 
@@ -508,7 +516,7 @@ print result15[k] result14[k] result13[k] result12[k] result11[k] result10[k] re
 print (((result15[k]*2048+result14[k]*1024+result13[k]*512+result12[k]*256+result11[k]*128+result10[k]*64+result9[k]*32+result8[k]*16+result7[k]*8+result6[k]*4+result5[k]*2+result4[k]*1+result3[k]*0.5+result2[k]*0.25+result1[k]*0.125+result0[k]*0.0625)-2048*1.8)/2048)
 
 set wr_vecnames
-write adc_top_tb.raw inp inn rst_n start_conv conv_finished start_conv x1.clk_dig x1.clk_comp x1.pctop x1.nctop x1.comparator_result result0 result1 result2 result3 result4 result5 result6 result7 result8 result9 result10 result11 result12 result13 result14 result15
+write adc_top_tb.raw inp inn rst_n start_conv conv_finished conv_finished_osr start_conv x1.clk_dig x1.clk_comp x1.pctop x1.nctop x1.comparator_result result0 result1 result2 result3 result4 result5 result6 result7 result8 result9 result10 result11 result12 result13 result14 result15
 .endc
 "}
 C {devices/simulator_commands.sym} 610 -1250 0 0 {name=COMMANDS1
@@ -573,7 +581,7 @@ value="
 .OPTIONS TIMEINT BREAKPOINTS=610us,611us,612us
 .tran 1n 3.2u
 
-.print tran format=raw file=adc_top_tb.raw  v(xrst_n) v(start_conv) v(clk_vcm) v(result*) v(conv_finished) \{((v(result0)*0.0625+v(result1)*0.125+v(result2)*0.25+v(result3)*0.5+v(result4)+v(result5)*2+v(result6)*4+v(result7)*8+v(result8)*16+v(result9)*32+v(result10)*64+v(result11)*128+v(result12)*256+v(result13)*512+v(result14)*1024+v(result15)*2048)-2048*1.8)/2048\} 
+.print tran format=raw file=adc_top_tb.raw  v(xrst_n) v(start_conv) v(clk_vcm) v(result*) v(conv_finished) v(conv_finished_osr) \{((v(result0)*0.0625+v(result1)*0.125+v(result2)*0.25+v(result3)*0.5+v(result4)+v(result5)*2+v(result6)*4+v(result7)*8+v(result8)*16+v(result9)*32+v(result10)*64+v(result11)*128+v(result12)*256+v(result13)*512+v(result14)*1024+v(result15)*2048)-2048*1.8)/2048\} 
 
 "}
 C {devices/vsource.sym} 510 -920 0 0 {name=V9 value=\{bit4\}}
@@ -593,3 +601,11 @@ tclcommand="
 xschem raw_read $netlist_dir/adc_top_tb.raw tran
 "
 }
+C {devices/noconn.sym} 1890 -360 0 1 {name=l28}
+C {devices/lab_wire.sym} 1890 -360 0 1 {name=l29 sig_type=std_logic lab=conv_finished_osr}
+C {devices/lab_wire.sym} 1070 -480 0 1 {name=l31 sig_type=std_logic lab=row_mode}
+C {devices/lab_wire.sym} 1070 -380 0 1 {name=l32 sig_type=std_logic lab=col_mode}
+C {devices/vsource.sym} 1070 -350 0 0 {name=V40 value=\{colmode\}}
+C {devices/vsource.sym} 1070 -450 0 0 {name=V41 value=\{rowmode\}}
+C {devices/gnd.sym} 1070 -320 0 0 {name=l33 lab=GND}
+C {devices/gnd.sym} 1070 -420 0 0 {name=l34 lab=GND}

@@ -14,6 +14,12 @@ L 4 640 -470 640 -90 {}
 L 4 40 -90 640 -90 {}
 L 4 40 -470 40 -90 {}
 L 4 40 -470 60 -470 {}
+L 4 1600 -200 1600 -180 {}
+L 4 1320 -200 1600 -200 {}
+L 4 1320 -200 1320 -180 {}
+L 4 1320 -460 1320 -200 {}
+L 4 1320 -460 1600 -460 {}
+L 4 1600 -460 1600 -200 {}
 B 2 1720 -1290 3120 -880 {flags=graph,unlocked
 y1=0
 y2=2
@@ -123,6 +129,9 @@ T {
 80ns  40ns  20ns  10ns  5ns} 190 -570 0 0 0.4 0.4 {}
 T {linting} 1080 -360 0 0 0.2 0.2 {}
 T {XYCE NEEDS NET '0'} 1070 -120 0 0 0.2 0.2 {}
+T {row/col
+0=sequential
+1=symmetrical} 1430 -420 0 0 0.4 0.4 {}
 N 1160 -300 1160 -290 {
 lab=VDD}
 N 1480 -990 1540 -990 {
@@ -140,7 +149,7 @@ lab=inp}
 N 1170 -910 1180 -910 {
 lab=inn}
 N 1150 -890 1180 -890 {
-lab=avg_mode[0..2],osr_mode[0..2],nc[0..3],dlyctrl4_[0..5]}
+lab=avg_mode[0..2],osr_mode[0..2],row_mode,col_mode,nc[0..1],dlyctrl4_[0..5]}
 N 1150 -870 1180 -870 {
 lab=dlyctrl1_[0..4],dlyctrl2_[0..4],dlyctrl3_[0..4],en_dly_contr}
 N 1010 -760 1010 -750 {
@@ -188,11 +197,11 @@ lab=dlyctrl1_[0..4],dlyctrl2_[0..4],dlyctrl3_[0..4],en_dly_contr}
 N 1150 -610 1200 -610 {
 lab=dlyctrl1_[0..4],dlyctrl2_[0..4],dlyctrl3_[0..4],en_dly_contr}
 N 1120 -890 1150 -890 {
-lab=avg_mode[0..2],osr_mode[0..2],nc[0..3],dlyctrl4_[0..5]}
+lab=avg_mode[0..2],osr_mode[0..2],row_mode,col_mode,nc[0..1],dlyctrl4_[0..5]}
 N 1120 -890 1120 -570 {
-lab=avg_mode[0..2],osr_mode[0..2],nc[0..3],dlyctrl4_[0..5]}
+lab=avg_mode[0..2],osr_mode[0..2],row_mode,col_mode,nc[0..1],dlyctrl4_[0..5]}
 N 1120 -570 1200 -570 {
-lab=avg_mode[0..2],osr_mode[0..2],nc[0..3],dlyctrl4_[0..5]}
+lab=avg_mode[0..2],osr_mode[0..2],row_mode,col_mode,nc[0..1],dlyctrl4_[0..5]}
 N 1150 -630 1150 -610 {
 lab=dlyctrl1_[0..4],dlyctrl2_[0..4],dlyctrl3_[0..4],en_dly_contr}
 N 190 -860 190 -840 {
@@ -354,9 +363,9 @@ lab=GND}
 N 1050 -290 1050 -270 {
 lab=GND}
 N 1050 -360 1070 -360 {
-lab=nc[0..3]}
+lab=nc[0..1]}
 N 1050 -360 1050 -350 {
-lab=nc[0..3]}
+lab=nc[0..1]}
 N 1160 -230 1160 -210 {
 lab=GND}
 N 1480 -950 1540 -950 {
@@ -383,6 +392,18 @@ N 1480 -770 1540 -770 {
 lab=ndecision_finish}
 N 1480 -750 1540 -750 {
 lab=comp_latch}
+N 1340 -280 1340 -260 {
+lab=GND}
+N 1340 -270 1400 -270 {
+lab=GND}
+N 1400 -280 1400 -270 {
+lab=GND}
+N 1340 -350 1340 -340 {
+lab=row_mode}
+N 1400 -350 1400 -340 {
+lab=col_mode}
+N 1480 -930 1540 -930 {
+lab=conv_finished_osr}
 C {devices/title.sym} 170 -40 0 0 {name=l1 author="Manuel Moser"}
 C {devices/vsource.sym} 1160 -260 0 0 {name=V_VDD_1 value="pwl 0 0 \{boot\} 1.8"}
 C {devices/vdd.sym} 1160 -300 0 0 {name=l1 lab=VDD}
@@ -421,7 +442,7 @@ C {devices/lab_wire.sym} 1150 -990 0 0 {name=l3 sig_type=std_logic lab=rst_n}
 C {devices/lab_wire.sym} 1150 -970 0 0 {name=l3 sig_type=std_logic lab=start_conv}
 C {devices/lab_wire.sym} 760 -210 0 1 {name=l3 sig_type=std_logic lab=clk_vcm}
 C {devices/lab_wire.sym} 1150 -950 0 0 {name=l3 sig_type=std_logic lab=clk_vcm}
-C {devices/lab_wire.sym} 1200 -570 0 1 {name=l3 sig_type=std_logic lab=avg_mode[0..2],osr_mode[0..2],nc[0..3],dlyctrl4_[0..5]}
+C {devices/lab_wire.sym} 1200 -570 0 1 {name=l46 sig_type=std_logic lab=avg_mode[0..2],osr_mode[0..2],row_mode,col_mode,nc[0..1],dlyctrl4_[0..5]}
 C {devices/lab_wire.sym} 1200 -610 0 1 {name=l3 sig_type=std_logic lab=dlyctrl1_[0..4],dlyctrl2_[0..4],dlyctrl3_[0..4],en_dly_contr}
 C {devices/vsource.sym} 190 -890 0 0 {name=V4 value="pwl 0 0 \{boot\} \{bit4\}"}
 C {devices/gnd.sym} 190 -840 0 0 {name=l7 lab=GND}
@@ -476,7 +497,7 @@ C {devices/lab_wire.sym} 500 -350 1 0 {name=l4 sig_type=std_logic lab=osr_mode1}
 C {devices/vsource.sym} 560 -310 0 0 {name=V29 value="pwl 0 0 \{boot\} \{osr0\}"}
 C {devices/lab_wire.sym} 560 -350 1 0 {name=l5 sig_type=std_logic lab=osr_mode0}
 C {devices/gnd.sym} 1050 -270 0 0 {name=l3 lab=GND}
-C {devices/lab_wire.sym} 1070 -360 0 1 {name=l3 sig_type=std_logic lab=nc[0..3]}
+C {devices/lab_wire.sym} 1070 -360 0 1 {name=l3 sig_type=std_logic lab=nc[0..1]}
 C {devices/vsource.sym} 1050 -320 0 0 {name=V30 value=0}
 C {adc_top_postlayout.sym} 1330 -930 0 0 {name=x1}
 C {devices/noconn.sym} 1540 -950 0 1 {name=l28[0..15]}
@@ -485,16 +506,7 @@ simulator=xyce
 only_toplevel=false 
 value="
 * xyce commands
-*.include /foss/pdks/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__diode_pw2nd_05v5.model.spice
 .include ../../spice/adc_top.gds.C.noD.merge.postlayout.spice
-*.include ../../spice/adc_top.gds.RC.postlayout.spice
-*.include /foss/pdks/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_fd_sc_hd.spice
-
-*.PREPROCESS ADDRESISTORS ONETERMINAL 10G
-*.PREPROCESS ADDRESISTORS NODCPATH 10G
-
-*.OPTIONS TIMEINT METHOD=GEAR
-*.OPTIONS TIMEINT ABSTOL=1e-12
 
 ****************
 * Misc
@@ -537,17 +549,27 @@ value="
 .param osr1 = 0
 .param osr2 = 0
 
+
+****************
+* Row Column
+* sequential or symmetric
+****************
+.param rowmode = 1.8
+.param colmode = 1.8
+
+
 ****************
 * XYCE Simulation Control
 ****************
 
+.options linsol type=klu
 .OPTIONS TIMEINT BREAKPOINTS=610us,611us,612us
-.tran 1n 620u
+.tran 1n 620u uic
 
-.print tran format=raw file=adc_top_postlayout_tb.raw         v(x1:ctopp) v(x1:ctopn) v(x1:vcm) v(x1:clk_ena) v(x1:ndecision_finish) v(x1:comp_latch) v(VDD) v(rst_n) v(start_conv) v(clk_vcm) v(inp) v(inn) v(conv_finished) v(x1:clk_dig) v(x1:clk_comp) v(result*) v(dlyctrl*) v(avg_mode*) v(osr_mode*) v(en_dly_contr) i(v_vdd_1) \{((v(result0)*0.0625+v(result1)*0.125+v(result2)*0.25+v(result3)*0.5+v(result4)+v(result5)*2+v(result6)*4+v(result7)*8+v(result8)*16+v(result9)*32+v(result10)*64+v(result11)*128+v(result12)*256+v(result13)*512+v(result14)*1024+v(result15)*2048)-2048*1.8)/2048\} v(x1:pmat.row*) v(x1:pmat.col*) v(x1:pmat.en_bit_n*) v(x1:nmat.row*) v(x1:nmat.col*) v(x1:nmat.en_bit_n*) 
-.print tran format=std file=adc_top_postlayout_tb.ascii       v(x1:ctopp) v(x1:ctopn) v(x1:vcm) v(x1:clk_ena) v(x1:ndecision_finish) v(x1:comp_latch) v(VDD) v(rst_n) v(start_conv) v(clk_vcm) v(inp) v(inn) v(conv_finished) v(x1:clk_dig) v(x1:clk_comp) v(result*) v(dlyctrl*) v(avg_mode*) v(osr_mode*) v(en_dly_contr) i(v_vdd_1) \{((v(result0)*0.0625+v(result1)*0.125+v(result2)*0.25+v(result3)*0.5+v(result4)+v(result5)*2+v(result6)*4+v(result7)*8+v(result8)*16+v(result9)*32+v(result10)*64+v(result11)*128+v(result12)*256+v(result13)*512+v(result14)*1024+v(result15)*2048)-2048*1.8)/2048\} v(x1:pmat.row*) v(x1:pmat.col*) v(x1:pmat.en_bit_n*) v(x1:nmat.row*) v(x1:nmat.col*) v(x1:nmat.en_bit_n*)
-.print tran format=csv file=adc_top_postlayout_tb.csv         v(x1:ctopp) v(x1:ctopn) v(x1:vcm) v(x1:clk_ena) v(x1:ndecision_finish) v(x1:comp_latch) v(VDD) v(rst_n) v(start_conv) v(clk_vcm) v(inp) v(inn) v(conv_finished) v(x1:clk_dig) v(x1:clk_comp) v(result*) v(dlyctrl*) v(avg_mode*) v(osr_mode*) v(en_dly_contr) i(v_vdd_1) \{((v(result0)*0.0625+v(result1)*0.125+v(result2)*0.25+v(result3)*0.5+v(result4)+v(result5)*2+v(result6)*4+v(result7)*8+v(result8)*16+v(result9)*32+v(result10)*64+v(result11)*128+v(result12)*256+v(result13)*512+v(result14)*1024+v(result15)*2048)-2048*1.8)/2048\} v(x1:pmat.row*) v(x1:pmat.col*) v(x1:pmat.en_bit_n*) v(x1:nmat.row*) v(x1:nmat.col*) v(x1:nmat.en_bit_n*) 
-.print tran format=gnuplot file=adc_top_postlayout_tb.gnu.dat v(x1:ctopp) v(x1:ctopn) v(x1:vcm) v(x1:clk_ena) v(x1:ndecision_finish) v(x1:comp_latch) v(VDD) v(rst_n) v(start_conv) v(clk_vcm) v(inp) v(inn) v(conv_finished) v(x1:clk_dig) v(x1:clk_comp) v(result*) v(dlyctrl*) v(avg_mode*) v(osr_mode*) v(en_dly_contr) i(v_vdd_1) \{((v(result0)*0.0625+v(result1)*0.125+v(result2)*0.25+v(result3)*0.5+v(result4)+v(result5)*2+v(result6)*4+v(result7)*8+v(result8)*16+v(result9)*32+v(result10)*64+v(result11)*128+v(result12)*256+v(result13)*512+v(result14)*1024+v(result15)*2048)-2048*1.8)/2048\} v(x1:pmat.row*) v(x1:pmat.col*) v(x1:pmat.en_bit_n*) v(x1:nmat.row*) v(x1:nmat.col*) v(x1:nmat.en_bit_n*) 
+.print tran format=raw file=adc_top_postlayout_tb.raw         v(x1:ctopp) v(x1:ctopn) v(x1:vcm) v(x1:clk_ena) v(x1:ndecision_finish) v(x1:comp_latch) v(VDD) v(rst_n) v(start_conv) v(clk_vcm) v(inp) v(inn) v(conv_finished) v(conv_finished_osr) v(x1:clk_dig) v(x1:clk_comp) v(result*) v(dlyctrl*) v(avg_mode*) v(osr_mode*) v(en_dly_contr) i(v_vdd_1) \{((v(result0)*0.0625+v(result1)*0.125+v(result2)*0.25+v(result3)*0.5+v(result4)+v(result5)*2+v(result6)*4+v(result7)*8+v(result8)*16+v(result9)*32+v(result10)*64+v(result11)*128+v(result12)*256+v(result13)*512+v(result14)*1024+v(result15)*2048)-2048*1.8)/2048\} 
+.print tran format=std file=adc_top_postlayout_tb.ascii       v(x1:ctopp) v(x1:ctopn) v(x1:vcm) v(x1:clk_ena) v(x1:ndecision_finish) v(x1:comp_latch) v(VDD) v(rst_n) v(start_conv) v(clk_vcm) v(inp) v(inn) v(conv_finished) v(conv_finished_osr) v(x1:clk_dig) v(x1:clk_comp) v(result*) v(dlyctrl*) v(avg_mode*) v(osr_mode*) v(en_dly_contr) i(v_vdd_1) \{((v(result0)*0.0625+v(result1)*0.125+v(result2)*0.25+v(result3)*0.5+v(result4)+v(result5)*2+v(result6)*4+v(result7)*8+v(result8)*16+v(result9)*32+v(result10)*64+v(result11)*128+v(result12)*256+v(result13)*512+v(result14)*1024+v(result15)*2048)-2048*1.8)/2048\}
+.print tran format=csv file=adc_top_postlayout_tb.csv         v(x1:ctopp) v(x1:ctopn) v(x1:vcm) v(x1:clk_ena) v(x1:ndecision_finish) v(x1:comp_latch) v(VDD) v(rst_n) v(start_conv) v(clk_vcm) v(inp) v(inn) v(conv_finished) v(conv_finished_osr) v(x1:clk_dig) v(x1:clk_comp) v(result*) v(dlyctrl*) v(avg_mode*) v(osr_mode*) v(en_dly_contr) i(v_vdd_1) \{((v(result0)*0.0625+v(result1)*0.125+v(result2)*0.25+v(result3)*0.5+v(result4)+v(result5)*2+v(result6)*4+v(result7)*8+v(result8)*16+v(result9)*32+v(result10)*64+v(result11)*128+v(result12)*256+v(result13)*512+v(result14)*1024+v(result15)*2048)-2048*1.8)/2048\} 
+.print tran format=gnuplot file=adc_top_postlayout_tb.gnu.dat v(x1:ctopp) v(x1:ctopn) v(x1:vcm) v(x1:clk_ena) v(x1:ndecision_finish) v(x1:comp_latch) v(VDD) v(rst_n) v(start_conv) v(clk_vcm) v(inp) v(inn) v(conv_finished) v(conv_finished_osr) v(x1:clk_dig) v(x1:clk_comp) v(result*) v(dlyctrl*) v(avg_mode*) v(osr_mode*) v(en_dly_contr) i(v_vdd_1) \{((v(result0)*0.0625+v(result1)*0.125+v(result2)*0.25+v(result3)*0.5+v(result4)+v(result5)*2+v(result6)*4+v(result7)*8+v(result8)*16+v(result9)*32+v(result10)*64+v(result11)*128+v(result12)*256+v(result13)*512+v(result14)*1024+v(result15)*2048)-2048*1.8)/2048\} 
 
 
 "
@@ -658,3 +680,10 @@ C {devices/noconn.sym} 1540 -810 0 1 {name=l42}
 C {devices/noconn.sym} 1540 -790 0 1 {name=l43}
 C {devices/noconn.sym} 1540 -770 0 1 {name=l44}
 C {devices/noconn.sym} 1540 -750 0 1 {name=l45}
+C {devices/vsource.sym} 1340 -310 0 0 {name=V33 value="pwl 0 0 \{boot\} \{rowmode\}"}
+C {devices/gnd.sym} 1340 -260 0 0 {name=l49 lab=GND}
+C {devices/vsource.sym} 1400 -310 0 0 {name=V34 value="pwl 0 0 \{boot\} \{colmode\}"}
+C {devices/lab_wire.sym} 1340 -350 1 0 {name=l50 sig_type=std_logic lab=row_mode}
+C {devices/lab_wire.sym} 1400 -350 1 0 {name=l51 sig_type=std_logic lab=col_mode}
+C {devices/noconn.sym} 1540 -930 0 1 {name=l47}
+C {devices/lab_wire.sym} 1540 -930 0 1 {name=l48 sig_type=std_logic lab=conv_finished_osr}

@@ -12,7 +12,11 @@
 //   See the License for the specific language governing permissions and
 //   limitations under the License.
 
-`include "../rtl/adc_core_digital.v"
+
+`include "adc_row_col_decoder.v"
+`include "adc_osr.v"
+`include "adc_control_nonbinary.v"
+`include "adc_core_digital.v"
 `timescale 10us/1us
 
 module adc_core_digital_tb;
@@ -21,6 +25,7 @@ module adc_core_digital_tb;
    reg [15:0] config_2_in;
    wire [15:0] result_out;
    wire conv_finished_out;
+   wire conv_finished_osr_out;
    // Connections to Comparator-Latch
    reg comparator_in;
    // Connections to Clockloop-Generator with Edgedetect
@@ -43,11 +48,12 @@ module adc_core_digital_tb;
    wire        nmatrix_c0_out_n;
 
   adc_core_digital core_dut (
-	 .rst_n(rst_n),
+	.rst_n(rst_n),
    .config_1_in(config_1_in),
    .config_2_in(config_2_in),
    .result_out(result_out),
    .conv_finished_out(conv_finished_out),
+   .conv_finished_osr_out(conv_finished_osr_out),
    // Connections to Comparator-Latch
    .comparator_in(comparator_in),
    // Connections to Clockloop-Generator with Edgedetect
@@ -78,6 +84,7 @@ module adc_core_digital_tb;
    		config_2_in,
    		result_out,
    		conv_finished_out,
+   		conv_finished_osr_out,
    		comparator_in,
    		clk_dig_in,
    		enable_loop_out,
@@ -251,7 +258,8 @@ module adc_core_digital_tb;
 
     
     #16 // wait 
-
+    
+    //RESET EVERYTHING
     #2 rst_n=0;
     config_1_in = 16'b0000000000000000; //0 averages, 0 OSR
     #2 rst_n=1;
@@ -290,7 +298,7 @@ module adc_core_digital_tb;
 
     
 
-
+    #20
     $finish;
    end
 

@@ -1,46 +1,34 @@
 gds read adc_top
-select top cell 
 snap internal
-flatten adc_top_flat
+select top cell 
+flatten -dotoplabels adc_top_flat
 load adc_top_flat
 cellname delete adc_top
 cellname rename adc_top_flat adc_top
-box 958 1966 15850 33167
-erase label
-box 928 31990 8584 47912
-erase label
-box 928 45718 15642 78506
-erase label
-box 12782 45680 48715 53494
-erase label
-box 12813 26867 48755 32866
-erase label
-box 9895 33914 41892 45238
-erase label
-box 43547 26990 48857 53742
+box 680 1166 85576 79398
 erase label
 box 50560 54060 50560 54060
 label ctopp
 port make
-box 50560 26168 50560 26168
+box 50500 25799 50500 25799
 label ctopn
 port make
-box 53192 57690 53192 57690
+box 53242 26168 53242 26168
 label vcm
 port make
-box 9800 35496 9800 35496
+box 16203 35996 16203 35996
 label clk_dig
 port make
-box 50807 39378 50807 39378
+box 48943 37084 48943 37084
 label clk_comp
 port make
-box 9800 34680 9800 34680
+box 16028 35060 16028 35060
 label clk_ena
 port make
-box 42872 42568 42872 42568
+box 49700 43068 49700 43068
 label ndecision_finish
 port make
-box 57331 40204 57331 40204
+box 58549 40125 58549 40125
 label comp_latch
 port make
 select top cell
@@ -53,4 +41,3 @@ ext2spice lvs
 ext2spice cthresh 0.1
 ext2spice merge conservative
 ext2spice -F
-

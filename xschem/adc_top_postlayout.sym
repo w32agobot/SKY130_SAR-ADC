@@ -32,6 +32,7 @@ L 4 130 120 150 120 {}
 L 4 130 140 150 140 {}
 L 4 130 160 150 160 {}
 L 4 130 180 150 180 {}
+L 4 130 0 150 0 {}
 L 7 0 -90 0 -70 {}
 L 7 0 200 0 220 {}
 B 5 147.5 -62.5 152.5 -57.5 {name=result[0..15] dir=out }
@@ -54,8 +55,9 @@ B 5 147.5 117.5 152.5 122.5 {name=clk_comp dir=out }
 B 5 147.5 137.5 152.5 142.5 {name=clk_ena dir=out }
 B 5 147.5 157.5 152.5 162.5 {name=ndecision_finish dir=out }
 B 5 147.5 177.5 152.5 182.5 {name=comp_latch dir=out }
-T {@symname} -49.5 -6 0 0 0.3 0.3 {}
-T {@name} 135 -82 0 0 0.2 0.2 {}
+B 5 147.5 -2.5 152.5 2.5 {name=conv_finished_osr dir=out }
+T {@symname} 40.5 204 0 0 0.3 0.3 {}
+T {@name} 45 228 0 0 0.2 0.2 {}
 T {result[0..15]} 125 -64 0 1 0.2 0.2 {}
 T {VDD} -4 -65 3 1 0.2 0.2 {}
 T {VSS} 4 195 1 1 0.2 0.2 {}
@@ -76,3 +78,4 @@ T {clk_comp} 125 116 0 1 0.2 0.2 {}
 T {clk_ena} 125 136 0 1 0.2 0.2 {}
 T {ndecision_finish} 125 156 0 1 0.2 0.2 {}
 T {comp_latch} 125 176 0 1 0.2 0.2 {}
+T {conv_finished_osr} 125 -4 0 1 0.2 0.2 {}

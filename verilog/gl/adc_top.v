@@ -37,7 +37,8 @@ module adc_top(
    input wire [15:0] config_1_in,    
    input wire [15:0] config_2_in,    
    output wire [15:0] result_out,    
-   output wire conversion_finished_out ,
+   output wire conversion_finished_out,
+   output wire conversion_finished_osr_out,
    output wire [15:0] dummypin, 
    input wire clk_dig_dummy
    );
@@ -71,6 +72,7 @@ adc_core_digital core(
    .config_2_in(config_2_in),
    .result_out(result_out),
    .conv_finished_out(conversion_finished_out),
+   .conv_finished_osr_out(conversion_finished_osr_out),
    // Connections to Comparator-Latch
    .comparator_in(result_comp),
    // Connections to Clockloop-Generator with Edgedetect
@@ -107,6 +109,7 @@ wire [15:0] pmatrix_rowoff_core_n, nmatrix_rowoff_core_n;
 wire [2:0]  pmatrix_bincap_core_n, nmatrix_bincap_core_n;
 wire        pmatrix_c0_core_n, nmatrix_c0_core_n;
 wire ena_loop_core;
+
 
 //*******************************************
 //      Clock Loop with Edge-Detection
@@ -155,19 +158,23 @@ adc_array_matrix_12bit pmat (
    `endif
    .sample(sample_pmatrix_cgen),
    .sample_n(sample_pmatrix_cgen_n),
-   .row_n(pmatrix_row_core_n),
-   .rowon_n(pmatrix_rowon_core_n),
+   .row_n(pmatrix_row_core_n_buffered),
+   .rowon_n(pmatrix_rowon_core_n_buffered),
    .rowoff_n(pmatrix_rowoff_core_n),
-   .col_n(pmatrix_col_core_n),
+   .col_n(pmatrix_col_core_n_buffered),
    .col(pmatrix_col_core),
    .en_bit_n(pmatrix_bincap_core_n),
    .en_C0_n(pmatrix_c0_core_n),
-   .sw(sample_switch_core), 
-   .sw_n(sample_switch_core_n), 
+   .sw(pmat_sample_switch_buffered), 
+   .sw_n(pmat_sample_switch_n_buffered), 
    .analog_in(inp_analog), 
    .ctop(ctop_pmatrix_analog)
    );
 wire ctop_pmatrix_analog; 
+//Buffering, switch signal must be fast
+wire pmat_sample_switch_buffered, pmat_sample_switch_n_buffered;
+sky130_fd_sc_hd__buf_8 pmat_sample_buf (.A(sample_switch_core),.X(pmat_sample_switch_buffered));
+sky130_fd_sc_hd__buf_8 pmat_sample_buf_n (.A(sample_switch_core_n),.X(pmat_sample_switch_n_buffered));
 
 //*******************************************
 //      Matrix N-side
@@ -181,19 +188,51 @@ adc_array_matrix_12bit nmat (
    `endif
    .sample(sample_nmatrix_cgen),
    .sample_n(sample_nmatrix_cgen_n),
-   .row_n(nmatrix_row_core_n),
-   .rowon_n(nmatrix_rowon_core_n),
+   .row_n(nmatrix_row_core_n_buffered),
+   .rowon_n(nmatrix_rowon_core_n_buffered),
    .rowoff_n(nmatrix_rowoff_core_n),
-   .col_n(nmatrix_col_core_n),
+   .col_n(nmatrix_col_core_n_buffered),
    .col(nmatrix_col_core),
    .en_bit_n(nmatrix_bincap_core_n),
    .en_C0_n(nmatrix_c0_core_n),
-   .sw(sample_switch_core), 
-   .sw_n(sample_switch_core_n), 
+   .sw(nmat_sample_switch_buffered), 
+   .sw_n(nmat_sample_switch_n_buffered), 
    .analog_in(inn_analog), 
    .ctop(ctop_nmatrix_analog)
    );
 wire ctop_nmatrix_analog; 
+//Buffering, switch signal must be fast
+wire nmat_sample_switch_buffered, nmat_sample_switch_n_buffered;
+sky130_fd_sc_hd__buf_8 nmat_sample_buf (.A(sample_switch_core),.X(nmat_sample_switch_buffered));
+sky130_fd_sc_hd__buf_8 nmat_sample_buf_n (.A(sample_switch_core_n),.X(nmat_sample_switch_n_buffered));
+
+
+//*******************************************
+//      Matrix Buffering
+//      **** HARDENED MACRO ****
+//*******************************************
+genvar i;
+wire [31:0] nmatrix_col_core_n_buffered;
+wire [31:0] pmatrix_col_core_n_buffered;
+generate
+  for (i=0;i<32;i=i+1) begin
+    sky130_fd_sc_hd__buf_8 buf_n_coln (.A(nmatrix_col_core_n[i]),.X(nmatrix_col_core_n_buffered[i]));
+    sky130_fd_sc_hd__buf_8 buf_p_coln (.A(pmatrix_col_core_n[i]),.X(pmatrix_col_core_n_buffered[i]));
+  end
+endgenerate
+
+wire [15:0] nmatrix_row_core_n_buffered;
+wire [15:0] nmatrix_rowon_core_n_buffered;
+wire [15:0] pmatrix_row_core_n_buffered;
+wire [15:0] pmatrix_rowon_core_n_buffered;
+generate
+  for (i=0;i<16;i=i+1) begin
+    sky130_fd_sc_hd__buf_4 buf_n_rown (.A(nmatrix_row_core_n[i]),.X(nmatrix_row_core_n_buffered[i]));
+    sky130_fd_sc_hd__buf_4 buf_n_rowonn (.A(nmatrix_rowon_core_n[i]),.X(nmatrix_rowon_core_n_buffered[i]));
+    sky130_fd_sc_hd__buf_4 buf_p_rown (.A(pmatrix_row_core_n[i]),.X(pmatrix_row_core_n_buffered[i]));
+    sky130_fd_sc_hd__buf_4 buf_p_rowonn (.A(pmatrix_rowon_core_n[i]),.X(pmatrix_rowon_core_n_buffered[i]));
+  end
+endgenerate
 
 //*******************************************
 //      Comparator latch
