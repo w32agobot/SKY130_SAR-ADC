@@ -31,6 +31,12 @@ port make
 box 58549 40125 58549 40125
 label comp_latch
 port make
+box 36250 55036 36250 55036
+label cbot_bin1 center metal2
+box 34263 55031 34263 55031
+label cbot_bin2 center metal2
+box 35249 55031 35249 55031
+label cbot_bin4 center metal2
 select top cell
 extract do local 
 extract unique
