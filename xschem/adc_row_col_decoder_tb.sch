@@ -136,31 +136,31 @@ N 560 -1020 560 -1000 {
 lab=GND}
 N 560 -1100 560 -1090 {
 lab=nsample}
-N 660 -1090 660 -1080 {
+N 560 -1230 560 -1220 {
 lab=sample}
-N 660 -1020 660 -1000 {
+N 560 -1160 560 -1140 {
 lab=GND}
-N 660 -1100 660 -1090 {
+N 560 -1240 560 -1230 {
 lab=sample}
 N 440 -1110 440 -1080 {
 lab=vcm}
 N 440 -1020 440 -1000 {
 lab=GND}
-N 190 -1090 190 -1080 {
+N 340 -1100 340 -1090 {
 lab=ain}
-N 190 -1020 190 -1000 {
+N 340 -1030 340 -1010 {
 lab=GND}
-N 60 -1090 60 -1080 {
+N 60 -1250 60 -1240 {
 lab=sw}
+N 60 -1180 60 -1160 {
+lab=GND}
+N 60 -1260 60 -1250 {
+lab=sw}
+N 60 -1090 60 -1080 {
+lab=nsw}
 N 60 -1020 60 -1000 {
 lab=GND}
 N 60 -1100 60 -1090 {
-lab=sw}
-N 310 -1090 310 -1080 {
-lab=nsw}
-N 310 -1020 310 -1000 {
-lab=GND}
-N 310 -1100 310 -1090 {
 lab=nsw}
 N 1430 -540 1430 -520 {
 lab=VDD}
@@ -257,12 +257,9 @@ value="
 ****************
 * XYCE Simulation Control
 ****************
-.tran 1u 2048u uic
+* TODO
+* does not work with xspice yet
 
-.print tran format=raw file=adc_row_col_decoder_tb.raw          v(data*) v(ctop_ideal) v(ctop_postlayout)
-.print tran format=std file=adc_row_col_decoder_tb.ascii        v(data*) v(ctop_ideal) v(ctop_postlayout)
-.print tran format=csv file=adc_row_col_decoder_tb.csv          v(data*) v(ctop_ideal) v(ctop_postlayout)
-.print tran format=gnuplot file=adc_row_col_decoder_tb.gnu.dat  v(data*) v(ctop_ideal) v(ctop_postlayout)
 "
 }
 C {devices/code.sym} 130 -130 0 0 {name=TT_MODELS
@@ -294,9 +291,11 @@ value="
 .save bin_n0 bin_n1 bin_n2 vC0 sw nsw ain ctop_postlayout 
 
 .ic v(ctop_ideal)=0 v(ctop_postlayout)=0
-.tran 1u 2048u uic
+.tran 500n 2048u 250n uic
 .control
+set INTERP
 set num_threads=12
+*set filetype=ascii
 run
 write adc_row_col_decoder_tb.raw
 plot ctop_ideal ctop_postlayout
@@ -346,29 +345,29 @@ C {devices/lab_wire.sym} 250 -770 0 1 {name=p42 sig_type=std_logic lab=data10}
 C {devices/vsource.sym} 250 -860 0 0 {name=V_VDD_20 value="pulse(0 1.8 1024u 1n 1n 1024u 2048u)"}
 C {devices/gnd.sym} 250 -810 0 0 {name=l15 lab=GND}
 C {devices/lab_wire.sym} 250 -900 0 1 {name=p43 sig_type=std_logic lab=data11}
-C {devices/vsource.sym} 560 -1050 0 0 {name=V_VDD_18 value=1.8}
+C {devices/vsource.sym} 560 -1050 0 0 {name=V_VDD_18 value="PWL(0 0 100n 0 125n 1.8)"}
 C {devices/gnd.sym} 560 -1000 0 0 {name=l25 lab=GND}
-C {devices/vsource.sym} 660 -1050 0 0 {name=V_VDD_19 value=0}
-C {devices/gnd.sym} 660 -1000 0 0 {name=l26 lab=GND}
+C {devices/vsource.sym} 560 -1190 0 0 {name=V_VDD_19 value="PWL(0 1.8 100n 1.8 125n 0)"}
+C {devices/gnd.sym} 560 -1140 0 0 {name=l26 lab=GND}
 C {devices/vsource.sym} 440 -1050 0 0 {name=V_VDD_17 value=0.9}
 C {devices/gnd.sym} 440 -1000 0 0 {name=l22 lab=GND}
 C {devices/lab_wire.sym} 440 -1110 0 1 {name=p44 sig_type=std_logic lab=vcm}
 C {devices/lab_wire.sym} 560 -1100 0 1 {name=p45 sig_type=std_logic lab=nsample}
-C {devices/lab_wire.sym} 660 -1100 0 1 {name=p46 sig_type=std_logic lab=sample}
+C {devices/lab_wire.sym} 560 -1240 0 1 {name=p46 sig_type=std_logic lab=sample}
 C {adc_array_matrix_12bit.sym} 1430 -400 0 0 {name=x1}
-C {devices/vsource.sym} 190 -1050 0 0 {name=V_VDD_14 value=0.9}
-C {devices/gnd.sym} 190 -1000 0 0 {name=l18 lab=GND}
-C {devices/vsource.sym} 60 -1050 0 0 {name=V_VDD_15 value=0}
-C {devices/gnd.sym} 60 -1000 0 0 {name=l17 lab=GND}
-C {devices/vsource.sym} 310 -1050 0 0 {name=V_VDD_16 value=1.8}
-C {devices/gnd.sym} 310 -1000 0 0 {name=l19 lab=GND}
+C {devices/vsource.sym} 340 -1060 0 0 {name=V_VDD_14 value=0.9}
+C {devices/gnd.sym} 340 -1010 0 0 {name=l18 lab=GND}
+C {devices/vsource.sym} 60 -1210 0 0 {name=V_VDD_15 value="PWL(0 1.8 50n 1.8 75n 0)"}
+C {devices/gnd.sym} 60 -1160 0 0 {name=l17 lab=GND}
+C {devices/vsource.sym} 60 -1050 0 0 {name=V_VDD_16 value="PWL(0 0 50n 0 75n 1.8)"}
+C {devices/gnd.sym} 60 -1000 0 0 {name=l19 lab=GND}
 C {devices/lab_wire.sym} 1600 -340 0 1 {name=p14 sig_type=std_logic lab=ctop_ideal}
 C {devices/lab_wire.sym} 1400 -560 0 0 {name=p19 sig_type=std_logic lab=vcm}
 C {devices/lab_wire.sym} 1250 -490 0 0 {name=p21 sig_type=std_logic lab=sample}
 C {devices/lab_wire.sym} 1220 -470 0 0 {name=p22 sig_type=std_logic lab=nsample}
-C {devices/lab_wire.sym} 60 -1100 0 1 {name=p31 sig_type=std_logic lab=sw}
-C {devices/lab_wire.sym} 310 -1100 0 1 {name=p32 sig_type=std_logic lab=nsw}
-C {devices/lab_wire.sym} 190 -1090 0 1 {name=p35 sig_type=std_logic lab=ain}
+C {devices/lab_wire.sym} 60 -1260 0 1 {name=p31 sig_type=std_logic lab=sw}
+C {devices/lab_wire.sym} 60 -1100 0 1 {name=p32 sig_type=std_logic lab=nsw}
+C {devices/lab_wire.sym} 340 -1100 0 1 {name=p35 sig_type=std_logic lab=ain}
 C {devices/lab_wire.sym} 1260 -390 0 0 {name=p1 sig_type=std_logic lab=bin_n[0..2]}
 C {devices/lab_wire.sym} 1260 -410 0 0 {name=p2 sig_type=std_logic lab=col_n[0..31]}
 C {devices/lab_wire.sym} 1260 -450 0 0 {name=p3 sig_type=std_logic lab=row_n[0..15]}
