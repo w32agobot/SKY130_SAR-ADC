@@ -119,144 +119,147 @@ module adc_core_digital_tb;
     // ************** TEST1 ***************
     // 4x Averaging of LSB
     // 4x OSR
-    // Values: d806 + d2048 + d4 + d0
-    // 20Bit-Sum expected: 0x0B2A
+    // Values: a)  972 0x3CC
+    //         b) 1612 0x64C
+    //         c)    4 0x004
+    //         d)    0 0x000
+    // 20Bit-Sum expected: 0x2870
     // Result = {[13:1],3'b0} -> 00[0010110010101]0+[000]
-    // 0010 1100 1010 1000 = 0x2CA8
-    // 2CA = 714 .. 800=0.5 .. Result = 714.5
-       comparator_in = 0; //0001 //idle
-    #2 comparator_in = 0; //8000  
-    #2 comparator_in = 1; //4000 +12'd806
-    #2 comparator_in = 0; //2000
-    #2 comparator_in = 0; //1000
-    #2 comparator_in = 0; //0800
-    #2 comparator_in = 0; //0400
-    #2 comparator_in = 0; //0200
-    #2 comparator_in = 0; //0100
-    #2 comparator_in = 0; //0080
-    #2 comparator_in = 0; //0040
-    #2 comparator_in = 0; //0020
+       comparator_in = 0; //0001 +2048
+    #2 comparator_in = 0; //8000 -806
+    #2 comparator_in = 1; //4000 +486
+    #2 comparator_in = 0; //2000 -295
+    #2 comparator_in = 0; //1000 -180
+    #2 comparator_in = 0; //0800 -110
+    #2 comparator_in = 0; //0400 -67
+    #2 comparator_in = 0; //0200 -41
+    #2 comparator_in = 0; //0100 -25
+    #2 comparator_in = 0; //0080 -15
+    #2 comparator_in = 0; //0040 -9
+    #2 comparator_in = 0; //0020 -6
     //averaging
-    #2 comparator_in = 0; //0010
+    #2 comparator_in = 0; //0010 -4
     #2 comparator_in = 0;
     #2 comparator_in = 0;
     //averaging
-    #2 comparator_in = 0; //0008
+    #2 comparator_in = 0; //0008 -2
     #2 comparator_in = 0;
     #2 comparator_in = 0;
     //averaging
-    #2 comparator_in = 0; //0004
+    #2 comparator_in = 0; //0004 -1
     #2 comparator_in = 0;
     #2 comparator_in = 0;
     //averaging
-    #2 comparator_in = 0; //0002
+    #2 comparator_in = 0; //0002 -1
     #2 comparator_in = 0;
     #2 comparator_in = 0;
     //OSR hold data
-    #2 comparator_in = 0;  
+    #2 comparator_in = 0; //0001       
     // FINISHED 1/4 conversions
-    #2 comparator_in = 0; //0001 
-
     
-
     
-    #2 comparator_in = 1; //8000 +d2048
-    #2 comparator_in = 0; //4000
-    #2 comparator_in = 0; //2000
-    #2 comparator_in = 0; //1000
-    #2 comparator_in = 0; //0800
-    #2 comparator_in = 0; //0400
-    #2 comparator_in = 0; //0200
-    #2 comparator_in = 0; //0100
-    #2 comparator_in = 0; //0080
-    #2 comparator_in = 0; //0040
-    #2 comparator_in = 0; //0020
+    #2 comparator_in = 0;      //+2048
+
+    #2 comparator_in = 1; //8000 +806
+    #2 comparator_in = 0; //4000 -486
+    #2 comparator_in = 0; //2000 -295
+    #2 comparator_in = 0; //1000 -180
+    #2 comparator_in = 0; //0800 -110
+    #2 comparator_in = 0; //0400 -67
+    #2 comparator_in = 0; //0200 -41
+    #2 comparator_in = 0; //0100 -25
+    #2 comparator_in = 0; //0080 -15
+    #2 comparator_in = 0; //0040 -9
+    #2 comparator_in = 0; //0020 -6
     //averaging
-    #2 comparator_in = 0; //0010
-    #2 comparator_in = 0;
-    #2 comparator_in = 0;
-    //averaging
-    #2 comparator_in = 0; //0008
+    #2 comparator_in = 0; //0010 -4
     #2 comparator_in = 0;
     #2 comparator_in = 0;
     //averaging
-    #2 comparator_in = 0; //0004
+    #2 comparator_in = 0; //0008 -2
     #2 comparator_in = 0;
     #2 comparator_in = 0;
     //averaging
-    #2 comparator_in = 0; //0002
+    #2 comparator_in = 0; //0004 -1
+    #2 comparator_in = 0;
+    #2 comparator_in = 0;
+    //averaging
+    #2 comparator_in = 0; //0002 -1
     #2 comparator_in = 0;
     #2 comparator_in = 0;
     //OSR hold data
-    #2 comparator_in = 0;  
+    #2 comparator_in = 0; //0001 
     // FINISHED 2/4 conversions
-    #2 comparator_in = 0; //0001 
     
-    #2 comparator_in = 0; //8000
-    #2 comparator_in = 0; //4000
-    #2 comparator_in = 0; //2000
-    #2 comparator_in = 0; //1000
-    #2 comparator_in = 0; //0800
-    #2 comparator_in = 0; //0400
-    #2 comparator_in = 0; //0200
-    #2 comparator_in = 0; //0100
-    #2 comparator_in = 0; //0080
-    #2 comparator_in = 0; //0040
-    #2 comparator_in = 0; //0020
+    
+    #2 comparator_in = 0;      //+2048
+    #2 comparator_in = 0; //8000 -806
+    #2 comparator_in = 0; //4000 -486
+    #2 comparator_in = 0; //2000 -295
+    #2 comparator_in = 0; //1000 -180
+    #2 comparator_in = 0; //0800 -110
+    #2 comparator_in = 0; //0400 -67
+    #2 comparator_in = 0; //0200 -41
+    #2 comparator_in = 0; //0100 -25
+    #2 comparator_in = 0; //0080 -15
+    #2 comparator_in = 0; //0040 -9
+    #2 comparator_in = 0; //0020 -6
     //averaging
-    #2 comparator_in = 0; //0010
+    #2 comparator_in = 0; //0010 -4
     #2 comparator_in = 0;
     #2 comparator_in = 0;
     //averaging
-    #2 comparator_in = 1; //0008 +d4
+    #2 comparator_in = 1; //0008 +2
     #2 comparator_in = 1;
     #2 comparator_in = 1;
     //averaging
-    #2 comparator_in = 0; //0004
+    #2 comparator_in = 0; //0004 -1
     #2 comparator_in = 0;
     #2 comparator_in = 0;
     //averaging
-    #2 comparator_in = 0; //0002
+    #2 comparator_in = 0; //0002 -1
     #2 comparator_in = 0;
     #2 comparator_in = 0;
     //OSR hold data
-    #2 comparator_in = 0;  
+    #2 comparator_in = 0;   //0001 
     // FINISHED 3/4 conversions
-    #2 comparator_in = 0; //0001 
-
-    #2 comparator_in = 0; //8000
-    #2 comparator_in = 0; //4000
-    #2 comparator_in = 0; //2000
-    #2 comparator_in = 0; //1000
-    #2 comparator_in = 0; //0800
-    #2 comparator_in = 0; //0400
-    #2 comparator_in = 0; //0200
-    #2 comparator_in = 0; //0100
-    #2 comparator_in = 0; //0080
-    #2 comparator_in = 0; //0040
-    #2 comparator_in = 0; //0020
+    
+    
+    #2 comparator_in = 0;      //+2048
+    #2 comparator_in = 0; //8000 -806
+    #2 comparator_in = 0; //4000 -486
+    #2 comparator_in = 0; //2000 -295
+    #2 comparator_in = 0; //1000 -180
+    #2 comparator_in = 0; //0800 -110
+    #2 comparator_in = 0; //0400 -67
+    #2 comparator_in = 0; //0200 -41
+    #2 comparator_in = 0; //0100 -25
+    #2 comparator_in = 0; //0080 -15
+    #2 comparator_in = 0; //0040 -9
+    #2 comparator_in = 0; //0020 -6
     //averaging
-    #2 comparator_in = 0; //0010
-    #2 comparator_in = 0;
-    #2 comparator_in = 0;
-    //averaging
-    #2 comparator_in = 0; //0008
+    #2 comparator_in = 0; //0010 -4
     #2 comparator_in = 0;
     #2 comparator_in = 0;
     //averaging
-    #2 comparator_in = 0; //0004
+    #2 comparator_in = 0; //0008 -2
     #2 comparator_in = 0;
     #2 comparator_in = 0;
     //averaging
-    #2 comparator_in = 0; //0002
+    #2 comparator_in = 0; //0004 -1
+    #2 comparator_in = 0;
+    #2 comparator_in = 0;
+    //averaging
+    #2 comparator_in = 0; //0002 -1
     #2 comparator_in = 0;
     #2 comparator_in = 0;
     //OSR hold data
-    #2 comparator_in = 0;  
+    #2 comparator_in = 0;   //0001
     // FINISHED 4/4 conversions
-    #2 comparator_in = 0; //0001 
-
     
+    
+    #2 comparator_in = 0;  
+
     #16 // wait 
     
     //RESET EVERYTHING
@@ -269,11 +272,11 @@ module adc_core_digital_tb;
     // ************** TEST2 ***************
     // 0x Averaging of LSB
     // 0x OSR
-    // Values: d806 0x326
-    // Sum expected: 0x3260
-       comparator_in = 0; //0001 //idle
-    #2 comparator_in = 0; //8000  
-    #2 comparator_in = 1; //4000 +12'd806
+    // Values: d806 0x3CC
+    // Sum expected: 0x3CC0
+       comparator_in = 0; //0001 //+2048
+    #2 comparator_in = 0; //8000 -806 
+    #2 comparator_in = 1; //4000 +486
     #2 comparator_in = 0; //2000
     #2 comparator_in = 0; //1000
     #2 comparator_in = 0; //0800

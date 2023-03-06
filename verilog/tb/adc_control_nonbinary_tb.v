@@ -67,107 +67,107 @@ module adc_control_nonbinary_tb;
     #1 nrst=1; avg_control = 3'b001;
     #1 comparator_in = 0;
 
-    // first value is d2048
+    // first value is 064C
     avg_control = 3'b001; //4x averaging    
-    #2 comparator_in = 0; //0001
-    #2 comparator_in = 1; //8000
-    #2 comparator_in = 0; //4000
-    #2 comparator_in = 0; //2000
-    #2 comparator_in = 0; //1000
-    #2 comparator_in = 0; //0800
-    #2 comparator_in = 0; //0400
-    #2 comparator_in = 0; //0200
-    #2 comparator_in = 0; //0100
-    #2 comparator_in = 0; //0080
-    #2 comparator_in = 0; //0040
-    #2 comparator_in = 0; //0020
+    #2 comparator_in = 0; //0001 +2048
+    #2 comparator_in = 1; //8000 +806
+    #2 comparator_in = 0; //4000 -486
+    #2 comparator_in = 0; //2000 -295
+    #2 comparator_in = 0; //1000 -180
+    #2 comparator_in = 0; //0800 -110
+    #2 comparator_in = 0; //0400 -67
+    #2 comparator_in = 0; //0200 -41
+    #2 comparator_in = 0; //0100 -25
+    #2 comparator_in = 0; //0080 -15
+    #2 comparator_in = 0; //0040 -9
+    #2 comparator_in = 0; //0020 -6
     //averaging
-    #2 comparator_in = 0; //0010
-    #2 comparator_in = 0;
-    #2 comparator_in = 0;
-    //averaging
-    #2 comparator_in = 0; //0008
+    #2 comparator_in = 0; //0010 -4
     #2 comparator_in = 0;
     #2 comparator_in = 0;
     //averaging
-    #2 comparator_in = 0; //0004
+    #2 comparator_in = 0; //0008 -2
     #2 comparator_in = 0;
     #2 comparator_in = 0;
     //averaging
-    #2 comparator_in = 0; //0002
+    #2 comparator_in = 0; //0004 -1
+    #2 comparator_in = 0;
+    #2 comparator_in = 0;
+    //averaging
+    #2 comparator_in = 0; //0002 -1
     #2 comparator_in = 0;
     #2 comparator_in = 0;
 
     #2 comparator_in = 0; // hold_data_for_osr clock gating
         
 
-    // second value is d806
+    // second value is d3CC
     avg_control = 3'b000; //0x averaging
-    #2 comparator_in = 0; //0001
-    #2 comparator_in = 0; //8000
-    #2 comparator_in = 1; //4000 +806
-    #2 comparator_in = 0; //2000
-    #2 comparator_in = 0; //1000
-    #2 comparator_in = 0; //0800
-    #2 comparator_in = 0; //0400
-    #2 comparator_in = 0; //0200
-    #2 comparator_in = 0; //0100
-    #2 comparator_in = 0; //0080
-    #2 comparator_in = 0; //0040
-    #2 comparator_in = 0; //0020
+    #2 comparator_in = 0; //0001 +2048
+    #2 comparator_in = 0; //8000 -806
+    #2 comparator_in = 1; //4000 +486
+    #2 comparator_in = 0; //2000 -295
+    #2 comparator_in = 0; //1000 -180
+    #2 comparator_in = 0; //0800 -110
+    #2 comparator_in = 0; //0400 -67
+    #2 comparator_in = 0; //0200 -41
+    #2 comparator_in = 0; //0100 -25
+    #2 comparator_in = 0; //0080 -15
+    #2 comparator_in = 0; //0040 -9
+    #2 comparator_in = 0; //0020 -6
     //averaging
-    #2 comparator_in = 0; //0010
+    #2 comparator_in = 0; //0010 -4
     //averaging
-    #2 comparator_in = 0; //0008
+    #2 comparator_in = 0; //0008 -2
     //averaging
-    #2 comparator_in = 0; //0004
+    #2 comparator_in = 0; //0004 -1
     //averaging
-    #2 comparator_in = 0; //0002
+    #2 comparator_in = 0; //0002 -1
 
     #2 comparator_in = 0; // hold_data_for_osr clock gating
     
-    // third value is d13
+    // third value is d15 0x0F
     avg_control = 3'b000; //0x averaging
-    #2 comparator_in = 0; //0001
-    #2 comparator_in = 0; //8000
-    #2 comparator_in = 0; //4000
-    #2 comparator_in = 0; //2000
-    #2 comparator_in = 0; //1000
-    #2 comparator_in = 0; //0800
-    #2 comparator_in = 0; //0400
-    #2 comparator_in = 0; //0200
-    #2 comparator_in = 0; //0100
-    #2 comparator_in = 0; //0080
-    #2 comparator_in = 0; //0040
-    #2 comparator_in = 0; //0020
+    #2 comparator_in = 0; //0001 +2048
+    #2 comparator_in = 0; //8000 -806
+    #2 comparator_in = 0; //4000 -486
+    #2 comparator_in = 0; //2000 -295
+    #2 comparator_in = 0; //1000 -180
+    #2 comparator_in = 0; //0800 -110
+    #2 comparator_in = 0; //0400 -67
+    #2 comparator_in = 0; //0200 -41
+    #2 comparator_in = 0; //0100 -25
+    #2 comparator_in = 0; //0080 -15
+    #2 comparator_in = 0; //0040 -9
+    #2 comparator_in = 0; //0020 -6
     //averaging
-    #2 comparator_in = 1; //0010 +6
+    #2 comparator_in = 1; //0010 +4
     //averaging
-    #2 comparator_in = 1; //0008 +4
+    #2 comparator_in = 1; //0008 +2
     //averaging
-    #2 comparator_in = 1; //0004 +2
+    #2 comparator_in = 1; //0004 +1
     //averaging
-    #2 comparator_in = 1; //0002 +1
+    #2 comparator_in = 1; //0002 +0
 
 
     #2 comparator_in = 0; // hold_data_for_osr clock gating
 
-    // fourth value is d489
+    // fourth value is 0x251 593
     avg_control = 3'b010; //8x averaging
-    #2 comparator_in = 0; //0001
-    #2 comparator_in = 0; //8000
-    #2 comparator_in = 0; //4000
-    #2 comparator_in = 1; //2000 +486
-    #2 comparator_in = 0; //1000
-    #2 comparator_in = 0; //0800
-    #2 comparator_in = 0; //0400
-    #2 comparator_in = 0; //0200
-    #2 comparator_in = 0; //0100
-    #2 comparator_in = 0; //0080
-    #2 comparator_in = 0; //0040
-    #2 comparator_in = 0; //0020
+    #2 comparator_in = 0; //0001 +2048
+    #2 comparator_in = 0; //8000 -806
+    #2 comparator_in = 0; //4000 -486
+    #2 comparator_in = 1; //2000 +295
+    #2 comparator_in = 0; //1000 -180
+    #2 comparator_in = 0; //0800 -110
+    #2 comparator_in = 0; //0400 -67
+    #2 comparator_in = 0; //0200 -41
+    #2 comparator_in = 0; //0100 -25
+    #2 comparator_in = 0; //0080 -15
+    #2 comparator_in = 0; //0040 -9
+    #2 comparator_in = 0; //0020 -6
     //averaging
-    #2 comparator_in = 0; //0010
+    #2 comparator_in = 0; //0010 -1
     #2 comparator_in = 1; 
     #2 comparator_in = 0; 
     #2 comparator_in = 1; 
@@ -175,23 +175,23 @@ module adc_control_nonbinary_tb;
     #2 comparator_in = 0; 
     #2 comparator_in = 0; 
     //averaging
-    #2 comparator_in = 0; //0008
+    #2 comparator_in = 0; //0008 -2
     #2 comparator_in = 0; 
     #2 comparator_in = 0;
     #2 comparator_in = 0; 
     #2 comparator_in = 0; 
     #2 comparator_in = 0; 
-    #2 comparator_in = 1; 
-    //averaging
-    #2 comparator_in = 1; //0010 +2
-    #2 comparator_in = 0; 
-    #2 comparator_in = 0;
-    #2 comparator_in = 1; 
-    #2 comparator_in = 0; 
-    #2 comparator_in = 1; 
     #2 comparator_in = 1; 
     //averaging
     #2 comparator_in = 1; //0010 +1
+    #2 comparator_in = 0; 
+    #2 comparator_in = 0;
+    #2 comparator_in = 1; 
+    #2 comparator_in = 0; 
+    #2 comparator_in = 1; 
+    #2 comparator_in = 1; 
+    //averaging
+    #2 comparator_in = 1; //0010 +0
     #2 comparator_in = 1; 
     #2 comparator_in = 1; 
     #2 comparator_in = 1; 
