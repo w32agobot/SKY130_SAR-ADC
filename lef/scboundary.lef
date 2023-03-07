@@ -1,0 +1,64 @@
+VERSION 5.7 ;
+  NOWIREEXTENSIONATPIN ON ;
+  DIVIDERCHAR "/" ;
+  BUSBITCHARS "[]" ;
+MACRO scboundary
+  CLASS BLOCK ;
+  FOREIGN scboundary ;
+  ORIGIN 0.000 0.000 ;
+  SIZE 8.000 BY 160.000 ;
+  PIN VSS
+    DIRECTION INOUT ;
+    USE GROUND ;
+    PORT
+      LAYER li1 ;
+        RECT 3.290 77.570 5.340 78.370 ;
+        RECT 3.640 76.260 3.910 77.570 ;
+        RECT 4.700 77.070 4.940 77.570 ;
+        RECT 4.670 76.260 4.940 77.070 ;
+      LAYER mcon ;
+        RECT 3.540 77.690 5.090 78.260 ;
+      LAYER met1 ;
+        RECT 3.290 77.570 5.340 78.370 ;
+      LAYER via ;
+        RECT 3.540 77.690 5.090 78.260 ;
+      LAYER met2 ;
+        RECT 3.290 77.570 5.340 78.370 ;
+      LAYER via2 ;
+        RECT 3.540 77.690 5.090 78.260 ;
+      LAYER met3 ;
+        RECT 0.250 77.570 7.790 78.380 ;
+      LAYER via3 ;
+        RECT 0.830 77.650 2.400 78.330 ;
+      LAYER met4 ;
+        RECT 0.720 48.860 2.510 106.450 ;
+    END
+  END VSS
+  PIN VDD
+    DIRECTION INOUT ;
+    USE POWER ;
+    PORT
+      LAYER li1 ;
+        RECT 3.940 75.700 4.650 76.090 ;
+      LAYER mcon ;
+        RECT 4.020 75.760 4.570 76.040 ;
+      LAYER met1 ;
+        RECT 3.940 75.700 4.650 76.090 ;
+      LAYER via ;
+        RECT 4.020 75.760 4.570 76.040 ;
+      LAYER met2 ;
+        RECT 3.940 75.700 4.650 76.090 ;
+      LAYER via2 ;
+        RECT 4.020 75.760 4.570 76.040 ;
+      LAYER met3 ;
+        RECT 0.240 76.250 7.780 77.060 ;
+        RECT 3.940 75.700 4.650 76.250 ;
+      LAYER via3 ;
+        RECT 5.450 76.310 7.020 76.990 ;
+      LAYER met4 ;
+        RECT 5.340 48.900 7.130 106.490 ;
+    END
+  END VDD
+END scboundary
+END LIBRARY
+
