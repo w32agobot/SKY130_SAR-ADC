@@ -1,11 +1,12 @@
 gds read adc_top
+load adc_top
 snap internal
 select top cell 
 flatten -dotoplabels adc_top_flat
 load adc_top_flat
 cellname delete adc_top
 cellname rename adc_top_flat adc_top
-box 680 1166 85576 79398
+box 206 1166 84215 79431
 erase label
 box 50560 54060 50560 54060
 label ctopp

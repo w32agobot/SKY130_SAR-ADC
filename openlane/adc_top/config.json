@@ -13,31 +13,35 @@
         "dir::macros/blackbox/adc_array_matrix_12bit.v",
         "dir::macros/blackbox/adc_clkgen_with_edgedetect.v",
         "dir::macros/blackbox/adc_comp_latch.v",
-        "dir::macros/blackbox/adc_vcm_generator.v"
+        "dir::macros/blackbox/adc_vcm_generator.v",
+        "dir::macros/blackbox/scboundary.v"
         ],
     "EXTRA_LEFS": [
         "dir::../../lef/adc_array_matrix_12bit.lef",
         "dir::../../lef/adc_clkgen_with_edgedetect.lef",
         "dir::../../lef/adc_comp_latch.lef",
-        "dir::../../lef/adc_vcm_generator.lef"
+        "dir::../../lef/adc_vcm_generator.lef",
+        "dir::../../lef/scboundary.lef"
         ],
     "EXTRA_GDS_FILES": [
         "dir::../../gds/adc_array_matrix_12bit.gds",
         "dir::../../gds/adc_clkgen_with_edgedetect.gds",
         "dir::../../gds/adc_comp_latch.gds",
-        "dir::../../gds/adc_vcm_generator.gds"
+        "dir::../../gds/adc_vcm_generator.gds",
+        "dir::../../gds/scboundary.gds"
         ],
     "FP_PIN_ORDER_CFG": "dir::pin_order.cfg",
     "MACRO_PLACEMENT_CFG": "dir::macro_placement.cfg",
+    "FP_ENDCAP_CELL":"sky130_fd_sc_hd__tapvpwrvgnd_1",
     "PDN_CFG": "dir::pdn_cfg.tcl",
     "CLOCK_TREE_SYNTH": 1,
     "CLOCK_PORT": "clk_dig_dummy",
     "CLOCK_NET": "ref::$CLOCK_PORT",
     "CLOCK_PERIOD": 20,
     "RSZ_DONT_TOUCH_RX": ["analog"],
-    "SYNTH_STRATEGY": "DELAY 4",
+    "SYNTH_STRATEGY": "DELAY 2",
     "FP_SIZING": "absolute",
-    "DIE_AREA": [0, 0, 432, 403],
+    "DIE_AREA": [0, 0, 423, 403],
     "FP_PDN_VOFFSET": 12,
     "FP_PDN_VPITCH": 24,
     "FP_PDN_HOFFSET": 12,
@@ -46,7 +50,7 @@
     "FP_TAP_VERTICAL_HALO": 3,
     "FP_PDN_HORIZONTAL_HALO": 3,
     "FP_PDN_VERTICAL_HALO": 3,
-    "GRT_ADJUSTMENT": 0.30,
+    "GRT_ADJUSTMENT": 0.15,
     "GRT_OBS": [
         "met1 287 0 302 130, ",
         "met2 287 0 302 130, ",
@@ -65,8 +69,6 @@
         "met3 302 9 404 171, ",
         "met4 302 9 404 171"
     ],
-    "Comment": "Set -overflow 0.17 in a custom gpl.tcl to prevent cells from being placed near the right stdcell-grid of the cell",
-    "SET_CUSTOM_GPL_OVERFLOW": true,
     "SYNTH_READ_BLACKBOX_LIB": true,
     "SYNTH_MAX_FANOUT": 6,
     "CLOCK_BUFFER_FANOUT": 16,
@@ -79,17 +81,20 @@
     "GND_NETS": ["VSS"],
     "SYNTH_USE_PG_PINS_DEFINES": "USE_POWER_PINS",
     "PL_BASIC_PLACEMENT": 0,
-    "PL_TARGET_DENSITY": 0.46,
+    "PL_TARGET_DENSITY": 0.44,
     "PL_ROUTABILITY_DRIVEN": 1,
     "PL_TIME_DRIVEN": 0,
-    "GRT_ALLOW_CONGESTION": 0,
+    "GRT_ALLOW_CONGESTION": 1,
     "ROUTING_CORES": 12,
     "MAGIC_EXT_USE_GDS": 1,
+    "RUN_LVS": true,
     "FP_PDN_MACRO_HOOKS": [
         "vcm  VDD VSS VDD VSS, ",
         "pmat VDD VSS VDD VSS, ",
         "nmat VDD VSS VDD VSS, ",
         "comp VDD VSS VDD VSS, ",
-        "cgen VDD VSS VDD VSS "
+        "cgen VDD VSS VDD VSS, ",
+        "obstruction1 VDD VSS VDD VSS, ",
+        "obstruction2 VDD VSS VDD VSS "
     ]
 }

@@ -39,7 +39,6 @@ module adc_top(
    output wire [15:0] result_out,    
    output wire conversion_finished_out,
    output wire conversion_finished_osr_out,
-   output wire [15:0] dummypin, 
    input wire clk_dig_dummy
    );
 
@@ -48,9 +47,6 @@ module adc_top(
 // config_1_in[5:3] = Oversampling control
 // config_1_in[9:6] = unused
 wire [5:0] delay_edgedetect_w = config_1_in[15:10];
-
-// Dummy output-pins workaround, for better pin-placement of analog pins
-assign dummypin = 16'd0;
 
 //_linting
 (*keep*)
@@ -267,6 +263,12 @@ adc_vcm_generator vcm (
    `endif
    .clk(clk_vcm)
 );
+
+(*keep*)
+scboundary obstruction1 ();
+(*keep*)
+scboundary obstruction2 ();
+
 endmodule
 
 

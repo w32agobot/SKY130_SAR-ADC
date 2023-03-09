@@ -581,7 +581,7 @@ value="
 *.OPTIONS TIMEINT reltol=1.0e-3 abstol=1e-6
 
 *For problems to 100k unknowns its likely that parallel load serial solve is faster
-.options linsol type=klu
+*.options linsol type=klu
 
 
 .tran 1n 3u uic
