@@ -51,7 +51,7 @@ node="x1.clk_dig
 x1.clk_comp
 start_conv
 conv_finished
-result,result15,result14,result13,result12,resul11,result10,result9,result8,result7,result6,result5,result4,result3,result2,result1,result0"
+result,result15,result14,result13,result12,result11,result10,result9,result8,result7,result6,result5,result4,result3,result2,result1,result0"
 color="9 9 9 9 9"
 dataset=-1
 unitx=1
