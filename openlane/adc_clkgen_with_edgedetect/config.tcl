@@ -24,6 +24,7 @@ set ::env(DESIGN_NAME) adc_clkgen_with_edgedetect
  set ::env(TOP_MARGIN_MULT) 1
  set ::env(LEFT_MARGIN_MULT) 12
  set ::env(RIGHT_MARGIN_MULT) 12
+ set ::env(GRT_ADJUSTMENT) 0.2
 
  # -synth_explore is helpful here
  set ::env(SYNTH_STRATEGY) "DELAY 4"
