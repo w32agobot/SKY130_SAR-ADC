@@ -123,7 +123,7 @@ module adc_core_digital_tb;
     //         b) 1612 0x64C
     //         c)    4 0x004
     //         d)    0 0x000
-    // 20Bit-Sum expected: 0x2870
+    // 16Bit-Sum expected: 0x2870
     // Result = {[13:1],3'b0} -> 00[0010110010101]0+[000]
        comparator_in = 0; //0001 +2048
     #2 comparator_in = 0; //8000 -806

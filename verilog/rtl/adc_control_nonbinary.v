@@ -133,7 +133,7 @@ module adc_control_nonbinary #(parameter MATRIX_BITS = 12, NONBINARY_REDUNDANCY 
    
    wire [MATRIX_BITS-1:0] sar_up   = data_register_r+nonbinary_value_w;
    wire [MATRIX_BITS-1:0] sar_down = data_register_r-nonbinary_value_w;
-   assign next_data_register_w = is_sampling_w | is_holding_result_w  ? 12'd2048 :
+   assign next_data_register_w = is_sampling_w | is_holding_result_w | result_ready_w ? 12'd2048 :
                                  is_averaging_w ? data_register_r :
                                  averaged_comparator_in_w ? sar_up : sar_down ;
    
