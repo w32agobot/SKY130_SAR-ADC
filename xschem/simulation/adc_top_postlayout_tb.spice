@@ -1,4 +1,4 @@
-** sch_path: /foss/designs/SKY130_SAR-ADC_sarfix/xschem/adc_top_postlayout_tb.sch
+** sch_path: /foss/designs/SKY130_SAR-ADC_nopump/xschem/adc_top_postlayout_tb.sch
 **.subckt adc_top_postlayout_tb
 V_VDD_1 VDD GND pwl 0 0 {boot} 1.8
 V_VCM_2 vmid GND pwl 0 0 {boot} 0.9
@@ -72,17 +72,17 @@ V34 col_mode GND pwl 0 0 {boot} {colmode}
 .param dlyctrl = 1.8
 
 * delay 1-3
-.param bit0 = 0
-.param bit1 = 1.8
+.param bit0 = 1.8
+.param bit1 = 0
 .param bit2 = 0
 .param bit3 = 0
 .param bit4 = 0
 
 * edgedetect pulse
 .param ed_bit0 = 0
-.param ed_bit1 = 0
+.param ed_bit1 = 1.8
 .param ed_bit2 = 1.8
-.param ed_bit3 = 1.8
+.param ed_bit3 = 0
 .param ed_bit4 = 0
 .param ed_bit5 = 0
 
@@ -114,6 +114,8 @@ V34 col_mode GND pwl 0 0 {boot} {colmode}
 ****************
 
 *.options linsol type=klu
+*.OPTIONS TIMEINT BREAKPOINTS=610us,611us,612us
+*.OPTIONS TIMEINT ABSTOL=1e-6 RELTOL=1e-3
 .tran 1n 620u uic
 
 .print tran format=raw file=adc_top_postlayout_tb.raw         v(x1:ctopp) v(x1:ctopn) v(x1:vcm) v(x1:clk_ena)

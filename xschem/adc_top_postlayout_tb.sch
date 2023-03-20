@@ -521,17 +521,17 @@ value="
 .param dlyctrl = 1.8
 
 * delay 1-3
-.param bit0 = 0
-.param bit1 = 1.8
+.param bit0 = 1.8
+.param bit1 = 0
 .param bit2 = 0
 .param bit3 = 0
 .param bit4 = 0
 
 * edgedetect pulse
 .param ed_bit0 = 0
-.param ed_bit1 = 0
+.param ed_bit1 = 1.8
 .param ed_bit2 = 1.8
-.param ed_bit3 = 1.8
+.param ed_bit3 = 0
 .param ed_bit4 = 0
 .param ed_bit5 = 0
 
@@ -562,8 +562,9 @@ value="
 * XYCE Simulation Control
 ****************
 
-.options linsol type=klu
-.OPTIONS TIMEINT BREAKPOINTS=610us,611us,612us
+*.options linsol type=klu
+*.OPTIONS TIMEINT BREAKPOINTS=610us,611us,612us
+.OPTIONS TIMEINT ABSTOL=1e-6 RELTOL=1e-3
 .tran 1n 620u uic
 
 .print tran format=raw file=adc_top_postlayout_tb.raw         v(x1:ctopp) v(x1:ctopn) v(x1:vcm) v(x1:clk_ena) v(x1:ndecision_finish) v(x1:comp_latch) v(VDD) v(rst_n) v(start_conv) v(clk_vcm) v(inp) v(inn) v(conv_finished) v(conv_finished_osr) v(x1:clk_dig) v(x1:clk_comp) v(result*) v(dlyctrl*) v(avg_mode*) v(osr_mode*) v(en_dly_contr) i(v_vdd_1) \{((v(result0)*0.0625+v(result1)*0.125+v(result2)*0.25+v(result3)*0.5+v(result4)+v(result5)*2+v(result6)*4+v(result7)*8+v(result8)*16+v(result9)*32+v(result10)*64+v(result11)*128+v(result12)*256+v(result13)*512+v(result14)*1024+v(result15)*2048)-2048*1.8)/2048\} 
