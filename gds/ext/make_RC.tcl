@@ -1,11 +1,12 @@
 gds read adc_top
-select top cell 
+load adc_top
 snap internal
-flatten adc_top_flat
+select top cell 
+flatten -dotoplabels adc_top_flat
 load adc_top_flat
 cellname delete adc_top
 cellname rename adc_top_flat adc_top
-box 680 1166 85576 79398
+box 206 1166 84215 79431
 erase label
 box 50560 54060 50560 54060
 label ctopp
@@ -47,7 +48,7 @@ ext2sim
 extresist tolerance 10 
 extresist 
 ext2spice lvs 
-ext2spice cthresh 0.01
+ext2spice cthresh 0.1
 ext2spice extresist on
 ext2spice resistor tee on
 ext2spice -F
