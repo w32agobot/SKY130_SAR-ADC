@@ -59,40 +59,22 @@ module adc_clkgen_with_edgedetect(
 
    // Output buffers for sample-signal-buffeing 
    // with delay, so matrix-sample is switched after gate is disabled
-   wire sample_p_1, sample_p_2, sample_p_3, sample_p_4;
-   wire sample_n_1, sample_n_2, sample_n_3, sample_n_4;
-   wire nsample_p_1, nsample_p_2, nsample_p_3, nsample_p_4;
-   wire nsample_n_1, nsample_n_2, nsample_n_3, nsample_n_4;
+   wire sample_p_1;
+   wire sample_n_1;
+   wire nsample_p_1;
+   wire nsample_n_1;
 
-   //sample enable 1st delay stage
-   sky130_fd_sc_hd__dlymetal6s6s_1 sampledly01 (.A(sample_p_in),.X(sample_p_1));
-   sky130_fd_sc_hd__dlymetal6s6s_1 sampledly02 (.A(sample_n_in),.X(sample_n_1));
-   sky130_fd_sc_hd__dlymetal6s6s_1 sampledly03 (.A(nsample_p_in),.X(nsample_p_1));
-   sky130_fd_sc_hd__dlymetal6s6s_1 sampledly04 (.A(nsample_n_in),.X(nsample_n_1));
+   //sample enable delay stage
+   sky130_mm_sc_hd_dlyPoly5ns delay_sample_p11 (.in(sample_p_in), .out(sample_p_1));
+   sky130_mm_sc_hd_dlyPoly5ns delay_sample_n12 (.in(sample_n_in), .out(sample_n_1));
+   sky130_mm_sc_hd_dlyPoly5ns delay_sample_p13 (.in(nsample_p_in), .out(nsample_p_1));
+   sky130_mm_sc_hd_dlyPoly5ns delay_sample_n14 (.in(nsample_n_in), .out(nsample_n_1));
    
-   //sample enable 2nd delay stage
-   sky130_fd_sc_hd__dlymetal6s6s_1 sampledly11 (.A(sample_p_1),.X(sample_p_2));
-   sky130_fd_sc_hd__dlymetal6s6s_1 sampledly12 (.A(sample_n_1),.X(sample_n_2));
-   sky130_fd_sc_hd__dlymetal6s6s_1 sampledly13 (.A(nsample_p_1),.X(nsample_p_2));
-   sky130_fd_sc_hd__dlymetal6s6s_1 sampledly14 (.A(nsample_n_1),.X(nsample_n_2));
-   
-   //sample enable 3rd delay stage
-   sky130_fd_sc_hd__dlymetal6s6s_1 sampledly21 (.A(sample_p_2),.X(sample_p_3));
-   sky130_fd_sc_hd__dlymetal6s6s_1 sampledly22 (.A(sample_n_2),.X(sample_n_3));
-   sky130_fd_sc_hd__dlymetal6s6s_1 sampledly23 (.A(nsample_p_2),.X(nsample_p_3));
-   sky130_fd_sc_hd__dlymetal6s6s_1 sampledly24 (.A(nsample_n_2),.X(nsample_n_3));
-
-   //sample enable 4th delay stage
-   sky130_fd_sc_hd__dlymetal6s6s_1 sampledly31 (.A(sample_p_3),.X(sample_p_4));
-   sky130_fd_sc_hd__dlymetal6s6s_1 sampledly32 (.A(sample_n_3),.X(sample_n_4));
-   sky130_fd_sc_hd__dlymetal6s6s_1 sampledly33 (.A(nsample_p_3),.X(nsample_p_4));
-   sky130_fd_sc_hd__dlymetal6s6s_1 sampledly34 (.A(nsample_n_3),.X(nsample_n_4));
-
    //sample enable output stage
-   sky130_fd_sc_hd__buf_4 outbuf_3 (.A(sample_p_4),.X(sample_p_out));
-   sky130_fd_sc_hd__buf_4 outbuf_4 (.A(sample_n_4),.X(sample_n_out));
-   sky130_fd_sc_hd__buf_4 outbuf_5 (.A(nsample_p_4),.X(nsample_p_out));
-   sky130_fd_sc_hd__buf_4 outbuf_6 (.A(nsample_n_4),.X(nsample_n_out));
+   sky130_fd_sc_hd__buf_4 outbuf_3 (.A(sample_p_1),.X(sample_p_out));
+   sky130_fd_sc_hd__buf_4 outbuf_4 (.A(sample_n_1),.X(sample_n_out));
+   sky130_fd_sc_hd__buf_4 outbuf_5 (.A(nsample_p_1),.X(nsample_p_out));
+   sky130_fd_sc_hd__buf_4 outbuf_6 (.A(nsample_n_1),.X(nsample_n_out));
 
    
 
