@@ -1,12 +1,12 @@
-** sch_path: /foss/designs/SKY130_SAR-ADC_nopump/xschem/adc_top_postlayout_tb.sch
+** sch_path: /foss/designs/SKY130_SAR-ADC_dlyincrease/xschem/adc_top_postlayout_tb.sch
 **.subckt adc_top_postlayout_tb
 V_VDD_1 VDD GND pwl 0 0 {boot} 1.8
 V_VCM_2 vmid GND pwl 0 0 {boot} 0.9
 V_VCM_1 inp vmid pwl 0 0 {boot} {vdiff/2}
 V_VCM_3 vmid inn pwl 0 0 {boot} {vdiff/2}
 V_VCM clk_vcm GND 0 pulse(0 1.8 {0.5/fclk} 1n 1n {0.5/fclk} {1/fclk})
-V1 rst_n GND pwl 0 0 600025n 0 600026n 1.8
-V31 start_conv GND pwl 0 0 610025n 0 610026n 1.8 610525n 1.8 610526n 0
+V1 rst_n GND pwl 0 0 390025n 0 390026n 1.8
+V31 start_conv GND pwl 0 0 400025n 0 400026n 1.8 400525n 1.8 400526n 0
 V4 dlyctrl1_4 GND pwl 0 0 {boot} {bit4}
 V5 dlyctrl1_3 GND pwl 0 0 {boot} {bit3}
 V6 dlyctrl1_2 GND pwl 0 0 {boot} {bit2}
@@ -116,7 +116,7 @@ V34 col_mode GND pwl 0 0 {boot} {colmode}
 *.options linsol type=klu
 *.OPTIONS TIMEINT BREAKPOINTS=610us,611us,612us
 *.OPTIONS TIMEINT ABSTOL=1e-6 RELTOL=1e-3
-.tran 1n 620u uic
+.tran 1n 420u uic
 
 .print tran format=raw file=adc_top_postlayout_tb.raw         v(x1:ctopp) v(x1:ctopn) v(x1:vcm) v(x1:clk_ena)
 + v(x1:ndecision_finish) v(x1:comp_latch) v(VDD) v(rst_n) v(start_conv) v(clk_vcm) v(inp) v(inn) v(conv_finished)

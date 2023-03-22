@@ -432,8 +432,8 @@ C {devices/gnd.sym} 720 -130 0 0 {name=l3 lab=GND}
 C {devices/lab_wire.sym} 1540 -970 0 1 {name=l3 sig_type=std_logic lab=conv_finished}
 C {devices/lab_wire.sym} 950 -890 0 1 {name=l3 sig_type=std_logic lab=inp}
 C {devices/lab_wire.sym} 1070 -890 0 0 {name=l3 sig_type=std_logic lab=inn}
-C {devices/vsource.sym} 720 -290 0 0 {name=V1 value="pwl 0 0 600025n 0 600026n 1.8"}
-C {devices/vsource.sym} 720 -410 0 0 {name=V31 value="pwl 0 0 610025n 0 610026n 1.8 610525n 1.8 610526n 0"}
+C {devices/vsource.sym} 720 -290 0 0 {name=V1 value="pwl 0 0 390025n 0 390026n 1.8"}
+C {devices/vsource.sym} 720 -410 0 0 {name=V31 value="pwl 0 0 400025n 0 400026n 1.8 400525n 1.8 400526n 0"}
 C {devices/gnd.sym} 720 -370 0 0 {name=l3 lab=GND}
 C {devices/gnd.sym} 720 -250 0 0 {name=l3 lab=GND}
 C {devices/lab_wire.sym} 760 -440 0 1 {name=l3 sig_type=std_logic lab=start_conv}
@@ -564,8 +564,8 @@ value="
 
 *.options linsol type=klu
 *.OPTIONS TIMEINT BREAKPOINTS=610us,611us,612us
-.OPTIONS TIMEINT ABSTOL=1e-6 RELTOL=1e-3
-.tran 1n 620u uic
+*.OPTIONS TIMEINT ABSTOL=1e-6 RELTOL=1e-3
+.tran 1n 420u uic
 
 .print tran format=raw file=adc_top_postlayout_tb.raw         v(x1:ctopp) v(x1:ctopn) v(x1:vcm) v(x1:clk_ena) v(x1:ndecision_finish) v(x1:comp_latch) v(VDD) v(rst_n) v(start_conv) v(clk_vcm) v(inp) v(inn) v(conv_finished) v(conv_finished_osr) v(x1:clk_dig) v(x1:clk_comp) v(result*) v(dlyctrl*) v(avg_mode*) v(osr_mode*) v(en_dly_contr) i(v_vdd_1) \{((v(result0)*0.0625+v(result1)*0.125+v(result2)*0.25+v(result3)*0.5+v(result4)+v(result5)*2+v(result6)*4+v(result7)*8+v(result8)*16+v(result9)*32+v(result10)*64+v(result11)*128+v(result12)*256+v(result13)*512+v(result14)*1024+v(result15)*2048)-2048*1.8)/2048\} 
 .print tran format=std file=adc_top_postlayout_tb.ascii       v(x1:ctopp) v(x1:ctopn) v(x1:vcm) v(x1:clk_ena) v(x1:ndecision_finish) v(x1:comp_latch) v(VDD) v(rst_n) v(start_conv) v(clk_vcm) v(inp) v(inn) v(conv_finished) v(conv_finished_osr) v(x1:clk_dig) v(x1:clk_comp) v(result*) v(dlyctrl*) v(avg_mode*) v(osr_mode*) v(en_dly_contr) i(v_vdd_1) \{((v(result0)*0.0625+v(result1)*0.125+v(result2)*0.25+v(result3)*0.5+v(result4)+v(result5)*2+v(result6)*4+v(result7)*8+v(result8)*16+v(result9)*32+v(result10)*64+v(result11)*128+v(result12)*256+v(result13)*512+v(result14)*1024+v(result15)*2048)-2048*1.8)/2048\}

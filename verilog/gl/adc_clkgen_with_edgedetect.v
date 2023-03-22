@@ -34,12 +34,8 @@ module adc_clkgen_with_edgedetect(
     // integration of additional buffers for sample matrix
     input wire sample_p_in,           
     input wire sample_n_in,
-    input wire nsample_p_in,
-    input wire nsample_n_in,
     output wire sample_p_out,
-    output wire sample_n_out,
-    output wire nsample_p_out,
-    output wire nsample_n_out
+    output wire sample_n_out
 );
    wire enable_loop_w;
    wire ena_in_buffered_w;
@@ -61,20 +57,14 @@ module adc_clkgen_with_edgedetect(
    // with delay, so matrix-sample is switched after gate is disabled
    wire sample_p_1;
    wire sample_n_1;
-   wire nsample_p_1;
-   wire nsample_n_1;
 
    //sample enable delay stage
    sky130_mm_sc_hd_dlyPoly5ns delay_sample_p11 (.in(sample_p_in), .out(sample_p_1));
    sky130_mm_sc_hd_dlyPoly5ns delay_sample_n12 (.in(sample_n_in), .out(sample_n_1));
-   sky130_mm_sc_hd_dlyPoly5ns delay_sample_p13 (.in(nsample_p_in), .out(nsample_p_1));
-   sky130_mm_sc_hd_dlyPoly5ns delay_sample_n14 (.in(nsample_n_in), .out(nsample_n_1));
    
    //sample enable output stage
    sky130_fd_sc_hd__buf_4 outbuf_3 (.A(sample_p_1),.X(sample_p_out));
    sky130_fd_sc_hd__buf_4 outbuf_4 (.A(sample_n_1),.X(sample_n_out));
-   sky130_fd_sc_hd__buf_4 outbuf_5 (.A(nsample_p_1),.X(nsample_p_out));
-   sky130_fd_sc_hd__buf_4 outbuf_6 (.A(nsample_n_1),.X(nsample_n_out));
 
    
 
