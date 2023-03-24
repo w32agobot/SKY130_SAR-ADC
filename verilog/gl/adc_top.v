@@ -135,24 +135,7 @@ adc_clkgen_with_edgedetect cgen (
 
 wire clk_dig_cgen;    
 wire clk_comp_cgen;  
-wire sample_pmatrix_cgen, sample_pmatrix_cgen_a, sample_pmatrix_cgen_b, sample_pmatrix_buf, sample_pmatrix_n_buf;
-wire sample_nmatrix_cgen, sample_nmatrix_cgen_a, sample_nmatrix_cgen_b, sample_nmatrix_buf, sample_nmatrix_n_buf;
-//
-// sample  --- INV --- INV --- INVBUF --- nsample_buf
-//                  \
-//                   --------- INVBUF --- sample_buf
-
-sky130_fd_sc_hd__inv_1 samplesw_gen_1p (.A(sample_pmatrix_cgen),.Y(sample_pmatrix_cgen_a));
-sky130_fd_sc_hd__inv_1 samplesw_gen_2p (.A(sample_pmatrix_cgen_a),.Y(sample_pmatrix_cgen_b));
-sky130_fd_sc_hd__bufinv_8 samplesw_gen_3p (.A(sample_pmatrix_cgen_a),.Y(sample_pmatrix_buf));
-sky130_fd_sc_hd__bufinv_8 samplesw_gen_4p (.A(sample_pmatrix_cgen_b),.Y(sample_pmatrix_n_buf));
-
-
-sky130_fd_sc_hd__inv_1 samplesw_gen_1n (.A(sample_nmatrix_cgen),.Y(sample_nmatrix_cgen_a));
-sky130_fd_sc_hd__inv_1 samplesw_gen_2n (.A(sample_nmatrix_cgen_a),.Y(sample_nmatrix_cgen_b));
-sky130_fd_sc_hd__bufinv_8 samplesw_gen_3n (.A(sample_nmatrix_cgen_a),.Y(sample_nmatrix_buf));
-sky130_fd_sc_hd__bufinv_8 samplesw_gen_4n (.A(sample_nmatrix_cgen_b),.Y(sample_nmatrix_n_buf));
-
+wire sample_pmatrix_cgen, sample_nmatrix_cgen;
   
 //*******************************************
 //      Matrix P-side
@@ -164,8 +147,8 @@ adc_array_matrix_12bit pmat (
       .VDD(VDD),	// User area 1.8V supply
       .VSS(VSS),	// User area ground
    `endif
-   .sample(sample_pmatrix_buf),
-   .sample_n(sample_pmatrix_n_buf),
+   .sample(sample_pmatrix_cgen),
+   .sample_n(~sample_pmatrix_cgen),
    .row_n(pmatrix_row_core_n_buffered),
    .rowon_n(pmatrix_rowon_core_n_buffered),
    .rowoff_n(pmatrix_rowoff_core_n),
@@ -194,8 +177,8 @@ adc_array_matrix_12bit nmat (
       .VDD(VDD),	// User area 1.8V supply
       .VSS(VSS),	// User area ground
    `endif
-   .sample(sample_nmatrix_buf),
-   .sample_n(sample_nmatrix_n_buf),
+   .sample(sample_nmatrix_cgen),
+   .sample_n(~sample_nmatrix_cgen),
    .row_n(nmatrix_row_core_n_buffered),
    .rowon_n(nmatrix_rowon_core_n_buffered),
    .rowoff_n(nmatrix_rowoff_core_n),

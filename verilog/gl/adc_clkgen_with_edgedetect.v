@@ -50,8 +50,8 @@ module adc_clkgen_with_edgedetect(
    sky130_fd_sc_hd__buf_1 inbuf_3 (.A(ndecision_finish_in),.X(ndecision_finish_buffered_w));
    
    //Output buffers
-   sky130_fd_sc_hd__buf_4 outbuf_1 (.A(clk_dig_unbuffered_w),.X(clk_dig_out));
-   sky130_fd_sc_hd__buf_4 outbuf_2 (.A(clk_comp_unbuffered_w),.X(clk_comp_out));
+   sky130_fd_sc_hd__bufbuf_8 outbuf_1 (.A(clk_dig_unbuffered_w),.X(clk_dig_out));
+   sky130_fd_sc_hd__bufbuf_8 outbuf_2 (.A(clk_comp_unbuffered_w),.X(clk_comp_out));
 
    // Output buffers for sample-signal-buffeing 
    // with delay, so matrix-sample is switched after gate is disabled
@@ -63,8 +63,8 @@ module adc_clkgen_with_edgedetect(
    sky130_mm_sc_hd_dlyPoly5ns delay_sample_n12 (.in(sample_n_in), .out(sample_n_1));
    
    //sample enable output stage
-   sky130_fd_sc_hd__buf_4 outbuf_3 (.A(sample_p_1),.X(sample_p_out));
-   sky130_fd_sc_hd__buf_4 outbuf_4 (.A(sample_n_1),.X(sample_n_out));
+   sky130_fd_sc_hd__bufbuf_8 outbuf_3 (.A(sample_p_1),.X(sample_p_out));
+   sky130_fd_sc_hd__bufbuf_8 outbuf_4 (.A(sample_n_1),.X(sample_n_out));
 
    
 
