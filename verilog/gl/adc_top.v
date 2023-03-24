@@ -129,18 +129,13 @@ adc_clkgen_with_edgedetect cgen (
    .dlycontrol4_in(delay_edgedetect_w),
    .sample_p_in(sample_matrix_core),
    .sample_n_in(sample_matrix_core),
-   .nsample_p_in(sample_matrix_core_n),
-   .nsample_n_in(sample_matrix_core_n),
    .sample_p_out(sample_pmatrix_cgen),
-   .sample_n_out(sample_nmatrix_cgen),
-   .nsample_p_out(sample_pmatrix_cgen_n),
-   .nsample_n_out(sample_nmatrix_cgen_n)
+   .sample_n_out(sample_nmatrix_cgen)
    );
 
 wire clk_dig_cgen;    
 wire clk_comp_cgen;  
-wire sample_pmatrix_cgen, sample_pmatrix_cgen_n;
-wire sample_nmatrix_cgen, sample_nmatrix_cgen_n;
+wire sample_pmatrix_cgen, sample_nmatrix_cgen;
   
 //*******************************************
 //      Matrix P-side
@@ -153,7 +148,7 @@ adc_array_matrix_12bit pmat (
       .VSS(VSS),	// User area ground
    `endif
    .sample(sample_pmatrix_cgen),
-   .sample_n(sample_pmatrix_cgen_n),
+   .sample_n(~sample_pmatrix_cgen),
    .row_n(pmatrix_row_core_n_buffered),
    .rowon_n(pmatrix_rowon_core_n_buffered),
    .rowoff_n(pmatrix_rowoff_core_n),
@@ -183,7 +178,7 @@ adc_array_matrix_12bit nmat (
       .VSS(VSS),	// User area ground
    `endif
    .sample(sample_nmatrix_cgen),
-   .sample_n(sample_nmatrix_cgen_n),
+   .sample_n(~sample_nmatrix_cgen),
    .row_n(nmatrix_row_core_n_buffered),
    .rowon_n(nmatrix_rowon_core_n_buffered),
    .rowoff_n(nmatrix_rowoff_core_n),

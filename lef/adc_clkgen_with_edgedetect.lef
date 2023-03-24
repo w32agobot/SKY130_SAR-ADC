@@ -263,68 +263,36 @@ MACRO adc_clkgen_with_edgedetect
         RECT 167.000 44.240 171.000 44.840 ;
     END
   END ndecision_finish_in
-  PIN nsample_n_in
-    DIRECTION INPUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER met2 ;
-        RECT 106.810 0.000 107.090 4.000 ;
-    END
-  END nsample_n_in
-  PIN nsample_n_out
-    DIRECTION OUTPUT TRISTATE ;
-    USE SIGNAL ;
-    PORT
-      LAYER met2 ;
-        RECT 149.590 0.000 149.870 4.000 ;
-    END
-  END nsample_n_out
-  PIN nsample_p_in
-    DIRECTION INPUT ;
-    USE SIGNAL ;
-    PORT
-      LAYER met2 ;
-        RECT 106.810 56.000 107.090 60.000 ;
-    END
-  END nsample_p_in
-  PIN nsample_p_out
-    DIRECTION OUTPUT TRISTATE ;
-    USE SIGNAL ;
-    PORT
-      LAYER met2 ;
-        RECT 149.590 56.000 149.870 60.000 ;
-    END
-  END nsample_p_out
   PIN sample_n_in
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
-      LAYER met2 ;
-        RECT 21.250 0.000 21.530 4.000 ;
+      LAYER met3 ;
+        RECT 0.000 0.720 4.000 1.320 ;
     END
   END sample_n_in
   PIN sample_n_out
     DIRECTION OUTPUT TRISTATE ;
     USE SIGNAL ;
     PORT
-      LAYER met2 ;
-        RECT 64.030 0.000 64.310 4.000 ;
+      LAYER met3 ;
+        RECT 0.000 2.760 4.000 3.360 ;
     END
   END sample_n_out
   PIN sample_p_in
     DIRECTION INPUT ;
     USE SIGNAL ;
     PORT
-      LAYER met2 ;
-        RECT 21.250 56.000 21.530 60.000 ;
+      LAYER met3 ;
+        RECT 0.000 55.800 4.000 56.400 ;
     END
   END sample_p_in
   PIN sample_p_out
     DIRECTION OUTPUT TRISTATE ;
     USE SIGNAL ;
     PORT
-      LAYER met2 ;
-        RECT 64.030 56.000 64.310 60.000 ;
+      LAYER met3 ;
+        RECT 0.000 57.840 4.000 58.440 ;
     END
   END sample_p_out
   PIN start_conv_in
@@ -341,37 +309,21 @@ MACRO adc_clkgen_with_edgedetect
       LAYER met1 ;
         RECT 4.670 0.040 165.140 59.800 ;
       LAYER met2 ;
-        RECT 4.690 55.720 20.970 59.830 ;
-        RECT 21.810 57.640 63.750 59.830 ;
-        RECT 21.810 55.720 54.440 57.640 ;
-        RECT 4.690 4.280 54.440 55.720 ;
-        RECT 4.690 0.010 20.970 4.280 ;
-        RECT 21.810 2.200 54.440 4.280 ;
+        RECT 4.690 57.640 160.900 59.830 ;
+        RECT 4.690 2.200 54.440 57.640 ;
         RECT 56.600 2.200 57.740 57.640 ;
-        RECT 59.900 55.720 63.750 57.640 ;
-        RECT 64.590 57.640 106.530 59.830 ;
-        RECT 107.370 57.640 149.310 59.830 ;
-        RECT 64.590 55.720 104.440 57.640 ;
-        RECT 107.370 55.720 107.740 57.640 ;
-        RECT 59.900 4.280 104.440 55.720 ;
-        RECT 106.600 4.280 107.740 55.720 ;
-        RECT 59.900 2.200 63.750 4.280 ;
-        RECT 21.810 0.010 63.750 2.200 ;
-        RECT 64.590 2.200 104.440 4.280 ;
-        RECT 107.370 2.200 107.740 4.280 ;
-        RECT 109.900 55.720 149.310 57.640 ;
-        RECT 150.150 57.640 162.280 59.830 ;
-        RECT 150.150 55.720 154.440 57.640 ;
-        RECT 109.900 4.280 154.440 55.720 ;
-        RECT 109.900 2.200 149.310 4.280 ;
-        RECT 64.590 0.010 106.530 2.200 ;
-        RECT 107.370 0.010 149.310 2.200 ;
-        RECT 150.150 2.200 154.440 4.280 ;
+        RECT 59.900 2.200 104.440 57.640 ;
+        RECT 106.600 2.200 107.740 57.640 ;
+        RECT 109.900 2.200 154.440 57.640 ;
         RECT 156.600 2.200 157.740 57.640 ;
-        RECT 159.900 2.200 162.280 57.640 ;
-        RECT 150.150 0.010 162.280 2.200 ;
+        RECT 159.900 2.200 160.900 57.640 ;
+        RECT 4.690 0.010 160.900 2.200 ;
       LAYER met3 ;
-        RECT 3.990 54.760 167.000 59.665 ;
+        RECT 3.990 58.840 167.000 59.665 ;
+        RECT 4.400 57.440 167.000 58.840 ;
+        RECT 3.990 56.800 167.000 57.440 ;
+        RECT 4.400 55.400 167.000 56.800 ;
+        RECT 3.990 54.760 167.000 55.400 ;
         RECT 4.400 53.360 167.000 54.760 ;
         RECT 3.990 52.720 167.000 53.360 ;
         RECT 4.400 51.320 167.000 52.720 ;
@@ -437,7 +389,11 @@ MACRO adc_clkgen_with_edgedetect
         RECT 4.400 6.440 167.000 7.840 ;
         RECT 3.990 5.800 167.000 6.440 ;
         RECT 4.400 4.400 167.000 5.800 ;
-        RECT 3.990 0.175 167.000 4.400 ;
+        RECT 3.990 3.760 167.000 4.400 ;
+        RECT 4.400 2.360 167.000 3.760 ;
+        RECT 3.990 1.720 167.000 2.360 ;
+        RECT 4.400 0.320 167.000 1.720 ;
+        RECT 3.990 0.175 167.000 0.320 ;
   END
 END adc_clkgen_with_edgedetect
 END LIBRARY

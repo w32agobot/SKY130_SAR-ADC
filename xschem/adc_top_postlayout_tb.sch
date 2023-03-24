@@ -432,8 +432,12 @@ C {devices/gnd.sym} 720 -130 0 0 {name=l3 lab=GND}
 C {devices/lab_wire.sym} 1540 -970 0 1 {name=l3 sig_type=std_logic lab=conv_finished}
 C {devices/lab_wire.sym} 950 -890 0 1 {name=l3 sig_type=std_logic lab=inp}
 C {devices/lab_wire.sym} 1070 -890 0 0 {name=l3 sig_type=std_logic lab=inn}
-C {devices/vsource.sym} 720 -290 0 0 {name=V1 value="pwl 0 0 600025n 0 600026n 1.8"}
-C {devices/vsource.sym} 720 -410 0 0 {name=V31 value="pwl 0 0 610025n 0 610026n 1.8 610525n 1.8 610526n 0"}
+C {devices/vsource.sym} 720 -290 0 0 {name=V1 value="pwl 0 0 390025n 0 390026n 1.8"}
+C {devices/vsource.sym} 720 -410 0 0 {name=V31 value="pwl 0 0 
++ 400025n 0 400026n 1.8 400525n 1.8 400526n 0   
++ 401300n 0 401326n 1.8 401825n 1.8 401826n 0   
++ 402600n 0 402626n 1.8 403125n 1.8 403126n 0    
++ 403900n 0 403926n 1.8 404425n 1.8 404426n 0 "}
 C {devices/gnd.sym} 720 -370 0 0 {name=l3 lab=GND}
 C {devices/gnd.sym} 720 -250 0 0 {name=l3 lab=GND}
 C {devices/lab_wire.sym} 760 -440 0 1 {name=l3 sig_type=std_logic lab=start_conv}
@@ -521,31 +525,31 @@ value="
 .param dlyctrl = 1.8
 
 * delay 1-3
-.param bit0 = 0
-.param bit1 = 1.8
+.param bit0 = 1.8
+.param bit1 = 0
 .param bit2 = 0
 .param bit3 = 0
 .param bit4 = 0
 
 * edgedetect pulse
 .param ed_bit0 = 0
-.param ed_bit1 = 0
+.param ed_bit1 = 1.8
 .param ed_bit2 = 1.8
-.param ed_bit3 = 1.8
+.param ed_bit3 = 0
 .param ed_bit4 = 0
 .param ed_bit5 = 0
 
 ****************
 * Averaging Config
 ****************
-.param avg0 = 0
+.param avg0 = 1.8
 .param avg1 = 0
 .param avg2 = 0
 
 ****************
 * OSR Config
 ****************
-.param osr0 = 0
+.param osr0 = 1.8
 .param osr1 = 0
 .param osr2 = 0
 
@@ -562,14 +566,15 @@ value="
 * XYCE Simulation Control
 ****************
 
-.options linsol type=klu
-.OPTIONS TIMEINT BREAKPOINTS=610us,611us,612us
-.tran 1n 620u uic
+*.options linsol type=klu
+*.OPTIONS TIMEINT BREAKPOINTS=610us,611us,612us
+.OPTIONS TIMEINT ABSTOL=1e-8 RELTOL=1e-4
+.tran 1n 420u uic
 
-.print tran format=raw file=adc_top_postlayout_tb.raw         v(x1:ctopp) v(x1:ctopn) v(x1:vcm) v(x1:clk_ena) v(x1:ndecision_finish) v(x1:comp_latch) v(VDD) v(rst_n) v(start_conv) v(clk_vcm) v(inp) v(inn) v(conv_finished) v(conv_finished_osr) v(x1:clk_dig) v(x1:clk_comp) v(result*) v(dlyctrl*) v(avg_mode*) v(osr_mode*) v(en_dly_contr) i(v_vdd_1) \{((v(result0)*0.0625+v(result1)*0.125+v(result2)*0.25+v(result3)*0.5+v(result4)+v(result5)*2+v(result6)*4+v(result7)*8+v(result8)*16+v(result9)*32+v(result10)*64+v(result11)*128+v(result12)*256+v(result13)*512+v(result14)*1024+v(result15)*2048)-2048*1.8)/2048\} 
-.print tran format=std file=adc_top_postlayout_tb.ascii       v(x1:ctopp) v(x1:ctopn) v(x1:vcm) v(x1:clk_ena) v(x1:ndecision_finish) v(x1:comp_latch) v(VDD) v(rst_n) v(start_conv) v(clk_vcm) v(inp) v(inn) v(conv_finished) v(conv_finished_osr) v(x1:clk_dig) v(x1:clk_comp) v(result*) v(dlyctrl*) v(avg_mode*) v(osr_mode*) v(en_dly_contr) i(v_vdd_1) \{((v(result0)*0.0625+v(result1)*0.125+v(result2)*0.25+v(result3)*0.5+v(result4)+v(result5)*2+v(result6)*4+v(result7)*8+v(result8)*16+v(result9)*32+v(result10)*64+v(result11)*128+v(result12)*256+v(result13)*512+v(result14)*1024+v(result15)*2048)-2048*1.8)/2048\}
-.print tran format=csv file=adc_top_postlayout_tb.csv         v(x1:ctopp) v(x1:ctopn) v(x1:vcm) v(x1:clk_ena) v(x1:ndecision_finish) v(x1:comp_latch) v(VDD) v(rst_n) v(start_conv) v(clk_vcm) v(inp) v(inn) v(conv_finished) v(conv_finished_osr) v(x1:clk_dig) v(x1:clk_comp) v(result*) v(dlyctrl*) v(avg_mode*) v(osr_mode*) v(en_dly_contr) i(v_vdd_1) \{((v(result0)*0.0625+v(result1)*0.125+v(result2)*0.25+v(result3)*0.5+v(result4)+v(result5)*2+v(result6)*4+v(result7)*8+v(result8)*16+v(result9)*32+v(result10)*64+v(result11)*128+v(result12)*256+v(result13)*512+v(result14)*1024+v(result15)*2048)-2048*1.8)/2048\} 
-.print tran format=gnuplot file=adc_top_postlayout_tb.gnu.dat v(x1:ctopp) v(x1:ctopn) v(x1:vcm) v(x1:clk_ena) v(x1:ndecision_finish) v(x1:comp_latch) v(VDD) v(rst_n) v(start_conv) v(clk_vcm) v(inp) v(inn) v(conv_finished) v(conv_finished_osr) v(x1:clk_dig) v(x1:clk_comp) v(result*) v(dlyctrl*) v(avg_mode*) v(osr_mode*) v(en_dly_contr) i(v_vdd_1) \{((v(result0)*0.0625+v(result1)*0.125+v(result2)*0.25+v(result3)*0.5+v(result4)+v(result5)*2+v(result6)*4+v(result7)*8+v(result8)*16+v(result9)*32+v(result10)*64+v(result11)*128+v(result12)*256+v(result13)*512+v(result14)*1024+v(result15)*2048)-2048*1.8)/2048\} 
+.print tran format=raw file=adc_top_postlayout_tb.raw         v(x1:ctopp) v(x1:ctopn) v(x1:vcm) v(x1:clk_ena) v(x1:ndecision_finish) v(x1:comp_latch) v(VDD) v(rst_n) v(start_conv) v(clk_vcm) v(inp) v(inn) v(conv_finished) v(conv_finished_osr) v(x1:clk_dig) v(x1:clk_comp) v(result*) v(dlyctrl*) v(avg_mode*) v(osr_mode*) v(en_dly_contr) i(v_vdd_1) v(x1:sh_switch_pmat) v(x1:sh_switch_pmat_n) v(x1:sample_pmat) v(x1:sample_pmat_n_int) v(x1:sample_pmat_int)
+.print tran format=std file=adc_top_postlayout_tb.ascii       v(x1:ctopp) v(x1:ctopn) v(x1:vcm) v(x1:clk_ena) v(x1:ndecision_finish) v(x1:comp_latch) v(VDD) v(rst_n) v(start_conv) v(clk_vcm) v(inp) v(inn) v(conv_finished) v(conv_finished_osr) v(x1:clk_dig) v(x1:clk_comp) v(result*) v(dlyctrl*) v(avg_mode*) v(osr_mode*) v(en_dly_contr) i(v_vdd_1) v(x1:sh_switch_pmat) v(x1:sh_switch_pmat_n) v(x1:sample_pmat) v(x1:sample_pmat_n_int) v(x1:sample_pmat_int) 
+.print tran format=csv file=adc_top_postlayout_tb.csv         v(x1:ctopp) v(x1:ctopn) v(x1:vcm) v(x1:clk_ena) v(x1:ndecision_finish) v(x1:comp_latch) v(VDD) v(rst_n) v(start_conv) v(clk_vcm) v(inp) v(inn) v(conv_finished) v(conv_finished_osr) v(x1:clk_dig) v(x1:clk_comp) v(result*) v(dlyctrl*) v(avg_mode*) v(osr_mode*) v(en_dly_contr) i(v_vdd_1)  v(x1:sh_switch_pmat) v(x1:sh_switch_pmat_n) v(x1:sample_pmat) v(x1:sample_pmat_n_int) v(x1:sample_pmat_int)
+.print tran format=gnuplot file=adc_top_postlayout_tb.gnu.dat v(x1:ctopp) v(x1:ctopn) v(x1:vcm) v(x1:clk_ena) v(x1:ndecision_finish) v(x1:comp_latch) v(VDD) v(rst_n) v(start_conv) v(clk_vcm) v(inp) v(inn) v(conv_finished) v(conv_finished_osr) v(x1:clk_dig) v(x1:clk_comp) v(result*) v(dlyctrl*) v(avg_mode*) v(osr_mode*) v(en_dly_contr) i(v_vdd_1)  v(x1:sh_switch_pmat) v(x1:sh_switch_pmat_n) v(x1:sample_pmat) v(x1:sample_pmat_n_int) v(x1:sample_pmat_int)
 
 
 "

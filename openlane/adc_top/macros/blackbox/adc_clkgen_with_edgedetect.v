@@ -17,11 +17,7 @@ module adc_clkgen_with_edgedetect(
    // additional buffers for sample matrix
    input wire sample_p_in,           
    input wire sample_n_in,
-   input wire nsample_p_in,
-   input wire nsample_n_in,
    output wire sample_p_out,
-   output wire sample_n_out,
-   output wire nsample_p_out,
-   output wire nsample_n_out
+   output wire sample_n_out
    );
 endmodule

@@ -9,5 +9,5 @@ plot 'adc_top_postlayout_tb.gnu.dat' using 2:3 title 'ctopp' with lines lw 2 lt 
  '' using 2:15 title 'conv finished' with linespoints, \
  '' using 2:16 title 'conv finished osr' with lines, \
  '' using 2:17 title 'clk dig' with lines
-pause 2
+pause 30
 reread
