@@ -42,6 +42,8 @@ box 50398 54662 50398 54662
 label sh_switch_pmat center metal2
 box 50769 54798 50769 54798
 label sh_switch_pmat_n center metal2
+box 16502 54170 16502 54170
+label sample_pmat center metal2
 box 16369 55509 16369 55509
 label sample_pmat_n center metal2
 box 18891 56670 18891 56670
@@ -52,8 +54,10 @@ box 50400 25447 50401 25452
 label sh_switch_nmat center metal2
 box 50773 25334 50774 25335
 label sh_switch_nmat_n center metal2
+box 16518 26044 16518 26044
+label sample_nmat center metal2
 box 16372 25329 16372 25329
-label sample_npmat_n center metal2
+label sample_nmat_n center metal2
 select top cell
 extract do local 
 extract unique

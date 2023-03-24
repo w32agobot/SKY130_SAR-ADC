@@ -1,4 +1,4 @@
-** sch_path: /foss/designs/SKY130_SAR-ADC/xschem/adc_top_postlayout_tb.sch
+** sch_path: /foss/designs/SKY130_SAR-ADC_dlyincrease/xschem/adc_top_postlayout_tb.sch
 **.subckt adc_top_postlayout_tb
 V_VDD_1 VDD GND pwl 0 0 {boot} 1.8
 V_VCM_2 vmid GND pwl 0 0 {boot} 0.9
@@ -122,22 +122,22 @@ V34 col_mode GND pwl 0 0 {boot} {colmode}
 .print tran format=raw file=adc_top_postlayout_tb.raw         v(x1:ctopp) v(x1:ctopn) v(x1:vcm)
 + v(x1:clk_ena) v(x1:ndecision_finish) v(x1:comp_latch) v(VDD) v(rst_n) v(start_conv) v(clk_vcm) v(inp) v(inn)
 + v(conv_finished) v(conv_finished_osr) v(x1:clk_dig) v(x1:clk_comp) v(result*) v(dlyctrl*) v(avg_mode*) v(osr_mode*)
-+ v(en_dly_contr) i(v_vdd_1) v(x1:sh_switch_pmat) v(x1:sh_switch_pmat_n) v(x1:sample_pmat_n) v(x1:sample_pmat_n_int)
++ v(en_dly_contr) i(v_vdd_1) v(x1:sh_switch_pmat) v(x1:sh_switch_pmat_n) v(x1:sample_pmat) v(x1:sample_pmat_n_int)
 + v(x1:sample_pmat_int)
 .print tran format=std file=adc_top_postlayout_tb.ascii       v(x1:ctopp) v(x1:ctopn) v(x1:vcm)
 + v(x1:clk_ena) v(x1:ndecision_finish) v(x1:comp_latch) v(VDD) v(rst_n) v(start_conv) v(clk_vcm) v(inp) v(inn)
 + v(conv_finished) v(conv_finished_osr) v(x1:clk_dig) v(x1:clk_comp) v(result*) v(dlyctrl*) v(avg_mode*) v(osr_mode*)
-+ v(en_dly_contr) i(v_vdd_1) v(x1:sh_switch_pmat) v(x1:sh_switch_pmat_n) v(x1:sample_pmat_n) v(x1:sample_pmat_n_int)
++ v(en_dly_contr) i(v_vdd_1) v(x1:sh_switch_pmat) v(x1:sh_switch_pmat_n) v(x1:sample_pmat) v(x1:sample_pmat_n_int)
 + v(x1:sample_pmat_int)
 .print tran format=csv file=adc_top_postlayout_tb.csv         v(x1:ctopp) v(x1:ctopn) v(x1:vcm)
 + v(x1:clk_ena) v(x1:ndecision_finish) v(x1:comp_latch) v(VDD) v(rst_n) v(start_conv) v(clk_vcm) v(inp) v(inn)
 + v(conv_finished) v(conv_finished_osr) v(x1:clk_dig) v(x1:clk_comp) v(result*) v(dlyctrl*) v(avg_mode*) v(osr_mode*)
-+ v(en_dly_contr) i(v_vdd_1)  v(x1:sh_switch_pmat) v(x1:sh_switch_pmat_n) v(x1:sample_pmat_n) v(x1:sample_pmat_n_int)
++ v(en_dly_contr) i(v_vdd_1)  v(x1:sh_switch_pmat) v(x1:sh_switch_pmat_n) v(x1:sample_pmat) v(x1:sample_pmat_n_int)
 + v(x1:sample_pmat_int)
 .print tran format=gnuplot file=adc_top_postlayout_tb.gnu.dat v(x1:ctopp) v(x1:ctopn) v(x1:vcm)
 + v(x1:clk_ena) v(x1:ndecision_finish) v(x1:comp_latch) v(VDD) v(rst_n) v(start_conv) v(clk_vcm) v(inp) v(inn)
 + v(conv_finished) v(conv_finished_osr) v(x1:clk_dig) v(x1:clk_comp) v(result*) v(dlyctrl*) v(avg_mode*) v(osr_mode*)
-+ v(en_dly_contr) i(v_vdd_1)  v(x1:sh_switch_pmat) v(x1:sh_switch_pmat_n) v(x1:sample_pmat_n) v(x1:sample_pmat_n_int)
++ v(en_dly_contr) i(v_vdd_1)  v(x1:sh_switch_pmat) v(x1:sh_switch_pmat_n) v(x1:sample_pmat) v(x1:sample_pmat_n_int)
 + v(x1:sample_pmat_int)
 
 
