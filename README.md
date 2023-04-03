@@ -42,14 +42,15 @@ Characterization of the ADC has been done through post-layout simulation with pa
  | $V_\mathrm{DD}$ (V)      | -        |$1.8$     | -          |
  | Area (µm²)               |$0.124^a$ |$0.178$   | -          |
  | DAC resolution (bit)     | -        |$12 $     | -          | 
- | Result (bit)             | -        |$12 $     |$16^b$      | 
+ | Result (bit)             | -        |$12 $     |$16$        | 
  | Oversampling (samples)   |$1   $    |$4  $     |$256$       |
  | LSB Averaging (samples)  |$1   $    |$3  $     |$31$        |
  | Sample rate (kS/s)       |$0.03$    |$198$     |$1203$      |
- | Average PD (µW)          | -        |$334.97$  | -          |  
+ | Average PD (µW)          |$68^b$    |$335^c$   | -          |  
 
 $^a$ Without the integrated $V_\mathrm{CM}$ generator.  
-$^b$ Increased resolution due to oversampling.
+$^b$ Low-power test case, delay_1,2,3 = 11111, $N_\mathrm{avg}$ = 31.  
+$^c$ Typical-power test case, delay_1,2,3 = 00001, $N_\mathrm{avg}$ = 3.  
 
 # Top-Level Interface
 The configuration bytes `config_1_in` and `config_2_in` are used to activate the sequential/symmetrical row/column decoder modes and to configure the delays in the self-clocked loop. The configuration port mapping is described in [doc/interface.md](doc/Interface.md). `rst_n` will reset the circuit active-low. After reset de-assertion the circuit waits for the trigger signal `start_conversion_in`, an edge-detection-circuit ensures that only one conversion is triggered if the start signal stays high. A single conversion is done when `conversion_finished_out` changes to `HIGH`, additionally, `conversion_finished_osr_out` signalizes a finished OSR sequence and an update of the result at the output. Input signal `clk_vcm` is the clock signal for the switched-capacitor voltage generator, it is designed for a low frequency of 32.768 kHz.
