@@ -30,10 +30,10 @@ This SAR-ADC has been designed in the context of a Master's thesis, the related 
 * 100% open source, licensed with [Apache 2.0](LICENSE)
 
 # Performance characteristics
-Characterization of the ADC has been done through post-layout simulation with parasitic C extraction. For the typical setting, the SAR-ADC has been configured to use 3 samples per LSB averaging, 4 samples oversampling, and a symmetric thermometer-code sequence. The clock generator has been set to use the lowest delay configurations (`00001`), as a result, the ADC is sampling at 198kS/s. The waveforms obtained in the simulation can be seen in Fig. 3, and the results are summarized in Table 1. 
+Characterization of the ADC has been done through post-layout simulation with parasitic C extraction. For the typical setting, the SAR-ADC has been configured to use 3 samples per LSB averaging, 4 samples oversampling, and a symmetric thermometer-code sequence. The clock generator has been set to use the lowest delay configurations (`00001`), as a result, the ADC is sampling at 824 kS/s with a Nyquist bandwidth of 103 kHz. The waveforms obtained in the simulation can be seen in Fig. 3, and the results are summarized in Table 1.
 
 ![Post-layout simulation SAR ADC AVG-3 OSR-4](doc/img/postlayoutsim.png)  
-**Figure 3**: The plots show the simulation result of the post-layout simulation with 3 samples per average, 4 samples OSR, and 198kS/s sample rate. 
+**Figure 3**: The plots show the simulation result of the post-layout simulation at 3 samples per average, oversampling factor 4, and 824 kS/s sample rate. 
 
 **Table 1**: Summary of the SAR-ADC characteristics obtained from simulation.
 
@@ -43,9 +43,10 @@ Characterization of the ADC has been done through post-layout simulation with pa
  | Area (µm²)               |$0.124^a$ |$0.178$   | -          |
  | DAC resolution (bit)     | -        |$12 $     | -          | 
  | Result (bit)             | -        |$12 $     |$16$        | 
- | Oversampling (samples)   |$1   $    |$4  $     |$256$       |
+ | Oversampling factor      |$1   $    |$4  $     |$256$       |
  | LSB Averaging (samples)  |$1   $    |$3  $     |$31$        |
- | Sample rate (kS/s)       |$0.03$    |$198$     |$1203$      |
+ | Sample rate (kS/s)       |$7.36$    |$824$     |$1203$      |
+ | Nyquist Bandwidth (kHz)  |$0.014$   |$103$     |$602$       |
  | Average PD (µW)          |$68^b$    |$335^c$   | -          |  
 
 $^a$ Without the integrated $V_\mathrm{CM}$ generator.  
