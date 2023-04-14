@@ -1,19 +1,4 @@
 
-Circuit 1 cell sky130_fd_pr__nfet_01v8 and Circuit 2 cell sky130_fd_pr__nfet_01v8 are black boxes.
-Warning: Equate pins:  cell sky130_fd_pr__nfet_01v8 is a placeholder, treated as a black box.
-Warning: Equate pins:  cell sky130_fd_pr__nfet_01v8 is a placeholder, treated as a black box.
-
-Subcircuit pins:
-Circuit 1: sky130_fd_pr__nfet_01v8         |Circuit 2: sky130_fd_pr__nfet_01v8         
--------------------------------------------|-------------------------------------------
-1                                          |1                                          
-2                                          |2                                          
-3                                          |3                                          
-4                                          |4                                          
----------------------------------------------------------------------------------------
-Cell pin lists are equivalent.
-Device classes sky130_fd_pr__nfet_01v8 and sky130_fd_pr__nfet_01v8 are equivalent.
-
 Circuit 1 cell sky130_fd_pr__cap_mim_m3_1 and Circuit 2 cell sky130_fd_pr__cap_mim_m3_1 are black boxes.
 Warning: Equate pins:  cell sky130_fd_pr__cap_mim_m3_1 is a placeholder, treated as a black box.
 Warning: Equate pins:  cell sky130_fd_pr__cap_mim_m3_1 is a placeholder, treated as a black box.
@@ -26,6 +11,20 @@ Circuit 1: sky130_fd_pr__cap_mim_m3_1      |Circuit 2: sky130_fd_pr__cap_mim_m3_
 ---------------------------------------------------------------------------------------
 Cell pin lists are equivalent.
 Device classes sky130_fd_pr__cap_mim_m3_1 and sky130_fd_pr__cap_mim_m3_1 are equivalent.
+
+Circuit 1 cell sky130_fd_pr__cap_var_lvt and Circuit 2 cell sky130_fd_pr__cap_var_lvt are black boxes.
+Warning: Equate pins:  cell sky130_fd_pr__cap_var_lvt is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__cap_var_lvt is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__cap_var_lvt       |Circuit 2: sky130_fd_pr__cap_var_lvt       
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__cap_var_lvt and sky130_fd_pr__cap_var_lvt are equivalent.
 
 Circuit 1 cell sky130_fd_pr__pfet_01v8 and Circuit 2 cell sky130_fd_pr__pfet_01v8 are black boxes.
 Warning: Equate pins:  cell sky130_fd_pr__pfet_01v8 is a placeholder, treated as a black box.
@@ -42,14 +41,31 @@ Circuit 1: sky130_fd_pr__pfet_01v8         |Circuit 2: sky130_fd_pr__pfet_01v8
 Cell pin lists are equivalent.
 Device classes sky130_fd_pr__pfet_01v8 and sky130_fd_pr__pfet_01v8 are equivalent.
 
+Circuit 1 cell sky130_fd_pr__nfet_01v8 and Circuit 2 cell sky130_fd_pr__nfet_01v8 are black boxes.
+Warning: Equate pins:  cell sky130_fd_pr__nfet_01v8 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__nfet_01v8 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__nfet_01v8         |Circuit 2: sky130_fd_pr__nfet_01v8         
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__nfet_01v8 and sky130_fd_pr__nfet_01v8 are equivalent.
+
 Subcircuit summary:
 Circuit 1: adc_noise_decoup_cell2          |Circuit 2: adc_noise_decoup_cell2          
 -------------------------------------------|-------------------------------------------
-sky130_fd_pr__nfet_01v8 (1)                |sky130_fd_pr__nfet_01v8 (1)                
 sky130_fd_pr__cap_mim_m3_1 (1)             |sky130_fd_pr__cap_mim_m3_1 (1)             
+sky130_fd_pr__cap_var_lvt (1)              |sky130_fd_pr__cap_var_lvt (1)              
 Number of devices: 2                       |Number of devices: 2                       
 Number of nets: 5                          |Number of nets: 5                          
 ---------------------------------------------------------------------------------------
+Resolving symmetries by property value.
+Resolving symmetries by pin name.
 Netlists match uniquely.
 
 Subcircuit pins:
@@ -57,9 +73,9 @@ Circuit 1: adc_noise_decoup_cell2          |Circuit 2: adc_noise_decoup_cell2
 -------------------------------------------|-------------------------------------------
 mimcap_top                                 |mimcap_top                                 
 mimcap_bot                                 |mimcap_bot                                 
-nmoscap_top                                |nmoscap_top                                
-pwell                                      |pwell                                      
 nmoscap_bot                                |nmoscap_bot                                
+pwell                                      |pwell                                      
+nmoscap_top                                |nmoscap_top                                
 ---------------------------------------------------------------------------------------
 Cell pin lists are equivalent.
 Device classes adc_noise_decoup_cell2 and adc_noise_decoup_cell2 are equivalent.
@@ -197,7 +213,7 @@ Circuit 1: adc_comp_circuit                |Circuit 2: adc_comp_circuit
 -------------------------------------------|-------------------------------------------
 a_470_n1001#                               |inp **Mismatch**                           
 a_30_n1001#                                |inn **Mismatch**                           
-a_1607_n1292#                              |nclk **Mismatch**                          
+a_1611_n1292#                              |nclk **Mismatch**                          
 VPWR                                       |VPWR                                       
 adc_comp_buffer_1/out                      |outp **Mismatch**                          
 adc_comp_buffer_0/out                      |outn **Mismatch**                          

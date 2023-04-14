@@ -29,6 +29,20 @@ Circuit 1: sky130_fd_pr__nfet_01v8         |Circuit 2: sky130_fd_pr__nfet_01v8
 Cell pin lists are equivalent.
 Device classes sky130_fd_pr__nfet_01v8 and sky130_fd_pr__nfet_01v8 are equivalent.
 
+Circuit 1 cell sky130_fd_pr__cap_var_lvt and Circuit 2 cell sky130_fd_pr__cap_var_lvt are black boxes.
+Warning: Equate pins:  cell sky130_fd_pr__cap_var_lvt is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__cap_var_lvt is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__cap_var_lvt       |Circuit 2: sky130_fd_pr__cap_var_lvt       
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__cap_var_lvt and sky130_fd_pr__cap_var_lvt are equivalent.
+
 Circuit 1 cell sky130_fd_pr__cap_mim_m3_1 and Circuit 2 cell sky130_fd_pr__cap_mim_m3_1 are black boxes.
 Warning: Equate pins:  cell sky130_fd_pr__cap_mim_m3_1 is a placeholder, treated as a black box.
 Warning: Equate pins:  cell sky130_fd_pr__cap_mim_m3_1 is a placeholder, treated as a black box.
@@ -45,27 +59,29 @@ Device classes sky130_fd_pr__cap_mim_m3_1 and sky130_fd_pr__cap_mim_m3_1 are equ
 Subcircuit summary:
 Circuit 1: adc_noise_decoup_cell1          |Circuit 2: adc_noise_decoup_cell1          
 -------------------------------------------|-------------------------------------------
+sky130_fd_pr__cap_var_lvt (1)              |sky130_fd_pr__cap_var_lvt (1)              
 sky130_fd_pr__cap_mim_m3_1 (1)             |sky130_fd_pr__cap_mim_m3_1 (1)             
-sky130_fd_pr__nfet_01v8 (1)                |sky130_fd_pr__nfet_01v8 (1)                
 Number of devices: 2                       |Number of devices: 2                       
 Number of nets: 5                          |Number of nets: 5                          
 ---------------------------------------------------------------------------------------
+Resolving symmetries by property value.
+Resolving symmetries by pin name.
 Netlists match uniquely.
 
 Subcircuit pins:
 Circuit 1: adc_noise_decoup_cell1          |Circuit 2: adc_noise_decoup_cell1          
 -------------------------------------------|-------------------------------------------
-nmoscap_bot                                |nmoscap_bot                                
 mimcap_top                                 |mimcap_top                                 
 mimcap_bot                                 |mimcap_bot                                 
-nmoscap_top                                |nmoscap_top                                
+nmoscap_bot                                |nmoscap_bot                                
 pwell                                      |pwell                                      
+nmoscap_top                                |nmoscap_top                                
 ---------------------------------------------------------------------------------------
 Cell pin lists are equivalent.
 Device classes adc_noise_decoup_cell1 and adc_noise_decoup_cell1 are equivalent.
 Flattening unmatched subcell adc_array_wafflecap_dummy in circuit adc_array_matrix_12bit (0)(78 instances)
-Flattening unmatched subcell adc_array_wafflecap_drv in circuit adc_array_matrix_12bit (0)(18 instances)
 Flattening unmatched subcell adc_array_wafflecap_1 in circuit adc_array_matrix_12bit (0)(2 instances)
+Flattening unmatched subcell adc_array_wafflecap_drv in circuit adc_array_matrix_12bit (0)(18 instances)
 Flattening unmatched subcell adc_array_wafflecap_8 in circuit adc_array_matrix_12bit (0)(511 instances)
 Flattening unmatched subcell adc_array_wafflecap_4 in circuit adc_array_matrix_12bit (0)(1 instance)
 Flattening unmatched subcell adc_array_wafflecap_2 in circuit adc_array_matrix_12bit (0)(1 instance)
@@ -304,6 +320,7 @@ Circuit 1: adc_array_matrix_12bit          |Circuit 2: adc_array_matrix_12bit
 sw                                         |sw                                         
 analog_in                                  |analog_in                                  
 sw_n                                       |sw_n                                       
+sample                                     |sample                                     
 col_n[31]                                  |col_n[31]                                  
 col_n[16]                                  |col_n[16]                                  
 col_n[15]                                  |col_n[15]                                  
@@ -314,7 +331,6 @@ en_bit_n[1]                                |en_bit_n[1]
 en_C0_n                                    |en_C0_n                                    
 en_bit_n[0]                                |en_bit_n[0]                                
 ctop                                       |ctop                                       
-sample                                     |sample                                     
 col_n[0]                                   |col_n[0]                                   
 col_n[30]                                  |col_n[30]                                  
 col_n[29]                                  |col_n[29]                                  
