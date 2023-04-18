@@ -1,4 +1,5 @@
-v {xschem version=3.0.0 file_version=1.2 }
+v {xschem version=3.1.0 file_version=1.2
+}
 G {}
 K {}
 V {}
@@ -29,9 +30,8 @@ C6 mimcap_top pwell 2.58fF
 C7 mimcap_bot pwell 2.09fF
 C8 nmoscap_top pwell 13.07fF
 C9 nmoscap_bot pwell 7.80fF} 70 -900 0 0 0.2 0.2 {}
-T {~350fF Poly-Sub} 710 -480 0 0 0.4 0.4 {}
 T {~155fF} 740 -670 0 0 0.4 0.4 {}
-T {+100fF parasitics} 710 -450 0 0 0.4 0.4 {}
+T {+100fF parasitics} 760 -420 0 0 0.4 0.4 {}
 N 630 -700 630 -680 {
 lab=mimcap_top}
 N 630 -620 630 -600 {
@@ -42,44 +42,19 @@ N 610 -700 630 -700 {
 lab=mimcap_top}
 N 590 -480 630 -480 {
 lab=nmoscap_top}
-N 630 -480 630 -460 {
-lab=nmoscap_top}
-N 600 -420 600 -410 {
-lab=nmoscap_bot}
-N 660 -420 660 -410 {
-lab=nmoscap_bot}
 N 590 -380 600 -380 {
 lab=nmoscap_bot}
-N 660 -410 660 -380 {
-lab=nmoscap_bot}
-N 600 -410 600 -380 {
-lab=nmoscap_bot}
-N 630 -420 630 -310 {
+N 590 -410 620 -410 {
 lab=pwell}
-N 590 -270 630 -270 {
-lab=pwell}
-N 600 -380 660 -380 {
-lab=nmoscap_bot}
-N 630 -310 630 -270 {
-lab=pwell}
+N 630 -480 660 -480 {}
+N 660 -480 660 -460 {}
+N 600 -380 660 -380 {}
+N 660 -400 660 -380 {}
 C {devices/title.sym} 170 -40 0 0 {name=l1 author="Manuel Moser"}
 C {devices/iopin.sym} 590 -480 0 1 {name=p1 lab=nmoscap_top}
 C {devices/iopin.sym} 610 -700 0 1 {name=p2 lab=mimcap_top}
 C {devices/iopin.sym} 610 -600 0 1 {name=p3 lab=mimcap_bot}
 C {devices/iopin.sym} 590 -380 0 1 {name=p4 lab=nmoscap_bot}
-C {devices/iopin.sym} 590 -270 0 1 {name=p5 lab=pwell}
+C {devices/iopin.sym} 590 -410 0 1 {name=p5 lab=pwell}
 C {sky130_fd_pr/cap_mim_m3_1.sym} 630 -650 0 0 {name=C1 model=cap_mim_m3_1 W=18.9 L=5.1 MF=1 spiceprefix=X}
-C {sky130_fd_pr/nfet_01v8.sym} 630 -440 1 0 {name=M1
-L=3.9
-W=18.4
-nf=1 
-mult=1
-ad="'int((nf+1)/2) * W/nf * 0.29'" 
-pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
-as="'int((nf+2)/2) * W/nf * 0.29'" 
-ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
-nrd="'0.29 / W'" nrs="'0.29 / W'"
-sa=0 sb=0 sd=0
-model=nfet_01v8
-spiceprefix=X
-}
+C {sky130_fd_pr/cap_var_lvt.sym} 660 -430 0 0 {name=C2 model=cap_var_lvt W=18.4 L=3.9 VM=1 spiceprefix=X}

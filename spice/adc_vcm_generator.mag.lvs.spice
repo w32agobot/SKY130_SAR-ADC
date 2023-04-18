@@ -40,8 +40,8 @@ X11 X a_629_47# VPWR VPB sky130_fd_pr__pfet_01v8_hvt ad=2.6e+11p pd=2.52e+06u as
 .ends
 
 .subckt adc_noise_decoup_cell1 nmoscap_top nmoscap_bot mimcap_top mimcap_bot pwell
-X0 mimcap_top mimcap_bot sky130_fd_pr__cap_mim_m3_1 l=1.72e+07u w=1.72e+07u
-X1 nmoscap_bot nmoscap_top nmoscap_bot pwell sky130_fd_pr__nfet_01v8 ad=2.296e+13p pd=6.84e+07u as=0p ps=0u w=1.64e+07u l=1.6e+07u
+X0 nmoscap_top nmoscap_bot pwell sky130_fd_pr__cap_var_lvt w=1.64e+07u l=1.6e+07u
+X1 mimcap_top mimcap_bot sky130_fd_pr__cap_mim_m3_1 l=1.72e+07u w=1.72e+07u
 .ends
 
 .subckt nfet_01v8_w500_l500_nf2 a_n129_n76# a_n29_n50# a_n187_n50# a_29_n76# a_129_n50#
