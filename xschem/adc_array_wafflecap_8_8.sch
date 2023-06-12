@@ -1,4 +1,4 @@
-v {xschem version=3.1.0 file_version=1.2
+v {xschem version=3.4.0 file_version=1.2
 }
 G {}
 K {}
@@ -64,8 +64,10 @@ N 180 -420 190 -420 {
 lab=col_n}
 N 360 -270 360 -200 {
 lab=VSS}
-N 180 -320 250 -320 {}
-N 180 -300 250 -300 {}
+N 180 -320 250 -320 {
+lab=rowoff_n}
+N 180 -300 250 -300 {
+lab=col}
 C {devices/iopin.sym} 190 -500 0 1 {name=p3 lab=vcom}
 C {devices/iopin.sym} 190 -550 0 1 {name=p7 lab=VDD}
 C {devices/capa.sym} 540 -460 0 0 {name=C1
@@ -73,7 +75,8 @@ m=1
 value=2.90f
 footprint=1206
 device="ceramic capacitor"
-spice_ignore=false}
+spice_ignore=false
+lvs_ignore=open}
 C {devices/iopin.sym} 590 -540 2 1 {name=p9 lab=ctop}
 C {devices/iopin.sym} 190 -150 0 1 {name=p10 lab=VSS}
 C {devices/title.sym} 170 -40 0 0 {name=l1 author="Manuel Moser"}
